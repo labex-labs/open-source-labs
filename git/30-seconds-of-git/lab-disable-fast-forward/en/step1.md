@@ -34,7 +34,7 @@ This will disable fast forward merging for all branches, even if it is possible.
 git config --global --add merge.ff false
 ```
 
-4. Switch back to the `mater` branch and merge the `my-branch` branch, save and exit without changing the text:
+4. Switch back to the `master` branch and merge the `my-branch` branch, save and exit without changing the text:
 
 ```shell
 git checkout master

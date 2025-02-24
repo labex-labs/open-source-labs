@@ -9,7 +9,7 @@ Um das schnelle Zusammenführen zu deaktivieren, verwenden wir das Repository vo
 1. Navigieren Sie zum Verzeichnis und konfigurieren Sie die Identität.
 2. Erstellen Sie und wechseln Sie zu einem Branch namens `my-branch`, erstellen Sie eine Datei `hello.txt` und fügen Sie "hello,world" hinzu, fügen Sie sie zum Staging-Area hinzu und bestätigen Sie sie mit der Nachricht "Added hello.txt".
 3. Deaktivieren Sie das schnelle Zusammenführen für alle Branches.
-4. Wechseln Sie zurück zum `mater`-Branch und verschieben Sie den `my-branch`-Branch, speichern Sie und beenden Sie ohne den Text zu ändern.
+4. Wechseln Sie zurück zum `master`-Branch und verschieben Sie den `my-branch`-Branch, speichern Sie und beenden Sie ohne den Text zu ändern.
 
 Jetzt wird Git immer einen Merge-Commit erstellen, auch wenn es möglich wäre, das schnelle Zusammenführen durchzuführen:
 

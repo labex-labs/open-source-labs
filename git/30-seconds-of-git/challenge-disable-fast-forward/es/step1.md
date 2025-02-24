@@ -9,7 +9,7 @@ Para deshabilitar la fusión en adelantamiento rápido, usemos el repositorio de
 1. Navegue hasta el directorio y configure la identidad.
 2. Cree y cambie a una rama llamada `my-branch`, cree un archivo `hello.txt` y agregue "hello,world" a él, agréguelo al área de preparación y confirme con el mensaje "Added hello.txt".
 3. Deshabilite la fusión en adelantamiento rápido para todas las ramas.
-4. Vuelva a la rama `mater` y fusione la rama `my-branch`, guarde y salga sin cambiar el texto.
+4. Vuelva a la rama `master` y fusione la rama `my-branch`, guarde y salga sin cambiar el texto.
 
 Ahora, Git siempre creará un commit de fusión, incluso si es posible hacer un adelanto:
 

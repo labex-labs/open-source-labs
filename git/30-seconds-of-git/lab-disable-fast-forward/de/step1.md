@@ -34,7 +34,7 @@ Dies deaktiviert das schnelle Zusammenführen für alle Branches, auch wenn es m
 git config --global --add merge.ff false
 ```
 
-4. Wechsel zurück zum `mater`-Branch und merke den `my-branch`-Branch zusammen, speichere und beende ohne den Text zu ändern:
+4. Wechsel zurück zum `master`-Branch und merke den `my-branch`-Branch zusammen, speichere und beende ohne den Text zu ändern:
 
 ```shell
 git checkout master

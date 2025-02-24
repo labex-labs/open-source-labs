@@ -34,7 +34,7 @@ git config --add merge.ff false
 git config --global --add merge.ff false
 ```
 
-4. `mater` ブランチに戻り、`my-branch` ブランチをマージし、テキストを変更せずに保存して終了します。
+4. `master` ブランチに戻り、`my-branch` ブランチをマージし、テキストを変更せずに保存して終了します。
 
 ```shell
 git checkout master

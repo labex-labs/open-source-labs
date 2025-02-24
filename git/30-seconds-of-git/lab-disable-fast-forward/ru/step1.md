@@ -34,7 +34,7 @@ git config --add merge.ff false
 git config --global --add merge.ff false
 ```
 
-4. Переключитесь обратно на ветку `mater` и объедините ветку `my-branch`, сохраните и выйдите без изменения текста:
+4. Переключитесь обратно на ветку `master` и объедините ветку `my-branch`, сохраните и выйдите без изменения текста:
 
 ```shell
 git checkout master

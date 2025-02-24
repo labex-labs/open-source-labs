@@ -9,7 +9,7 @@ Pour désactiver la fusion en avant rapide, utilisons le référentiel de `https
 1. Accédez au répertoire et configurez l'identité.
 2. Créez et basculez sur une branche appelée `my-branch`, créez un fichier `hello.txt` et ajoutez "hello,world" à celui-ci, ajoutez-le à la zone de préparation et validez-le avec le message "Added hello.txt".
 3. Désactivez la fusion en avant rapide pour toutes les branches.
-4. Revenez sur la branche `mater` et fusionnez la branche `my-branch`, enregistrez et quittez sans modifier le texte.
+4. Revenez sur la branche `master` et fusionnez la branche `my-branch`, enregistrez et quittez sans modifier le texte.
 
 Maintenant, Git créera toujours un commit de fusion, même si une fusion en avant est possible :
 

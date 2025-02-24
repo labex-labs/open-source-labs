@@ -9,7 +9,7 @@ To disable fast forward merging, let's use the repository from `https://github.c
 1. Navigate to the directory and configure the identity.
 2. Create and switch to a branch called `my-branch`, create a `hello.txt` file and add "hello,world" to it, add it to the staging area and commit it with the message "Added hello.txt".
 3. Disable fast forward merging for all branches.
-4. Switch back to the `mater` branch and merge the `my-branch` branch, save and exit without changing the text.
+4. Switch back to the `master` branch and merge the `my-branch` branch, save and exit without changing the text.
 
 Now, Git will always create a merge commit, even if it is possible to fast forward:
 
