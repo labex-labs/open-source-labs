@@ -1,0 +1,3 @@
+# Das Ändern der matplotlibrc-Datei
+
+Die `matplotlibrc`-Datei ist eine Konfigurationsdatei, mit der Sie alle Arten von Eigenschaften in Matplotlib anpassen können. Sie steuert die Standardwerte für Eigenschaften wie Figurgröße, Linienbreite, Farben, Schriftarten usw. Sie können die `matplotlibrc`-Datei ändern, um Matplotlib nach Ihren Vorlieben anzupassen. Die Datei kann an verschiedenen Stellen auf Ihrem System gespeichert sein, und Matplotlib sucht sie in einer bestimmten Reihenfolge nach. Wenn eine `matplotlibrc`-Datei gefunden wird, hat sie Vorrang vor anderen Einstellungen. Sie können die Funktion `matplotlib.matplotlib_fname()` verwenden, um den Pfad der derzeit aktiven `matplotlibrc`-Datei anzuzeigen.
