@@ -1,0 +1,3 @@
+# Résumé
+
+Le problème du sac à dos illimité est une variante du problème du sac à dos où les objets peuvent être sélectionnés plusieurs fois. Pour résoudre ce problème, les objets peuvent être remplacés une fois qu'ils sont placés dans le sac à dos, et un objet ne peut pas être divisé. Les objets d'entrée ne peuvent pas avoir un poids ou une valeur de 0, et seule la valeur totale doit être renvoyée. Les entrées peuvent ne pas être valides, donc une validation est requise, et les entrées sont triées par rapport à la valeur/poids. Les contraintes de mémoire ne sont pas un problème. Le problème du sac à dos illimité peut être utilisé dans diverses situations, telles que l'allocation de ressources et l'optimisation du portefeuille financier.

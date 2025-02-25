@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In dieser Herausforderung haben Sie gelernt, wie Sie einen String in Camelcase umwandeln, indem Sie Leerzeichen, Bindestriche oder Unterstriche entfernen und den ersten Buchstaben jedes Wortes außer dem ersten in Großbuchstaben setzen. Sie haben `re.sub()` verwendet, um jedes `-` oder `_` durch ein Leerzeichen zu ersetzen, indem Sie die reguläre Ausdrucksmuster `r"(_|-)+"` verwenden, `str.title()` verwendet, um den ersten Buchstaben jedes Wortes in Großbuchstaben zu setzen und den Rest in Kleinbuchstaben zu konvertieren, und `str.replace()` verwendet, um die Leerzeichen zwischen den Wörtern zu entfernen.

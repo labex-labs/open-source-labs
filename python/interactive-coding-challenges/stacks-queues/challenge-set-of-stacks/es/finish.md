@@ -1,0 +1,3 @@
+# Resumen
+
+En este desafío, implementamos una clase SetOfStacks que envuelve una lista de pilas, donde cada pila está limitada por una capacidad. La clase proporciona funcionalidades para empujar y sacar elementos de las pilas, y crea o elimina pilas automáticamente según sea necesario. La implementación cumple con los requisitos de utilizar una clase de pila existente, limitar todas las pilas por la misma capacidad y caber en memoria. La clase SetOfStacks se puede utilizar en varios escenarios, como empujar y sacar elementos en pilas vacías o no vacías, crear nuevas pilas cuando se alcanza una capacidad y destruir pilas cuando se vacían.

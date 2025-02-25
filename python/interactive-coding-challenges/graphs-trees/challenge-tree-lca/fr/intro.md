@@ -1,0 +1,3 @@
+# Introduction
+
+En informatique, un arbre binaire est une structure de données arborescente dans laquelle chaque nœud a au plus deux enfants, appelés l'enfant gauche et l'enfant droit. L'ascendant commun le plus proche (LCA) de deux nœuds v et w dans un arbre ou un graphe dirigé acyclique (DAG) est le nœud le plus bas (c'est-à-dire le plus profond) qui a à la fois v et w comme descendants, où nous définissons chaque nœud comme descendant de lui-même (donc si v a une connexion directe à partir de w, w est l'ascendant commun le plus proche). Dans ce défi, nous trouverons l'ascendant commun le plus proche dans un arbre binaire.

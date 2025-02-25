@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Das unbeschränkte Rucksackproblem ist eine Variante des Rucksackproblems, bei der Gegenstände beliebig oft ausgewählt werden können. Um dieses Problem zu lösen, können die Gegenstände ersetzt werden, nachdem sie im Rucksack platziert wurden, und ein Gegenstand kann nicht aufgeteilt werden. Die eingegebenen Gegenstände dürfen kein Gewicht oder Wert von 0 haben, und es muss nur der Gesamtwert zurückgegeben werden. Die Eingaben können ungültig sein, daher ist eine Validierung erforderlich, und die Eingaben sind nach Val/Wert sortiert. Speicherbeschränkungen sind kein Problem. Das unbeschränkte Rucksackproblem kann in verschiedenen Szenarien eingesetzt werden, wie z. B. bei der Ressourcenallokation und der Optimierung von Finanzportfolios.

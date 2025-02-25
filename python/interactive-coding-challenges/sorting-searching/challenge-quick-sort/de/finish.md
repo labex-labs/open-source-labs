@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Quick Sort ist ein beliebiger Sortieralgorithmus, der einen Divide-and-Conquer-Ansatz verwendet, um ein Array oder eine Liste zu sortieren. Der Algorithmus funktioniert, indem er die Liste in zwei Teilfolgen aufteilt und dann die Teilfolgen rekursiv sortiert. Der Quick Sort-Algorithmus ist effizient und einfach, was ihn weit verbreitet macht. Um Quick Sort in Python zu implementieren, sollte der Algorithmus die Anforderungen erfüllen, keine in-place-Lösung zu sein, doppelte Elemente zu behandeln, ungültige Eingaben zu behandeln und Listen beliebiger Größe verarbeiten zu können.

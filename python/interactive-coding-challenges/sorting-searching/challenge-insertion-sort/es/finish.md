@@ -1,0 +1,3 @@
+# Resumen
+
+El algoritmo de clasificación por inserción es un algoritmo de clasificación simple y eficiente que funciona bien para listas pequeñas o listas parcialmente ordenadas. Tiene una complejidad temporal de O(n^2) en el peor de los casos, pero puede ser más rápido que otros algoritmos de clasificación para listas pequeñas o listas parcialmente ordenadas. El algoritmo funciona insertando repetidamente el siguiente elemento en el array ordenado, construyendo el array ordenado final uno a la vez. La implementación del algoritmo de clasificación por inserción en Python debe cumplir con los requisitos mencionados anteriormente y manejar la entrada no válida de manera adecuada.

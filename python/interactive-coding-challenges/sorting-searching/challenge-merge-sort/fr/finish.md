@@ -1,0 +1,3 @@
+# Résumé
+
+Le tri fusion est un algorithme de tri populaire qui utilise l'approche diviser pour régner pour trier un tableau. Pour implémenter le tri fusion en Python, l'algorithme devrait utiliser l'approche diviser pour régner, gérer des tableaux de toute longueur, fonctionner pour les entiers et les chaînes de caractères, trier le tableau par ordre croissant, avoir une complexité temporelle de O(n log n) et être implémenté en Python. L'algorithme devrait lever une exception si l'entrée est None, renvoyer un tableau vide si l'entrée est un tableau vide, renvoyer le même tableau si l'entrée ne contient qu'un seul élément et trier correctement le tableau si les sous-tableaux gauche et droit ont des longueurs différentes.

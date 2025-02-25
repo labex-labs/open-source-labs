@@ -1,0 +1,3 @@
+# Einführung
+
+In der Informatik ist ein binärer Suchbaum (englisch: binary search tree, BST) eine binäre Baumdatenstruktur, bei der jeder Knoten maximal zwei Kinder hat, die als linker und rechter Kind bezeichnet werden. Ein binärer Suchbaum ist ein binärer Baum, bei dem der Wert jedes Knotens größer oder gleich den Werten in seinem linken Teilbaum und kleiner oder gleich den Werten in seinem rechten Teilbaum ist. Die Höhe eines binären Suchbaums ist die Anzahl der Kanten zwischen der Wurzel des Baums und seinem weitesten Blatt. In dieser Herausforderung werden wir einen binären Suchbaum mit minimaler Höhe aus einem sortierten Array erstellen.

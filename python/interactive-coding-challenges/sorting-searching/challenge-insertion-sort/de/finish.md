@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Der EinfügeSortieralgorithmus ist ein einfacher und effizienter Sortieralgorithmus, der gut für kleine Listen oder teilweise sortierte Listen funktioniert. Im schlimmsten Fall hat er eine Zeitkomplexität von O(n^2), kann aber für kleine Listen oder teilweise sortierte Listen schneller sein als andere Sortieralgorithmen. Der Algorithmus funktioniert, indem er das nächste Element wiederholt in das sortierte Array einfügt und das endgültig sortierte Array ein Element nach dem anderen aufbaut. Die Implementierung des EinfügeSortieralgorithmus in Python sollte die oben genannten Anforderungen erfüllen und ungültige Eingaben优雅 behandeln.

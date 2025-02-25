@@ -1,0 +1,3 @@
+# Resumen
+
+El merge sort es un algoritmo de clasificación popular que utiliza el enfoque divide y vencerás para ordenar una matriz. Para implementar el merge sort en Python, el algoritmo debe utilizar el enfoque divide y vencerás, manejar matrices de cualquier longitud, funcionar tanto para enteros como para cadenas, ordenar la matriz en orden ascendente, tener una complejidad temporal de O(n log n) y ser implementado en Python. El algoritmo debe generar una excepción si la entrada es None, devolver una matriz vacía si la entrada es una matriz vacía, devolver la misma matriz si la entrada contiene solo un elemento y ordenar correctamente la matriz si las submatrices izquierda y derecha tienen longitudes diferentes.

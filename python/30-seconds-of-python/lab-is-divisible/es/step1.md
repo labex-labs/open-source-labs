@@ -1,0 +1,12 @@
+# El número es divisible
+
+Escribe una función `is_divisible(dividendo, divisor)` que tome dos enteros como argumentos y devuelva `True` si el `dividendo` es divisible por el `divisor`, y `False` en caso contrario.
+
+```python
+def is_divisible(dividendo, divisor):
+  return dividendo % divisor == 0
+```
+
+```python
+is_divisible(6, 3) # True
+```

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Merge sort ist ein beliebiger Sortieralgorithmus, der die Divide-and-Conquer-Methode verwendet, um ein Array zu sortieren. Um Merge Sort in Python zu implementieren, sollte der Algorithmus die Divide-and-Conquer-Methode verwenden, Arrays beliebiger Länge verarbeiten, sowohl für Integer als auch für Strings funktionieren, das Array aufsteigend sortieren, eine Zeitkomplexität von O(n log n) haben und in Python implementiert werden. Der Algorithmus sollte eine Exception werfen, wenn die Eingabe None ist, ein leeres Array zurückgeben, wenn die Eingabe ein leeres Array ist, das gleiche Array zurückgeben, wenn die Eingabe nur ein Element enthält, und das Array richtig sortieren, wenn die linken und rechten Teilarrays unterschiedliche Längen haben.

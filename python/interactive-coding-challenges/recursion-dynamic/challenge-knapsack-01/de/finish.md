@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Das Rucksackproblem ist ein klassisches Optimierungsproblem, das in vielen realen Anwendungen verwendet wird. Es ist ein Problem der kombinatorischen Optimierung, bei dem das Ziel besteht, Gegenstände auszuwählen, um den Wert zu maximieren, während das Gewicht innerhalb der Kapazität des Rucksacks bleibt. Um das Problem zu lösen, müssen wir mehrere Anforderungen berücksichtigen, wie z. B. dass Gegenstände nicht ersetzt werden können, nachdem sie im Rucksack platziert wurden, und dass wir keinen Gegenstand aufteilen können. Das Problem ist NP-schwer, was bedeutet, dass es kein bekanntes polynomielles Zeitalgorithmus gibt, der es in allen Fällen optimal lösen kann.

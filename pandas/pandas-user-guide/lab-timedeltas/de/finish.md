@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man mit Zeitintervallen (Timedeltas) in Python mithilfe der pandas-Bibliothek umgeht. Wir haben behandelt, wie man einen Zeitintervall konstruiert, in einen Zeitintervall konvertiert, Operationen durchführt, Attribute zugreift, in ISO 8601-Dauer umwandelt, einen Zeitintervallindex erstellt, den Zeitintervallindex verwendet, Operationen mit dem Zeitintervallindex durchführt und einen Zeitintervallindex neu abtastet. Mit diesen Fähigkeiten können Sie in Ihren zukünftigen Datenanalyseaufgaben Zeitbasierte Daten effizient verarbeiten und manipulieren.

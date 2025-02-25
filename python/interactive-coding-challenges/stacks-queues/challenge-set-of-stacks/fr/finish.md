@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce défi, nous avons implémenté une classe SetOfStacks qui encapsule une liste de piles, où chaque pile est limitée par une capacité. La classe fournit des fonctionnalités pour empiler et dépiler des éléments sur les piles et crée ou supprime automatiquement des piles selon les besoins. L'implémentation répond aux exigences d'utilisation d'une classe de pile existante, de limitation de toutes les piles par la même capacité et de compatibilité mémoire. La classe SetOfStacks peut être utilisée dans diverses situations, telles que l'empilage et le dépilage d'éléments sur des piles vides ou non vides, la création de nouvelles piles lorsqu'une capacité est atteinte et la destruction de piles lorsqu'elles deviennent vides.

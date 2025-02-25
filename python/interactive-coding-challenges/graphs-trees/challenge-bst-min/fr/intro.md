@@ -1,0 +1,3 @@
+# Introduction
+
+En informatique, un arbre de recherche binaire (ARB) est une structure de données d'arbre binaire dans laquelle chaque nœud a au plus deux enfants, appelés l'enfant gauche et l'enfant droit. Un arbre de recherche binaire est un arbre binaire où la valeur de chaque nœud est supérieure ou égale aux valeurs de son sous-arbre gauche et inférieure ou égale aux valeurs de son sous-arbre droit. La hauteur d'un arbre de recherche binaire est le nombre d'arêtes entre la racine de l'arbre et sa feuille la plus éloignée. Dans ce défi, nous allons créer un arbre de recherche binaire de hauteur minimale à partir d'un tableau trié.

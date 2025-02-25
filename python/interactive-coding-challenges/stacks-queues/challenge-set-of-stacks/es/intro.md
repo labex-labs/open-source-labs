@@ -1,0 +1,3 @@
+# Introducción
+
+En informática, una pila es un tipo de dato abstracto que sirve como una colección de elementos, con dos operaciones principales: push, que agrega un elemento a la colección, y pop, que elimina el elemento más recientemente agregado que aún no ha sido eliminado. En algunos casos, es posible que necesitemos implementar un conjunto de pilas, donde cada pila tiene una capacidad limitada. Cuando una pila alcanza su capacidad, se crea una nueva pila para almacenar elementos adicionales. En este desafío, implementaremos una clase SetOfStacks que envuelva una lista de pilas, donde cada pila está limitada por una capacidad.

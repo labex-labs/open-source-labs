@@ -1,0 +1,44 @@
+# Ejercicio 2.5: Lista de Diccionarios
+
+Toma la función que escribiste en el Ejercicio 2.4 y modifícalo para representar cada acción en el portafolio con un diccionario en lugar de una tupla. En este diccionario, utiliza los nombres de campo "name", "shares" y "price" para representar las diferentes columnas en el archivo de entrada.
+
+Experimenta con esta nueva función de la misma manera que lo hiciste en el Ejercicio 2.4.
+
+```python
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+>>> portfolio
+[{'name': 'AA','shares': 100, 'price': 32.2}, {'name': 'IBM','shares': 50, 'price': 91.1},
+    {'name': 'CAT','shares': 150, 'price': 83.44}, {'name': 'MSFT','shares': 200, 'price': 51.23},
+    {'name': 'GE','shares': 95, 'price': 40.37}, {'name': 'MSFT','shares': 50, 'price': 65.1},
+    {'name': 'IBM','shares': 100, 'price': 70.44}]
+>>> portfolio[0]
+{'name': 'AA','shares': 100, 'price': 32.2}
+>>> portfolio[1]
+{'name': 'IBM','shares': 50, 'price': 91.1}
+>>> portfolio[1]['shares']
+50
+>>> total = 0.0
+>>> for s in portfolio:
+        total += s['shares']*s['price']
+
+>>> print(total)
+44671.15
+>>>
+```
+
+Aquí, notarás que los diferentes campos para cada entrada se acceden por nombres de clave en lugar de números de columna numéricos. Esto suele ser preferible porque el código resultante es más fácil de leer más adelante.
+
+Ver grandes diccionarios y listas puede ser desordenado. Para limpiar la salida para la depuración, considera usar la función `pprint`.
+
+```python
+>>> from pprint import pprint
+>>> pprint(portfolio)
+[{'name': 'AA', 'price': 32.2,'shares': 100},
+    {'name': 'IBM', 'price': 91.1,'shares': 50},
+    {'name': 'CAT', 'price': 83.44,'shares': 150},
+    {'name': 'MSFT', 'price': 51.23,'shares': 200},
+    {'name': 'GE', 'price': 40.37,'shares': 95},
+    {'name': 'MSFT', 'price': 65.1,'shares': 50},
+    {'name': 'IBM', 'price': 70.44,'shares': 100}]
+>>>
+```

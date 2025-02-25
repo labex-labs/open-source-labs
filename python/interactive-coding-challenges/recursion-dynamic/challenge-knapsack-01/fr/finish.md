@@ -1,0 +1,3 @@
+# Sommaire
+
+Le problème du sac à dos est un problème classique d'optimisation utilisé dans de nombreuses applications du monde réel. Il s'agit d'un problème d'optimisation combinatoire où l'objectif est de sélectionner des objets pour maximiser la valeur tout en gardant le poids dans la capacité du sac à dos. Pour résoudre le problème, nous devons prendre en compte plusieurs exigences, comme le fait que les objets ne peuvent pas être remplacés une fois qu'ils sont placés dans le sac à dos et que nous ne pouvons pas diviser un objet. Le problème est NP-difficile, ce qui signifie qu'il n'existe pas d'algorithme en temps polynomial connu qui puisse le résoudre de manière optimale pour tous les cas.

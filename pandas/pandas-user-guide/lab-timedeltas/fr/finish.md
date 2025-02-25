@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, nous avons appris à travailler avec des écarts temporels en Python à l'aide de la bibliothèque pandas. Nous avons vu comment construire un écart temporel, le convertir en écart temporel, effectuer des opérations, accéder à des attributs, le convertir en durée ISO 8601, créer un index d'écart temporel, utiliser l'index d'écart temporel, effectuer des opérations avec l'index d'écart temporel et rééchantillonner un index d'écart temporel. Avec ces compétences, vous pouvez efficacement gérer et manipuler des données basées sur le temps dans vos futurs travaux d'analyse de données.

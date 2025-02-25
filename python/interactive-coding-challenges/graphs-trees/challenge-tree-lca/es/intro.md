@@ -1,0 +1,3 @@
+# Introducción
+
+En informática, un árbol binario es una estructura de datos de árbol en la que cada nodo tiene como máximo dos hijos, que se denominan hijo izquierdo y hijo derecho. El ancestro común más bajo (LCA, por sus siglas en inglés) de dos nodos v y w en un árbol o grafo dirigido acíclico (DAG) es el nodo más bajo (es decir, el más profundo) que tiene a v y w como descendientes, donde definimos que cada nodo es un descendiente de sí mismo (por lo tanto, si v tiene una conexión directa desde w, w es el ancestro común más bajo). En este desafío, encontraremos el ancestro común más bajo en un árbol binario.

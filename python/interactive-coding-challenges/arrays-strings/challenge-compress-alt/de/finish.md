@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Zusammenfassend lässt sich sagen, dass diese Herausforderung von uns verlangt, einen String auf eine bestimmte Weise zu komprimieren, um Speicherplatz zu sparen. Wir müssen sicherstellen, dass die komprimierte Zeichenkette kürzer als die ursprüngliche Zeichenkette ist, andernfalls geben wir die ursprüngliche Zeichenkette zurück. Die Anforderungen an diese Herausforderung umfassen die Verwendung von ASCII-Zeichenketten, die Groß-/Kleinschreibung beachten, die Verwendung zusätzlicher Datenstrukturen zu erlauben und die Annahme, dass die Zeichenkette in den Arbeitsspeicher passt.

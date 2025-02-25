@@ -1,0 +1,3 @@
+# Résumé
+
+Le tri par insertion est un algorithme de tri simple et efficace qui fonctionne bien pour les petites listes ou les listes partiellement triées. Il a une complexité temporelle de O(n^2) dans le pire des cas, mais il peut être plus rapide que d'autres algorithmes de tri pour les petites listes ou les listes partiellement triées. L'algorithme fonctionne en insérant répétitivement l'élément suivant dans le tableau trié, en construisant le tableau trié final un élément à la fois. L'implémentation du tri par insertion en Python devrait répondre aux exigences mentionnées ci-dessus et gérer gracefully les entrées invalides.

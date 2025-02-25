@@ -1,0 +1,3 @@
+# Resumen
+
+El problema de la mochila es un problema clásico de optimización que se utiliza en muchas aplicaciones del mundo real. Es un problema de optimización combinatoria, donde el objetivo es seleccionar elementos para maximizar el valor mientras se mantiene el peso dentro de la capacidad de la mochila. Para resolver el problema, debemos considerar varios requisitos, como el hecho de que los elementos no se pueden reemplazar una vez que se colocan en la mochila y que no podemos dividir un elemento. El problema es NP-difícil, lo que significa que no existe un algoritmo de tiempo polinomial conocido que pueda resolverlo de manera óptima para todos los casos.

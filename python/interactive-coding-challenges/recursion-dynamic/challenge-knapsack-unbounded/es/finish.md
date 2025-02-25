@@ -1,0 +1,3 @@
+# Resumen
+
+El problema de la mochila ilimitada es una variación del problema de la mochila en la que los elementos se pueden seleccionar múltiples veces. Para resolver este problema, los elementos se pueden reemplazar una vez que se colocan en la mochila, y un elemento no se puede dividir. Los elementos de entrada no pueden tener un peso o valor de 0, y solo se debe devolver el valor total. Las entradas pueden no ser válidas, por lo que se requiere validación, y las entradas están ordenadas por val/peso. Las restricciones de memoria no son un problema. El problema de la mochila ilimitada se puede utilizar en varios escenarios, como la asignación de recursos y la optimización de carteras financieras.

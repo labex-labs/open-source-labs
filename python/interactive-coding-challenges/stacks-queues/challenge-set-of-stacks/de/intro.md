@@ -1,0 +1,3 @@
+# Einführung
+
+In der Informatik ist ein Stapel (Stack) ein abstrakter Datentyp, der als Sammlung von Elementen fungiert und zwei Hauptoperationen hat: push, mit der ein Element zur Sammlung hinzugefügt wird, und pop, mit der das zuletzt hinzugefügte noch nicht entfernte Element entfernt wird. In einigen Fällen müssen wir möglicherweise eine Menge von Stapeln implementieren, wobei jeder Stapel eine begrenzte Kapazität hat. Wenn ein Stapel seine Kapazität erreicht, wird ein neuer Stapel erstellt, um zusätzliche Elemente zu speichern. In dieser Herausforderung werden wir eine SetOfStacks-Klasse implementieren, die eine Liste von Stapeln umschließt, wobei jeder Stapel durch eine Kapazität begrenzt ist.
