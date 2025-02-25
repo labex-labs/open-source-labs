@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce laboratoire montre comment gérer la précision des dates et les epochs dans Matplotlib. Nous pouvons définir l'époque à la valeur par défaut ancienne ou nouvelle en utilisant la méthode `mdates.set_epoch`. Nous pouvons ensuite convertir des objets `datetime` ou `numpy.datetime64` en dates Matplotlib en utilisant la fonction `mdates.date2num`, et effectuer un aller-retour avec les dates en utilisant la fonction `mdates.num2date` pour vous assurer que la conversion est précise. Nous pouvons également tracer des données avec différentes epochs pour observer les différences dans le tracé.

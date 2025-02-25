@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris à modifier la Toolbar, à créer des outils personnalisés, à ajouter des outils et à supprimer des outils à l'aide de `matplotlib.backend_managers.ToolManager`. Nous avons créé un outil personnalisé nommé `ListTools`, qui liste tous les outils contrôlés par le `ToolManager`. Nous avons également créé un outil personnalisé nommé `GroupHideTool`, qui définit la visibilité de toutes les lignes du tracé qui ont le `gid` spécifié sur True ou False, selon que l'outil est activé ou désactivé. Enfin, nous avons ajouté les outils personnalisés au `ToolManager`, ajouté l'outil `Show` à la `Toolbar` et supprimé le bouton `forward` de la `Toolbar`.

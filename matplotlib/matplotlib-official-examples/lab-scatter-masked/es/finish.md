@@ -1,0 +1,3 @@
+# Resumen
+
+En este tutorial, aprendimos cómo crear un diagrama de dispersión con puntos de datos enmascarados utilizando la biblioteca Matplotlib de Python. También agregamos una línea para delimitar las regiones enmascaradas. Comenzamos importando las bibliotecas necesarias y estableciendo la semilla aleatoria. A continuación, generamos datos para el diagrama de dispersión y enmascaramos los puntos de datos en función de su distancia al origen. Luego creamos un diagrama de dispersión de los puntos de datos enmascarados y agregamos una línea para delimitar las regiones enmascaradas. Finalmente, mostramos el diagrama de dispersión.

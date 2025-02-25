@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, nous avons appris à propos de la rastérisation pour les graphiques vectoriels. Nous avons utilisé la bibliothèque Python Matplotlib pour illustrer le concept de rastérisation. Nous avons créé une figure avec quatre sous-graphiques pour illustrer les différents aspects de la rastérisation. Nous avons également appris comment la rastérisation peut accélérer le rendu et produire des fichiers plus petits pour de grandes séries de données, mais cela se fait au prix d'une résolution fixe. Nous avons également appris comment la rastérisation peut permettre aux graphiques vectoriels de conserver les avantages des graphiques vectoriels pour certains artistes tels que les axes et le texte.

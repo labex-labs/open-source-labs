@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendió cómo utilizar Matplotlib para ajustar de manera interactiva el rango de la mapa de colores en una imagen utilizando una barra de colores. Utilizó el modo de zoom y desplazamiento para ajustar los valores mínimo y máximo (vmin y vmax) de la normalización. Hacer zoom con el botón derecho del mouse expandió los valores mínimo y máximo proporcionalmente a la región seleccionada. Al desplazar, los valores mínimo y máximo de la normalización se desplazaron según la dirección del movimiento. También aprendió cómo agregar una barra de colores a la gráfica y mostrar la gráfica.

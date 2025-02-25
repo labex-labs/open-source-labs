@@ -1,0 +1,3 @@
+# Resumen
+
+En este tutorial, aprendimos cómo utilizar Matplotlib para aplicar anti-aliasing a una imagen y reducir los patrones de Moiré causados por la submuestreación de datos de alta frecuencia. Generamos una imagen de 450x450 píxeles con contenido de frecuencia variable, y submuestreamos la imagen de 450 píxeles de datos a 125 píxeles o 250 píxeles utilizando interpolación 'nearest' y 'antialiased'. También demostramos cómo la interpolación hacia arriba de una imagen utilizando interpolación 'nearest' todavía puede conducir a patrones de Moiré, pero utilizar algoritmos de anti-aliasing mejores puede reducir estos efectos.

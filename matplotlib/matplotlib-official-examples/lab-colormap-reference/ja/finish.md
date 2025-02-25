@@ -1,0 +1,3 @@
+# まとめ
+
+この実験では、Matplotlibを使ってカラーマップを作成する方法を学びました。`matplotlib.colors`モジュールの`ListedColormap`と`LinearSegmentedColormap`クラス、およびMatplotlibが提供する組み込みのカラーマップについて学びました。また、カラーマップを反転させる方法とカスタムカラーマップを作成する方法も学びました。

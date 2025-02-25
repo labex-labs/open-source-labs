@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie wir den usetex-Modus in Matplotlib verwenden, um benutzerdefinierte Schrifttexteffekte auf unsere Diagramme anzuwenden. Wir haben eine Funktion definiert, um die Schrift zu setzen, und dann die `fig.text()`-Methode verwendet, um Text zu unserem Diagramm hinzuzufügen. Wir haben auch über eine Liste von Schriften und entsprechendem Text iteriert, um verschiedene Schrifttexteffekte zu demonstrieren. Indem Sie diese Schritte befolgen, können Sie in Matplotlib professionell aussehende Diagramme mit benutzerdefinierten Schriften erstellen.

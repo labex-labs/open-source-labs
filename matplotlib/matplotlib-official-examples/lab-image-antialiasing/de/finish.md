@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man Matplotlib verwendet, um ein Bild zu entzerren, um die durch die Unterabtastung von Hochfrequenzdaten verursachten Moiré-Muster zu reduzieren. Wir haben ein 450x450-Pixel-Bild mit unterschiedlichem Frequenzgehalt generiert und das Bild von 450 Datenpunkten auf entweder 125 Pixel oder 250 Pixel mit 'nearest' und 'antialiased' Interpolation unterabgetastet. Wir haben auch gezeigt, dass das Aufvergrößern eines Bildes mit 'nearest' Interpolation immer noch zu Moiré-Mustern führen kann, aber die Verwendung besserer Entzerrungsalgorithmen diese Effekte reduzieren kann.

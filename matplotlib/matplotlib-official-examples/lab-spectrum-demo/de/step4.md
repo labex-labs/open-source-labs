@@ -1,0 +1,3 @@
+# Diagramme interpretieren
+
+Wir können sehen, dass das erste Diagramm das Signal im Zeitbereich zeigt. Das zweite Diagramm zeigt das Amplitudenspektrum des Signals, das uns die Stärke der verschiedenen Frequenzkomponenten im Signal mitteilt. Das dritte Diagramm zeigt das logarithmische Amplitudenspektrum, das hilfreich ist, um das gesamte Spektrum zu visualisieren, wenn es sehr große und sehr kleine Werte gibt. Das vierte Diagramm zeigt das Phasenspektrum, das uns die Phasenschift jeder Frequenzkomponente im Signal mitteilt. Schließlich zeigt das fünfte Diagramm das Winkelspektrum, das ähnlich zum Phasenspektrum ist, aber Radiant statt Grad verwendet.

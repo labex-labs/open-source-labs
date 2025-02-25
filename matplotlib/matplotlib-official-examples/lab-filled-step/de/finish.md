@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man mit Matplotlib mit Schraffierungen gefüllte Histogramme erstellt. Wir haben zwei Funktionen definiert: `filled_hist`, um ein Histogramm als gestuftes Patch zu zeichnen, und `stack_hist`, um ein gestapeltes Histogramm zu erstellen. Wir haben auch eine Histogrammfunktion mit fester Anzahl von Bins mithilfe von `numpy.histogram` eingerichtet und drei Stilzyklen für die Histogramme mit `cycler` definiert. Schließlich haben wir zufällige Daten generiert und zwei mit Schraffierungen gefüllte Histogramme mit der `stack_hist`-Funktion erstellt.

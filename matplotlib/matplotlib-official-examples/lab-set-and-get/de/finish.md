@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man die pyplot-Schnittstelle in Matplotlib verwendet, um Objekteigenschaften für die Visualisierung von Daten festzulegen und abzurufen. Wir haben die `setp`-Methode verwendet, um die Eigenschaften eines Objekts festzulegen, und die `getp`-Methode, um die Eigenschaften eines Objekts abzurufen. Wir haben auch über Aliase für Eigenschaften gelernt, um die Anzahl der erforderlichen Tastatureingaben zu reduzieren. Matplotlib ist eine leistungsstarke Bibliothek, die es Ihnen ermöglicht, eine Vielzahl von Visualisierungen in Python zu erstellen.

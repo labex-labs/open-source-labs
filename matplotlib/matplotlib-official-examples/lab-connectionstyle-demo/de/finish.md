@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab wurde ein Überblick über die Erstellung von Anmerkungskonnektionsstilen mit der Matplotlib-Bibliothek in Python gegeben. Anmerkungen sind ein nützliches Werkzeug bei der Datenvisualisierung und können verwendet werden, um bestimmte Datenpunkte auf einem Graphen zu erklären oder hervorzuheben. Der Verbindungsstil einer Anmerkung bezieht sich auf die Form und den Stil der Linie, die die Anmerkung mit dem Datenpunkt verbindet. Wenn Sie den in diesem Lab beschriebenen Schritten folgen, sollten Sie jetzt in der Lage sein, eigene Anmerkungskonnektionsstile in Matplotlib zu erstellen.

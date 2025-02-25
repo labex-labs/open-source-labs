@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man Plots mit Matplotlib erstellt und anpasst. Wir haben dabei erfahren, wie man eine Figur und Teilplots erstellt, Daten plotten, Achsenbeschriftungen anpassen, Text zum Plot hinzufügen, Gitterlinien hinzufügen, X-Achsenbeschriftungen anpassen, eine horizontale Linie und einen Titel zum Plot hinzufügen und die Teilplot-Positionen anpassen. Matplotlib bietet eine Vielzahl von Tools für die Erstellung von statischen, animierten und interaktiven Visualisierungen in Python, was es zu einer leistungsstarken Bibliothek für die Datenvisualisierung macht.

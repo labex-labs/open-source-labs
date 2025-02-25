@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris à créer et personnaliser des tracés à l'aide de Matplotlib. Nous avons vu comment créer une figure et des sous-graphiques, tracer des données, personnaliser les étiquettes des axes, ajouter du texte au tracé, ajouter des lignes de grille, personnaliser les étiquettes de l'axe des x, ajouter une ligne horizontale et un titre au tracé, et ajuster les positions des sous-graphiques. Matplotlib fournit une large gamme d'outils pour créer des visualisations statiques, animées et interactives en Python, ce qui en fait une bibliothèque puissante pour la visualisation de données.

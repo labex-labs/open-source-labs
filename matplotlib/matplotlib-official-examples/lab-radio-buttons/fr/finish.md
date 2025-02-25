@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, nous avons appris à créer une visualisation avec des boutons radio à l'aide de la bibliothèque `matplotlib`. Nous avons utilisé des boutons radio pour permettre à l'utilisateur de choisir entre différentes ondes sinusoïdales à afficher dans le graphique. Nous avons également ajouté une fonctionnalité aux boutons radio en définissant des fonctions qui étaient appelées lorsque les boutons étaient cliqués. Dans l'ensemble, ce laboratoire a démontré comment les boutons radio peuvent être utilisés pour créer des visualisations interactives qui permettent aux utilisateurs d'explorer différents aspects des données.

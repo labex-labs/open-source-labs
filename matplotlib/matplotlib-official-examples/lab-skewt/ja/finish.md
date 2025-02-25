@@ -1,0 +1,3 @@
+# まとめ
+
+この実験では、Matplotlibの変換とカスタム射影APIを使ってSkewT - logP図を作成する方法を学びました。目盛りを描画するためのSkewXTickクラス、目盛り用に別個の区間を提供するSkewXAxisクラス、およびスパインを描画するSkewSpineクラスを作成しました。また、SkewXAxes射影の変換と登録を処理するためのSkewXAxesクラスも作成しました。最後に、データを準備してSkewXAxesサブプロットにプロットすることでSkewT - logP図を作成しました。

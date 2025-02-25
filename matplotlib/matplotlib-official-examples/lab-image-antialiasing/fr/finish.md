@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris à utiliser Matplotlib pour anti-alias une image afin de réduire les motifs de Moiré causés par le sous-échantillonnage de données haute fréquence. Nous avons généré une image de 450x450 pixels avec un contenu de fréquence variable, et avons sous-échantillonné l'image de 450 pixels de données à 125 pixels ou 250 pixels en utilisant l'interpolation 'nearest' et 'antialiased'. Nous avons également démontré comment le redimensionnement d'une image en utilisant l'interpolation 'nearest' peut encore entraîner des motifs de Moiré, mais en utilisant de meilleurs algorithmes d'anti-aliasing, on peut réduire ces effets.

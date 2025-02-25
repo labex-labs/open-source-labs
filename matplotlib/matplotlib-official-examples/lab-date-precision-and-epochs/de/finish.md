@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Dieses Lab zeigt, wie man Datengenauigkeit und Epochen in Matplotlib behandelt. Wir können die Epoche auf die alte Standardeinstellung oder die neue Standardeinstellung mit der Methode `mdates.set_epoch` setzen. Anschließend können wir `datetime`- oder `numpy.datetime64`-Objekte in Matplotlib-Daten mit der Funktion `mdates.date2num` umwandeln und die Daten in die ursprüngliche Richtung zurückverfolgen, indem wir die Funktion `mdates.num2date` verwenden, um sicherzustellen, dass die Umwandlung korrekt ist. Wir können auch Daten mit verschiedenen Epochen plotten, um die Unterschiede im Plot zu beobachten.

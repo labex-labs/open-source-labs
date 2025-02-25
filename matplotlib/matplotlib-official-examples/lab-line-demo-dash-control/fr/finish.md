@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, nous avons appris à personnaliser les styles de lignes traits discontinus dans Matplotlib. Nous avons vu comment modifier la séquence de traits discontinus à l'aide de `.Line2D.set_dashes()`, configurer le style de trait discontinu à l'aide d'un `property_cycle` et définir d'autres attributs du trait discontinu à l'aide de méthodes appropriées telles que `~.Line2D.set_dash_capstyle()`, `~.Line2D.set_dash_joinstyle()` et `~.Line2D.set_gapcolor()`. En suivant ces étapes, vous pouvez créer des styles de lignes traits discontinus personnalisés pour vos tracés dans Matplotlib.

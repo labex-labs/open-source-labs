@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man ein animiertes Bild mit Hilfe von vordefinierten Listen von Bildern erstellt. Wir haben die Matplotlib-Bibliothek in Python verwendet, um die Animation zu erstellen, und die Numpy-Bibliothek, um die Daten für die Animation zu generieren. Wir haben die Figure- und Axes-Objekte erstellt, die Funktion definiert, die Daten generiert, die Animationsframes erstellt und die Animation erstellt. Anschließend haben wir die Animation mit der `show`-Methode angezeigt. Dieses Lab hat ein grundlegendes Verständnis davon vermittelt, wie man ein animiertes Bild erstellt, und demonstriert den Prozess dazu.

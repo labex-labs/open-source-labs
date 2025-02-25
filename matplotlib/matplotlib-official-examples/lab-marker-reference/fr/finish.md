@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, vous avez appris à utiliser les marqueurs de Matplotlib pour créer des visualisations personnalisées. Plus précisément, vous avez appris à créer des marqueurs non remplis et remplis, des styles de remplissage de marqueurs, des marqueurs créés à partir de symboles TeX, des marqueurs créés à partir de chemins, des modifications avancées de marqueurs avec transformée, et à définir le style de terminaison et le style de jonction des marqueurs. En utilisant ces techniques, vous pouvez créer des visualisations efficaces qui communiquent vos données avec clarté et précision.

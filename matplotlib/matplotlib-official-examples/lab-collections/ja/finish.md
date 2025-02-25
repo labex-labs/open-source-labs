@@ -1,0 +1,3 @@
+# まとめ
+
+このチュートリアルでは、Matplotlibコレクションを使ってグラフを作成する方法を紹介しました。LineCollection、PolyCollection、RegularPolyCollectionを使って曲線や多角形を作成する方法を学びました。また、LineCollectionとPolyCollectionのoffsetsおよびoffset_transformキーワード引数を使って渦巻きの位置を設定する方法も学びました。

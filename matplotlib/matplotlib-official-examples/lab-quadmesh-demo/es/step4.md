@@ -1,0 +1,5 @@
+# Explicación
+
+- Paso 2: Los datos se definen utilizando matrices de numpy. Las matrices X e Y se utilizan para crear una malla (meshgrid), que se utiliza para calcular los valores de Qx y Qz. A continuación, los valores de Z se calculan en función de los valores de Qx y Qz. La matriz Zm se crea enmascarando los valores donde el valor absoluto de Qz es menor que 0,5 veces el valor máximo de Qz.
+- Paso 3: Se crea una figura con tres subtramas (subplots) utilizando el método subplots. La función pcolormesh se utiliza para crear un gráfico QuadMesh para cada subtrama. La primera subtrama muestra el gráfico sin valores enmascarados. La segunda subtrama muestra el gráfico con valores enmascarados y una paleta de colores personalizada donde la región enmascarada es amarilla. La tercera subtrama muestra el gráfico con valores enmascarados y la paleta de colores predeterminada donde la región enmascarada es transparente.
+- Paso 4: El gráfico QuadMesh es una herramienta útil para visualizar datos bidimensionales. En este tutorial, aprendimos cómo utilizar la función pcolormesh para crear un gráfico QuadMesh y cómo manejar datos enmascarados en el gráfico.

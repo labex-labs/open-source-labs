@@ -1,0 +1,18 @@
+# パイチャートを作成する
+
+これでパイチャートを作成できます。まず、グラフと軸のオブジェクトを定義します。
+
+```python
+# make figure and assign axis objects
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9, 5))
+fig.subplots_adjust(wspace=0)
+```
+
+次に、パイチャートのパラメータを設定してプロットします。
+
+```python
+# rotate so that first wedge is split by the x-axis
+angle = -180 * overall_ratios[0]
+wedges, *_ = ax1.pie(overall_ratios, autopct='%1.1f%%', startangle=angle,
+                     labels=labels, explode=explode)
+```

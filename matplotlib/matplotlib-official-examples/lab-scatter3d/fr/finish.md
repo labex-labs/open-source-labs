@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris à créer un nuage de points 3D à l'aide de la bibliothèque Matplotlib en Python. Nous avons configuré les données à l'aide de la bibliothèque NumPy, créé la figure et le sous-graphique à l'aide de la fonction `add_subplot`, créé le nuage de points à l'aide de la fonction `scatter`, défini les étiquettes des axes à l'aide des fonctions `set_xlabel`, `set_ylabel` et `set_zlabel`, et affiché le graphique à l'aide de la fonction `show`. Avec ces compétences, vous pouvez créer et personnaliser des nuages de points 3D pour analyser et visualiser des données complexes.

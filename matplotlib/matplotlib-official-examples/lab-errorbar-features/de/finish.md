@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir die verschiedenen Möglichkeiten der Angabe von Fehlerbalken in Matplotlib kennengelernt. Wir haben begonnen, indem wir die erforderlichen Bibliotheken importiert und unsere Daten und Fehlerwerte definiert haben. Anschließend haben wir Plots mit variablen, symmetrischen Fehlerbalken und variablen, asymmetrischen Fehlerbalken erstellt. Schließlich haben wir unsere Daten mit einer logarithmischen Skala und Fehlerbalken geplottet. Indem wir Fehlerbalken in unseren Visualisierungen verwenden, können wir wertvolle Informationen über die Unsicherheit in den Daten liefern.

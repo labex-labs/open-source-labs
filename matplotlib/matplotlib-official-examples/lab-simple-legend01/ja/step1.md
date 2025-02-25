@@ -1,0 +1,7 @@
+# 必要なライブラリをインポートする
+
+始める前に、必要なライブラリをインポートする必要があります。この場合、Matplotlibライブラリを使用します。
+
+```python
+import matplotlib.pyplot as plt
+```

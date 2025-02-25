@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man benutzerdefinierte Legenden mit Matplotlib-Objekten erstellt. Wir haben begonnen, indem wir eine Reihe von Linien gezeichnet und eine Standardlegende generiert haben. Anschließend haben wir eine benutzerdefinierte Legende mit `Line2D`-Objekten mit benutzerdefinierten Attributen zusammengestellt. Schließlich haben wir eine benutzerdefinierte Legende mit verschiedenen Matplotlib-Objekten erstellt, darunter `Line2D` und `Patch`. Indem wir benutzerdefinierte Legenden verwenden, können wir eine klare und prägnante Erklärung der im Diagramm dargestellten Daten geben.

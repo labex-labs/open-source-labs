@@ -1,0 +1,3 @@
+# Résumé
+
+Ce laboratoire a donné une vue d'ensemble de la manière de créer des styles de connexion d'annotation à l'aide de la bibliothèque Matplotlib en Python. Les annotations sont un outil utile dans la visualisation de données et peuvent être utilisées pour expliquer ou souligner des points de données spécifiques sur un graphique. Le style de connexion d'une annotation fait référence à la forme et au style de la ligne reliant l'annotation au point de données. En suivant les étapes décrites dans ce laboratoire, vous devriez désormais être en mesure de créer vos propres styles de connexion d'annotation dans Matplotlib.

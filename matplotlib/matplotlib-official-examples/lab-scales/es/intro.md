@@ -1,0 +1,11 @@
+# Introducción
+
+Matplotlib es una biblioteca de Python utilizada para la visualización de datos. Permite a los usuarios crear una amplia variedad de gráficos, diagramas y gráficas. Una de las características clave de Matplotlib es su capacidad para aplicar transformaciones de escala a los ejes. Esto permite una mayor flexibilidad en la presentación de datos, especialmente cuando se tratan números muy grandes o muy pequeños. En este laboratorio, aprenderemos cómo aplicar diversas transformaciones de escala a los ejes utilizando Matplotlib.
+
+## Consejos sobre la VM
+
+Una vez finalizada la inicialización de la VM, haga clic en la esquina superior izquierda para cambiar a la pestaña **Cuaderno** y acceder a Jupyter Notebook para practicar.
+
+A veces, es posible que tenga que esperar unos segundos a que Jupyter Notebook termine de cargarse. La validación de las operaciones no se puede automatizar debido a las limitaciones de Jupyter Notebook.
+
+Si tiene problemas durante el aprendizaje, no dude en preguntar a Labby. Deje su retroalimentación después de la sesión y resolveremos rápidamente el problema para usted.

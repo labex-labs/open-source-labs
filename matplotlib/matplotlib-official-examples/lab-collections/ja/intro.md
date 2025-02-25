@@ -1,0 +1,11 @@
+# はじめに
+
+このチュートリアルでは、Matplotlibコレクションを使用したビジュアライゼーションの作成方法を案内します。このチュートリアルでは、LineCollection、PolyCollection、およびRegularPolyCollectionの使い方を紹介します。また、LineCollectionとPolyCollectionのオフセットとoffset_transformキーワード引数を使って渦巻きの位置を設定する方法も紹介します。さらに、RegularPolyCollectionを使って正多角形を作成する方法も紹介します。
+
+## VMのヒント
+
+VMの起動が完了したら、左上隅をクリックして**ノートブック**タブに切り替え、Jupyter Notebookを使って練習しましょう。
+
+Jupyter Notebookの読み込みには数秒かかる場合があります。Jupyter Notebookの制限により、操作の検証を自動化することはできません。
+
+学習中に問題がある場合は、Labbyにお問い合わせください。セッション後にフィードバックを提供してください。すぐに問題を解決いたします。

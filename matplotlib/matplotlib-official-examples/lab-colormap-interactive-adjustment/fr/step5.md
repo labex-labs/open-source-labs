@@ -1,0 +1,3 @@
+# Ajuster la mappage des couleurs
+
+Maintenant, vous pouvez ajuster de manière interactive la plage de mappage des couleurs sur l'image à l'aide de la barre de couleur. Vous pouvez zoomer ou panser en cliquant à l'intérieur de la barre de couleur. Lors du zoom, la boîte englobante de la région de zoom définit les nouvelles valeurs minimales et maximales (vmin et vmax) de la norme. Le zoom effectué en utilisant le bouton droit de la souris fera augmenter proportionnellement vmin et vmax par rapport à la région sélectionnée. Lors du pansage, les valeurs vmin et vmax de la norme sont toutes les deux déplacées selon la direction du mouvement.

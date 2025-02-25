@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man mit der Python-Bibliothek Matplotlib ein Streudiagramm mit maskierten Datenpunkten erstellt. Wir haben auch eine Linie hinzugefügt, um die maskierten Bereiche zu markieren. Wir haben begonnen, indem wir die erforderlichen Bibliotheken importiert und den Zufallszahlengenerator initialisiert haben. Anschließend haben wir die Daten für das Streudiagramm generiert und die Datenpunkte basierend auf ihrem Abstand vom Ursprung maskiert. Danach haben wir ein Streudiagramm der maskierten Datenpunkte erstellt und eine Linie hinzugefügt, um die maskierten Bereiche zu markieren. Schließlich haben wir das Streudiagramm angezeigt.

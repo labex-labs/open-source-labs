@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man mit Hilfe der `matplotlib`-Bibliothek eine Visualisierung mit Radiobuttons erstellt. Wir haben Radiobuttons verwendet, um dem Benutzer die Möglichkeit zu geben, zwischen verschiedenen Sinuswellen auszuwählen, die im Diagramm angezeigt werden sollen. Wir haben auch der Radiobuttons Funktionalität hinzugefügt, indem wir Funktionen definiert haben, die aufgerufen wurden, wenn auf die Buttons geklickt wurde. Insgesamt hat dieses Lab gezeigt, wie Radiobuttons verwendet werden können, um interaktive Visualisierungen zu erstellen, die es Benutzern ermöglichen, verschiedene Aspekte der Daten zu erkunden.

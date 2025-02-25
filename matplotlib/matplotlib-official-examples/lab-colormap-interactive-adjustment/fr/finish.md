@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, vous avez appris à utiliser Matplotlib pour ajuster de manière interactive la plage de mappage des couleurs sur une image à l'aide d'une barre de couleur. Vous avez utilisé le mode de zoom et de pansage pour ajuster les valeurs minimales et maximales (vmin et vmax) de la norme. Le zoom effectué en utilisant le bouton droit de la souris a fait augmenter proportionnellement vmin et vmax par rapport à la région sélectionnée. Lors du pansage, les valeurs vmin et vmax de la norme ont été toutes les deux déplacées selon la direction du mouvement. Vous avez également appris à ajouter une barre de couleur à la représentation graphique et à l'afficher.

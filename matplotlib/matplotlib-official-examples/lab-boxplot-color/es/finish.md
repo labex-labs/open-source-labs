@@ -1,0 +1,3 @@
+# Resumen
+
+En este tutorial, aprendimos cómo crear colores de relleno personalizados para diagramas de caja utilizando Python Matplotlib. Comenzamos importando las bibliotecas necesarias, creando datos de prueba aleatorios y luego creando diagramas de caja rectangulares y con muesca. Luego rellenamos los diagramas de caja con colores personalizados y agregamos líneas de cuadrícula horizontales. Los diagramas de caja son una herramienta de visualización útil para mostrar la distribución de datos y los colores de relleno personalizados se pueden utilizar para hacerlos más atractivos visualmente.

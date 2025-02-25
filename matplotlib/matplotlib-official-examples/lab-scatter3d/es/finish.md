@@ -1,0 +1,3 @@
+# Resumen
+
+En este tutorial, aprendimos cómo crear un diagrama de dispersión 3D utilizando la biblioteca Matplotlib en Python. Configuramos los datos utilizando la biblioteca NumPy, creamos la figura y el subgráfico utilizando la función `add_subplot`, creamos el diagrama de dispersión utilizando la función `scatter`, establecimos las etiquetas de los ejes utilizando las funciones `set_xlabel`, `set_ylabel` y `set_zlabel`, y mostramos el gráfico utilizando la función `show`. Con estas habilidades, puedes crear y personalizar diagramas de dispersión 3D para analizar y visualizar datos complejos.

@@ -1,0 +1,3 @@
+# Sommaire
+
+En résumé, lorsqu'on travaille avec Matplotlib, il est important de vérifier le type de données des valeurs de l'axe x. Si ce sont des chaînes de caractères, nous devons les convertir en types numériques pour corriger un comportement inattendu des étiquettes d'échelle. Si il y a trop d'étiquettes d'échelle, nous devons également convertir les chaînes de caractères en types numériques. Lorsqu'on travaille avec des valeurs de date et d'heure, nous devons convertir les chaînes de caractères en objets de date et d'heure pour obtenir les localisateurs et les formatteurs de date appropriés.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris à créer des couleurs de remplissage personnalisées pour les diagrammes en boîte à l'aide de Matplotlib en Python. Nous avons commencé par importer les bibliothèques requises, en créant des données de test aléatoires, puis en créant des diagrammes en boîte rectangulaires et à encoche. Nous avons ensuite rempli les diagrammes en boîte avec des couleurs personnalisées et ajouté des lignes de grille horizontales. Les diagrammes en boîte sont un outil de visualisation utile pour afficher la distribution des données et les couleurs de remplissage personnalisées peuvent être utilisées pour les rendre plus visuellement attrayants.

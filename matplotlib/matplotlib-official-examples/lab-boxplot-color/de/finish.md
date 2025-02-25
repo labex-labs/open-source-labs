@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man benutzerdefinierte Füllfarben für Boxplots mit Python Matplotlib erstellt. Wir haben begonnen, indem wir die erforderlichen Bibliotheken importiert, zufällige Testdaten erstellt und dann rechteckige und gekerbte Boxplots erstellt. Anschließend haben wir die Boxplots mit benutzerdefinierten Farben gefüllt und horizontale Gitternetzlinien hinzugefügt. Boxplots sind ein nützliches Visualisierungstool zum Anzeigen der Datenverteilung, und benutzerdefinierte Füllfarben können verwendet werden, um sie visuell ansprechender zu gestalten.

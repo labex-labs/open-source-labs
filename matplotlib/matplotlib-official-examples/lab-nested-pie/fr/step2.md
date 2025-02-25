@@ -1,0 +1,23 @@
+# Créez un diagramme circulaire imbriqué à l'aide de `ax.pie`
+
+Nous pouvons créer un diagramme circulaire imbriqué à l'aide de la méthode `ax.pie`. Nous allons tout d'abord générer des données factices, correspondant à trois groupes. Dans le cercle intérieur, nous considérerons chaque nombre comme appartenant à son propre groupe. Dans le cercle extérieur, nous les représenterons comme des membres de leurs 3 groupes originaux.
+
+```python
+fig, ax = plt.subplots()
+
+size = 0.3
+vals = np.array([[60., 32.], [37., 40.], [29., 10.]])
+
+cmap = plt.colormaps["tab20c"]
+outer_colors = cmap(np.arange(3)*4)
+inner_colors = cmap([1, 2, 5, 6, 9, 10])
+
+ax.pie(vals.sum(axis=1), radius=1, colors=outer_colors,
+       wedgeprops=dict(width=size, edgecolor='w'))
+
+ax.pie(vals.flatten(), radius=1-size, colors=inner_colors,
+       wedgeprops=dict(width=size, edgecolor='w'))
+
+ax.set(aspect="equal", title='Pie plot with `ax.pie`')
+plt.show()
+```

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à créer un diagramme SkewT-logP en utilisant les transformations de Matplotlib et l'API de projection personnalisée. Nous avons créé une classe SkewXTick pour tracer les graduations, une classe SkewXAxis pour fournir des intervalles séparés pour les graduations et une classe SkewSpine pour tracer l'arête. Nous avons également créé une classe SkewXAxes pour gérer les transformations et l'enregistrement de la projection SkewXAxes. Enfin, nous avons créé un diagramme SkewT-logP en préparant les données et en les traçant sur le sous-graphique SkewXAxes.

@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo personalizar las etiquetas de los valores de graduación en una barra de color en Matplotlib. Primero creamos un gráfico con una barra de color vertical y personalizamos las etiquetas de los valores de graduación utilizando `set_yticklabels`. Luego creamos un gráfico con una barra de color horizontal y personalizamos las etiquetas de los valores de graduación utilizando `set_xticklabels`. Personalizar las etiquetas de los valores de graduación en una barra de color puede ayudar a hacer que tus visualizaciones sean más informativas y fáciles de leer.

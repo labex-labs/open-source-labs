@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris à créer un graphique en nuage de points avec des points de données masqués à l'aide de la bibliothèque Python Matplotlib. Nous avons également ajouté une ligne pour délimiter les régions masquées. Nous avons commencé par importer les bibliothèques nécessaires et en définissant la graine aléatoire. Ensuite, nous avons généré des données pour le graphique en nuage de points et avons masqué les points de données en fonction de leur distance par rapport à l'origine. Nous avons ensuite créé un graphique en nuage de points des points de données masqués et ajouté une ligne pour délimiter les régions masquées. Enfin, nous avons affiché le graphique en nuage de points.

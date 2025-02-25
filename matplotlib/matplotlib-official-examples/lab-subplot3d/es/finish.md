@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo crear gráficos tridimensionales como subgráficos utilizando Matplotlib. Creamos una figura con dos subgráficos, una representación de superficie tridimensional y una representación de wireframe tridimensional. Utilizamos NumPy para crear los datos de la representación de superficie tridimensional y la función `get_test_data` de mpl_toolkits.mplot3d.axes3d para crear los datos de la representación de wireframe tridimensional. También agregamos una barra de colores a la representación de superficie tridimensional y establecimos los límites del eje z.

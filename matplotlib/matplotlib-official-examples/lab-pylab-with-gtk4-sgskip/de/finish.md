@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man `pyplot` verwendet, um Figurfenster zu verwalten, aber die grafische Benutzeroberfläche (GUI) durch den Zugriff auf die zugrunde liegenden GTK-Widgets zu modifizieren. Wir haben eine Figur mit zwei Diagrammen erstellt, einen Button zur Symbolleiste hinzugefügt und ein Label zur Zeichenfläche. Wir haben auch Funktionalität hinzugefügt, um die Koordinaten des Cursors anzuzeigen, wenn er über den Diagrammen bewegt wird. Dieses Lab vermittelt ein grundlegendes Verständnis davon, wie man die GUI einer matplotlib-Figur mit GTK4 anpassen kann.

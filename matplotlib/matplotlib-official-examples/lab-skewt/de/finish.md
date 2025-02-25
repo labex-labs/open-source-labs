@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man ein SkewT-logP-Diagramm mit Matplotlibs Transformations- und benutzerdefinierter Projections-API erstellt. Wir haben eine SkewXTick-Klasse erstellt, um die Markierungen zu zeichnen, eine SkewXAxis-Klasse, um separate Intervalle für die Markierungen bereitzustellen, und eine SkewSpine-Klasse, um die Spur zu zeichnen. Wir haben auch eine SkewXAxes-Klasse erstellt, um die Transformationen und die Registrierung der SkewXAxes-Projection zu verwalten. Schließlich haben wir ein SkewT-logP-Diagramm erstellt, indem wir die Daten vorbereitet und auf dem SkewXAxes-Subplot geplottet haben.

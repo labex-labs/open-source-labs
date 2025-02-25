@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man mit der Matplotlib-Bibliothek in Python einen 3D-Streudiagramm erstellt. Wir haben die Daten mit der NumPy-Bibliothek aufgesetzt, die Figur und die Teilgrafik mit der Funktion `add_subplot` erstellt, das Streudiagramm mit der Funktion `scatter` erstellt, die Achsenbeschriftungen mit den Funktionen `set_xlabel`, `set_ylabel` und `set_zlabel` festgelegt und das Diagramm mit der Funktion `show` angezeigt. Mit diesen Fähigkeiten können Sie 3D-Streudiagramme erstellen und anpassen, um komplexe Daten zu analysieren und zu visualisieren.

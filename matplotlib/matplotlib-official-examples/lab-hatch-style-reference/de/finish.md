@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben Sie gelernt, wie Sie Schraffierungen zu den meisten Polygonen in Matplotlib hinzufügen können, einschließlich von `Axes.bar`, `Axes.fill_between`, `Axes.contourf` und den Kindern von `patches.Polygon`. Sie haben gelernt, wie Sie verschiedene Schraffierungsmuster erstellen, sie wiederholen, um die Dichte zu erhöhen, und kombinieren, um zusätzliche Muster zu erzeugen. Sie haben auch gelernt, wie Sie die `add_patch()`-Funktion verwenden, um ein `Rectangle`-Objekt zu einer Achse hinzuzufügen, und wie Sie die `text()`-Funktion verwenden, um Text zum Diagramm hinzuzufügen.

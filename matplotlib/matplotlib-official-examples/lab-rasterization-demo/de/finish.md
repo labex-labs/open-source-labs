@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir uns mit der Ver光栅isierung für Vektorgrafiken beschäftigt. Wir haben die Python Matplotlib-Bibliothek verwendet, um das Konzept der Ver光栅isierung zu veranschaulichen. Wir haben eine Figur mit vier Teilgrafiken erstellt, um die verschiedenen Aspekte der Ver光栅isierung zu veranschaulichen. Wir haben auch gelernt, wie die Ver光栅isierung die Wiedergabe beschleunigen und kleinere Dateien für große Datensätze erzeugen kann, allerdings auf Kosten einer festen Auflösung. Wir haben auch gelernt, wie die Ver光栅isierung es Vektorgrafiken ermöglicht, die Vorteile von Vektorgrafiken für einige Künstler wie Achsen und Text beizubehalten.

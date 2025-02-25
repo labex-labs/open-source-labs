@@ -1,0 +1,3 @@
+# Interprétez les graphiques
+
+On peut voir que le premier graphique montre le signal dans le domaine temporel. Le second graphique montre le spectre d'amplitude du signal, qui nous indique l'intensité des différents composants de fréquence dans le signal. Le troisième graphique montre le spectre d'amplitude logarithmique, qui est utile pour visualiser l'ensemble du spectre lorsqu'il y a des valeurs très grandes et très petites. Le quatrième graphique montre le spectre de phase, qui nous indique le déphasage de chaque composant de fréquence dans le signal. Enfin, le cinquième graphique montre le spectre d'angle, qui est similaire au spectre de phase mais utilise des radians au lieu de degrés.
