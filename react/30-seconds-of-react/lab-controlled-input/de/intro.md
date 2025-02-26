@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir lernen, wie man in React ein kontrolliertes Eingabefeld erstellt. Ein kontrolliertes Eingabefeld ist ein häufiges Muster, das zur Verwaltung von Formular-Eingabewerten in React-Anwendungen verwendet wird. Indem wir eine Callback-Funktion verwenden, um dem übergeordneten Komponenten von allen Wertaktualisierungen mitzuteilen, können wir sicherstellen, dass der Wert des Eingabefelds immer mit dem Zustand der übergeordneten Komponente synchron ist. In diesem Lab wird uns der Prozess der Erstellung und Verwendung eines kontrollierten Eingabefeldkomponenten in React geleiten.
