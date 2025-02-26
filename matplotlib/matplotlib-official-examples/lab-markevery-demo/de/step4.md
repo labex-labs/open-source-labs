@@ -5,7 +5,7 @@ Wir erstellen eine weitere Reihe von Teilgraphen, um diesmal zu zeigen, wie `mar
 ```python
 # create zoomed plots
 fig, axs = plt.subplots(3, 3, figsize=(10, 6), layout='constrained')
-for ax, markevery in zip(axs.flat, fälle):
+for ax, markevery in zip(axs.flat, cases):
     ax.set_title(f'markevery={markevery}')
     ax.plot(x, y, 'o', ls='-', ms=4, markevery=markevery)
     ax.set_xlim((6, 6.7))

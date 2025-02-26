@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le hook `useComponentWillUnmount` dans React, qui nous permet d'exécuter une fonction de rappel juste avant qu'un composant ne soit démonté et détruit. En utilisant ce hook, nous pouvons effectuer toutes les tâches de nettoyage nécessaires, telles que la suppression des écouteurs d'événements ou l'annulation de toutes les requêtes en attente. Ce laboratoire vous donnera une expérience pratique dans l'utilisation de ce hook et la compréhension de son comportement, qui est similaire à la méthode de cycle de vie `componentWillUnmount()` dans les composants de classe.

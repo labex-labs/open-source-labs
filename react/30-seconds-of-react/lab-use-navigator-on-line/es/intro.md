@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, aprenderemos a usar el hook `useNavigatorOnLine` en React para comprobar si un cliente está en línea o fuera de línea. Crearemos una función para obtener el estado de conexión del cliente usando la API web `Navigator.onLine`, usaremos el hook `useState()` para crear una variable de estado adecuada y agregaremos listeners para los eventos adecuados usando el hook `useEffect()` para actualizar el estado y limpiar esos listeners cuando se desmonte. Finalmente, devolveremos la variable de estado del estado de conexión para mostrar un mensaje basado en el estado de conexión actual.

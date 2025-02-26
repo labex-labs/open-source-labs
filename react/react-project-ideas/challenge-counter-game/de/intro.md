@@ -1,0 +1,3 @@
+# Einführung
+
+In dieser Herausforderung entwickeln Sie ein Zählspiel, auch bekannt als Inkrement-Decrement-Zähler, mithilfe von React-Hooks, nämlich useState und useEffect. Mit diesem können Sie auf einen Button klicken, um den Zählerwert zu erhöhen. Sie können dieses Spiel mit Ihren Freunden spielen und herausfordern, in einer bestimmten Zeit so oft wie möglich zu klicken...

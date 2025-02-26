@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir lernen, wie man den `useNavigatorOnLine`-Hook in React verwendet, um zu überprüfen, ob ein Client online oder offline ist. Wir werden eine Funktion erstellen, um den Online-Zustand des Clients mithilfe der `Navigator.onLine`-Web-API zu erhalten, den `useState()`-Hook verwenden, um eine passende Zustandsvariable zu erstellen, und Listener für passende Ereignisse mithilfe des `useEffect()`-Hooks hinzufügen, um den Zustand zu aktualisieren und diese Listener beim Entfernen zu bereinigen. Schließlich werden wir den Online-Zustands-Zustandsvariablen zurückgeben, um eine Nachricht basierend auf dem aktuellen Online-Zustand anzuzeigen.

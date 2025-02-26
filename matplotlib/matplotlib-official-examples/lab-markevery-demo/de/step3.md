@@ -5,7 +5,7 @@ Wir wiederholen den vorherigen Schritt, aber diesmal mit logarithmischen Skalen.
 ```python
 # create plots with logarithmic scales
 fig, axs = plt.subplots(3, 3, figsize=(10, 6), layout='constrained')
-for ax, markevery in zip(axs.flat, fälle):
+for ax, markevery in zip(axs.flat, cases):
     ax.set_title(f'markevery={markevery}')
     ax.set_xscale('log')
     ax.set_yscale('log')

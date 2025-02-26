@@ -2,7 +2,7 @@
 
 ## Problem
 
-Schreiben Sie eine Funktion `days_from_now(n)`, die eine ganze Zahl `n` als Eingabe erhält und das Datum von heute aus in `n` Tagen zurückgibt.
+Schreiben Sie eine Funktion `days_from_now(n)`, die eine ganze Zahl `n` als Eingabe erhält und das Datum von heute plus `n` Tagen zurückgibt.
 
 Um dieses Problem zu lösen, können Sie die folgenden Schritte ausführen:
 

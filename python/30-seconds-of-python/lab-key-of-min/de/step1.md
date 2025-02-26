@@ -2,7 +2,7 @@
 
 Schreiben Sie eine Funktion `key_of_min(d)`, die ein Dictionary `d` als Argument nimmt und den Schlüssel des kleinsten Werts im Dictionary zurückgibt.
 
-Um dieses Problem zu lösen, können Sie die integrierte `min()`-Funktion mit dem Parameter `key` auf `dict.get()` setzen. Dies wird den Schlüssel des kleinsten Werts im Dictionary zurückgeben.
+Um dieses Problem zu lösen, können Sie die eingebaut-funktion `min()` mit dem Parameter `key` auf `dict.get()` setzen. Dies wird den Schlüssel des kleinsten Werts im Dictionary zurückgeben.
 
 ```python
 def key_of_min(d):

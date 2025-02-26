@@ -1,15 +1,15 @@
 # Liste Schnittmenge basierend auf Funktion
 
-Schreiben Sie eine Funktion `intersection_by(a, b, fn)`, die zwei Listen `a` und `b` sowie eine Funktion `fn` annimmt. Die Funktion sollte eine Liste von Elementen zurückgeben, die in beiden Listen vorhanden sind, nachdem die bereitgestellte Funktion auf jedes Listenelement beider Listen angewendet wurde.
+Schreiben Sie eine Funktion `intersection_by(a, b, fn)`, die zwei Listen `a` und `b` sowie eine Funktion `fn` annimmt. Die Funktion sollte eine Liste von Elementen zurückgeben, die in beiden Listen existieren, nachdem die bereitgestellte Funktion auf jedes Listenelement beider Listen angewendet wurde.
 
 ### Eingabe
 
 - Zwei Listen `a` und `b` (1 <= len(a), len(b) <= 1000)
-- Eine Funktion `fn`, die einen Argument entgegennimmt und einen Wert zurückgibt
+- Eine Funktion `fn`, die ein Argument annimmt und einen Wert zurückgibt
 
 ### Ausgabe
 
-- Eine Liste von Elementen, die in beiden Listen vorhanden sind, nachdem die bereitgestellte Funktion auf jedes Listenelement beider Listen angewendet wurde.
+- Eine Liste von Elementen, die in beiden Listen existieren, nachdem die bereitgestellte Funktion auf jedes Listenelement beider Listen angewendet wurde.
 
 ```python
 def intersection_by(a, b, fn):

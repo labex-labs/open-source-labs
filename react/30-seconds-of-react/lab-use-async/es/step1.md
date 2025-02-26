@@ -2,7 +2,7 @@
 
 > `index.html` y `script.js` ya se han proporcionado en la máquina virtual. En general, solo es necesario agregar código a `script.js` y `style.css`.
 
-Este código crea un hook personalizado que maneja llamadas asincrónicas. Toma una función manejadora, `fn`, y devuelve un objeto que contiene las propiedades de `state` (`value`, `error` y `loading`) y una función asincrónica `run`. La función `run` ejecuta la devolución de llamada proporcionada, `fn`, mientras usa `dispatch` para actualizar `state` según sea necesario.
+Este código crea un hook personalizado que maneja llamadas asincrónicas. Acepta una función manejadora, `fn`, y devuelve un objeto que contiene las propiedades de `state` (`value`, `error` y `loading`) y una función asincrónica `run`. La función `run` ejecuta la devolución de llamada proporcionada, `fn`, mientras usa `dispatch` para actualizar `state` según sea necesario.
 
 ```jsx
 const useAsync = (fn) => {
@@ -33,7 +33,7 @@ const useAsync = (fn) => {
     }
   };
 
-  return {...state, run };
+  return { ...state, run };
 };
 
 const RandomImage = (props) => {

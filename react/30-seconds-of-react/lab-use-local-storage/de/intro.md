@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir den `useLocalStorage`-Hook in React erkunden. Das Ziel dieses Labs ist es, Ihnen zu helfen, zu verstehen, wie Sie einen zustandsbehafteten Wert erstellen, der in den `localStorage` gespeichert wird, und eine Funktion zum Aktualisieren desselben. Sie werden lernen, wie der `useState`-Hook, der `try-catch`-Block sowie die `Storage.getItem()`- und `Storage.setItem()`-Methoden verwendet werden, um Daten aus und in den `localStorage` zu speichern und abzurufen. Am Ende dieses Labs werden Sie ein besseres Verständnis dafür gewonnen haben, wie React-Anwendungen gebaut werden, die den `localStorage` verwenden, um Daten zu speichern und zu persistieren.

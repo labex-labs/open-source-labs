@@ -1,13 +1,13 @@
 # Definieren der Datenpunkte
 
-Zunächst definieren wir die Datenpunkte, die wir für unsere Graphen verwenden werden. In diesem Beispiel verwenden wir `numpy`, um eine Reihe von x- und y-Werten für eine Sinuswelle zu generieren.
+Zunächst definieren wir die Datenpunkte, die wir für unsere Graphen verwenden werden. In diesem Beispiel verwenden wir `numpy`, um eine Menge von x- und y-Werten für eine Sinuswelle zu generieren.
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 
 # definieren einer Liste von markevery-Fällen, die geplottet werden sollen
-fälle = [
+cases = [
     None,
     8,
     (30, 8),

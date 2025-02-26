@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le hook useLocalStorage en React. Le but de ce laboratoire est de vous aider à comprendre comment créer une valeur avec état qui est persistée dans localStorage et une fonction pour la mettre à jour. Vous allez apprendre à utiliser le hook useState, le bloc try-catch et les méthodes Storage.getItem() et Storage.setItem() pour stocker et récupérer des données à partir de localStorage. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manière de construire des applications React qui utilisent localStorage pour stocker et persister des données.
