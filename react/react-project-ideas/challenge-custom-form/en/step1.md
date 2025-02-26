@@ -39,4 +39,4 @@ npm start
 
 The finished result is as follows:
 
-![Custom Form Final Result](./assets/finished.gif)
+![Custom Form Final Result](../assets/finished.gif)

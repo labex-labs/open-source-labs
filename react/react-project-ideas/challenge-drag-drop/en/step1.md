@@ -35,4 +35,4 @@ npm start
 
 The finished result is as follows:
 
-![Drag and drop demo](./assets/finished.gif)
+![Drag and drop demo](../assets/finished.gif)

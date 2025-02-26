@@ -8,4 +8,4 @@ Suppose you have a Git repository called `my-project` and you want to add a subm
 
 This is the result after completing the challenge:
 
-![Git submodule added successfully](./assets/challenge-add-submodule-step1-1.png)
+![Git submodule added successfully](../assets/challenge-add-submodule-step1-1.png)

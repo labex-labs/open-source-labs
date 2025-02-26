@@ -12,6 +12,6 @@ To apply the latest stash to your Git repository, follow these steps:
 
 This is the result of running the `cat README.md` command:
 
-![README file changes applied](./assets/challenge-apply-latest-stash-step1-1.png)
+![README file changes applied](../assets/challenge-apply-latest-stash-step1-1.png)
 
 This command reapplies the changes from the lastest saved save to the current working directory, and adds the new line "This is a new line" to the `README.md` file.

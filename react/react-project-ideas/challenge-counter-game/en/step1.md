@@ -41,4 +41,4 @@ npm start
 
 The finished result is as follows:
 
-![Finished counter game demo](./assets/finished.gif)
+![Finished counter game demo](../assets/finished.gif)

@@ -15,4 +15,4 @@ This will display a list of all local branches and sort them based on the date o
 
 This is the finished result:
 
-![sorted git branches list](./assets/challenge-sort-branches-by-date.png)
+![sorted git branches list](../assets/challenge-sort-branches-by-date.png)

@@ -20,4 +20,4 @@ git config --get core.eol
 
 If the line endings have been configured correctly, the command will return `lf`.
 
-![Git line endings configuration](./assets/20240702-15-01-34-S4a8vHzh@2x.png)
+![Git line endings configuration](../assets/20240702-15-01-34-S4a8vHzh@2x.png)
