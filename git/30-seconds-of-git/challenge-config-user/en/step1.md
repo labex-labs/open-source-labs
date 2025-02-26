@@ -18,4 +18,4 @@ git config --list
 
 It should display your user information, similar to the following:
 
-![Git config user info output](./assets/challenge-config-user-step1-1.png)
+![Git config user info output](../assets/challenge-config-user-step1-1.png)

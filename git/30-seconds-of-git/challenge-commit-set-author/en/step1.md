@@ -8,4 +8,4 @@ Let's say you are working on a project hosted on the `https://github.com/labex-l
 
 This command will create a new commit with the message "Fix the bug" and attribute it to John Doe:
 
-![Git commit author command](./assets/challenge-commit-set-author-step1-1.png)
+![Git commit author command](../assets/challenge-commit-set-author-step1-1.png)

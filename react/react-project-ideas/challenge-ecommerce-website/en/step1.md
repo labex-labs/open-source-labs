@@ -38,4 +38,4 @@ npm start
 
 The finished result is as follows:
 
-![Ecommerce product detail demo](./assets/finished.gif)
+![Ecommerce product detail demo](../assets/finished.gif)

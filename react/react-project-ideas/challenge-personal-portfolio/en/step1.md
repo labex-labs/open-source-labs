@@ -37,4 +37,4 @@ npm start
 
 The finished result is as follows:
 
-![Finished project demo](./assets/finished.gif)
+![Finished project demo](../assets/finished.gif)

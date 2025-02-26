@@ -47,4 +47,4 @@ npm start
 
 The finished result is as follows:
 
-![Dino game final result](./assets/finished.gif)
+![Dino game final result](../assets/finished.gif)

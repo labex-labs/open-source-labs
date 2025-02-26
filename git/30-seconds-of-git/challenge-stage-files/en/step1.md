@@ -14,4 +14,4 @@ You have been working on a project stored in a Git repository named `https://git
 
 This is the finished result:
 
-![Git staging area status](./assets/challenge-stage-files-step1-1.png)
+![Git staging area status](../assets/challenge-stage-files-step1-1.png)
