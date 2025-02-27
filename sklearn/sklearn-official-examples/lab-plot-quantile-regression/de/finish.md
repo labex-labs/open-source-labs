@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man die Quantil-Regression mit scikit-learn durchführt. Wir haben zwei synthetische Datensätze erzeugt, um zu veranschaulichen, wie die Quantil-Regression nicht-triviale bedingte Quantile vorhersagen kann. Wir haben die Klasse `QuantileRegressor` verwendet, um den Median sowie ein niedriges und ein hohes Quantil zu schätzen, die jeweils auf 5 % und 95 % festgelegt sind. Wir haben `QuantileRegressor` mit `LinearRegression` verglichen und deren Leistung mithilfe des mittleren absoluten Fehlers (MAE) und des mittleren quadratischen Fehlers (MSE) bewertet.

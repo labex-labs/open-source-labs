@@ -1,0 +1,3 @@
+# Resumen
+
+En este tutorial, aprendimos diferentes estrategias para imputar valores faltantes utilizando scikit-learn. Exploramos la imputación de características univariadas con `SimpleImputer`, la imputación de características multivariadas con `IterativeImputer`, la imputación de vecinos más cercanos con `KNNImputer`, mantener el número de características constante y marcar los valores imputados con `MissingIndicator`. Estas técnicas pueden ser herramientas valiosas para manejar datos faltantes y garantizar que los algoritmos de aprendizaje automático se puedan aplicar a conjuntos de datos incompletos.

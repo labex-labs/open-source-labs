@@ -1,6 +1,6 @@
-# Erstellen eines pcolormesh-Plots mit einem überlagerten Text ohne Ver光栅isierung
+# Ein pcolormesh-Diagramm mit einem überlagerten Text ohne Rasterisierung erstellen
 
-Wir werden einen pcolormesh-Plot mit einem überlagerten Text ohne Ver光栅isierung erstellen, um zu veranschaulichen, wie Vektorgrafiken die Vorteile von Vektorgrafiken für einige Künstler wie Achsen und Text beibehalten können.
+Wir werden ein pcolormesh-Diagramm mit einem überlagerten Text ohne Rasterisierung erstellen, um zu veranschaulichen, wie Vektorgrafiken für einige Künstler, wie z. B. Achsen und Text, die Vorteile von Vektorgrafiken beibehalten können.
 
 ```python
 ax3.set_aspect(1)

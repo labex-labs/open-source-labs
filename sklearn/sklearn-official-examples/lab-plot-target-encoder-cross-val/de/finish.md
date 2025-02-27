@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die `TargetEncoder`-Klasse aus Scikit-learn verwendet, um kategorische Daten in numerische Daten umzuwandeln, die als Eingabe für maschinelle Lernalgorithmen verwendet werden können. Wir haben auch die Wichtigkeit der Intervall-Cross-Validation bei der Verhinderung von Overfitting gelernt. Wir haben ein Ridge-Modell auf den Rohdaten trainiert und seine Leistung ausgewertet. Wir haben auch ein Ridge-Modell mit Cross-Validation trainiert und die Koeffizienten des linearen Modells bewertet. Schließlich haben wir ein Ridge-Modell ohne Cross-Validation trainiert und die Koeffizienten des linearen Modells bewertet.

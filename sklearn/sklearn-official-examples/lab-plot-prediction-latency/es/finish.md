@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo usar estimadores de Scikit-Learn para realizar un benchmark de la latencia de predicción de varios regresores. Medimos la latencia al hacer predicciones en modo masivo o atómico, y graficamos la distribución de la latencia de predicción como un diagrama de caja. También estimamos la influencia del número de características en el tiempo de predicción y graficamos la evolución del tiempo de predicción en función del número de características. Por último, medimos el rendimiento de diferentes estimadores y graficamos el rendimiento de predicción de diferentes estimadores.

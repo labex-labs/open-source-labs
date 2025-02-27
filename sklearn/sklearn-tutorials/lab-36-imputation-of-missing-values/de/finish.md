@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir verschiedene Strategien zur Imputation fehlender Werte mit scikit - learn gelernt. Wir haben die einvariate Merkmalsimputation mit `SimpleImputer`, die mehrdimensionale Merkmalsimputation mit `IterativeImputer`, die Imputation mit den nächsten Nachbarn mit `KNNImputer`, das Beibehalten der Anzahl der Merkmale konstant und das Markieren von imputierten Werten mit `MissingIndicator` untersucht. Diese Techniken können wertvolle Werkzeuge sein, um fehlende Daten zu behandeln und sicherzustellen, dass maschinelle Lernalgorithmen auf unvollständige Datensätze angewandt werden können.

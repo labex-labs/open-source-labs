@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser la régression logistique pour classifier des chiffres écrits à la main à partir de l'ensemble de données MNIST. Nous avons également appris à utiliser l'algorithme SAGA avec une pénalité L1 pour la régression logistique. Nous avons obtenu un score de précision supérieur à 0,8 avec un vecteur de poids sparse, rendant le modèle plus interprétable. Cependant, nous avons également noté que cette précision est considérablement inférieure à celle que peut atteindre un modèle linéaire pénalisé L2 ou un modèle de perceptron multicouche non linéaire sur cet ensemble de données.

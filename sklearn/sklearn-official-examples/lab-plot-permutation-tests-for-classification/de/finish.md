@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Funktion `permutation_test_score` aus `sklearn.model_selection` verwendet, um die Signifikanz eines durch Kreuzvalidierung ermittelten Scores mit Hilfe von Permutationen zu evaluieren. Wir haben eine Nullverteilung erzeugt, indem wir die Genauigkeit des Klassifizierers auf 1000 verschiedenen Permutationen des Datensatzes berechnet haben, und einen empirischen p-Wert berechnet als den Anteil der Permutationen, für die der erzielte Score größer ist als der Score, der mit den ursprünglichen Daten erhalten wurde. Wir haben auch die Ergebnisse geplottet, um die Nullverteilung und den Score auf den ursprünglichen Daten zu visualisieren.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Kernel-Dichteschätzung mit dem `KernelDensity`-Schätzer aus scikit-learn durchführt. Die Kernel-Dichteschätzung ist eine leistungsstarke Technik zur Schätzung der Wahrscheinlichkeitsdichtefunktion einer Zufallsvariablen. Indem wir einen Kernel-Dichteschätzer an einen Datensatz anpassen, können wir die zugrunde liegende Dichte schätzen und sie mithilfe eines Histogramms und der geschätzten Dichtefunktion visualisieren. Dies ermöglicht es uns, Einblicke in die Verteilung der Daten zu gewinnen und wahrscheinlichkeitstheoretische Vorhersagen zu treffen.

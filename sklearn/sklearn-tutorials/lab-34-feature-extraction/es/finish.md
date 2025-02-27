@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos a realizar la extracción de características utilizando la biblioteca scikit-learn. Exploramos varias técnicas como la carga de características a partir de diccionarios, el hashing de características y la extracción de características de texto. También aprendimos a personalizar el comportamiento de las clases vectorizadoras para adaptarlas a nuestras necesidades específicas. La extracción de características es un paso importante en el aprendizaje automático ya que ayuda a transformar los datos brutos en un formato que puede ser utilizado por los algoritmos para hacer predicciones o clasificar datos.

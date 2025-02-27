@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Pipeline und zusammengesetzte Schätzer sind leistungsstarke Werkzeuge in scikit-learn, um Transformatoren und Schätzer zu einem einzelnen Modell zu kombinieren. Sie bieten Bequemlichkeit, Parameterauswahl und Datensicherheit. Pipelines ermöglichen das Verketteln von Schätzern, verschachtelte Parameter und das Caching von Transformatoren. Zusammengesetzte Schätzer wie `TransformedTargetRegressor` und `FeatureUnion` bieten jeweils Transformationen und Merkmalskombination. Diese Konzepte sind essentiell für das Aufbauen komplexer maschineller Lernmodelle, die die Vorverarbeitung und die effektive Behandlung heterogener Daten ermöglichen.

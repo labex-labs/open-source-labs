@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à connaître différentes techniques d'apprentissage supervisé et à les implémenter à l'aide de scikit-learn. Nous avons abordé la classification par plus proche voisin, la régression linéaire et les machines à vecteurs de support (SVM). Ces techniques nous permettent de prédire des variables de sortie à partir d'observations à haute dimension et de classifier des données en différentes catégories. En appliquant ces techniques à des ensembles de données du monde réel, nous pouvons obtenir des informations et faire des prédictions dans divers domaines tels que la santé, la finance et les sciences sociales.

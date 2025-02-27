@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, exploramos varias técnicas para descomponer señales en sus componentes. Aprendimos sobre el Análisis de Componentes Principales (PCA), el Análisis de Componentes Independientes (ICA), la Factorización de Matriz No Negativa (NMF) y la Asignación Latente de Dirichlet (LDA). Estas técnicas se utilizan ampliamente en diversas aplicaciones, como la reducción de dimensionalidad, la separación de fuentes ciegas, el modelado de temas y más. Al aplicar estas técnicas, podemos obtener información y extraer información significativa de señales y conjuntos de datos de alta dimensionalidad.

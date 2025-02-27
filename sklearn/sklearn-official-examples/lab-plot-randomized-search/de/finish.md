@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir die zufällige Suche und das Gitterverfahren für die Hyperparameteroptimierung eines linearen SVM-Modells mit SGD-Training verglichen. Wir haben festgestellt, dass beide Methoden denselben Hyperparameterspace erkundet haben, aber die zufällige Suche war erheblich schneller. Die besten Hyperparameter, die von jeder Methode gefunden wurden, ähnelten sich in der Leistung, aber die zufällige Suche kann aufgrund von Rauschen möglicherweise leicht schlechtere Leistung haben. Im praktischen Einsatz würden wir nicht so viele Hyperparameter gleichzeitig durchsuchen, sondern nur die wichtigsten.

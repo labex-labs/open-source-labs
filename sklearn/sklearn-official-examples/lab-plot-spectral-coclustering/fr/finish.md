@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à générer un ensemble de données et à effectuer un biclustering à l'aide de l'algorithme de co-clustering spectral. L'ensemble de données original a été généré à l'aide de la fonction `make_biclusters`, qui a créé une matrice de petites valeurs et implanté des biclusters avec de grandes valeurs. Nous avons mélangé les lignes et les colonnes de l'ensemble de données et l'avons passé à l'algorithme de co-clustering spectral. Nous avons calculé le score de consensus des biclusters et réordonné l'ensemble de données mélangé pour rendre les biclusters contigus. Enfin, nous avons visualisé les biclusters pour montrer avec quelle précision l'algorithme les a trouvés.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir untersucht, wie die scikit-learn-Visualisierungs-API verwendet werden kann, um ROC-Kurven für zwei verschiedene Klassifizierer zu zeichnen. Wir haben begonnen, indem wir den Weindatensatz geladen und einen Support-Vector-Klassifizierer auf den Trainingsdaten trainiert haben. Anschließend haben wir die ROC-Kurve für diesen Klassifizierer mit der Funktion `RocCurveDisplay` gezeichnet. Schließlich haben wir einen Random-Forest-Klassifizierer trainiert und seine ROC-Kurve neben der SVC-ROC-Kurve gezeichnet. Die scikit-learn-Visualisierungs-API erleichtert es, verschiedene Klassifizierer zu vergleichen und deren Leistung zu visualisieren.

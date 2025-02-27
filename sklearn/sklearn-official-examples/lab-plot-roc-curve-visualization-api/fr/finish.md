@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons exploré la manière d'utiliser l'API de visualisation de scikit-learn pour tracer les courbes ROC de deux classifieurs différents. Nous avons commencé par charger l'ensemble de données du vin et entraîner un classifieur à vecteurs de support sur les données d'entraînement. Nous avons ensuite tracé la courbe ROC de ce classifieur à l'aide de la fonction `RocCurveDisplay`. Enfin, nous avons entraîné un classifieur à forêt aléatoire et tracé sa courbe ROC en même temps que la courbe ROC du SVC. L'API de visualisation de scikit-learn facilite la comparaison de différents classifieurs et la visualisation de leur performance.

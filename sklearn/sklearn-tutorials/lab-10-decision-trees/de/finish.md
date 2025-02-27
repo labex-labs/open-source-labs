@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Entscheidungsbäume zur Klassifizierung mit scikit-learn verwendet. Wir haben den Iris-Datensatz geladen, die Daten in Trainings- und Testsets aufgeteilt, den Entscheidungsbaum-Klassifizierer erstellt und trainiert, Vorhersagen für die Testdaten getroffen und die Genauigkeit des Modells bewertet. Entscheidungsbäume sind eine leistungsstarke und interpretierbare Methode für Klassifizierungsaufgaben.

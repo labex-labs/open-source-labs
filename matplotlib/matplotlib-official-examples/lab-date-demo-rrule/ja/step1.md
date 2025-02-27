@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-まず、Matplotlib、NumPy、datetime などの必要なライブラリをインポートする必要があります。
+まず、Matplotlib、NumPy、および datetime を含む必要なライブラリをインポートする必要があります。
 
 ```python
 import datetime

@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, nous avons appris à analyser la structure de l'arbre de décision pour mieux comprendre la relation entre les caractéristiques et la variable cible à prédire. Nous avons vu comment récupérer la structure de l'arbre binaire, visualiser l'arbre de décision et récupérer le chemin de décision et les nœuds terminaux pour un échantillon ou un groupe d'échantillons. Ces techniques peuvent nous aider à mieux comprendre comment le classifieur d'arbre de décision effectue ses prédictions et peuvent nous guider dans l'ajustement fin du modèle pour améliorer ses performances.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons comparé la recherche aléatoire et la recherche en grille pour l'optimisation d'hyperparamètres d'un modèle SVM linéaire avec entraînement SGD. Nous avons constaté que les deux méthodes ont exploré le même espace d'hyperparamètres, mais la recherche aléatoire était considérablement plus rapide. Les meilleurs hyperparamètres trouvés par chaque méthode étaient similaires en termes de performance, mais la recherche aléatoire peut avoir une performance légèrement moins bonne en raison du bruit. En pratique, nous ne chercherions pas simultanément sur autant d'hyperparamètres, mais seulement sur les plus importants.

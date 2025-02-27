@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos sobre la importancia de la escalación de características en el aprendizaje automático y su efecto en el rendimiento del modelo. Exploramos el efecto de la escalación de características en un modelo de k-vecinos más cercanos y en la reducción de dimensionalidad por PCA. También entrenamos un modelo de regresión logística con datos reducidos por PCA para evaluar el efecto de la escalación de características en el rendimiento del modelo. Encontramos que escalar las características antes de reducir la dimensionalidad da como resultado componentes del mismo orden de magnitud y mejora la separabilidad de las clases, lo que conduce a un mejor rendimiento del modelo.

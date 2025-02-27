@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Scikit-Learn-Schätzer verwendet, um die Vorhersageverzögerung verschiedener Regressoren zu benchmarken. Wir haben die Verzögerung gemessen, wenn wir in batch- oder atomarem Modus vorhersagen, und wir haben die Verteilung der Vorhersageverzögerung als Boxplot dargestellt. Wir haben auch den Einfluss der Anzahl der Merkmale auf die Vorhersagezeit abgeschätzt und die Entwicklung der Vorhersagezeit in Abhängigkeit von der Anzahl der Merkmale geplottet. Schließlich haben wir die Durchsatzleistung für verschiedene Schätzer gemessen und die Vorhersagedurchsatzleistung für verschiedene Schätzer geplottet.

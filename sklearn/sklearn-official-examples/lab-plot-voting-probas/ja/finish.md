@@ -1,0 +1,3 @@
+# まとめ
+
+この実験では、Scikit-LearnのVotingClassifierによって計算されたクラス確率をプロットする方法を学びました。LogisticRegression、GaussianNB、RandomForestClassifierを含む3つの異なる分類器を使用し、VotingClassifierを使ってそれらの予測確率を平均化しました。そして、各分類器を訓練セットにフィットさせることで確率の重み付けを可視化し、データセットの最初のサンプルに対する予測クラス確率をプロットしました。

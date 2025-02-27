@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser la fonction `permutation_test_score` de `sklearn.model_selection` pour évaluer la signification d'un score validé croisé en utilisant des permutations. Nous avons généré une distribution nulle en calculant la précision du classifieur sur 1000 permutations différentes du jeu de données, et avons calculé une valeur p empirique comme le pourcentage de permutations pour lesquelles le score obtenu est supérieur au score obtenu en utilisant les données originales. Nous avons également tracé les résultats pour visualiser la distribution nulle et le score obtenu sur les données originales.

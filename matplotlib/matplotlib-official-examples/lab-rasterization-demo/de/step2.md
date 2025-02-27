@@ -1,12 +1,12 @@
 # Daten erstellen
 
-Wir werden einige Daten erstellen, die zum Veranschaulichen des Ver光栅isierungsbegriffs verwendet werden.
+Wir werden einige Daten erstellen, die verwendet werden, um das Konzept der Rasterisierung zu veranschaulichen.
 
 ```python
-d = np.arange(100).reshape(10, 10)  # die Werte, die farbzugeordnet werden sollen
+d = np.arange(100).reshape(10, 10)  # the values to be color-mapped
 x, y = np.meshgrid(np.arange(11), np.arange(11))
 
 theta = 0.25*np.pi
-xx = x*np.cos(theta) - y*np.sin(theta)  # drehe x um -theta
-yy = x*np.sin(theta) + y*np.cos(theta)  # drehe y um -theta
+xx = x*np.cos(theta) - y*np.sin(theta)  # rotate x by -theta
+yy = x*np.sin(theta) + y*np.cos(theta)  # rotate y by -theta
 ```

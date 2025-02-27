@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gezeigt, wie man mit dem RANSAC-Algorithmus in scikit-learn robust ein lineares Modell auf fehlerhafte Daten anpasst. Wir haben mit dem make_regression-Dataset zufällige Daten generiert, den Daten Ausreißer hinzugefügt, sowohl ein lineares Modell als auch einen RANSAC-Regressor auf die Daten angepasst, die Daten der beiden Modelle vorhergesagt, ihre geschätzten Koeffizienten verglichen und die Ergebnisse visualisiert. Der RANSAC-Regressor teilt die Daten automatisch in Inlier und Outlier auf, und die zugeschnittene Linie wird ausschließlich durch die identifizierten Inlier bestimmt, was es zu einer robusteren Methode macht, um Modelle auf Daten mit Ausreißern anzupassen.

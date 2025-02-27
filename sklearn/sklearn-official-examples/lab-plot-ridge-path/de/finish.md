@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gezeigt, wie man Ridge Regression zur Schätzung von kollinearen Koeffizienten eines Schätzers verwendet. Wir haben eine 10x10-Hilbert-Matrix generiert und Ridge Regression verwendet, um die Koeffizienten der Matrix zu schätzen. Anschließend haben wir die Ergebnisse der Ridge-Regressionswege visualisiert. Ridge Regression ist nützlich, um die Variation (Rauschen) in stark schlecht konditionierten Matrizen zu reduzieren. Indem wir eine bestimmte Regularisierungskraft festlegen, können wir den Effekt der Regularisierung und der quadratischen Verlustfunktion abwägen.

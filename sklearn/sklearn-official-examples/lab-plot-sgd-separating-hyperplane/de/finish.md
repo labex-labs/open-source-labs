@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Support Vector Machines (SVM) mit Stochastic Gradient Descent (SGD) verwendet, um Daten zu klassifizieren. Wir haben einen für die Klassifizierung geeigneten Datensatz generiert, das SVM-Modell mit SGD trainiert und die Hyperebene mit dem größten Margin gezeichnet. SVM ist ein leistungsstarkes Klassifikationsalgorithmus, der in der Maschinellen Lernung weit verbreitet zur Klassifizierung und Regressionsanalyse eingesetzt wird. Das Grundprinzip hinter SVM besteht darin, die beste Hyperebene zu finden, die die Daten in Klassen mit möglichst großem Margin trennt. Stochastic Gradient Descent (SGD) ist ein Optimierungsalgorithmus, der verwendet wird, um die besten Parameter für den SVM-Algorithmus zu finden.

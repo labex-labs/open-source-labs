@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir die Wichtigkeit der Feature-Skalierung in der Machine Learning und ihren Effekt auf die Modellleistung gelernt. Wir haben den Effekt der Feature-Skalierung auf ein k-Nearest-Neighbors-Modell und die PCA-Dimensionalitätreduzierung untersucht. Wir haben auch ein logistisches Regressionsmodell mit PCA-reduzierten Daten trainiert, um den Effekt der Feature-Skalierung auf die Modellleistung zu evaluieren. Wir haben festgestellt, dass das Skalieren der Features vor der Reduzierung der Dimensionalität zu Komponenten von der gleichen Größenordnung führt und die Trennbarkeit der Klassen verbessert, was zu einer besseren Modellleistung führt.

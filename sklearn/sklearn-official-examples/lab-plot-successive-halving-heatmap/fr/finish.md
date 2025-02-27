@@ -1,0 +1,3 @@
+# Sommaire
+
+Nous avons comparé deux algorithmes de recherche de paramètres populaires en apprentissage automatique : la Recherche en grille et la Décimation successive. Nous avons utilisé la bibliothèque scikit-learn en Python pour effectuer la comparaison. Nous avons généré un jeu de données synthétique et effectué une recherche de paramètres sur le modèle SVC à l'aide des deux algorithmes. Nous avons ensuite visualisé les résultats à l'aide de cartes thermiques. Nous avons constaté que l'algorithme de Décimation successive était capable de trouver des combinaisons de paramètres tout aussi précises que la Recherche en grille, en beaucoup moins de temps.

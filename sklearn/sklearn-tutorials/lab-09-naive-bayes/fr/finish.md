@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, nous avons étudié un exemple d'utilisation du classifieur Naïf Bayésien Gaussien de scikit - learn. Nous avons chargé l'ensemble de données iris, le divisé en ensembles d'entraînement et de test, entraîné le classifieur sur l'ensemble d'entraînement et évalué ses performances sur l'ensemble de test. La précision obtenue nous donne une indication de la qualité de la prédiction des espèces de fleurs de lys par le classifieur. Les classifieurs Naïf Bayésien sont des algorithmes simples mais efficaces pour les tâches de classification et sont couramment utilisés dans diverses applications du monde réel.

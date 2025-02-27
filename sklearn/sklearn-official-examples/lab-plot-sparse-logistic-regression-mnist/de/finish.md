@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Logistische Regression verwendet, um handschriftliche Ziffern aus dem MNIST-Datensatz zu klassifizieren. Wir haben auch gelernt, wie man den SAGA-Algorithmus mit L1-Strafe für die Logistische Regression verwendet. Wir haben einen Genauigkeitsscore von über 0,8 mit einem sparsen Gewichtsvektor erreicht, was das Modell interpretierbarer macht. Allerdings haben wir auch festgestellt, dass diese Genauigkeit deutlich unter der liegt, die von einem L2-straffierten linearen Modell oder einem nicht-linearen Mehrschicht-Perzeptronmodell auf diesem Datensatz erreicht werden kann.

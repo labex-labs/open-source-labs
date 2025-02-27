@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, nous avons appris à utiliser le modèle de régression Elastic-Net de Scikit-learn pour calculer les erreurs d'entraînement et de test et tracer les fonctions des résultats. Nous avons également appris pourquoi les performances d'un estimateur sur des données non vues (données de test) ne sont pas les mêmes que celles sur les données d'entraînement. Nous avons généré des données d'échantillonnage, calculé les erreurs d'entraînement et de test, et tracé les fonctions des résultats à l'aide des fonctions `make_regression()`, `linear_model.ElasticNet()`, `train_test_split()`, `np.logspace()` et `matplotlib`.

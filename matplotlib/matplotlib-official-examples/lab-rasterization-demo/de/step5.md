@@ -1,9 +1,9 @@
-# Erstellen eines pcolormesh-Plots mit Ver光栅isierung
+# Ein pcolormesh-Diagramm mit Rasterisierung erstellen
 
-Wir werden einen pcolormesh-Plot mit Ver光栅isierung erstellen, um zu veranschaulichen, wie die Ver光栅isierung die Wiedergabe beschleunigen und kleinere Dateien erzeugen kann.
+Wir werden ein pcolormesh-Diagramm mit Rasterisierung erstellen, um zu veranschaulichen, wie die Rasterisierung die Rendering-Geschwindigkeit erhöhen und kleinere Dateien erzeugen kann.
 
 ```python
 ax2.set_aspect(1)
-ax2.set_title("Ver光栅isierung")
+ax2.set_title("Rasterization")
 ax2.pcolormesh(xx, yy, d, rasterized=True)
 ```

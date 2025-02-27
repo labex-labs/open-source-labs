@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, comparamos la importancia de las características basada en la impureza con la importancia de permutación en el conjunto de datos del Titanic utilizando un clasificador de bosque aleatorio. Observamos que la importancia de las características basada en la impureza puede exagerar la importancia de las características numéricas y está sesgada hacia las características de alta cardinalidad. La importancia de permutación es un mejor indicador de la importancia de las características y no está sesgada hacia las características de alta cardinalidad. También observamos que limitar la capacidad de sobreajuste de los árboles puede disminuir la importancia de las características no predictivas.

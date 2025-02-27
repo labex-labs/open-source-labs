@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser la classe `TargetEncoder` de Scikit-learn pour transformer les données catégorielles en données numériques qui peuvent être utilisées en tant qu'entrée pour les algorithmes d'apprentissage automatique. Nous avons également appris l'importance de la validation croisée par intervalle pour prévenir le surapprentissage. Nous avons entraîné un modèle Ridge sur les données brutes et évalué ses performances. Nous avons également entraîné un modèle Ridge avec validation croisée et évalué les coefficients du modèle linéaire. Enfin, nous avons entraîné un modèle Ridge sans validation croisée et évalué les coefficients du modèle linéaire.

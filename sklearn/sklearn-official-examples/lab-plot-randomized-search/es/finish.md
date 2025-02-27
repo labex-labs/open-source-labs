@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, comparamos la búsqueda aleatorizada y la búsqueda en cuadrícula para la optimización de hiperparámetros de un modelo de SVM lineal con entrenamiento por SGD. Encontramos que ambos métodos exploraron el mismo espacio de hiperparámetros, pero la búsqueda aleatorizada fue significativamente más rápida. Los mejores hiperparámetros encontrados por cada método tuvieron un rendimiento similar, pero la búsqueda aleatorizada puede tener un rendimiento ligeramente peor debido al ruido. En la práctica, no buscaríamos sobre tantos hiperparámetros simultáneamente, sino solo sobre los más importantes.

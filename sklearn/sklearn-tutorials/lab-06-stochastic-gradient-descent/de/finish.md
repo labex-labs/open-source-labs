@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Stochastic Gradient Descent (SGD) mit scikit-learn implementiert. Wir haben den Iris-Datensatz geladen, die Daten vorkprozessiert, in Trainings- und Testsätze unterteilt, einen SGD-Klassifizierer trainiert, Vorhersagen getroffen und die Leistung des Klassifizierers ausgewertet. SGD ist ein leistungsstarkes Optimierungsalgorithmus, der in der Maschinellen Lern für große Probleme weit verbreitet ist.

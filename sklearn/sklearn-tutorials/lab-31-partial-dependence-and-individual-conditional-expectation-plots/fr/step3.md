@@ -1,0 +1,6 @@
+# Entraînez un modèle Random Forest
+
+```python
+model = RandomForestRegressor()
+model.fit(X, y)
+```

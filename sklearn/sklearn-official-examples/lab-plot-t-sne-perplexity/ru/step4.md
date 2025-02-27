@@ -1,0 +1,16 @@
+# Применяем t-SNE к данным
+
+Далее мы применим t-SNE к набору данных с концентрическими окружностями.
+
+```python
+t0 = time()
+tsne = manifold.TSNE(
+    n_components=n_components,
+    init="random",
+    random_state=0,
+    perplexity=perplexity,
+    n_iter=300,
+)
+Y = tsne.fit_transform(X)
+t1 = time()
+```

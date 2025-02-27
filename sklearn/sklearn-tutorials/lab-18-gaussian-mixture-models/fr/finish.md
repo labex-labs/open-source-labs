@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris sur les modèles mixtes gaussiens (GMM) et la manière d'utiliser ces derniers pour le regroupement et l'estimation de la densité en Python à l'aide de la bibliothèque scikit - learn. Nous avons suivi une procédure étape par étape comprenant le chargement et le prétraitement des données, l'ajustement d'un GMM, le regroupement des données et la visualisation des résultats. Les GMM sont un outil puissant pour la modélisation de distributions de données complexes et peuvent être utilisés dans diverses applications telles que la segmentation d'images, la détection d'anomalies et les systèmes de recommandation.

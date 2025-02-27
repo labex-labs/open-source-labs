@@ -1,0 +1,3 @@
+# Resumen
+
+Las tuberías y los estimadores compuestos son herramientas poderosas en scikit-learn para combinar transformadores y estimadores en un solo modelo. Ofrecen conveniencia, selección de parámetros y seguridad de datos. Las tuberías permiten encadenar estimadores, parámetros anidados y caché de transformadores. Los estimadores compuestos como `TransformedTargetRegressor` y `FeatureUnion` proporcionan transformaciones y combinación de características, respectivamente. Estos conceptos son esenciales para construir modelos de aprendizaje automático complejos que preprocesen y manipulen datos heterogéneos de manera efectiva.

@@ -1,0 +1,3 @@
+# Récapitulatif
+
+L'apprentissage semi-supervisé est une technique puissante qui nous permet d'exploiter les données non étiquetées pour améliorer les performances de nos modèles. Dans ce laboratoire, nous avons appris à propos de deux algorithmes d'apprentissage semi-supervisé : l'auto-apprentissage et la propagation d'étiquettes. Nous avons également appris à implémenter et à utiliser ces algorithmes à l'aide de scikit-learn. En incorporant les données non étiquetées dans nos flux de travail d'apprentissage automatique, nous pouvons mieux utiliser les données disponibles et obtenir des prédictions plus précises.

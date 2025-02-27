@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo utilizar la función `permutación_test_score` de `sklearn.model_selection` para evaluar la significancia de una puntuación validada cruzada utilizando permutaciones. Generamos una distribución nula calculando la exactitud del clasificador en 1000 permutaciones diferentes del conjunto de datos, y calculamos un valor p empírico como el porcentaje de permutaciones para las cuales la puntuación obtenida es mayor que la puntuación obtenida utilizando los datos originales. También representamos los resultados para visualizar la distribución nula y la puntuación obtenida en los datos originales.

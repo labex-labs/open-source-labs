@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons démontré comment ajuster robustement un modèle linéaire à des données fautives à l'aide de l'algorithme RANSAC dans scikit-learn. Nous avons généré des données aléatoires à l'aide de l'ensemble de données make_regression, ajouté des anomalies aux données, ajusté à la fois un modèle linéaire et un régresseur RANSAC aux données, prédit les données des deux modèles, comparé leurs coefficients estimés et visualisé les résultats. Le régresseur RANSAC divise automatiquement les données en données cohérentes et anomalies, et la droite ajustée est déterminée uniquement par les données cohérentes identifiées, ce qui en fait une méthode plus robuste pour ajuster des modèles à des données avec des anomalies.

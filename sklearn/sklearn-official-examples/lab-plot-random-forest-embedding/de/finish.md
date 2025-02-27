@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Transformation von Merkmalen mit Hilfe von völlig zufälligen Bäumen verwendet, um Daten in eine hochdimensionale, dünn besetzte Repräsentation zu kartieren, die für die Klassifizierung nützlich sein kann. Wir haben auch gelernt, wie man die Partitionen visualisiert, die von mehreren Bäumen gegeben werden, und wie die Transformation für die nichtlineare Dimensionsreduzierung oder die nichtlineare Klassifizierung verwendet werden kann. Anschließend haben wir gezeigt, wie man Naiven Bayes auf den transformierten Daten anwendet und ihn mit einem auf den ursprünglichen Daten gelernten ExtraTreesClassifier verglichen.

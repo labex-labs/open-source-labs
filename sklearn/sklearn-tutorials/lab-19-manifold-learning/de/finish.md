@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Die Mannigfaltigkeitslernmethode ist ein leistungsstarkes Werkzeug zur Visualisierung von hochdimensionalen Datensätzen. Sie ermöglicht es uns, die Dimensionalität der Daten zu reduzieren, während die zugrunde liegende Struktur erhalten bleibt. In diesem Lab haben wir drei verschiedene Algorithmen zur Mannigfaltigkeitslernmethode untersucht: Isomap, Lokale lineare Einbettung (Locally Linear Embedding, LLE) und t-SNE. Wir haben diese Algorithmen auf verschiedene Datensätze angewandt und ihre Ergebnisse verglichen. Durch die Verwendung der Mannigfaltigkeitslernmethode können wir Einblicke in die Struktur komplexer Datensätze gewinnen und hochdimensionale Daten effektiver analysieren und visualisieren.

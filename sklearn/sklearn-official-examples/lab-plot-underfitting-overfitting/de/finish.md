@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab wurde gezeigt, wie man lineare Regression mit Polynomfunktionen verwendet, um nichtlineare Funktionen zu approximieren, und wie man die Modellleistung mithilfe von Kreuzvalidierung bewertet. Wir haben festgestellt, dass eine lineare Funktion nicht ausreicht, um die Trainingsstichproben anzupassen, und dass ein Polynom vom Grad 4 die wahre Funktion fast perfekt approximiert. Allerdings überanpasst das Modell für höhere Grade die Trainingsdaten und lernt den Rauschen der Trainingsdaten. Wir können Kreuzvalidierung und den mittleren quadratischen Fehler (MSE) verwenden, um die Modellleistung zu bewerten und Überanpassung zu vermeiden.

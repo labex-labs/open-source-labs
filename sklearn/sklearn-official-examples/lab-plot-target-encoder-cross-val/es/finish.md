@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo usar la clase `TargetEncoder` de Scikit-learn para transformar datos categóricos en datos numéricos que se pueden usar como entrada para algoritmos de aprendizaje automático. También aprendimos la importancia de la validación cruzada por intervalos en la prevención del sobreajuste. Entrenamos un modelo Ridge en los datos brutos y evaluamos su rendimiento. También entrenamos un modelo Ridge con validación cruzada y evaluamos los coeficientes del modelo lineal. Finalmente, entrenamos un modelo Ridge sin validación cruzada y evaluamos los coeficientes del modelo lineal.

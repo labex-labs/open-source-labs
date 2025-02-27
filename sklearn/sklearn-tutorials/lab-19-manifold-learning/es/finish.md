@@ -1,0 +1,3 @@
+# Resumen
+
+El aprendizaje de variedades es una herramienta poderosa para visualizar conjuntos de datos de alta dimensión. Nos permite reducir la dimensionalidad de los datos mientras se conserva la estructura subyacente. En esta práctica, exploramos tres algoritmos diferentes de aprendizaje de variedades: Isomap, Embedding Localmente Lineal (LLE) y t-SNE. Aplicamos estos algoritmos a varios conjuntos de datos y comparamos sus resultados. Al utilizar el aprendizaje de variedades, podemos obtener información sobre la estructura de conjuntos de datos complejos y analizar y visualizar datos de alta dimensión de manera más efectiva.

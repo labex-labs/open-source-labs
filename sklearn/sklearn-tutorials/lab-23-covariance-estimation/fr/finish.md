@@ -1,0 +1,3 @@
+# Sommaire
+
+L'estimation de la covariance est une technique statistique fondamentale utilisée pour estimer la matrice de covariance d'un ensemble de données. Dans ce laboratoire, nous avons exploré diverses méthodes d'estimation de la covariance en utilisant le package `sklearn.covariance` en Python. Nous avons abordé l'estimation de covariance empirique, les techniques de rétrécissement, l'estimation de covariance inverse sparse et l'estimation de covariance robuste. Il est essentiel de choisir la méthode appropriée en fonction des caractéristiques de l'ensemble de données et des exigences spécifiques de l'analyse.

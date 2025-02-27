@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, revisamos un ejemplo de uso del clasificador Naive Bayes Gaussiano de scikit-learn. Cargamos el conjunto de datos iris, lo dividimos en conjuntos de entrenamiento y prueba, entrenamos el clasificador en el conjunto de entrenamiento y evaluamos su rendimiento en el conjunto de prueba. La precisión obtenida nos da una idea de qué tan bien el clasificador se desempeñó en la predicción de las especies de flores de iris. Los clasificadores Naive Bayes son algoritmos simples pero efectivos para tareas de clasificación y se utilizan comúnmente en diversas aplicaciones del mundo real.

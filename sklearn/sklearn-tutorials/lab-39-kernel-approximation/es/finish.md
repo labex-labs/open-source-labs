@@ -1,0 +1,3 @@
+# Resumen
+
+La aproximación de kernel es una técnica poderosa que nos permite utilizar métodos de kernel de manera eficiente, especialmente para conjuntos de datos grandes. En este tutorial, exploramos varios métodos de aproximación de kernel disponibles en scikit-learn, incluyendo el método de Nystroem, la aproximación del kernel RBF, la aproximación del kernel ACS, la aproximación del kernel SCS y la aproximación del kernel polinomial utilizando Bosquejo de Tensor. Aprendimos cómo utilizar estas técnicas y discutimos sus ventajas y limitaciones. Al aprovechar la aproximación de kernel, podemos aplicar efectivamente métodos de kernel a una amplia variedad de tareas de aprendizaje automático.

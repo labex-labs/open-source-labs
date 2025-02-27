@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser la transformation de fonctionnalités par hachage à l'aide d'arbres totalement aléatoires pour mapper les données à une représentation haute dimensionnelle et creuse qui peut être utile pour la classification. Nous avons également appris à visualiser les partitions données par plusieurs arbres et comment la transformation peut être utilisée pour la réduction non linéaire de la dimensionalité ou la classification non linéaire. Nous avons ensuite démontré comment utiliser Naive Bayes sur les données transformées et l'avons comparé à un ExtraTreesClassifier appris sur les données originales.

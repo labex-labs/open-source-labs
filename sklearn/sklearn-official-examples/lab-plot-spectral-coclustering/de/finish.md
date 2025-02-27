@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man einen Datensatz generiert und mit dem Spectral Co-Clustering-Algorithmus in Bicluster unterteilt. Der ursprüngliche Datensatz wurde mit der Funktion `make_biclusters` generiert, die eine Matrix mit kleinen Werten erstellt und Bicluster mit großen Werten eingefügt hat. Wir haben die Zeilen und Spalten des Datensatzes gemischt und ihn an den Spectral Co-Clustering-Algorithmus übergeben. Wir haben den Konsensus-Score der Bicluster berechnet und den gemischten Datensatz neu angeordnet, um die Bicluster zusammenhängend zu machen. Schließlich haben wir die Bicluster visualisiert, um zu zeigen, wie genau der Algorithmus sie gefunden hat.

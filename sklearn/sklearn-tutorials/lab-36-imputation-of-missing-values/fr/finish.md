@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce tutoriel, nous avons appris différentes stratégies pour imputer les valeurs manquantes à l'aide de scikit-learn. Nous avons exploré l'imputation de caractéristiques univariées avec `SimpleImputer`, l'imputation de caractéristiques multivariées avec `IterativeImputer`, l'imputation par voisins les plus proches avec `KNNImputer`, la conservation du nombre de caractéristiques constant et le marquage des valeurs imputées avec `MissingIndicator`. Ces techniques peuvent être des outils précieux pour traiter les données manquantes et s'assurer que les algorithmes d'apprentissage automatique peuvent être appliqués à des ensembles de données incomplètes.

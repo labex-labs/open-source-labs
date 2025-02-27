@@ -43,9 +43,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Set up the vectorizer and hold out a test set",
@@ -57,9 +55,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Define a function to get a minibatch of examples",
@@ -71,9 +67,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Define a generator function to iterate over minibatches",
@@ -85,9 +79,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Iterate over mini-batches of examples and update the classifiers",
@@ -99,9 +91,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Plot the results",
@@ -113,9 +103,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       }
     ],
     "intro": {
@@ -540,6 +528,204 @@
         "finish": {
           "text": "de/finish.md",
           "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "コア外学習を用いたテキスト分類",
+      "description": "この実験では、コア外学習を用いてscikit-learnを使ってテキスト分類を行う方法の例を示します。目的は、メインメモリに収まらないデータから学習することです。これを達成するために、partial_fitメソッドをサポートするオンライン分類器を利用し、これにサンプルのバッチを供給します。特徴空間が時間の経過とともに同じままになるようにするため、各サンプルを同じ特徴空間に射影するHashingVectorizerを活用します。これは、各バッチに新しい特徴（単語）が現れる可能性のあるテキスト分類の場合に特に役立ちます。",
+      "meta": {
+        "title": "Scikit-Learnによるテキスト分類 | コア外学習",
+        "description": "コア外学習を使ってscikit-learnをテキスト分類にどのように使用するか学びましょう。メモリに収まらない大規模なデータセットを処理するために、オンライン分類器とHashingVectorizerを活用しましょう。",
+        "keywords": "テキスト分類, scikit-learn, コア外学習, オンライン分類器, HashingVectorizer"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "ライブラリをインポートしてパーサーを定義する",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "ロイター通信の文書のストリームを定義する",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify2-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "ベクトル化器をセットアップしてテストセットを分割する",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify3-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "サンプルのミニバッチを取得する関数を定義する",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify4-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "ミニバッチを反復処理するためのジェネレータ関数を定義する",
+            "text": "ja/step5.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify5-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "サンプルのミニバッチを反復処理して分類器を更新する",
+            "text": "ja/step6.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify6-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "結果をプロットする",
+            "text": "ja/step7.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify7-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Классификация текстов с использованием out - of - core обучения",
+      "description": "В этом практическом занятии показано, как использовать scikit - learn для классификации текстов с использованием out - of - core обучения. Цель - научиться работать с данными, не помещающимися в оперативную память. Для этого мы используем онлайн - классификатор, поддерживающий метод partial_fit, которому подаются пакеты примеров. Чтобы обеспечить неизменность пространства признаков во времени, мы используем HashingVectorizer, который проектирует каждый пример в одно и то же пространство признаков. Это особенно полезно в задачах классификации текстов, где в каждом пакете могут появляться новые признаки (слова).",
+      "meta": {
+        "title": "Классификация текстов с Scikit - Learn | Out - of - core обучение",
+        "description": "Изучите, как использовать scikit - learn для классификации текстов с использованием out - of - core обучения. Используйте онлайн - классификаторы и HashingVectorizer для обработки больших наборов данных, не помещающихся в память.",
+        "keywords": "классификация текстов, scikit - learn, out - of - core обучение, онлайн - классификаторы, HashingVectorizer"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Импортировать библиотеки и определить парсер",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Определить поток документов Reuters",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify2-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Настроить векторизатор и выделить тестовую выборку",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify3-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Определить функцию для получения мини - пакета примеров",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify4-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Определить генераторную функцию для итерации по мини - пакетам",
+            "text": "ru/step5.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify5-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Проводить итерацию по мини - пакетам примеров и обновлять классификаторы",
+            "text": "ru/step6.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify6-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Построить результаты",
+            "text": "ru/step7.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify7-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
         }
       }
     }

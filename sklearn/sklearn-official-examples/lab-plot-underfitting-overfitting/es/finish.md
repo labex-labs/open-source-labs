@@ -1,0 +1,3 @@
+# Resumen
+
+Esta práctica mostró cómo utilizar la regresión lineal con características polinómicas para aproximar funciones no lineales, y cómo evaluar el rendimiento del modelo utilizando validación cruzada. Vimos que una función lineal no es suficiente para ajustar las muestras de entrenamiento, y que un polinomio de grado 4 aproxima la función real casi perfectamente. Sin embargo, para grados más altos, el modelo sobreajustará los datos de entrenamiento y aprenderá el ruido de los datos de entrenamiento. Podemos utilizar la validación cruzada y el error cuadrático medio (MSE) para evaluar el rendimiento del modelo y evitar el sobreajuste.

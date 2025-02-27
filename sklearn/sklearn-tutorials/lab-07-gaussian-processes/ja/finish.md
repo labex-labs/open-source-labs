@@ -1,0 +1,3 @@
+# まとめ
+
+この実験では、ガウス過程（Gaussian Processes：GP）とその回帰および分類タスクへの応用を検討しました。scikit-learnからのGaussianProcessRegressorとGaussianProcessClassifierクラスをどのように使用するか、およびGPに対して異なる種類のカーネルをどのように指定するかを学びました。また、回帰タスクに対するGPRと多クラス分類タスクに対するGPCの例も見て、ガウス過程の多様性と機能を示しました。

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Feature-Extraktion mit der scikit-learn-Bibliothek durchführt. Wir haben verschiedene Techniken wie das Laden von Features aus Dictionaries, Feature Hashing und die Text-Feature-Extraktion untersucht. Wir haben auch gelernt, wie man das Verhalten von Vektorizer-Klassen anpasst, um unseren spezifischen Anforderungen zu entsprechen. Die Feature-Extraktion ist ein wichtiger Schritt in der Maschinellen Lernung, da sie hilft, Rohdaten in ein Format zu transformieren, das von Algorithmen zur Vorhersage oder Klassifizierung von Daten verwendet werden kann.

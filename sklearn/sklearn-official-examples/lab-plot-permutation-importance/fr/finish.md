@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons comparé l'importance des fonctionnalités basée sur l'impureté avec l'importance de permutation sur l'ensemble de données Titanic en utilisant un classifieur forêt aléatoire. Nous avons observé que l'importance des fonctionnalités basée sur l'impureté peut surestimer l'importance des fonctionnalités numériques et est biaisée en faveur des fonctionnalités à forte cardinalité. L'importance de permutation est un meilleur indicateur de l'importance des fonctionnalités et n'est pas biaisée en faveur des fonctionnalités à forte cardinalité. Nous avons également observé que limiter la capacité des arbres à surapprendre peut réduire l'importance des fonctionnalités non prédictives.

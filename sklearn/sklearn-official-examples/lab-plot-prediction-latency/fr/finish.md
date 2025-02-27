@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser les estimateurs de Scikit-Learn pour évaluer la latence de prédiction de différents régresseurs. Nous avons mesuré la latence lors des prédictions en mode en bloc ou atomique, et avons tracé la distribution de la latence de prédiction sous forme de boîte à moustaches. Nous avons également estimé l'influence du nombre de caractéristiques sur le temps de prédiction et tracé l'évolution du temps de prédiction en fonction du nombre de caractéristiques. Enfin, nous avons mesuré le débit pour différents estimateurs et tracé le débit de prédiction pour différents estimateurs.

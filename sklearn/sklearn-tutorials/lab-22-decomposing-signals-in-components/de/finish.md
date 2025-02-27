@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir verschiedene Techniken zur Zerlegung von Signalen in ihre Komponenten untersucht. Wir haben uns mit der Hauptkomponentenanalyse (PCA), der Unabhängigen Komponentenanalyse (ICA), der Nicht-negativen Matrixfaktorisierung (NMF) und der Latenten Dirichlet-Allokation (LDA) vertraut gemacht. Diese Techniken werden in verschiedenen Anwendungen wie der Dimensionsreduzierung, der Trennung von Blindquellen, der Themensuche und vielen anderen eingesetzt. Durch die Anwendung dieser Techniken können wir Einblicke gewinnen und sinnvolle Informationen aus hochdimensionalen Signalen und Datensätzen extrahieren.

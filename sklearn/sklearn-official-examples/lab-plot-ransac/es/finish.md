@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, demostramos cómo ajustar robustamente un modelo lineal a datos defectuosos utilizando el algoritmo RANSAC en scikit-learn. Generamos datos aleatorios utilizando el conjunto de datos make_regression, agregamos valores atípicos a los datos, ajustamos tanto un modelo lineal como un regresor RANSAC a los datos, predecimos los datos de los dos modelos, comparamos sus coeficientes estimados y visualizamos los resultados. El regresor RANSAC automaticamente divide los datos en valores atípicos y valores no atípicos, y la línea ajustada se determina solo por los valores no atípicos identificados, lo que lo convierte en un método más robusto para ajustar modelos a datos con valores atípicos.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Struktur des Entscheidungsbaums analysiert, um weitere Einblicke in die Beziehung zwischen den Merkmalen und der Zielvariable zu erhalten, die vorhergesagt werden soll. Wir haben gesehen, wie man die binäre Baumstruktur abruft, den Entscheidungsbaum visualisiert und den Entscheidungsweg und die Blattknoten für eine einzelne Probe oder eine Gruppe von Proben abruft. Diese Techniken können uns helfen, besser zu verstehen, wie der Entscheidungsbaum-Klassifizierer seine Vorhersagen trifft, und uns dabei unterstützen, das Modell zu optimieren, um seine Leistung zu verbessern.

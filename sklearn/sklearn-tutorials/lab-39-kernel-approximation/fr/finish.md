@@ -1,0 +1,3 @@
+# Sommaire
+
+L'approximation de noyau est une technique puissante qui nous permet d'utiliser efficacement les méthodes de noyau, en particulier pour les grands ensembles de données. Dans ce tutoriel, nous avons exploré plusieurs méthodes d'approximation de noyau disponibles dans scikit-learn, y compris la méthode de Nystroem, l'approximation du noyau RBF, l'approximation du noyau ACS, l'approximation du noyau SCS et l'approximation du noyau polynomial en utilisant Tensor Sketch. Nous avons appris à utiliser ces techniques et discuté de leurs avantages et limites. En exploitant l'approximation de noyau, nous pouvons appliquer efficacement les méthodes de noyau à une large gamme de tâches d'apprentissage automatique.

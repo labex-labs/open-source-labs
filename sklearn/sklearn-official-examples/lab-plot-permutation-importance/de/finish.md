@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir die auf Unreinheit basierende Merkmalswichtigkeit mit der Permutations-Wichtigkeit auf dem Titanic-Datensatz mit einem Zufälligen Wald-Klassifizierer verglichen. Wir haben festgestellt, dass die auf Unreinheit basierende Merkmalswichtigkeit die Wichtigkeit numerischer Merkmale überhöhen und voreingenommen gegenüber Merkmalen mit hoher Kardinalität ist. Die Permutations-Wichtigkeit ist ein besserer Indikator für die Merkmalswichtigkeit und ist nicht voreingenommen gegenüber Merkmalen mit hoher Kardinalität. Wir haben auch festgestellt, dass die Begrenzung der Fähigkeit der Bäume, zu overfitten, die Wichtigkeit nicht prädiktiver Merkmale verringern kann.

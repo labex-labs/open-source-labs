@@ -1,0 +1,3 @@
+# Sommaire
+
+Les pipelines et les estimateurs composites sont des outils puissants dans scikit-learn pour combiner des transformateurs et des estimateurs en un seul modèle. Ils offrent une commodité, une sélection de paramètres et une sécurité des données. Les pipelines permettent de chaîner des estimateurs, d'avoir des paramètres imbriqués et de mémoriser les transformateurs. Les estimateurs composites comme `TransformedTargetRegressor` et `FeatureUnion` offrent respectivement des transformations et une combinaison de caractéristiques. Ces concepts sont essentiels pour construire des modèles de machine learning complexes qui prétraitent et gèrent efficacement des données hétérogènes.

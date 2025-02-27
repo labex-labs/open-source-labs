@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir verschiedene supervised learning - Techniken kennengelernt und erfahren, wie man sie mit scikit - learn implementiert. Wir haben die Klassifikation mit nächsten Nachbarn, die lineare Regression und die Support Vector Machines (SVMs) behandelt. Diese Techniken ermöglichen es uns, Ausgabevariablen aus hochdimensionalen Beobachtungen vorherzusagen und Daten in verschiedene Kategorien zu klassifizieren. Indem wir diese Techniken auf reale Welt - Datensätze anwenden, können wir in verschiedenen Bereichen wie Gesundheitswesen, Finanzwesen und Sozialwissenschaften Erkenntnisse gewinnen und Vorhersagen treffen.

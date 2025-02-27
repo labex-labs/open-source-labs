@@ -1,6 +1,6 @@
-# Speichern der Grafiken
+# Die Diagramme speichern
 
-Wir werden die Grafiken im PDF- und EPS-Format speichern.
+Wir werden die Diagramme im PDF- und EPS-Format speichern.
 
 ```python
 plt.savefig("test_rasterization.pdf", dpi=150)

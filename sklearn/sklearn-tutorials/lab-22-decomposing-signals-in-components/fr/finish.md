@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons exploré diverses techniques pour décomposer des signaux en leurs composantes. Nous avons appris sur l'Analyse en Composantes Principales (PCA), l'Analyse en Composantes Indépendantes (ICA), la Factorisation en Matrice Non Négative (NMF) et l'Allocation Latente de Dirichlet (LDA). Ces techniques sont largement utilisées dans diverses applications telles que la réduction de dimension, la séparation des sources aveugles, la modélisation de sujets, etc. En appliquant ces techniques, nous pouvons obtenir des informations et extraire des informations significatives à partir de signaux et d'ensembles de données de haute dimension.

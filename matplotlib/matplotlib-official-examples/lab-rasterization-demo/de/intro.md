@@ -1,11 +1,11 @@
 # Einführung
 
-In diesem Lab lernst du über die Ver光栅isierung von Vektorgrafiken. Die Ver光栅isierung ist ein Prozess, bei dem Vektorgrafiken in ein Rasterbild (Pixel) umgewandelt werden. Dadurch kann das Rendern beschleunigt und kleinere Dateien für große Datensätze erzeugt werden, allerdings geht dies mit der Kosten eines festen Auflösungsvermögens einher. Wir werden die Python Matplotlib-Bibliothek verwenden, um das Konzept der Ver光栅isierung zu veranschaulichen.
+In diesem Lab werden Sie sich mit der Rasterisierung von Vektorgrafiken befassen. Rasterisierung ist der Prozess der Umwandlung von Vektorgrafiken in ein Rasterbild (Pixel). Dies kann die Rendering-Geschwindigkeit erhöhen und kleinere Dateien für große Datensätze erzeugen, hat jedoch den Nachteil einer festen Auflösung. Wir werden die Python-Bibliothek Matplotlib verwenden, um das Konzept der Rasterisierung zu veranschaulichen.
 
-## Tipps für die VM
+## Tipps für die virtuelle Maschine (VM)
 
-Nachdem der Start der VM abgeschlossen ist, klicke in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal musst du einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen in Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Operationen nicht automatisiert werden.
 
-Wenn du bei der Lernphase Probleme hast, kannst du Labby gerne fragen. Gib nach der Sitzung Feedback, und wir werden das Problem für dich prompt beheben.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie uns nach der Sitzung Feedback, und wir werden das Problem umgehend für Sie lösen.

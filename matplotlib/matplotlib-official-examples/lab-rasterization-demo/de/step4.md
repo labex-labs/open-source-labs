@@ -1,6 +1,6 @@
-# Erstellen eines pcolormesh-Plots ohne Ver光栅isierung
+# Ein pcolormesh-Diagramm ohne Rasterisierung erstellen
 
-Wir werden einen pcolormesh-Plot ohne Ver光栅isierung erstellen, um den Unterschied zwischen Ver光栅isierung und Nicht-Ver光栅isierung zu veranschaulichen.
+Wir werden ein pcolormesh-Diagramm ohne Rasterisierung erstellen, um den Unterschied zwischen Rasterisierung und Nicht-Rasterisierung zu veranschaulichen.
 
 ```python
 ax1.set_aspect(1)

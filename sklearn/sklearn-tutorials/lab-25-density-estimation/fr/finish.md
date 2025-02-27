@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, nous avons appris à effectuer une estimation de la densité à noyau en utilisant l'estimateur `KernelDensity` de scikit-learn. L'estimation de la densité à noyau est une technique puissante pour estimer la fonction de densité de probabilité d'une variable aléatoire. En ajustant un estimateur de densité à noyau à un ensemble de données, nous pouvons estimer la densité sous-jacente et la visualiser à l'aide d'un histogramme et de la fonction de densité estimée. Cela nous permet de mieux comprendre la distribution des données et de faire des prédictions probabilistes.

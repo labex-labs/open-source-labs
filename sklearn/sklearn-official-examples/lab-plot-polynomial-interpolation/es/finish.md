@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo aproximar una función con polinomios de un cierto grado utilizando regresión con regularización L2. Mostramos dos maneras diferentes de hacer esto dados `n_samples` de puntos unidimensionales `x_i`. Utilizamos la función `make_pipeline` para agregar características no lineales y demostramos cómo estos transformadores son adecuados para modelar efectos no lineales con un modelo lineal. Graficamos la función, los puntos de entrenamiento y la interpolación utilizando características polinómicas y B-splines. También graficamos todas las columnas de ambos transformadores por separado y mostramos los nudos de la spline. Finalmente, demostramos el uso de splines periódicas.

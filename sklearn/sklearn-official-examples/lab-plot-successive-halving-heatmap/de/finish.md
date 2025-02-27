@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Wir haben zwei beliebte Parameter-Suchalgorithmen in der Maschinellen Lernung verglichen: Grid Search und Successive Halving. Wir haben die scikit-learn-Bibliothek in Python verwendet, um den Vergleich durchzuführen. Wir haben einen synthetischen Datensatz generiert und die Parameter-Suche auf dem SVC-Modell mit beiden Algorithmen durchgeführt. Anschließend haben wir die Ergebnisse mit Hilfe von Heatmaps visualisiert. Wir haben festgestellt, dass der Successive-Halving-Algorithmus in viel weniger Zeit Parameterkombinationen finden konnte, die genauso genau wie Grid Search sind.

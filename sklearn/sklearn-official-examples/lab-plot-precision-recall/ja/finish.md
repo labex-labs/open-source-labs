@@ -1,0 +1,3 @@
+# まとめ
+
+このチュートリアルでは、Precision-Recallメトリックを使用して分類器の出力品質を評価する方法について、手順を追って説明しました。sklearn.metricsライブラリのPrecisionRecallDisplayクラスを使用して、2値分類のPrecision-Recall曲線を描画する方法を学びました。また、OneVsRestClassifierを使用してマルチラベル分類のPrecision-Recall曲線を描画する方法と、各クラスの精度と再現率を計算する方法についても学びました。

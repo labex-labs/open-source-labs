@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce laboratoire a démontré comment utiliser la régression linéaire avec des fonctionnalités polynômiales pour approximer des fonctions non linéaires, et comment évaluer les performances d'un modèle en utilisant la validation croisée. Nous avons vu qu'une fonction linéaire n'est pas suffisante pour ajuster les échantillons d'entraînement, et qu'un polynôme de degré 4 approche presque parfaitement la fonction réelle. Cependant, pour des degrés plus élevés, le modèle surajustera les données d'entraînement et apprendra le bruit des données d'entraînement. Nous pouvons utiliser la validation croisée et l'erreur quadratique moyenne (MSE) pour évaluer les performances d'un modèle et éviter le surajustement.

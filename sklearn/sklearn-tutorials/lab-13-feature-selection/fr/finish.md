@@ -1,0 +1,3 @@
+# Sommaire
+
+La sélection de fonctionnalités est une étape essentielle en apprentissage automatique pour améliorer la précision et les performances des modèles. Dans ce laboratoire, nous avons abordé diverses techniques telles que la suppression de fonctionnalités avec une faible variance, la sélection de fonctionnalités univariées, l'élimination récursive de fonctionnalités et la sélection de fonctionnalités en utilisant SelectFromModel. Ces techniques aident à sélectionner les fonctionnalités les plus pertinentes et à réduire la dimensionalité de l'ensemble de données, ce qui entraîne une amélioration des performances du modèle.

@@ -1,0 +1,3 @@
+# Sommaire
+
+L'apprentissage sur variété est un outil puissant pour visualiser des ensembles de données à haute dimension. Il nous permet de réduire la dimensionalité des données tout en conservant la structure sous-jacente. Dans ce laboratoire, nous avons exploré trois algorithmes différents d'apprentissage sur variété : Isomap, Embedding localement linéaire (LLE) et t-SNE. Nous avons appliqué ces algorithmes à divers ensembles de données et comparé leurs résultats. En utilisant l'apprentissage sur variété, nous pouvons obtenir des informations sur la structure des ensembles de données complexes et analyser et visualiser plus efficacement les données à haute dimension.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir ein Beispiel für die Verwendung des Gauß'schen Naiven Bayes-Klassifizierers aus scikit-learn durchlaufen. Wir haben den Iris-Datensatz geladen, ihn in Trainings- und Testsets unterteilt, den Klassifizierer auf dem Trainingssatz trainiert und seine Leistung auf dem Testsatz ausgewertet. Die erzielte Genauigkeit gibt uns einen Anhaltspunkt dafür, wie gut der Klassifizierer in der Vorhersage der Irisblumenarten performt. Naive Bayes-Klassifizierer sind einfache, aber effektive Algorithmen für Klassifizierungstasks und werden häufig in verschiedenen realen Anwendungen verwendet.
