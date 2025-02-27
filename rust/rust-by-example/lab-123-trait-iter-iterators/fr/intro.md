@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous allons découvrir le trait `Iterator` en Rust, qui est utilisé pour implémenter des itérateurs sur des collections telles que les tableaux. Le trait `Iterator` exige que la méthode `next` soit définie pour l'itérateur, et peut être implémenté manuellement dans un bloc `impl` ou défini automatiquement pour les tableaux et les plages. La construction `for` peut être utilisée pour transformer commodément certaines collections en itérateurs en utilisant la méthode `.into_iter()`. Le laboratoire fournit une implémentation de générateur de suite de Fibonacci en tant qu'itérateur, montrant comment définir la méthode `next` et utiliser le trait `Iterator`. De plus, il démontre l'utilisation des méthodes `take` et `skip` pour manipuler les itérateurs, ainsi que la méthode `iter` pour itérer sur les tableaux.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

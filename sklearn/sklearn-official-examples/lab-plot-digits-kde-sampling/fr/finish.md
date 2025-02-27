@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, nous avons appris à utiliser l'estimation de densité par noyau (Kernel Density Estimation - KDE) pour générer de nouveaux échantillons de données. Nous avons utilisé la bibliothèque scikit-learn pour implémenter cette technique. Nous avons optimisé le paramètre de largeur de bande de la KDE en utilisant la validation croisée par recherche sur grille. Nous avons ensuite échantillonné de nouveaux points de données et les avons transformés de retour à leur dimension d'origine en utilisant la PCA. Enfin, nous avons tracé les chiffres originaux et les chiffres redéchantillonnés côte à côte dans une grille 4x11.

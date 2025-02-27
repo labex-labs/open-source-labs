@@ -1,0 +1,3 @@
+# Caractéristiques des langages orientés objet
+
+Il n'y a pas de consensus dans la communauté de programmation quant aux fonctionnalités qu'un langage doit avoir pour être considéré comme orienté objet. Rust est influencé par de nombreux paradigmes de programmation, y compris la programmation orientée objet (POO); par exemple, nous avons exploré les fonctionnalités issues de la programmation fonctionnelle au chapitre 13. On peut dire que les langages POO partagent certaines caractéristiques communes, à savoir les objets, l'encapsulation et l'héritage. Regardons ce que signifie chacune de ces caractéristiques et si Rust les prend en charge.

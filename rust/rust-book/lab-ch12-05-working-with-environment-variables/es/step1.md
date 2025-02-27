@@ -1,0 +1,3 @@
+# Trabajar con Variables de Entorno
+
+Mejoraremos `minigrep` agregando una característica adicional: una opción para la búsqueda sin distinguir mayúsculas y minúsculas que el usuario puede activar a través de una variable de entorno. Podríamos hacer que esta característica sea una opción de línea de comandos y exigir que los usuarios la ingresen cada vez que la deseen aplicar, pero en lugar de eso, al hacerla una variable de entorno, permitimos que nuestros usuarios establezcan la variable de entorno una vez y que todas sus búsquedas sean sin distinguir mayúsculas y minúsculas en esa sesión de terminal.

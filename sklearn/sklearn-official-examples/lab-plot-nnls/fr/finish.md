@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris sur la régression linéaire non négative et en quoi elle diffère de la régression linéaire classique. Nous avons utilisé scikit-learn pour implémenter cet algorithme et l'avons comparé à la régression linéaire classique en générant des données aléatoires et en les divisant en un ensemble d'entraînement et un ensemble de test. Nous avons ensuite ajusté les deux modèles aux données, prédit les valeurs pour l'ensemble de test et calculé le score R2. Enfin, nous avons comparé les coefficients de régression entre les deux modèles et observé que la régression linéaire non négative produit des résultats parcimonieux.

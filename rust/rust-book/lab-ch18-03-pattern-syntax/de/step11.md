@@ -1,0 +1,3 @@
+# Überspringen von Werten in einem Muster
+
+Du hast gesehen, dass es manchmal nützlich ist, Werte in einem Muster zu ignorieren, wie z.B. im letzten Arm eines `match`, um einen Fallback zu erhalten, der eigentlich nichts tut, aber alle verbleibenden möglichen Werte abdeckt. Es gibt einige Möglichkeiten, ganze Werte oder Teile von Werten in einem Muster zu ignorieren: Verwendung des `_`-Musters (das du schon kennst), Verwendung des `_`-Musters innerhalb eines anderen Musters, Verwendung eines Namens, der mit einem Unterstrich beginnt, oder Verwendung von `..`, um die verbleibenden Teile eines Werts zu ignorieren. Lass uns untersuchen, wie und warum man jedes dieser Muster verwendet.

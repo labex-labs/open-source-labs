@@ -1,0 +1,55 @@
+# グリッドを生成して描画する
+
+2 次元単純形上の補正前の確率の可能なグリッドを生成し、対応する補正済みの確率を計算し、それぞれに矢印を描画します。矢印は、最も高い補正前の確率に応じて色付けされます。これは学習された補正マップを示しています。
+
+```python
+plt.figure(figsize=(10, 10))
+# Generate grid of probability values
+p1d = np.linspace(0, 1, 20)
+p0, p1 = np.meshgrid(p1d, p1d)
+p2 = 1 - p0 - p1
+p = np.c_[p0.ravel(), p1.ravel(), p2.ravel()]
+p = p[p[:, 2] >= 0]
+
+# Use the three class-wise calibrators to compute calibrated probabilities
+calibrated_classifier = cal_clf.calibrated_classifiers_[0]
+prediction = np.vstack(
+    [
+        calibrator.predict(this_p)
+        for calibrator, this_p in zip(calibrated_classifier.calibrators, p.T)
+    ]
+).T
+
+# Re-normalize the calibrated predictions to make sure they stay inside the
+# simplex. This same renormalization step is performed internally by the
+# predict method of CalibratedClassifierCV on multiclass problems.
+prediction /= prediction.sum(axis=1)[:, None]
+
+# Plot changes in predicted probabilities induced by the calibrators
+for i in range(prediction.shape[0]):
+    plt.arrow(
+        p[i, 0],
+        p[i, 1],
+        prediction[i, 0] - p[i, 0],
+        prediction[i, 1] - p[i, 1],
+        head_width=1e-2,
+        color=colors[np.argmax(p[i])],
+    )
+
+# Plot the boundaries of the unit simplex
+plt.plot([0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], "k", label="Simplex")
+
+plt.grid(False)
+for x in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
+    plt.plot([0, x], [x, 0], "k", alpha=0.2)
+    plt.plot([0, 0 + (1 - x) / 2], [x, x + (1 - x) / 2], "k", alpha=0.2)
+    plt.plot([x, x + (1 - x) / 2], [0, 0 + (1 - x) / 2], "k", alpha=0.2)
+
+plt.title("Learned sigmoid calibration map")
+plt.xlabel("Probability class 1")
+plt.ylabel("Probability class 2")
+plt.xlim(-0.05, 1.05)
+plt.ylim(-0.05, 1.05)
+
+plt.show()
+```

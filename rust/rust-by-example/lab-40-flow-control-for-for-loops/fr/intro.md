@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous apprenons à utiliser les boucles `for` et les plages en Rust. Nous pouvons utiliser la boucle `for` avec la notation de plage `a..b` pour itérer sur une plage de valeurs. Par exemple, nous pouvons écrire le programme FizzBuzz en utilisant une boucle `for` au lieu d'une boucle `while`. De plus, nous pouvons utiliser la notation `..=` pour une plage qui est inclusive des deux côtés. La boucle `for` peut également interagir avec les itérateurs de différentes manières, par exemple en utilisant `iter` pour emprunter chaque élément d'une collection, `into_iter` pour consommer la collection ou `iter_mut` pour emprunter mutuellement chaque élément de la collection. Chacune de ces méthodes offre une vue différente des données à l'intérieur de la collection, permettant d'effectuer différentes actions.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

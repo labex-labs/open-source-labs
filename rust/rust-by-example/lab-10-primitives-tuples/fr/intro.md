@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous explorons les tuples en Rust. Les tuples sont des collections de valeurs de différents types et sont construits en utilisant des parenthèses. Ils peuvent être utilisés comme arguments de fonction et valeurs de retour, permettant aux fonctions de retourner plusieurs valeurs. Les tuples peuvent également être utilisés comme membres d'autres tuples. Rust fournit un indexage de tuple pour accéder aux valeurs dans un tuple. Les tuples sont imprimables et peuvent être décomposés pour créer des liaisons. En outre, nous apprenons comment ajouter le trait `fmt::Display` à une structure pour personnaliser son format d'impression. Enfin, nous recevons une activité pour implémenter une fonction `transpose` qui échange deux éléments dans une matrice.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

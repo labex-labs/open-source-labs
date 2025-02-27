@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir uns mit der nichtnegativen kleinsten Quadrate Regression und ihrem Unterschied zur klassischen linearen Regression beschäftigt. Wir haben scikit-learn verwendet, um dieses Verfahren zu implementieren und es mit der klassischen linearen Regression verglichen, indem wir zufällige Daten generiert und in ein Trainingsset und ein Testset unterteilt haben. Anschließend haben wir beide Modelle an die Daten angepasst, die Werte für das Testset vorhergesagt und den R2-Wert berechnet. Schließlich haben wir die Regressionskoeffizienten zwischen den beiden Modellen verglichen und festgestellt, dass die nichtnegative kleinste Quadrate Regression dünne Ergebnisse liefert.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab wurde gezeigt, wie die Gram-Matrix bei der Verwendung von gewichteten Stichproben mit einem ElasticNet vorberechnet werden kann. Zunächst haben wir einen Regressionsdatensatz geladen und einen lognormalverteilten Gewichtsvektor erstellt, der normalisiert wurde, sodass die Summe der Gewichte der Gesamtzahl der Stichproben entspricht. Anschließend haben wir die Designmatrix zentriert, sie durch die normalisierten Gewichte skaliert und die Gram-Matrix berechnet. Schließlich haben wir das elastische Netz mit der vorberechneten Gram-Matrix und den normalisierten Gewichten angepasst.

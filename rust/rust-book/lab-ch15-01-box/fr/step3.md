@@ -1,0 +1,5 @@
+# Autoriser les types récursifs avec des boîtes
+
+Une valeur d'un _type récursif_ peut avoir une autre valeur du même type comme partie d'elle-même. Les types récursifs posent un problème car au moment de la compilation, Rust doit savoir combien d'espace occupe un type. Cependant, le couplage des valeurs de types récursifs pourrait théoriquement continuer indéfiniment, donc Rust ne peut pas savoir combien d'espace la valeur nécessite. Parce que les boîtes ont une taille connue, nous pouvons autoriser les types récursifs en insérant une boîte dans la définition du type récursif.
+
+En tant qu'exemple de type récursif, explorons la _liste cons_. Il s'agit d'un type de données couramment trouvé dans les langages de programmation fonctionnels. Le type de liste cons que nous allons définir est simple, sauf pour la récursion ; par conséquent, les concepts de l'exemple avec lequel nous allons travailler seront utiles chaque fois que vous vous retrouverez dans des situations plus complexes impliquant des types récursifs.

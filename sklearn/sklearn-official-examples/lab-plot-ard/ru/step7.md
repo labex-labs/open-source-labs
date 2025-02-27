@@ -1,0 +1,28 @@
+# Построение графиков полиномиальных регрессий с стандартными ошибками оценок
+
+Стрелки ошибок представляют собой одно стандартное отклонение предсказанного гауссова распределения для точек запроса. Обратите внимание, что ARD-регрессия лучше всего описывает истинные значения, когда используются параметры по умолчанию в обеих моделях, но дальнейшее уменьшение гиперпараметра `lambda_init` для Bayesian Ridge может уменьшить его смещение. Наконец, из-за внутренних ограничений полиномиальной регрессии обе модели не справляются при экстраполяции.
+
+```python
+ax = sns.scatterplot(
+    data=full_data, x="input_feature", y="target", color="black", alpha=0.75
+)
+ax.plot(X_plot, y_plot, color="black", label="Ground Truth")
+ax.plot(X_plot, y_brr, color="red", label="BayesianRidge with polynomial features")
+ax.plot(X_plot, y_ard, color="navy", label="ARD with polynomial features")
+ax.fill_between(
+    X_plot.ravel(),
+    y_ard - y_ard_std,
+    y_ard + y_ard_std,
+    color="navy",
+    alpha=0.3,
+)
+ax.fill_between(
+    X_plot.ravel(),
+    y_brr - y_brr_std,
+    y_brr + y_brr_std,
+    color="red",
+    alpha=0.3,
+)
+ax.legend()
+_ = ax.set_title("Polynomial fit of a non-linear feature")
+```

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons comparé la classification par plus proches voisins avec et sans Analyse des Composantes du Voisinage (NCA en anglais). Nous avons utilisé le jeu de données Iris pour tracer les limites de décision de classe données par un classifieur de plus proches voisins lorsqu'on utilise la distance euclidienne sur les caractéristiques d'origine, par rapport à l'utilisation de la distance euclidienne après la transformation apprise par l'NCA. Nous avons utilisé scikit-learn pour effectuer la classification par plus proches voisins et l'NCA. Nous avons également utilisé matplotlib pour tracer les limites de décision de classe. Nous avons constaté que l'NCA a amélioré la précision de classification.

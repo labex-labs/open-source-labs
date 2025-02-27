@@ -1,6 +1,6 @@
-# Erstellen eines pcolormesh-Diagramms ohne Ver光栅isierung
+# Erstellen eines pcolormesh-Plots ohne Ver光栅isierung
 
-Wir werden ein pcolormesh-Diagramm ohne Ver光栅isierung erstellen, um den Unterschied zwischen Ver光栅isierung und Nicht-Ver光栅isierung zu veranschaulichen.
+Wir werden einen pcolormesh-Plot ohne Ver光栅isierung erstellen, um den Unterschied zwischen Ver光栅isierung und Nicht-Ver光栅isierung zu veranschaulichen.
 
 ```python
 ax1.set_aspect(1)

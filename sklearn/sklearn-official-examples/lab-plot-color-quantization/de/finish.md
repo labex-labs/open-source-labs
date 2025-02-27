@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man den K-Means-Clustering-Algorithmus verwendet, um eine Farbquantisierung auf einem Bild durchzuführen. Wir haben das Originalbild geladen und angezeigt, es in Floats umgewandelt und in ein 2D-Numpy-Array umgeformt. Wir haben das K-Means-Modell an einer Teilstichprobe der Bilddaten angepasst und es verwendet, um Farb-Indizes für das gesamte Bild vorherzusagen. Wir haben auch Farb-Indizes für das gesamte Bild mit einem zufälligen Codebuch vorhergesagt. Schließlich haben wir das komprimierte Bild mithilfe des Codebuchs und der Labels, die aus dem K-Means-Modell und dem zufälligen Codebuch erhalten wurden, neu erstellt und das Originalbild neben den quantisierten Bildern angezeigt.

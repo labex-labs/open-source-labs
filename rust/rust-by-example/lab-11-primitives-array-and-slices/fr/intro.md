@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer les tableaux et les tranches en Rust. Un tableau est une collection d'objets du même type stockés en mémoire contiguë, et sa longueur est connue à la compilation. En revanche, une tranche est similaire à un tableau, mais sa longueur n'est pas connue à la compilation. Les tranches peuvent être utilisées pour emprunter une section d'un tableau. Nous aborderons également la création de tableaux, l'accès aux éléments, le calcul de la longueur, l'allocation de mémoire, l'emprunt de tableaux sous forme de tranches et la manipulation de tranches vides. De plus, nous discuterons de la manière de sécuriser l'accès aux éléments du tableau en utilisant la méthode `.get()` et de gérer les erreurs liées aux indices hors limites.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

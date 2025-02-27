@@ -1,0 +1,3 @@
+# Resumen
+
+Esta práctica mostró cómo utilizar la regresión cuantil para crear intervalos de predicción utilizando scikit - learn. Generamos datos sintéticos para un problema de regresión, aplicamos la función a estos datos y creamos observaciones de la variable objetivo utilizando una distribución lognormal. Dividimos los datos en conjuntos de entrenamiento y prueba, ajustamos regresores cuantílicos no lineales y de mínimos cuadrados, y creamos un conjunto de evaluación equiespaciado de valores de entrada que cubre el rango [0, 10]. Comparamos la mediana predicha con la media predicha, analizamos las métricas de error y calibramos el intervalo de confianza. Finalmente, ajustamos los hiperparámetros de los regresores cuantílicos.

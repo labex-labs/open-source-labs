@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous avons appris à formater en Rust et à utiliser la macro `format!` pour formater des variables. Nous avons vu que la mise en forme est spécifiée à l'aide d'une chaîne de formatage, et différents types d'arguments peuvent être utilisés pour formater la même variable de différentes manières. Le trait de formatage le plus courant est `Display`, qui gère les cas où le type d'argument n'est pas spécifié. Nous avons vu un exemple d'implémentation du trait `Display` pour une structure `City`, où nous avons formatté les valeurs de latitude et de longitude. Nous avons également vu un exemple d'une structure `Color` et avons eu pour tâche d'implémenter le trait `Display` pour qu'elle affiche les valeurs RGB et leur représentation hexadécimale.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

@@ -1,0 +1,5 @@
+# Auswahl zwischen Schleifen und Iteratoren
+
+Die nächste logische Frage ist, welche Stil Sie in Ihrem eigenen Code wählen sollten und warum: die ursprüngliche Implementierung in Listing 13-21 oder die Version mit Iteratoren in Listing 13-22. Die meisten Rust-Programmierer bevorzugen den Iterator-Stil. Es ist zunächst etwas schwieriger, ihn zu verstehen, aber sobald Sie sich mit den verschiedenen Iteratoradaptern und ihren Funktionen vertraut gemacht haben, können Iteratoren einfacher zu verstehen sein. Anstatt sich mit den verschiedenen Teilen der Schleife und dem Erstellen neuer Vektoren herumzuschlagen, konzentriert sich der Code auf das höhere Ziel der Schleife. Dies abstrahiert einige der üblichen Codeteile, sodass es einfacher ist, die für diesen Code einzigartigen Konzepte zu erkennen, wie die Filterbedingung, die jedes Element im Iterator erfüllen muss.
+
+Aber sind die beiden Implementierungen wirklich gleichwertig? Die intuitive Annahme wäre, dass die niedrigerebene Schleife schneller wäre. Lassen Sie uns über die Leistung sprechen.

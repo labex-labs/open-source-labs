@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Support Vector Machines (SVM) verwendet, um eine Probe mit einem benutzerdefinierten Kernel zu klassifizieren. Wir haben die scikit-learn-Bibliothek verwendet, um die SVM-Klassifizierung mit einem benutzerdefinierten Kernel durchzuführen. Wir haben den Iris-Datensatz geladen, einen benutzerdefinierten Kernel erstellt, eine Instanz des SVM-Klassifizierers erstellt und unsere Daten angepasst und die Entscheidungsgrenze und die Stützvektoren geplottet. SVM ist ein populäres Machine-Learning-Algorithmus, der zur Klassifizierung, Regression und Ausreißererkennung verwendet wird.

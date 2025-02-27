@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo realizar la selección de modelos con los Modelos de Mezcla Gaussiana (GMM) utilizando criterios de teoría de la información. Utilizamos el Criterio de Información de Akaike (AIC) y el Criterio de Información Bayesiano (BIC) para seleccionar el mejor modelo. Generamos dos componentes mediante la muestra aleatoria de la distribución normal estándar. Una componente se mantuvo esférica pero se desplazó y se reescaló. La otra se deformó para tener una matriz de covarianza más general. Visualizamos los diferentes componentes, entrenamos y seleccionamos el mejor modelo, graficamos las puntuaciones BIC y graficamos el mejor modelo.

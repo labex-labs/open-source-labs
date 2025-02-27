@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, le module `std::fs` de Rust est présenté, qui fournit des fonctions pour les opérations sur le système de fichiers. Le laboratoire fournit des exemples de diverses opérations sur le système de fichiers, notamment la création de répertoires, la création de fichiers, la lecture du contenu des fichiers, la création de liens symboliques, la liste du contenu d'un répertoire, la suppression de fichiers et la suppression de répertoires. Les extraits de code montrent comment effectuer ces opérations à l'aide des fonctions du module `std::fs`, et la sortie attendue pour chaque opération est fournie. De plus, une implémentation alternative de la fonction `cat` utilisant la notation `?` pour la gestion des erreurs est mentionnée.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

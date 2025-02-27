@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons utilisé l'algorithme du modèle mixte gaussien pour ajuster un ensemble de données qui suit une courbe sinusoidale bruyante. Nous avons utilisé deux types différents de modèles mixtes gaussiens, à savoir l'algorithme d'Espérance-Maximisation et le modèle mixte gaussien bayésien avec une loi a priori de processus de Dirichlet. Nous avons tracé les résultats et échantillonné à partir des deux modèles pour comparer leurs performances. Le choix du meilleur modèle est subjectif et dépend de si nous voulons nous concentrer sur l'ensemble global ou suivre de près les régions de haute densité du signal.

@@ -1,0 +1,7 @@
+# Smart Pointer wie reguläre Referenzen behandeln mit Deref
+
+Das Implementieren des `Deref`-Traits ermöglicht es Ihnen, das Verhalten des _Dereferenzierungsoperators_ `*` (nicht zu verwechseln mit dem Multiplikations- oder Glob-Operator) anzupassen. Indem Sie `Deref` so implementieren, dass ein Smart Pointer wie eine reguläre Referenz behandelt werden kann, können Sie Code schreiben, der auf Referenzen operiert, und diesen Code auch mit Smart Pointern verwenden.
+
+Schauen wir uns zunächst an, wie der Dereferenzierungsoperator mit regulären Referenzen funktioniert. Dann werden wir versuchen, einen benutzerdefinierten Typ zu definieren, der wie `Box<T>` verhält, und sehen, warum der Dereferenzierungsoperator nicht wie eine Referenz auf unseren neu definierten Typ funktioniert. Wir werden untersuchen, wie das Implementieren des `Deref`-Traits es ermöglicht, dass Smart Pointer auf ähnliche Weise wie Referenzen funktionieren. Dann werden wir uns das _Deref-Zwangseigenschaft_ von Rust und wie es uns ermöglicht, mit Referenzen oder Smart Pointern zu arbeiten, ansehen.
+
+> Hinweis: Es gibt einen großen Unterschied zwischen dem `MyBox<T>`-Typ, den wir im folgenden erstellen werden, und dem echten `Box<T>`: Unsere Version wird nicht seine Daten auf dem Heap speichern. Wir konzentrieren dieses Beispiel auf `Deref`, daher ist es weniger wichtig, wo die Daten tatsächlich gespeichert werden, als das pointerähnliche Verhalten.

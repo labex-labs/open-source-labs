@@ -89,6 +89,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Sobrecarga de operadores en Rust",
+      "description": "En este laboratorio, exploramos la sobrecarga de operadores en Rust y cómo se puede lograr a través de traits. Los operadores en Rust se pueden sobrecargar utilizando traits, lo que les permite realizar diferentes tareas según sus argumentos de entrada. El operador +, por ejemplo, es azúcar sintáctico para el método add y puede ser utilizado por cualquier implementador del trait Add. Los traits que sobrecargan operadores, incluyendo Add, se pueden encontrar en core::ops. El código Rust proporcionado demuestra cómo sobrecargar el operador + para los tipos personalizados Foo y Bar, lo que resulta en tipos de salida diferentes FooBar y BarFoo respectivamente.",
+      "meta": {
+        "title": "Dominando la sobrecarga de operadores en Rust",
+        "description": "Explora el poder de la sobrecarga de operadores en Rust y aprende cómo crear tipos personalizados con comportamientos únicos.",
+        "keywords": "rust playground, desarrollo de software, tutor de rust, compilador en línea de rust, sobrecarga de operadores, comandos de rust, traits, práctica de rust, playground en línea de rust, rust en línea"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Sobrecarga de operadores",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify1-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Surchargement d'opérateurs en Rust",
+      "description": "Dans ce laboratoire, nous explorons le surchargement d'opérateurs en Rust et comment il peut être réalisé grâce à des traits. Les opérateurs en Rust peuvent être surchargés à l'aide de traits, ce qui leur permet d'effectuer différentes tâches en fonction de leurs arguments d'entrée. L'opérateur +, par exemple, est un sucre syntaxique pour la méthode add et peut être utilisé par tout implémentateur du trait Add. Les traits qui surchargent les opérateurs, y compris Add, se trouvent dans core::ops. Le code Rust fourni montre comment surcharger l'opérateur + pour les types personnalisés Foo et Bar, donnant respectivement des types de sortie différents FooBar et BarFoo.",
+      "meta": {
+        "title": "Maîtriser le surchargement d'opérateurs en Rust",
+        "description": "Explorez le pouvoir du surchargement d'opérateurs en Rust et apprenez à créer des types personnalisés avec des comportements uniques.",
+        "keywords": "plateforme de pratique Rust, développement logiciel, tuteur Rust, compilateur en ligne Rust, surchargement d'opérateurs, commandes Rust, traits, pratique Rust, plateforme de pratique en ligne Rust, Rust en ligne"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Surchargement d'opérateurs",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Operatorüberladung in Rust",
+      "description": "In diesem Lab untersuchen wir die Operatorüberladung in Rust und wie dies durch Traits erreicht werden kann. Operatoren in Rust können mithilfe von Traits überladen werden, was es ihnen ermöglicht, unterschiedliche Aufgaben basierend auf ihren Eingabeargumenten auszuführen. Der +-Operator ist beispielsweise syntaktischer Zucker für die add-Methode und kann von jedem Implementierer des Add-Traits verwendet werden. Die Traits, die Operatoren überladen, einschließlich Add, können in core::ops gefunden werden. Der bereitgestellte Rust-Code zeigt, wie der +-Operator für benutzerdefinierte Typen Foo und Bar überladen wird, was jeweils zu unterschiedlichen Ausgabetypen FooBar und BarFoo führt.",
+      "meta": {
+        "title": "Meisterhaftigkeit in der Operatorüberladung in Rust",
+        "description": "Entdecken Sie die Macht der Operatorüberladung in Rust und lernen Sie, wie Sie benutzerdefinierte Typen mit einzigartigen Verhaltensweisen erstellen.",
+        "keywords": "rust playground,软件开发, rust tutor, rust在线编译器, Operatorüberladung, rust Befehle, Traits, rust Übung, rust在线游乐场, rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Operatorüberladung",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "Rustにおける演算子のオーバーロード",
+      "description": "この実験では、Rustにおける演算子のオーバーロードと、トレイトを通じてそれを実現する方法を探ります。Rustの演算子は、トレイトを使用してオーバーロードできます。これにより、演算子は入力引数に基づいて異なるタスクを実行できます。たとえば、`+`演算子は`add`メソッドのシンタックス・シュガーであり、`Add`トレイトの実装者によって使用できます。演算子をオーバーロードするトレイト、`Add`を含めて、`core::ops`にあります。提供されたRustコードは、カスタム型`Foo`と`Bar`に対して`+`演算子をオーバーロードする方法を示しており、それぞれ異なる出力型`FooBar`と`BarFoo`を生成します。",
+      "meta": {
+        "title": "Rustにおける演算子のオーバーロードをマスターする",
+        "description": "Rustにおける演算子のオーバーロードの力を探求し、独自の動作を持つカスタム型を作成する方法を学びましょう。",
+        "keywords": "rust playground, ソフトウェア開発, rust tutor, rustオンラインコンパイラ, 演算子のオーバーロード, rustコマンド, トレイト, rust練習, rustオンラインplayground, rustオンライン"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "演算子のオーバーロード",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップでは現在検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップでは現在検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Перегрузка операторов в Rust",
+      "description": "В этом лабораторном задании мы исследуем перегрузку операторов в Rust и то, как это можно достичь с использованием трейтов. Операторы в Rust можно перегрузить с использованием трейтов, что позволяет им выполнять разные задачи в зависимости от своих входных аргументов. Например, оператор + является синтаксическим сахаром для метода add и может использоваться любым реализатором трейта Add. Трейты, которые перегружают операторы, включая Add, можно найти в core::ops. Предоставленный код на Rust демонстрирует, как перегрузить оператор + для пользовательских типов Foo и Bar, в результате чего получаются разные типы вывода FooBar и BarFoo соответственно.",
+      "meta": {
+        "title": "Мастерство в перегрузке операторов в Rust",
+        "description": "Исследуйте мощь перегрузки операторов в Rust и научитесь создавать пользовательские типы с уникальными поведениями.",
+        "keywords": "rust playground, разработка программного обеспечения, преподаватель Rust, онлайн-компилятор Rust, перегрузка операторов, команды Rust, трейты, практика Rust, онлайн-площадка Rust, Rust онлайн"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Перегрузка операторов",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

@@ -90,6 +90,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Implementar fmt::Display para List en Rust",
+      "description": "En este laboratorio, estamos implementando fmt::Display para una estructura llamada List que contiene un Vec en Rust. El desafío es manejar cada elemento secuencialmente utilizando la macro write!, ya que genera un fmt::Result que debe ser manejado adecuadamente. Para abordar esto, podemos utilizar el operador? para comprobar si write! devuelve un error y devolverlo si es así, de lo contrario continuar con la ejecución. Al implementar fmt::Display para List, podemos iterar sobre los elementos del vector y mostrarlos dentro de corchetes, separados por comas. La tarea es modificar el programa para que también muestre el índice de cada elemento del vector. La salida esperada después de la modificación es [0: 1, 1: 2, 2: 3].",
+      "meta": {
+        "title": "Programación en Rust | Implementando fmt::Display para una Estructura List",
+        "description": "Aprende cómo implementar el trato fmt::Display para una estructura en Rust llamada List, que contiene un Vec. Descubre el manejo adecuado de fmt::Result utilizando el operador?.",
+        "keywords": "Rust, Programación, fmt::Display, List, Vec, fmt::Result,?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Caso de prueba: List",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "En este momento, este paso no tiene verificaciones",
+                "file": "verify1-1.sh",
+                "hint": "En este momento, este paso no tiene verificaciones"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Implémenter fmt::Display pour List en Rust",
+      "description": "Dans ce laboratoire, nous implémentons fmt::Display pour une structure appelée List qui contient un Vec en Rust. Le défi est de traiter chaque élément séquentiellement en utilisant la macro write!, car elle génère un fmt::Result qui doit être correctement géré. Pour y remédier, nous pouvons utiliser l'opérateur? pour vérifier si write! renvoie une erreur et la renvoyer si c'est le cas, sinon continuer l'exécution. En implémentant fmt::Display pour List, nous pouvons itérer sur les éléments du vecteur et les imprimer entre crochets, séparés par des virgules. L'exercice est de modifier le programme pour imprimer également l'index de chaque élément dans le vecteur. La sortie attendue après la modification est [0: 1, 1: 2, 2: 3].",
+      "meta": {
+        "title": "Programmation Rust | Implémentation de fmt::Display pour une structure List",
+        "description": "Découvrez comment implémenter le trait fmt::Display pour une structure Rust appelée List, qui contient un Vec. Apprenez à gérer correctement fmt::Result en utilisant l'opérateur?.",
+        "keywords": "Rust, Programmation, fmt::Display, List, Vec, fmt::Result,?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Testcase: List",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Implementiere fmt::Display für List in Rust",
+      "description": "In diesem Lab implementieren wir fmt::Display für eine Struktur namens List, die in Rust ein Vec enthält. Die Herausforderung besteht darin, jedes Element sequentiell mit dem write!-Makro zu verarbeiten, da es ein fmt::Result generiert, das richtig behandelt werden muss. Um dies anzugehen, können wir den?-Operator verwenden, um zu überprüfen, ob write! einen Fehler zurückgibt, und ihn zurückzugeben, wenn dies der Fall ist, andernfalls mit der Ausführung fortfahren. Indem wir fmt::Display für List implementieren, können wir über die Elemente im Vektor iterieren und sie in eckigen Klammern drucken, getrennt durch Kommata. Die Aufgabe besteht darin, das Programm zu modifizieren, um auch den Index jedes Elements im Vektor auszugeben. Die erwartete Ausgabe nach der Modifikation lautet [0: 1, 1: 2, 2: 3].",
+      "meta": {
+        "title": "Rust-Programmierung | Implementierung von fmt::Display für eine List-Struktur",
+        "description": "Lernen Sie, wie Sie das fmt::Display-Trait für eine Rust-Struktur namens List implementieren, die ein Vec enthält. Entdecken Sie die richtige Behandlung von fmt::Result mit dem?-Operator.",
+        "keywords": "Rust, Programmierung, fmt::Display, List, Vec, fmt::Result,?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Testfall: List",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "Rust で List に対して fmt::Display を実装する",
+      "description": "この実験では、Rust の Vec を含む List と呼ばれる構造体に対して fmt::Display を実装します。課題は、write! マクロを使用して各要素を順次処理することです。これは fmt::Result を生成するため、適切に処理する必要があります。これに対処するために、write! がエラーを返すかどうかを確認し、返した場合はそれを返し、そうでなければ実行を続けるために? 演算子を使用できます。List に対して fmt::Display を実装することで、ベクトル内の要素を反復処理し、角括弧内にコンマ区切りで表示することができます。課題は、プログラムを修正して、ベクトル内の各要素のインデックスも表示することです。修正後の期待される出力は [0: 1, 1: 2, 2: 3] です。",
+      "meta": {
+        "title": "Rust プログラミング | List 構造体に対する fmt::Display の実装",
+        "description": "List と呼ばれる Rust 構造体に対して fmt::Display トレイトをどのように実装するか学びましょう。この構造体には Vec が含まれています。? 演算子を使用した fmt::Result の適切な処理方法を見つけましょう。",
+        "keywords": "Rust, プログラミング, fmt::Display, List, Vec, fmt::Result,?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "テストケース: List",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証がありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップには現在検証がありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Реализация fmt::Display для List в Rust",
+      "description": "В этом лабораторном задании мы реализуем fmt::Display для структуры под названием List, которая содержит Vec в Rust. Задача заключается в последовательном обработке каждого элемента с использованием макроса write!, так как он генерирует fmt::Result, которое необходимо обработать правильно. Для этого мы можем использовать оператор? для проверки, возвращает ли write! ошибку, и возвращать ее, если это так, в противном случае продолжать выполнение. Реализовав fmt::Display для List, мы можем перебирать элементы в векторе и выводить их в квадратных скобках, разделенных запятыми. Задача - модифицировать программу так, чтобы она также выводила индекс каждого элемента в векторе. Ожидаемый вывод после модификации: [0: 1, 1: 2, 2: 3].",
+      "meta": {
+        "title": "Программирование на Rust | Реализация fmt::Display для структуры List",
+        "description": "Изучите, как реализовать трейт fmt::Display для структуры на Rust под названием List, которая содержит Vec. Откройте правильное управление fmt::Result с использованием оператора?.",
+        "keywords": "Rust, Программирование, fmt::Display, List, Vec, fmt::Result,?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Тестовый случай: List",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На этом этапе проверок нет",
+                "file": "verify1-1.sh",
+                "hint": "На этом этапе проверок нет"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

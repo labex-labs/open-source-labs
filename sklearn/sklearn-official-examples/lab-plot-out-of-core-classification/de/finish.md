@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man scikit-learn für die Textklassifizierung mit out-of-core Learning verwendet. Wir haben einen Online-Klassifizierer verwendet, der die partial_fit-Methode unterstützt und mit Batches von Beispielen versorgt wurde. Wir haben auch einen HashingVectorizer genutzt, um sicherzustellen, dass der Merkmalsraum über die Zeit gleich blieb. Anschließend haben wir einen Testsatz zurückgehalten und über Minibatches von Beispielen iteriert, um die Klassifizierer zu aktualisieren. Schließlich haben wir die Ergebnisse geplottet, um die Genauigkeitsentwicklung und die Trainingszeiten zu visualisieren.

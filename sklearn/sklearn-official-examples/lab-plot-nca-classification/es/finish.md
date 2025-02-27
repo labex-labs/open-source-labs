@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, comparamos la clasificación de vecinos más cercanos con y sin Análisis de Componentes Vecinos (NCA, por sus siglas en inglés). Utilizamos el conjunto de datos Iris para graficar los límites de decisión de clase dados por un clasificador de Vecinos más Cercanos cuando se utiliza la distancia Euclidiana en las características originales, en comparación con el uso de la distancia Euclidiana después de la transformación aprendida por NCA. Utilizamos scikit-learn para realizar la clasificación de vecinos más cercanos y NCA. También utilizamos matplotlib para graficar los límites de decisión de clase. Encontramos que NCA mejoró la precisión de clasificación.

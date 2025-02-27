@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir verschiedene methoden der unüberwachten Matrixdekomposition auf den Olivetti Faces Datensatz angewendet. Wir haben PCA, NMF, ICA, Sparse PCA, Wörterbuchlern (Dictionary Learning), K-Means-Clustering und Faktorenanalyse verwendet, um verschiedene Arten von Merkmalen aus den Daten zu extrahieren. Wir haben auch die Positivität erzwingt, wenn das Wörterbuch und/oder die Codierungskoeffizienten in der Methode des Wörterbuchlern (Dictionary Learning) gefunden werden. Insgesamt können diese Methoden hilfreich sein, um die Dimension von hochdimensionalen Datensätzen zu reduzieren und sinnvolle Merkmale für nachfolgende Aufgaben wie Klassifikation und Clustering zu extrahieren.

@@ -1,0 +1,3 @@
+# Accéder aux champs d'une union
+
+La dernière opération qui ne fonctionne qu'avec `unsafe` est l'accès aux champs d'une union. Une `union` est similaire à un `struct`, mais seulement un champ déclaré est utilisé dans une instance particulière à un moment donné. Les unions sont principalement utilisées pour interfacer avec les unions dans le code C. Accéder aux champs d'une union est non sécurisé car Rust ne peut pas garantir le type des données actuellement stockées dans l'instance d'union. Vous pouvez en savoir plus sur les unions dans la Rust Reference à \*https://doc.rust-lang.org/reference/items/unions.html\*\*.\*

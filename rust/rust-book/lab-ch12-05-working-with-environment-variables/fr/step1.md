@@ -1,0 +1,3 @@
+# Working with Environment Variables
+
+Nous allons améliorer `minigrep` en ajoutant une fonctionnalité supplémentaire : une option de recherche insensible à la casse que l'utilisateur peut activer via une variable d'environnement. Nous pourrions rendre cette fonctionnalité une option de ligne de commande et demander aux utilisateurs de l'entrer chaque fois qu'ils souhaitent l'appliquer, mais en la rendant une variable d'environnement, nous permettons à nos utilisateurs de définir la variable d'environnement une fois et d'avoir toutes leurs recherches insensibles à la casse dans cette session terminale.

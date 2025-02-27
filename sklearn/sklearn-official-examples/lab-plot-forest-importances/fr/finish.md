@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons généré un ensemble de données synthétiques avec seulement 3 caractéristiques informatives et utilisé la forêt aléatoire pour évaluer l'importance des caractéristiques. Nous avons tracé les importances des caractéristiques de la forêt, ainsi que leur variabilité entre les arbres représentée par les barres d'erreur. Nous avons utilisé l'importance basée sur l'impureté et l'importance de permutation des caractéristiques pour calculer les importances des caractéristiques. Les mêmes caractéristiques ont été détectées comme les plus importantes en utilisant les deux méthodes.

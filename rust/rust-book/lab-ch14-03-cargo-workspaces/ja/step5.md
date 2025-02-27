@@ -1,0 +1,82 @@
+# ワークスペースにテストを追加する
+
+さらなる機能強化として、`add_one`クレート内の`add_one::add_one`関数のテストを追加しましょう。
+
+ファイル名: `add_one/src/lib.rs`
+
+```rust
+pub fn add_one(x: i32) -> i32 {
+    x + 1
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        assert_eq!(3, add_one(2));
+    }
+}
+```
+
+次に、トップレベルの`add`ディレクトリで`cargo test`を実行します。このように構造化されたワークスペースで`cargo test`を実行すると、ワークスペース内のすべてのクレートのテストが実行されます。
+
+```bash
+$ cargo test
+   Compiling add_one v0.1.0 (file:///projects/add/add_one)
+   Compiling adder v0.1.0 (file:///projects/add/adder)
+    Finished test [unoptimized + debuginfo] target(s) in 0.27s
+     Running unittests src/lib.rs (target/debug/deps/add_one-f0253159197f7841)
+
+running 1 test
+test tests::it_works... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
+finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/adder-49979ff40686fa8e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
+finished in 0.00s
+
+   Doc-tests add_one
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
+finished in 0.00s
+```
+
+出力の最初のセクションは、`add_one`クレート内の`it_works`テストが合格したことを示しています。次のセクションは、`adder`クレートで0個のテストが見つかったことを示しており、最後のセクションは、`add_one`クレートで0個のドキュメントテストが見つかったことを示しています。
+
+ワークスペースのトップレベルディレクトリから、特定のクレートのテストを実行することもできます。`-p`フラグを使用して、テストしたいクレートの名前を指定します。
+
+```bash
+$ cargo test -p add_one
+    Finished test [unoptimized + debuginfo] target(s) in 0.00s
+     Running unittests src/lib.rs (target/debug/deps/add_one-b3235fea9a156f74)
+
+running 1 test
+test tests::it_works... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
+finished in 0.00s
+
+   Doc-tests add_one
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
+finished in 0.00s
+```
+
+この出力は、`cargo test`が`add_one`クレートのテストのみを実行し、`adder`クレートのテストは実行しなかったことを示しています。
+
+ワークスペース内のクレートを*https://crates.io*に公開する場合、ワークスペース内の各クレートは個別に公開する必要があります。`cargo test`と同じように、`-p`フラグを使用して、公開したいクレートの名前を指定することで、ワークスペース内の特定のクレートを公開できます。
+
+追加の練習として、`add_one`クレートと同じ方法でこのワークスペースに`add_two`クレートを追加してみてください！
+
+プロジェクトが成長するにつれて、ワークスペースを使用することを検討してください。1つの大きなコードブロックよりも、理解しやすく、小さな個別のコンポーネントを提供します。さらに、ワークスペース内のクレートを維持することで、同時に頻繁に変更される場合、クレート間のコーディネーションを容易にすることができます。

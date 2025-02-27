@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Kernel PCA verwendet, um Bilder zu entrauschen. Wir haben den USPS-Ziffern-Datensatz verwendet, um den Prozess zu demonstrieren. Wir haben eine PCA-Basis auf rauschfreien Bildern gelernt und sie verwendet, um die rauschenden Bilder zu rekonstruieren und zu entrauschen. Wir haben die Ergebnisse von linearer PCA und Kernel PCA verglichen und festgestellt, dass Kernel PCA effizienter bei der Entfernung von Hintergrundrauschen und der Bereitstellung von glatteren Bildern ist. Wir müssen jedoch vorsichtig sein, wenn wir die passenden Werte für `n_components`, `gamma` und `alpha` auswählen.

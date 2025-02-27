@@ -1,0 +1,3 @@
+# Synthetische Daten generieren
+
+Wir werden synthetische Daten für ein Regressionsproblem generieren, indem wir die Funktion auf gleichmäßig abgesprochene zufällige Eingaben anwenden. Um das Problem interessant zu gestalten, generieren wir Beobachtungen des Ziels y als die Summe eines deterministischen Terms, der von der Funktion f berechnet wird, und eines zufälligen Rauschterms, der einer zentrierten lognormalen Verteilung folgt. Die lognormale Verteilung ist nicht symmetrisch und langschwänzig: Es ist wahrscheinlich, große Ausreißer zu beobachten, aber es ist unmöglich, kleine Ausreißer zu beobachten.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce laboratoire montre comment imputer les données manquantes dans un ensemble de données à l'aide de différentes techniques dans scikit-learn. Nous avons utilisé l'ensemble de données sur le logement en Californie et l'ensemble de données sur le diabète pour implémenter différentes techniques telles que l'imputation par une valeur constante, l'imputation par la valeur moyenne de chaque caractéristique combinée avec une variable auxiliaire indicateur d'absence de données, l'imputation par les k plus proches voisins et l'imputation itérative. Nous avons également visualisé les scores à l'aide de graphiques en barres.

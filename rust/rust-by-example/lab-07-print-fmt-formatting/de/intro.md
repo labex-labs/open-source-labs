@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab haben wir uns mit der Formatierung in Rust und der Verwendung der `format!`-Makros zur Formatierung von Variablen beschäftigt. Wir haben gesehen, dass die Formatierung mithilfe eines Formatstrings angegeben wird und dass verschiedene Argumenttypen verwendet werden können, um die gleiche Variable auf verschiedene Weise zu formatieren. Der am häufigsten verwendete Formatierungs-Trait ist `Display`, der Fälle behandelt, in denen der Argumenttyp nicht angegeben ist. Wir haben ein Beispiel gesehen, wie der `Display`-Trait für eine `City`-Strukt implementiert wird, wobei wir die Breiten- und Längengradwerte formatiert haben. Wir haben auch ein Beispiel einer `Color`-Strukt gesehen und waren damit betraut, den `Display`-Trait für sie zu implementieren, um die RGB-Werte und ihre hexadezimale Darstellung anzuzeigen.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

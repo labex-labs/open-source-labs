@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous allons apprendre à utiliser `HashMap` en Rust, qui est utilisé pour stocker des valeurs par clé. Les clés de `HashMap` peuvent être de différents types, y compris des booléens, des entiers, des chaînes de caractères ou tout autre type qui implémente les traits `Eq` et `Hash`. Les `HashMaps` peuvent croître et rétrécir dynamiquement en fonction du nombre d'éléments. Nous pouvons créer un `HashMap` avec une capacité spécifique en utilisant `HashMap::with_capacity(uint)` ou utiliser `HashMap::new()` pour obtenir un `HashMap` avec une capacité initiale par défaut. L'exemple de code fourni montre comment utiliser `HashMap` en stockant des noms de contacts et des numéros de téléphone et en effectuant des opérations telles que l'insertion, la récupération, la modification et la suppression.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

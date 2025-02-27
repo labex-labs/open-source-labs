@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à créer des visualisations avec des objets d'affichage à l'aide de scikit-learn. Nous avons utilisé les objets d'affichage `ConfusionMatrixDisplay`, `RocCurveDisplay` et `PrecisionRecallDisplay` pour créer des visualisations pour un problème de classification binaire. Nous avons tout d'abord chargé les données et entraîné un modèle de régression logistique. Nous avons ensuite créé la matrice de confusion, la courbe ROC et la courbe précision-rappel à l'aide d'objets d'affichage. Enfin, nous avons combiné les objets d'affichage en un seul graphique à l'aide de l'API de Matplotlib.

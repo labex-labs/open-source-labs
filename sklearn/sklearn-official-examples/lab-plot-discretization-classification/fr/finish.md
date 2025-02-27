@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons démontré la discrétisation des fonctionnalités sur des ensembles de données de classification synthétiques à l'aide de scikit-learn. Nous avons préparé les données, défini des classifieurs et des paramètres, implémenté la discrétisation des fonctionnalités et visualisé les résultats. Cette technique de prétraitement peut être utile pour réduire la complexité d'un ensemble de données et améliorer les performances des classifieurs linéaires. Cependant, elle devrait être utilisée avec prudence et en conjonction avec d'autres techniques pour éviter le surapprentissage.

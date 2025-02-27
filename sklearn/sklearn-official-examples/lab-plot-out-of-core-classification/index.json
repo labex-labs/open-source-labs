@@ -43,7 +43,9 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["ml/sklearn"]
+        "skills": [
+          "ml/sklearn"
+        ]
       },
       {
         "title": "Set up the vectorizer and hold out a test set",
@@ -55,7 +57,9 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["ml/sklearn"]
+        "skills": [
+          "ml/sklearn"
+        ]
       },
       {
         "title": "Define a function to get a minibatch of examples",
@@ -67,7 +71,9 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["ml/sklearn"]
+        "skills": [
+          "ml/sklearn"
+        ]
       },
       {
         "title": "Define a generator function to iterate over minibatches",
@@ -79,7 +85,9 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["ml/sklearn"]
+        "skills": [
+          "ml/sklearn"
+        ]
       },
       {
         "title": "Iterate over mini-batches of examples and update the classifiers",
@@ -91,7 +99,9 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["ml/sklearn"]
+        "skills": [
+          "ml/sklearn"
+        ]
       },
       {
         "title": "Plot the results",
@@ -103,7 +113,9 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["ml/sklearn"]
+        "skills": [
+          "ml/sklearn"
+        ]
       }
     ],
     "intro": {
@@ -231,6 +243,303 @@
         "finish": {
           "text": "zh/finish.md",
           "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Clasificación de texto utilizando aprendizaje fuera de núcleo",
+      "description": "Este laboratorio ofrece un ejemplo de cómo usar scikit-learn para la clasificación de texto utilizando aprendizaje fuera de núcleo. El objetivo es aprender a partir de datos que no caben en la memoria principal. Para lograr esto, utilizamos un clasificador en línea que soporta el método partial_fit, el cual se alimentará con lotes de ejemplos. Para garantizar que el espacio de características permanezca el mismo con el tiempo, aprovechamos un HashingVectorizer que proyectará cada ejemplo al mismo espacio de características. Esto es especialmente útil en el caso de la clasificación de texto donde pueden aparecer nuevas características (palabras) en cada lote.",
+      "meta": {
+        "title": "Clasificación de texto con Scikit-Learn | Aprendizaje fuera de núcleo",
+        "description": "Aprende cómo usar scikit-learn para la clasificación de texto utilizando aprendizaje fuera de núcleo. Aprovecha clasificadores en línea y HashingVectorizer para manejar conjuntos de datos grandes que no caben en memoria.",
+        "keywords": "clasificación de texto, scikit-learn, aprendizaje fuera de núcleo, clasificadores en línea, HashingVectorizer"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importar bibliotecas y definir el analizador",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify1-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir el flujo de documentos de Reuters",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify2-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Configurar el vectorizador y reservar un conjunto de prueba",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify3-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir una función para obtener un sublote de ejemplos",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify4-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir una función generadora para iterar sobre sublotes",
+            "text": "es/step5.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify5-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Iterar sobre sublotes de ejemplos y actualizar los clasificadores",
+            "text": "es/step6.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify6-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Graficar los resultados",
+            "text": "es/step7.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificaciones en este momento",
+                "file": "verify7-1.sh",
+                "hint": "Este paso no tiene verificaciones en este momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Classification de texte en utilisant l'apprentissage hors-mémoire",
+      "description": "Ce laboratoire fournit un exemple de la manière d'utiliser scikit-learn pour la classification de texte en utilisant l'apprentissage hors-mémoire. L'objectif est d'apprendre à partir de données qui ne rentrent pas en mémoire principale. Pour y arriver, nous utilisons un classifieur en ligne qui prend en charge la méthode partial_fit, qui sera alimenté avec des lots d'exemples. Pour nous assurer que l'espace de caractéristiques reste le même au fil du temps, nous utilisons un HashingVectorizer qui projettera chaque exemple dans le même espace de caractéristiques. Cela est particulièrement utile dans le cas de la classification de texte où de nouvelles caractéristiques (mots) peuvent apparaître dans chaque lot.",
+      "meta": {
+        "title": "Classification de texte avec Scikit-Learn | Apprentissage hors-mémoire",
+        "description": "Apprenez à utiliser scikit-learn pour la classification de texte en utilisant l'apprentissage hors-mémoire. Utilisez des classifieurs en ligne et un HashingVectorizer pour gérer des jeux de données volumineux qui ne rentrent pas en mémoire.",
+        "keywords": "classification de texte, scikit-learn, apprentissage hors-mémoire, classifieurs en ligne, HashingVectorizer"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importer les bibliothèques et définir le parseur",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Définir le flux de documents Reuters",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify2-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Configurer le vectoriseur et réserver un ensemble de test",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify3-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Définir une fonction pour obtenir un mini-lot d'exemples",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify4-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Définir une fonction génératrice pour itérer sur les mini-lots",
+            "text": "fr/step5.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify5-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Itérer sur les mini-lots d'exemples et mettre à jour les classifieurs",
+            "text": "fr/step6.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify6-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Tracer les résultats",
+            "text": "fr/step7.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify7-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Textklassifizierung mit out-of-core Learning",
+      "description": "Dieses Lab bietet ein Beispiel dafür, wie man scikit-learn für die Textklassifizierung mit out-of-core Learning verwendet. Ziel ist es, aus Daten zu lernen, die nicht in den Hauptspeicher passen. Dazu verwenden wir einen Online-Klassifizierer, der die partial_fit-Methode unterstützt und mit Batches von Beispielen versorgt wird. Um sicherzustellen, dass der Merkmalsraum über die Zeit gleich bleibt, nutzen wir einen HashingVectorizer, der jedes Beispiel in den gleichen Merkmalsraum projiziert. Dies ist besonders nützlich bei der Textklassifizierung, wenn in jedem Batch neue Merkmale (Wörter) auftauchen können.",
+      "meta": {
+        "title": "Textklassifizierung mit Scikit-Learn | Out-of-core Learning",
+        "description": "Lernen Sie, wie man scikit-learn für die Textklassifizierung mit out-of-core Learning verwendet. Nutzen Sie Online-Klassifizierer und HashingVectorizer, um große Datensätze zu verarbeiten, die nicht in den Speicher passen.",
+        "keywords": "Textklassifizierung, Scikit-Learn, out-of-core Learning, Online-Klassifizierer, HashingVectorizer"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Bibliotheken importieren und den Parser definieren",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Den Strom von Reuters-Dokumenten definieren",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify2-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Den Vektorizer einrichten und einen Testsatz zurückhalten",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify3-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Definiere eine Funktion, um einen Minibatch von Beispielen zu erhalten",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify4-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Definiere eine Generatorfunktion, um über Minibatches zu iterieren",
+            "text": "de/step5.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify5-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Iteriere über Mini-Batches von Beispielen und aktualisiere die Klassifizierer",
+            "text": "de/step6.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify6-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Plotte die Ergebnisse",
+            "text": "de/step7.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify7-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
         }
       }
     }

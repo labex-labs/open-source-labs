@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser l'algorithme de regroupement K-Means pour effectuer une quantification de couleur sur une image. Nous avons chargé et affiché l'image d'origine, la convertie en flottants et la redimensionnée en un tableau numpy 2D. Nous avons ajusté le modèle K-Means sur un sous-échantillonnage des données d'image et l'avons utilisé pour prédire les indices de couleur sur l'image complète. Nous avons également prédit les indices de couleur sur l'image complète à l'aide d'un livre de codes aléatoire. Enfin, nous avons recréé l'image compressée à l'aide du livre de codes et des étiquettes obtenus à partir du modèle K-Means et du livre de codes aléatoire, et affiché l'image d'origine côte à côte avec les images quantisées.

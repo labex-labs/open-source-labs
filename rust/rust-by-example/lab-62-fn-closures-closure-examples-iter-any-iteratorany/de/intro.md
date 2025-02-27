@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab wird die Funktion `Iterator::any` diskutiert, die eine Iterator als Eingabe nimmt und `true` zurückgibt, wenn irgendein Element in der Iterator eine gegebene Prädikat erfüllt, und `false` sonst. Die Funktion ist als Trait-Methode in der Standardbibliothek von Rust definiert und kann auf jedem Typ verwendet werden, der das `Iterator`-Trait implementiert. Die Funktion nimmt eine Closure als Argument, die das Prädikat bestimmt, das auf jedes Element in der Iterator angewendet werden soll. Die Closure wird mit dem `FnMut`-Trait definiert, was bedeutet, dass sie die erfassten Variablen modifizieren kann, aber nicht konsumieren. Die `any`-Funktion gibt einen booleschen Wert zurück, der angibt, ob das Prädikat von irgendeinem Element in der Iterator erfüllt wird.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

@@ -1,0 +1,5 @@
+# Almacenar texto codificado en UTF-8 con cadenas
+
+Hablamos sobre cadenas en el Capítulo 4, pero ahora las revisaremos con más detalle. Los nuevos Rustaceans comúnmente se atascan con las cadenas por una combinación de tres razones: la tendencia de Rust a exponer posibles errores, las cadenas siendo una estructura de datos más complicada de lo que muchos programadores le dan crédito, y UTF-8. Estos factores se combinan de una manera que puede parecer difícil cuando vienes de otros lenguajes de programación.
+
+Discutiremos las cadenas en el contexto de las colecciones porque las cadenas se implementan como una colección de bytes, más algunos métodos para proporcionar funcionalidad útil cuando esos bytes se interpretan como texto. En esta sección, hablaremos sobre las operaciones en `String` que tiene cada tipo de colección, como crear, actualizar y leer. También discutiremos las maneras en las que `String` es diferente de las otras colecciones, es decir, cómo la indexación en una `String` se complica por las diferencias entre cómo las personas y las computadoras interpretan los datos de `String`.

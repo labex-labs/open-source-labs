@@ -1,0 +1,5 @@
+# ¿Qué es una cadena?
+
+Primero definiremos lo que queremos decir con el término _cadena_. Rust solo tiene un tipo de cadena en el lenguaje principal, que es la porción de cadena `str` que por lo general se ve en su forma prestada `&str`. En el Capítulo 4, hablamos sobre _porciones de cadena_, que son referencias a algunos datos de cadena codificados en UTF-8 almacenados en otro lugar. Las literales de cadena, por ejemplo, se almacenan en el binario del programa y por lo tanto son porciones de cadena.
+
+El tipo `String`, que es proporcionado por la biblioteca estándar de Rust en lugar de codificado en el lenguaje principal, es un tipo de cadena codificada en UTF-8 que es creciente, mutable, poseída. Cuando los Rustaceans se refieren a "cadenas" en Rust, pueden estar refiriéndose a los tipos `String` o la porción de cadena `&str`, no solo a uno de esos tipos. Aunque esta sección se ocupa en gran medida de `String`, ambos tipos se utilizan ampliamente en la biblioteca estándar de Rust, y tanto `String` como las porciones de cadena están codificadas en UTF-8.

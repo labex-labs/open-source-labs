@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous implémentons `fmt::Display` pour une structure appelée `List` qui contient un `Vec` en Rust. Le défi est de traiter chaque élément séquentiellement en utilisant la macro `write!`, car elle génère un `fmt::Result` qui doit être correctement géré. Pour y remédier, nous pouvons utiliser l'opérateur `?` pour vérifier si `write!` renvoie une erreur et la renvoyer si c'est le cas, sinon continuer l'exécution. En implémentant `fmt::Display` pour `List`, nous pouvons itérer sur les éléments du vecteur et les imprimer entre crochets, séparés par des virgules. L'exercice est de modifier le programme pour imprimer également l'index de chaque élément dans le vecteur. La sortie attendue après la modification est `[0: 1, 1: 2, 2: 3]`.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

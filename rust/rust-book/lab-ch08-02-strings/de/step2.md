@@ -1,0 +1,5 @@
+# Was ist ein String?
+
+Wir werden zunächst definieren, was wir unter dem Begriff _String_ verstehen. Rust hat im Kern der Sprache nur einen String-Typ, nämlich die String-Slice `str`, die normalerweise in ihrer entlehnten Form `&str` gesehen wird. Im Kapitel 4 haben wir über _String-Slices_ gesprochen, die Verweise auf einige UTF-8-kodierte String-Daten, die an einem anderen Ort gespeichert sind. String-Literale werden beispielsweise im Binärprogramm gespeichert und sind daher String-Slices.
+
+Der `String`-Typ, der von Rusts Standardbibliothek bereitgestellt wird, statt in die Kernsprache codiert zu sein, ist ein wachsender, veränderbarer, eigener, UTF-8-kodierter String-Typ. Wenn Rustaceans in Rust von "Strings" sprechen, können sie sich entweder auf den `String`- oder den String-Slice `&str`-Typ beziehen, nicht nur auf einen dieser Typen. Obwohl dieser Abschnitt größtenteils über `String` geht, werden beide Typen in Rusts Standardbibliothek stark verwendet, und sowohl `String` als auch String-Slices sind UTF-8-kodiert.

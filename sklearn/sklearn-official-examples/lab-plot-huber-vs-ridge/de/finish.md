@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir die Leistung zweier Regressionsmodelle, HuberRegressor und Ridge, auf einem Datensatz mit starken Ausreißern verglichen. Wir haben einen Toy-Datensatz generiert, ihm starke Ausreißer hinzugefügt und dann beide Modelle an den Datensatz angepasst. Wir haben die Ergebnisse visualisiert und die Leistung der Modelle verglichen. Wir haben beobachtet, dass der HuberRegressor weniger von den Ausreißern beeinflusst wurde als der Ridge-Regressor und dass sich die Entscheidungsfunktion des HuberRegressors mit zunehmendem Wert von Epsilon der des Ridge-Regressors annäherte.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial wurde die Leistung des regulären K-Means-Algorithmus und des Bisecting K-Means-Algorithmus mit Hilfe von Beispiel-Daten aus scikit-learn verglichen. Wir haben die Ergebnisse mithilfe von Teilplots visualisiert, wobei Scatterplots die Datenpunkte und die Clusterzentren repräsentieren. Wir haben festgestellt, dass der Bisecting K-Means-Algorithmus dazu tendiert, Cluster zu erstellen, die eine regelmäßige großskalige Struktur aufweisen, während der reguläre K-Means-Algorithmus unterschiedliche Clusterungen erzeugt, wenn die Anzahl der Cluster (n_clusters) erhöht wird.

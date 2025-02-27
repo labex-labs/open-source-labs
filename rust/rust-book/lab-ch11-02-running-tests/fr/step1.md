@@ -1,0 +1,5 @@
+# Contrôler la façon dont les tests sont exécutés
+
+De la même manière que `cargo run` compile votre code puis exécute le binaire résultant, `cargo test` compile votre code en mode test et exécute le binaire de test résultant. Le comportement par défaut du binaire produit par `cargo test` est d'exécuter tous les tests en parallèle et de capturer la sortie générée pendant l'exécution des tests, empêchant l'affichage de la sortie et rendant plus facile la lecture de la sortie liée aux résultats des tests. Cependant, vous pouvez spécifier des options de ligne de commande pour modifier ce comportement par défaut.
+
+Certaines options de ligne de commande sont destinées à `cargo test`, et d'autres au binaire de test résultant. Pour séparer ces deux types d'arguments, vous liste les arguments destinés à `cargo test` suivis du séparateur `--` puis ceux destinés au binaire de test. L'exécution de `cargo test --help` affiche les options que vous pouvez utiliser avec `cargo test`, et l'exécution de `cargo test -- --help` affiche les options que vous pouvez utiliser après le séparateur.

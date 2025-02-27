@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir das Gaussian Mixture Model-Algorithmus verwendet, um einen Datensatz anzupassen, der einer rauschen Sinuskurve folgt. Wir haben zwei verschiedene Arten von Gaussian Mixture Modellen verwendet, nämlich den Expectation-Maximization-Algorithmus und das Bayesische Gaussian Mixture Model mit einem Dirichlet-Prozess-Prior. Wir haben die Ergebnisse geplottet und von beiden Modellen abprobiert, um ihre Leistung zu vergleichen. Die Wahl des besten Modells ist subjektiv und hängt davon ab, ob wir uns auf das Gesamtbild konzentrieren möchten oder die Hochdichtebereiche des Signals genau verfolgen möchten.

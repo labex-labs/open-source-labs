@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons exploré la manière d'utiliser la classification par processus gaussien (GPC en anglais) sur l'ensemble de données Iris à l'aide de scikit-learn. Nous avons défini deux versions du noyau de fonction de base radiale (RBF en anglais), une version isotrope et une version anisotrope. Nous avons ensuite créé un maillage pour tracer les probabilités prédites pour chaque point du maillage et tracé les probabilités prédites sous forme d'un graphique en couleur sur le maillage. Enfin, nous avons tracé les points d'entraînement pour chaque espèce de fleur Iris.

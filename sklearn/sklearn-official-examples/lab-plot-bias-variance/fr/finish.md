@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons exploré le concept de décomposition biais-variance et la manière dont il se rapporte aux estimateurs individuels par rapport aux ensembles bagging. Nous avons généré et visualisé des problèmes de régression simplifiés à l'aide de scikit-learn, et comparé l'erreur quadratique moyenne attendue d'un arbre de décision unique et d'un ensemble bagging d'arbres de décision. Nous avons constaté que le compromis entre biais et variance est meilleur pour le bagging, car il augmente légèrement le terme de biais mais permet une plus grande réduction de la variance, ce qui résulte en une erreur quadratique moyenne globale plus faible.

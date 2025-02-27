@@ -1,0 +1,3 @@
+# Generar el conjunto de datos
+
+Generamos un conjunto de datos simulado de salarios por hora, experiencia laboral, habilidad, salarios por hora de los padres y títulos universitarios. La experiencia laboral en años y una medida de habilidad se extraen de distribuciones Normales. El salario por hora de uno de los padres se extrae de una distribución Beta. Creamos un indicador de título universitario que está positivamente influenciado por la habilidad y el salario por hora de los padres. Finalmente, modelamos los salarios por hora como una función lineal de todas las variables anteriores y un componente aleatorio.

@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab lernen wir über die Unit-Tests in Rust. Unit-Tests sind Rust-Funktionen, die den nicht-testenden Code über das Durchführen von Einstellungen, Ausführen des Codes und Behaupten der Ergebnisse überprüfen. Diese Tests werden in einem `tests`-Modul mit dem Attribut `#[cfg(test)]` geschrieben und mit dem Attribut `#[test]` markiert. Tests können fehlschlagen, wenn etwas im Testfunktion-Panik auslöst, und Hilfsmakros wie `assert!`, `assert_eq!` und `assert_ne!` werden für die Behauptungen verwendet. Rust 2018 erlaubt es Unit-Tests, `Result<()>` zurückzugeben, um den `?`-Operator für das präzise Testen zu verwenden. Es gibt auch Unterstützung für das Testen von Paniken mit dem Attribut `#[should_panic]`. Spezifische Tests können mit dem Testnamen mit dem Befehl `cargo test` ausgeführt werden, und Tests können mit dem Attribut `#[ignore]` oder durch Ausführen von `cargo test -- --ignored` ignoriert werden.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden, es mit `rustc main.rs &&./main` kompilieren und ausführen.

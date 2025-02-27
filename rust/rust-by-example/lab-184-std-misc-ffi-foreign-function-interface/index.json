@@ -91,6 +91,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Interfaz de Funciones Extranjeras",
+      "description": "En este laboratorio, aprendemos sobre la Interfaz de Funciones Extranjeras (FFI, por sus siglas en inglés) de Rust, que permite interactuar con bibliotecas C al declarar funciones externas dentro de un bloque extern y anotarlas con un atributo #[link] que contiene el nombre de la biblioteca externa. El ejemplo de código demuestra el uso de la FFI para llamar a funciones externas de la biblioteca libm, como calcular la raíz cuadrada de un número complejo de precisión simple y calcular el coseno de un número complejo. A menudo, se utilizan envoltorios seguros alrededor de estas llamadas a funciones externas no seguras. El laboratorio también incluye una implementación mínima de números complejos de precisión simple y demuestra cómo llamar a APIs seguras envueltas en operaciones no seguras.",
+      "meta": {
+        "title": "Dominando la Interfaz de Funciones Extranjeras de Rust",
+        "description": "Explora la FFI de Rust para interactuar con bibliotecas C y aprende a llamar a funciones externas de manera segura.",
+        "keywords": "rust playground, bibliotecas c, ffi, tutor de rust, números complejos, compilador en línea de rust, comandos de rust, práctica de rust, rust en línea, interfaz de funciones extranjeras"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Interfaz de Funciones Extranjeras",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "En este momento, este paso no tiene verificaciones",
+                "file": "verify1-1.sh",
+                "hint": "En este momento, este paso no tiene verificaciones"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Interface de Fonctions Étrangères",
+      "description": "Dans ce laboratoire, nous étudions l'Interface de Fonctions Étrangères (FFI) de Rust qui permet d'interagir avec des bibliothèques C en déclarant des fonctions étrangères dans un bloc extern et en les annotant avec un attribut #[link] contenant le nom de la bibliothèque étrangère. L'exemple de code montre comment utiliser l'FFI pour appeler des fonctions externes de la bibliothèque libm, telles que le calcul de la racine carrée d'un nombre complexe à précision simple et le calcul du cosinus d'un nombre complexe. Des enveloppes sécurisées sont généralement utilisées autour de ces appels de fonctions étrangères non sécurisées. Le laboratoire inclut également une implémentation minimale de nombres complexes à précision simple et montre comment appeler des API sécurisées encapsulant des opérations non sécurisées.",
+      "meta": {
+        "title": "Maîtriser l'Interface de Fonctions Étrangères de Rust",
+        "description": "Explorez l'FFI de Rust pour interagir avec des bibliothèques C et apprenez à appeler des fonctions externes en toute sécurité.",
+        "keywords": "plateforme de pratique Rust, bibliothèques C, FFI, tutoriel Rust, nombres complexes, compilateur en ligne Rust, commandes Rust, pratique Rust, Rust en ligne, interface de fonctions étrangères"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Interface de Fonctions Étrangères",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Foreign Function Interface",
+      "description": "In diesem Lab lernen wir über Rusts Foreign Function Interface (FFI), das es ermöglicht, mit C-Bibliotheken zu interagieren, indem wir fremde Funktionen innerhalb eines extern-Blocks deklarieren und sie mit einem #[link]-Attribut versehen, das den Namen der fremden Bibliothek enthält. Das Codebeispiel zeigt die Verwendung von FFI, um externe Funktionen aus der libm-Bibliothek aufzurufen, wie das Berechnen der Quadratwurzel einer einfachen Gleitkommazahl und die Berechnung des Kosinus einer komplexen Zahl. Safe Wrapper werden üblicherweise um diese unsicheren fremden Funktionsaufrufe verwendet. Das Lab enthält auch eine minimale Implementierung von einfachen Gleitkommazahlen und zeigt, wie man sichere APIs aufruft, die um unsichere Operationen gewrappt sind.",
+      "meta": {
+        "title": "Meisterung von Rusts Foreign Function Interface",
+        "description": "Erkunden Sie Rusts FFI für die Interaktion mit C-Bibliotheken und lernen Sie, wie Sie externe Funktionen sicher aufrufen.",
+        "keywords": "rust playground, c libraries, ffi, rust tutor, complex numbers, rust online compiler, rust commands, rust practice, rust online, foreign function interface"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Foreign Function Interface",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "外部関数インターフェイス",
+      "description": "この実験では、Rustの外部関数インターフェイス（FFI）について学びます。FFIを使うことで、`extern`ブロック内で外部関数を宣言し、それに対して外部ライブラリ名を含む`#[link]`属性を付与することで、Cライブラリとの相互作用が可能になります。コード例では、`libm`ライブラリからの外部関数を呼び出すFFIの使い方を示しており、たとえば単精度複素数の平方根を計算したり、複素数の余弦を計算したりします。これらの非セーフな外部関数呼び出しの周りには、セーフなラッパーが一般的に使われます。この実験ではまた、単精度複素数の最小限の実装も含まれており、非セーフな操作をラップしたセーフなAPIをどのように呼び出すかを示しています。",
+      "meta": {
+        "title": "Rustの外部関数インターフェイスをマスターする",
+        "description": "Cライブラリとの相互作用のためのRustのFFIを探り、安全に外部関数を呼び出す方法を学びましょう。",
+        "keywords": "rust playground, Cライブラリ, FFI, rust tutor, 複素数, rustオンラインコンパイラ, rustコマンド, rust練習, rustオンライン, 外部関数インターフェイス"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "外部関数インターフェイス",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップは現在検証がありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップは現在検証がありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Foreign Function Interface",
+      "description": "В этом лабе мы узнаем о Foreign Function Interface (FFI) Rust, который позволяет взаимодействовать с библиотеками на C, объявляя внешние функции в блоке extern и аннотируя их атрибутом #[link], содержащим имя внешней библиотеки. Пример кода демонстрирует использование FFI для вызова внешних функций из библиотеки libm, таких как вычисление квадратного корня из комплексного числа с одинарной точностью и вычисление косинуса комплексного числа. Обычно вокруг этих небезопасных вызовов внешних функций используются безопасные обертки. В лабе также представлена минимальная реализация комплексных чисел с одинарной точностью и показано, как вызывать безопасные API, обернутые вокруг небезопасных операций.",
+      "meta": {
+        "title": "Осваиваем Foreign Function Interface Rust",
+        "description": "Изучайте FFI Rust для взаимодействия с библиотеками на C и узнайте, как безопасно вызывать внешние функции.",
+        "keywords": "rust playground, c библиотеки, ffi, rust tutor, комплексные числа, rust онлайн-компилятор, rust команды, практика rust, rust онлайн, foreign function interface"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Foreign Function Interface",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

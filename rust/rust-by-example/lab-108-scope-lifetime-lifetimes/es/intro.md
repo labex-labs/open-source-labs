@@ -1,0 +1,5 @@
+# Introducción
+
+En este laboratorio, exploraremos el concepto de lifetimes en Rust y cómo el compilador los utiliza para garantizar la validez de los préstamos en el código. Los lifetimes son una construcción del compilador que determinan la duración de una variable, desde su creación hasta su destrucción. Si bien los lifetimes y los ámbitos están relacionados, no son lo mismo. Cuando se presta una variable utilizando el operador `&`, el préstamo tiene un lifetime que se determina por su declaración y es válido siempre y cuando termine antes de que el prestamista sea destruido. Sin embargo, el ámbito del préstamo se determina por donde se utiliza la referencia. El código de ejemplo proporcionado demuestra cómo se utilizan los lifetimes y los ámbitos en la práctica, con cada variable teniendo su propio lifetime y ámbito.
+
+> **Nota:** Si el laboratorio no especifica un nombre de archivo, puede utilizar cualquier nombre de archivo que desee. Por ejemplo, puede utilizar `main.rs`, compilar y ejecutarlo con `rustc main.rs &&./main`.

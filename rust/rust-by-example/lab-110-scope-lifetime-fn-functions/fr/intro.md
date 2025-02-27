@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous sommes introduits aux signatures de fonctions avec des durées de vie en Rust, où toute référence doit avoir une durée de vie annotée et toute référence retournée doit avoir la même durée de vie qu'une entrée ou être `static`. Il est important de noter que la restitution de références sans entrée est interdite si elle entraînerait la restitution de références à des données invalides. Les exemples fournis démontrent les formes valides de fonctions avec des durées de vie, y compris des fonctions avec une référence d'entrée, des fonctions avec des références mutables, des fonctions avec plusieurs éléments et différentes durées de vie, et des fonctions qui retournent des références qui ont été passées en tant que paramètres.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

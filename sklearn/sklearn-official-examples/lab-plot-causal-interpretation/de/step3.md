@@ -1,0 +1,3 @@
+# Trainieren von prädiktiven Modellen mit partiellen Beobachtungen
+
+Wir trainieren erneut ein prädiktives Modell, aber diesmal weglassen wir das Fähigkeitsmerkmal, das nicht beobachtet wird oder nur aus Proxies geschätzt wird, die versehentlich auch Bildung messen (z.B. durch IQ-Tests). Wir prognostizieren die Stundenlöhne erneut unter Verwendung von Merkmalen wie Erfahrung, elterlichen Stundenlohn und Hochschulabschluss. Wir überprüfen dann, ob die Koeffizienten des Modells von denen des wahren generativen Modells unterschiedlich sind. Um den fehlenden Variablen auszugleichen, erhöht das Modell den Koeffizienten des Hochschulabschlussmerkmals. Daher ist es falsch, diesen Koeffizientenwert als kausalen Effekt des wahren generativen Modells zu interpretieren.

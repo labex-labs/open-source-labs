@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, utilizamos el algoritmo del modelo mixto gaussiano para ajustar un conjunto de datos que sigue una curva sinusoidal ruidosa. Utilizamos dos tipos diferentes de modelos mixtos gaussianos, a saber, el algoritmo de Expectación-Maximización y el modelo mixto gaussiano bayesiano con una distribución a priori de proceso de Dirichlet. Graficamos los resultados y tomamos muestras de ambos modelos para comparar su rendimiento. La elección del mejor modelo es subjetiva y depende de si queremos enfocarnos en la imagen general o seguir de cerca las regiones de alta densidad de la señal.

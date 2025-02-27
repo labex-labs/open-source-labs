@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, usamos el MLPClassifier de Scikit-learn para comparar el rendimiento de diferentes estrategias de aprendizaje estocástico, incluyendo SGD y Adam, en varios conjuntos de datos pequeños. Definimos diferentes planes de tasa de aprendizaje y parámetros de impulso, y luego entrenamos el MLPClassifier usando cada estrategia. Trazamos las curvas de aprendizaje para cada estrategia en cada conjunto de datos y observamos cómo diferentes estrategias pueden afectar las curvas de pérdida de entrenamiento. Demostramos la importancia de elegir la estrategia de aprendizaje adecuada para el conjunto de datos y la tarea en cuestión.

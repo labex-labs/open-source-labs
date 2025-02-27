@@ -1,0 +1,3 @@
+# Reference Cycles Can Leak Memory
+
+Les garanties de sécurité mémoire de Rust rendent difficile, mais pas impossible, de créer accidentellement de la mémoire qui n'est jamais nettoyée (connu sous le nom de _fuite mémoire_). Empêcher totalement les fuites mémoire n'est pas l'une des garanties de Rust, ce qui signifie que les fuites mémoire sont sécurisées en mémoire en Rust. Nous pouvons voir que Rust autorise les fuites mémoire en utilisant `Rc<T>` et `RefCell<T>` : il est possible de créer des références où les éléments se réfèrent les uns aux autres dans un cycle. Cela crée des fuites mémoire car le compteur de références de chaque élément dans le cycle ne pourra jamais atteindre 0, et les valeurs ne seront jamais supprimées.

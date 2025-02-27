@@ -88,6 +88,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Gestión de lifetimes en structs de Rust",
+      "description": "En este laboratorio, tenemos un código Rust que demuestra el uso de lifetimes en structs. El código incluye un struct llamado Borrowed que contiene una referencia a un i32, y la referencia debe sobrevivir al struct mismo. También hay un struct llamado NamedBorrowed con dos referencias a i32, ambas deben sobrevivir al struct. Además, hay un enum llamado Either que puede ser un i32 o una referencia a uno, y la referencia debe sobrevivir al enum. Finalmente, el código crea instancias de estos structs y enum, e imprime su contenido para mostrar el uso de lifetimes en Rust.",
+      "meta": {
+        "title": "Conceptos de lifetimes de Rust | Tutoriales de programación",
+        "description": "Explora el uso de lifetimes en structs y enum de Rust. Entiende cómo manejar referencias y asegurarte de que sobrevivan a las estructuras de datos.",
+        "keywords": "Rust, Lifetimes, Structs, Enums, Tutoriales de programación"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Structs",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify1-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Gestion des durées de vie dans les structs de Rust",
+      "description": "Dans ce laboratoire, nous avons du code Rust qui démontre l'utilisation des durées de vie dans les structs. Le code inclut une struct appelée Borrowed qui contient une référence à un i32, et la référence doit exister plus longtemps que la struct elle-même. Il y a également une struct appelée NamedBorrowed avec deux références à des i32, les deux références doivent exister plus longtemps que la struct. En outre, il y a un enum appelé Either qui peut être soit un i32 soit une référence à un i32, et la référence doit exister plus longtemps que l'enum. Enfin, le code crée des instances de ces structs et de cet enum, et imprime leur contenu pour montrer l'utilisation des durées de vie en Rust.",
+      "meta": {
+        "title": "Concepts de durée de vie Rust | Tutoriels de programmation",
+        "description": "Explorez l'utilisation des durées de vie dans les structs et les enums de Rust. Comprenez comment gérer les références et vous assurez qu'elles existent plus longtemps que les structures de données.",
+        "keywords": "Rust, Durées de vie, Structs, Enums, Tutoriels de programmation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Structs",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Lebensdauerverwaltung in Rust Structs",
+      "description": "In diesem Lab haben wir einige Rust-Code, der die Verwendung von Lebensdauern in Structs demonstriert. Der Code enthält ein Struct namens Borrowed, das eine Referenz auf ein i32 aufnimmt, und die Referenz muss die Lebensdauer des Structs selbst überdauern. Es gibt auch ein Struct namens NamedBorrowed mit zwei Referenzen auf i32, von denen beide die Lebensdauer des Structs überdauern müssen. Darüber hinaus gibt es eine Enumeration namens Either, die entweder ein i32 oder eine Referenz auf eines sein kann, und die Referenz muss die Lebensdauer der Enumeration überdauern. Schließlich erstellt der Code Instanzen dieser Structs und Enumeration und druckt deren Inhalte aus, um die Verwendung von Lebensdauern in Rust zu demonstrieren.",
+      "meta": {
+        "title": "Rust Lebensdauer Konzepte | Programmierungstutorials",
+        "description": "Erkunden Sie die Verwendung von Lebensdauern in Rust Structs und Enums. Verstehen Sie, wie Sie Referenzen verwalten und sicherstellen, dass sie die Datenstrukturen überleben.",
+        "keywords": "Rust, Lebensdauern, Structs, Enums, Programmierungstutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Structs",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "Rustの構造体における寿命管理",
+      "description": "この実験では、Rustのコードを使って構造体における寿命の使用方法を示します。コードには、`i32` 型への参照を保持する `Borrowed` という構造体が含まれており、その参照は構造体自体よりも長い寿命を持たなければなりません。また、`i32` 型への2つの参照を持つ `NamedBorrowed` という構造体もあり、その両方の参照も構造体よりも長い寿命を持たなければなりません。さらに、`i32` 型またはそれへの参照のいずれかを持つ `Either` という列挙型があり、その参照は列挙型よりも長い寿命を持たなければなりません。最後に、このコードはこれらの構造体と列挙型のインスタンスを作成し、それらの内容を表示してRustにおける寿命の使用方法を示します。",
+      "meta": {
+        "title": "Rustの寿命概念 | プログラミングチュートリアル",
+        "description": "Rustの構造体と列挙型における寿命の使用方法を探りましょう。参照をどのように管理し、データ構造よりも長い寿命を持たせるかを理解しましょう。",
+        "keywords": "Rust, 寿命, 構造体, 列挙型, プログラミングチュートリアル"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "構造体",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Управление временем жизни в структурах Rust",
+      "description": "В этом лабораторном задании есть код на Rust, демонстрирующий использование времени жизни в структурах. Код включает структуру Borrowed, которая хранит ссылку на i32, и ссылка должна существовать дольше самой структуры. Также есть структура NamedBorrowed с двумя ссылками на i32, обе из которых должны существовать дольше самой структуры. Кроме того, есть перечисление Either, которое может быть либо i32, либо ссылкой на него, и ссылка должна существовать дольше перечисления. Наконец, код создает экземпляры этих структур и перечисления и выводит их содержимое, чтобы показать использование времени жизни в Rust.",
+      "meta": {
+        "title": "Концепции времени жизни Rust | Руководства по программированию",
+        "description": "Изучите использование времени жизни в структурах и перечислениях Rust. Разберитесь, как управлять ссылками и убедиться, что они существуют дольше структур данных.",
+        "keywords": "Rust, Время жизни, Структуры, Перечисления, Руководства по программированию"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Структуры",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На этом этапе проверок нет в настоящее время",
+                "file": "verify1-1.sh",
+                "hint": "На этом этапе проверок нет в настоящее время"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

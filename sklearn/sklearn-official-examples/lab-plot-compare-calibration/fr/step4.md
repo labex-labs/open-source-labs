@@ -1,0 +1,3 @@
+# Conclusion
+
+Dans ce laboratoire, nous avons comparé l'étalonnage de quatre modèles différents : la Régression Logistique, le Bayes Naïf Gaussien, le Classifieur Forestier Aléatoire et le SVM Linéaire. Nous avons tracé les courbes d'étalonnage pour chaque modèle et observé que les modèles bien étalonnés produisent des courbes qui suivent la ligne diagonale. Les quatre modèles ont produit des résultats différents, la Régression Logistique étant bien étalonnée et les autres modèles montrant différents degrés de biais. L'étalonnage est un aspect important des modèles d'apprentissage automatique, et les modèles bien étalonnés produisent des probabilités précises et fiables.

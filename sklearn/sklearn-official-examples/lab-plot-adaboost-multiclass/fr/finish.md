@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons exploré la manière dont l'amorçage peut améliorer la précision de prédiction dans un problème multi-classe. Nous avons utilisé un ensemble de données construit en prenant une distribution normale standard de dix dimensions et en définissant trois classes séparées par des sphères concentriques imbriquées de dix dimensions. Nous avons comparé les performances des algorithmes SAMME et SAMME.R et avons tracé l'erreur de test, l'erreur de classification et le poids d'amorçage de chaque modèle. Les résultats ont montré que SAMME.R converge généralement plus rapidement que SAMME, obtenant une erreur de test plus faible avec un nombre d'itérations d'amorçage plus réduit.

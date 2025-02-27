@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons utilisé le MLPClassifier de Scikit-learn pour comparer les performances de différentes stratégies d'apprentissage stochastique, y compris SGD et Adam, sur plusieurs petits ensembles de données. Nous avons défini différents programmes de taux d'apprentissage et des paramètres de momentum, puis avons entraîné le MLPClassifier en utilisant chaque stratégie. Nous avons tracé les courbes d'apprentissage pour chaque stratégie sur chaque ensemble de données et avons observé comment différentes stratégies peuvent affecter les courbes de perte d'entraînement. Nous avons démontré l'importance de choisir la bonne stratégie d'apprentissage pour l'ensemble de données et la tâche à l'étude.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce laboratoire a montré comment utiliser l'algorithme de chaîne de classifieurs pour construire un ensemble de chaînes de classifieurs de régression logistique afin d'exploiter les corrélations entre les classes. Le score de similarité de Jaccard pour chaque chaîne tend à être supérieur à celui des modèles de régression logistique indépendants. Enfin, nous avons construit un ensemble de vote de chaînes de classifieurs en calculant la moyenne des prédictions binaires des chaînes et en appliquant un seuil de 0,5. Le score de similarité de Jaccard de l'ensemble est supérieur à celui des modèles indépendants et tend à dépasser le score de chaque chaîne dans l'ensemble.

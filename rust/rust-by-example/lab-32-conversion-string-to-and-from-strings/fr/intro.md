@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous allons apprendre à convertir des types en chaînes de caractères et vice versa en Rust. Pour convertir n'importe quel type en chaîne de caractères, nous pouvons implémenter le trait `ToString` pour ce type. Alternativement, nous pouvons implémenter le trait `fmt::Display`, qui fournit automatiquement le trait `ToString` et nous permet d'afficher le type en utilisant `println!`. D'un autre côté, pour analyser une chaîne de caractères en un type spécifique, tel qu'un nombre, nous pouvons utiliser la fonction `parse` avec l'inférence de type ou en spécifiant le type en utilisant la syntaxe 'turbofish'. Cela repose sur le trait `FromStr`, qui est implémenté pour de nombreux types dans la bibliothèque standard. Si nous voulons analyser une chaîne de caractères en un type défini par l'utilisateur, nous pouvons implémenter le trait `FromStr` pour ce type.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

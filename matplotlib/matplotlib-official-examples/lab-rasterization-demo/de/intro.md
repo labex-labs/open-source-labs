@@ -1,10 +1,10 @@
 # Einführung
 
-In diesem Lab lernst du über die Ver光栅isierung von Vektorgrafiken. Die Ver光栅isierung ist ein Prozess, bei dem Vektorgrafiken in ein Rasterbild (Pixel) umgewandelt werden. Dadurch kann das Rendern beschleunigt und kleinere Dateien für große Datensätze erzeugt werden, allerdings geht dies mit der Kosten eines festen Auflösungsverhältnisses einher. Wir werden die Python Matplotlib-Bibliothek verwenden, um das Konzept der Ver光栅isierung zu veranschaulichen.
+In diesem Lab lernst du über die Ver光栅isierung von Vektorgrafiken. Die Ver光栅isierung ist ein Prozess, bei dem Vektorgrafiken in ein Rasterbild (Pixel) umgewandelt werden. Dadurch kann das Rendern beschleunigt und kleinere Dateien für große Datensätze erzeugt werden, allerdings geht dies mit der Kosten eines festen Auflösungsvermögens einher. Wir werden die Python Matplotlib-Bibliothek verwenden, um das Konzept der Ver光栅isierung zu veranschaulichen.
 
 ## Tipps für die VM
 
-Nachdem der VM-Start abgeschlossen ist, klicke in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem der Start der VM abgeschlossen ist, klicke in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
 
 Manchmal musst du einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen in Jupyter Notebook nicht automatisiert werden.
 

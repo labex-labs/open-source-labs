@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce laboratoire a démontré comment utiliser la classe `BayesianGaussianMixture` dans scikit-learn pour ajuster un jeu de données d'entraînement contenant un mélange de trois Gaussiennes. Cette classe peut adapter automatiquement le nombre de composants de mélange en utilisant une loi a priori de concentration, qui est spécifiée en utilisant le paramètre `weight_concentration_prior_type`. Ce laboratoire a montré la différence entre l'utilisation d'une loi a priori de distribution de Dirichlet et d'un processus de Dirichlet pour sélectionner le nombre de composants avec des poids non nuls.

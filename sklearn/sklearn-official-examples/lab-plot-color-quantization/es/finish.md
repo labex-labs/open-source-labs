@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo utilizar el algoritmo de agrupamiento K-Means para realizar la cuantización de colores en una imagen. Cargamos y mostramos la imagen original, la convertimos a números de punto flotante y la redimensionamos en una matriz numpy bidimensional. Ajustamos el modelo K-Means en una submuestra de los datos de la imagen y lo utilizamos para predecir los índices de color en la imagen completa. También predecimos los índices de color en la imagen completa utilizando un código aleatorio. Finalmente, recreamos la imagen comprimida utilizando el código y las etiquetas obtenidas del modelo K-Means y el código aleatorio, y mostramos la imagen original junto con las imágenes cuantizadas.

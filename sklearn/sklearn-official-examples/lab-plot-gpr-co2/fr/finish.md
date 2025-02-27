@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce laboratoire a démontré comment effectuer une régression par processus gaussien (GPR) sur les données de CO2 de Mauna Loa à l'aide du package scikit-learn. Les données consistent en les concentrations mensuelles moyennes de CO2 atmosphérique collectées à l'Observatoire de Mauna Loa à Hawaii entre 1958 et 2001. L'objectif est de modéliser la concentration de CO2 en fonction du temps et de l'extrapoler pour les années après 2001. Nous avons construit l'ensemble de données, conçu le noyau approprié, ajusté le modèle et effectué une extrapolation. Enfin, nous avons interprété les hyperparamètres du noyau.

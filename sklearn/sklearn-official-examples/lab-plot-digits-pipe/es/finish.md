@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, hemos aprendido cómo construir una canalización para la reducción de dimensionalidad y la clasificación utilizando Análisis de Componentes Principales (PCA) y Regresión Logística. Hemos utilizado la biblioteca scikit-learn para realizar una reducción de dimensionalidad no supervisada en el conjunto de datos de dígitos utilizando PCA. Luego, hemos utilizado un modelo de regresión logística para la clasificación. Hemos utilizado GridSearchCV para establecer la dimensionalidad del PCA y encontrar la mejor combinación de truncamiento del PCA y regularización del clasificador. Hemos graficado el espectro del PCA y la precisión de clasificación para cada número de componentes.

@@ -1,0 +1,3 @@
+# Resumen
+
+Esta práctica demostró cómo realizar la regresión de procesos gaussianos (GPR) en los datos de CO2 de Mauna Loa utilizando el paquete scikit-learn. Los datos consisten en las concentraciones mensuales promedio de CO2 atmosférico recolectadas en el Observatorio de Mauna Loa en Hawái entre 1958 y 2001. El objetivo es modelar la concentración de CO2 como una función del tiempo y extrapolarla para los años posteriores a 2001. Construimos el conjunto de datos, diseñamos el kernel adecuado, ajustamos el modelo y realizamos la extrapolación. Finalmente, interpretamos los hiperparámetros del kernel.

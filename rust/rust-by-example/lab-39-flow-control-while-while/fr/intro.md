@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous apprenons le mot clé `while`, qui est utilisé pour créer une boucle qui continue à s'exécuter tant qu'une condition spécifiée est vraie. Pour illustrer son utilisation, nous écrivons un programme en Rust appelé FizzBuzz. Le programme utilise une boucle `while` pour itérer sur les nombres de 1 à 100. À l'intérieur de la boucle, il vérifie si le nombre actuel est divisible par 3 et 5 (c'est-à-dire un multiple de 15) et imprime "fizzbuzz" dans de tels cas. Si le nombre est divisible uniquement par 3, il imprime "fizz", et s'il est divisible uniquement par 5, il imprime "buzz". Pour tous les autres nombres, il imprime simplement le nombre lui-même. La boucle continue jusqu'à ce que la variable compteur atteigne 101, en l'incrémentant après avoir imprimé chaque nombre ou étiquette.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

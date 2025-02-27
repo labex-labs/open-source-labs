@@ -1,0 +1,3 @@
+# Ciclos de Referencia Pueden Deslevar Memoria
+
+Las garantías de seguridad de memoria de Rust hacen difícil, pero no imposible, accidentalmente crear memoria que nunca se limpie (conocida como una _fuga de memoria_). Prevenir completamente las fugas de memoria no es una de las garantías de Rust, lo que significa que las fugas de memoria son seguras en Rust. Podemos ver que Rust permite fugas de memoria al usar `Rc<T>` y `RefCell<T>`: es posible crear referencias donde los elementos se refieren mutuamente en un ciclo. Esto crea fugas de memoria porque el recuento de referencias de cada elemento en el ciclo nunca alcanzará 0, y los valores nunca se eliminarán.

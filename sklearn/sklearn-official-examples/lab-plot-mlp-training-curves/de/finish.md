@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir den Scikit-learn MLPClassifier verwendet, um die Leistung verschiedener stochastischer Lernstrategien, einschließlich SGD und Adam, auf mehreren kleinen Datensätzen zu vergleichen. Wir haben verschiedene Lernraten-Schedules und Momentum-Parameter definiert und dann den MLPClassifier mit jeder Strategie trainiert. Wir haben die Lernkurven für jede Strategie auf jedem Datensatz geplottet und beobachtet, wie verschiedene Strategien die Trainingsverlustkurven beeinflussen können. Wir haben die Wichtigkeit der Auswahl der richtigen Lernstrategie für den Datensatz und die vorliegende Aufgabe gezeigt.

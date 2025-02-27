@@ -1,0 +1,5 @@
+# Tests d'intégration pour les crates binaires
+
+Si notre projet est une crate binaire qui ne contient que le fichier `src/main.rs` et n'a pas de fichier `src/lib.rs`, nous ne pouvons pas créer de tests d'intégration dans le répertoire `tests` et porter les fonctions définies dans le fichier `src/main.rs` dans la portée avec une instruction `use`. Seules les crates bibliothèques exposent des fonctions que d'autres crates peuvent utiliser ; les crates binaires sont destinées à être exécutées seule.
+
+C'est l'une des raisons pour lesquelles les projets Rust qui fournissent une binaire ont un fichier `src/main.rs` simple qui appelle une logique qui se trouve dans le fichier `src/lib.rs`. En utilisant cette structure, les tests d'intégration _peuvent_ tester la crate bibliothèque avec `use` pour rendre la fonctionnalité importante disponible. Si la fonctionnalité importante fonctionne, le peu de code dans le fichier `src/main.rs` fonctionnera également, et ce peu de code n'a pas besoin d'être testé.

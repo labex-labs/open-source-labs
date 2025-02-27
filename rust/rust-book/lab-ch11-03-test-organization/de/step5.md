@@ -1,0 +1,3 @@
+# Integrations-Tests
+
+In Rust sind Integrations-Tests vollständig extern zu Ihrer Bibliothek. Sie verwenden Ihre Bibliothek auf die gleiche Weise wie jeder andere Code, was bedeutet, dass sie nur Funktionen aufrufen können, die Teil der öffentlichen Schnittstelle Ihrer Bibliothek sind. Ihr Zweck ist es, zu testen, ob viele Teile Ihrer Bibliothek zusammen korrekt funktionieren. Einheiten von Code, die einzeln korrekt funktionieren, können Probleme haben, wenn sie integriert werden, daher ist auch die Testabdeckung des integrierten Codes wichtig. Um Integrations-Tests zu erstellen, benötigen Sie zunächst ein Verzeichnis `tests`.

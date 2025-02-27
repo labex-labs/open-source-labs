@@ -1,0 +1,5 @@
+# Apagado y limpieza adecuados
+
+El código de la Lista 20-20 está respondiendo a solicitudes de manera asincrónica mediante el uso de un grupo de subprocesos, tal como lo planeamos. Obtenemos algunas advertencias sobre los campos `workers`, `id` y `thread` que no estamos utilizando de manera directa, lo que nos recuerda que no estamos limpiando nada. Cuando usamos el método menos elegante de ctrl-C para detener el subproceso principal, todos los demás subprocesos se detienen inmediatamente también, incluso si están en medio de atender una solicitud.
+
+A continuación, implementaremos el trato `Drop` para llamar a `join` en cada uno de los subprocesos del grupo, para que puedan terminar las solicitudes en las que están trabajando antes de cerrar. Luego implementaremos una forma de decir a los subprocesos que deben dejar de aceptar nuevas solicitudes y apagarse. Para ver este código en acción, modificaremos nuestro servidor para que acepte solo dos solicitudes antes de apagar adecuadamente su grupo de subprocesos.

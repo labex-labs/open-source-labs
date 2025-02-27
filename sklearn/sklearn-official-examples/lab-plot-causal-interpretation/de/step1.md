@@ -1,0 +1,3 @@
+# Generieren des Datensatzes
+
+Wir generieren einen simulierten Datensatz von Stundenlöhnen, Arbeitserfahrung, Fähigkeiten, elterlichen Stundenlöhnen und Hochschulabschlüssen. Die Arbeitserfahrung in Jahren und ein Maß für die Fähigkeiten werden aus Normalverteilungen gezogen. Der Stundenlohn eines der Eltern wird aus einer Beta-Verteilung gezogen. Wir erstellen einen Indikator für den Hochschulabschluss, der positiv von Fähigkeiten und elterlichen Stundenlöhnen beeinflusst wird. Schließlich modellieren wir die Stundenlöhne als lineare Funktion aller vorherigen Variablen und einer zufälligen Komponente.

@@ -1,0 +1,9 @@
+# Verwendung des Newtype-Patterns für Typsicherheit und Abstraktion
+
+> Hinweis: Dieser Abschnitt setzt voraus, dass Sie den früheren Abschnitt "Verwendung des Newtype-Patterns zur Implementierung externer Traits" gelesen haben.
+
+Das Newtype-Pattern ist auch für Aufgaben nützlich, die wir bisher noch nicht besprochen haben, darunter die statische Vergewisserung, dass Werte niemals verwechselt werden, und die Angabe der Einheiten eines Werts. Sie haben in Listing 19-15 ein Beispiel gesehen, wie Newtypes verwendet werden, um Einheiten anzugeben: erinnern Sie sich, dass die `Millimeters`- und `Meters`-Strukturen `u32`-Werte in einem Newtype umschlossen haben. Wenn wir eine Funktion mit einem Parameter vom Typ `Millimeters` schreiben, könnten wir kein Programm kompilieren, das versehentlich versucht, diese Funktion mit einem Wert vom Typ `Meters` oder einem einfachen `u32` aufzurufen.
+
+Wir können das Newtype-Pattern auch verwenden, um einige Implementierungsdetails eines Typs zu abstrahieren: Der neue Typ kann eine öffentliche Schnittstelle bereitstellen, die von der Schnittstelle des privaten inneren Typs unterschiedlich ist.
+
+Newtypes können auch interne Implementierungen verbergen. Beispielsweise könnten wir einen `People`-Typ bereitstellen, um eine `HashMap<i32, String>` zu umschließen, die die ID einer Person in Verbindung mit ihrem Namen speichert. Code, der `People` verwendet, würde nur mit der öffentlichen Schnittstelle interagieren, die wir bereitstellen, wie z. B. eine Methode, um einen Namensstring zur `People`-Sammlung hinzuzufügen; dieser Code müsste nicht wissen, dass wir intern einer `i32`-ID zu Namen zuweisen. Das Newtype-Pattern ist eine leichtgewichtige Möglichkeit, die Kapselung zu erreichen, um Implementierungsdetails zu verstecken, über die wir in "Kapselung, die Implementierungsdetails versteckt" diskutiert haben.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Modellauswahl mit Gaußschen Mischmodellen (GMM) unter Verwendung von informationstheoretischen Kriterien durchführt. Wir haben das Akaike-Informationskriterium (AIC) und das Bayes-Informationskriterium (BIC) verwendet, um das beste Modell auszuwählen. Wir haben zwei Komponenten erzeugt, indem wir die Standardnormalverteilung zufällig abgesucht haben. Eine Komponente blieb sphärisch, wurde jedoch verschoben und neu skaliert. Die andere wurde deformiert, um eine allgemeinere Kovarianzmatrix zu haben. Wir haben die verschiedenen Komponenten visualisiert, das beste Modell trainiert und ausgewählt, die BIC-Werte geplottet und das beste Modell geplottet.

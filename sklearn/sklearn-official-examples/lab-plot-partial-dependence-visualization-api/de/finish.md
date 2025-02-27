@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial wurde gezeigt, wie man partielle Abhängigkeitskurven für mehrere Merkmale mit dem `PartialDependenceDisplay`-Objekt darstellt. Zunächst haben wir einen Entscheidungsbaum und ein Multilayer-Perzeptron auf dem Diabetes-Datensatz trainiert. Anschließend haben wir partielle Abhängigkeitskurven für den Entscheidungsbaum und das Multilayer-Perzeptron für zwei Merkmale geplottet. Danach haben wir die partiellen Abhängigkeitskurven beider Modelle in einem gemeinsamen Plot dargestellt. Schließlich haben wir die partiellen Abhängigkeitskurven für ein einzelnes Merkmal auf den gleichen Achsen geplottet.

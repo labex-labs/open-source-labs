@@ -1,0 +1,3 @@
+# Générer l'ensemble de données
+
+Nous générons un ensemble de données simulé de salaires horaires, d'expérience professionnelle, de capacité, de salaires horaires des parents et de diplômes universitaires. L'expérience professionnelle en années et une mesure de capacité sont tirées de distributions normales. Le salaire horaire d'un des parents est tiré d'une distribution bêta. Nous créons un indicateur de diplôme universitaire qui est positivement influencé par la capacité et le salaire horaire des parents. Enfin, nous modélisons les salaires horaires comme une fonction linéaire de toutes les variables précédentes et d'un composant aléatoire.

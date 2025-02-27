@@ -1,0 +1,5 @@
+# Introducción
+
+En este laboratorio, aprendemos sobre el trato `Iterator` en Rust, que se utiliza para implementar iteradores sobre colecciones como arrays. El trato `Iterator` requiere que se defina el método `next` para el iterador, y puede implementarse manualmente en un bloque `impl` o definirse automáticamente para arrays y rangos. La construcción `for` se puede utilizar para convertir convenientemente algunas colecciones en iteradores utilizando el método `.into_iter()`. El laboratorio proporciona una implementación de ejemplo del generador de secuencia de `Fibonacci` como iterador, mostrando cómo definir el método `next` y utilizar el trato `Iterator`. Además, demuestra el uso de los métodos `take` y `skip` para manipular iteradores, así como el método `iter` para iterar sobre arrays.
+
+> **Nota:** Si el laboratorio no especifica un nombre de archivo, puede utilizar cualquier nombre de archivo que desee. Por ejemplo, puede utilizar `main.rs`, compilar y ejecutarlo con `rustc main.rs &&./main`.

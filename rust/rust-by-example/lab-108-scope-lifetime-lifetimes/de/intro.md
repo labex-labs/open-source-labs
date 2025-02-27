@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept der Lebenszeiten in Rust untersuchen und wie der Compiler diese verwendet, um die Gültigkeit von Entleihen im Code sicherzustellen. Lebenszeiten sind ein Konstrukt des Compilers, das die Lebensdauer einer Variable von ihrer Erstellung bis zu ihrer Zerstörung bestimmt. Während Lebenszeiten und Gültigkeitsbereiche verwandt sind, sind sie nicht identisch. Wenn eine Variable mit dem `&`-Operator entliehen wird, hat das Entlehen eine Lebenszeit, die durch seine Deklaration bestimmt wird, und es ist gültig, solange es vor dem Zerstören des Verleiher endet. Der Gültigkeitsbereich des Entlehens wird jedoch durch den Ort bestimmt, an dem die Referenz verwendet wird. Der bereitgestellte Beispielcode zeigt, wie Lebenszeiten und Gültigkeitsbereiche in der Praxis verwendet werden, wobei jede Variable ihre eigene Lebenszeit und ihren eigenen Gültigkeitsbereich hat.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

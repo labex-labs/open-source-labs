@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir die Klassifikation mit den nächsten Nachbarn mit und ohne Neighborhood Components Analysis (NCA) verglichen. Wir haben den Iris-Datensatz verwendet, um die Klassifizierungsgrenzen zu plotten, die von einem Klassifizierer mit den nächsten Nachbarn gegeben werden, wenn der euklidische Abstand auf den ursprünglichen Merkmalen verwendet wird, im Vergleich zu der Verwendung des euklidischen Abstands nach der von NCA gelernten Transformation. Wir haben scikit-learn verwendet, um die Klassifikation mit den nächsten Nachbarn und NCA durchzuführen. Wir haben auch matplotlib verwendet, um die Klassifizierungsgrenzen zu plotten. Wir haben festgestellt, dass NCA die Klassifikationsgenauigkeit verbessert hat.

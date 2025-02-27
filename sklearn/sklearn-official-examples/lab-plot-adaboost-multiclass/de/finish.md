@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir untersucht, wie das Boosting die Vorhersagegenauigkeit bei einem Mehrklassenproblem verbessern kann. Wir haben einen Datensatz verwendet, der durch die Verwendung einer zehn-dimensionalen Standardnormalverteilung konstruiert wurde, und drei Klassen definiert, die durch geschachtelte konzentrische zehn-dimensionale Sphären getrennt sind. Wir haben die Leistung der SAMME- und SAMME.R-Algorithmen verglichen und die Testfehler, die Klassifikationsfehler und das Boost-Gewicht jedes Modells geplottet. Die Ergebnisse zeigten, dass SAMME.R im Allgemeinen schneller konvergiert als SAMME und mit weniger Boosting-Iterationen einen niedrigeren Testfehler erzielt.

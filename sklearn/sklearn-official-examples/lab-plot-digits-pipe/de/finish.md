@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man einen Pipeline für die Dimensionsreduzierung und Klassifizierung mit Hilfe der Hauptkomponentenanalyse (PCA) und Logistischer Regression aufbaut. Wir haben die scikit-learn-Bibliothek verwendet, um eine unüberwachte Dimensionsreduzierung auf dem digits-Datensatz mit PCA durchzuführen. Anschließend haben wir ein logistisches Regressionsmodell für die Klassifizierung verwendet. Wir haben GridSearchCV verwendet, um die Dimension der PCA festzulegen und die beste Kombination aus PCA-Abschneidung und Klassifizierer-Regularisierung zu finden. Wir haben das PCA-Spektrum und die Klassifikationsgenauigkeit für jede Anzahl von Komponenten geplottet.

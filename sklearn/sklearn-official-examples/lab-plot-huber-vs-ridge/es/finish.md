@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, comparamos el rendimiento de dos modelos de regresión, HuberRegressor y Ridge, en un conjunto de datos con valores atípicos fuertes. Generamos un conjunto de datos de ejemplo, le agregamos valores atípicos fuertes y luego ajustamos ambos modelos al conjunto de datos. Visualizamos los resultados y comparamos el rendimiento de los modelos. Observamos que el HuberRegressor fue menos influenciado por los valores atípicos que el regresor Ridge, y que a medida que aumentaba el valor de epsilon, la función de decisión del HuberRegressor se aproximaba a la del regresor Ridge.

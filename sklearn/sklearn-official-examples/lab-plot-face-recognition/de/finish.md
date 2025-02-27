@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Gesichtserkennung mit Eigenfaces und SVMs durchführt. Zunächst haben wir den Datensatz geladen und untersucht, anschließend haben wir die Daten durch Skalierung der Eingabedaten präprozessiert. Danach haben wir PCA durchgeführt, um Merkmale aus den Eingabedaten zu extrahieren und ein SVM-Klassifizierungsmodell trainiert. Wir haben die Modellleistung berechnet und die Vorhersagen und Eigenfaces visualisiert.

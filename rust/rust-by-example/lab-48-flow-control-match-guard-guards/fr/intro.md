@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous apprenons à utiliser les vérifications de correspondance (match guards) en Rust pour filtrer les branches en fonction de conditions. La vérification de correspondance est ajoutée après le motif et est représentée par le mot clé `if` suivi d'une condition. La condition de vérification nous permet de raffiner davantage la correspondance des motifs et d'effectuer des vérifications supplémentaires avant d'exécuter la branche correspondante de l'expression `match`. Cependant, il est important de noter que le compilateur ne considère pas les conditions de vérification lors de la vérification de la couverture des motifs, il est donc nécessaire de s'assurer que tous les motifs sont toujours couverts par l'expression `match`.
+
+> **Note** : Si le nom de fichier n'est pas spécifié dans le laboratoire, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

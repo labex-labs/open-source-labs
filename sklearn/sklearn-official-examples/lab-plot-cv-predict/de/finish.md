@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Kreuzvalidierung verwendet, um Modellvorhersagen und -fehler mit den Funktionen `cross_val_predict` und `PredictionErrorDisplay` aus scikit-learn zu visualisieren. Wir haben den Diabetes-Datensatz geladen, eine Instanz eines linearen Regressionsmodells erstellt und die Kreuzvalidierung verwendet, um ein Array von Vorhersagen zu erhalten. Anschließend haben wir `PredictionErrorDisplay` verwendet, um die tatsächlichen Werte gegen die vorhergesagten Werte sowie die Residuen gegen die vorhergesagten Werte zu plotten. Schließlich haben wir die Ergebnisse interpretiert und die Wichtigkeit der Verwendung von Leistungsmetriken pro Fold für die Modellbewertung diskutiert.

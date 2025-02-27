@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aplicamos varios métodos de descomposición de matrices no supervisados al conjunto de datos de caras Olivetti. Utilizamos PCA, NMF, ICA, PCA Esparsa, Aprendizaje del Diccionario, Agrupamiento K-medias y Análisis Factorial para extraer diferentes tipos de características de los datos. También forzamos la positividad al encontrar el diccionario y/o los coeficientes de codificación en el método de Aprendizaje del Diccionario. En general, estos métodos pueden ser útiles para reducir la dimensionalidad de conjuntos de datos de alta dimensión y extraer características significativas para tareas posteriores como la clasificación y el agrupamiento.

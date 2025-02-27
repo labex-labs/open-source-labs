@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à transformer les caractéristiques dans un espace sparse de dimension plus élevée à l'aide d'un ensemble d'arbres. Nous avons utilisé différents types de méthodes d'ensemble, y compris la forêt aléatoire et le gradient boosting, et comparé leurs performances. `RandomTreesEmbedding` est une méthode non supervisée et ne nécessite pas d'être entraînée indépendamment. Nous avons également appris à combiner la forêt aléatoire ou le gradient boosting avec une régression logistique à l'aide de `FunctionTransformer`. Enfin, nous avons évalué les performances de tous les modèles à l'aide de courbes ROC.

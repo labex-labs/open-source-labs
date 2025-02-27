@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die Entscheidungsfläche von zwei logistischen Regressionsmodellen, nämlich das multinomiale logistische Regression und das ein-gegen-alle logistische Regression, zeichnet. Wir haben einen 3-Klassen-Datensatz verwendet und die Leistung der beiden Modelle durch das Zeichnen ihrer Entscheidungsgrenze verglichen. Wir haben festgestellt, dass das multinomiale logistische Regressionsmodell eine glattere Entscheidungsgrenze hatte, während das ein-gegen-alle logistische Regressionsmodell drei separate Entscheidungsgrenzen für jede Klasse hatte.

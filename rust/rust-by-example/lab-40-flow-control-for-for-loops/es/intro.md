@@ -1,0 +1,5 @@
+# Introducción
+
+En este laboratorio, aprendemos a usar los bucles `for` y los rangos en Rust. Podemos usar el bucle `for` junto con la notación de rango `a..b` para iterar a través de un rango de valores. Por ejemplo, podemos escribir el programa FizzBuzz usando un bucle `for` en lugar de un bucle `while`. Además, podemos usar la notación `..=` para un rango que es inclusivo en ambos extremos. El bucle `for` también puede interactuar con los iteradores de diferentes maneras, como usando `iter` para prestar prestado cada elemento de una colección, `into_iter` para consumir la colección o `iter_mut` para prestar prestado mutuamente cada elemento de la colección. Cada uno de estos métodos proporciona una vista diferente de los datos dentro de la colección, lo que permite realizar diferentes acciones.
+
+> **Nota:** Si el laboratorio no especifica un nombre de archivo, puede usar cualquier nombre de archivo que desee. Por ejemplo, puede usar `main.rs`, compilar y ejecutarlo con `rustc main.rs &&./main`.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser la validation croisée pour visualiser les prédictions et les erreurs du modèle à l'aide des fonctions `cross_val_predict` et `PredictionErrorDisplay` de scikit-learn. Nous avons chargé l'ensemble de données sur le diabète, créé une instance d'un modèle de régression linéaire et utilisé la validation croisée pour obtenir un tableau de prédictions. Nous avons ensuite utilisé `PredictionErrorDisplay` pour tracer les valeurs réelles en fonction des valeurs prédites, ainsi que les résidus en fonction des valeurs prédites. Enfin, nous avons interprété les résultats et discuté de l'importance d'utiliser les métriques de performance par plis pour l'évaluation du modèle.

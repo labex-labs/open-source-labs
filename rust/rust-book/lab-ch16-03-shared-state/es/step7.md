@@ -1,0 +1,7 @@
+# Similitudes entre RefCell`<T>`{=html}/Rc`<T>`{=html} y Mutex`<T>`{=html}/Arc`<T>`{=html}
+
+Es posible que hayas notado que `counter` es inmutable pero que pudimos obtener una referencia mutable al valor dentro de él; esto significa que `Mutex<T>` proporciona mutabilidad interior, como lo hace la familia `Cell`. De la misma manera que usamos `RefCell<T>` en el Capítulo 15 para permitirnos mutar el contenido dentro de un `Rc<T>`, usamos `Mutex<T>` para mutar el contenido dentro de un `Arc<T>`.
+
+Otro detalle a destacar es que Rust no puede protegerte de todos los tipos de errores de lógica cuando usas `Mutex<T>`. Recuerda del Capítulo 15 que usar `Rc<T>` venía con el riesgo de crear ciclos de referencias, donde dos valores `Rc<T>` se refieren el uno al otro, lo que causa fugas de memoria. Del mismo modo, `Mutex<T>` viene con el riesgo de crear _bloqueos mortales_. Estos ocurren cuando una operación necesita bloquear dos recursos y dos hilos han adquirido cada uno uno de los bloques, lo que los hace esperar el uno al otro para siempre. Si estás interesado en los bloqueos mortales, intenta crear un programa Rust que tenga un bloqueo mortal; luego investiga estrategias para mitigar los bloqueos mortales para los mutexes en cualquier lenguaje y prueba implementarlas en Rust. La documentación de la API de la biblioteca estándar para `Mutex<T>` y `MutexGuard` ofrece información útil.
+
+Terminaremos este capítulo hablando sobre las características `Send` y `Sync` y cómo podemos usarlas con tipos personalizados.

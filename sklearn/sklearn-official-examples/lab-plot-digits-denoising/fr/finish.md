@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser la PCA Kernel pour débruiter des images. Nous avons utilisé l'ensemble de données de chiffres USPS pour démontrer le processus. Nous avons appris une base PCA sur des images sans bruit et l'avons utilisée pour reconstruire et débruiter les images bruitées. Nous avons comparé les résultats de la PCA linéaire et de la PCA Kernel et avons constaté que la PCA Kernel est plus efficace pour éliminer le bruit d'arrière-plan et fournir des images plus lisses. Cependant, nous devons faire attention lors de la sélection des valeurs appropriées pour `n_components`, `gamma` et `alpha`.

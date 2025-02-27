@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab lernen wir das `Iterator`-Trait in Rust kennen, das verwendet wird, um Iteratoren über Sammlungen wie Arrays zu implementieren. Das `Iterator`-Trait erfordert, dass die `next`-Methode für den Iterator definiert wird und kann in einem `impl`-Block manuell implementiert oder automatisch für Arrays und Bereiche definiert werden. Die `for`-Konstruktion kann verwendet werden, um einige Sammlungen mit der `.into_iter()`-Methode bequem in Iteratoren umzuwandeln. Das Lab bietet eine Beispielimplementierung des `Fibonacci`-Sequenzgenerators als Iterator, die zeigt, wie man die `next`-Methode definiert und das `Iterator`-Trait verwendet. Darüber hinaus wird die Verwendung der `take`- und `skip`-Methoden zum Manipulieren von Iteratoren sowie die `iter`-Methode zum Iterieren über Arrays demonstriert.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

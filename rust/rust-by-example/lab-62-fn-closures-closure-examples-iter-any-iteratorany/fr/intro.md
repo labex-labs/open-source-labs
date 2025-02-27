@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, la fonction `Iterator::any` est discutée. Il s'agit d'une fonction qui prend un itérateur en entrée et renvoie `true` si un élément quelconque de l'itérateur satisfait un prédicat donné, et `false` sinon. La fonction est définie comme une méthode de trait dans la bibliothèque standard de Rust et peut être utilisée sur tout type qui implémente le trait `Iterator`. La fonction prend une closure en argument, qui détermine le prédicat à appliquer à chaque élément de l'itérateur. La closure est définie avec le trait `FnMut`, ce qui signifie qu'elle peut modifier les variables capturées mais ne les consomme pas. La fonction `any` renvoie une valeur booléenne indiquant si le prédicat est satisfait par un élément quelconque de l'itérateur.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

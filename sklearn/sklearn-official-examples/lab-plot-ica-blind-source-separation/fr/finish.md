@@ -1,0 +1,3 @@
+# Sommaire
+
+Nous avons effectué avec succès la séparation des sources cachées sur un signal mixte en utilisant FastICA et PCA. Nous avons généré un signal mixte d'échantillonnage composé de trois composantes indépendantes, ajouté du bruit et standardisé les données. Nous avons ensuite généré une matrice de mélange pour mélanger nos composantes indépendantes. Nous avons utilisé FastICA pour estimer les sources indépendantes et calculé la PCA pour la comparaison. Enfin, nous avons tracé le signal mixte original, les sources indépendantes d'origine, les sources estimées par l'ICA et les sources estimées par la PCA.

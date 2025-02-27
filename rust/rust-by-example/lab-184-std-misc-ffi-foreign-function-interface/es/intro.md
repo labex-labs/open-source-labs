@@ -1,0 +1,5 @@
+# Introducción
+
+En este laboratorio, aprendemos sobre la Interfaz de Funciones Extranjeras (FFI, por sus siglas en inglés) de Rust, que permite interactuar con bibliotecas C al declarar funciones externas dentro de un bloque `extern` y anotarlas con un atributo `#[link]` que contiene el nombre de la biblioteca externa. El ejemplo de código demuestra el uso de la FFI para llamar a funciones externas de la biblioteca `libm`, como calcular la raíz cuadrada de un número complejo de precisión simple y calcular el coseno de un número complejo. A menudo, se utilizan envoltorios seguros alrededor de estas llamadas a funciones externas no seguras. El laboratorio también incluye una implementación mínima de números complejos de precisión simple y demuestra cómo llamar a APIs seguras envueltas en operaciones no seguras.
+
+> **Nota:** Si el laboratorio no especifica un nombre de archivo, puede usar cualquier nombre de archivo que desee. Por ejemplo, puede usar `main.rs`, compilarlo y ejecutarlo con `rustc main.rs &&./main`.

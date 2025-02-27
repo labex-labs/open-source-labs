@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man mit scikit-learn Visualisierungen mit Anzeigeobjekten erstellt. Wir haben die Anzeigeobjekte `ConfusionMatrixDisplay`, `RocCurveDisplay` und `PrecisionRecallDisplay` verwendet, um Visualisierungen für ein binäres Klassifizierungsproblem zu erstellen. Zunächst haben wir die Daten geladen und ein logistisches Regressionsmodell trainiert. Anschließend haben wir die Konfusionsmatrix, die ROC-Kurve und die Genauigkeit-Erfassungsrate-Kurve mit Anzeigeobjekten erstellt. Schließlich haben wir die Anzeigeobjekte mit der API von Matplotlib zu einem einzigen Plot kombiniert.

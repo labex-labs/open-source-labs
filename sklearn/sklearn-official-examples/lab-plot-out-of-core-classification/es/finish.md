@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo usar scikit-learn para la clasificación de texto utilizando aprendizaje fuera de núcleo. Utilizamos un clasificador en línea que soporta el método partial_fit, el cual fue alimentado con lotes de ejemplos. También aprovechamos un HashingVectorizer para asegurar que el espacio de características permaneciera el mismo con el tiempo. Luego, reservamos un conjunto de prueba y iteramos sobre lotes pequeños de ejemplos para actualizar los clasificadores. Finalmente, graficamos los resultados para visualizar la evolución de la precisión y los tiempos de entrenamiento.

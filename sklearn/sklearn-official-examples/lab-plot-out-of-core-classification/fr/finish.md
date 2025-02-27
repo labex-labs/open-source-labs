@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser scikit-learn pour la classification de texte en utilisant l'apprentissage hors-mémoire. Nous avons utilisé un classifieur en ligne qui prend en charge la méthode partial_fit, qui a été alimenté avec des lots d'exemples. Nous avons également utilisé un HashingVectorizer pour nous assurer que l'espace de caractéristiques reste le même au fil du temps. Nous avons ensuite réservé un ensemble de test et itéré sur des mini-lots d'exemples pour mettre à jour les classifieurs. Enfin, nous avons tracé les résultats pour visualiser l'évolution de la précision et les temps d'entraînement.

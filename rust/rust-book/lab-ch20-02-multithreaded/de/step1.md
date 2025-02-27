@@ -1,0 +1,3 @@
+# Unser ein-threadiger Server in einen multi-threadigen Server umwandeln
+
+Im Moment verarbeitet der Server jede Anfrage nacheinander, was bedeutet, dass er keine zweite Verbindung verarbeitet, bis die erste fertig verarbeitet ist. Wenn der Server immer mehr Anfragen erhält, wird diese serielle Ausführung immer weniger optimal. Wenn der Server eine Anfrage erhält, die lange Zeit in der Verarbeitung ist, müssen die nachfolgenden Anfragen warten, bis die lange Anfrage beendet ist, auch wenn die neuen Anfragen schnell verarbeitet werden können. Wir müssen dies beheben, aber zunächst betrachten wir das Problem im Einsatz.

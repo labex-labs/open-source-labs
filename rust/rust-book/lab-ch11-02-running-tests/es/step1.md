@@ -1,0 +1,5 @@
+# Controlar cómo se ejecutan las pruebas
+
+Al igual que `cargo run` compila tu código y luego ejecuta el binario resultante, `cargo test` compila tu código en modo de prueba y ejecuta el binario de prueba resultante. El comportamiento predeterminado del binario producido por `cargo test` es ejecutar todas las pruebas en paralelo y capturar la salida generada durante las ejecuciones de prueba, evitando que se muestre la salida y facilitando la lectura de la salida relacionada con los resultados de las pruebas. Sin embargo, puedes especificar opciones de línea de comandos para cambiar este comportamiento predeterminado.
+
+Algunas opciones de línea de comandos van a `cargo test`, y otras van al binario de prueba resultante. Para separar estos dos tipos de argumentos, listas los argumentos que van a `cargo test` seguidos del separador `--` y luego los que van al binario de prueba. Ejecutar `cargo test --help` muestra las opciones que puedes utilizar con `cargo test`, y ejecutar `cargo test -- --help` muestra las opciones que puedes utilizar después del separador.

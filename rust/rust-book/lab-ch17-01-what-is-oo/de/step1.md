@@ -1,0 +1,3 @@
+# Eigenschaften von objektorientierten Sprachen
+
+Es besteht keine Übereinstimmung in der Programmiergemeinschaft darüber, welche Funktionen eine Sprache haben muss, um als objektorientiert angesehen zu werden. Rust wird von vielen Programmierparadigmen beeinflusst, einschließlich OOP; beispielsweise haben wir in Kapitel 13 die Funktionen untersucht, die aus der funktionalen Programmierung stammen. Streitig ist, dass objektorientierte Sprachen bestimmte gemeinsame Merkmale aufweisen, nämlich Objekte, Kapselung und Vererbung. Schauen wir uns an, was jeder dieser Eigenschaften bedeutet und ob Rust sie unterstützt.

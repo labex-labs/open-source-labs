@@ -1,0 +1,87 @@
+# Директория tests
+
+Мы создаем директорию `tests` в верхнем уровне директории нашего проекта, рядом с `src`. Cargo знает, что нужно искать файлы интеграционных тестов в этой директории. Затем мы можем создать столько тестовых файлов, сколько захотим, и Cargo скомпилирует каждый файл как отдельный крейт.
+
+Давайте создадим интеграционный тест. С кодом из Listing 11-12 по-прежнему в файле `src/lib.rs`, создайте директорию `tests` и новый файл с именем `tests/integration_test.rs`. Структура вашей директории должна выглядеть так:
+
+    adder
+    ├── Cargo.lock
+    ├── Cargo.toml
+    ├── src
+    │   └── lib.rs
+    └── tests
+        └── integration_test.rs
+
+Вставьте код из Listing 11-13 в файл `tests/integration_test.rs`.
+
+Имя файла: `tests/integration_test.rs`
+
+```rust
+use adder;
+
+#[test]
+fn it_adds_two() {
+    assert_eq!(4, adder::add_two(2));
+}
+```
+
+Listing 11-13: Интеграционный тест функции в крейте `adder`
+
+Каждый файл в директории `tests` является отдельным крейтом, поэтому нам нужно подтянуть нашу библиотеку в область видимости каждого тестового крейта.出于这个原因，我们在代码顶部添加了 `use adder;`，这在单元测试中是不需要的。
+
+В файле `tests/integration_test.rs` мы не нужно аннотировать никакой код с помощью `#[cfg(test)]`. Cargo особым образом обрабатывает директорию `tests` и компилирует файлы в этой директории только при запуске `cargo test`. Теперь запустите `cargo test`:
+
+```bash
+$ cargo test
+   Compiling adder v0.1.0 (file:///projects/adder)
+    Finished test [unoptimized + debuginfo] target(s) in 1.31s
+     Running unittests src/lib.rs (target/debug/deps/adder-
+1082c4b063a8fbe6)
+
+1 running 1 test
+test tests::internal... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
+filtered out; finished in 0.00s
+
+   2 Running tests/integration_test.rs
+(target/debug/deps/integration_test-1082c4b063a8fbe6)
+
+running 1 test
+3 test it_adds_two... ok
+
+4 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
+filtered out; finished in 0.00s
+
+   Doc-tests adder
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
+filtered out; finished in 0.00s
+```
+
+Три раздела вывода включают в себя юнит-тесты, интеграционные тесты и тесты документации. Обратите внимание, что если любой тест в разделе не пройдет, последующие разделы не будут запущены. Например, если юнит-тест не пройдет, не будет вывода для интеграционных и тестов документации, потому что эти тесты будут запущены только в том случае, если все юнит-тесты пройдут.
+
+Первый раздел для юнит-тестов \[1\] такой же, как мы уже видели: одна строка для каждого юнит-теста (один назван `internal`, который мы добавили в Listing 11-12), а затем обобщающая строка для юнит-тестов.
+
+Раздел интеграционных тестов начинается со строки `Running tests/integration_test.rs` \[2\]. Затем идет одна строка для каждой тестовой функции в этом интеграционном тесте \[3\] и обобщающая строка для результатов интеграционного теста \[4\] сразу перед началом раздела `Doc-tests adder`.
+
+Каждый файл интеграционных тестов имеет свой собственный раздел, поэтому если мы добавим больше файлов в директорию `tests`, будет больше разделов интеграционных тестов.
+
+Мы по-прежнему можем запустить конкретную функцию интеграционного теста, указав имя тестовой функции в качестве аргумента для `cargo test`. Чтобы запустить все тесты в конкретном файле интеграционных тестов, используйте аргумент `--test` для `cargo test`, за которым следует имя файла:
+
+```bash
+$ cargo test --test integration_test
+    Finished test [unoptimized + debuginfo] target(s) in 0.64s
+     Running tests/integration_test.rs
+(target/debug/deps/integration_test-82e7799c1bc62298)
+
+running 1 test
+test it_adds_two... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
+filtered out; finished in 0.00s
+```
+
+Эта команда запускает только тесты в файле `tests/integration_test.rs`.

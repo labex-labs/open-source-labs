@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce tutoriel a comparé les performances de l'algorithme K-Means classique et de l'algorithme Bisecting K-Means en utilisant des données d'échantillonnage générées à partir de scikit-learn. Nous avons visualisé les résultats à l'aide de sous-graphiques avec des nuages de points représentant les points de données et les centroïdes de cluster. Nous avons constaté que l'algorithme Bisecting K-Means tend à créer des clusters ayant une structure large-échelle plus régulière, tandis que l'algorithme K-Means classique crée des partitions différentes lorsqu'on augmente le nombre de clusters (`n_clusters`).

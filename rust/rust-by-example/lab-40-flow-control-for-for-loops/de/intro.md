@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab lernen wir, wie man in Rust `for`-Schleifen und Bereiche verwendet. Wir können die `for`-Schleife zusammen mit der Bereichsnotation `a..b` verwenden, um über einen Bereich von Werten zu iterieren. Beispielsweise können wir das FizzBuzz-Programm mit einer `for`-Schleife statt einer `while`-Schleife schreiben. Darüber hinaus können wir die Notation `..=` für einen Bereich verwenden, der an beiden Enden eingeschlossen ist. Die `for`-Schleife kann auch auf verschiedene Weise mit Iteratoren interagieren, z. B. indem man `iter` verwendet, um jedes Element einer Sammlung zu entleihen, `into_iter` verwendet, um die Sammlung zu konsumieren oder `iter_mut` verwendet, um jedes Element der Sammlung mutierbar zu entleihen. Jede dieser Methoden bietet eine andere Sicht auf die Daten innerhalb der Sammlung und ermöglicht somit verschiedene Aktionen.
+
+> **Hinweis:** Wenn im Lab kein Dateiname angegeben ist, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir uns mit Detection Error Tradeoff (DET) - Kurven beschäftigt und sie mit Receiver Operating Characteristic (ROC) - Kurven verglichen. Wir haben scikit - learn verwendet, um synthetische Daten zu generieren und die statistische Leistung von zwei Klassifizierern über Schwellenwerte mit ROC - und DET - Kurven zu vergleichen. DET - Kurven sind eine Variation von ROC - Kurven, bei denen die False Negative Rate (FNR) auf der y - Achse statt der True Positive Rate (TPR) geplottet wird. DET - Kurven geben unmittelbare Rückmeldung über das Detection Error Tradeoff, um die Analyse des Betriebspunktes zu erleichtern, was sie zu einem nützlichen Werkzeug für die Bewertung der Leistung von Klassifizierungsalgorithmen macht.

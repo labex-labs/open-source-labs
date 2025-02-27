@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons comparé les performances de deux modèles de régression, HuberRegressor et Ridge, sur un ensemble de données avec de forts outliers. Nous avons généré un ensemble de données fictif, y avons ajouté de forts outliers, puis avons ajusté les deux modèles à l'ensemble de données. Nous avons visualisé les résultats et comparé les performances des modèles. Nous avons observé que le HuberRegressor était moins influencé par les outliers que le régresseur Ridge, et que à mesure que la valeur d'epsilon augmentait, la fonction de décision du HuberRegressor approchait celle du régresseur Ridge.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à construire un pipeline pour la réduction de dimension et la classification en utilisant l'Analyse en Composantes Principales (PCA) et la Régression Logistique. Nous avons utilisé la bibliothèque scikit-learn pour effectuer une réduction de dimension non supervisée sur l'ensemble de données des chiffres en utilisant la PCA. Nous avons ensuite utilisé un modèle de régression logistique pour la classification. Nous avons utilisé GridSearchCV pour définir la dimensionnalité de la PCA et trouver la meilleure combinaison de la troncature de la PCA et de la régularisation du classifieur. Nous avons tracé le spectre de la PCA et la précision de classification pour chaque nombre de composants.

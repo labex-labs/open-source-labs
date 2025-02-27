@@ -1,0 +1,3 @@
+# Resumen
+
+En esta práctica, utilizamos KBinsDiscretizer de Scikit-learn para realizar cuantización vectorial en una imagen de muestra de la cara de un mapache. Utilizamos 8 niveles de gris para representar la imagen, lo que se puede comprimir para utilizar solo 3 bits por píxel. Comparamos las estrategias de clustering uniforme y k-medias para mapear los valores de píxeles a los 8 niveles de gris. Encontramos que la estrategia de clustering k-medias proporcionó una distribución más equilibrada de los valores de píxeles. También comprobamos el uso de memoria de las imágenes comprimidas y descubrimos que la imagen comprimida ocupó 8 veces más memoria que la imagen original debido al uso de una representación de punto flotante de 64 bits para la imagen comprimida.

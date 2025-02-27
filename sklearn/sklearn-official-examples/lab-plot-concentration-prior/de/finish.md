@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab wurde gezeigt, wie die Klasse `BayesianGaussianMixture` aus scikit-learn verwendet werden kann, um einen Toy-Datensatz anzupassen, der aus einer Mischung von drei Gaußverteilungen besteht. Die Klasse kann automatisch die Anzahl ihrer Mischkomponenten anpassen, indem ein Konzentrations-Prior verwendet wird, der über das Parameter `weight_concentration_prior_type` angegeben wird. In diesem Lab wurde der Unterschied zwischen der Verwendung eines Dirichlet-Verteilungs-Priors und eines Dirichlet-Prozess-Priors gezeigt, um die Anzahl der Komponenten mit nicht-null Gewichten auszuwählen.

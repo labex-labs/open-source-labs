@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab implementieren wir `fmt::Display` für eine Struktur namens `List`, die in Rust ein `Vec` enthält. Die Herausforderung besteht darin, jedes Element sequentiell mit der `write!`-Makro zu verarbeiten, da es ein `fmt::Result` generiert, das richtig behandelt werden muss. Um dies anzugehen, können wir den `?`-Operator verwenden, um zu überprüfen, ob `write!` einen Fehler zurückgibt, und ihn zurückzugeben, wenn dies der Fall ist, andernfalls mit der Ausführung fortfahren. Indem wir `fmt::Display` für `List` implementieren, können wir über die Elemente im Vektor iterieren und sie in eckigen Klammern drucken, getrennt durch Kommata. Die Aufgabe besteht darin, das Programm zu modifizieren, um auch den Index jedes Elements im Vektor auszugeben. Die erwartete Ausgabe nach der Modifikation lautet `[0: 1, 1: 2, 2: 3]`.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

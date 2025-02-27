@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir das Konzept der Bias-Varianz-Zerlegung untersucht und wie es sich auf einzelne Schätzer im Vergleich zu Bagging-Ensembles bezieht. Wir haben mit scikit-learn einfache Regressionsprobleme generiert und visualisiert und den erwarteten mittleren quadratischen Fehler eines einzelnen Entscheidungsbaums im Vergleich zu einem Bagging-Ensemble von Entscheidungsbäumen verglichen. Wir haben festgestellt, dass der Kompromiss zwischen Bias und Varianz für Bagging besser ist, da es den Bias-Term leicht erhöht, aber eine größere Reduzierung der Varianz ermöglicht, was zu einem niedrigeren Gesamtmittelquadratfehler führt.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Nous avons appris à utiliser les courbes d'étalonnage pour évaluer les probabilités prédites d'un modèle de classification. Nous avons comparé plusieurs classifieurs avec des courbes d'étalonnage et les avons évalués avec plusieurs métriques de classification. Nous avons également appris que l'étalonnage sigmoïde paramétrique peut traiter les situations où la courbe d'étalonnage du classifieur de base est sigmoïde, mais pas celles où elle est transposée-sigmoïde. L'étalonnage isotone non paramétrique peut traiter les deux situations, mais peut nécessiter plus de données pour produire de bons résultats.

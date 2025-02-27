@@ -1,0 +1,3 @@
+# Summary
+
+In diesem Lab haben wir gelernt, wie man Features in einen höherdimensionalen, dünn besetzten Raum mit einem Ensemble von Bäumen transformiert. Wir haben verschiedene Arten von Ensemble-Methoden wie Random Forest und Gradient Boosting verwendet und deren Leistung verglichen. Der `RandomTreesEmbedding` ist eine unüberwachte Methode und muss nicht separat trainiert werden. Wir haben auch gelernt, wie man Random Forest oder Gradient Boosting mit einer logistischen Regression in eine Pipeline packen kann, indem man den `FunctionTransformer` verwendet. Schließlich haben wir die Leistung aller Modelle mit Hilfe von ROC-Kurven ausgewertet.

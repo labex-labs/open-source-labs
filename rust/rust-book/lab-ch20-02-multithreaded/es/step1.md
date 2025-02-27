@@ -1,0 +1,3 @@
+# Transformando nuestro servidor de un solo hilo en un servidor multihilo
+
+En este momento, el servidor procesará cada solicitud por turnos, lo que significa que no procesará una segunda conexión hasta que la primera haya terminado de procesarse. Si el servidor recibe cada vez más solicitudes, esta ejecución secuencial será cada vez menos óptima. Si el servidor recibe una solicitud que tarda mucho en procesarse, las solicitudes posteriores tendrán que esperar hasta que la solicitud larga haya terminado, incluso si las nuevas solicitudes se pueden procesar rápidamente. Tendremos que solucionar esto, pero primero veremos el problema en acción.

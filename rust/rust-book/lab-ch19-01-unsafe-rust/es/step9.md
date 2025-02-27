@@ -1,0 +1,3 @@
+# Acceder a los campos de una unión
+
+La última acción que solo funciona con `unsafe` es acceder a los campos de una unión. Una `unión` es similar a un `struct`, pero solo se utiliza un campo declarado en una instancia particular a la vez. Las uniones se utilizan principalmente para interactuar con uniones en código C. Acceder a los campos de una unión es inseguro porque Rust no puede garantizar el tipo de datos que se está almacenando actualmente en la instancia de la unión. Puede aprender más sobre uniones en la Referencia de Rust en \*https://doc.rust-lang.org/reference/items/unions.html\*\*.\*

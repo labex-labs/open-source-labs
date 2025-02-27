@@ -1,0 +1,3 @@
+# Ignorer des valeurs dans un motif
+
+Vous avez vu qu'il est parfois utile d'ignorer des valeurs dans un motif, par exemple dans le dernier bras d'un `match`, pour avoir un cas général qui ne fait en réalité rien mais qui prend en compte toutes les valeurs possibles restantes. Il existe plusieurs façons d'ignorer des valeurs entières ou des parties de valeurs dans un motif : en utilisant le motif `_` (que vous avez déjà vu), en utilisant le motif `_` à l'intérieur d'un autre motif, en utilisant un nom qui commence par un underscore, ou en utilisant `..` pour ignorer les parties restantes d'une valeur. Explorerons comment et pourquoi utiliser chacun de ces motifs.

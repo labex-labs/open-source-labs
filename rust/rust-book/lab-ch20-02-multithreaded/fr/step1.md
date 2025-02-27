@@ -1,0 +1,3 @@
+# Turning Our Single-Threaded Server into a Multithreaded Server
+
+En ce moment, le serveur traite chaque requête tour à tour, ce qui signifie qu'il ne traitera pas une deuxième connexion avant que la première ne soit terminée. Si le serveur reçoit de plus en plus de requêtes, cette exécution séquentielle deviendra de moins en moins optimale. Si le serveur reçoit une requête qui prend beaucoup de temps à traiter, les requêtes suivantes devront attendre que la longue requête soit terminée, même si les nouvelles requêtes peuvent être traitées rapidement. Nous devrons régler ce problème, mais d'abord, nous examinerons le problème en action.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à utiliser les Machines à Vecteurs de Support (SVM) pour classifier un échantillon à l'aide d'un noyau personnalisé. Nous avons utilisé la bibliothèque scikit-learn pour effectuer une classification SVM avec un noyau personnalisé. Nous avons chargé l'ensemble de données iris, créé un noyau personnalisé, créé une instance du classifieur SVM et ajusté nos données, et tracé la frontière de décision et les vecteurs de support. Les SVM sont un algorithme d'apprentissage automatique populaire utilisé pour la classification, la régression et la détection d'anomalies.

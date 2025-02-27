@@ -1,0 +1,5 @@
+# Speichern von UTF-8-kodiertem Text mit Strings
+
+Wir haben uns in Kapitel 4 über Strings unterhalten, werden sie jetzt jedoch genauer betrachten. Neue Rustaceans geraten normalerweise wegen eines Kombinations von drei Gründen in Schwierigkeiten bei Strings: Rusts Tendenz, mögliche Fehler zu offenbaren, Strings als eine komplexere Datenstruktur anzusehen als viele Programmierer es glauben, und UTF-8. Diese Faktoren kombinieren sich auf eine Weise, die schwierig erscheinen kann, wenn man aus anderen Programmiersprachen kommt.
+
+Wir diskutieren Strings im Zusammenhang mit Sammlungen, da Strings als eine Sammlung von Bytes implementiert sind, plus einige Methoden, um nützliche Funktionalität bereitzustellen, wenn diese Bytes als Text interpretiert werden. In diesem Abschnitt werden wir über die Operationen auf `String` sprechen, die jede Sammlungsart hat, wie das Erstellen, Aktualisieren und Lesen. Wir werden auch die Unterschiede zwischen `String` und den anderen Sammlungen besprechen, nämlich wie das Indizieren in einen `String` durch die Unterschiede zwischen der menschlichen und der computerischen Interpretation von `String`-Daten kompliziert wird.

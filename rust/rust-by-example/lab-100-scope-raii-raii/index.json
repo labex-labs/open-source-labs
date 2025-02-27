@@ -92,6 +92,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Gestión de recursos RAII en Rust",
+      "description": "En este laboratorio, exploraremos el concepto de RAII en Rust, que fuerza que la adquisición de recursos sea la inicialización. Esto significa que cuando los objetos salen del ámbito, se llaman a sus destructores y se liberan los recursos que poseen, eliminando la necesidad de la gestión manual de memoria y asegurando la protección contra errores de fuga de recursos. También aprenderemos sobre el trato Drop en Rust, que permite implementar lógica de destructor personalizada para los tipos que lo requieren.",
+      "meta": {
+        "title": "Gestión de recursos RAII en Rust: Asegurando una gestión de memoria confiable",
+        "description": "Explora el poder de RAII en Rust, donde la adquisición de recursos es la inicialización, y aprende cómo aprovechar el trato Drop para la lógica de destructor personalizada.",
+        "keywords": "playground de rust, raii, tutor de rust, gestión de memoria, compilador en línea de rust, comandos de rust, práctica de rust, trato drop, rust en línea, playground en línea de rust"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "RAII",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "En este momento, este paso no tiene verificaciones",
+                "file": "verify1-1.sh",
+                "hint": "En este momento, este paso no tiene verificaciones"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Gestion des ressources RAII en Rust",
+      "description": "Dans ce laboratoire, nous allons explorer le concept d'RAII en Rust, qui impose que l'acquisition de ressources soit initialisée. Cela signifie que lorsque les objets sortent de portée, leurs destructeurs sont appelés et leurs ressources possédées sont libérées, éliminant ainsi la nécessité de la gestion manuelle de la mémoire et assurant la protection contre les bugs de fuite de ressources. Nous allons également découvrir le trait Drop en Rust, qui permet d'implementer une logique de destructeur personnalisée pour les types qui en ont besoin.",
+      "meta": {
+        "title": "Gestion des ressources RAII en Rust: Assurance d'une gestion de mémoire fiable",
+        "description": "Explorez le pouvoir de l'RAII en Rust, où l'acquisition de ressources est l'initialisation, et apprenez à utiliser le trait Drop pour une logique de destructeur personnalisée.",
+        "keywords": "plateforme de pratique Rust, RAII, tuteur Rust, gestion de mémoire, compilateur en ligne Rust, commandes Rust, pratique Rust, trait Drop, Rust en ligne, plateforme de pratique Rust en ligne"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "RAII",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Rust RAII Ressourcenverwaltung",
+      "description": "In diesem Lab werden wir das Konzept von RAII in Rust erkunden, das die Initialisierung von Ressourcen erzwingt. Dies bedeutet, dass wenn Objekte außerhalb ihres Gültigkeitsbereichs gelangen, ihre Destruktoren aufgerufen werden und die von ihnen besitzten Ressourcen freigegeben werden, wodurch die Notwendigkeit der manuellen Arbeitsspeicherverwaltung eliminiert und Schutz vor Ressourcenleckfehlern gewährleistet wird. Wir werden auch über das Drop-Attribut in Rust lernen, das es ermöglicht, benutzerdefiniertes Destruktorkonzept für Typen zu implementieren, die dies erfordern.",
+      "meta": {
+        "title": "Rust RAII Ressourcenverwaltung: Garantieren Sie eine zuverlässige Arbeitsspeicherverwaltung",
+        "description": "Entdecken Sie die Macht von RAII in Rust, wo die Ressourcenacquisition die Initialisierung ist, und lernen Sie, wie Sie das Drop-Attribut für benutzerdefiniertes Destruktorkonzept nutzen.",
+        "keywords": "rust playground, raii, rust tutor, Arbeitsspeicherverwaltung, rust online compiler, rust Befehle, rust Übung, drop trait, rust online, rust online playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "RAII",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "Rust の RAII リソース管理",
+      "description": "この実験では、Rust における RAII（Resource Acquisition Is Initialization）の概念を探ります。これは、リソースの取得が初期化であることを強制するものです。これは、オブジェクトがスコープ外になるときに、そのデストラクタが呼び出され、所有しているリソースが解放されることを意味します。これにより、手動のメモリ管理が不要になり、リソースリークのバグからの保護が保証されます。また、必要な型に対してカスタムのデストラクタロジックを実装することができる Rust の `Drop` トレイトについても学びます。",
+      "meta": {
+        "title": "Rust の RAII リソース管理：信頼性の高いメモリ管理の確保",
+        "description": "Rust における RAII の力を探求しましょう。ここでは、リソースの取得が初期化であり、`Drop` トレイトを活用してカスタムのデストラクタロジックを実装する方法を学びます。",
+        "keywords": "rust プレイグラウンド, raii, rust チューター, メモリ管理, rust オンラインコンパイラ, rust コマンド, rust 練習, drop トレイト, rust オンライン, rust オンラインプレイグラウンド"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "RAII",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップには現在、検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップには現在、検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Управление ресурсами RAII в Rust",
+      "description": "В этом лабе мы исследуем концепцию RAII в Rust, которая налагает требование, что получение ресурса должно быть инициализацией. Это означает, что когда объекты вышли из области видимости, вызываются их деструкторы и освобождаются их принадлежащие ресурсы, устраняя необходимость в ручном управлении памятью и обеспечивая защиту от ошибок утечки ресурсов. Мы также узнаем о трейте Drop в Rust, который позволяет реализовывать пользовательскую логику деструктора для типов, которые это требуют.",
+      "meta": {
+        "title": "Управление ресурсами RAII в Rust: гарантия надежного управления памятью",
+        "description": "Исследуйте силу RAII в Rust, где получение ресурса является инициализацией, и узнайте, как использовать трейт Drop для пользовательской логики деструктора.",
+        "keywords": "игровая площадка Rust, RAII, преподаватель Rust, управление памятью, онлайн-компилятор Rust, команды Rust, практика Rust, трейт Drop, онлайн Rust, онлайн-игровая площадка Rust"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "RAII",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

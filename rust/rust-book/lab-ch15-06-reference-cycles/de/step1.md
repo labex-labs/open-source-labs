@@ -1,0 +1,3 @@
+# Referenzzirkel können Arbeitsspeicher verlieren
+
+Rusts Garantien für die Arbeitsspeicher-Sicherheit machen es schwierig, aber nicht unmöglich, versehentlich Arbeitsspeicher zu erzeugen, der nie bereinigt wird (ein sogenannter _Arbeitsspeicher-Leck_). Die vollständige Verhinderung von Arbeitsspeicher-Lecks ist keine der Garantien von Rust, was bedeutet, dass Arbeitsspeicher-Lecks in Rust arbeitspeichersicher sind. Wir können sehen, dass Rust Arbeitsspeicher-Lecks zulässt, indem `Rc<T>` und `RefCell<T>` verwendet werden: Es ist möglich, Referenzen zu erstellen, bei denen Elemente sich in einem Zyklus aufeinander beziehen. Dies verursacht Arbeitsspeicher-Lecks, da die Referenzzählung jedes Elements im Zyklus niemals 0 erreichen wird und die Werte niemals gelöscht werden.

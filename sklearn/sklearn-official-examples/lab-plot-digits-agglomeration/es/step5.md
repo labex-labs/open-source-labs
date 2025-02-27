@@ -1,0 +1,8 @@
+# Transformada inversa
+
+En este paso, realizaremos una transformada inversa en el conjunto de datos reducido para restaurar el número original de características.
+
+```python
+X_restored = agglo.inverse_transform(X_reduced)
+images_restored = np.reshape(X_restored, images.shape)
+```

@@ -1,0 +1,3 @@
+# Conclusión
+
+En este laboratorio, comparamos la calibración de cuatro modelos diferentes: Regresión Logística, Naive Bayes Gaussiano, Clasificador de Bosque Aleatorio y SVM Lineal. Trazamos curvas de calibración para cada modelo y observamos que los modelos bien calibrados producen curvas que siguen la línea diagonal. Los cuatro modelos produjeron resultados diferentes, con la Regresión Logística bien calibrada y los otros modelos mostrando diferentes grados de sesgo. La calibración es un aspecto importante de los modelos de aprendizaje automático, y los modelos bien calibrados producen probabilidades precisas y confiables.

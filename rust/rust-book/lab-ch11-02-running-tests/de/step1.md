@@ -1,0 +1,5 @@
+# Controlling How Tests Are Run
+
+Genau wie `cargo run` deinen Code kompiliert und dann die resultierende Binärdatei ausführt, kompiliert `cargo test` deinen Code im Testmodus und führt die resultierende Testbinärdatei aus. Das Standardverhalten der von `cargo test` erzeugten Binärdatei besteht darin, alle Tests parallel auszuführen und die während der Testläufe erzeugte Ausgabe zu erfassen, wodurch die Ausgabe nicht angezeigt wird und es einfacher ist, die Ausgabe in Bezug auf die Testergebnisse zu lesen. Du kannst jedoch Befehlszeilenoptionen angeben, um dieses Standardverhalten zu ändern.
+
+Einige Befehlszeilenoptionen werden an `cargo test` übergeben, und einige an die resultierende Testbinärdatei. Um diese beiden Arten von Argumenten voneinander zu trennen, listest du die Argumente, die an `cargo test` übergeben werden, gefolgt vom Separator `--` und dann diejenigen, die an die Testbinärdatei übergeben werden. Wenn du `cargo test --help` ausführst, werden die Optionen angezeigt, die du mit `cargo test` verwenden kannst, und wenn du `cargo test -- --help` ausführst, werden die Optionen angezeigt, die du nach dem Separator verwenden kannst.

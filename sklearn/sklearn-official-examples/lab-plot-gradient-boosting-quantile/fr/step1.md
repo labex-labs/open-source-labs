@@ -1,0 +1,3 @@
+# Générer des données synthétiques
+
+Nous allons générer des données synthétiques pour un problème de régression en appliquant la fonction à des entrées aléatoires échantillonnées uniformément. Pour rendre le problème intéressant, nous générons des observations de la variable cible y comme étant la somme d'un terme déterministe calculé par la fonction f et d'un terme de bruit aléatoire qui suit une distribution log-normale centrée. La distribution log-normale n'est pas symétrique et a une queue longue : il est probable d'observer de grands écarts-type, mais il est impossible d'observer de petits écarts-type.

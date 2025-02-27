@@ -1,0 +1,5 @@
+# Elegir entre bucles e iteradores
+
+La siguiente pregunta lógica es cuál estilo debe elegir en su propio código y por qué: la implementación original en la Lista 13-21 o la versión que utiliza iteradores en la Lista 13-22. La mayoría de los programadores de Rust prefieren usar el estilo de iterador. Es un poco más difícil dominar al principio, pero una vez que empieza a familiarizarse con los diversos adaptadores de iterador y lo que hacen, los iteradores pueden resultar más fáciles de entender. En lugar de preocuparse por los diversos aspectos del bucle y la creación de nuevos vectores, el código se centra en el objetivo general del bucle. Esto abstrae algunos de los códigos cotidianos, por lo que es más fácil ver los conceptos que son únicos de este código, como la condición de filtrado que debe pasar cada elemento del iterador.
+
+Pero, ¿son las dos implementaciones realmente equivalentes? La suposición intuitiva podría ser que el bucle de bajo nivel será más rápido. Hablemos de rendimiento.

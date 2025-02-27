@@ -1,0 +1,7 @@
+# Treating Smart Pointers Like Regular References with Deref
+
+L'implémentation du trait `Deref` vous permet de personnaliser le comportement de l'opérateur de déréférence `*` (ne pas le confondre avec l'opérateur de multiplication ou de glisser-déposer). En implémentant `Deref` de manière à ce qu'un pointeur intelligent puisse être traité comme une référence normale, vous pouvez écrire du code qui opère sur des références et utiliser ce code avec des pointeurs intelligents également.
+
+Regardons d'abord comment l'opérateur de déréférence fonctionne avec les références normales. Ensuite, nous allons essayer de définir un type personnalisé qui se comporte comme `Box<T>`, et voir pourquoi l'opérateur de déréférence ne fonctionne pas comme une référence sur notre nouveau type défini. Nous explorerons comment l'implémentation du trait `Deref` permet aux pointeurs intelligents de fonctionner de manière similaire aux références. Ensuite, nous examinerons la fonction de coercition de déréférence de Rust et la manière dont elle nous permet de travailler avec des références ou des pointeurs intelligents.
+
+> Note : Il y a une grande différence entre le type `MyBox<T>` que nous allons construire et le vrai `Box<T>` : notre version ne stockera pas ses données sur le tas. Nous concentrons cet exemple sur `Deref`, donc où les données sont effectivement stockées est moins important que le comportement ressemblant à un pointeur.

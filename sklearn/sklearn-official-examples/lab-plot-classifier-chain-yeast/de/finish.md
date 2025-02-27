@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab wurde gezeigt, wie man den Classifier Chain-Algorithmus verwendet, um ein Ensemble von logistischen Regressionsklassifiziererketten zu erstellen, um auf Korrelationen zwischen den Klassen zurückzugreifen. Die Jaccard-Ähnlichkeitszahl für jede Kette tendiert dazu, größer zu sein als die der unabhängigen logistischen Modelle. Schließlich haben wir ein Abstimmungsensemble von Klassifiziererketten durch Mittelwertbildung der binären Vorhersagen der Ketten konstruiert und einen Schwellenwert von 0,5 angewandt. Die Jaccard-Ähnlichkeitszahl des Ensembles war größer als die der unabhängigen Modelle und tendierte, die Zahl jedes einzelnen Modells im Ensemble zu übertreffen.

@@ -1,0 +1,7 @@
+# Validating References with Lifetimes
+
+Les durées de vie sont un autre type de paramètres génériques que nous avons déjà utilisé. Au lieu de garantir qu'un type a le comportement que nous voulons, les durées de vie garantissent que les références sont valides aussi longtemps que nous en avons besoin.
+
+Un détail que nous n'avons pas discuté dans "References and Borrowing" est que chaque référence en Rust a une _durée de vie_, qui est la portée pendant laquelle cette référence est valide. La plupart du temps, les durées de vie sont implicites et inférées, tout comme la plupart du temps, les types sont inférés. Nous devons annoter les types seulement lorsqu'il est possible d'avoir plusieurs types. De manière similaire, nous devons annoter les durées de vie lorsque les durées de vie des références peuvent être liées de plusieurs manières différentes. Rust nous oblige à annoter les relations en utilisant des paramètres de durée de vie génériques pour vous pouvez être certain que les références réelles utilisées au moment de l'exécution seront définitivement valides.
+
+Annoter les durées de vie n'est même pas un concept que la plupart des autres langages de programmation ont, donc cela va sembler inconnu. Bien que nous ne couvrions pas les durées de vie dans leur totalité dans ce chapitre, nous allons discuter des façons courantes dont vous pourriez rencontrer la syntaxe des durées de vie pour que vous puissiez vous sentir à l'aise avec le concept.

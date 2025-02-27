@@ -1,0 +1,5 @@
+# Graceful Shutdown and Cleanup
+
+Le code de la liste 20-20 répond aux requêtes de manière asynchrone en utilisant un pool de threads, comme prévu. Nous recevons quelques avertissements concernant les champs `workers`, `id` et `thread` que nous n'utilisons pas de manière directe, ce qui nous rappelle que nous ne nettoyons rien. Lorsque nous utilisons la méthode moins élégante du ctrl-C pour arrêter le thread principal, tous les autres threads sont également stoppés immédiatement, même s'ils sont en train de traiter une requête.
+
+Ensuite, nous allons implémenter le trait `Drop` pour appeler `join` sur chacun des threads du pool afin qu'ils puissent terminer les requêtes sur lesquelles ils travaillent avant de se fermer. Ensuite, nous allons implémenter un moyen de dire aux threads qu'ils devraient cesser d'accepter de nouvelles requêtes et de s'arrêter. Pour voir ce code en action, nous modifierons notre serveur pour n'accepter que deux requêtes avant de fermer proprement son pool de threads.

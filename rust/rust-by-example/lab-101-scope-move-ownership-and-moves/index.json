@@ -91,6 +91,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Propiedad y Moves",
+      "description": "En este laboratorio, se explica que en Rust, las variables tienen la propiedad de los recursos y solo pueden tener un propietario, lo que evita que los recursos se liberen múltiples veces. Cuando se asignan variables o se pasan argumentos de función por valor, se transfiere la propiedad de los recursos, lo que se conoce como un move. Después del move, el propietario anterior ya no se puede utilizar para evitar la creación de punteros colgantes. El ejemplo de código demuestra estos conceptos mostrando cómo se transfiere la propiedad de variables asignadas en la pila y en el montón y cómo acceder a una variable después de que se haya transferido su propiedad conduce a errores.",
+      "meta": {
+        "title": "Dominando la Propiedad y los Moves en Rust",
+        "description": "Explora los conceptos fundamentales de propiedad y moves en Rust, un aspecto crucial del sistema de gestión de memoria del lenguaje.",
+        "keywords": "rust playground, rust tutor, gestión de memoria, moves, compilador en línea de rust, propiedad, comandos de rust, práctica de rust, playground en línea de rust, rust en línea"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Propiedad y moves",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify1-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Propriété et Mouvements",
+      "description": "Dans ce laboratoire, il est expliqué que dans Rust, les variables ont la propriété des ressources et ne peuvent avoir qu'un seul propriétaire, ce qui empêche les ressources d'être libérées plusieurs fois. Lorsque des variables sont assignées ou que des arguments de fonction sont passés par valeur, la propriété des ressources est transférée, ce qui est appelé un *move*. Après le *move*, l'ancien propriétaire ne peut plus être utilisé pour éviter de créer des pointeurs faussaires. L'exemple de code illustre ces concepts en montrant comment la propriété des variables allouées sur la pile et sur le tas est transférée et comment accéder à une variable après que sa propriété a été transférée entraîne des erreurs.",
+      "meta": {
+        "title": "Maîtriser la Propriété et les Mouvements en Rust",
+        "description": "Explorez les concepts fondamentaux de propriété et de mouvements en Rust, un aspect crucial du système de gestion de mémoire du langage.",
+        "keywords": "plateforme de pratique Rust, tutoriel Rust, gestion de mémoire, mouvements, compilateur en ligne Rust, propriété, commandes Rust, pratique Rust, plateforme de pratique en ligne Rust, Rust en ligne"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Propriété et mouvements",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Eigentum und Moves",
+      "description": "In diesem Lab wird erklärt, dass in Rust Variablen die Eigentumsgewalt an Ressourcen haben und nur einen Besitzer haben können, was verhindert, dass Ressourcen mehrfach freigegeben werden. Wenn Variablen zugewiesen werden oder Funktionsargumente per Wert übergeben werden, wird die Eigentumsgewalt an die Ressourcen übertragen, was als Move bezeichnet wird. Nach dem Move kann der vorherige Besitzer nicht mehr verwendet werden, um das Erstellen von fehlerhaften Zeigern zu vermeiden. Das Codebeispiel demonstriert diese Konzepte, indem gezeigt wird, wie die Eigentumsgewalt von auf dem Stack und auf dem Heap zugewiesenen Variablen übertragen wird und wie das Zugreifen auf eine Variable nach Übertragung ihrer Eigentumsgewalt zu Fehlern führt.",
+      "meta": {
+        "title": "Meisterung von Rusts Eigentum und Moves",
+        "description": "Erkunden Sie die grundlegenden Konzepte von Eigentum und Moves in Rust, einem entscheidenden Aspekt des Sprachsystems zur Arbeitsspeicherverwaltung.",
+        "keywords": "rust playground, rust tutor, Arbeitsspeicherverwaltung, moves, rust online compiler, Eigentum, rust Befehle, rust Übung, rust online playground, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Eigentum und Moves",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "所有権とムーブ",
+      "description": "この実験では、Rustにおいて変数がリソースの所有権を持ち、所有者は1人だけであることが説明されます。これにより、リソースが複数回解放されることが防止されます。変数が代入される場合や関数の引数が値渡しで渡される場合、リソースの所有権が移されます。これをムーブと呼びます。ムーブの後、以前の所有者はもはや使用できなくなり、ダングリングポインターが作成されるのを避けるためです。コード例は、スタック上に割り当てられた変数とヒープ上に割り当てられた変数の所有権がどのように移されるか、および所有権が移された後に変数にアクセスするとどのようにエラーが発生するかを示しています。",
+      "meta": {
+        "title": "Rustの所有権とムーブをマスターする",
+        "description": "Rustの言語のメモリ管理システムの重要な側面である、所有権とムーブの基本概念を探ります。",
+        "keywords": "rust playground, rust tutor, メモリ管理, ムーブ, rustオンラインコンパイラ, 所有権, rustコマンド, rust練習, rustオンラインplayground, rustオンライン"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "所有権とムーブ",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップには現在、検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップには現在、検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Владение и Перемещения",
+      "description": "В этой лабе объясняется, что в Rust переменные обладают ресурсами и могут иметь только одного владельца, что предотвращает освобождение ресурсов несколько раз. Когда переменным присваивается значение или аргументы функции передаются по значению, владение ресурсами передается, что называется перемещением (move). После перемещения предыдущий владелец больше не может использоваться, чтобы избежать создания \"проматывающихся\" указателей. Пример кода демонстрирует эти концепции, показывая, как передается владение переменным, размещенным на стеке и куче, и как обращение к переменной после перемещения ее владения приводит к ошибкам.",
+      "meta": {
+        "title": "Освоение Владения и Перемещений в Rust",
+        "description": "Изучите фундаментальные концепции владения и перемещений в Rust, важный аспект системы управления памятью языка.",
+        "keywords": "rust playground, rust tutor, управление памятью, перемещения, онлайн-компилятор rust, владение, rust команды, практика rust, онлайн-площадка rust, rust онлайн"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Владение и перемещения",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

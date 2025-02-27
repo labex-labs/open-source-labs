@@ -1,0 +1,3 @@
+# Resumen
+
+Esta práctica mostró cómo utilizar el algoritmo de Cadena de Clasificadores para construir un conjunto de cadenas de clasificadores de regresión logística para aprovechar las correlaciones entre las clases. La puntuación de similitud de Jaccard para cada cadena tiende a ser mayor que la de los modelos de regresión logística independientes. Finalmente, construimos un conjunto de votación de cadenas de clasificadores promediando las predicciones binarias de las cadenas y aplicando un umbral de 0,5. La puntuación de similitud de Jaccard del conjunto fue mayor que la de los modelos independientes y tendió a superar la puntuación de cada cadena en el conjunto.

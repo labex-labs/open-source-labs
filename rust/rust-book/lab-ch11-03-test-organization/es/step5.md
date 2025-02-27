@@ -1,0 +1,3 @@
+# Pruebas de Integración
+
+En Rust, las pruebas de integración son completamente externas a su biblioteca. Las utilizan de la misma manera que cualquier otro código, lo que significa que solo pueden llamar a funciones que forman parte de la API pública de su biblioteca. Su propósito es probar si muchas partes de su biblioteca funcionan correctamente juntas. Las unidades de código que funcionan correctamente por sí mismas pueden tener problemas cuando se integran, por lo que la cobertura de pruebas del código integrado también es importante. Para crear pruebas de integración, primero necesita un directorio `tests`.

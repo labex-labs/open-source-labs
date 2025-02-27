@@ -1,0 +1,3 @@
+# Fazit
+
+In diesem Lab haben wir die Kalibrierung von vier verschiedenen Modellen verglichen: Logistische Regression, Gaußscher Naiver Bayes, Random Forest Classifier und Linearer SVM. Wir haben für jedes Modell Kalibrierungskurven geplottet und festgestellt, dass gut kalibrierte Modelle Kurven erzeugen, die der Diagonalen folgen. Die vier Modelle haben unterschiedliche Ergebnisse geliefert, wobei die logistische Regression gut kalibriert war und die anderen Modelle unterschiedliche Grade an Bias zeigten. Die Kalibrierung ist ein wichtiger Aspekt von Machine-Learning-Modellen, und gut kalibrierte Modelle erzeugen Wahrscheinlichkeiten, die genau und zuverlässig sind.

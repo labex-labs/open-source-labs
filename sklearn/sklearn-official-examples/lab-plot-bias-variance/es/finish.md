@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, exploramos el concepto de descomposición de sesgo-varianza y cómo se relaciona con estimadores individuales versus conjuntos de bagging. Generamos y visualizamos problemas de regresión de juguete usando scikit-learn, y comparamos el error cuadrático medio esperado de un solo árbol de decisión versus un conjunto de bagging de árboles de decisión. Encontramos que la compensación entre sesgo y varianza es mejor para el bagging, ya que aumenta ligeramente el término de sesgo pero permite una mayor reducción de la varianza, lo que resulta en un error cuadrático medio general más bajo.

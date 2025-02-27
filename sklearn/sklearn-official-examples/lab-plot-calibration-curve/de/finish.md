@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Wir haben gelernt, wie man Kalibrierungskurven verwendet, um die vorhergesagten Wahrscheinlichkeiten eines Klassifikationsmodells zu evaluieren. Wir haben mehrere Klassifizierer mit Kalibrierungskurven verglichen und sie mit mehreren Klassifikationsmetriken bewertet. Wir haben auch gelernt, dass die parametrische sigmoidale Kalibrierung mit Situationen umgehen kann, in denen die Kalibrierungskurve des Basisklassifizierers sigmoidal ist, aber nicht, wenn sie transponiert-sigmoidal ist. Die nicht-parametrische isotone Kalibrierung kann mit beiden Situationen umgehen, erfordert jedoch möglicherweise mehr Daten, um gute Ergebnisse zu erzielen.

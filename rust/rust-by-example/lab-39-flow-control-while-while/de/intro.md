@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab lernen wir über das Schlüsselwort `while`, das dazu verwendet wird, eine Schleife zu erstellen, die solange ausgeführt wird, wie eine bestimmte Bedingung wahr ist. Um seine Verwendung zu veranschaulichen, schreiben wir ein Programm in Rust namens FizzBuzz. Das Programm verwendet eine `while`-Schleife, um durch die Zahlen von 1 bis 100 zu iterieren. Innerhalb der Schleife wird überprüft, ob die aktuelle Zahl durch 3 und 5 teilbar ist (d. h. ein Vielfaches von 15), und in diesen Fällen wird "fizzbuzz" ausgegeben. Wenn die Zahl nur durch 3 teilbar ist, wird "fizz" ausgegeben, und wenn sie nur durch 5 teilbar ist, wird "buzz" ausgegeben. Für alle anderen Zahlen wird einfach die Zahl selbst ausgegeben. Die Schleife wird fortgesetzt, bis die Zählvariable 101 erreicht, und erhöht sie sich nach jedem Drucken einer Zahl oder eines Labels um 1.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

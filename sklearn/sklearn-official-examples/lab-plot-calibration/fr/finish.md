@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, nous avons généré un ensemble de données synthétique, utilisé Gaussian Naive-Bayes pour la classification et comparé la probabilité estimée en utilisant un classifieur Gaussian naive Bayes sans calibration, avec une calibration sigmoïde et avec une calibration isotone non paramétrique. Nous avons ensuite tracé les données et les probabilités prédites. En comparant les pertes du score de Brier, nous avons constaté que seul le modèle non paramétrique est capable de fournir une calibration de probabilité qui renvoie des probabilités proches de la valeur attendue de 0,5 pour la plupart des échantillons appartenant au groupe intermédiaire avec des étiquettes hétérogènes. Cela entraîne une amélioration significative du score de Brier.

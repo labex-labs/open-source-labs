@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à effectuer un regroupement hiérarchique à l'aide de la bibliothèque scikit-learn de Python. Nous avons utilisé différentes méthodes de liaison telles que la liaison unique, la liaison moyenne, la liaison complète et la méthode de Ward pour construire nos groupes, et avons analysé les résultats sur la base de quelques jeux de données de démonstration. Le regroupement hiérarchique est une technique puissante qui peut être utilisée pour identifier des groupes de points de données similaires et peut être utile dans divers domaines tels que la biologie, le marketing et la finance.

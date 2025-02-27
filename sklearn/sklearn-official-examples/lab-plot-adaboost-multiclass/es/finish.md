@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, exploramos cómo la potenciación puede mejorar la precisión de predicción en un problema de múltiples clases. Utilizamos un conjunto de datos construido tomando una distribución normal estándar de diez dimensiones y definiendo tres clases separadas por esferas concéntricas anidadas de diez dimensiones. Comparamos el rendimiento de los algoritmos SAMME y SAMME.R y graficamos el error de prueba, el error de clasificación y el peso de potenciación de cada modelo. Los resultados mostraron que SAMME.R generalmente converge más rápido que SAMME, logrando un error de prueba más bajo con menos iteraciones de potenciación.

@@ -1,0 +1,3 @@
+# Sommaire
+
+Ce tutoriel a démontré comment tracer des courbes de dépendance partielle pour plusieurs fonctionnalités à l'aide de l'objet `PartialDependenceDisplay`. Tout d'abord, nous avons entraîné un arbre de décision et un perceptron multicouche sur l'ensemble de données de diabète. Ensuite, nous avons tracé des courbes de dépendance partielle pour l'arbre de décision et le perceptron multicouche pour deux fonctionnalités. Ensuite, nous avons tracé les courbes de dépendance partielle des deux modèles sur le même graphique. Enfin, nous avons tracé les courbes de dépendance partielle pour une seule fonctionnalité sur les mêmes axes.

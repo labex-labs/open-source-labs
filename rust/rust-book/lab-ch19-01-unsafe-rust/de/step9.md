@@ -1,0 +1,3 @@
+# Zugreifen auf Felder einer Union
+
+Die letzte Aktion, die nur mit `unsafe` funktioniert, ist das Zugreifen auf Felder einer Union. Eine `Union` ähnelt einer `Struct`, aber nur ein deklariertes Feld wird in einem bestimmten Instanz einmal verwendet. Unions werden hauptsächlich verwendet, um mit Unions in C-Code zu interagieren. Das Zugreifen auf Union-Felder ist unsicher, weil Rust nicht gewährleisten kann, welchen Typ die Daten haben, die derzeit in der Union-Instanz gespeichert sind. Sie können mehr über Unions in der Rust-Referenz unter *https://doc.rust-lang.org/reference/items/unions.html* lernen.

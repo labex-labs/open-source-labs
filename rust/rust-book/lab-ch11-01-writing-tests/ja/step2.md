@@ -1,0 +1,142 @@
+# テスト関数の構造
+
+最も単純な形で、Rustのテストは`test`属性で注釈付けされた関数です。属性は、Rustコードの一部に関するメタデータです。例として、第5章で構造体に使用した`derive`属性があります。関数をテスト関数に変更するには、`fn`の前の行に`#[test]`を追加します。`cargo test`コマンドでテストを実行すると、Rustは注釈付けされた関数を実行し、各テスト関数が合格するか失敗するかを報告するテストランナーバイナリをビルドします。
+
+Cargoで新しいライブラリプロジェクトを作成するたびに、その中にテスト関数を持つテストモジュールが自動的に生成されます。このモジュールは、テストを書くためのテンプレートを提供します。これにより、新しいプロジェクトを始めるたびに正確な構造と構文を調べる必要がなくなります。必要なだけ多くの追加のテスト関数とテストモジュールを追加できます！
+
+実際にコードをテストする前に、テンプレートテストを使ってテストがどのように機能するかのいくつかの側面を調べます。その後、書いたコードを呼び出し、その動作が正しいことをアサートする、現実世界のテストを書きます。
+
+2つの数を加算する新しいライブラリプロジェクト`adder`を作成しましょう。
+
+```bash
+$ cargo new adder --lib
+Created library $(adder) project
+$ cd adder
+```
+
+`adder`ライブラリの`src/lib.rs`ファイルの内容は、リスト11-1のようになるはずです。
+
+ファイル名: `src/lib.rs`
+
+```rust
+#[cfg(test)]
+mod tests {
+  1 #[test]
+    fn it_works() {
+        let result = 2 + 2;
+      2 assert_eq!(result, 4);
+    }
+}
+```
+
+リスト11-1: `cargo new`によって自動生成されるテストモジュールと関数
+
+今は、最初の2行を無視して、関数に焦点を当てましょう。`#[test]`の注釈\[1\]に注目してください。この属性は、これがテスト関数であることを示しており、テストランナーはこの関数をテストとして扱うようになっています。`tests`モジュールには、共通のシナリオを設定したり、共通の操作を実行したりするための非テスト関数もあるかもしれません。だから、いつもどの関数がテストであるかを示す必要があります。
+
+例の関数本体は、`assert_eq!`マクロ\[2\]を使って、2と2を加算した結果を含む`result`が4に等しいことをアサートしています。このアサーションは、典型的なテストの形式の例となっています。これを実行して、このテストが合格することを確認しましょう。
+
+`cargo test`コマンドは、プロジェクト内のすべてのテストを実行します。リスト11-2に示すようになります。
+
+```bash
+$ cargo test
+   Compiling adder v0.1.0 (file:///projects/adder)
+    Finished test [unoptimized + debuginfo] target(s) in 0.57s
+     Running unittests src/lib.rs (target/debug/deps/adder-
+92948b65e88960b4)
+
+1 running 1 test
+2 test tests::it_works... ok
+
+3 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
+filtered out; finished in 0.00s
+
+  4 Doc-tests adder
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
+filtered out; finished in 0.00s
+```
+
+リスト11-2: 自動生成されたテストを実行した結果
+
+Cargoはテストをコンパイルして実行しました。`running 1 test`という行が表示されます\[1\]。次の行は、生成されたテスト関数の名前である`it_works`と、そのテストの実行結果が`ok`であることが表示されます\[2\]。全体の要約である`test result: ok.`\[3\]は、すべてのテストが合格したことを意味しており、`1 passed; 0 failed`と表示される部分は、合格または失敗したテストの数を合算したものです。
+
+特定のインスタンスでテストを実行しないように、テストを無視することができます。これについては、「特定の要求がない限り一部のテストを無視する」で説明します。ここではそのようなことをしていないので、要約には`0 ignored`が表示されます。また、`cargo test`コマンドに引数を渡して、名前が特定の文字列を含むテストのみを実行することもできます。これを「名前で一部のテストを実行する」で説明します。ここでは、実行するテストをフィルタリングしていないので、要約の末尾には`0 filtered out`が表示されます。
+
+`0 measured`の統計値は、パフォーマンスを測定するベンチマークテスト用のものです。この記事執筆時点では、ベンチマークテストはnightly Rustでのみ利用可能です。詳細は、*https://doc.rust-lang.org/unstable-book/library-features/test.html*のベンチマークテストに関するドキュメントを参照してください。
+
+テスト出力の次の部分は、`Doc-tests adder`\[4\]から始まり、ドキュメントテストの結果に関するものです。まだドキュメントテストはありませんが、RustはAPIドキュメントに表示されるコード例をコンパイルすることができます。この機能により、ドキュメントとコードを同期させることができます！「ドキュメントコメントをテストとして」で、ドキュメントテストの書き方について説明します。今は、`Doc-tests`の出力を無視します。
+
+自分自身のニーズに合わせてテストをカスタマイズし始めましょう。まず、`it_works`関数の名前を`exploration`などの別の名前に変更します。
+
+ファイル名: `src/lib.rs`
+
+```rust
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn exploration() {
+        let result = 2 + 2;
+        assert_eq!(result, 4);
+    }
+}
+```
+
+そして、もう一度`cargo test`を実行します。出力には今は`it_works`の代わりに`exploration`が表示されます。
+
+    running 1 test
+    test tests::exploration... ok
+
+    test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
+    filtered out; finished in 0.00s
+
+今度は、もう1つのテストを追加しますが、今回は失敗するテストを作成します！テスト関数内の何かがパニックすると、テストは失敗します。各テストは新しいスレッドで実行され、メインスレッドがテストスレッドが終了したことを検知すると、テストは失敗としてマークされます。第9章では、パニックする最も簡単な方法は`panic!`マクロを呼び出すことであると説明しました。新しいテストを`another`という名前の関数として入力します。すると、`src/lib.rs`ファイルはリスト11-3のようになります。
+
+ファイル名: `src/lib.rs`
+
+```rust
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn exploration() {
+        assert_eq!(2 + 2, 4);
+    }
+
+    #[test]
+    fn another() {
+        panic!("Make this test fail");
+    }
+}
+```
+
+リスト11-3: `panic!`マクロを呼び出すことで失敗する2番目のテストを追加
+
+`cargo test`を使ってもう一度テストを実行します。出力はリスト11-4のようになり、`exploration`テストが合格し、`another`テストが失敗したことが示されます。
+
+    running 2 tests
+    test tests::exploration... ok
+    1 test tests::another... FAILED
+
+    2 failures:
+
+    ---- tests::another stdout ----
+    thread 'main' panicked at 'Make this test fail', src/lib.rs:10:9
+    note: run with `RUST_BACKTRACE=1` environment variable to display
+    a backtrace
+
+    3 failures:
+        tests::another
+
+    4 test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0
+    filtered out; finished in 0.00s
+
+    error: test failed, to rerun pass '--lib'
+
+リスト11-4: 1つのテストが合格し、1つのテストが失敗した場合のテスト結果
+
+`test tests::another`の行には、`ok`の代わりに`FAILED`が表示されます\[1\]。個々の結果と要約の間に、2つの新しいセクションが表示されます。最初のセクション\[2\]は、各テストの失敗の詳細な理由を表示します。この場合、`src/lib.rs`ファイルの10行目で`another`が`'Make this test fail'`でパニックしたために失敗したことがわかります。次のセクション\[3\]は、すべての失敗したテストの名前のみをリストしており、たくさんのテストとたくさんの詳細な失敗したテストの出力がある場合に便利です。失敗したテストの名前を使って、そのテストのみを実行して、より簡単にデバッグすることができます。「テストの実行方法を制御する」で、テストを実行する方法についてもっと詳しく説明します。
+
+要約行は最後に表示されます\[4\]。全体的なテスト結果は`FAILED`です。1つのテストが合格し、1つのテストが失敗しました。
+
+これで、さまざまなシナリオでのテスト結果を見たので、`panic!`以外の、テストで役立ついくつかのマクロを見てみましょう。

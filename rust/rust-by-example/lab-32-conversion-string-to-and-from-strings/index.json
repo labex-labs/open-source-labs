@@ -90,6 +90,171 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Conversiones a y desde cadenas",
+      "description": "En este laboratorio, aprenderemos sobre cómo convertir a cadenas y de cadenas en Rust. Para convertir cualquier tipo a una cadena, podemos implementar el trato ToString para el tipo. Alternativamente, podemos implementar el trato fmt::Display, que automáticamente proporciona el trato ToString y nos permite imprimir el tipo usando println!. Por otro lado, para analizar una cadena en un tipo específico, como un número, podemos usar la función parse junto con la inferencia de tipos o especificando el tipo usando la sintaxis 'turbofish'. Esto se basa en el trato FromStr, que está implementado para muchos tipos en la biblioteca estándar. Si queremos analizar una cadena en un tipo definido por el usuario, podemos implementar el trato FromStr para ese tipo.",
+      "meta": {
+        "title": "Conversiones a cadenas y de cadenas en Rust",
+        "description": "Aprende cómo convertir cualquier tipo a una cadena y analizar una cadena en un tipo específico en Rust.",
+        "keywords": "rust playground, tostring, fromstr, conversión de cadenas, tutor de rust, compilador en línea de rust, análisis de cadenas, comandos de rust, práctica de rust, rust en línea"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Conversiones a y desde cadenas",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify1-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Conversions entre chaînes de caractères",
+      "description": "Dans ce laboratoire, nous allons apprendre à convertir des types en chaînes de caractères et vice versa en Rust. Pour convertir n'importe quel type en chaîne de caractères, nous pouvons implémenter le trait ToString pour ce type. Alternativement, nous pouvons implémenter le trait fmt::Display, qui fournit automatiquement le trait ToString et nous permet d'afficher le type en utilisant println!. D'un autre côté, pour analyser une chaîne de caractères en un type spécifique, tel qu'un nombre, nous pouvons utiliser la fonction parse avec l'inférence de type ou en spécifiant le type en utilisant la syntaxe 'turbofish'. Cela repose sur le trait FromStr, qui est implémenté pour de nombreux types dans la bibliothèque standard. Si nous voulons analyser une chaîne de caractères en un type défini par l'utilisateur, nous pouvons implémenter le trait FromStr pour ce type.",
+      "meta": {
+        "title": "Conversion de types en chaînes de caractères et vice versa en Rust",
+        "description": "Découvrez comment convertir n'importe quel type en chaîne de caractères et analyser une chaîne de caractères en un type spécifique en Rust.",
+        "keywords": "plateforme de pratique Rust, ToString, FromStr, conversion de chaînes de caractères, tutoriel Rust, compilateur en ligne Rust, analyse de chaînes de caractères, commandes Rust, pratique Rust, en ligne Rust"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Conversions entre chaînes de caractères",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify1-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Strings hin und her",
+      "description": "In diesem Lab lernen wir, wie wir in Rust zwischen anderen Typen und Strings umwandeln. Um einen beliebigen Typ in einen String umzuwandeln, können wir das ToString-Attribut für diesen Typ implementieren. Alternativ können wir das fmt::Display-Attribut implementieren, das automatisch das ToString-Attribut bereitstellt und uns erlaubt, den Typ mit println! auszugeben. Um einen String in einen bestimmten Typ, wie eine Zahl, zu analysieren, können wir die parse-Funktion zusammen mit Typinferenz verwenden oder den Typ mithilfe der 'Turbofish'-Syntax angeben. Dies beruht auf dem FromStr-Attribut, das für viele Typen in der Standardbibliothek implementiert ist. Wenn wir einen String in einen benutzerdefinierten Typ analysieren möchten, können wir das FromStr-Attribut für diesen Typ implementieren.",
+      "meta": {
+        "title": "Stringsumwandlung in Rust",
+        "description": "Lernen Sie, wie Sie in Rust einen beliebigen Typ in einen String umwandeln und einen String in einen bestimmten Typ analysieren.",
+        "keywords": "Rust-Spielplatz, ToString, FromStr, Stringumwandlung, Rust-Tutor, Rust-Online-Compiler, Stringanalyse, Rust-Befehle, Rust-Praxis, Rust-Online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Strings hin und her",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Verifizierung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Verifizierung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "文字列への変換と文字列からの変換",
+      "description": "この実験では、Rust で文字列への変換と文字列からの変換について学びます。任意の型を文字列に変換するには、その型に対して `ToString` トレイトを実装します。あるいは、`fmt::Display` トレイトを実装することもできます。このトレイトは自動的に `ToString` トレイトを提供し、`println!` を使って型を表示することができます。一方、文字列を特定の型（たとえば数値）に解析するには、型推論を伴って `parse` 関数を使うか、'turbofish' 構文を使って型を指定することができます。これは、標準ライブラリの多くの型に対して実装されている `FromStr` トレイトに依存しています。ユーザー定義型に文字列を解析したい場合は、その型に対して `FromStr` トレイトを実装することができます。",
+      "meta": {
+        "title": "Rust における文字列への変換と文字列からの変換",
+        "description": "Rust で任意の型を文字列に変換し、文字列を特定の型に解析する方法を学びましょう。",
+        "keywords": "rust プレイグラウンド, tostring, fromstr, 文字列変換, rust チューター, rust オンラインコンパイラ, 文字列解析, rust コマンド, rust 練習, rust オンライン"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文字列への変換と文字列からの変換",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "このステップには現在検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "このステップには現在検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Преобразование в строку и обратно",
+      "description": "В этой лабораторной работе мы узнаем, как преобразовывать типы в строки и обратно в Rust. Чтобы преобразовать любой тип в строку, мы можем реализовать трейт ToString для этого типа. Альтернативно, мы можем реализовать трейт fmt::Display, который автоматически предоставляет трейт ToString и позволяет нам выводить тип с использованием println!. С другой стороны, чтобы преобразовать строку в определенный тип, например, число, мы можем использовать функцию parse с использованием типа-инференса или, указав тип с использованием синтаксиса 'turbofish'. Это основано на трейте FromStr, который реализован для многих типов в стандартной библиотеке. Если мы хотим преобразовать строку в пользовательский тип, мы можем реализовать трейт FromStr для этого типа.",
+      "meta": {
+        "title": "Преобразование типов в строки и обратно в Rust",
+        "description": "Изучите, как преобразовать любой тип в строку и преобразовать строку в определенный тип в Rust.",
+        "keywords": "rust playground, tostring, fromstr, преобразование строк, rust tutor, rust online compiler, парсинг строк, rust команды, практика rust, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Преобразование в строку и обратно",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
-# Erstellen eines pcolormesh-Diagramms mit einem überlagerten Text mit Ver光栅isierung
+# Erstellen eines pcolormesh-Plots mit einem überlagerten Text mit Ver光栅isierung
 
-Wir werden ein pcolormesh-Diagramm mit einem überlagerten Text mit Ver光栅isierung erstellen, um zu veranschaulichen, wie die Ver光栅isierung es Vektorgrafiken ermöglicht, die Vorteile von Vektorgrafiken für einige Künstler wie Achsen und Text beizubehalten.
+Wir werden einen pcolormesh-Plot mit einem überlagerten Text mit Ver光栅isierung erstellen, um zu veranschaulichen, wie die Ver光栅isierung es Vektorgrafiken ermöglicht, die Vorteile von Vektorgrafiken für einige Künstler wie Achsen und Text beizubehalten.
 
 ```python
 ax4.set_aspect(1)

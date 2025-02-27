@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Wir haben erfolgreich eine Blind Source Separation auf einem gemischten Signal mit FastICA und PCA durchgeführt. Wir haben ein Beispielgemischtes Signal generiert, das aus drei unabhängigen Komponenten besteht, Rauschen hinzugefügt und die Daten standardisiert. Anschließend haben wir eine Mischmatrix generiert, um unsere unabhängigen Komponenten zu mischen. Wir haben FastICA verwendet, um die unabhängigen Quellen zu schätzen und PCA berechnet zum Vergleich. Schließlich haben wir das ursprüngliche gemischte Signal, die ursprünglichen unabhängigen Quellen, die von ICA geschätzten Quellen und die von PCA geschätzten Quellen grafisch dargestellt.

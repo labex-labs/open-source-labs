@@ -1,0 +1,5 @@
+# Choix entre les boucles et les itérateurs
+
+La prochaine question logique est laquelle des deux styles choisir dans votre propre code et pourquoi : l'implémentation initiale dans la liste 13-21 ou la version utilisant des itérateurs dans la liste 13-22. La plupart des programmeurs Rust préfèrent utiliser le style itérateur. C'est un peu plus difficile à maîtriser au départ, mais une fois que vous avez compris les différents adaptateurs d'itérateurs et ce qu'ils font, les itérateurs peuvent être plus faciles à comprendre. Au lieu de manipuler les différents éléments de la boucle et de construire de nouveaux vecteurs, le code se concentre sur l'objectif général de la boucle. Cela abstrait certains morceaux de code courants, de sorte qu'il est plus facile de voir les concepts qui sont uniques à ce code, comme la condition de filtrage que chaque élément de l'itérateur doit passer.
+
+Mais les deux implémentations sont-elles vraiment équivalentes? L'hypothèse intuitive pourrait être que la boucle de bas niveau sera plus rapide. Parlons de performance.

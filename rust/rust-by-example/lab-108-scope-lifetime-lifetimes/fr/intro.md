@@ -1,0 +1,5 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de durées de vie en Rust et la manière dont le compilateur les utilise pour garantir la validité des emprunts dans le code. Les durées de vie sont une construction du compilateur qui déterminent la durée d'une variable, depuis sa création jusqu'à sa destruction. Bien que les durées de vie et les portées soient liées, elles ne sont pas les mêmes. Lorsque l'on emprunte une variable en utilisant l'opérateur `&`, l'emprunt a une durée de vie qui est déterminée par sa déclaration, et il est valide tant qu'il se termine avant que le prêteur ne soit détruit. Cependant, la portée de l'emprunt est déterminée par l'endroit où la référence est utilisée. Le code d'exemple fourni montre comment les durées de vie et les portées sont utilisées en pratique, chaque variable ayant sa propre durée de vie et sa propre portée.
+
+> **Note** : Si le laboratoire ne spécifie pas de nom de fichier, vous pouvez utiliser n'importe quel nom de fichier que vous voulez. Par exemple, vous pouvez utiliser `main.rs`, le compiler et l'exécuter avec `rustc main.rs &&./main`.

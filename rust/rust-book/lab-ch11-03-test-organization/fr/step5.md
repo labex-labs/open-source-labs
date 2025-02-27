@@ -1,0 +1,3 @@
+# Tests d'intégration
+
+En Rust, les tests d'intégration sont entièrement externes à votre bibliothèque. Ils utilisent votre bibliothèque de la même manière que n'importe quel autre code, ce qui signifie qu'ils ne peuvent appeler que les fonctions qui font partie de l'API publique de votre bibliothèque. Leur but est de tester si de nombreuses parties de votre bibliothèque fonctionnent correctement ensemble. Des unités de code qui fonctionnent correctement individuellement peuvent présenter des problèmes lorsqu'elles sont intégrées, il est donc également important de couvrir le code intégré par des tests. Pour créer des tests d'intégration, vous avez d'abord besoin d'un répertoire `tests`.

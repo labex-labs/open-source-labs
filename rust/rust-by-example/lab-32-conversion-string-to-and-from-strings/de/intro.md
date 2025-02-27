@@ -1,0 +1,5 @@
+# Einführung
+
+In diesem Lab lernen wir, wie wir in Rust zwischen anderen Typen und Strings umwandeln. Um einen beliebigen Typ in einen String umzuwandeln, können wir das `ToString`-Attribut für diesen Typ implementieren. Alternativ können wir das `fmt::Display`-Attribut implementieren, das automatisch das `ToString`-Attribut bereitstellt und uns erlaubt, den Typ mit `println!` auszugeben. Um einen String in einen bestimmten Typ, wie eine Zahl, zu analysieren, können wir die `parse`-Funktion zusammen mit Typinferenz verwenden oder den Typ mithilfe der 'Turbofish'-Syntax angeben. Dies beruht auf dem `FromStr`-Attribut, das für viele Typen in der Standardbibliothek implementiert ist. Wenn wir einen String in einen benutzerdefinierten Typ analysieren möchten, können wir das `FromStr`-Attribut für diesen Typ implementieren.
+
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.

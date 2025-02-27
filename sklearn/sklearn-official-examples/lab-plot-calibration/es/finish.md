@@ -1,0 +1,3 @@
+# Resumen
+
+En esta práctica, generamos un conjunto de datos sintético, utilizamos Gaussian Naive-Bayes para la clasificación y comparamos la probabilidad estimada utilizando un clasificador Gaussian naive Bayes sin calibración, con una calibración sigmoide y con una calibración isotónica no paramétrica. Luego representamos los datos y las probabilidades predichas. Al comparar las pérdidas de la puntuación de Brier, descubrimos que solo el modelo no paramétrico es capaz de proporcionar una calibración de probabilidades que devuelve probabilidades cercanas a la esperada 0,5 para la mayoría de las muestras pertenecientes al clúster intermedio con etiquetas heterogéneas. Esto da como resultado una mejora significativa de la puntuación de Brier.
