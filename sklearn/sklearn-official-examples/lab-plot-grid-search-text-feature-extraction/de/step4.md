@@ -1,6 +1,6 @@
-# Ergebnissevisualisierung
+# Visualisierung der Ergebnisse
 
-Wir können die Ergebnisse der Hyperparameteroptimierung mit plotly.express visualisieren. Wir verwenden einen Scatterplot, um das Kompromissverhältnis zwischen der Bewertungszeit und der durchschnittlichen Testbewertung zu visualisieren. Wir können auch parallele Koordinaten verwenden, um die durchschnittliche Testbewertung als Funktion der optimierten Hyperparameter weiter zu visualisieren.
+Wir können die Ergebnisse des Hyperparameter-Tunings mit plotly.express visualisieren. Wir verwenden ein Streudiagramm (Scatter Plot), um das Zusammenspiel zwischen der Bewertungszeit und der durchschnittlichen Testleistung zu visualisieren. Wir können auch Parallelkoordinaten verwenden, um die durchschnittliche Testleistung als Funktion der optimierten Hyperparameter weiter zu visualisieren.
 
 ```python
 import pandas as pd
@@ -8,7 +8,7 @@ import plotly.express as px
 import math
 
 def shorten_param(param_name):
-    """Entfernt die Präfixe der Komponenten in param_name."""
+    """Remove components' prefixes in param_name."""
     if "__" in param_name:
         return param_name.rsplit("__", 1)[1]
     return param_name
@@ -18,8 +18,8 @@ cv_results = cv_results.rename(shorten_param, axis=1)
 
 param_names = [shorten_param(name) for name in parameter_grid.keys()]
 labels = {
-    "mean_score_time": "CV-Score-Zeit (s)",
-    "mean_test_score": "CV-Score (Genauigkeit)",
+    "mean_score_time": "CV Score time (s)",
+    "mean_test_score": "CV score (accuracy)",
 }
 fig = px.scatter(
     cv_results,
@@ -33,7 +33,7 @@ fig = px.scatter(
 
 fig.update_layout(
     title={
-        "text": "Kompromiss zwischen Bewertungszeit und durchschnittlichem Testscore",
+        "text": "trade-off between scoring time and mean test score",
         "y": 0.95,
         "x": 0.5,
         "xanchor": "center",
@@ -44,11 +44,11 @@ fig.update_layout(
 column_results = param_names + ["mean_test_score", "mean_score_time"]
 
 transform_funcs = dict.fromkeys(column_results, lambda x: x)
-# Verwenden einer logarithmischen Skala für alpha
+# Using a logarithmic scale for alpha
 transform_funcs["alpha"] = math.log10
-# L1-Normen werden auf Index 1 abgebildet und L2-Normen auf Index 2
+# L1 norms are mapped to index 1, and L2 norms to index 2
 transform_funcs["norm"] = lambda x: 2 if x == "l2" else 1
-# Unigrams werden auf Index 1 und Bigrams auf Index 2 abgebildet
+# Unigrams are mapped to index 1 and bigrams to index 2
 transform_funcs["ngram_range"] = lambda x: x[1]
 
 fig = px.parallel_coordinates(
@@ -59,7 +59,7 @@ fig = px.parallel_coordinates(
 )
 fig.update_layout(
     title={
-        "text": "Parallele Koordinatenplot des Textklassifizierer-Pipelines",
+        "text": "Parallel coordinates plot of text classifier pipeline",
         "y": 0.99,
         "x": 0.5,
         "xanchor": "center",

@@ -1,6 +1,6 @@
 # Daten laden und mischen
 
-Wir laden zunächst die Ziffern-Datenmenge und mischen die Daten zufällig.
+Zunächst laden wir den Datensatz mit den handschriftlichen Ziffern (digits dataset) und mischen die Daten zufällig.
 
 ```python
 digits = datasets.load_digits()

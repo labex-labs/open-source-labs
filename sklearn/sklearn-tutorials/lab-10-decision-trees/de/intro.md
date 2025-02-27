@@ -1,11 +1,11 @@
 # Einführung
 
-In diesem Lab lernen wir, wie man Entscheidungsbäume zur Klassifizierung mit scikit-learn verwendet. Entscheidungsbäume sind eine nicht-parametrische Methode für das überwachte Lernen, die zur Klassifizierung und Regression eingesetzt wird. Sie sind einfach zu verstehen und zu interpretieren und können sowohl numerische als auch kategorische Daten verarbeiten.
+In diesem Lab werden wir lernen, wie man Entscheidungsbäume (Decision Trees) für die Klassifizierung mit scikit-learn verwendet. Entscheidungsbäume sind eine nicht-parametrische überwachte Lernmethode, die für Klassifizierung und Regression eingesetzt wird. Sie sind einfach zu verstehen und zu interpretieren und können sowohl numerische als auch kategorische Daten verarbeiten.
 
-## Tipps für die VM
+## Tipps zur virtuellen Maschine (VM)
 
-Nachdem die VM gestartet ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die virtuelle Maschine gestartet wurde, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen von Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
 
-Wenn Sie bei der Lernphase Probleme haben, können Sie Labby gerne fragen. Geben Sie nach der Sitzung Feedback, und wir werden das Problem für Sie prompt lösen.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie nach der Sitzung Feedback ab, und wir werden das Problem für Sie umgehend beheben.

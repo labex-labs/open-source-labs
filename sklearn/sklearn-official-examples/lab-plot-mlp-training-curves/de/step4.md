@@ -1,6 +1,6 @@
 # Laden oder Generieren kleiner Datensätze
 
-Jetzt müssen wir die kleinen Datensätze laden oder generieren, die wir für dieses Beispiel verwenden werden. Wir werden den Iris-Datensatz, den Digits-Datensatz und zwei Datensätze verwenden, die mit den Funktionen make_circles und make_moons generiert werden.
+Jetzt müssen wir die kleinen Datensätze laden oder generieren, die wir für dieses Beispiel verwenden werden. Wir werden den Iris-Datensatz, den Digits-Datensatz und zwei Datensätze verwenden, die mit den Funktionen `make_circles` und `make_moons` generiert werden.
 
 ```python
 iris = datasets.load_iris()

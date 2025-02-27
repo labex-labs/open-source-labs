@@ -1,6 +1,6 @@
-# Bibliotheken importieren
+# Importieren von Bibliotheken
 
-Zunächst müssen wir die erforderlichen Bibliotheken für dieses Lab importieren, einschließlich scikit-learn.
+Zunächst müssen wir die für dieses Lab erforderlichen Bibliotheken importieren, einschließlich scikit-learn.
 
 ```python
 import numpy as np

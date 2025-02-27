@@ -1,6 +1,6 @@
-# Trainieren eines Ridge-Regressors auf Rohdaten
+# Training eines Ridge-Regressors auf Rohdaten
 
-In diesem Abschnitt werden wir einen Ridge-Regressor auf dem Datensatz mit und ohne Codierung trainieren und den Einfluss des Target Encoders mit und ohne Intervall-Cross-Validation untersuchen. Zunächst werden wir ein Ridge-Modell auf den rohen Features trainieren. Führen Sie den folgenden Code aus, um das Ridge-Modell zu trainieren:
+In diesem Abschnitt werden wir einen Ridge-Regressor auf dem Datensatz mit und ohne Kodierung trainieren und den Einfluss des Zielkodierers (Target Encoder) mit und ohne Intervall-Kreuzvalidierung untersuchen. Zunächst werden wir ein Ridge-Modell auf den Rohmerkmalen trainieren. Führen Sie den folgenden Code aus, um das Ridge-Modell zu trainieren:
 
 ```python
 ridge = Ridge(alpha=1e-6, solver="lsqr", fit_intercept=False)

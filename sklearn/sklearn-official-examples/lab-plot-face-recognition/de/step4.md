@@ -1,4 +1,4 @@
-# PCA durchführen
+# Hauptkomponentenanalyse (PCA) durchführen
 
 ```python
 n_components = 150
@@ -10,4 +10,4 @@ X_train_pca = pca.transform(X_train)
 X_test_pca = pca.transform(X_test)
 ```
 
-Wir führen die Hauptkomponentenanalyse (PCA) durch, um Merkmale aus den Eingabedaten zu extrahieren. Wir setzen die Anzahl der Komponenten auf 150 und trainieren das PCA-Modell mit den Trainingsdaten. Anschließend erhalten wir die Eigenfaces und transformieren die Eingabedaten in Hauptkomponenten.
+Wir führen eine Hauptkomponentenanalyse (Principal Component Analysis, PCA) durch, um Merkmale aus den Eingabedaten zu extrahieren. Wir setzen die Anzahl der Komponenten auf 150 und passen das PCA-Modell an die Trainingsdaten an. Anschließend erhalten wir die Eigenfaces (Eigengesichter) und transformieren die Eingabedaten in Hauptkomponenten.

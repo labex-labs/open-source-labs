@@ -1,11 +1,11 @@
-# Erstelle die Pipeline für das Self-Training
+# Erstellen der Pipeline für Self-Training
 
-In diesem Schritt werden wir eine Pipeline für das halbüberwachte Lernen mit Self-Training erstellen. Die Pipeline wird der überwachten Pipeline ähneln, aber wir werden den SelfTrainingClassifier statt des SGDClassifier verwenden.
+In diesem Schritt erstellen wir eine Pipeline für halbüberwachtes Lernen unter Verwendung von Self-Training. Die Pipeline wird der überwachten Pipeline ähneln, aber wir werden den SelfTrainingClassifier anstelle des SGDClassifier verwenden.
 
 ```python
 from sklearn.semi_supervised import SelfTrainingClassifier
 
-# Erstelle die Self-Training-Pipeline
+# Erstellen der Self-Training-Pipeline
 st_pipeline = Pipeline(
     [
         ("vect", CountVectorizer(**vectorizer_params)),

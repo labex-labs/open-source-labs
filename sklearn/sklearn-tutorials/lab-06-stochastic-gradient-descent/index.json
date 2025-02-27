@@ -44,9 +44,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Preprocess Data",
@@ -58,9 +56,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Split Data",
@@ -72,9 +68,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Train the Classifier",
@@ -86,9 +80,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Make Predictions",
@@ -100,9 +92,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       },
       {
         "title": "Evaluate Performance",
@@ -114,9 +104,7 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": [
-          "ml/sklearn"
-        ]
+        "skills": ["ml/sklearn"]
       }
     ],
     "intro": {
@@ -442,6 +430,303 @@
         "finish": {
           "text": "fr/finish.md",
           "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Implementierung des stochastischen Gradientenabstiegs",
+      "description": "Der stochastische Gradientenabstieg (Stochastic Gradient Descent, SGD) ist ein beliebter Optimierungsalgorithmus, der in der Maschinellen Lernens (Machine Learning) eingesetzt wird. Es ist eine Variante des Gradientenabstiegsalgorithmus, die bei jeder Iteration eine zufällig ausgewählte Teilmenge der Trainingsdaten verwendet. Dies macht es rechnerisch effizient und geeignet für die Verarbeitung großer Datensätze. In diesem Lab werden wir die Schritte zur Implementierung von SGD in Python mit scikit-learn durchgehen.",
+      "meta": {
+        "title": "Stochastischer Gradientenabstieg | Maschinelles Lernen | Python",
+        "description": "Lernen Sie, wie Sie den stochastischen Gradientenabstieg (Stochastic Gradient Descent, SGD), einen beliebten Optimierungsalgorithmus in der Maschinellen Lernens, mit Python und scikit-learn implementieren.",
+        "keywords": "Stochastischer Gradientenabstieg, SGD, Maschinelles Lernen, Python, scikit-learn"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Bibliotheken importieren",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify1-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Daten laden",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify2-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Daten vorverarbeiten",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify3-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Daten aufteilen",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify4-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Den Klassifikator trainieren",
+            "text": "de/step5.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify5-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Vorhersagen treffen",
+            "text": "de/step6.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify6-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Leistung auswerten",
+            "text": "de/step7.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat derzeit keine Überprüfung",
+                "file": "verify7-1.sh",
+                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "確率的勾配降下法の実装",
+      "description": "確率的勾配降下法（Stochastic Gradient Descent, SGD）は、機械学習で広く使用される最適化アルゴリズムです。これは、各反復で訓練データのランダムに選択されたサブセットを使用する勾配降下法の変形です。これにより、計算効率が良く、大規模なデータセットを扱うのに適しています。この実験では、scikit-learn を使用して Python で SGD を実装する手順を説明します。",
+      "meta": {
+        "title": "確率的勾配降下法 | 機械学習 | Python",
+        "description": "Python と scikit-learn を使用して、機械学習で広く使用される最適化アルゴリズムである確率的勾配降下法（Stochastic Gradient Descent, SGD）を実装する方法を学びましょう。",
+        "keywords": "確率的勾配降下法, SGD, 機械学習, Python, scikit-learn"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "ライブラリのインポート",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify1-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "データの読み込み",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify2-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "データの前処理",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify3-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "データの分割",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify4-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "分類器の訓練",
+            "text": "ja/step5.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify5-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "予測を行う",
+            "text": "ja/step6.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify6-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          },
+          {
+            "title": "性能を評価する",
+            "text": "ja/step7.md",
+            "verify": [
+              {
+                "name": "現時点でこのステップの検証はありません",
+                "file": "verify7-1.sh",
+                "hint": "現時点でこのステップの検証はありません"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Реализация стохастического градиентного спуска",
+      "description": "Стохастический градиентный спуск (Stochastic Gradient Descent, SGD) — популярный алгоритм оптимизации, используемый в машинном обучении. Это вариант алгоритма градиентного спуска, который на каждой итерации использует случайно выбранное подмножество обучающих данных. Это делает его вычислительно эффективным и подходящим для обработки больших наборов данных. В этом практическом занятии мы рассмотрим шаги по реализации SGD на Python с использованием библиотеки scikit-learn.",
+      "meta": {
+        "title": "Стохастический градиентный спуск | Машинное обучение | Python",
+        "description": "Узнайте, как реализовать стохастический градиентный спуск (SGD), популярный алгоритм оптимизации, используемый в машинном обучении, с помощью Python и библиотеки scikit-learn.",
+        "keywords": "Стохастический градиентный спуск, SGD, Машинное обучение, Python, scikit-learn"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Импорт библиотек",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify1-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Загрузка данных",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify2-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Предварительная обработка данных",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify3-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Разделение данных",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify4-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Обучение классификатора",
+            "text": "ru/step5.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify5-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Сделать прогнозы",
+            "text": "ru/step6.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify6-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Оценка производительности",
+            "text": "ru/step7.md",
+            "verify": [
+              {
+                "name": "На данный момент эта стадия не имеет проверки",
+                "file": "verify7-1.sh",
+                "hint": "На данный момент эта стадия не имеет проверки"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
         }
       }
     }

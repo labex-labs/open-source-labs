@@ -2,7 +2,7 @@
 
 ```python
 def plot_gallery(images, titles, h, w, n_row=3, n_col=4):
-    """Hilfsfunktion, um eine Galerie von Portraits zu plotten"""
+    """Helper function to plot a gallery of portraits"""
     plt.figure(figsize=(1.8 * n_col, 2.4 * n_row))
     plt.subplots_adjust(bottom=0, left=0.01, right=0.99, top=0.90, hspace=0.35)
     for i in range(n_row * n_col):
@@ -19,4 +19,4 @@ prediction_titles = [
 plot_gallery(X_test, prediction_titles, h, w)
 ```
 
-Wir visualisieren die Vorhersagen, indem wir eine Galerie von Portraits mit ihren vorhergesagten und wahren Namen plotten.
+Wir visualisieren die Vorhersagen, indem wir eine Galerie von Porträts mit ihren vorhergesagten und tatsächlichen Namen darstellen.

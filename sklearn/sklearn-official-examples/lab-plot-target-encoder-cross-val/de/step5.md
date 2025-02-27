@@ -1,6 +1,6 @@
-# Trainieren eines Ridge-Regressors mit Cross-Validation
+# Training eines Ridge-Regressors mit Kreuzvalidierung
 
-Als nächstes werden wir einen Pipeline erstellen, die den `TargetEncoder` und das Ridge-Modell enthält. Die Pipeline verwendet `TargetEncoder.fit_transform`, das Cross-Validation nutzt. Führen Sie den folgenden Code aus, um das Ridge-Modell mit Cross-Validation zu trainieren:
+Als Nächstes werden wir eine Pipeline (Pipeline) mit dem `TargetEncoder` und dem Ridge-Modell erstellen. Die Pipeline verwendet `TargetEncoder.fit_transform`, das Kreuzvalidierung nutzt. Führen Sie den folgenden Code aus, um das Ridge-Modell mit Kreuzvalidierung zu trainieren:
 
 ```python
 model_with_cv = make_pipeline(TargetEncoder(random_state=0), ridge)

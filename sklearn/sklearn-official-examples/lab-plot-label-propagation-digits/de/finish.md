@@ -1,3 +1,3 @@
 # Zusammenfassung
 
-In diesem Lab haben wir gezeigt, wie man mit dem Label Spreading-Algorithmus halbüberwachtes Lernen durchführt. Wir haben das Modell mit einer geringen Anzahl von markierten Daten trainiert und es verwendet, um die Labels der verbleibenden Proben vorherzusagen. Das Modell hat gut abgeschnitten und die Labels der meisten Proben richtig vorhergesagt.
+In diesem Lab haben wir gezeigt, wie man halbsupervisioniertes Lernen mit dem Label Spreading - Algorithmus durchführt. Wir haben das Modell mit einer geringen Menge an gelabelten Daten trainiert und es verwendet, um die Labels der verbleibenden Stichproben vorherzusagen. Das Modell hat gut funktioniert und die Labels der meisten Stichproben korrekt vorhergesagt.

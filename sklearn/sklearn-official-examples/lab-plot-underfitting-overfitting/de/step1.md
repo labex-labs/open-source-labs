@@ -1,6 +1,6 @@
-# Bibliotheken importieren
+# Importieren von Bibliotheken
 
-Zunächst importieren wir die erforderlichen Bibliotheken für dieses Lab.
+Zunächst werden wir die für dieses Lab erforderlichen Bibliotheken importieren.
 
 ```python
 import numpy as np

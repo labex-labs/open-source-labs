@@ -1,6 +1,6 @@
 # Importieren der erforderlichen Bibliotheken
 
-Zunächst müssen wir die erforderlichen Bibliotheken importieren. Wir werden scikit-learn verwenden, um den Entscheidungsbaum-Klassifizierer zu erstellen und zu trainieren.
+Zunächst müssen wir die erforderlichen Bibliotheken importieren. Wir werden scikit-learn verwenden, um den Entscheidungsbaum-Klassifikator (Decision Tree classifier) zu erstellen und zu trainieren.
 
 ```python
 from sklearn import tree

@@ -1,6 +1,6 @@
-# Abhängigkeiten importieren
+# Importieren der Abhängigkeiten
 
-Lassen Sie uns beginnen, indem wir die erforderlichen Abhängigkeiten importieren.
+Beginnen wir damit, die erforderlichen Abhängigkeiten zu importieren.
 
 ```python
 import numpy as np

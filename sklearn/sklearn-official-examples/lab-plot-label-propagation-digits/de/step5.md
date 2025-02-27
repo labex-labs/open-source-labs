@@ -1,6 +1,6 @@
-# Die unsichersten Vorhersagen plotten
+# Die unsichersten Vorhersagen visualisieren
 
-Wir wählen und zeigen die zehn unsichersten Vorhersagen an.
+Wir wählen die 10 unsichersten Vorhersagen aus und zeigen sie an.
 
 ```python
 pred_entropies = stats.distributions.entropy(lp_model.label_distributions_.T)

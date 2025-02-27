@@ -1,6 +1,6 @@
-# Modellleistung计算
+# Modellleistung auswerten
 
-Wir berechnen die Leistung des Modells, indem wir einen Klassifizierungsbericht und eine Konfusionsmatrix generieren.
+Wir bewerten die Leistung des Modells, indem wir einen Klassifikationsbericht (classification report) und eine Konfusionsmatrix (confusion matrix) generieren.
 
 ```python
 predicted_labels = lp_model.transduction_[unlabeled_set]

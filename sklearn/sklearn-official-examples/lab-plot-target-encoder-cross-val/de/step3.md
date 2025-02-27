@@ -1,6 +1,6 @@
 # Erstellen eines synthetischen Datensatzes
 
-Für dieses Lab werden wir einen synthetischen Datensatz mit drei kategorischen Features erstellen: ein informatives Feature mit mittlerer Kardinalität, ein uninformatives Feature mit mittlerer Kardinalität und ein uninformatives Feature mit hoher Kardinalität. Wir werden die `KBinsDiscretizer`-Klasse aus Scikit-learn verwenden, um das informative Feature zu generieren. Führen Sie den folgenden Code aus, um den synthetischen Datensatz zu erstellen:
+Für dieses Lab werden wir einen synthetischen Datensatz mit drei kategorischen Merkmalen erstellen: ein informatives Merkmal mit mittlerer Kardinalität, ein nicht informatives Merkmal mit mittlerer Kardinalität und ein nicht informatives Merkmal mit hoher Kardinalität. Wir werden die `KBinsDiscretizer`-Klasse aus Scikit-learn verwenden, um das informative Merkmal zu generieren. Führen Sie den folgenden Code aus, um den synthetischen Datensatz zu erstellen:
 
 ```python
 n_samples = 50_000

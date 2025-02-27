@@ -10,4 +10,4 @@ target_names = lfw_people.target_names
 n_classes = target_names.shape[0]
 ```
 
-Wir laden den Datensatz mit der Funktion `fetch_lfw_people()` aus scikit-learn herunter. Anschließend erkunden wir den Datensatz, indem wir die Anzahl der Bilder, die Höhe und die Breite ermitteln. Wir erhalten auch die Eingabedaten `X`, das Ziel `y`, die Zielnamen `target_names` und die Anzahl der Klassen `n_classes`.
+Wir laden den Datensatz mit der Funktion `fetch_lfw_people()` aus scikit-learn herunter. Anschließend erkunden wir den Datensatz, indem wir die Anzahl der Stichproben, die Höhe und die Breite der Bilder ermitteln. Wir erhalten auch die Eingabedaten `X`, das Ziel `y`, die Zielnamen `target_names` und die Anzahl der Klassen `n_classes`.

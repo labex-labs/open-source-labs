@@ -1,6 +1,6 @@
 # Bibliotheken importieren
 
-Wir beginnen, indem wir die erforderlichen Bibliotheken für dieses Projekt importieren.
+Wir beginnen, indem wir die für dieses Projekt erforderlichen Bibliotheken importieren.
 
 ```python
 import warnings

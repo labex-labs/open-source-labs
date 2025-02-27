@@ -1,6 +1,6 @@
-# Modelle mit Polynomfunktionen anpassen
+# Modelle mit polynomiellen Merkmalen anpassen
 
-Wir werden Modelle mit Polynomfunktionen vom Grad 1, 4 und 15 anpassen und die Ergebnisse darstellen.
+Wir werden Modelle mit polynomiellen Merkmalen vom Grad 1, 4 und 15 anpassen und die Ergebnisse grafisch darstellen.
 
 ```python
 degrees = [1, 4, 15]

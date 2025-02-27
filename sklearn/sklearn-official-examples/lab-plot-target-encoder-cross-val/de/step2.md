@@ -1,6 +1,6 @@
 # Importieren der erforderlichen Bibliotheken
 
-Als nächstes müssen wir die erforderlichen Bibliotheken importieren. Führen Sie den folgenden Code aus, um die erforderlichen Bibliotheken zu importieren:
+Als Nächstes müssen wir die erforderlichen Bibliotheken importieren. Führen Sie den folgenden Code aus, um die erforderlichen Bibliotheken zu importieren:
 
 ```python
 import numpy as np

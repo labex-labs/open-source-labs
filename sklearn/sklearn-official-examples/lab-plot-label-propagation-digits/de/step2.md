@@ -1,6 +1,6 @@
-# Daten für das halbüberwachte Lernen vorbereiten
+# Daten für halbsupervisioniertes Lernen vorbereiten
 
-Wir wählen 340 Proben aus, und nur 40 dieser Proben sind mit einem bekannten Label assoziiert. Wir speichern die Indizes der anderen 300 Proben, für die wir nicht wissen sollen, was ihr Label ist. Anschließend mischen wir die Labels, sodass die unmarkierten Proben mit -1 markiert werden.
+Wir wählen 340 Stichproben aus, und nur 40 dieser Stichproben sind mit einem bekannten Label (Kategorie) verknüpft. Wir speichern die Indizes der anderen 300 Stichproben, für die wir die Labels nicht kennen sollen. Anschließend mischen wir die Labels so, dass die ungelabelten Stichproben mit -1 markiert werden.
 
 ```python
 X = digits.data[indices[:340]]

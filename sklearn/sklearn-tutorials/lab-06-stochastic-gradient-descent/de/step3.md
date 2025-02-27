@@ -1,6 +1,6 @@
-# Daten vorverarbeiten
+# Datenvorverarbeitung
 
-Bevor der SGD angewendet wird, ist es oft vorteilhaft, die Daten vorzubehandeln. In diesem Fall werden wir die Merkmale mit dem StandardScaler aus scikit-learn standardisieren.
+Bevor wir SGD anwenden, ist es oft vorteilhaft, die Daten vorzuverarbeiten. In diesem Fall werden wir die Merkmale (Features) mit Hilfe von scikit-learns `StandardScaler` standardisieren.
 
 ```python
 scaler = StandardScaler()

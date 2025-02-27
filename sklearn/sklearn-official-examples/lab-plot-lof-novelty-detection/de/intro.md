@@ -1,11 +1,11 @@
 # Einführung
 
-In diesem Lab verwenden wir den Local Outlier Factor (LOF)-Algorithmus, um eine Novelty Detection durchzuführen. LOF ist eine unsupervised Anomalieerkennungsmethode, die die lokale Dichteverschiebung eines gegebenen Datenpunkts im Vergleich zu seinen Nachbarn ermittelt. Es betrachtet als Ausreißer die Proben, deren Dichte im Vergleich zu ihren Nachbarn wesentlich geringer ist.
+In diesem Lab werden wir den Local Outlier Factor (LOF)-Algorithmus verwenden, um Neuheitserkennung durchzuführen. LOF ist eine unüberwachte Methode zur Ausreißererkennung, die die lokale Dichtabweichung eines gegebenen Datenpunkts im Vergleich zu seinen Nachbarn identifiziert. Sie betrachtet die Stichproben, die eine wesentlich geringere Dichte als ihre Nachbarn haben, als Ausreißer.
 
-## Tipps für die VM
+## Tipps für die virtuelle Maschine (VM)
 
-Nachdem der VM-Start abgeschlossen ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen von Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
 
-Wenn Sie bei der Lernphase Probleme haben, können Sie Labby gerne fragen. Geben Sie nach der Sitzung Feedback, und wir werden das Problem für Sie prompt beheben.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie uns nach der Sitzung Feedback, und wir werden das Problem umgehend für Sie lösen.

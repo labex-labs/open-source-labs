@@ -1,3 +1,3 @@
 # Zusammenfassung
 
-In diesem Lab haben wir Ensemble-Verfahren mit scikit-learn untersucht. Wir haben einen Bagging-Klassifizierer und einen Random Forest-Klassifizierer auf dem Iris-Datensatz trainiert und deren Leistung ausgewertet. Ensemble-Verfahren wie Bagging und Random Forests können leistungsstarke Werkzeuge sein, um die Vorhersageleistung von Machine-Learning-Modellen zu verbessern.
+In diesem Lab haben wir Ensemble-Methoden mit scikit-learn untersucht. Wir haben einen Bagging-Klassifikator und einen Random Forest-Klassifikator auf dem Iris-Datensatz angepasst und deren Leistung bewertet. Ensemble-Methoden wie Bagging und Random Forests können mächtige Werkzeuge zur Verbesserung der Vorhersageleistung von maschinellen Lernmodellen sein.

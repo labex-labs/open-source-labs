@@ -1,6 +1,6 @@
 # Daten laden
 
-Als nächstes laden wir den Iris-Datensatz aus scikit-learn. Dieser Datensatz ist ein klassischer Datensatz der Maschinellen Lernung, der Messungen von Iris-Blumen zusammen mit ihren Artbezeichnungen enthält.
+Als nächstes werden wir den Iris-Datensatz aus scikit-learn laden. Dieser Datensatz ist ein klassischer Datensatz für maschinelles Lernen, der aus Messungen von Schwertlilienblumen sowie deren Artenbezeichnungen besteht.
 
 ```python
 iris = load_iris()

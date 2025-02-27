@@ -1,11 +1,11 @@
 # Einführung
 
-Die scikit-learn-Bibliothek bietet Werkzeuge zur Extraktion und Bewertung von Textmerkmalen. In diesem Lab verwenden wir den 20newsgroups-Datensatz, um zu demonstrieren, wie man Merkmale aus Textdaten extrahiert, einen Pipeline baut und die Leistung des Modells mit Hilfe der Hyperparameteroptimierung bewertet.
+Die scikit-learn-Bibliothek bietet Werkzeuge zur Extraktion und Bewertung von Textmerkmalen. In diesem Lab werden wir den 20newsgroups-Datensatz verwenden, um zu zeigen, wie man Merkmale aus Textdaten extrahiert, eine Pipeline (Bearbeitungsreihenfolge) erstellt und die Leistung des Modells mithilfe von Hyperparameter-Tuning bewertet.
 
-## Tipps für die VM
+## Tipps zur virtuellen Maschine (VM)
 
-Nachdem die VM gestartet ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die virtuelle Maschine gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen von Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
 
-Wenn Sie bei der Lernphase Probleme haben, können Sie Labby gerne fragen. Geben Sie nach der Sitzung Feedback ab, und wir werden das Problem für Sie prompt beheben.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie uns nach der Sitzung Feedback, und wir werden das Problem umgehend für Sie lösen.

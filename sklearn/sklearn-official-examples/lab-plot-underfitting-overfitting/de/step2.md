@@ -1,6 +1,6 @@
 # Daten generieren
 
-Wir werden 30 Stichproben aus einer Kosinusfunktion generieren und den Stichproben zufälliger Rauschen hinzufügen.
+Wir werden 30 Stichproben aus einer Kosinusfunktion generieren und diesen Stichproben etwas Zufallsrauschen hinzufügen.
 
 ```python
 def true_fun(X):

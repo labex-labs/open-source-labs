@@ -1,9 +1,9 @@
-# Definieren unterschiedlicher Lernstrategien
+# Definieren verschiedener Lernstrategien
 
-Als nächstes müssen wir die verschiedenen Lernstrategien definieren, die wir vergleichen möchten. Wir werden mehrere verschiedene Lernraten-Schedules und Momentum-Parameter definieren, einschließlich konstanter Lernrate, konstant mit Momentum, konstant mit Nesterovs Momentum, invers skalierende Lernrate, invers skalierende mit Momentum, invers skalierende mit Nesterovs Momentum und Adam. Wir definieren auch Labels und plot_args, die wir später in unserem Plot verwenden werden.
+Als nächstes müssen wir die verschiedenen Lernstrategien definieren, die wir vergleichen möchten. Wir werden mehrere verschiedene Lernraten-Schedules und Impulsparameter (Momentum-Parameter) definieren, darunter konstante Lernrate, konstante Lernrate mit Impuls, konstante Lernrate mit Nesterov-Impuls, inverse Skalierung der Lernrate, inverse Skalierung der Lernrate mit Impuls, inverse Skalierung der Lernrate mit Nesterov-Impuls und Adam. Wir werden auch Labels und plot_args definieren, die wir später in unserem Diagramm verwenden werden.
 
 ```python
-# verschiedene Lernraten-Schedules und Momentum-Parameter
+# different learning rate schedules and momentum parameters
 params = [
     {
         "solver": "sgd",
@@ -49,22 +49,22 @@ params = [
 ]
 
 labels = [
-    "konstante Lernrate",
-    "konstant mit Momentum",
-    "konstant mit Nesterovs Momentum",
-    "invers skalierende Lernrate",
-    "invers skalierende mit Momentum",
-    "invers skalierende mit Nesterovs Momentum",
-    "Adam",
+    "constant learning-rate",
+    "constant with momentum",
+    "constant with Nesterov's momentum",
+    "inv-scaling learning-rate",
+    "inv-scaling with momentum",
+    "inv-scaling with Nesterov's momentum",
+    "adam",
 ]
 
 plot_args = [
-    {"c": "rot", "linestyle": "-"},
-    {"c": "grün", "linestyle": "-"},
-    {"c": "blau", "linestyle": "-"},
-    {"c": "rot", "linestyle": "--"},
-    {"c": "grün", "linestyle": "--"},
-    {"c": "blau", "linestyle": "--"},
-    {"c": "schwarz", "linestyle": "-"},
+    {"c": "red", "linestyle": "-"},
+    {"c": "green", "linestyle": "-"},
+    {"c": "blue", "linestyle": "-"},
+    {"c": "red", "linestyle": "--"},
+    {"c": "green", "linestyle": "--"},
+    {"c": "blue", "linestyle": "--"},
+    {"c": "black", "linestyle": "-"},
 ]
 ```

@@ -1,6 +1,6 @@
-# Modellleistung计算
+# Modellleistung auswerten
 
-Wir werden die Modelle mithilfe von Kreuzvalidierung bewerten und den mittleren quadratischen Fehler (MSE) auf der Validierungsset berechnen.
+Wir werden die Modelle mithilfe von Kreuzvalidierung (cross-validation) auswerten und den mittleren quadratischen Fehler (Mean Squared Error, MSE) auf dem Validierungssatz berechnen.
 
 ```python
 degrees = [1, 4, 15]
@@ -21,7 +21,7 @@ for i in range(len(degrees)):
     )
     pipeline.fit(X[:, np.newaxis], y)
 
-    # Bewerten Sie die Modelle mithilfe von Kreuzvalidierung
+    # Evaluate the models using crossvalidation
     scores = cross_val_score(
         pipeline, X[:, np.newaxis], y, scoring="neg_mean_squared_error", cv=10
     )

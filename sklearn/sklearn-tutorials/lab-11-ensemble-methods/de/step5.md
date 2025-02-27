@@ -1,8 +1,8 @@
-# Den Bagging-Klassifizierer bewerten
+# Bewertung des Bagging-Klassifikators
 
-Lassen Sie uns den Bagging-Klassifizierer bewerten, indem wir die Genauigkeit auf den Testdaten mit der `score`-Methode berechnen.
+Lassen Sie uns den Bagging-Klassifikator bewerten, indem wir die Genauigkeit (Accuracy) auf den Testdaten mit der Methode `score` berechnen.
 
 ```python
 accuracy = bagging.score(X_test, y_test)
-print(f"Genauigkeit des Bagging-Klassifizierers: {accuracy}")
+print(f"Bagging Classifier Accuracy: {accuracy}")
 ```

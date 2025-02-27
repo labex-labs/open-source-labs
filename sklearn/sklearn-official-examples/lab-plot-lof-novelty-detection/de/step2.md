@@ -1,6 +1,6 @@
 # Daten generieren
 
-Wir werden mit numpy einige Daten für das Training, das Testing und die Ausreißer generieren. Wir werden 100 normale Trainingsbeobachtungen, 20 normale Testbeobachtungen und 20 abnormale neue Beobachtungen generieren.
+Wir werden einige Daten für das Training, das Testen und die Ausreißer mit numpy generieren. Wir werden 100 normale Trainingsbeobachtungen, 20 normale Testbeobachtungen und 20 abnormale, neuartige Beobachtungen generieren.
 
 ```python
 np.random.seed(42)

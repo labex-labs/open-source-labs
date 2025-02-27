@@ -1,12 +1,12 @@
-# Lade das Dataset
+# Laden des Datensatzes
 
-Wir werden das 20 newsgroups-Dataset verwenden, das ungefähr 18.000 Newsgroup-Posts zu 20 Themen enthält. In diesem Schritt werden wir das Dataset laden und einige grundlegende Informationen darüber ausgeben.
+Wir werden den 20 newsgroups-Datensatz verwenden, der etwa 18.000 Newsgroup-Beiträge zu 20 Themen enthält. In diesem Schritt laden wir den Datensatz und geben einige grundlegende Informationen darüber aus.
 
 ```python
 import numpy as np
 from sklearn.datasets import fetch_20newsgroups
 
-# Lade das Dataset mit den ersten fünf Kategorien
+# Laden des Datensatzes mit den ersten fünf Kategorien
 data = fetch_20newsgroups(
     subset="train",
     categories=[
@@ -18,7 +18,7 @@ data = fetch_20newsgroups(
     ],
 )
 
-# Gib Informationen über das Dataset aus
-print("%d Dokumente" % len(data.filenames))
-print("%d Kategorien" % len(data.target_names))
+# Ausgabe von Informationen über den Datensatz
+print("%d documents" % len(data.filenames))
+print("%d categories" % len(data.target_names))
 ```

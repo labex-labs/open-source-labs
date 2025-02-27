@@ -1,6 +1,6 @@
 # MLPClassifier trainieren
 
-Wir werden einen MLPClassifier mit einer einzigen versteckten Schicht erstellen, die 40 Neuronen enthält. Aufgrund von Ressourcenbeschränkungen werden wir das MLP nur für 8 Iterationen trainieren. Wir werden auch die `ConvergenceWarning` fangen, die ausgelöst wird, weil das Modell innerhalb der begrenzten Anzahl an Iterationen nicht konvergieren wird.
+Wir erstellen einen MLPClassifier (Multi-Layer Perceptron Classifier) mit einer einzigen versteckten Schicht, die 40 Neuronen enthält. Aufgrund von Ressourcenbeschränkungen trainieren wir das MLP nur für 8 Iterationen. Wir fangen auch die `ConvergenceWarning` (Konvergenzwarnung) ab, die geworfen wird, weil das Modell innerhalb der begrenzten Anzahl von Iterationen nicht konvergieren wird.
 
 ```python
 mlp = MLPClassifier(

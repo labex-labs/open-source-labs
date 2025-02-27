@@ -1,6 +1,6 @@
-# Ein Bagging-Klassifizierer anpassen
+# Anpassen eines Bagging-Klassifikators
 
-Jetzt werden wir einen Bagging-Klassifizierer an den Trainingsdaten anpassen. Der Bagging-Klassifizierer ist ein Ensemble-Verfahren, das das Bootstrap-Sampling verwendet, um mehrere Basismodelle (oft Entscheidungsbäume) zu erstellen und deren Vorhersagen mithilfe der Mehrheitsentscheidung zu aggregieren.
+Jetzt werden wir einen Bagging-Klassifikator an die Trainingsdaten anpassen. Der Bagging-Klassifikator ist eine Ensemble-Methode, die Bootstrapping-Sampling verwendet, um mehrere Basismodelle (häufig Entscheidungsbäume) zu erstellen und deren Vorhersagen mithilfe der Mehrheitsentscheidung zusammenzufassen.
 
 ```python
 bagging = BaggingClassifier(DecisionTreeClassifier(), n_estimators=10)

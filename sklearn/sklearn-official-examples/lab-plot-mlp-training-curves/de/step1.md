@@ -1,6 +1,6 @@
 # Importieren der erforderlichen Bibliotheken
 
-Zunächst müssen wir die erforderlichen Bibliotheken importieren, einschließlich MLPClassifier, MinMaxScaler, datasets und matplotlib.pyplot. Wir importieren auch ConvergenceWarning, um Konvergenzwarnungen während des Trainings zu ignorieren.
+Zunächst müssen wir die erforderlichen Bibliotheken importieren, darunter MLPClassifier, MinMaxScaler, datasets und matplotlib.pyplot. Wir werden auch ConvergenceWarning importieren, um Konvergenzwarnungen während des Trainings zu ignorieren.
 
 ```python
 import warnings

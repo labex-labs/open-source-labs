@@ -1,6 +1,6 @@
-# Ergebnisse visualisieren
+# Die Ergebnisse visualisieren
 
-Wir werden die Ergebnisse visualisieren, indem wir die Trainings-, Test- und Ausreißerdaten zusammen mit der gelernten Grenze darstellen. Wir werden auch die Anzahl der Fehler in den Test- und Ausreißerdaten anzeigen.
+Wir werden die Ergebnisse visualisieren, indem wir die Trainings-, Test- und Ausreißer-Daten zusammen mit der gelernten Grenze (frontier) plotten. Wir werden auch die Anzahl der Fehler in den Test- und Ausreißer-Daten anzeigen.
 
 ```python
 Z = clf.decision_function(np.c_[xx.ravel(), yy.ravel()])

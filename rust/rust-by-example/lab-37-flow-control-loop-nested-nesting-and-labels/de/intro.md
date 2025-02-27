@@ -1,5 +1,5 @@
 # Einführung
 
-In diesem Lab lernen wir das Einfügen und Bezeichnen von Schleifen in Rust, wobei wir die `break`- und `continue`-Anweisungen verwenden können, um äußere Schleifen in geschachtelten Schleifen zu beenden oder zu überspringen, indem wir die Schleifen mit Bezeichnungen versehen.
+In diesem Lab lernen wir, wie man Schleifen in Rust verschachtelt und beschriftet. Dabei können wir die Anweisungen `break` und `continue` verwenden, um äußere Schleifen in verschachtelten Schleifen zu beenden oder zu überspringen, indem wir die Schleifen mit Labels versehen.
 
-> **Hinweis:** Wenn im Lab kein Dateiname angegeben ist, können Sie einen beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden und es mit `rustc main.rs &&./main` kompilieren und ausführen.
+> **Hinweis:** Wenn das Lab keinen Dateinamen angibt, können Sie jeden beliebigen Dateinamen verwenden. Beispielsweise können Sie `main.rs` verwenden, diese kompilieren und ausführen mit `rustc main.rs &&./main`.

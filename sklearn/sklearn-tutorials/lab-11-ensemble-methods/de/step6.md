@@ -1,6 +1,6 @@
-# Ein Random Forest-Klassifizierer anpassen
+# Anpassen eines Random Forest-Klassifikators
 
-Als nächstes werden wir einen Random Forest-Klassifizierer an den Trainingsdaten anpassen. Der Random Forest-Klassifizierer ist ebenfalls ein Ensemble-Verfahren, das das Bootstrap-Sampling verwendet, um mehrere Entscheidungsbäume zu erstellen, aber es fügt zusätzlich Zufälligkeit hinzu, indem bei jeder Aufteilung nur ein Teilmengen der Merkmale berücksichtigt wird.
+Als Nächstes werden wir einen Random Forest-Klassifikator an die Trainingsdaten anpassen. Der Random Forest-Klassifikator ist ebenfalls eine Ensemble-Methode, die Bootstrapping-Sampling verwendet, um mehrere Entscheidungsbäume zu erstellen. Darüber hinaus fügt es zusätzliche Zufälligkeit hinzu, indem es bei jedem Split nur eine Teilmenge der Merkmale (Features) berücksichtigt.
 
 ```python
 random_forest = RandomForestClassifier(n_estimators=10)

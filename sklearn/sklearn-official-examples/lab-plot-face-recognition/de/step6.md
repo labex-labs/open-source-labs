@@ -1,4 +1,4 @@
-# Modellleistung计算
+# Modellleistung auswerten
 
 ```python
 y_pred = clf.predict(X_test_pca)
@@ -8,4 +8,4 @@ ConfusionMatrixDisplay.from_estimator(
 )
 ```
 
-Wir prognostizieren die Zielwerte mit den Testdaten und berechnen die Modellleistung mit der Funktion `classification_report()`. Wir erstellen auch die Konfusionsmatrix mit der Funktion `ConfusionMatrixDisplay()`.
+Wir prognostizieren die Zielwerte mit den Testdaten und bewerten die Modellleistung mit der Funktion `classification_report()`. Wir zeichnen auch die Konfusionsmatrix (Confusion Matrix) mit der Funktion `ConfusionMatrixDisplay()` auf.

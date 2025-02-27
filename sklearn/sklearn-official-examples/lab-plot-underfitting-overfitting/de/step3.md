@@ -1,6 +1,6 @@
 # Daten visualisieren
 
-Wir werden die wahre Funktion und die generierten Stichproben darstellen.
+Wir werden die wahre Funktion und die generierten Stichproben grafisch darstellen.
 
 ```python
 plt.figure(figsize=(6, 4))

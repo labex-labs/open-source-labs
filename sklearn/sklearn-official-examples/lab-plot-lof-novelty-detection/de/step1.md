@@ -1,6 +1,6 @@
 # Bibliotheken importieren
 
-Wir beginnen mit dem Import der erforderlichen Bibliotheken. Wir werden scikit-learn, numpy und matplotlib verwenden.
+Wir beginnen mit dem Importieren der erforderlichen Bibliotheken. Wir werden scikit-learn, numpy und matplotlib verwenden.
 
 ```python
 import numpy as np

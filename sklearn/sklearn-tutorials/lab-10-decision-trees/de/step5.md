@@ -1,6 +1,6 @@
 # Vorhersagen treffen
 
-Sobald der Klassifizierer trainiert ist, können wir ihn verwenden, um Vorhersagen für die Testdaten zu treffen.
+Sobald der Klassifikator trainiert ist, können wir ihn verwenden, um Vorhersagen für die Testdaten zu treffen.
 
 ```python
 # Make predictions on the test data

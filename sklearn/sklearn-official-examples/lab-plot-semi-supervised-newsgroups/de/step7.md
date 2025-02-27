@@ -1,13 +1,13 @@
-# Trainiere und bewerte das LabelSpreading-Modell
+# Trainieren und Evaluieren des LabelSpreading-Modells
 
-In diesem Schritt werden wir LabelSpreading auf 20% der markierten Daten anwenden. Wir werden 20% der markierten Daten zufällig auswählen, das Modell auf diesen Daten trainieren und dann das Modell verwenden, um die Labels für die verbleibenden unmarkierten Daten vorherzusagen.
+In diesem Schritt verwenden wir LabelSpreading auf 20 % der gelabelten Daten. Wir wählen zufällig 20 % der gelabelten Daten aus, trainieren das Modell auf diesen Daten und verwenden dann das Modell, um Labels für die verbleibenden ungelabelten Daten vorherzusagen.
 
 ```python
-# Trainiere und bewerte die LabelSpreading-Pipeline
+# Train and evaluate the LabelSpreading pipeline
 ls_pipeline.fit(X_train, y_train)
 y_pred = ls_pipeline.predict(X_test)
 print(
-    "Mikro-aggregierter F1-Score auf dem Testset: %0.3f"
+    "Micro-averaged F1 score on test set: %0.3f"
     % f1_score(y_test, y_pred, average="micro")
 )
 ```

@@ -1,6 +1,6 @@
-# Bewerten des Modells
+# Bewertung des Modells
 
-Schließlich können wir die Genauigkeit unseres Modells bestimmen, indem wir die vorhergesagten Werte mit den wahren Werten vergleichen.
+Schließlich können wir die Genauigkeit unseres Modells bewerten, indem wir die vorhergesagten Werte mit den tatsächlichen Werten vergleichen.
 
 ```python
 # Calculate the accuracy of the model

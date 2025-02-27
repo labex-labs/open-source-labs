@@ -1,11 +1,11 @@
 # Einführung
 
-In diesem Lab lernst du, wie du mit scikit-learn eine halbüberwachte Klassifizierung auf einem Textdataset durchführst. Halbüberwachtes Lernen ist ein Typ maschinelles Lernen, bei dem ein Modell auf markierten und unmarkierten Daten trainiert wird. In diesem Lab wird behandelt, wie man die Self-Training- und LabelSpreading-Algorithmen für die halbüberwachte Texklassifizierung verwendet. Wir werden das 20 newsgroups-Dataset verwenden, um unsere Modelle zu trainieren und zu testen.
+In diesem Lab erfahren Sie, wie Sie eine halbüberwachte Klassifizierung auf einem Textdatensatz mit scikit-learn durchführen können. Halbüberwachtes Lernen ist eine Art maschinelles Lernen, bei dem ein Modell sowohl auf gelabelten als auch auf ungelabelten Daten trainiert wird. In diesem Lab wird erläutert, wie Sie die Algorithmen Self-Training und LabelSpreading für die halbüberwachte Textklassifizierung verwenden können. Wir werden den 20 newsgroups-Datensatz verwenden, um unsere Modelle zu trainieren und zu testen.
 
-## VM-Tipps
+## Tipps für die virtuelle Maschine (VM)
 
-Nachdem die VM gestartet ist, klicke in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal musst du einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen in Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
 
-Wenn du bei der Lernphase Probleme hast, kannst du Labby gerne fragen. Gib nach der Sitzung Feedback ab, und wir werden das Problem für dich prompt beheben.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie uns nach der Sitzung Feedback, und wir werden das Problem umgehend für Sie beheben.

@@ -1,27 +1,27 @@
-# Einfügen und Bezeichnungen
+# Verschachtelung und Labels
 
-Es ist möglich, äußere Schleifen mit `break` oder `continue` zu beenden, wenn es um geschachtelte Schleifen geht. In diesen Fällen müssen die Schleifen mit einem `'Bezeichnung` versehen werden, und die Bezeichnung muss an die `break`-/`continue`-Anweisung übergeben werden.
+Es ist möglich, äußere Schleifen in verschachtelten Schleifen mit `break` oder `continue` zu beenden oder zu überspringen. In diesen Fällen müssen die Schleifen mit einem `'label` versehen werden, und das Label muss an die `break`/`continue`-Anweisung übergeben werden.
 
 ```rust
 #![allow(unreachable_code)]
 
 fn main() {
-    'äußerste: Schleife {
-        println!("Innerhalb der äußeren Schleife");
+    'outer: loop {
+        println!("Entered the outer loop");
 
-        'innere: Schleife {
-            println!("Innerhalb der inneren Schleife");
+        'inner: loop {
+            println!("Entered the inner loop");
 
-            // Dies würde nur die innere Schleife beenden
+            // This would break only the inner loop
             //break;
 
-            // Dies beendet die äußere Schleife
-            break 'äußerste;
+            // This breaks the outer loop
+            break 'outer;
         }
 
-        println!("Dieser Punkt wird nie erreicht");
+        println!("This point will never be reached");
     }
 
-    println!("Außerhalb der äußeren Schleife");
+    println!("Exited the outer loop");
 }
 ```

@@ -1,11 +1,11 @@
 # Einführung
 
-In diesem Lab werden wir lernen, wie man die `TargetEncoder`-Klasse aus der Scikit-learn-Bibliothek verwendet. Target Encoding ist eine Technik, die verwendet wird, um kategorische Daten in numerische Daten zu transformieren, die als Eingabe für maschinelle Lernalgorithmen verwendet werden können. Die `TargetEncoder` ersetzt jede Kategorie eines kategorischen Features mit der durchschnittlichen Zielvariable für diese Kategorie. Diese Methode ist nützlich, wenn es eine starke Beziehung zwischen dem kategorischen Feature und dem Ziel gibt.
+In diesem Lab werden wir lernen, wie man die `TargetEncoder`-Klasse aus der Scikit-learn-Bibliothek verwendet. Zielkodierung (Target Encoding) ist eine Technik, die dazu dient, kategorische Daten in numerische Daten umzuwandeln, die als Eingabe für maschinelle Lernalgorithmen verwendet werden können. Die `TargetEncoder` ersetzt jede Kategorie eines kategorischen Merkmals durch den Mittelwert der Zielvariablen für diese Kategorie. Diese Methode ist nützlich, wenn es eine starke Beziehung zwischen dem kategorischen Merkmal und der Zielvariablen gibt.
 
-## Tipps für die VM
+## Tipps für die virtuelle Maschine (VM)
 
-Nachdem der VM-Start abgeschlossen ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund von Einschränkungen in Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Operationen nicht automatisiert werden.
 
-Wenn Sie während des Lernens Probleme haben, können Sie Labby gerne fragen. Geben Sie nach der Sitzung Feedback, und wir werden das Problem für Sie prompt beheben.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie uns nach der Sitzung Feedback, und wir werden das Problem umgehend für Sie lösen.

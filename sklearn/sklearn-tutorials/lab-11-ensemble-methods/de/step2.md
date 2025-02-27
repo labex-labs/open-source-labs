@@ -1,6 +1,6 @@
-# Die Daten laden
+# Laden der Daten
 
-Als nächstes laden wir den Iris-Datensatz aus scikit-learn mit der Funktion `load_iris`.
+Als Nächstes laden wir den Iris-Datensatz aus scikit-learn mit der Funktion `load_iris`.
 
 ```python
 data = load_iris()

@@ -1,6 +1,6 @@
-# Definiere Pipeline mit Hyperparameteroptimierung
+# Definition einer Pipeline (Bearbeitungsreihenfolge) mit Hyperparameter-Tuning
 
-Wir definieren eine Pipeline, die einen Text-Feature-Vektorizer mit einem einfachen Klassifikator für die Textklassifikation kombiniert. Wir werden Complement Naive Bayes als Klassifikator und TfidfVectorizer zur Feature-Extraktion verwenden.
+Wir definieren eine Pipeline, die einen Textmerkmal-Vektorisierer (text feature vectorizer) mit einem einfachen Klassifikator für die Textklassifizierung kombiniert. Wir werden Complement Naive Bayes als Klassifikator und TfidfVectorizer zur Merkmalsextraktion verwenden.
 
 ```python
 from sklearn.feature_extraction.text import TfidfVectorizer

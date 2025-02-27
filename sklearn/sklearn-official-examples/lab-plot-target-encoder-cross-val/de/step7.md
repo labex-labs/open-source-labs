@@ -1,6 +1,6 @@
-# Trainieren eines Ridge-Regressors ohne Cross-Validation
+# Training eines Ridge-Regressors ohne Kreuzvalidierung
 
-Während `TargetEncoder.fit_transform` Intervall-Cross-Validation verwendet, führt `TargetEncoder.transform` selbst keine Cross-Validation durch. Es verwendet die Aggregation des gesamten Trainingssatzes, um die kategorischen Features zu transformieren. Wir können daher `TargetEncoder.fit` gefolgt von `TargetEncoder.transform` verwenden, um die Cross-Validation zu deaktivieren. Diese Codierung wird dann an das Ridge-Modell übergeben. Führen Sie den folgenden Code aus, um das Ridge-Modell ohne Cross-Validation zu trainieren:
+Während `TargetEncoder.fit_transform` Intervall-Kreuzvalidierung verwendet, führt `TargetEncoder.transform` selbst keine Kreuzvalidierung durch. Es nutzt die Aggregation des gesamten Trainingssatzes, um die kategorischen Merkmale zu transformieren. Somit können wir `TargetEncoder.fit` gefolgt von `TargetEncoder.transform` verwenden, um die Kreuzvalidierung zu deaktivieren. Diese Kodierung wird dann an das Ridge-Modell übergeben. Führen Sie den folgenden Code aus, um das Ridge-Modell ohne Kreuzvalidierung zu trainieren:
 
 ```python
 target_encoder = TargetEncoder(random_state=0)

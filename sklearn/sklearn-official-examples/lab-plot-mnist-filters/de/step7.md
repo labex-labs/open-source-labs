@@ -1,6 +1,6 @@
 # Gewichte visualisieren
 
-Schließlich werden wir die Gewichte der ersten Schicht des MLP visualisieren. Wir werden ein 4x4-Gitter von Teilplots erstellen und jedes Gewicht als 28x28-Pixel-Grauweißbild anzeigen.
+Schließlich visualisieren wir die Gewichte der ersten Schicht des MLP. Wir erstellen ein 4x4-Raster von Teilplots und zeigen jedes Gewicht als 28x28 Pixel Graustufenbild an.
 
 ```python
 fig, axes = plt.subplots(4, 4)

@@ -1,24 +1,24 @@
-# Trainiere und bewerte das Self-Training-Modell
+# Trainieren und Evaluieren des Self-Training-Modells
 
-In diesem Schritt werden wir Self-Training auf 20% der markierten Daten anwenden. Wir werden 20% der markierten Daten zufällig auswählen, das Modell auf diesen Daten trainieren und dann das Modell verwenden, um die Labels für die verbleibenden unmarkierten Daten vorherzusagen.
+In diesem Schritt verwenden wir Self-Training auf 20 % der gelabelten Daten. Wir wählen zufällig 20 % der gelabelten Daten aus, trainieren das Modell auf diesen Daten und verwenden dann das Modell, um Labels für die verbleibenden ungelabelten Daten vorherzusagen.
 
 ```python
 import numpy as np
 
-# Wähle 20% der Trainingsdaten
+# Auswahl von 20 % der Trainingsdaten
 y_mask = np.random.rand(len(y_train)) < 0.2
 X_20, y_20 = map(
     list, zip(*((x, y) for x, y, m in zip(X_train, y_train, y_mask) if m))
 )
 
-# Setze den nicht maskierten Teilsatz als unmarkiert
+# Setzen der nicht markierten Teilmenge auf ungelabelt
 y_train[~y_mask] = -1
 
-# Trainiere und bewerte die Self-Training-Pipeline
+# Trainieren und Evaluieren der Self-Training-Pipeline
 st_pipeline.fit(X_train, y_train)
 y_pred = st_pipeline.predict(X_test)
 print(
-    "Mikro-aggregierter F1-Score auf dem Testset: %0.3f"
+    "Micro-averaged F1 score on test set: %0.3f"
     % f1_score(y_test, y_pred, average="micro")
 )
 ```

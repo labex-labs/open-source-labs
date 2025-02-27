@@ -1,8 +1,8 @@
-# Den Random Forest-Klassifizierer bewerten
+# Bewertung des Random Forest-Klassifikators
 
-Lassen Sie uns den Random Forest-Klassifizierer bewerten, indem wir die Genauigkeit auf den Testdaten berechnen.
+Lassen Sie uns den Random Forest-Klassifikator bewerten, indem wir die Genauigkeit (Accuracy) auf den Testdaten berechnen.
 
 ```python
 accuracy = random_forest.score(X_test, y_test)
-print(f"Genauigkeit des Random Forest-Klassifizierers: {accuracy}")
+print(f"Random Forest Classifier Accuracy: {accuracy}")
 ```

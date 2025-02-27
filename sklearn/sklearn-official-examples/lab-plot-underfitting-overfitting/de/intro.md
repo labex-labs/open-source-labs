@@ -1,11 +1,11 @@
 # Einführung
 
-In diesem Lab werden die Probleme der Unteranpassung und Überanpassung in der maschinellen Lernung demonstriert und gezeigt, wie wir mit linearem Regression mit Polynomfunktionen nichtlineare Funktionen approximieren können. Wir werden scikit-learn verwenden, um Daten zu generieren, Modelle anzupassen und die Modellleistung zu bewerten.
+Dieses Lab demonstriert die Probleme des Unteranpassens (Underfitting) und Überanpassens (Overfitting) in der maschinellen Lernens und wie wir lineare Regression mit polynomiellen Merkmalen verwenden können, um nichtlineare Funktionen zu approximieren. Wir werden scikit-learn nutzen, um Daten zu generieren, Modelle anzupassen und die Leistung der Modelle zu bewerten.
 
-## Tipps für die VM
+## Tipps für die virtuelle Maschine (VM)
 
-Nachdem der VM-Start abgeschlossen ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und Jupyter Notebook für die Übung zu nutzen.
+Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Die Validierung von Vorgängen kann aufgrund der Einschränkungen von Jupyter Notebook nicht automatisiert werden.
+Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
 
-Wenn Sie bei der Lernphase Probleme haben, können Sie Labby gerne fragen. Geben Sie nach der Sitzung Feedback, und wir werden das Problem für Sie prompt beheben.
+Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie nach der Sitzung Feedback ab, und wir werden das Problem umgehend für Sie lösen.

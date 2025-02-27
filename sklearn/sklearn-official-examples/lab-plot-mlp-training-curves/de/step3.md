@@ -1,27 +1,27 @@
-# Definieren einer Funktion zum Zeichnen der Lernkurven
+# Definieren einer Funktion zum Plotten der Lernkurven
 
-Als nächstes müssen wir eine Funktion definieren, die die Lernkurven für jede Lernstrategie auf jedem Datensatz zeichnet. Die Funktion erhält den Datensatz (X, y), eine Achse zum Zeichnen und einen Namen für den Datensatz. Wir werden MinMaxScaler verwenden, um die Daten zu skalieren, und MLPClassifier, um das neuronale Netz zu trainieren. Wir werden das Netz mit jeder Lernstrategie trainieren, Konvergenzwarnungen ignorieren und die Lernkurven für jede Strategie auf derselben Grafik zeichnen.
+Als nächstes müssen wir eine Funktion definieren, die die Lernkurven für jede Lernstrategie auf jedem Datensatz plottet. Die Funktion nimmt den Datensatz (X, y), eine Achse zum Plotten und einen Namen für den Datensatz entgegen. Wir werden MinMaxScaler verwenden, um die Daten zu skalieren, und MLPClassifier, um das neuronale Netzwerk zu trainieren. Wir werden das Netzwerk mit jeder Lernstrategie trainieren, Konvergenzwarnungen ignorieren und die Lernkurven für jede Strategie in demselben Diagramm plotten.
 
 ```python
 def plot_on_dataset(X, y, ax, name):
-    # für jeden Datensatz zeichnen wir das Lernen für jede Lernstrategie
-    print("\nLernen auf Datensatz %s" % name)
+    # for each dataset, plot learning for each learning strategy
+    print("\nlearning on dataset %s" % name)
     ax.set_title(name)
 
     X = MinMaxScaler().fit_transform(X)
     mlps = []
     if name == "digits":
-        # digits ist größer, konvergiert aber recht schnell
+        # digits is larger but converges fairly quickly
         max_iter = 15
     else:
         max_iter = 400
 
     for label, param in zip(labels, params):
-        print("Training: %s" % label)
+        print("training: %s" % label)
         mlp = MLPClassifier(random_state=0, max_iter=max_iter, **param)
 
-        # einige Parameterkombinationen werden nicht konvergieren, wie man auf den
-        # Grafiken sehen kann, daher werden sie hier ignoriert
+        # some parameter combinations will not converge as can be seen on the
+        # plots so they are ignored here
         with warnings.catch_warnings():
             warnings.filterwarnings(
                 "ignore", category=ConvergenceWarning, module="sklearn"

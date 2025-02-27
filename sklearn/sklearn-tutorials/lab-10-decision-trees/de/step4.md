@@ -1,6 +1,6 @@
-# Erstellen und Trainieren des Entscheidungsbaum-Klassifizierers
+# Erstellen und Trainieren des Entscheidungsbaum-Klassifikators
 
-Jetzt können wir den Entscheidungsbaum-Klassifizierer erstellen und mit den Trainingsdaten trainieren.
+Jetzt können wir den Entscheidungsbaum-Klassifikator (Decision Tree classifier) mit den Trainingsdaten erstellen und trainieren.
 
 ```python
 # Create a Decision Tree classifier

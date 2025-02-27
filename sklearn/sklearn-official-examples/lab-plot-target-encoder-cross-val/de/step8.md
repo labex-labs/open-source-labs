@@ -1,6 +1,6 @@
-# Bewerten der Koeffizienten des linearen Modells ohne Cross-Validation
+# Auswerten der Koeffizienten des linearen Modells ohne Kreuzvalidierung
 
-Das Ridge-Modell überanpasst sich, da es dem extrem hochkardinalen Feature im Vergleich zum informativen Feature mehr Gewicht zuweist. Führen Sie den folgenden Code aus, um die Koeffizienten des linearen Modells ohne Cross-Validation zu bewerten:
+Das Ridge-Modell überanpasst sich (Overfitting), weil es im Vergleich zum informativen Merkmal mehr Gewicht auf das Merkmal mit extrem hoher Kardinalität legt. Führen Sie den folgenden Code aus, um die Koeffizienten des linearen Modells ohne Kreuzvalidierung auszuwerten:
 
 ```python
 coefs_no_cv = pd.Series(

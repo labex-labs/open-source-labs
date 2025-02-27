@@ -1,4 +1,4 @@
-# Ein Support Vector Machine (SVM)-Klassifizierungsmodell trainieren
+# Ein Support-Vektor-Maschinen (Support Vector Machine, SVM)-Klassifizierungsmodell trainieren
 
 ```python
 param_grid = {

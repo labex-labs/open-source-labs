@@ -1,20 +1,20 @@
-# Trainiere und计算 die bewertete überwachte Modell
+# Trainieren und Evaluieren des überwachten Modells
 
-In diesem Schritt werden wir das Dataset in Trainings- und Testsets unterteilen und anschließend das in Schritt 2 erstellte Pipeline-Modell für das überwachte Lernen trainieren und bewerten.
+In diesem Schritt teilen wir den Datensatz in Trainings- und Testsets auf und trainieren und evaluieren dann die Pipeline für das überwachte Modell, die wir in Schritt 2 erstellt haben.
 
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 
-# Teile das Dataset in Trainings- und Testsets auf
+# Teilen des Datensatzes in Trainings- und Testsets
 X, y = data.data, data.target
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-# Trainiere und berechne die bewertete überwachte Modell-Pipeline
+# Trainieren und Evaluieren der Pipeline für das überwachte Modell
 pipeline.fit(X_train, y_train)
 y_pred = pipeline.predict(X_test)
 print(
-    "Mikro-aggregierter F1-Score auf dem Testset: %0.3f"
+    "Micro-averaged F1 score on test set: %0.3f"
     % f1_score(y_test, y_pred, average="micro")
 )
 ```
