@@ -5,6 +5,6 @@ Nous allons effectuer quelques calculs arithmétiques et statistiques de base av
 ```python
 # Effectuer des calculs avec des données manquantes
 df["one"].sum()
-df.mean(1)
+df.mean(axis=1, numeric_only=True)
 df.cumsum()
 ```

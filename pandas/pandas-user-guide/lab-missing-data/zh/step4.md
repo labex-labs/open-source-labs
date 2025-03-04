@@ -5,6 +5,6 @@
 ```python
 # Perform calculations with missing data
 df["one"].sum()
-df.mean(1)
+df.mean(axis=1, numeric_only=True)
 df.cumsum()
 ```

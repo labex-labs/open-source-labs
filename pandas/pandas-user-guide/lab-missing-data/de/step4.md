@@ -5,6 +5,6 @@ Wir werden einige grundlegende arithmetische und statistische Berechnungen mit f
 ```python
 # Berechnungen mit fehlenden Daten durchführen
 df["one"].sum()
-df.mean(1)
+df.mean(axis=1, numeric_only=True)
 df.cumsum()
 ```
