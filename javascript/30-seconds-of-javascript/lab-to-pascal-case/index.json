@@ -10,29 +10,80 @@
   },
   "difficulty": "Beginner",
   "time": 10,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Pascalcase String",
+        "title": "Understanding Pascal Case and Setting Up the Environment",
         "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Node Command Usage",
             "file": "verify1-1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "hint": "JavaScript can be run in the Terminal by typing 'node' and pressing Enter.",
             "timeout": 0,
             "showstderr": true
           }
         ],
+        "skills": ["javascript/str_manip"]
+      },
+      {
+        "title": "Working with Regular Expressions for Word Splitting",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Regex Usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've used regex in the Node.js session."
+          }
+        ],
+        "skills": ["javascript/logic_ops", "javascript/str_manip"]
+      },
+      {
+        "title": "Capitalizing Each Word",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Capitalization Function",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've defined and used a function to capitalize words."
+          }
+        ],
+        "skills": ["javascript/array_methods", "javascript/str_manip"]
+      },
+      {
+        "title": "Creating the Complete toPascalCase Function",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify File Creation",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've created the pascalCase.js file."
+          }
+        ],
         "skills": [
-          "javascript/arith_ops",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/higher_funcs",
-          "javascript/variables"
+          "javascript/functions",
+          "javascript/logic_ops",
+          "javascript/str_manip"
+        ]
+      },
+      {
+        "title": "Enhancing and Using the Pascal Case Function",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Module Usage",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've created the useCase.js file and run it."
+          }
+        ],
+        "skills": [
+          "javascript/functions",
+          "javascript/obj_manip",
+          "javascript/str_manip"
         ]
       }
     ],
@@ -54,205 +105,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "将字符串转换为帕斯卡命名法",
-      "description": "在本实验中，我们将探索如何使用JavaScript将字符串转换为帕斯卡命名法。帕斯卡命名法是一种命名规范，其中多单词标识符中的每个单词都以大写字母开头，其余字母为小写。本实验将提供关于如何使用正则表达式和数组方法将字符串转换为帕斯卡命名法的逐步指导。",
-      "meta": {
-        "title": "JavaScript | 字符串转换 | 帕斯卡命名法",
-        "description": "学习如何使用JavaScript将字符串转换为帕斯卡命名法。通过逐步指导探索使用正则表达式和数组方法来转换字符串。",
-        "keywords": "JavaScript, 字符串转换, 帕斯卡命名法, 正则表达式, 数组方法"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "帕斯卡命名法字符串",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Node命令的用法",
-                "file": "verify1-1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Convertir una cadena de texto (string) a formato Pascal case",
-      "description": "En este laboratorio (lab), exploraremos cómo convertir una cadena de texto a formato Pascal case utilizando JavaScript. Pascal case es una convención de nomenclatura en la que cada palabra en un identificador de varias palabras comienza con una letra mayúscula y las letras restantes son minúsculas. Este laboratorio proporcionará una guía paso a paso sobre cómo utilizar expresiones regulares y métodos de arrays para transformar una cadena de texto a formato Pascal case.",
-      "meta": {
-        "title": "JavaScript | Conversión de cadenas de texto (strings) | Formato Pascal case",
-        "description": "Aprende cómo convertir una cadena de texto a formato Pascal case utilizando JavaScript. Explora expresiones regulares y métodos de arrays para transformar cadenas de texto con una guía paso a paso.",
-        "keywords": "JavaScript, conversión de cadenas de texto (strings), formato Pascal case, expresiones regulares, métodos de arrays"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Cadena de texto (string) en formato Pascal case",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el uso del comando Node",
-                "file": "verify1-1.sh",
-                "hint": "Se puede ejecutar JavaScript en la Terminal/SSH escribiendo 'node' y presionando Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Convertir une chaîne de caractères en Pascal case",
-      "description": "Dans ce laboratoire (lab), nous allons explorer comment convertir une chaîne de caractères en Pascal case à l'aide de JavaScript. Le Pascal case est une convention de nommage où chaque mot dans un identifiant composé commence par une lettre majuscule, et les autres lettres sont en minuscules. Ce laboratoire fournira des instructions étape par étape sur la façon d'utiliser les expressions régulières et les méthodes de tableau pour transformer une chaîne de caractères en Pascal case.",
-      "meta": {
-        "title": "JavaScript | Conversion de chaîne de caractères | Pascal case",
-        "description": "Apprenez à convertir une chaîne de caractères en Pascal case avec JavaScript. Explorez les expressions régulières et les méthodes de tableau pour transformer des chaînes de caractères avec des instructions étape par étape.",
-        "keywords": "JavaScript, conversion de chaîne de caractères, Pascal case, expressions régulières, méthodes de tableau"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Chaîne de caractères en Pascal case",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation de la commande Node",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript peut être exécuté dans le Terminal/SSH en tapant 'node' puis en appuyant sur Entrée."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "String in Pascal Case umwandeln",
-      "description": "In diesem Lab werden wir untersuchen, wie man mithilfe von JavaScript einen String in Pascal Case umwandelt. Pascal Case ist eine Benennungskonvention, bei der jedes Wort in einem mehrwortigen Bezeichner mit einem Großbuchstaben beginnt und die übrigen Buchstaben Kleinbuchstaben sind. In diesem Lab erhalten Sie Schritt-für-Schritt-Anleitungen dazu, wie Sie reguläre Ausdrücke und Array-Methoden verwenden, um einen String in Pascal Case zu transformieren.",
-      "meta": {
-        "title": "JavaScript | String-Umwandlung | Pascal Case",
-        "description": "Lernen Sie, wie Sie mithilfe von JavaScript einen String in Pascal Case umwandeln. Entdecken Sie reguläre Ausdrücke und Array-Methoden, um Strings mit Schritt-für-Schritt-Anleitungen zu transformieren.",
-        "keywords": "JavaScript, String-Umwandlung, Pascal Case, reguläre Ausdrücke, Array-Methoden"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pascalcase String",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Verwendung des Node-Befehls",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript kann im Terminal/SSH ausgeführt werden, indem Sie 'node' eingeben und die Eingabetaste drücken."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "文字列をパスカルケースに変換する",
-      "description": "この実験では、JavaScript を使用して文字列をパスカルケース (Pascal case) に変換する方法を探ります。パスカルケースは、複数の単語からなる識別子の各単語が大文字で始まり、残りの文字は小文字になる命名規則です。この実験では、正規表現と配列メソッドを使用して文字列をパスカルケースに変換する方法を段階的に案内します。",
-      "meta": {
-        "title": "JavaScript | 文字列変換 | パスカルケース",
-        "description": "JavaScript を使って文字列をパスカルケースに変換する方法を学びましょう。段階的なガイダンスをもとに、正規表現と配列メソッドを使って文字列を変換します。",
-        "keywords": "JavaScript, 文字列変換, パスカルケース, 正規表現, 配列メソッド"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "パスカルケース文字列",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Node コマンドの使用を検証する",
-                "file": "verify1-1.sh",
-                "hint": "ターミナル/SSH で 'node' と入力して Enter キーを押すことで、JavaScript を実行できます。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Преобразование строки в Pascal case",
-      "description": "В этом лабораторном занятии мы рассмотрим, как преобразовать строку в Pascal case с использованием JavaScript. Pascal case - это соглашение об именовании, при котором каждое слово в многословном идентификаторе начинается с заглавной буквы, а остальные буквы - в нижнем регистре. В этом лабораторном занятии будет предоставлено пошаговое руководство по использованию регулярных выражений и методов массивов для преобразования строки в Pascal case.",
-      "meta": {
-        "title": "JavaScript | Преобразование строк | Pascal case",
-        "description": "Узнайте, как преобразовать строку в Pascal case с использованием JavaScript. Исследуйте регулярные выражения и методы массивов для преобразования строк с пошаговым руководством.",
-        "keywords": "JavaScript, преобразование строк, Pascal case, регулярные выражения, методы массивов"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Строка в Pascal case",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверка использования команды Node",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript можно запустить в Терминале/SSH, введя 'node' и нажав Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

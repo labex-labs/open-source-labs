@@ -1,27 +1,48 @@
-# Function to Convert String to Pascal Case
+# Understanding Pascal Case and Setting Up the Environment
 
-To convert a string to Pascal case, you can use the `toPascalCase()` function. Here's how:
+Pascal case is a naming convention where:
 
-- First, open the Terminal/SSH and type `node` to start practicing coding.
-- Then, use the `String.prototype.match()` method with an appropriate regular expression to break the string into words.
-- Next, use the `Array.prototype.map()`, `Array.prototype.slice()`, `Array.prototype.join()`, `String.prototype.toUpperCase()`, and `String.prototype.toLowerCase()` methods to combine the words, capitalizing the first letter of each word and lowercasing the rest.
-- Finally, call the `toPascalCase()` function with your desired string as an argument to convert it to Pascal case.
+- The first letter of each word is capitalized
+- No spaces, hyphens, or underscores are used between words
+- All other letters are lowercase
 
-Here's the code for the `toPascalCase()` function:
+For example:
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+Let's start by setting up our development environment.
+
+1. Open the Terminal from the WebIDE interface by clicking on "Terminal" in the top menu bar.
+
+2. Start a Node.js interactive session by typing the following command in the Terminal and pressing Enter:
+
+```bash
+node
 ```
 
-You can use this function to convert any string to Pascal case. Here are some examples:
+You should see the Node.js prompt (`>`) appear, indicating that you are now in the Node.js interactive environment.
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. Let's try a simple string manipulation to get warmed up. Type the following code at the Node.js prompt:
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+The output should be:
+
+```
+John doe
+```
+
+This simple example demonstrates how to capitalize the first letter of a string. We used:
+
+- `charAt(0)` to get the first character
+- `toUpperCase()` to convert it to uppercase
+- `slice(1)` to get the rest of the string
+- Concatenation with `+` to combine them
+
+These string methods will be helpful as we build our Pascal case converter.

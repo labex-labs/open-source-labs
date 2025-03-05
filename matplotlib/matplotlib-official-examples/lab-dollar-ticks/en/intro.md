@@ -1,11 +1,13 @@
 # Introduction
 
-In this lab, we will learn how to use Matplotlib to format the y-axis labels of a plot to display dollar signs. This is particularly useful when working with financial data or any data that requires currency formatting.
+When visualizing financial data, it is essential to format the axes appropriately with currency symbols. Matplotlib is a powerful Python library for creating visualizations, but by default, it does not display currency symbols on the axes.
+
+In this lab, we will learn how to customize a Matplotlib plot to display dollar signs on the y-axis labels. This skill is valuable when working with financial data, sales figures, budgets, or any other datasets that require currency formatting.
 
 ## VM Tips
 
-After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
 
-Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+You may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
 
-If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.
+If you encounter any issues during the lab, feel free to ask Labby. Please provide feedback after the session, and we will promptly resolve any problems for you.

@@ -10,110 +10,71 @@
   },
   "difficulty": "Beginner",
   "time": 35,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Create a Basic Plot",
+        "title": "Basic Plotting with Default Title Position",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check if matplotlib is imported",
             "file": "verify1-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've imported matplotlib.pyplot as plt"
           }
         ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "matplotlib/line_plots",
-          "python/build_in_functions",
-          "python/data_visualization",
-          "python/importing_modules"
-        ]
+        "skills": ["matplotlib/line_plots", "matplotlib/titles_labels"]
       },
       {
-        "title": "Center Title",
+        "title": "Left and Right Title Positioning",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check for title positioning",
             "file": "verify2-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've created plots with different title positions"
           }
         ],
         "skills": ["matplotlib/titles_labels"]
       },
       {
-        "title": "Left Title",
+        "title": "Custom Title Vertical Positioning",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check for title y-position",
             "file": "verify3-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've created plots with different vertical title positions"
           }
         ],
-        "skills": ["matplotlib/titles_labels", "python/tuples"]
+        "skills": ["matplotlib/titles_labels"]
       },
       {
-        "title": "Right Title",
+        "title": "Advanced Title Positioning with Subplots",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check for subplot title techniques",
             "file": "verify4-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've created plots with subplots and various title positions"
           }
         ],
-        "skills": ["matplotlib/titles_labels", "python/tuples"]
+        "skills": ["matplotlib/subplots", "matplotlib/titles_labels"]
       },
       {
-        "title": "Top Title",
+        "title": "Global Title Positioning with RCParams",
         "text": "en/step5.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check for RCParams usage",
             "file": "verify5-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've experimented with RCParams for title positioning"
           }
         ],
-        "skills": ["matplotlib/line_plots", "python/build_in_functions"]
-      },
-      {
-        "title": "Manual Y Positioning",
-        "text": "en/step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6-1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/line_plots",
-          "python/build_in_functions",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "RCParam Y Positioning",
-        "text": "en/step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7-1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/line_plots",
-          "matplotlib/matplotlib_config",
-          "python/build_in_functions",
-          "python/lists"
-        ]
+        "skills": ["matplotlib/matplotlib_config"]
       }
     ],
     "intro": {
@@ -136,608 +97,12 @@
     }
   },
   "backend": {
-    "imageid": "jupyter-ubuntu:2204"
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "Matplotlib图表标题定位",
-      "description": "在本实验中，你将学习如何在Matplotlib中定位图表的标题。Matplotlib可以将图表标题显示在居中位置、与一组坐标轴的左侧对齐以及与一组坐标轴的右侧对齐。本实验将向你展示如何使用Matplotlib以不同方式定位图表标题。",
-      "meta": {
-        "title": "掌握Matplotlib标题定位",
-        "description": "学习如何在Matplotlib中使图表标题居中、左对齐和右对齐。",
-        "keywords": "图表标题, Matplotlib, Python, 数据可视化, 标题定位"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "创建一个基本图表",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "使标题居中",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "左对齐标题",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify3-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "右对齐标题",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify4-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "顶部标题",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify5-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "手动 Y 轴定位",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify6-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "RC 参数 Y 轴定位",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify7-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Posicionamiento de títulos de gráficos en Matplotlib",
-      "description": "En este laboratorio, aprenderás cómo posicionar los títulos de los gráficos en Matplotlib. Matplotlib puede mostrar títulos de gráficos centrados, alineados a la izquierda de un conjunto de ejes y alineados a la derecha de un conjunto de ejes. Este laboratorio te mostrará cómo usar Matplotlib para posicionar los títulos de los gráficos de diferentes maneras.",
-      "meta": {
-        "title": "Domina el posicionamiento de títulos en Matplotlib",
-        "description": "Aprende cómo centrar, alinear a la izquierda y alinear a la derecha los títulos de los gráficos en Matplotlib.",
-        "keywords": "título de gráfico, matplotlib, python, visualización de datos, posicionamiento de títulos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Crea un gráfico básico",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify1-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Centrar el título",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify2-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Título alineado a la izquierda",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify3-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Título alineado a la derecha",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify4-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Título en la parte superior",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify5-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Posicionamiento manual en el eje Y",
-            "text": "es/step6.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify6-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Posicionamiento en el eje Y con RCParam",
-            "text": "es/step7.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify7-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Positionnement des titres de graphiques Matplotlib",
-      "description": "Dans ce laboratoire, vous apprendrez à positionner les titres des graphiques dans Matplotlib. Matplotlib peut afficher les titres de graphiques centrés, alignés à gauche d'un ensemble d'axes et alignés à droite d'un ensemble d'axes. Ce laboratoire vous montrera comment utiliser Matplotlib pour positionner les titres de graphiques de différentes manières.",
-      "meta": {
-        "title": "Maîtrisez le positionnement des titres Matplotlib",
-        "description": "Apprenez à centrer, aligner à gauche et aligner à droite les titres de graphiques dans Matplotlib.",
-        "keywords": "titre de graphique, matplotlib, python, visualisation de données, positionnement de titre"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Créer un graphique de base",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify1-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Centrer le titre",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify2-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Titre aligné à gauche",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify3-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Titre aligné à droite",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify4-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Titre en haut",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify5-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Positionnement manuel en Y",
-            "text": "fr/step6.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify6-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Positionnement en Y avec RCParam",
-            "text": "fr/step7.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify7-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Positionierung von Diagrammtiteln in Matplotlib",
-      "description": "In diesem Lab lernen Sie, wie Sie die Titel von Diagrammen in Matplotlib positionieren können. Matplotlib kann Diagrammtitel zentriert, bündig links oder bündig rechts in Bezug auf ein Achssystem anzeigen. In diesem Lab wird gezeigt, wie Sie Matplotlib nutzen können, um Diagrammtitel auf verschiedene Weise zu positionieren.",
-      "meta": {
-        "title": "Meistern Sie die Titelpositionierung in Matplotlib",
-        "description": "Lernen Sie, wie Sie Diagrammtitel in Matplotlib zentrieren, linksbündig und rechtsbündig ausrichten.",
-        "keywords": "Diagrammtitel, Matplotlib, Python, Datenvisualisierung, Titelpositionierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Erstellen eines einfachen Diagramms",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify1-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Titel zentrieren",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify2-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Linksbündigen Titel",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify3-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Rechtsbündigen Titel",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify4-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Oberer Titel",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify5-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Manuelle Y-Positionierung",
-            "text": "de/step6.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify6-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "RCParam Y-Positionierung",
-            "text": "de/step7.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify7-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Matplotlib のグラフタイトル配置",
-      "description": "この実験では、Matplotlib でグラフのタイトルを配置する方法を学びます。Matplotlib は、グラフのタイトルを中央に配置したり、軸の左側に揃えたり、軸の右側に揃えたりすることができます。この実験では、Matplotlib を使ってグラフのタイトルをさまざまな方法で配置する方法を紹介します。",
-      "meta": {
-        "title": "Matplotlib のタイトル配置をマスターする",
-        "description": "Matplotlib でグラフのタイトルを中央揃え、左揃え、右揃えする方法を学びましょう。",
-        "keywords": "グラフタイトル, Matplotlib, Python, データ可視化, タイトル配置"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "基本的なグラフを作成する",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify1-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "タイトルを中央配置する",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify2-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "タイトルを左配置する",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify3-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "タイトルを右配置する",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify4-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "タイトルを上部に配置する",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify5-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "手動 Y 軸位置決め",
-            "text": "ja/step6.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify6-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "RCParam Y 軸位置決め",
-            "text": "ja/step7.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify7-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Позиционирование заголовков графиков в Matplotlib",
-      "description": "В этом практическом занятии (лабораторной работе) вы научитесь позиционировать заголовки графиков в Matplotlib. Matplotlib может отображать заголовки графиков, центрированные, выровненные по левому краю системы координат и выровненные по правому краю системы координат. В этом практическом занятии показано, как использовать Matplotlib для позиционирования заголовков графиков различными способами.",
-      "meta": {
-        "title": "Освойте позиционирование заголовков в Matplotlib",
-        "description": "Узнайте, как центрировать, выравнивать по левому и правому краю заголовки графиков в Matplotlib.",
-        "keywords": "заголовок графика, matplotlib, python, визуализация данных, позиционирование заголовка"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Создание базового графика",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify1-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Центрирование заголовка",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify2-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Выравнивание заголовка по левому краю",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify3-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Выравнивание заголовка по правому краю",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify4-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Выравнивание заголовка по верхнему краю",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify5-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Ручная позиционирование по оси Y",
-            "text": "ru/step6.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify6-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Позиционирование по оси Y с использованием RCParam",
-            "text": "ru/step7.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify7-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

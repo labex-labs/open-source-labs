@@ -1,27 +1,43 @@
-# Snakecase String
+# Understanding the Problem
 
-Write a Python function called `snake` that takes a string as its argument and returns the string in snake case. The function should perform the following steps:
+Before we write our snake case conversion function, let's understand what we need to accomplish:
 
-1. Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
-2. Use `re.sub()` to replace any `-` characters with spaces.
-3. Finally, use `str.join()` to combine all words using `_` as the separator.
+1. We need to convert a string from any format to snake case
+2. Snake case means all lowercase letters with underscores between words
+3. We need to handle different input formats:
+   - camelCase (e.g., `camelCase` → `camel_case`)
+   - Strings with spaces (e.g., `some text` → `some_text`)
+   - Strings with mixed formatting (e.g., hyphens, underscores, and mixed case)
 
-Your function should be able to handle strings with a mix of uppercase and lowercase letters, spaces, hyphens, and underscores.
+Let's start by creating a new Python file for our snake case function. In the WebIDE, navigate to the project directory and create a new file called `snake_case.py`:
 
 ```python
-from re import sub
-
+# This function will convert a string to snake case
 def snake(s):
-  return '_'.join(
-    sub('([A-Z][a-z]+)', r' \1',
-    sub('([A-Z]+)', r' \1',
-    s.replace('-', ' '))).split()).lower()
+    # We'll implement this function step by step
+    pass  # Placeholder for now
+
+# Test with a simple example
+if __name__ == "__main__":
+    test_string = "helloWorld"
+    result = snake(test_string)
+    print(f"Original: {test_string}")
+    print(f"Snake case: {result}")
 ```
 
-```python
-snake('camelCase') # 'camel_case'
-snake('some text') # 'some_text'
-snake('some-mixed_string With spaces_underscores-and-hyphens')
-# 'some_mixed_string_with_spaces_underscores_and_hyphens'
-snake('AllThe-small Things') # 'all_the_small_things'
+Save this file. In the next step, we'll start implementing the function.
+
+For now, let's run our placeholder function to make sure our file is set up correctly. Open a terminal and run:
+
+```bash
+python3 ~/project/snake_case.py
 ```
+
+You should see an output like:
+
+```
+Original: helloWorld
+Snake case: None
+```
+
+The result is `None` because our function is currently just returning the default Python `None` value. In the next step, we'll add the actual conversion logic.

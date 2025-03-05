@@ -1,3 +1,2 @@
 #!/bin/zsh
-
-cat ~/.zsh_history | grep 'node'
+test -f /home/labex/project/replace-last/replaceLast.js && echo 'success'
