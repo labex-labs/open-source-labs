@@ -13,29 +13,69 @@
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Date Difference Challenge",
+        "title": "Understanding Date Objects in Python",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Months Difference Python Test",
+            "name": "Verify File Creation",
             "file": "verify1-1.sh",
-            "hint": "Please make sure you have completed the required actions.",
+            "hint": "Make sure you've created the month_difference.py file in the project directory with the required imports.",
             "timeout": 0,
             "showstderr": true
           }
         ],
+        "skills": ["python/date_time", "python/standard_libraries"]
+      },
+      {
+        "title": "Creating the Month Difference Function",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Function Implementation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've implemented the months_diff function correctly."
+          }
+        ],
         "skills": [
-          "python/comments",
           "python/date_time",
           "python/function_definition",
-          "python/importing_modules",
-          "python/math_random",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
+          "python/type_conversion"
+        ]
+      },
+      {
+        "title": "Testing with Various Date Scenarios",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Test File",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've created the month_diff_test.py file and it runs correctly."
+          }
+        ],
+        "skills": [
+          "python/date_time",
+          "python/file_opening_closing",
+          "python/function_definition"
+        ]
+      },
+      {
+        "title": "Creating a Practical Application: Subscription Calculator",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Month Difference Function",
+            "file": "verify4-1.sh",
+            "hint": "Please make sure you have completed all required tasks and your code passes the tests."
+          }
+        ],
+        "skills": [
+          "python/arguments_return",
+          "python/date_time",
+          "python/function_definition"
         ]
       }
     ],
@@ -71,205 +111,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "用 Python 计算月份差值",
-      "description": "在本实验中，你将学习如何使用 Python 中的 `datetime` 模块和 `math.ceil()` 函数来计算两个日期之间的月份差值。",
-      "meta": {
-        "title": "Python 日期差值 | 月份计算",
-        "description": "学习如何使用 datetime 模块在 Python 中计算两个日期之间的月份差值。通过本全面教程提升你的编程技能。",
-        "keywords": "Python, 日期差值, 月份计算, Datetime 模块, 编程教程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "日期差值挑战",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 月份差值测试",
-                "file": "verify1-1.sh",
-                "hint": "请确保你已完成所需操作。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Calcular la diferencia en meses en Python",
-      "description": "En este laboratorio, aprenderás cómo calcular la diferencia en meses entre dos fechas utilizando el módulo `datetime` y la función `math.ceil()` en Python.",
-      "meta": {
-        "title": "Diferencia de fechas en Python | Cálculo de meses",
-        "description": "Aprende cómo calcular la diferencia en meses entre dos fechas en Python utilizando el módulo datetime. Mejora tus habilidades de programación con este tutorial completo.",
-        "keywords": "Python, Diferencia de fechas, Cálculo de meses, Módulo datetime, Tutorial de programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Reto de diferencia de fechas",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar prueba de diferencia de meses en Python",
-                "file": "verify1-1.sh",
-                "hint": "Asegúrate de haber completado las acciones requeridas."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Calculer la différence de mois en Python",
-      "description": "Dans ce laboratoire (lab), vous apprendrez à calculer la différence de mois entre deux dates en utilisant le module `datetime` et la fonction `math.ceil()` en Python.",
-      "meta": {
-        "title": "Différence de dates en Python | Calcul des mois",
-        "description": "Apprenez à calculer la différence de mois entre deux dates en Python en utilisant le module datetime. Améliorez vos compétences en programmation grâce à ce didacticiel complet.",
-        "keywords": "Python, Différence de dates, Calcul des mois, Module datetime, Didacticiel de programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Défi de différence de dates",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérification du test Python sur la différence de mois",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez vous assurer que vous avez effectué les actions requises."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Berechnung der Monatsdifferenz in Python",
-      "description": "In diesem Lab werden Sie lernen, wie Sie die Monatsdifferenz zwischen zwei Daten mithilfe des `datetime`-Moduls und der `math.ceil()`-Funktion in Python berechnen.",
-      "meta": {
-        "title": "Python Datumsdifferenz | Monatsberechnung",
-        "description": "Lernen Sie, wie Sie in Python die Monatsdifferenz zwischen zwei Daten mithilfe des datetime-Moduls berechnen. Verbessern Sie Ihre Programmierkenntnisse mit diesem umfassenden Tutorial.",
-        "keywords": "Python, Datumsdifferenz, Monatsberechnung, Datetime-Modul, Programmiertutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Herausforderung zur Datumsdifferenz",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizierung des Python-Tests zur Monatsdifferenz",
-                "file": "verify1-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie die erforderlichen Aktionen ausgeführt haben."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Python で月の差を計算する",
-      "description": "この実験では、Python の `datetime` モジュールと `math.ceil()` 関数を使用して、2 つの日付の月の差を計算する方法を学びます。",
-      "meta": {
-        "title": "Python の日付の差 | 月の計算",
-        "description": "datetime モジュールを使用して Python で 2 つの日付の月の差を計算する方法を学びましょう。この包括的なチュートリアルでプログラミングスキルを向上させます。",
-        "keywords": "Python, 日付の差, 月の計算, datetime モジュール, プログラミングチュートリアル"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "日付の差のチャレンジ",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Python での月の差の検証テスト",
-                "file": "verify1-1.sh",
-                "hint": "必要な操作をすべて完了していることを確認してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Вычисление разницы в месяцах на Python",
-      "description": "В этом практическом занятии вы научитесь вычислять разницу в месяцах между двумя датами с использованием модуля `datetime` и функции `math.ceil()` в Python.",
-      "meta": {
-        "title": "Разница между датами на Python | Вычисление месяцев",
-        "description": "Узнайте, как вычислять разницу в месяцах между двумя датами на Python с использованием модуля datetime. Улучшите свои навыки программирования с помощью этого комплексного руководства.",
-        "keywords": "Python, разница между датами, вычисление месяцев, модуль datetime, учебник по программированию"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Задача на вычисление разницы между датами",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверка теста на вычисление разницы в месяцах на Python",
-                "file": "verify1-1.sh",
-                "hint": "Убедитесь, что вы выполнили все необходимые действия."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

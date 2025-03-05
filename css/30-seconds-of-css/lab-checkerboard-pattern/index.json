@@ -10,43 +10,66 @@
   },
   "difficulty": "Beginner",
   "time": 10,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Checkerboard Background Pattern",
+        "title": "Understanding the Project Files",
         "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
             "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "css/backgrounds",
-          "css/colors",
-          "css/selectors",
-          "css/width_and_height"
-        ]
+        "skills": ["css/comments", "css/properties"]
+      },
+      {
+        "title": "Creating the HTML Structure",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify2-1.sh",
+            "hint": "Please add a div with the class \"checkerboard\" to your HTML file."
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify2-2.sh",
+            "hint": "Please add the basic CSS properties for the checkerboard class."
+          }
+        ],
+        "skills": ["css/backgrounds", "css/colors", "css/width_and_height"]
+      },
+      {
+        "title": "Creating the First Gradient",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify3-1.sh",
+            "hint": "Please add the first linear-gradient to your CSS file."
+          }
+        ],
+        "skills": ["css/backgrounds", "css/colors", "css/values"]
+      },
+      {
+        "title": "Completing the Checkerboard Pattern",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify the final status of style.css",
+            "file": "verify4-1.sh",
+            "hint": "Please complete the checkerboard pattern by adding the second linear-gradient."
+          }
+        ],
+        "skills": ["css/backgrounds", "css/values"]
       }
     ],
     "intro": {
@@ -81,265 +104,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "棋盘格背景图案",
-      "description": "在本实验中，我们将探索 CSS 编程的世界，并学习如何使用高级 CSS 技术创建棋盘格背景图案。本实验将指导你完成创建一个视觉上吸引人的棋盘格图案所需的步骤，该图案可用于各种网页设计项目。在本实验结束时，你将在使用 CSS 创建美观且引人入胜的网页设计方面获得宝贵的经验。",
-      "meta": {
-        "title": "用 CSS 创建令人惊艳的棋盘格背景",
-        "description": "学习如何使用高级 CSS 技术为你的网页设计创建视觉上吸引人的棋盘格背景图案。",
-        "keywords": "CSS, HTML 游乐场, 网页设计, CSS 实践, HTML, 棋盘格, 背景图案, CSS 游乐场, HTML 练习, HTML 实践练习"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "棋盘格背景图案",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证网络服务的运行状态",
-                "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
-              },
-              {
-                "name": "验证 index.html 修改状态",
-                "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。"
-              },
-              {
-                "name": "验证 style.css 修改状态",
-                "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Patrón de fondo de tablero de ajedrez",
-      "description": "En este laboratorio, exploraremos el mundo de la programación CSS y aprenderemos cómo crear un patrón de fondo de tablero de ajedrez utilizando técnicas avanzadas de CSS. El laboratorio te guiará a través de los pasos necesarios para crear un patrón de tablero de ajedrez visualmente atractivo que se puede utilizar en diversos proyectos de diseño web. Al final de este laboratorio, habrás adquirido una valiosa experiencia en el uso de CSS para crear diseños web hermosos y atractivos.",
-      "meta": {
-        "title": "Crea impresionantes fondos de tablero de ajedrez con CSS",
-        "description": "Aprende cómo utilizar técnicas avanzadas de CSS para crear patrones de fondo de tablero de ajedrez visualmente atractivos para tus diseños web.",
-        "keywords": "css, entorno de prueba de HTML (html playground), diseño web, práctica de CSS, html, tablero de ajedrez, patrón de fondo, entorno de prueba de CSS (css playground), ejercicios de HTML, ejercicios de práctica de HTML"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Patrón de fondo de tablero de ajedrez",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el estado de ejecución del servicio web",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, haz clic en 'Go Live' en la esquina inferior derecha para ejecutar el servicio web en el puerto 8080. Luego, puedes actualizar la pestaña **Web 8080** para previsualizar la página web."
-              },
-              {
-                "name": "Verificar el estado de modificación de index.html",
-                "file": "verify1-2.sh",
-                "hint": "Por favor, sigue los pasos para completar el laboratorio."
-              },
-              {
-                "name": "Verificar el estado de modificación de style.css",
-                "file": "verify1-3.sh",
-                "hint": "Por favor, sigue los pasos para completar el laboratorio."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Motif de fond en damier",
-      "description": "Dans ce laboratoire, nous explorerons le monde de la programmation CSS et apprendrons à créer un motif de fond en damier en utilisant des techniques CSS avancées. Ce laboratoire vous guidera à travers les étapes nécessaires pour créer un motif de damier visuellement attrayant qui peut être utilisé dans divers projets de conception web. À la fin de ce laboratoire, vous aurez acquis une expérience précieuse dans l'utilisation de CSS pour créer des conceptions web belles et captivantes.",
-      "meta": {
-        "title": "Créez des fonds en damier époustouflants avec CSS",
-        "description": "Apprenez à utiliser des techniques CSS avancées pour créer des motifs de fond en damier visuellement attrayants pour vos conceptions web.",
-        "keywords": "css, terrain de jeu HTML, conception web, pratique CSS, html, damier, motif de fond, terrain de jeu CSS, exercices HTML, exercices de pratique HTML"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Motif de fond en damier",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier le statut d'exécution du service web",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez cliquer sur 'Go Live' dans le coin inférieur droit pour exécuter le service web sur le port 8080. Ensuite, vous pouvez actualiser l'onglet **Web 8080** pour prévisualiser la page web."
-              },
-              {
-                "name": "Vérifier le statut de modification de index.html",
-                "file": "verify1-2.sh",
-                "hint": "Veuillez suivre les étapes pour terminer le laboratoire."
-              },
-              {
-                "name": "Vérifier le statut de modification de style.css",
-                "file": "verify1-3.sh",
-                "hint": "Veuillez suivre les étapes pour terminer le laboratoire."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Schachbrettmuster als Hintergrund",
-      "description": "In diesem Lab werden wir die Welt der CSS-Programmierung erkunden und lernen, wie man mithilfe fortschrittlicher CSS-Techniken ein Schachbrettmuster als Hintergrund erstellt. Das Lab führt Sie durch die Schritte, die erforderlich sind, um ein optisch ansprechendes Schachbrettmuster zu erstellen, das in verschiedenen Webdesignprojekten eingesetzt werden kann. Am Ende dieses Labs haben Sie wertvolle Erfahrungen in der Verwendung von CSS für die Erstellung schöner und ansprechender Webdesigns gesammelt.",
-      "meta": {
-        "title": "Erstellen Sie atemberaubende Schachbrett-Hintergründe mit CSS",
-        "description": "Lernen Sie, wie Sie fortschrittliche CSS-Techniken nutzen können, um optisch ansprechende Schachbrettmuster als Hintergrund für Ihre Webdesigns zu erstellen.",
-        "keywords": "css, html playground, webdesign, css übung, html, schachbrett, hintergrundmuster, css playground, html übungen, html praxisübungen"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Schachbrettmuster als Hintergrund",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie den Laufstatus des Web-Services",
-                "file": "verify1-1.sh",
-                "hint": "Klicken Sie bitte auf 'Go Live' in der unteren rechten Ecke, um den Web-Service auf Port 8080 auszuführen. Anschließend können Sie die Registerkarte **Web 8080** aktualisieren, um die Webseite zu previewen."
-              },
-              {
-                "name": "Überprüfen Sie den Status der index.html-Modifikation",
-                "file": "verify1-2.sh",
-                "hint": "Bitte befolgen Sie die Schritte, um das Lab abzuschließen."
-              },
-              {
-                "name": "Überprüfen Sie den Status der style.css-Modifikation",
-                "file": "verify1-3.sh",
-                "hint": "Bitte befolgen Sie die Schritte, um das Lab abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "チェッカーボードの背景パターン",
-      "description": "この実験では、CSS プログラミングの世界を探索し、高度な CSS 技術を使ってチェッカーボードの背景パターンを作成する方法を学びます。この実験では、さまざまなウェブデザインプロジェクトで使用できる視覚的に魅力的なチェッカーボードパターンを作成するために必要な手順を案内します。この実験の終わりまでに、CSS を使って美しく魅力的なウェブデザインを作成する貴重な経験を積むことができるでしょう。",
-      "meta": {
-        "title": "CSS で見事なチェッカーボード背景を作成する",
-        "description": "高度な CSS 技術を使って、ウェブデザイン用の視覚的に魅力的なチェッカーボード背景パターンを作成する方法を学びましょう。",
-        "keywords": "css, html プレイグラウンド, ウェブデザイン, css 練習, html, チェッカーボード, 背景パターン, css プレイグラウンド, html 演習, html 練習問題"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "チェッカーボードの背景パターン",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "ウェブサービスの実行状態を確認する",
-                "file": "verify1-1.sh",
-                "hint": "右下隅にある「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080** タブを更新すると、ウェブページをプレビューできます。"
-              },
-              {
-                "name": "index.html の変更状態を確認する",
-                "file": "verify1-2.sh",
-                "hint": "手順に従って実験を完了してください。"
-              },
-              {
-                "name": "style.css の変更状態を確認する",
-                "file": "verify1-3.sh",
-                "hint": "手順に従って実験を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Шахматный узор фона",
-      "description": "В этом лабораторном занятии мы исследуем мир программирования на CSS и научимся создавать шахматный фон с использованием продвинутых техник CSS. В рамках лабораторного занятия вы пройдете по шагам создания визуально привлекательного шахматного узора, который можно использовать в различных веб-дизайнерских проектах. По завершении этого лабораторного занятия вы получите ценный опыт использования CSS для создания красивых и интересных веб-дизайнов.",
-      "meta": {
-        "title": "Создайте потрясающие шахматные фоны с помощью CSS",
-        "description": "Узнайте, как использовать продвинутые техники CSS для создания визуально привлекательных шахматных узоров фона для ваших веб-дизайнов.",
-        "keywords": "css, html playground, веб-дизайн, практика CSS, html, шахматный узор, узор фона, css playground, упражнения на html, практические упражнения на html"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Шахматный узор фона",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить статус запуска веб-сервиса",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, нажмите на кнопку 'Go Live' в правом нижнем углу, чтобы запустить веб-сервис на порту 8080. Затем вы можете обновить вкладку **Web 8080**, чтобы предварительно просмотреть веб-страницу."
-              },
-              {
-                "name": "Проверить статус изменения файла index.html",
-                "file": "verify1-2.sh",
-                "hint": "Пожалуйста, следуйте шагам для завершения лабораторного занятия."
-              },
-              {
-                "name": "Проверить статус изменения файла style.css",
-                "file": "verify1-3.sh",
-                "hint": "Пожалуйста, следуйте шагам для завершения лабораторного занятия."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

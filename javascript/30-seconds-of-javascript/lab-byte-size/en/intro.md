@@ -1,3 +1,5 @@
 # Introduction
 
-In this lab, we will explore how to calculate the byte size of a given string using JavaScript. The purpose of this lab is to help you understand how to convert a string into a `Blob` object and obtain its size in bytes using the `Blob.size` property. This knowledge can be useful in various scenarios, such as when working with network requests or file uploads, where byte size is an essential factor to consider.
+In this lab, we will explore how to calculate the byte size of a string using JavaScript. Understanding the byte size of strings is essential when working with data transfer, storage calculations, or API limitations where data size matters.
+
+We will learn how to convert a string into a `Blob` object and use its properties to determine the exact size in bytes. This technique is commonly used in web development when dealing with file uploads, network requests, or data storage optimization.

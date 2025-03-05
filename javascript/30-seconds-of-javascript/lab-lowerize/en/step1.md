@@ -1,24 +1,36 @@
-# Converting Object Keys to Lowercase
+# Understanding Objects in JavaScript
 
-To convert all keys of an object to lowercase, follow these steps:
+Before we start converting object keys to lowercase, let's understand what JavaScript objects are and how we can work with them.
 
-1. Open the Terminal/SSH to start practicing coding and type `node`.
-2. Use `Object.keys()` to obtain an array of the object's keys.
-3. Use `Array.prototype.reduce()` to map the array to an object.
-4. Use `String.prototype.toLowerCase()` to lowercase the keys.
+In JavaScript, an object is a collection of key-value pairs. Keys are strings (or Symbols), and values can be any data type, including other objects.
 
-Here is an example code that implements these steps:
+Let's start by opening the Node.js interactive shell:
 
-```js
-const lowerize = (obj) =>
-  Object.keys(obj).reduce((acc, k) => {
-    acc[k.toLowerCase()] = obj[k];
-    return acc;
-  }, {});
+1. Open the terminal in your WebIDE
+2. Type `node` and press Enter
+
+You should now see the Node.js prompt (`>`), which allows you to type JavaScript code directly.
+
+Let's create a simple object with mixed case keys:
+
+```javascript
+const user = {
+  Name: "John",
+  AGE: 30,
+  Email: "john@example.com"
+};
 ```
 
-You can then call the `lowerize()` function with an object as an argument to get a new object with all keys in lowercase. For example:
+Type this code into the Node.js prompt and press Enter. To see the object, simply type `user` and press Enter:
 
-```js
-lowerize({ Name: "John", Age: 22 }); // { name: 'John', age: 22 }
+```javascript
+user;
 ```
+
+You should see the output:
+
+```
+{ Name: 'John', AGE: 30, Email: 'john@example.com' }
+```
+
+As you can see, this object has keys with different casing styles. In the next step, we'll learn how to access these keys and convert them to lowercase.

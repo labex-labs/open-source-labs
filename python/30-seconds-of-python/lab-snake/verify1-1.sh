@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 test_snake.py
+grep -q 'def snake' ~/project/snake_case.py

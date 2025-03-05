@@ -10,89 +10,87 @@
   },
   "difficulty": "Beginner",
   "time": 25,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Import Necessary Libraries",
+        "title": "Setting Up Libraries and Creating Sample Data",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check if notebook is created",
             "file": "verify1-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've created and executed the notebook cells"
           }
         ],
         "skills": [
-          "matplotlib/figures_axes",
           "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules"
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels"
         ]
       },
       {
-        "title": "Create the Plot",
+        "title": "Creating a Basic Financial Plot",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check if plot code has been executed",
             "file": "verify2-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've created the basic plot"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels"
+        ]
+      },
+      {
+        "title": "Formatting Y-Axis Labels with Dollar Signs",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Check if formatter code has been executed",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've added the dollar sign formatter"
+          }
+        ],
+        "skills": ["matplotlib/axis_ticks", "matplotlib/titles_labels"]
+      },
+      {
+        "title": "Enhancing the Plot for Better Financial Data Visualization",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Check if enhanced plot code has been executed",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've created the enhanced financial plot"
+          }
+        ],
+        "skills": [
+          "matplotlib/axis_ticks",
+          "matplotlib/text_annotations",
+          "matplotlib/titles_labels"
+        ]
+      },
+      {
+        "title": "Saving the Plot and Creating a Reusable Function",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Check if the plot was saved",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've saved the plot as a file"
           }
         ],
         "skills": [
           "matplotlib/line_plots",
-          "python/comments",
-          "python/importing_modules",
-          "python/math_random",
-          "python/numerical_computing",
-          "python/standard_libraries"
+          "matplotlib/saving_figures",
+          "matplotlib/titles_labels"
         ]
-      },
-      {
-        "title": "Format Y-Axis Labels with Dollar Signs",
-        "text": "en/step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3-1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/importing_matplotlib",
-          "python/comments",
-          "python/data_visualization",
-          "python/dictionaries",
-          "python/importing_modules",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Customize Tick Parameters",
-        "text": "en/step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4-1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/booleans", "python/comments", "python/tuples"]
-      },
-      {
-        "title": "Display the Plot",
-        "text": "en/step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5-1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
       }
     ],
     "intro": {
@@ -115,476 +113,12 @@
     }
   },
   "backend": {
-    "imageid": "jupyter-ubuntu:2204"
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": ["huduo0812"],
   "license": {
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "使用Matplotlib格式化货币图表",
-      "description": "在本实验中，我们将学习如何使用Matplotlib格式化图表的y轴标签以显示美元符号。这在处理金融数据或任何需要货币格式化的数据时特别有用。",
-      "meta": {
-        "title": "Matplotlib | y轴格式化 | 金融数据可视化",
-        "description": "学习如何使用Matplotlib格式化图表的y轴标签以显示美元符号，非常适合处理金融数据。",
-        "keywords": "Matplotlib, y轴格式化, 金融数据可视化, Python, 数据可视化"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "导入必要的库",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "创建图表",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "使用美元符号格式化y轴标签",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify3-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "自定义刻度参数",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify4-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "显示图表",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify5-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Formateo de Gráficos de Moneda con Matplotlib",
-      "description": "En este laboratorio, aprenderemos cómo utilizar Matplotlib para formatear las etiquetas del eje y de un gráfico para mostrar signos de dólar. Esto es especialmente útil cuando se trabaja con datos financieros o cualquier tipo de datos que requieran formateo de moneda.",
-      "meta": {
-        "title": "Matplotlib | Formateo del Eje Y | Visualización de Datos Financieros",
-        "description": "Aprende cómo utilizar Matplotlib para formatear las etiquetas del eje y de un gráfico para mostrar signos de dólar, ideal para trabajar con datos financieros.",
-        "keywords": "Matplotlib, Formateo del Eje Y, Visualización de Datos Financieros, Python, Visualización de Datos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importar Bibliotecas Necesarias",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify1-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Crear el Gráfico",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify2-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Formatear las Etiquetas del Eje Y con Signos de Dólar",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify3-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Personalizar Parámetros de las Marcas de Escala",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify4-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Mostrar el Gráfico",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify5-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Formatage de graphiques de devises avec Matplotlib",
-      "description": "Dans ce laboratoire, nous apprendrons à utiliser Matplotlib pour formater les étiquettes de l'axe des ordonnées d'un graphique afin d'afficher des signes dollars. Cela est particulièrement utile lorsqu'on travaille avec des données financières ou tout type de données nécessitant un formatage monétaire.",
-      "meta": {
-        "title": "Matplotlib | Formatage de l'axe des ordonnées | Visualisation de données financières",
-        "description": "Apprenez à utiliser Matplotlib pour formater les étiquettes de l'axe des ordonnées d'un graphique afin d'afficher des signes dollars, idéal pour travailler avec des données financières.",
-        "keywords": "Matplotlib, Formatage de l'axe des ordonnées, Visualisation de données financières, Python, Visualisation de données"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importer les bibliothèques nécessaires",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify1-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Créer le graphique",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify2-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Formater les étiquettes de l'axe des ordonnées avec des signes dollars",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify3-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Personnaliser les paramètres des graduations",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify4-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Afficher le graphique",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Cette étape n'est pas vérifiée pour le moment",
-                "file": "verify5-1.sh",
-                "hint": "Cette étape n'est pas vérifiée pour le moment"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Formatieren von Währungsdiagrammen mit Matplotlib",
-      "description": "In diesem Lab lernen wir, wie man Matplotlib verwendet, um die Beschriftungen der y-Achse eines Diagramms so zu formatieren, dass Dollarzeichen angezeigt werden. Dies ist besonders nützlich, wenn man mit Finanzdaten oder anderen Daten arbeitet, die eine Währungsformatierung erfordern.",
-      "meta": {
-        "title": "Matplotlib | Y-Achsenformatierung | Visualisierung von Finanzdaten",
-        "description": "Lernen Sie, wie Sie Matplotlib nutzen können, um die Beschriftungen der y-Achse eines Diagramms so zu formatieren, dass Dollarzeichen angezeigt werden - ideal für die Arbeit mit Finanzdaten.",
-        "keywords": "Matplotlib, Y-Achsenformatierung, Visualisierung von Finanzdaten, Python, Datenvisualisierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importieren der erforderlichen Bibliotheken",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt wird derzeit nicht überprüft",
-                "file": "verify1-1.sh",
-                "hint": "Dieser Schritt wird derzeit nicht überprüft"
-              }
-            ]
-          },
-          {
-            "title": "Erstellen des Diagramms",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt wird derzeit nicht überprüft",
-                "file": "verify2-1.sh",
-                "hint": "Dieser Schritt wird derzeit nicht überprüft"
-              }
-            ]
-          },
-          {
-            "title": "Formatieren der Y-Achsenbeschriftungen mit Dollarzeichen",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt wird derzeit nicht überprüft",
-                "file": "verify3-1.sh",
-                "hint": "Dieser Schritt wird derzeit nicht überprüft"
-              }
-            ]
-          },
-          {
-            "title": "Anpassen der Tick-Parameter",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt wird derzeit nicht überprüft",
-                "file": "verify4-1.sh",
-                "hint": "Dieser Schritt wird derzeit nicht überprüft"
-              }
-            ]
-          },
-          {
-            "title": "Anzeigen des Diagramms",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt wird derzeit nicht überprüft",
-                "file": "verify5-1.sh",
-                "hint": "Dieser Schritt wird derzeit nicht überprüft"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Matplotlib で通貨グラフをフォーマットする",
-      "description": "この実験では、Matplotlib を使ってグラフの y 軸ラベルをドル記号で表示するようにフォーマットする方法を学びます。これは、金融データや通貨フォーマットが必要なデータを扱う際に特に有用です。",
-      "meta": {
-        "title": "Matplotlib | y 軸フォーマット | 金融データの可視化",
-        "description": "Matplotlib を使ってグラフの y 軸ラベルをドル記号で表示するようにフォーマットする方法を学びましょう。金融データの扱いに最適です。",
-        "keywords": "Matplotlib, y 軸フォーマット, 金融データの可視化, Python, データ可視化"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "必要なライブラリをインポートする",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify1-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "グラフを作成する",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify2-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "y 軸のラベルをドル記号でフォーマットする",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify3-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "目盛りパラメータをカスタマイズする",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify4-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "グラフを表示する",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify5-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Форматирование графиков с валютными значениями с использованием Matplotlib",
-      "description": "В этом практическом занятии (лабораторной работе) мы научимся использовать библиотеку Matplotlib для форматирования меток по оси Y графика так, чтобы они отображали знак доллара. Это особенно полезно при работе с финансовыми данными или любыми данными, которые требуют форматирования в виде валюты.",
-      "meta": {
-        "title": "Matplotlib | Форматирование оси Y | Визуализация финансовых данных",
-        "description": "Узнайте, как использовать Matplotlib для форматирования меток по оси Y графика с отображением знака доллара - идеально для работы с финансовыми данными.",
-        "keywords": "Matplotlib, Форматирование оси Y, Визуализация финансовых данных, Python, Визуализация данных"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Импорт необходимых библиотек",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify1-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Создание графика",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify2-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Форматирование меток оси Y с использованием знака доллара",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify3-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Настройка параметров делений",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify4-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Отображение графика",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify5-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

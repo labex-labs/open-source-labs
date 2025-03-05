@@ -1,3 +1,1 @@
-#!/bin/zsh
-
-cat ~/.zsh_history | grep 'node'
+#!/bin/zsh cat ~/.zsh_history | grep 'node'

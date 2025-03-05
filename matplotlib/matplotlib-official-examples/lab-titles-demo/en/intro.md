@@ -1,11 +1,18 @@
 # Introduction
 
-In this lab, you will learn how to position the titles of plots in Matplotlib. Matplotlib can display plot titles centered, flush with the left side of a set of axes, and flush with the right side of a set of axes. This lab will show you how to use Matplotlib to position plot titles in different ways.
+In this lab, you will learn how to position titles on plots created with Matplotlib. Plot titles help viewers understand what information a visualization conveys. Matplotlib offers several options for positioning these titles - centered (the default), left-aligned, right-aligned, or with custom vertical positioning.
+
+By the end of this lab, you will be able to:
+
+- Create a basic plot with a centered title
+- Position titles to the left or right of a plot
+- Create a plot with the title at a custom position
+- Use different methods to adjust title positioning
 
 ## VM Tips
 
-After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook.
 
-Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+You may need to wait a few seconds for Jupyter Notebook to finish loading. Due to limitations in Jupyter Notebook, the validation of operations cannot be automated.
 
-If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.
+If you encounter any issues during the lab, feel free to ask Labby for assistance. Please provide feedback after the session so we can promptly address any problems.

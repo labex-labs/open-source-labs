@@ -10,30 +10,99 @@
   },
   "difficulty": "Beginner",
   "time": 10,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Replace Last Occurrence in String",
+        "title": "Understanding the Problem and Setting Up",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Node Command Usage",
+            "name": "Verify file creation",
             "file": "verify1-1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "hint": "Make sure you've created the replaceLast.js file in the replace-last directory.",
             "timeout": 0,
             "showstderr": true
+          },
+          {
+            "name": "Verify Node Usage",
+            "file": "verify1-2.sh",
+            "hint": "Make sure you've run the JavaScript file using Node.js."
+          }
+        ],
+        "skills": ["javascript/functions", "javascript/str_manip"]
+      },
+      {
+        "title": "Implementing the Core Function Logic",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify function implementation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've implemented the replaceLast function with string pattern handling."
+          },
+          {
+            "name": "Verify test cases",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you've added test cases for string patterns."
+          }
+        ],
+        "skills": ["javascript/str_manip"]
+      },
+      {
+        "title": "Handling Regular Expression Patterns",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify RegExp handling",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've implemented RegExp pattern handling in the replaceLast function."
           }
         ],
         "skills": [
-          "javascript/arith_ops",
-          "javascript/comp_ops",
+          "javascript/functions",
+          "javascript/logic_ops",
+          "javascript/str_manip"
+        ]
+      },
+      {
+        "title": "Optimizing the Function and Testing Edge Cases",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify optimization and edge cases",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've enhanced the replaceLast function with optimizations and edge case handling."
+          }
+        ],
+        "skills": [
           "javascript/cond_stmts",
           "javascript/data_types",
-          "javascript/template_lit",
-          "javascript/variables"
+          "javascript/functions"
+        ]
+      },
+      {
+        "title": "Creating a Module and Using the Function",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify module creation",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've created the replaceLastModule.js file."
+          },
+          {
+            "name": "Verify module usage",
+            "file": "verify5-2.sh",
+            "hint": "Make sure you've created the app.js file that uses the module."
+          }
+        ],
+        "skills": [
+          "javascript/comp_ops",
+          "javascript/functions",
+          "javascript/str_manip"
         ]
       }
     ],
@@ -55,205 +124,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "替换字符串中最后一次出现的内容",
-      "description": "在本实验中，我们将探索 JavaScript 中的 replaceLast 函数，该函数会用指定的替换内容替换给定字符串中某个模式的最后一次出现。本实验将指导你实现 replaceLast 函数，这将使你能够以更高效、灵活的方式操作字符串。完成本实验后，你将扎实理解如何替换字符串中某个模式的最后一次出现，并能够将此知识应用到你未来的编程项目中。",
-      "meta": {
-        "title": "替换字符串中的最后一次出现",
-        "description": "学习如何使用 replaceLast 函数高效替换字符串中某个模式的最后一次出现。",
-        "keywords": "字符串操作, JavaScript, 替换, JavaScript 实践, 在线 JavaScript 实践, 编程教程, JavaScript 实验, JavaScript 教程, 最后一次出现"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "替换字符串中最后一次出现的内容",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Node 命令的用法",
-                "file": "verify1-1.sh",
-                "hint": "在终端/SSH 中输入 'node' 并回车即可运行 JavaScript。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Reemplazar la última aparición en una cadena",
-      "description": "En este laboratorio, exploraremos la función replaceLast en JavaScript, que reemplaza la última aparición de un patrón en una cadena dada con un reemplazo especificado. Este laboratorio lo guiará a través de la implementación de la función replaceLast, lo que le permitirá manipular cadenas de una manera más eficiente y flexible. Al final de este laboratorio, tendrá una comprensión sólida de cómo reemplazar la última aparición de un patrón en una cadena y podrá aplicar este conocimiento a sus futuros proyectos de programación.",
-      "meta": {
-        "title": "Reemplazar la última aparición en una cadena",
-        "description": "Aprende cómo usar la función replaceLast para reemplazar eficientemente la última aparición de un patrón en una cadena.",
-        "keywords": "manipulación de cadenas, javascript, reemplazar, práctica de javascript, práctica de javascript en línea, tutorial de programación, laboratorio de javascript, tutor de javascript, última aparición"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Reemplazar la última aparición en una cadena",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el uso del comando Node",
-                "file": "verify1-1.sh",
-                "hint": "Se puede ejecutar JavaScript en la Terminal/SSH escribiendo 'node' y presionando Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Remplacer la dernière occurrence dans une chaîne de caractères",
-      "description": "Dans ce laboratoire, nous allons explorer la fonction replaceLast en JavaScript, qui remplace la dernière occurrence d'un motif dans une chaîne de caractères donnée par un remplacement spécifié. Ce laboratoire vous guidera tout au long de l'implémentation de la fonction replaceLast, ce qui vous permettra de manipuler les chaînes de caractères de manière plus efficace et flexible. À la fin de ce laboratoire, vous aurez une bonne compréhension de la façon de remplacer la dernière occurrence d'un motif dans une chaîne de caractères et pourrez appliquer ces connaissances à vos futurs projets de programmation.",
-      "meta": {
-        "title": "Remplacer la dernière occurrence dans une chaîne de caractères",
-        "description": "Apprenez à utiliser la fonction replaceLast pour remplacer efficacement la dernière occurrence d'un motif dans une chaîne de caractères.",
-        "keywords": "manipulation de chaînes de caractères, javascript, remplacer, pratique en javascript, pratique en ligne en javascript, tutoriel de programmation, laboratoire javascript, tutor javascript, dernière occurrence"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Remplacer la dernière occurrence dans une chaîne de caractères",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation de la commande Node",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript peut être exécuté dans le Terminal/SSH en tapant 'node' puis en appuyant sur Entrée."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Letztes Vorkommen in einer Zeichenkette ersetzen",
-      "description": "In diesem Lab werden wir die replaceLast-Funktion in JavaScript untersuchen, die das letzte Vorkommen eines Musters in einer gegebenen Zeichenkette durch eine angegebene Ersetzung ersetzt. Dieses Lab wird Sie durch die Implementierung der replaceLast-Funktion führen, wodurch Sie Zeichenketten effizienter und flexibler manipulieren können. Am Ende dieses Labs werden Sie ein solides Verständnis davon haben, wie Sie das letzte Vorkommen eines Musters in einer Zeichenkette ersetzen können, und können dieses Wissen in Ihren zukünftigen Programmierprojekten anwenden.",
-      "meta": {
-        "title": "Letztes Vorkommen in einer Zeichenkette ersetzen",
-        "description": "Lernen Sie, wie Sie die replaceLast-Funktion verwenden, um das letzte Vorkommen eines Musters in einer Zeichenkette effizient zu ersetzen.",
-        "keywords": "Zeichenkettenmanipulation, JavaScript, ersetzen, JavaScript Übung, Online-JavaScript-Übung, Programmier-Tutorial, JavaScript-Lab, JavaScript-Tutor, letztes Vorkommen"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Letztes Vorkommen in einer Zeichenkette ersetzen",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren der Verwendung des Node-Befehls",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript kann im Terminal/SSH ausgeführt werden, indem Sie 'node' eingeben und die Eingabetaste drücken."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "文字列内の最後の出現箇所を置き換える",
-      "description": "この実験では、JavaScript の replaceLast 関数を探索します。この関数は、指定された文字列内のパターンの最後の出現箇所を、指定された置換文字列で置き換えます。この実験では、replaceLast 関数の実装方法を案内します。これにより、より効率的かつ柔軟に文字列を操作することができます。この実験の終了時には、文字列内のパターンの最後の出現箇所を置き換える方法をしっかりと理解し、将来のプログラミングプロジェクトにこの知識を適用できるようになります。",
-      "meta": {
-        "title": "文字列内の最後の出現箇所を置き換える",
-        "description": "replaceLast 関数を使って、文字列内のパターンの最後の出現箇所を効率的に置き換える方法を学びましょう。",
-        "keywords": "文字列操作, JavaScript, 置換, JavaScript の練習, オンラインでの JavaScript 練習, プログラミングチュートリアル, JavaScript 実験, JavaScript チューター, 最後の出現箇所"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "文字列内の最後の出現箇所を置き換える",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Node コマンドの使用を検証する",
-                "file": "verify1-1.sh",
-                "hint": "ターミナル/SSH で 'node' と入力して Enter キーを押すことで、JavaScript を実行できます。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Замена последнего вхождения в строке",
-      "description": "В этом практическом занятии (лабораторной работе) мы рассмотрим функцию replaceLast в JavaScript, которая заменяет последнее вхождение шаблона в заданной строке на указанную замену. В рамках этого практического занятия вы научитесь реализовывать функцию replaceLast, что позволит вам более эффективно и гибко манипулировать строками. По завершении этого практического занятия вы будете хорошо понимать, как заменить последнее вхождение шаблона в строке и сможете применить эти знания в своих будущих программах.",
-      "meta": {
-        "title": "Замена последнего вхождения в строке",
-        "description": "Узнайте, как использовать функцию replaceLast для эффективной замены последнего вхождения шаблона в строке.",
-        "keywords": "манипуляция строками, javascript, замена, практика javascript, онлайн - практика javascript, учебник программирования, практическое занятие по javascript, обучение javascript, последнее вхождение"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Замена последнего вхождения в строке",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверка использования команды Node",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript можно запустить в Терминале/SSH, введя 'node' и нажав Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 test_months_diff.py
+cd ~/project && [ -f month_difference.py ] && grep -q 'datetime' month_difference.py

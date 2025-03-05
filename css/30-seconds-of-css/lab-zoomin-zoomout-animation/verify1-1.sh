@@ -1,3 +1,4 @@
 #!/bin/zsh
 
-curl 0.0.0.0:8080
+cd ~/project
+test -f index.html

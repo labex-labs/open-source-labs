@@ -10,24 +10,61 @@
   },
   "difficulty": "Beginner",
   "time": 5,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "View Commits in a Specific Date Range",
+        "title": "Cloning the Git Repository",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify for successful view",
+            "name": "Verify repository cloning",
             "file": "verify1-1.sh",
-            "hint": "Please make sure you have completed the required actions.",
+            "hint": "Make sure you have cloned the git-playground repository.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": ["git/commit"]
+        "skills": ["git/clone"]
+      },
+      {
+        "title": "Exploring Basic Git Log Command",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify git log usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have run the git log command."
+          }
+        ],
+        "skills": ["git/log"]
+      },
+      {
+        "title": "Viewing Commits in a Specific Date Range",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify date range filtering",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've used the git log command with date ranges."
+          }
+        ],
+        "skills": ["git/log"]
+      },
+      {
+        "title": "Using Relative Dates and Formatting Options",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify relative date usage",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've used the git log command with relative dates."
+          }
+        ],
+        "skills": ["git/log"]
       }
     ],
     "intro": {
@@ -41,212 +78,12 @@
     }
   },
   "backend": {
-    "imageid": "webide-ubuntu:2204"
+    "imageid": "vnc-ubuntu:2204"
   },
   "contributors": ["xiaoshengyunan"],
   "license": {
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "在特定日期范围内查看提交记录",
-      "description": "Git是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git最有用的特性之一是能够查看特定日期范围内的提交记录。在试图追踪错误或了解项目历史时，这会很有帮助。",
-      "meta": {
-        "title": "通过日期范围探索Git提交历史",
-        "description": "学习如何使用带有 --since 和 --until 选项的git log等Git命令在特定日期范围内查看提交记录。",
-        "keywords": "日期范围, 版本控制, git log, git实验室, Git, 提交历史, git游乐场"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "在特定日期范围内查看提交记录",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证是否成功查看",
-                "file": "verify1-1.sh",
-                "hint": "请确保你已完成所需操作。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Ver commits (confirmaciones) en un rango de fechas específico",
-      "description": "Git es un potente sistema de control de versiones que permite a los desarrolladores realizar un seguimiento de los cambios realizados en su base de código. Una de las características más útiles de Git es la capacidad de ver los commits (confirmaciones) en un rango de fechas específico. Esto puede ser útil cuando se intenta localizar un error o entender la historia de un proyecto.",
-      "meta": {
-        "title": "Explora el historial de commits (confirmaciones) de Git por rango de fechas",
-        "description": "Aprende cómo ver los commits (confirmaciones) en un rango de fechas específico utilizando comandos de Git como git log con las opciones --since y --until.",
-        "keywords": "rango de fechas, control de versiones, git log, git labs, git, historial de commits (confirmaciones), git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Ver commits (confirmaciones) en un rango de fechas específico",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la visualización exitosa",
-                "file": "verify1-1.sh",
-                "hint": "Asegúrate de haber completado las acciones requeridas."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Afficher les commits (validations) dans une plage de dates spécifique",
-      "description": "Git est un système de contrôle de version puissant qui permet aux développeurs de suivre les modifications apportées à leur base de code. L'une des fonctionnalités les plus utiles de Git est la capacité à afficher les commits (validations) dans une plage de dates spécifique. Cela peut être utile lorsque vous essayez de localiser un bogue ou de comprendre l'historique d'un projet.",
-      "meta": {
-        "title": "Explorer l'historique des commits (validations) Git par plage de dates",
-        "description": "Apprenez à afficher les commits (validations) dans une plage de dates spécifique en utilisant des commandes Git telles que git log avec les options --since et --until.",
-        "keywords": "plage de dates, contrôle de version, git log, git labs, git, historique des commits (validations), git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Afficher les commits (validations) dans une plage de dates spécifique",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'affichage réussi",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez vous assurer que vous avez effectué les actions requises."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Anzeigen von Commits in einem bestimmten Datumsbereich",
-      "description": "Git ist ein leistungsstarkes Versionskontrollsystem, das es Entwicklern ermöglicht, die Änderungen an ihrer Codebasis zu verfolgen. Eine der nützlichsten Funktionen von Git ist die Möglichkeit, Commits in einem bestimmten Datumsbereich anzuzeigen. Dies kann hilfreich sein, wenn Sie versuchen, einen Fehler zu finden oder die Geschichte eines Projekts zu verstehen.",
-      "meta": {
-        "title": "Entdecken Sie die Git-Commit-Historie mit Datumsbereich",
-        "description": "Lernen Sie, wie Sie mit Git-Befehlen wie git log mit den Optionen --since und --until Commits in einem bestimmten Datumsbereich anzeigen können.",
-        "keywords": "Datumsbereich, Versionskontrolle, git log, Git-Labs, Git, Commit-Historie, Git-Playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Anzeigen von Commits in einem bestimmten Datumsbereich",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen, ob die Anzeige erfolgreich war",
-                "file": "verify1-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie die erforderlichen Aktionen ausgeführt haben."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "特定の日付範囲内のコミットを表示する",
-      "description": "Git は開発者がコードベースに加えられた変更を追跡できる強力なバージョン管理システムです。Git の最も便利な機能の 1 つは、特定の日付範囲内のコミットを表示する機能です。これは、バグを特定したり、プロジェクトの履歴を理解したりする際に役立ちます。",
-      "meta": {
-        "title": "日付範囲で Git コミット履歴を探索する",
-        "description": "--since と --until オプションを使用した git log などの Git コマンドを使って、特定の日付範囲内のコミットを表示する方法を学びましょう。",
-        "keywords": "日付範囲, バージョン管理, git log, Git 実験室, Git, コミット履歴, Git プレイグラウンド"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "特定の日付範囲内のコミットを表示する",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "表示の成功を確認する",
-                "file": "verify1-1.sh",
-                "hint": "必要な操作を完了していることを確認してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Просмотр коммитов (коммитов) в определенном диапазоне дат",
-      "description": "Git - это мощная система контроля версий, которая позволяет разработчикам отслеживать изменения, внесенные в их кодовую базу. Одной из наиболее полезных функций Git является возможность просматривать коммиты (коммиты) в определенном диапазоне дат. Это может быть полезно, когда вы пытаетесь найти ошибку или понять историю проекта.",
-      "meta": {
-        "title": "Исследуйте историю коммитов (коммитов) Git по диапазону дат",
-        "description": "Узнайте, как просматривать коммиты (коммиты) в определенном диапазоне дат с использованием команд Git, таких как git log с параметрами --since и --until.",
-        "keywords": "диапазон дат, система контроля версий, git log, git labs, git, история коммитов (коммитов), git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Просмотр коммитов (коммитов) в определенном диапазоне дат",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверка успешного просмотра",
-                "file": "verify1-1.sh",
-                "hint": "Убедитесь, что вы выполнили все необходимые действия."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

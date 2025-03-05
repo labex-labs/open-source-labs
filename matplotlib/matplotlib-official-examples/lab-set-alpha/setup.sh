@@ -55,5 +55,33 @@ export PATH=$PATH:/home/labex/.local/bin
 
 nohup /home/labex/.local/bin/jupyter-notebook > /dev/null 2>&1 &
 
+# Create the jupyter notebook file
+cat > ~/project/set-alpha.ipynb << EOF
+{
+ "cells": [],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
+EOF
+
 # Wait for notebook service
 sleep 1

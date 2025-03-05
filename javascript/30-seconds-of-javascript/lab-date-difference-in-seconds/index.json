@@ -10,28 +10,64 @@
   },
   "difficulty": "Beginner",
   "time": 10,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Date Difference in Seconds",
+        "title": "Getting Started with JavaScript Date Objects",
         "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Node Usage In Zsh History",
             "file": "verify1-1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "hint": "Make sure you have started the Node.js environment by typing 'node' in the terminal.",
             "timeout": 0,
             "showstderr": true
           }
         ],
+        "skills": ["javascript/data_types", "javascript/variables"]
+      },
+      {
+        "title": "Understanding Date Calculations in JavaScript",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Date Calculation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have practiced date calculations in the Node.js environment."
+          }
+        ],
+        "skills": ["javascript/arith_ops", "javascript/functions"]
+      },
+      {
+        "title": "Implementing the Date Difference Function Using Arrow Functions",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify JavaScript File Creation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the dateDifference.js file in the project directory."
+          }
+        ],
+        "skills": ["javascript/functions"]
+      },
+      {
+        "title": "Creating a Practical Application",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Timer Application",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you have created the timer.js file in the project directory."
+          }
+        ],
         "skills": [
           "javascript/arith_ops",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/variables"
+          "javascript/functions",
+          "javascript/loops"
         ]
       }
     ],
@@ -53,205 +89,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "以秒为单位计算日期差值",
-      "description": "在本实验中，我们将探索如何使用JavaScript以秒为单位计算两个日期之间的差值。本实验将提供一个函数，该函数接受两个Date对象作为输入，并返回它们之间以秒为单位的差值。这在各种应用中都很有用，例如测量时间间隔或计算两个事件之间的持续时间。在本实验结束时，你将更好地理解如何在JavaScript中处理日期，以及如何使用内置方法进行时间计算。",
-      "meta": {
-        "title": "使用JavaScript计算以秒为单位的日期差值",
-        "description": "学习如何使用JavaScript以秒为单位计算两个日期之间的差值。",
-        "keywords": "javascript, javascript练习, 日期差值, 在线javascript练习, 日期操作, 秒, javascript实验, 时间计算, javascript教程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "以秒为单位计算日期差值",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "在Zsh历史记录中验证Node的使用情况",
-                "file": "verify1-1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Diferencia de fechas en segundos",
-      "description": "En este laboratorio, exploraremos cómo calcular la diferencia entre dos fechas en segundos utilizando JavaScript. El laboratorio proporcionará una función que toma dos objetos Date como entrada y devuelve la diferencia entre ellos en segundos. Esto puede ser útil en diversas aplicaciones, como medir intervalos de tiempo o calcular la duración entre dos eventos. Al final de este laboratorio, tendrás una mejor comprensión de cómo trabajar con fechas en JavaScript y cómo realizar cálculos de tiempo utilizando métodos incorporados.",
-      "meta": {
-        "title": "Calcular la diferencia de fechas en segundos con JavaScript",
-        "description": "Aprende cómo calcular la diferencia entre dos fechas en segundos utilizando JavaScript.",
-        "keywords": "javascript, práctica de javascript, diferencia de fechas, práctica de javascript en línea, manipulación de fechas, segundos, laboratorio de javascript, cálculo de tiempo, tutor de javascript"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Diferencia de fechas en segundos",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el uso de Node en el historial de Zsh",
-                "file": "verify1-1.sh",
-                "hint": "Se puede ejecutar JavaScript en la Terminal/SSH escribiendo 'node' y presionando Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Différence entre deux dates en secondes",
-      "description": "Dans ce laboratoire, nous allons explorer comment calculer la différence entre deux dates en secondes à l'aide de JavaScript. Le laboratoire fournira une fonction qui prend deux objets Date en entrée et renvoie la différence entre eux en secondes. Cela peut être utile dans diverses applications, comme la mesure d'intervalles de temps ou le calcul de la durée entre deux événements. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manipulation des dates en JavaScript et de la réalisation de calculs temporels à l'aide de méthodes intégrées.",
-      "meta": {
-        "title": "Calculer la différence entre deux dates en secondes avec JavaScript",
-        "description": "Apprenez à calculer la différence entre deux dates en secondes à l'aide de JavaScript.",
-        "keywords": "javascript, pratique JavaScript, différence de dates, pratique JavaScript en ligne, manipulation de dates, secondes, laboratoire JavaScript, calcul de temps, tutoriel JavaScript"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Différence entre deux dates en secondes",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation de Node dans l'historique Zsh",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript peut être exécuté dans le Terminal/SSH en tapant 'node' puis en appuyant sur Entrée."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Datumsdifferenz in Sekunden",
-      "description": "In diesem Lab werden wir untersuchen, wie man in JavaScript die Differenz zwischen zwei Daten in Sekunden berechnet. Das Lab stellt eine Funktion zur Verfügung, die zwei Date-Objekte als Eingabe nimmt und die Differenz zwischen ihnen in Sekunden zurückgibt. Dies kann in verschiedenen Anwendungen nützlich sein, wie zum Beispiel beim Messen von Zeitintervallen oder beim Berechnen der Dauer zwischen zwei Ereignissen. Am Ende dieses Labs werden Sie besser verstehen, wie man in JavaScript mit Daten arbeitet und wie man Zeitberechnungen mit integrierten Methoden durchführt.",
-      "meta": {
-        "title": "Berechnen Sie die Datumsdifferenz in Sekunden mit JavaScript",
-        "description": "Lernen Sie, wie Sie die Differenz zwischen zwei Daten in Sekunden mit JavaScript berechnen.",
-        "keywords": "javascript, JavaScript Übung, Datumsdifferenz, Online-JavaScript-Übung, Datumsmanipulation, Sekunden, JavaScript-Lab, Zeitberechnung, JavaScript-Tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Datumsdifferenz in Sekunden",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Verwendung von Node im Zsh-Verlauf",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript kann im Terminal/SSH ausgeführt werden, indem Sie 'node' eingeben und die Eingabetaste drücken."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "日付の差を秒単位で計算する",
-      "description": "この実験では、JavaScript を使用して2つの日付の差を秒単位で計算する方法を探ります。この実験では、2つの Date オブジェクトを入力として受け取り、それらの差を秒単位で返す関数を提供します。これは、時間間隔の測定や2つのイベント間の期間の計算など、さまざまなアプリケーションで役立ちます。この実験の終わりまでに、JavaScript で日付を操作する方法や、組み込みメソッドを使用して時間計算を行う方法をより深く理解するようになります。",
-      "meta": {
-        "title": "JavaScript で日付の差を秒単位で計算する",
-        "description": "JavaScript を使って2つの日付の差を秒単位で計算する方法を学びましょう。",
-        "keywords": "JavaScript, JavaScript の練習, 日付の差, JavaScript のオンライン練習, 日付操作, 秒, JavaScript 実験, 時間計算, JavaScript チューター"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "日付の差を秒単位で計算する",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Zsh 履歴での Node の使用を確認する",
-                "file": "verify1-1.sh",
-                "hint": "ターミナル/SSH で 'node' と入力して Enter キーを押すことで、JavaScript を実行できます。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Разница между датами в секундах",
-      "description": "В этом лабораторном занятии мы рассмотрим, как вычислить разницу между двумя датами в секундах с использованием JavaScript. В рамках лабораторного занятия будет предоставлена функция, которая принимает два объекта Date в качестве входных данных и возвращает разницу между ними в секундах. Это может быть полезно в различных приложениях, например, для измерения временных интервалов или расчета продолжительности между двумя событиями. По завершении этого лабораторного занятия вы лучше поймете, как работать с датами в JavaScript и как выполнять временные расчеты с использованием встроенных методов.",
-      "meta": {
-        "title": "Вычислить разницу между датами в секундах с помощью JavaScript",
-        "description": "Узнайте, как вычислить разницу между двумя датами в секундах с использованием JavaScript.",
-        "keywords": "javascript, практика javascript, разница между датами, онлайн-практика javascript, манипуляция с датами, секунды, лабораторное занятие по javascript, расчет времени, онлайн-курс javascript"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Разница между датами в секундах",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить использование Node в истории Zsh",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript можно запустить в Терминале/SSH, введя 'node' и нажав Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }
