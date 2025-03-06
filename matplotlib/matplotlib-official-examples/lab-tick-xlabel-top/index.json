@@ -10,30 +10,26 @@
   },
   "difficulty": "Beginner",
   "time": 20,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Import the necessary libraries",
+        "title": "Understanding Matplotlib and Creating a Notebook",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check if Matplotlib is installed",
             "file": "verify1-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you have run the import statement for matplotlib"
           }
         ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules"
-        ]
+        "skills": ["matplotlib/importing_matplotlib"]
       },
       {
-        "title": "Create the plot",
+        "title": "Creating a Basic Plot with Default Settings",
         "text": "en/step2.md",
         "verify": [
           {
@@ -42,10 +38,14 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["matplotlib/line_plots", "python/build_in_functions"]
+        "skills": [
+          "matplotlib/axis_ticks",
+          "matplotlib/figures_axes",
+          "matplotlib/line_plots"
+        ]
       },
       {
-        "title": "Move the x-axis tick labels to the top",
+        "title": "Moving the X-Axis Tick Labels to the Top",
         "text": "en/step3.md",
         "verify": [
           {
@@ -54,10 +54,14 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": ["python/booleans", "python/tuples"]
+        "skills": [
+          "matplotlib/axis_ticks",
+          "matplotlib/figures_axes",
+          "matplotlib/titles_labels"
+        ]
       },
       {
-        "title": "Display the plot",
+        "title": "Customizing the Plot Further",
         "text": "en/step4.md",
         "verify": [
           {
@@ -66,7 +70,27 @@
             "hint": "This step has no verification at the moment"
           }
         ],
-        "skills": []
+        "skills": [
+          "matplotlib/axis_ticks",
+          "matplotlib/fill_between",
+          "matplotlib/text_annotations"
+        ]
+      },
+      {
+        "title": "Saving and Sharing Your Plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Check if plot files were saved",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you ran the code that saves the plot files"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/saving_figures",
+          "matplotlib/titles_labels"
+        ]
       }
     ],
     "intro": {
@@ -96,403 +120,5 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "将 X 轴刻度标签移至顶部",
-      "description": "在本教程中，我们将学习如何使用 Python 的 Matplotlib 库将 x 轴刻度标签移至图表顶部。当 x 轴标签过长并影响图表可读性时，这会很有用。",
-      "meta": {
-        "title": "Python Matplotlib | X 轴刻度标签定位",
-        "description": "学习如何使用 Python 的 Matplotlib 库将 x 轴刻度标签移至图表顶部，提高图表可读性。",
-        "keywords": "Python, Matplotlib, x 轴, 刻度标签, 图表, 数据可视化"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "导入必要的库",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "创建图表",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "将x轴刻度标签移至顶部",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify3-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "显示图表",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify4-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Mover las etiquetas de las marcas del eje x a la parte superior",
-      "description": "En este tutorial, aprenderemos cómo mover las etiquetas de las marcas del eje x a la parte superior del gráfico utilizando la biblioteca Matplotlib de Python. Esto puede ser útil cuando las etiquetas del eje x son demasiado largas y afectan la legibilidad del gráfico.",
-      "meta": {
-        "title": "Python Matplotlib | Posicionamiento de las etiquetas de las marcas del eje x",
-        "description": "Aprende cómo mover las etiquetas de las marcas del eje x a la parte superior del gráfico utilizando la biblioteca Matplotlib de Python, mejorando la legibilidad del gráfico.",
-        "keywords": "Python, Matplotlib, eje x, etiquetas de las marcas, gráfico, visualización de datos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importar las bibliotecas necesarias",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify1-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Crear el gráfico",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify2-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Mover las etiquetas de las marcas del eje x a la parte superior",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify3-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          },
-          {
-            "title": "Mostrar el gráfico",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación por el momento",
-                "file": "verify4-1.sh",
-                "hint": "Este paso no tiene verificación por el momento"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Déplacer les étiquettes de graduation de l'axe des x en haut",
-      "description": "Dans ce tutoriel, nous apprendrons à déplacer les étiquettes de graduation de l'axe des x en haut du graphique en utilisant la bibliothèque Matplotlib de Python. Cela peut être utile lorsque les étiquettes de l'axe des x sont trop longues et nuisent à la lisibilité du graphique.",
-      "meta": {
-        "title": "Python Matplotlib | Positionnement des étiquettes de graduation de l'axe des x",
-        "description": "Apprenez à déplacer les étiquettes de graduation de l'axe des x en haut du graphique en utilisant la bibliothèque Matplotlib de Python, améliorant ainsi la lisibilité du graphique.",
-        "keywords": "Python, Matplotlib, axe des x, étiquettes de graduation, graphique, visualisation de données"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importer les bibliothèques nécessaires",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify1-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Créer le graphique",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify2-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Déplacer les étiquettes de graduation de l'axe des x en haut",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify3-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Afficher le graphique",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify4-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Verschieben der Tick-Labels der x-Achse nach oben",
-      "description": "In diesem Tutorial lernen wir, wie man die Tick-Labels der x-Achse mithilfe der Python-Bibliothek Matplotlib nach oben des Diagramms verschiebt. Dies kann nützlich sein, wenn die Labels der x-Achse zu lang sind und die Lesbarkeit des Diagramms beeinträchtigen.",
-      "meta": {
-        "title": "Python Matplotlib | Positionierung der Tick-Labels der x-Achse",
-        "description": "Lernen Sie, wie Sie die Tick-Labels der x-Achse mithilfe der Python-Bibliothek Matplotlib nach oben des Diagramms verschieben, um die Lesbarkeit des Diagramms zu verbessern.",
-        "keywords": "Python, Matplotlib, x-Achse, Tick-Labels, Diagramm, Datenvisualisierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importieren Sie die erforderlichen Bibliotheken",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify1-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Erstellen Sie das Diagramm",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify2-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Verschieben Sie die Tick-Labels der x-Achse nach oben",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify3-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Zeigen Sie das Diagramm an",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify4-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "x 軸の目盛りラベルを上部に移動する",
-      "description": "このチュートリアルでは、Python の Matplotlib ライブラリを使用して、x 軸の目盛りラベルをグラフの上部に移動する方法を学びます。x 軸のラベルが長すぎてグラフの読みやすさに影響する場合に、この手法は役立ちます。",
-      "meta": {
-        "title": "Python Matplotlib | x 軸の目盛りラベルの配置",
-        "description": "Python の Matplotlib ライブラリを使って x 軸の目盛りラベルをグラフの上部に移動し、グラフの読みやすさを向上させる方法を学びましょう。",
-        "keywords": "Python, Matplotlib, x 軸, 目盛りラベル, グラフ, データ可視化"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "必要なライブラリをインポートする",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify1-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "グラフを作成する",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify2-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "x 軸の目盛りラベルを上部に移動する",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify3-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "グラフを表示する",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify4-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Перемещение меток делений по оси X вверх",
-      "description": "В этом уроке мы научимся перемещать метки делений по оси x в верхнюю часть графика с использованием библиотеки Matplotlib для Python. Это может быть полезно, когда метки по оси x слишком длинные и мешают читабельности графика.",
-      "meta": {
-        "title": "Python Matplotlib | Позиционирование меток делений по оси X",
-        "description": "Узнайте, как перемещать метки делений по оси x в верхнюю часть графика с использованием библиотеки Matplotlib для Python, улучшая читабельность графика.",
-        "keywords": "Python, Matplotlib, ось x, метки делений, график, визуализация данных"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Импортируйте необходимые библиотеки",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify1-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Создайте график",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify2-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Переместите метки делений по оси x вверх",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify3-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Показать график",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify4-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

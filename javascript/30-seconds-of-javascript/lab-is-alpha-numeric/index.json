@@ -10,28 +10,82 @@
   },
   "difficulty": "Beginner",
   "time": 10,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "String Is Alphanumeric",
+        "title": "Understanding Alphanumeric Characters",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Node Command Usage",
+            "name": "Verify File Creation",
             "file": "verify1-1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "hint": "Did you create the alphanumeric.js file in the project directory?",
             "timeout": 0,
             "showstderr": true
+          },
+          {
+            "name": "Verify Code Execution",
+            "file": "verify1-2.sh",
+            "hint": "Did you run the JavaScript file using the node command?"
           }
         ],
         "skills": [
-          "javascript/arith_ops",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/variables"
+          "javascript/functions",
+          "javascript/logic_ops",
+          "javascript/str_manip"
+        ]
+      },
+      {
+        "title": "Understanding Regular Expressions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify File Update",
+            "file": "verify2-1.sh",
+            "hint": "Did you update the alphanumeric.js file with the new code?"
+          }
+        ],
+        "skills": ["javascript/logic_ops", "javascript/str_manip"]
+      },
+      {
+        "title": "Creating a Simple Validation Tool",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Validator File Creation",
+            "file": "verify3-1.sh",
+            "hint": "Did you create the validator.js file in the project directory?"
+          },
+          {
+            "name": "Verify Validator Execution",
+            "file": "verify3-2.sh",
+            "hint": "Did you run the validator.js file using the node command?"
+          }
+        ],
+        "skills": [
+          "javascript/cond_stmts",
+          "javascript/functions",
+          "javascript/str_manip"
+        ]
+      },
+      {
+        "title": "Exploring Other Ways to Check Alphanumeric Strings",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Alternative Methods File Creation",
+            "file": "verify4-1.sh",
+            "hint": "Did you create the alternative-methods.js file in the project directory?"
+          }
+        ],
+        "skills": [
+          "javascript/array_methods",
+          "javascript/logic_ops",
+          "javascript/str_manip"
         ]
       }
     ],
@@ -53,205 +107,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "字符串是否为字母数字",
-      "description": "在本实验中，我们将探索如何使用JavaScript检查给定字符串是否仅包含字母数字字符。我们将使用正则表达式模式将输入字符串与字母数字字符进行匹配，并返回一个布尔值，指示该字符串是否为字母数字。本实验将帮助你了解如何在JavaScript中使用正则表达式，以及如何使用它们来解决实际问题。",
-      "meta": {
-        "title": "检查字符串是否为字母数字",
-        "description": "学习如何使用JavaScript和正则表达式来确定给定字符串是否仅包含字母数字字符。",
-        "keywords": "JavaScript, JavaScript练习, 正则表达式, 在线JavaScript练习, 字母数字, 编码, JavaScript实验, JavaScript教程, 字符串"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "字符串是否为字母数字",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Node命令的用法",
-                "file": "verify1-1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Verificar si una cadena es alfanumérica",
-      "description": "En este laboratorio, exploraremos cómo verificar si una cadena dada contiene solo caracteres alfanuméricos utilizando JavaScript. Utilizaremos un patrón de expresión regular para comparar la cadena de entrada con caracteres alfanuméricos y devolver un valor booleano que indique si la cadena es alfanumérica o no. Este laboratorio te ayudará a entender cómo trabajar con expresiones regulares en JavaScript y cómo utilizarlas para resolver problemas prácticos.",
-      "meta": {
-        "title": "Comprobar si una cadena es alfanumérica",
-        "description": "Aprende cómo usar JavaScript y expresiones regulares para determinar si una cadena dada contiene solo caracteres alfanuméricos.",
-        "keywords": "javascript, práctica de javascript, expresiones regulares, práctica de javascript en línea, alfanumérico, codificación, laboratorio de javascript, tutor de javascript, cadena"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Verificar si una cadena es alfanumérica",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el uso del comando Node",
-                "file": "verify1-1.sh",
-                "hint": "Se puede ejecutar JavaScript en la Terminal/SSH escribiendo 'node' y presionando Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Vérification si une chaîne est alphanumérique",
-      "description": "Dans ce laboratoire, nous allons explorer comment vérifier si une chaîne de caractères donnée ne contient que des caractères alphanumériques à l'aide de JavaScript. Nous utiliserons un motif d'expression régulière pour comparer la chaîne d'entrée avec les caractères alphanumériques et renvoyer une valeur booléenne indiquant si la chaîne est alphanumérique ou non. Ce laboratoire vous aidera à comprendre comment travailler avec les expressions régulières en JavaScript et comment les utiliser pour résoudre des problèmes pratiques.",
-      "meta": {
-        "title": "Vérifier si une chaîne est alphanumérique",
-        "description": "Apprenez à utiliser JavaScript et les expressions régulières pour déterminer si une chaîne de caractères donnée ne contient que des caractères alphanumériques.",
-        "keywords": "javascript, pratique JavaScript, expressions régulières, pratique JavaScript en ligne, alphanumérique, programmation, laboratoire JavaScript, tutoriel JavaScript, chaîne de caractères"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vérification si une chaîne est alphanumérique",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation de la commande Node",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript peut être exécuté dans le Terminal/SSH en tapant 'node' puis en appuyant sur Entrée."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Zeichenkette ist alphanumerisch",
-      "description": "In diesem Lab werden wir untersuchen, wie man prüft, ob eine gegebene Zeichenkette nur alphanumerische Zeichen enthält, indem man JavaScript verwendet. Wir werden ein reguläres Ausdrucksmuster (regular expression pattern) nutzen, um die Eingabezeichenkette mit alphanumerischen Zeichen zu vergleichen und einen booleschen Wert zurückzugeben, der angibt, ob die Zeichenkette alphanumerisch ist oder nicht. Dieses Lab wird Ihnen helfen, zu verstehen, wie man mit regulären Ausdrücken in JavaScript arbeitet und wie man sie verwendet, um praktische Probleme zu lösen.",
-      "meta": {
-        "title": "Prüfen, ob eine Zeichenkette alphanumerisch ist",
-        "description": "Lernen Sie, wie Sie JavaScript und reguläre Ausdrücke verwenden, um festzustellen, ob eine gegebene Zeichenkette nur alphanumerische Zeichen enthält.",
-        "keywords": "javascript, JavaScript Übung, reguläre Ausdrücke, Online-JavaScript-Übung, alphanumerisch, Programmieren, JavaScript-Lab, JavaScript-Tutor, Zeichenkette"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Zeichenkette ist alphanumerisch",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Verwendung des Node-Befehls",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript kann im Terminal/SSH ausgeführt werden, indem Sie 'node' eingeben und die Eingabetaste drücken."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "文字列が英数字かどうかの判定",
-      "description": "この実験では、JavaScript を使用して、与えられた文字列が英数字のみで構成されているかどうかをチェックする方法を探ります。正規表現パターンを使用して、入力文字列が英数字と一致するかどうかを確認し、文字列が英数字であるかどうかを示すブール値を返します。この実験は、JavaScript で正規表現を扱う方法と、実際の問題を解決するためにそれらをどのように使用するかを理解するのに役立ちます。",
-      "meta": {
-        "title": "文字列が英数字かどうかのチェック",
-        "description": "JavaScript と正規表現を使って、与えられた文字列が英数字のみで構成されているかどうかを判定する方法を学びましょう。",
-        "keywords": "JavaScript, JavaScript 練習, 正規表現, オンライン JavaScript 練習, 英数字, コーディング, JavaScript 実験, JavaScript チューター, 文字列"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "文字列が英数字かどうかの判定",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Node コマンドの使用を検証する",
-                "file": "verify1-1.sh",
-                "hint": "ターミナル/SSH で 'node' と入力して Enter キーを押すことで、JavaScript を実行できます。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Проверка строки на алфавитно-цифровой состав",
-      "description": "В этом практическом занятии (лабораторной работе) мы рассмотрим, как проверить, содержит ли заданная строка только алфавитно-цифровые символы с использованием JavaScript. Мы будем использовать шаблон регулярного выражения для сопоставления входной строки с алфавитно-цифровыми символами и возвращения булевого значения, указывающего, является ли строка алфавитно-цифровой или нет. Это практическое занятие поможет вам понять, как работать с регулярными выражениями в JavaScript и как использовать их для решения практических задач.",
-      "meta": {
-        "title": "Проверка, является ли строка алфавитно-цифровой",
-        "description": "Узнайте, как использовать JavaScript и регулярные выражения для определения, содержит ли заданная строка только алфавитно-цифровые символы.",
-        "keywords": "javascript, практика программирования на javascript, регулярные выражения, онлайн-практика на javascript, алфавитно-цифровой состав, программирование, практическое занятие на javascript, обучение javascript, строка"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Проверка строки на алфавитно-цифровой состав",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверка использования команды Node",
-                "file": "verify1-1.sh",
-                "hint": "JavaScript можно запустить в Терминале/SSH, введя 'node' и нажав Enter."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

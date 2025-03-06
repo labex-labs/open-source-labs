@@ -1,48 +1,36 @@
-# Checkerboard Background Pattern
+# Understanding the Project Files
 
-`index.html` and `style.css` have already been provided in the VM.
+Before we start creating our checkerboard pattern, let's examine the project files that have been provided in the VM.
 
-To create a checkerboard background pattern, follow these steps:
+1. Open the `index.html` file in the editor by clicking on it in the file explorer panel.
 
-1. Set the `background-color` property to white.
-2. Use `background-image` with two `linear-gradient()` values, each with a different angle to create the checkerboard pattern. For example, set one angle to `45deg` and the other to `-45deg`.
-3. Specify the pattern's size using `background-size`. For instance, `60px 60px` will create a 60-by-60 pixel pattern.
-4. Use `background-repeat` to set the repetition of the pattern. For example, `repeat` will make the pattern repeat in both directions.
-5. Note that the `height` and `width` properties of the element are fixed to 240px for demonstration purposes.
-
-Here's an example HTML element with the `.checkerboard` class:
+The initial HTML file should look like this:
 
 ```html
-<div class="checkerboard"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkerboard Pattern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- You will add your code here -->
+  </body>
+</html>
 ```
 
-And here's the corresponding CSS:
+2. Now open the `style.css` file in the editor.
+
+The initial CSS file should be empty or contain minimal styles:
 
 ```css
-.checkerboard {
-  width: 240px;
-  height: 240px;
-  background-color: #fff;
-  background-image:
-    linear-gradient(
-      45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    ),
-    linear-gradient(
-      -45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    );
-  background-size: 60px 60px;
-  background-repeat: repeat;
-}
+/* CSS styles will be added here */
 ```
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.
+3. Let's start our development server to see the initial state of our webpage.
+
+To view your webpage in the browser, click on the "Go Live" button in the bottom right corner of the editor. This will start a live server and display your webpage in the **Web 8080** tab.
+
+You should see a blank page at this point, as we haven't added any content or styles yet.

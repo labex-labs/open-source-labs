@@ -1,41 +1,36 @@
-# Zoom in Zoom Out Animation
+# Understanding HTML Structure
 
-`index.html` and `style.css` have already been provided in the VM.
+Before we start creating our animation, we need to understand the HTML structure we will be working with. In this step, we will examine the provided HTML file and make any necessary modifications.
 
-To create a zoom in zoom out animation, follow these steps:
+1. Open the `index.html` file in the editor.
 
-1. Define a three-step animation using `@keyframes`. At `0%` and `100%`, set the element to its original size using `scale(1,1)`. At `50%`, scale it up to 1.5 times its original size using `scale(1.5,1.5)`.
-
-2. Give the element a specific size using `width` and `height`.
-
-3. Use `animation` to set the appropriate values for the element to make it animated.
-
-Here's an example HTML and CSS code:
+2. If the file is empty or missing, create it with the following content:
 
 ```html
-<div class="zoom-in-out-box"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom In Zoom Out Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Animation Demo</h1>
+    <p>This box demonstrates a zoom in zoom out animation:</p>
+
+    <div class="zoom-in-out-box"></div>
+  </body>
+</html>
 ```
 
-```css
-.zoom-in-out-box {
-  margin: 24px;
-  width: 50px;
-  height: 50px;
-  background: #f50057;
-  animation: zoom-in-zoom-out 1s ease infinite;
-}
+3. Let's understand what this HTML does:
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-```
+   - We have a standard HTML document structure with a title and viewport settings
+   - We link to an external CSS file named `style.css`
+   - We include a heading and paragraph to explain our demo
+   - Most importantly, we have a `<div>` element with class `zoom-in-out-box` that will be animated
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.
+4. Save the `index.html` file if you made any changes.
+
+This div element will be our canvas for creating the animation. In the next step, we will style this element using CSS.

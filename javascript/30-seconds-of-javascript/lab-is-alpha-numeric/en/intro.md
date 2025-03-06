@@ -1,3 +1,5 @@
 # Introduction
 
-In this lab, we will explore how to check if a given string contains only alphanumeric characters using JavaScript. We will use a regular expression pattern to match the input string against alphanumeric characters and return a boolean value indicating whether the string is alphanumeric or not. This lab will help you understand how to work with regular expressions in JavaScript and how to use them to solve practical problems.
+In this lab, we will learn how to check if a string contains only alphanumeric characters using JavaScript. Alphanumeric characters include letters (A-Z, a-z) and numbers (0-9). This is a common task in form validation, data processing, and many other programming scenarios.
+
+We will create a JavaScript function that uses regular expressions to determine if a string is alphanumeric. By the end of this lab, you will understand how to implement this check and how regular expressions can be used to validate string patterns in JavaScript.

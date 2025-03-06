@@ -10,67 +10,90 @@
   },
   "difficulty": "Beginner",
   "time": 10,
-  "hidden": false,
+  "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Creating a Bar Chart with Explicit Alpha Value",
+        "title": "Understanding Alpha Values in Matplotlib",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Check basic understanding",
             "file": "verify1-1.sh",
-            "hint": "This step has no verification at the moment"
+            "hint": "Make sure you've run the code that creates two overlapping circles with different alpha values."
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/legend_config",
+          "matplotlib/titles_labels"
+        ]
+      },
+      {
+        "title": "Creating a Bar Chart with Uniform Alpha Value",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Check bar chart creation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've created the bar chart with uniform alpha values."
           }
         ],
         "skills": [
           "matplotlib/bar_charts",
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_visualization",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/math_random",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples"
+          "matplotlib/grid_config",
+          "matplotlib/titles_labels"
         ]
       },
       {
         "title": "Creating a Bar Chart with Varying Alpha Values",
-        "text": "en/step2.md",
+        "text": "en/step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2-1.sh",
-            "hint": "This step has no verification at the moment"
+            "name": "Check varying alpha implementation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've created the bar chart with varying alpha values based on bar height."
           }
         ],
         "skills": [
           "matplotlib/bar_charts",
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/data_visualization",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/math_random",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types"
+          "matplotlib/grid_config",
+          "matplotlib/titles_labels"
+        ]
+      },
+      {
+        "title": "Creating a Scatter Plot with Alpha Values",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Check scatter plot creation",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've created the scatter plot with alpha values for visualizing data density."
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/scatter_plots",
+          "matplotlib/titles_labels"
+        ]
+      },
+      {
+        "title": "Creating a Combined Visualization with Different Alpha Techniques",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Check combined visualization",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've created the combined visualization demonstrating different alpha techniques."
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/scatter_plots",
+          "matplotlib/subplots"
         ]
       }
     ],
@@ -101,271 +124,5 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "设置颜色透明度值的方法",
-      "description": "本实验是关于使用 Python Matplotlib 库设置颜色的透明度值。透明度值是透明度的一种度量，其中 0 值表示完全透明，1 值表示完全不透明。我们将探索在 Matplotlib 中设置透明度值的两种方法：使用 alpha 关键字参数和使用 (matplotlib_color, alpha) 颜色格式。",
-      "meta": {
-        "title": "在 Python Matplotlib 中设置颜色透明度",
-        "description": "探索在 Matplotlib 中设置透明度值的两种方法：使用 'alpha' 关键字和 '(matplotlib_color, alpha)' 颜色格式。",
-        "keywords": "Matplotlib, Python, 颜色, 透明度, alpha"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "创建具有明确透明度值的柱状图",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "创建具有不同透明度值的柱状图",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Formas de establecer el valor alfa de un color",
-      "description": "Este laboratorio trata sobre cómo establecer el valor alfa de un color utilizando la biblioteca Matplotlib de Python. El valor alfa es una medida de transparencia, donde un valor de 0 significa completamente transparente y un valor de 1 significa completamente opaco. Exploraremos dos formas de establecer el valor alfa en Matplotlib: utilizando el argumento de palabra clave alpha y utilizando el formato de color (matplotlib_color, alpha).",
-      "meta": {
-        "title": "Establecer valores alfa de color en Python Matplotlib",
-        "description": "Explora dos formas de establecer el valor alfa en Matplotlib: utilizando la palabra clave 'alpha' y el formato de color '(matplotlib_color, alpha)'.",
-        "keywords": "matplotlib, python, color, transparencia, alpha"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Creación de un gráfico de barras con un valor alfa explícito",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "En este momento, este paso no tiene verificación",
-                "file": "verify1-1.sh",
-                "hint": "En este momento, este paso no tiene verificación"
-              }
-            ]
-          },
-          {
-            "title": "Creación de un gráfico de barras con valores alfa variables",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "En este momento, este paso no tiene verificación",
-                "file": "verify2-1.sh",
-                "hint": "En este momento, este paso no tiene verificación"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Méthodes pour définir la valeur alpha d'une couleur",
-      "description": "Ce laboratoire porte sur la définition de la valeur alpha d'une couleur à l'aide de la bibliothèque Python Matplotlib. La valeur alpha est une mesure de la transparence, où une valeur de 0 signifie complètement transparente et une valeur de 1 signifie complètement opaque. Nous explorerons deux méthodes pour définir la valeur alpha dans Matplotlib : en utilisant l'argument mot-clé alpha et en utilisant le format de couleur (matplotlib_color, alpha).",
-      "meta": {
-        "title": "Définition des valeurs alpha de couleur dans Python Matplotlib",
-        "description": "Explorez deux méthodes pour définir la valeur alpha dans Matplotlib : en utilisant le mot-clé 'alpha' et le format de couleur '(matplotlib_color, alpha)'.",
-        "keywords": "matplotlib, python, couleur, transparence, alpha"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Création d'un diagramme à barres avec une valeur alpha explicite",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify1-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Création d'un diagramme à barres avec des valeurs alpha variables",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify2-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Methoden zum Festlegen des Alpha-Werts einer Farbe",
-      "description": "Dieses Lab befasst sich mit dem Festlegen des Alpha-Werts einer Farbe mithilfe der Python-Bibliothek Matplotlib. Der Alpha-Wert misst die Transparenz, wobei ein Wert von 0 vollständig transparent und ein Wert von 1 vollständig undurchsichtig bedeutet. Wir werden zwei Methoden zum Festlegen des Alpha-Werts in Matplotlib untersuchen: die Verwendung des Schlüsselwortarguments 'alpha' und die Verwendung des Farbformats '(matplotlib_color, alpha)'.",
-      "meta": {
-        "title": "Festlegen von Farb-Alpha-Werten in Python Matplotlib",
-        "description": "Entdecken Sie zwei Methoden, um den Alpha-Wert in Matplotlib festzulegen: die Verwendung des Schlüsselworts 'alpha' und des Farbformats '(matplotlib_color, alpha)'.",
-        "keywords": "matplotlib, python, Farbe, Transparenz, Alpha"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Erstellen eines Balkendiagramms mit explizitem Alpha-Wert",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify1-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          },
-          {
-            "title": "Erstellen eines Balkendiagramms mit variierenden Alpha-Werten",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat derzeit keine Überprüfung",
-                "file": "verify2-1.sh",
-                "hint": "Dieser Schritt hat derzeit keine Überprüfung"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "色のアルファ値を設定する方法",
-      "description": "この実験は、Python の Matplotlib ライブラリを使用して色のアルファ値を設定することに関するものです。アルファ値は透明度を表す指標で、0 は完全に透明、1 は完全に不透明を意味します。Matplotlib でアルファ値を設定する 2 つの方法を探っていきます。具体的には、alpha キーワード引数を使用する方法と、(matplotlib_color, alpha) という色の書式を使用する方法です。",
-      "meta": {
-        "title": "Python Matplotlib で色のアルファ値を設定する",
-        "description": "Matplotlib でアルファ値を設定する 2 つの方法を探る: 'alpha' キーワードと '(matplotlib_color, alpha)' 色の書式を使用する方法。",
-        "keywords": "matplotlib, python, 色, 透明度, アルファ"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "明示的なアルファ値を持つ棒グラフの作成",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify1-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "異なるアルファ値を持つ棒グラフの作成",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "現時点でこのステップの検証はありません",
-                "file": "verify2-1.sh",
-                "hint": "現時点でこのステップの検証はありません"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Способы установки альфа-значения цвета",
-      "description": "В этой практической работе (лабораторной работе) рассказывается о настройке альфа-значения цвета с использованием библиотеки Python Matplotlib. Альфа-значение является мерой прозрачности, где значение 0 означает полную прозрачность, а значение 1 - полную непрозрачность. Мы рассмотрим два способа установки альфа-значения в Matplotlib: с использованием ключевого аргумента alpha и с использованием формата цвета (matplotlib_color, alpha).",
-      "meta": {
-        "title": "Установка альфа-значений цвета в Python Matplotlib",
-        "description": "Исследуйте два способа установки альфа-значения в Matplotlib: с использованием ключевого слова 'alpha' и формата цвета '(matplotlib_color, alpha)'.",
-        "keywords": "matplotlib, python, цвет, прозрачность, альфа"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Создание столбчатой диаграммы с явным альфа-значением",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify1-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Создание столбчатой диаграммы с различными альфа-значениями",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify2-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

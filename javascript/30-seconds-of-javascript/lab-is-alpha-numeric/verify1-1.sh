@@ -1,3 +1,2 @@
 #!/bin/zsh
-
-cat ~/.zsh_history | grep 'node'
+ls ~/project/alphanumeric.js

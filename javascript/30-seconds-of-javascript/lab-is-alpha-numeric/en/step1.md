@@ -1,20 +1,52 @@
-# Checking if a String is Alphanumeric
+# Understanding Alphanumeric Characters
 
-If you want to practice coding, open the Terminal/SSH and type `node`. Here's a function that checks if a string contains only alphanumeric characters:
+Alphanumeric characters consist of the 26 letters in the English alphabet (both uppercase A-Z and lowercase a-z) and the 10 numerical digits (0-9). When we check if a string is alphanumeric, we are verifying that it contains only these characters and nothing else.
 
-```js
-const isAlphaNumeric = (str) => /^[a-z0-9]+$/gi.test(str);
+In JavaScript, we can check for alphanumeric characters using regular expressions. Regular expressions (regex) are patterns used to match character combinations in strings.
+
+Let's start by opening our code editor. In the WebIDE, navigate to the file explorer on the left side and create a new JavaScript file:
+
+1. Right-click in the file explorer panel
+2. Select "New File"
+3. Name the file `alphanumeric.js`
+
+Once you have created the file, it should open automatically in the editor. If not, click on `alphanumeric.js` in the file explorer to open it.
+
+![new-file](../assets/screenshot-20250306-K5AOWF7Z@2x.png)
+
+Now, let's enter the following code:
+
+```javascript
+// Function to check if a string is alphanumeric
+function isAlphaNumeric(str) {
+  // Using regular expression to check for alphanumeric characters
+  return /^[a-zA-Z0-9]+$/.test(str);
+}
+
+// Example usage
+console.log("Is 'hello123' alphanumeric?", isAlphaNumeric("hello123"));
+console.log("Is '123' alphanumeric?", isAlphaNumeric("123"));
+console.log("Is 'hello 123' alphanumeric?", isAlphaNumeric("hello 123"));
+console.log("Is 'hello@123' alphanumeric?", isAlphaNumeric("hello@123"));
 ```
 
-To use it, call `isAlphaNumeric` with a string as its argument. It will return `true` if the string contains only alphanumeric characters, and `false` otherwise.
+Save the file by pressing `Ctrl+S` or by selecting "File" > "Save" from the menu.
 
-For example:
+Now, let's run this JavaScript file to see the output. Open the terminal in the WebIDE by selecting "Terminal" > "New Terminal" from the menu or by pressing `` Ctrl+` ``.
 
-```js
-isAlphaNumeric("hello123"); // true
-isAlphaNumeric("123"); // true
-isAlphaNumeric("hello 123"); // false (contains a space character)
-isAlphaNumeric("#$hello"); // false (contains non-alphanumeric characters)
+In the terminal, execute the following command:
+
+```bash
+node alphanumeric.js
 ```
 
-The `RegExp.prototype.test()` method is used to check if the input string matches against the alphanumeric pattern, which is represented by the regular expression `/^[a-z0-9]+$/gi`. This pattern matches any sequence of one or more lowercase letters or digits, and the `g` and `i` flags make the matching case-insensitive.
+You should see the following output:
+
+```
+Is 'hello123' alphanumeric? true
+Is '123' alphanumeric? true
+Is 'hello 123' alphanumeric? false
+Is 'hello@123' alphanumeric? false
+```
+
+This output shows that our function correctly identifies `hello123` and `123` as alphanumeric strings, while `hello 123` (contains a space) and `hello@123` (contains a special character @) are not alphanumeric.

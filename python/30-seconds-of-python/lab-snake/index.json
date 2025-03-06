@@ -13,29 +13,58 @@
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Snakecase String",
+        "title": "Understanding the Problem",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python Script Execution in Temporary Directory",
+            "name": "Verify Python File Creation",
             "file": "verify1-1.sh",
-            "hint": "Please make sure you have completed the required actions.",
+            "hint": "Please create the snake_case.py file in the project directory",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
+        "skills": ["python/function_definition", "python/strings"]
+      },
+      {
+        "title": "Using Regular Expressions for Pattern Matching",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Regular Expression Usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure your snake function uses regular expressions"
+          }
+        ],
+        "skills": ["python/regular_expressions", "python/strings"]
+      },
+      {
+        "title": "Handling More Complex Patterns",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Enhanced Function",
+            "file": "verify3-1.sh",
+            "hint": "Make sure your function handles hyphens and PascalCase"
+          }
+        ],
+        "skills": ["python/regular_expressions", "python/strings"]
+      },
+      {
+        "title": "Final Implementation and Testing",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Final Implementation",
+            "file": "verify4-1.sh",
+            "hint": "Make sure your final implementation passes all tests"
+          }
+        ],
+        "skills": ["python/regular_expressions", "python/strings"]
       }
     ],
     "intro": {
@@ -70,205 +99,5 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "Python 蛇形命名法转换",
-      "description": "在Python中，蛇形命名法是一种命名约定，其中单词由下划线分隔。这通常用于命名变量、函数和其他标识符。然而，有时我们可能会遇到不是蛇形命名法的字符串，我们需要对其进行转换。在这个挑战中，你将负责编写一个将字符串转换为蛇形命名法的Python函数。",
-      "meta": {
-        "title": "Python | 蛇形命名法转换 | 字符串操作",
-        "description": "学习如何使用Python将字符串转换为蛇形命名法。探索一个强大的函数，它可以处理各种输入格式，包括驼峰命名法、混合大小写和带连字符的字符串。",
-        "keywords": "Python, 蛇形命名法, 字符串转换, 字符串操作, 驼峰命名法, 混合大小写, 带连字符的字符串"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "蛇形命名法字符串",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "在临时目录中验证Python脚本执行情况",
-                "file": "verify1-1.sh",
-                "hint": "请确保你已完成所需操作。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Conversión a snake case en Python",
-      "description": "En Python, el snake case es una convención de nomenclatura en la que las palabras se separan por guiones bajos. Esto se utiliza comúnmente para nombrar variables, funciones y otros identificadores. Sin embargo, a veces podemos tener cadenas de texto que no están en snake case y necesitamos convertirlas. En este reto, se te encargará escribir una función de Python que convierta una cadena de texto a snake case.",
-      "meta": {
-        "title": "Python | Conversión a snake case | Manipulación de cadenas",
-        "description": "Aprende cómo convertir cadenas de texto a snake case utilizando Python. Descubre una función poderosa que maneja una variedad de formatos de entrada, incluyendo camelCase, cadenas con mayúsculas y minúsculas mezcladas y cadenas con guiones.",
-        "keywords": "Python, snake case, conversión de cadenas, manipulación de cadenas, camelCase, cadenas con mayúsculas y minúsculas mezcladas, cadenas con guiones"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Cadena en snake case",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la ejecución del script de Python en el directorio temporal",
-                "file": "verify1-1.sh",
-                "hint": "Asegúrate de haber completado las acciones requeridas."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Conversion en snake case en Python",
-      "description": "En Python, le snake case est une convention de nommage où les mots sont séparés par des underscores (tirets bas). Cette convention est couramment utilisée pour nommer les variables, les fonctions et autres identifiants. Cependant, parfois nous pouvons avoir des chaînes de caractères qui ne sont pas en snake case et nous devons les convertir. Dans ce défi, vous aurez pour tâche d'écrire une fonction Python qui convertit une chaîne de caractères en snake case.",
-      "meta": {
-        "title": "Python | Conversion en snake case | Manipulation de chaînes de caractères",
-        "description": "Apprenez à convertir des chaînes de caractères en snake case avec Python. Découvrez une fonction puissante qui gère une variété de formats d'entrée, y compris le camelCase, les chaînes en casse mixte et les chaînes avec des tirets.",
-        "keywords": "Python, snake case, conversion de chaînes de caractères, manipulation de chaînes de caractères, camelCase, casse mixte, chaînes avec des tirets"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Chaîne en snake case",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'exécution du script Python dans le répertoire temporaire",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez vous assurer que vous avez effectué les actions requises."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Python Snake Case Umwandlung",
-      "description": "In Python ist Snake Case eine Benennungskonvention, bei der Wörter durch Unterstriche getrennt werden. Dies wird üblicherweise für die Benennung von Variablen, Funktionen und anderen Bezeichnern verwendet. Manchmal haben wir jedoch Zeichenketten, die nicht im Snake Case vorliegen, und wir müssen sie umwandeln. In dieser Herausforderung müssen Sie eine Python-Funktion schreiben, die eine Zeichenkette in Snake Case umwandelt.",
-      "meta": {
-        "title": "Python | Snake Case Umwandlung | Zeichenkettenmanipulation",
-        "description": "Lernen Sie, wie Sie Zeichenketten mit Python in Snake Case umwandeln. Entdecken Sie eine leistungsstarke Funktion, die eine Vielzahl von Eingabeformaten verarbeitet, einschließlich camelCase, gemischten Groß- und Kleinbuchstaben sowie Bindestrich-zeichenketten.",
-        "keywords": "Python, Snake Case, Zeichenkettenumwandlung, Zeichenkettenmanipulation, camelCase, gemischte Groß- und Kleinbuchstaben, Bindestrich-zeichenketten"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Snake Case Zeichenkette",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie die Ausführung des Python-Skripts im temporären Verzeichnis",
-                "file": "verify1-1.sh",
-                "hint": "Bitte stellen Sie sicher, dass Sie die erforderlichen Aktionen ausgeführt haben."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Pythonでのスネークケース変換",
-      "description": "Pythonでは、スネークケース（snake case）とは、単語がアンダースコアで区切られる命名規則です。これは、変数、関数、その他の識別子の命名に一般的に使用されます。ただし、時にはスネークケースではない文字列があり、それを変換する必要がある場合があります。このチャレンジでは、文字列をスネークケースに変換するPython関数を書くタスクが与えられます。",
-      "meta": {
-        "title": "Python | スネークケース変換 | 文字列操作",
-        "description": "Pythonを使って文字列をスネークケースに変換する方法を学びましょう。キャメルケース（camelCase）、大文字小文字混在、ハイフン付きの文字列など、さまざまな入力形式を扱う強力な関数を発見しましょう。",
-        "keywords": "Python, スネークケース, 文字列変換, 文字列操作, キャメルケース, 大文字小文字混在, ハイフン付き文字列"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "スネークケースの文字列",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "一時ディレクトリでのPythonスクリプト実行の検証",
-                "file": "verify1-1.sh",
-                "hint": "必要な操作を完了していることを確認してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Преобразование строки в snake case на Python",
-      "description": "В Python 'snake case' (змеиный регистр) - это соглашение об именовании, при котором слова разделяются подчеркиваниями. Оно обычно используется для именования переменных, функций и других идентификаторов. Однако иногда у нас могут быть строки, которые не соответствуют 'snake case', и нам нужно их преобразовать. В этом задании вам предстоит написать функцию на Python, которая преобразует строку в 'snake case'.",
-      "meta": {
-        "title": "Python | Преобразование в snake case | Манипуляции со строками",
-        "description": "Узнайте, как преобразовать строки в 'snake case' с помощью Python. Откройте для себя мощную функцию, которая обрабатывает различные форматы входных данных, включая 'camelCase', смешанный регистр и строки с дефисами.",
-        "keywords": "Python, snake case, преобразование строки, манипуляции со строками, camelCase, смешанный регистр, строки с дефисами"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Преобразование строки в snake case",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверка выполнения Python-скрипта в временной директории",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, убедитесь, что вы выполнили все необходимые действия."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }
