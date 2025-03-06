@@ -4,16 +4,14 @@ In this first step, we will create a new Jupyter Notebook and set up our data fo
 
 ## Creating a New Notebook
 
-1. In the WebIDE interface, locate the "placing-text-boxes.ipynb" file in the file explorer.
-
-2. Click on this file to open it in the Jupyter Notebook interface.
-
-3. In the first cell of the notebook, let's import the necessary libraries. Type the following code and run it by clicking the "Run" button or pressing Shift+Enter:
+In the first cell of the notebook, let's import the necessary libraries. Type the following code and run it by clicking the "Run" button or pressing Shift+Enter:
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 ```
+
+![libraries-imported](../assets/screenshot-20250306-Azb1cb3S@2x.png)
 
 This code imports two essential libraries:
 

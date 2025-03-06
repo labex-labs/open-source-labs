@@ -12,17 +12,16 @@ Create a new cell in your Jupyter Notebook and type the following code:
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Print library versions to confirm they are installed correctly
-print(f"Matplotlib version: {plt.__version__}")
 print(f"NumPy version: {np.__version__}")
 ```
 
 When you run this cell, you should see output similar to this:
 
 ```
-Matplotlib version: 3.5.1
-NumPy version: 1.21.5
+NumPy version: 2.0.0
 ```
+
+![numpy-version](../assets/screenshot-20250306-Um0MaTKw@2x.png)
 
 The exact version numbers may vary depending on your environment, but this confirms the libraries are properly installed and ready to use.
 

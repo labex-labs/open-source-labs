@@ -16,6 +16,8 @@ Let's understand what each of these libraries does:
 - `matplotlib.cbook`: A collection of utility functions for matplotlib, including functions to get sample data.
 - `matplotlib.image`: A module for image-related functionality in matplotlib, which we'll use to read and display images.
 
-4. Run the cell by clicking the "Run" button at the top of the notebook or by pressing Shift+Enter.
+Run the cell by clicking the "Run" button at the top of the notebook or by pressing Shift+Enter.
+
+![libraries-imported](../assets/screenshot-20250306-18gJ6FRZ@2x.png)
 
 This cell execution should complete without any output, indicating that all libraries were successfully imported.

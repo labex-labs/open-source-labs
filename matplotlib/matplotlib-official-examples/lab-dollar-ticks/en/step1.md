@@ -2,8 +2,6 @@
 
 In this first step, we will import the necessary libraries and create sample financial data for our plot. We need to import both Matplotlib for visualization and NumPy for data generation.
 
-Let's create a new notebook in Jupyter. In the Notebook tab, click on the "New" button in the top right corner and select "Python 3" to create a new notebook.
-
 In the first cell of your notebook, enter and run the following code to import the required libraries:
 
 ```python
@@ -22,6 +20,8 @@ After running the code (press Shift+Enter), you should see the output:
 ```
 Libraries imported successfully!
 ```
+
+![libraries-imported](../assets/screenshot-20250306-BN9E08ez@2x.png)
 
 Now, let's create some sample financial data to visualize. Financial data often represents values over time, so we'll create a simple dataset that might represent daily revenue over a period of time.
 

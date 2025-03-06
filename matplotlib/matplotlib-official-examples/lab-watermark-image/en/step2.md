@@ -35,4 +35,6 @@ This code does the following:
 
 The output should display information about the image and show the Matplotlib logo. The image shape indicates the dimensions of the image (height, width, color channels), and the data type tells us how the image data is stored.
 
+![image-info](../assets/screenshot-20250306-cqkw4mpg@2x.png)
+
 This step is important because it helps us understand the image we'll be using as an overlay. We can see its appearance and dimensions, which will be useful when deciding how to position it on our plot.

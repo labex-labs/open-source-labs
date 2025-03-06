@@ -28,7 +28,7 @@ print("Basic plot created successfully!")
 
 After running this code, you should see a line plot showing the daily revenue trend. It should look something like this (actual values may vary slightly due to random generation):
 
-![Basic Revenue Plot](https://i.imgur.com/placeholder.png)
+![Basic Revenue Plot](../assets/screenshot-20250306-ywFsL4VH@2x.png)
 
 Let's break down what we did in this code:
 

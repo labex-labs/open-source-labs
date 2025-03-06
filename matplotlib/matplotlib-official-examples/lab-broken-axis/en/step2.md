@@ -24,6 +24,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+![broken-axis-plot](../assets/screenshot-20250306-cawcMZv3@2x.png)
+
 When you run this cell, you should see a figure with two subplots, both showing the same data. Notice how the outliers compress the rest of the data in both plots, making it difficult to see the details of the majority of data points. This is exactly the problem we're trying to solve with a broken axis plot.
 
 ## Configure the Y-Axis Limits
