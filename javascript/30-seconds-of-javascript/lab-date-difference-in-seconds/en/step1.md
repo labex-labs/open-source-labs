@@ -15,6 +15,8 @@ node
 
 You should now see the Node.js prompt (`>`), indicating that you are in the JavaScript interactive environment. This allows you to execute JavaScript code directly in the terminal.
 
+![node-prompt](../assets/screenshot-20250306-328ScUbO@2x.png)
+
 ## Creating Date Objects
 
 In JavaScript, we can create a new Date object in several ways:

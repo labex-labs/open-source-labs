@@ -1,1 +1,3 @@
-#!/bin/zsh cat ~/.zsh_history | grep 'deepLowerizeKeys'
+#!/bin/zsh
+
+cat ~/.zsh_history | grep 'deepLowerizeKeys'

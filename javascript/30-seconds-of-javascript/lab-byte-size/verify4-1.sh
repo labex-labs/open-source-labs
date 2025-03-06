@@ -1,1 +1,3 @@
-#!/bin/zsh ls -la ~/project/byteSizeCalculator.js
+#!/bin/zsh
+
+ls -la ~/project/byteSizeCalculator.js

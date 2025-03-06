@@ -1,1 +1,3 @@
-#!/bin/zsh ls ~/project/object-utils.js ~/project/test.js
+#!/bin/zsh
+
+ls ~/project/object-utils.js ~/project/test.js
