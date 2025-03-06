@@ -6,6 +6,8 @@ Let's start by cloning the repository:
 
 1. Open your terminal in the LabEx VM.
 
+![terminal](../assets/screenshot-20250306-shbu3WrQ@2x.png)
+
 2. Run the following command to clone the repository:
 
 ```bash

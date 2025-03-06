@@ -33,6 +33,8 @@ For now, let's run our placeholder function to make sure our file is set up corr
 python3 ~/project/snake_case.py
 ```
 
+![python-prompt](../assets/screenshot-20250306-B5lI9tyo@2x.png)
+
 You should see an output like:
 
 ```
