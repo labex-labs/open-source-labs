@@ -1,12 +1,6 @@
 # Creating a Jupyter Notebook and Importing Required Libraries
 
-First, we need to create a new Jupyter Notebook and import the required libraries for our plotting task.
-
-1. In the Jupyter Notebook environment, create a new notebook by clicking on the "New" button in the top right corner and selecting "Python 3 (ipykernel)".
-
-2. Rename your notebook to `watermark-image.ipynb` by clicking on "Untitled" at the top of the page and entering the new name.
-
-3. In the first cell of your notebook, enter the following code to import the necessary libraries:
+In the first cell of your notebook, enter the following code to import the necessary libraries:
 
 ```python
 import matplotlib.pyplot as plt

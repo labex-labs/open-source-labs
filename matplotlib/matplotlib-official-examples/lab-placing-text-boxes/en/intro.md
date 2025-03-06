@@ -10,6 +10,8 @@ By the end of this lab, you will be able to create informative and visually appe
 
 After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
 
+![click-notebook](https://file.labex.io/images/click-notebook.png)
+
 You may need to wait a few seconds for Jupyter Notebook to finish loading. Due to limitations in Jupyter Notebook, the validation of operations cannot be automated.
 
 If you encounter any issues during the lab, feel free to ask Labby for assistance. We appreciate your feedback after the session to help us improve the lab experience.

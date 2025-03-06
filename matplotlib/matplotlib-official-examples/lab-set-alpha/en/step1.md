@@ -4,8 +4,6 @@ In this first step, we will create a Jupyter Notebook and learn how to set up a 
 
 ## Creating Your First Jupyter Notebook Cell
 
-First, let's create a new cell in the Jupyter Notebook that has been opened for you. You can do this by clicking the "+" button in the toolbar.
-
 In this cell, we'll import the necessary libraries and create two overlapping circles with different alpha values to demonstrate transparency.
 
 ```python
