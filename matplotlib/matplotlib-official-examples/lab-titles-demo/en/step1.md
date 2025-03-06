@@ -6,6 +6,8 @@ In this step, you will create a simple line plot and add a centered title, which
 
 After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook.
 
+![click-notebook](https://file.labex.io/images/click-notebook.png)
+
 You may need to wait a few seconds for Jupyter Notebook to finish loading. Due to limitations in Jupyter Notebook, the validation of operations cannot be automated.
 
 If you encounter any issues during the lab, feel free to ask Labby for assistance. Please provide feedback after the session so we can promptly address any problems.
@@ -33,6 +35,8 @@ plt.show()                  # Display the plot
 
 You should see a simple line plot with values from 0 to 9 displayed in the output.
 
+![line-plot](../assets/screenshot-20250306-g5knGobR@2x.png)
+
 ## Adding a Default (Centered) Title
 
 Now, let's add a title to our plot. The default position for a title is centered along the top of the plot. In a new cell, enter the following code:
@@ -44,6 +48,8 @@ plt.grid(True)
 plt.title('My First Matplotlib Plot')  # Add a centered title
 plt.show()
 ```
+
+![line-plot-with-title](../assets/screenshot-20250306-XMODABB2@2x.png)
 
 Run the cell, and you should see the plot with a centered title at the top.
 
