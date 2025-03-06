@@ -4,10 +4,11 @@ In this step, you will create a simple line plot and add a centered title, which
 
 ## Creating a Jupyter Notebook
 
-First, let's create a new notebook:
+After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook.
 
-1. In the Jupyter interface that has opened, click the "New" button at the top right and select "Python 3" to create a new notebook.
-2. Rename your notebook by clicking on "Untitled" at the top of the page and entering "titles-demo".
+You may need to wait a few seconds for Jupyter Notebook to finish loading. Due to limitations in Jupyter Notebook, the validation of operations cannot be automated.
+
+If you encounter any issues during the lab, feel free to ask Labby for assistance. Please provide feedback after the session so we can promptly address any problems.
 
 ## Importing Matplotlib
 
