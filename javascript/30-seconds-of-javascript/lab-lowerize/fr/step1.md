@@ -1,24 +1,36 @@
-# Conversion des clés d'un objet en minuscules
+# Comprendre les objets en JavaScript
 
-Pour convertir toutes les clés d'un objet en minuscules, suivez ces étapes :
+Avant de commencer à convertir les clés d'un objet en minuscules, comprenons ce que sont les objets JavaScript et comment nous pouvons les manipuler.
 
-1. Ouvrez le Terminal/SSH pour commencer à pratiquer la programmation et tapez `node`.
-2. Utilisez `Object.keys()` pour obtenir un tableau des clés de l'objet.
-3. Utilisez `Array.prototype.reduce()` pour mapper le tableau sur un objet.
-4. Utilisez `String.prototype.toLowerCase()` pour convertir les clés en minuscules.
+En JavaScript, un objet est une collection de paires clé-valeur. Les clés sont des chaînes de caractères (ou des Symboles), et les valeurs peuvent être de n'importe quel type de données, y compris d'autres objets.
 
-Voici un exemple de code qui met en œuvre ces étapes :
+Commençons par ouvrir le shell interactif Node.js :
 
-```js
-const lowerize = (obj) =>
-  Object.keys(obj).reduce((acc, k) => {
-    acc[k.toLowerCase()] = obj[k];
-    return acc;
-  }, {});
+1. Ouvrez le terminal dans votre WebIDE
+2. Tapez `node` puis appuyez sur Entrée
+
+Vous devriez maintenant voir l'invite Node.js (`>`), qui vous permet de taper directement du code JavaScript.
+
+Créons un objet simple avec des clés en casse mixte :
+
+```javascript
+const user = {
+  Name: "John",
+  AGE: 30,
+  Email: "john@example.com"
+};
 ```
 
-Vous pouvez ensuite appeler la fonction `lowerize()` en passant un objet en argument pour obtenir un nouvel objet avec toutes les clés en minuscules. Par exemple :
+Tapez ce code dans l'invite Node.js puis appuyez sur Entrée. Pour voir l'objet, tapez simplement `user` puis appuyez sur Entrée :
 
-```js
-lowerize({ Name: "John", Age: 22 }); // { name: 'John', age: 22 }
+```javascript
+user;
 ```
+
+Vous devriez voir la sortie suivante :
+
+```
+{ Name: 'John', AGE: 30, Email: 'john@example.com' }
+```
+
+Comme vous pouvez le voir, cet objet a des clés avec différents styles de casse. Dans l'étape suivante, nous allons apprendre à accéder à ces clés et à les convertir en minuscules.

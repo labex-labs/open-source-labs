@@ -1,3 +1,5 @@
 # Introducción
 
-En este laboratorio, exploraremos el mundo de la programación CSS y aprenderemos cómo crear un patrón de fondo de tablero de ajedrez utilizando técnicas avanzadas de CSS. El laboratorio te guiará a través de los pasos necesarios para crear un patrón de tablero de ajedrez visualmente atractivo que se puede utilizar en diversos proyectos de diseño web. Al final de este laboratorio, habrás adquirido una valiosa experiencia en el uso de CSS para crear diseños web hermosos y atractivos.
+En este laboratorio, exploraremos la programación CSS para crear un patrón de fondo de tablero de ajedrez. Aprenderás cómo utilizar técnicas de degradado CSS para diseñar un patrón de tablero de ajedrez visualmente atractivo que puede mejorar diversos proyectos web. El patrón de tablero de ajedrez es un elemento de diseño clásico que consiste en cuadrados de colores alternados dispuestos en una cuadrícula, similar a un tablero de ajedrez.
+
+Al completar este laboratorio, adquirirás experiencia práctica con fondos CSS, degradados y creación de patrones, habilidades que son valiosas para el diseño web moderno.

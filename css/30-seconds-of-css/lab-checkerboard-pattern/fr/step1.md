@@ -1,48 +1,36 @@
-# Motif de fond en damier
+# Comprendre les fichiers du projet
 
-`index.html` et `style.css` ont déjà été fournis dans la machine virtuelle (VM).
+Avant de commencer à créer notre motif de damier, examinons les fichiers du projet fournis dans la machine virtuelle (VM).
 
-Pour créer un motif de fond en damier, suivez ces étapes :
+1. Ouvrez le fichier `index.html` dans l'éditeur en cliquant dessus dans le panneau de l'explorateur de fichiers.
 
-1. Définissez la propriété `background-color` sur blanc.
-2. Utilisez `background-image` avec deux valeurs `linear-gradient()`, chacune avec un angle différent pour créer le motif de damier. Par exemple, définissez un angle à `45deg` et l'autre à `-45deg`.
-3. Spécifiez la taille du motif en utilisant `background-size`. Par exemple, `60px 60px` créera un motif de 60 pixels sur 60 pixels.
-4. Utilisez `background-repeat` pour définir la répétition du motif. Par exemple, `repeat` fera répéter le motif dans les deux directions.
-5. Notez que les propriétés `height` et `width` de l'élément sont fixées à 240px à des fins de démonstration.
-
-Voici un exemple d'élément HTML avec la classe `.checkerboard` :
+Le fichier HTML initial devrait ressembler à ceci :
 
 ```html
-<div class="checkerboard"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkerboard Pattern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Vous ajouterez votre code ici -->
+  </body>
+</html>
 ```
 
-Et voici le CSS correspondant :
+2. Ouvrez maintenant le fichier `style.css` dans l'éditeur.
+
+Le fichier CSS initial devrait être vide ou contenir des styles minimaux :
 
 ```css
-.checkerboard {
-  width: 240px;
-  height: 240px;
-  background-color: #fff;
-  background-image:
-    linear-gradient(
-      45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    ),
-    linear-gradient(
-      -45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    );
-  background-size: 60px 60px;
-  background-repeat: repeat;
-}
+/* CSS styles will be added here */
 ```
 
-Veuillez cliquer sur 'Go Live' dans le coin inférieur droit pour exécuter le service web sur le port 8080. Ensuite, vous pouvez actualiser l'onglet **Web 8080** pour prévisualiser la page web.
+3. Démarrons notre serveur de développement pour voir l'état initial de notre page web.
+
+Pour afficher votre page web dans le navigateur, cliquez sur le bouton "Go Live" dans le coin inférieur droit de l'éditeur. Cela démarrera un serveur en direct et affichera votre page web dans l'onglet **Web 8080**.
+
+Vous devriez voir une page blanche à ce stade, car nous n'avons pas encore ajouté de contenu ou de styles.

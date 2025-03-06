@@ -1,3 +1,11 @@
 # 简介
 
-在本实验中，我们将学习如何使用 JavaScript 将对象的所有键转换为小写。我们将使用 `Object.keys()` 和 `Array.prototype.reduce()` 将键映射到一个对象，并使用 `String.prototype.toLowerCase()` 将它们转换为小写。在处理键大小写不一致的对象时，此技术可能会很有用。
+在这个实验中，你将学习如何使用 JavaScript 将对象的所有键转换为小写。当处理来自不同数据源的数据时，对象键的大小写可能不一致，这项技术就显得尤为有用。
+
+你将使用几个 JavaScript 方法来完成这个任务：
+
+- `Object.keys()`：用于从对象中获取所有键
+- `Array.prototype.reduce()`：用于将数据转换为新对象
+- `String.prototype.toLowerCase()`：用于将字符串转换为小写
+
+在这个实验结束时，你将能够创建一个可复用的函数，该函数可以在保留对象值的同时，将对象的所有键转换为小写。

@@ -1,11 +1,26 @@
 # Einführung
 
-Dieses Lab befasst sich mit dem Einstellen des Alpha-Werts einer Farbe mithilfe der Python-Bibliothek Matplotlib. Der Alpha-Wert misst die Transparenz, wobei ein Wert von 0 vollständig transparent und ein Wert von 1 vollständig undurchsichtig bedeutet. Wir werden zwei Methoden zum Einstellen des Alpha-Werts in Matplotlib untersuchen: die Verwendung des Schlüsselwortarguments `alpha` und die Verwendung des Farbformats `(matplotlib_color, alpha)`.
+In diesem Lab wird untersucht, wie man die Farbtransparenz (Alpha-Werte) mit der Python-Bibliothek Matplotlib einstellt. Bei der Datenvisualisierung ist Transparenz ein mächtiges Werkzeug, das Muster in überlappenden Elementen aufdecken oder bestimmte Datenpunkte hervorheben kann.
 
-## Tipps für die virtuelle Maschine (VM)
+Alpha-Werte in Matplotlib reichen von 0 bis 1:
 
-Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
+- 0 bedeutet vollständig transparent (unsichtbar)
+- 1 bedeutet vollständig undurchsichtig (fest)
+- Werte zwischen 0 und 1 erzeugen unterschiedliche Transparenzgrade
 
-Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Operationen nicht automatisiert werden.
+Wir werden zwei Hauptansätze zur Einstellung von Alpha-Werten in Matplotlib untersuchen:
 
-Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie nach der Sitzung Feedback ab, und wir werden das Problem umgehend für Sie lösen.
+1. Verwendung des Schlüsselwortarguments `alpha`
+2. Verwendung des Farbformats `(matplotlib_color, alpha)`
+
+Am Ende dieses Labs können Sie Visualisierungen mit benutzerdefinierten Transparenzeinstellungen erstellen, die Ihre Datenpräsentation verbessern.
+
+## Tipps zur virtuellen Maschine (VM)
+
+Nachdem der Start der virtuellen Maschine abgeschlossen ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
+
+![click-notebook](https://file.labex.io/images/click-notebook.png)
+
+Sie müssen möglicherweise einige Sekunden warten, bis Jupyter Notebook fertig geladen hat. Aufgrund der Einschränkungen von Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
+
+Wenn Sie während des Labs auf Probleme stoßen, können Sie sich gerne an Labby wenden, um Hilfe zu erhalten. Wir freuen uns über Ihr Feedback nach der Sitzung, um das Lab-Erlebnis zu verbessern.

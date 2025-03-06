@@ -1,48 +1,36 @@
-# 棋盘格背景图案
+# 了解项目文件
 
-虚拟机中已经提供了 `index.html` 和 `style.css`。
+在开始创建棋盘图案之前，让我们先查看一下虚拟机（VM）中提供的项目文件。
 
-要创建棋盘格背景图案，请按照以下步骤操作：
+1. 在文件资源管理器面板中点击 `index.html` 文件，将其在编辑器中打开。
 
-1. 将 `background-color` 属性设置为白色。
-2. 使用 `background-image` 并搭配两个 `linear-gradient()` 值，每个值使用不同的角度来创建棋盘格图案。例如，将一个角度设置为 `45deg`，另一个设置为 `-45deg`。
-3. 使用 `background-size` 指定图案的大小。例如，`60px 60px` 将创建一个 60×60 像素的图案。
-4. 使用 `background-repeat` 设置图案的重复方式。例如，`repeat` 将使图案在两个方向上重复。
-5. 请注意，为了演示目的，元素的 `height` 和 `width` 属性固定为 240px。
-
-这是一个带有 `.checkerboard` 类的 HTML 元素示例：
+初始的 HTML 文件应该如下所示：
 
 ```html
-<div class="checkerboard"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkerboard Pattern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- You will add your code here -->
+  </body>
+</html>
 ```
 
-这是相应的 CSS：
+2. 现在在编辑器中打开 `style.css` 文件。
+
+初始的 CSS 文件应该为空，或者只包含极少的样式：
 
 ```css
-.checkerboard {
-  width: 240px;
-  height: 240px;
-  background-color: #fff;
-  background-image:
-    linear-gradient(
-      45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    ),
-    linear-gradient(
-      -45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    );
-  background-size: 60px 60px;
-  background-repeat: repeat;
-}
+/* CSS styles will be added here */
 ```
 
-请点击右下角的“Go Live”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。
+3. 让我们启动开发服务器，查看网页的初始状态。
+
+要在浏览器中查看你的网页，请点击编辑器右下角的 “Go Live” 按钮。这将启动一个实时服务器，并在 **Web 8080** 标签页中显示你的网页。
+
+此时你应该会看到一个空白页面，因为我们还没有添加任何内容或样式。

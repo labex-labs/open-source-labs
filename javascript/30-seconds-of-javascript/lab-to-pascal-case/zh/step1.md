@@ -1,27 +1,48 @@
-# 将字符串转换为帕斯卡命名法的函数
+# 理解帕斯卡命名法（Pascal Case）并搭建环境
 
-要将字符串转换为帕斯卡命名法，你可以使用 `toPascalCase()` 函数。具体步骤如下：
+帕斯卡命名法是一种命名约定，其规则如下：
 
-- 首先，打开终端/SSH 并输入 `node` 以开始练习编码。
-- 然后，使用 `String.prototype.match()` 方法和适当的正则表达式将字符串拆分为单词。
-- 接下来，使用 `Array.prototype.map()`、`Array.prototype.slice()`、`Array.prototype.join()`、`String.prototype.toUpperCase()` 和 `String.prototype.toLowerCase()` 方法来组合这些单词，将每个单词的首字母大写，其余字母小写。
-- 最后，调用 `toPascalCase()` 函数，并将你想要转换的字符串作为参数传递，以将其转换为帕斯卡命名法。
+- 每个单词的首字母大写
+- 单词之间不使用空格、连字符或下划线
+- 其他所有字母均为小写
 
-以下是 `toPascalCase()` 函数的代码：
+例如：
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+让我们从搭建开发环境开始。
+
+1. 通过点击顶部菜单栏中的 “Terminal”，从 WebIDE 界面打开终端。
+
+2. 在终端中输入以下命令并按回车键，启动 Node.js 交互式会话：
+
+```bash
+node
 ```
 
-你可以使用此函数将任何字符串转换为帕斯卡命名法。以下是一些示例：
+你应该会看到 Node.js 提示符 (`>`) 出现，这表明你现在已进入 Node.js 交互式环境。
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. 让我们尝试一个简单的字符串操作来热热身。在 Node.js 提示符处输入以下代码：
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+输出应该是：
+
+```
+John doe
+```
+
+这个简单的示例展示了如何将字符串的首字母大写。我们使用了：
+
+- `charAt(0)` 来获取第一个字符
+- `toUpperCase()` 将其转换为大写
+- `slice(1)` 来获取字符串的其余部分
+- 使用 `+` 进行拼接以组合它们
+
+在构建帕斯卡命名法转换器时，这些字符串方法会很有用。

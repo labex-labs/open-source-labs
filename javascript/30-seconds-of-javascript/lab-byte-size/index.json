@@ -89,5 +89,403 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "计算字符串的字节大小",
+      "description": "在这个实验中，我们将探讨如何使用 JavaScript 计算给定字符串的字节大小。本实验的目的是帮助你了解如何将字符串转换为 Blob 对象，并使用 Blob.size 属性获取其字节大小。这些知识在各种场景中都很有用，例如在处理网络请求或文件上传时，字节大小是需要考虑的重要因素。",
+      "meta": {
+        "title": "使用 JavaScript 计算字符串的字节大小",
+        "description": "学习如何使用 JavaScript 计算字符串的字节大小，这是处理网络请求和文件上传时的实用技能。",
+        "keywords": "javascript, javascript 实践, 网络请求, blob, javascript 在线实践, javascript 实验, 字符串字节大小, 文件上传, javascript 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解 JavaScript 字符串表示法",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Node 是否已启动",
+                "file": "verify1-1.sh",
+                "hint": "确保在终端中输入 'node' 来启动 Node.js。"
+              }
+            ]
+          },
+          {
+            "title": "使用 Blob 计算字符串字节大小",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证函数是否创建",
+                "file": "verify2-1.sh",
+                "hint": "确保在 Node.js 控制台中定义了 byteSize 函数。"
+              }
+            ]
+          },
+          {
+            "title": "使用不同字符串类型进行测试",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证多种字符串测试",
+                "file": "verify3-1.sh",
+                "hint": "确保使用不同类型的字符串对 byteSize 函数进行测试。"
+              }
+            ]
+          },
+          {
+            "title": "创建一个实际示例文件",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证文件是否创建",
+                "file": "verify4-1.sh",
+                "hint": "确保在项目目录中创建了 byteSizeCalculator.js 文件。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Cálculo del tamaño en bytes de una cadena",
+      "description": "En este laboratorio, exploraremos cómo calcular el tamaño en bytes de una cadena dada utilizando JavaScript. El propósito de este laboratorio es ayudarte a entender cómo convertir una cadena en un objeto Blob y obtener su tamaño en bytes utilizando la propiedad Blob.size. Este conocimiento puede ser útil en diversos escenarios, como cuando se trabajan con solicitudes de red o cargas de archivos, donde el tamaño en bytes es un factor esencial a considerar.",
+      "meta": {
+        "title": "Cálculo del tamaño en bytes de una cadena en JavaScript",
+        "description": "Aprende cómo calcular el tamaño en bytes de una cadena utilizando JavaScript, una habilidad útil para trabajar con solicitudes de red y cargas de archivos.",
+        "keywords": "javascript, práctica de javascript, solicitudes de red, blob, práctica de javascript en línea, laboratorio de javascript, tamaño en bytes de una cadena, cargas de archivos, tutor de javascript"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendiendo la representación de cadenas en JavaScript",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar que Node se haya iniciado",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de iniciar Node.js escribiendo 'node' en la terminal."
+              }
+            ]
+          },
+          {
+            "title": "Usando Blob para calcular el tamaño en bytes de una cadena",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la creación de la función",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de definir la función byteSize en la consola de Node.js."
+              }
+            ]
+          },
+          {
+            "title": "Realizando pruebas con diferentes tipos de cadenas",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar pruebas de cadenas variadas",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de probar la función byteSize con diferentes tipos de cadenas."
+              }
+            ]
+          },
+          {
+            "title": "Creando un archivo de ejemplo práctico",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar la creación del archivo",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de crear el archivo byteSizeCalculator.js en el directorio del proyecto."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Calcul de la taille en octets d'une chaîne de caractères",
+      "description": "Dans ce laboratoire (lab), nous allons explorer comment calculer la taille en octets d'une chaîne de caractères donnée en utilisant JavaScript. Le but de ce laboratoire est de vous aider à comprendre comment convertir une chaîne de caractères en un objet Blob et obtenir sa taille en octets à l'aide de la propriété Blob.size. Cette connaissance peut être utile dans diverses situations, par exemple lorsque vous travaillez avec des requêtes réseau ou des téléchargements de fichiers, où la taille en octets est un facteur essentiel à prendre en compte.",
+      "meta": {
+        "title": "Calcul de la taille en octets d'une chaîne de caractères en JavaScript",
+        "description": "Apprenez à calculer la taille en octets d'une chaîne de caractères en utilisant JavaScript, une compétence utile pour travailler avec des requêtes réseau et des téléchargements de fichiers.",
+        "keywords": "javascript, pratique JavaScript, requêtes réseau, blob, pratique JavaScript en ligne, laboratoire JavaScript, taille en octets d'une chaîne de caractères, téléchargements de fichiers, tutoriel JavaScript"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre la représentation des chaînes de caractères en JavaScript",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier que Node a été démarré",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous de démarrer Node.js en tapant 'node' dans le terminal."
+              }
+            ]
+          },
+          {
+            "title": "Utilisation de Blob pour calculer la taille en octets d'une chaîne de caractères",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier la création de la fonction",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous de définir la fonction byteSize dans la console Node.js."
+              }
+            ]
+          },
+          {
+            "title": "Test avec différents types de chaînes de caractères",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier les tests sur diverses chaînes",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous de tester la fonction byteSize avec différents types de chaînes de caractères."
+              }
+            ]
+          },
+          {
+            "title": "Création d'un fichier d'exemple pratique",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier la création du fichier",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous de créer le fichier byteSizeCalculator.js dans le répertoire du projet."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Berechnung der Byte-Größe von Zeichenketten",
+      "description": "In diesem Labor werden wir untersuchen, wie man die Byte-Größe einer gegebenen Zeichenkette mit JavaScript berechnet. Das Ziel dieses Labs ist es, Ihnen zu helfen, zu verstehen, wie man eine Zeichenkette in ein Blob-Objekt umwandelt und dessen Größe in Bytes mithilfe der Blob.size-Eigenschaft ermittelt. Dieses Wissen kann in verschiedenen Szenarien nützlich sein, beispielsweise wenn Sie mit Netzwerkanfragen oder Dateiuploads arbeiten, bei denen die Byte-Größe ein wesentlicher Faktor ist.",
+      "meta": {
+        "title": "Berechnung der Byte-Größe von Zeichenketten in JavaScript",
+        "description": "Lernen Sie, wie Sie die Byte-Größe einer Zeichenkette mit JavaScript berechnen, eine nützliche Fähigkeit für die Arbeit mit Netzwerkanfragen und Dateiuploads.",
+        "keywords": "javascript, JavaScript Übung, Netzwerkanfragen, Blob, Online-JavaScript-Übung, JavaScript-Labor, Zeichenkette Byte-Größe, Dateiuploads, JavaScript-Tutor"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Grundlegendes zur Darstellung von Zeichenketten in JavaScript",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob Node.js gestartet wurde",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie Node.js starten, indem Sie 'node' in der Eingabeaufforderung eingeben."
+              }
+            ]
+          },
+          {
+            "title": "Verwendung von Blob zur Berechnung der Byte-Größe von Zeichenketten",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Funktionserstellung",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die byteSize-Funktion in der Node.js-Konsole definieren."
+              }
+            ]
+          },
+          {
+            "title": "Testen mit verschiedenen Zeichenketten-Typen",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen des Tests mit verschiedenen Zeichenketten",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die byteSize-Funktion mit verschiedenen Typen von Zeichenketten testen."
+              }
+            ]
+          },
+          {
+            "title": "Erstellen einer praktischen Beispiel-Datei",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Dateierstellung",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei byteSizeCalculator.js im Projektverzeichnis erstellen."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "文字列のバイトサイズの計算",
+      "description": "この実験では、JavaScript を使用して与えられた文字列のバイトサイズを計算する方法を探ります。この実験の目的は、文字列を Blob オブジェクトに変換し、Blob.size プロパティを使用してそのバイトサイズを取得する方法を理解することです。この知識は、ネットワークリクエストやファイルアップロードなど、バイトサイズが重要な要素となる様々なシナリオで役立ちます。",
+      "meta": {
+        "title": "JavaScript で文字列のバイトサイズを計算する",
+        "description": "JavaScript を使って文字列のバイトサイズを計算する方法を学びましょう。ネットワークリクエストやファイルアップロードを扱う際に役立つスキルです。",
+        "keywords": "JavaScript, JavaScript 練習, ネットワークリクエスト, Blob, オンライン JavaScript 練習, JavaScript 実験, 文字列のバイトサイズ, ファイルアップロード, JavaScript チューター"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "JavaScript の文字列表現の理解",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "Node が起動していることを確認する",
+                "file": "verify1-1.sh",
+                "hint": "ターミナルで 'node' と入力して Node.js を起動することを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "Blob を使用して文字列のバイトサイズを計算する",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "関数の作成を確認する",
+                "file": "verify2-1.sh",
+                "hint": "Node.js コンソールで byteSize 関数を定義することを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "さまざまな文字列タイプでのテスト",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "様々な文字列のテストを確認する",
+                "file": "verify3-1.sh",
+                "hint": "byteSize 関数を異なるタイプの文字列でテストすることを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "実用的なサンプルファイルの作成",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "ファイルの作成を確認する",
+                "file": "verify4-1.sh",
+                "hint": "プロジェクトディレクトリに byteSizeCalculator.js ファイルを作成することを確認してください。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Вычисление размера строки в байтах",
+      "description": "В этой лабораторной работе мы рассмотрим, как вычислить размер заданной строки в байтах с использованием JavaScript. Цель данной лабораторной работы - помочь вам понять, как преобразовать строку в объект Blob и получить ее размер в байтах с помощью свойства Blob.size. Эти знания могут быть полезны в различных сценариях, например, при работе с сетевыми запросами или загрузкой файлов, где размер в байтах является важным фактором, который необходимо учитывать.",
+      "meta": {
+        "title": "Вычисление размера строки в байтах на JavaScript",
+        "description": "Узнайте, как вычислить размер строки в байтах с помощью JavaScript - это полезный навык для работы с сетевыми запросами и загрузкой файлов.",
+        "keywords": "javascript, практика на javascript, сетевые запросы, blob, онлайн-практика на javascript, лабораторная работа на javascript, размер строки в байтах, загрузка файлов, онлайн-курс по javascript"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание представления строк в JavaScript",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить запуск Node.js",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы запустили Node.js, введя 'node' в терминале."
+              }
+            ]
+          },
+          {
+            "title": "Использование объекта Blob для вычисления размера строки в байтах",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить создание функции",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы определили функцию byteSize в консоли Node.js."
+              }
+            ]
+          },
+          {
+            "title": "Тестирование с разными типами строк",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить тестирование разных строк",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы протестировали функцию byteSize с разными типами строк."
+              }
+            ]
+          },
+          {
+            "title": "Создание практического примера файла",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверить создание файла",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы создали файл byteSizeCalculator.js в директории проекта."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

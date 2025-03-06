@@ -1,27 +1,45 @@
-# Snakecase String
+# Comprendre le problème
 
-Écrivez une fonction Python appelée `snake` qui prend une chaîne de caractères comme argument et renvoie la chaîne en snake case. La fonction devrait effectuer les étapes suivantes :
+Avant d'écrire notre fonction de conversion en snake case, comprenons ce que nous devons accomplir :
 
-1. Utilisez `re.sub()` pour trouver tous les mots dans la chaîne, `str.lower()` pour les convertir en minuscules.
-2. Utilisez `re.sub()` pour remplacer tous les caractères `-` par des espaces.
-3. Enfin, utilisez `str.join()` pour combiner tous les mots en utilisant `_` comme séparateur.
+1. Nous devons convertir une chaîne de caractères de n'importe quel format en snake case.
+2. Le snake case signifie que toutes les lettres sont en minuscules et que les mots sont séparés par des underscores (tirets bas).
+3. Nous devons gérer différents formats d'entrée :
+   - Le camelCase (par exemple, `camelCase` → `camel_case`)
+   - Les chaînes avec des espaces (par exemple, `some text` → `some_text`)
+   - Les chaînes avec un formatage mixte (par exemple, des tirets, des underscores et des majuscules et minuscules mélangées)
 
-Votre fonction devrait être capable de gérer les chaînes contenant un mélange de lettres majuscules et minuscules, d'espaces, de tirets et de underscores (tirets bas).
+Commençons par créer un nouveau fichier Python pour notre fonction de snake case. Dans le WebIDE, accédez au répertoire du projet et créez un nouveau fichier appelé `snake_case.py` :
 
 ```python
-from re import sub
-
+# Cette fonction convertira une chaîne de caractères en snake case
 def snake(s):
-  return '_'.join(
-    sub('([A-Z][a-z]+)', r' \1',
-    sub('([A-Z]+)', r' \1',
-    s.replace('-', ' '))).split()).lower()
+    # Nous allons implémenter cette fonction étape par étape
+    pass  # Placeholder pour l'instant
+
+# Test avec un exemple simple
+if __name__ == "__main__":
+    test_string = "helloWorld"
+    result = snake(test_string)
+    print(f"Original: {test_string}")
+    print(f"Snake case: {result}")
 ```
 
-```python
-snake('camelCase') # 'camel_case'
-snake('some text') # 'some_text'
-snake('some-mixed_string With spaces_underscores-and-hyphens')
-# 'some_mixed_string_with_spaces_underscores_and_hyphens'
-snake('AllThe-small Things') # 'all_the_small_things'
+Enregistrez ce fichier. À l'étape suivante, nous allons commencer à implémenter la fonction.
+
+Pour l'instant, exécutons notre fonction de placeholder pour nous assurer que notre fichier est correctement configuré. Ouvrez un terminal et exécutez :
+
+```bash
+python3 ~/project/snake_case.py
 ```
+
+![python-prompt](../assets/screenshot-20250306-B5lI9tyo@2x.png)
+
+Vous devriez voir une sortie comme celle-ci :
+
+```
+Original: helloWorld
+Snake case: None
+```
+
+Le résultat est `None` car notre fonction retourne actuellement simplement la valeur par défaut `None` de Python. À l'étape suivante, nous allons ajouter la logique de conversion réelle.

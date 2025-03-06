@@ -1,24 +1,36 @@
-# Conversión de las claves de un objeto a minúsculas
+# Comprender los objetos en JavaScript
 
-Para convertir todas las claves de un objeto a minúsculas, sigue estos pasos:
+Antes de comenzar a convertir las claves de los objetos a minúsculas, entendamos qué son los objetos de JavaScript y cómo podemos trabajar con ellos.
 
-1. Abre la Terminal/SSH para comenzar a practicar la codificación y escribe `node`.
-2. Utiliza `Object.keys()` para obtener un array de las claves del objeto.
-3. Utiliza `Array.prototype.reduce()` para mapear el array a un objeto.
-4. Utiliza `String.prototype.toLowerCase()` para convertir las claves a minúsculas.
+En JavaScript, un objeto es una colección de pares clave-valor. Las claves son cadenas de texto (o Símbolos), y los valores pueden ser de cualquier tipo de dato, incluyendo otros objetos.
 
-A continuación, se muestra un ejemplo de código que implementa estos pasos:
+Comencemos abriendo la shell interactiva de Node.js:
 
-```js
-const lowerize = (obj) =>
-  Object.keys(obj).reduce((acc, k) => {
-    acc[k.toLowerCase()] = obj[k];
-    return acc;
-  }, {});
+1. Abra la terminal en su WebIDE
+2. Escriba `node` y presione Enter
+
+Ahora debería ver el indicador de Node.js (`>`), que le permite escribir código JavaScript directamente.
+
+Creemos un objeto simple con claves en mayúsculas y minúsculas mezcladas:
+
+```javascript
+const user = {
+  Name: "John",
+  AGE: 30,
+  Email: "john@example.com"
+};
 ```
 
-Luego, puedes llamar a la función `lowerize()` con un objeto como argumento para obtener un nuevo objeto con todas las claves en minúsculas. Por ejemplo:
+Escriba este código en el indicador de Node.js y presione Enter. Para ver el objeto, simplemente escriba `user` y presione Enter:
 
-```js
-lowerize({ Name: "John", Age: 22 }); // { name: 'John', age: 22 }
+```javascript
+user;
 ```
+
+Debería ver la salida:
+
+```
+{ Name: 'John', AGE: 30, Email: 'john@example.com' }
+```
+
+Como puede ver, este objeto tiene claves con diferentes estilos de capitalización. En el siguiente paso, aprenderemos cómo acceder a estas claves y convertirlas a minúsculas.

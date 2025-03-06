@@ -1,11 +1,15 @@
 # Einführung
 
-In diesem Tutorial erfahren wir, wie man mit Python's Matplotlib-Bibliothek die Tick-Labels der x-Achse an die Oberseite des Diagramms verschiebt. Dies kann nützlich sein, wenn die Labels der x-Achse zu lang sind und die Lesbarkeit des Diagramms beeinträchtigen.
+In diesem Tutorial werden wir lernen, wie man die Tick-Labels (Markierungsbeschriftungen) der x-Achse mithilfe der Python-Bibliothek Matplotlib an die Oberseite des Diagramms verschiebt. Standardmäßig platziert Matplotlib die x-Achsenbeschriftungen am unteren Rand des Diagramms. Manchmal möchten wir sie jedoch aus Gründen einer besseren Visualisierung, insbesondere bei überfüllten Diagrammen oder langen Beschriftungen, die möglicherweise mit anderen Elementen überlappen, an der Oberseite platzieren.
+
+Diese Technik ist besonders nützlich in Datenvisualisierungs-Szenarien, in denen Sie die Raumausnutzung optimieren und die Lesbarkeit Ihrer Diagramme verbessern müssen. Wir werden ein einfaches Diagramm erstellen und lernen, wie man die Position der Tick-Labels Schritt für Schritt manipuliert.
 
 ## Tipps zur virtuellen Maschine (VM)
 
-Nachdem die virtuelle Maschine gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook zuzugreifen und zu üben.
+Nachdem der Start der virtuellen Maschine abgeschlossen ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Operationen nicht automatisiert werden.
+![click-notebook](https://file.labex.io/images/click-notebook.png)
 
-Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie uns nach der Sitzung Feedback, und wir werden das Problem umgehend für Sie lösen.
+Sie müssen möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund der Einschränkungen von Jupyter Notebook kann die Validierung der Operationen nicht automatisiert werden.
+
+Wenn Sie während dieses Tutorials auf Probleme stoßen, können Sie sich gerne an Labby wenden. Bitte geben Sie uns nach der Sitzung Feedback, damit wir eventuelle Probleme umgehend beheben können.

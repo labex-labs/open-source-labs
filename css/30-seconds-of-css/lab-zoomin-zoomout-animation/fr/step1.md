@@ -1,41 +1,36 @@
-# Animation de zoom avant - zoom arrière
+# Comprendre la structure HTML
 
-`index.html` et `style.css` ont déjà été fournis dans la machine virtuelle (VM).
+Avant de commencer à créer notre animation, nous devons comprendre la structure HTML avec laquelle nous allons travailler. Dans cette étape, nous examinerons le fichier HTML fourni et apporterons les modifications nécessaires.
 
-Pour créer une animation de zoom avant - zoom arrière, suivez ces étapes :
+1. Ouvrez le fichier `index.html` dans l'éditeur.
 
-1. Définissez une animation en trois étapes en utilisant `@keyframes`. À `0%` et `100%`, définissez l'élément à sa taille d'origine en utilisant `scale(1,1)`. À `50%`, agrandissez - le à 1,5 fois sa taille d'origine en utilisant `scale(1.5,1.5)`.
-
-2. Donnez à l'élément une taille spécifique en utilisant `width` et `height`.
-
-3. Utilisez `animation` pour définir les valeurs appropriées pour l'élément afin de le rendre animé.
-
-Voici un exemple de code HTML et CSS :
+2. Si le fichier est vide ou manquant, créez - le avec le contenu suivant :
 
 ```html
-<div class="zoom-in-out-box"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom In Zoom Out Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Animation Demo</h1>
+    <p>This box demonstrates a zoom in zoom out animation:</p>
+
+    <div class="zoom-in-out-box"></div>
+  </body>
+</html>
 ```
 
-```css
-.zoom-in-out-box {
-  margin: 24px;
-  width: 50px;
-  height: 50px;
-  background: #f50057;
-  animation: zoom-in-zoom-out 1s ease infinite;
-}
+3. Comprenons ce que fait ce HTML :
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-```
+   - Nous avons une structure de document HTML standard avec un titre et des paramètres de vue (viewport)
+   - Nous établissons un lien vers un fichier CSS externe nommé `style.css`
+   - Nous incluons un en - tête et un paragraphe pour expliquer notre démonstration
+   - Plus important encore, nous avons un élément `<div>` avec la classe `zoom - in - out - box` qui sera animé
 
-Cliquez sur 'Go Live' dans le coin inférieur droit pour exécuter le service web sur le port 8080. Ensuite, vous pouvez actualiser l'onglet **Web 8080** pour prévisualiser la page web.
+4. Enregistrez le fichier `index.html` si vous avez apporté des modifications.
+
+Cet élément div sera notre toile de fond pour créer l'animation. Dans l'étape suivante, nous allons styliser cet élément à l'aide de CSS.

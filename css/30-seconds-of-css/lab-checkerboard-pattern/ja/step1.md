@@ -1,48 +1,36 @@
-# チェッカーボードの背景パターン
+# プロジェクトファイルの理解
 
-`index.html` と `style.css` はすでに仮想マシン (VM) に用意されています。
+チェッカーボードパターンの作成を開始する前に、仮想マシン (VM) で提供されているプロジェクトファイルを確認しましょう。
 
-チェッカーボードの背景パターンを作成するには、以下の手順に従ってください。
+1. ファイルエクスプローラーパネルで `index.html` ファイルをクリックして、エディターで開きます。
 
-1. `background-color` プロパティを白に設定します。
-2. `background-image` に 2 つの `linear-gradient()` 値を使用し、それぞれ異なる角度でチェッカーボードパターンを作成します。たとえば、一方の角度を `45deg`、もう一方を `-45deg` に設定します。
-3. `background-size` を使用してパターンのサイズを指定します。たとえば、`60px 60px` とすると、60×60 ピクセルのパターンが作成されます。
-4. `background-repeat` を使用してパターンの繰り返しを設定します。たとえば、`repeat` とすると、パターンが両方向に繰り返されます。
-5. デモンストレーションのため、要素の `height` と `width` プロパティは 240px に固定されていることに注意してください。
-
-以下は `.checkerboard` クラスを持つ HTML 要素の例です。
+最初の HTML ファイルは次のようになっているはずです。
 
 ```html
-<div class="checkerboard"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkerboard Pattern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- You will add your code here -->
+  </body>
+</html>
 ```
 
-対応する CSS は以下の通りです。
+2. 次に、エディターで `style.css` ファイルを開きます。
+
+最初の CSS ファイルは空であるか、最小限のスタイルが含まれているはずです。
 
 ```css
-.checkerboard {
-  width: 240px;
-  height: 240px;
-  background-color: #fff;
-  background-image:
-    linear-gradient(
-      45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    ),
-    linear-gradient(
-      -45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    );
-  background-size: 60px 60px;
-  background-repeat: repeat;
-}
+/* CSS styles will be added here */
 ```
 
-右下隅にある「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080** タブを更新すると、ウェブページをプレビューできます。
+3. ウェブページの初期状態を確認するために、開発サーバーを起動しましょう。
+
+ウェブページをブラウザで表示するには、エディターの右下隅にある「Go Live」ボタンをクリックします。これによりライブサーバーが起動し、ウェブページが **Web 8080** タブに表示されます。
+
+この時点ではまだコンテンツやスタイルを追加していないため、空白のページが表示されるはずです。

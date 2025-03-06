@@ -1,27 +1,45 @@
-# スネークケースの文字列
+# 問題の理解
 
-文字列（string）を引数として受け取り、その文字列をスネークケース（snake case）に変換したものを返すPython関数 `snake` を作成してください。この関数は以下の手順を実行する必要があります。
+スネークケースへの変換関数を書く前に、達成すべきことを理解しましょう。
 
-1. `re.sub()` を使用して文字列内のすべての単語をマッチングし、`str.lower()` を使用して小文字に変換します。
-2. `re.sub()` を使用して、すべての `-` 文字をスペースに置き換えます。
-3. 最後に、`str.join()` を使用して、すべての単語を `_` を区切り文字として結合します。
+1. 任意の形式の文字列をスネークケースに変換する必要があります。
+2. スネークケースとは、単語間にアンダースコアがあり、すべて小文字の形式です。
+3. 異なる入力形式を扱う必要があります。
+   - キャメルケース（camelCase）（例: `camelCase` → `camel_case`）
+   - 空白を含む文字列（例: `some text` → `some_text`）
+   - 混合形式（ハイフン、アンダースコア、大文字小文字の混合など）の文字列
 
-あなたの関数は、大文字と小文字が混在した文字列、スペース、ハイフン、アンダースコアを含む文字列を処理できる必要があります。
+スネークケース関数用の新しいPythonファイルを作成しましょう。WebIDEでプロジェクトディレクトリに移動し、`snake_case.py` という名前の新しいファイルを作成します。
 
 ```python
-from re import sub
-
+# This function will convert a string to snake case
 def snake(s):
-  return '_'.join(
-    sub('([A-Z][a-z]+)', r' \1',
-    sub('([A-Z]+)', r' \1',
-    s.replace('-', ' '))).split()).lower()
+    # We'll implement this function step by step
+    pass  # Placeholder for now
+
+# Test with a simple example
+if __name__ == "__main__":
+    test_string = "helloWorld"
+    result = snake(test_string)
+    print(f"Original: {test_string}")
+    print(f"Snake case: {result}")
 ```
 
-```python
-snake('camelCase') # 'camel_case'
-snake('some text') # 'some_text'
-snake('some-mixed_string With spaces_underscores-and-hyphens')
-# 'some_mixed_string_with_spaces_underscores_and_hyphens'
-snake('AllThe-small Things') # 'all_the_small_things'
+このファイルを保存します。次のステップで、関数の実装を始めます。
+
+現時点では、ファイルが正しく設定されていることを確認するために、プレースホルダー関数を実行しましょう。ターミナルを開き、次のコマンドを実行します。
+
+```bash
+python3 ~/project/snake_case.py
 ```
+
+![python-prompt](../assets/screenshot-20250306-B5lI9tyo@2x.png)
+
+次のような出力が表示されるはずです。
+
+```
+Original: helloWorld
+Snake case: None
+```
+
+結果が `None` となっているのは、現在の関数がデフォルトのPythonの `None` 値を返しているだけだからです。次のステップで、実際の変換ロジックを追加します。

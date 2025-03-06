@@ -1,23 +1,70 @@
-# Überprüfen, ob eine Zeichenkette im ISO-Format vorliegt
+# Verständnis des ISO-Datumsformats und von JavaScript-Date-Objekten
 
-Um zu überprüfen, ob eine gegebene Zeichenkette (string) im vereinfachten erweiterten ISO-Format (ISO 8601) vorliegt, befolgen Sie diese Schritte:
+Bevor wir mit dem Codieren beginnen, lernen wir zunächst, was das ISO 8601-Datumsformat ist und wie JavaScript mit Datumsangaben umgeht.
 
-1. Öffnen Sie das Terminal/SSH und geben Sie `node` ein, um mit der Programmierung zu beginnen.
-2. Verwenden Sie den `Date`-Konstruktor, um aus der gegebenen Zeichenkette ein `Date`-Objekt zu erstellen.
-3. Überprüfen Sie, ob das erstellte Datumsobjekt gültig ist, indem Sie `Date.prototype.valueOf()` und `Number.isNaN()` verwenden.
-4. Vergleichen Sie die ISO-formatierte Zeichenkettenrepräsentation des Datums mit der ursprünglichen Zeichenkette mithilfe von `Date.prototype.toISOString()`.
-5. Wenn die Zeichenketten übereinstimmen und das Datum gültig ist, geben Sie `true` zurück. Andernfalls geben Sie `false` zurück.
+## Das ISO 8601-Datumsformat
 
-Hier ist ein Beispiel-Codeausschnitt:
+Das ISO 8601-Format ist ein internationaler Standard zur Darstellung von Daten und Zeiten. Das vereinfachte erweiterte ISO-Format sieht wie folgt aus:
 
-```js
-const isISOString = (val) => {
-  const d = new Date(val);
-  return !Number.isNaN(d.valueOf()) && d.toISOString() === val;
-};
-
-isISOString("2020-10-12T10:10:10.000Z"); // true
-isISOString("2020-10-12"); // false
+```
+YYYY-MM-DDTHH:mm:ss.sssZ
 ```
 
-Diese Funktion gibt `true` zurück, wenn die Zeichenkette im ISO-Format vorliegt, und `false` sonst.
+Dabei bedeuten:
+
+- `YYYY` steht für das Jahr (vier Ziffern)
+- `MM` steht für den Monat (zwei Ziffern)
+- `DD` steht für den Tag (zwei Ziffern)
+- `T` ist ein Literalzeichen, das Datum und Zeit trennt
+- `HH` steht für die Stunden (zwei Ziffern)
+- `mm` steht für die Minuten (zwei Ziffern)
+- `ss` steht für die Sekunden (zwei Ziffern)
+- `sss` steht für die Millisekunden (drei Ziffern)
+- `Z` gibt die UTC-Zeitzone (Zulu-Zeit) an
+
+Beispielsweise repräsentiert `2023-05-12T14:30:15.123Z` den 12. Mai 2023, 14:30:15.123 Uhr UTC.
+
+## Das JavaScript-Date-Objekt
+
+JavaScript bietet ein eingebautes `Date`-Objekt für die Arbeit mit Daten und Zeiten. Wenn Sie ein neues `Date`-Objekt erstellen, können Sie ihm einen ISO-formatierte Zeichenkette übergeben:
+
+```javascript
+const date = new Date("2023-05-12T14:30:15.123Z");
+```
+
+Öffnen wir das Terminal und üben die Arbeit mit Date-Objekten:
+
+1. Öffnen Sie das Terminal, indem Sie auf das Terminal-Menü oben im WebIDE klicken.
+2. Geben Sie `node` ein und drücken Sie die Eingabetaste, um die Node.js interaktive Shell zu starten.
+3. Erstellen Sie ein neues Date-Objekt für die aktuelle Zeit:
+
+```javascript
+const now = new Date();
+console.log(now);
+```
+
+![node-prompt](../assets/screenshot-20250306-odDaT5Rp@2x.png)
+
+4. Konvertieren Sie dieses Date-Objekt in eine ISO-Zeichenkette:
+
+```javascript
+const isoString = now.toISOString();
+console.log(isoString);
+```
+
+Sie sollten eine Ausgabe ähnlich der folgenden sehen:
+
+```
+2023-05-12T14:30:15.123Z
+```
+
+5. Erstellen Sie ein Date-Objekt aus einer ISO-Zeichenkette:
+
+```javascript
+const dateFromIso = new Date("2023-05-12T14:30:15.123Z");
+console.log(dateFromIso);
+```
+
+![node-prompt](../assets/screenshot-20250306-dbkCLkf7@2x.png)
+
+Dies zeigt, wie JavaScript ISO-formatierte Zeichenketten analysieren und daraus Date-Objekte erstellen kann.

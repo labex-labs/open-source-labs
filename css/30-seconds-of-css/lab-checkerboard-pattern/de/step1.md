@@ -1,48 +1,36 @@
-# Schachbrettmuster als Hintergrund
+# Verständnis der Projekt-Dateien
 
-`index.html` und `style.css` wurden bereits in der virtuellen Maschine (VM) bereitgestellt.
+Bevor wir mit der Erstellung unseres Schachbrettmusters beginnen, lassen Sie uns die Projekt-Dateien untersuchen, die in der virtuellen Maschine (VM) bereitgestellt wurden.
 
-Um ein Schachbrettmuster als Hintergrund zu erstellen, befolgen Sie diese Schritte:
+1. Öffnen Sie die Datei `index.html` im Editor, indem Sie darauf im Datei-Explorer-Panel klicken.
 
-1. Setzen Sie die Eigenschaft `background-color` auf weiß.
-2. Verwenden Sie `background-image` mit zwei `linear-gradient()`-Werten, jeweils mit einem anderen Winkel, um das Schachbrettmuster zu erstellen. Beispielsweise setzen Sie einen Winkel auf `45deg` und den anderen auf `-45deg`.
-3. Geben Sie die Größe des Musters mit `background-size` an. Beispielsweise wird `60px 60px` ein Muster in der Größe 60 x 60 Pixel erstellen.
-4. Verwenden Sie `background-repeat`, um die Wiederholung des Musters festzulegen. Beispielsweise wird `repeat` das Muster in beide Richtungen wiederholen.
-5. Beachten Sie, dass die Eigenschaften `height` und `width` des Elements aus Demonstrationsgründen auf 240px festgelegt sind.
-
-Hier ist ein Beispiel für ein HTML-Element mit der Klasse `.checkerboard`:
+Die ursprüngliche HTML-Datei sollte wie folgt aussehen:
 
 ```html
-<div class="checkerboard"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkerboard Pattern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- You will add your code here -->
+  </body>
+</html>
 ```
 
-Und hier ist der entsprechende CSS-Code:
+2. Öffnen Sie nun die Datei `style.css` im Editor.
+
+Die ursprüngliche CSS-Datei sollte leer sein oder nur minimale Stile enthalten:
 
 ```css
-.checkerboard {
-  width: 240px;
-  height: 240px;
-  background-color: #fff;
-  background-image:
-    linear-gradient(
-      45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    ),
-    linear-gradient(
-      -45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    );
-  background-size: 60px 60px;
-  background-repeat: repeat;
-}
+/* CSS styles will be added here */
 ```
 
-Klicken Sie bitte auf 'Go Live' in der unteren rechten Ecke, um den Web-Service auf Port 8080 auszuführen. Anschließend können Sie die Registerkarte **Web 8080** aktualisieren, um die Webseite zu previewen.
+3. Lassen Sie uns unseren Entwicklungsserver starten, um den anfänglichen Zustand unserer Webseite zu sehen.
+
+Um Ihre Webseite im Browser anzuzeigen, klicken Sie auf die Schaltfläche "Go Live" in der unteren rechten Ecke des Editors. Dadurch wird ein Live-Server gestartet und Ihre Webseite im Tab **Web 8080** angezeigt.
+
+Zu diesem Zeitpunkt sollten Sie eine leere Seite sehen, da wir noch keinen Inhalt oder Stile hinzugefügt haben.

@@ -120,5 +120,469 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Matplotlib 绘图上叠加图像",
+      "description": "本教程将向你展示如何在 Matplotlib 绘图上叠加图像，将其移至最前面并使其半透明。本教程使用了 matplotlib.figure.Figure 类的 figimage 方法和 matplotlib.image 模块的 imread 方法。",
+      "meta": {
+        "title": "在 Matplotlib 绘图上叠加图像 | Python 教程",
+        "description": "学习如何使用 Python 在 Matplotlib 绘图上叠加图像，使其半透明并将其移至最前面。",
+        "keywords": "Matplotlib, Python, 图像叠加, 数据可视化, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建 Jupyter Notebook 并导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "检查 Jupyter Notebook 是否存在",
+                "file": "verify1-1.sh",
+                "hint": "确保你已创建名为 watermark-image.ipynb 的 Notebook"
+              }
+            ]
+          },
+          {
+            "title": "加载并检查图像",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "检查 Notebook 是否包含图像加载代码",
+                "file": "verify2-1.sh",
+                "hint": "确保你已添加加载并检查图像的代码"
+              }
+            ]
+          },
+          {
+            "title": "使用随机数据创建基本图表",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "检查 Notebook 是否包含图表创建代码",
+                "file": "verify3-1.sh",
+                "hint": "确保你已添加使用随机数据创建柱状图的代码"
+              }
+            ]
+          },
+          {
+            "title": "将图像叠加到图表上",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "检查 Notebook 是否包含图像叠加代码",
+                "file": "verify4-1.sh",
+                "hint": "确保你已添加将图像叠加到图表上的代码"
+              }
+            ]
+          },
+          {
+            "title": "创建用于图像叠加的可复用函数",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "检查 Notebook 是否包含函数定义",
+                "file": "verify5-1.sh",
+                "hint": "确保你已定义 add_image_overlay 函数"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Superponer una imagen en un gráfico de Matplotlib",
+      "description": "Este tutorial te mostrará cómo superponer una imagen en un gráfico de Matplotlib, llevándola al frente y haciéndola semi-transparente. El tutorial utiliza el método figimage de la clase matplotlib.figure.Figure y el método imread del módulo matplotlib.image.",
+      "meta": {
+        "title": "Superponer una imagen en un gráfico de Matplotlib | Tutoriales de Python",
+        "description": "Aprende cómo superponer una imagen en un gráfico de Matplotlib, hacerla semi-transparente y llevarla al frente utilizando Python.",
+        "keywords": "Matplotlib, Python, Superposición de imágenes, Visualización de datos, Tutoriales"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Crear un cuaderno de Jupyter e importar las bibliotecas necesarias",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar si el cuaderno de Jupyter existe",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber creado y nombrado tu cuaderno como watermark-image.ipynb"
+              }
+            ]
+          },
+          {
+            "title": "Cargar y examinar la imagen",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar si el cuaderno contiene código para cargar la imagen",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber agregado el código para cargar y examinar la imagen"
+              }
+            ]
+          },
+          {
+            "title": "Crear un gráfico básico con datos aleatorios",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar si el cuaderno contiene código para crear un gráfico",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber agregado el código para crear un gráfico de barras con datos aleatorios"
+              }
+            ]
+          },
+          {
+            "title": "Superponer la imagen en el gráfico",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar si el cuaderno contiene código para superponer la imagen",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de haber agregado el código para superponer la imagen en el gráfico"
+              }
+            ]
+          },
+          {
+            "title": "Crear una función reutilizable para superposiciones de imágenes",
+            "text": "es/step5.md",
+            "verify": [
+              {
+                "name": "Verificar si el cuaderno contiene la definición de la función",
+                "file": "verify5-1.sh",
+                "hint": "Asegúrate de haber definido la función add_image_overlay"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Superposer une image sur un graphique Matplotlib",
+      "description": "Ce tutoriel vous montrera comment superposer une image sur un graphique Matplotlib en la plaçant au premier plan et en la rendant semi-transparente. Le tutoriel utilise la méthode figimage de la classe matplotlib.figure.Figure et la méthode imread du module matplotlib.image.",
+      "meta": {
+        "title": "Superposer une image sur un graphique Matplotlib | Tutoriels Python",
+        "description": "Apprenez à superposer une image sur un graphique Matplotlib, à la rendre semi-transparente et à la placer au premier plan en utilisant Python.",
+        "keywords": "Matplotlib, Python, Superposition d'image, Visualisation de données, Tutoriels"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Création d'un cahier Jupyter et importation des bibliothèques requises",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier si le cahier Jupyter existe",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous d'avoir créé et nommé votre cahier comme watermark-image.ipynb"
+              }
+            ]
+          },
+          {
+            "title": "Chargement et examen de l'image",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier si le cahier contient le code de chargement de l'image",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté le code pour charger et examiner l'image"
+              }
+            ]
+          },
+          {
+            "title": "Création d'un graphique de base avec des données aléatoires",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier si le cahier contient le code de création de graphique",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté le code pour créer un diagramme à barres avec des données aléatoires"
+              }
+            ]
+          },
+          {
+            "title": "Superposition de l'image sur le graphique",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier si le cahier contient le code de superposition d'image",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté le code pour superposer l'image sur le graphique"
+              }
+            ]
+          },
+          {
+            "title": "Création d'une fonction réutilisable pour les superpositions d'images",
+            "text": "fr/step5.md",
+            "verify": [
+              {
+                "name": "Vérifier si le cahier contient la définition de la fonction",
+                "file": "verify5-1.sh",
+                "hint": "Assurez-vous d'avoir défini la fonction add_image_overlay"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Bild auf Matplotlib-Diagramm überlagern",
+      "description": "Dieses Tutorial zeigt Ihnen, wie Sie ein Bild auf einem Matplotlib-Diagramm überlagern, indem Sie es nach vorne bringen und halbtransparent machen. Das Tutorial verwendet die Methode figimage aus der Klasse matplotlib.figure.Figure und die Methode imread aus dem Modul matplotlib.image.",
+      "meta": {
+        "title": "Bild auf Matplotlib-Diagramm überlagern | Python-Tutorials",
+        "description": "Lernen Sie, wie Sie mit Python ein Bild auf einem Matplotlib-Diagramm überlagern, es halbtransparent machen und nach vorne bringen.",
+        "keywords": "Matplotlib, Python, Bildüberlagerung, Datenvisualisierung, Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Erstellen eines Jupyter-Notebooks und Importieren der erforderlichen Bibliotheken",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Prüfen, ob das Jupyter-Notebook existiert",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie Ihr Notebook erstellt und als watermark-image.ipynb benannt haben"
+              }
+            ]
+          },
+          {
+            "title": "Laden und Untersuchen des Bildes",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Prüfen, ob das Notebook Code zum Laden des Bildes enthält",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie den Code zum Laden und Untersuchen des Bildes hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen eines einfachen Diagramms mit Zufallsdaten",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Prüfen, ob das Notebook Code zum Erstellen eines Diagramms enthält",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie den Code zum Erstellen eines Balkendiagramms mit Zufallsdaten hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Überschneiden des Bildes auf dem Diagramm",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Prüfen, ob das Notebook Code zum Überschneiden des Bildes enthält",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie den Code zum Überschneiden des Bildes auf dem Diagramm hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen einer wiederverwendbaren Funktion für Bildüberlagerungen",
+            "text": "de/step5.md",
+            "verify": [
+              {
+                "name": "Prüfen, ob das Notebook die Funktionsdefinition enthält",
+                "file": "verify5-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Funktion add_image_overlay definiert haben"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "Matplotlib のグラフに画像をオーバーレイする",
+      "description": "このチュートリアルでは、Matplotlib のグラフに画像を前面に移動し、半透明にしてオーバーレイする方法を紹介します。チュートリアルでは、matplotlib.figure.Figure クラスの figimage メソッドと matplotlib.image モジュールの imread メソッドを使用します。",
+      "meta": {
+        "title": "Matplotlib のグラフに画像をオーバーレイする | Python チュートリアル",
+        "description": "Python を使って、Matplotlib のグラフに画像をオーバーレイし、半透明にして前面に移動する方法を学びましょう。",
+        "keywords": "Matplotlib, Python, 画像オーバーレイ, データビジュアライゼーション, チュートリアル"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Jupyter Notebook の作成と必要なライブラリのインポート",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "Jupyter Notebook が存在するか確認する",
+                "file": "verify1-1.sh",
+                "hint": "Notebook を作成し、watermark.image.ipynb という名前で保存していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "画像の読み込みと確認",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "Notebook に画像読み込みコードが含まれているか確認する",
+                "file": "verify2-1.sh",
+                "hint": "画像を読み込んで確認するコードを追加していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "ランダムデータを用いた基本的なプロットの作成",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "ノートブックにプロット作成コードが含まれているか確認する",
+                "file": "verify3-1.sh",
+                "hint": "ランダムデータを使って棒グラフを作成するコードを追加していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "プロット上に画像を重ねる",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "ノートブックに画像重ね合わせコードが含まれているか確認する",
+                "file": "verify4-1.sh",
+                "hint": "プロット上に画像を重ねるコードを追加していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "画像重ね合わせ用の再利用可能な関数の作成",
+            "text": "ja/step5.md",
+            "verify": [
+              {
+                "name": "ノートブックに関数定義が含まれているか確認する",
+                "file": "verify5-1.sh",
+                "hint": "add_image_overlay 関数を定義していることを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Наложение изображения на график Matplotlib",
+      "description": "В этом руководстве показано, как наложить изображение на график Matplotlib, переставив его на передний план и сделав полупрозрачным. В руководстве используются метод figimage из класса matplotlib.figure.Figure и метод imread из модуля matplotlib.image.",
+      "meta": {
+        "title": "Наложение изображения на график Matplotlib | Руководства по Python",
+        "description": "Узнайте, как наложить изображение на график Matplotlib, сделать его полупрозрачным и переставить на передний план с помощью Python.",
+        "keywords": "Matplotlib, Python, Наложение изображения, Визуализация данных, Руководства"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Создание Jupyter Notebook и импорт необходимых библиотек",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверьте, существует ли Jupyter Notebook",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы создали и назвали свой ноутбук watermark-image.ipynb"
+              }
+            ]
+          },
+          {
+            "title": "Загрузка и анализ изображения",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверьте, содержит ли ноутбук код для загрузки изображения",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы добавили код для загрузки и анализа изображения"
+              }
+            ]
+          },
+          {
+            "title": "Создание базового графика с случайными данными",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверьте, содержит ли ноутбук код для создания графика",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы добавили код для создания столбчатой диаграммы с случайными данными"
+              }
+            ]
+          },
+          {
+            "title": "Наложение изображения на график",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверьте, содержит ли ноутбук код для наложения изображения",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы добавили код для наложения изображения на график"
+              }
+            ]
+          },
+          {
+            "title": "Создание переиспользуемой функции для наложения изображений",
+            "text": "ru/step5.md",
+            "verify": [
+              {
+                "name": "Проверьте, содержит ли ноутбук определение функции",
+                "file": "verify5-1.sh",
+                "hint": "Убедитесь, что вы определили функцию add_image_overlay"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

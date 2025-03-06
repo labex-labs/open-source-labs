@@ -1,27 +1,48 @@
-# Fonction pour convertir une chaîne de caractères en Pascal case
+# Comprendre la casse Pascal (Pascal case) et configurer l'environnement
 
-Pour convertir une chaîne de caractères en Pascal case, vous pouvez utiliser la fonction `toPascalCase()`. Voici comment procéder :
+La casse Pascal est une convention de nommage où :
 
-- Tout d'abord, ouvrez le Terminal/SSH et tapez `node` pour commencer à pratiquer la programmation.
-- Ensuite, utilisez la méthode `String.prototype.match()` avec une expression régulière appropriée pour diviser la chaîne de caractères en mots.
-- Ensuite, utilisez les méthodes `Array.prototype.map()`, `Array.prototype.slice()`, `Array.prototype.join()`, `String.prototype.toUpperCase()` et `String.prototype.toLowerCase()` pour combiner les mots, en mettant en majuscule la première lettre de chaque mot et en mettant le reste en minuscule.
-- Enfin, appelez la fonction `toPascalCase()` en passant votre chaîne de caractères souhaitée comme argument pour la convertir en Pascal case.
+- La première lettre de chaque mot est en majuscule
+- Aucun espace, tiret ou underscore n'est utilisé entre les mots
+- Toutes les autres lettres sont en minuscules
 
-Voici le code de la fonction `toPascalCase()` :
+Par exemple :
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+Commençons par configurer notre environnement de développement.
+
+1. Ouvrez le terminal depuis l'interface WebIDE en cliquant sur "Terminal" dans la barre de menu supérieure.
+
+2. Démarrez une session interactive Node.js en tapant la commande suivante dans le terminal et en appuyant sur Entrée :
+
+```bash
+node
 ```
 
-Vous pouvez utiliser cette fonction pour convertir n'importe quelle chaîne de caractères en Pascal case. Voici quelques exemples :
+Vous devriez voir l'invite Node.js (`>`) apparaître, ce qui indique que vous êtes maintenant dans l'environnement interactif Node.js.
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. Essayons une simple manipulation de chaîne de caractères pour nous échauffer. Tapez le code suivant à l'invite Node.js :
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+La sortie devrait être :
+
+```
+John doe
+```
+
+Cet exemple simple montre comment mettre en majuscule la première lettre d'une chaîne de caractères. Nous avons utilisé :
+
+- `charAt(0)` pour obtenir le premier caractère
+- `toUpperCase()` pour le convertir en majuscule
+- `slice(1)` pour obtenir le reste de la chaîne
+- La concaténation avec `+` pour les combiner
+
+Ces méthodes de manipulation de chaînes de caractères seront utiles lors de la création de notre convertisseur en casse Pascal.

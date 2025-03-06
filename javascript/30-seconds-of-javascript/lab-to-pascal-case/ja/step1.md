@@ -1,27 +1,48 @@
-# 文字列をパスカルケースに変換する関数
+# パスカルケース (Pascal case) の理解と環境のセットアップ
 
-文字列をパスカルケース (Pascal case) に変換するには、`toPascalCase()` 関数を使用できます。方法は以下の通りです。
+パスカルケースは、以下のような命名規則です。
 
-- まず、ターミナル/SSH を開き、`node` と入力してコーディングの練習を開始します。
-- 次に、適切な正規表現を使用して `String.prototype.match()` メソッドを使い、文字列を単語に分割します。
-- 次に、`Array.prototype.map()`、`Array.prototype.slice()`、`Array.prototype.join()`、`String.prototype.toUpperCase()`、および `String.prototype.toLowerCase()` メソッドを使用して、単語を結合し、各単語の最初の文字を大文字に、残りの文字を小文字にします。
-- 最後に、変換したい文字列を引数として `toPascalCase()` 関数を呼び出し、文字列をパスカルケースに変換します。
+- 各単語の最初の文字は大文字になります。
+- 単語間にはスペース、ハイフン、またはアンダースコアは使用されません。
+- その他のすべての文字は小文字になります。
 
-`toPascalCase()` 関数のコードは以下の通りです。
+例えば：
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+では、開発環境のセットアップから始めましょう。
+
+1. 上部のメニューバーにある「Terminal」をクリックして、WebIDE インターフェイスからターミナルを開きます。
+
+2. ターミナルに以下のコマンドを入力して Enter キーを押し、Node.js の対話型セッションを開始します。
+
+```bash
+node
 ```
 
-この関数を使用して、任意の文字列をパスカルケースに変換できます。いくつかの例を示します。
+Node.js のプロンプト (`>`) が表示され、Node.js の対話型環境に入ったことがわかります。
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. 簡単な文字列操作を試して、準備運動をしましょう。Node.js のプロンプトで以下のコードを入力します。
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+出力は以下のようになるはずです。
+
+```
+John doe
+```
+
+この簡単な例では、文字列の最初の文字を大文字にする方法を示しています。以下のものを使用しました。
+
+- `charAt(0)` で最初の文字を取得
+- `toUpperCase()` で大文字に変換
+- `slice(1)` で残りの文字列を取得
+- `+` で連結して結合
+
+これらの文字列メソッドは、パスカルケース変換器を作成する際に役立ちます。

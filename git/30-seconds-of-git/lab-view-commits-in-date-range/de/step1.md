@@ -1,32 +1,34 @@
-# Anzeigen von Commits in einem bestimmten Datumsbereich
+# Klonen des Git-Repositorys
 
-Ihre Aufgabe besteht darin, alle Commits in einem bestimmten Datumsbereich mit Git anzuzeigen. Sie müssen den Befehl `git log` mit den Optionen `--since` und `--until` verwenden, um den Datumsbereich anzugeben. Sie können entweder ein bestimmtes Datum oder ein relatives Datum verwenden (z.B. "vor 12 Wochen").
+Um die Fähigkeiten von Git zur Datumsbereichsfilterung zu erkunden, benötigen wir zunächst ein Git-Repository, mit dem wir arbeiten können. Wir werden das `git-playground`-Repository verwenden, das von LabEx zur Verfügung gestellt wird.
 
-Um diese Herausforderung zu bewältigen, müssen Sie das Repository `https://github.com/labex-labs/git-playground` verwenden. Befolgen Sie diese Schritte:
+Beginnen wir damit, das Repository zu klonen:
 
-1. Klonen Sie das Repository auf Ihren lokalen Rechner mit dem Befehl `git clone https://github.com/labex-labs/git-playground`.
-2. Navigieren Sie in das Verzeichnis des Repositorys mit dem Befehl `cd git-playground`.
-3. Verwenden Sie den Befehl `git log --since='Apr 25 2023' --until='Apr 27 2023'`, um alle Commits zwischen dem 25. April 2023 und dem 27. April 2023 anzuzeigen.
-4. Verwenden Sie den Befehl `git log --since='12 weeks ago'`, um alle Commits anzuzeigen, die in den letzten zwölf Wochen vorgenommen wurden.
+1. Öffnen Sie Ihr Terminal in der LabEx-VM.
 
-Dies ist das endgültige Ergebnis:
+![terminal](../assets/screenshot-20250306-shbu3WrQ@2x.png)
+
+2. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
+
+```bash
+git clone https://github.com/labex-labs/git-playground
+```
+
+Sie sollten eine Ausgabe ähnlich der folgenden sehen:
 
 ```
-commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/master, origin/feature-branch, origin/HEAD)
-Author: Hang <huhuhang@users.noreply.github.com>
-Date:   Wed Apr 26 14:16:25 2023 +0800
-
-    Added file2.txt
-
-commit cf80005e40a3c661eb212fcea5fad06f8283f08f
-Author: Hang <huhuhang@users.noreply.github.com>
-Date:   Wed Apr 26 14:16:25 2023 +0800
-
-    Added file1.txt
-
-commit b00b9374a7c549d1af111aa777fdcc868d8a2a01
-Author: Hang <huhuhang@gmail.com>
-Date:   Wed Apr 26 14:16:00 2023 +0800
-
-    Initial commit
+Cloning into 'git-playground'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
 ```
+
+3. Navigieren Sie in das Verzeichnis des Repositorys:
+
+```bash
+cd git-playground
+```
+
+Jetzt, da wir das Repository auf unserem lokalen Rechner haben, können wir mit der Erkundung der Commit-Historie beginnen.

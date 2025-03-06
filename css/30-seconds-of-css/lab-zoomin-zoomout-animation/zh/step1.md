@@ -1,41 +1,36 @@
-# 缩放动画
+# 理解 HTML 结构
 
-虚拟机中已提供了 `index.html` 和 `style.css`。
+在开始创建动画之前，你需要了解我们将使用的 HTML 结构。在这一步中，我们将检查提供的 HTML 文件并进行必要的修改。
 
-要创建缩放动画，请执行以下步骤：
+1. 在编辑器中打开 `index.html` 文件。
 
-1. 使用 `@keyframes` 定义一个三步动画。在 `0%` 和 `100%` 时，使用 `scale(1,1)` 将元素设置为其原始大小。在 `50%` 时，使用 `scale(1.5,1.5)` 将其放大到原始大小的 1.5 倍。
-
-2. 使用 `width` 和 `height` 为元素设置特定大小。
-
-3. 使用 `animation` 为元素设置适当的值以使其产生动画效果。
-
-以下是一个 HTML 和 CSS 代码示例：
+2. 如果文件为空或缺失，请使用以下内容创建它：
 
 ```html
-<div class="zoom-in-out-box"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom In Zoom Out Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Animation Demo</h1>
+    <p>This box demonstrates a zoom in zoom out animation:</p>
+
+    <div class="zoom-in-out-box"></div>
+  </body>
+</html>
 ```
 
-```css
-.zoom-in-out-box {
-  margin: 24px;
-  width: 50px;
-  height: 50px;
-  background: #f50057;
-  animation: zoom-in-zoom-out 1s ease infinite;
-}
+3. 让我们来理解这段 HTML 的作用：
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-```
+   - 我们有一个标准的 HTML 文档结构，包含标题和视口设置
+   - 我们链接到一个名为 `style.css` 的外部 CSS 文件
+   - 我们包含一个标题和段落来解释我们的演示
+   - 最重要的是，我们有一个带有 `zoom-in-out-box` 类的 `<div>` 元素，它将被用于动画
 
-请点击右下角的“Go Live”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。
+4. 如果你进行了任何更改，请保存 `index.html` 文件。
+
+这个 div 元素将是我们创建动画的画布。在下一步中，我们将使用 CSS 对这个元素进行样式设置。

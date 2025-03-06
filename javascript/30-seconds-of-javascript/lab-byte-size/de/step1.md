@@ -1,20 +1,38 @@
-# Wie man die Byte-Größe einer Zeichenkette in JavaScript erhält
+# Das Verständnis der JavaScript-Zeichenkettenrepräsentation
 
-Um die Byte-Größe einer Zeichenkette in JavaScript zu erhalten, befolgen Sie diese Schritte:
+Bevor wir die Byte-Größe von Zeichenketten berechnen, ist es wichtig zu verstehen, wie Zeichenketten in JavaScript repräsentiert werden.
 
-1. Öffnen Sie das Terminal/SSH und geben Sie `node` ein, um mit der Programmierung zu beginnen.
-2. Konvertieren Sie die Zeichenkette in ein [`Blob`-Objekt](https://developer.mozilla.org/en-US/docs/Web/API/Blob).
-3. Verwenden Sie `Blob.size`, um die Länge der Zeichenkette in Bytes zu erhalten.
+In JavaScript sind Zeichenketten Sequenzen von UTF-16-Codeeinheiten. Das bedeutet, dass Zeichen wie Emojis oder bestimmte Symbole möglicherweise mehr als ein Byte zur Darstellung benötigen. Beispielsweise nimmt ein einfacher englischer Buchstabe 1 Byte ein, während ein Emoji 4 Bytes benötigen kann.
 
-Hier ist der JavaScript-Code, um die Byte-Größe einer Zeichenkette zu erhalten:
+Beginnen wir damit, Node.js im Terminal zu starten:
 
-```js
-const byteSize = (str) => new Blob([str]).size;
+1. Öffnen Sie das Terminal, indem Sie auf das Terminal-Symbol in der WebIDE-Oberfläche klicken.
+2. Geben Sie den folgenden Befehl ein und drücken Sie die Eingabetaste:
+
+```bash
+node
 ```
 
-Sie können diese Funktion mit den folgenden Beispielen testen:
+Sie sollten nun in der interaktiven Node.js-Konsole sein, die in etwa so aussieht:
 
-```js
-byteSize("😀"); // 4
-byteSize("Hello World"); // 11
 ```
+Welcome to Node.js v14.x.x.
+Type ".help" for more information.
+>
+```
+
+![Open the node](../assets/screenshot-20250306-cFJ9GgLX@2x.png)
+
+In dieser Konsole können wir direkt mit JavaScript-Code experimentieren. Versuchen Sie, den folgenden Befehl einzugeben, um die Länge einer Zeichenkette anzuzeigen:
+
+```javascript
+"Hello World".length;
+```
+
+Sie sollten die folgende Ausgabe sehen:
+
+```
+11
+```
+
+Dies gibt uns die Anzahl der Zeichen, aber nicht die tatsächliche Byte-Größe. Die Anzahl der Zeichen und die Byte-Größe können unterschiedlich sein, insbesondere bei Sonderzeichen. Lassen Sie uns dies im nächsten Schritt genauer untersuchen.

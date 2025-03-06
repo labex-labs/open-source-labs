@@ -1,27 +1,48 @@
-# Función para convertir una cadena de texto (string) a formato Pascal case
+# Comprender el Pascal Case y Configurar el Entorno
 
-Para convertir una cadena de texto a formato Pascal case, puedes utilizar la función `toPascalCase()`. Así es cómo hacerlo:
+El Pascal Case es una convención de nomenclatura donde:
 
-- Primero, abre la Terminal/SSH y escribe `node` para comenzar a practicar la codificación.
-- Luego, utiliza el método `String.prototype.match()` con una expresión regular adecuada para dividir la cadena de texto en palabras.
-- A continuación, utiliza los métodos `Array.prototype.map()`, `Array.prototype.slice()`, `Array.prototype.join()`, `String.prototype.toUpperCase()` y `String.prototype.toLowerCase()` para combinar las palabras, capitalizando la primera letra de cada palabra y convirtiendo el resto a minúsculas.
-- Finalmente, llama a la función `toPascalCase()` con la cadena de texto deseada como argumento para convertirla a formato Pascal case.
+- La primera letra de cada palabra está en mayúsculas.
+- No se utilizan espacios, guiones ni guiones bajos entre las palabras.
+- Todas las demás letras están en minúsculas.
 
-Aquí está el código de la función `toPascalCase()`:
+Por ejemplo:
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+Comencemos configurando nuestro entorno de desarrollo.
+
+1. Abra la Terminal desde la interfaz de WebIDE haciendo clic en "Terminal" en la barra de menú superior.
+
+2. Inicie una sesión interactiva de Node.js escribiendo el siguiente comando en la Terminal y presionando Enter:
+
+```bash
+node
 ```
 
-Puedes utilizar esta función para convertir cualquier cadena de texto a formato Pascal case. Aquí hay algunos ejemplos:
+Debería ver aparecer el indicador de Node.js (`>`), lo que indica que ahora está en el entorno interactivo de Node.js.
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. Intentemos una simple manipulación de cadenas de texto (strings) para calentar motores. Escriba el siguiente código en el indicador de Node.js:
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+La salida debería ser:
+
+```
+John doe
+```
+
+Este simple ejemplo demuestra cómo poner en mayúsculas la primera letra de una cadena de texto (string). Utilizamos:
+
+- `charAt(0)` para obtener el primer carácter.
+- `toUpperCase()` para convertirlo a mayúsculas.
+- `slice(1)` para obtener el resto de la cadena de texto (string).
+- Concatenación con `+` para combinarlos.
+
+Estos métodos de manipulación de cadenas de texto (strings) serán útiles a medida que construyamos nuestro convertidor a Pascal Case.

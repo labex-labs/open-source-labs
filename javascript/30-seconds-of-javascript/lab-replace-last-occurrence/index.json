@@ -124,5 +124,559 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "替换字符串中最后一次出现的内容",
+      "description": "在这个实验中，我们将探索 JavaScript 中的 replaceLast 函数，该函数可以将给定字符串中模式的最后一次出现替换为指定的内容。本实验将指导你实现 replaceLast 函数，让你能够更高效、灵活地操作字符串。完成本实验后，你将深入理解如何替换字符串中模式的最后一次出现，并能将此知识应用到未来的编程项目中。",
+      "meta": {
+        "title": "替换字符串中最后一次出现的内容",
+        "description": "学习如何使用 replaceLast 函数高效替换字符串中模式的最后一次出现。",
+        "keywords": "字符串操作, JavaScript, 替换, JavaScript 实践, 在线 JavaScript 实践, 编程教程, JavaScript 实验, JavaScript 辅导, 最后一次出现"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解问题并进行设置",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证文件创建",
+                "file": "verify1-1.sh",
+                "hint": "确保你已在 replace-last 目录下创建了 replaceLast.js 文件。"
+              },
+              {
+                "name": "验证 Node 使用情况",
+                "file": "verify1-2.sh",
+                "hint": "确保你已使用 Node.js 运行了 JavaScript 文件。"
+              }
+            ]
+          },
+          {
+            "title": "实现核心函数逻辑",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证函数实现",
+                "file": "verify2-1.sh",
+                "hint": "确保你已实现了能处理字符串模式的 replaceLast 函数。"
+              },
+              {
+                "name": "验证测试用例",
+                "file": "verify2-2.sh",
+                "hint": "确保你已为字符串模式添加了测试用例。"
+              }
+            ]
+          },
+          {
+            "title": "处理正则表达式模式",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证正则表达式处理",
+                "file": "verify3-1.sh",
+                "hint": "确保你已在 replaceLast 函数中实现了正则表达式模式的处理。"
+              }
+            ]
+          },
+          {
+            "title": "优化函数并测试边界情况",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证优化和边界情况处理",
+                "file": "verify4-1.sh",
+                "hint": "确保你已对 replaceLast 函数进行了优化，并处理了边界情况。"
+              }
+            ]
+          },
+          {
+            "title": "创建模块并使用函数",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证模块创建",
+                "file": "verify5-1.sh",
+                "hint": "确保你已创建 replaceLastModule.js 文件。"
+              },
+              {
+                "name": "验证模块使用",
+                "file": "verify5-2.sh",
+                "hint": "确保你已创建使用该模块的 app.js 文件。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Reemplazar la última aparición en una cadena",
+      "description": "En este laboratorio, exploraremos la función replaceLast en JavaScript, que reemplaza la última aparición de un patrón en una cadena dada con un reemplazo especificado. Este laboratorio te guiará a través de la implementación de la función replaceLast, lo que te permitirá manipular cadenas de manera más eficiente y flexible. Al final de este laboratorio, tendrás una comprensión sólida de cómo reemplazar la última aparición de un patrón en una cadena y podrás aplicar este conocimiento a tus futuros proyectos de programación.",
+      "meta": {
+        "title": "Reemplazar la última aparición en una cadena",
+        "description": "Aprende cómo usar la función replaceLast para reemplazar eficientemente la última aparición de un patrón en una cadena.",
+        "keywords": "manipulación de cadenas, javascript, reemplazar, práctica de javascript, práctica de javascript en línea, tutorial de programación, laboratorio de javascript, tutor de javascript, última aparición"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprender el problema y configurar el entorno",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar la creación del archivo",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber creado el archivo replaceLast.js en el directorio replace-last."
+              },
+              {
+                "name": "Verificar el uso de Node",
+                "file": "verify1-2.sh",
+                "hint": "Asegúrate de haber ejecutado el archivo JavaScript utilizando Node.js."
+              }
+            ]
+          },
+          {
+            "title": "Implementar la lógica de la función principal",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de la función",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber implementado la función replaceLast con manejo de patrones de cadena."
+              },
+              {
+                "name": "Verificar los casos de prueba",
+                "file": "verify2-2.sh",
+                "hint": "Asegúrate de haber agregado casos de prueba para patrones de cadena."
+              }
+            ]
+          },
+          {
+            "title": "Manejo de patrones de expresiones regulares",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar el manejo de RegExp",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber implementado el manejo de patrones de RegExp en la función replaceLast."
+              }
+            ]
+          },
+          {
+            "title": "Optimizar la función y probar casos extremos",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar la optimización y los casos extremos",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de haber mejorado la función replaceLast con optimizaciones y manejo de casos extremos."
+              }
+            ]
+          },
+          {
+            "title": "Crear un módulo y usar la función",
+            "text": "es/step5.md",
+            "verify": [
+              {
+                "name": "Verificar la creación del módulo",
+                "file": "verify5-1.sh",
+                "hint": "Asegúrate de haber creado el archivo replaceLastModule.js."
+              },
+              {
+                "name": "Verificar el uso del módulo",
+                "file": "verify5-2.sh",
+                "hint": "Asegúrate de haber creado el archivo app.js que utiliza el módulo."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Remplacer la dernière occurrence dans une chaîne de caractères",
+      "description": "Dans ce laboratoire (lab), nous allons explorer la fonction replaceLast en JavaScript, qui remplace la dernière occurrence d'un motif dans une chaîne de caractères donnée par un remplacement spécifié. Ce laboratoire vous guidera tout au long de l'implémentation de la fonction replaceLast, ce qui vous permettra de manipuler les chaînes de caractères de manière plus efficace et flexible. À la fin de ce laboratoire, vous aurez une bonne compréhension de la façon de remplacer la dernière occurrence d'un motif dans une chaîne de caractères et pourrez appliquer ces connaissances à vos futurs projets de programmation.",
+      "meta": {
+        "title": "Remplacer la dernière occurrence dans une chaîne de caractères",
+        "description": "Apprenez à utiliser la fonction replaceLast pour remplacer efficacement la dernière occurrence d'un motif dans une chaîne de caractères.",
+        "keywords": "manipulation de chaînes de caractères, javascript, remplacer, pratique en javascript, pratique en ligne en javascript, tutoriel de programmation, laboratoire (lab) javascript, tutor javascript, dernière occurrence"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre le problème et configurer l'environnement",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier la création du fichier",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous d'avoir créé le fichier replaceLast.js dans le répertoire replace-last."
+              },
+              {
+                "name": "Vérifier l'utilisation de Node",
+                "file": "verify1-2.sh",
+                "hint": "Assurez-vous d'avoir exécuté le fichier JavaScript avec Node.js."
+              }
+            ]
+          },
+          {
+            "title": "Implémentation de la logique de la fonction principale",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la fonction",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté la fonction replaceLast avec la gestion des motifs de chaîne de caractères."
+              },
+              {
+                "name": "Vérifier les cas de test",
+                "file": "verify2-2.sh",
+                "hint": "Assurez-vous d'avoir ajouté des cas de test pour les motifs de chaîne de caractères."
+              }
+            ]
+          },
+          {
+            "title": "Gestion des motifs d'expressions régulières",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier la gestion des expressions régulières",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté la gestion des motifs d'expressions régulières dans la fonction replaceLast."
+              }
+            ]
+          },
+          {
+            "title": "Optimisation de la fonction et test des cas limites",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier l'optimisation et les cas limites",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous d'avoir amélioré la fonction replaceLast avec des optimisations et une gestion des cas limites."
+              }
+            ]
+          },
+          {
+            "title": "Création d'un module et utilisation de la fonction",
+            "text": "fr/step5.md",
+            "verify": [
+              {
+                "name": "Vérifier la création du module",
+                "file": "verify5-1.sh",
+                "hint": "Assurez-vous d'avoir créé le fichier replaceLastModule.js."
+              },
+              {
+                "name": "Vérifier l'utilisation du module",
+                "file": "verify5-2.sh",
+                "hint": "Assurez-vous d'avoir créé le fichier app.js qui utilise le module."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Letztes Vorkommen in einer Zeichenfolge ersetzen",
+      "description": "In diesem Lab werden wir die replaceLast-Funktion in JavaScript untersuchen, die das letzte Vorkommen eines Musters in einer gegebenen Zeichenfolge durch eine angegebene Ersetzung ersetzt. Dieses Lab wird Sie durch die Implementierung der replaceLast-Funktion führen, wodurch Sie Zeichenfolgen effizienter und flexibler manipulieren können. Am Ende dieses Labs werden Sie ein solides Verständnis davon haben, wie Sie das letzte Vorkommen eines Musters in einer Zeichenfolge ersetzen können, und können dieses Wissen in Ihren zukünftigen Programmierprojekten anwenden.",
+      "meta": {
+        "title": "Letztes Vorkommen in einer Zeichenfolge ersetzen",
+        "description": "Lernen Sie, wie Sie die replaceLast-Funktion nutzen können, um das letzte Vorkommen eines Musters in einer Zeichenfolge effizient zu ersetzen.",
+        "keywords": "Zeichenfolgenmanipulation, JavaScript, ersetzen, JavaScript Übung, Online-JavaScript-Übung, Programmier-Tutorial, JavaScript-Lab, JavaScript-Tutor, letztes Vorkommen"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Das Problem verstehen und die Umgebung einrichten",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Dateierstellung überprüfen",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei replaceLast.js im Verzeichnis replace-last erstellt haben."
+              },
+              {
+                "name": "Node.js-Nutzung überprüfen",
+                "file": "verify1-2.sh",
+                "hint": "Stellen Sie sicher, dass Sie die JavaScript-Datei mit Node.js ausgeführt haben."
+              }
+            ]
+          },
+          {
+            "title": "Implementierung der Kernfunktionslogik",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Funktionsimplementierung überprüfen",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die replaceLast-Funktion mit der Verarbeitung von Zeichenfolgenmustern implementiert haben."
+              },
+              {
+                "name": "Testfälle überprüfen",
+                "file": "verify2-2.sh",
+                "hint": "Stellen Sie sicher, dass Sie Testfälle für Zeichenfolgenmuster hinzugefügt haben."
+              }
+            ]
+          },
+          {
+            "title": "Umgang mit regulären Ausdrucksmustern",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "RegExp-Verarbeitung überprüfen",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Verarbeitung von RegExp-Mustern in der replaceLast-Funktion implementiert haben."
+              }
+            ]
+          },
+          {
+            "title": "Optimierung der Funktion und Testen von Randfällen",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Optimierung und Randfälle überprüfen",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die replaceLast-Funktion mit Optimierungen und der Behandlung von Randfällen verbessert haben."
+              }
+            ]
+          },
+          {
+            "title": "Erstellen eines Moduls und Verwenden der Funktion",
+            "text": "de/step5.md",
+            "verify": [
+              {
+                "name": "Modulerstellung überprüfen",
+                "file": "verify5-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei replaceLastModule.js erstellt haben."
+              },
+              {
+                "name": "Modulnutzung überprüfen",
+                "file": "verify5-2.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei app.js erstellt haben, die das Modul verwendet."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "文字列内の最後の出現箇所を置換する",
+      "description": "この実験では、JavaScript の replaceLast 関数を探索します。この関数は、指定された文字列内のパターンの最後の出現箇所を指定された置換文字列で置き換えます。この実験では、replaceLast 関数の実装をガイドし、より効率的かつ柔軟に文字列を操作できるようにします。この実験の終了時には、文字列内のパターンの最後の出現箇所を置換する方法をしっかりと理解し、将来のプログラミングプロジェクトにこの知識を適用できるようになります。",
+      "meta": {
+        "title": "文字列内の最後の出現箇所を置換する",
+        "description": "replaceLast 関数を使って、文字列内のパターンの最後の出現箇所を効率的に置換する方法を学びましょう。",
+        "keywords": "文字列操作, JavaScript, 置換, JavaScript の練習, オンラインでの JavaScript 練習, プログラミングチュートリアル, JavaScript 実験, JavaScript チューター, 最後の出現箇所"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "問題の理解とセットアップ",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "ファイル作成の確認",
+                "file": "verify1-1.sh",
+                "hint": "replace-last ディレクトリに replaceLast.js ファイルを作成したことを確認してください。"
+              },
+              {
+                "name": "Node.js の使用確認",
+                "file": "verify1-2.sh",
+                "hint": "Node.js を使用して JavaScript ファイルを実行したことを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "コア関数ロジックの実装",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "関数実装の確認",
+                "file": "verify2-1.sh",
+                "hint": "文字列パターンを扱う replaceLast 関数を実装したことを確認してください。"
+              },
+              {
+                "name": "テストケースの確認",
+                "file": "verify2-2.sh",
+                "hint": "文字列パターンのテストケースを追加したことを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "正規表現パターンの処理",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "正規表現処理の確認",
+                "file": "verify3-1.sh",
+                "hint": "replaceLast 関数で正規表現パターンの処理を実装したことを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "関数の最適化とエッジケースのテスト",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "最適化とエッジケースの確認",
+                "file": "verify4-1.sh",
+                "hint": "replaceLast 関数を最適化し、エッジケースを処理できるように強化したことを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "モジュールの作成と関数の使用",
+            "text": "ja/step5.md",
+            "verify": [
+              {
+                "name": "モジュール作成の確認",
+                "file": "verify5-1.sh",
+                "hint": "replaceLastModule.js ファイルを作成したことを確認してください。"
+              },
+              {
+                "name": "モジュール使用の確認",
+                "file": "verify5-2.sh",
+                "hint": "モジュールを使用する app.js ファイルを作成したことを確認してください。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Замена последнего вхождения в строке",
+      "description": "В этом практическом занятии мы рассмотрим функцию replaceLast в JavaScript, которая заменяет последнее вхождение шаблона в заданной строке на указанную замену. В рамках этого занятия вы научитесь реализовывать функцию replaceLast, что позволит вам более эффективно и гибко манипулировать строками. По завершении этого практического занятия вы будете хорошо понимать, как заменить последнее вхождение шаблона в строке и сможете применить эти знания в своих будущих программировании проектах.",
+      "meta": {
+        "title": "Замена последнего вхождения в строке",
+        "description": "Узнайте, как использовать функцию replaceLast для эффективной замены последнего вхождения шаблона в строке.",
+        "keywords": "манипуляция строками, javascript, замена, практика javascript, онлайн-упражнения по javascript, учебник программирования, практическое занятие по javascript, обучение javascript, последнее вхождение"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание проблемы и настройка окружения",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверка создания файла",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы создали файл replaceLast.js в директории replace-last."
+              },
+              {
+                "name": "Проверка использования Node.js",
+                "file": "verify1-2.sh",
+                "hint": "Убедитесь, что вы запустили JavaScript-файл с помощью Node.js."
+              }
+            ]
+          },
+          {
+            "title": "Реализация основной логики функции",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверка реализации функции",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы реализовали функцию replaceLast с обработкой строковых шаблонов."
+              },
+              {
+                "name": "Проверка тестовых случаев",
+                "file": "verify2-2.sh",
+                "hint": "Убедитесь, что вы добавили тестовые случаи для строковых шаблонов."
+              }
+            ]
+          },
+          {
+            "title": "Обработка регулярных выражений",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверка обработки RegExp",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы реализовали обработку шаблонов RegExp в функции replaceLast."
+              }
+            ]
+          },
+          {
+            "title": "Оптимизация функции и тестирование крайних случаев",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверка оптимизации и обработки крайних случаев",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы улучшили функцию replaceLast с использованием оптимизаций и обработки крайних случаев."
+              }
+            ]
+          },
+          {
+            "title": "Создание модуля и использование функции",
+            "text": "ru/step5.md",
+            "verify": [
+              {
+                "name": "Проверка создания модуля",
+                "file": "verify5-1.sh",
+                "hint": "Убедитесь, что вы создали файл replaceLastModule.js."
+              },
+              {
+                "name": "Проверка использования модуля",
+                "file": "verify5-2.sh",
+                "hint": "Убедитесь, что вы создали файл app.js, который использует модуль."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

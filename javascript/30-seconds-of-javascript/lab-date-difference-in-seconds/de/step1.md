@@ -1,23 +1,51 @@
-# Funktion zur Berechnung der Datumsdifferenz in Sekunden
+# Erste Schritte mit JavaScript-Date-Objekten
 
-Um die Differenz zwischen zwei Daten in Sekunden zu berechnen, folgen Sie diesen Schritten:
+JavaScript bietet ein eingebautes `Date`-Objekt, das es uns ermöglicht, mit Daten und Zeiten zu arbeiten. Bevor wir die Differenz zwischen Daten berechnen, lernen wir zunächst, wie man `Date`-Objekte in JavaScript erstellt und damit arbeitet.
 
-1. Öffnen Sie das Terminal/SSH und geben Sie `node` ein, um mit der Programmierung zu beginnen.
-2. Subtrahieren Sie die beiden `Date`-Objekte und teilen Sie das Ergebnis durch die Anzahl der Millisekunden in einer Sekunde.
-3. Das Ergebnis ist die Differenz zwischen den beiden Daten in Sekunden.
+## Starten der Node.js-Umgebung
 
-Hier ist eine JavaScript-Funktion, die diese Berechnung durchführt:
+Beginnen wir damit, die interaktive Node.js-Umgebung zu öffnen:
 
-```js
-const getSecondsDiffBetweenDates = (dateInitial, dateFinal) =>
-  (dateFinal - dateInitial) / 1000;
+1. Öffnen Sie das Terminal, indem Sie auf das Terminal-Menü oben im WebIDE klicken.
+2. Geben Sie den folgenden Befehl ein und drücken Sie die Eingabetaste:
+
+```bash
+node
 ```
 
-Um diese Funktion zu verwenden, übergeben Sie zwei `Date`-Objekte als Argumente, wie hier:
+Sie sollten jetzt die Node.js-Eingabeaufforderung (`>`) sehen, was darauf hinweist, dass Sie sich in der interaktiven JavaScript-Umgebung befinden. Dadurch können Sie JavaScript-Code direkt im Terminal ausführen.
 
-```js
-getSecondsDiffBetweenDates(
-  new Date("2020-12-24 00:00:15"),
-  new Date("2020-12-24 00:00:17")
-); // 2
+![node-prompt](../assets/screenshot-20250306-328ScUbO@2x.png)
+
+## Erstellen von Date-Objekten
+
+In JavaScript können wir ein neues `Date`-Objekt auf verschiedene Arten erstellen:
+
+```javascript
+// Aktuelles Datum und Uhrzeit
+let now = new Date();
+console.log(now);
+
+// Bestimmtes Datum und Uhrzeit (Jahr, Monat [0-11], Tag, Stunde, Minute, Sekunde)
+let specificDate = new Date(2023, 0, 15, 10, 30, 45); // 15. Januar 2023, 10:30:45
+console.log(specificDate);
+
+// Datum aus einem String
+let dateFromString = new Date("2023-01-15T10:30:45");
+console.log(dateFromString);
 ```
+
+Versuchen Sie, jedes dieser Beispiele in der Node.js-Umgebung einzugeben und beobachten Sie die Ausgabe.
+
+Beachten Sie, dass in JavaScript die Monate nullbasiert indiziert sind, d. h. Januar ist 0, Februar ist 1 und so weiter.
+
+## Abrufen des Zeitstempels aus Date-Objekten
+
+Jedes `Date`-Objekt in JavaScript speichert intern die Zeit als Anzahl der Millisekunden, die seit dem 1. Januar 1970 (UTC) vergangen sind. Dies wird als Zeitstempel (timestamp) bezeichnet.
+
+```javascript
+let now = new Date();
+console.log(now.getTime()); // Zeitstempel in Millisekunden abrufen
+```
+
+Dieser Zeitstempel wird für die Berechnung der Differenz zwischen Daten nützlich sein.

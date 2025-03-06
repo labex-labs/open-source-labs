@@ -1,41 +1,36 @@
-# Zoom-In-Zoom-Out-Animation
+# Verständnis der HTML-Struktur
 
-`index.html` und `style.css` wurden bereits in der virtuellen Maschine (VM) bereitgestellt.
+Bevor wir mit der Erstellung unserer Animation beginnen, müssen wir die HTML-Struktur verstehen, mit der wir arbeiten werden. In diesem Schritt werden wir die bereitgestellte HTML-Datei untersuchen und alle erforderlichen Änderungen vornehmen.
 
-Um eine Zoom-In-Zoom-Out-Animation zu erstellen, folgen Sie diesen Schritten:
+1. Öffnen Sie die Datei `index.html` im Editor.
 
-1. Definieren Sie eine dreistufige Animation mit `@keyframes`. Bei `0%` und `100%` setzen Sie das Element auf seine ursprüngliche Größe mit `scale(1,1)`. Bei `50%` skalieren Sie es auf das 1,5-fache seiner ursprünglichen Größe mit `scale(1.5,1.5)`.
-
-2. Geben Sie dem Element eine bestimmte Größe mit `width` und `height`.
-
-3. Verwenden Sie `animation`, um die entsprechenden Werte für das Element festzulegen, damit es animiert wird.
-
-Hier ist ein Beispiel für HTML- und CSS-Code:
+2. Wenn die Datei leer ist oder fehlt, erstellen Sie sie mit folgendem Inhalt:
 
 ```html
-<div class="zoom-in-out-box"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom In Zoom Out Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Animation Demo</h1>
+    <p>This box demonstrates a zoom in zoom out animation:</p>
+
+    <div class="zoom-in-out-box"></div>
+  </body>
+</html>
 ```
 
-```css
-.zoom-in-out-box {
-  margin: 24px;
-  width: 50px;
-  height: 50px;
-  background: #f50057;
-  animation: zoom-in-zoom-out 1s ease infinite;
-}
+3. Lassen Sie uns verstehen, was diese HTML-Datei macht:
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-```
+   - Wir haben eine Standard-HTML-Dokumentstruktur mit einem Titel und Viewport-Einstellungen.
+   - Wir verlinken auf eine externe CSS-Datei namens `style.css`.
+   - Wir fügen eine Überschrift und einen Absatz hinzu, um unsere Demo zu erklären.
+   - Am wichtigsten ist, dass wir ein `<div>`-Element mit der Klasse `zoom-in-out-box` haben, das animiert werden wird.
 
-Klicken Sie bitte auf 'Go Live' in der unteren rechten Ecke, um den Web-Service auf Port 8080 auszuführen. Anschließend können Sie die Registerkarte **Web 8080** aktualisieren, um die Webseite anzusehen.
+4. Speichern Sie die Datei `index.html`, wenn Sie Änderungen vorgenommen haben.
+
+Dieses div-Element wird unser "Leinwand" für die Erstellung der Animation sein. Im nächsten Schritt werden wir dieses Element mit CSS gestalten.

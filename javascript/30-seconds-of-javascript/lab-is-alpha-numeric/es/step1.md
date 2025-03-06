@@ -1,20 +1,52 @@
-# Verificar si una cadena es alfanumérica
+# Comprender los caracteres alfanuméricos
 
-Si deseas practicar la codificación, abre la Terminal/SSH y escribe `node`. Aquí hay una función que verifica si una cadena contiene solo caracteres alfanuméricos:
+Los caracteres alfanuméricos consisten en las 26 letras del alfabeto inglés (tanto mayúsculas A-Z como minúsculas a-z) y los 10 dígitos numéricos (0-9). Cuando verificamos si una cadena es alfanumérica, estamos comprobando que solo contenga estos caracteres y nada más.
 
-```js
-const isAlphaNumeric = (str) => /^[a-z0-9]+$/gi.test(str);
+En JavaScript, podemos comprobar los caracteres alfanuméricos utilizando expresiones regulares. Las expresiones regulares (regex) son patrones utilizados para coincidir con combinaciones de caracteres en cadenas.
+
+Comencemos abriendo nuestro editor de código. En el WebIDE, navega hasta el explorador de archivos en el lado izquierdo y crea un nuevo archivo JavaScript:
+
+1. Haz clic derecho en el panel del explorador de archivos.
+2. Selecciona "Nuevo archivo".
+3. Nombrar el archivo `alphanumeric.js`.
+
+Una vez que hayas creado el archivo, debería abrirse automáticamente en el editor. Si no es así, haz clic en `alphanumeric.js` en el explorador de archivos para abrirlo.
+
+![new-file](../assets/screenshot-20250306-K5AOWF7Z@2x.png)
+
+Ahora, ingresemos el siguiente código:
+
+```javascript
+// Function to check if a string is alphanumeric
+function isAlphaNumeric(str) {
+  // Using regular expression to check for alphanumeric characters
+  return /^[a-zA-Z0-9]+$/.test(str);
+}
+
+// Example usage
+console.log("Is 'hello123' alphanumeric?", isAlphaNumeric("hello123"));
+console.log("Is '123' alphanumeric?", isAlphaNumeric("123"));
+console.log("Is 'hello 123' alphanumeric?", isAlphaNumeric("hello 123"));
+console.log("Is 'hello@123' alphanumeric?", isAlphaNumeric("hello@123"));
 ```
 
-Para usarla, llama a `isAlphaNumeric` con una cadena como argumento. Devolverá `true` si la cadena contiene solo caracteres alfanuméricos y `false` en caso contrario.
+Guarda el archivo presionando `Ctrl+S` o seleccionando "Archivo" > "Guardar" desde el menú.
 
-Por ejemplo:
+Ahora, ejecutemos este archivo JavaScript para ver la salida. Abre la terminal en el WebIDE seleccionando "Terminal" > "Nueva terminal" desde el menú o presionando `` Ctrl+` ``.
 
-```js
-isAlphaNumeric("hello123"); // true
-isAlphaNumeric("123"); // true
-isAlphaNumeric("hello 123"); // false (contiene un espacio)
-isAlphaNumeric("#$hello"); // false (contiene caracteres no alfanuméricos)
+En la terminal, ejecuta el siguiente comando:
+
+```bash
+node alphanumeric.js
 ```
 
-El método `RegExp.prototype.test()` se utiliza para verificar si la cadena de entrada coincide con el patrón alfanumérico, que está representado por la expresión regular `/^[a-z0-9]+$/gi`. Este patrón coincide con cualquier secuencia de una o más letras minúsculas o dígitos, y las banderas `g` e `i` hacen que la coincidencia sea insensible a mayúsculas y minúsculas.
+Deberías ver la siguiente salida:
+
+```
+Is 'hello123' alphanumeric? true
+Is '123' alphanumeric? true
+Is 'hello 123' alphanumeric? false
+Is 'hello@123' alphanumeric? false
+```
+
+Esta salida muestra que nuestra función identifica correctamente `hello123` y `123` como cadenas alfanuméricas, mientras que `hello 123` (contiene un espacio) y `hello@123` (contiene un carácter especial @) no son alfanuméricas.

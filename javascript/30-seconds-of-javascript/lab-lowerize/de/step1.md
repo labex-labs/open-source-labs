@@ -1,24 +1,36 @@
-# Umwandeln von Objekt-Schlüsseln in Kleinbuchstaben
+# Grundlagen zu Objekten in JavaScript
 
-Um alle Schlüssel (keys) eines Objekts in Kleinbuchstaben umzuwandeln, folgen Sie diesen Schritten:
+Bevor wir beginnen, die Schlüssel (keys) von Objekten in Kleinbuchstaben umzuwandeln, lernen wir zunächst, was JavaScript-Objekte sind und wie wir mit ihnen arbeiten können.
 
-1. Öffnen Sie das Terminal/SSH, um mit der Programmierung zu beginnen, und geben Sie `node` ein.
-2. Verwenden Sie `Object.keys()`, um ein Array der Schlüssel des Objekts zu erhalten.
-3. Verwenden Sie `Array.prototype.reduce()`, um das Array auf ein Objekt abzubilden.
-4. Verwenden Sie `String.prototype.toLowerCase()`, um die Schlüssel in Kleinbuchstaben umzuwandeln.
+In JavaScript ist ein Objekt eine Sammlung von Schlüssel-Wert-Paaren (key-value pairs). Die Schlüssel (keys) sind Strings (oder Symbole), und die Werte können von jedem Datentyp sein, einschließlich anderer Objekte.
 
-Hier ist ein Beispielcode, der diese Schritte implementiert:
+Beginnen wir damit, die Node.js interaktive Shell zu öffnen:
 
-```js
-const lowerize = (obj) =>
-  Object.keys(obj).reduce((acc, k) => {
-    acc[k.toLowerCase()] = obj[k];
-    return acc;
-  }, {});
+1. Öffnen Sie das Terminal in Ihrer WebIDE.
+2. Geben Sie `node` ein und drücken Sie die Eingabetaste.
+
+Sie sollten jetzt die Node.js-Eingabeaufforderung (`>`) sehen, die es Ihnen ermöglicht, direkt JavaScript-Code einzugeben.
+
+Erstellen wir ein einfaches Objekt mit Schlüsseln in gemischter Groß- und Kleinschreibung:
+
+```javascript
+const user = {
+  Name: "John",
+  AGE: 30,
+  Email: "john@example.com"
+};
 ```
 
-Sie können dann die Funktion `lowerize()` mit einem Objekt als Argument aufrufen, um ein neues Objekt mit allen Schlüsseln in Kleinbuchstaben zu erhalten. Beispielsweise:
+Geben Sie diesen Code in die Node.js-Eingabeaufforderung ein und drücken Sie die Eingabetaste. Um das Objekt anzuzeigen, geben Sie einfach `user` ein und drücken Sie die Eingabetaste:
 
-```js
-lowerize({ Name: "John", Age: 22 }); // { name: 'John', age: 22 }
+```javascript
+user;
 ```
+
+Sie sollten die folgende Ausgabe sehen:
+
+```
+{ Name: 'John', AGE: 30, Email: 'john@example.com' }
+```
+
+Wie Sie sehen können, hat dieses Objekt Schlüssel (keys) mit unterschiedlichen Groß- und Kleinschreibungen. Im nächsten Schritt lernen wir, wie wir auf diese Schlüssel zugreifen und sie in Kleinbuchstaben umwandeln können.

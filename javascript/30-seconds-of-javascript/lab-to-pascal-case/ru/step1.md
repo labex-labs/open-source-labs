@@ -1,27 +1,48 @@
-# Функция для преобразования строки в Pascal case
+# Понимание Pascal case и настройка среды разработки
 
-Для преобразования строки в Pascal case вы можете использовать функцию `toPascalCase()`. Вот как это сделать:
+Pascal case (паскаль-кейс) - это соглашение об именовании, при котором:
 
-- Сначала откройте Терминал/SSH и введите `node`, чтобы начать практиковать программирование.
-- Затем используйте метод `String.prototype.match()` с соответствующим регулярным выражением, чтобы разбить строку на слова.
-- Далее используйте методы `Array.prototype.map()`, `Array.prototype.slice()`, `Array.prototype.join()`, `String.prototype.toUpperCase()` и `String.prototype.toLowerCase()`, чтобы объединить слова, сделав первую букву каждого слова заглавной, а остальные - строчными.
-- Наконец, вызовите функцию `toPascalCase()` с нужной вам строкой в качестве аргумента, чтобы преобразовать ее в Pascal case.
+- Первая буква каждого слова пишется с заглавной буквы.
+- Между словами не используются пробелы, дефисы или подчеркивания.
+- Все остальные буквы пишутся в нижнем регистре.
 
-Вот код функции `toPascalCase()`:
+Примеры:
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+Начнем с настройки нашей среды разработки.
+
+1. Откройте Терминал из интерфейса WebIDE, нажав на "Terminal" в верхней панели меню.
+
+2. Запустите интерактивную сессию Node.js, введя следующую команду в Терминале и нажав Enter:
+
+```bash
+node
 ```
 
-Вы можете использовать эту функцию для преобразования любой строки в Pascal case. Вот несколько примеров:
+Вы должны увидеть появление приглашения Node.js (`>`), что означает, что вы теперь в интерактивной среде Node.js.
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. Давайте попробуем простую манипуляцию строкой, чтобы разогреться. Введите следующий код в приглашении Node.js:
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+Вывод должен быть следующим:
+
+```
+John doe
+```
+
+Этот простой пример демонстрирует, как сделать первую букву строки заглавной. Мы использовали:
+
+- `charAt(0)` для получения первого символа.
+- `toUpperCase()` для преобразования его в верхний регистр.
+- `slice(1)` для получения остальной части строки.
+- Конкатенацию с помощью `+` для объединения их.
+
+Эти методы работы со строками будут полезны при создании нашего преобразователя в Pascal case.

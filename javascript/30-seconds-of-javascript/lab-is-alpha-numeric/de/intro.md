@@ -1,3 +1,5 @@
 # Einführung
 
-In diesem Lab werden wir untersuchen, wie man prüft, ob eine gegebene Zeichenkette nur alphanumerische Zeichen enthält, indem man JavaScript verwendet. Wir werden ein reguläres Ausdrucksmuster (regular expression pattern) nutzen, um die Eingabezeichenkette mit alphanumerischen Zeichen zu vergleichen und einen booleschen Wert zurückzugeben, der angibt, ob die Zeichenkette alphanumerisch ist oder nicht. Dieses Lab wird Ihnen helfen, zu verstehen, wie man mit regulären Ausdrücken in JavaScript arbeitet und wie man sie verwendet, um praktische Probleme zu lösen.
+In diesem Lab werden wir lernen, wie man prüft, ob eine Zeichenkette nur alphanumerische Zeichen enthält, indem wir JavaScript verwenden. Alphanumerische Zeichen umfassen Buchstaben (A-Z, a-z) und Zahlen (0-9). Dies ist eine häufige Aufgabe bei der Formularvalidierung, Datenverarbeitung und in vielen anderen Programmier-Szenarien.
+
+Wir werden eine JavaScript-Funktion erstellen, die reguläre Ausdrücke (regular expressions) verwendet, um zu bestimmen, ob eine Zeichenkette alphanumerisch ist. Am Ende dieses Labs werden Sie verstehen, wie Sie diese Prüfung implementieren können und wie reguläre Ausdrücke in JavaScript zur Validierung von Zeichenkettenmustern eingesetzt werden können.

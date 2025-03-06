@@ -1,11 +1,15 @@
 # Einführung
 
-Bei der Datenvisualisierung müssen wir manchmal mit Ausreißern umgehen, die es schwierig machen, die Details der meisten Daten zu erkennen. In solchen Fällen können wir eine unterbrochene Achse verwenden, um auf die Mehrheit der Daten zu zoomen, während wir die Ausreißer dennoch anzeigen. In diesem Tutorial erfahren wir, wie man mit Matplotlib in Python ein Diagramm mit unterbrochener Achse erstellt.
+Die Datenvisualisierung stellt oft Herausforderungen dar, wenn es um Ausreißer geht. Diese extremen Werte können die Mehrheit Ihrer Datenpunkte komprimieren, was es schwierig macht, wichtige Muster oder Details zu beobachten. Ein Diagramm mit unterbrochener Achse bietet eine elegante Lösung, indem es die Achse "unterbricht", um verschiedene Wertebereiche anzuzeigen. Dadurch können Sie sich gleichzeitig auf die Hauptverteilung der Daten und die Ausreißer konzentrieren.
+
+In diesem Tutorial lernen wir, wie man ein Diagramm mit unterbrochener Achse mit Matplotlib in Python erstellt. Diese Technik ist besonders nützlich, wenn man Datensätze mit großen Wertunterschieden visualisiert, da sie eine klarere Darstellung sowohl der normalen Daten als auch der extremen Werte ermöglicht.
 
 ## Tipps zur virtuellen Maschine (VM)
 
-Nachdem die virtuelle Maschine gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook für die Übung zuzugreifen.
+Nachdem der Start der virtuellen Maschine abgeschlossen ist, klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund von Einschränkungen in Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
+![click-notebook](https://file.labex.io/images/click-notebook.png)
 
-Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie nach der Sitzung Feedback ab, und wir werden das Problem umgehend für Sie beheben.
+Sie müssen möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund der Einschränkungen von Jupyter Notebook kann die Validierung der Operationen nicht automatisiert werden.
+
+Wenn Sie während dieses Labs auf Probleme stoßen, können Sie sich gerne an Labby wenden, um Hilfe zu erhalten. Bitte geben Sie uns nach der Sitzung Feedback, damit wir die Probleme, die Sie hatten, umgehend beheben können.

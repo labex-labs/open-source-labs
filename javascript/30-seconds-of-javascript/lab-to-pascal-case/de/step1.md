@@ -1,27 +1,48 @@
-# Funktion zur Umwandlung eines Strings in Pascal Case
+# Verständnis von Pascal Case und Einrichtung der Umgebung
 
-Um einen String in Pascal Case umzuwandeln, können Sie die Funktion `toPascalCase()` verwenden. So geht's:
+Pascal Case ist eine Namenskonvention, bei der:
 
-- Öffnen Sie zunächst das Terminal/SSH und geben Sie `node` ein, um mit der Programmierung zu beginnen.
-- Verwenden Sie dann die Methode `String.prototype.match()` mit einem geeigneten regulären Ausdruck, um den String in Wörter aufzuteilen.
-- Verwenden Sie als Nächstes die Methoden `Array.prototype.map()`, `Array.prototype.slice()`, `Array.prototype.join()`, `String.prototype.toUpperCase()` und `String.prototype.toLowerCase()`, um die Wörter zusammenzufügen, wobei der erste Buchstabe jedes Wortes großgeschrieben und der Rest klein geschrieben wird.
-- Rufen Sie schließlich die Funktion `toPascalCase()` mit Ihrem gewünschten String als Argument auf, um ihn in Pascal Case umzuwandeln.
+- Der erste Buchstabe jedes Wortes groß geschrieben wird
+- Zwischen den Wörtern keine Leerzeichen, Bindestriche oder Unterstriche verwendet werden
+- Alle anderen Buchstaben klein geschrieben werden
 
-Hier ist der Code für die Funktion `toPascalCase()`:
+Beispielsweise:
 
-```js
-const toPascalCase = (str) =>
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
-    .join("");
+- "hello world" → "HelloWorld"
+- "user_name" → "UserName"
+- "first-name" → "FirstName"
+
+Beginnen wir mit der Einrichtung unserer Entwicklungsumgebung.
+
+1. Öffnen Sie das Terminal über die WebIDE-Schnittstelle, indem Sie auf "Terminal" in der oberen Menüleiste klicken.
+
+2. Starten Sie eine Node.js-Interaktionssitzung, indem Sie den folgenden Befehl im Terminal eingeben und die Eingabetaste drücken:
+
+```bash
+node
 ```
 
-Sie können diese Funktion verwenden, um jeden String in Pascal Case umzuwandeln. Hier sind einige Beispiele:
+Sie sollten das Node.js-Prompt (`>`) sehen, was darauf hinweist, dass Sie nun in der Node.js-Interaktionsumgebung sind.
 
-```js
-toPascalCase("some_database_field_name"); // 'SomeDatabaseFieldName'
-toPascalCase("Some label that needs to be pascalized"); // 'SomeLabelThatNeedsToBePascalized'
-toPascalCase("some-javascript-property"); // 'SomeJavascriptProperty'
-toPascalCase("some-mixed_string with spaces_underscores-and-hyphens"); // 'SomeMixedStringWithSpacesUnderscoresAndHyphens'
+3. Probieren wir eine einfache String-Manipulation, um uns einzuschwimmen. Geben Sie den folgenden Code am Node.js-Prompt ein:
+
+```javascript
+let name = "john doe";
+let capitalizedFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(capitalizedFirstLetter);
 ```
+
+Die Ausgabe sollte sein:
+
+```
+John doe
+```
+
+Dieses einfache Beispiel zeigt, wie man den ersten Buchstaben eines Strings groß schreibt. Wir haben verwendet:
+
+- `charAt(0)`, um das erste Zeichen zu erhalten
+- `toUpperCase()`, um es in einen Großbuchstaben umzuwandeln
+- `slice(1)`, um den Rest des Strings zu erhalten
+- Verkettung mit `+`, um sie zusammenzufügen
+
+Diese String-Methoden werden hilfreich sein, wenn wir unseren Pascal-Case-Konverter erstellen.

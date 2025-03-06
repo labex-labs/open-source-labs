@@ -1,42 +1,48 @@
-# Funktion zum Ersetzen des letzten Vorkommens eines Musters in einer Zeichenkette
+# Das Problem verstehen und die Umgebung einrichten
 
-Hier ist eine Funktion, die das letzte Vorkommen eines Musters in einer Zeichenkette ersetzt:
+Bevor wir mit dem Codieren beginnen, verstehen wir zunächst, was unsere `replaceLast`-Funktion tun sollte:
 
-```js
-const replaceLast = (str, pattern, replacement) => {
+1. Drei Parameter akzeptieren:
+
+   - `str`: Der Eingabe-String, der modifiziert werden soll
+   - `pattern`: Das Teilzeichenfolgenmuster oder der reguläre Ausdruck (Regular Expression), nach dem gesucht werden soll
+   - `replacement`: Die Zeichenfolge, mit der das letzte Vorkommen ersetzt werden soll
+
+2. Einen neuen String zurückgeben, in dem das letzte Vorkommen des Musters ersetzt wurde.
+
+Erstellen wir jetzt eine JavaScript-Datei, um unsere Funktion zu implementieren:
+
+1. Navigieren Sie im Dateiexplorer des WebIDE in das Projektverzeichnis.
+2. Erstellen Sie eine neue Datei mit dem Namen `replaceLast.js` im Verzeichnis `replace-last`.
+3. Fügen Sie der Datei die folgende Grundstruktur hinzu:
+
+```javascript
+// Function to replace the last occurrence of a pattern in a string
+function replaceLast(str, pattern, replacement) {
+  // Our implementation will go here
+  return str;
+}
+
+// We will add test cases here later
 ```
 
-Um sie zu verwenden, öffnen Sie das Terminal/SSH und geben Sie `node` ein.
+Um sicherzustellen, dass alles korrekt eingerichtet ist, fügen wir einen einfachen Test hinzu:
 
-- Verwenden Sie zunächst `typeof`, um festzustellen, ob `pattern` eine Zeichenkette oder ein regulärer Ausdruck (regular expression) ist.
-- Wenn `pattern` eine Zeichenkette ist, verwenden Sie sie als `match`.
-- Andernfalls verwenden Sie den `RegExp`-Konstruktor, um einen neuen regulären Ausdruck zu erstellen, indem Sie die `RegExp.prototype.source` von `pattern` verwenden und das `'g'`-Flag hinzufügen. Verwenden Sie `String.prototype.match()` und `Array.prototype.slice()`, um das letzte Vorkommen (falls vorhanden) zu erhalten.
-
-```js
-const match =
-  typeof pattern === "string"
-    ? pattern
-    : (str.match(new RegExp(pattern.source, "g")) || []).slice(-1)[0];
+```javascript
+// Example usage
+console.log(replaceLast("Hello world world", "world", "JavaScript"));
 ```
 
-- Verwenden Sie `String.prototype.lastIndexOf()`, um das letzte Vorkommen des Treffers in der Zeichenkette zu finden.
-- Wenn ein Treffer gefunden wird, verwenden Sie `String.prototype.slice()` und ein Template-Literal, um das übereinstimmende Teilzeichenkette durch die angegebene `replacement` zu ersetzen.
-- Wenn kein Treffer gefunden wird, geben Sie die ursprüngliche Zeichenkette zurück.
+Jetzt lassen wir unseren Code laufen, um die aktuelle Ausgabe zu sehen:
 
-```js
-  if (!match) return str;
-  const last = str.lastIndexOf(match);
-  return last!== -1
-   ? `${str.slice(0, last)}${replacement}${str.slice(last + match.length)}`
-    : str;
-};
-```
+1. Öffnen Sie das Terminal im WebIDE.
+2. Navigieren Sie in das Verzeichnis `replace-last`:
+   ```bash
+   cd ~/project/replace-last
+   ```
+3. Führen Sie die JavaScript-Datei mit Node.js aus:
+   ```bash
+   node replaceLast.js
+   ```
 
-Hier sind einige Beispiele, wie Sie die Funktion verwenden können:
-
-```js
-replaceLast("abcabdef", "ab", "gg"); // 'abcggdef'
-replaceLast("abcabdef", /ab/, "gg"); // 'abcggdef'
-replaceLast("abcabdef", "ad", "gg"); // 'abcabdef'
-replaceLast("abcabdef", /ad/, "gg"); // 'abcabdef'
-```
+Sie sollten `Hello world world` in der Ausgabe sehen, da unsere Funktion derzeit einfach nur den ursprünglichen String zurückgibt, ohne Änderungen vorzunehmen.

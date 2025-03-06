@@ -1,13 +1,17 @@
 # Einführung
 
-Bei der Datenvisualisierung ist es oft erforderlich, Diagrammen Anmerkungen hinzuzufügen, um dem Publikum zusätzliche Informationen bereitzustellen. Eine Möglichkeit, dies zu tun, besteht darin, Textfelder zu einem Diagramm hinzuzufügen. In Matplotlib ist es möglich, Textfelder in Achsenkoordinaten zu platzieren, sodass sich der Text bei Änderungen der x- oder y-Grenzen nicht bewegt. Sie können auch die `bbox`-Eigenschaft von Text verwenden, um den Text mit einer Instanz von `~matplotlib.patches.Patch` zu umgeben.
+Beim Erstellen von Datenvisualisierungen kann das Hinzufügen von Anmerkungen das Verständnis der Diagramme durch die Betrachter erheblich verbessern. Textfelder sind eine effektive Methode, um zusätzliche Informationen direkt in Ihre Visualisierungen einzufügen. Matplotlib, eine beliebte Python-Bibliothek zur Erstellung von statischen, animierten und interaktiven Visualisierungen, bietet leistungsstarke Werkzeuge zum Hinzufügen von anpassbaren Textfeldern zu Ihren Diagrammen.
 
-In diesem Lab werden wir lernen, wie man Textfelder in Matplotlib mit Python platziert.
+In diesem Lab erfahren Sie, wie Sie Textfelder in Matplotlib-Diagrammen mit Python platzieren. Sie werden lernen, wie Sie Text in Achsenkoordinaten positionieren, was den Text in einer festen Position relativ zum Diagramm hält, unabhängig von Änderungen der Datenskala. Darüber hinaus werden Sie lernen, wie Sie Textfelder mit verschiedenen Stilen, Farben und Transparenzgraden mithilfe der `bbox`-Eigenschaft anpassen können.
+
+Am Ende dieses Labs können Sie informative und optisch ansprechende Diagramme mit strategisch platzierten Anmerkungen für Ihre Datenvisualisierungsprojekte erstellen.
 
 ## Tipps zur virtuellen Maschine (VM)
 
-Nachdem die VM gestartet wurde, klicken Sie in der oberen linken Ecke auf die Registerkarte **Notebook**, um auf Jupyter Notebook für die Übung zuzugreifen.
+Nach Abschluss des Starts der virtuellen Maschine klicken Sie in der oberen linken Ecke, um zur Registerkarte **Notebook** zu wechseln und auf Jupyter Notebook für die Übung zuzugreifen.
 
-Manchmal müssen Sie möglicherweise einige Sekunden warten, bis Jupyter Notebook fertig geladen hat. Die Validierung von Vorgängen kann aufgrund von Einschränkungen in Jupyter Notebook nicht automatisiert werden.
+![click-notebook](https://file.labex.io/images/click-notebook.png)
 
-Wenn Sie während des Lernens Probleme haben, können Sie sich gerne an Labby wenden. Geben Sie nach der Sitzung Feedback ab, und wir werden das Problem für Sie umgehend beheben.
+Sie müssen möglicherweise einige Sekunden warten, bis Jupyter Notebook vollständig geladen ist. Aufgrund der Einschränkungen von Jupyter Notebook kann die Validierung von Vorgängen nicht automatisiert werden.
+
+Wenn Sie während des Labs auf Probleme stoßen, können Sie sich gerne an Labby wenden, um Hilfe zu erhalten. Wir freuen uns über Ihr Feedback nach der Sitzung, um das Lab-Erlebnis zu verbessern.

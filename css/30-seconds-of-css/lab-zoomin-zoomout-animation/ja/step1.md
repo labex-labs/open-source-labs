@@ -1,41 +1,36 @@
-# ズームイン・ズームアウトアニメーション
+# HTML構造の理解
 
-`index.html` と `style.css` はすでに仮想マシン (VM) に用意されています。
+アニメーションを作成する前に、扱うHTML構造を理解する必要があります。このステップでは、提供されたHTMLファイルを調べ、必要な修正を行います。
 
-ズームイン・ズームアウトアニメーションを作成するには、以下の手順に従ってください。
+1. エディタで `index.html` ファイルを開きます。
 
-1. `@keyframes` を使用して3段階のアニメーションを定義します。`0%` と `100%` では、`scale(1,1)` を使用して要素を元のサイズに設定します。`50%` では、`scale(1.5,1.5)` を使用して要素を元のサイズの1.5倍に拡大します。
-
-2. `width` と `height` を使用して要素に特定のサイズを指定します。
-
-3. `animation` を使用して要素に適切な値を設定し、アニメーションを実現します。
-
-以下は HTML と CSS のコード例です。
+2. ファイルが空または存在しない場合は、以下の内容で作成します。
 
 ```html
-<div class="zoom-in-out-box"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom In Zoom Out Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Animation Demo</h1>
+    <p>This box demonstrates a zoom in zoom out animation:</p>
+
+    <div class="zoom-in-out-box"></div>
+  </body>
+</html>
 ```
 
-```css
-.zoom-in-out-box {
-  margin: 24px;
-  width: 50px;
-  height: 50px;
-  background: #f50057;
-  animation: zoom-in-zoom-out 1s ease infinite;
-}
+3. このHTMLが何をするかを理解しましょう。
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-```
+   - タイトルとビューポート設定を持つ標準的なHTMLドキュメント構造があります。
+   - `style.css` という名前の外部CSSファイルをリンクしています。
+   - デモを説明する見出しと段落を含んでいます。
+   - 最も重要なのは、アニメーションされる `zoom-in-out-box` クラスの `<div>` 要素があることです。
 
-右下隅にある「Go Live」をクリックして、ポート 8080 でウェブサービスを起動してください。その後、**Web 8080** タブを更新すると、ウェブページをプレビューできます。
+4. 変更を加えた場合は、`index.html` ファイルを保存します。
+
+このdiv要素がアニメーションを作成するためのキャンバスになります。次のステップでは、この要素をCSSを使ってスタイルを設定します。

@@ -1,11 +1,16 @@
 # Introduction
 
-Ce tutoriel vous montrera comment superposer une image sur un graphique Matplotlib en la déplaçant vers l'avant et en la rendant semi-transparente. Le tutoriel utilise la méthode `figimage` de la classe `matplotlib.figure.Figure` et la méthode `imread` du module `matplotlib.image`.
+En visualisation de données, il peut arriver que vous souhaitiez ajouter un logo, une marque d'eau ou d'autres éléments d'image à vos graphiques. Ce tutoriel montre comment superposer une image sur un graphique Matplotlib en la plaçant devant le contenu du graphique et en la rendant semi-transparente.
+
+Vous apprendrez à utiliser la méthode `figimage` de la classe `matplotlib.figure.Figure` pour positionner une image sur votre graphique, ainsi que la méthode `imread` du module `matplotlib.image` pour charger les données d'image.
+
+À la fin de ce tutoriel, vous serez en mesure de créer des visualisations de qualité professionnelle avec des superpositions d'images personnalisées, utiles pour la marque, la mise en place de marques d'eau ou pour améliorer l'attrait visuel de vos présentations de données.
 
 ## Conseils pour la machine virtuelle (VM)
 
-Une fois le démarrage de la machine virtuelle terminé, cliquez dans le coin supérieur gauche pour basculer vers l'onglet **Notebook** afin d'accéder à Jupyter Notebook pour pratiquer.
+Une fois que la machine virtuelle a démarré, cliquez dans le coin supérieur gauche pour basculer vers l'onglet **Notebook** et accéder à Jupyter Notebook pour pratiquer.
 
-Parfois, vous devrez peut-être attendre quelques secondes que Jupyter Notebook ait terminé de charger. La validation des opérations ne peut pas être automatisée en raison des limitations de Jupyter Notebook.
+![click-notebook](https://file.labex.io/images/click-notebook.png)
+Parfois, vous devrez peut-être attendre quelques secondes que Jupyter Notebook finisse de charger. La validation des opérations ne peut pas être automatisée en raison des limitations de Jupyter Notebook.
 
-Si vous rencontrez des problèmes lors de votre apprentissage, n'hésitez pas à poser vos questions à Labby. Donnez votre avis après la session, et nous résoudrons rapidement le problème pour vous.
+Si vous rencontrez des problèmes pendant votre apprentissage, n'hésitez pas à demander de l'aide à Labby. Donnez votre feedback après la session, et nous résoudrons rapidement le problème pour vous.

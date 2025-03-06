@@ -1,3 +1,3 @@
 # Introducción
 
-En este laboratorio, exploraremos los fundamentos de la programación CSS. A través de una serie de ejercicios, aprenderemos cómo utilizar CSS para dar estilo a elementos HTML y crear páginas web visualmente atractivas. Al final del laboratorio, tendrás una comprensión sólida de la sintaxis de CSS y podrás aplicarla a tus propios proyectos de desarrollo web.
+En este laboratorio, exploraremos las animaciones CSS creando un efecto de acercamiento y alejamiento simple pero efectivo. Las animaciones CSS nos permiten agregar efectos visuales dinámicos a las páginas web sin utilizar JavaScript. Al final de este laboratorio, entenderás cómo utilizar los keyframes (fotogramas clave) y las propiedades de animación de CSS para crear transiciones fluidas que pueden mejorar la experiencia del usuario en tus sitios web.

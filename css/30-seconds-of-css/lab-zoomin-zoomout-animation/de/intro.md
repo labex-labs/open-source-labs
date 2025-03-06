@@ -1,3 +1,3 @@
 # Einführung
 
-In diesem Lab werden wir die Grundlagen der CSS-Programmierung erkunden. Durch eine Reihe von Übungen werden wir lernen, wie man CSS verwendet, um HTML-Elemente zu gestalten und optisch ansprechende Webseiten zu erstellen. Am Ende des Labs werden Sie ein solides Verständnis der CSS-Syntax haben und in der Lage sein, es auf Ihre eigenen Webentwicklungsprojekte anzuwenden.
+In diesem Lab werden wir CSS-Animationen erkunden, indem wir einen einfachen, aber effektiven Zoom-Effekt (Hinein- und Herauszoomen) erstellen. CSS-Animationen ermöglichen es uns, dynamische visuelle Effekte auf Webseiten hinzuzufügen, ohne JavaScript zu verwenden. Am Ende dieses Labs werden Sie verstehen, wie Sie CSS-Keyframes und Animations-Eigenschaften verwenden können, um reibungslose Übergänge zu erstellen, die die Benutzererfahrung auf Ihren Websites verbessern können.

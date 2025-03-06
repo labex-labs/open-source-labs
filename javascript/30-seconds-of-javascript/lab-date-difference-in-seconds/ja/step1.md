@@ -1,23 +1,51 @@
-# 日付の差を秒単位で計算する関数
+# JavaScript の Date オブジェクトの使い始め方
 
-2つの日付の差を秒単位で計算するには、以下の手順に従ってください。
+JavaScript は、日付と時間を扱うための組み込みの `Date` オブジェクトを提供しています。日付の差を計算する前に、まず JavaScript で `Date` オブジェクトを作成して操作する方法を理解しましょう。
 
-1. ターミナル/SSH を開き、`node` と入力してコーディングの練習を開始します。
-2. 2つの `Date` オブジェクトを引き算し、1秒のミリ秒数で割ります。
-3. その結果が2つの日付の差（秒単位）になります。
+## Node.js 環境の起動
 
-この計算を行う JavaScript 関数は次のとおりです。
+まずは、対話型の Node.js 環境を開きましょう。
 
-```js
-const getSecondsDiffBetweenDates = (dateInitial, dateFinal) =>
-  (dateFinal - dateInitial) / 1000;
+1. WebIDE 上部の「Terminal」メニューをクリックしてターミナルを開きます。
+2. 以下のコマンドを入力して Enter キーを押します。
+
+```bash
+node
 ```
 
-この関数を使用するには、2つの `Date` オブジェクトを引数として渡します。次のようになります。
+これで Node.js のプロンプト (`>`) が表示され、JavaScript の対話型環境に入ったことがわかります。これにより、ターミナルで直接 JavaScript コードを実行できます。
 
-```js
-getSecondsDiffBetweenDates(
-  new Date("2020-12-24 00:00:15"),
-  new Date("2020-12-24 00:00:17")
-); // 2
+![node-prompt](../assets/screenshot-20250306-328ScUbO@2x.png)
+
+## Date オブジェクトの作成
+
+JavaScript では、いくつかの方法で新しい `Date` オブジェクトを作成できます。
+
+```javascript
+// 現在の日付と時刻
+let now = new Date();
+console.log(now);
+
+// 特定の日付と時刻 (年, 月 [0-11], 日, 時, 分, 秒)
+let specificDate = new Date(2023, 0, 15, 10, 30, 45); // 2023年1月15日 10:30:45
+console.log(specificDate);
+
+// 文字列からの日付
+let dateFromString = new Date("2023-01-15T10:30:45");
+console.log(dateFromString);
 ```
+
+これらの例を Node.js 環境でそれぞれ入力し、出力を確認してみてください。
+
+なお、JavaScript では月は 0 から始まるインデックスで表されます。つまり、1月は 0、2月は 1 といった具合です。
+
+## Date オブジェクトからタイムスタンプを取得する
+
+JavaScript のすべての `Date` オブジェクトは、内部的に 1970 年 1 月 1 日 (UTC) から経過したミリ秒数として時間を格納しています。これをタイムスタンプと呼びます。
+
+```javascript
+let now = new Date();
+console.log(now.getTime()); // ミリ秒単位のタイムスタンプを取得
+```
+
+このタイムスタンプは、日付の差を計算する際に役立ちます。

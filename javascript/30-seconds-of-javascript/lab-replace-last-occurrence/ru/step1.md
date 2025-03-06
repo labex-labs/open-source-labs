@@ -1,42 +1,48 @@
-# Функция для замены последнего вхождения шаблона в строке
+# Понимание проблемы и настройка окружения
 
-Вот функция, которая заменяет последнее вхождение шаблона в строке:
+Прежде чем мы начнем писать код, давайте разберемся, что должна делать наша функция `replaceLast`:
 
-```js
-const replaceLast = (str, pattern, replacement) => {
+1. Принимать три параметра:
+
+   - `str`: Входная строка, которую нужно изменить
+   - `pattern`: Подстрока или регулярное выражение, которое нужно найти
+   - `replacement`: Строка, на которую нужно заменить последнее вхождение
+
+2. Возвращать новую строку с замененным последним вхождением шаблона.
+
+Давайте создадим файл JavaScript для реализации нашей функции:
+
+1. Перейдите в директорию проекта в проводнике файлов WebIDE.
+2. Создайте новый файл с именем `replaceLast.js` в директории `replace-last`.
+3. Добавьте в файл следующую базовую структуру:
+
+```javascript
+// Function to replace the last occurrence of a pattern in a string
+function replaceLast(str, pattern, replacement) {
+  // Our implementation will go here
+  return str;
+}
+
+// We will add test cases here later
 ```
 
-Для ее использования откройте Терминал/SSH и введите `node`.
+Чтобы убедиться, что все настроено правильно, давайте добавим простой тест:
 
-- Сначала используйте `typeof`, чтобы определить, является ли `pattern` строкой или регулярным выражением.
-- Если `pattern` - это строка, используйте ее как `match`.
-- В противном случае используйте конструктор `RegExp` для создания нового регулярного выражения, используя `RegExp.prototype.source` из `pattern` и добавив к нему флаг `'g'`. Используйте `String.prototype.match()` и `Array.prototype.slice()`, чтобы получить последнее совпадение, если оно есть.
-
-```js
-const match =
-  typeof pattern === "string"
-    ? pattern
-    : (str.match(new RegExp(pattern.source, "g")) || []).slice(-1)[0];
+```javascript
+// Example usage
+console.log(replaceLast("Hello world world", "world", "JavaScript"));
 ```
 
-- Используйте `String.prototype.lastIndexOf()`, чтобы найти последнее вхождение совпадения в строке.
-- Если совпадение найдено, используйте `String.prototype.slice()` и шаблонную строку (template literal), чтобы заменить совпадающую подстроку на заданную `replacement`.
-- Если совпадение не найдено, верните исходную строку.
+Теперь давайте запустим наш код, чтобы увидеть текущий вывод:
 
-```js
-  if (!match) return str;
-  const last = str.lastIndexOf(match);
-  return last!== -1
-   ? `${str.slice(0, last)}${replacement}${str.slice(last + match.length)}`
-    : str;
-};
-```
+1. Откройте Терминал в WebIDE.
+2. Перейдите в директорию `replace-last`:
+   ```bash
+   cd ~/project/replace-last
+   ```
+3. Запустите файл JavaScript с помощью Node.js:
+   ```bash
+   node replaceLast.js
+   ```
 
-Вот несколько примеров использования этой функции:
-
-```js
-replaceLast("abcabdef", "ab", "gg"); // 'abcggdef'
-replaceLast("abcabdef", /ab/, "gg"); // 'abcggdef'
-replaceLast("abcabdef", "ad", "gg"); // 'abcabdef'
-replaceLast("abcabdef", /ad/, "gg"); // 'abcabdef'
-```
+В выводе вы должны увидеть `Hello world world`, потому что наша функция в настоящее время просто возвращает исходную строку без каких-либо изменений.

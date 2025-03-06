@@ -1,27 +1,45 @@
-# Преобразование строки в snake case
+# Понимание проблемы
 
-Напишите функцию на Python с именем `snake`, которая принимает строку в качестве аргумента и возвращает строку в формате "snake case" (змеиный регистр). Функция должна выполнять следующие шаги:
+Прежде чем мы напишем функцию для преобразования в snake case, давайте разберемся, что нам нужно сделать:
 
-1. Используйте `re.sub()`, чтобы найти все слова в строке, а затем примените `str.lower()`, чтобы преобразовать их в нижний регистр.
-2. Используйте `re.sub()`, чтобы заменить все символы `-` на пробелы.
-3. Наконец, используйте `str.join()`, чтобы объединить все слова, используя `_` в качестве разделителя.
+1. Мы должны преобразовать строку из любого формата в snake case.
+2. Snake case означает, что все буквы должны быть в нижнем регистре, а слова разделены подчеркиваниями.
+3. Мы должны обрабатывать различные форматы входных данных:
+   - camelCase (например, `camelCase` → `camel_case`)
+   - Строки с пробелами (например, `some text` → `some_text`)
+   - Строки с смешанным форматированием (например, с дефисами, подчеркиваниями и смешанным регистром)
 
-Ваша функция должна уметь обрабатывать строки, содержащие смесь заглавных и строчных букв, пробелы, дефисы и подчеркивания.
+Начнем с создания нового файла Python для нашей функции snake case. В WebIDE перейдите в директорию проекта и создайте новый файл с именем `snake_case.py`:
 
 ```python
-from re import sub
-
+# This function will convert a string to snake case
 def snake(s):
-  return '_'.join(
-    sub('([A-Z][a-z]+)', r' \1',
-    sub('([A-Z]+)', r' \1',
-    s.replace('-', ' '))).split()).lower()
+    # We'll implement this function step by step
+    pass  # Placeholder for now
+
+# Test with a simple example
+if __name__ == "__main__":
+    test_string = "helloWorld"
+    result = snake(test_string)
+    print(f"Original: {test_string}")
+    print(f"Snake case: {result}")
 ```
 
-```python
-snake('camelCase') # 'camel_case'
-snake('some text') # 'some_text'
-snake('some-mixed_string With spaces_underscores-and-hyphens')
-# 'some_mixed_string_with_spaces_underscores_and_hyphens'
-snake('AllThe-small Things') # 'all_the_small_things'
+Сохраните этот файл. На следующем шаге мы начнем реализацию функции.
+
+Пока что давайте запустим нашу заглушку функции, чтобы убедиться, что наш файл настроен правильно. Откройте терминал и запустите:
+
+```bash
+python3 ~/project/snake_case.py
 ```
+
+![python-prompt](../assets/screenshot-20250306-B5lI9tyo@2x.png)
+
+Вы должны увидеть вывод, похожий на следующий:
+
+```
+Original: helloWorld
+Snake case: None
+```
+
+Результат равен `None`, потому что наша функция в настоящее время просто возвращает значение по умолчанию Python `None`. На следующем шаге мы добавим фактическую логику преобразования.
