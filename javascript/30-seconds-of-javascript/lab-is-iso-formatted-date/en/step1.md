@@ -43,6 +43,8 @@ const now = new Date();
 console.log(now);
 ```
 
+![node-prompt](../assets/screenshot-20250306-odDaT5Rp@2x.png)
+
 4. Convert this Date object to an ISO string:
 
 ```javascript
@@ -62,5 +64,7 @@ You should see output similar to:
 const dateFromIso = new Date("2023-05-12T14:30:15.123Z");
 console.log(dateFromIso);
 ```
+
+![node-prompt](../assets/screenshot-20250306-dbkCLkf7@2x.png)
 
 This demonstrates how JavaScript can parse and create Date objects from ISO formatted strings.
