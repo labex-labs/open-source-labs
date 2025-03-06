@@ -12,6 +12,8 @@ Let's start by opening our code editor. In the WebIDE, navigate to the file expl
 
 Once you have created the file, it should open automatically in the editor. If not, click on `alphanumeric.js` in the file explorer to open it.
 
+![new-file](../assets/screenshot-20250306-K5AOWF7Z@2x.png)
+
 Now, let's enter the following code:
 
 ```javascript

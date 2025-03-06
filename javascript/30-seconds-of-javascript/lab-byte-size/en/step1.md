@@ -16,10 +16,12 @@ node
 You should now be in the Node.js interactive console, which looks something like this:
 
 ```
-Welcome to Node.js v16.x.x.
+Welcome to Node.js v14.x.x.
 Type ".help" for more information.
 >
 ```
+
+![Open the node](../assets/screenshot-20250306-cFJ9GgLX@2x.png)
 
 In this console, we can experiment with JavaScript code directly. Try typing the following command to see the length of a string:
 
