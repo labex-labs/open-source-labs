@@ -1,11 +1,5 @@
 # Introduction
 
-Metaclasses are one of Python's most powerful and advanced features. They allow you to customize class creation itself, giving you control over how classes are defined and instantiated. In this lab, you will explore metaclasses and see them in action through practical examples.
+In this lab, you will learn about metaclasses, one of Python's most powerful and advanced features. Metaclasses enable you to customize class creation, giving you control over how classes are defined and instantiated. You'll explore metaclasses through practical examples.
 
-**Objectives:**
-
-- Understand what metaclasses are and how they work
-- Implement a metaclass to solve real programming problems
-- Explore the practical applications of metaclasses in Python
-
-**Files Modified:** `structure.py`, `validate.py`
+The objectives of this lab are to understand what metaclasses are and how they work, implement a metaclass to solve real programming problems, and explore the practical applications of metaclasses in Python. The files modified in this lab are `structure.py` and `validate.py`.

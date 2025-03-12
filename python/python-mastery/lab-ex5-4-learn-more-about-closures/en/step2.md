@@ -1,6 +1,10 @@
 # Closures as a Code Generator
 
-In this step, we will explore how closures can be used to generate code dynamically. Specifically, we'll implement a type-checking system for class attributes using closures.
+In this step, we'll learn how closures can be used to generate code dynamically. Specifically, we'll build a type-checking system for class attributes using closures.
+
+First, let's understand what closures are. A closure is a function object that remembers values in the enclosing scope even if they are not present in memory. In Python, closures are created when a nested function references a value from its enclosing function.
+
+Now, we'll start implementing our type-checking system.
 
 1. Create a new file named `typedproperty.py` in the `/home/labex/project` directory with the following code:
 
@@ -33,7 +37,7 @@ def typedproperty(name, expected_type):
     return value
 ```
 
-This function generates a property with type checking. The `@property` decorator creates a getter for the property, and the `@value.setter` decorator creates a setter that checks the type of the value before setting it.
+In this code, the `typedproperty` function is a closure. It takes two arguments: `name` and `expected_type`. The `@property` decorator is used to create a getter method for the property, which retrieves the value of the private attribute. The `@value.setter` decorator creates a setter method that checks if the value being set is of the expected type. If not, it raises a `TypeError`.
 
 2. Now let's create a class that uses these typed properties. Create a file named `stock.py` with the following code:
 
@@ -52,6 +56,8 @@ class Stock:
         self.shares = shares
         self.price = price
 ```
+
+In the `Stock` class, we use the `typedproperty` function to create type-checked attributes for `name`, `shares`, and `price`. When we create an instance of the `Stock` class, the type checking will be applied automatically.
 
 3. Let's create a test file to see this in action. Create a file named `test_stock.py` with the following code:
 
@@ -72,6 +78,8 @@ except TypeError as e:
     print(f"Type check succeeded: {e}")
 ```
 
+In this test file, we first create a `Stock` object with correct types. Then we try to set the `shares` attribute to a string, which should raise a `TypeError` because the expected type is an integer.
+
 4. Run the test file:
 
 ```bash
@@ -86,6 +94,8 @@ Stock shares: 100
 Stock price: 490.1
 Type check succeeded: Expected <class 'int'>
 ```
+
+This output shows that the type checking is working correctly.
 
 5. Now, let's enhance `typedproperty.py` by adding convenience functions for common types. Add the following code to the end of the file:
 
@@ -102,6 +112,8 @@ def Float(name):
     """Create a float property with type checking."""
     return typedproperty(name, float)
 ```
+
+These functions are just wrappers around the `typedproperty` function, making it easier to create properties of common types.
 
 6. Create a new file named `stock_enhanced.py` that uses these convenience functions:
 
@@ -121,6 +133,8 @@ class Stock:
         self.price = price
 ```
 
+This `Stock` class uses the convenience functions to create type-checked attributes, which makes the code more readable.
+
 7. Create a test file `test_stock_enhanced.py` to test the enhanced version:
 
 ```python
@@ -139,6 +153,8 @@ try:
 except TypeError as e:
     print(f"Type check succeeded: {e}")
 ```
+
+This test file is similar to the previous one, but it tests the enhanced `Stock` class.
 
 8. Run the test:
 

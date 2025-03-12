@@ -1,8 +1,8 @@
 # Comparing Different Data Structures
 
-Python offers several data structures to represent collections of related data. In this step, we'll compare different approaches and their memory usage.
+In Python, data structures are used to organize and store related data. They are like containers that hold different types of information in a structured way. In this step, we'll compare different data structures and see how much memory they use.
 
-Let's create a new file called `compare_structures.py` in the `/home/labex/project` directory:
+Let's create a new file called `compare_structures.py` in the `/home/labex/project` directory. This file will contain the code to read data from a CSV file and store it in different data structures.
 
 ```python
 # compare_structures.py
@@ -12,6 +12,9 @@ from collections import namedtuple
 
 # Define a named tuple for rides data
 RideRecord = namedtuple('RideRecord', ['route', 'date', 'daytype', 'rides'])
+
+# A named tuple is a lightweight class that allows you to access its fields by name.
+# It's like a tuple, but with named attributes.
 
 # Define a class with __slots__ for memory optimization
 class SlottedRideRecord:
@@ -23,6 +26,9 @@ class SlottedRideRecord:
         self.daytype = daytype
         self.rides = rides
 
+# A class with __slots__ is a memory - optimized class.
+# It avoids using an instance dictionary, which saves memory.
+
 # Define a regular class for rides data
 class RegularRideRecord:
     def __init__(self, route, date, daytype, rides):
@@ -30,6 +36,9 @@ class RegularRideRecord:
         self.date = date
         self.daytype = daytype
         self.rides = rides
+
+# A regular class is an object - oriented way to represent data.
+# It has named attributes and can have methods.
 
 # Function to read data as tuples
 def read_as_tuples(filename):
@@ -41,6 +50,9 @@ def read_as_tuples(filename):
             record = (row[0], row[1], row[2], int(row[3]))
             records.append(record)
     return records
+
+# This function reads data from a CSV file and stores it as tuples.
+# Tuples are immutable sequences, and you access their elements by numeric index.
 
 # Function to read data as dictionaries
 def read_as_dicts(filename):
@@ -58,6 +70,9 @@ def read_as_dicts(filename):
             records.append(record)
     return records
 
+# This function reads data from a CSV file and stores it as dictionaries.
+# Dictionaries use key - value pairs, so you can access elements by their names.
+
 # Function to read data as named tuples
 def read_as_named_tuples(filename):
     records = []
@@ -68,6 +83,9 @@ def read_as_named_tuples(filename):
             record = RideRecord(row[0], row[1], row[2], int(row[3]))
             records.append(record)
     return records
+
+# This function reads data from a CSV file and stores it as named tuples.
+# Named tuples combine the efficiency of tuples with the readability of named access.
 
 # Function to read data as regular class instances
 def read_as_regular_classes(filename):
@@ -80,6 +98,9 @@ def read_as_regular_classes(filename):
             records.append(record)
     return records
 
+# This function reads data from a CSV file and stores it as instances of a regular class.
+# Regular classes allow you to add methods to your data.
+
 # Function to read data as slotted class instances
 def read_as_slotted_classes(filename):
     records = []
@@ -90,6 +111,9 @@ def read_as_slotted_classes(filename):
             record = SlottedRideRecord(row[0], row[1], row[2], int(row[3]))
             records.append(record)
     return records
+
+# This function reads data from a CSV file and stores it as instances of a slotted class.
+# Slotted classes are memory - optimized and still provide named access.
 
 # Function to measure memory usage
 def measure_memory(func, filename):
@@ -156,50 +180,50 @@ Run the script to see the comparison results:
 python3 /home/labex/project/compare_structures.py
 ```
 
-The output will show the memory usage for each data structure, along with a ranking from most to least memory-efficient.
+The output will show the memory usage for each data structure, along with a ranking from most to least memory - efficient.
 
 ## Understanding the Different Data Structures
 
 1. **Tuples**:
 
-   - Lightweight, immutable sequences
-   - Access elements by numeric index: `record[0]`, `record[1]`, etc.
-   - Very memory efficient
-   - Less readable due to numeric indexing
+   - Tuples are lightweight and immutable sequences. This means once you create a tuple, you can't change its elements.
+   - You access elements in a tuple by their numeric index, like `record[0]`, `record[1]`, etc.
+   - They are very memory - efficient because they have a simple structure.
+   - However, they can be less readable because you need to remember the index of each element.
 
 2. **Dictionaries**:
 
-   - Key-value pairs for named access
-   - More readable: `record['route']`, `record['date']`, etc.
-   - Higher memory usage due to hash table overhead
-   - Flexible (can add/remove fields)
+   - Dictionaries use key - value pairs, which allows you to access elements by their names.
+   - They are more readable, for example, you can use `record['route']`, `record['date']`, etc.
+   - They have higher memory usage because of the hash table overhead used to store the key - value pairs.
+   - They are flexible because you can add or remove fields easily.
 
 3. **Named Tuples**:
 
-   - Combines tuple efficiency with named access
-   - Readable access: `record.route`, `record.date`, etc.
-   - Immutable like regular tuples
-   - More memory efficient than dictionaries
+   - Named tuples combine the efficiency of tuples with the ability to access elements by name.
+   - You can access elements using dot notation, like `record.route`, `record.date`, etc.
+   - They are immutable, just like regular tuples.
+   - They are more memory - efficient than dictionaries.
 
 4. **Regular Classes**:
 
-   - Object-oriented approach with named attributes
-   - Readable access: `record.route`, `record.date`, etc.
-   - Can add methods for behavior
-   - Uses more memory due to instance dictionaries
+   - Regular classes follow an object - oriented approach and have named attributes.
+   - You can access attributes using dot notation, like `record.route`, `record.date`, etc.
+   - You can add methods to a regular class to define behavior.
+   - They use more memory because each instance has an instance dictionary to store its attributes.
 
 5. **Classes with **slots\*\*\*\*:
-   - Memory-optimized classes that avoid instance dictionaries
-   - Still provides named access: `record.route`, `record.date`, etc.
-   - Restricts adding new attributes after creation
-   - More memory efficient than regular classes
+   - Classes with `__slots__` are memory - optimized classes. They avoid using an instance dictionary, which saves memory.
+   - They still provide named access to attributes, like `record.route`, `record.date`, etc.
+   - They restrict adding new attributes after the object is created.
+   - They are more memory - efficient than regular classes.
 
 ## When to Use Each Approach
 
-- **Tuples**: When memory is critical and you only need simple indexed access
-- **Dictionaries**: When flexibility is needed (fields may vary)
-- **Named Tuples**: When you need both readability and memory efficiency
-- **Regular Classes**: When you need to add behavior (methods) to your data
-- **Classes with **slots\*\*\*\*: When you need behavior and maximum memory efficiency
+- **Tuples**: Use tuples when memory is a critical factor and you only need simple indexed access to your data.
+- **Dictionaries**: Use dictionaries when you need flexibility, such as when the fields in your data may vary.
+- **Named Tuples**: Use named tuples when you need both readability and memory efficiency.
+- **Regular Classes**: Use regular classes when you need to add behavior (methods) to your data.
+- **Classes with **slots\*\*\*\*: Use classes with `__slots__` when you need behavior and maximum memory efficiency.
 
 By choosing the right data structure for your needs, you can significantly improve the performance and memory usage of your Python programs, especially when working with large datasets.

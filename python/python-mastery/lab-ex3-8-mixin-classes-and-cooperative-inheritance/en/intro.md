@@ -1,9 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn about mixin classes and their role in enhancing code reusability. You'll understand how to implement mixins to extend class functionality without altering existing code.
 
-- Understand what mixin classes are and how they enhance code reusability
-- Learn how to implement mixins to extend class functionality without modifying existing code
-- Master cooperative inheritance techniques in Python
-
-**Files Modified:** `tableformat.py`
+You will also master cooperative inheritance techniques in Python. The file `tableformat.py` will be modified during the experiment.

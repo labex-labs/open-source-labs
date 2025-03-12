@@ -1,18 +1,16 @@
 # Creating the StructureMeta Metaclass
 
-Now that we have a way to collect all validator types, let's create a metaclass that will make these types available when defining a `Structure` subclass without requiring explicit imports.
+Now, let's talk about what we're going to do next. We've found a way to collect all validator types. Our next step is to create a metaclass. But what exactly is a metaclass? In Python, a metaclass is a special kind of class. Its instances are classes themselves. This means that a metaclass can control how a class is created. It can manage the namespace where class attributes are defined.
 
-A metaclass in Python is a class whose instances are themselves classes. The metaclass can control various aspects of class creation, including the namespace where class attributes are defined.
+In our situation, we want to create a metaclass that will make the validator types available when we define a `Structure` subclass. We don't want to have to import these validator types explicitly every time.
 
-In our case, we'll create a metaclass that injects the validator types into the namespace of any class defined with that metaclass.
-
-Open the `structure.py` file again and add the following code:
+Let's start by opening the `structure.py` file again. You can use the following command to open it:
 
 ```bash
 code structure.py
 ```
 
-Add the following code at the top of the file, before the `Structure` class definition:
+Once the file is open, we need to add some code at the top, before the `Structure` class definition. This code will define our metaclass.
 
 ```python
 from validate import Validator
@@ -31,7 +29,7 @@ class StructureMeta(type):
         return super().__new__(meta, name, bases, methods)
 ```
 
-Now, modify the `Structure` class to use this metaclass:
+Now that we've defined the metaclass, we need to modify the `Structure` class to use it. This way, any class that inherits from `Structure` will benefit from the metaclass's functionality.
 
 ```python
 class Structure(metaclass=StructureMeta):
@@ -57,15 +55,15 @@ class Structure(metaclass=StructureMeta):
         return f'{type(self).__name__}({args_str})'
 ```
 
-Let's understand what this code does:
+Let's break down what this code does:
 
-1. `__prepare__()` is a special method that is called before class creation to prepare the namespace where attributes will be defined. We use `ChainMap` to create a layered dictionary that includes our validator types.
+1. The `__prepare__()` method is a special method in Python. It's called before the class is created. Its job is to prepare the namespace where the class attributes will be defined. We use `ChainMap` here. `ChainMap` is a useful tool that creates a layered dictionary. In our case, it includes our validator types, making them accessible in the class namespace.
 
-2. `__new__()` is called to create the new class. We extract only the local namespace (the first dict in the `ChainMap`) to create the class, discarding the validator dictionary.
+2. The `__new__()` method is responsible for creating the new class. We extract only the local namespace, which is the first dictionary in the `ChainMap`. We discard the validator dictionary because we've already made the validator types available in the namespace.
 
-With this setup, any class that inherits from `Structure` will have access to all validator types without needing to import them explicitly.
+With this setup, any class that inherits from `Structure` will have access to all validator types without the need to import them explicitly.
 
-Now let's test our implementation by creating a `Stock` class using our enhanced `Structure` base class:
+Now, let's test our implementation. We'll create a `Stock` class using our enhanced `Structure` base class.
 
 ```bash
 cat > stock.py << EOF
@@ -85,4 +83,4 @@ class Stock(Structure):
 EOF
 ```
 
-If our metaclass is working correctly, we should be able to define the `Stock` class without importing the validator types.
+If our metaclass is working correctly, we should be able to define the `Stock` class without importing the validator types. This is because the metaclass has already made them available in the namespace.

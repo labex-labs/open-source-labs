@@ -1,9 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn how to encapsulate object internals using private attributes and implement property decorators to control access to attributes. These techniques are essential for maintaining the integrity of your objects and ensuring proper data access.
 
-- Learn how to encapsulate object internals using private attributes
-- Implement property decorators to control access to attributes
-- Understand how to restrict attribute creation using slots
-
-**Files Modified:** `stock.py`
+Additionally, you will understand how to restrict attribute creation using slots. The `stock.py` file will be modified during this lab to apply these concepts.

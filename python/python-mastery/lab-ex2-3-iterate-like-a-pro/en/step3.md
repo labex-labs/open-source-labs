@@ -1,12 +1,12 @@
 # Generator Expressions and Memory Efficiency
 
-In this step, you will learn about generator expressions and how they can make your code more memory-efficient when processing large datasets.
+In this step, we're going to explore generator expressions. These are incredibly useful when you're dealing with large datasets in Python. They can make your code much more memory-efficient, which is crucial when you're working with a large amount of data.
 
 ## Understanding Generator Expressions
 
-A generator expression is similar to a list comprehension, but instead of creating a list with all results at once, it produces results one at a time as needed. This can save a significant amount of memory when working with large datasets.
+A generator expression is similar to a list comprehension, but there's a key difference. When you use a list comprehension, Python creates a list with all the results at once. This can take up a lot of memory, especially if you're working with a large dataset. On the other hand, a generator expression produces results one at a time as they're needed. This means it doesn't need to store all the results in memory at once, which can save a significant amount of memory.
 
-Let's see a simple example:
+Let's look at a simple example to see how this works:
 
 ```python
 # Start a new Python session if needed
@@ -26,7 +26,7 @@ for n in squares_gen:
     print(n)
 ```
 
-Output:
+When you run this code, you'll see the following output:
 
 ```
 [1, 4, 9, 16, 25]
@@ -38,7 +38,7 @@ Output:
 25
 ```
 
-An important characteristic of generators is that they can only be iterated over once. Once the data is consumed, the generator is exhausted:
+One important thing to note about generators is that they can only be iterated over once. Once you've gone through all the values in a generator, it's exhausted, and you can't get the values again.
 
 ```python
 # Try to iterate again over the same generator
@@ -46,7 +46,7 @@ for n in squares_gen:
     print(n)  # Nothing will be printed, as the generator is already exhausted
 ```
 
-You can manually get values from a generator one at a time using the `next()` function:
+You can also manually get values from a generator one at a time using the `next()` function.
 
 ```python
 # Create a fresh generator
@@ -58,11 +58,11 @@ print(next(squares_gen))  # 4
 print(next(squares_gen))  # 9
 ```
 
-When there are no more values, `next()` will raise a `StopIteration` exception.
+When there are no more values in the generator, calling `next()` will raise a `StopIteration` exception.
 
 ## Generator Functions with yield
 
-For more complex generator logic, you can write generator functions using the `yield` statement:
+For more complex generator logic, you can write generator functions using the `yield` statement. A generator function is a special type of function that uses `yield` to return values one at a time instead of returning a single result all at once.
 
 ```python
 def squares(nums):
@@ -74,7 +74,7 @@ for n in squares(nums):
     print(n)
 ```
 
-Output:
+When you run this code, you'll see the following output:
 
 ```
 1
@@ -86,7 +86,7 @@ Output:
 
 ## Reducing Memory Usage with Generator Expressions
 
-Now let's demonstrate how generator expressions can save memory when working with large datasets. We'll use the CTA bus data file which is quite large.
+Now, let's see how generator expressions can save memory when working with large datasets. We'll use the CTA bus data file, which is quite large.
 
 First, let's try a memory-intensive approach:
 
@@ -133,13 +133,13 @@ print(f"Current memory usage: {current / 1024 / 1024:.2f} MB")
 print(f"Peak memory usage: {peak / 1024 / 1024:.2f} MB")
 ```
 
-You should notice a significant difference in memory usage between these two approaches. The generator-based approach processes the data incrementally without loading everything into memory at once.
+You should notice a significant difference in memory usage between these two approaches. The generator-based approach processes the data incrementally without loading everything into memory at once, which is much more memory-efficient.
 
 ## Generator Expressions with Reduction Functions
 
 Generator expressions are particularly useful when combined with functions like `sum()`, `min()`, `max()`, `any()`, and `all()` that process an entire sequence and produce a single result.
 
-Let's see some examples:
+Let's look at some examples:
 
 ```python
 from readport import read_portfolio

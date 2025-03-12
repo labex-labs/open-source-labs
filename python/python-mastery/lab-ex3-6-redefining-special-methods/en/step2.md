@@ -1,12 +1,16 @@
 # Making Objects Comparable with `__eq__`
 
-In Python, the `==` operator calls the `__eq__` special method to compare objects. By default, it compares object identities (memory addresses), not their contents.
+In Python, when you use the `==` operator to compare two objects, Python actually calls the `__eq__` special method. By default, this method compares the identities of objects, which means it checks if they are stored at the same memory address, rather than comparing their contents.
 
-Let's see what happens when we create two identical `Stock` objects and try to compare them:
+Let's take a look at an example. Suppose we have a `Stock` class, and we create two `Stock` objects with the same values. Then we try to compare them using the `==` operator. Here's how you can do it in the Python interpreter:
+
+First, start the Python interpreter by running the following command in your terminal:
 
 ```bash
 python3
 ```
+
+Then, in the Python interpreter, execute the following code:
 
 ```python
 >>> import stock
@@ -16,11 +20,11 @@ python3
 False
 ```
 
-Even though these objects have identical values, Python considers them different objects because they're stored at different memory locations.
+As you can see, even though the two `Stock` objects `a` and `b` have the same values for their attributes (`name`, `shares`, and `price`), Python considers them different objects because they are stored at different memory locations.
 
-We can fix this by implementing the `__eq__` method in our `Stock` class. This method gets called whenever the `==` operator is used on our objects.
+To fix this issue, we can implement the `__eq__` method in our `Stock` class. This method will be called every time the `==` operator is used on objects of the `Stock` class.
 
-Open the `stock.py` file again and add the `__eq__` method:
+Now, open the `stock.py` file again. Inside the `Stock` class, add the following `__eq__` method:
 
 ```python
 def __eq__(self, other):
@@ -28,13 +32,13 @@ def __eq__(self, other):
                                          (other.name, other.shares, other.price))
 ```
 
-This method:
+Let's break down what this method does:
 
-1. First checks if `other` is a `Stock` object using `isinstance`
-2. If it is, compares the attributes of both objects
-3. Returns `True` only if both objects are `Stock` instances with identical attributes
+1. First, it uses the `isinstance` function to check if the `other` object is an instance of the `Stock` class. This is important because we only want to compare `Stock` objects with other `Stock` objects.
+2. If `other` is a `Stock` object, it then compares the attributes (`name`, `shares`, and `price`) of both the `self` object and the `other` object.
+3. It returns `True` only if both objects are `Stock` instances and their attributes are identical.
 
-Your complete `Stock` class should now look like this:
+After adding the `__eq__` method, your complete `Stock` class should look like this:
 
 ```python
 class Stock:
@@ -57,11 +61,13 @@ class Stock:
                                              (other.name, other.shares, other.price))
 ```
 
-Now let's test our improved class:
+Now, let's test our improved `Stock` class. Start the Python interpreter again:
 
 ```bash
 python3
 ```
+
+Then, run the following code in the Python interpreter:
 
 ```python
 >>> import stock
@@ -74,11 +80,11 @@ True
 False
 ```
 
-Great! Our objects can now be properly compared based on their content rather than their memory addresses.
+Great! Now our `Stock` objects can be properly compared based on their content, rather than their memory addresses.
 
-The `isinstance` check is important because it ensures that we're only comparing `Stock` objects. Without it, comparing a `Stock` object with something else might raise errors.
+The `isinstance` check in the `__eq__` method is crucial. It ensures that we are only comparing `Stock` objects. If we didn't have this check, comparing a `Stock` object with something that is not a `Stock` object might raise errors.
 
-Exit the Python interpreter when you're done:
+When you're done testing, you can exit the Python interpreter by running the following command:
 
 ```python
 >>> exit()

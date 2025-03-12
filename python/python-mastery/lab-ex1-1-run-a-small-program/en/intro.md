@@ -1,11 +1,5 @@
 # Introduction
 
-In this lab, you will take your first steps in Python programming. You will verify that Python is installed correctly on your system, learn how to use the Python interactive interpreter, and create and run a simple Python program.
+In this lab, you will learn to take your first steps in Python programming. First, you'll verify that Python is correctly installed on your system. Then, you'll learn how to use the Python interactive interpreter.
 
-**Objectives:**
-
-- Verify that Python is installed correctly on your system
-- Learn how to use the Python interactive interpreter
-- Edit and run a simple Python program
-
-**Files Created:** `art.py`
+Next, you'll edit and run a simple Python program. The file you'll create during this process is `art.py`.

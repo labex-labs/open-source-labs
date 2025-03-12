@@ -1,13 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn what decorators are and how they work in Python. Decorators are a powerful feature that enables you to modify function behavior without altering the source code, and they are widely used in Python frameworks and libraries.
 
-- Learn what decorators are and how they work in Python
-- Create a simple logging decorator
-- Implement a more complex decorator for function validation
-
-In this lab, you will learn how to define and use Python decorators. Decorators are a powerful feature that allows you to modify the behavior of functions without changing their source code. They are widely used in Python frameworks and libraries for tasks like logging, validation, and authentication.
-
-**Files Created:** `logcall.py`, `sample.py`
-
-**Files Modified:** `validate.py`
+You will also learn to create a simple logging decorator and implement a more complex one for function validation. The files involved in this lab include `logcall.py`, `sample.py`, and `validate.py`, with `validate.py` being modified.

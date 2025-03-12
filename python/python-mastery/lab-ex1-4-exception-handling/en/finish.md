@@ -1,11 +1,5 @@
 # Summary
 
-In this lab, you have learned several important Python programming concepts:
+In this lab, you have learned several key Python programming concepts. First, you learned how to define and use functions, which makes your code reusable. Second, you mastered implementing exception handling, enhancing the robustness of your programs. Lastly, you discovered how to use Python in interactive mode for testing and experimentation.
 
-1. How to define and use functions to make your code reusable
-2. How to implement exception handling to make your programs more robust
-3. How to use Python in interactive mode for testing and experimentation
-
-These skills form a solid foundation for writing reliable Python programs. Functions allow you to organize and reuse code, exception handling helps your programs deal with unexpected situations gracefully, and interactive mode provides a powerful environment for testing and debugging.
-
-As you continue your Python journey, these concepts will become increasingly valuable in developing larger and more complex applications.
+These skills are fundamental for writing reliable Python programs. Functions help organize and reuse code, exception handling enables graceful handling of unexpected situations, and interactive mode offers a powerful environment for testing and debugging. As you progress in your Python learning, these concepts will prove increasingly valuable for developing larger and more complex applications.

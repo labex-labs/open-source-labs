@@ -1,22 +1,5 @@
 # Summary
 
-In this lab, you explored different ways to represent records in Python and analyzed their memory efficiency:
+In this lab, you have learned different ways to represent records in Python and analyzed their memory efficiency. First, you understood the basic CSV dataset structure and compared raw text storage methods. Then, you worked with structured data using tuples and implemented five different data structures: tuples, dictionaries, named tuples, regular classes, and classes with **slots**.
 
-1. You started by understanding the basic CSV dataset structure
-2. You compared raw text storage methods (single string vs. list of strings)
-3. You worked with structured data using tuples
-4. You implemented and compared five different data structures:
-   - Tuples
-   - Dictionaries
-   - Named tuples
-   - Regular classes
-   - Classes with **slots**
-
-Key takeaways:
-
-- Different data structures offer trade-offs between memory efficiency, readability, and functionality
-- Python's object overhead significantly impacts memory usage when working with large datasets
-- For large datasets, the choice of data structure can make a substantial difference in memory consumption
-- Named tuples and classes with **slots** provide good compromises between memory efficiency and code readability
-
-These concepts are valuable for any Python developer working with data processing, especially when dealing with large datasets where memory efficiency becomes critical.
+Key takeaways include that different data structures offer trade - offs among memory efficiency, readability, and functionality. Python's object overhead has a significant impact on memory usage for large datasets, and the choice of data structure can greatly affect memory consumption. Named tuples and classes with **slots** are good compromises between memory efficiency and code readability. These concepts are valuable for Python developers in data processing, especially when handling large datasets where memory efficiency is crucial.

@@ -1,8 +1,8 @@
 # Testing for Exceptions
 
-An important part of testing is checking that your code properly handles error conditions. The `unittest` module provides a way to test that specific exceptions are raised when expected.
+Testing is a crucial part of software development, and one important aspect of it is to ensure that your code can handle error conditions properly. In Python, the `unittest` module provides a convenient way to test if specific exceptions are raised as expected.
 
-1. Open the `teststock.py` file and add the following test methods that check for exceptions:
+1. Open the `teststock.py` file. We're going to add some test methods that are designed to check for exceptions. These tests will help us make sure that our code behaves correctly when it encounters invalid input.
 
 ```python
 def test_shares_type(self):
@@ -31,27 +31,27 @@ def test_attribute_error(self):
         s.share = 100  # 'share' is incorrect, should be 'shares'
 ```
 
-Let's understand how these exception tests work:
+Now, let's understand how these exception tests work.
 
-- `with self.assertRaises(ExceptionType):` creates a context manager that tests if the code inside the `with` block raises the specified exception
-- If the expected exception is raised, the test passes
-- If no exception is raised or a different exception is raised, the test fails
+- The `with self.assertRaises(ExceptionType):` statement creates a context manager. This context manager checks if the code inside the `with` block raises the specified exception.
+- If the expected exception is raised within the `with` block, the test passes. This means that our code is correctly detecting the invalid input and raising the appropriate error.
+- If no exception is raised or a different exception is raised, the test fails. This indicates that our code might not be handling the invalid input as expected.
 
-These tests verify that:
+These tests are designed to verify the following scenarios:
 
-- Setting `shares` to a string raises a `TypeError`
-- Setting `shares` to a negative number raises a `ValueError`
-- Setting `price` to a string raises a `TypeError`
-- Setting `price` to a negative number raises a `ValueError`
-- Attempting to set a non-existent attribute `share` raises an `AttributeError`
+- Setting the `shares` attribute to a string should raise a `TypeError` because `shares` should be a number.
+- Setting the `shares` attribute to a negative number should raise a `ValueError` since the number of shares cannot be negative.
+- Setting the `price` attribute to a string should raise a `TypeError` because `price` should be a number.
+- Setting the `price` attribute to a negative number should raise a `ValueError` as the price cannot be negative.
+- Attempting to set a non-existent attribute `share` (note the missing 's') should raise an `AttributeError` because the correct attribute name is `shares`.
 
-2. Save the file and run all the tests:
+2. After adding these test methods, save the `teststock.py` file. Then, run all the tests using the following command in your terminal:
 
 ```bash
 python3 teststock.py
 ```
 
-You should now see output indicating that all 12 tests have passed:
+If everything is working correctly, you should see output indicating that all 12 tests have passed. The output will look like this:
 
 ```
 ............
@@ -61,4 +61,4 @@ Ran 12 tests in 0.002s
 OK
 ```
 
-The twelve dots represent all the tests you've written so far (7 from the previous step plus 5 new ones).
+The twelve dots represent all the tests you've written so far. There were 7 tests from the previous step, and we've just added 5 new ones. This output shows that your code is handling exceptions as expected, which is a great sign of a well-tested program.

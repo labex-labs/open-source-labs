@@ -1,10 +1,10 @@
 # Opening and Reading the File
 
-In this step, we will learn how to open and read a file in Python.
+In this step, we're going to learn how to open and read a file in Python. File input/output (I/O) is a fundamental concept in programming. It allows your program to interact with external files, like text files, CSV files, and more. In Python, one of the most common ways to work with files is by using the `open()` function.
 
-In Python, you can open a file using the `open()` function. This function takes two arguments - the name of the file and the mode in which to open the file. For reading a file, we use the mode 'r'.
+The `open()` function is used to open a file in Python. It takes two important arguments. The first argument is the name of the file you want to open. The second argument is the mode in which you want to open the file. When you want to read a file, you use the mode 'r'. This tells Python that you only want to read the contents of the file and not make any changes to it.
 
-Let's add code to `pcost.py` to open and read the `portfolio.dat` file. Open the file in the editor and add the following code:
+Now, let's add some code to the `pcost.py` file to open and read the `portfolio.dat` file. Open the `pcost.py` file in your code editor and add the following code:
 
 ```python
 # pcost.py
@@ -30,19 +30,19 @@ total_cost = portfolio_cost('portfolio.dat')
 print(f'Total cost: ${total_cost}')
 ```
 
-This code does the following:
+Let's break down what this code does:
 
-1. Defines a function `portfolio_cost()` that takes a filename as input
-2. Opens the specified file in read mode
-3. Reads the file line by line, printing each line (just for debugging)
-4. Returns the total cost (which is currently set to 0.0)
-5. Calls the function with the filename 'portfolio.dat'
-6. Prints the total cost
+1. First, we define a function named `portfolio_cost()`. This function takes a filename as an input parameter. The purpose of this function is to calculate the total cost of a portfolio of stocks based on the data in the file.
+2. Inside the function, we use the `open()` function to open the specified file in read mode. The `with` statement is used here to ensure that the file is properly closed after we're done reading it. This is a good practice to avoid resource leaks.
+3. We then use a `for` loop to read the file line by line. For each line in the file, we print it. This is just for debugging purposes, so we can see what data we're reading from the file.
+4. After reading the file, the function returns the total cost. Currently, the total cost is set to 0.0 because we haven't implemented the actual calculation yet.
+5. Outside the function, we call the `portfolio_cost()` function with the filename 'portfolio.dat'. This means we're asking the function to calculate the total cost based on the data in the `portfolio.dat` file.
+6. Finally, we print the total cost using an f-string.
 
-Run this code to see what it does. You can run the Python file from the terminal:
+Now, let's run this code to see what it does. You can run the Python file from the terminal using the following command:
 
 ```bash
 python3 ~/project/pcost.py
 ```
 
-You should see each line of the file printed, followed by the total cost (which is currently 0.0).
+When you run this command, you should see each line of the `portfolio.dat` file printed on the terminal, followed by the total cost, which is currently set to 0.0. This output helps you verify that the file is being read correctly.

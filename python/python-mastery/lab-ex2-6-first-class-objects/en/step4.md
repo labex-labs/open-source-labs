@@ -1,10 +1,10 @@
 # Column-Oriented Data Storage
 
-So far, we've been storing CSV data as a list of row dictionaries. However, for large datasets, it can be more efficient to store data in a column-oriented format. This approach stores each column's data in a separate list, which can significantly reduce memory usage and improve performance for certain operations.
+So far, we've been storing CSV data as a list of row dictionaries. This means that each row in the CSV file is represented as a dictionary, where the keys are the column headers and the values are the corresponding data in that row. However, when dealing with large datasets, this method can be inefficient. Storing data in a column-oriented format can be a better choice. In a column-oriented approach, each column's data is stored in a separate list. This can significantly reduce memory usage because similar data types are grouped together, and it can also improve performance for certain operations like aggregating data by column.
 
 ## Creating a Column-Oriented Data Reader
 
-Create a new file named `colreader.py` in the project directory with the following code:
+Now, we're going to create a new file that will help us read CSV data in a column-oriented format. Create a new file named `colreader.py` in the project directory with the following code:
 
 ```python
 import csv
@@ -75,18 +75,20 @@ def read_csv_as_columns(filename, types):
     return DataCollection(headers, columns)
 ```
 
-This code defines:
+This code does two important things:
 
-1. A `DataCollection` class that stores data in columns but presents it as row dictionaries
-2. A `read_csv_as_columns` function that reads CSV data into this column-oriented structure
+1. It defines a `DataCollection` class. This class stores data in columns, but it allows us to access the data as if it were a list of row dictionaries. This is useful because it provides a familiar way to work with the data.
+2. It defines a `read_csv_as_columns` function. This function reads CSV data from a file and stores it in a column-oriented structure. It also converts each field in the CSV file according to the types we provide.
 
 ## Testing the Column-Oriented Reader
 
-Let's test our column-oriented reader with the CTA bus data. Open a Python interpreter:
+Let's test our column-oriented reader using the CTA bus data. First, open a Python interpreter. You can do this by running the following command in your terminal:
 
 ```bash
 python3
 ```
+
+Once the Python interpreter is open, run the following code:
 
 ```python
 import colreader
@@ -111,7 +113,7 @@ print(f"Current memory usage: {current / 1024 / 1024:.2f} MB")
 print(f"Peak memory usage: {peak / 1024 / 1024:.2f} MB")
 ```
 
-Output:
+The output should look like this:
 
 ```
 Number of rows: 577563
@@ -123,7 +125,7 @@ Current memory usage: 38.67 MB
 Peak memory usage: 103.42 MB
 ```
 
-Compare this with our previous row-oriented approach:
+Now, let's compare this with our previous row-oriented approach. Run the following code in the same Python interpreter:
 
 ```python
 import reader
@@ -142,16 +144,16 @@ print(f"Current memory usage (row-oriented): {current / 1024 / 1024:.2f} MB")
 print(f"Peak memory usage (row-oriented): {peak / 1024 / 1024:.2f} MB")
 ```
 
-Output:
+The output should be something like this:
 
 ```
 Current memory usage (row-oriented): 170.23 MB
 Peak memory usage (row-oriented): 190.05 MB
 ```
 
-The column-oriented approach uses significantly less memory!
+As you can see, the column-oriented approach uses significantly less memory!
 
-Let's test that we can still analyze the data as before:
+Let's also test that we can still analyze the data as before. Run the following code:
 
 ```python
 # Find all unique routes in the column-oriented data
@@ -171,7 +173,7 @@ for route, rides in top_routes:
     print(f"Route {route}: {rides:,} rides")
 ```
 
-Output:
+The output should be:
 
 ```
 Number of unique routes: 181
@@ -183,10 +185,10 @@ Route 79: 109,348,708 rides
 Route 4: 91,405,538 rides
 ```
 
-Exit the Python interpreter:
+Finally, exit the Python interpreter by running the following command:
 
 ```python
 exit()
 ```
 
-We can see that the column-oriented approach not only saves memory but also allows us to perform the same analyses as before. This demonstrates how different data storage strategies can significantly impact performance while still presenting the same interface to the user.
+We can see that the column-oriented approach not only saves memory but also allows us to perform the same analyses as before. This shows how different data storage strategies can have a significant impact on performance while still providing the same interface for us to work with the data.

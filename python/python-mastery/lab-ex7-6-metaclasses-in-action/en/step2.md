@@ -1,12 +1,14 @@
 # Collecting Validator Types
 
-Our first task is to modify the base `Validator` class to collect all of its subclasses. This will allow us to create a namespace containing all validator types that we can later inject into the `Structure` class.
+In Python, validators are classes that help us ensure that data meets certain criteria. Our first task in this experiment is to modify the base `Validator` class so that it can collect all of its subclasses. Why do we need to do this? Well, by collecting all validator subclasses, we can create a namespace that contains all validator types. Later, we'll inject this namespace into the `Structure` class, which will make it easier for us to manage and use different validators.
 
-Open the `validate.py` file and add a class-level dictionary and an `__init_subclass__()` method to the `Validator` class:
+Now, let's start working on the code. Open the `validate.py` file. You can use the following command in the terminal to open it:
 
 ```bash
 code validate.py
 ```
+
+Once the file is open, we need to add a class - level dictionary and an `__init_subclass__()` method to the `Validator` class. The class - level dictionary will be used to store all the validator subclasses, and the `__init_subclass__()` method is a special method in Python that gets called every time a subclass of the current class is defined.
 
 Add the following code to the `Validator` class, right after the class definition:
 
@@ -20,7 +22,7 @@ def __init_subclass__(cls):
     Validator.validators[cls.__name__] = cls
 ```
 
-Your modified `Validator` class should now look like this:
+After adding the code, your modified `Validator` class should now look like this:
 
 ```python
 class Validator:
@@ -47,18 +49,18 @@ class Validator:
         pass
 ```
 
-Now, each time a new validator type is defined (like `String` or `PositiveInteger`), it will automatically be added to the `validators` dictionary with its class name as the key.
+Now, every time a new validator type is defined, like `String` or `PositiveInteger`, Python will automatically call the `__init_subclass__()` method. This method will then add the new validator subclass to the `validators` dictionary, using the class name as the key.
 
-Let's test if our code works. Create a simple Python script to check the contents of the `validators` dictionary:
+Let's test if our code works. We'll create a simple Python script to check the contents of the `validators` dictionary. You can run the following command in the terminal:
 
 ```bash
 python3 -c "from validate import Validator; print(Validator.validators)"
 ```
 
-You should see output similar to this, showing all the validator types and their corresponding classes:
+If everything works correctly, you should see output similar to this, showing all the validator types and their corresponding classes:
 
 ```
 {'Typed': <class 'validate.Typed'>, 'Positive': <class 'validate.Positive'>, 'NonEmpty': <class 'validate.NonEmpty'>, 'String': <class 'validate.String'>, 'Integer': <class 'validate.Integer'>, 'Float': <class 'validate.Float'>, 'PositiveInteger': <class 'validate.PositiveInteger'>, 'PositiveFloat': <class 'validate.PositiveFloat'>, 'NonEmptyString': <class 'validate.NonEmptyString'>}
 ```
 
-We now have a dictionary containing all of our validator types which we can use in the next step to create our metaclass.
+Now that we have a dictionary containing all of our validator types, we can use it in the next step to create our metaclass.

@@ -1,11 +1,5 @@
 # Introduction
 
-In Python, functions are objects with their own attributes and methods that you can examine. Understanding these internals can provide deeper insights into how functions work and allow you to create more powerful, adaptable code.
+In this lab, you will learn how to explore the internals of Python functions. Functions in Python are objects with their own attributes and methods, and understanding these can offer deeper insights into how functions operate. This knowledge will enable you to write more powerful and adaptable code.
 
-**Objectives:**
-
-- Learn how to inspect function attributes and properties
-- Use the inspect module to examine function signatures
-- Apply function inspection techniques to improve a class implementation
-
-**Files Modified:** `structure.py`
+You will learn to inspect function attributes and properties, use the `inspect` module to examine function signatures, and apply these inspection techniques to enhance a class implementation. The file you will modify is `structure.py`.

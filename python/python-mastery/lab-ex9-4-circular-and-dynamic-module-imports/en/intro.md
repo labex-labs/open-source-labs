@@ -1,13 +1,5 @@
 # Introduction
 
-In Python, module imports can sometimes create complex dependencies that lead to errors or inefficient code structures. This lab focuses on two important import-related concepts:
+In this lab, you will learn about two crucial import-related concepts in Python. Module imports in Python can sometimes result in complex dependencies, leading to errors or inefficient code structures. Circular imports, where two or more modules import each other, create a dependency loop that can cause issues if not properly managed.
 
-**Circular imports** occur when two or more modules import each other, creating a dependency loop that can cause errors if not handled correctly.
-
-**Dynamic imports** allow modules to be loaded at runtime rather than at the beginning of a program, providing flexibility and avoiding import-related issues.
-
-**Objectives:**
-
-- Explore and understand circular import problems
-- Implement solutions to avoid circular imports
-- Learn how to use dynamic module imports effectively
+You will also explore dynamic imports, which enable modules to be loaded at runtime instead of at the program's start. This provides flexibility and helps avoid import-related problems. The objectives of this lab are to understand circular import problems, implement solutions to avoid them, and learn how to use dynamic module imports effectively.

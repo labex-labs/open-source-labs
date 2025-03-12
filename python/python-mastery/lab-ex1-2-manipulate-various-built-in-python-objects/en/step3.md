@@ -1,16 +1,16 @@
 # Working with Python Lists
 
-Lists are versatile data structures in Python that can store collections of items. In this step, we'll explore list operations.
+Lists are a type of data structure in Python. A data structure is a way to organize and store data so that it can be used efficiently. Lists are very versatile because they can store different types of items, like numbers, strings, or even other lists. In this step, we'll learn how to perform various operations on lists.
 
 ## Creating Lists from Strings
 
-Start a new Python interactive session:
+To start working with Python lists, we first need to open a Python interactive session. This is like a special environment where we can write and run Python code right away. To start this session, type the following command in your terminal:
 
 ```bash
 python3
 ```
 
-Define a string of stock symbols and convert it to a list:
+Once you're in the Python interactive session, we'll create a list from a string. A string is just a sequence of characters. We'll define a string that contains some stock symbols separated by spaces. Then, we'll convert this string into a list. Each stock symbol will become an element in the list.
 
 ```python
 >>> symbols = 'HPQ AAPL IBM MSFT YHOO GOOG'
@@ -19,9 +19,13 @@ Define a string of stock symbols and convert it to a list:
 ['HPQ', 'AAPL', 'IBM', 'MSFT', 'YHOO', 'GOOG']
 ```
 
+The `split()` method is used to break the string into parts wherever there is a whitespace. Each part then becomes an element in the new list.
+
 ## Accessing and Modifying List Elements
 
-Lists support indexing like strings, but unlike strings, list elements can be modified:
+Just like strings, lists support indexing. Indexing means we can access individual elements in the list by their position. In Python, the first element in a list has an index of 0, the second has an index of 1, and so on. We can also use negative indexing to access elements from the end of the list. The last element has an index of -1, the second last has an index of -2, and so on.
+
+Unlike strings, list elements can be modified. This means we can change the value of an element in the list.
 
 ```python
 >>> symlist[0]    # First element
@@ -40,7 +44,7 @@ Lists support indexing like strings, but unlike strings, list elements can be mo
 
 ## Iterating Through Lists
 
-The `for` loop is commonly used to process each element in a list:
+Often, we need to perform the same operation on each element in a list. We can use a `for` loop to do this. A `for` loop allows us to go through each element in the list one by one and perform a specific action on it.
 
 ```python
 >>> for s in symlist:
@@ -48,7 +52,7 @@ The `for` loop is commonly used to process each element in a list:
 ...
 ```
 
-You should see the following output:
+When you run this code, you'll see each element in the list printed out with the label `s =`.
 
 ```
 s = HPQ
@@ -61,7 +65,7 @@ s = GOOG
 
 ## Checking Membership
 
-Use the `in` operator to check if an item exists in a list:
+Sometimes, we need to check if a particular item exists in a list. We can use the `in` operator to do this. The `in` operator returns `True` if the item is in the list and `False` if it's not.
 
 ```python
 >>> 'AIG' in symlist
@@ -74,7 +78,7 @@ False
 
 ## Adding and Removing Elements
 
-Lists have methods to add and remove elements:
+Lists have built - in methods that allow us to add and remove elements. The `append()` method adds an element to the end of the list. The `insert()` method inserts an element at a specific position in the list. The `remove()` method removes an element from the list by its value.
 
 ```python
 >>> symlist.append('RHT')    # Add an element to the end
@@ -90,13 +94,13 @@ Lists have methods to add and remove elements:
 ['HPQ', 'AA', 'AAPL', 'AIG', 'YHOO', 'GOOG', 'RHT']
 ```
 
-Try removing an element that doesn't exist:
+If you try to remove an element that doesn't exist in the list, Python will raise an error.
 
 ```python
 >>> symlist.remove('MSFT')
 ```
 
-You should see an error like:
+You'll see an error message like this:
 
 ```
 Traceback (most recent call last):
@@ -104,7 +108,7 @@ Traceback (most recent call last):
 ValueError: list.remove(x): x not in list
 ```
 
-Find the position of an element:
+We can also find the position of an element in the list using the `index()` method.
 
 ```python
 >>> symlist.index('YHOO')
@@ -115,7 +119,7 @@ Find the position of an element:
 
 ## Sorting Lists
 
-Lists can be sorted in place:
+Lists can be sorted in place, which means the original list is modified. We can sort a list alphabetically or in reverse order.
 
 ```python
 >>> symlist.sort()    # Sort alphabetically
@@ -129,7 +133,7 @@ Lists can be sorted in place:
 
 ## Nested Lists
 
-Lists can contain any type of object, including other lists:
+Lists can contain any type of object, including other lists. This is called a nested list.
 
 ```python
 >>> nums = [101, 102, 103]
@@ -138,7 +142,7 @@ Lists can contain any type of object, including other lists:
 [['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA'], [101, 102, 103]]
 ```
 
-Accessing elements in nested lists:
+To access elements in a nested list, we use multiple indices. The first index selects the outer list element, and the second index selects the inner list element.
 
 ```python
 >>> items[0]    # First element (the symlist)
@@ -153,7 +157,7 @@ Accessing elements in nested lists:
 102
 ```
 
-Exit the Python shell when you're done:
+When you're done working in the Python interactive session, you can exit it by typing:
 
 ```python
 >>> exit()

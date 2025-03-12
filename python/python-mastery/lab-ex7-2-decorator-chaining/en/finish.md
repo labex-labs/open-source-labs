@@ -1,18 +1,5 @@
 # Summary
 
-Congratulations! You have successfully completed the Decorator Chaining and Parameterized Decorators lab. In this lab, you learned:
+In this lab, you have learned how to create and use decorators effectively. You learned to preserve function metadata with `functools.wraps`, create parameter - accepting decorators, handle multiple decorators and understand their application order. You also learned to apply decorators to different class methods and create a type - enforcement decorator that takes arguments.
 
-1. How to preserve function metadata when creating decorators using `functools.wraps`
-2. How to create decorators that accept parameters
-3. How to handle multiple decorators and the importance of their application order
-4. How to apply decorators to different types of class methods
-5. How to create a type enforcement decorator that accepts arguments
-
-These decorator patterns are widely used in many Python frameworks and libraries, including Flask, Django, and pytest. Understanding how to create and use decorators will help you write more maintainable and reusable code.
-
-To continue your learning journey with Python decorators, you might want to explore:
-
-- Context managers and their relationship with decorators
-- Class-based decorators
-- Using decorators for caching and memoization
-- Advanced type checking with decorators
+These decorator patterns are commonly used in Python frameworks like Flask, Django, and pytest. Mastering decorators will enable you to write more maintainable and reusable code. To further your learning, you can explore context managers, class - based decorators, using decorators for caching, and advanced type checking with decorators.

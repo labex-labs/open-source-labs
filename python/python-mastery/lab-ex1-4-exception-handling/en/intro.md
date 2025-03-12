@@ -1,10 +1,5 @@
 # Introduction
 
-In this lab, you will review how to define simple functions in Python and learn about exception handling. Functions are a fundamental concept in programming that allow you to organize code into reusable blocks. Exception handling is a technique used to manage errors and unexpected situations in your programs.
+In this lab, you will learn how to review the definition of simple functions in Python and explore exception handling. Functions are a key programming concept that enables you to structure code into reusable segments. Exception handling, on the other hand, is a method for dealing with errors and unforeseen circumstances in your programs.
 
-**Objectives:**
-
-- Review of how to define simple functions
-- Learn exception handling in Python
-
-**Files Modified:** `pcost.py`
+The main objectives of this lab are to review the process of defining simple functions and to learn about exception handling in Python. The file that will be modified is `pcost.py`.

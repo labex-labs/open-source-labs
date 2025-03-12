@@ -1,19 +1,5 @@
 # Summary
 
-In this lab, you have learned essential techniques for managing `yield` statements in Python generators and coroutines:
+In this lab, you have learned essential techniques for managing `yield` statements in Python generators and coroutines. You've explored generator lifetime management, including handling the `GeneratorExit` exception during closure or garbage collection and controlling iteration break and resume. Additionally, you've learned about exception handling in generators, such as using the `throw()` method and writing robust generators to handle exceptions gracefully.
 
-1. **Generator Lifetime Management**
-
-   - How to handle the `GeneratorExit` exception when a generator is closed or garbage collected
-   - How to break out of and resume generator iteration
-
-2. **Exception Handling in Generators**
-
-   - How to throw exceptions into generators using the `throw()` method
-   - How to write robust generators that can handle exceptions gracefully
-
-3. **Practical Applications**
-   - Creating robust file monitoring systems with timeout and proper cleanup
-   - Building data processing pipelines using generators and coroutines with error handling
-
-These techniques are fundamental for building robust, maintainable Python applications that use generators for data processing, asynchronous operations, and resource management. By properly managing generator lifetime and handling exceptions, you can create resilient systems that gracefully handle errors and cleanup resources when they are no longer needed.
+These techniques are fundamental for building robust, maintainable Python applications. They are useful for data processing, asynchronous operations, and resource management. By properly managing generator lifetime and handling exceptions, you can create resilient systems that gracefully handle errors and clean up resources when they are no longer needed.

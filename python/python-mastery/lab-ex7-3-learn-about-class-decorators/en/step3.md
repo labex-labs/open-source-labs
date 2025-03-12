@@ -1,8 +1,8 @@
 # Applying Decorators via Inheritance
 
-In Step 2, we created a class decorator that simplifies our code. However, we still need to explicitly apply the `@validate_attributes` decorator to each class. We can improve this further by applying the decorator automatically through inheritance.
+In Step 2, we created a class decorator that simplifies our code. A class decorator is a special type of function that takes a class as an argument and returns a modified class. It's a useful tool in Python for adding functionality to classes without modifying their original code. However, we still need to explicitly apply the `@validate_attributes` decorator to each class. This means that every time we create a new class that needs validation, we have to remember to add this decorator, which can be a bit cumbersome.
 
-Python's `__init_subclass__` method was introduced in Python 3.6 to allow parent classes to customize the initialization of subclasses. We can use this feature to automatically apply our decorator to any class that inherits from `Structure`.
+We can improve this further by applying the decorator automatically through inheritance. Inheritance is a fundamental concept in object - oriented programming where a subclass can inherit attributes and methods from a parent class. Python's `__init_subclass__` method was introduced in Python 3.6 to allow parent classes to customize the initialization of subclasses. This means that when a subclass is created, the parent class can perform some actions on it. We can use this feature to automatically apply our decorator to any class that inherits from `Structure`.
 
 Let's implement this:
 
@@ -11,6 +11,8 @@ Let's implement this:
 ```bash
 code ~/project/structure.py
 ```
+
+Here, we are using the `code` command to open the `structure.py` file in a code editor. This file contains the definition of the `Structure` class, and we are going to modify it to use the `__init_subclass__` method.
 
 2. Add the `__init_subclass__` method to the `Structure` class:
 
@@ -48,15 +50,19 @@ class Structure:
         validate_attributes(cls)
 ```
 
-The added `__init_subclass__` method automatically applies the `validate_attributes` decorator to every subclass of `Structure`.
+The `__init_subclass__` method is a class method, which means it can be called on the class itself rather than an instance of the class. When a subclass of `Structure` is created, this method will be automatically called. Inside this method, we call the `validate_attributes` decorator on the subclass `cls`. This way, every subclass of `Structure` will automatically have the validation behavior.
 
 3. Save the file.
+
+After making changes to the `structure.py` file, we need to save it so that the changes are applied.
 
 4. Now, let's update our `stock.py` file to take advantage of this new feature:
 
 ```bash
 code ~/project/stock.py
 ```
+
+We are opening the `stock.py` file to modify it. This file contains the definition of the `Stock` class, and we are going to make it inherit from the `Structure` class to use the automatic decorator application.
 
 5. Modify the `stock.py` file to remove the explicit decorator:
 
@@ -81,9 +87,9 @@ class Stock(Structure):
 
 Note that we:
 
-- Removed the `validate_attributes` import
-- Removed the `@validate_attributes` decorator
-- The code now relies solely on inheritance from `Structure`
+- Removed the `validate_attributes` import because we no longer need to import it explicitly since the decorator is applied automatically through inheritance.
+- Removed the `@validate_attributes` decorator because the `__init_subclass__` method in the `Structure` class will take care of applying it.
+- The code now relies solely on inheritance from `Structure` to get the validation behavior.
 
 6. Run the tests again to verify everything still works:
 
@@ -91,6 +97,8 @@ Note that we:
 cd ~/project
 python3 teststock.py
 ```
+
+Running the tests is important to make sure that our changes haven't broken anything. If all the tests pass, it means that the automatic decorator application through inheritance is working correctly.
 
 You should see all tests passing:
 
@@ -108,6 +116,8 @@ Let's test our Stock class again to make sure it works as expected:
 cd ~/project
 python3 -c "from stock import Stock; s = Stock('GOOG', 100, 490.1); print(s); print(f'Cost: {s.cost}')"
 ```
+
+This command creates an instance of the `Stock` class and prints its representation and the cost. If the output is as expected, it means that the `Stock` class is working correctly with the automatic decorator application.
 
 Output:
 

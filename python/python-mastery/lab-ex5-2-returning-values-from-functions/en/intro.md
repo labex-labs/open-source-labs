@@ -1,9 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn how to return multiple values from functions in Python. You'll also understand optional return values and how to handle errors effectively.
 
-- Learn how to return multiple values from functions
-- Understand optional return values and handling errors
-- Explore the concept of Futures for concurrent programming
-
-In this exercise, we explore different patterns for returning values from functions in Python. While returning a value might seem straightforward, there are several patterns and considerations that arise in different programming scenarios.
+Moreover, you will explore the concept of Futures for concurrent programming. Although returning a value may seem simple, different programming scenarios present various patterns and considerations.

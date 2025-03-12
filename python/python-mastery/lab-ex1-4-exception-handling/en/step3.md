@@ -1,27 +1,27 @@
 # Interactive Experimentation
 
-Python allows you to run code in an interactive mode, which is excellent for testing and experimentation. In this step, you'll learn how to call your function directly from the Python interpreter.
+Python offers an interactive mode that lets you run code right away. This is super useful for testing out your code and trying new things. In this step, we'll learn how to call a function directly from the Python interpreter.
 
 ## Running Python in Interactive Mode
 
-You can run a Python script and then drop into interactive mode by using the `-i` flag:
+To run a Python script and then enter the interactive mode, you can use the `-i` flag. This flag tells Python to keep running in an interactive state after executing the script. Here's how you do it:
 
 ```bash
 cd /home/labex/project
 python3 -i pcost.py
 ```
 
-This command:
+Let's break down what this command does:
 
-1. Executes the `pcost.py` script
-2. Keeps Python running in interactive mode
-3. Allows you to type Python commands directly into the terminal
+1. First, `cd /home/labex/project` changes the current directory to `/home/labex/project`. This is where our `pcost.py` script is located.
+2. Then, `python3 -i pcost.py` executes the `pcost.py` script. After the script finishes running, Python stays in interactive mode.
+3. In interactive mode, you can type Python commands directly into the terminal.
 
-You'll see the script's output followed by the Python prompt (`>>>`).
+After running the command, you'll see the output of the `pcost.py` script, followed by the Python prompt (`>>>`). This prompt indicates that you can now enter Python commands.
 
 ## Calling Your Function Interactively
 
-Once in interactive mode, you can call the `portfolio_cost()` function with different filenames:
+Once you're in the interactive mode, you can call the `portfolio_cost()` function with different filenames. This allows you to see how the function behaves with various inputs. Here's an example:
 
 ```python
 >>> portfolio_cost('/home/labex/project/portfolio.dat')
@@ -38,26 +38,26 @@ Reason: invalid literal for int() with base 10: '-'
 44671.15
 ```
 
-This interactive approach allows you to:
+Using this interactive approach, you can:
 
-- Test your function with different inputs
-- Experiment with the function's behavior
-- Debug your code on the fly
+- Test your function with different inputs to see if it works as expected.
+- Experiment with the function's behavior under various conditions.
+- Debug your code on the fly by seeing the immediate results of your function calls.
 
 ## Benefits of Interactive Mode
 
-Interactive mode is beneficial because:
+Interactive mode has several benefits:
 
-1. You can quickly test different scenarios
-2. You can inspect variables and expression results immediately
-3. You can test small pieces of code without creating a full program
-4. It's great for learning and experimentation
+1. You can quickly test different scenarios without having to run the entire script every time.
+2. You can inspect variables and expression results immediately, which helps you understand what's going on in your code.
+3. You can test small pieces of code without creating a full program. This is great for learning and trying out new ideas.
+4. It's an excellent way to learn and experiment with Python because you get instant feedback.
 
 ## Exiting Interactive Mode
 
-When you're done experimenting, you can exit the interactive mode by:
+When you're done experimenting, you can exit the interactive mode in two ways:
 
-- Typing `exit()` and pressing Enter
-- Pressing Ctrl+D (on Unix/Linux)
+- Type `exit()` and press Enter. This is a straightforward way to end the interactive session.
+- Press Ctrl+D (on Unix/Linux). This is a shortcut that also exits the interactive mode.
 
-Throughout your Python programming journey, this technique of defining functions and testing them interactively will be extremely valuable for development and debugging.
+Throughout your Python programming journey, the technique of defining functions and testing them interactively will be extremely valuable for development and debugging. It allows you to quickly iterate on your code and find and fix issues.

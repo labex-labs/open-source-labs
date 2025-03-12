@@ -1,6 +1,6 @@
 # Improving String Representation
 
-When we print our `MutInt` object, Python displays it as `<__main__.MutInt object at 0x...>`, which is not very helpful. Let's improve how our object is displayed by implementing special methods for string representation.
+When you print a `MutInt` object in Python, you'll see an output like `<__main__.MutInt object at 0x...>`. This output isn't very useful because it doesn't tell you the actual value of the `MutInt` object. To make it easier to understand what the object represents, we're going to implement special methods for string representation.
 
 1. Open `mutint.py` in the WebIDE and update it with the following code:
 
@@ -30,11 +30,11 @@ class MutInt:
         return format(self.value, fmt)
 ```
 
-We've added three important methods:
+We've added three important methods to the `MutInt` class:
 
-- `__str__()`: Used when `str()` is called on the object or when it's printed
-- `__repr__()`: Used for the "official" string representation of the object
-- `__format__()`: Used when the object is formatted with the `format()` function or f-strings
+- `__str__()`: This method is called when you use the `str()` function on the object or when you print the object directly. It should return a human-readable string.
+- `__repr__()`: This method provides the "official" string representation of the object. It's mainly used for debugging and should ideally return a string that, if passed to the `eval()` function, would recreate the object.
+- `__format__()`: This method allows you to use Python's string formatting system with your `MutInt` objects. You can use format specifications like padding and number formatting.
 
 2. Create a new test file called `test_string_repr.py` to test these new methods:
 
@@ -62,13 +62,15 @@ a.value = 42
 print(f"After changing value, repr(a): {repr(a)}")
 ```
 
+In this test file, we first import the `MutInt` class. Then we create a `MutInt` object with the value `3`. We test the `__str__()` and `__repr__()` methods by using the `str()` and `repr()` functions. We also test direct printing, string formatting, and the mutability of the `MutInt` object.
+
 3. Run the test script:
 
 ```bash
 python3 /home/labex/project/test_string_repr.py
 ```
 
-You should see output similar to this:
+When you run this command, Python will execute the `test_string_repr.py` script. You should see output similar to this:
 
 ```
 str(a): 3

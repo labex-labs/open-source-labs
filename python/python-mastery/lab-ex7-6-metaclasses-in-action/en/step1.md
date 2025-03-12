@@ -1,6 +1,8 @@
 # Understanding the Problem
 
-Before we dive into metaclasses, let's understand the problem we're trying to solve. In previous work, we created a system for type-checked structures that looks like this:
+Before we start exploring metaclasses, it's important to understand the problem we aim to solve. In programming, we often need to create structures with specific types for their attributes. In our previous work, we developed a system for type - checked structures. This system allows us to define classes where each attribute has a specific type, and the values assigned to these attributes are validated according to that type.
+
+Here is an example of how we used this system to create a `Stock` class:
 
 ```python
 from validate import String, PositiveInteger, PositiveFloat
@@ -19,20 +21,22 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-The issue here is that we need to import all validator types (`String`, `PositiveInteger`, `PositiveFloat`) at the top of our file. As more validator types are added, these imports can become unwieldy and could lead to the use of `from validate import *`, which is generally considered a poor practice.
+In this code, we first import the validator types (`String`, `PositiveInteger`, `PositiveFloat`) from the `validate` module and the `Structure` class from the `structure` module. Then we define the `Stock` class, which inherits from `Structure`. Inside the `Stock` class, we define attributes with specific validator types. For example, the `name` attribute must be a string, `shares` must be a positive integer, and `price` must be a positive float.
 
-Let's look at the `Structure` class to understand our starting point. Open the `structure.py` file in the editor and examine its contents:
+However, there is an issue with this approach. We need to import all the validator types at the top of our file. As we add more and more validator types in a real - world scenario, these imports can become very long and difficult to manage. This might lead us to use `from validate import *`, which is generally considered a bad practice because it can cause naming conflicts and make the code less readable.
+
+To understand our starting point, let's take a look at the `Structure` class. You need to open the `structure.py` file in the editor and examine its contents. This will help you see how the basic structure handling is implemented before we add metaclass functionality.
 
 ```bash
 code structure.py
 ```
 
-You should see a basic implementation of the `Structure` class that handles attribute initialization but doesn't yet have any metaclass functionality.
+When you open the file, you'll see a basic implementation of the `Structure` class. This class is responsible for handling attribute initialization, but it doesn't have any metaclass functionality yet.
 
-Now let's examine the validator classes:
+Next, let's examine the validator classes. These classes are defined in the `validate.py` file. They already have descriptor functionality, which means they can control how attributes are accessed and set. But we'll need to enhance them to solve the import problem we discussed earlier.
 
 ```bash
 code validate.py
 ```
 
-These validator classes already have descriptor functionality in place, but we'll need to enhance them to solve our import problem.
+By looking at these validator classes, you'll get a better understanding of how the validation process works and what changes we need to make to improve our code.

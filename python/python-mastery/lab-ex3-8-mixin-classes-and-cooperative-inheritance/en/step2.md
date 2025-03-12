@@ -1,19 +1,19 @@
 # Implementing Mixin Classes for Formatting
 
-In this step, we'll introduce mixin classes - a powerful Python technique for adding functionality to classes without altering their original code.
+In this step, we're going to learn about mixin classes. Mixin classes are a really useful technique in Python. They allow you to add extra functionality to classes without changing their original code. This is great because it helps keep your code modular and easy to manage.
 
 ## What Are Mixin Classes?
 
-A mixin is a class that provides functionality to be inherited by another class, but isn't meant to be instantiated on its own. Mixins are a way to use multiple inheritance in a controlled, predictable manner.
+A mixin is a special type of class. Its main purpose is to provide some functionality that can be inherited by another class. However, a mixin is not meant to be used on its own. You don't create an instance of a mixin class directly. Instead, you use it as a way to add specific features to other classes in a controlled and predictable way. This is a form of multiple inheritance, where a class can inherit from more than one parent class.
 
-Let's implement two mixin classes in our `tableformat.py` file. Open the file in the editor:
+Now, let's implement two mixin classes in our `tableformat.py` file. First, open the file in the editor. You can do this by running the following commands in your terminal:
 
 ```bash
 cd ~/project
 code tableformat.py
 ```
 
-Add the following class definitions at the end of the file (before any existing functions):
+Once the file is open, add the following class definitions at the end of the file, but before any existing functions.
 
 ```python
 class ColumnFormatMixin:
@@ -23,9 +23,9 @@ class ColumnFormatMixin:
         super().row(rowdata)
 ```
 
-This mixin provides column formatting functionality. The `formats` class variable holds format codes, and the `row()` method applies these formats to the row data before passing it to the parent class.
+This `ColumnFormatMixin` class provides column formatting functionality. The `formats` class variable is a list that holds format codes. These codes are used to format the data in each column. The `row()` method takes the row data, applies the format codes to each element in the row, and then passes the formatted row data to the parent class using `super().row(rowdata)`.
 
-Now add another mixin class that makes table headers appear in uppercase:
+Next, add another mixin class that makes table headers appear in uppercase:
 
 ```python
 class UpperHeadersMixin:
@@ -33,11 +33,11 @@ class UpperHeadersMixin:
         super().headings([h.upper() for h in headers])
 ```
 
-This mixin transforms header text to uppercase before passing it to the parent class's `headings()` method.
+This `UpperHeadersMixin` class transforms the header text to uppercase. It takes the list of headers, converts each header to uppercase, and then passes the modified headers to the parent class's `headings()` method using `super().headings()`.
 
 ## Using the Mixin Classes
 
-Let's test our new mixin classes. Run the following Python code:
+Let's test our new mixin classes. We'll run some Python code to see how they work.
 
 ```python
 python3 -c "
@@ -51,7 +51,7 @@ print_table(portfolio, ['name','shares','price'], formatter)
 "
 ```
 
-You should see nicely formatted output with consistent decimal places in the price column:
+When you run this code, you should see nicely formatted output. The price column will have consistent decimal places because of the formatting provided by the `ColumnFormatMixin`.
 
 ```
       name     shares      price
@@ -65,7 +65,7 @@ You should see nicely formatted output with consistent decimal places in the pri
        IBM        100      70.44
 ```
 
-Now let's try the `UpperHeadersMixin`:
+Now, let's try the `UpperHeadersMixin`. Run the following code:
 
 ```python
 python3 -c "
@@ -79,7 +79,7 @@ print_table(portfolio, ['name','shares','price'], formatter)
 "
 ```
 
-This should display the headers in uppercase:
+This code should display the headers in uppercase.
 
 ```
       NAME     SHARES      PRICE
@@ -95,11 +95,11 @@ This should display the headers in uppercase:
 
 ## Understanding Cooperative Inheritance
 
-Notice the use of `super().method()` in our mixins. This is called "cooperative inheritance" - each class in the inheritance chain cooperates by properly calling the next class's method. This allows a chain of classes to each add their own behavior.
+Notice that in our mixin classes, we use `super().method()`. This is called "cooperative inheritance". In cooperative inheritance, each class in the inheritance chain works together. When a class calls `super().method()`, it's asking the next class in the chain to perform its part of the task. This way, a chain of classes can each add their own behavior to the overall process.
 
-The order of inheritance is critical. When we define `class PortfolioFormatter(ColumnFormatMixin, TextTableFormatter)`, Python looks for methods first in `ColumnFormatMixin`, then in `TextTableFormatter`. When `super().row()` is called in the mixin, it refers to `TextTableFormatter.row()`.
+The order of inheritance is very important. When we define `class PortfolioFormatter(ColumnFormatMixin, TextTableFormatter)`, Python looks for methods first in `ColumnFormatMixin`, and then in `TextTableFormatter`. So, when `super().row()` is called in the `ColumnFormatMixin`, it refers to `TextTableFormatter.row()`.
 
-We can even combine both mixins:
+We can even combine both mixins. Run the following code:
 
 ```python
 python3 -c "
@@ -113,7 +113,7 @@ print_table(portfolio, ['name','shares','price'], formatter)
 "
 ```
 
-This gives us both uppercase headers and formatted numbers:
+This code will give us both uppercase headers and formatted numbers.
 
 ```
       NAME     SHARES      PRICE

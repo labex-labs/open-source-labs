@@ -1,13 +1,5 @@
 # Summary
 
-In this lab, you have explored some advanced aspects of closures in Python:
+In this lab, you have learned about advanced aspects of closures in Python. First, you explored using closures as a data structure, which can encapsulate data and enable functions to maintain state between calls without relying on classes or global variables. Second, you saw how closures can act as a code generator, generating property objects with type checking for a more functional approach to attribute validation.
 
-1. **Closures as a Data Structure**: You learned how closures can be used to encapsulate data, allowing functions to maintain state between calls without using classes or global variables.
-
-2. **Closures as a Code Generator**: You saw how closures can generate property objects with type checking, providing a more functional approach to attribute validation.
-
-3. **Descriptor Protocol**: You discovered how to use the descriptor protocol and the `__set_name__` method to create more elegant type-checking attributes that automatically capture their names from class definitions.
-
-These techniques demonstrate the power and flexibility of closures in Python, showing how they can be used to implement complex behaviors in a concise and elegant way.
-
-By understanding closures and descriptors, you now have more tools at your disposal for creating maintainable and robust Python code.
+You also discovered how to use the descriptor protocol and the `__set_name__` method to create elegant type - checking attributes that automatically capture their names from class definitions. These techniques showcase the power and flexibility of closures, allowing you to implement complex behaviors concisely. Understanding closures and descriptors gives you more tools for creating maintainable and robust Python code.

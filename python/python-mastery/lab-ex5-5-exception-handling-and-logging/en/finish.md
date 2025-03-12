@@ -1,22 +1,5 @@
 # Summary
 
-In this lab, you have learned several important concepts related to exception handling and logging in Python:
+In this lab, you have learned several key concepts about exception handling and logging in Python. First, you grasped how exceptions occur during data processing and implemented try-except blocks to handle them gracefully. You also modified code to keep processing valid data when errors arise.
 
-1. **Exception Handling**
-
-   - You learned how exceptions occur when processing data
-   - You implemented try-except blocks to catch and handle exceptions gracefully
-   - You modified code to continue processing valid data even when errors are encountered
-
-2. **Logging**
-   - You learned about Python's logging module and its advantages over print statements
-   - You implemented different log levels (WARNING, DEBUG) for appropriate information
-   - You saw how to configure logging to display different levels of detail
-
-These skills are essential for writing robust Python applications that can handle unexpected situations gracefully. Exception handling and logging are particularly important when:
-
-- Working with external data sources that may contain errors
-- Building applications that need to run unattended
-- Developing systems that need to provide useful diagnostic information
-
-You can now apply these techniques to your own Python projects to make them more reliable and maintainable.
+Secondly, you learned about Python's logging module and its benefits over print statements. You implemented different log levels like WARNING and DEBUG and saw how to configure logging for different levels of detail. These skills are crucial for writing robust Python applications, especially when dealing with error - prone external data, building unattended applications, or developing systems that need diagnostic information. You can now apply these techniques to your Python projects for better reliability and maintainability.

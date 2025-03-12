@@ -1,10 +1,5 @@
 # Summary
 
-Congratulations on completing the Python Built-in Objects lab. You have learned how to:
+In this lab, you have learned how to work with various Python built-in objects. Specifically, you've mastered operations on Python numbers and their methods, manipulated strings through indexing, slicing, and built-in functions, created and modified lists including sorting and handling nested structures, and used dictionaries for key-value storage and retrieval.
 
-- Work with Python numbers and their methods
-- Manipulate strings using indexing, slicing, and built-in methods
-- Create and modify lists, including sorting and nested structures
-- Use dictionaries for key-value storage and retrieval
-
-These fundamental skills form the basis for more advanced Python programming. Practice these operations regularly to become more comfortable with Python's built-in data types.
+These fundamental skills are the cornerstone of more advanced Python programming. Regular practice of these operations will enhance your familiarity with Python's built-in data types.

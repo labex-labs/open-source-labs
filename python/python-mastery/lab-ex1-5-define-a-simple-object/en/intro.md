@@ -1,12 +1,5 @@
 # Introduction
 
-In this lab, you will learn how to define a simple Python class to represent stock information. Classes are a fundamental concept in object-oriented programming, allowing you to model real-world entities and organize code more effectively.
+In this lab, you will learn how to define a simple Python class to represent stock information. Classes are a key concept in object-oriented programming, enabling you to model real - world entities and structure your code more efficiently.
 
-**Objectives:**
-
-- Learn how to define a simple Python class
-- Understand class attributes and methods
-- Create and interact with instances of a class
-- Apply formatting to display object information
-
-**Files Created:** `stock.py`
+The objectives of this lab include learning to define a simple Python class, understanding class attributes and methods, creating and interacting with class instances, and applying formatting to display object information. The file `stock.py` will be created during this lab.

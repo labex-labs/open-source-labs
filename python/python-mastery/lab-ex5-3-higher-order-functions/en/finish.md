@@ -1,16 +1,5 @@
 # Summary
 
-In this lab, you learned about higher-order functions in Python and how they can be used to write more modular and maintainable code. You:
+In this lab, you have learned about higher-order functions in Python and how they contribute to writing more modular and maintainable code. First, you identified code duplication in two similar functions. Then, you created a higher-order function `convert_csv()` that accepts a conversion function as an argument and refactored the original functions to use it. Finally, you updated the higher-order function to utilize Python's built-in `map()` function.
 
-1. Identified code duplication in two similar functions
-2. Created a higher-order function `convert_csv()` that takes a conversion function as an argument
-3. Refactored the original functions to use the new higher-order function
-4. Updated the higher-order function to use Python's built-in `map()` function
-
-These techniques are powerful tools in a Python programmer's toolkit:
-
-- Higher-order functions allow for greater code reuse and separation of concerns
-- Passing functions as arguments enables more flexible and customizable behavior
-- Functions like `map()` provide concise ways to transform data
-
-By mastering these concepts, you can write Python code that is more concise, more maintainable, and less prone to bugs.
+These techniques are powerful assets in a Python programmer's toolkit. Higher-order functions promote code reuse and separation of concerns, while passing functions as arguments allows for more flexible and customizable behavior. Functions like `map()` offer concise ways to transform data. Mastering these concepts enables you to write Python code that is more concise, maintainable, and less error-prone.

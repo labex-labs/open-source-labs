@@ -1,15 +1,15 @@
 # Creating a User-Friendly API for Mixins
 
-While mixins are powerful, they require users to understand multiple inheritance, which can be complex. In this step, we'll create a more user-friendly API by enhancing the `create_formatter()` function.
+Mixins are a powerful feature in Python, but they can be a bit tricky for beginners because they involve multiple inheritance, which can get quite complex. In this step, we're going to make things easier for users by improving the `create_formatter()` function. This way, users won't have to worry too much about the details of multiple inheritance.
 
-Open the `tableformat.py` file again:
+First, you need to open the `tableformat.py` file. You can do this by running the following commands in your terminal. The `cd` command changes the directory to your project folder, and the `code` command opens the `tableformat.py` file in your code editor.
 
 ```bash
 cd ~/project
 code tableformat.py
 ```
 
-Find the `create_formatter()` function, which currently looks like this:
+Once the file is open, find the `create_formatter()` function. Currently, it looks like this:
 
 ```python
 def create_formatter(name):
@@ -26,7 +26,9 @@ def create_formatter(name):
         raise RuntimeError(f'Unknown format {name}')
 ```
 
-Now, let's modify this function to support optional arguments for our mixins. Replace the function with this enhanced version:
+This function takes a name as an argument and returns the corresponding formatter. But we want to make it more flexible. We're going to modify it so that it can accept optional arguments for our mixins.
+
+Replace the existing `create_formatter()` function with the enhanced version below. This new function allows you to specify column formats and whether to convert headers to uppercase.
 
 ```python
 def create_formatter(name, column_formats=None, upper_headers=False):
@@ -67,11 +69,11 @@ def create_formatter(name, column_formats=None, upper_headers=False):
         return formatter_cls()
 ```
 
-This enhanced function dynamically creates a custom formatter class with the requested mixins based on the provided arguments.
+This enhanced function works by first determining the base formatter class based on the `name` argument. Then, depending on whether `column_formats` and `upper_headers` are provided, it creates a custom formatter class that includes the appropriate mixins. Finally, it returns an instance of the custom formatter class.
 
-Let's test our enhanced function with different combinations of options:
+Now, let's test our enhanced function with different combinations of options.
 
-First, let's try with column formatting:
+First, let's try using column formatting. Run the following command in your terminal. This command imports the necessary functions and data from the `tableformat.py` file, creates a formatter with column formatting, and then prints a table using that formatter.
 
 ```python
 python3 -c "
@@ -82,7 +84,7 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
 "
 ```
 
-You should see formatted columns:
+You should see the table with formatted columns. The output will look like this:
 
 ```
       name     shares      price
@@ -96,7 +98,7 @@ You should see formatted columns:
        IBM        100      70.44
 ```
 
-Now, let's try with uppercase headers:
+Next, let's try using uppercase headers. Run the following command:
 
 ```python
 python3 -c "
@@ -107,7 +109,7 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
 "
 ```
 
-You should see uppercase headers:
+You should see the table with uppercase headers. The output will be:
 
 ```
       NAME     SHARES      PRICE
@@ -121,7 +123,7 @@ You should see uppercase headers:
        IBM        100      70.44
 ```
 
-Finally, let's combine both options:
+Finally, let's combine both options. Run this command:
 
 ```python
 python3 -c "
@@ -132,7 +134,7 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
 "
 ```
 
-This should display both formatted columns and uppercase headers:
+This should display a table with both formatted columns and uppercase headers. The output will be:
 
 ```
       NAME     SHARES      PRICE
@@ -146,7 +148,7 @@ This should display both formatted columns and uppercase headers:
        IBM        100      70.44
 ```
 
-It also works with other formatter types:
+The enhanced function also works with other formatter types. For example, let's try it with the CSV formatter. Run the following command:
 
 ```python
 python3 -c "
@@ -157,7 +159,7 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
 "
 ```
 
-This should produce CSV output with formatted columns:
+This should produce CSV output with formatted columns. The output will be:
 
 ```
 name,shares,price
@@ -170,4 +172,4 @@ name,shares,price
 "IBM",100,70.44
 ```
 
-By enhancing the `create_formatter()` function, we've created a user-friendly API that hides the complexity of multiple inheritance while still providing the flexibility of mixins.
+By enhancing the `create_formatter()` function, we've created a user-friendly API. Users can now easily use mixins without having to understand the complex details of multiple inheritance. This gives them the flexibility to customize the formatters according to their needs.

@@ -1,8 +1,8 @@
 # Implementing Private Attributes
 
-In Python, attributes that are meant to be internal to a class should be prefixed with an underscore (`_`). This naming convention signals to other developers that these attributes are not part of the public API and should not be accessed directly from outside the class.
+In Python, when we design a class, there are certain attributes that are only meant to be used within the class itself. These attributes are part of the class's internal implementation. To indicate this to other developers, we follow a naming convention. We prefix these internal attributes with an underscore (`_`). This is like a sign that says these attributes are not part of the public API. The public API is the set of methods and attributes that other parts of the code are supposed to interact with. So, attributes with an underscore should not be accessed directly from outside the class.
 
-Let's examine the current `Stock` class in the `stock.py` file:
+Let's take a look at the current `Stock` class in the `stock.py` file. This class is used to represent stocks, and it has a class variable named `types`.
 
 ```python
 class Stock:
@@ -12,17 +12,17 @@ class Stock:
     # Rest of the class...
 ```
 
-The `types` class variable is used internally by the class for converting row data. Since it's an implementation detail and not intended to be part of the public interface, we should mark it as private.
+The `types` class variable is used inside the class to convert row data. For example, when we get data in a row, we use these types to convert the data into the correct format. Since this is just an implementation detail and not something that other parts of the code should directly interact with, we should mark it as private.
 
 ## Instructions:
 
-1. Open the `stock.py` file in the editor:
+1. First, we need to open the `stock.py` file in the editor. We can do this using the following command in the terminal. This command will open the file in the code editor.
 
    ```bash
    code /home/labex/project/stock.py
    ```
 
-2. Modify the `types` class variable to have a leading underscore, making it `_types`:
+2. Now, we are going to modify the `types` class variable. We add a leading underscore to it, making it `_types`. This change indicates that this variable is private and should not be accessed directly from outside the class.
 
    ```python
    class Stock:
@@ -32,7 +32,7 @@ The `types` class variable is used internally by the class for converting row da
        # Rest of the class...
    ```
 
-3. Update the `from_row` method to use the renamed `_types` variable:
+3. After renaming the variable, we need to update the `from_row` method. This method uses the `types` variable to convert row data. Now that we have renamed it to `_types`, we need to update the method accordingly.
 
    ```python
    @classmethod
@@ -41,15 +41,15 @@ The `types` class variable is used internally by the class for converting row da
        return cls(*values)
    ```
 
-4. Save the file.
+4. Once we have made these changes, we need to save the file. Saving the file ensures that our changes are stored and can be used later.
 
-5. Test your changes by creating a Python script called `test_stock.py`:
+5. To test our changes, we are going to create a Python script called `test_stock.py`. We can open the file in the editor using the following command.
 
    ```bash
    code /home/labex/project/test_stock.py
    ```
 
-6. Add the following code to `test_stock.py`:
+6. Now, we add the following code to the `test_stock.py` file. This code creates instances of the `Stock` class, both directly and using the `from_row` method. It then prints out information about these instances, such as the name, number of shares, price, and cost.
 
    ```python
    from stock import Stock
@@ -66,7 +66,8 @@ The `types` class variable is used internally by the class for converting row da
    print(f"Cost: {apple.cost()}")
    ```
 
-7. Run the test script:
+7. Finally, we run the test script using the following command in the terminal. This will execute the code in the `test_stock.py` file and show us the output.
+
    ```bash
    python /home/labex/project/test_stock.py
    ```

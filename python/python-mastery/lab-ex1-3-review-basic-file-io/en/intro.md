@@ -1,12 +1,5 @@
 # Introduction
 
-In this lab, you will review basic file input and output operations in Python. You will create a Python program to read data from a file containing stock portfolio information and calculate the total cost of the portfolio.
+In this lab, you will learn to review basic file input and output operations in Python. You'll create a Python program to read data from a file with stock portfolio information and calculate the portfolio's total cost.
 
-**Objectives:**
-
-- Learn how to open and read files in Python
-- Process data from files line by line
-- Perform calculations on the data
-- Output the results
-
-**Files Created:** `pcost.py`
+The objectives of this lab include learning how to open and read files in Python, processing data from files line by line, performing calculations on the data, and outputting the results. The file you will create is `pcost.py`.

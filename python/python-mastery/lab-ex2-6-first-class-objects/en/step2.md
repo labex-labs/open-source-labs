@@ -1,10 +1,10 @@
 # Creating a Utility Function for CSV Processing
 
-Now that we understand how Python's first-class objects can help us with data conversion, let's create a reusable utility function that reads CSV data into a list of dictionaries.
+Now that we understand how Python's first-class objects can help us with data conversion, we're going to create a reusable utility function. This function will read CSV data and transform it into a list of dictionaries. This is a very useful operation because CSV files are commonly used to store tabular data, and converting them into a list of dictionaries makes it easier to work with the data in Python.
 
 ## Creating the CSV Reader Utility
 
-Open the WebIDE and create a new file named `reader.py` in the project directory. In this file, we'll define a function that reads CSV data and applies type conversions.
+First, open the WebIDE. Once it's open, navigate to the project directory and create a new file named `reader.py`. In this file, we'll define a function that reads CSV data and applies type conversions. Type conversions are important because the data in a CSV file is usually read as strings, but we might need different data types like integers or floating-point numbers for further processing.
 
 Add the following code to `reader.py`:
 
@@ -39,17 +39,17 @@ def read_csv_as_dicts(filename, types):
     return records
 ```
 
-This function reads a CSV file, applies the specified type conversions to each column, and returns a list of dictionaries where keys are column headers and values are the converted data.
+This function first opens the specified CSV file. It then reads the headers of the CSV file, which are the names of the columns. After that, it goes through each row in the file. For each value in the row, it applies the corresponding type conversion function from the `types` list. Finally, it creates a dictionary where the keys are the column headers and the values are the converted data, and adds this dictionary to the `records` list. Once all rows are processed, it returns the `records` list.
 
 ## Testing the Utility Function
 
-Let's test our utility function by opening a Python interpreter and using it to read the portfolio data. Open a terminal and type:
+Let's test our utility function. First, open a terminal and start a Python interpreter by typing:
 
 ```bash
 python3
 ```
 
-Now, use the function to read the portfolio data:
+Now that we're in the Python interpreter, we can use our function to read the portfolio data. The portfolio data is a CSV file that contains information about stocks, such as the name of the stock, the number of shares, and the price.
 
 ```python
 import reader
@@ -58,7 +58,7 @@ for record in portfolio[:3]:  # Show the first 3 records
     print(record)
 ```
 
-You should see output similar to:
+When you run this code, you should see output similar to:
 
 ```
 {'name': 'AA', 'shares': 100, 'price': 32.2}
@@ -66,7 +66,9 @@ You should see output similar to:
 {'name': 'CAT', 'shares': 150, 'price': 83.44}
 ```
 
-Let's also try it with the CTA bus data:
+This output shows the first three records from the portfolio data, with the data types correctly converted.
+
+Let's also try our function with the CTA bus data. The CTA bus data is another CSV file that contains information about bus routes, dates, day types, and the number of rides.
 
 ```python
 rows = reader.read_csv_as_dicts('ctabus.csv', [str, str, str, int])
@@ -74,14 +76,16 @@ print(f"Total rows: {len(rows)}")
 print("First row:", rows[0])
 ```
 
-Output:
+The output should be something like:
 
 ```
 Total rows: 577563
 First row: {'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
 ```
 
-Exit the Python interpreter by typing:
+This shows that our function can handle different CSV files and apply the appropriate type conversions.
+
+To exit the Python interpreter, type:
 
 ```python
 exit()

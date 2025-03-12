@@ -1,67 +1,67 @@
 # Understanding Python Modules
 
-A Python module is simply a file containing Python definitions and statements. The file name is the module name with the suffix `.py` appended. Modules allow you to logically organize your Python code, making it more reusable and maintainable.
+In Python, a module is like a container that holds Python definitions and statements. It's essentially a file, and the name of this file is the module name with the `.py` extension added at the end. Think of modules as toolboxes. They help you organize your Python code in a logical way, making it easier to reuse and maintain. Just like you'd keep different tools in separate boxes for better organization, you can group related Python code into different modules.
 
-Let's examine the files that have been prepared for this lab:
+Let's take a look at the files that have been set up for this lab:
 
-1. Open the `stock.py` file in the editor to view its contents:
+1. First, we'll open the `stock.py` file in the editor to see what's inside. To do this, we'll use the following commands. The `cd` command changes the directory to the `project` folder where our file is located, and the `cat` command displays the contents of the file.
 
 ```bash
 cd ~/project
 cat stock.py
 ```
 
-This file defines a `Stock` class that represents a stock with attributes for name, shares, and price, along with a method to calculate its cost.
+This `stock.py` file defines a `Stock` class. A class is like a blueprint for creating objects. In this case, the `Stock` class represents a stock. It has attributes (which are like characteristics) for the stock's name, the number of shares, and the price. It also has a method (which is like a function associated with the class) to calculate the cost of the stock.
 
-2. Now, examine the `pcost.py` file:
+2. Next, let's examine the `pcost.py` file. We'll use the `cat` command again to view its contents.
 
 ```bash
 cat pcost.py
 ```
 
-This file defines a function `portfolio_cost()` that reads a portfolio file and calculates the total cost of all stocks in the portfolio.
+This file defines a function called `portfolio_cost()`. A function is a block of code that performs a specific task. The `portfolio_cost()` function reads a portfolio file and calculates the total cost of all the stocks in that portfolio.
 
-3. Look at the sample portfolio data:
+3. Now, let's look at the sample portfolio data. We'll use the `cat` command to view the contents of the `portfolio.dat` file.
 
 ```bash
 cat portfolio.dat
 ```
 
-This file contains stock data in a simple format: ticker symbol, number of shares, and price per share.
+This file contains stock data in a simple format. Each line has the ticker symbol of the stock, the number of shares, and the price per share.
 
 ## Using the import Statement
 
-Python's `import` statement allows you to use code from other modules in your current program. Let's practice using different import techniques:
+Python's `import` statement is a powerful tool that allows you to use code from other modules in your current program. It's like borrowing tools from other toolboxes. Let's practice using different ways to import code:
 
-1. Start the Python interpreter:
+1. First, we need to start the Python interpreter. The Python interpreter is a program that executes Python code. We'll use the following command to start it.
 
 ```bash
 python3
 ```
 
-2. Import the `pcost` module and observe its behavior:
+2. Now, let's import the `pcost` module and see what happens. When we use the `import` statement, Python looks for the `pcost.py` file and makes the code inside it available for us to use.
 
 ```python
 import pcost
 ```
 
-You should see the output `44671.15`, which is the calculated cost of the portfolio from the `portfolio.dat` file. This happens because the code at the bottom of `pcost.py` runs automatically when the module is imported.
+You should see the output `44671.15`. This is the calculated cost of the portfolio from the `portfolio.dat` file. When the `pcost` module is imported, the code at the bottom of the `pcost.py` file runs automatically.
 
-3. Try calling the function with a different portfolio file:
+3. Let's try calling the `portfolio_cost()` function with a different portfolio file. We'll use the `pcost.portfolio_cost()` syntax to call the function from the `pcost` module.
 
 ```python
 pcost.portfolio_cost('portfolio2.dat')
 ```
 
-The output should be `19908.75`, representing the total cost of stocks in the second portfolio file.
+The output should be `19908.75`, which represents the total cost of the stocks in the second portfolio file.
 
-4. Now, import a specific class from the `stock` module:
+4. Now, let's import a specific class from the `stock` module. Instead of importing the whole module, we can just import the `Stock` class using the `from...import` statement.
 
 ```python
 from stock import Stock
 ```
 
-5. Create a Stock object and interact with it:
+5. After importing the `Stock` class, we can create a `Stock` object. An object is an instance of a class. We'll create a `Stock` object with the name `GOOG`, 100 shares, and a price of `490.10`. Then we'll print the name of the stock and calculate its cost using the `cost()` method.
 
 ```python
 s = Stock('GOOG', 100, 490.10)
@@ -76,13 +76,13 @@ GOOG
 49010.0
 ```
 
-6. Exit the Python interpreter:
+6. Finally, when we're done using the Python interpreter, we can exit it using the `exit()` function.
 
 ```python
 exit()
 ```
 
-This demonstrates two different ways to import Python code:
+This lab has demonstrated two different ways to import Python code:
 
-- `import module_name` - imports the entire module
-- `from module_name import specific_item` - imports only a specific item from the module
+- `import module_name` - This imports the entire module, making all the functions, classes, and variables in that module available for use.
+- `from module_name import specific_item` - This imports only a specific item (like a class or a function) from the module, which can be useful if you only need a part of the module's functionality.

@@ -1,8 +1,8 @@
 # Creating a Factory Function
 
-One challenge with using inheritance is that users need to know the names of specific formatter classes, which can be cumbersome. We can simplify this by creating a factory function that returns the appropriate formatter based on a simple format name.
+When using inheritance, one common challenge is that users have to remember the names of specific formatter classes. This can be quite a hassle, especially as the number of classes grows. To simplify this process, we can create a factory function. A factory function is a special type of function that creates and returns objects. In our case, it will return the appropriate formatter based on a simple format name.
 
-Add the following function to your `tableformat.py` file:
+Let's add the following function to your `tableformat.py` file. This function will take a format name as an argument and return the corresponding formatter object.
 
 ```python
 def create_formatter(format_name):
@@ -28,9 +28,9 @@ def create_formatter(format_name):
         raise ValueError(f'Unknown format {format_name}')
 ```
 
-The `create_formatter()` function is a factory function that creates and returns an appropriate formatter based on a simple name like 'text', 'csv', or 'html'. This makes it easier for users to select a formatter without needing to know the specific class names.
+The `create_formatter()` function is a factory function. It checks the `format_name` argument you provide. If it's 'text', it creates and returns a `TextTableFormatter` object. If it's 'csv', it returns a `CSVTableFormatter` object, and if it's 'html', it returns an `HTMLTableFormatter` object. If the format name is not recognized, it raises a `ValueError`. This way, users can easily select a formatter just by providing a simple name, without having to know the specific class names.
 
-Let's test the factory function:
+Now, let's test the factory function. We'll use some existing functions and classes to read data from a CSV file and print it in different formats.
 
 ```python
 import stock
@@ -55,7 +55,9 @@ print("\nHTML Format:")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
 ```
 
-You should see output in all three formats, separated by the format name:
+In this code, we first import the necessary modules and functions. Then we read data from the `portfolio.csv` file and create a `portfolio` object. After that, we test the `create_formatter()` function with different format names: 'text', 'csv', and 'html'. For each format, we create a formatter object, print the format name, and then use the `print_table()` function to print the `portfolio` data in the specified format.
+
+When you run this code, you should see output in all three formats, separated by the format name:
 
 ```
 Text Format:
@@ -90,18 +92,18 @@ HTML Format:
 <tr> <td>IBM</td> <td>100</td> <td>70.44</td> </tr>
 ```
 
-The factory function makes the code more user-friendly by hiding the details of class instantiation. Users can simply specify the format they want without needing to know about the specific formatter classes.
+The factory function makes the code more user-friendly because it hides the details of class instantiation. Users don't need to know how to create formatter objects; they just need to specify the format they want.
 
-This pattern - using a factory function to create objects - is a common design pattern in object-oriented programming, known as the Factory Pattern. It provides a layer of abstraction between the client code and the actual implementation classes, making the code more modular and easier to use.
+This pattern of using a factory function to create objects is a common design pattern in object-oriented programming, known as the Factory Pattern. It provides a layer of abstraction between the client code (the code that uses the formatter) and the actual implementation classes (the formatter classes). This makes the code more modular and easier to use.
 
 **Key Concepts Review:**
 
-1. **Abstract Base Class**: The `TableFormatter` class serves as an interface that defines the methods that all formatters must implement.
+1. **Abstract Base Class**: The `TableFormatter` class serves as an interface. An interface defines a set of methods that all classes implementing it must have. In our case, all formatter classes must implement the methods defined in the `TableFormatter` class.
 
-2. **Inheritance**: The concrete formatter classes inherit from the base class and provide specific implementations.
+2. **Inheritance**: The concrete formatter classes, like `TextTableFormatter`, `CSVTableFormatter`, and `HTMLTableFormatter`, inherit from the base `TableFormatter` class. This means they get the basic structure and methods from the base class and can provide their own specific implementations.
 
-3. **Polymorphism**: The `print_table()` function works with any formatter that implements the required interface.
+3. **Polymorphism**: The `print_table()` function can work with any formatter that implements the required interface. This means you can pass different formatter objects to the `print_table()` function, and it will work correctly with each one.
 
-4. **Factory Pattern**: The `create_formatter()` function simplifies the creation of formatter objects.
+4. **Factory Pattern**: The `create_formatter()` function simplifies the creation of formatter objects. It takes care of the details of creating the right object based on the format name, so users don't have to worry about it.
 
 By using these object-oriented principles, we've created a flexible and extensible system for formatting tabular data in various output formats.

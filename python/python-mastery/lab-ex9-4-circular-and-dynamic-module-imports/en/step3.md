@@ -1,24 +1,24 @@
 # Implementing Subclass Registration
 
-Instead of directly importing formatter classes, we can use a registration pattern where subclasses register themselves with their parent class. This is a common way to avoid circular imports.
+In programming, circular imports can be a tricky problem. Instead of directly importing formatter classes, we can use a registration pattern. In this pattern, subclasses register themselves with their parent class. This is a common and effective way to avoid circular imports.
 
-First, let's explore how we can identify the module name of a class:
+First, let's understand how we can find out the module name of a class. The module name is important because we'll use it in our registration pattern. To do this, we'll run a Python command in the terminal.
 
 ```bash
 cd ~/project/structly
 python3 -c "from structly.tableformat.formats.text import TextTableFormatter; print(TextTableFormatter.__module__); print(TextTableFormatter.__module__.split('.')[-1])"
 ```
 
-You should see output like:
+When you run this command, you'll see output like this:
 
 ```
 structly.tableformat.formats.text
 text
 ```
 
-This shows that we can extract the name of the module from the class itself, which we'll use in our registration pattern.
+This output shows that we can extract the name of the module from the class itself. We'll use this module name later to register the subclasses.
 
-Now, let's modify the `TableFormatter` class in `tableformat/formatter.py` to add a registration mechanism. Open the file in the WebIDE and add the following code:
+Now, let's modify the `TableFormatter` class in the `tableformat/formatter.py` file to add a registration mechanism. Open this file in the WebIDE. We'll add some code to the `TableFormatter` class. This code will help us register the subclasses automatically.
 
 ```python
 class TableFormatter(ABC):
@@ -38,9 +38,9 @@ class TableFormatter(ABC):
         pass
 ```
 
-The `__init_subclass__` method is called whenever a subclass of `TableFormatter` is created. It extracts the module name and registers the class in the `_formats` dictionary using the module name as a key.
+The `__init_subclass__` method is a special method in Python. It gets called whenever a subclass of `TableFormatter` is created. In this method, we extract the module name of the subclass and use it as a key to register the subclass in the `_formats` dictionary.
 
-Next, modify the `create_formatter` function to use the registration dictionary:
+Next, we need to modify the `create_formatter` function to use the registration dictionary. This function is responsible for creating the appropriate formatter based on the given name.
 
 ```python
 def create_formatter(name, column_formats=None, upper_headers=False):
@@ -59,22 +59,22 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-Save the file and test if the program still works:
+After making these changes, save the file. Then, let's test if the program still works. We'll run the `stock.py` script.
 
 ```bash
 python3 stock.py
 ```
 
-You should see the program running correctly. Let's inspect the contents of the `_formats` dictionary to understand how the registration works:
+If the program runs correctly, it means our changes haven't broken anything. Now, let's take a look at the contents of the `_formats` dictionary to see how the registration works.
 
 ```bash
 python3 -c "from structly.tableformat.formatter import TableFormatter; print(TableFormatter._formats)"
 ```
 
-You should see output showing the registered formatters:
+You should see output like this:
 
 ```
 {'text': <class 'structly.tableformat.formats.text.TextTableFormatter'>, 'csv': <class 'structly.tableformat.formats.csv.CSVTableFormatter'>, 'html': <class 'structly.tableformat.formats.html.HTMLTableFormatter'>}
 ```
 
-This confirms that our subclasses are being registered correctly. However, we still have the imports in the middle of the file. In the next step, we'll fix that with dynamic imports.
+This output confirms that our subclasses are being registered correctly in the `_formats` dictionary. However, we still have some imports in the middle of the file. In the next step, we'll fix this issue using dynamic imports.

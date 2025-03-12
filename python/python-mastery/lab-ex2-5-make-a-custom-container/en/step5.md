@@ -1,6 +1,8 @@
 # Enhancing the Custom Container for Slicing
 
-Our custom container works well for accessing individual records, but there's a problem with slicing. When you try to take a slice of our container, it doesn't return what you would expect.
+Our custom container is great for accessing individual records. However, there's an issue when it comes to slicing. When you attempt to take a slice of our container, the result isn't what you'd typically expect.
+
+Let's understand why this happens. In Python, slicing is a common operation used to extract a portion of a sequence. But for our custom container, Python doesn't know how to create a new `RideData` object with just the sliced data. Instead, it creates a list containing the results of calling `__getitem__` for each index in the slice.
 
 1. Let's test slicing in the Python shell:
 
@@ -13,7 +15,7 @@ type(r)  # This will likely be a list, not a RideData object
 print(r)  # This might look like a list of numbers, not dictionaries
 ```
 
-When we slice our custom container, Python doesn't know how to create a new RideData object with just the sliced data. Instead, it creates a list containing the results of calling `__getitem__` for each index in the slice.
+In this code, we first import the `readrides` module. Then we read the data from the `ctabus.csv` file into a variable `rows`. When we try to take a slice of the first 10 records and check the type of the result, we find that it's a list instead of a `RideData` object. Printing the result might show something unexpected, like a list of numbers instead of dictionaries.
 
 2. Let's modify our `RideData` class to handle slicing properly. Open `readrides.py` and update the `__getitem__` method:
 
@@ -35,7 +37,7 @@ def __getitem__(self, index):
                 'rides': self.numrides[index]}
 ```
 
-This updated method checks if the index is a slice. If it is, it creates a new `RideData` object and populates it with slices of the original data columns. This ensures that slicing returns another `RideData` object rather than a list.
+In this updated `__getitem__` method, we first check if the `index` is a slice. If it is, we create a new `RideData` object called `result`. Then we populate this new object with slices of the original data columns (`routes`, `dates`, `daytypes`, and `numrides`). This ensures that when we slice our custom container, we get another `RideData` object instead of a list. If the `index` is not a slice (i.e., it's a single index), we return a dictionary containing the relevant record.
 
 3. Let's test our improved slicing capability:
 
@@ -50,7 +52,7 @@ r[0]     # Should be the same as rows[0]
 r[1]     # Should be the same as rows[1]
 ```
 
-Now when we take a slice of our custom container, we get another custom container that contains only the sliced data. This behaves much more like a regular list, which is what users of our container would expect.
+After updating the `__getitem__` method, we can test the slicing again. When we take a slice of the first 10 records, the type of the result should now be `readrides.RideData`. The length of the slice should be 10, and accessing individual elements in the slice should give us the same results as accessing the corresponding elements in the original container.
 
 4. You can also test with different slice patterns:
 
@@ -63,6 +65,8 @@ len(r2)  # Should be 10
 r3 = rows[-10:]
 len(r3)  # Should be 10
 ```
+
+Here, we're testing different slice patterns. The first slice `rows[0:20:2]` gets every other record from the first 20 records, and the length of the resulting slice should be 10. The second slice `rows[-10:]` gets the last 10 records, and its length should also be 10.
 
 By properly implementing slicing, our custom container now behaves even more like a standard Python list, while maintaining the memory efficiency of column-oriented storage.
 

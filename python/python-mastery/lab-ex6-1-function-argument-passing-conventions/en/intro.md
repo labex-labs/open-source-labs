@@ -1,13 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn about Python function argument passing conventions. You'll also create a reusable structure for data classes and apply object-oriented design principles to simplify your code.
 
-- Learn about Python function argument passing conventions
-- Create a reusable structure for data classes
-- Apply object-oriented design principles to simplify code
-
-**Files Created:** `structure.py`, `stock.py`
-
-**Important Note**
-
-This exercise starts the process of rewriting the `stock.py` file in a more organized way. Before beginning, copy your existing work in `stock.py` to a new file called `orig_stock.py` for reference.
+This exercise aims to rewrite the `stock.py` file in a more organized manner. Before you start, copy your existing work in `stock.py` to a new file named `orig_stock.py` for reference. The files you'll create are `structure.py` and `stock.py`.

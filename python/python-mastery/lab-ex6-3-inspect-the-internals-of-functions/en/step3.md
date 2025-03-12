@@ -1,22 +1,22 @@
 # Applying Function Inspection in Classes
 
-Now, let's apply what we've learned about function inspection to improve a class implementation. We'll modify a `Structure` class to automatically detect field names from the `__init__` method signature.
+Now, we're going to take what we've learned about function inspection and use it to improve a class implementation. Function inspection allows us to look inside functions and understand their structure, like the parameters they take. In this case, we'll use it to make our class code more efficient and less error - prone. We'll modify a `Structure` class so that it can automatically detect field names from the `__init__` method signature.
 
 ## Understanding the Structure Class
 
-The `structure.py` file contains a `Structure` class that serves as a base class for creating structured data objects. It currently requires a `_fields` class variable to define the object's attributes:
+The `structure.py` file contains a `Structure` class. This class acts as a base class, which means other classes can inherit from it to create structured data objects. Currently, to define the attributes of the objects created from classes inheriting from `Structure`, we need to set a `_fields` class variable.
 
-Open the file in the editor:
+Let's open the file in the editor. We'll use the following command to navigate to the project directory:
 
 ```bash
 cd ~/project
 ```
 
-You can see the existing `Structure` class in the `structure.py` file in the WebIDE.
+Once you've run this command, you can find and view the existing `Structure` class in the `structure.py` file within the WebIDE.
 
 ## Creating a Stock Class
 
-Let's create a `Stock` class that inherits from `Structure`. Add this code to the end of the `structure.py` file:
+Let's create a `Stock` class that inherits from the `Structure` class. Inheritance means that the `Stock` class will get all the features of the `Structure` class and can also add its own. We'll add the following code to the end of the `structure.py` file:
 
 ```python
 class Stock(Structure):
@@ -26,11 +26,11 @@ class Stock(Structure):
         self._init()
 ```
 
-The problem with this approach is that we have to define both the `_fields` tuple and the `__init__` method with the same parameter names, which is redundant and could lead to errors if they get out of sync.
+However, there's a problem with this approach. We have to define both the `_fields` tuple and the `__init__` method with the same parameter names. This is redundant because we're essentially writing the same information twice. If we forget to update one when we change the other, it can lead to errors.
 
 ## Adding a set_fields Class Method
 
-Let's improve this by adding a `set_fields` class method to `Structure` that automatically detects field names from the `__init__` signature. Add this method to the `Structure` class:
+To fix this issue, we'll add a `set_fields` class method to the `Structure` class. This method will automatically detect the field names from the `__init__` signature. Here's the code we need to add to the `Structure` class:
 
 ```python
 @classmethod
@@ -46,11 +46,11 @@ def set_fields(cls):
     cls._fields = tuple(params)
 ```
 
-This method uses the `inspect` module to get the signature of the `__init__` method, extracts the parameter names (skipping `self`), and sets the `_fields` class variable.
+This method uses the `inspect` module, which is a powerful tool in Python for getting information about objects like functions and classes. First, it gets the signature of the `__init__` method. Then, it extracts the parameter names, but skips the `self` parameter because `self` is a special parameter in Python classes that refers to the instance itself. Finally, it sets the `_fields` class variable with these parameter names.
 
 ## Modifying the Stock Class
 
-Now we can simplify our `Stock` class. Replace the previous `Stock` class with:
+Now that we have the `set_fields` method, we can simplify our `Stock` class. Replace the previous `Stock` class code with the following:
 
 ```python
 class Stock(Structure):
@@ -61,9 +61,11 @@ class Stock(Structure):
 Stock.set_fields()
 ```
 
+This way, we don't have to manually define the `_fields` tuple. The `set_fields` method will take care of it for us.
+
 ## Testing the Modified Class
 
-Let's create a simple test script to verify that our modified class works correctly. Create a new file called `test_structure.py`:
+To make sure our modified class works correctly, we'll create a simple test script. Create a new file called `test_structure.py` and add the following code:
 
 ```python
 from structure import Stock
@@ -95,13 +97,15 @@ if __name__ == "__main__":
     test_stock()
 ```
 
-Run the test script:
+This test script creates a `Stock` object, tests its string representation, accesses its attributes, modifies an attribute, and tries to access a misspelled attribute to check if it raises the correct error.
+
+To run the test script, use the following command:
 
 ```bash
 python3 test_structure.py
 ```
 
-You should see output similar to:
+You should see output similar to this:
 
 ```
 Stock representation: Stock('GOOG',100,490.1)
@@ -114,8 +118,8 @@ Correctly raised: No attribute share
 
 ## How It Works
 
-1. The `set_fields` method uses `inspect.signature()` to get the parameter names from the `__init__` method.
-2. It automatically sets the `_fields` class variable based on these parameter names.
-3. This eliminates the need to manually define both `_fields` and `__init__` with matching parameter names.
+1. The `set_fields` method uses `inspect.signature()` to get the parameter names from the `__init__` method. This function gives us detailed information about the parameters of the `__init__` method.
+2. It then automatically sets the `_fields` class variable based on these parameter names. So, we don't have to write the same parameter names in two different places.
+3. This eliminates the need to manually define both `_fields` and `__init__` with matching parameter names. It makes our code more maintainable because if we change the parameters in the `__init__` method, the `_fields` will be updated automatically.
 
-This approach uses function inspection to make our code more maintainable and less error-prone. It's a practical application of Python's introspection capabilities.
+This approach uses function inspection to make our code more maintainable and less error - prone. It's a practical application of Python's introspection capabilities, which allow us to examine and modify objects at runtime.

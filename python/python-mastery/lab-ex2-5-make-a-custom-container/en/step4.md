@@ -1,8 +1,8 @@
 # Creating a Custom Container Class
 
-While the column-oriented approach saves memory, it breaks compatibility with code that expects data to be in the form of a list of dictionaries. To solve this problem, we can create a custom container class that presents a row-oriented interface while storing data in a column-oriented format internally.
+In data processing, the column-oriented approach is great for saving memory. However, it can cause issues when your existing code expects data to be in the form of a list of dictionaries. To solve this problem, we'll create a custom container class. This class will present a row-oriented interface, which means it will look and act like a list of dictionaries to your code. But internally, it will store data in a column-oriented format, helping us save memory.
 
-1. Open the `readrides.py` file in the WebIDE editor and add the following class:
+1. First, open the `readrides.py` file in the WebIDE editor. We're going to add a new class to this file. This class will be the foundation of our custom container.
 
 ```python
 # Add this to readrides.py
@@ -33,7 +33,9 @@ class RideData(Sequence):
         self.numrides.append(d['rides'])
 ```
 
-2. Now, let's implement a function that reads the bus ride data into our custom container:
+In this code, we define a class named `RideData` that inherits from `Sequence`. The `__init__` method initializes four empty lists, each representing a column of data. The `__len__` method returns the length of the container, which is the same as the length of the `routes` list. The `__getitem__` method allows us to access a specific record by index, returning it as a dictionary. The `append` method adds a new record to the container by appending values to each column list.
+
+2. Now, we need a function to read the bus ride data into our custom container. Add the following function to the `readrides.py` file.
 
 ```python
 # Add this to readrides.py
@@ -60,9 +62,9 @@ def read_rides_as_dicts(filename):
     return records
 ```
 
-This function creates a `RideData` object and populates it with data from the CSV file. The key aspect is that it maintains the same interface as a list of dictionaries, but internally stores the data in columns.
+This function creates an instance of the `RideData` class and populates it with data from the CSV file. It reads each row from the file, extracts the relevant information, creates a dictionary for each record, and then appends it to the `RideData` container. The key thing is that it maintains the same interface as a list of dictionaries, but internally stores the data in columns.
 
-3. Let's test our custom container in the Python shell:
+3. Let's test our custom container in the Python shell. This will help us verify that it works as expected.
 
 ```python
 import readrides
@@ -82,11 +84,9 @@ rows[1]     # Should return a dictionary for the second record
 rows[2]     # Should return a dictionary for the third record
 ```
 
-Our custom container successfully implements the Sequence interface, meaning it behaves like a list. You can use `len()` to get the number of records and use indexing to access individual records. Each record appears to be a dictionary, even though the data is stored in columns internally.
+Our custom container successfully implements the Sequence interface, which means it behaves like a list. You can use the `len()` function to get the number of records in the container, and you can use indexing to access individual records. Each record appears to be a dictionary, even though the data is stored in columns internally. This is great because existing code that expects a list of dictionaries will continue to work with our custom container without any modification.
 
-The advantage of this approach is that existing code that expects a list of dictionaries will continue to work with our custom container without modification, but the memory usage is much lower.
-
-4. Let's measure the memory usage of our custom container:
+4. Finally, let's measure the memory usage of our custom container. This will show us how much memory we're saving compared to a list of dictionaries.
 
 ```python
 import tracemalloc
@@ -99,4 +99,4 @@ print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
 tracemalloc.stop()
 ```
 
-You should see that the memory usage is similar to the column-oriented approach, which is much lower than a list of dictionaries would be.
+When you run this code, you should see that the memory usage is similar to the column-oriented approach, which is much lower than what a list of dictionaries would use. This demonstrates the advantage of our custom container in terms of memory efficiency.

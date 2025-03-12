@@ -1,23 +1,18 @@
 # Implementing Property Validation
 
-Properties not only allow us to access computed values as attributes but also provide control over getting, setting, and deleting attribute values. This is particularly useful for adding validation to ensure that attribute values meet certain criteria.
+Properties in Python are a powerful feature. They not only let you access computed values as if they were regular attributes but also give you control over how these attribute values are retrieved, set, and deleted. This control is extremely useful when you need to add validation to your attributes. Validation ensures that the values assigned to attributes meet specific criteria, which helps maintain the integrity of your data.
 
-In our `Stock` class, we want to ensure that:
-
-- `shares` is a non-negative integer
-- `price` is a non-negative float
-
-To implement this validation, we'll use property decorators with getters and setters.
+In our `Stock` class, we have two important attributes: `shares` and `price`. We want to make sure that `shares` is a non - negative integer and `price` is a non - negative float. To achieve this validation, we'll use property decorators along with getters and setters.
 
 ## Instructions:
 
-1. Open the `stock.py` file in the editor:
+1. First, you need to open the `stock.py` file in the editor. This is where we'll make all the changes to our `Stock` class. Use the following command in the terminal:
 
    ```bash
    code /home/labex/project/stock.py
    ```
 
-2. Add private attributes `_shares` and `_price` to store the actual values, and modify the constructor to use them:
+2. In Python, we can use private attributes to store the actual values of our class variables. Private attributes are denoted by a leading underscore. Add the private attributes `_shares` and `_price` to the `Stock` class and modify the constructor to use them. The constructor is the method that gets called when you create a new instance of the class. Here's how you do it:
 
    ```python
    def __init__(self, name, shares, price):
@@ -26,7 +21,7 @@ To implement this validation, we'll use property decorators with getters and set
        self._price = price    # Using private attribute
    ```
 
-3. Add property definitions for `shares` and `price` with appropriate validation:
+3. Now, we'll define properties for `shares` and `price` with proper validation. Properties are defined using the `@property` decorator for the getter method and the `@<property_name>.setter` decorator for the setter method. The getter method is used to retrieve the value of the attribute, and the setter method is used to set the value. Here's the code to add property definitions with validation:
 
    ```python
    @property
@@ -54,7 +49,7 @@ To implement this validation, we'll use property decorators with getters and set
        self._price = value
    ```
 
-4. Update the constructor to use the property setters for validation:
+4. Update the constructor to use the property setters for validation. This way, whenever a new instance of the `Stock` class is created, the values of `shares` and `price` will be validated automatically. Here's the updated constructor:
 
    ```python
    def __init__(self, name, shares, price):
@@ -63,15 +58,15 @@ To implement this validation, we'll use property decorators with getters and set
        self.price = price    # Using property setter
    ```
 
-5. Save the file.
+5. After making all these changes, save the `stock.py` file. This ensures that your changes are preserved.
 
-6. Create a test script to verify the validation:
+6. To verify that our validation is working correctly, we'll create a test script. Open a new file named `test_validation.py` in the editor using the following command:
 
    ```bash
    code /home/labex/project/test_validation.py
    ```
 
-7. Add the following code to `test_validation.py`:
+7. Add the following code to the `test_validation.py` file. This code creates a valid `Stock` instance and then tries to update the `shares` and `price` attributes with both valid and invalid values. It also prints the results and any error messages that occur.
 
    ```python
    from stock import Stock
@@ -119,9 +114,9 @@ To implement this validation, we'll use property decorators with getters and set
        print(f"Error setting price=-10.0: {e}")
    ```
 
-8. Run the test script:
+8. Finally, run the test script using the following command in the terminal:
    ```bash
    python /home/labex/project/test_validation.py
    ```
 
-You should see output showing successful valid updates and appropriate error messages for invalid updates.
+You should see output that shows successful valid updates and appropriate error messages for invalid updates. This confirms that our property validation is working as expected.

@@ -1,9 +1,5 @@
 # Introduction
 
-In Python, attribute access is a fundamental aspect of object-oriented programming. Through special methods, Python allows developers to customize how attributes are accessed, set, and managed in classes. This provides powerful ways to control object behavior.
+In this lab, you will learn about a fundamental aspect of Python's object-oriented programming: attribute access. Python enables developers to customize how attributes are accessed, set, and managed in classes through special methods. This offers powerful ways to control object behavior.
 
-**Objectives:**
-
-- Learn how to customize attribute access in Python classes
-- Understand the difference between delegation and inheritance
-- Practice implementing custom attribute management in Python objects
+In addition, you will learn how to customize attribute access in Python classes, understand the difference between delegation and inheritance, and practice implementing custom attribute management in Python objects.

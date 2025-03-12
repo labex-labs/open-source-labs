@@ -1,11 +1,5 @@
 # Summary
 
-In this lab, you've learned how to use Python's `exec()` function to dynamically create and execute code at runtime. Here are the key points covered:
+In this lab, you have learned how to use Python's `exec()` function to dynamically create and execute code at runtime. The key points include the basic usage of `exec()` for executing string-based code fragments, advanced usage for dynamically creating class methods based on attributes, and its real-world application in Python's standard library with `namedtuple`.
 
-1. Basic usage of `exec()` to execute string-based code fragments
-2. Advanced usage to dynamically create class methods based on attributes
-3. Real-world application in Python's standard library with `namedtuple`
-
-The ability to generate code dynamically is a powerful feature that enables more flexible and adaptable programs. While it should be used carefully due to security and readability concerns, it's a valuable tool in the Python programmer's toolkit for certain use cases like creating APIs, implementing decorators, or building domain-specific languages.
-
-You can apply these techniques when you need to create code that adapts to runtime conditions or when building frameworks that generate code based on configuration.
+The ability to generate code dynamically is a powerful feature that allows for more flexible and adaptable programs. Although it should be used with caution due to security and readability concerns, it is a valuable tool for Python programmers in specific scenarios such as creating APIs, implementing decorators, or building domain-specific languages. You can apply these techniques when creating code that adapts to runtime conditions or building frameworks that generate code based on configuration.

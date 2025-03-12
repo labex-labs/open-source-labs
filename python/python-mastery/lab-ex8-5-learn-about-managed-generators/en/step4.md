@@ -1,8 +1,8 @@
 # Building a Network Server with Generators
 
-Now let's extend our task scheduler concept to build something more practical: a simple network server that can handle multiple client connections concurrently using generators.
+In this section, we'll take the concept of a task scheduler we've learned and expand it to create something more practical: a simple network server. This server can handle multiple client connections at the same time using generators. Generators are a powerful Python feature that allows functions to pause and resume their execution, which is very useful for handling multiple tasks without blocking.
 
-Create a new file called `server.py` in the `/home/labex/project` directory:
+First, you need to create a new file named `server.py` in the `/home/labex/project` directory. This file will contain the code for our network server.
 
 ```python
 # server.py
@@ -52,11 +52,11 @@ def run():
             print('Task done')
 ```
 
-This enhanced scheduler is more complex, but follows the same basic principles as our earlier one. The main differences are:
+This improved scheduler is a bit more complicated than the previous one, but it follows the same fundamental ideas. Let's break down the main differences:
 
-1. Tasks can yield a reason ('recv' or 'send') and a resource (a socket)
-2. Based on the yield reason, the task is moved to a different waiting area
-3. The `select()` function is used to determine which sockets are ready for I/O
-4. When a socket is ready, its associated task is moved back to the active queue
+1. Tasks can yield a reason ('recv' or 'send') and a resource (a socket). This means that a task can tell the scheduler that it's waiting to either receive or send data on a specific socket.
+2. Depending on the yield reason, the task is moved to a different waiting area. If a task is waiting to receive data, it goes to the `recv_wait` dictionary. If it's waiting to send data, it goes to the `send_wait` dictionary.
+3. The `select()` function is used to figure out which sockets are ready for I/O operations. This function checks the sockets in the `recv_wait` and `send_wait` dictionaries and returns the ones that are ready to either receive or send data.
+4. When a socket is ready, the associated task is moved back to the active queue. This allows the task to continue its execution and perform the I/O operation it was waiting for.
 
-This allows our tasks to efficiently wait for network I/O without blocking.
+By using these techniques, our tasks can efficiently wait for network I/O without blocking the execution of other tasks. This makes our network server more responsive and able to handle multiple client connections concurrently.

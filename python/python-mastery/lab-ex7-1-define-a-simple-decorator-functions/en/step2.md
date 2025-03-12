@@ -1,32 +1,32 @@
 # Building a Validation Decorator
 
-In this step, we will create a more practical decorator that validates function arguments based on type annotations. This is a common use case in real-world applications to ensure functions receive the correct input types.
+In this step, we're going to create a more practical decorator. A decorator in Python is a special type of function that can modify another function's behavior. The decorator we'll create will validate function arguments based on type annotations. Type annotations are a way to specify the expected data types of a function's arguments and return value. This is a common use case in real - world applications because it helps ensure that functions receive the correct input types, which can prevent many bugs.
 
 ## Understanding the Validation Classes
 
-A file called `validate.py` has been created for you with some validation classes. Open this file in the VSCode editor to examine its content:
+We've already created a file called `validate.py` for you, and it contains some validation classes. Validation classes are used to check if a value meets certain criteria. To see what's inside this file, you need to open it in the VSCode editor. You can do this by running the following commands in the terminal:
 
 ```bash
 cd /home/labex/project
 code validate.py
 ```
 
-The file contains three classes:
+The file has three classes:
 
-1. `Validator` - A base class that provides the framework for validation
-2. `Integer` - A validator that ensures a value is an integer
-3. `PositiveInteger` - A validator that ensures a value is a positive integer
+1. `Validator` - This is a base class. A base class provides a general framework or structure that other classes can inherit from. In this case, it provides the basic structure for validation.
+2. `Integer` - This validator class is used to make sure that a value is an integer. If you pass a non - integer value to a function that uses this validator, it will raise an error.
+3. `PositiveInteger` - This validator class ensures that a value is a positive integer. So, if you pass a negative integer or zero, it will also raise an error.
 
 ## Adding the Validation Decorator
 
-Now, let's add a decorator function called `validated` to the `validate.py` file. This decorator will:
+Now, we're going to add a decorator function named `validated` to the `validate.py` file. This decorator will perform several important tasks:
 
-1. Inspect a function's type annotations
-2. Validate arguments against these annotations
-3. Validate the return value against its annotation
-4. Raise informative error messages if validation fails
+1. It will inspect a function's type annotations. Type annotations are like little notes that tell us what kind of data the function expects.
+2. It will validate the arguments passed to the function against these type annotations. This means it will check if the values passed to the function are of the correct type.
+3. It will also validate the return value of the function against its annotation. So, it makes sure that the function returns the type of data it's supposed to.
+4. If the validation fails, it will raise informative error messages. These messages will tell you exactly what went wrong, like which argument had the wrong type.
 
-Add the following code to the end of `validate.py`:
+Add the following code to the end of the `validate.py` file:
 
 ```python
 # Add to validate.py
@@ -79,11 +79,11 @@ def validated(func):
     return wrapper
 ```
 
-This code uses Python's `inspect` module to examine the function's signature and validate arguments based on type annotations. It also uses `functools.wraps` to preserve the original function's metadata like name and docstring.
+This code uses Python's `inspect` module. The `inspect` module allows us to get information about live objects, like functions. Here, we use it to examine the function's signature and validate arguments based on type annotations. We also use `functools.wraps`. This is a helper function that preserves the original function's metadata, such as its name and docstring. Metadata is like extra information about the function that helps us understand what it does.
 
 ## Testing the Validation Decorator
 
-Let's create a file to test our validation decorator. Create a new file called `test_validate.py` with the following code:
+Let's create a file to test our validation decorator. We'll create a new file called `test_validate.py` and add the following code to it:
 
 ```python
 # test_validate.py
@@ -114,12 +114,14 @@ class Stock:
         self.shares -= nshares
 ```
 
-Now, let's test our decorator in the Python interpreter:
+Now, we'll test our decorator in the Python interpreter. First, navigate to the project directory and start the Python interpreter by running these commands in the terminal:
 
 ```bash
 cd /home/labex/project
 python3
 ```
+
+Then, in the Python interpreter, we can run the following code to test our decorator:
 
 ```python
 >>> from test_validate import add, pow, Stock
@@ -145,7 +147,7 @@ TypeError: Bad Arguments
 >>> pow(2, 3)
 8
 >>>
->>> # Test with negative exponent (produces non-integer result)
+>>> # Test with negative exponent (produces non - integer result)
 >>> pow(2, -1)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -170,4 +172,4 @@ TypeError: Bad Arguments
 >>> exit()
 ```
 
-Our `validated` decorator has successfully enforced type checking on function arguments and return values. This makes our code more robust by catching type errors at the function boundaries rather than letting them propagate deeper into the code.
+As you can see, our `validated` decorator has successfully enforced type checking on function arguments and return values. This is very useful because it makes our code more robust. Instead of letting type errors propagate deeper into the code and cause hard - to - find bugs, we catch them at the function boundaries.

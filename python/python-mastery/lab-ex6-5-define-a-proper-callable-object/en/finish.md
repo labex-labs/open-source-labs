@@ -1,17 +1,5 @@
 # Summary
 
-In this lab, you learned how to create proper callable objects in Python:
+In this lab, you have learned how to create proper callable objects in Python. First, you explored basic validator classes for type - checking and created a callable object using the `__call__` method. Then, you enhanced this object to perform validation based on function annotations and tackled the challenge of using callable objects as class methods.
 
-1. You explored the basic validator classes that perform type checking
-2. You created a callable object using the `__call__` method
-3. You enhanced the callable object to perform validation based on function annotations
-4. You tackled the challenge of using callable objects as methods in a class
-
-Key concepts covered:
-
-- Callable objects and the `__call__` method
-- Function annotations for type hinting
-- Using the `inspect` module to examine function signatures
-- The descriptor protocol and the `__get__` method for class methods
-
-These techniques allow you to create powerful function wrappers that can perform validation, logging, or other processing before and after calling the wrapped function. This is a powerful pattern in Python that forms the basis for decorators and other advanced features.
+Key concepts covered include callable objects and the `__call__` method, function annotations for type hinting, using the `inspect` module to examine function signatures, and the descriptor protocol with the `__get__` method for class methods. These techniques enable you to create powerful function wrappers for pre - and post - call processing, which is a fundamental pattern for decorators and other advanced Python features.

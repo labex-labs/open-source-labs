@@ -1,20 +1,20 @@
 # Using `yield from` in Coroutines
 
-In this step, you will learn how to use `yield from` with coroutines for more practical applications.
+In this step, we'll explore how to use the `yield from` statement with coroutines for more practical applications. Coroutines are a powerful concept in Python, and understanding how to use `yield from` with them can greatly simplify your code.
 
 ## Coroutines and Message Passing
 
-Coroutines are functions that can receive values through the `yield` statement. They are useful for tasks like data processing and event handling. The `consumer` decorator in `cofollow.py` helps set up coroutines by automatically advancing them to the first `yield` point.
+Coroutines are special functions that can receive values through the `yield` statement. They're incredibly useful for tasks such as data processing and event handling. In the `cofollow.py` file, there's a `consumer` decorator. This decorator helps set up coroutines by automatically advancing them to the first `yield` point. This means you don't have to manually start the coroutine; the decorator takes care of it for you.
 
-Let's create a coroutine that receives values and validates their types:
+Let's create a coroutine that receives values and validates their types. Here's how you can do it:
 
-1. Open the `cofollow.py` file in the editor:
+1. First, open the `cofollow.py` file in the editor. You can use the following command in the terminal to navigate to the correct directory:
 
 ```bash
 cd /home/labex/project
 ```
 
-2. Add the following `receive` function at the end of the file:
+2. Next, add the following `receive` function at the end of the `cofollow.py` file. This function is a coroutine that will receive a message and validate its type.
 
 ```python
 def receive(expected_type):
@@ -27,13 +27,13 @@ def receive(expected_type):
     return msg
 ```
 
-This function:
+Here's what this function does:
 
-- Uses `yield` without an expression to receive a value
-- Checks if the received value is of the expected type
-- Returns the value if it passes the type check
+- It uses `yield` without an expression to receive a value. When the coroutine is sent a value, this `yield` statement will capture it.
+- It checks if the received value is of the expected type using the `isinstance` function. If the type doesn't match, it raises an `AssertionError`.
+- If the type check passes, it returns the value.
 
-3. Now, let's create a coroutine that uses `yield from` with our `receive` function:
+3. Now, let's create a coroutine that uses `yield from` with our `receive` function. This new coroutine will receive and print integers only.
 
 ```python
 @consumer
@@ -47,7 +47,7 @@ def print_ints():
         print('Got:', val)
 ```
 
-4. Test the coroutine in a Python shell:
+4. To test this coroutine, open a Python shell and run the following code:
 
 ```python
 from cofollow import print_ints
@@ -71,21 +71,21 @@ Error: Expected type <class 'int'>
 
 ## Understanding How `yield from` Works with Coroutines
 
-When we use `yield from receive(int)` in the `print_ints` coroutine:
+When we use `yield from receive(int)` in the `print_ints` coroutine, the following steps occur:
 
-1. Control is delegated to the `receive` coroutine
-2. The `receive` coroutine yields to receive a value
-3. When a value is sent to `print_ints`, it's actually received by `receive`
-4. The `receive` coroutine validates the type and returns the value
-5. The returned value becomes the result of the `yield from` expression
+1. Control is delegated to the `receive` coroutine. This means that the `print_ints` coroutine pauses, and the `receive` coroutine starts executing.
+2. The `receive` coroutine uses `yield` to receive a value. It waits for a value to be sent to it.
+3. When a value is sent to `print_ints`, it's actually received by `receive`. The `yield from` statement takes care of passing the value from `print_ints` to `receive`.
+4. The `receive` coroutine validates the type of the received value. If the type is correct, it returns the value.
+5. The returned value becomes the result of the `yield from` expression in the `print_ints` coroutine. This means that the `val` variable in `print_ints` gets assigned the value returned by `receive`.
 
-This makes the code more readable than if we had to handle the yielding and receiving directly.
+Using `yield from` makes the code more readable than if we had to handle the yielding and receiving directly. It abstracts away the complexity of passing values between coroutines.
 
 ## Creating More Advanced Type-Checking Coroutines
 
-Let's expand our utility functions to handle more complex type validation:
+Let's expand our utility functions to handle more complex type validation. Here's how you can do it:
 
-1. Add the following functions to `cofollow.py`:
+1. Add the following functions to the `cofollow.py` file:
 
 ```python
 def receive_dict():
@@ -113,7 +113,7 @@ def process_data():
         print("Processing complete for this round.")
 ```
 
-2. Test the new coroutine in a Python shell:
+2. To test the new coroutine, open a Python shell and run the following code:
 
 ```python
 from cofollow import process_data
@@ -128,7 +128,7 @@ except AssertionError as e:
     print(f"Error: {e}")
 ```
 
-You should see output like:
+You should see output like this:
 
 ```
 Waiting for a string...
@@ -142,4 +142,4 @@ Waiting for a dictionary...
 Error: Expected type <class 'dict'>
 ```
 
-The `yield from` statement makes the code cleaner and more readable, allowing us to focus on the high-level logic rather than the details of message passing.
+The `yield from` statement makes the code cleaner and more readable. It allows us to focus on the high-level logic of our program rather than getting bogged down in the details of message passing between coroutines.

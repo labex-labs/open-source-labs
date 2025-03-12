@@ -1,10 +1,8 @@
 # Introduction
 
-In this lab, you will learn about delegating generators in Python using the `yield from` statement. This feature was introduced in Python 3.3 to simplify code that relies on generators and coroutines.
+In this lab, you will learn about delegating generators in Python using the `yield from` statement. This feature, introduced in Python 3.3, simplifies code that depends on generators and coroutines.
 
-Generators are special functions that can pause and resume execution, maintaining their state between calls. When working with generators, especially in libraries, it can be challenging to expose clean interfaces to users without revealing the low-level mechanics.
-
-The `yield from` statement provides an elegant way to delegate control to another generator, making your code more readable and maintainable.
+Generators are special functions that can pause and resume execution, retaining their state between calls. The `yield from` statement offers an elegant way to delegate control to another generator, enhancing code readability and maintainability.
 
 **Objectives:**
 

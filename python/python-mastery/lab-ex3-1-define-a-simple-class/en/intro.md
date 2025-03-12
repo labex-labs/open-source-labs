@@ -1,11 +1,5 @@
 # Introduction
 
-In this lab, you will enhance a `Stock` class that represents stock holdings by adding new methods and functionality. You will also create utility functions to read stock portfolio data from a file and display it in a formatted table.
+In this lab, you will learn to enhance a `Stock` class designed to represent stock holdings. You'll add new methods and functionality to this class, making it more versatile and useful.
 
-**Objectives:**
-
-- Add a `sell` method to the existing `Stock` class
-- Create a function to read stock portfolio data from a CSV file
-- Create a function to display portfolio data in a formatted table
-
-**Files Modified:** `stock.py`
+The objectives of this lab include adding a `sell` method to the existing `Stock` class, creating a function to read stock portfolio data from a CSV file, and another function to display the portfolio data in a formatted table. The file to be modified is `stock.py`.

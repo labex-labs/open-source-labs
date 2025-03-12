@@ -1,10 +1,12 @@
 # Understanding Generator Lifetime and Closure
 
-In this step, you will learn about the lifetime of Python generators and how they can be properly closed.
+In this step, we're going to explore the lifetime of Python generators and learn how to close them properly. Generators in Python are a special type of iterator that allow you to generate a sequence of values on-the-fly, rather than computing them all at once and storing them in memory. This can be very useful when dealing with large datasets or infinite sequences.
 
 ## What is the `follow()` Generator?
 
-Let's first examine the `follow.py` file in the project directory. This file contains a generator function called `follow()` that continuously reads lines from a file, yielding each line as it is read.
+Let's start by looking at the `follow.py` file in the project directory. This file contains a generator function named `follow()`. A generator function is defined like a normal function, but instead of using the `return` keyword, it uses `yield`. When a generator function is called, it returns a generator object, which you can iterate over to get the values it yields.
+
+The `follow()` generator function continuously reads lines from a file and yields each line as it is read. This is similar to the Unix `tail -f` command, which continuously monitors a file for new lines.
 
 Open the `follow.py` file in the WebIDE editor:
 
@@ -23,11 +25,13 @@ def follow(filename):
             yield line
 ```
 
-This generator reads a file and continuously yields new lines as they appear (similar to the Unix `tail -f` command). It runs in an infinite loop, which raises an important question: what happens when we stop using the generator or want to terminate it early?
+In this code, the `with open(filename, 'r') as f` statement opens the file in read mode and ensures that it is properly closed when the block is exited. The `f.seek(0, os.SEEK_END)` line moves the file pointer to the end of the file, so that the generator starts reading from the end. The `while True` loop continuously reads lines from the file. If the line is empty, it means there are no new lines yet, so the program sleeps for 0.1 seconds to avoid a busy wait and then continues to the next iteration. If the line is not empty, it is yielded.
+
+This generator runs in an infinite loop, which raises an important question: what happens when we stop using the generator or want to terminate it early?
 
 ## Modifying the Generator to Handle Closure
 
-Modify the `follow()` function in `follow.py` to properly handle the case when the generator is closed. Add a `try-except` block that catches the `GeneratorExit` exception:
+We need to modify the `follow()` function in `follow.py` to handle the case when the generator is closed properly. To do this, we'll add a `try-except` block that catches the `GeneratorExit` exception. The `GeneratorExit` exception is raised when a generator is closed, either by garbage collection or by calling the `close()` method.
 
 ```python
 import os
@@ -47,11 +51,13 @@ def follow(filename):
         print('Following Done')
 ```
 
+In this modified code, the `try` block contains the main logic of the generator. If a `GeneratorExit` exception is raised, the `except` block catches it and prints the message 'Following Done'. This is a simple way to perform cleanup actions when the generator is closed.
+
 Save the file after making these changes.
 
 ## Experimenting with Generator Closure
 
-Now let's perform some experiments to see how generators behave when they are garbage collected or explicitly closed.
+Now, let's conduct some experiments to see how generators behave when they are garbage collected or explicitly closed.
 
 Open a terminal and run the Python interpreter:
 
@@ -72,7 +78,7 @@ python3
 Following Done  # This message appears because of our GeneratorExit handler
 ```
 
-When the generator object is deleted, it is automatically closed, triggering our `GeneratorExit` exception handler.
+In this experiment, we first import the `follow` function from the `follow.py` file. Then we create a generator object `f` by calling `follow('stocklog.csv')`. We use the `next()` function to get the next line from the generator. Finally, we delete the generator object using the `del` statement. When the generator object is deleted, it is automatically closed, which triggers our `GeneratorExit` exception handler, and the message 'Following Done' is printed.
 
 ### Experiment 2: Explicitly Closing a Generator
 
@@ -94,7 +100,7 @@ Following Done
 ...
 ```
 
-When we explicitly call `close()` on the generator, it also triggers the `GeneratorExit` exception handler, and the generator cannot be used anymore.
+In this experiment, we create a new generator object `f` and iterate over it using a `for` loop. Inside the loop, we print each line and check if the line contains the string 'IBM'. If it does, we call the `close()` method on the generator to explicitly close it. When the generator is closed, the `GeneratorExit` exception is raised, and our exception handler prints the message 'Following Done'. After the generator is closed, if we try to iterate over it again, there will be no output because the generator is no longer active.
 
 ### Experiment 3: Breaking Out of and Resuming a Generator
 
@@ -123,7 +129,7 @@ When we explicitly call `close()` on the generator, it also triggers the `Genera
 Following Done
 ```
 
-This experiment shows that you can break out of a generator's iteration and then resume it later, as long as the generator object is not garbage collected or explicitly closed.
+In this experiment, we create a generator object `f` and iterate over it using a `for` loop. Inside the loop, we print each line and check if the line contains the string 'IBM'. If it does, we use the `break` statement to break out of the loop. Breaking out of the loop does not close the generator, so the generator is still active. We can then resume the iteration by starting a new `for` loop over the same generator object. Finally, we delete the generator object to clean up, which triggers the `GeneratorExit` exception handler.
 
 ## Key Takeaways
 

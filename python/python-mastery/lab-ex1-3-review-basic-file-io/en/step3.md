@@ -1,10 +1,10 @@
 # Processing the Data
 
-Now that we can read the file, we need to process each line to calculate the cost of each stock purchase.
+Now that we've learned how to read a file, the next step is to process each line of the file to calculate the cost of each stock purchase. This is an important part of working with data in Python, as it allows us to extract meaningful information from the file.
 
-Each line in the file has the format: `[Stock Symbol] [Number of Shares] [Price per Share]`. We need to extract the number of shares and the price per share, multiply them together, and add the result to our total cost.
+Each line in the file follows a specific format: `[Stock Symbol] [Number of Shares] [Price per Share]`. To calculate the cost of each stock purchase, we need to extract the number of shares and the price per share from each line. Then, we multiply these two values together to get the cost of that particular stock purchase. Finally, we add this cost to our running total to find the overall cost of the portfolio.
 
-Let's modify the `portfolio_cost()` function in `pcost.py`:
+Let's modify the `portfolio_cost()` function in the `pcost.py` file to achieve this. Here's the modified code:
 
 ```python
 def portfolio_cost(filename):
@@ -45,20 +45,20 @@ def portfolio_cost(filename):
     return total_cost
 ```
 
-This modified function:
+Let's break down what this modified function does step by step:
 
-1. Strips any whitespace from each line
-2. Skips empty lines
-3. Splits each line into fields using the default whitespace delimiter
-4. Extracts the number of shares and price per share
-5. Calculates the cost of this stock purchase
-6. Adds the cost to the total
-7. Prints some debug information to see what's happening
+1. **Strips whitespace**: We use the `strip()` method to remove any leading or trailing whitespace from each line. This ensures that we don't accidentally include extra spaces when we split the line into fields.
+2. **Skips empty lines**: If a line is empty (i.e., it contains only whitespace), we use the `continue` statement to skip it. This helps us avoid errors when trying to split an empty line.
+3. **Splits the line into fields**: We use the `split()` method to split each line into a list of fields based on whitespace. This allows us to access each part of the line separately.
+4. **Extracts relevant data**: We extract the number of shares and the price per share from the list of fields. The number of shares is the second field, and the price per share is the third field. We convert these values to the appropriate data types (`int` for shares and `float` for price) so that we can perform arithmetic operations on them.
+5. **Calculates the cost**: We multiply the number of shares by the price per share to calculate the cost of this stock purchase.
+6. **Adds to the total**: We add the cost of this stock purchase to the running total cost.
+7. **Prints debug information**: We print some information about each stock purchase to help us see what's happening. This includes the stock symbol, the number of shares, the price per share, and the total cost of the purchase.
 
-Let's run the code to see if it works:
+Now, let's run the code to see if it works. Open your terminal and run the following command:
 
 ```bash
 python3 ~/project/pcost.py
 ```
 
-You should now see detailed information about each stock purchase, followed by the total cost.
+After running the command, you should see detailed information about each stock purchase, followed by the total cost of the portfolio. This output will help you verify that the function is working correctly and that you've calculated the total cost accurately.

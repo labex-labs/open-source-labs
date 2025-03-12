@@ -1,12 +1,5 @@
 # Introduction
 
-In Python, everything is an object - even classes themselves. A metaclass is a class that creates other classes. This lab will introduce you to metaclasses, which provide a powerful way to customize class creation in Python.
+In this lab, you will learn about metaclasses in Python. In Python, everything, including classes, is an object. A metaclass is a class that creates other classes, offering a powerful way to customize class creation.
 
-**Objectives:**
-
-- Understand what a metaclass is
-- Create your first metaclass
-- Use your metaclass to create new classes
-- Observe how metaclasses affect class inheritance
-
-**Files Created:** `mymeta.py`
+The objectives of this lab are to understand what a metaclass is, create your first metaclass, use it to create new classes, and observe how metaclasses affect class inheritance. The file `mymeta.py` will be created during the lab.

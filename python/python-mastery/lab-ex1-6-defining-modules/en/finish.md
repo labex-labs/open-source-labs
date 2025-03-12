@@ -1,18 +1,5 @@
 # Summary
 
-In this lab, you have learned the fundamental concepts of Python modules and how to use them to organize your code:
+In this lab, you have learned the fundamental concepts of Python modules and how to use them for code organization. Modules are Python files with reusable code, and the import statement enables you to utilize code from other modules in your program. The `if __name__ == "__main__"` pattern allows files to function as both importable modules and standalone scripts.
 
-- **Modules** are Python files that contain code that can be imported and reused in other programs
-- The **import statement** allows you to use code from other modules in your program
-- Using the **if **name** == "**main**"** pattern helps you create files that work both as importable modules and standalone scripts
-- Creating your own modules helps organize code and promote reuse
-
-These concepts are foundational to writing maintainable Python code and will be essential as you develop larger applications.
-
-As you continue learning Python, remember:
-
-- Modules help organize related code
-- Importing specific items from modules keeps your namespace clean
-- The main module pattern is a Python best practice
-
-You can apply these techniques to organize your code into logical components, making it more maintainable and reusable.
+These concepts are crucial for writing maintainable Python code, especially when developing larger applications. As you continue learning Python, remember that modules help group related code, importing specific items keeps the namespace clean, and the main module pattern is a best practice. Applying these techniques will make your code more organized, maintainable, and reusable.

@@ -1,19 +1,5 @@
 # Summary
 
-In this lab, you learned how to use Python generators to create efficient data processing pipelines. You accomplished several key tasks:
+In this lab, you have learned how to use Python generators to build efficient data processing pipelines. You completed several important tasks, such as using the `follow()` function to monitor a file for new data, creating a `Ticker` class to represent stock quotes, and constructing a multi - stage processing pipeline that reads, parses, and filters CSV data, then formats and displays the results.
 
-1. Used the `follow()` function to continuously monitor a file for new data
-2. Created a structured `Ticker` class to represent stock quotes
-3. Built a multi-stage processing pipeline that:
-   - Reads and parses CSV data
-   - Converts rows into structured objects
-   - Filters data based on specific criteria
-   - Formats and displays the results in a readable form
-
-The generator-based approach provides several benefits:
-
-- Memory efficiency: data is processed on-demand rather than all at once
-- Modularity: pipeline components can be easily combined and reused
-- Simplicity: complex data flows can be expressed clearly and concisely
-
-These concepts are widely used in real-world applications for data processing, particularly when dealing with large datasets or streaming data that would be impractical to load entirely into memory.
+The generator - based approach offers multiple advantages, including memory efficiency as data is processed on - demand, modularity allowing easy combination and reuse of pipeline components, and simplicity in expressing complex data flows. These concepts are commonly applied in real - world data processing, especially for large datasets or streaming data.

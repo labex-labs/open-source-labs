@@ -1,14 +1,20 @@
 # Creating Read-Only Objects with Proxies
 
-In this step, we'll learn about proxy classes, a powerful pattern in Python that allows you to wrap an existing object and modify its behavior without changing its original implementation.
+In this step, we're going to explore proxy classes, a very useful pattern in Python. Proxy classes let you take an existing object and change how it behaves without altering its original code. This is like putting a special wrapper around an object to add new features or restrictions.
 
 ## What is a Proxy?
 
-A proxy is an object that acts as an intermediary for another object. The proxy provides the same interface as the original object but can add additional behavior such as access control, logging, or other functionality.
+A proxy is an object that stands between you and another object. It has the same set of functions and properties as the original object, but it can do extra things. For example, it can control who can access the object, keep a record of actions (logging), or add other useful features.
 
-Let's create a read-only proxy that prevents modifications to an object's attributes:
+Let's create a read - only proxy. This kind of proxy will stop you from changing the attributes of an object.
 
-1. Create a new file called `readonly_proxy.py` in the `/home/labex/project` directory with the following code:
+### Step 1: Create the Read - Only Proxy Class
+
+First, we need to create a Python file that defines our read - only proxy.
+
+1. Navigate to the `/home/labex/project` directory.
+2. Create a new file named `readonly_proxy.py` in this directory.
+3. Open the `readonly_proxy.py` file and add the following code:
 
 ```python
 class ReadonlyProxy:
@@ -25,7 +31,14 @@ class ReadonlyProxy:
         raise AttributeError("Cannot modify a read-only object")
 ```
 
-2. Now create a test file named `test_readonly.py` with the following content:
+In this code, the `ReadonlyProxy` class is defined. The `__init__` method stores the object we want to wrap. We use `self.__dict__` to store it directly to avoid calling the `__setattr__` method. The `__getattr__` method is used when we try to access an attribute of the proxy. It simply passes the request to the wrapped object. The `__setattr__` method is called when we try to change an attribute. It raises an error to prevent any changes.
+
+### Step 2: Create a Test File
+
+Now, we'll create a test file to see how our read - only proxy works.
+
+1. Create a new file named `test_readonly.py` in the same `/home/labex/project` directory.
+2. Add the following code to the `test_readonly.py` file:
 
 ```python
 from stock import Stock
@@ -63,10 +76,21 @@ except AttributeError as e:
 print(f"\nOriginal stock shares are still: {stock.shares}")
 ```
 
-3. Run the test script:
+In this test code, we first create a normal `Stock` object and print its information. Then we modify one of its attributes and print the updated information. Next, we create a read - only proxy for the `Stock` object and print its information. Finally, we try to modify the read - only proxy and expect to get an error.
+
+### Step 3: Run the Test Script
+
+After creating the proxy class and the test file, we need to run the test script to see the results.
+
+1. Open a terminal and navigate to the `/home/labex/project` directory using the following command:
 
 ```bash
 cd /home/labex/project
+```
+
+2. Run the test script using the following command:
+
+```bash
 python3 test_readonly.py
 ```
 
@@ -96,12 +120,12 @@ Original stock shares are still: 200
 
 ## How the Proxy Works
 
-The `ReadonlyProxy` class uses two special methods:
+The `ReadonlyProxy` class uses two special methods to achieve its read - only functionality:
 
-1. `__getattr__(self, name)`: This method is called when an attribute lookup fails (i.e., the attribute isn't found through normal means). Our implementation forwards these lookups to the wrapped object using `getattr()`.
+1. `__getattr__(self, name)`: This method is called when Python can't find an attribute in the normal way. In our `ReadonlyProxy` class, we use the `getattr()` function to pass the attribute access request to the wrapped object. So, when you try to access an attribute of the proxy, it will actually get the attribute from the wrapped object.
 
-2. `__setattr__(self, name, value)`: This method is called when an attribute assignment is attempted. Our implementation raises an `AttributeError` to prevent any modifications.
+2. `__setattr__(self, name, value)`: This method is called when you try to assign a value to an attribute. In our implementation, we raise an `AttributeError` to stop any changes from being made to the proxy's attributes.
 
-3. We directly modify `self.__dict__` in the `__init__` method to store the wrapped object, which avoids triggering our own `__setattr__` method.
+3. In the `__init__` method, we directly modify `self.__dict__` to store the wrapped object. This is important because if we used the normal way to assign the object, it would call the `__setattr__` method, which would raise an error.
 
-This proxy pattern allows us to add a read-only layer around any existing object without modifying its class. The proxy object exhibits all the behaviors of the wrapped object (methods, properties, etc.) but prevents modifications.
+This proxy pattern allows us to add a read - only layer around any existing object without changing its original class. The proxy object acts just like the wrapped object, but it won't let you make any modifications.

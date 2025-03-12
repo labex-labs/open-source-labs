@@ -1,10 +1,10 @@
 # Restricting Attribute Names
 
-Currently, our `Structure` class allows any attribute to be set on its instances. This could lead to errors if users misspell attribute names or try to set attributes that don't exist in the original design.
+Currently, our `Structure` class allows any attribute to be set on its instances. For beginners, this might seem convenient at first, but it can actually lead to a lot of problems. When you're working with a class, you expect certain attributes to be present and used in a specific way. If users misspell attribute names or try to set attributes that weren't part of the original design, it can cause errors that are hard to find.
 
 ## The Need for Attribute Restriction
 
-Consider this scenario:
+Let's look at a simple scenario to understand why we need to restrict attribute names. Consider the following code:
 
 ```python
 s = Stock('GOOG', 100, 490.1)
@@ -12,11 +12,13 @@ s.shares = 50      # Correct attribute name
 s.share = 60       # Typo in attribute name - creates a new attribute instead of updating
 ```
 
-The second line contains a typo - `share` instead of `shares`. Rather than raising an error, Python would simply create a new attribute called `share`, which could lead to subtle bugs.
+In the second line, there's a typo. Instead of `shares`, we wrote `share`. In Python, instead of raising an error, it will simply create a new attribute called `share`. This can lead to subtle bugs because you might think you're updating the `shares` attribute, but you're actually creating a new one. This can make your code behave unexpectedly and be very difficult to debug.
 
 ## Implementing Attribute Restriction
 
-We can override the `__setattr__` method to restrict which attributes can be set. Update your `Structure` class in `structure.py`:
+To solve this problem, we can override the `__setattr__` method. This method is called every time you try to set an attribute on an object. By overriding it, we can control which attributes can be set and which ones can't.
+
+Update your `Structure` class in `structure.py` with the following code:
 
 ```python
 def __setattr__(self, name, value):
@@ -35,15 +37,15 @@ def __setattr__(self, name, value):
         raise AttributeError(f'No attribute {name}')
 ```
 
-This method:
+Here's how this method works:
 
-1. Allows private attributes (starting with `_`) to be set
-2. Allows attributes defined in `_fields` to be set
-3. Raises an error for any other attribute name
+1. If the attribute name starts with an underscore (`_`), it's considered a private attribute. Private attributes are often used for internal purposes in a class. We allow these attributes to be set because they're part of the class's internal implementation.
+2. If the attribute name is in the `_fields` list, it means it's one of the attributes defined in the class design. We allow these attributes to be set because they're part of the expected behavior of the class.
+3. If the attribute name doesn't meet either of these conditions, we raise an `AttributeError`. This tells the user that they're trying to set an attribute that doesn't exist in the class.
 
 ## Testing Attribute Restriction
 
-Let's test our implementation. Create a file named `test_attributes.py`:
+Now that we've implemented the attribute restriction, let's test it to make sure it works as expected. Create a file named `test_attributes.py` with the following code:
 
 ```python
 # test_attributes.py
@@ -70,13 +72,13 @@ except AttributeError as e:
     print(f"Error correctly caught: {e}")
 ```
 
-Run the test:
+To run the test, open your terminal and enter the following command:
 
 ```bash
 python3 test_attributes.py
 ```
 
-Expected output:
+You should see the following output:
 
 ```
 Setting shares to 50
@@ -89,14 +91,14 @@ Trying to set an invalid attribute:
 Error correctly caught: No attribute share
 ```
 
-Great! Our class now prevents accidental attribute errors while still allowing legitimate operations.
+This output shows that our class now prevents accidental attribute errors. It allows us to set valid attributes and private attributes, but it raises an error when we try to set an invalid attribute.
 
 ## The Value of Attribute Restriction
 
-Restricting attribute names helps catch errors early by preventing:
+Restricting attribute names is very important for writing robust and maintainable code. Here's why:
 
-1. Typos in attribute names
-2. Attempts to set attributes that don't exist in the class design
-3. Accidental creation of new attributes
+1. It helps catch typos in attribute names. If you make a mistake when typing an attribute name, the code will raise an error instead of creating a new attribute. This makes it easier to find and fix errors early in the development process.
+2. It prevents attempts to set attributes that don't exist in the class design. This ensures that the class is used as intended and that the code behaves predictably.
+3. It avoids the accidental creation of new attributes. Creating new attributes can lead to unexpected behavior and make the code harder to understand and maintain.
 
-This makes our code more robust and easier to maintain.
+By restricting attribute names, we make our code more reliable and easier to work with.

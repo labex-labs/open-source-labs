@@ -1,6 +1,6 @@
 # Adding Type Conversions
 
-Our `MutInt` class now supports addition and comparison operations, but it still doesn't work with Python's built-in conversion functions like `int()` and `float()`. Let's add these capabilities.
+Our `MutInt` class currently supports addition and comparison operations. However, it doesn't work with Python's built - in conversion functions such as `int()` and `float()`. These conversion functions are very useful in Python. For example, when you want to convert a value to an integer or a floating - point number for different calculations or operations, you rely on these functions. So, let's add the capabilities to our `MutInt` class to work with them.
 
 1. Open `mutint.py` in the WebIDE and update it with the following code:
 
@@ -25,7 +25,7 @@ class MutInt:
         return str(self.value)
 
     def __repr__(self):
-        """Return a developer-friendly string representation."""
+        """Return a developer - friendly string representation."""
         return f'MutInt({self.value!r})'
 
     def __format__(self, fmt):
@@ -46,7 +46,7 @@ class MutInt:
         return self.__add__(other)
 
     def __iadd__(self, other):
-        """Handle in-place addition: self += other."""
+        """Handle in - place addition: self += other."""
         if isinstance(other, MutInt):
             self.value += other.value
             return self
@@ -66,7 +66,7 @@ class MutInt:
             return NotImplemented
 
     def __lt__(self, other):
-        """Handle less-than comparison: self < other."""
+        """Handle less - than comparison: self < other."""
         if isinstance(other, MutInt):
             return self.value < other.value
         elif isinstance(other, int):
@@ -85,13 +85,13 @@ class MutInt:
     __index__ = __int__  # Support array indexing and other operations requiring an index
 ```
 
-We've added three new methods:
+We've added three new methods to the `MutInt` class:
 
-1. `__int__()`: Called when the `int()` function is used on our object
-2. `__float__()`: Called when the `float()` function is used on our object
-3. `__index__()`: Used for operations that specifically require an integer index, like list indexing
+1. `__int__()`: This method is called when you use the `int()` function on an object of our `MutInt` class. For example, if you have a `MutInt` object `a`, and you write `int(a)`, Python will call the `__int__()` method of the `a` object.
+2. `__float__()`: Similarly, this method is called when you use the `float()` function on our `MutInt` object.
+3. `__index__()`: This method is used for operations that specifically require an integer index. For instance, when you want to access an element in a list using an index, or perform bit - length operations, Python needs an integer index.
 
-The `__index__` method is important for operations that specifically require an integer index, such as list indexing, slicing, and bit-length operations. We've set it to be the same as `__int__`, which is appropriate for our simple implementation.
+The `__index__` method is crucial for operations that demand an integer index, like list indexing, slicing, and bit - length operations. In our simple implementation, we set it to be the same as `__int__` because our `MutInt` object's value can be directly used as an integer index.
 
 2. Create a new test file called `test_conversions.py` to test these new methods:
 
@@ -179,7 +179,7 @@ class MutInt:
         return str(self.value)
 
     def __repr__(self):
-        """Return a developer-friendly string representation."""
+        """Return a developer - friendly string representation."""
         return f'MutInt({self.value!r})'
 
     def __format__(self, fmt):
@@ -200,7 +200,7 @@ class MutInt:
         return self.__add__(other)
 
     def __iadd__(self, other):
-        """Handle in-place addition: self += other."""
+        """Handle in - place addition: self += other."""
         if isinstance(other, MutInt):
             self.value += other.value
             return self
@@ -220,7 +220,7 @@ class MutInt:
             return NotImplemented
 
     def __lt__(self, other):
-        """Handle less-than comparison: self < other."""
+        """Handle less - than comparison: self < other."""
         if isinstance(other, MutInt):
             return self.value < other.value
         elif isinstance(other, int):

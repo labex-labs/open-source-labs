@@ -1,11 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn about the low-level steps involved in creating a class in Python. Understanding how classes are constructed using the `type()` function provides deeper insight into Python's object-oriented features.
 
-- Learn about the low-level steps involved in creating a class
-- Understand how classes are constructed in Python using the `type()` function
-- Implement custom class creation techniques
-
-**Files Modified:** `validate.py`, `structure.py`
-
-In this exercise, we will explore the underlying mechanics of how Python classes are created. While most developers simply use the standard class syntax, understanding the low-level process provides deeper insight into Python's object-oriented features and can lead to more powerful programming techniques.
+You will also implement custom class creation techniques. The files `validate.py` and `structure.py` will be modified during this lab, allowing you to apply your new knowledge in a practical setting.

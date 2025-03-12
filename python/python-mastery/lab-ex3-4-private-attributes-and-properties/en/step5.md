@@ -1,21 +1,22 @@
 # Reconciling Type Validation with Class Variables
 
-Our `Stock` class now has two separate mechanisms for type handling:
+In our Python programming journey, we've created a `Stock` class. This class currently has two different ways to handle data types. Understanding these mechanisms is crucial as it helps us manage and organize our code better.
 
-1. The `_types` class variable used for converting data from rows
-2. The property setters that enforce type checking
+The first mechanism is the `_types` class variable. This variable is used to convert data from rows. When we get data in a row format, the `_types` variable helps us transform that data into the appropriate types for our `Stock` class.
 
-To make the class more maintainable, we should reconcile these two mechanisms so they use the same type information. This will ensure consistency and make subclassing more reliable.
+The second mechanism is the property setters. These setters enforce type checking. Whenever we try to set a value for a property in our `Stock` class, the property setters make sure that the value is of the correct type.
+
+However, having two separate mechanisms can make our class hard to maintain. To solve this problem, we need to reconcile these two mechanisms so that they use the same type information. This way, we ensure consistency in our class, and it becomes more reliable when we create subclasses.
 
 ## Instructions:
 
-1. Open the `stock.py` file in the editor:
+1. First, we need to open the `stock.py` file in the editor. This file contains the code for our `Stock` class. To open it, run the following command in the terminal:
 
    ```bash
    code /home/labex/project/stock.py
    ```
 
-2. Modify the property setters to use the types from the `_types` class variable:
+2. Now, we'll modify the property setters in the `stock.py` file. We want them to use the types defined in the `_types` class variable. This ensures that the type checking in the property setters is consistent with the type conversion done by the `_types` variable. Here's how we modify the property setters:
 
    ```python
    @property
@@ -43,15 +44,15 @@ To make the class more maintainable, we should reconcile these two mechanisms so
        self._price = value
    ```
 
-3. Save the file.
+3. After making these changes, save the `stock.py` file. Saving the file ensures that our modifications are preserved.
 
-4. Create a test script to verify subclassing with different types:
+4. Next, we'll create a test script to verify that subclassing with different types works as expected. To create this script, run the following command in the terminal:
 
    ```bash
    code /home/labex/project/test_subclass.py
    ```
 
-5. Add the following code to `test_subclass.py`:
+5. Now, add the following code to the `test_subclass.py` file. This code creates a subclass of the `Stock` class with different types and tests both the base class and the subclass.
 
    ```python
    from stock import Stock
@@ -91,15 +92,16 @@ To make the class more maintainable, we should reconcile these two mechanisms so
        print(f"Error updating DStock price: {e}")
    ```
 
-6. Run the test script:
+6. Finally, run the test script to see the results. Run the following command in the terminal:
+
    ```bash
    python /home/labex/project/test_subclass.py
    ```
 
-You should see that the base `Stock` class accepts float values for price, while the `DStock` subclass requires `Decimal` values.
+When you run the test script, you should see that the base `Stock` class accepts float values for the price, while the `DStock` subclass requires `Decimal` values. This shows that our type reconciliation worked as expected.
 
 ### Discussion
 
-By reconciling the type information, we've made our class more consistent and enhanced its extensibility through subclassing. The property setters now use the same type information as the `from_row` method, making the class easier to maintain and extend.
+By reconciling the type information in our `Stock` class, we've made the class more consistent. Now, the property setters use the same type information as the `from_row` method. This consistency makes the class easier to maintain and extend, especially when creating subclasses.
 
-While our current `Stock` class implementation is quite complex for such a simple concept, it demonstrates important Python techniques for encapsulation and type safety. In real-world applications, you might consider using more advanced tools like dataclasses or third-party libraries to simplify this kind of implementation.
+Although our current `Stock` class implementation might seem complex for a simple concept, it demonstrates important Python techniques for encapsulation and type safety. In real-world applications, you might want to use more advanced tools like dataclasses or third - party libraries to simplify this kind of implementation. These tools can make your code more concise and easier to manage.

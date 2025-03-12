@@ -1,12 +1,12 @@
 # Practical Applications of Generator Management
 
-In this step, we will explore practical applications of the concepts we have learned about managing generators and handling exceptions in generators.
+In this step, we're going to explore how to apply the concepts we've learned about managing generators and handling exceptions in generators to real - world scenarios. Understanding these practical applications will help you write more robust and efficient Python code.
 
 ## Creating a Robust File Monitoring System
 
-Let's create a more robust version of our file monitoring system that can handle various scenarios.
+Let's build a more reliable version of our file monitoring system. This system will be able to handle different situations, such as timeouts and user requests to stop.
 
-Create a new file named `robust_follow.py` in the WebIDE editor:
+First, open the WebIDE editor and create a new file named `robust_follow.py`. Here's the code you need to write in this file:
 
 ```python
 import os
@@ -50,11 +50,13 @@ def follow(filename, timeout=None):
         print("Follow generator cleanup complete")
 ```
 
-Save the file after creating it.
+In this code, we first define a custom `TimeoutError` class. The `timeout_handler` function is used to raise this error when a timeout occurs. The `follow` function is a generator that reads a file and yields new lines. If a timeout is specified, it sets up an alarm using the `signal` module. If there's no new data in the file, it waits for a short time before trying again. The `try - except - finally` block is used to handle different exceptions and ensure proper cleanup.
+
+After writing the code, save the file.
 
 ## Experimenting with the Robust File Monitoring System
 
-Let's test our improved file monitoring system. Open a terminal and run the Python interpreter:
+Now, let's test our improved file monitoring system. Open a terminal and run the Python interpreter with the following commands:
 
 ```bash
 cd ~/project
@@ -62,6 +64,8 @@ python3
 ```
 
 ### Experiment 1: Basic Usage
+
+In the Python interpreter, we'll test the basic functionality of our `follow` generator. Here's the code to run:
 
 ```python
 >>> from robust_follow import follow
@@ -76,7 +80,11 @@ Line 2: "VZ",42.91,"6/11/2007","09:34.28",-0.16,42.95,42.91,42.78,210151
 Line 3: "HPQ",45.76,"6/11/2007","09:34.29",0.06,45.80,45.76,45.59,257169
 ```
 
+Here, we import the `follow` function from our `robust_follow.py` file. Then we create a generator object `f` that follows the `stocklog.csv` file. We use a `for` loop to iterate over the lines yielded by the generator and print the first three lines.
+
 ### Experiment 2: Using Timeout
+
+Let's see how the timeout feature works. Run the following code in the Python interpreter:
 
 ```python
 >>> # Create a generator that will time out after 3 seconds
@@ -92,9 +100,11 @@ Following timed out after 3 seconds
 Follow generator cleanup complete
 ```
 
-After about 3 seconds, the generator raises a timeout exception and performs cleanup.
+In this experiment, we create a generator with a 3 - second timeout. We process each line slowly by sleeping for 1 second between each line. After about 3 seconds, the generator raises a timeout exception, and the cleanup code in the `finally` block is executed.
 
 ### Experiment 3: Explicit Closure
+
+Let's test how the generator handles an explicit closure. Run the following code:
 
 ```python
 >>> f = follow('stocklog.csv')
@@ -111,13 +121,13 @@ Following stopped by request
 Follow generator cleanup complete
 ```
 
-When we explicitly close the generator, it handles the `GeneratorExit` exception and performs the necessary cleanup.
+Here, we create a generator and start iterating over its lines. After processing two lines, we explicitly close the generator using the `close` method. The generator then handles the `GeneratorExit` exception and performs the necessary cleanup.
 
 ## Creating a Data Processing Pipeline with Error Handling
 
-Now, let's create a simple data processing pipeline using coroutines that can handle errors at various stages.
+Next, we'll create a simple data processing pipeline using coroutines. This pipeline will be able to handle errors at different stages.
 
-Create a new file named `pipeline.py` in the WebIDE editor:
+Open the WebIDE editor and create a new file named `pipeline.py`. Here's the code to write in this file:
 
 ```python
 def consumer(func):
@@ -172,18 +182,20 @@ def follow_and_process(filename, pattern):
         output.close()
 ```
 
-Save the file after creating it.
+In this code, the `consumer` decorator is used to initialize coroutines. The `grep` coroutine filters lines that contain a specific pattern and sends them to another coroutine. The `printer` coroutine prints the received items. The `follow_and_process` function reads a file, filters its lines using the `grep` coroutine, and prints the matching lines using the `printer` coroutine. It also handles the `KeyboardInterrupt` exception and ensures proper cleanup.
+
+After writing the code, save the file.
 
 ## Testing the Data Processing Pipeline
 
-Let's test our data processing pipeline. In a terminal, run:
+Let's test our data processing pipeline. In a terminal, run the following command:
 
 ```bash
 cd ~/project
 python3 -c "from pipeline import follow_and_process; follow_and_process('stocklog.csv', 'IBM')"
 ```
 
-You should see output like:
+You should see output similar to this:
 
 ```
 PRINTER: "IBM",102.86,"6/11/2007","09:34.44",-0.21,102.87,102.86,102.77,147550
@@ -193,7 +205,9 @@ PRINTER: "IBM",102.91,"6/11/2007","09:37.31",-0.16,102.87,102.91,102.77,190859
 PRINTER: "IBM",102.95,"6/11/2007","09:39.44",-0.12,102.87,102.95,102.77,225350
 ```
 
-Press `Ctrl+C` to stop the process. You should see the message:
+This output shows that the pipeline is working correctly, filtering and printing lines that contain the "IBM" pattern.
+
+To stop the process, press `Ctrl+C`. You should see the following message:
 
 ```
 Processing stopped by user
@@ -201,7 +215,7 @@ Processing stopped by user
 
 ## Key Takeaways
 
-1. Proper exception handling in generators allows you to create robust systems that can handle errors gracefully.
-2. You can use techniques like timeouts to prevent generators from running indefinitely.
-3. Generators and coroutines can form powerful data processing pipelines where errors can be propagated and handled at the appropriate level.
-4. The `finally` block in generators ensures cleanup operations are performed, regardless of how the generator terminates.
+1. Proper exception handling in generators allows you to create robust systems that can handle errors gracefully. This means your programs won't crash unexpectedly when something goes wrong.
+2. You can use techniques like timeouts to prevent generators from running indefinitely. This helps manage system resources and ensures your program doesn't get stuck in an infinite loop.
+3. Generators and coroutines can form powerful data processing pipelines where errors can be propagated and handled at the appropriate level. This makes it easier to build complex data processing systems.
+4. The `finally` block in generators ensures cleanup operations are performed, regardless of how the generator terminates. This helps maintain the integrity of your program and prevents resource leaks.

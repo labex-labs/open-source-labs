@@ -1,10 +1,10 @@
 # Creating Coroutine Pipeline Components
 
-In this step, we'll create more specialized coroutines that process stock data. Each coroutine will perform a specific task in our processing pipeline.
+In this step, we're going to create more specialized coroutines for processing stock data. A coroutine is a special type of function that can pause and resume its execution, which is very useful for building data processing pipelines. Each coroutine we create will perform a specific task in our overall processing pipeline.
 
-1. Create a new file named `coticker.py` in the `/home/labex/project` directory.
+1. First, you need to create a new file. Navigate to the `/home/labex/project` directory and create a file named `coticker.py`. This file will hold all the code for our coroutine - based data processing.
 
-2. First, add the following code to import necessary modules and define the basic structure:
+2. Now, let's start writing code in the `coticker.py` file. We'll first import the necessary modules and define the basic structure. Modules are pre - written code libraries that provide useful functions and classes. The following code does just that:
 
 ```python
 # coticker.py
@@ -26,7 +26,7 @@ from tableformat import create_formatter
 import csv
 ```
 
-3. You'll notice errors about `String()`, `Float()`, and `Integer()`. Let's fix those by adding the required imports at the top of the file:
+3. When you look at the code above, you'll notice that there are errors related to `String()`, `Float()`, and `Integer()`. These are classes that we need to import. So, we'll add the required imports at the top of the file. This way, Python knows where to find these classes. Here's the updated code:
 
 ```python
 # coticker.py
@@ -48,7 +48,7 @@ from tableformat import create_formatter
 import csv
 ```
 
-4. Now, add the coroutine components that will form our pipeline:
+4. Next, we'll add the coroutine components that will form our data processing pipeline. Each coroutine has a specific job in the pipeline. Here's the code to add these coroutines:
 
 ```python
 @consumer
@@ -85,14 +85,14 @@ def ticker(fmt, fields):
         formatter.row(row)
 ```
 
-5. Let's understand each coroutine:
+5. Let's understand what each of these coroutines does:
 
-   - `to_csv`: Converts raw text lines into parsed CSV rows
-   - `create_ticker`: Creates Ticker objects from CSV rows
-   - `negchange`: Filters for stocks with negative price changes
-   - `ticker`: Formats and displays the ticker data
+   - `to_csv`: Its job is to convert raw text lines into parsed CSV rows. This is important because our data is initially in text format, and we need to break it into structured CSV data.
+   - `create_ticker`: This coroutine takes the CSV rows and creates `Ticker` objects from them. `Ticker` objects represent the stock data in a more organized way.
+   - `negchange`: It filters the `Ticker` objects. It only passes on the stocks that have negative price changes. This helps us focus on the stocks that are losing value.
+   - `ticker`: This coroutine formats and displays the ticker data. It uses a formatter to present the data in a nice, readable table.
 
-6. Finally, add the main program code that connects these components together:
+6. Finally, we need to add the main program code that connects all these components together. This code will set up the data flow through the pipeline. Here's the code:
 
 ```python
 if __name__ == '__main__':
@@ -111,14 +111,14 @@ if __name__ == '__main__':
     follow('stocklog.csv', csv_parser)
 ```
 
-7. Save the file and run it from the terminal:
+7. After writing all the code, save the `coticker.py` file. Then, open the terminal and run the following commands. The `cd` command changes the directory to where our file is located, and the `python3` command runs our Python script:
 
 ```bash
 cd /home/labex/project
 python3 coticker.py
 ```
 
-8. You should see a formatted table showing stocks with negative price changes. The output will look like:
+8. If everything goes well, you should see a formatted table in the terminal. This table shows stocks with negative price changes. The output will look something like this:
 
 ```
       name      price     change
@@ -130,16 +130,16 @@ python3 coticker.py
       AAPL     102.50      -0.06
 ```
 
-The actual values may vary depending on the generated stock data.
+Keep in mind that the actual values in the table may vary depending on the generated stock data.
 
 ## Understanding the Pipeline Flow
 
-The key aspect of this program is how data flows through the coroutines:
+The most important part of this program is how data flows through the coroutines. Let's break it down step by step:
 
-1. The `follow` function reads lines from the `stocklog.csv` file
-2. Each line is sent to `csv_parser` which parses it into CSV fields
-3. The CSV data is sent to `tick_creator` which creates Ticker objects
-4. The Ticker objects are sent to `neg_filter` which only passes those with negative changes
-5. Finally, the filtered Ticker objects are sent to the `ticker` coroutine which formats and displays them
+1. The `follow` function starts by reading lines from the `stocklog.csv` file. This is our data source.
+2. Each line that is read is then sent to the `csv_parser` coroutine. The `csv_parser` takes the raw text line and parses it into CSV fields.
+3. The parsed CSV data is then sent to the `tick_creator` coroutine. This coroutine creates `Ticker` objects from the CSV rows.
+4. The `Ticker` objects are then sent to the `neg_filter` coroutine. This coroutine checks each `Ticker` object. If the stock has a negative price change, it passes the object on; otherwise, it discards it.
+5. Finally, the filtered `Ticker` objects are sent to the `ticker` coroutine. The `ticker` coroutine formats the data and displays it in a table.
 
-This pipeline architecture allows each component to focus on a single task, making the code more modular and easier to maintain.
+This pipeline architecture is very useful because it allows each component to focus on a single task. This makes the code more modular, which means it's easier to understand, modify, and maintain.

@@ -2,6 +2,8 @@
 
 Let's start by examining a simple dataset about stock holdings. In this step, you'll learn how to read data from a CSV file and store it in a structured format using dictionaries.
 
+A CSV (Comma-Separated Values) file is a common way to store tabular data, where each line represents a row and values are separated by commas. Dictionaries in Python are a powerful data structure that allow you to store key - value pairs. By using dictionaries, we can organize the data from the CSV file in a more meaningful way.
+
 First, create a new Python file in the WebIDE by following these steps:
 
 1. Click on the "New File" button in the WebIDE
@@ -29,14 +31,14 @@ def read_portfolio(filename):
     return portfolio
 ```
 
-This code defines a function `read_portfolio` that:
+This code defines a function `read_portfolio` that performs several important tasks:
 
-1. Opens a CSV file
-2. Skips the header row
-3. Creates a dictionary for each data row with keys for 'name', 'shares', and 'price'
-4. Converts the shares to integers and prices to floating-point numbers
-5. Adds each dictionary to a list
-6. Returns the complete list of dictionaries
+1. It opens a CSV file specified by the `filename` parameter. The `open` function is used to access the file, and the `with` statement ensures that the file is properly closed after we're done reading it.
+2. It skips the header row. The header row usually contains the names of the columns in the CSV file. We use `next(rows)` to move the iterator to the next row, effectively skipping the header.
+3. For each data row, it creates a dictionary. The keys of the dictionary are 'name', 'shares', and 'price'. These keys will help us access the data in a more intuitive way.
+4. It converts the shares to integers and prices to floating - point numbers. This is important because the data read from the CSV file is initially in string format, and we need numerical values for calculations.
+5. It adds each dictionary to a list called `portfolio`. This list will contain all the records from the CSV file.
+6. Finally, it returns the complete list of dictionaries.
 
 Now let's create a file for the transit data. Create a new file called `readrides.py` with this content:
 
@@ -68,6 +70,8 @@ def read_rides_as_dicts(filename):
     return records
 ```
 
+This `read_rides_as_dicts` function works in a similar way to the `read_portfolio` function. It reads a CSV file related to CTA bus data, skips the header row, creates a dictionary for each data row, and stores these dictionaries in a list.
+
 Now, let's test the `read_portfolio` function by opening a terminal in the WebIDE:
 
 1. Click on the "Terminal" menu and select "New Terminal"
@@ -88,10 +92,10 @@ Now, let's test the `read_portfolio` function by opening a terminal in the WebID
  {'name': 'IBM', 'price': 70.44, 'shares': 100}]
 ```
 
-The `pprint` function (pretty print) displays the data in a more readable format. Each item in the list is a dictionary representing one stock holding with:
+The `pprint` function (pretty print) is used here to display the data in a more readable format. Each item in the list is a dictionary representing one stock holding. The dictionary has the following keys:
 
-- A stock symbol (`name`)
-- Number of shares owned (`shares`)
-- Purchase price per share (`price`)
+- A stock symbol (`name`): This is the abbreviation used to identify the stock.
+- Number of shares owned (`shares`): This indicates how many shares of the stock are held.
+- Purchase price per share (`price`): This is the price at which each share was bought.
 
-Notice that some stocks like 'MSFT' and 'IBM' appear multiple times - these represent different purchases of the same stock.
+Notice that some stocks like 'MSFT' and 'IBM' appear multiple times. These represent different purchases of the same stock, which might have been made at different times and prices.

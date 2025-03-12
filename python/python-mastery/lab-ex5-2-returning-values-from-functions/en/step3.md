@@ -1,18 +1,20 @@
 # Working with Futures for Concurrent Programming
 
-When you need to run functions concurrently (in parallel), Python provides mechanisms like threads and processes. However, there is a challenge: how do you get the return value from a function running in another thread?
+In Python, when you have a need to run functions at the same time, or concurrently, the language offers useful tools like threads and processes. But here's a common problem you'll face: how can you get the value that a function returns when it's running in a different thread? This is where the concept of a `Future` becomes very important.
 
-This is where the concept of `Future` comes in. A `Future` represents a result that will be available at some point in the future.
+A `Future` is like a placeholder for a result that will be available later. It's a way to represent a value that a function will produce in the future, even before the function has finished running. Let's understand this concept better with a simple example.
 
-Let's explore this concept with a simple example:
+### Step 1: Create a New File
 
-1. Create a new file called `futures_demo.py`:
+First, you need to create a new Python file. We'll call it `futures_demo.py`. You can use the following command in your terminal to create this file:
 
 ```
 touch ~/project/futures_demo.py
 ```
 
-2. Add the following code:
+### Step 2: Add Basic Function Code
+
+Now, open the `futures_demo.py` file and add the following Python code. This code defines a simple function and shows how a normal function call works.
 
 ```python
 import time
@@ -32,13 +34,17 @@ result = worker(2, 3)
 print(f"Result: {result}")
 ```
 
-3. Save and run this file to see how a normal function call works:
+In this code, the `worker` function takes two numbers, adds them together, but first it simulates a time - consuming task by pausing for 5 seconds. When you call this function in a normal way, the program waits for the function to finish and then gets the return value.
+
+### Step 3: Run the Basic Code
+
+Save the file and run it using the following command in your terminal:
 
 ```
 python ~/project/futures_demo.py
 ```
 
-You should see the function executing and then returning the result:
+You should see the output like this:
 
 ```
 --- Part 1: Normal function call ---
@@ -47,7 +53,11 @@ Work completed
 Result: 5
 ```
 
-4. Now let's see what happens when we run the function in a separate thread. Add the following code to the file:
+This shows that a normal function call waits for the function to finish and then returns the result.
+
+### Step 4: Run the Function in a Separate Thread
+
+Next, let's see what happens when we run the `worker` function in a separate thread. Add the following code to the `futures_demo.py` file:
 
 ```python
 # Part 2: Running in a separate thread (problem: no way to get result)
@@ -59,15 +69,21 @@ t.join()  # Wait for the thread to complete
 print("Worker thread finished, but we don't have its return value!")
 ```
 
-5. Save and run the file again:
+Here, we're using the `threading.Thread` class to start the `worker` function in a new thread. The main thread doesn't wait for the `worker` function to finish and continues its execution. However, when the `worker` thread finishes, we have no easy way to get the return value.
+
+### Step 5: Run the Threaded Code
+
+Save the file again and run it using the same command:
 
 ```
 python ~/project/futures_demo.py
 ```
 
-Notice that we can't access the return value from the thread.
+You'll notice that the main thread continues, the worker thread runs, but we can't access the return value of the `worker` function.
 
-6. Now, let's use a `Future` to solve this problem. Add the following code:
+### Step 6: Use a `Future` Manually
+
+To solve the problem of getting the return value from a thread, we can use a `Future` object. Add the following code to the `futures_demo.py` file:
 
 ```python
 # Part 3: Using a Future to get the result
@@ -92,13 +108,21 @@ result = fut.result()  # This will wait until set_result is called
 print(f"Got the result: {result}")
 ```
 
-7. Save and run the file again. You'll see how we can now get the return value:
+In this code, we create a `Future` object and pass it to a new function `do_work_with_future`. This function calls the `worker` function and then sets the result in the `Future` object. The main thread can then use the `result()` method of the `Future` object to get the result when it's available.
+
+### Step 7: Run the Code with `Future`
+
+Save the file and run it again:
 
 ```
 python ~/project/futures_demo.py
 ```
 
-8. Finally, let's see how the `ThreadPoolExecutor` makes this easier. Add the following code:
+Now you'll see that we can successfully get the return value from the function running in the thread.
+
+### Step 8: Use `ThreadPoolExecutor`
+
+The `ThreadPoolExecutor` class in Python makes working with concurrent tasks even easier. Add the following code to the `futures_demo.py` file:
 
 ```python
 # Part 4: Using ThreadPoolExecutor (easier way)
@@ -116,23 +140,27 @@ with ThreadPoolExecutor() as executor:
     print(f"Final result: {result}")
 ```
 
-9. Save and run the complete file:
+The `ThreadPoolExecutor` takes care of creating and managing the `Future` objects for you. You just need to submit the function and its arguments, and it will return a `Future` object that you can use to get the result.
+
+### Step 9: Run the Complete Code
+
+Save the file one last time and run it:
 
 ```
 python ~/project/futures_demo.py
 ```
 
-**Explanation:**
+### Explanation
 
-1. **Normal Function Call**: The function runs and returns a value directly.
-2. **Thread Problem**: When running a function in a separate thread, there's no built-in way to return the value.
-3. **Manual Future**: We create a `Future` object and pass it to the thread, which sets the result.
-4. **ThreadPoolExecutor**: This simplifies working with concurrent tasks by handling the `Future` creation and management for us.
+1. **Normal Function Call**: When you call a function in the normal way, the program waits for the function to finish and directly gets the return value.
+2. **Thread Problem**: Running a function in a separate thread has a drawback. There's no built - in way to get the return value of the function running in that thread.
+3. **Manual Future**: By creating a `Future` object and passing it to the thread, we can set the result in the `Future` and then get the result from the main thread.
+4. **ThreadPoolExecutor**: This class simplifies concurrent programming. It handles the creation and management of `Future` objects for you, making it easier to run functions concurrently and get their return values.
 
 `Future` objects have several useful methods:
 
-- `result()`: Get the result (waits if not ready)
-- `done()`: Check if the computation is complete
-- `add_done_callback()`: Register a function to call when the result is ready
+- `result()`: This method is used to get the result of the function. If the result is not ready yet, it will wait until it is.
+- `done()`: You can use this method to check if the computation of the function is complete.
+- `add_done_callback()`: This method allows you to register a function that will be called when the result is ready.
 
-This pattern is crucial for concurrent programming where you need to get results from functions running in parallel.
+This pattern is very important in concurrent programming, especially when you need to get results from functions running in parallel.

@@ -1,8 +1,12 @@
 # Creating the Basic CSV Reader Functions
 
-Let's start by creating a `reader.py` file with two basic functions for reading CSV data. Follow these steps:
+Let's start by creating a `reader.py` file with two basic functions for reading CSV data. These functions will help us handle CSV files in different ways, such as converting the data into dictionaries or class instances.
 
-1. Open up the code editor and create a new file called `reader.py` in the `/home/labex/project` directory.
+First, we need to understand what a CSV file is. CSV stands for Comma-Separated Values. It's a simple file format used to store tabular data, where each line represents a row, and the values in each row are separated by commas.
+
+Now, let's create the `reader.py` file. Follow these steps:
+
+1. Open up the code editor and create a new file called `reader.py` in the `/home/labex/project` directory. This is where we'll write our functions to read CSV data.
 
 2. Add the following code to `reader.py`:
 
@@ -53,6 +57,10 @@ def read_csv_as_instances(filename, cls):
     return records
 ```
 
+In the `read_csv_as_dicts` function, we first open the CSV file using the `open` function. Then, we use the `csv.reader` to read the file line by line. The `next(rows)` statement reads the first line of the file, which usually contains the headers. After that, we iterate over the remaining rows. For each row, we create a dictionary where the keys are the headers and the values are the corresponding values in the row, with optional type conversion using the `types` list.
+
+The `read_csv_as_instances` function is similar, but instead of creating dictionaries, it creates instances of a given class. It assumes that the class has a static method called `from_row` that can create an instance from a row of data.
+
 3. Let's test these functions to make sure they work correctly. Create a new file called `test_reader.py` with the following code:
 
 ```python
@@ -71,6 +79,8 @@ portfolio_instances = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 print("\nFirst portfolio item as Stock instance:", portfolio_instances[0])
 print("Total items:", len(portfolio_instances))
 ```
+
+In the `test_reader.py` file, we import the `reader` module that we just created and the `stock` module. We then test the two functions by calling them with a sample CSV file named `portfolio.csv`. We print the first item and the total number of items in the portfolio to verify that the functions are working as expected.
 
 4. Run the test script from the terminal:
 

@@ -1,19 +1,5 @@
 # Summary
 
-In this lab, you have explored the behavior of inheritance in Python and learned several important concepts:
+In this lab, you have learned about the behavior of inheritance in Python and grasped several key concepts. You explored the difference between single and multiple inheritance, understood how the `super()` function navigates the Method Resolution Order (MRO), learned to implement cooperative multiple inheritance, and applied inheritance to build a practical validation system.
 
-1. The difference between single and multiple inheritance
-2. How the `super()` function navigates the Method Resolution Order (MRO)
-3. How to implement cooperative multiple inheritance
-4. How to apply inheritance to build a practical validation system
-
-You created a flexible validation framework using inheritance and applied it to a real-world example with the `Stock` class. This demonstrates how inheritance can be used to create reusable, composable components.
-
-The key takeaways from this lab are:
-
-- In single inheritance, `super()` calls the next method in the inheritance chain
-- In multiple inheritance, `super()` follows the Method Resolution Order defined by the child class
-- Multiple inheritance allows you to compose functionality from different sources
-- Property setters can use validators to ensure that object attributes have valid values
-
-These concepts are fundamental to object-oriented programming in Python and are used extensively in real-world applications.
+You also created a flexible validation framework using inheritance and applied it to a real - world example with the `Stock` class, which shows how inheritance can create reusable and composable components. The key takeaways include how `super()` works in single and multiple inheritance, the ability of multiple inheritance to compose functionality, and the use of property setters with validators. These concepts are fundamental to Python's object - oriented programming and widely used in real - world applications.

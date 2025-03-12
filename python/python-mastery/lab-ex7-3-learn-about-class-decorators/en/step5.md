@@ -1,18 +1,18 @@
 # Adding Method Argument Validation
 
-Let's take our validation one step further by automatically validating method arguments. The `validate.py` file already includes a `@validated` decorator that can check function arguments against their annotations.
+In Python, validating data is an important part of writing robust code. In this section, we'll take our validation one step further by automatically validating method arguments. The `validate.py` file already includes a `@validated` decorator. A decorator in Python is a special function that can modify another function. The `@validated` decorator here can check function arguments against their annotations. Annotations in Python are a way to add metadata to function parameters and return values.
 
 Let's modify our code to apply this decorator to methods with annotations:
 
-1. Open the `validate.py` file to review the `validated` decorator:
+1. First, we need to understand how the `validated` decorator works. Open the `validate.py` file to review it:
 
 ```bash
 code ~/project/validate.py
 ```
 
-The `validated` decorator uses function annotations to validate arguments. It checks each argument against its annotation type before allowing the function to run.
+The `validated` decorator uses function annotations to validate arguments. Before allowing the function to run, it checks each argument against its annotation type. For example, if an argument is annotated as an integer, the decorator will make sure the passed value is indeed an integer.
 
-2. Now, let's modify the `validate_attributes` function in `structure.py` to wrap annotated methods with the `validated` decorator:
+2. Now, we'll modify the `validate_attributes` function in `structure.py` to wrap annotated methods with the `validated` decorator. This means that any method with annotations in the class will have its arguments automatically validated. Open the `structure.py` file:
 
 ```bash
 code ~/project/structure.py
@@ -53,15 +53,15 @@ def validate_attributes(cls):
     return cls
 ```
 
-This updated function now:
+This updated function now does the following:
 
-1. Processes validator descriptors as before
-2. Finds all methods with annotations
-3. Applies the `@validated` decorator to those methods
+1. It processes validator descriptors as before. Validator descriptors are used to define validation rules for class attributes.
+2. It finds all methods with annotations in the class. Annotations are added to method parameters to specify the expected type of the argument.
+3. It applies the `@validated` decorator to those methods. This ensures that the arguments passed to these methods are validated according to their annotations.
 
-4. Save the file.
+4. Save the file after making these changes. Saving the file is important because it makes sure that our modifications are stored and can be used later.
 
-5. Now, update the `sell` method in the `Stock` class to include an annotation:
+5. Now, let's update the `sell` method in the `Stock` class to include an annotation. Annotations help in specifying the expected type of the argument, which will be used by the `@validated` decorator for validation. Open the `stock.py` file:
 
 ```bash
 code ~/project/stock.py
@@ -88,9 +88,9 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-The important change is adding `: PositiveInteger` to the `nshares` parameter. This tells Python (and our `@validated` decorator) to validate this argument using the `PositiveInteger` validator.
+The important change is adding `: PositiveInteger` to the `nshares` parameter. This tells Python (and our `@validated` decorator) to validate this argument using the `PositiveInteger` validator. So, when we call the `sell` method, the `nshares` argument must be a positive integer.
 
-7. Run the tests again to verify everything still works:
+7. Run the tests again to verify everything still works. Running tests is a good way to make sure that our changes haven't broken any existing functionality.
 
 ```bash
 cd ~/project
@@ -107,7 +107,7 @@ Ran 9 tests in 0.001s
 OK
 ```
 
-8. Let's test our new argument validation:
+8. Let's test our new argument validation. We'll try to call the `sell` method with valid and invalid arguments to see if the validation works as expected.
 
 ```bash
 cd ~/project
@@ -122,13 +122,13 @@ Error: Bad Arguments
   nshares: must be >= 0
 ```
 
-This shows that our method argument validation is working! The first call to `sell(25)` succeeds, but the second call to `sell(-25)` fails because `-25` is not a positive integer.
+This shows that our method argument validation is working! The first call to `sell(25)` succeeds because `25` is a positive integer. But the second call to `sell(-25)` fails because `-25` is not a positive integer.
 
 You've now implemented a complete system for:
 
-1. Validating class attributes using descriptors
-2. Automatically collecting field information using class decorators
-3. Converting row data to instances
-4. Validating method arguments using annotations
+1. Validating class attributes using descriptors. Descriptors are used to define validation rules for class attributes.
+2. Automatically collecting field information using class decorators. Class decorators can modify the behavior of a class, like collecting field information.
+3. Converting row data to instances. This is useful when working with data from external sources.
+4. Validating method arguments using annotations. Annotations help in specifying the expected type of the argument for validation.
 
 This demonstrates the power of combining descriptors and decorators in Python to create expressive, self-validating classes.

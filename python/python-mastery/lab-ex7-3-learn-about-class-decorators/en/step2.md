@@ -1,16 +1,18 @@
 # Creating a Class Decorator for Validation
 
-While our implementation from Step 1 works, there's redundancy in having to specify both the `_fields` tuple and the descriptor attributes. We can improve this by creating a class decorator that automatically extracts field information from the descriptors.
+In the previous step, our implementation worked, but there was a redundancy. We had to specify both the `_fields` tuple and the descriptor attributes. This is not very efficient, and we can improve it. In Python, class decorators are a powerful tool that can help us simplify this process. A class decorator is a function that takes a class as an argument, modifies it in some way, and then returns the modified class. By using a class decorator, we can automatically extract field information from the descriptors, which will make our code cleaner and more maintainable.
 
-Class decorators are functions that take a class as an argument, modify it, and return the modified class. Let's create one to simplify our code:
+Let's create a class decorator to simplify our code. Here are the steps you need to follow:
 
-1. Open the `structure.py` file:
+1. First, open the `structure.py` file. You can use the following command in the terminal:
 
 ```bash
 code ~/project/structure.py
 ```
 
-2. Add the following code at the top of the file (after any imports):
+This command will open the `structure.py` file in your code editor.
+
+2. Next, add the following code at the top of the `structure.py` file, right after any import statements. This code defines our class decorator:
 
 ```python
 from validate import Validator
@@ -34,22 +36,21 @@ def validate_attributes(cls):
     return cls
 ```
 
-This decorator:
+Let's break down what this decorator does:
 
-- Finds all `Validator` instances in the class
-- Automatically builds the `_fields` list from their names
-- Calls `create_init()` to generate the `__init__` method
-- Returns the modified class
+- It first creates an empty list called `validators`. Then, it iterates over all the attributes of the class using `vars(cls).items()`. If an attribute is an instance of the `Validator` class, it adds that attribute to the `validators` list.
+- After that, it sets the `_fields` attribute of the class. It creates a list of names from the validators in the `validators` list and assigns it to `cls._fields`.
+- Finally, it calls the `create_init()` method of the class to generate the `__init__` method, and then returns the modified class.
 
-3. Save the file.
+3. Once you've added the code, save the `structure.py` file. Saving the file ensures that your changes are preserved.
 
-4. Now, let's modify our `stock.py` file to use this decorator:
+4. Now, we need to modify our `stock.py` file to use this new decorator. Open the `stock.py` file using the following command:
 
 ```bash
 code ~/project/stock.py
 ```
 
-5. Update the `stock.py` file to use the decorator:
+5. Update the `stock.py` file to use the `validate_attributes` decorator. Replace the existing code with the following:
 
 ```python
 # stock.py
@@ -71,22 +72,22 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-Notice how we've:
+Notice the changes we've made:
 
-- Added the `@validate_attributes` decorator to the `Stock` class
-- Removed the explicit `_fields` declaration
-- Removed the call to `Stock.create_init()`
+- We added the `@validate_attributes` decorator right above the `Stock` class definition. This tells Python to apply the `validate_attributes` decorator to the `Stock` class.
+- We removed the explicit `_fields` declaration because the decorator will handle it automatically.
+- We also removed the call to `Stock.create_init()` because the decorator takes care of creating the `__init__` method.
 
-The class is now simpler and cleaner, as the decorator handles these details automatically.
+As a result, the class is now simpler and cleaner. The decorator takes care of all the details that we used to handle manually.
 
-6. Run the tests again to verify everything still works:
+6. After making these changes, we need to verify that everything still works as expected. Run the tests again using the following commands:
 
 ```bash
 cd ~/project
 python3 teststock.py
 ```
 
-You should see all tests passing:
+If everything is working correctly, you should see the following output:
 
 ```
 .........
@@ -96,18 +97,20 @@ Ran 9 tests in 0.001s
 OK
 ```
 
-Let's test our Stock class interactively:
+This output indicates that all the tests have passed successfully.
+
+Let's also test our `Stock` class interactively. Run the following command in the terminal:
 
 ```bash
 cd ~/project
 python3 -c "from stock import Stock; s = Stock('GOOG', 100, 490.1); print(s); print(f'Cost: {s.cost}')"
 ```
 
-Output:
+You should see the following output:
 
 ```
 Stock('GOOG', 100, 490.1)
 Cost: 49010.0
 ```
 
-Great! You've successfully implemented a class decorator that simplifies our code by automatically handling field declarations and initialization.
+Great! You've successfully implemented a class decorator that simplifies our code by automatically handling field declarations and initialization. This makes our code more efficient and easier to maintain.

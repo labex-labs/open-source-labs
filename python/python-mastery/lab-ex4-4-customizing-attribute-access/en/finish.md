@@ -1,18 +1,5 @@
 # Summary
 
-In this lab, you learned about powerful Python mechanisms for customizing attribute access and behavior:
+In this lab, you have learned about powerful Python mechanisms for customizing attribute access and behavior. You explored how to use `__setattr__` to control which attributes can be set on an object, enabling controlled access to object properties. Additionally, you implemented a read - only proxy to wrap existing objects, preventing modifications while preserving their functionality.
 
-1. **Custom Attribute Control**: You learned how to use `__setattr__` to restrict which attributes can be set on an object, providing controlled access to object properties.
-
-2. **Proxy Pattern**: You implemented a read-only proxy that wraps existing objects and prevents modifications while maintaining their functionality.
-
-3. **Delegation vs. Inheritance**: You explored delegation as an alternative to inheritance for code reuse and customization. You saw how to use `__getattr__` to forward method calls to a wrapped object.
-
-These techniques provide you with flexible ways to control object behavior beyond standard inheritance. They're particularly useful for:
-
-- Creating controlled interfaces to existing objects
-- Implementing access restrictions or validation
-- Adding cross-cutting behaviors like logging or monitoring
-- Composing behavior from multiple sources
-
-Understanding these patterns allows you to write more maintainable and flexible Python code that leverages the full power of Python's object model.
+You also delved into the difference between delegation and inheritance for code reuse and customization. By using `__getattr__`, you learned to forward method calls to a wrapped object. These techniques offer flexible ways to control object behavior beyond standard inheritance, useful for creating controlled interfaces, implementing access restrictions, adding cross - cutting behaviors, and composing behavior from multiple sources. Understanding these patterns helps you write more maintainable and flexible Python code.

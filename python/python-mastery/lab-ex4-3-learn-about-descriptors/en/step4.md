@@ -1,8 +1,10 @@
 # Improving Descriptor Implementation
 
-In this step, we'll improve our descriptor implementation by removing redundant name specifications. This is done using the `__set_name__` method, a feature introduced in Python 3.6.
+In this step, we're going to enhance our descriptor implementation. You might have noticed that in some cases, we've been specifying names redundantly. This can make our code a bit messy and harder to maintain. To solve this problem, we'll use the `__set_name__` method, a useful feature introduced in Python 3.6.
 
-Update your `validate.py` file to include the `__set_name__` method:
+The `__set_name__` method is called automatically when the class is defined. Its main job is to set the name of the descriptor for us, so we don't have to do it manually every time. This will make our code cleaner and more efficient.
+
+Now, let's update your `validate.py` file to include the `__set_name__` method. Here's how the updated code will look:
 
 ```python
 # validate.py
@@ -59,7 +61,9 @@ class PositiveFloat(Validator):
         return float(value)
 ```
 
-Now we can create an improved version of our `Stock` class that doesn't require redundant name specifications:
+In the code above, the `__set_name__` method in the `Validator` class checks if the `name` attribute is `None`. If it is, it sets the `name` to the actual attribute name used in the class definition. This way, we don't have to specify the name explicitly when creating instances of the descriptor classes.
+
+Now that we've updated the `validate.py` file, we can create an improved version of our `Stock` class. This new version won't require us to specify the names redundantly. Here's the code for the improved `Stock` class:
 
 ```python
 # improved_stock.py
@@ -86,14 +90,16 @@ class Stock:
         return f'Stock({self.name!r}, {self.shares!r}, {self.price!r})'
 ```
 
-Let's test our improved Stock class:
+In this `Stock` class, we simply create instances of the `String`, `PositiveInteger`, and `PositiveFloat` descriptor classes without specifying the names. The `__set_name__` method in the `Validator` class will take care of setting the names automatically.
+
+Let's test our improved `Stock` class. First, open your terminal and navigate to the project directory. Then, run the `improved_stock.py` file in interactive mode. Here are the commands to do that:
 
 ```bash
 cd ~/project
 python3 -i improved_stock.py
 ```
 
-Try these commands:
+Once you're in the interactive Python session, you can try the following commands to test the functionality of the `Stock` class:
 
 ```python
 s = Stock('GOOG', 100, 490.10)
@@ -118,6 +124,8 @@ except ValueError as e:
 
 exit()
 ```
+
+These commands create an instance of the `Stock` class, print its attributes, change the value of an attribute, and then try to set invalid values to see if the appropriate errors are raised.
 
 The `__set_name__` method automatically sets the descriptor's name when the class is defined. This makes your code cleaner and less redundant, as you no longer need to specify the attribute name twice.
 

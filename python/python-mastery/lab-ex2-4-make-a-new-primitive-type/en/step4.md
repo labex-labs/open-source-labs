@@ -1,6 +1,6 @@
 # Implementing Comparison Operations
 
-Currently, our `MutInt` objects cannot be compared with each other or with regular integers. Let's add comparison functionality by implementing the special methods for comparison operations.
+Currently, our `MutInt` objects cannot be compared with each other or with regular integers. In Python, comparison operations like `==`, `<`, `<=`, `>`, `>=` are very useful when working with objects. They allow us to determine relationships between different objects, which is crucial in many programming scenarios such as sorting, filtering, and conditional statements. So, let's add comparison functionality to our `MutInt` class by implementing the special methods for comparison operations.
 
 1. Open `mutint.py` in the WebIDE and update it with the following code:
 
@@ -77,13 +77,11 @@ class MutInt:
 
 We've added several key improvements:
 
-1. Import and use the `@total_ordering` decorator from the `functools` module.
-2. Add the `__eq__()` method to handle equality comparisons (`==`).
-3. Add the `__lt__()` method to handle less-than comparisons (`<`).
+1. Import and use the `@total_ordering` decorator from the `functools` module. The `@total_ordering` decorator is a powerful tool in Python. It helps us save a lot of time and effort when implementing comparison methods for a class. Instead of manually defining all six comparison methods (`__eq__`, `__ne__`, `__lt__`, `__le__`, `__gt__`, `__ge__`), we only need to define `__eq__` and one other comparison method (in our case, `__lt__`). The decorator will then automatically generate the remaining four comparison methods for us.
+2. Add the `__eq__()` method to handle equality comparisons (`==`). This method is used to check if two `MutInt` objects or a `MutInt` object and an integer have the same value.
+3. Add the `__lt__()` method to handle less-than comparisons (`<`). This method is used to determine if one `MutInt` object or a `MutInt` object compared to an integer has a smaller value.
 
-The `@total_ordering` decorator is a special helper that automatically provides all comparison methods (`__le__`, `__gt__`, `__ge__`) as long as you define `__eq__` and one of the other comparison methods (`__lt__` in our case). This saves us from having to implement all six comparison methods manually.
-
-2. Create a new test file called `test_comparisons.py` to test these new methods:
+4. Create a new test file called `test_comparisons.py` to test these new methods:
 
 ```python
 # test_comparisons.py
@@ -115,6 +113,8 @@ print(f"c >= a: {c >= a}")  # Should be True (5 >= 3)
 print(f"a == '3': {a == '3'}")  # Should be False (different types)
 ```
 
+In this test file, we create several `MutInt` objects and perform different comparison operations on them. We also compare `MutInt` objects with regular integers and a different type (a string in this case). By running these tests, we can verify that our comparison methods work as expected.
+
 3. Run the test script:
 
 ```bash
@@ -141,4 +141,4 @@ Now our `MutInt` class supports all comparison operations.
 
 The `@total_ordering` decorator is particularly useful because it saves us from having to implement all six comparison methods manually. By providing just `__eq__` and `__lt__`, Python can derive the other four comparison methods automatically.
 
-When implementing custom classes, it's generally a good practice to make them work with both objects of the same type and with built-in types where it makes sense. That's why our comparison methods handle both `MutInt` objects and regular integers.
+When implementing custom classes, it's generally a good practice to make them work with both objects of the same type and with built-in types where it makes sense. That's why our comparison methods handle both `MutInt` objects and regular integers. This way, our `MutInt` class can be used more flexibly in different programming scenarios.

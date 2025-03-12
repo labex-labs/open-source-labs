@@ -1,11 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn how to customize iteration using generators in Python. You'll also implement iterator functionality in custom classes and create generators for streaming data sources.
 
-- Learn how to customize iteration using generators in Python
-- Implement iterator functionality in custom classes
-- Create generators for streaming data sources
-
-**Files Modified:** `structure.py`
-
-**Files Created:** `follow.py`
+The `structure.py` file will be modified, and a new file named `follow.py` will be created during the experiment.

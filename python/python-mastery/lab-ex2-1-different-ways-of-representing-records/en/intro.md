@@ -1,9 +1,5 @@
 # Introduction
 
-**Objectives:**
+In this lab, you will learn to explore memory-efficient ways to store large datasets in Python. You'll also discover different ways of representing records, such as tuples, dictionaries, classes, and named tuples.
 
-- Explore memory-efficient ways to store large datasets in Python
-- Learn about different ways of representing records including tuples, dictionaries, classes, and named tuples
-- Compare memory usage of different data structures
-
-In this exercise, we examine various options for representing data structures with a focus on memory efficiency. Many Python users perform different kinds of data analysis, so understanding the trade-offs between different data structures is valuable knowledge for optimizing your code.
+Moreover, you will compare the memory usage of different data structures. Understanding the trade - offs between these structures is valuable for Python users who perform data analysis, as it helps optimize code.

@@ -1,8 +1,10 @@
 # Eliminating Property Names with Descriptors
 
-In the previous step, we had to explicitly specify the property names when creating typed properties. This is redundant since the property name is also specified in the class definition. In this step, we'll eliminate this redundancy by using descriptors.
+In the previous step, when creating typed properties, we had to explicitly state the property names. This is redundant because the property names are already specified in the class definition. In this step, we'll use descriptors to get rid of this redundancy.
 
-A descriptor in Python is an object that defines how attribute access should work. By implementing the `__set_name__` method, we can automatically capture the attribute name from the class definition.
+A descriptor in Python is a special object that controls how attribute access works. When you implement the `__set_name__` method in a descriptor, it can automatically grab the attribute name from the class definition.
+
+Let's start by creating a new file.
 
 1. Create a new file named `improved_typedproperty.py` with the following code:
 
@@ -47,7 +49,9 @@ def Float():
     return TypedProperty(float)
 ```
 
-This code defines a descriptor class `TypedProperty` that performs type checking. The `__set_name__` method is automatically called when the descriptor is assigned to a class attribute, allowing it to capture the attribute name.
+This code defines a descriptor class called `TypedProperty` that checks the type of values assigned to attributes. The `__set_name__` method is called automatically when the descriptor is assigned to a class attribute. This allows the descriptor to capture the attribute name without us having to specify it manually.
+
+Next, we'll create a class that uses these improved typed properties.
 
 2. Create a new file named `stock_improved.py` that uses the improved typed properties:
 
@@ -68,7 +72,9 @@ class Stock:
         self.price = price
 ```
 
-Notice how we no longer need to specify the property names when creating the typed properties. The descriptor will automatically capture the attribute name from the class definition.
+Notice that we don't need to specify the property names when creating the typed properties. The descriptor will automatically get the attribute name from the class definition.
+
+Now, let's test our improved class.
 
 3. Create a test file `test_stock_improved.py` to test the improved version:
 
@@ -101,6 +107,8 @@ except TypeError as e:
     print(f"Price type check succeeded: {e}")
 ```
 
+Finally, we'll run the test to see if everything works as expected.
+
 4. Run the test:
 
 ```bash
@@ -118,6 +126,6 @@ Shares type check succeeded: Expected <class 'int'>
 Price type check succeeded: Expected <class 'float'>
 ```
 
-In this step, we've improved our type-checking system by using descriptors and the `__set_name__` method. This allows us to eliminate the redundant specification of property names, making the code more concise and less error-prone.
+In this step, we've made our type-checking system better by using descriptors and the `__set_name__` method. This gets rid of the redundant property name specification, making the code shorter and less likely to have errors.
 
-The `__set_name__` method is a powerful feature of descriptors that allows them to automatically capture information about how they are used in a class definition. This can be used to create more intuitive and user-friendly APIs.
+The `__set_name__` method is a very useful feature of descriptors. It lets them automatically gather information about how they're used in a class definition. This can be used to create APIs that are easier to understand and use.

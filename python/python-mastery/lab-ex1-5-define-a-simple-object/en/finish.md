@@ -1,18 +1,5 @@
 # Summary
 
-In this lab, you have learned how to:
+In this lab, you have learned how to define a Python class with attributes and methods, create class instances with specific attribute values, access object attributes, and call object methods. You also learned to format and display object information in various ways, work with multiple objects of the same class, and enhance a class by adding new methods.
 
-- Define a Python class with attributes and methods
-- Create instances of a class with specific attribute values
-- Access object attributes and call object methods
-- Format and display object information in different ways
-- Work with multiple objects of the same class
-- Enhance a class by adding new methods
-
-These object-oriented programming concepts are fundamental in Python and form the basis for organizing code in larger applications. Classes allow you to group related data and functionality together, making your code more modular and easier to maintain.
-
-To further develop your skills, consider enhancing the `Stock` class with additional features like:
-
-- Data validation to ensure shares and price are positive values
-- Methods to update the number of shares or price
-- A method to calculate profit or loss based on a current price
+These object - oriented programming concepts are fundamental in Python and serve as the basis for organizing code in larger applications. Classes help group related data and functionality, making your code more modular and easier to maintain. To further improve your skills, consider adding features to the `Stock` class, such as data validation, methods to update shares or price, and a method to calculate profit or loss.

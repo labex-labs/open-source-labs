@@ -1,16 +1,16 @@
 # Class Variables and Inheritance
 
-In this step, we'll explore how class variables work with inheritance and how they can be used as a customization mechanism.
+In this step, we're going to explore how class variables interact with inheritance and how they can serve as a mechanism for customization. In Python, inheritance allows a subclass to inherit attributes and methods from a base class. Class variables are variables that belong to the class itself, not to any specific instance of the class. Understanding how these work together is crucial for creating flexible and maintainable code.
 
 ## Class Variables in Inheritance
 
-When a subclass inherits from a base class, it also inherits the class variables. However, a subclass can override these class variables to change behavior without affecting the base class. This is a powerful way to customize subclass behavior.
+When a subclass inherits from a base class, it automatically gets access to the base class's class variables. However, a subclass has the ability to override these class variables. By doing so, the subclass can change its behavior without affecting the base class. This is a very powerful feature as it allows you to customize the behavior of a subclass according to your specific needs.
 
 ## Creating a Specialized Stock Class
 
-Let's create a subclass of `Stock` called `DStock` (Decimal Stock) that uses the `Decimal` type for price values instead of `float`. This can be useful for financial calculations where precision is critical.
+Let's create a subclass of the `Stock` class. We'll call it `DStock`, which stands for Decimal Stock. The main difference between `DStock` and the regular `Stock` class is that `DStock` will use the `Decimal` type for price values instead of `float`. In financial calculations, precision is extremely important, and the `Decimal` type provides more accurate decimal arithmetic compared to `float`.
 
-Create a new file called `decimal_stock.py` with the following content:
+To create this subclass, we'll create a new file named `decimal_stock.py`. Here's the code you need to put in this file:
 
 ```python
 # decimal_stock.py
@@ -42,14 +42,14 @@ if __name__ == "__main__":
     print(f"Cost: {s.cost()} (type: {type(s.cost()).__name__})")
 ```
 
-Run this file to see the results:
+After you've created the `decimal_stock.py` file with the above code, you need to run it to see the results. Open your terminal and follow these steps:
 
 ```bash
 cd ~/project
 python decimal_stock.py
 ```
 
-You should see output similar to:
+You should see output similar to this:
 
 ```
 DStock: AA
@@ -65,18 +65,18 @@ Cost: 3220.0 (type: float)
 
 ## Key Points about Class Variables and Inheritance
 
-From this example, we can observe several important points:
+From this example, we can draw several important conclusions:
 
-1. The `DStock` class inherits all methods from `Stock` (like `cost()`) without having to redefine them.
-2. By simply overriding the `types` class variable, we changed how data is converted when creating new instances.
-3. The base class (`Stock`) remains unchanged and still works with float values.
-4. The `from_row()` class method works correctly with both classes, showing the power of inheritance.
+1. The `DStock` class inherits all the methods from the `Stock` class, such as the `cost()` method, without having to redefine them. This is one of the main advantages of inheritance, as it saves you from writing redundant code.
+2. By simply overriding the `types` class variable, we've changed how data is converted when creating new instances of `DStock`. This shows how class variables can be used to customize the behavior of a subclass.
+3. The base class, `Stock`, remains unchanged and still works with `float` values. This means that the changes we made to the subclass don't affect the base class, which is a good design principle.
+4. The `from_row()` class method works correctly with both the `Stock` and `DStock` classes. This demonstrates the power of inheritance, as the same method can be used with different subclasses.
 
-This demonstrates how class variables can be used as a configuration mechanism that subclasses can override to customize behavior, without having to rewrite methods.
+This example clearly shows how class variables can be used as a configuration mechanism. Subclasses can override these variables to customize their behavior without having to rewrite the methods.
 
 ## Design Discussion
 
-Consider the alternative approach of placing the type conversions in the `__init__` method:
+Let's consider an alternative approach where we place the type conversions in the `__init__` method:
 
 ```python
 class Stock:
@@ -86,18 +86,18 @@ class Stock:
         self.price = float(price)
 ```
 
-With this approach, we could create a Stock from a row as follows:
+With this approach, we can create a `Stock` object from a row of data like this:
 
 ```python
 row = ['AA', '100', '32.20']
 s = Stock(*row)
 ```
 
-While this approach seems simpler, it has several disadvantages:
+Although this approach might seem simpler at first glance, it has several drawbacks:
 
-1. It mixes two different concerns: object initialization and data conversion.
-2. It makes the `__init__` method less flexible - it always converts inputs regardless of whether they're already the correct type.
-3. It limits how subclasses can customize the conversion process.
-4. It makes the code more brittle - if any conversion fails, the object can't be created.
+1. It combines two different concerns: object initialization and data conversion. This makes the code harder to understand and maintain.
+2. The `__init__` method becomes less flexible because it always converts the inputs, even if they're already in the correct type.
+3. It restricts how subclasses can customize the conversion process. Subclasses would have a harder time changing the conversion logic if it's embedded in the `__init__` method.
+4. The code becomes more brittle. If any of the conversions fail, the object can't be created, which can lead to errors in your program.
 
-The class method approach separates these concerns, making the code more maintainable and flexible.
+On the other hand, the class method approach separates these concerns. This makes the code more maintainable and flexible, as each part of the code has a single responsibility.

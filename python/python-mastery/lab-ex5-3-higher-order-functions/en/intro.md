@@ -1,12 +1,5 @@
 # Introduction
 
-Higher-order functions are functions that can take other functions as arguments or return functions as results. This concept is fundamental in functional programming and allows for more modular, reusable code. In this lab, you will learn how to implement and use higher-order functions in Python to improve your code structure.
+In this lab, you will learn about higher-order functions in Python. Higher-order functions can accept other functions as arguments or return functions as results. This concept is crucial in functional programming and enables you to write more modular and reusable code.
 
-**Objectives:**
-
-- Understand what higher-order functions are
-- Create a higher-order function that takes a function as an argument
-- Refactor existing functions to use a higher-order function
-- Use Python's built-in `map()` function
-
-**Files Modified:** `reader.py`
+You will understand what higher-order functions are, create one that takes a function as an argument, refactor existing functions to use a higher-order function, and utilize Python's built-in `map()` function. The `reader.py` file will be modified during the lab.

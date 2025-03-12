@@ -1,8 +1,10 @@
 # Finalizing the Program
 
-Now let's clean up our code and make the final version of `pcost.py`.
+Now, we're going to clean up our code and create the final version of the `pcost.py` program. Cleaning up the code means removing any unnecessary parts and making sure the output looks good. This is an important step in programming because it makes our code more professional and easier to understand.
 
-We'll remove the debug print statements and ensure the final output is formatted nicely:
+We'll start by removing the debug print statements. These statements are used during development to check the values of variables and the flow of the program, but they're not needed in the final version. Then, we'll ensure that the final output is formatted nicely.
+
+Here's the final version of the `pcost.py` code:
 
 ```python
 # pcost.py
@@ -54,18 +56,18 @@ if __name__ == '__main__':
     print(f'Total cost: ${total_cost:.2f}')
 ```
 
-This final version adds:
+This final version of the code has several improvements:
 
-1. Error handling to catch file not found and other exceptions
-2. A proper formatting of the total cost to two decimal places
-3. A `__name__ == '__main__'` check to ensure the code only runs when the script is executed directly
+1. Error handling: We've added code to catch two types of errors. The `FileNotFoundError` is raised when the specified file doesn't exist. If this happens, the program will print an error message and return 0.0. The `Exception` block catches any other errors that might occur while processing the file. This makes our program more robust and less likely to crash unexpectedly.
+2. Proper formatting: The total cost is formatted to two decimal places using the `:.2f` format specifier in the f-string. This makes the output look more professional and easier to read.
+3. `__name__ == '__main__'` check: This is a common Python idiom. It ensures that the code inside the `if` block only runs when the script is executed directly. If the script is imported as a module into another script, this code won't run. This gives us more control over how our script behaves.
 
-Run the final code:
+Now, let's run the final code. Open your terminal and enter the following command:
 
 ```bash
 python3 ~/project/pcost.py
 ```
 
-You should see the total cost of the portfolio, which should be $44671.15.
+When you run this command, the program will read the `portfolio.dat` file, calculate the total cost of the portfolio, and print the result. You should see the total cost of the portfolio, which should be $44671.15.
 
-Congratulations! You've successfully created a Python program that reads data from a file, processes it, and calculates a result.
+Congratulations! You've successfully created a Python program that reads data from a file, processes it, and calculates a result. This is a great achievement, and it shows that you're on your way to becoming a proficient Python programmer.

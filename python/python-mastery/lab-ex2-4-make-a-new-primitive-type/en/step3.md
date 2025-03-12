@@ -1,6 +1,6 @@
 # Adding Mathematical Operations
 
-Currently, our `MutInt` class doesn't support mathematical operations like addition. Let's add this functionality by implementing the special methods for arithmetic operations.
+Currently, our `MutInt` class doesn't support mathematical operations like addition. In Python, to enable such operations for a custom class, we need to implement special methods. These special methods are also known as "magic methods" or "dunder methods" because they are surrounded by double underscores. Let's add the functionality for addition by implementing the relevant special methods for arithmetic operations.
 
 1. Open `mutint.py` in the WebIDE and update it with the following code:
 
@@ -55,17 +55,11 @@ class MutInt:
             return NotImplemented
 ```
 
-We've added three new methods:
+We've added three new methods to the `MutInt` class:
 
-- `__add__()`: Called when the `+` operator is used with our object on the left side
-- `__radd__()`: Called when the `+` operator is used with our object on the right side
-- `__iadd__()`: Called when the `+=` operator is used on our object
-
-The `__add__` method checks if the other operand is a `MutInt` or an `int`, and performs the appropriate addition. If the other operand is something else, it returns `NotImplemented`, which tells Python to try other methods or raise a `TypeError`.
-
-The `__radd__` method handles cases where our `MutInt` object is on the right side of the `+` operator (like `5 + a`). Since addition is commutative, we can simply reuse the `__add__` method.
-
-The `__iadd__` method handles in-place addition with the `+=` operator. Instead of creating a new object, it modifies the existing object and returns it.
+- `__add__()`: This method is called when the `+` operator is used with our `MutInt` object on the left side. Inside this method, we first check if the `other` operand is an instance of `MutInt` or an `int`. If it is, we perform the addition and return a new `MutInt` object with the result. If the `other` operand is something else, we return `NotImplemented`. This tells Python to try other methods or raise a `TypeError`.
+- `__radd__()`: This method is called when the `+` operator is used with our `MutInt` object on the right side. Since addition is a commutative operation (i.e., `a + b` is the same as `b + a`), we can simply reuse the `__add__` method.
+- `__iadd__()`: This method is called when the `+=` operator is used on our `MutInt` object. Instead of creating a new object, it modifies the existing `MutInt` object and returns it.
 
 2. Create a new test file called `test_math_ops.py` to test these new methods:
 
@@ -109,6 +103,8 @@ except TypeError as e:
     print(f"Error when adding float: {e}")
 ```
 
+In this test file, we first import the `MutInt` class. Then we create some `MutInt` objects and perform different types of addition operations. We also test the in-place addition and the case where an unsupported operation (adding a float) is attempted.
+
 3. Run the test script:
 
 ```bash
@@ -128,7 +124,7 @@ After a += 10: a = MutInt(18), f = MutInt(18)
 Error when adding float: unsupported operand type(s) for +: 'MutInt' and 'float'
 ```
 
-Now our `MutInt` class supports basic addition operations. Notice that when we used `+=`, both `a` and `f` were updated, showing that `a += 10` modified the existing object rather than creating a new one.
+Now our `MutInt` class supports basic addition operations. Notice that when we used `+=`, both `a` and `f` were updated. This shows that `a += 10` modified the existing object rather than creating a new one.
 
 This behavior with mutable objects is similar to Python's built-in mutable types like lists. For example:
 

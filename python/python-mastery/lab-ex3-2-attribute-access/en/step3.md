@@ -1,15 +1,18 @@
 # Creating a Table Formatter Using Attribute Access
 
-Now let's apply what we've learned about attribute access to create a useful utility: a table formatter that can display a collection of objects in a tabular format.
+In programming, attribute access is a fundamental concept that allows us to interact with the properties of objects. Now, we're going to put what we've learned about attribute access into practice. We'll create a useful utility: a table formatter. This formatter will take a collection of objects and display them in a tabular format, making the data easier to read and understand.
 
 ## Creating the tableformat.py Module
 
-First, let's create a new file called `tableformat.py` in the project directory:
+First, we need to create a new Python file. This file will hold the code for our table formatter.
 
-1. In the WebIDE, click on "File" menu, then select "New File"
-2. Save the file as `tableformat.py` in the `/home/labex/project/` directory
+To create the file, follow these steps:
 
-Now, let's implement the `print_table()` function in `tableformat.py`:
+1. In the WebIDE, click on the "File" menu.
+2. From the dropdown, select "New File".
+3. Save the newly created file as `tableformat.py` in the `/home/labex/project/` directory.
+
+Now that we have our file, let's write the code for the `print_table()` function inside `tableformat.py`. This function will be responsible for formatting and printing our objects in a table.
 
 ```python
 def print_table(objects, fields):
@@ -39,14 +42,14 @@ def print_table(objects, fields):
         print()
 ```
 
-This function:
+Let's break down what this function does:
 
-1. Takes a sequence of objects and a list of attribute names
-2. Prints a header row with the attribute names
-3. Prints a separator line
-4. For each object, prints the value of each specified attribute
+1. It takes two arguments: a sequence of objects and a list of attribute names. The sequence of objects is the data we want to display, and the list of attribute names tells the function which properties of the objects to show.
+2. It prints a header row. The header row contains the names of the attributes we're interested in.
+3. It prints a separator line. This line helps to visually separate the header from the data.
+4. For each object in the sequence, it prints the value of each specified attribute. It uses the `getattr()` function to access the attribute value of each object.
 
-Let's test our function:
+Now, let's test our `print_table()` function to see if it works as expected.
 
 ```python
 # Open a Python interactive shell
@@ -63,7 +66,7 @@ portfolio = read_portfolio('portfolio.csv')
 tableformat.print_table(portfolio, ['name', 'shares', 'price'])
 ```
 
-Output:
+When you run the above code, you should see the following output:
 
 ```
       name     shares      price
@@ -77,14 +80,14 @@ Output:
        IBM        100      70.44
 ```
 
-We can change the columns displayed just by changing the fields list:
+One of the great things about our `print_table()` function is its flexibility. We can change the columns that are displayed just by changing the `fields` list.
 
 ```python
 # Just show shares and name
 tableformat.print_table(portfolio, ['shares', 'name'])
 ```
 
-Output:
+Running this code will give you the following output:
 
 ```
     shares       name
@@ -98,4 +101,4 @@ Output:
        100        IBM
 ```
 
-The power of this approach is that we can use the same function to print tables for any type of object, as long as we know the attribute names.
+The power of this approach lies in its generality. We can use the same `print_table()` function to print tables for any type of object, as long as we know the names of the attributes we want to display. This makes our table formatter a very useful tool in our programming toolkit.
