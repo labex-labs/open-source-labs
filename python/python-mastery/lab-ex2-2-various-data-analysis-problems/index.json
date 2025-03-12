@@ -13,18 +13,24 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preliminaries",
+        "title": "Working with Dictionaries and CSV Data",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python File Content and History",
+            "name": "Verify Python files creation",
             "file": "verify1-1.sh",
-            "hint": "Please write the code in step 1 in the 'readport.py' file and print the read data in the python shell.",
+            "hint": "Make sure you've created both the readport.py and readrides.py files in the ~/project directory.",
             "timeout": 0,
             "showstderr": true
+          },
+          {
+            "name": "Verify Python command history",
+            "file": "verify1-2.sh",
+            "hint": "Make sure you've run the portfolio data commands in the Python interpreter as shown in the instructions."
           }
         ],
         "skills": [
@@ -35,81 +41,57 @@
         "solutions": ["readport.py"]
       },
       {
-        "title": "Comprehensions",
+        "title": "Using List, Set, and Dictionary Comprehensions",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python History Contains Sum Operation",
+            "name": "Verify Python operations with comprehensions",
             "file": "verify2-1.sh",
-            "hint": "Please execute the python program statement in step 2.",
+            "hint": "Make sure you've run the list, set, and dictionary comprehensions in the Python interpreter as shown in the instructions.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
           "python/data_collections",
-          "python/dictionaries",
-          "python/for_loops",
           "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/variables_data_types"
+          "python/sets"
         ]
       },
       {
-        "title": "Collections",
+        "title": "Exploring the Collections Module",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python Collections and Append Usage",
+            "name": "Verify Python collections module usage",
             "file": "verify3-1.sh",
-            "hint": "Please execute the python program statement in step 3.",
+            "hint": "Make sure you've imported and used the Counter and defaultdict classes from the collections module.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/comments",
           "python/data_collections",
           "python/dictionaries",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
+          "python/lists"
         ]
       },
       {
-        "title": "Data Analysis Challenge",
+        "title": "Data Analysis Challenge with Chicago Transit Authority Data",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Python History Commands Usage",
+            "name": "Verify CTA data analysis",
             "file": "verify4-1.sh",
-            "hint": "Please answer the four questions in step 4 in the python shell.",
+            "hint": "Make sure you've performed the analysis to answer all four questions about the Chicago Transit Authority data.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
+          "python/data_analysis",
           "python/data_collections",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/dictionaries"
         ],
         "solutions": ["cta.py"]
       }
