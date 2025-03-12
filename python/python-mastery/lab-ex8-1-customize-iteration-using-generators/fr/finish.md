@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Personnaliser l'itération à l'aide de générateurs. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris à personnaliser l'itération en Python en utilisant les générateurs. Vous avez créé de simples générateurs avec l'instruction `yield` pour générer des séquences de valeurs, ajouté la prise en charge de l'itération à des classes personnalisées en implémentant la méthode `__iter__()`, exploité l'itération pour les conversions de séquences, le désempilement (unpacking) et la comparaison, et construit un générateur pratique pour surveiller une source de données en flux.
+
+Les générateurs sont une fonctionnalité puissante de Python qui vous permet de créer des itérateurs avec un code minimal. Ils sont particulièrement utiles pour le traitement de grands ensembles de données, le travail avec des données en flux, la création de pipelines de données et la mise en œuvre de motifs d'itération personnalisés. L'utilisation de générateurs vous permet d'écrire un code plus propre et plus efficace en termes de mémoire qui exprime clairement votre intention.

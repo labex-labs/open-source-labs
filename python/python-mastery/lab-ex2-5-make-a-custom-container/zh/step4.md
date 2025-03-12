@@ -1,59 +1,30 @@
-# 创建一个自定义容器——巧妙的伪装
+# 创建自定义容器类
 
-将数据存储为列形式能显著节省内存，但现在处理这些数据会变得相当麻烦。实际上，我们在练习2.2中编写的早期分析代码都无法处理列形式的数据。所有代码都无法正常运行的原因是，你打破了早期练习中使用的数据抽象——即数据存储为字典列表的假设。
+在数据处理中，列向存储方法在节省内存方面表现出色。然而，当你现有的代码期望数据以字典列表的形式存在时，这种方法可能会引发问题。为了解决这个问题，我们将创建一个自定义容器类。这个类将呈现行向的接口，这意味着在你的代码看来，它的外观和行为就像一个字典列表。但在内部，它将以列向格式存储数据，从而帮助我们节省内存。
 
-如果你愿意创建一个自定义容器对象来“伪装”数据，这个问题就能得到解决。让我们来实现它。
-
-早期的分析代码假设数据存储在一系列记录中。每个记录都表示为一个字典。我们先创建一个新的“序列”类。在这个类中，我们存储 `read_rides_as_columns()` 函数中使用的四列数据。
+1. 首先，在 WebIDE 编辑器中打开 `readrides.py` 文件。我们将向这个文件中添加一个新的类。这个类将成为我们自定义容器的基础。
 
 ```python
-# readrides.py
-
+# Add this to readrides.py
 from collections.abc import Sequence
-
-...
 
 class RideData(Sequence):
     def __init__(self):
-        self.routes = []      # 列
-        self.dates = []
-        self.daytypes = []
-        self.numrides = []
-```
-
-尝试创建一个 `RideData` 实例。你会发现它会因如下错误信息而失败：
-
-```python
->>> records = RideData()
-Traceback (most recent call last):
-...
-TypeError: Can't instantiate abstract class RideData with abstract methods __getitem__, __len__
->>>
-```
-
-仔细阅读错误信息。它告诉了我们需要实现的内容。让我们添加一个 `__len__()` 和 `__getitem__()` 方法。在 `__getitem__()` 方法中，我们将创建一个字典。此外，我们还将创建一个 `append()` 方法，该方法接受一个字典，并将其解包为四个单独的 `append()` 操作。
-
-```python
-# readrides.py
-...
-
-class RideData(collections.Sequence):
-    def __init__(self):
-        # 每个值都是一个包含所有值的列表（一列）
+        # Each value is a list with all of the values (a column)
         self.routes = []
         self.dates = []
         self.daytypes = []
         self.numrides = []
 
     def __len__(self):
-        # 假设所有列表长度相同
+        # All lists assumed to have the same length
         return len(self.routes)
 
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        return {'route': self.routes[index],
+                'date': self.dates[index],
+                'daytype': self.daytypes[index],
+                'rides': self.numrides[index]}
 
     def append(self, d):
         self.routes.append(d['route'])
@@ -62,20 +33,20 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-如果你操作正确，应该能够将这个对象放入之前编写的 `read_rides_as_dicts()` 函数中。这只需要更改一行代码：
+在这段代码中，我们定义了一个名为 `RideData` 的类，它继承自 `Sequence`。`__init__` 方法初始化了四个空列表，每个列表代表一列数据。`__len__` 方法返回容器的长度，该长度与 `routes` 列表的长度相同。`__getitem__` 方法允许我们通过索引访问特定的记录，并将其作为字典返回。`append` 方法通过将值追加到每列的列表中，向容器中添加一条新记录。
+
+2. 现在，我们需要一个函数将公交乘车数据读取到我们的自定义容器中。将以下函数添加到 `readrides.py` 文件中。
 
 ```python
-# readrides.py
-...
-
+# Add this to readrides.py
 def read_rides_as_dicts(filename):
     '''
-    将公交出行数据读取为字典列表
+    Read the bus ride data as a list of dicts, but use our custom container
     '''
-    records = RideData()      # <--- 更改此处
+    records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)     # 跳过标题行
+        headings = next(rows)     # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -85,27 +56,47 @@ def read_rides_as_dicts(filename):
                 'route': route,
                 'date': date,
                 'daytype': daytype,
-                'rides' : rides
-                }
+                'rides': rides
+            }
             records.append(record)
     return records
 ```
 
-如果你操作正确，旧代码应该能像以前一样正常运行。例如：
+这个函数创建了一个 `RideData` 类的实例，并使用 CSV 文件中的数据填充它。它从文件中读取每一行，提取相关信息，为每条记录创建一个字典，然后将其追加到 `RideData` 容器中。关键在于，它保持了与字典列表相同的接口，但在内部以列的形式存储数据。
+
+3. 让我们在 Python shell 中测试我们的自定义容器。这将帮助我们验证它是否按预期工作。
 
 ```python
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
->>> rows
-<readrides.RideData object at 0x10f5054a8>
->>> len(rows)
-577563
->>> rows[0]
-{'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
->>> rows[1]
-{'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
->>> rows[2]
-{'route': '6', 'date': '01/01/2001', 'daytype': 'U', 'rides': 6048}
->>>
+import readrides
+
+# Read the data using our custom container
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+
+# Check the type of the returned object
+type(rows)  # Should be readrides.RideData
+
+# Check the length
+len(rows)   # Should be 577563
+
+# Access individual records
+rows[0]     # Should return a dictionary for the first record
+rows[1]     # Should return a dictionary for the second record
+rows[2]     # Should return a dictionary for the third record
 ```
 
-运行你在练习2.2中编写的早期CTA代码。它应该无需修改就能正常运行，但使用的内存会大幅减少。
+我们的自定义容器成功实现了 `Sequence` 接口，这意味着它的行为类似于列表。你可以使用 `len()` 函数获取容器中记录的数量，也可以使用索引访问单个记录。每条记录看起来都是一个字典，尽管数据在内部是以列的形式存储的。这很棒，因为期望使用字典列表的现有代码可以直接与我们的自定义容器一起使用，而无需进行任何修改。
+
+4. 最后，让我们测量一下自定义容器的内存使用情况。这将向我们展示与字典列表相比，我们节省了多少内存。
+
+```python
+import tracemalloc
+
+tracemalloc.start()
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+tracemalloc.stop()
+```
+
+当你运行这段代码时，你应该会看到内存使用情况与列向存储方法相似，远低于使用字典列表的情况。这展示了我们的自定义容器在内存效率方面的优势。

@@ -1,6 +1,8 @@
-# Die letzte Grenze
+# Das Problem verstehen
 
-In Übung 7.3 haben wir es ermöglicht, typengeprüfte Strukturen wie folgt zu definieren:
+Bevor wir mit der Erkundung von Metaklassen beginnen, ist es wichtig, das Problem zu verstehen, das wir lösen möchten. In der Programmierung müssen wir oft Strukturen mit bestimmten Typen für ihre Attribute erstellen. In unserer vorherigen Arbeit haben wir ein System für typüberprüfte Strukturen entwickelt. Dieses System ermöglicht es uns, Klassen zu definieren, bei denen jedes Attribut einen bestimmten Typ hat und die den Attributen zugewiesenen Werte gemäß diesem Typ validiert werden.
+
+Hier ist ein Beispiel, wie wir dieses System verwendet haben, um eine `Stock`-Klasse zu erstellen:
 
 ```python
 from validate import String, PositiveInteger, PositiveFloat
@@ -19,81 +21,22 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-Unter der Haube passiert vieles. Ein Ärger betrifft jedoch all diese Typnamen-Imports am Anfang (z.B. `String`, `PositiveInteger` usw.). Das ist genau die Art von Dingen, die zu einem `from validate import *`-Statement führen könnten. Ein interessantes Merkmal einer Metaklasse ist, dass sie dazu verwendet werden kann, den Prozess zu steuern, durch den eine Klasse definiert wird. Dies umfasst das Verwalten der Umgebung der Klasse selbst. Lassen Sie uns diese Imports angehen.
+In diesem Code importieren wir zunächst die Validator-Typen (`String`, `PositiveInteger`, `PositiveFloat`) aus dem `validate`-Modul und die `Structure`-Klasse aus dem `structure`-Modul. Dann definieren wir die `Stock`-Klasse, die von `Structure` erbt. Innerhalb der `Stock`-Klasse definieren wir Attribute mit bestimmten Validator-Typen. Beispielsweise muss das `name`-Attribut eine Zeichenkette sein, `shares` muss eine positive Ganzzahl sein und `price` muss eine positive Fließkommazahl sein.
 
-Der erste Schritt bei der Verwaltung aller Validator-Namen besteht darin, sie zu sammeln. Öffnen Sie die Datei `validate.py` und modifizieren Sie die `Validator`-Basis-Klasse mit diesem zusätzlichen Code, der wiederum `__init_subclass__()` verwendet:
+Es gibt jedoch ein Problem mit diesem Ansatz. Wir müssen alle Validator-Typen am Anfang unserer Datei importieren. Wenn wir in einem realen Szenario immer mehr Validator-Typen hinzufügen, können diese Importe sehr lang und schwierig zu verwalten werden. Dies könnte uns dazu verleiten, `from validate import *` zu verwenden, was im Allgemeinen als schlechter Stil angesehen wird, da es Namenskonflikte verursachen und den Code weniger lesbar machen kann.
 
-```python
-# validate.py
+Um unseren Ausgangspunkt zu verstehen, schauen wir uns die `Structure`-Klasse an. Sie müssen die Datei `structure.py` im Editor öffnen und ihren Inhalt untersuchen. Dies hilft Ihnen zu verstehen, wie die grundlegende Strukturverarbeitung implementiert ist, bevor wir Metaklassen-Funktionalität hinzufügen.
 
-class Validator:
-  ...
-
-    # Sammeln Sie alle abgeleiteten Klassen in einem Dictionary
-    validators = { }
-    @classmethod
-    def __init_subclass__(cls):
-        cls.validators[cls.__name__] = cls
+```bash
+code structure.py
 ```
 
-Das ist nicht viel, aber es erstellt einen kleinen Namensraum aller `Validator`-Unterklassen. Schauen Sie sich ihn an:
+Wenn Sie die Datei öffnen, sehen Sie eine grundlegende Implementierung der `Structure`-Klasse. Diese Klasse ist für die Initialisierung der Attribute verantwortlich, hat aber noch keine Metaklassen-Funktionalität.
 
-```python
->>> from validate import Validator
->>> Validator.validators
-{'Float': <class 'validate.Float'>,
- 'Integer': <class 'validate.Integer'>,
- 'NonEmpty': <class 'validate.NonEmpty'>,
- 'NonEmptyString': <class 'validate.NonEmptyString'>,
- 'Positive': <class 'validate.Positive'>,
- 'PositiveFloat': <class 'validate.PositiveFloat'>,
- 'PositiveInteger': <class 'validate.PositiveInteger'>,
- 'String': <class 'validate.String'>,
- 'Typed': <class 'validate.Typed'>}
->>>
+Als Nächstes untersuchen wir die Validator-Klassen. Diese Klassen sind in der Datei `validate.py` definiert. Sie haben bereits Descriptor-Funktionalität, was bedeutet, dass sie steuern können, wie Attribute zugegriffen und gesetzt werden. Wir müssen sie jedoch verbessern, um das Importproblem zu lösen, das wir zuvor besprochen haben.
+
+```bash
+code validate.py
 ```
 
-Jetzt, nachdem Sie das getan haben, injizieren wir diesen Namensraum in den Namensraum der aus `Structure` definierten Klassen. Definieren Sie die folgende Metaklasse:
-
-```python
-# structure.py
-...
-
-from validate import Validator
-from collections import ChainMap
-
-class StructureMeta(type):
-    @classmethod
-    def __prepare__(meta, clsname, bases):
-        return ChainMap({}, Validator.validators)
-
-    @staticmethod
-    def __new__(meta, name, bases, methods):
-        methods = methods.maps[0]
-        return super().__new__(meta, name, bases, methods)
-
-class Structure(metaclass=StructureMeta):
-  ...
-```
-
-In diesem Code macht die `__prepare__()`-Methode eine spezielle `ChainMap`-Zuordnung, die aus einem leeren Dictionary und einem Dictionary aller definierten Validatoren besteht. Das leere Dictionary, das zuerst aufgelistet ist, wird alle in der Klassenkörper definierten Definitionen sammeln. Das `Validator.validators`-Dictionary wird alle Typdefinitionen verfügbar machen, um als Deskriptoren oder Argumenttyp-Annotationen verwendet zu werden.
-
-Die `__new__()`-Methode verwirft das zusätzliche Validator-Dictionary und übergibt die verbleibenden Definitionen an den Typkonstruktor. Es ist genial, aber es ermöglicht Ihnen, die lästigen Imports zu vermeiden:
-
-```python
-# stock.py
-
-from structure import Structure
-
-class Stock(Structure):
-    name = String()
-    shares = PositiveInteger()
-    price = PositiveFloat()
-
-    @property
-    def cost(self):
-        return self.shares * self.price
-
-    def sell(self, nshares: PositiveInteger):
-        self.shares -= nshares
-```
+Indem Sie sich diese Validator-Klassen ansehen, verstehen Sie besser, wie der Validierungsprozess funktioniert und welche Änderungen wir vornehmen müssen, um unseren Code zu verbessern.

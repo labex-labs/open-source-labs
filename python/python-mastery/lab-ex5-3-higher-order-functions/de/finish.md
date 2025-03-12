@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Higher Order Functions Lab abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie sich mit höheren Funktionen (Higher-Order Functions) in Python vertraut gemacht und gelernt, wie sie dazu beitragen, modulareren und wartbareren Code zu schreiben. Zunächst haben Sie Code-Duplizierung in zwei ähnlichen Funktionen identifiziert. Dann haben Sie eine höhere Funktion `convert_csv()` erstellt, die eine Konvertierungsfunktion als Argument akzeptiert, und die ursprünglichen Funktionen so refaktoriert, dass sie diese nutzen. Schließlich haben Sie die höhere Funktion aktualisiert, um Python's integrierte `map()`-Funktion zu verwenden.
+
+Diese Techniken sind wertvolle Werkzeuge in einem Python-Programmierer's Arsenal. Höhere Funktionen fördern die Wiederverwendung von Code und die Trennung von Zuständigkeiten, während das Übergeben von Funktionen als Argumente für flexibleres und anpassbareres Verhalten sorgt. Funktionen wie `map()` bieten knappe Möglichkeiten, Daten zu transformieren. Das Beherrschen dieser Konzepte ermöglicht es Ihnen, Python-Code zu schreiben, der kompakter, wartbarer und fehleranfälliger ist.

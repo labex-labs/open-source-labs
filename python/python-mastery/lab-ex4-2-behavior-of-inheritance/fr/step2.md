@@ -1,6 +1,12 @@
-# Créez un vérificateur de valeurs
+# Construction d'un système de validation avec l'héritage
 
-Dans l'exercice 3.4, vous avez ajouté quelques propriétés à la classe `Stock` qui vérifiaient les attributs pour différents types et valeurs (par exemple, les actions devaient être un entier positif). Jouons un peu avec cette idée. Commencez par créer un fichier `validate.py` et définir la classe de base suivante :
+Dans cette étape, nous allons construire un système de validation pratique en utilisant l'héritage. L'héritage est un concept puissant en programmation qui vous permet de créer de nouvelles classes basées sur des classes existantes. De cette manière, vous pouvez réutiliser le code et créer des programmes plus organisés et modulaires. En construisant ce système de validation, vous verrez comment l'héritage peut être utilisé pour créer des composants de code réutilisables qui peuvent être combinés de différentes manières.
+
+## Création de la classe de base des validateurs
+
+Tout d'abord, nous devons créer une classe de base pour nos validateurs. Pour ce faire, nous allons créer un nouveau fichier dans le WebIDE. Voici comment vous pouvez le faire : cliquez sur "File" > "New File", ou vous pouvez utiliser le raccourci clavier. Une fois le nouveau fichier ouvert, nommez - le `validate.py`.
+
+Maintenant, ajoutons du code à ce fichier pour créer une classe de base `Validator`. Cette classe servira de fondation pour tous nos autres validateurs.
 
 ```python
 # validate.py
@@ -10,7 +16,11 @@ class Validator:
         return value
 ```
 
-Maintenant, créons quelques classes pour la vérification de type :
+Dans ce code, nous avons défini une classe `Validator` avec une méthode `check`. La méthode `check` prend une valeur en argument et la renvoie simplement inchangée. Le décorateur `@classmethod` est utilisé pour transformer cette méthode en une méthode de classe. Cela signifie que nous pouvons appeler cette méthode sur la classe elle - même, sans avoir à créer une instance de la classe.
+
+## Ajout de validateurs de type
+
+Ensuite, nous allons ajouter des validateurs qui vérifient le type d'une valeur. Ces validateurs hériteront de la classe `Validator` que nous venons de créer. Revenez au fichier `validate.py` et ajoutez le code suivant :
 
 ```python
 class Typed(Validator):
@@ -31,42 +41,67 @@ class String(Typed):
     expected_type = str
 ```
 
-Voici comment utiliser ces classes (Remarque : l'utilisation de `@classmethod` nous permet d'éviter l'étape supplémentaire de créer des instances que nous n'avons pas vraiment besoin) :
+La classe `Typed` est une sous - classe de `Validator`. Elle a un attribut `expected_type`, qui est initialement défini sur `object`. La méthode `check` dans la classe `Typed` vérifie si la valeur donnée est du type attendu. Si ce n'est pas le cas, elle lève une `TypeError`. Si le type est correct, elle appelle la méthode `check` de la classe parente en utilisant `super().check(value)`.
+
+Les classes `Integer`, `Float` et `String` héritent de `Typed` et spécifient le type exact qu'elles sont censées vérifier. Par exemple, la classe `Integer` vérifie si une valeur est un entier.
+
+## Test des validateurs de type
+
+Maintenant que nous avons créé nos validateurs de type, testons - les. Ouvrez un nouveau terminal et lancez l'interpréteur Python en exécutant la commande suivante :
+
+```bash
+python3
+```
+
+Une fois que l'interpréteur Python est en cours d'exécution, nous pouvons importer et tester nos validateurs. Voici du code pour les tester :
 
 ```python
->>> Integer.check(10)
+from validate import Integer, String
+
+Integer.check(10)  # Should return 10
+
+try:
+    Integer.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+String.check('10')  # Should return '10'
+```
+
+Lorsque vous exécutez ce code, vous devriez voir quelque chose comme ceci :
+
+```
 10
->>> Integer.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in check
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>> String.check('10')
+Error: Expected <class 'int'>
 '10'
->>>
 ```
 
-Vous pouvez utiliser les validateurs dans une fonction. Par exemple :
+Nous pouvons également utiliser ces validateurs dans une fonction. Essayons cela :
 
 ```python
->>> def add(x, y):
-        Integer.check(x)
-        Integer.check(y)
-        return x + y
+def add(x, y):
+    Integer.check(x)
+    Integer.check(y)
+    return x + y
 
->>> add(2, 2)
-4
->>> add('2', '3')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 2, in add
-  File "validate.py", line 11, in check
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>>
+add(2, 2)  # Should return 4
+
+try:
+    add('2', '3')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
 ```
 
-Maintenant, créons quelques autres classes pour différentes vérifications de domaine :
+Lorsque vous exécutez ce code, vous devriez voir :
+
+```
+4
+Error: Expected <class 'int'>
+```
+
+## Ajout de validateurs de valeur
+
+Jusqu'à présent, nous avons créé des validateurs qui vérifient le type d'une valeur. Maintenant, ajoutons des validateurs qui vérifient la valeur elle - même plutôt que le type. Revenez au fichier `validate.py` et ajoutez le code suivant :
 
 ```python
 class Positive(Validator):
@@ -84,7 +119,11 @@ class NonEmpty(Validator):
         return super().check(value)
 ```
 
-Où allons-nous avec tout cela? Commençons à composer des classes ensemble avec l'héritage multiple comme des blocs de construction :
+Le validateur `Positive` vérifie si une valeur est non négative. Si la valeur est inférieure à 0, il lève une `ValueError`. Le validateur `NonEmpty` vérifie si une valeur a une longueur non nulle. Si la longueur est 0, il lève une `ValueError`.
+
+## Composition de validateurs avec l'héritage multiple
+
+Maintenant, nous allons combiner nos validateurs en utilisant l'héritage multiple. L'héritage multiple permet à une classe d'hériter de plusieurs classes parentes. Revenez au fichier `validate.py` et ajoutez le code suivant :
 
 ```python
 class PositiveInteger(Integer, Positive):
@@ -97,31 +136,49 @@ class NonEmptyString(String, NonEmpty):
     pass
 ```
 
-Essentiellement, vous prenez des validateurs existants et les composez ensemble pour en créer de nouveaux. Folie! Cependant, utilisons-les maintenant pour valider quelques choses :
+Ces nouvelles classes combinent la vérification de type et la vérification de valeur. Par exemple, la classe `PositiveInteger` vérifie qu'une valeur est à la fois un entier et non négative. L'ordre d'héritage est important ici. Les validateurs sont vérifiés dans l'ordre spécifié dans la définition de la classe.
+
+## Test des validateurs composés
+
+Testons nos validateurs composés. Dans l'interpréteur Python, exécutez le code suivant :
 
 ```python
->>> PositiveInteger.check(10)
-10
->>> PositiveInteger.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>> PositiveInteger.check(-10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Expected >= 0')
-ValueError: Must be >= 0
+from validate import PositiveInteger, PositiveFloat, NonEmptyString
 
+PositiveInteger.check(10)  # Should return 10
 
->>> NonEmptyString.check('hello')
-'hello'
->>> NonEmptyString.check('')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Must be non-empty')
-ValueError: Must be non-empty
->>>
+try:
+    PositiveInteger.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+try:
+    PositiveInteger.check(-10)  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
+
+NonEmptyString.check('hello')  # Should return 'hello'
+
+try:
+    NonEmptyString.check('')  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
 ```
 
-À ce stade, votre tête est probablement complètement éclatée. Cependant, le problème de la composition de différents morceaux de code ensemble est un problème qui se pose dans les programmes du monde réel. L'héritage multiple coopératif est l'un des outils qui peut être utilisé pour l'organiser.
+Lorsque vous exécutez ce code, vous devriez voir :
+
+```
+10
+Error: Expected <class 'int'>
+Error: Expected >= 0
+'hello'
+Error: Must be non-empty
+```
+
+Cela montre comment nous pouvons combiner des validateurs pour créer des règles de validation plus complexes.
+
+Lorsque vous avez terminé de tester, vous pouvez quitter l'interpréteur Python en exécutant la commande suivante :
+
+```python
+exit()
+```

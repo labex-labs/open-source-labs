@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations! Vous avez terminé le laboratoire sur la restitution de valeurs à partir de fonctions. Vous pouvez pratiquer d'autres laboratoires dans LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris plusieurs modèles clés pour retourner des valeurs depuis des fonctions en Python. Premièrement, les fonctions Python peuvent retourner plusieurs valeurs en les emballant dans un tuple, permettant un retour et un déballage de valeurs clairs et lisibles. Deuxièmement, pour les fonctions qui ne produisent pas toujours des résultats valides, retourner `None` est une façon courante d'indiquer l'absence d'une valeur, et le lancement d'exceptions a également été présenté comme une alternative.
+
+Enfin, en programmation concurrente, un objet `Future` sert de placeholder pour un résultat futur, vous permettant d'obtenir les valeurs de retour de fonctions s'exécutant dans des threads ou des processus séparés. Comprendre ces modèles améliorera la robustesse et la flexibilité de votre code Python. Pour vous entraîner davantage, expérimentez avec différentes stratégies de gestion d'erreurs, utilisez les objets `Future` avec d'autres types d'exécution concurrente et explorez leur application en programmation asynchrone avec `async`/`await`.

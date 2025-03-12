@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio de Devolución de Valores desde Funciones. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido varios patrones clave para devolver valores desde funciones en Python. En primer lugar, las funciones de Python pueden devolver múltiples valores empaquetándolos en una tupla, lo que permite una devolución y desempaquetado de valores limpios y legibles. En segundo lugar, para las funciones que no siempre pueden producir resultados válidos, devolver `None` es una forma común de indicar la ausencia de un valor, y también se presentó el lanzamiento de excepciones como una alternativa.
+
+Por último, en la programación concurrente, un `Future` actúa como un marcador de posición para un resultado futuro, lo que te permite obtener valores de retorno de funciones que se ejecutan en hilos o procesos separados. Comprender estos patrones mejorará la robustez y la flexibilidad de tu código Python. Para una práctica adicional, experimenta con diferentes estrategias de manejo de errores, utiliza `Future` con otros tipos de ejecución concurrente y explora su aplicación en la programación asíncrona con `async`/`await`.

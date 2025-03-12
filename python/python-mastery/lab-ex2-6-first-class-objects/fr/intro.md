@@ -1,10 +1,5 @@
 # Introduction
 
-**Objectifs** :
+Dans ce laboratoire (lab), vous allez apprendre le concept d'objets de première classe en Python et explorer son modèle mémoire. Python considère les fonctions, les types et les données comme des objets de première classe, permettant des modèles de programmation puissants et flexibles.
 
-- Explorer le pouvoir des objets de première classe.
-- Comprendre mieux le modèle mémoire de Python
-
-**Fichiers créés** : `reader.py`
-
-Dans les exercices précédents, vous avez écrit diverses fonctions pour lire des données CSV dans différents fichiers. Assurément, c'est un problème qui pourrait être généralisé d'une certaine manière. Dans cet exercice, nous explorons cette idée.
+Vous allez également créer des fonctions utilitaires réutilisables pour le traitement de données CSV. Plus précisément, vous allez créer une fonction généralisée pour lire des données CSV dans le fichier `reader.py`, qui peut être réutilisée dans différents projets.

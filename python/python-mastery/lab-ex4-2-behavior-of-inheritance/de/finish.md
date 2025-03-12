@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Labor zu Vererbungseigenschaften abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie die Funktionsweise der Vererbung in Python kennengelernt und mehrere Schlüsselkonzepte erfasst. Sie haben den Unterschied zwischen einfacher und multipler Vererbung untersucht, verstanden, wie die `super()`-Funktion die Methodenauflösungsreihenfolge (Method Resolution Order, MRO) durchläuft, gelernt, kooperative multiple Vererbung zu implementieren und die Vererbung eingesetzt, um ein praktisches Validierungssystem aufzubauen.
+
+Sie haben auch einen flexiblen Validierungsrahmen unter Verwendung von Vererbung erstellt und ihn in einem realen Beispiel mit der `Stock`-Klasse angewendet. Dies zeigt, wie die Vererbung wiederverwendbare und kombinierbare Komponenten schaffen kann. Die wichtigsten Erkenntnisse umfassen die Funktionsweise von `super()` bei einfacher und multipler Vererbung, die Fähigkeit der multiplen Vererbung, Funktionalitäten zu kombinieren, und die Verwendung von Property-Settern mit Validatoren. Diese Konzepte sind grundlegend für die objektorientierte Programmierung in Python und werden in der Praxis häufig eingesetzt.

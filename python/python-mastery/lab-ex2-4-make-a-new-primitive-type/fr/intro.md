@@ -1,7 +1,5 @@
 # Introduction
 
-**Objectifs** :
+Dans ce laboratoire, vous apprendrez à créer un nouveau type primitif en Python et à implémenter les méthodes essentielles pour celui - ci. Vous comprendrez également le protocole d'objets de Python. Dans la plupart des programmes Python, des types primitifs intégrés tels que `int`, `float` et `str` sont utilisés pour représenter les données. Cependant, Python vous permet de créer des types personnalisés, comme on le voit dans des modules tels que `decimal` et `fractions` de la bibliothèque standard.
 
-- Créer un nouveau type primitif
-
-Dans la plupart des programmes, vous utilisez les types primitifs tels que `int`, `float` et `str` pour représenter des données. Cependant, vous n'êtes pas limité à ces types seulement. La bibliothèque standard a des modules tels que le module `decimal` et le module `fractions` qui implémentent de nouveaux types primitifs. Vous pouvez également créer vos propres types, pourvu que vous compreniez les protocoles de base qui permettent aux objets Python de fonctionner. Dans cet exercice, nous allons créer un nouveau type primitif. Il y a de nombreux détails à prendre en compte, mais cela vous donnera une idée générale de ce qui est requis.
+Dans ce laboratoire, vous allez créer un nouveau type primitif appelé `MutInt` (Entier mutable). Contrairement aux entiers immuables de Python, `MutInt` peut être modifié après sa création. Cet exercice mettra en évidence les principes fondamentaux nécessaires pour créer un type primitif entièrement fonctionnel en Python.

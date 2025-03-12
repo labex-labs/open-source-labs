@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations! Vous avez terminé le laboratoire sur les règles et les astuces de portée. Vous pouvez pratiquer d'autres laboratoires dans LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris les règles de portée (scoping) en Python et certaines techniques puissantes pour gérer la portée. Tout d'abord, vous avez exploré comment utiliser la fonction `locals()` pour accéder à toutes les variables locales d'une fonction. Ensuite, vous avez appris à inspecter les cadres de pile (stack frames) à l'aide de `sys._getframe()` pour accéder aux variables locales de l'appelant.
+
+Vous avez également appliqué ces techniques pour créer un système d'initialisation de classe flexible. Ce système capture automatiquement les paramètres de fonction et les définit comme attributs d'objet, conserve les signatures de fonction appropriées dans la documentation et prend en charge à la fois les arguments positionnels et les arguments nommés (keyword arguments). Ces techniques mettent en évidence la flexibilité et les capacités d'introspection de Python. Bien que l'inspection des cadres de pile soit une technique avancée qui doit être utilisée avec prudence, elle peut efficacement réduire le code boilerplate lorsqu'elle est utilisée de manière appropriée. Comprendre les règles de portée et ces techniques avancées vous fournit plus d'outils pour écrire un code Python plus propre et plus facilement maintenable.

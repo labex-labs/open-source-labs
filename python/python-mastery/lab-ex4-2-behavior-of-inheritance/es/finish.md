@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio de Comportamiento de la Herencia. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido sobre el comportamiento de la herencia en Python y has comprendido varios conceptos clave. Has explorado la diferencia entre herencia simple y múltiple, has entendido cómo la función `super()` navega por el Orden de Resolución de Métodos (Method Resolution Order, MRO), has aprendido a implementar herencia múltiple cooperativa y has aplicado la herencia para construir un sistema de validación práctico.
+
+También has creado un marco de validación flexible utilizando herencia y lo has aplicado a un ejemplo del mundo real con la clase `Stock`, lo que muestra cómo la herencia puede crear componentes reutilizables y componibles. Las principales lecciones incluyen cómo funciona `super()` en la herencia simple y múltiple, la capacidad de la herencia múltiple para componer funcionalidades y el uso de setters de propiedades con validadores. Estos conceptos son fundamentales para la programación orientada a objetos en Python y se utilizan ampliamente en aplicaciones del mundo real.

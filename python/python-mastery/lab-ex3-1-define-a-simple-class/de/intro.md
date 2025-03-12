@@ -1,9 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab werden Sie lernen, eine `Stock`-Klasse zu verbessern, die zur Darstellung von Aktienbesitzungen dient. Sie werden neue Methoden und Funktionen zu dieser Klasse hinzufügen, um sie vielseitiger und nützlicher zu machen.
 
-- Definieren einer einfachen Klasse
-
-**Veränderte Dateien:** `stock.py`
-
-Im Übungsblatt 1.5 haben Sie eine einfache Klasse `Stock` definiert, um einen Aktienbesitz darzustellen. In diesem Übungsblatt werden wir einfach einige Funktionen dieser Klasse hinzufügen und einige Hilfsfunktionen schreiben.
+Zu den Zielen dieses Labs gehören das Hinzufügen einer `sell`-Methode zur bestehenden `Stock`-Klasse, das Erstellen einer Funktion zum Lesen von Aktienportfoliodaten aus einer CSV-Datei und einer weiteren Funktion zur Anzeige der Portfoliodaten in einer formatierten Tabelle. Die zu bearbeitende Datei ist `stock.py`.

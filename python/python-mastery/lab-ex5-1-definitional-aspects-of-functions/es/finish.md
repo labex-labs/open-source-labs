@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicitaciones! Has completado el laboratorio de los Aspectos Definitorios de las Funciones. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido varios aspectos clave del diseño de funciones en Python. Primero, has aprendido el diseño básico de funciones, específicamente cómo escribir funciones para procesar datos CSV en diversas estructuras de datos. También has explorado la flexibilidad de las funciones al refactorizarlas para que funcionen con cualquier fuente iterable, lo que mejora la versatilidad y reutilización del código.
+
+Además, has dominado la adición de parámetros opcionales para manejar diferentes casos de uso, como archivos CSV con o sin encabezados, y el uso del sistema de sugerencias de tipo (type hinting) de Python para mejorar la legibilidad y mantenibilidad del código. Estas habilidades son cruciales para escribir código Python robusto, y a medida que tus programas se vuelvan más complejos, estos principios de diseño mantendrán tu código organizado y comprensible. Estas técnicas se pueden aplicar más allá del procesamiento de archivos CSV, lo que las hace valiosas en tu conjunto de herramientas de programación en Python.

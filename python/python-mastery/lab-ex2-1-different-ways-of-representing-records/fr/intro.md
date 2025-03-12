@@ -1,8 +1,5 @@
 # Introduction
 
-**Objectifs :**
+Dans ce laboratoire (lab), vous apprendrez à explorer des méthodes économes en mémoire pour stocker de grands ensembles de données en Python. Vous découvrirez également différentes manières de représenter des enregistrements, telles que les tuples, les dictionnaires, les classes et les tuples nommés (named tuples).
 
-- Trouver la manière la plus efficace en termes de mémoire pour stocker beaucoup de données.
-- Découvrir les différentes façons de représenter des enregistrements, y compris les tuples, les dictionnaires, les classes et les tuples nommés.
-
-Dans cet exercice, nous examinons différents choix pour représenter des structures de données en tenant compte de l'utilisation de la mémoire et de l'efficacité. Beaucoup de personnes utilisent Python pour effectuer diverses types d'analyse de données, donc connaître les différents options et leurs avantages et inconvénients est une information utile.
+De plus, vous comparerez l'utilisation mémoire de différentes structures de données. Comprendre les compromis entre ces structures est précieux pour les utilisateurs de Python qui effectuent des analyses de données, car cela aide à optimiser le code.

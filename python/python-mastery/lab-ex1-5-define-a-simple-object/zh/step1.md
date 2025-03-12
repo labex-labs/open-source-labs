@@ -1,39 +1,25 @@
-# 定义一个简单对象
+# 理解 Python 类
 
-创建一个名为 `stock.py` 的文件，并定义以下类：
+在 Python 中，类是创建对象的蓝图。面向对象编程是一种强大的编程方式，它能让我们有效地组织代码。具体做法是将相关的数据和函数组合在一起，这样我们就能更轻松地管理复杂的程序，使代码更具模块化和可维护性。
 
-```python
-class Stock:
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
-    def cost(self):
-        return self.shares * self.price
-```
+Python 类主要由两个部分组成：
 
-完成上述操作后，运行你的程序，并对你新创建的 `Stock` 对象进行实验：
+- **属性（Attributes）**：这些是存储在类中的变量。可以把属性看作是对象的特征或特性。例如，如果我们要创建一个表示人的类，属性可以是人的姓名、年龄和身高。
+- **方法（Methods）**：这些是属于类的函数，它们可以访问或修改类的属性。方法定义了对象可以执行的操作。以人的类为例，一个方法可以是一个计算人年龄（以月为单位）的函数。
 
-注意：要做到这一点，你可能需要使用 `-i` 选项来运行 Python。例如：
+类非常有用，因为它们提供了一种创建可复用代码和对现实世界概念进行建模的方式。在这个实验中，我们将创建一个 `Stock` 类，该类将用于表示股票信息，如股票名称、股数和每股价格。
 
-```bash
-python3 -i stock.py
-```
+以下是 Python 类的基本结构：
 
 ```python
->>> s = Stock('GOOG',100,490.10)
->>> s.name
-'GOOG'
->>> s.shares
-100
->>> s.price
-490.1
->>> s.cost()
-49010.0
->>> print('%10s %10d %10.2f' % (s.name, s.shares, s.price))
-      GOOG        100     490.10
->>> t = Stock('IBM', 50, 91.5)
->>> t.cost()
-4575.0
->>>
+class ClassName:
+    def __init__(self, parameter1, parameter2):
+        self.attribute1 = parameter1
+        self.attribute2 = parameter2
+
+    def method_name(self):
+        # Code that uses the attributes
+        return result
 ```
+
+`__init__` 方法是 Python 类中的一个特殊方法。当我们从类中创建一个新对象时，它会自动被调用。这个方法用于初始化对象的属性。`self` 参数是对类实例的引用，用于从类内部访问属性和方法。当我们在对象上调用方法时，Python 会自动将对象本身作为第一个参数传递，这就是为什么我们在方法定义中使用 `self` 的原因。这样我们就可以处理特定实例的属性并对其执行操作。

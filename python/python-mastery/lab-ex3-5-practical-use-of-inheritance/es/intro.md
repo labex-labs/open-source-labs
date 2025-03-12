@@ -1,8 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás cómo utilizar la herencia para escribir código extensible y crear una aplicación práctica que muestre datos en múltiples formatos. También entenderás cómo utilizar clases base abstractas y sus implementaciones concretas.
 
-- Aprender a usar la herencia para escribir código extensible.
-- Ver un uso práctico de la herencia escribiendo un programa que debe imprimir datos en una variedad de formatos seleccionables por el usuario, como texto plano, CSV y HTML.
-
-**Archivos modificados:** `tableformat.py`
+Además, implementarás un patrón de fábrica (factory pattern) para simplificar la selección de clases. El archivo que modificarás es `tableformat.py`.

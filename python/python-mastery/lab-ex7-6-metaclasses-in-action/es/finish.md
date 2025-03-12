@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio Metaclases en Acción. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido cómo aprovechar el poder de las metaclases en Python. Primero, comprendiste el desafío de gestionar las importaciones de tipos de validadores. Luego, modificaste la clase `Validator` para recopilar automáticamente sus subclases y creaste una metaclase `StructureMeta` para inyectar tipos de validadores en los espacios de nombres de las clases. Finalmente, probaste la implementación con una clase `Stock`, eliminando la necesidad de importaciones explícitas.
+
+Las metaclases, una característica avanzada de Python, permiten personalizar el proceso de creación de clases. Aunque deben usarse con moderación, ofrecen soluciones elegantes a problemas específicos, como se muestra en este laboratorio. Al utilizar una metaclase, simplificaste el código para definir estructuras con atributos validados, eliminaste la necesidad de importaciones explícitas de tipos de validadores y creaste una API más mantenible y elegante. Este patrón de inyección de espacio de nombres basado en metaclases se puede aplicar a otros escenarios para una API de usuario más sencilla.

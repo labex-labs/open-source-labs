@@ -1,29 +1,64 @@
-# 予期されるエラーを伴う単体テスト
+# 例外のテスト
 
-例外をチェックする単体テストを書きたいとしましょう。以下がその方法です。
+テストはソフトウェア開発の重要な部分であり、その重要な側面の 1 つは、コードがエラー状況を適切に処理できることを保証することです。Python では、`unittest` モジュールが特定の例外が期待通りに発生するかどうかをテストする便利な方法を提供しています。
+
+1. `teststock.py` ファイルを開きます。例外をチェックするためのテストメソッドを追加します。これらのテストは、無効な入力に遭遇したときにコードが正しく動作することを確認するのに役立ちます。
 
 ```python
-class TestStock(unittest.TestCase):
-  ...
-    def test_bad_shares(self):
-        s = stock.Stock('GOOG', 100, 490.1)
-        with self.assertRaises(TypeError):
-             s.shares = '50'
-  ...
+def test_shares_type(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(TypeError):
+        s.shares = '50'
+
+def test_shares_value(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(ValueError):
+        s.shares = -50
+
+def test_price_type(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(TypeError):
+        s.price = '490.1'
+
+def test_price_value(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(ValueError):
+        s.price = -490.1
+
+def test_attribute_error(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(AttributeError):
+        s.share = 100  # 'share' is incorrect, should be 'shares'
 ```
 
-このテストを参考にして、以下の失敗モードに対する単体テストを書きましょう。
+これらの例外テストがどのように動作するかを理解しましょう。
 
-- `shares` を文字列に設定すると `TypeError` が発生することをテストする
-- `shares` を負の数に設定すると `ValueError` が発生することをテストする
-- `price` を文字列に設定すると `TypeError` が発生することをテストする
-- `price` を負の数に設定すると `ValueError` が発生することをテストする
-- 存在しない属性 `share` を設定すると `AttributeError` が発生することをテストする
+- `with self.assertRaises(ExceptionType):` 文はコンテキストマネージャを作成します。このコンテキストマネージャは、`with` ブロック内のコードが指定された例外を発生させるかどうかをチェックします。
+- `with` ブロック内で期待される例外が発生した場合、テストは合格します。これは、コードが無効な入力を正しく検出し、適切なエラーを発生させていることを意味します。
+- 例外が発生しないか、異なる例外が発生した場合、テストは失敗します。これは、コードが無効な入力を期待通りに処理していない可能性があることを示しています。
 
-完了したときには合計で約一打の単体テストが必要になります。
+これらのテストは、以下のシナリオを検証するように設計されています。
 
-**重要な注意事項**
+- `shares` 属性を文字列に設定すると、`shares` は数値である必要があるため、`TypeError` が発生するはずです。
+- `shares` 属性を負の数に設定すると、株式数は負にすることができないため、`ValueError` が発生するはずです。
+- `price` 属性を文字列に設定すると、`price` は数値である必要があるため、`TypeError` が発生するはずです。
+- `price` 属性を負の数に設定すると、価格は負にすることができないため、`ValueError` が発生するはずです。
+- 存在しない属性 `share`（末尾の 's' が欠けている）を設定しようとすると、正しい属性名は `shares` であるため、`AttributeError` が発生するはずです。
 
-このコースの後の使用のために、完全に機能する `stock.py` と `teststock.py` ファイルが必要になります。必要に応じて作業中の内容を保存してくださいが、この時点でまだ問題がある場合は、`Solutions/5_6` からコードをコピーすることを強くお勧めします。
+2. これらのテストメソッドを追加したら、`teststock.py` ファイルを保存します。次に、ターミナルで以下のコマンドを使用してすべてのテストを実行します。
 
-後で `Stock` コードを改善するためのツールとして `teststock.py` ファイルを使用する予定です。新しいコードが古いコードと同じように動作することを確認するために、それを手元に置いておく必要があります。
+```bash
+python3 teststock.py
+```
+
+すべてが正しく動作している場合、12 のテストすべてが合格したことを示す出力が表示されるはずです。出力は次のようになります。
+
+```
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK
+```
+
+12 個のドットは、これまでに書いたすべてのテストを表しています。前のステップで 7 つのテストがあり、ここで 5 つの新しいテストを追加しました。この出力は、コードが例外を期待通りに処理していることを示しており、十分にテストされたプログラムの良い兆しです。

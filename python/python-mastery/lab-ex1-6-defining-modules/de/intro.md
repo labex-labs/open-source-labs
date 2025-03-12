@@ -1,17 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab lernen Sie etwas über Python-Module (Python modules). Dies sind Dateien, die Python-Code enthalten und die in anderen Programmen importiert und verwendet werden können. Dieser modulare Ansatz fördert die Wiederverwendung von Code und hilft, Programme in logische Komponenten zu organisieren.
 
-- Definition von Modulen
-- Verwendung des `import`-Statements
-
-**Hinweis:** Für diese Übung mit Modulen ist es von entscheidender Wichtigkeit, sicherzustellen, dass Sie Python in einer geeigneten Umgebung ausführen. Sie müssen möglicherweise den Wert von `sys.path` überprüfen, wenn Sie `import`-Statements nicht zum Laufen bringen können. Fordern Sie Hilfe an, wenn alles kaputt scheint.
-
-Bevor Sie mit dieser Übung beginnen, starten Sie zunächst Ihre Python-Interpreter-Sitzung neu. Wenn Sie IDLE verwenden, klicken Sie auf das Shell-Fenster und suchen Sie nach einer Menüoption "Shell \> Restart Shell". Sie sollten eine Nachricht wie diese erhalten:
-
-```python
->>> ##################== RESTART ##################==
->>>
-```
-
-Wenn Sie Unix verwenden, beenden Sie einfach Python und starten Sie den Interpreter neu.
+Sie werden verstehen, was Python-Module sind und warum sie nützlich sind, erfahren, wie Sie Ihre eigenen Module erstellen können, üben verschiedene Arten der Verwendung der `import`-Anweisung und ergreifen das Konzept eines Hauptmoduls (main module) sowie den Zeitpunkt, zu dem Code ausgeführt wird. Voraussetzungen sind ein grundlegendes Verständnis der Python-Syntax und -Funktionen sowie Vertrautheit mit dem Erstellen und Ausführen von Python-Skripten. Es wird empfohlen, Ihre Python-Interpreter-Sitzung vor Beginn dieser Übung neu zu starten, um eine saubere Umgebung zu haben.

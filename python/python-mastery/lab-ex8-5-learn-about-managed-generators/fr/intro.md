@@ -1,11 +1,5 @@
 # Introduction
 
-**Objectifs :**
+Dans ce laboratoire, vous allez apprendre à connaître les générateurs gérés (managed generators) et comprendre comment les piloter de manière inhabituelle. Vous allez également construire un simple planificateur de tâches (task scheduler) et créer un serveur réseau en utilisant des générateurs.
 
-- Découvrir les générateurs gérés
-
-**Fichiers créés :** `multitask.py`, `server.py`
-
-Une fonction génératrice ou une coroutine ne peut jamais s'exécuter sans être entraînée par un autre code. Par exemple, un générateur utilisé pour l'itération ne fait rien tant qu'aucune itération n'est effectivement effectuée à l'aide d'une boucle `for`. De même, une collection de coroutines ne s'exécutera pas à moins que sa méthode `send()` ne soit invoquée d'une certaine manière.
-
-Dans les applications avancées des générateurs, il est possible d'entraîner les générateurs de diverses manières inhabituelles. Dans cet exercice, nous examinons quelques exemples.
+Une fonction générateur en Python nécessite un code externe pour s'exécuter. Par exemple, un générateur d'itération ne fonctionne que lorsqu'il est itéré avec une boucle `for`, et les coroutines ont besoin que leur méthode `send()` soit appelée. Dans ce laboratoire, nous allons explorer des exemples pratiques de pilotage de générateurs dans des applications avancées. Les fichiers créés lors de ce laboratoire sont `multitask.py` et `server.py`.

@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Créer un objet appelable approprié. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris à créer des objets appelables (callable objects) appropriés en Python. Tout d'abord, vous avez exploré des classes de validateurs de base pour la vérification de type et créé un objet appelable en utilisant la méthode `__call__`. Ensuite, vous avez amélioré cet objet pour effectuer des validations basées sur les annotations de fonction et relevé le défi d'utiliser des objets appelables comme méthodes de classe.
+
+Les concepts clés abordés incluent les objets appelables et la méthode `__call__`, les annotations de fonction pour les indications de type (type hinting), l'utilisation du module `inspect` pour examiner les signatures de fonction, et le protocole de descripteur (descriptor protocol) avec la méthode `__get__` pour les méthodes de classe. Ces techniques vous permettent de créer de puissants enrobages de fonction (function wrappers) pour le traitement avant et après l'appel, ce qui est un modèle fondamental pour les décorateurs et d'autres fonctionnalités avancées de Python.

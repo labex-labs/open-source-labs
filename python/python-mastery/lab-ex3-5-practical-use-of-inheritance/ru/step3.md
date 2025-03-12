@@ -1,25 +1,46 @@
-# Реализация конкретного форматировщика
+# Реализация конкретного форматера
 
-`TableFormatter` не предназначен для самостоятельного использования. Вместо этого он лишь база для других классов, которые будут реализовывать форматирование. Добавьте следующий класс в `tableformat.py`:
+Теперь, когда мы определили абстрактный базовый класс и обновили функцию `print_table()`, пришло время создать конкретный класс форматера. Конкретный класс форматера - это класс, который предоставляет фактические реализации методов, определенных в абстрактном базовом классе. В нашем случае мы создадим класс, который может форматировать данные в простой текстовой таблице.
+
+Добавим следующий класс в файл `tableformat.py`. Этот класс будет наследоваться от абстрактного базового класса `TableFormatter` и реализовывать методы `headings()` и `row()`.
 
 ```python
 class TextTableFormatter(TableFormatter):
+    """
+    Formatter that generates a plain - text table.
+    """
     def headings(self, headers):
+        """
+        Generate plain - text table headings.
+        """
         print(' '.join('%10s' % h for h in headers))
-        print(('-'*10 +'')*len(headers))
+        print(('-'*10 + ' ')*len(headers))
 
     def row(self, rowdata):
+        """
+        Generate a plain - text table row.
+        """
         print(' '.join('%10s' % d for d in rowdata))
 ```
 
-Теперь используйте ваш новый класс следующим образом:
+Класс `TextTableFormatter` наследуется от `TableFormatter`. Это означает, что он получает все свойства и методы класса `TableFormatter`, но также предоставляет свои собственные реализации методов `headings()` и `row()`. Эти методы отвечают за форматирование заголовков и строк таблицы соответственно. Метод `headings()` выводит заголовки в красиво отформатированном виде, за которым следует строка из тире, разделяющая заголовки от данных. Метод `row()` форматирует каждую строку данных аналогичным образом.
+
+Теперь протестируем наш новый форматер. Мы будем использовать модули `stock`, `reader` и `tableformat` для чтения данных из CSV - файла и вывода их с использованием нашего нового форматера.
 
 ```python
->>> import stock, reader, tableformat
->>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
->>> formatter = tableformat.TextTableFormatter()
->>> tableformat.print_table(portfolio, ['name','shares', 'price'], formatter)
-     name     shares      price
+import stock
+import reader
+import tableformat
+
+portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
+formatter = tableformat.TextTableFormatter()
+tableformat.print_table(portfolio, ['name', 'shares', 'price'], formatter)
+```
+
+При запуске этого кода вы должны увидеть тот же вывод, что и раньше. Это происходит потому, что наш новый форматер предназначен для создания той же простой текстовой таблицы, что и исходная функция `print_table()`.
+
+```
+      name     shares      price
 ---------- ---------- ----------
         AA        100       32.2
        IBM         50       91.1
@@ -28,5 +49,6 @@ class TextTableFormatter(TableFormatter):
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
->>>
 ```
+
+Этот вывод подтверждает, что наш `TextTableFormatter` работает правильно. Преимущество использования такого подхода заключается в том, что мы сделали наш код более модульным и расширяемым. Разделив логику форматирования на отдельную иерархию классов, мы можем легко добавлять новые форматы вывода. Все, что нам нужно сделать, - это создать новые подклассы `TableFormatter` без изменения функции `print_table()`. Таким образом, в будущем мы сможем поддерживать разные форматы вывода, такие как CSV или HTML.

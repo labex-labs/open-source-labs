@@ -1,13 +1,31 @@
-# 准备工作
+# 理解问题
 
-在 Python 中，类的一个主要用途是编写能够以各种方式进行扩展/适配的代码。为了说明这一点，在练习 3.2 中，你创建了一个生成表格的函数 `print_table()`。你用它来生成 `portfolio` 列表的输出。例如：
+在这个实验中，你将学习 Python 中的继承，以及它如何帮助你创建可扩展且适应性强的代码。继承是面向对象编程中的一个强大概念，一个类可以从另一个类继承属性和方法。这使你能够复用代码，并在现有代码的基础上构建更复杂的功能。
+
+让我们先看看现有的 `print_table()` 函数。你将改进这个函数，使其在输出格式方面更加灵活。
+
+首先，你需要在 WebIDE 编辑器中打开 `tableformat.py` 文件。该文件的路径如下：
+
+```
+/home/labex/project/tableformat.py
+```
+
+打开文件后，你会看到 `print_table()` 函数的当前实现。这个函数用于格式化和打印表格数据。它主要接受两个输入：一个记录列表（记录为对象）和一个字段名列表。根据这些输入，它会打印出格式良好的表格。
+
+现在，让我们测试这个函数，看看它是如何工作的。在 WebIDE 中打开一个终端，并运行以下 Python 命令。这些命令会导入必要的模块，从 CSV 文件中读取数据，然后使用 `print_table()` 函数显示数据。
 
 ```python
->>> import stock
->>> import reader
->>> import tableformat
->>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
->>> tableformat.print_table(portfolio, ['name','shares','price'])
+import stock
+import reader
+import tableformat
+
+portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
+tableformat.print_table(portfolio, ['name', 'shares', 'price'])
+```
+
+运行这些命令后，你应该会看到以下输出：
+
+```
       name     shares      price
 ---------- ---------- ----------
         AA        100       32.2
@@ -17,7 +35,14 @@
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
->>>
 ```
 
-假设你希望 `print_table()` 函数能够以任意数量的输出格式（如 CSV、XML、HTML、Excel 等）生成表格。试图一次性修改该函数以支持所有这些输出格式会很麻烦。更好的方法是将与输出相关的格式化代码移到一个类中，并使用继承来实现不同的输出格式。
+输出看起来不错，但这个函数有一个局限性。目前，它只支持一种输出格式，即纯文本格式。在实际场景中，你可能希望以不同的格式（如 CSV、HTML 等）输出数据。
+
+与其每次想要支持新的输出格式时都修改 `print_table()` 函数，你可以使用继承来创建一个更灵活的解决方案。具体做法如下：
+
+1. 定义一个基类 `TableFormatter`。这个类将包含用于格式化数据的方法。基类提供了一个通用的结构和功能，所有子类都可以在此基础上构建。
+2. 创建各种子类。每个子类将针对不同的输出格式进行设计。例如，一个子类可能用于 CSV 输出，另一个用于 HTML 输出，依此类推。这些子类将继承基类的方法，并且还可以添加自己的特定功能。
+3. 修改 `print_table()` 函数，使其可以与任何格式化器一起工作。这意味着你可以将 `TableFormatter` 类的不同子类传递给 `print_table()` 函数，它将能够使用相应的格式化方法。
+
+这种方法有一个很大的优点。它允许你在不改变 `print_table()` 函数核心功能的情况下添加新的输出格式。因此，随着需求的变化，当你需要支持更多的输出格式时，你可以通过创建新的子类轻松实现。

@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab zu Klassenvariablen und Klassenmethoden abgeschlossen. Sie können in LabEx weitere Labs ausprobieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie zwei wichtige Python-Features kennengelernt: Klassenvariablen und Klassenmethoden. Klassenvariablen werden von allen Klasseninstanzen geteilt und können für die Konfiguration verwendet werden. Klassenmethoden arbeiten auf der Klasse selbst und sind mit dem `@classmethod`-Decorator markiert. Alternative Konstruktoren, eine häufige Verwendung von Klassenmethoden, bieten verschiedene Möglichkeiten, Objekte zu erstellen. Die Vererbung mit Klassenvariablen ermöglicht es Unterklassen, ihr Verhalten durch deren Überschreiben anzupassen, und der Einsatz von Klassenmethoden kann zu einem flexiblen Code-Design führen.
+
+Diese Konzepte sind sehr nützlich für die Erstellung von gut organisiertem und flexiblem Python-Code. Indem Sie Typkonvertierungen innerhalb der Klasse durchführen und über Klassenmethoden eine einheitliche Schnittstelle bereitstellen, können Sie allgemeinere Hilfsprogramme schreiben. Um Ihr Wissen zu erweitern, können Sie weitere Anwendungsfälle erkunden, Klassenhierarchien erstellen und komplexe Datenverarbeitungspipelines mit Klassenmethoden aufbauen.

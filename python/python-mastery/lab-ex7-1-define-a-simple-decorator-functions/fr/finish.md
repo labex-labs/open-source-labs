@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Apprendre à définir des fonctions décoratrices simples. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris ce que sont les décorateurs (decorators) en Python et comment ils fonctionnent. Vous avez également maîtrisé la création d'un simple décorateur de journalisation (logging decorator) pour ajouter un comportement aux fonctions et construit un décorateur plus complexe pour valider les arguments des fonctions en fonction des annotations de type (type annotations). De plus, vous avez appris à utiliser le module `inspect` pour analyser les signatures des fonctions et `functools.wraps` pour conserver les métadonnées des fonctions.
+
+Les décorateurs sont une fonctionnalité puissante de Python qui permet d'écrire un code plus maintenable et réutilisable. Ils sont couramment utilisés dans les frameworks et les bibliothèques Python pour des préoccupations transversales telles que la journalisation, le contrôle d'accès et la mise en cache. Vous pouvez maintenant appliquer ces techniques dans vos propres projets Python pour obtenir un code plus propre et plus maintenable.

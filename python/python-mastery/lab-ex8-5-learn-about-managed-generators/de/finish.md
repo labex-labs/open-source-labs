@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Lernen Sie über verwaltete Generatoren" abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie das Konzept von verwalteten Generatoren in Python kennengelernt. Sie haben untersucht, wie man Generatoren mit der `yield`-Anweisung anhalten und fortsetzen kann, und einen einfachen Task-Scheduler erstellt, um mehrere Generatoren gleichzeitig auszuführen. Darüber hinaus haben Sie den Scheduler erweitert, um Netzwerk-E/A effizient zu verwalten, und einen Netzwerkserver implementiert, der mehrere Verbindungen gleichzeitig verarbeiten kann.
+
+Dieses Muster der Verwendung von Generatoren für kooperatives Multitasking ist eine leistungsstarke Technik, die vielen asynchronen Programmierframeworks in Python zugrunde liegt, wie beispielsweise dem integrierten `asyncio`-Modul. Dieser Ansatz bietet mehrere Vorteile, darunter einfacher sequenzieller Code, effiziente nicht-blockierende E/A-Verarbeitung, kooperatives Multitasking ohne mehrere Threads und feingranulare Kontrolle über die Aufgabenausführung. Diese Techniken sind wertvoll für das Bauen von leistungsstarken Netzwerkapplikationen und Systemen, die eine effiziente Verwaltung von gleichzeitigen Operationen erfordern.

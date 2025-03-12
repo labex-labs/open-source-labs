@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Wie Objekte dargestellt werden" abgeschlossen. Sie können in LabEx weitere Labs ausprobieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie die internen Funktionsweisen von Pythons Objektsystem und mehrere Schlüsselkonzepte kennengelernt. Zunächst speichern Python-Objekte Attribute in einem Dictionary, auf das über das `__dict__`-Attribut zugegriffen werden kann, was eine hohe Flexibilität bietet. Zweitens haben Sie verstanden, wie die Zuweisung und Suche von Attributen funktionieren, einschließlich der dynamischen Hinzufügung von Attributen und der Reihenfolge der Attributüberprüfung.
+
+Darüber hinaus haben Sie die Beziehung zwischen Klassen und Instanzen untersucht. Klassen enthalten geteilte Daten und Verhalten, während Instanzen ihren eigenen Zustand aufrechterhalten. Sie haben auch entdeckt, wie Methodenaufrufe funktionieren, wobei Methoden in der Klasse über den `self`-Parameter auf Instanzen wirken. Das Verständnis dieser Konzepte vertieft Ihr Verständnis des objektorientierten Programmiermodells von Python und ist nützlich für das Debugging, das Design von Klassenhierarchien und das Erlernen fortgeschrittener Funktionen.

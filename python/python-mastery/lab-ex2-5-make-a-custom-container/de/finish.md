@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Erstellen eines benutzerdefinierten Containers" abgeschlossen. Sie können in LabEx weitere Labs ausprobieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie mehrere wichtige Fähigkeiten erlernt. Zunächst haben Sie das Verhalten der Speicherzuweisung in Python - Listen und - Wörterbüchern (Dictionaries) untersucht und gelernt, den Speicherverbrauch zu optimieren, indem Sie von einer zeilenorientierten zur spaltenorientierten Datenspeicherung wechseln. Zweitens haben Sie eine benutzerdefinierte Containerklasse erstellt, die die ursprüngliche Schnittstelle beibehält, dabei aber weniger Speicher verbraucht, und diese Klasse so verbessert, dass sie Slicing - Operationen richtig behandelt.
+
+Diese Techniken sind von hohem Wert, wenn Sie mit großen Datensätzen arbeiten, da sie den Speicherverbrauch erheblich reduzieren können, ohne die Schnittstelle Ihres Codes zu ändern. Die Fähigkeit, benutzerdefinierte Containerklassen zu erstellen, die integrierte Python - Container imitieren, aber eine andere interne Darstellung haben, ist ein leistungsstarkes Optimierungswerkzeug für Python - Anwendungen. Sie können diese Konzepte auf andere speicherkritische Projekte anwenden, insbesondere auf solche, die große, regelmäßig strukturierte Datensätze betreffen.

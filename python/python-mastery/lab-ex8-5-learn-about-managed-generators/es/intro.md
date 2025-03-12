@@ -1,11 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás sobre los generadores gestionados (managed generators) y entenderás cómo impulsarlos de formas inusuales. También construirás un sencillo programador de tareas (task scheduler) y crearás un servidor de red utilizando generadores.
 
-- Aprender sobre generadores administrados
-
-**Archivos creados:** `multitask.py`, `server.py`
-
-Una función generadora o de corrutina nunca puede ejecutarse sin ser impulsada por algún otro código. Por ejemplo, un generador utilizado para iteración no hace nada a menos que se realice una iteración utilizando un bucle `for`. Del mismo modo, una colección de corrutinas no se ejecutará a menos que se invoque de alguna manera su método `send()`.
-
-En aplicaciones avanzadas de generadores, es posible impulsar los generadores de varias maneras inusuales. En este ejercicio, examinamos algunos ejemplos.
+Una función generadora en Python requiere código externo para ejecutarse. Por ejemplo, un generador de iteración solo se ejecuta cuando se itera con un bucle `for`, y las corrutinas necesitan que se llame a su método `send()`. En este laboratorio, exploraremos ejemplos prácticos de cómo impulsar generadores en aplicaciones avanzadas. Los archivos creados durante este laboratorio son `multitask.py` y `server.py`.

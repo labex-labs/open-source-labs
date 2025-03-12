@@ -1,47 +1,24 @@
-# Erstellen Sie Ihre erste Metaklasse
+# Das Verständnis von Metaklassen
 
-Erstellen Sie eine Datei namens `mymeta.py` und legen Sie den folgenden Code darin ab (aus den Folien):
+Metaklassen sind ein fortgeschrittenes, aber leistungsstarkes Feature in Python. Als Anfänger fragen Sie sich vielleicht, was Metaklassen sind und warum sie wichtig sind. Bevor wir mit der Erstellung unserer ersten Metaklasse beginnen, nehmen wir einen Moment Zeit, um diese Konzepte zu verstehen.
 
-```python
-# mymeta.py
+## Was ist eine Metaklasse?
 
-class mytype(type):
-    @staticmethod
-    def __new__(meta, name, bases, __dict__):
-        print("Erstelle Klasse :", name)
-        print("Basis-Klassen   :", bases)
-        print("Attribute      :", list(__dict__))
-        return super().__new__(meta, name, bases, __dict__)
+In Python ist alles ein Objekt, und das umfasst auch Klassen. Genauso wie eine normale Klasse zur Erstellung von Instanzen verwendet wird, wird eine Metaklasse zur Erstellung von Klassen verwendet. Standardmäßig verwendet Python die eingebaute Metaklasse `type`, um alle Klassen zu erstellen.
 
-class myobject(metaclass=mytype):
-    pass
+Lassen Sie uns den Klassen-Erstellungsprozess Schritt für Schritt analysieren:
+
+1. Zuerst liest Python die Klassen-Definition, die Sie in Ihrem Code geschrieben haben. Hier definieren Sie den Namen der Klasse, ihre Attribute und Methoden.
+2. Dann sammelt Python wichtige Informationen über die Klasse, wie den Klassennamen, alle Basisklassen, von denen sie erbt, und alle ihre Attribute.
+3. Danach übergibt Python diese gesammelten Informationen an die Metaklasse. Die Metaklasse ist dafür verantwortlich, diese Informationen zu nehmen und das eigentliche Klassen-Objekt zu erstellen.
+4. Schließlich erstellt und gibt die Metaklasse die neue Klasse zurück.
+
+Eine Metaklasse gibt Ihnen die Möglichkeit, diesen Klassen-Erstellungsprozess anzupassen. Sie können Klassen modifizieren oder untersuchen, während sie erstellt werden, was in bestimmten Szenarien sehr nützlich sein kann.
+
+Lassen Sie uns diese Beziehung visualisieren, um es einfacher zu verstehen:
+
+```
+Metaclass → creates → Class → creates → Instance
 ```
 
-Sobald Sie dies getan haben, definieren Sie eine Klasse, die von `myobject` statt von `object` erbt. Beispielsweise:
-
-```python
-class Stock(myobject):
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
-    def cost(self):
-        return self.shares * self.price
-    def sell(self, nshares):
-        self.shares -= nshares
-```
-
-Versuchen Sie, Ihren Code auszuführen und Instanzen von `Stock` zu erstellen. Sehen Sie, was passiert. Sie sollten die Print-Anweisungen aus Ihrer `mytype` einmal sehen, wenn die `Stock`-Klasse definiert wird.
-
-Was passiert, wenn Sie von `Stock` erben?
-
-```python
-class MyStock(Stock):
-    pass
-```
-
-Sie sollten immer noch Ihre Metaklasse im Einsatz sehen. Metaklassen sind "klebrig", in dem sie über eine gesamte Vererbungshierarchie angewendet werden.
-
-**Diskussion**
-
-Warum möchten Sie so etwas tun? Die Hauptstärke einer Metaklasse besteht darin, dass sie einem Programmierer die Möglichkeit gibt, Details über Klassen kurz vor ihrer Erstellung zu erfassen. Beispielsweise erhalten Sie in der `__new__()`-Methode alle grundlegenden Details, einschließlich des Namens der Klasse, der Basisklassen und der Methodendaten. Wenn Sie diese Daten untersuchen, können Sie verschiedene Arten von diagnostischen Checks durchführen. Wenn Sie wagemutiger sind, können Sie die Daten ändern und verändern, was in der Klassendefinition platziert wird, wenn sie erstellt wird. Keine Angst, es gibt viele Möglichkeiten für schreckliches böses Böses.
+In diesem Lab werden wir unsere eigene Metaklasse erstellen. Auf diese Weise können Sie diesen Klassen-Erstellungsprozess in Aktion sehen und ein besseres Verständnis dafür entwickeln, wie Metaklassen funktionieren.

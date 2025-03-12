@@ -119,5 +119,433 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "作用域规则与技巧",
+      "description": "理解类初始化问题，使用 locals() 访问函数参数，探索栈帧检查，并在 Python 中实现结构的高级初始化。",
+      "meta": {
+        "title": "作用域规则与技巧",
+        "description": "理解类初始化问题，使用 locals() 访问函数参数，探索栈帧检查，并在 Python 中实现结构的高级初始化。",
+        "keywords": "Python, 作用域规则, 类初始化, locals(), 栈帧检查"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解初始初始化的问题",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证文件结构",
+                "file": "verify1-1.sh",
+                "hint": "确保 structure.py 和 stock.py 文件存在"
+              }
+            ]
+          },
+          {
+            "title": "使用 locals() 访问函数参数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录包含 locals 实验",
+                "file": "verify2-1.sh",
+                "hint": "确保你已在 Python 解释器中运行了 locals() 实验"
+              }
+            ]
+          },
+          {
+            "title": "探索栈帧检查",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证栈帧检查实验",
+                "file": "verify3-1.sh",
+                "hint": "确保你已经探索过栈帧检查技术"
+              }
+            ]
+          },
+          {
+            "title": "在结构体中实现高级初始化",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证 structure.py 已更新",
+                "file": "verify4-1.sh",
+                "hint": "确保 structure.py 包含带有 _init 方法的新实现"
+              },
+              {
+                "name": "验证 stock.py 已更新",
+                "file": "verify4-2.sh",
+                "hint": "确保 stock.py 调用了 self._init()"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Reglas y trucos de alcance (scoping)",
+      "description": "Comprende el problema de la inicialización de clases, utiliza locals() para acceder a los argumentos de una función, explora la inspección de marcos de pila (stack frame inspection) e implementa la inicialización avanzada en estructuras en Python.",
+      "meta": {
+        "title": "Reglas y trucos de alcance (scoping)",
+        "description": "Comprende el problema de la inicialización de clases, utiliza locals() para acceder a los argumentos de una función, explora la inspección de marcos de pila (stack frame inspection) e implementa la inicialización avanzada en estructuras en Python.",
+        "keywords": "Python, reglas de alcance (scoping), inicialización de clases, locals(), inspección de marcos de pila (stack frame inspection)"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendiendo el problema de la inicialización de clases",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar la estructura del archivo",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de que existan los archivos structure.py y stock.py"
+              }
+            ]
+          },
+          {
+            "title": "Usando locals() para acceder a los argumentos de una función",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar que el historial de Python incluya el experimento con locals",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber ejecutado el experimento con locals() en el intérprete de Python"
+              }
+            ]
+          },
+          {
+            "title": "Explorando la inspección de marcos de pila (stack frames)",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar el experimento de inspección de marcos de pila",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber explorado la técnica de inspección de marcos de pila"
+              }
+            ]
+          },
+          {
+            "title": "Implementando la inicialización avanzada en una estructura",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar que structure.py se haya actualizado",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de que structure.py contenga la nueva implementación con el método _init"
+              },
+              {
+                "name": "Verificar que stock.py se haya actualizado",
+                "file": "verify4-2.sh",
+                "hint": "Asegúrate de que stock.py llame a self._init()"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Règles de portée et astuces",
+      "description": "Comprendre le problème d'initialisation de classe, utiliser locals() pour accéder aux arguments de fonction, explorer l'inspection des cadres de pile (stack frame inspection) et implémenter une initialisation avancée dans une structure en Python.",
+      "meta": {
+        "title": "Règles de portée et astuces",
+        "description": "Comprendre le problème d'initialisation de classe, utiliser locals() pour accéder aux arguments de fonction, explorer l'inspection des cadres de pile (stack frame inspection) et implémenter une initialisation avancée dans une structure en Python.",
+        "keywords": "Python, règles de portée, initialisation de classe, locals(), inspection des cadres de pile"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre le problème d'initialisation de classe",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier la structure du fichier",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous que les fichiers structure.py et stock.py existent"
+              }
+            ]
+          },
+          {
+            "title": "Utilisation de locals() pour accéder aux arguments de fonction",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier que l'historique Python inclut l'expérience avec locals()",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir exécuté l'expérience avec locals() dans l'interpréteur Python"
+              }
+            ]
+          },
+          {
+            "title": "Exploration de l'inspection des cadres de pile",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier l'expérience d'inspection des cadres de pile",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir exploré la technique d'inspection des cadres de pile"
+              }
+            ]
+          },
+          {
+            "title": "Implémentation de l'initialisation avancée dans une structure",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier que structure.py a été mis à jour",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous que structure.py contient la nouvelle implémentation avec la méthode _init"
+              },
+              {
+                "name": "Vérifier que stock.py a été mis à jour",
+                "file": "verify4-2.sh",
+                "hint": "Assurez-vous que stock.py appelle self._init()"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Geltungsbereichsregeln und Tricks",
+      "description": "Verstehen Sie das Problem bei der Klasseninitialisierung, nutzen Sie locals() zum Zugriff auf Funktionsargumente, erkunden Sie die Stack-Frame-Inspektion und implementieren Sie erweiterte Initialisierung in Strukturen in Python.",
+      "meta": {
+        "title": "Geltungsbereichsregeln und Tricks",
+        "description": "Verstehen Sie das Problem bei der Klasseninitialisierung, nutzen Sie locals() zum Zugriff auf Funktionsargumente, erkunden Sie die Stack-Frame-Inspektion und implementieren Sie erweiterte Initialisierung in Strukturen in Python.",
+        "keywords": "Python, Geltungsbereichsregeln, Klasseninitialisierung, locals(), Stack-Frame-Inspektion"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Verständnis des Problems bei der Klasseninitialisierung",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Dateistruktur",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass die Dateien structure.py und stock.py existieren"
+              }
+            ]
+          },
+          {
+            "title": "Verwendung von locals() zum Zugriff auf Funktionsargumente",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob der Python-Verlauf das locals-Experiment enthält",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie das locals()-Experiment im Python-Interpreter ausgeführt haben"
+              }
+            ]
+          },
+          {
+            "title": "Erkundung der Stack-Frame-Inspektion",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen des Stack-Frame-Inspektionsexperiments",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Stack-Frame-Inspektionsmethode untersucht haben"
+              }
+            ]
+          },
+          {
+            "title": "Implementierung der erweiterten Initialisierung in einer Struktur",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob structure.py aktualisiert wurde",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass structure.py die neue Implementierung mit der _init-Methode enthält"
+              },
+              {
+                "name": "Überprüfen, ob stock.py aktualisiert wurde",
+                "file": "verify4-2.sh",
+                "hint": "Stellen Sie sicher, dass stock.py self._init() aufruft"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "スコープルールとテクニック",
+      "description": "Pythonでクラスの初期化に関する問題を理解し、locals()を使って関数の引数にアクセスし、スタックフレームの調査を行い、構造体における高度な初期化を実装します。",
+      "meta": {
+        "title": "スコープルールとテクニック",
+        "description": "Pythonでクラスの初期化に関する問題を理解し、locals()を使って関数の引数にアクセスし、スタックフレームの調査を行い、構造体における高度な初期化を実装します。",
+        "keywords": "Python, スコープルール, クラスの初期化, locals(), スタックフレームの調査"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "クラス初期化における問題の理解",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "ファイル構造の検証",
+                "file": "verify1-1.sh",
+                "hint": "structure.py と stock.py ファイルが存在することを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "locals() を使った関数引数へのアクセス",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "Pythonの履歴に locals 実験が含まれていることを確認",
+                "file": "verify2-1.sh",
+                "hint": "Pythonインタープリターで locals() の実験を実行したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "スタックフレーム検査の探索",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "スタックフレーム検査実験の確認",
+                "file": "verify3-1.sh",
+                "hint": "スタックフレーム検査技術を探索したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "構造体における高度な初期化の実装",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "structure.py が更新されていることを確認",
+                "file": "verify4-1.sh",
+                "hint": "structure.py に _init メソッドを用いた新しい実装が含まれていることを確認してください"
+              },
+              {
+                "name": "stock.py が更新されていることを確認",
+                "file": "verify4-2.sh",
+                "hint": "stock.py が self._init() を呼び出していることを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Правила области видимости и трюки",
+      "description": "Понять проблемы с инициализацией классов, использовать функцию locals() для доступа к аргументам функции, изучить инспекцию стека вызовов и реализовать продвинутую инициализацию структуры в Python.",
+      "meta": {
+        "title": "Правила области видимости и трюки",
+        "description": "Понять проблемы с инициализацией классов, использовать функцию locals() для доступа к аргументам функции, изучить инспекцию стека вызовов и реализовать продвинутую инициализацию структуры в Python.",
+        "keywords": "Python, правила области видимости, инициализация классов, locals(), инспекция стека вызовов"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание проблемы с инициализацией классов",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить структуру файлов",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что файлы structure.py и stock.py существуют"
+              }
+            ]
+          },
+          {
+            "title": "Использование locals() для доступа к аргументам функции",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить, что в истории Python есть эксперимент с locals()",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы запустили эксперимент с locals() в интерпретаторе Python"
+              }
+            ]
+          },
+          {
+            "title": "Исследование инспекции стека вызовов",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить эксперимент по инспекции стека вызовов",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы исследовали технику инспекции стека вызовов"
+              }
+            ]
+          },
+          {
+            "title": "Реализация расширенной инициализации в структуре",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверить, что structure.py был обновлен",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что structure.py содержит новую реализацию с методом _init"
+              },
+              {
+                "name": "Проверить, что stock.py был обновлен",
+                "file": "verify4-2.sh",
+                "hint": "Убедитесь, что stock.py вызывает self._init()"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

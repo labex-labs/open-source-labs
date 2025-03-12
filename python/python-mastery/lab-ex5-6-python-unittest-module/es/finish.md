@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio del módulo unittest de Python. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido cómo utilizar el módulo `unittest` de Python para crear y ejecutar pruebas automatizadas. Has creado un caso de prueba básico extendiendo la clase `unittest.TestCase`, has escrito pruebas para verificar el funcionamiento normal de los métodos y propiedades de una clase, y has creado pruebas para comprobar si se generan las excepciones adecuadas en condiciones de error. También has aprendido cómo ejecutar pruebas específicas y utilizar la detección de pruebas.
+
+Las pruebas unitarias son una habilidad fundamental en el desarrollo de software, ya que garantizan la confiabilidad y corrección del código. Escribir pruebas exhaustivas ayuda a detectar errores desde el principio y brinda confianza en el comportamiento de tu código. A medida que desarrolles aplicaciones en Python, considera adoptar un enfoque de desarrollo guiado por pruebas (Test-Driven Development, TDD), escribiendo pruebas antes de implementar la funcionalidad para obtener un código más robusto y mantenible.

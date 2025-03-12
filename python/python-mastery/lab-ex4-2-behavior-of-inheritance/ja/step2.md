@@ -1,6 +1,12 @@
-# 値チェッカーを作成する
+# 継承を用いた検証システムの構築
 
-演習 3.4 では、`Stock` クラスに、異なる型と値の属性をチェックするいくつかのプロパティを追加しました（たとえば、株式数は正の整数でなければなりません）。この考え方を少し遊んでみましょう。まず、`validate.py` というファイルを作成し、次の基底クラスを定義します。
+このステップでは、継承を使って実用的な検証システムを構築します。継承はプログラミングにおける強力な概念で、既存のクラスを基に新しいクラスを作成することができます。これにより、コードを再利用し、より組織的でモジュール化されたプログラムを作成することができます。この検証システムを構築することで、継承を使ってさまざまな方法で組み合わせることができる再利用可能なコードコンポーネントを作成する方法を学びます。
+
+## 基本検証クラスの作成
+
+まず、検証器の基本クラスを作成する必要があります。これを行うには、WebIDEで新しいファイルを作成します。以下のように操作します。「File」>「New File」をクリックするか、キーボードショートカットを使用します。新しいファイルが開いたら、`validate.py`と名付けます。
+
+では、このファイルにコードを追加して、基本の`Validator`クラスを作成しましょう。このクラスは、他のすべての検証器の基礎となります。
 
 ```python
 # validate.py
@@ -10,7 +16,11 @@ class Validator:
         return value
 ```
 
-次に、型チェック用のいくつかのクラスを作成しましょう。
+このコードでは、`check`メソッドを持つ`Validator`クラスを定義しています。`check`メソッドは値を引数として受け取り、その値をそのまま返します。`@classmethod`デコレータは、このメソッドをクラスメソッドにするために使用されています。これは、クラスのインスタンスを作成することなく、クラス自体でこのメソッドを呼び出すことができることを意味します。
+
+## 型検証器の追加
+
+次に、値の型をチェックする検証器を追加します。これらの検証器は、先ほど作成した`Validator`クラスを継承します。`validate.py`ファイルに戻り、以下のコードを追加します。
 
 ```python
 class Typed(Validator):
@@ -31,42 +41,67 @@ class String(Typed):
     expected_type = str
 ```
 
-これらのクラスの使い方は次のとおりです（注：`@classmethod` を使うことで、実際に必要ないインスタンスを作成する余分な手順を回避できます）。
+`Typed`クラスは`Validator`のサブクラスです。`expected_type`属性を持ち、初期値は`object`に設定されています。`Typed`クラスの`check`メソッドは、与えられた値が期待される型であるかをチェックします。もしそうでなければ、`TypeError`を発生させます。型が正しければ、`super().check(value)`を使って親クラスの`check`メソッドを呼び出します。
+
+`Integer`、`Float`、`String`クラスは`Typed`を継承し、チェックする正確な型を指定しています。たとえば、`Integer`クラスは値が整数であるかをチェックします。
+
+## 型検証器のテスト
+
+型検証器を作成したので、テストしてみましょう。新しいターミナルを開き、以下のコマンドを実行してPythonインタープリタを起動します。
+
+```bash
+python3
+```
+
+Pythonインタープリタが起動したら、検証器をインポートしてテストすることができます。以下のコードでテストします。
 
 ```python
->>> Integer.check(10)
+from validate import Integer, String
+
+Integer.check(10)  # Should return 10
+
+try:
+    Integer.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+String.check('10')  # Should return '10'
+```
+
+このコードを実行すると、以下のような出力が表示されるはずです。
+
+```
 10
->>> Integer.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in check
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>> String.check('10')
+Error: Expected <class 'int'>
 '10'
->>>
 ```
 
-関数でバリデータを使うこともできます。たとえば：
+これらの検証器を関数内で使用することもできます。試してみましょう。
 
 ```python
->>> def add(x, y):
-        Integer.check(x)
-        Integer.check(y)
-        return x + y
+def add(x, y):
+    Integer.check(x)
+    Integer.check(y)
+    return x + y
 
->>> add(2, 2)
-4
->>> add('2', '3')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 2, in add
-  File "validate.py", line 11, in check
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>>
+add(2, 2)  # Should return 4
+
+try:
+    add('2', '3')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
 ```
 
-次に、さまざまな種類のドメインチェック用のクラスをいくつか作成しましょう。
+このコードを実行すると、以下のような出力が表示されるはずです。
+
+```
+4
+Error: Expected <class 'int'>
+```
+
+## 値検証器の追加
+
+これまで、値の型をチェックする検証器を作成しました。次に、型ではなく値自体をチェックする検証器を追加しましょう。`validate.py`ファイルに戻り、以下のコードを追加します。
 
 ```python
 class Positive(Validator):
@@ -84,7 +119,11 @@ class NonEmpty(Validator):
         return super().check(value)
 ```
 
-これらは何のために作られるのでしょうか？ 次のように、多重継承を使ってクラスを組み合わせていきましょう。これはおもちゃのブロックのようにです。
+`Positive`検証器は、値が非負であるかをチェックします。値が0未満の場合、`ValueError`を発生させます。`NonEmpty`検証器は、値の長さがゼロでないかをチェックします。長さが0の場合、`ValueError`を発生させます。
+
+## 多重継承による検証器の組み合わせ
+
+次に、多重継承を使って検証器を組み合わせます。多重継承により、クラスは複数の親クラスから継承することができます。`validate.py`ファイルに戻り、以下のコードを追加します。
 
 ```python
 class PositiveInteger(Integer, Positive):
@@ -97,31 +136,49 @@ class NonEmptyString(String, NonEmpty):
     pass
 ```
 
-基本的には、既存のバリデータを取り出して、新しいバリデータに組み合わせています。狂気です！ では、今度はこれらを使って何かを検証してみましょう。
+これらの新しいクラスは、型チェックと値チェックを組み合わせています。たとえば、`PositiveInteger`クラスは、値が整数であり、かつ非負であることをチェックします。ここでは継承の順序が重要です。検証器は、クラス定義で指定された順序でチェックされます。
+
+## 組み合わせた検証器のテスト
+
+組み合わせた検証器をテストしてみましょう。Pythonインタープリタで以下のコードを実行します。
 
 ```python
->>> PositiveInteger.check(10)
-10
->>> PositiveInteger.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>> PositiveInteger.check(-10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Expected >= 0')
-ValueError: Must be >= 0
+from validate import PositiveInteger, PositiveFloat, NonEmptyString
 
+PositiveInteger.check(10)  # Should return 10
 
->>> NonEmptyString.check('hello')
-'hello'
->>> NonEmptyString.check('')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Must be non-empty')
-ValueError: Must be non-empty
->>>
+try:
+    PositiveInteger.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+try:
+    PositiveInteger.check(-10)  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
+
+NonEmptyString.check('hello')  # Should return 'hello'
+
+try:
+    NonEmptyString.check('')  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
 ```
 
-この時点では、おそらくあなたの頭は完全に爆発しているでしょう。しかし、さまざまなコードの断片を組み合わせる問題は、現実世界のプログラムでも起こります。協調的な多重継承は、それを整理するために使えるツールの 1 つです。
+このコードを実行すると、以下のような出力が表示されるはずです。
+
+```
+10
+Error: Expected <class 'int'>
+Error: Expected >= 0
+'hello'
+Error: Must be non-empty
+```
+
+これは、検証器を組み合わせてより複雑な検証ルールを作成する方法を示しています。
+
+テストが終了したら、以下のコマンドを実行してPythonインタープリタを終了することができます。
+
+```python
+exit()
+```

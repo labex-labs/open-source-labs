@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Découvrir les générateurs gérés. Vous pouvez pratiquer d'autres laboratoires dans LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris le concept de générateurs gérés en Python. Vous avez exploré comment mettre en pause et reprendre des générateurs à l'aide de l'instruction `yield`, et vous avez construit un simple planificateur de tâches pour exécuter plusieurs générateurs de manière concurrente. De plus, vous avez étendu le planificateur pour gérer efficacement les E/S réseau et avez implémenté un serveur réseau capable de gérer plusieurs connexions simultanément.
+
+Ce modèle d'utilisation des générateurs pour la multitâche coopérative est une technique puissante qui sous-tend de nombreux frameworks de programmation asynchrone en Python, comme le module intégré `asyncio`. Cette approche offre plusieurs avantages, notamment un code séquentiel simple, une gestion efficace des E/S non bloquantes, une multitâche coopérative sans plusieurs threads et un contrôle précis de l'exécution des tâches. Ces techniques sont précieuses pour la construction d'applications réseau haute performance et de systèmes nécessitant une gestion efficace des opérations concurrentes.

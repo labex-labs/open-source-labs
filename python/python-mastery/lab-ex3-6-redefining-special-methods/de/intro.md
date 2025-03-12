@@ -1,10 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab werden Sie lernen, wie Sie das Verhalten von Objekten durch die Neudefinition spezieller Methoden anpassen können. Sie werden auch die Art und Weise ändern, wie benutzerdefinierte Objekte ausgegeben werden, und Objekte vergleichbar machen.
 
-- Lernen Sie, wie Sie das Verhalten von Objekten durch Neudefinieren spezieller Methoden anpassen.
-- Ändern Sie die Art und Weise, wie benutzerdefinierte Objekte gedruckt werden.
-- Machen Sie Objekte vergleichbar.
-- Erstellen Sie einen Kontext-Manager.
-
-**Veränderte Dateien:** `stock.py`
+Zusätzlich werden Sie lernen, einen Kontext-Manager (Context Manager) zu erstellen. Die Datei, die in diesem Lab bearbeitet werden soll, ist `stock.py`.

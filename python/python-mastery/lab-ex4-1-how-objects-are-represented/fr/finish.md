@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire sur la représentation des objets. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris le fonctionnement interne du système d'objets de Python et plusieurs concepts clés. Premièrement, les objets Python stockent les attributs dans un dictionnaire accessible via l'attribut `__dict__`, offrant ainsi une grande flexibilité. Deuxièmement, vous avez compris le fonctionnement de l'affectation et de la recherche d'attributs, y compris l'ajout dynamique d'attributs et l'ordre de vérification des attributs.
+
+De plus, vous avez exploré la relation entre les classes et les instances. Les classes contiennent les données et les comportements partagés, tandis que les instances maintiennent leur propre état. Vous avez également découvert le fonctionnement des appels de méthodes, où les méthodes de la classe agissent sur les instances via le paramètre `self`. Comprendre ces concepts approfondit votre compréhension du modèle de programmation orientée objet (OOP) de Python et est utile pour le débogage, la conception de hiérarchies de classes et l'apprentissage des fonctionnalités avancées.

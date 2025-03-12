@@ -1,13 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab lernen Sie, wie Sie Coroutinen (Korrekturen) verwenden, um Datenverarbeitungspipelines zu erstellen. Coroutinen, eine leistungsstarke Python-Funktion, unterstützen kooperatives Multitasking und ermöglichen es Funktionen, die Ausführung anzuhalten und später fortzusetzen.
 
-- Verwenden von Coroutinen, um Verarbeitungsleitungen aufzubauen
-
-**Erstellte Dateien:** `cofollow.py`, `coticker.py`
-
-**Hinweis**
-
-Für diese Übung sollte das Programm `stocksim.py` weiterhin im Hintergrund laufen.
-
-Im Übungsblatt 8.2 haben Sie Code geschrieben, der Generatoren verwendet hat, um eine Verarbeitungsleitung aufzubauen. Ein wichtiger Aspekt dieses Programms war die Idee, dass Daten zwischen Generatorfunktionen fließen. Ein sehr ähnlicher Datenfluss kann mit Coroutinen aufgebaut werden. Der einzige Unterschied besteht darin, dass Sie mit einer Coroutine Daten in verschiedene Verarbeitungselemente senden, im Gegensatz dazu, dass Sie Daten mit einer for-Schleife herausziehen.
+Die Ziele dieses Labs sind es, zu verstehen, wie Coroutinen in Python funktionieren, Datenverarbeitungspipelines auf der Grundlage von Coroutinen zu implementieren und Daten durch mehrere Coroutinen-Stufen zu transformieren. Sie werden zwei Dateien erstellen: `cofollow.py`, ein auf Coroutinen basierter Dateifollower, und `coticker.py`, eine Aktien-Ticker-Anwendung, die Coroutinen nutzt. Es wird angenommen, dass das Programm `stocksim.py` aus einer früheren Übung weiterhin im Hintergrund läuft und Aktiendaten in einer Protokolldatei generiert.

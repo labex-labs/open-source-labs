@@ -1,26 +1,46 @@
-# Surveiller une source de données en continu
+# Création d'un générateur pour les données en flux
 
-Les générateurs peuvent également être un moyen utile de simplement produire un flux de données. Dans cette partie, nous allons explorer cette idée en écrivant un générateur pour surveiller un fichier de journal. Pour commencer, suivez attentivement les instructions suivantes.
+En programmation, les générateurs sont un outil puissant, surtout lorsqu'il s'agit de résoudre des problèmes réels tels que la surveillance d'une source de données en flux. Dans cette section, nous allons apprendre à appliquer ce que nous avons appris sur les générateurs à un tel scénario pratique. Nous allons créer un générateur qui surveille un fichier journal et nous fournit les nouvelles lignes au fur et à mesure qu'elles sont ajoutées au fichier.
 
-Le programme `stocksim.py` est un programme qui simule les données du marché boursier. En tant que sortie, le programme écrit constamment des données en temps réel dans un fichier `stocklog.csv`. Dans une fenêtre de commande (pas IDLE), accédez au répertoire `\` et exécutez ce programme :
+## Configuration de la source de données
 
-    % python3 stocksim.py
+Avant de commencer à créer le générateur, nous devons configurer une source de données. Dans ce cas, nous allons utiliser un programme de simulation qui génère des données sur le marché boursier.
 
-Si vous êtes sous Windows, localisez simplement le programme `stocksim.py` et double-cliquez dessus pour l'exécuter. Maintenant, oubliez ce programme (laissez-le simplement s'exécuter). Encore une fois, laissez simplement ce programme s'exécuter en arrière-plan - il fonctionnera pendant plusieurs heures (vous n'aurez pas besoin de vous en soucier).
+Tout d'abord, vous devez ouvrir un nouveau terminal dans le WebIDE. C'est là que vous exécuterez les commandes pour démarrer la simulation.
 
-Une fois le programme ci-dessus en cours d'exécution, écrivons un petit programme pour ouvrir le fichier, aller à la fin et surveiller de nouveaux résultats. Créez un fichier `follow.py` et mettez ce code dedans :
+Après avoir ouvert le terminal, vous exécuterez le programme de simulation boursière. Voici les commandes que vous devez entrer :
+
+```bash
+cd ~/project
+python3 stocksim.py
+```
+
+La première commande `cd ~/project` change le répertoire actuel pour le répertoire `project` dans votre répertoire personnel. La deuxième commande `python3 stocksim.py` exécute le programme de simulation boursière. Ce programme générera des données sur le marché boursier et les écrira dans un fichier nommé `stocklog.csv` dans le répertoire actuel. Laissez ce programme s'exécuter en arrière - plan tandis que nous travaillons sur le code de surveillance.
+
+## Création d'un simple moniteur de fichier
+
+Maintenant que nous avons configuré notre source de données, créons un programme qui surveille le fichier `stocklog.csv`. Ce programme affichera tout changement de prix négatif.
+
+1. Tout d'abord, créez un nouveau fichier appelé `follow.py` dans le WebIDE. Pour ce faire, vous devez changer le répertoire pour le répertoire `project` en utilisant la commande suivante dans le terminal :
+
+```bash
+cd ~/project
+```
+
+2. Ensuite, ajoutez le code suivant au fichier `follow.py`. Ce code ouvre le fichier `stocklog.csv`, déplace le pointeur de fichier à la fin du fichier, puis vérifie en continu s'il y a de nouvelles lignes. Si une nouvelle ligne est trouvée et qu'elle représente un changement de prix négatif, il affiche le nom de l'action, le prix et le changement.
 
 ```python
 # follow.py
 import os
 import time
+
 f = open('stocklog.csv')
-f.seek(0, os.SEEK_END)   # Décale le pointeur du fichier de 0 octets depuis la fin du fichier
+f.seek(0, os.SEEK_END)   # Move file pointer 0 bytes from end of file
 
 while True:
     line = f.readline()
     if line == '':
-        time.sleep(0.1)   # Dodo brièvement et réessayez
+        time.sleep(0.1)   # Sleep briefly and retry
         continue
     fields = line.split(',')
     name = fields[0].strip('"')
@@ -30,33 +50,70 @@ while True:
         print('%10s %10.2f %10.2f' % (name, price, change))
 ```
 
-Si vous exécutez le programme, vous verrez un cotation boursière en temps réel. Sous les couvertures, ce code est un peu comme la commande Unix `tail -f` utilisée pour surveiller un fichier de journal.
+3. Après avoir ajouté le code, enregistrez le fichier. Ensuite, exécutez le programme en utilisant la commande suivante dans le terminal :
 
-**Remarque** : L'utilisation de la méthode `readline()` dans cet exemple est un peu inhabituelle car ce n'est pas la manière habituelle de lire les lignes d'un fichier (normalement, vous utiliseriez simplement une boucle `for`). Cependant, dans ce cas, nous l'utilisons pour interroger régulièrement la fin du fichier pour voir si de nouvelles données ont été ajoutées (`readline()` renverra soit de nouvelles données soit une chaîne vide).
-
-Si vous examinez attentivement le code, la première partie du code produit des lignes de données tandis que les instructions à la fin de la boucle `while` consomment les données. Une caractéristique importante des fonctions génératrices est que vous pouvez déplacer tout le code de production de données dans une fonction réutilisable.
-
-Modifiez le code de sorte que la lecture du fichier soit effectuée par une fonction génératrice `follow(filename)`. Assurez-vous que le code suivant fonctionne :
-
-```python
->>> for line in follow('stocklog.csv'):
-          print(line, end='')
-
-... Devriez voir des lignes de sortie produites ici...
+```bash
+python3 follow.py
 ```
 
-Modifiez le code de la cotation boursière de sorte qu'il ressemble à ceci :
+Vous devriez voir une sortie qui montre les actions avec des changements de prix négatifs. Cela pourrait ressembler à ceci :
 
-```python
-for line in follow('stocklog.csv'):
-    fields = line.split(',')
-    name = fields[0].strip('"')
-    price = float(fields[1])
-    change = float(fields[4])
-    if change < 0:
-        print('%10s %10.2f %10.2f' % (name, price, change))
+```
+      AAPL     148.24      -1.76
+      GOOG    2498.45      -1.55
 ```
 
-**Discussion**
+Si vous souhaitez arrêter le programme, appuyez sur `Ctrl+C` dans le terminal.
 
-Quelque chose de très puissant vient de se produire ici. Vous avez déplacé un modèle d'itération intéressant (lire les lignes à la fin d'un fichier) dans sa propre petite fonction. La fonction `follow()` est maintenant cette utilité complètement générique que vous pouvez utiliser dans n'importe quel programme. Par exemple, vous pourriez l'utiliser pour surveiller les journaux de serveur, les journaux de débogage et d'autres sources de données similaires. C'est assez cool.
+## Conversion en fonction générateur
+
+Bien que le code précédent fonctionne, nous pouvons le rendre plus réutilisable et modulaire en le convertissant en une fonction générateur. Une fonction générateur est un type spécial de fonction qui peut être mise en pause et reprise, et qui produit des valeurs une par une.
+
+1. Ouvrez à nouveau le fichier `follow.py` et modifiez - le pour utiliser une fonction générateur. Voici le code mis à jour :
+
+```python
+# follow.py
+import os
+import time
+
+def follow(filename):
+    """
+    Generator function that yields new lines in a file as they are added.
+    Similar to the 'tail -f' Unix command.
+    """
+    f = open(filename)
+    f.seek(0, os.SEEK_END)   # Move to the end of the file
+
+    while True:
+        line = f.readline()
+        if line == '':
+            time.sleep(0.1)   # Sleep briefly and retry
+            continue
+        yield line
+
+# Example usage - monitor stocks with negative price changes
+if __name__ == '__main__':
+    for line in follow('stocklog.csv'):
+        fields = line.split(',')
+        name = fields[0].strip('"')
+        price = float(fields[1])
+        change = float(fields[4])
+        if change < 0:
+            print('%10s %10.2f %10.2f' % (name, price, change))
+```
+
+La fonction `follow` est maintenant une fonction générateur. Elle ouvre le fichier, se déplace à la fin, puis vérifie en continu s'il y a de nouvelles lignes. Lorsqu'une nouvelle ligne est trouvée, elle la produit.
+
+2. Enregistrez le fichier et exécutez - le à nouveau en utilisant la commande :
+
+```bash
+python3 follow.py
+```
+
+La sortie devrait être la même que précédemment. Mais maintenant, la logique de surveillance de fichier est soigneusement encapsulée dans la fonction générateur `follow`. Cela signifie que nous pouvons réutiliser cette fonction dans d'autres programmes qui ont besoin de surveiller un fichier.
+
+## Comprendre la puissance des générateurs
+
+En convertissant notre code de lecture de fichier en une fonction générateur, nous l'avons rendu beaucoup plus flexible et réutilisable. La fonction `follow()` peut être utilisée dans n'importe quel programme qui a besoin de surveiller un fichier, pas seulement pour les données boursières.
+
+Par exemple, vous pourriez l'utiliser pour surveiller les journaux de serveur, les journaux d'application ou tout autre fichier qui est mis à jour au fil du temps. Cela montre comment les générateurs sont un excellent moyen de gérer les sources de données en flux de manière propre et modulaire.

@@ -141,5 +141,523 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "了解描述符",
+      "description": "理解描述符协议，创建自定义描述符，使用描述符实现验证器，并改进描述符的实现，从而了解 Python 描述符。",
+      "meta": {
+        "title": "了解描述符",
+        "description": "理解描述符协议，创建自定义描述符，使用描述符实现验证器，并改进描述符的实现，从而了解 Python 描述符。",
+        "keywords": "Python, 描述符, 描述符协议, 自定义描述符, 验证器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解描述符协议",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Stock 类文件是否存在",
+                "file": "verify1-1.sh",
+                "hint": "确保创建包含 Stock 类的 stock.py 文件"
+              },
+              {
+                "name": "验证 Stock 类的实现",
+                "file": "verify1-2.sh",
+                "hint": "确保你的 Stock 类具有属性方法"
+              }
+            ]
+          },
+          {
+            "title": "创建自定义描述符",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证描述符文件是否存在",
+                "file": "verify2-1.sh",
+                "hint": "确保创建包含 Descriptor 类的 descrip.py 文件"
+              },
+              {
+                "name": "验证描述符类的实现",
+                "file": "verify2-2.sh",
+                "hint": "确保你的 Descriptor 类具有魔术方法"
+              }
+            ]
+          },
+          {
+            "title": "使用描述符实现验证器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 validate.py 文件是否存在",
+                "file": "verify3-1.sh",
+                "hint": "确保创建包含验证器类的 validate.py 文件"
+              },
+              {
+                "name": "验证验证器的实现",
+                "file": "verify3-2.sh",
+                "hint": "确保你的验证器类实现正确"
+              }
+            ]
+          },
+          {
+            "title": "改进描述符实现",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证更新后的 validate.py 文件",
+                "file": "verify4-1.sh",
+                "hint": "确保使用 __set_name__ 方法更新 validate.py 文件"
+              },
+              {
+                "name": "验证改进后的实现",
+                "file": "verify4-2.sh",
+                "hint": "确保创建 improved_stock.py 文件"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Aprende sobre descriptores",
+      "description": "Entiende el protocolo de descriptores, crea descriptores personalizados, implementa validadores utilizando descriptores y mejora la implementación de descriptores para aprender sobre los descriptores de Python.",
+      "meta": {
+        "title": "Aprende sobre descriptores",
+        "description": "Entiende el protocolo de descriptores, crea descriptores personalizados, implementa validadores utilizando descriptores y mejora la implementación de descriptores para aprender sobre los descriptores de Python.",
+        "keywords": "Python, descriptores, protocolo de descriptores, descriptores personalizados, validadores"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendiendo el protocolo de descriptores",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar que el archivo de la clase Stock exista",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de crear el archivo stock.py con la clase Stock"
+              },
+              {
+                "name": "Verificar la implementación de la clase Stock",
+                "file": "verify1-2.sh",
+                "hint": "Asegúrate de que tu clase Stock tenga los métodos de propiedad"
+              }
+            ]
+          },
+          {
+            "title": "Creando descriptores personalizados",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar que el archivo del descriptor exista",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de crear el archivo descrip.py con la clase Descriptor"
+              },
+              {
+                "name": "Verificar la implementación de la clase descriptor",
+                "file": "verify2-2.sh",
+                "hint": "Asegúrate de que tu clase Descriptor tenga los métodos mágicos"
+              }
+            ]
+          },
+          {
+            "title": "Implementando validadores utilizando descriptores",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar que el archivo validate.py exista",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de crear el archivo validate.py con las clases de validación"
+              },
+              {
+                "name": "Verificar la implementación de los validadores",
+                "file": "verify3-2.sh",
+                "hint": "Asegúrate de que tus clases de validación estén implementadas correctamente"
+              }
+            ]
+          },
+          {
+            "title": "Mejorando la implementación de descriptores",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar el archivo validate.py actualizado",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de actualizar el archivo validate.py con el método __set_name__"
+              },
+              {
+                "name": "Verificar la implementación mejorada",
+                "file": "verify4-2.sh",
+                "hint": "Asegúrate de crear el archivo improved_stock.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Apprenez-en sur les descripteurs",
+      "description": "Comprenez le protocole des descripteurs, créez des descripteurs personnalisés, implémentez des validateurs à l'aide de descripteurs et améliorez l'implémentation des descripteurs pour apprendre à connaître les descripteurs Python.",
+      "meta": {
+        "title": "Apprenez-en sur les descripteurs",
+        "description": "Comprenez le protocole des descripteurs, créez des descripteurs personnalisés, implémentez des validateurs à l'aide de descripteurs et améliorez l'implémentation des descripteurs pour apprendre à connaître les descripteurs Python.",
+        "keywords": "Python, descripteurs, protocole des descripteurs, descripteurs personnalisés, validateurs"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre le protocole des descripteurs",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier que le fichier de la classe Stock existe",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous de créer le fichier stock.py avec la classe Stock"
+              },
+              {
+                "name": "Vérifier l'implémentation de la classe Stock",
+                "file": "verify1-2.sh",
+                "hint": "Assurez-vous que votre classe Stock a les méthodes de propriété"
+              }
+            ]
+          },
+          {
+            "title": "Création de descripteurs personnalisés",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier que le fichier de descripteur existe",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous de créer le fichier descrip.py avec la classe Descriptor"
+              },
+              {
+                "name": "Vérifier l'implémentation de la classe de descripteur",
+                "file": "verify2-2.sh",
+                "hint": "Assurez-vous que votre classe Descriptor a les méthodes magiques"
+              }
+            ]
+          },
+          {
+            "title": "Implémentation de validateurs à l'aide de descripteurs",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier que le fichier validate.py existe",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous de créer le fichier validate.py avec les classes de validateurs"
+              },
+              {
+                "name": "Vérifier l'implémentation des validateurs",
+                "file": "verify3-2.sh",
+                "hint": "Assurez-vous que vos classes de validateurs sont correctement implémentées"
+              }
+            ]
+          },
+          {
+            "title": "Amélioration de l'implémentation des descripteurs",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier le fichier validate.py mis à jour",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous de mettre à jour le fichier validate.py avec la méthode __set_name__"
+              },
+              {
+                "name": "Vérifier l'implémentation améliorée",
+                "file": "verify4-2.sh",
+                "hint": "Assurez-vous de créer le fichier improved_stock.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Lernen Sie etwas über Deskriptoren (Descriptors)",
+      "description": "Verstehen Sie das Deskriptor-Protokoll (Descriptor Protocol), erstellen Sie benutzerdefinierte Deskriptoren (Custom Descriptors), implementieren Sie Validatoren mit Deskriptoren und verbessern Sie die Deskriptor-Implementierung, um sich mit Python-Deskriptoren vertraut zu machen.",
+      "meta": {
+        "title": "Lernen Sie etwas über Deskriptoren (Descriptors)",
+        "description": "Verstehen Sie das Deskriptor-Protokoll (Descriptor Protocol), erstellen Sie benutzerdefinierte Deskriptoren (Custom Descriptors), implementieren Sie Validatoren mit Deskriptoren und verbessern Sie die Deskriptor-Implementierung, um sich mit Python-Deskriptoren vertraut zu machen.",
+        "keywords": "Python, Deskriptoren (Descriptors), Deskriptor-Protokoll (Descriptor Protocol), benutzerdefinierte Deskriptoren (Custom Descriptors), Validatoren"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Verständnis des Deskriptor-Protokolls (Descriptor Protocol)",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob die Stock-Klassen-Datei existiert",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei stock.py mit der Stock-Klasse erstellen"
+              },
+              {
+                "name": "Überprüfen der Stock-Klassen-Implementierung",
+                "file": "verify1-2.sh",
+                "hint": "Stellen Sie sicher, dass Ihre Stock-Klasse die Eigenschaftsmethoden (Property Methods) hat"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen von benutzerdefinierten Deskriptoren (Custom Descriptors)",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob die Deskriptor-Datei existiert",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei descrip.py mit der Descriptor-Klasse erstellen"
+              },
+              {
+                "name": "Überprüfen der Deskriptor-Klassen-Implementierung",
+                "file": "verify2-2.sh",
+                "hint": "Stellen Sie sicher, dass Ihre Descriptor-Klasse die magischen Methoden (Magic Methods) hat"
+              }
+            ]
+          },
+          {
+            "title": "Implementierung von Validatoren (Validators) mit Deskriptoren (Descriptors)",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob die validate.py-Datei existiert",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei validate.py mit den Validator-Klassen erstellen"
+              },
+              {
+                "name": "Überprüfen der Validator-Implementierung",
+                "file": "verify3-2.sh",
+                "hint": "Stellen Sie sicher, dass Ihre Validator-Klassen korrekt implementiert sind"
+              }
+            ]
+          },
+          {
+            "title": "Verbesserung der Deskriptor-Implementierung",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Überprüfen der aktualisierten validate.py-Datei",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die validate.py-Datei mit der __set_name__-Methode aktualisieren"
+              },
+              {
+                "name": "Überprüfen der verbesserten Implementierung",
+                "file": "verify4-2.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei improved_stock.py erstellen"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "ディスクリプタについて学ぶ",
+      "description": "ディスクリプタプロトコルを理解し、カスタムディスクリプタを作成し、ディスクリプタを使用してバリデータを実装し、ディスクリプタの実装を改善することで、Python のディスクリプタについて学びます。",
+      "meta": {
+        "title": "ディスクリプタについて学ぶ",
+        "description": "ディスクリプタプロトコルを理解し、カスタムディスクリプタを作成し、ディスクリプタを使用してバリデータを実装し、ディスクリプタの実装を改善することで、Python のディスクリプタについて学びます。",
+        "keywords": "Python, ディスクリプタ, ディスクリプタプロトコル, カスタムディスクリプタ, バリデータ"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "ディスクリプタプロトコルの理解",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "Stock クラスのファイルが存在することを確認",
+                "file": "verify1-1.sh",
+                "hint": "Stock クラスを含む stock.py ファイルを作成してください"
+              },
+              {
+                "name": "Stock クラスの実装を確認",
+                "file": "verify1-2.sh",
+                "hint": "Stock クラスにプロパティメソッドがあることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "カスタムディスクリプタの作成",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "ディスクリプタファイルが存在することを確認",
+                "file": "verify2-1.sh",
+                "hint": "Descriptor クラスを含む descrip.py ファイルを作成してください"
+              },
+              {
+                "name": "ディスクリプタクラスの実装を確認",
+                "file": "verify2-2.sh",
+                "hint": "Descriptor クラスにマジックメソッドがあることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "ディスクリプタを使用したバリデータの実装",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "validate.py ファイルが存在することを確認",
+                "file": "verify3-1.sh",
+                "hint": "バリデータクラスを含む validate.py ファイルを作成してください"
+              },
+              {
+                "name": "バリデータの実装を確認",
+                "file": "verify3-2.sh",
+                "hint": "バリデータクラスが正しく実装されていることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "ディスクリプタ実装の改善",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "更新された validate.py ファイルを確認",
+                "file": "verify4-1.sh",
+                "hint": "__set_name__ メソッドを含めて validate.py ファイルを更新してください"
+              },
+              {
+                "name": "改善された実装を確認",
+                "file": "verify4-2.sh",
+                "hint": "improved_stock.py ファイルを作成してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Изучите дескрипторы",
+      "description": "Понять протокол дескрипторов, создать пользовательские дескрипторы, реализовать валидаторы с использованием дескрипторов и улучшить реализацию дескрипторов, чтобы узнать о дескрипторах Python.",
+      "meta": {
+        "title": "Изучите дескрипторы",
+        "description": "Понять протокол дескрипторов, создать пользовательские дескрипторы, реализовать валидаторы с использованием дескрипторов и улучшить реализацию дескрипторов, чтобы узнать о дескрипторах Python.",
+        "keywords": "Python, дескрипторы, протокол дескрипторов, пользовательские дескрипторы, валидаторы"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание протокола дескрипторов",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить наличие файла класса Stock",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы создали файл stock.py с классом Stock"
+              },
+              {
+                "name": "Проверить реализацию класса Stock",
+                "file": "verify1-2.sh",
+                "hint": "Убедитесь, что ваш класс Stock имеет методы свойств"
+              }
+            ]
+          },
+          {
+            "title": "Создание пользовательских дескрипторов",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить наличие файла дескриптора",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы создали файл descrip.py с классом Descriptor"
+              },
+              {
+                "name": "Проверить реализацию класса дескриптора",
+                "file": "verify2-2.sh",
+                "hint": "Убедитесь, что ваш класс Descriptor имеет магические методы"
+              }
+            ]
+          },
+          {
+            "title": "Реализация валидаторов с использованием дескрипторов",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить наличие файла validate.py",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы создали файл validate.py с классами валидаторов"
+              },
+              {
+                "name": "Проверить реализацию валидаторов",
+                "file": "verify3-2.sh",
+                "hint": "Убедитесь, что ваши классы валидаторов реализованы правильно"
+              }
+            ]
+          },
+          {
+            "title": "Улучшение реализации дескрипторов",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверить обновленный файл validate.py",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы обновили файл validate.py методом __set_name__"
+              },
+              {
+                "name": "Проверить улучшенную реализацию",
+                "file": "verify4-2.sh",
+                "hint": "Убедитесь, что вы создали файл improved_stock.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

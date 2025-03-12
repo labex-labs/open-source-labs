@@ -107,5 +107,337 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "重新定义特殊方法",
+      "description": "在 Python 中，通过重新定义特殊方法，使用 `__repr__` 改进对象表示，使用 `__eq__` 使对象可比较，并创建上下文管理器。",
+      "meta": {
+        "title": "重新定义特殊方法",
+        "description": "在 Python 中，通过重新定义特殊方法，使用 `__repr__` 改进对象表示，使用 `__eq__` 使对象可比较，并创建上下文管理器。",
+        "keywords": "Python, 重新定义, 特殊方法, __repr__, __eq__"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 `__repr__` 改进对象表示",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 `__repr__` 方法的实现",
+                "file": "verify1-1.sh",
+                "hint": "确保你已在 `stock.py` 中的 `Stock` 类里添加了 `__repr__` 方法"
+              }
+            ]
+          },
+          {
+            "title": "使用 `__eq__` 使对象可比较",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 `__eq__` 方法的实现",
+                "file": "verify2-1.sh",
+                "hint": "确保你已向 `Stock` 类添加了包含 `isinstance` 检查的 `__eq__` 方法"
+              }
+            ]
+          },
+          {
+            "title": "创建上下文管理器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 `redirect_stdout` 上下文管理器",
+                "file": "verify3-1.sh",
+                "hint": "确保你已创建包含上下文管理器实现的 `redirect.py` 文件"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Redefinición de métodos especiales",
+      "description": "Mejora la representación de objetos utilizando `__repr__`, haz que los objetos sean comparables con `__eq__` y crea un gestor de contexto (context manager) redefiniendo métodos especiales en Python.",
+      "meta": {
+        "title": "Redefinición de métodos especiales",
+        "description": "Mejora la representación de objetos utilizando `__repr__`, haz que los objetos sean comparables con `__eq__` y crea un gestor de contexto (context manager) redefiniendo métodos especiales en Python.",
+        "keywords": "Python, redefinición, métodos especiales, __repr__, __eq__"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Mejorando la representación de objetos con `__repr__`",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación del método __repr__",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber agregado el método __repr__ a la clase Stock en stock.py"
+              }
+            ]
+          },
+          {
+            "title": "Haciendo objetos comparables con `__eq__`",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación del método __eq__",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber agregado el método __eq__ con una comprobación de isinstance a la clase Stock"
+              }
+            ]
+          },
+          {
+            "title": "Creando un gestor de contexto",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar el gestor de contexto redirect_stdout",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber creado el archivo redirect.py con la implementación del gestor de contexto"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Redéfinition des méthodes spéciales",
+      "description": "Améliorez la représentation des objets en utilisant `__repr__`, rendez les objets comparables avec `__eq__` et créez un gestionnaire de contexte en redéfinissant les méthodes spéciales en Python.",
+      "meta": {
+        "title": "Redéfinition des méthodes spéciales",
+        "description": "Améliorez la représentation des objets en utilisant `__repr__`, rendez les objets comparables avec `__eq__` et créez un gestionnaire de contexte en redéfinissant les méthodes spéciales en Python.",
+        "keywords": "Python, redéfinition, méthodes spéciales, __repr__, __eq__"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Amélioration de la représentation des objets avec `__repr__`",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la méthode __repr__",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté la méthode __repr__ à la classe Stock dans stock.py"
+              }
+            ]
+          },
+          {
+            "title": "Rendre les objets comparables avec `__eq__`",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la méthode __eq__",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté la méthode __eq__ avec une vérification isinstance à la classe Stock"
+              }
+            ]
+          },
+          {
+            "title": "Création d'un gestionnaire de contexte",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier le gestionnaire de contexte redirect_stdout",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir créé le fichier redirect.py avec l'implémentation du gestionnaire de contexte"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Neudefinieren von speziellen Methoden",
+      "description": "Verbessern Sie die Objektdarstellung mit `__repr__`, machen Sie Objekte mit `__eq__` vergleichbar und erstellen Sie einen Kontext-Manager, indem Sie in Python spezielle Methoden neu definieren.",
+      "meta": {
+        "title": "Neudefinieren von speziellen Methoden",
+        "description": "Verbessern Sie die Objektdarstellung mit `__repr__`, machen Sie Objekte mit `__eq__` vergleichbar und erstellen Sie einen Kontext-Manager, indem Sie in Python spezielle Methoden neu definieren.",
+        "keywords": "Python, Neudefinieren, spezielle Methoden, __repr__, __eq__"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Verbessern der Objektdarstellung mit `__repr__`",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Implementierung der __repr__-Methode",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die __repr__-Methode zur Stock-Klasse in stock.py hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Objekte mit `__eq__` vergleichbar machen",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Implementierung der __eq__-Methode",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die __eq__-Methode mit einer isinstance-Prüfung zur Stock-Klasse hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen eines Context Managers",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen des redirect_stdout Context Managers",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei redirect.py mit der Implementierung des Context Managers erstellt haben"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "特殊メソッドの再定義",
+      "description": "Python で特殊メソッドを再定義することで、`__repr__` を使ってオブジェクトの表現を改善し、`__eq__` を使ってオブジェクトを比較可能にし、コンテキストマネージャを作成します。",
+      "meta": {
+        "title": "特殊メソッドの再定義",
+        "description": "Python で特殊メソッドを再定義することで、`__repr__` を使ってオブジェクトの表現を改善し、`__eq__` を使ってオブジェクトを比較可能にし、コンテキストマネージャを作成します。",
+        "keywords": "Python, 再定義, 特殊メソッド, __repr__, __eq__"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "`__repr__` を使ったオブジェクト表現の改善",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "__repr__ メソッドの実装を確認する",
+                "file": "verify1-1.sh",
+                "hint": "stock.py の Stock クラスに __repr__ メソッドを追加したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "`__eq__` を使ってオブジェクトを比較可能にする",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "__eq__ メソッドの実装を確認する",
+                "file": "verify2-1.sh",
+                "hint": "Stock クラスに isinstance チェックを含む __eq__ メソッドを追加したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "コンテキストマネージャの作成",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "redirect_stdout コンテキストマネージャを確認する",
+                "file": "verify3-1.sh",
+                "hint": "コンテキストマネージャの実装を含む redirect.py ファイルを作成したことを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Переопределение специальных методов",
+      "description": "Улучшите представление объектов с помощью `__repr__`, сделайте объекты сравнимыми с использованием `__eq__` и создайте менеджер контекста, переопределив специальные методы в Python.",
+      "meta": {
+        "title": "Переопределение специальных методов",
+        "description": "Улучшите представление объектов с помощью `__repr__`, сделайте объекты сравнимыми с использованием `__eq__` и создайте менеджер контекста, переопределив специальные методы в Python.",
+        "keywords": "Python, переопределение, специальные методы, __repr__, __eq__"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Улучшение представления объектов с помощью `__repr__`",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию метода __repr__",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы добавили метод __repr__ в класс Stock в файле stock.py"
+              }
+            ]
+          },
+          {
+            "title": "Сделать объекты сравнимыми с помощью `__eq__`",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию метода __eq__",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы добавили метод __eq__ с проверкой isinstance в класс Stock"
+              }
+            ]
+          },
+          {
+            "title": "Создание менеджера контекста",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить менеджер контекста redirect_stdout",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы создали файл redirect.py с реализацией менеджера контекста"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

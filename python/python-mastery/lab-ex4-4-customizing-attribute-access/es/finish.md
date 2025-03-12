@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicitaciones! Has completado el laboratorio de Personalización del Acceso a Atributos. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido sobre poderosos mecanismos de Python para personalizar el acceso y el comportamiento de los atributos. Has explorado cómo usar `__setattr__` para controlar qué atributos se pueden establecer en un objeto, lo que permite un acceso controlado a las propiedades del objeto. Además, has implementado un proxy de solo lectura para envolver objetos existentes, evitando modificaciones mientras se conserva su funcionalidad.
+
+También has profundizado en la diferencia entre la delegación y la herencia para la reutilización y personalización de código. Al usar `__getattr__`, has aprendido a reenviar llamadas a métodos a un objeto envuelto. Estas técnicas ofrecen formas flexibles de controlar el comportamiento de los objetos más allá de la herencia estándar, útiles para interfaces controladas, implementación de restricciones de acceso, adición de comportamientos transversales y composición de comportamiento a partir de múltiples fuentes. Comprender estos patrones te ayuda a escribir código Python más mantenible y flexible.

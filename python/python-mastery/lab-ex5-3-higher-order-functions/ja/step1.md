@@ -1,49 +1,57 @@
-# 高階関数の使用
+# コードの重複を理解する
 
-現在、`reader.py` プログラムは2つのコア関数 `csv_as_dicts()` と `csv_as_instances()` で構成されています。これら2つの関数のコードはほぼ同じです。たとえば：
+まず、`reader.py` ファイルの現在のコードを見てみましょう。プログラミングでは、既存のコードを調べることは、仕組みを理解し、改善すべき箇所を特定するための重要なステップです。WebIDE で `reader.py` ファイルを開くことができます。これには 2 つの方法があります。ファイルエクスプローラーでファイルをクリックするか、ターミナルで以下のコマンドを実行することができます。これらのコマンドは、まずプロジェクトディレクトリに移動し、次に `reader.py` ファイルの内容を表示します。
 
-```python
-def csv_as_dicts(lines, types, *, headers=None):
-    '''
-    CSV データの行を辞書のリストに変換する
-    '''
-    records = []
-    rows = csv.reader(lines)
-    if headers is None:
-        headers = next(rows)
-    for row in rows:
-        record = { name: func(val)
-                   for name, func, val in zip(headers, types, row) }
-        records.append(record)
-    return records
-
-def csv_as_instances(lines, cls, *, headers=None):
-    '''
-    CSV データの行をインスタンスのリストに変換する
-    '''
-    records = []
-    rows = csv.reader(lines)
-    if headers is None:
-        headers = next(rows)
-    for row in rows:
-        record = cls.from_row(row)
-        records.append(record)
-    return records
+```bash
+cd ~/project
+cat reader.py
 ```
 
-これらの関数のコア部分を、ユーザー定義の変換関数を引数として受け取る単一の関数 `convert_csv()` に統一します。たとえば：
+コードを見ると、2 つの関数があることに気づくでしょう。Python の関数は、特定のタスクを実行するコードブロックです。以下は 2 つの関数とその機能です。
+
+1. `csv_as_dicts()`: この関数は CSV データを受け取り、辞書のリストに変換します。Python の辞書はキーと値のペアのコレクションであり、データを構造化して保存するのに便利です。
+2. `csv_as_instances()`: この関数は CSV データを受け取り、インスタンスのリストに変換します。インスタンスはクラスから作成されたオブジェクトであり、クラスはオブジェクトを作成するためのブループリントです。
+
+では、これら 2 つの関数をもう少し詳しく見てみましょう。これらの関数は非常に似ていることがわかります。両方の関数は以下の手順に従います。
+
+- まず、空の `records` リストを初期化します。Python のリストは、異なる型のアイテムのコレクションです。空のリストを初期化するとは、アイテムが含まれていないリストを作成することであり、処理されたデータを格納するために使用されます。
+- 次に、`csv.reader()` を使用して入力を解析します。解析とは、入力データを分析して意味のある情報を抽出することです。この場合、`csv.reader()` は CSV データを 1 行ずつ読み取るのに役立ちます。
+- ヘッダーの処理方法は同じです。CSV ファイルのヘッダーは通常、列名を含む最初の行です。
+- その後、CSV データの各行をループ処理します。ループは、コードブロックを複数回実行できるプログラミング構造です。
+- 各行について、レコードを作成するために処理します。このレコードは、関数に応じて辞書またはインスタンスのいずれかになります。
+- レコードを `records` リストに追加します。追加とは、リストの末尾にアイテムを追加することです。
+- 最後に、処理されたすべてのデータを含む `records` リストを返します。
+
+このコードの重複はいくつかの理由で問題となります。コードが重複すると、
+
+- メンテナンスが難しくなります。コードに変更を加える必要がある場合、複数の場所で同じ変更を加える必要があります。これにはより多くの時間と労力がかかります。
+- 変更は複数の場所で実装する必要があります。これにより、ある場所で変更を忘れる可能性が高くなり、動作が不一致になる原因となります。
+- バグが発生する可能性も高くなります。バグは、コードが予期せぬ動作をする原因となるエラーです。
+
+これら 2 つの関数の唯一の本質的な違いは、行をレコードに変換する方法です。これは、高階関数が非常に役立つ典型的なケースです。高階関数は、他の関数を引数として受け取ったり、関数を結果として返したりする関数です。
+
+これらの関数の動作をよりよく理解するために、いくつかのサンプル使用例を見てみましょう。以下のコードは、`csv_as_dicts()` と `csv_as_instances()` の使用方法を示しています。
 
 ```python
->>> def make_dict(headers, row):
-        return dict(zip(headers, row))
+# Example of using csv_as_dicts
+with open('portfolio.csv') as f:
+    portfolio = csv_as_dicts(f, [str, int, float])
+print(portfolio[0])  # {'name': 'AA', 'shares': 100, 'price': 32.2}
 
->>> lines = open('portfolio.csv')
->>> convert_csv(lines, make_dict)
-[{'name': 'AA','shares': '100', 'price': '32.20'}, {'name': 'IBM','shares': '50', 'price': '91.10'},
- {'name': 'CAT','shares': '150', 'price': '83.44'}, {'name': 'MSFT','shares': '200', 'price': '51.23'},
- {'name': 'GE','shares': '95', 'price': '40.37'}, {'name': 'MSFT','shares': '50', 'price': '65.10'},
- {'name': 'IBM','shares': '100', 'price': '70.44'}]
->>>
+# Example of using csv_as_instances
+class Stock:
+    @classmethod
+    def from_row(cls, row):
+        return cls(row[0], int(row[1]), float(row[2]))
+
+    def __init__(self, name, shares, price):
+        self.name = name
+        self.shares = shares
+        self.price = price
+
+with open('portfolio.csv') as f:
+    portfolio = csv_as_instances(f, Stock)
+print(portfolio[0].name, portfolio[0].shares, portfolio[0].price)  # AA 100 32.2
 ```
 
-新しい `convert_csv()` 関数を使って、`csv_as_dicts()` と `csv_as_instances()` 関数を書き直します。
+次のステップでは、このコードの重複を解消するための高階関数を作成します。これにより、コードがよりメンテナンスしやすく、エラーが発生しにくくなります。

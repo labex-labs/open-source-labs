@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations! Vous avez terminé le laboratoire sur les aspects définitionnels des fonctions. Vous pouvez pratiquer d'autres laboratoires dans LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris plusieurs aspects clés de la conception de fonctions en Python. Tout d'abord, vous avez appris la conception de fonctions de base, en particulier comment écrire des fonctions pour traiter des données CSV dans diverses structures de données. Vous avez également exploré la flexibilité des fonctions en refactorisant des fonctions pour qu'elles fonctionnent avec n'importe quelle source itérable, améliorant ainsi la polyvalence et la réutilisabilité du code.
+
+De plus, vous avez maîtrisé l'ajout de paramètres optionnels pour gérer différents cas d'utilisation, comme les fichiers CSV avec ou sans en-têtes, et l'utilisation du système d'indication de type (type hinting) de Python pour améliorer la lisibilité et la maintenabilité du code. Ces compétences sont essentielles pour écrire un code Python robuste, et à mesure que vos programmes deviendront plus complexes, ces principes de conception permettront de garder votre code organisé et compréhensible. Ces techniques peuvent être appliquées au-delà du traitement des CSV, ce qui les rend précieuses dans votre boîte à outils de programmation Python.

@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire sur la gestion des exceptions et la journalisation. Vous pouvez pratiquer d'autres laboratoires dans LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris plusieurs concepts clés concernant la gestion des exceptions et la journalisation (logging) en Python. Tout d'abord, vous avez compris comment les exceptions se produisent lors du traitement des données et avez implémenté des blocs try - except pour les gérer de manière élégante. Vous avez également modifié le code pour continuer à traiter les données valides en cas d'erreur.
+
+Deuxièmement, vous avez appris à connaître le module de journalisation de Python et ses avantages par rapport aux instructions `print`. Vous avez implémenté différents niveaux de journalisation tels que WARNING et DEBUG et avez vu comment configurer la journalisation pour différents niveaux de détail. Ces compétences sont essentielles pour écrire des applications Python robustes, notamment lorsqu'il s'agit de traiter des données externes sujettes à des erreurs, de construire des applications autonomes ou de développer des systèmes qui nécessitent des informations de diagnostic. Vous pouvez maintenant appliquer ces techniques à vos projets Python pour une meilleure fiabilité et maintenabilité.

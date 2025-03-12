@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio Aprende más sobre closures. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio (lab), has aprendido aspectos avanzados de las clausuras (closures) en Python. En primer lugar, has explorado el uso de las clausuras como una estructura de datos, que puede encapsular datos y permitir que las funciones mantengan un estado entre llamadas sin depender de clases o variables globales. En segundo lugar, has visto cómo las clausuras pueden actuar como un generador de código, generando objetos de propiedad con comprobación de tipos para un enfoque más funcional de la validación de atributos.
+
+También has descubierto cómo utilizar el protocolo de descriptores y el método `__set_name__` para crear atributos de comprobación de tipos elegantes que capturan automáticamente sus nombres de las definiciones de clase. Estas técnicas demuestran el poder y la flexibilidad de las clausuras, lo que te permite implementar comportamientos complejos de manera concisa. Comprender las clausuras y los descriptores te brinda más herramientas para crear código Python mantenible y robusto.

@@ -1,43 +1,14 @@
-# Создание пользовательского контейнера - Великий обман
+# Создание пользовательского контейнерного класса
 
-Сохранение данных в столбцах обеспечивает гораздо более эффективное использование памяти, но данные теперь сложнее обрабатывать. Фактически, никакой из нашего раннего анализирующего кода из упражнения 2.2 не может работать с данными в столбцах. Причина, по которой все сломалось, заключается в том, что вы нарушили абстракцию данных, использованную в предыдущих упражнениях - а именно предположение, что данные хранятся в виде списка словарей.
+В обработке данных столбцовая организация данных отлично подходит для экономии памяти. Однако это может вызвать проблемы, если существующий код предполагает, что данные представлены в виде списка словарей. Чтобы решить эту проблему, мы создадим пользовательский контейнерный класс. Этот класс предоставит интерфейс строковой организации данных, то есть для кода он будет выглядеть и вести себя как список словарей. Но внутренне он будет хранить данные в столбцовом формате, что поможет нам сэкономить память.
 
-Это можно исправить, если вы готовы создать пользовательский объект-контейнер, который будет "подделывать" это. Давайте сделаем это.
-
-Ранее написанный анализирующий код предполагает, что данные хранятся в последовательности записей. Каждая запись представлена в виде словаря. Давайте начнем с создания нового класса "Sequence". В этом классе мы будем хранить четыре столбца данных, которые использовались в функции `read_rides_as_columns()`.
+1. Сначала откройте файл `readrides.py` в редакторе WebIDE. Мы добавим новый класс в этот файл. Этот класс станет основой нашего пользовательского контейнера.
 
 ```python
-# readrides.py
-
+# Add this to readrides.py
 from collections.abc import Sequence
 
-...
-
 class RideData(Sequence):
-    def __init__(self):
-        self.routes = []      # Columns
-        self.dates = []
-        self.daytypes = []
-        self.numrides = []
-```
-
-Попробуйте создать экземпляр `RideData`. Вы обнаружите, что это завершится ошибкой с сообщением об ошибке такого вида:
-
-```python
->>> records = RideData()
-Traceback (most recent call last):
-...
-TypeError: Can't instantiate abstract class RideData with abstract methods __getitem__, __len__
->>>
-```
-
-Внимательно прочитайте сообщение об ошибке. Он говорит нам, что нужно реализовать. Добавим методы `__len__()` и `__getitem__()`. В методе `__getitem__()` мы создадим словарь. Кроме того, мы создадим метод `append()`, который будет принимать словарь и распаковывать его в четыре отдельных операции `append()`.
-
-```python
-# readrides.py
-...
-
-class RideData(collections.Sequence):
     def __init__(self):
         # Each value is a list with all of the values (a column)
         self.routes = []
@@ -50,10 +21,10 @@ class RideData(collections.Sequence):
         return len(self.routes)
 
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        return {'route': self.routes[index],
+                'date': self.dates[index],
+                'daytype': self.daytypes[index],
+                'rides': self.numrides[index]}
 
     def append(self, d):
         self.routes.append(d['route'])
@@ -62,17 +33,17 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-Если вы сделали это правильно, вы должны быть в состоянии передать этот объект в ранее написанную функцию `read_rides_as_dicts()`. Для этого нужно изменить только одну строку кода:
+В этом коде мы определяем класс с именем `RideData`, который наследуется от `Sequence`. Метод `__init__` инициализирует четыре пустых списка, каждый из которых представляет столбец данных. Метод `__len__` возвращает длину контейнера, которая равна длине списка `routes`. Метод `__getitem__` позволяет получить доступ к конкретной записи по индексу, возвращая ее в виде словаря. Метод `append` добавляет новую запись в контейнер, добавляя значения в каждый столбцовый список.
+
+2. Теперь нам нужна функция для чтения данных о поездках на автобусах в наш пользовательский контейнер. Добавьте следующую функцию в файл `readrides.py`.
 
 ```python
-# readrides.py
-...
-
+# Add this to readrides.py
 def read_rides_as_dicts(filename):
     '''
-    Read the bus ride data as a list of dicts
+    Read the bus ride data as a list of dicts, but use our custom container
     '''
-    records = RideData()      # <--- CHANGE THIS
+    records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
         headings = next(rows)     # Skip headers
@@ -85,27 +56,47 @@ def read_rides_as_dicts(filename):
                 'route': route,
                 'date': date,
                 'daytype': daytype,
-                'rides' : rides
-                }
+                'rides': rides
+            }
             records.append(record)
     return records
 ```
 
-Если вы сделали все правильно, старый код должен работать точно так же, как и раньше. Например:
+Эта функция создает экземпляр класса `RideData` и заполняет его данными из CSV-файла. Она читает каждую строку из файла, извлекает соответствующую информацию, создает словарь для каждой записи и затем добавляет его в контейнер `RideData`. Главное, что она сохраняет тот же интерфейс, что и список словарей, но внутренне хранит данные по столбцам.
+
+3. Давайте протестируем наш пользовательский контейнер в оболочке Python. Это поможет нам убедиться, что он работает как ожидается.
 
 ```python
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
->>> rows
-<readrides.RideData object at 0x10f5054a8>
->>> len(rows)
-577563
->>> rows[0]
-{'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
->>> rows[1]
-{'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
->>> rows[2]
-{'route': '6', 'date': '01/01/2001', 'daytype': 'U', 'rides': 6048}
->>>
+import readrides
+
+# Read the data using our custom container
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+
+# Check the type of the returned object
+type(rows)  # Should be readrides.RideData
+
+# Check the length
+len(rows)   # Should be 577563
+
+# Access individual records
+rows[0]     # Should return a dictionary for the first record
+rows[1]     # Should return a dictionary for the second record
+rows[2]     # Should return a dictionary for the third record
 ```
 
-Запустите ранее написанный код CTA из упражнения 2.2. Он должен работать без изменений, но использовать значительно меньше памяти.
+Наш пользовательский контейнер успешно реализует интерфейс `Sequence`, что означает, что он ведет себя как список. Вы можете использовать функцию `len()` для получения количества записей в контейнере, и вы можете использовать индексацию для доступа к отдельным записям. Каждая запись выглядит как словарь, даже если данные хранятся по столбцам внутренне. Это замечательно, потому что существующий код, который предполагает список словарей, будет продолжать работать с нашим пользовательским контейнером без каких - либо изменений.
+
+4. Наконец, давайте измерим использование памяти нашего пользовательского контейнера. Это покажет, сколько памяти мы экономим по сравнению со списком словарей.
+
+```python
+import tracemalloc
+
+tracemalloc.start()
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+tracemalloc.stop()
+```
+
+Когда вы запустите этот код, вы должны увидеть, что использование памяти похоже на столбцовую организацию данных, которое намного меньше, чем использование памяти списком словарей. Это демонстрирует преимущество нашего пользовательского контейнера с точки зрения эффективности использования памяти.

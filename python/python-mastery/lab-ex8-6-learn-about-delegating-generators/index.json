@@ -131,5 +131,403 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "学习委托生成器",
+      "description": "理解 `yield from` 语句，在协程中使用它，用生成器包装套接字，并在 Python 中从生成器过渡到 `async`/`await`。",
+      "meta": {
+        "title": "学习委托生成器",
+        "description": "理解 `yield from` 语句，在协程中使用它，用生成器包装套接字，并在 Python 中从生成器过渡到 `async`/`await`。",
+        "keywords": "Python, 委托生成器, yield from, 协程, async/await"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解 `yield from` 语句",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 cofollow.py 文件内容",
+                "file": "verify1-1.sh",
+                "hint": "确保你已将所需函数添加到 cofollow.py 文件中"
+              }
+            ]
+          },
+          {
+            "title": "在协程中使用 `yield from`",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 receive 函数实现",
+                "file": "verify2-1.sh",
+                "hint": "确保你已正确实现 receive 函数"
+              }
+            ]
+          },
+          {
+            "title": "使用生成器包装套接字",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 GenSocket 类的实现",
+                "file": "verify3-1.sh",
+                "hint": "确保你已正确实现 GenSocket 类"
+              }
+            ]
+          },
+          {
+            "title": "从生成器到异步/等待",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证异步/等待实现",
+                "file": "verify4-1.sh",
+                "hint": "确保你已实现服务器函数的异步/等待版本"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Aprende sobre la Delegación de Generadores",
+      "description": "Entiende la declaración `yield from`, utilízala en corrutinas, envuelve sockets con generadores y transiciona de generadores a async/await en Python.",
+      "meta": {
+        "title": "Aprende sobre la Delegación de Generadores",
+        "description": "Entiende la declaración `yield from`, utilízala en corrutinas, envuelve sockets con generadores y transiciona de generadores a async/await en Python.",
+        "keywords": "Python, delegación de generadores, yield from, corrutinas, async/await"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendiendo la declaración `yield from`",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar el contenido de cofollow.py",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber agregado las funciones requeridas a cofollow.py"
+              }
+            ]
+          },
+          {
+            "title": "Usando `yield from` en Corrutinas",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de la función receive",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber implementado correctamente la función receive"
+              }
+            ]
+          },
+          {
+            "title": "Envolviendo sockets con generadores",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de la clase GenSocket",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber implementado correctamente la clase GenSocket"
+              }
+            ]
+          },
+          {
+            "title": "Desde generadores hasta async/await",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de async/await",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de haber implementado las versiones async/await de las funciones del servidor"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Apprenez les générateurs délégués",
+      "description": "Comprenez l'instruction `yield from`, utilisez - la dans les coroutines, encapsulez les sockets avec des générateurs et passez des générateurs à async/await en Python.",
+      "meta": {
+        "title": "Apprenez les générateurs délégués",
+        "description": "Comprenez l'instruction `yield from`, utilisez - la dans les coroutines, encapsulez les sockets avec des générateurs et passez des générateurs à async/await en Python.",
+        "keywords": "Python, générateurs délégués, yield from, coroutines, async/await"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre l'instruction `yield from`",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier le contenu de cofollow.py",
+                "file": "verify1-1.sh",
+                "hint": "Assurez - vous d'avoir ajouté les fonctions requises à cofollow.py"
+              }
+            ]
+          },
+          {
+            "title": "Utilisation de `yield from` dans les coroutines",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la fonction receive",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir correctement implémenté la fonction receive"
+              }
+            ]
+          },
+          {
+            "title": "Enrobage de sockets avec des générateurs",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la classe GenSocket",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir correctement implémenté la classe GenSocket"
+              }
+            ]
+          },
+          {
+            "title": "Des générateurs à async/await",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de async/await",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté les versions async/await des fonctions du serveur"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Lernen Sie über delegierende Generatoren",
+      "description": "Verstehen Sie die `yield from`-Anweisung, verwenden Sie sie in Koroutinen, umwickeln Sie Sockets mit Generatoren und wechseln Sie in Python von Generatoren zu async/await.",
+      "meta": {
+        "title": "Lernen Sie über delegierende Generatoren",
+        "description": "Verstehen Sie die `yield from`-Anweisung, verwenden Sie sie in Koroutinen, umwickeln Sie Sockets mit Generatoren und wechseln Sie in Python von Generatoren zu async/await.",
+        "keywords": "Python, delegierende Generatoren, yield from, Koroutinen, async/await"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Verständnis der `yield from`-Anweisung",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie den Inhalt von cofollow.py",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die erforderlichen Funktionen zu cofollow.py hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Verwendung von `yield from` in Koroutinen",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Implementierung der receive-Funktion",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die receive-Funktion korrekt implementiert haben"
+              }
+            ]
+          },
+          {
+            "title": "Umschließen von Sockets mit Generatoren",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Implementierung der GenSocket-Klasse",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die GenSocket-Klasse korrekt implementiert haben"
+              }
+            ]
+          },
+          {
+            "title": "Von Generatoren zu Async/Await",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Async/Await-Implementierung",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Async/Await-Versionen der Serverfunktionen implementiert haben"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "ジェネレーターの委任について学ぶ",
+      "description": "Python で `yield from` 文を理解し、コルーチンで使用し、ジェネレーターでソケットをラッピングし、ジェネレーターから async/await へ移行する方法を学びます。",
+      "meta": {
+        "title": "ジェネレーターの委任について学ぶ",
+        "description": "Python で `yield from` 文を理解し、コルーチンで使用し、ジェネレーターでソケットをラッピングし、ジェネレーターから async/await へ移行する方法を学びます。",
+        "keywords": "Python, ジェネレーターの委任, yield from, コルーチン, async/await"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "`yield from` 文の理解",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "cofollow.py の内容を確認する",
+                "file": "verify1-1.sh",
+                "hint": "cofollow.py に必要な関数を追加したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "コルーチンでの `yield from` の使用",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "receive 関数の実装を確認する",
+                "file": "verify2-1.sh",
+                "hint": "receive 関数を正しく実装したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "ジェネレータでソケットをラップする",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "GenSocket クラスの実装を確認する",
+                "file": "verify3-1.sh",
+                "hint": "GenSocket クラスを正しく実装したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "ジェネレータから async/await へ",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "async/await の実装を確認する",
+                "file": "verify4-1.sh",
+                "hint": "サーバー関数の async/await バージョンを正しく実装したことを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Изучите делегирующие генераторы",
+      "description": "Понять оператор `yield from`, использовать его в корутинах, обернуть сокеты с помощью генераторов и перейти от генераторов к async/await в Python.",
+      "meta": {
+        "title": "Изучите делегирующие генераторы",
+        "description": "Понять оператор `yield from`, использовать его в корутинах, обернуть сокеты с помощью генераторов и перейти от генераторов к async/await в Python.",
+        "keywords": "Python, делегирующие генераторы, yield from, корутины, async/await"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание оператора `yield from`",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить содержимое cofollow.py",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы добавили необходимые функции в cofollow.py"
+              }
+            ]
+          },
+          {
+            "title": "Использование `yield from` в корутинах",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию функции receive",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы правильно реализовали функцию receive"
+              }
+            ]
+          },
+          {
+            "title": "Оборачивание сокетов с помощью генераторов",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию класса GenSocket",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы правильно реализовали класс GenSocket"
+              }
+            ]
+          },
+          {
+            "title": "От генераторов к async/await",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию async/await",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы реализовали версии серверных функций с использованием async/await"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

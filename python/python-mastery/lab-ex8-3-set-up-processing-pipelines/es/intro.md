@@ -1,13 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás cómo utilizar corrutinas para construir tuberías de procesamiento de datos. Las corrutinas, una poderosa característica de Python, admiten la multitarea cooperativa, lo que permite a las funciones pausar y reanudar la ejecución en un momento posterior.
 
-- Usar corrutinas para configurar tuberías de procesamiento
-
-**Archivos creados:** `cofollow.py`, `coticker.py`
-
-**Nota**
-
-Para este ejercicio, el programa `stocksim.py` debe seguir ejecutándose en segundo plano.
-
-En el Ejercicio 8.2 escribiste código que usaba generadores para configurar una tubería de procesamiento. Un aspecto clave de ese programa fue la idea de que los datos fluyen entre funciones generadoras. Se puede configurar un tipo de flujo de datos muy similar usando corrutinas. La única diferencia es que con una corrutina, se envían datos a diferentes elementos de procesamiento en lugar de extraerlos con un bucle for.
+Los objetivos de este laboratorio son comprender cómo funcionan las corrutinas en Python, implementar tuberías de procesamiento de datos basadas en corrutinas y transformar datos a través de múltiples etapas de corrutinas. Crearás dos archivos: `cofollow.py`, un seguidor de archivos basado en corrutinas, y `coticker.py`, una aplicación de cotizaciones de acciones que utiliza corrutinas. Se asume que el programa `stocksim.py` del ejercicio anterior sigue ejecutándose en segundo plano, generando datos de acciones en un archivo de registro.

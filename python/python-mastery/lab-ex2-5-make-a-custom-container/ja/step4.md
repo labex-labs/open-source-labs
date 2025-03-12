@@ -1,59 +1,30 @@
-# カスタムコンテナを作る - 大いなる偽装
+# カスタムコンテナクラスの作成
 
-列にデータを格納すると、はるかにメモリを節約できますが、データを扱うのがかなり面倒になります。実際、演習2.2の以前の分析コードのどれも、列では機能しません。すべてが壊れてしまった理由は、以前の演習で使用されていたデータの抽象化を破ってしまったからです。つまり、データが辞書のリストとして格納されているという前提が崩れてしまったのです。
+データ処理において、列指向アプローチはメモリを節約するのに優れています。しかし、既存のコードがデータを辞書のリスト形式で期待している場合、問題が発生することがあります。この問題を解決するために、カスタムコンテナクラスを作成します。このクラスは行指向のインターフェースを提供します。つまり、コードから見ると辞書のリストのように見え、動作します。ただし、内部的には列指向の形式でデータを格納し、メモリを節約するのに役立ちます。
 
-これは、「偽装」するカスタムコンテナオブジェクトを作ることで修正できます。それではやりましょう。
-
-以前の分析コードは、データがレコードのシーケンスとして格納されていると仮定しています。各レコードは辞書として表されます。では、新しい「シーケンス」クラスを作り始めましょう。このクラスでは、`read_rides_as_columns()`関数で使用されていた4つのデータ列を格納します。
+1. まず、WebIDE エディタで `readrides.py` ファイルを開きます。このファイルに新しいクラスを追加します。このクラスがカスタムコンテナの基礎となります。
 
 ```python
-# readrides.py
-
+# Add this to readrides.py
 from collections.abc import Sequence
-
-...
 
 class RideData(Sequence):
     def __init__(self):
-        self.routes = []      # 列
-        self.dates = []
-        self.daytypes = []
-        self.numrides = []
-```
-
-`RideData`インスタンスを作成してみましょう。次のようなエラーメッセージが表示されて失敗することがわかります：
-
-```python
->>> records = RideData()
-Traceback (most recent call last):
-...
-TypeError: Can't instantiate abstract class RideData with abstract methods __getitem__, __len__
->>>
-```
-
-エラーメッセージを注意深く読んでください。それが何を実装する必要があるかを教えてくれます。では、`__len__()`と`__getitem__()`メソッドを追加しましょう。`__getitem__()`メソッドでは辞書を作成します。また、辞書を受け取り、それを4つの別々の`append()`操作に展開する`append()`メソッドも作成します。
-
-```python
-# readrides.py
-...
-
-class RideData(collections.Sequence):
-    def __init__(self):
-        # 各値はすべての値のリスト（列）
+        # Each value is a list with all of the values (a column)
         self.routes = []
         self.dates = []
         self.daytypes = []
         self.numrides = []
 
     def __len__(self):
-        # すべてのリストは同じ長さであると仮定
+        # All lists assumed to have the same length
         return len(self.routes)
 
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        return {'route': self.routes[index],
+                'date': self.dates[index],
+                'daytype': self.daytypes[index],
+                'rides': self.numrides[index]}
 
     def append(self, d):
         self.routes.append(d['route'])
@@ -62,20 +33,20 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-これを正しく行えば、このオブジェクトを以前に書かれた`read_rides_as_dicts()`関数に投入できるはずです。コードを1行だけ変更するだけです：
+このコードでは、`Sequence` を継承した `RideData` という名前のクラスを定義しています。`__init__` メソッドは、それぞれがデータの列を表す 4 つの空のリストを初期化します。`__len__` メソッドは、コンテナの長さを返します。これは `routes` リストの長さと同じです。`__getitem__` メソッドは、インデックスで特定のレコードにアクセスできるようにし、それを辞書として返します。`append` メソッドは、各列のリストに値を追加することで、新しいレコードをコンテナに追加します。
+
+2. 次に、バスの乗車データをカスタムコンテナに読み込む関数が必要です。`readrides.py` ファイルに以下の関数を追加します。
 
 ```python
-# readrides.py
-...
-
+# Add this to readrides.py
 def read_rides_as_dicts(filename):
     '''
-    バスの乗車データを辞書のリストとして読み込む
+    Read the bus ride data as a list of dicts, but use our custom container
     '''
-    records = RideData()      # <--- ここを変更
+    records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)     # ヘッダーをスキップ
+        headings = next(rows)     # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -85,27 +56,47 @@ def read_rides_as_dicts(filename):
                 'route': route,
                 'date': date,
                 'daytype': daytype,
-                'rides' : rides
-                }
+                'rides': rides
+            }
             records.append(record)
     return records
 ```
 
-これを正しく行えば、古いコードは以前とまったく同じように機能するはずです。たとえば：
+この関数は、`RideData` クラスのインスタンスを作成し、CSV ファイルからのデータでそれを埋めます。ファイルから各行を読み取り、関連する情報を抽出し、各レコードに対して辞書を作成し、それを `RideData` コンテナに追加します。重要なのは、辞書のリストと同じインターフェースを維持しながら、内部的にはデータを列で格納することです。
+
+3. Python シェルでカスタムコンテナをテストしましょう。これにより、期待通りに動作することを確認できます。
 
 ```python
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
->>> rows
-<readrides.RideData object at 0x10f5054a8>
->>> len(rows)
-577563
->>> rows[0]
-{'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
->>> rows[1]
-{'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
->>> rows[2]
-{'route': '6', 'date': '01/01/2001', 'daytype': 'U', 'rides': 6048}
->>>
+import readrides
+
+# Read the data using our custom container
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+
+# Check the type of the returned object
+type(rows)  # Should be readrides.RideData
+
+# Check the length
+len(rows)   # Should be 577563
+
+# Access individual records
+rows[0]     # Should return a dictionary for the first record
+rows[1]     # Should return a dictionary for the second record
+rows[2]     # Should return a dictionary for the third record
 ```
 
-演習2.2の以前のCTAコードを実行してみましょう。修正することなく機能するはずですが、メモリを大幅に節約します。
+カスタムコンテナは `Sequence` インターフェースを正常に実装しています。つまり、リストのように振る舞います。`len()` 関数を使ってコンテナ内のレコード数を取得でき、インデックスを使って個々のレコードにアクセスできます。各レコードは辞書のように見えますが、内部的にはデータは列で格納されています。これは、辞書のリストを期待する既存のコードが、何の変更もせずにカスタムコンテナで動作し続けるので、非常に便利です。
+
+4. 最後に、カスタムコンテナのメモリ使用量を測定しましょう。これにより、辞書のリストと比較してどれだけのメモリを節約できているかがわかります。
+
+```python
+import tracemalloc
+
+tracemalloc.start()
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+tracemalloc.stop()
+```
+
+このコードを実行すると、メモリ使用量が列指向アプローチと同程度であり、辞書のリストが使用するメモリよりもはるかに少ないことがわかるはずです。これは、メモリ効率の面でカスタムコンテナの利点を示しています。

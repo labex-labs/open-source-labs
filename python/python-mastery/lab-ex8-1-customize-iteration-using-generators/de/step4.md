@@ -1,25 +1,46 @@
-# Überwachen einer Streaming-Datenquelle
+# Erstellen eines Generators für Streaming-Daten
 
-Generatoren können auch eine nützliche Möglichkeit sein, einfach einen Datenstrom zu erzeugen. In diesem Teil werden wir diese Idee erkunden, indem wir einen Generator schreiben, um eine Logdatei zu überwachen. Beginnen Sie zunächst mit den folgenden Anweisungen.
+In der Programmierung sind Generatoren ein leistungsstarkes Werkzeug, insbesondere wenn es um reale Probleme wie die Überwachung einer Streaming-Datenquelle geht. In diesem Abschnitt lernen wir, wie wir das, was wir über Generatoren gelernt haben, auf ein solches praktisches Szenario anwenden können. Wir werden einen Generator erstellen, der eine Protokolldatei (Log-Datei) überwacht und uns neue Zeilen liefert, sobald sie zur Datei hinzugefügt werden.
 
-Das Programm `stocksim.py` ist ein Programm, das die Aktienmarkt-Daten simuliert. Als Ausgabe schreibt das Programm kontinuierlich Echtzeitdaten in eine Datei `stocklog.csv`. Öffnen Sie in einem Befehlsfenster (nicht IDLE) das Verzeichnis und führen Sie dieses Programm aus:
+## Einrichten der Datenquelle
 
-    % python3 stocksim.py
+Bevor wir mit der Erstellung des Generators beginnen, müssen wir eine Datenquelle einrichten. In diesem Fall verwenden wir ein Simulationsprogramm, das Börsendaten generiert.
 
-Wenn Sie unter Windows sind, finden Sie einfach die `stocksim.py`-Datei und doppelklicken Sie darauf, um es auszuführen. Vergessen Sie jetzt dieses Programm (lassen Sie es einfach laufen). Lassen Sie dieses Programm einfach im Hintergrund laufen - es wird mehrere Stunden lang laufen (Sie müssen sich nicht darum kümmern).
+Zunächst müssen Sie ein neues Terminal in der WebIDE öffnen. Hier werden Sie die Befehle ausführen, um die Simulation zu starten.
 
-Wenn das obige Programm läuft, schreiben wir ein kleines Programm, um die Datei zu öffnen, zum Dateiende zu springen und nach neuer Ausgabe zu suchen. Erstellen Sie eine Datei `follow.py` und legen Sie diesen Code darin ab:
+Nachdem Sie das Terminal geöffnet haben, führen Sie das Börsensimulationsprogramm aus. Hier sind die Befehle, die Sie eingeben müssen:
+
+```bash
+cd ~/project
+python3 stocksim.py
+```
+
+Der erste Befehl `cd ~/project` wechselt das aktuelle Verzeichnis in das `project`-Verzeichnis in Ihrem Home-Verzeichnis. Der zweite Befehl `python3 stocksim.py` führt das Börsensimulationsprogramm aus. Dieses Programm generiert Börsendaten und schreibt sie in eine Datei namens `stocklog.csv` im aktuellen Verzeichnis. Lassen Sie dieses Programm im Hintergrund laufen, während wir an dem Überwachungscode arbeiten.
+
+## Erstellen eines einfachen Datei-Überwachers
+
+Jetzt, da wir unsere Datenquelle eingerichtet haben, erstellen wir ein Programm, das die Datei `stocklog.csv` überwacht. Dieses Programm zeigt alle negativen Preisänderungen an.
+
+1. Erstellen Sie zunächst eine neue Datei namens `follow.py` in der WebIDE. Dazu müssen Sie das Verzeichnis in das `project`-Verzeichnis wechseln, indem Sie den folgenden Befehl im Terminal eingeben:
+
+```bash
+cd ~/project
+```
+
+2. Fügen Sie als Nächstes den folgenden Code zur Datei `follow.py` hinzu. Dieser Code öffnet die Datei `stocklog.csv`, bewegt den Dateizeiger an das Ende der Datei und überprüft dann kontinuierlich auf neue Zeilen. Wenn eine neue Zeile gefunden wird und sie eine negative Preisänderung darstellt, wird der Name der Aktie, der Preis und die Änderung ausgegeben.
 
 ```python
 # follow.py
 import os
 import time
+
 f = open('stocklog.csv')
-f.seek(0, os.SEEK_END)   # Bewege den Dateizeiger um 0 Bytes vom Dateiende
+f.seek(0, os.SEEK_END)   # Move file pointer 0 bytes from end of file
+
 while True:
     line = f.readline()
     if line == '':
-        time.sleep(0.1)   # Schlafe kurz und versuche es erneut
+        time.sleep(0.1)   # Sleep briefly and retry
         continue
     fields = line.split(',')
     name = fields[0].strip('"')
@@ -29,33 +50,70 @@ while True:
         print('%10s %10.2f %10.2f' % (name, price, change))
 ```
 
-Wenn Sie das Programm ausführen, sehen Sie einen Echtzeit-Aktienanzeiger. Unter der Haube ist dieser Code ähnlich der Unix-Befehl `tail -f`, der verwendet wird, um eine Logdatei zu überwachen.
+3. Nachdem Sie den Code hinzugefügt haben, speichern Sie die Datei. Führen Sie dann das Programm aus, indem Sie den folgenden Befehl im Terminal eingeben:
 
-**Hinweis:** Die Verwendung der `readline()`-Methode in diesem Beispiel ist etwas ungewöhnlich, da es nicht die übliche Weise ist, Zeilen aus einer Datei zu lesen (normalerweise würden Sie einfach eine `for`-Schleife verwenden). In diesem Fall verwenden wir es jedoch, um wiederholt das Ende der Datei zu überprüfen, um zu sehen, ob weitere Daten hinzugefügt wurden (`readline()` wird entweder neue Daten oder eine leere Zeichenfolge zurückgeben).
-
-Wenn Sie sich den Code genauer ansehen, produziert der erste Teil des Codes Zeilen von Daten, während die Anweisungen am Ende der `while`-Schleife die Daten verarbeiten. Ein wichtiges Merkmal von Generatorfunktionen ist, dass Sie den gesamten Datenproduktionscode in eine wiederverwendbare Funktion verschieben können.
-
-Ändern Sie den Code so, dass das Datei-Lesen von einer Generatorfunktion `follow(filename)` durchgeführt wird. Stellen Sie sicher, dass der folgende Code funktioniert:
-
-```python
->>> for line in follow('stocklog.csv'):
-          print(line, end='')
-
-... Sollte hier Zeilen der Ausgabe sehen...
+```bash
+python3 follow.py
 ```
 
-Ändern Sie den Aktienanzeiger-Code so, dass er wie folgt aussieht:
+Sie sollten eine Ausgabe sehen, die Aktien mit negativen Preisänderungen anzeigt. Es könnte so aussehen:
 
-```python
-for line in follow('stocklog.csv'):
-    fields = line.split(',')
-    name = fields[0].strip('"')
-    price = float(fields[1])
-    change = float(fields[4])
-    if change < 0:
-        print('%10s %10.2f %10.2f' % (name, price, change))
+```
+      AAPL     148.24      -1.76
+      GOOG    2498.45      -1.55
 ```
 
-**Diskussion**
+Wenn Sie das Programm beenden möchten, drücken Sie `Ctrl+C` im Terminal.
 
-Etwas sehr Potentes ist gerade passiert. Sie haben ein interessantes Iterationsmuster (Lesen von Zeilen am Ende einer Datei) in seine eigene kleine Funktion verlagert. Die `follow()`-Funktion ist jetzt eine völlig allzweckdienliche Utility, die Sie in jedem Programm verwenden können. Beispielsweise können Sie sie verwenden, um Server-Logs, Debug-Logs und andere ähnliche Datenquellen zu überwachen. Das ist ziemlich cool.
+## Umwandlung in eine Generatorfunktion
+
+Obwohl der vorherige Code funktioniert, können wir ihn wiederverwendbarer und modularer gestalten, indem wir ihn in eine Generatorfunktion umwandeln. Eine Generatorfunktion ist eine spezielle Art von Funktion, die angehalten und fortgesetzt werden kann und die nacheinander Werte liefert.
+
+1. Öffnen Sie die Datei `follow.py` erneut und ändern Sie sie so, dass eine Generatorfunktion verwendet wird. Hier ist der aktualisierte Code:
+
+```python
+# follow.py
+import os
+import time
+
+def follow(filename):
+    """
+    Generator function that yields new lines in a file as they are added.
+    Similar to the 'tail -f' Unix command.
+    """
+    f = open(filename)
+    f.seek(0, os.SEEK_END)   # Move to the end of the file
+
+    while True:
+        line = f.readline()
+        if line == '':
+            time.sleep(0.1)   # Sleep briefly and retry
+            continue
+        yield line
+
+# Example usage - monitor stocks with negative price changes
+if __name__ == '__main__':
+    for line in follow('stocklog.csv'):
+        fields = line.split(',')
+        name = fields[0].strip('"')
+        price = float(fields[1])
+        change = float(fields[4])
+        if change < 0:
+            print('%10s %10.2f %10.2f' % (name, price, change))
+```
+
+Die `follow`-Funktion ist jetzt eine Generatorfunktion. Sie öffnet die Datei, bewegt sich an das Ende und überprüft dann kontinuierlich auf neue Zeilen. Wenn eine neue Zeile gefunden wird, liefert sie diese Zeile.
+
+2. Speichern Sie die Datei und führen Sie sie erneut aus, indem Sie den Befehl eingeben:
+
+```bash
+python3 follow.py
+```
+
+Die Ausgabe sollte die gleiche wie zuvor sein. Aber jetzt ist die Logik zur Dateiüberwachung sauber in der `follow`-Generatorfunktion gekapselt. Dies bedeutet, dass wir diese Funktion in anderen Programmen wiederverwenden können, die eine Datei überwachen müssen.
+
+## Verständnis der Stärke von Generatoren
+
+Durch die Umwandlung unseres Dateilesecodes in eine Generatorfunktion haben wir ihn viel flexibler und wiederverwendbarer gemacht. Die `follow()`-Funktion kann in jedem Programm verwendet werden, das eine Datei überwachen muss, nicht nur für Börsendaten.
+
+Beispielsweise könnten Sie sie verwenden, um Serverprotokolle, Anwendungslogs oder jede andere Datei zu überwachen, die im Laufe der Zeit aktualisiert wird. Dies zeigt, wie Generatoren eine großartige Möglichkeit sind, Streaming-Datenquellen auf saubere und modulare Weise zu verarbeiten.

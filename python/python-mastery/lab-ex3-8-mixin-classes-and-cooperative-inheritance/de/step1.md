@@ -1,10 +1,54 @@
-# Das Problem mit der Spaltenformatierung
+# Das Problem mit der Spaltenformatierung verstehen
 
-Wenn Sie alle den Weg zurück zu Übung 3.1 gehen, haben Sie eine Funktion `print_portfolio()` geschrieben, die eine Tabelle wie diese erzeugt hat:
+In diesem Schritt werden wir uns eine Einschränkung in unserer aktuellen Tabellenformatierungs-Implementierung anschauen. Wir werden auch einige mögliche Lösungen für dieses Problem untersuchen.
+
+Zunächst verstehen wir, was wir tun werden. Wir öffnen den VSCode-Editor und betrachten die Datei `tableformat.py` im Projektverzeichnis. Diese Datei ist wichtig, da sie den Code enthält, der es uns ermöglicht, tabellarische Daten auf verschiedene Weise zu formatieren, wie z. B. im Text-, CSV- oder HTML-Format.
+
+Um die Datei zu öffnen, verwenden wir die folgenden Befehle im Terminal. Der Befehl `cd` wechselt das Verzeichnis in das Projektverzeichnis, und der Befehl `code` öffnet die Datei `tableformat.py` in VSCode.
+
+```bash
+cd ~/project
+code tableformat.py
+```
+
+Wenn Sie die Datei öffnen, werden Sie feststellen, dass mehrere Klassen definiert sind. Diese Klassen spielen unterschiedliche Rollen bei der Formatierung der Tabellendaten.
+
+- `TableFormatter`: Dies ist eine abstrakte Basisklasse. Sie hat Methoden, die zur Formatierung der Tabellenüberschriften und -zeilen verwendet werden. Stellen Sie sich dies als ein Bauplan für andere Formatiererklassen vor.
+- `TextTableFormatter`: Diese Klasse wird verwendet, um die Tabelle im Klartextformat auszugeben.
+- `CSVTableFormatter`: Sie ist für die Formatierung der Tabellendaten im CSV-Format (Comma-Separated Values, engl. für "durch Kommas getrennte Werte") verantwortlich.
+- `HTMLTableFormatter`: Diese Klasse formatiert die Tabellendaten im HTML-Format.
+
+Es gibt auch eine Funktion `print_table()` in der Datei. Diese Funktion verwendet die gerade erwähnten Formatiererklassen, um die tabellarischen Daten anzuzeigen.
+
+Jetzt sehen wir uns an, wie diese Klassen funktionieren, indem wir etwas Python-Code ausführen. Öffnen Sie ein Terminal und starten Sie eine Python-Sitzung. Der folgende Code importiert die erforderlichen Funktionen und Klassen aus der Datei `tableformat.py`, erstellt ein `TextTableFormatter`-Objekt und verwendet dann die Funktion `print_table()`, um die Portfolio-Daten anzuzeigen.
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
->>> print_portfolio(portfolio)
+python3 -c "
+from tableformat import print_table, TextTableFormatter, portfolio
+formatter = TextTableFormatter()
+print_table(portfolio, ['name', 'shares', 'price'], formatter)
+"
+```
+
+Nachdem Sie den Code ausgeführt haben, sollten Sie eine Ausgabe ähnlich der folgenden sehen:
+
+```
+      name     shares      price
+---------- ---------- ----------
+        AA        100       32.2
+       IBM         50       91.1
+       CAT        150      83.44
+      MSFT        200      51.23
+        GE         95      40.37
+      MSFT         50       65.1
+       IBM        100      70.44
+```
+
+Jetzt suchen wir das Problem. Beachten Sie, dass die Werte in der Spalte `price` nicht konsistent formatiert sind. Einige Werte haben eine Dezimalstelle, wie 32.2, während andere zwei Dezimalstellen haben, wie 51.23. Bei Finanzdaten möchten wir normalerweise, dass die Formatierung konsistent ist.
+
+So soll die Ausgabe aussehen:
+
+```
       name     shares      price
 ---------- ---------- ----------
         AA        100      32.20
@@ -14,80 +58,48 @@ Wenn Sie alle den Weg zurück zu Übung 3.1 gehen, haben Sie eine Funktion `prin
         GE         95      40.37
       MSFT         50      65.10
        IBM        100      70.44
->>>
 ```
 
-Die in den letzten mehreren Übungen entwickelte Funktion `print_table()` ersetzt fast diese Funktionalität - fast. Das eine Problem, das sie hat, ist, dass sie den Inhalt jeder Spalte nicht präzise formatieren kann. Beispielsweise bemerken Sie, wie die Werte in der `price`-Spalte präzise mit 2 Dezimalstellen formatiert sind. Die `TableFormatter`-Klasse und die zugehörigen Unterklassen können das nicht.
-
-Eine Möglichkeit, es zu beheben, wäre, die Funktion `print_table()` zu ändern, um ein zusätzliches `formats`-Argument zu akzeptieren. Beispielsweise könnte es so aussehen:
+Eine Möglichkeit, dies zu beheben, besteht darin, die Funktion `print_table()` zu ändern, um Formatangaben zu akzeptieren. Der folgende Code zeigt, wie wir dies tun können. Wir definieren eine neue Funktion `print_table()`, die einen zusätzlichen Parameter `formats` nimmt. Innerhalb der Funktion verwenden wir diese Formatangaben, um jeden Wert in der Zeile zu formatieren.
 
 ```python
->>> def print_table(records, fields, formats, formatter):
-        formatter.headings(fields)
-        for r in records:
-            rowdata = [(fmt % getattr(r, fieldname))
-                 for fieldname,fmt in zip(fields,formats)]
-            formatter.row(rowdata)
+python3 -c "
+from tableformat import TextTableFormatter, portfolio
 
->>> import stock, reader
->>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
->>> from tableformat import TextTableFormatter
->>> formatter = TextTableFormatter()
->>> print_table(portfolio,
-                ['name','shares','price'],
-                ['%s','%d','%0.2f'],
-                formatter)
+def print_table(records, fields, formats, formatter):
+    formatter.headings(fields)
+    for r in records:
+        rowdata = [(fmt % getattr(r, fieldname))
+             for fieldname, fmt in zip(fields, formats)]
+        formatter.row(rowdata)
 
-      name     shares      price
----------- ---------- ----------
-        AA        100      32.20
-       IBM         50      91.10
-       CAT        150      83.44
-      MSFT        200      51.23
-        GE         95      40.37
-      MSFT         50      65.10
-       IBM        100      70.44
->>>
+formatter = TextTableFormatter()
+print_table(portfolio,
+            ['name','shares','price'],
+            ['%s','%d','%0.2f'],
+            formatter)
+"
 ```
 
-Ja, Sie könnten `print_table()` so ändern, aber ist das der richtige Ort dafür? Die ganze Idee aller `TableFormatter`-Klassen ist, dass sie in verschiedenen Arten von Anwendungen verwendet werden können. Die Spaltenformatierung ist etwas, das an anderen Stellen nützlich sein könnte, nicht nur in der `print_table()`-Funktion.
+Diese Lösung funktioniert, hat aber einen Nachteil. Das Ändern der Schnittstelle der Funktion kann bestehenden Code, der die alte Version der Funktion `print_table()` verwendet, beschädigen.
 
-Ein anderer möglicher Ansatz könnte sein, die Schnittstelle der `TableFormatter`-Klasse auf某种方式zu ändern. Beispielsweise könnte man vielleicht eine dritte Methode hinzufügen, um die Formatierung anzuwenden.
+Ein anderer Ansatz besteht darin, einen benutzerdefinierten Formatierer durch Subklassen zu erstellen. Wir können eine neue Klasse erstellen, die von `TextTableFormatter` erbt, und die Methode `row()` überschreiben, um die gewünschte Formatierung anzuwenden.
 
 ```python
-class TableFormatter:
-    def headings(self, headers):
-     ...
-    def format(self, rowdata):
-     ...
+python3 -c "
+from tableformat import TextTableFormatter, print_table, portfolio
+
+class PortfolioFormatter(TextTableFormatter):
     def row(self, rowdata):
-     ...
+        formats = ['%s','%d','%0.2f']
+        rowdata = [(fmt % d) for fmt, d in zip(formats, rowdata)]
+        super().row(rowdata)
+
+formatter = PortfolioFormatter()
+print_table(portfolio, ['name','shares','price'], formatter)
+"
 ```
 
-Das Problem hier ist, dass jedes Mal, wenn Sie die Schnittstelle einer Klasse ändern, müssen Sie den gesamten vorhandenen Code umgestalten, um mit ihr zu arbeiten. Insbesondere müssten Sie alle bereits geschriebenen `TableFormatter`-Unterklassen und den gesamten Code ändern, der geschrieben wurde, um sie zu verwenden. Lassen Sie uns das nicht tun.
+Diese Lösung funktioniert ebenfalls, ist aber nicht sehr praktisch. Jedes Mal, wenn wir eine andere Formatierung möchten, müssen wir eine neue Klasse erstellen. Und wir sind auf den spezifischen Formatierertyp beschränkt, von dem wir ableiten, in diesem Fall `TextTableFormatter`.
 
-Als Alternative könnte ein Benutzer die Vererbung verwenden, um einen bestimmten Formatter anzupassen, um einige Formatierungen hineinzufügen. Beispielsweise versuchen Sie dieses Experiment:
-
-```python
->>> from tableformat import TextTableFormatter, print_table
->>> class PortfolioFormatter(TextTableFormatter):
-        def row(self, rowdata):
-            formats = ['%s','%d','%0.2f']
-            rowdata = [(fmt % d) for fmt, d in zip(formats, rowdata)]
-            super().row(rowdata)
-
->>> formatter = PortfolioFormatter()
->>> print_table(portfolio, ['name','shares','price'], formatter)
-      name     shares      price
----------- ---------- ----------
-        AA        100      32.20
-       IBM         50      91.10
-       CAT        150      83.44
-      MSFT        200      51.23
-        GE         95      40.37
-      MSFT         50      65.10
-       IBM        100      70.44
->>>
-```
-
-Ja, das funktioniert, aber es ist auch ein bisschen umständlich und seltsam. Der Benutzer muss einen bestimmten Formatter auswählen, um ihn anzupassen. Darüber hinaus müssen sie den tatsächlichen Spaltenformatierungs-Code selbst implementieren. Sicherlich gibt es eine andere Möglichkeit, das zu tun.
+Im nächsten Schritt werden wir eine elegantere Lösung mit Mixin-Klassen (Mixin-Klassen sind in der Informatik eine spezielle Art von Klasse) untersuchen.

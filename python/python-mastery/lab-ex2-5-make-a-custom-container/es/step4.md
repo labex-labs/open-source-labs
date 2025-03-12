@@ -1,59 +1,30 @@
-# Creando un Contenedor Personalizado - La Gran Ilusión
+# Creación de una clase de contenedor personalizada
 
-Almacenar los datos en columnas ofrece una mejor economía de memoria, pero ahora los datos son bastante extraños de trabajar. De hecho, ninguno de nuestro código de análisis anterior del Ejercicio 2.2 puede trabajar con columnas. La razón por la que todo está roto es que se ha roto la abstracción de datos que se utilizó en los ejercicios anteriores, a saber, la suposición de que los datos se almacenan como una lista de diccionarios.
+En el procesamiento de datos, el enfoque orientado a columnas es excelente para ahorrar memoria. Sin embargo, puede causar problemas cuando tu código existente espera que los datos estén en forma de una lista de diccionarios. Para resolver este problema, crearemos una clase de contenedor personalizada. Esta clase presentará una interfaz orientada a filas, lo que significa que parecerá y actuará como una lista de diccionarios para tu código. Pero internamente, almacenará los datos en un formato orientado a columnas, lo que nos ayudará a ahorrar memoria.
 
-Esto se puede corregir si está dispuesto a crear un objeto de contenedor personalizado que "haga la vista gorda". Hagámoslo.
-
-El código de análisis anterior asume que los datos se almacenan en una secuencia de registros. Cada registro se representa como un diccionario. Comencemos creando una nueva clase "Secuencia". En esta clase, almacenaremos las cuatro columnas de datos que se usaban en la función `read_rides_as_columns()`.
+1. Primero, abre el archivo `readrides.py` en el editor WebIDE. Vamos a agregar una nueva clase a este archivo. Esta clase será la base de nuestro contenedor personalizado.
 
 ```python
-# readrides.py
-
+# Add this to readrides.py
 from collections.abc import Sequence
-
-...
 
 class RideData(Sequence):
     def __init__(self):
-        self.routes = []      # Columnas
-        self.dates = []
-        self.daytypes = []
-        self.numrides = []
-```
-
-Intente crear una instancia de `RideData`. Verá que falla con un mensaje de error como este:
-
-```python
->>> records = RideData()
-Traceback (most recent call last):
-...
-TypeError: No se puede instanciar la clase abstracta RideData con métodos abstractos __getitem__, __len__
->>>
-```
-
-Lea detenidamente el mensaje de error. Nos dice lo que necesitamos implementar. Agreguemos un método `__len__()` y `__getitem__()`. En el método `__getitem__()`, crearemos un diccionario. Además, crearemos un método `append()` que tome un diccionario y lo desempaquete en 4 operaciones `append()` separadas.
-
-```python
-# readrides.py
-...
-
-class RideData(collections.Sequence):
-    def __init__(self):
-        # Cada valor es una lista con todos los valores (una columna)
+        # Each value is a list with all of the values (a column)
         self.routes = []
         self.dates = []
         self.daytypes = []
         self.numrides = []
 
     def __len__(self):
-        # Se asume que todas las listas tienen la misma longitud
+        # All lists assumed to have the same length
         return len(self.routes)
 
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        return {'route': self.routes[index],
+                'date': self.dates[index],
+                'daytype': self.daytypes[index],
+                'rides': self.numrides[index]}
 
     def append(self, d):
         self.routes.append(d['route'])
@@ -62,20 +33,20 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-Si lo ha hecho correctamente, debería poder insertar este objeto en la función `read_rides_as_dicts()` escrita anteriormente. Esto implica cambiar solo una línea de código:
+En este código, definimos una clase llamada `RideData` que hereda de `Sequence`. El método `__init__` inicializa cuatro listas vacías, cada una representando una columna de datos. El método `__len__` devuelve la longitud del contenedor, que es la misma que la longitud de la lista `routes`. El método `__getitem__` nos permite acceder a un registro específico por índice, devolviéndolo como un diccionario. El método `append` agrega un nuevo registro al contenedor anexando valores a cada lista de columnas.
+
+2. Ahora, necesitamos una función para leer los datos de viajes en autobús en nuestro contenedor personalizado. Agrega la siguiente función al archivo `readrides.py`.
 
 ```python
-# readrides.py
-...
-
+# Add this to readrides.py
 def read_rides_as_dicts(filename):
     '''
-    Lee los datos de viajes de autobús como una lista de dicts
+    Read the bus ride data as a list of dicts, but use our custom container
     '''
-    records = RideData()      # <--- CAMBIE ESTO
+    records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)     # Omite los encabezados
+        headings = next(rows)     # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -85,27 +56,47 @@ def read_rides_as_dicts(filename):
                 'route': route,
                 'date': date,
                 'daytype': daytype,
-                'rides' : rides
-                }
+                'rides': rides
+            }
             records.append(record)
     return records
 ```
 
-Si lo ha hecho bien, el código antiguo debería funcionar exactamente como antes. Por ejemplo:
+Esta función crea una instancia de la clase `RideData` y la llena con datos del archivo CSV. Lee cada fila del archivo, extrae la información relevante, crea un diccionario para cada registro y luego lo anexa al contenedor `RideData`. Lo importante es que mantiene la misma interfaz que una lista de diccionarios, pero internamente almacena los datos en columnas.
+
+3. Probemos nuestro contenedor personalizado en la shell de Python. Esto nos ayudará a verificar que funciona como se espera.
 
 ```python
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
->>> rows
-<readrides.RideData object at 0x10f5054a8>
->>> len(rows)
-577563
->>> rows[0]
-{'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
->>> rows[1]
-{'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
->>> rows[2]
-{'route': '6', 'date': '01/01/2001', 'daytype': 'U', 'rides': 6048}
->>>
+import readrides
+
+# Read the data using our custom container
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+
+# Check the type of the returned object
+type(rows)  # Should be readrides.RideData
+
+# Check the length
+len(rows)   # Should be 577563
+
+# Access individual records
+rows[0]     # Should return a dictionary for the first record
+rows[1]     # Should return a dictionary for the second record
+rows[2]     # Should return a dictionary for the third record
 ```
 
-Ejecute su código anterior de la CTA del Ejercicio 2.2. Debería funcionar sin modificar, pero utilizar significativamente menos memoria.
+Nuestro contenedor personalizado implementa con éxito la interfaz `Sequence`, lo que significa que se comporta como una lista. Puedes usar la función `len()` para obtener el número de registros en el contenedor, y puedes usar la indexación para acceder a registros individuales. Cada registro parece ser un diccionario, aunque los datos se almacenen internamente en columnas. Esto es genial porque el código existente que espera una lista de diccionarios seguirá funcionando con nuestro contenedor personalizado sin ninguna modificación.
+
+4. Finalmente, midamos el uso de memoria de nuestro contenedor personalizado. Esto nos mostrará cuánta memoria estamos ahorrando en comparación con una lista de diccionarios.
+
+```python
+import tracemalloc
+
+tracemalloc.start()
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+tracemalloc.stop()
+```
+
+Cuando ejecutes este código, deberías ver que el uso de memoria es similar al enfoque orientado a columnas, que es mucho menor que el que utilizaría una lista de diccionarios. Esto demuestra la ventaja de nuestro contenedor personalizado en términos de eficiencia de memoria.

@@ -1,8 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab werden Sie lernen, wie Sie Vererbung (inheritance) nutzen können, um erweiterbares Code zu schreiben und eine praktische Anwendung zu erstellen, die Daten in verschiedenen Formaten ausgibt. Sie werden auch verstehen, wie Sie abstrakte Basisklassen (abstract base classes) und deren konkrete Implementierungen verwenden können.
 
-- Lernen Sie, wie Sie Vererbung verwenden, um erweiterbares Code zu schreiben.
-- Sehen Sie eine praktische Verwendung von Vererbung, indem Sie ein Programm schreiben, das Daten in einer Vielzahl von benutzerauswählbaren Formaten wie einfache Texte, CSV und HTML ausgeben muss.
-
-**Veränderte Dateien:** `tableformat.py`
+Darüber hinaus werden Sie ein Fabrikmuster (factory pattern) implementieren, um die Klassenauswahl zu vereinfachen. Die Datei, die Sie ändern werden, ist `tableformat.py`.

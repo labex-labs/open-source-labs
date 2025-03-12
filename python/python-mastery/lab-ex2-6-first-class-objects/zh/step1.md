@@ -1,77 +1,96 @@
-# 一等数据
+# 理解 Python 中的一等对象
 
-在 `portfolio.csv` 文件中，你读取的数据按列组织，如下所示：
+在 Python 中，一切都被视为对象，这包括函数和类型。这意味着什么呢？这意味着你可以将函数和类型存储在数据结构中，将它们作为参数传递给其他函数，甚至从其他函数中返回它们。这是一个非常强大的概念，我们将以 CSV 数据处理为例来探索它。
 
-```python
-"AA",100,32.20
-"IBM",50,91.10
-...
+## 探索一等类型
+
+首先，让我们启动 Python 解释器。在 WebIDE 中打开一个新的终端，然后输入以下命令。这个命令将启动 Python 解释器，我们将在其中运行 Python 代码。
+
+```bash
+python3
 ```
 
-在之前的代码中，通过硬编码所有类型转换来处理这些数据。例如：
+在 Python 中处理 CSV 文件时，我们经常需要将从这些文件中读取的字符串转换为合适的数据类型。例如，CSV 文件中的数字可能会被读取为字符串，但我们希望在 Python 代码中把它作为整数或浮点数使用。为此，我们可以创建一个转换函数列表。
 
 ```python
+coltypes = [str, int, float]
+```
+
+注意，我们创建的列表中包含的是实际的类型函数，而不是字符串。在 Python 中，类型是一等对象，这意味着我们可以像对待其他任何对象一样对待它们。我们可以将它们放入列表中、传递它们，并在代码中使用它们。
+
+现在，让我们从一个投资组合（portfolio）的 CSV 文件中读取一些数据，看看如何使用这些转换函数。
+
+```python
+import csv
+f = open('portfolio.csv')
 rows = csv.reader(f)
-for row in rows:
-    name   = row[0]
-    shares = int(row[1])
-    price  = float(row[2])
+headers = next(rows)
+row = next(rows)
+print(row)
 ```
 
-也可以使用一些列表操作以更巧妙的方式执行这种转换。创建一个 Python 列表，其中包含你要对每列执行的转换：
+当你运行这段代码时，你应该会看到类似于以下的输出。这是 CSV 文件中的第一行数据，以字符串列表的形式表示。
 
-```python
->>> coltypes = [str, int, float]
->>>
 ```
-
-你甚至可以创建这个列表的原因是 Python 中的一切都是“一等的”。所以，如果你想要一个函数列表，那也没问题。
-
-现在，从上述文件中读取一行数据：
-
-```python
->>> import csv
->>> f = open('portfolio.csv')
->>> rows = csv.reader(f)
->>> headers = next(rows)
->>> row = next(rows)
->>> row
 ['AA', '100', '32.20']
->>>
 ```
 
-将列类型与行进行拉链操作并查看结果：
+接下来，我们将使用 `zip` 函数。`zip` 函数接受多个可迭代对象（如列表或元组），并将它们的元素配对。我们将使用它把行中的每个值与其对应的类型转换函数配对。
 
 ```python
->>> r = list(zip(coltypes, row))
->>> r
-[(<class'str'>, 'AA'), (<class 'int'>, '100'), (<class 'float'>,'32.20')]
->>>
+r = list(zip(coltypes, row))
+print(r)
 ```
 
-你会注意到这将类型转换与一个值配对。例如，`int` 与值 `'100'` 配对。现在，试试这个：
+这将产生以下输出。每一对都包含一个类型函数和 CSV 文件中的一个字符串值。
+
+```
+[(<class 'str'>, 'AA'), (<class 'int'>, '100'), (<class 'float'>, '32.20')]
+```
+
+现在我们有了这些配对，就可以应用每个函数将值转换为合适的类型。
 
 ```python
->>> record = [func(val) for func, val in zip(coltypes, row)]
->>> record
+record = [func(val) for func, val in zip(coltypes, row)]
+print(record)
+```
+
+输出将显示这些值已被转换为合适的类型。字符串 'AA' 仍然是字符串，'100' 变成了整数 100，'32.20' 变成了浮点数 32.2。
+
+```
 ['AA', 100, 32.2]
->>>
 ```
 
-确保你理解上述代码中发生的事情。在循环中，`func` 变量是类型转换函数之一（例如，`str`、`int` 等），而 `val` 变量是像 `'AA'`、`'100'` 这样的值之一。表达式 `func(val)` 正在转换一个值（有点像类型转换）。
-
-你可以更进一步，通过使用列标题来创建字典。例如：
+我们还可以将这些值与它们的列名组合起来，创建一个字典。字典是 Python 中一种有用的数据结构，它允许我们存储键值对。
 
 ```python
->>> dict(zip(headers, record))
-{'name': 'AA','shares': 100, 'price': 32.2}
->>>
+record_dict = dict(zip(headers, record))
+print(record_dict)
 ```
 
-如果你愿意，你可以使用字典推导式一次性执行所有这些步骤：
+输出将是一个字典，其中键是列名，值是转换后的数据。
+
+```
+{'name': 'AA', 'shares': 100, 'price': 32.2}
+```
+
+你可以使用单个推导式（comprehension）完成所有这些步骤。推导式是在 Python 中创建列表、字典或集合的简洁方式。
 
 ```python
->>> { name:func(val) for name, func, val in zip(headers, coltypes, row) }
-{'name': 'AA','shares': 100, 'price': 32.2}
->>>
+result = {name: func(val) for name, func, val in zip(headers, coltypes, row)}
+print(result)
 ```
+
+输出将与之前的字典相同。
+
+```
+{'name': 'AA', 'shares': 100, 'price': 32.2}
+```
+
+当你在 Python 解释器中完成工作后，可以通过输入以下命令退出。
+
+```python
+exit()
+```
+
+这个演示展示了 Python 将函数视为一等对象如何实现强大的数据处理技术。通过能够将类型和函数视为对象，我们可以编写更灵活、更简洁的代码。

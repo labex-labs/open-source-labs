@@ -1,62 +1,125 @@
-# Alles zusammenbringen
+# Anwendung der Funktionsuntersuchung in Klassen
 
-In Übung 6.1 haben Sie eine Klasse `Structure` erstellt, die eine verallgemeinerte `__init__()`, `__setattr__()` und `__repr__()`-Methode definiert. Diese Klasse erforderte es den Benutzer, eine `_fields`-Klassenvariable wie folgt zu definieren:
+Jetzt werden wir das, was wir über die Funktionsuntersuchung gelernt haben, nutzen, um die Implementierung einer Klasse zu verbessern. Die Funktionsuntersuchung ermöglicht es uns, in Funktionen hineinzuschauen und ihre Struktur zu verstehen, wie z.B. die Parameter, die sie akzeptieren. In diesem Fall werden wir es nutzen, um unseren Klassen-Code effizienter und fehlerunanfälliger zu gestalten. Wir werden eine `Structure`-Klasse modifizieren, damit sie automatisch die Feldnamen aus der Signatur der `__init__`-Methode erkennen kann.
 
-```python
-class Stock(Structure):
-    _fields = ('name','shares','price')
+## Verständnis der `Structure`-Klasse
+
+Die Datei `structure.py` enthält eine `Structure`-Klasse. Diese Klasse fungiert als Basisklasse, was bedeutet, dass andere Klassen von ihr erben können, um strukturierte Datenobjekte zu erstellen. Derzeit müssen wir, um die Attribute der Objekte zu definieren, die von Klassen erstellt werden, die von `Structure` erben, eine Klassenvariable `_fields` festlegen.
+
+Öffnen wir die Datei im Editor. Wir verwenden den folgenden Befehl, um in das Projektverzeichnis zu navigieren:
+
+```bash
+cd ~/project
 ```
 
-Das Problem mit dieser Klasse ist, dass die `__init__()`-Funktion für die Zwecke von Hilfe und Übergabe von Schlüsselwortargumenten keine nützliche Argumentsignatur hatte. In Übung 6.2 haben Sie einen raffinierten Trick angewandt, der eine spezielle `self._init()`-Funktion beinhaltete. Beispielsweise:
+Nachdem Sie diesen Befehl ausgeführt haben, können Sie die vorhandene `Structure`-Klasse in der Datei `structure.py` im WebIDE finden und anzeigen.
+
+## Erstellung einer `Stock`-Klasse
+
+Erstellen wir eine `Stock`-Klasse, die von der `Structure`-Klasse erbt. Vererbung bedeutet, dass die `Stock`-Klasse alle Funktionen der `Structure`-Klasse erhält und auch ihre eigenen hinzufügen kann. Fügen wir den folgenden Code ans Ende der Datei `structure.py` hinzu:
 
 ```python
 class Stock(Structure):
-    _fields = ('name','shares', 'price')
+    _fields = ('name', 'shares', 'price')
+
     def __init__(self, name, shares, price):
         self._init()
-  ...
 ```
 
-Dies gab eine nützliche Signatur, aber jetzt ist die Klasse etwas merkwürdig, weil der Benutzer sowohl die `_fields`-Variable als auch die `__init__()`-Methode angeben muss.
+Es gibt jedoch ein Problem mit diesem Ansatz. Wir müssen sowohl das `_fields`-Tupel als auch die `__init__`-Methode mit denselben Parameternamen definieren. Dies ist redundant, da wir im Wesentlichen dieselben Informationen zweimal schreiben. Wenn wir vergessen, eine der Definitionen zu aktualisieren, wenn wir die andere ändern, kann dies zu Fehlern führen.
 
-Ihre Aufgabe ist es, die `_fields`-Variable mit Hilfe einiger Funktionsprüftechniken zu eliminieren. Zunächst stellen Sie fest, dass Sie die Argumentsignatur von `Stock` wie folgt erhalten können:
+## Hinzufügen einer `set_fields`-Klassenmethode
+
+Um dieses Problem zu beheben, fügen wir der `Structure`-Klasse eine `set_fields`-Klassenmethode hinzu. Diese Methode wird automatisch die Feldnamen aus der Signatur der `__init__`-Methode erkennen. Hier ist der Code, den wir zur `Structure`-Klasse hinzufügen müssen:
 
 ```python
->>> import inspect
->>> sig = inspect.signature(Stock)
->>> tuple(sig.parameters)
-('name','shares', 'price')
->>>
+@classmethod
+def set_fields(cls):
+    # Get the signature of the __init__ method
+    import inspect
+    sig = inspect.signature(cls.__init__)
+
+    # Get parameter names, skipping 'self'
+    params = list(sig.parameters.keys())[1:]
+
+    # Set _fields attribute on the class
+    cls._fields = tuple(params)
 ```
 
-Vielleicht können Sie die `_fields`-Variable aus der Argumentsignatur von `__init__()` setzen. Fügen Sie eine Klassenmethode `set_fields(cls)` zu `Structure` hinzu, die die `__init__()`-Funktion prüft und die `_fields`-Variable entsprechend setzt. Sie sollten Ihre neue Funktion wie folgt verwenden:
+Diese Methode verwendet das `inspect`-Modul, das ein leistungsstarkes Werkzeug in Python ist, um Informationen über Objekte wie Funktionen und Klassen zu erhalten. Zuerst erhält sie die Signatur der `__init__`-Methode. Dann extrahiert sie die Parameternamen, wobei sie den `self`-Parameter überspringt, da `self` ein spezieller Parameter in Python-Klassen ist, der auf die Instanz selbst verweist. Schließlich legt sie die Klassenvariable `_fields` mit diesen Parameternamen fest.
+
+## Modifikation der `Stock`-Klasse
+
+Jetzt, da wir die `set_fields`-Methode haben, können wir unsere `Stock`-Klasse vereinfachen. Ersetzen Sie den vorherigen Code der `Stock`-Klasse durch den folgenden:
 
 ```python
 class Stock(Structure):
     def __init__(self, name, shares, price):
         self._init()
 
-  ...
-
+# Call set_fields to automatically set _fields from __init__
 Stock.set_fields()
 ```
 
-Die resultierende Klasse sollte auf die gleiche Weise wie zuvor funktionieren:
+Auf diese Weise müssen wir das `_fields`-Tupel nicht manuell definieren. Die `set_fields`-Methode kümmert sich darum.
+
+## Testen der modifizierten Klasse
+
+Um sicherzustellen, dass unsere modifizierte Klasse korrekt funktioniert, erstellen wir ein einfaches Testskript. Erstellen Sie eine neue Datei namens `test_structure.py` und fügen Sie den folgenden Code hinzu:
 
 ```python
->>> s = Stock(name='GOOG', shares=100, price=490.1)
->>> s
-Stock('GOOG',100,490.1)
->>> s.shares = 50
->>> s.share = 50
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "structure.py", line 12, in __setattr__
-    raise AttributeError('No attribute %s' % name)
-AttributeError: No attribute share
->>>
+from structure import Stock
+
+def test_stock():
+    # Create a Stock object
+    s = Stock(name='GOOG', shares=100, price=490.1)
+
+    # Test string representation
+    print(f"Stock representation: {s}")
+
+    # Test attribute access
+    print(f"Name: {s.name}")
+    print(f"Shares: {s.shares}")
+    print(f"Price: {s.price}")
+
+    # Test attribute modification
+    s.shares = 50
+    print(f"Updated shares: {s.shares}")
+
+    # Test attribute error
+    try:
+        s.share = 50  # Misspelled attribute
+        print("Error: Did not raise AttributeError")
+    except AttributeError as e:
+        print(f"Correctly raised: {e}")
+
+if __name__ == "__main__":
+    test_stock()
 ```
 
-Verifizieren Sie die leicht modifizierte `Stock`-Klasse erneut mit Ihren Unit-Tests. Es werden immer noch Fehler auftreten, aber nichts sollte sich gegenüber der vorherigen Übung ändern.
+Dieses Testskript erstellt ein `Stock`-Objekt, testet seine String-Darstellung, greift auf seine Attribute zu, modifiziert ein Attribut und versucht, auf ein falsch geschriebenes Attribut zuzugreifen, um zu überprüfen, ob es den richtigen Fehler auslöst.
 
-Zu diesem Zeitpunkt ist alles immer noch etwas "hacky", aber Sie machen Fortschritte. Sie haben eine `Stock`-Strukturklasse mit einer nützlichen `__init__()`-Funktion, eine nützliche Darstellungzeichenfolge und die `__setattr__()`-Methode beschränkt die Menge der Attributnamen. Der zusätzliche Schritt, `set_fields()` aufzurufen, ist etwas ungewöhnlich, aber wir werden später noch darauf zurückkommen.
+Um das Testskript auszuführen, verwenden Sie den folgenden Befehl:
+
+```bash
+python3 test_structure.py
+```
+
+Sie sollten eine Ausgabe ähnlich der folgenden sehen:
+
+```
+Stock representation: Stock('GOOG',100,490.1)
+Name: GOOG
+Shares: 100
+Price: 490.1
+Updated shares: 50
+Correctly raised: No attribute share
+```
+
+## Wie es funktioniert
+
+1. Die `set_fields`-Methode verwendet `inspect.signature()`, um die Parameternamen aus der `__init__`-Methode zu erhalten. Diese Funktion gibt uns detaillierte Informationen über die Parameter der `__init__`-Methode.
+2. Sie legt dann automatisch die Klassenvariable `_fields` basierend auf diesen Parameternamen fest. So müssen wir die gleichen Parameternamen nicht an zwei verschiedenen Stellen schreiben.
+3. Dies beseitigt die Notwendigkeit, sowohl `_fields` als auch `__init__` mit übereinstimmenden Parameternamen manuell zu definieren. Es macht unseren Code wartbarer, denn wenn wir die Parameter in der `__init__`-Methode ändern, werden die `_fields` automatisch aktualisiert.
+
+Dieser Ansatz nutzt die Funktionsuntersuchung, um unseren Code wartbarer und fehlerunanfälliger zu machen. Es ist eine praktische Anwendung der Introspektionsfähigkeiten von Python, die es uns ermöglichen, Objekte zur Laufzeit zu untersuchen und zu modifizieren.

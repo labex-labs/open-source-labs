@@ -1,11 +1,17 @@
 # Einführung
 
+In diesem Lab werden Sie lernen, wie man in Python Generatoren delegiert, indem man die Anweisung `yield from` verwendet. Diese Funktion, die in Python 3.3 eingeführt wurde, vereinfacht Code, der auf Generatoren und Koroutinen basiert.
+
+Generatoren sind spezielle Funktionen, die die Ausführung anhalten und fortsetzen können und ihren Zustand zwischen den Aufrufen beibehalten. Die Anweisung `yield from` bietet eine elegante Möglichkeit, die Kontrolle an einen anderen Generator zu delegieren, was die Lesbarkeit und Wartbarkeit des Codes verbessert.
+
 **Ziele:**
 
-- Lernen Sie über delegierende Generatoren
+- Verstehen Sie den Zweck der Anweisung `yield from`
+- Lernen Sie, wie man `yield from` verwendet, um an andere Generatoren zu delegieren
+- Wenden Sie diese Kenntnisse an, um auf Koroutinen basierenden Code zu vereinfachen
+- Verstehen Sie die Verbindung zur modernen async/await-Syntax
 
-**Veränderte Dateien:** `cofollow.py`, `server.py`
+**Dateien, mit denen Sie arbeiten werden:**
 
-Ein potenzielles Problem in Code, der auf Generatoren basiert, ist das Problem, Details vor dem Benutzer zu verbergen und Bibliotheken zu schreiben. Um alles zu steuern, werden im Allgemeinen viele niedrigere Mechanismen benötigt, und es ist oft ziemlich unhandlich, es direkt den Benutzern zu präsentieren.
-
-Ab Python 3.3 kann ein neuer `yield from`-Ausdruck verwendet werden, um Generatoren an eine andere Funktion zu delegieren. Es ist eine nützliche Möglichkeit, Code zu bereinigen, der auf Generatoren basiert.
+- `cofollow.py` - Enthält Hilfsfunktionen für Koroutinen
+- `server.py` - Enthält eine einfache Implementierung eines Netzwerkservers

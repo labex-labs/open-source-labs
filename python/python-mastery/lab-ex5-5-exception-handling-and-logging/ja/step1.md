@@ -1,28 +1,66 @@
-# 準備
+# Python での例外の理解
 
-`reader.py` ファイルには、大部分の作業を行う中心的な関数 `convert_csv()` があります。この関数は、欠損または不適切なデータが含まれるデータに対して実行するとクラッシュします。たとえば：
+このステップでは、Python の例外について学びます。例外はプログラミングにおける重要な概念です。プログラムの実行中に発生する予期しない状況を処理するのに役立ちます。また、現在のコードが無効なデータを処理しようとするとクラッシュする理由を明らかにします。これを理解することで、より堅牢で信頼性の高い Python プログラムを書くことができます。
+
+## 例外とは何か？
+
+Python では、例外とはプログラムの実行中に発生し、通常の命令の流れを妨げるイベントです。高速道路上の障害物のようなものです。すべてが順調に進むときは、プログラムは決まった経路をたどります。これは、空いた道路を走る車のようなものです。しかし、エラーが発生すると、Python は例外オブジェクトを作成します。このオブジェクトは、何がうまくいかなかったかに関する情報（エラーの種類やコード内での発生場所など）を含むレポートのようなものです。
+
+これらの例外が適切に処理されないと、プログラムはクラッシュします。クラッシュが発生すると、Python はトレースバックメッセージを表示します。このメッセージは、エラーが発生したコード内の正確な位置を示す地図のようなもので、デバッグに非常に役立ちます。
+
+## 現在のコードを調べる
+
+まず、`reader.py` ファイルの構造を見てみましょう。このファイルには、CSV データを読み取り、変換するための関数が含まれています。エディタでファイルを開くには、正しいディレクトリに移動する必要があります。ターミナルで `cd` コマンドを使用します。
 
 ```bash
-$ python
->>> from reader import read_csv_as_dicts
+cd /home/labex/project
 ```
 
-```python
->>> port = read_csv_as_dicts('missing.csv', types=[str, int, float])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "reader.py", line 24, in read_csv_as_dicts
-    return csv_as_dicts(file, types, headers=headers)
-  File "reader.py", line 13, in csv_as_dicts
-    lambda headers, row: { name: func(val) for name, func, val in zip(headers, types, row) })
-  File "reader.py", line 9, in convert_csv
-    return list(map(lambda row: converter(headers, row), rows))
-  File "reader.py", line 9, in <lambda>
-    return list(map(lambda row: converter(headers, row), rows))
-  File "reader.py", line 13, in <lambda>
-    lambda headers, row: { name: func(val) for name, func, val in zip(headers, types, row) })
-  File "reader.py", line 13, in <dictcomp>
-    lambda headers, row: { name: func(val) for name, func, val in zip(headers, types, row) })
-ValueError: invalid literal for int() with base 10: ''
->>>
+これで正しいディレクトリに移動したので、`reader.py` の内容を見てみましょう。このファイルにはいくつかの重要な関数があります。
+
+1. `convert_csv()`: この関数はデータの行を受け取り、指定された変換関数を使用してそれらを変換します。原材料（データ行）を受け取り、特定のレシピ（変換関数）に従って別の形に変える機械のようなものです。
+2. `csv_as_dicts()`: この関数は CSV データを読み取り、辞書のリストに変換します。また、型変換も行います。つまり、辞書内の各データが文字列、整数、または浮動小数点数などの正しい型であることを確認します。
+3. `read_csv_as_dicts()`: これはラッパー関数です。`csv_as_dicts()` 関数を呼び出して作業を行うマネージャーのようなものです。
+
+## 問題を実演する
+
+コードが無効なデータを処理しようとしたときに何が起こるか見てみましょう。Python インタープリタを開きます。これは、Python コードを対話的にテストできる遊び場のようなものです。Python インタープリタを開くには、ターミナルで次のコマンドを使用します。
+
+```bash
+python3
 ```
+
+Python インタープリタが開いたら、`missing.csv` ファイルを読み取ろうとします。このファイルにはいくつかの欠落または無効なデータが含まれています。`reader.py` ファイルの `read_csv_as_dicts()` 関数を使用してデータを読み取ります。
+
+```python
+from reader import read_csv_as_dicts
+port = read_csv_as_dicts('missing.csv', types=[str, int, float])
+```
+
+このコードを実行すると、次のようなエラーメッセージが表示されるはずです。
+
+```
+Traceback (most recent call last):
+  ...
+ValueError: invalid literal for int() with base 10: ''
+```
+
+このエラーは、コードが空の文字列を整数に変換しようとするために発生します。空の文字列は有効な整数を表さないため、Python は変換を行うことができません。関数は最初に遭遇したエラーでクラッシュし、ファイル内の残りの有効なデータの処理を停止します。
+
+Python インタープリタを終了するには、次のコマンドを入力します。
+
+```python
+exit()
+```
+
+## エラーの流れを理解する
+
+エラーは `convert_csv()` 関数内、具体的には次の行で発生します。
+
+```python
+return list(map(lambda row: converter(headers, row), rows))
+```
+
+`map()` 関数は、`rows` リスト内の各行に `converter` 関数を適用します。`converter` 関数は、各行に型（str、int、float）を適用しようとします。しかし、欠落したデータが含まれる行に遭遇すると失敗します。`map()` 関数には例外を処理する組み込みの方法がないため、例外が発生すると、処理全体がクラッシュします。
+
+次のステップでは、これらの例外を適切に処理するようにコードを修正します。つまり、クラッシュする代わりに、プログラムはエラーを処理し、残りのデータの処理を続けることができるようになります。

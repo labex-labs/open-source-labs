@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio de Aprender sobre la delegación de generadores. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido sobre el concepto de delegación de generadores en Python, centrándote en la declaración `yield from` y sus diversas aplicaciones. Has explorado cómo usar `yield from` para delegar a otro generador, lo que simplifica el código y mejora la legibilidad. También has aprendido sobre la creación de corrutinas con `yield from` para recibir y validar mensajes, y el uso de generadores para envolver operaciones de sockets para obtener un código de red más limpio.
+
+Estos conceptos son esenciales para entender la programación asíncrona en Python. La transición de generadores a la sintaxis moderna de `async`/`await` representa un avance significativo en el manejo de operaciones asíncronas. Para explorar más a fondo estos conceptos, puedes estudiar el módulo `asyncio`, examinar cómo los frameworks populares utilizan `async`/`await` y desarrollar tus propias bibliotecas asíncronas. Comprender la delegación de generadores y `yield from` proporciona una visión más profunda del enfoque de Python para la programación asíncrona.

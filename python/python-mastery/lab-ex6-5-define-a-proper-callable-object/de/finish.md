@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Definiere ein geeignetes aufrufbares Objekt" abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie gelernt, wie man in Python geeignete aufrufbare Objekte erstellt. Zunächst haben Sie grundlegende Validator - Klassen für die Typüberprüfung untersucht und ein aufrufbares Objekt mit der `__call__` - Methode erstellt. Dann haben Sie dieses Objekt erweitert, um eine Validierung basierend auf Funktionsannotationen durchzuführen, und die Herausforderung bewältigt, aufrufbare Objekte als Klassenmethoden zu verwenden.
+
+Zu den behandelten Schlüsselkonzepten gehören aufrufbare Objekte und die `__call__` - Methode, Funktionsannotationen für Typhinweise, die Verwendung des `inspect` - Moduls zur Untersuchung von Funktionssignaturen und das Descriptor - Protokoll mit der `__get__` - Methode für Klassenmethoden. Mit diesen Techniken können Sie leistungsstarke Funktionsumhüllungen (function wrappers) für die Vor - und Nachverarbeitung von Funktionsaufrufen erstellen, was ein grundlegendes Muster für Dekorateure und andere fortgeschrittene Python - Funktionen ist.

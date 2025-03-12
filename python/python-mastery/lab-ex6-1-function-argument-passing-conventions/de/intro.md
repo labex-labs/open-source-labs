@@ -1,11 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab lernen Sie die Konventionen für die Übergabe von Argumenten in Python-Funktionen kennen. Sie werden auch eine wiederverwendbare Struktur für Datenklassen erstellen und objektorientierte Entwurfsprinzipien anwenden, um Ihren Code zu vereinfachen.
 
-- Mehr über die Übergabekonventionen von Funktionsargumenten lernen
-
-**Erstellte Dateien:** `structure.py`, `stock.py`
-
-**WICHTIGE NOTIZ**
-
-Dieses Übungsblatt beginnt einen langen Weg, die `stock.py`-Datei auf eine vernünftigere Weise umzuschreiben. Bevor Sie etwas tun, kopieren Sie Ihre Arbeit in `stock.py` in eine neue Datei `orig_stock.py`.
+Dieser Übungszweck besteht darin, die Datei `stock.py` auf eine organisiertere Weise neu zu schreiben. Bevor Sie beginnen, kopieren Sie Ihre bestehende Arbeit in der Datei `stock.py` in eine neue Datei namens `orig_stock.py` zur Referenz. Die Dateien, die Sie erstellen werden, sind `structure.py` und `stock.py`.

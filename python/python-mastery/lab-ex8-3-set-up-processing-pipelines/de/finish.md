@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Set Up Processing Pipelines" abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie gelernt, wie Sie Coroutinen in Python verwenden, um Datenverarbeitungspipelines aufzubauen. Zu den Schlüsselkonzepten gehört das Verständnis der Grundlagen von Coroutinen, wie beispielsweise wie sie funktionieren, warum sie initialisiert werden müssen und wie Sie Decorators zur Initialisierung nutzen. Sie haben auch den Datenfluss untersucht und gelernt, wie Sie Daten über die `send()`-Methode durch eine Pipeline schieben, was sich vom "Pull"-Modell von Generatoren unterscheidet.
+
+Darüber hinaus haben Sie spezialisierte Coroutinen für Aufgaben wie das Parsen von CSV-Daten, das Filtern von Datensätzen und das Formatieren der Ausgabe erstellt. Sie haben gelernt, Pipelines zu erstellen, indem Sie mehrere Coroutinen verbinden, und Filter- und Transformationsoperationen implementiert. Coroutinen bieten einen leistungsstarken Ansatz für die Verarbeitung von Streaming-Daten, der eine klare Trennung von Aufgaben ermöglicht und die einfache Modifikation einzelner Stufen erlaubt.

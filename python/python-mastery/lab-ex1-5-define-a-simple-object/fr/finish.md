@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Définir un objet simple. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris à définir une classe Python avec des attributs et des méthodes, à créer des instances de classe avec des valeurs d'attribut spécifiques, à accéder aux attributs d'un objet et à appeler les méthodes d'un objet. Vous avez également appris à formater et afficher les informations d'un objet de diverses manières, à travailler avec plusieurs objets de la même classe et à améliorer une classe en ajoutant de nouvelles méthodes.
+
+Ces concepts de programmation orientée objet sont fondamentaux en Python et servent de base pour organiser le code dans les applications plus importantes. Les classes aident à regrouper les données et les fonctionnalités liées, rendant votre code plus modulaire et plus facile à maintenir. Pour améliorer encore vos compétences, envisagez d'ajouter des fonctionnalités à la classe `Stock`, telles que la validation des données, des méthodes pour mettre à jour le nombre de parts ou le prix, et une méthode pour calculer le profit ou la perte.

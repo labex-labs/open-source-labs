@@ -1,9 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás cómo personalizar la iteración utilizando generadores en Python. También implementarás la funcionalidad de iterador en clases personalizadas y crearás generadores para fuentes de datos en streaming.
 
-- Aprender a personalizar la iteración utilizando generadores
-
-**Archivos modificados:** `structure.py`
-
-**Archivos creados:** `follow.py`
+El archivo `structure.py` se modificará, y se creará un nuevo archivo llamado `follow.py` durante el experimento.

@@ -1,6 +1,12 @@
-# Erstellen eines Wertprüfers
+# Aufbau eines Validierungssystems mit Vererbung
 
-In Übung 3.4 haben Sie einigen Eigenschaften zur `Stock`-Klasse hinzugefügt, die Attribute auf verschiedene Typen und Werte überprüfen (z.B. mussten die Anteile eine positive Ganzzahl sein). Spielen wir ein wenig mit dieser Idee. Beginnen Sie, indem Sie eine Datei `validate.py` erstellen und die folgende Basisklasse definieren:
+In diesem Schritt werden wir ein praktisches Validierungssystem unter Verwendung von Vererbung aufbauen. Vererbung ist ein mächtiges Konzept in der Programmierung, das es Ihnen ermöglicht, neue Klassen auf der Grundlage bestehender zu erstellen. Auf diese Weise können Sie Code wiederverwenden und organisiertere und modularere Programme erstellen. Indem Sie dieses Validierungssystem aufbauen, werden Sie sehen, wie Vererbung eingesetzt werden kann, um wiederverwendbare Codekomponenten zu erstellen, die auf verschiedene Weise kombiniert werden können.
+
+## Erstellen der Basisklasse für Validatoren
+
+Zunächst müssen wir eine Basisklasse für unsere Validatoren erstellen. Dazu erstellen wir eine neue Datei in der WebIDE. So können Sie es machen: Klicken Sie auf "File" > "New File", oder verwenden Sie die Tastenkombination. Sobald die neue Datei geöffnet ist, benennen Sie sie `validate.py`.
+
+Fügen wir nun etwas Code in diese Datei ein, um eine Basisklasse `Validator` zu erstellen. Diese Klasse wird als Grundlage für alle anderen Validatoren dienen.
 
 ```python
 # validate.py
@@ -10,7 +16,11 @@ class Validator:
         return value
 ```
 
-Lassen Sie uns nun einige Klassen für die Typüberprüfung erstellen:
+In diesem Code haben wir eine `Validator`-Klasse mit einer `check`-Methode definiert. Die `check`-Methode nimmt einen Wert als Argument und gibt ihn unverändert zurück. Der `@classmethod`-Decorator wird verwendet, um diese Methode zu einer Klassenmethode zu machen. Das bedeutet, dass wir diese Methode direkt auf der Klasse aufrufen können, ohne eine Instanz der Klasse erstellen zu müssen.
+
+## Hinzufügen von Typ-Validatoren
+
+Als Nächstes fügen wir einige Validatoren hinzu, die den Typ eines Werts überprüfen. Diese Validatoren werden von der `Validator`-Klasse erben, die wir gerade erstellt haben. Gehen Sie zurück zur `validate.py`-Datei und fügen Sie den folgenden Code ein:
 
 ```python
 class Typed(Validator):
@@ -18,7 +28,7 @@ class Typed(Validator):
     @classmethod
     def check(cls, value):
         if not isinstance(value, cls.expected_type):
-            raise TypeError(f'Erwartet {cls.expected_type}')
+            raise TypeError(f'Expected {cls.expected_type}')
         return super().check(value)
 
 class Integer(Typed):
@@ -31,60 +41,89 @@ class String(Typed):
     expected_type = str
 ```
 
-So verwenden Sie diese Klassen (Hinweis: Das Verwenden von `@classmethod` ermöglicht es uns, den zusätzlichen Schritt des Erstellens von Instanzen zu vermeiden, den wir eigentlich nicht benötigen):
+Die `Typed`-Klasse ist eine Unterklasse von `Validator`. Sie hat ein `expected_type`-Attribut, das zunächst auf `object` gesetzt ist. Die `check`-Methode in der `Typed`-Klasse überprüft, ob der gegebene Wert vom erwarteten Typ ist. Wenn nicht, wird ein `TypeError` ausgelöst. Wenn der Typ korrekt ist, ruft sie die `check`-Methode der Elternklasse mit `super().check(value)` auf.
+
+Die `Integer`-, `Float`- und `String`-Klassen erben von `Typed` und geben den genauen Typ an, den sie überprüfen sollen. Beispielsweise überprüft die `Integer`-Klasse, ob ein Wert eine Ganzzahl ist.
+
+## Testen der Typ-Validatoren
+
+Jetzt, da wir unsere Typ-Validatoren erstellt haben, lassen Sie uns sie testen. Öffnen Sie ein neues Terminal und starten Sie den Python-Interpreter, indem Sie den folgenden Befehl ausführen:
+
+```bash
+python3
+```
+
+Sobald der Python-Interpreter läuft, können wir unsere Validatoren importieren und testen. Hier ist ein Code, um sie zu testen:
 
 ```python
->>> Integer.check(10)
+from validate import Integer, String
+
+Integer.check(10)  # Should return 10
+
+try:
+    Integer.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+String.check('10')  # Should return '10'
+```
+
+Wenn Sie diesen Code ausführen, sollten Sie etwas wie Folgendes sehen:
+
+```
 10
->>> Integer.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in check
-    raise TypeError(f'Erwartet {cls.expected_type}')
-TypeError: Erwartet <class 'int'>
->>> String.check('10')
+Error: Expected <class 'int'>
 '10'
->>>
 ```
 
-Sie könnten die Validatoren in einer Funktion verwenden. Beispielsweise:
+Wir können diese Validatoren auch in einer Funktion verwenden. Versuchen wir das:
 
 ```python
->>> def add(x, y):
-        Integer.check(x)
-        Integer.check(y)
-        return x + y
+def add(x, y):
+    Integer.check(x)
+    Integer.check(y)
+    return x + y
 
->>> add(2, 2)
-4
->>> add('2', '3')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 2, in add
-  File "validate.py", line 11, in check
-    raise TypeError(f'Erwartet {cls.expected_type}')
-TypeError: Erwartet <class 'int'>
->>>
+add(2, 2)  # Should return 4
+
+try:
+    add('2', '3')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
 ```
 
-Lassen Sie uns nun einige weitere Klassen für verschiedene Arten der Bereichsüberprüfung erstellen:
+Wenn Sie diesen Code ausführen, sollten Sie sehen:
+
+```
+4
+Error: Expected <class 'int'>
+```
+
+## Hinzufügen von Wert-Validatoren
+
+Bisher haben wir Validatoren erstellt, die den Typ eines Werts überprüfen. Jetzt fügen wir einige Validatoren hinzu, die den Wert selbst anstatt den Typ überprüfen. Gehen Sie zurück zur `validate.py`-Datei und fügen Sie den folgenden Code ein:
 
 ```python
 class Positive(Validator):
     @classmethod
     def check(cls, value):
         if value < 0:
-            raise ValueError('Erwartet >= 0')
+            raise ValueError('Expected >= 0')
         return super().check(value)
 
 class NonEmpty(Validator):
     @classmethod
     def check(cls, value):
         if len(value) == 0:
-            raise ValueError('Muss nicht leer sein')
+            raise ValueError('Must be non-empty')
         return super().check(value)
 ```
 
-Wohin führt all das? Lassen Sie uns beginnen, Klassen zusammenzusetzen mit Mehrfachvererbung wie mit Spielsteinen:
+Der `Positive`-Validator überprüft, ob ein Wert nicht negativ ist. Wenn der Wert kleiner als 0 ist, wird ein `ValueError` ausgelöst. Der `NonEmpty`-Validator überprüft, ob ein Wert eine Länge ungleich Null hat. Wenn die Länge 0 ist, wird ein `ValueError` ausgelöst.
+
+## Kombinieren von Validatoren mit multipler Vererbung
+
+Jetzt werden wir unsere Validatoren unter Verwendung von multipler Vererbung kombinieren. Multiple Vererbung ermöglicht es einer Klasse, von mehr als einer Elternklasse zu erben. Gehen Sie zurück zur `validate.py`-Datei und fügen Sie den folgenden Code ein:
 
 ```python
 class PositiveInteger(Integer, Positive):
@@ -97,31 +136,49 @@ class NonEmptyString(String, NonEmpty):
     pass
 ```
 
-Im Grunde genommen nehmen Sie vorhandene Validatoren und kombinieren sie zu neuen. Wahnsinn! Lassen Sie uns sie jedoch jetzt verwenden, um einige Dinge zu validieren:
+Diese neuen Klassen kombinieren Typüberprüfung und Werteüberprüfung. Beispielsweise überprüft die `PositiveInteger`-Klasse, dass ein Wert sowohl eine Ganzzahl als auch nicht negativ ist. Die Reihenfolge der Vererbung spielt hier eine Rolle. Die Validatoren werden in der in der Klassendefinition angegebenen Reihenfolge überprüft.
+
+## Testen der kombinierten Validatoren
+
+Lassen Sie uns unsere kombinierten Validatoren testen. Im Python-Interpreter führen Sie den folgenden Code aus:
 
 ```python
->>> PositiveInteger.check(10)
-10
->>> PositiveInteger.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise TypeError(f'Erwartet {cls.expected_type}')
-TypeError: Erwartet <class 'int'>
->>> PositiveInteger.check(-10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Erwartet >= 0')
-ValueError: Muss >= 0 sein
+from validate import PositiveInteger, PositiveFloat, NonEmptyString
 
+PositiveInteger.check(10)  # Should return 10
 
->>> NonEmptyString.check('hello')
-'hello'
->>> NonEmptyString.check('')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Muss nicht leer sein')
-ValueError: Muss nicht leer sein
->>>
+try:
+    PositiveInteger.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+try:
+    PositiveInteger.check(-10)  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
+
+NonEmptyString.check('hello')  # Should return 'hello'
+
+try:
+    NonEmptyString.check('')  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
 ```
 
-Zu diesem Zeitpunkt ist Ihr Kopf wahrscheinlich völlig explodiert. Das Problem des Zusammenfügens unterschiedlicher Codeteile tritt jedoch in Echtzeitprogrammen auf. Kooperative Mehrfachvererbung ist eines der Werkzeuge, mit denen es organisiert werden kann.
+Wenn Sie diesen Code ausführen, sollten Sie sehen:
+
+```
+10
+Error: Expected <class 'int'>
+Error: Expected >= 0
+'hello'
+Error: Must be non-empty
+```
+
+Dies zeigt, wie wir Validatoren kombinieren können, um komplexere Validierungsregeln zu erstellen.
+
+Wenn Sie mit dem Testen fertig sind, können Sie den Python-Interpreter beenden, indem Sie den folgenden Befehl ausführen:
+
+```python
+exit()
+```

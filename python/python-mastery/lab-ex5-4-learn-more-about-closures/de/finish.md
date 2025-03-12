@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Mehr über Closures lernen" abgeschlossen. Sie können in LabEx weitere Labs ausprobieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie erweiterte Aspekte von Closures in Python kennengelernt. Zunächst haben Sie untersucht, wie Closures als Datenstruktur verwendet werden können. Sie können Daten kapseln und es Funktionen ermöglichen, ihren Zustand zwischen Aufrufen beizubehalten, ohne sich auf Klassen oder globale Variablen zu verlassen. Zweitens haben Sie gesehen, wie Closures als Codegenerator fungieren können, indem sie Eigenschaftsobjekte mit Typüberprüfung generieren, was einen funktionaleren Ansatz für die Attributvalidierung ermöglicht.
+
+Sie haben auch entdeckt, wie Sie das Descriptor - Protokoll und die `__set_name__` - Methode nutzen können, um elegante typüberprüfende Attribute zu erstellen, die automatisch ihre Namen aus Klassendefinitionen erfassen. Diese Techniken zeigen die Stärke und Flexibilität von Closures auf und ermöglichen es Ihnen, komplexe Verhaltensweisen kompakt zu implementieren. Das Verständnis von Closures und Descriptor gibt Ihnen weitere Werkzeuge für die Erstellung von wartbarem und robustem Python - Code.

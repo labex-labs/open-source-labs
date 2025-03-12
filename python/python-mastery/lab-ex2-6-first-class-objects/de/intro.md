@@ -1,10 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab werden Sie das Konzept der First - Class - Objekte in Python kennenlernen und sein Speichermodell untersuchen. Python behandelt Funktionen, Typen und Daten als First - Class - Objekte, was leistungsstarke und flexible Programmiermuster ermöglicht.
 
-- Entdecken Sie die Macht von Erstklassenobjekten.
-- Verständigen Sie sich besser über das Python-Speichermodell
-
-**Erstellte Dateien:** `reader.py`
-
-In früheren Übungen haben Sie verschiedene Funktionen zum Lesen von CSV-Daten in verschiedenen Dateien geschrieben. Sicherlich ist das ein Problem, das auf einige Weise verallgemeinert werden kann. In dieser Übung untersuchen wir diese Idee.
+Sie werden auch wiederverwendbare Hilfsfunktionen für die Verarbeitung von CSV - Daten erstellen. Insbesondere werden Sie eine allgemeine Funktion zum Lesen von CSV - Daten in der Datei `reader.py` erstellen, die in verschiedenen Projekten wiederverwendet werden kann.

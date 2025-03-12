@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire sur les fonctions de haut niveau. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris à propos des fonctions de haut niveau (Higher-Order Functions) en Python et en quoi elles contribuent à l'écriture d'un code plus modulaire et maintenable. Tout d'abord, vous avez identifié la duplication de code dans deux fonctions similaires. Ensuite, vous avez créé une fonction de haut niveau `convert_csv()` qui accepte une fonction de conversion comme argument et vous avez refactorisé les fonctions originales pour l'utiliser. Enfin, vous avez mis à jour la fonction de haut niveau pour utiliser la fonction intégrée `map()` de Python.
+
+Ces techniques sont des atouts puissants dans la boîte à outils d'un programmeur Python. Les fonctions de haut niveau favorisent la réutilisation du code et la séparation des préoccupations, tandis que le passage de fonctions en tant qu'arguments permet un comportement plus flexible et personnalisable. Des fonctions comme `map()` offrent des moyens concis de transformer des données. Maîtriser ces concepts vous permet d'écrire un code Python plus concis, maintenable et moins sujet aux erreurs.

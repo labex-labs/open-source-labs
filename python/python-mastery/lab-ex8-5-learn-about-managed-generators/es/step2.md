@@ -1,93 +1,50 @@
-# Generadores como Tareas que Atienden Conexiones de Red
+# Creando un programador de tareas (task scheduler) con generadores
 
-En el archivo `server.py` y ponga el siguiente código en él:
+En programación, un programador de tareas (task scheduler) es una herramienta crucial que ayuda a gestionar y ejecutar múltiples tareas de manera eficiente. En esta sección, usaremos generadores para construir un sencillo programador de tareas que pueda ejecutar múltiples funciones generadoras de forma concurrente. Esto te mostrará cómo se pueden gestionar los generadores para realizar multitarea cooperativa, lo que significa que las tareas se turnan para ejecutarse y comparten el tiempo de ejecución.
+
+Primero, debes crear un nuevo archivo. Navega al directorio `/home/labex/project` y crea un archivo llamado `multitask.py`. Este archivo contendrá el código de nuestro programador de tareas.
 
 ```python
-# server.py
+# multitask.py
 
-from socket import *
-from select import select
 from collections import deque
 
+# Task queue
 tasks = deque()
-recv_wait = {}   #  sock -> task
-send_wait = {}   #  sock -> task
 
+# Simple task scheduler
 def run():
-    while any([tasks, recv_wait, send_wait]):
-        while not tasks:
-            can_recv, can_send, _ = select(recv_wait, send_wait, [])
-            for s in can_recv:
-                tasks.append(recv_wait.pop(s))
-            for s in can_send:
-                tasks.append(send_wait.pop(s))
-        task = tasks.popleft()
+    while tasks:
+        task = tasks.popleft()  # Get the next task
         try:
-            reason, resource = task.send(None)
-            if reason == 'recv':
-                recv_wait[resource] = task
-            elif reason == 'send':
-                send_wait[resource] = task
-            else:
-                raise RuntimeError('Razón desconocida %r' % reason)
+            task.send(None)     # Resume the task
+            tasks.append(task)  # Put it back in the queue
         except StopIteration:
-            print('Tarea terminada')
+            print('Task done')  # Task is complete
+
+# Example task 1: Countdown
+def countdown(n):
+    while n > 0:
+        print('T-minus', n)
+        yield              # Pause execution
+        n -= 1
+
+# Example task 2: Count up
+def countup(n):
+    x = 0
+    while x < n:
+        print('Up we go', x)
+        yield              # Pause execution
+        x += 1
 ```
 
-Este código es una versión ligeramente más complicada del planificador de tareas de la parte (a). Requiere un poco de estudio, pero la idea es que no solo cada tarea generará, sino que indicará una razón para hacerlo (recibir o enviar). Dependiendo de la razón, la tarea pasará a un área de espera. Luego, el planificador ejecuta cualquier tarea disponible o espera a que ocurran eventos de E/S cuando no queda nada que hacer.
+Ahora, analicemos cómo funciona este programador de tareas:
 
-Quizás todo sea un poco complicado, pero agregue el siguiente código que implementa un servidor de eco simple:
+1. Usamos un `deque` (cola doblemente terminada) para almacenar nuestras tareas generadoras. Un `deque` es una estructura de datos que te permite agregar y eliminar elementos de ambos extremos de manera eficiente. Es una excelente opción para nuestra cola de tareas porque necesitamos agregar tareas al final y eliminarlas del frente.
+2. La función `run()` es el corazón de nuestro programador de tareas. Toma las tareas de la cola una por una:
+   - Reanuda cada tarea usando `send(None)`. Esto es similar a usar `next()` en un generador. Le dice al generador que continúe la ejecución desde donde se detuvo.
+   - Después de que la tarea devuelva un valor (yield), se agrega de nuevo al final de la cola. De esta manera, la tarea tendrá otra oportunidad de ejecutarse más tarde.
+   - Cuando una tarea se completa (lanza `StopIteration`), se elimina de la cola. Esto indica que la tarea ha terminado su ejecución.
+3. Cada declaración `yield` en nuestras tareas generadoras actúa como un punto de pausa. Cuando un generador alcanza una declaración `yield`, pausa su ejecución y devuelve el control al programador de tareas. Esto permite que otras tareas se ejecuten.
 
-```python
-# server.py
-...
-
-def tcp_server(address, handler):
-    sock = socket(AF_INET, SOCK_STREAM)
-    sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-    sock.bind(address)
-    sock.listen(5)
-    while True:
-        yield 'recv', sock
-        client, addr = sock.accept()
-        tasks.append(handler(client, addr))
-
-def echo_handler(client, address):
-    print('Conexión desde', address)
-    while True:
-        yield 'recv', client
-        data = client.recv(1000)
-        if not data:
-            break
-        yield 'send', client
-        client.send(b'GOT:' + data)
-    print('Conexión cerrada')
-
-if __name__ == '__main__':
-    tasks.append(tcp_server(('',25000), echo_handler))
-    run()
-```
-
-Ejecute este servidor en su propia ventana de terminal. En otra terminal, conéctese a él usando un comando como `telnet` o `nc`. Por ejemplo:
-
-```bash
-nc localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-Si no tiene acceso a `nc` o `telnet`, también puede usar Python mismo:
-
-```bash
-python3 -m telnetlib localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-Si está funcionando, debería ver la salida ecoada hacia usted. No solo eso, si conecta múltiples clientes, todos operarán concurrentemente.
-
-Este uso complicado de generadores no es algo que probablemente tenga que codificar directamente. Sin embargo, se usan en ciertos paquetes avanzados como `asyncio` que se agregó a la biblioteca estándar en Python 3.4.
+Este enfoque implementa la multitarea cooperativa. Cada tarea cede voluntariamente el control al programador de tareas, lo que permite que otras tareas se ejecuten. De esta manera, múltiples tareas pueden compartir el tiempo de ejecución y ejecutarse de forma concurrente.

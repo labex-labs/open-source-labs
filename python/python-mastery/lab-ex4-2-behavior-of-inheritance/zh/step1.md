@@ -1,96 +1,165 @@
-# 继承的方向
+# 理解单继承和多继承
 
-Python 有两种不同的继承“方向”。第一种体现在“单继承”概念中，即一系列类从单个父类继承。例如，试试这个例子：
+在这一步中，我们将学习 Python 中两种主要的继承类型：单继承和多继承。继承是面向对象编程中的一个基本概念，它允许一个类从其他类继承属性和方法。我们还将探讨当有多个候选方法时，Python 如何确定调用哪个方法，这个过程称为方法解析。
+
+## 单继承
+
+单继承是指类形成单一的继承链。可以将其想象成一个家族树，每个类只有一个直接父类。让我们创建一个示例来理解它的工作原理。
+
+首先，在 WebIDE 中打开一个新的终端。终端打开后，输入以下命令并按回车键启动 Python 解释器：
+
+```bash
+python3
+```
+
+现在你已经进入了 Python 解释器，我们将创建三个形成单继承链的类。输入以下代码：
 
 ```python
->>> class A:
-        def spam(self):
-            print('A.spam')
+class A:
+    def spam(self):
+        print('A.spam')
 
->>> class B(A):
-        def spam(self):
-            print('B.spam')
-            super().spam()
+class B(A):
+    def spam(self):
+        print('B.spam')
+        super().spam()
 
->>> class C(B):
-        def spam(self):
-            print('C.spam')
-            super().spam()
+class C(B):
+    def spam(self):
+        print('C.spam')
+        super().spam()
+```
 
+在这段代码中，类 `B` 继承自类 `A`，类 `C` 继承自类 `B`。`super()` 函数用于调用父类的方法。
 
->>> C.__mro__
+定义这些类之后，我们可以找出 Python 搜索方法的顺序。这个顺序称为方法解析顺序（Method Resolution Order，MRO）。要查看类 `C` 的 MRO，请输入以下代码：
+
+```python
+C.__mro__
+```
+
+你应该会看到类似以下的输出：
+
+```
 (<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)
->>> c = C()
->>> c.spam()
+```
+
+这个输出表明，Python 首先在类 `C` 中查找方法，然后在类 `B` 中查找，接着在类 `A` 中查找，最后在基类 `object` 中查找。
+
+现在，让我们创建类 `C` 的一个实例并调用其 `spam()` 方法。输入以下代码：
+
+```python
+c = C()
+c.spam()
+```
+
+你应该会看到以下输出：
+
+```
 C.spam
 B.spam
 A.spam
->>>
 ```
 
-注意，类 `C` 的 `__mro__` 属性按顺序编码了它的所有祖先。当你调用 `spam()` 方法时，它会按照层次结构逐个类地遍历 MRO。
+这个输出展示了 `super()` 在单继承链中的工作方式。当 `C.spam()` 调用 `super().spam()` 时，它调用的是 `B.spam()`。然后，当 `B.spam()` 调用 `super().spam()` 时，它调用的是 `A.spam()`。
 
-在多重继承中，你会得到一种不同类型的继承，它允许将不同的类组合在一起。试试这个例子：
+## 多继承
+
+多继承允许一个类从多个父类继承。这使得一个类可以访问其所有父类的属性和方法。让我们看看在这种情况下方法解析是如何工作的。
+
+在 Python 解释器中输入以下代码：
 
 ```python
->>> class Base:
-        def spam(self):
-            print('Base.spam')
+class Base:
+    def spam(self):
+        print('Base.spam')
 
->>> class X(Base):
-        def spam(self):
-            print('X.spam')
-            super().spam()
+class X(Base):
+    def spam(self):
+        print('X.spam')
+        super().spam()
 
->>> class Y(Base):
-        def spam(self):
-            print('Y.spam')
-            super().spam()
+class Y(Base):
+    def spam(self):
+        print('Y.spam')
+        super().spam()
 
->>> class Z(Base):
-        def spam(self):
-            print('Z.spam')
-            super().spam()
-
->>>
+class Z(Base):
+    def spam(self):
+        print('Z.spam')
+        super().spam()
 ```
 
-注意，上面所有的类都从一个共同的父类 `Base` 继承。然而，类 `X`、`Y` 和 `Z` 彼此之间没有直接关系（没有继承链将这些类链接在一起）。
-
-然而，看看多重继承中会发生什么：
+现在，我们将创建一个类 `M`，它继承自多个父类 `X`、`Y` 和 `Z`。输入以下代码：
 
 ```python
->>> class M(X,Y,Z):
-        pass
+class M(X, Y, Z):
+    pass
 
->>> M.__mro__
+M.__mro__
+```
+
+你应该会看到以下输出：
+
+```
 (<class '__main__.M'>, <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>, <class '__main__.Base'>, <class 'object'>)
->>> m = M()
->>> m.spam()
-X.spam
-Y.spam
-Z.spam
-Base.spam
->>>
 ```
 
-在这里，你会看到所有的类按照子类提供的顺序堆叠在一起。假设子类重新排列类的顺序：
+这个输出显示了类 `M` 的方法解析顺序。Python 将按照这个顺序搜索方法。
+
+让我们创建类 `M` 的一个实例并调用其 `spam()` 方法：
 
 ```python
->>> class N(Z,Y,X):
-        pass
+m = M()
+m.spam()
+```
 
->>> N.__mro__
+你应该会看到以下输出：
+
+```
+X.spam
+Y.spam
+Z.spam
+Base.spam
+```
+
+请注意，`super()` 并不只是调用直接父类的方法。相反，它遵循子类定义的方法解析顺序（MRO）。
+
+让我们以不同的顺序指定父类来创建另一个类 `N`：
+
+```python
+class N(Z, Y, X):
+    pass
+
+N.__mro__
+```
+
+你应该会看到以下输出：
+
+```
 (<class '__main__.N'>, <class '__main__.Z'>, <class '__main__.Y'>, <class '__main__.X'>, <class '__main__.Base'>, <class 'object'>)
->>> n = N()
->>> n.spam()
+```
+
+现在，创建类 `N` 的一个实例并调用其 `spam()` 方法：
+
+```python
+n = N()
+n.spam()
+```
+
+你应该会看到以下输出：
+
+```
 Z.spam
 Y.spam
 X.spam
 Base.spam
->>>
 ```
 
-在这里，你会看到父类的顺序颠倒了。仔细注意在这两种情况下 `super()` 的行为。它不是委托给每个类的直接父类，而是移动到 MRO 中的下一个类。不仅如此，确切的顺序由子类控制。这相当奇怪。
+这展示了一个重要的概念：在 Python 的多继承中，类定义中父类的顺序决定了方法解析顺序。无论从哪个类调用 `super()` 函数，它都会遵循这个顺序。
 
-还要注意，共同的父类 `Base` 用于终止 `super()` 操作的链。具体来说，`Base.spam()` 方法不会再调用任何其他方法。它也出现在 MRO 的末尾，因为它是所有组合在一起的类的父类。
+当你完成对这些概念的探索后，可以输入以下代码退出 Python 解释器：
+
+```python
+exit()
+```

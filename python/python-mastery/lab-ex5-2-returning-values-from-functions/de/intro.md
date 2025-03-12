@@ -1,7 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab werden Sie lernen, wie Sie mehrere Werte aus Funktionen in Python zurückgeben können. Sie werden auch optionale Rückgabewerte verstehen und erfahren, wie Sie Fehler effektiv behandeln können.
 
-- Rückgabe von Werten aus Funktionen
-
-In dieser Übung betrachten wir kurz Probleme, die mit der Rückgabe von Werten aus Funktionen zusammenhängen. Auf den ersten Blick scheint dies einfach zu sein, aber es ergeben sich einige subtile Probleme.
+Darüber hinaus werden Sie das Konzept von Futures (Zukunftswerte) für die nebenläufige Programmierung (concurrent programming) erkunden. Obwohl das Zurückgeben eines Werts einfach erscheinen mag, bieten verschiedene Programmier-Szenarien verschiedene Muster und Überlegungen.

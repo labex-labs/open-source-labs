@@ -1,60 +1,107 @@
-# クラスの作成
+# 手動によるクラスの作成
 
-以前の実験で思い出してください。こんな感じのシンプルなクラス `Stock` を定義しました。
+Python プログラミングにおいて、クラスはデータと関数をまとめるための基本的な概念です。通常、我々は標準的な Python 構文を使用してクラスを定義します。例えば、以下は単純な `Stock` クラスです。このクラスは `name`、`shares`、`price` などの属性を持つ株式を表し、コストを計算したり株式を売却したりするメソッドを持っています。
 
 ```python
 class Stock:
-    def __init__(self,name,shares,price):
+    def __init__(self, name, shares, price):
         self.name = name
         self.shares = shares
         self.price = price
+
     def cost(self):
-        return self.shares*self.price
-    def sell(self,nshares):
+        return self.shares * self.price
+
+    def sell(self, nshares):
         self.shares -= nshares
 ```
 
-ここで行うことは、手動でクラスを作成することです。まずは、通常のPython関数としてメソッドを定義しましょう。
+では、Python が実際にクラスをどのように作成しているのか、考えたことはありますか？標準的なクラス構文を使わずにこのクラスを作成したい場合はどうすればいいでしょうか？このセクションでは、Python のクラスが低レベルでどのように構築されるかを探ります。
 
-```python
->>> def __init__(self,name,shares,price):
-        self.name = name
-        self.shares = shares
-        self.price = price
+## Python インタラクティブシェルを起動する
 
->>> def cost(self):
-        return self.shares*self.price
+手動でのクラス作成を試すには、Python インタラクティブシェルを開く必要があります。このシェルを使うと、Python コードを一行ずつ実行できるため、学習やテストに最適です。
 
->>> def sell(self,nshares):
-        self.shares -= nshares
+WebIDE でターミナルを開き、以下のコマンドを入力して Python インタラクティブシェルを起動します。最初のコマンド `cd ~/project` はカレントディレクトリをプロジェクトディレクトリに変更し、2 番目のコマンド `python3` は Python 3 のインタラクティブシェルを起動します。
 
->>>
+```bash
+cd ~/project
+python3
 ```
 
-次に、メソッド辞書を作成します。
+## メソッドを通常の関数として定義する
+
+手動でクラスを作成する前に、クラスの一部となるメソッドを定義する必要があります。Python では、メソッドはクラスに関連付けられた関数にすぎません。では、クラスに必要なメソッドを通常の Python 関数として定義しましょう。
 
 ```python
->>> methods = {
-         '__init__' : __init__,
-         'cost' : cost,
-         'sell' : sell }
+def __init__(self, name, shares, price):
+    self.name = name
+    self.shares = shares
+    self.price = price
 
->>>
+def cost(self):
+    return self.shares * self.price
+
+def sell(self, nshares):
+    self.shares -= nshares
 ```
 
-最後に、`Stock` クラスオブジェクトを作成します。
+ここで、`__init__` 関数は Python クラスの特殊なメソッドです。これはコンストラクタと呼ばれ、クラスのインスタンスが作成されるときにオブジェクトの属性を初期化するために使用されます。`cost` メソッドは株式の総コストを計算し、`sell` メソッドは株式の数を減らします。
+
+## メソッドの辞書を作成する
+
+これでメソッドを通常の関数として定義したので、クラスを作成する際に Python が理解できるようにそれらを整理する必要があります。これは、クラスのすべてのメソッドを含む辞書を作成することで行います。
 
 ```python
->>> Stock = type('Stock',(object,),methods)
->>> s = Stock('GOOG',100,490.10)
->>> s.name
-'GOOG'
->>> s.cost()
+methods = {
+    '__init__': __init__,
+    'cost': cost,
+    'sell': sell
+}
+```
+
+この辞書では、キーはクラスで使用されるメソッドの名前で、値は先に定義した実際の関数オブジェクトです。
+
+## type() コンストラクタを使用してクラスを作成する
+
+Python では、`type()` 関数は低レベルでクラスを作成するために使用できる組み込み関数です。`type()` 関数は 3 つの引数を取ります。
+
+1. クラスの名前: これは作成したいクラスの名前を表す文字列です。
+2. 基底クラスのタプル: Python では、クラスは他のクラスから継承することができます。ここでは `(object,)` を使用しています。これは、我々のクラスがすべての Python クラスの基底クラスである `object` クラスから継承することを意味します。
+3. メソッドと属性を含む辞書: これは先に作成した、クラスのすべてのメソッドを保持する辞書です。
+
+```python
+Stock = type('Stock', (object,), methods)
+```
+
+このコード行は、`type()` 関数を使用して `Stock` という名前の新しいクラスを作成します。このクラスは `object` クラスから継承し、`methods` 辞書で定義されたメソッドを持っています。
+
+## 手動で作成したクラスをテストする
+
+これで手動でクラスを作成したので、期待通りに動作することを確認するためにテストしましょう。新しいクラスのインスタンスを作成し、そのメソッドを呼び出します。
+
+```python
+s = Stock('GOOG', 100, 490.10)
+print(s.name)
+print(s.cost())
+s.sell(25)
+print(s.shares)
+```
+
+最初の行では、名前が `GOOG`、株式数が 100、価格が 490.10 の `Stock` クラスのインスタンスを作成します。次に、株式の名前を印刷し、コストを計算して印刷し、25 株を売却し、最後に残りの株式数を印刷します。
+
+以下の出力が表示されるはずです。
+
+```
+GOOG
 49010.0
->>> s.sell(25)
->>> s.shares
 75
->>>
 ```
 
-おめでとうございます。これでクラスを作成しました。クラスは、実は名前と、基底クラスのタプル、そしてクラスのすべての内容を保持する辞書に他なりません。`type()` は、これら3つの部分を提供すればクラスを作成するコンストラクタです。
+この出力は、手動で作成したクラスが標準的な Python 構文を使用して作成したクラスと同じように動作することを示しています。これは、クラスが基本的には名前、基底クラスのタプル、およびメソッドと属性の辞書にすぎないことを示しています。`type()` 関数は単にこれらのコンポーネントからクラスオブジェクトを構築します。
+
+終了したら、Python シェルを終了します。
+
+```python
+exit()
+```

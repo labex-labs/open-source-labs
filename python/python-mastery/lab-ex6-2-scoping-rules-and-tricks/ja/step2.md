@@ -1,45 +1,67 @@
-# あなたの局所変数を見せてください
+# locals() を使用して関数の引数にアクセスする
 
-まず、次のクラスを定義することで実験してみましょう。
+Python では、変数のスコープを理解することが重要です。変数のスコープは、コード内でその変数にアクセスできる場所を決定します。Python には `locals()` という組み込み関数があり、初心者にとってスコープを理解するのに非常に便利です。`locals()` 関数は、現在のスコープ内のすべてのローカル変数を含む辞書を返します。これは、関数の引数を調べたいときに非常に役立ちます。なぜなら、コードの特定の部分で利用可能な変数を明確に把握できるからです。
 
-```python
->>> class Stock:
-        def __init__(self, name, shares, price):
-            print(locals())
+これがどのように機能するかを確認するために、Python インタープリターで簡単な実験を行いましょう。まず、プロジェクトディレクトリに移動して Python インタープリターを起動する必要があります。ターミナルで次のコマンドを実行することでこれを行うことができます。
 
->>>
+```bash
+cd ~/project
+python3
 ```
 
-次に、これを実行してみましょう。
+Python の対話型シェルに入ったら、`Stock` クラスを定義します。Python のクラスは、オブジェクトを作成するためのブループリントのようなものです。このクラスでは、特殊な `__init__` メソッドを使用します。`__init__` メソッドは Python のコンストラクタです。つまり、クラスのオブジェクトが作成されると自動的に呼び出されます。この `__init__` メソッドの中で、`locals()` 関数を使用してすべてのローカル変数を表示します。
 
 ```python
->>> s = Stock('GOOG', 100, 490.1)
-{'self': <__main__.Stock object at 0x100699b00>, 'price': 490.1, 'name': 'GOOG','shares': 100}
->>>
+class Stock:
+    def __init__(self, name, shares, price):
+        print(locals())
 ```
 
-局所変数の辞書に `__init__()` に渡されたすべての引数が含まれていることに注目してください。これは興味深いです。次に、次の関数とクラスの定義を定義しましょう。
+では、この `Stock` クラスのインスタンスを作成しましょう。インスタンスとは、クラスのブループリントから作成された実際のオブジェクトです。`name`、`shares`、`price` パラメータにいくつかの値を渡します。
 
 ```python
->>> def _init(locs):
-        self = locs.pop('self')
-        for name, val in locs.items():
-            setattr(self, name, val)
-
->>> class Stock:
-        def __init__(self, name, shares, price):
-            _init(locals())
+s = Stock('GOOG', 100, 490.1)
 ```
 
-このコードでは、`_init()` 関数は渡された局所変数の辞書からオブジェクトを自動的に初期化するために使用されます。`help(Stock)` とキーワード引数がうまく機能することがわかります。
+このコードを実行すると、次のような出力が表示されるはずです。
+
+```
+{'self': <__main__.Stock object at 0x...>, 'name': 'GOOG', 'shares': 100, 'price': 490.1}
+```
+
+この出力は、`locals()` が `__init__` メソッド内のすべてのローカル変数を含む辞書を返すことを示しています。`self` 参照は、Python クラス内の特殊な変数で、クラス自体のインスタンスを指します。他の変数は、`Stock` オブジェクトを作成する際に渡したパラメータの値です。
+
+この `locals()` の機能を使用して、オブジェクトの属性を自動的に初期化することができます。属性は、オブジェクトに関連付けられた変数です。ヘルパー関数を定義し、`Stock` クラスを修正しましょう。
 
 ```python
->>> s = Stock(name='GOOG', price=490.1, shares=50)
->>> s.name
-'GOOG'
->>> s.shares
-50
->>> s.price
-490.1
->>>
+def _init(locs):
+    self = locs.pop('self')
+    for name, val in locs.items():
+        setattr(self, name, val)
+
+class Stock:
+    def __init__(self, name, shares, price):
+        _init(locals())
+```
+
+`_init` 関数は、`locals()` から取得したローカル変数の辞書を受け取ります。まず、`pop` メソッドを使用して辞書から `self` 参照を削除します。次に、辞書内の残りのキーと値のペアを反復処理し、`setattr` 関数を使用して各変数をオブジェクトの属性として設定します。
+
+では、この実装を位置引数とキーワード引数の両方でテストしましょう。位置引数は、関数のシグネチャで定義された順序で渡され、キーワード引数はパラメータ名を指定して渡されます。
+
+```python
+# Test with positional arguments
+s1 = Stock('GOOG', 100, 490.1)
+print(s1.name, s1.shares, s1.price)
+
+# Test with keyword arguments
+s2 = Stock(name='AAPL', shares=50, price=125.3)
+print(s2.name, s2.shares, s2.price)
+```
+
+両方のアプローチが機能するはずです！`_init` 関数により、位置引数とキーワード引数の両方をシームレスに処理することができます。また、関数のシグネチャ内のパラメータ名を保持するため、`help()` の出力がより有用になります。Python の `help()` 関数は、関数、クラス、モジュールに関する情報を提供し、パラメータ名がそのままになっていると、この情報がより意味のあるものになります。
+
+実験が終了したら、次のコマンドを実行して Python インタープリターを終了できます。
+
+```python
+exit()
 ```

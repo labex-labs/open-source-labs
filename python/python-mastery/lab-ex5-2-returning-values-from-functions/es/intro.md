@@ -1,7 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás cómo devolver múltiples valores desde funciones en Python. También entenderás los valores de retorno opcionales y cómo manejar los errores de manera efectiva.
 
-- Devolver valores desde funciones
-
-En este ejercicio, revisamos brevemente los problemas relacionados con la devolución de valores desde funciones. A simple vista, parece que esto debería ser sencillo, pero surgen algunos problemas sutiles.
+Además, explorarás el concepto de Futures (Futuros) para la programación concurrente. Aunque devolver un valor puede parecer sencillo, diferentes escenarios de programación presentan diversos patrones y consideraciones.

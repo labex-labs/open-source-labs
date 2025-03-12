@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Configuration des pipelines de traitement. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris à utiliser les générateurs Python pour construire des pipelines de traitement de données efficaces. Vous avez accompli plusieurs tâches importantes, telles que l'utilisation de la fonction `follow()` pour surveiller un fichier à la recherche de nouvelles données, la création d'une classe `Ticker` pour représenter les cours d'actions, et la construction d'un pipeline de traitement multi - étapes qui lit, analyse et filtre les données CSV, puis formate et affiche les résultats.
+
+L'approche basée sur les générateurs offre de nombreux avantages, notamment une efficacité mémoire car les données sont traitées à la demande, une modularité permettant de combiner et de réutiliser facilement les composants du pipeline, et une simplicité dans l'expression de flux de données complexes. Ces concepts sont couramment appliqués dans le traitement de données du monde réel, en particulier pour les grands ensembles de données ou les données en continu (streaming data).

@@ -1,53 +1,133 @@
-# Async/Await
+# Оборачивание сокетов с использованием генераторов
 
-Возьмите класс `GenSocket`, который вы только что написали, и оберните все методы, которые используют `yield`, декоратором `@coroutine` из модуля `types`.
+На этом этапе мы узнаем, как использовать генераторы для оборачивания операций с сокетами. Это очень важная концепция, особенно в контексте асинхронного программирования. Асинхронное программирование позволяет вашему приложению обрабатывать несколько задач одновременно, не дожидаясь завершения одной задачи перед началом другой. Использование генераторов для оборачивания операций с сокетами делает код более эффективным и легким в управлении.
+
+## Понимание проблемы
+
+В файле `server.py` содержится простая реализация сетевого сервера с использованием генераторов. Давайте посмотрим на текущий код. Этот код является основой нашего сервера, и понимание его важно перед внесением каких-либо изменений.
 
 ```python
-from types import coroutine
-...
+def tcp_server(address, handler):
+    sock = socket(AF_INET, SOCK_STREAM)
+    sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+    sock.bind(address)
+    sock.listen(5)
+    while True:
+        yield 'recv', sock
+        client, addr = sock.accept()
+        tasks.append(handler(client, addr))
 
+def echo_handler(client, address):
+    print('Connection from', address)
+    while True:
+        yield 'recv', client
+        data = client.recv(1000)
+        if not data:
+            break
+        yield 'send', client
+        client.send(b'GOT:' + data)
+    print('Connection closed')
+    client.close()
+```
+
+В этом коде мы используем ключевое слово `yield`. Ключевое слово `yield` в Python используется для создания генераторов. Генератор - это особый тип итератора, который позволяет приостанавливать и возобновлять выполнение функции. Здесь `yield` используется для указания, когда сервер готов принять соединение или когда обработчик клиента готов принимать или отправлять данные. Однако явные операторы `yield` раскрывают внутреннее устройство цикла событий пользователю. Это означает, что пользователь должен знать, как работает цикл событий, что может усложнить понимание и поддержку кода.
+
+## Создание класса GenSocket
+
+Давайте создадим класс `GenSocket` для оборачивания операций с сокетами с использованием генераторов. Это сделает наш код чище и более читаемым. Инкапсулируя операции с сокетами в класс, мы можем скрыть детали цикла событий от пользователя и сосредоточиться на высокоуровневой логике сервера.
+
+1. Откройте файл `server.py` в редакторе:
+
+```bash
+cd /home/labex/project
+```
+
+Эта команда изменяет текущую директорию на директорию проекта, где находится файл `server.py`. После перехода в правильную директорию вы можете открыть файл в предпочитаемом текстовом редакторе.
+
+2. Добавьте следующий класс `GenSocket` в конец файла, перед любыми существующими функциями:
+
+```python
 class GenSocket:
+    """
+    A generator-based wrapper for socket operations.
+    """
     def __init__(self, sock):
         self.sock = sock
 
-    @coroutine
     def accept(self):
-        yield'recv', self.sock
+        """Accept a connection and return a new GenSocket"""
+        yield 'recv', self.sock
         client, addr = self.sock.accept()
         return GenSocket(client), addr
 
-    @coroutine
     def recv(self, maxsize):
-        yield'recv', self.sock
+        """Receive data from the socket"""
+        yield 'recv', self.sock
         return self.sock.recv(maxsize)
 
-    @coroutine
     def send(self, data):
-        yield'send', self.sock
+        """Send data to the socket"""
+        yield 'send', self.sock
         return self.sock.send(data)
 
     def __getattr__(self, name):
+        """Forward any other attributes to the underlying socket"""
         return getattr(self.sock, name)
 ```
 
-Теперь перепишите код сервера, чтобы использовать `async` функции и `await` выражения, как показано ниже:
+Класс `GenSocket` действует как обертка для операций с сокетами. Метод `__init__` инициализирует класс объектом сокета. Методы `accept`, `recv` и `send` выполняют соответствующие операции с сокетами и используют `yield` для указания, когда операция готова. Метод `__getattr__` позволяет классу передавать любые другие атрибуты базовому объекту сокета.
+
+3. Теперь измените функции `tcp_server` и `echo_handler` для использования класса `GenSocket`:
 
 ```python
-async def tcp_server(address, handler):
+def tcp_server(address, handler):
     sock = GenSocket(socket(AF_INET, SOCK_STREAM))
     sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
     sock.bind(address)
     sock.listen(5)
     while True:
-        client, addr = await sock.accept()
+        client, addr = yield from sock.accept()
         tasks.append(handler(client, addr))
 
-async def echo_handler(client, address):
+def echo_handler(client, address):
     print('Connection from', address)
     while True:
-        data = await client.recv(1000)
+        data = yield from client.recv(1000)
         if not data:
             break
-        await client.send(b'GOT:', data)
+        yield from client.send(b'GOT:' + data)
     print('Connection closed')
+    client.close()
 ```
+
+Обратите внимание, как явные операторы `yield 'recv', sock` и `yield 'send', client` были заменены более чистым выражением `yield from`. Ключевое слово `yield from` используется для делегирования выполнения другому генератору. Это делает код более читаемым и скрывает детали цикла событий от пользователя. Теперь код выглядит больше как обычные вызовы функций, и пользователю не нужно беспокоиться о внутреннем устройстве цикла событий.
+
+4. Давайте добавим простую тестовую функцию, чтобы продемонстрировать, как будет использоваться наш сервер:
+
+```python
+def run_server():
+    """Start the server on port 25000"""
+    tasks.append(tcp_server(('localhost', 25000), echo_handler))
+    try:
+        event_loop()
+    except KeyboardInterrupt:
+        print("Server stopped")
+
+if __name__ == '__main__':
+    print("Starting echo server on port 25000...")
+    print("Press Ctrl+C to stop")
+    run_server()
+```
+
+Этот код более читаемый и поддерживаемый. Класс `GenSocket` инкапсулирует логику использования `yield`, позволяя серверному коду сосредоточиться на высокоуровневом потоке выполнения, а не на деталях цикла событий. Функция `run_server` запускает сервер на порту 25000 и обрабатывает исключение `KeyboardInterrupt`, которое позволяет пользователю остановить сервер, нажав `Ctrl+C`.
+
+## Понимание преимуществ
+
+Подход с использованием `yield from` имеет несколько преимуществ:
+
+1. **Чистый код**: Операции с сокетами выглядят больше как обычные вызовы функций. Это делает код легче читать и понимать, особенно для начинающих.
+2. **Абстракция**: Детали цикла событий скрыты от пользователя. Пользователю не нужно знать, как работает цикл событий, чтобы использовать серверный код.
+3. **Читаемость**: Код лучше выражает, что он делает, а не как он это делает. Это делает код более самодокументированным и легким в поддержке.
+4. **Поддерживаемость**: Изменения в цикле событий не потребуют изменений в серверном коде. Это означает, что если вам нужно изменить цикл событий в будущем, вы можете сделать это, не влияя на серверный код.
+
+Этот паттерн является ступенью к современному синтаксису async/await, который мы рассмотрим на следующем этапе. Синтаксис async/await - это более продвинутый и чистый способ написания асинхронного кода в Python, и понимание паттерна `yield from` поможет вам легче перейти к нему.

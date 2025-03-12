@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Labor zur Ausnahmebehandlung und zum Logging abgeschlossen. Sie können in LabEx weitere Labore absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie mehrere Schlüsselkonzepte zur Ausnahmebehandlung (Exception Handling) und Protokollierung (Logging) in Python gelernt. Zunächst haben Sie verstanden, wie Ausnahmen während der Datenverarbeitung auftreten, und Try-Except-Blöcke implementiert, um sie elegant zu behandeln. Sie haben auch den Code so geändert, dass die Verarbeitung gültiger Daten auch bei Fehlern fortgesetzt wird.
+
+Zweitens haben Sie über das `logging`-Modul von Python und seine Vorteile gegenüber `print`-Anweisungen gelernt. Sie haben verschiedene Log-Level wie WARNING und DEBUG implementiert und gesehen, wie Sie die Protokollierung für unterschiedliche Detailgrade konfigurieren können. Diese Fähigkeiten sind von entscheidender Bedeutung für das Schreiben robuster Python-Anwendungen, insbesondere wenn es um fehleranfällige externe Daten geht, unbeaufsichtigte Anwendungen entwickelt werden oder Systeme erstellt werden, die diagnostische Informationen benötigen. Sie können diese Techniken nun in Ihren Python-Projekten anwenden, um eine bessere Zuverlässigkeit und Wartbarkeit zu erreichen.

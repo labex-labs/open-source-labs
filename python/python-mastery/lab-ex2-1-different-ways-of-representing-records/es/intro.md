@@ -1,8 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás a explorar formas de almacenamiento de grandes conjuntos de datos en Python que sean eficientes en términos de memoria. También descubrirás diferentes formas de representar registros, como tuplas, diccionarios, clases y tuplas con nombre (named tuples).
 
-- Determinar la forma más eficiente en términos de memoria para almacenar una gran cantidad de datos.
-- Conocer diferentes maneras de representar registros, incluyendo tuplas, diccionarios, clases y tuplas con nombres.
-
-En este ejercicio, examinamos diferentes opciones para representar estructuras de datos con un enfoque en el uso de memoria y la eficiencia. Muchas personas utilizan Python para realizar diversos tipos de análisis de datos, por lo que conocer diferentes opciones y sus compensaciones es información útil.
+Además, compararás el uso de memoria de diferentes estructuras de datos. Comprender las compensaciones entre estas estructuras es valioso para los usuarios de Python que realizan análisis de datos, ya que ayuda a optimizar el código.

@@ -1,9 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás a dar tus primeros pasos en la programación en Python. Primero, verificarás que Python esté instalado correctamente en tu sistema. Luego, aprenderás cómo usar el intérprete interactivo de Python.
 
-- Asegurarse de que Python esté instalado correctamente en su máquina
-- Iniciar el intérprete interactivo
-- Editar y ejecutar un pequeño programa
-
-**Archivos creados:** `art.py`
+A continuación, editarás y ejecutarás un programa simple de Python. El archivo que crearás durante este proceso es `art.py`.

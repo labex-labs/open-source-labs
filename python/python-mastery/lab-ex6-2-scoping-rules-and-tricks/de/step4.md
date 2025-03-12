@@ -1,58 +1,107 @@
-# Zusammenführen
+# Implementierung der erweiterten Initialisierung in der `Structure`-Klasse
 
-Nehmen Sie die Ideen aus den ersten beiden Teilen und löschen Sie die `__init__()`-Methode, die ursprünglich Teil der `Structure`-Klasse war. Fügen Sie anschließend eine `_init()`-Methode hinzu, wie folgt:
+Wir haben gerade zwei leistungsstarke Techniken zum Zugriff auf Funktionsargumente gelernt. Jetzt werden wir diese Techniken nutzen, um unsere `Structure`-Klasse zu aktualisieren. Zunächst verstehen wir, warum wir dies tun. Diese Techniken machen unsere Klasse flexibler und einfacher zu verwenden, insbesondere wenn es um verschiedene Argumenttypen geht.
+
+Öffnen Sie die Datei `structure.py` im Code-Editor. Sie können dies tun, indem Sie die folgenden Befehle im Terminal ausführen. Der `cd`-Befehl wechselt das Verzeichnis in den Projektordner, und der `code`-Befehl öffnet die Datei `structure.py` im Code-Editor.
+
+```bash
+cd ~/project
+code structure.py
+```
+
+Ersetzen Sie den Inhalt der Datei durch den folgenden Code. Dieser Code definiert eine `Structure`-Klasse mit mehreren Methoden. Gehen wir durch jeden Teil, um zu verstehen, was er tut.
 
 ```python
-# structure.py
 import sys
 
 class Structure:
-  ...
+    _fields = ()
+
     @staticmethod
     def _init():
-        locs = sys._getframe(1).f_locals
+        # Get the caller's frame (the __init__ method that called this)
+        frame = sys._getframe(1)
+
+        # Get the local variables from that frame
+        locs = frame.f_locals
+
+        # Extract self and set other variables as attributes
         self = locs.pop('self')
         for name, val in locs.items():
             setattr(self, name, val)
-  ...
+
+    def __repr__(self):
+        values = ', '.join(f'{name}={getattr(self, name)!r}' for name in self._fields)
+        return f'{type(self).__name__}({values})'
+
+    def __setattr__(self, name, value):
+        if name.startswith('_') or name in self._fields:
+            super().__setattr__(name, value)
+        else:
+            raise AttributeError(f'{type(self).__name__!r} has no attribute {name!r}')
 ```
 
-Hinweis: Der Grund, warum dies als `@staticmethod` definiert ist, ist, dass das `self`-Argument aus den lokalen Variablen abgerufen wird - es ist nicht erforderlich, dass es zusätzlich als Argument an die Methode selbst übergeben wird (zugegebenermaßen ist dies ein bisschen subtil).
+Hier ist, was wir im Code getan haben:
 
-Ändern Sie nun Ihre `Stock`-Klasse, sodass sie wie folgt aussieht:
+1. Wir haben die alte `__init__()`-Methode entfernt. Da Unterklassen ihre eigenen `__init__`-Methoden definieren werden, benötigen wir die alte nicht mehr.
+2. Wir haben eine neue statische `_init()`-Methode hinzugefügt. Diese Methode nutzt die Frame-Inspektion, um automatisch alle Parameter als Attribute zu erfassen und zu setzen. Die Frame-Inspektion ermöglicht es uns, auf die lokalen Variablen der aufrufenden Methode zuzugreifen.
+3. Wir haben die `__repr__()`-Methode beibehalten. Diese Methode liefert eine schöne String-Repräsentation des Objekts, die für das Debugging und das Ausgeben nützlich ist.
+4. Wir haben eine `__setattr__()`-Methode hinzugefügt. Diese Methode erzwingt die Attributvalidierung und stellt sicher, dass nur gültige Attribute für das Objekt festgelegt werden können.
+
+Jetzt aktualisieren wir die `Stock`-Klasse. Öffnen Sie die Datei `stock.py` mit dem folgenden Befehl:
+
+```bash
+code stock.py
+```
+
+Ersetzen Sie ihren Inhalt durch den folgenden Code:
 
 ```python
-# stock.py
 from structure import Structure
 
 class Stock(Structure):
-    _fields = ('name','shares','price')
+    _fields = ('name', 'shares', 'price')
+
     def __init__(self, name, shares, price):
-        self._init()
+        self._init()  # This magically captures and sets all parameters!
 
     @property
     def cost(self):
         return self.shares * self.price
 
     def sell(self, nshares):
-        self.shares -= shares
+        self.shares -= nshares
 ```
 
-Vergewissern Sie sich, dass die Klasse richtig funktioniert, Schlüsselwortargumente unterstützt und eine korrekte Hilfssignatur hat.
+Der wichtigste Unterschied hier ist, dass unsere `__init__`-Methode jetzt `self._init()` aufruft, anstatt jedes Attribut manuell zu setzen. Die `_init()`-Methode nutzt die Frame-Inspektion, um automatisch alle Parameter als Attribute zu erfassen und zu setzen. Dies macht den Code kompakter und leichter zu warten.
 
-```python
->>> s = Stock(name='GOOG', price=490.1, shares=50)
->>> s.name
-'GOOG'
->>> s.shares
-50
->>> s.price
-490.1
->>> help(Stock)
-... schauen Sie sich die Ausgabe an...
->>>
+Lassen Sie uns unsere Implementierung testen, indem wir die Unittests ausführen. Die Unittests helfen uns, sicherzustellen, dass unser Code wie erwartet funktioniert. Führen Sie die folgenden Befehle im Terminal aus:
+
+```bash
+cd ~/project
+python3 teststock.py
 ```
 
-Führen Sie Ihre Unit-Tests in `teststock.py` erneut aus. Sie sollten mindestens einen weiteren Test bestehen sehen. Hurra!
+Sie sollten sehen, dass alle Tests bestanden werden, einschließlich des Tests für Schlüsselwortargumente, der zuvor fehlgeschlagen ist. Dies bedeutet, dass unsere Implementierung korrekt funktioniert.
 
-Zu diesem Zeitpunkt wird es so aussehen, als hätten wir gerade einen großen Schritt zurückgetan. Nicht nur benötigen die Klassen die `__init__()`-Methode, sondern auch die `_fields`-Variable, damit einige der anderen Methoden funktionieren (`__repr__()` und `__setattr__()`). Darüber hinaus sieht das Verwenden von `self._init()` ziemlich hacky aus. Wir werden uns darum kümmern, aber seien Sie geduldig.
+Lassen Sie uns auch die Hilfedokumentation für unsere `Stock`-Klasse überprüfen. Die Hilfedokumentation liefert Informationen über die Klasse und ihre Methoden. Führen Sie den folgenden Befehl im Terminal aus:
+
+```bash
+python3 -c "from stock import Stock; help(Stock)"
+```
+
+Jetzt sollten Sie eine korrekte Signatur für die `__init__`-Methode sehen, die alle Parameternamen anzeigt. Dies erleichtert es anderen Entwicklern, zu verstehen, wie die Klasse verwendet werden kann.
+
+Schließlich testen wir interaktiv, ob Schlüsselwortargumente wie erwartet funktionieren. Führen Sie den folgenden Befehl im Terminal aus:
+
+```bash
+python3 -c "from stock import Stock; s = Stock(name='GOOG', shares=100, price=490.1); print(s)"
+```
+
+Sie sollten sehen, dass das `Stock`-Objekt ordnungsgemäß mit den angegebenen Attributen erstellt wird. Dies bestätigt, dass unser Klasseninitialisierungssystem Schlüsselwortargumente unterstützt.
+
+Mit dieser Implementierung haben wir ein viel flexibleres und benutzerfreundlicheres Klasseninitialisierungssystem erreicht, das:
+
+1. Die richtigen Funktionssignaturen in der Dokumentation beibehält, was es Entwicklern erleichtert, zu verstehen, wie die Klasse verwendet wird.
+2. Sowohl Positions- als auch Schlüsselwortargumente unterstützt, was mehr Flexibilität bei der Objekterstellung bietet.
+3. Minimalen Boilerplate-Code in Unterklassen erfordert, wodurch die Menge an zu schreibendem Code reduziert wird.

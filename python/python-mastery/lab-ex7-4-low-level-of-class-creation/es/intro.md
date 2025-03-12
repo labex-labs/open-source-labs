@@ -1,9 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás sobre los pasos de bajo nivel implicados en la creación de una clase en Python. Comprender cómo se construyen las clases utilizando la función `type()` proporciona una comprensión más profunda de las características orientadas a objetos de Python.
 
-- Aprender sobre los pasos de bajo nivel implicados en la creación de una clase
-
-**Archivos modificados:** `validate.py`, `structure.py`
-
-En este ejercicio, examinamos la mecánica de cómo se crean realmente las clases.
+También implementarás técnicas personalizadas de creación de clases. Los archivos `validate.py` y `structure.py` se modificarán durante este laboratorio, lo que te permitirá aplicar tus nuevos conocimientos en un contexto práctico.

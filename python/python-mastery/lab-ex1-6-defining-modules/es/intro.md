@@ -1,17 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás sobre los módulos de Python, que son archivos que contienen código de Python y que se pueden importar y utilizar en otros programas. Este enfoque modular promueve la reutilización del código y ayuda a organizar los programas en componentes lógicos.
 
-- Definir módulos
-- Usar la declaración `import`
-
-**Nota:** Para este ejercicio que involucra módulos, es fundamental asegurarse de que se está ejecutando Python en un entorno adecuado. Es posible que tenga que comprobar el valor de `sys.path` si no puede hacer que las declaraciones `import` funcionen. Pida ayuda si todo parece estar roto.
-
-Antes de comenzar este ejercicio, primero reinicie su sesión del intérprete de Python. Si está usando IDLE, haga clic en la ventana de la shell y busque una opción de menú "Shell \> Reiniciar shell". Debería recibir un mensaje como este:
-
-```python
->>> ##################== RESTART ##################==
->>>
-```
-
-Si está usando Unix, simplemente salga de Python y reinicie el intérprete.
+Comprenderás qué son los módulos de Python y por qué son útiles, aprenderás cómo crear tus propios módulos, practicarás el uso de la declaración `import` de diferentes maneras y entenderás el concepto de un módulo principal y cuándo se ejecuta el código. Los prerrequisitos incluyen un conocimiento básico de la sintaxis y las funciones de Python, y familiaridad con la creación y ejecución de scripts de Python. Se recomienda reiniciar la sesión del intérprete de Python antes de comenzar este ejercicio para tener un entorno limpio.

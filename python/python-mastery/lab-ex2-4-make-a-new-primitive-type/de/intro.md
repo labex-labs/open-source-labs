@@ -1,7 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab werden Sie lernen, wie Sie in Python einen neuen primitiven Datentyp erstellen und für ihn die wesentlichen Methoden implementieren. Sie werden auch ein Verständnis für Python's Objektprotokoll gewinnen. In den meisten Python - Programmen werden eingebaute primitive Datentypen wie `int`, `float` und `str` verwendet, um Daten darzustellen. Allerdings ermöglicht es Ihnen Python, benutzerdefinierte Datentypen zu erstellen, wie es in Modulen wie `decimal` und `fractions` in der Standardbibliothek zu sehen ist.
 
-- Ein neues primitiver Typ erstellen
-
-In den meisten Programmen verwendest du die primitiven Typen wie `int`, `float` und `str`, um Daten zu repräsentieren. Allerdings bist du nicht auf diese Typen beschränkt. Die Standardbibliothek hat Module wie das `decimal`- und das `fractions`-Modul, die neue primitive Typen implementieren. Du kannst auch deine eigenen Typen erstellen, solange du die zugrunde liegenden Protokolle verstehst, die Python-Objekte zum Funktionieren bringen. In dieser Übung werden wir einen neuen primitiven Typ erstellen. Es gibt viele kleine Details, über die du nachdenken musst, aber dies wird dir einen allgemeinen Eindruck davon vermitteln, was erforderlich ist.
+In diesem Lab werden Sie einen neuen primitiven Datentyp namens `MutInt` (veränderliche Ganzzahl) erstellen. Im Gegensatz zu Python's unveränderlichen Ganzzahlen kann `MutInt` nach der Erstellung modifiziert werden. Diese Übung wird die grundlegenden Prinzipien aufzeigen, die erforderlich sind, um einen voll funktionsfähigen primitiven Datentyp in Python zu erstellen.

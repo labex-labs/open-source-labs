@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Labor Metaklassen in Aktion abgeschlossen. Sie können in LabEx weitere Labore absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie gelernt, wie Sie die Macht von Metaklassen in Python nutzen können. Zunächst haben Sie die Herausforderung beim Verwalten von Importen für Validator-Typen verstanden. Dann haben Sie die `Validator`-Klasse modifiziert, um ihre Unterklassen automatisch zu sammeln, und eine `StructureMeta`-Metaklasse erstellt, um Validator-Typen in Klassen-Namensräume einzufügen. Schließlich haben Sie die Implementierung mit einer `Stock`-Klasse getestet und so die Notwendigkeit für explizite Importe beseitigt.
+
+Metaklassen, eine fortgeschrittene Python-Funktion, ermöglichen die Anpassung des Klassen-Erstellungsprozesses. Obwohl sie sparsam eingesetzt werden sollten, bieten sie elegante Lösungen für bestimmte Probleme, wie in diesem Lab gezeigt wurde. Durch die Verwendung einer Metaklasse haben Sie den Code zur Definition von Strukturen mit validierten Attributen vereinfacht, die Notwendigkeit für explizite Importe von Validator-Typen entfernt und eine wartbarere und elegantere API erstellt. Dieses auf Metaklassen basierte Muster zur Namensraum-Injektion kann auch in anderen Szenarien angewendet werden, um eine vereinfachte Benutzer-API zu schaffen.

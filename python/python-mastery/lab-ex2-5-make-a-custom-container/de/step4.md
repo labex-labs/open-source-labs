@@ -1,59 +1,30 @@
-# Erstellen eines benutzerdefinierten Containers - Der große Täuschungsversuch
+# Erstellen einer benutzerdefinierten Containerklasse
 
-Das Speichern der Daten in Spalten bietet eine erheblich bessere Arbeitsspeichersparnis, aber die Daten sind jetzt ziemlich schwierig zu verarbeiten. Tatsächlich kann keiner unserer früheren Analysecodes aus Übung 2.2 mit Spalten umgehen. Der Grund, warum alles kaputtgeht, ist, dass Sie die Datenabstraktion, die in früheren Übungen verwendet wurde, nämlich die Annahme, dass die Daten als Liste von Wörterbüchern gespeichert sind, zerstört haben.
+Bei der Datenverarbeitung ist der spaltenorientierte Ansatz hervorragend geeignet, um Speicher zu sparen. Allerdings kann es Probleme geben, wenn Ihr bestehender Code erwartet, dass die Daten in Form einer Liste von Wörterbüchern (Dictionaries) vorliegen. Um dieses Problem zu lösen, erstellen wir eine benutzerdefinierte Containerklasse. Diese Klasse wird eine zeilenorientierte Schnittstelle bieten, was bedeutet, dass sie für Ihren Code wie eine Liste von Wörterbüchern aussehen und verhalten wird. Intern wird sie jedoch die Daten in spaltenorientierter Form speichern, was uns hilft, Speicher zu sparen.
 
-Dies kann behoben werden, wenn Sie bereit sind, einen benutzerdefinierten Containerobjekt zu erstellen, das dies "nachmacht". Lassen Sie uns das tun.
-
-Der frühere Analysecode nimmt an, dass die Daten in einer Sequenz von Datensätzen gespeichert sind. Jeder Datensatz wird als Wörterbuch dargestellt. Lassen Sie uns beginnen, eine neue "Sequenz"-Klasse zu erstellen. In dieser Klasse speichern wir die vier Spalten der Daten, die in der `read_rides_as_columns()`-Funktion verwendet wurden.
+1. Öffnen Sie zunächst die Datei `readrides.py` im WebIDE - Editor. Wir werden dieser Datei eine neue Klasse hinzufügen. Diese Klasse wird die Grundlage für unseren benutzerdefinierten Container bilden.
 
 ```python
-# readrides.py
-
+# Add this to readrides.py
 from collections.abc import Sequence
-
-...
 
 class RideData(Sequence):
     def __init__(self):
-        self.routes = []      # Spalten
-        self.dates = []
-        self.daytypes = []
-        self.numrides = []
-```
-
-Versuchen Sie, eine `RideData`-Instanz zu erstellen. Sie werden feststellen, dass es mit einer Fehlermeldung wie dieser fehlschlägt:
-
-```python
->>> records = RideData()
-Traceback (most recent call last):
-...
-TypeError: Can't instantiate abstract class RideData with abstract methods __getitem__, __len__
->>>
-```
-
-Lesen Sie die Fehlermeldung sorgfältig. Sie sagt uns, was wir implementieren müssen. Fügen Sie eine `__len__()`- und `__getitem__()`-Methode hinzu. In der `__getitem__()`-Methode werden wir ein Wörterbuch erstellen. Darüber hinaus erstellen wir eine `append()`-Methode, die ein Wörterbuch nimmt und es in 4 separate `append()`-Operationen aufpackt.
-
-```python
-# readrides.py
-...
-
-class RideData(collections.Sequence):
-    def __init__(self):
-        # Jeder Wert ist eine Liste mit allen Werten (eine Spalte)
+        # Each value is a list with all of the values (a column)
         self.routes = []
         self.dates = []
         self.daytypes = []
         self.numrides = []
 
     def __len__(self):
-        # Alle Listen werden angenommen, die gleiche Länge zu haben
+        # All lists assumed to have the same length
         return len(self.routes)
 
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        return {'route': self.routes[index],
+                'date': self.dates[index],
+                'daytype': self.daytypes[index],
+                'rides': self.numrides[index]}
 
     def append(self, d):
         self.routes.append(d['route'])
@@ -62,20 +33,20 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-Wenn Sie dies richtig gemacht haben, sollten Sie dieses Objekt in die zuvor geschriebene `read_rides_as_dicts()`-Funktion einfügen können. Dazu müssen Sie nur eine Zeile des Codes ändern:
+In diesem Code definieren wir eine Klasse namens `RideData`, die von `Sequence` erbt. Die Methode `__init__` initialisiert vier leere Listen, wobei jede Liste eine Spalte der Daten darstellt. Die Methode `__len__` gibt die Länge des Containers zurück, die der Länge der `routes` - Liste entspricht. Die Methode `__getitem__` ermöglicht es uns, einen bestimmten Datensatz anhand des Indexes zuzugreifen und ihn als Wörterbuch zurückzugeben. Die Methode `append` fügt einen neuen Datensatz zum Container hinzu, indem sie die Werte an jede Spaltenliste anhängt.
+
+2. Jetzt benötigen wir eine Funktion, um die Busfahrtdaten in unseren benutzerdefinierten Container einzulesen. Fügen Sie die folgende Funktion zur Datei `readrides.py` hinzu.
 
 ```python
-# readrides.py
-...
-
+# Add this to readrides.py
 def read_rides_as_dicts(filename):
     '''
-    Liest die Busfahrtdaten als Liste von Wörterbüchern ein
+    Read the bus ride data as a list of dicts, but use our custom container
     '''
-    records = RideData()      # <--- ÄNDERN SIE DIES
+    records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)     # Überspringt die Überschriften
+        headings = next(rows)     # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -85,27 +56,47 @@ def read_rides_as_dicts(filename):
                 'route': route,
                 'date': date,
                 'daytype': daytype,
-                'rides' : rides
-                }
+                'rides': rides
+            }
             records.append(record)
     return records
 ```
 
-Wenn Sie dies richtig gemacht haben, sollte der alte Code genauso funktionieren wie zuvor. Beispielsweise:
+Diese Funktion erstellt eine Instanz der Klasse `RideData` und füllt sie mit Daten aus der CSV - Datei. Sie liest jede Zeile aus der Datei, extrahiert die relevanten Informationen, erstellt für jeden Datensatz ein Wörterbuch und fügt es dann dem `RideData` - Container hinzu. Das Wichtigste ist, dass sie die gleiche Schnittstelle wie eine Liste von Wörterbüchern aufrechterhält, aber die Daten intern spaltenweise speichert.
+
+3. Testen wir unseren benutzerdefinierten Container in der Python - Shell. Dies wird uns helfen, zu überprüfen, ob er wie erwartet funktioniert.
 
 ```python
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
->>> rows
-<readrides.RideData object at 0x10f5054a8>
->>> len(rows)
-577563
->>> rows[0]
-{'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
->>> rows[1]
-{'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
->>> rows[2]
-{'route': '6', 'date': '01/01/2001', 'daytype': 'U', 'rides': 6048}
->>>
+import readrides
+
+# Read the data using our custom container
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+
+# Check the type of the returned object
+type(rows)  # Should be readrides.RideData
+
+# Check the length
+len(rows)   # Should be 577563
+
+# Access individual records
+rows[0]     # Should return a dictionary for the first record
+rows[1]     # Should return a dictionary for the second record
+rows[2]     # Should return a dictionary for the third record
 ```
 
-Führen Sie Ihren früheren CTA-Code aus Übung 2.2 aus. Er sollte ohne Änderungen funktionieren, aber erheblich weniger Arbeitsspeicher verwenden.
+Unser benutzerdefinierter Container implementiert erfolgreich die `Sequence` - Schnittstelle, was bedeutet, dass er sich wie eine Liste verhält. Sie können die Funktion `len()` verwenden, um die Anzahl der Datensätze im Container zu erhalten, und Sie können die Indizierung verwenden, um einzelne Datensätze zuzugreifen. Jeder Datensatz scheint ein Wörterbuch zu sein, obwohl die Daten intern spaltenweise gespeichert sind. Dies ist großartig, da bestehender Code, der eine Liste von Wörterbüchern erwartet, weiterhin mit unserem benutzerdefinierten Container ohne jegliche Modifikationen funktioniert.
+
+4. Schließlich messen wir den Speicherverbrauch unseres benutzerdefinierten Containers. Dies wird uns zeigen, wie viel Speicher wir im Vergleich zu einer Liste von Wörterbüchern sparen.
+
+```python
+import tracemalloc
+
+tracemalloc.start()
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+tracemalloc.stop()
+```
+
+Wenn Sie diesen Code ausführen, sollten Sie feststellen, dass der Speicherverbrauch ähnlich dem des spaltenorientierten Ansatzes ist, der viel geringer ist als der einer Liste von Wörterbüchern. Dies zeigt den Vorteil unseres benutzerdefinierten Containers in Bezug auf die Speichereffizienz.

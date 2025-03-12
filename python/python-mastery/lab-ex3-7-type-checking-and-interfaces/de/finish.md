@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab zu Typüberprüfung und Schnittstellen abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie mehrere wichtige objektorientierte Programmierungskonzepte gelernt, um Python-Code zu verbessern. Zunächst haben Sie die Typüberprüfung in der Funktion `print_table()` implementiert, die sicherstellt, dass nur gültige Formatierer verwendet werden, wodurch die Robustheit des Codes verbessert wird. Zweitens haben Sie die Klasse `TableFormatter` in eine abstrakte Basisklasse umgewandelt, die Unterklassen dazu zwingt, bestimmte Methoden zu implementieren.
+
+Darüber hinaus haben Sie das Template-Methoden-Muster (Template Method Pattern) angewendet, indem Sie die abstrakte Basisklasse `CSVParser` und ihre konkreten Implementierungen erstellt haben. Dies reduziert die Code-Duplizierung und erhält gleichzeitig eine konsistente Algorithmusstruktur. Diese Techniken sind von entscheidender Bedeutung für die Erstellung von wartbarerem und robusterem Python-Code, insbesondere in großen Anwendungen. Um Ihr Lernen fortzusetzen, erkunden Sie Typ-Hinweise in Python (PEP 484), Protokollklassen und Entwurfsmuster (Design Patterns) in Python.

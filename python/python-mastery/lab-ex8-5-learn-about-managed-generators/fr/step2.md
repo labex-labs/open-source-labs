@@ -1,93 +1,50 @@
-# Les générateurs en tant que tâches servant des connexions réseau
+# Créer un planificateur de tâches (task scheduler) avec des générateurs
 
-Dans le fichier `server.py` et mettez le code suivant dedans :
+En programmation, un planificateur de tâches est un outil essentiel qui aide à gérer et exécuter efficacement plusieurs tâches. Dans cette section, nous allons utiliser des générateurs pour construire un simple planificateur de tâches capable d'exécuter plusieurs fonctions générateur de manière concurrente. Cela vous montrera comment les générateurs peuvent être gérés pour effectuer une multitâche coopérative, ce qui signifie que les tâches s'exécutent tour à tour et partagent le temps d'exécution.
+
+Tout d'abord, vous devez créer un nouveau fichier. Accédez au répertoire `/home/labex/project` et créez un fichier nommé `multitask.py`. Ce fichier contiendra le code de notre planificateur de tâches.
 
 ```python
-# server.py
+# multitask.py
 
-from socket import *
-from select import select
 from collections import deque
 
+# Task queue
 tasks = deque()
-recv_wait = {}   #  sock -> tâche
-send_wait = {}   #  sock -> tâche
 
+# Simple task scheduler
 def run():
-    while any([tasks, recv_wait, send_wait]):
-        while not tasks:
-            can_recv, can_send, _ = select(recv_wait, send_wait, [])
-            for s in can_recv:
-                tasks.append(recv_wait.pop(s))
-            for s in can_send:
-                tasks.append(send_wait.pop(s))
-        tâche = tasks.popleft()
+    while tasks:
+        task = tasks.popleft()  # Get the next task
         try:
-            raison, ressource = tâche.send(None)
-            if raison =='recv':
-                recv_wait[ressource] = tâche
-            elif raison =='send':
-                send_wait[ressource] = tâche
-            else:
-                raise RuntimeError('Raison inconnue %r' % raison)
+            task.send(None)     # Resume the task
+            tasks.append(task)  # Put it back in the queue
         except StopIteration:
-            print('Tâche terminée')
+            print('Task done')  # Task is complete
+
+# Example task 1: Countdown
+def countdown(n):
+    while n > 0:
+        print('T-minus', n)
+        yield              # Pause execution
+        n -= 1
+
+# Example task 2: Count up
+def countup(n):
+    x = 0
+    while x < n:
+        print('Up we go', x)
+        yield              # Pause execution
+        x += 1
 ```
 
-Ce code est une version un peu plus compliquée du planificateur de tâches de la partie (a). Cela nécessitera un peu d'étude, mais l'idée est que non seulement chaque tâche va générer, elle indiquera également une raison pour le faire (recevoir ou envoyer). En fonction de la raison, la tâche passera dans une zone d'attente. Le planificateur exécutera ensuite toutes les tâches disponibles ou attendra que des événements d'entrée/sortie se produisent lorsqu'il n'y a plus rien à faire.
+Maintenant, décomposons le fonctionnement de ce planificateur de tâches :
 
-Cela peut sembler un peu compliqué, mais ajoutez le code suivant qui implémente un serveur d'écho simple :
+1. Nous utilisons un `deque` (file doublement chaînée) pour stocker nos tâches générateur. Un `deque` est une structure de données qui permet d'ajouter et de supprimer des éléments efficacement des deux extrémités. C'est un excellent choix pour notre file de tâches car nous devons ajouter des tâches à la fin et les supprimer du début.
+2. La fonction `run()` est le cœur de notre planificateur de tâches. Elle prend les tâches une par une dans la file :
+   - Elle reprend chaque tâche en utilisant `send(None)`. Cela est similaire à l'utilisation de `next()` sur un générateur. Cela indique au générateur de reprendre l'exécution là où il s'était arrêté.
+   - Après que la tâche ait cédé le contrôle (yield), elle est ajoutée à nouveau à la fin de la file. De cette façon, la tâche aura une autre chance de s'exécuter plus tard.
+   - Lorsqu'une tâche est terminée (lève l'exception `StopIteration`), elle est supprimée de la file. Cela indique que la tâche a terminé son exécution.
+3. Chaque instruction `yield` dans nos tâches générateur agit comme un point d'arrêt. Lorsqu'un générateur atteint une instruction `yield`, il met en pause son exécution et rend le contrôle au planificateur. Cela permet aux autres tâches de s'exécuter.
 
-```python
-# server.py
-...
-
-def tcp_server(address, handler):
-    sock = socket(AF_INET, SOCK_STREAM)
-    sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-    sock.bind(address)
-    sock.listen(5)
-    while True:
-        yield'recv', sock
-        client, addr = sock.accept()
-        tasks.append(handler(client, addr))
-
-def echo_handler(client, address):
-    print('Connexion de', address)
-    while True:
-        yield'recv', client
-        data = client.recv(1000)
-        if not data:
-            break
-        yield'send', client
-        client.send(b'GOT:' + data)
-    print('Connexion fermée')
-
-if __name__ == '__main__':
-    tasks.append(tcp_server(('',25000), echo_handler))
-    run()
-```
-
-Exécutez ce serveur dans une fenêtre de terminal à part. Dans un autre terminal, connectez-vous à lui en utilisant une commande telle que `telnet` ou `nc`. Par exemple :
-
-```bash
-nc localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-Si vous n'avez pas accès à `nc` ou `telnet`, vous pouvez également utiliser Python lui-même :
-
-```bash
-python3 -m telnetlib localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-Si cela fonctionne, vous devriez voir la sortie vous être renvoyée. Pas seulement ça, si vous connectez plusieurs clients, ils fonctionneront tous en parallèle.
-
-Cet usage astucieux des générateurs n'est probablement pas quelque chose que vous devriez avoir à coder directement. Cependant, ils sont utilisés dans certains packages avancés tels que `asyncio` qui a été ajouté à la bibliothèque standard en Python 3.4.
+Cette approche met en œuvre une multitâche coopérative. Chaque tâche cède volontairement le contrôle au planificateur, permettant aux autres tâches de s'exécuter. De cette façon, plusieurs tâches peuvent partager le temps d'exécution et s'exécuter de manière concurrente.

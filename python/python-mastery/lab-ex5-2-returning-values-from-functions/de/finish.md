@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Rückgabe von Werten aus Funktionen" abgeschlossen. Sie können in LabEx weitere Labs ausprobieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie mehrere wichtige Muster für die Rückgabe von Werten aus Funktionen in Python gelernt. Erstens können Python - Funktionen mehrere Werte zurückgeben, indem sie diese in ein Tupel packen. Dies ermöglicht eine saubere und lesbare Rückgabe und Entpackung von Werten. Zweitens ist es bei Funktionen, die möglicherweise nicht immer gültige Ergebnisse liefern, üblich, `None` zurückzugeben, um die Abwesenheit eines Werts anzuzeigen. Als Alternative wurde auch das Auslösen von Ausnahmen (Exceptions) vorgestellt.
+
+Schließlich fungiert in der parallelen Programmierung ein `Future` als Platzhalter für ein zukünftiges Ergebnis. Dies ermöglicht es Ihnen, Rückgabewerte von Funktionen zu erhalten, die in separaten Threads oder Prozessen laufen. Das Verständnis dieser Muster wird die Robustheit und Flexibilität Ihres Python - Codes verbessern. Für weitere Übungen können Sie verschiedene Fehlerbehandlungsstrategien ausprobieren, Futures mit anderen Typen der parallelen Ausführung verwenden und deren Anwendung in der asynchronen Programmierung mit `async`/`await` erkunden.

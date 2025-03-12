@@ -1,7 +1,5 @@
 # Introduction
 
-**Objectifs:**
+Dans ce laboratoire (lab), vous apprendrez à retourner plusieurs valeurs à partir de fonctions en Python. Vous comprendrez également les valeurs de retour facultatives et comment gérer efficacement les erreurs.
 
-- Retourner des valeurs à partir de fonctions
-
-Dans cet exercice, nous examinons brièvement les problèmes liés au retour de valeurs à partir de fonctions. Au premier abord, cela semble devoir être simple, mais il y a quelques problèmes subtils qui apparaissent.
+De plus, vous explorerez le concept de Futures pour la programmation concurrente. Bien que le retour d'une valeur puisse sembler simple, différents scénarios de programmation présentent divers modèles et considérations.

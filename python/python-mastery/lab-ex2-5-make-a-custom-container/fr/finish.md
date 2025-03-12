@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations! Vous avez terminé le laboratoire Création d'un conteneur personnalisé. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris plusieurs compétences importantes. Tout d'abord, vous avez exploré le comportement d'allocation mémoire dans les listes et les dictionnaires Python et avez appris à optimiser l'utilisation de la mémoire en passant du stockage de données orienté ligne à un stockage orienté colonne. Deuxièmement, vous avez créé une classe de conteneur personnalisée qui conserve l'interface originale tout en utilisant moins de mémoire et l'avez améliorée pour gérer correctement les opérations de découpage (slicing).
+
+Ces techniques sont très précieuses pour travailler avec de grands ensembles de données, car elles peuvent réduire considérablement l'utilisation de la mémoire sans modifier l'interface de votre code. La capacité à créer des classes de conteneurs personnalisés imitant les conteneurs intégrés de Python avec des représentations internes différentes est un outil d'optimisation puissant pour les applications Python. Vous pouvez appliquer ces concepts à d'autres projets critiques en termes de mémoire, en particulier ceux impliquant de grands ensembles de données à structure régulière.

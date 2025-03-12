@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicitaciones! Ha completado el laboratorio de Cómo se Representan los Objetos. Puede practicar más laboratorios en LabEx para mejorar sus habilidades.
+En este laboratorio, has aprendido sobre el funcionamiento interno del sistema de objetos de Python y varios conceptos clave. En primer lugar, los objetos de Python almacenan atributos en un diccionario accesible a través del atributo `__dict__`, lo que ofrece flexibilidad. En segundo lugar, has comprendido cómo funcionan la asignación y la búsqueda de atributos, incluyendo la adición dinámica de atributos y el orden de comprobación de atributos.
+
+Además, has explorado la relación entre clases e instancias, donde las clases contienen datos y comportamientos compartidos, y las instancias mantienen su propio estado. También has descubierto cómo funcionan las llamadas a métodos, donde los métodos de la clase actúan sobre las instancias a través del parámetro `self`. Comprender estos conceptos profundiza tu comprensión del modelo de POO (Programación Orientada a Objetos) de Python y es útil para la depuración, el diseño de jerarquías de clases y el aprendizaje de características avanzadas.

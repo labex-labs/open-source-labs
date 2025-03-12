@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations! Vous avez terminé le laboratoire sur le Comportement de l'Héritage. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris le comportement de l'héritage en Python et maîtrisé plusieurs concepts clés. Vous avez exploré la différence entre l'héritage simple et l'héritage multiple, compris comment la fonction `super()` navigue dans l'ordre de résolution des méthodes (Method Resolution Order - MRO), appris à implémenter un héritage multiple coopératif et appliqué l'héritage pour construire un système de validation pratique.
+
+Vous avez également créé un cadre de validation flexible en utilisant l'héritage et l'avez appliqué à un exemple concret avec la classe `Stock`, ce qui montre comment l'héritage peut créer des composants réutilisables et composables. Les points clés à retenir incluent le fonctionnement de `super()` dans l'héritage simple et multiple, la capacité de l'héritage multiple à composer des fonctionnalités et l'utilisation de mutateurs de propriétés avec des validateurs. Ces concepts sont fondamentaux pour la programmation orientée objet en Python et sont largement utilisés dans les applications réelles.

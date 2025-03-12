@@ -1,93 +1,50 @@
-# 作为处理网络连接任务的生成器
+# 使用生成器创建任务调度器
 
-在 `server.py` 文件中，输入以下代码：
+在编程中，任务调度器是一个重要的工具，它有助于高效地管理和执行多个任务。在本节中，我们将使用生成器构建一个简单的任务调度器，该调度器可以并发运行多个生成器函数。这将向你展示如何管理生成器以实现协作式多任务处理，即任务轮流运行并共享执行时间。
+
+首先，你需要创建一个新文件。导航到 `/home/labex/project` 目录并创建一个名为 `multitask.py` 的文件。该文件将包含我们任务调度器的代码。
 
 ```python
-# server.py
+# multitask.py
 
-from socket import *
-from select import select
 from collections import deque
 
+# Task queue
 tasks = deque()
-recv_wait = {}   #  sock -> task
-send_wait = {}   #  sock -> task
 
+# Simple task scheduler
 def run():
-    while any([tasks, recv_wait, send_wait]):
-        while not tasks:
-            can_recv, can_send, _ = select(recv_wait, send_wait, [])
-            for s in can_recv:
-                tasks.append(recv_wait.pop(s))
-            for s in can_send:
-                tasks.append(send_wait.pop(s))
-        task = tasks.popleft()
+    while tasks:
+        task = tasks.popleft()  # Get the next task
         try:
-            reason, resource = task.send(None)
-            if reason =='recv':
-                recv_wait[resource] = task
-            elif reason =='send':
-                send_wait[resource] = task
-            else:
-                raise RuntimeError('Unknown reason %r' % reason)
+            task.send(None)     # Resume the task
+            tasks.append(task)  # Put it back in the queue
         except StopIteration:
-            print('Task done')
+            print('Task done')  # Task is complete
+
+# Example task 1: Countdown
+def countdown(n):
+    while n > 0:
+        print('T-minus', n)
+        yield              # Pause execution
+        n -= 1
+
+# Example task 2: Count up
+def countup(n):
+    x = 0
+    while x < n:
+        print('Up we go', x)
+        yield              # Pause execution
+        x += 1
 ```
 
-这段代码是（a）部分中任务调度器的一个稍微复杂的版本。它需要一些研究，但思路是每个任务不仅会产生（yield），还会指明这样做的原因（接收或发送）。根据原因，任务会转移到等待区域。然后调度器运行任何可用的任务，或者在无事可做时等待 I/O 事件发生。
+现在，让我们详细分析这个任务调度器的工作原理：
 
-这可能有点棘手，不过添加以下实现简单回声服务器的代码：
+1. 我们使用 `deque`（双端队列）来存储生成器任务。`deque` 是一种数据结构，它允许你高效地从两端添加和移除元素。对于我们的任务队列来说，它是一个很好的选择，因为我们需要在队列尾部添加任务，并从队列头部移除任务。
+2. `run()` 函数是我们任务调度器的核心。它逐个从队列中取出任务：
+   - 它使用 `send(None)` 恢复每个任务的执行。这类似于对生成器使用 `next()`。它告诉生成器从上次暂停的地方继续执行。
+   - 任务产生（yield）值后，会被重新添加到队列尾部。这样，该任务稍后将有机会再次运行。
+   - 当一个任务完成（抛出 `StopIteration` 异常）时，它会从队列中移除。这表明该任务已完成执行。
+3. 我们的生成器任务中的每个 `yield` 语句都充当一个暂停点。当生成器到达 `yield` 语句时，它会暂停执行并将控制权交还给调度器。这使得其他任务可以运行。
 
-```python
-# server.py
-...
-
-def tcp_server(address, handler):
-    sock = socket(AF_INET, SOCK_STREAM)
-    sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-    sock.bind(address)
-    sock.listen(5)
-    while True:
-        yield'recv', sock
-        client, addr = sock.accept()
-        tasks.append(handler(client, addr))
-
-def echo_handler(client, address):
-    print('Connection from', address)
-    while True:
-        yield'recv', client
-        data = client.recv(1000)
-        if not data:
-            break
-        yield'send', client
-        client.send(b'GOT:' + data)
-    print('Connection closed')
-
-if __name__ == '__main__':
-    tasks.append(tcp_server(('',25000), echo_handler))
-    run()
-```
-
-在其自己的终端窗口中运行此服务器。在另一个终端中，使用诸如 `telnet` 或 `nc` 之类的命令连接到它。例如：
-
-```bash
-nc localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-如果你没有 `nc` 或 `telnet`，也可以使用 Python 本身：
-
-```bash
-python3 -m telnetlib localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-如果运行正常，你应该会看到输出被回显给你。不仅如此，如果你连接多个客户端，它们将全部并发运行。
-
-这种对生成器的巧妙使用不太可能是你需要直接编写代码的情况。然而，它们在某些高级包中被使用，比如 Python 3.4 标准库中添加的 `asyncio`。
+这种方法实现了协作式多任务处理。每个任务自愿将控制权交还给调度器，从而允许其他任务运行。通过这种方式，多个任务可以共享执行时间并并发运行。

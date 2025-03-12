@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire sur le module `unittest` de Python. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris à utiliser le module `unittest` de Python pour créer et exécuter des tests automatisés. Vous avez créé un cas de test de base en étendant la classe `unittest.TestCase`, écrit des tests pour vérifier le bon fonctionnement des méthodes et propriétés d'une classe, et créé des tests pour vérifier que les exceptions appropriées sont levées en cas d'erreur. Vous avez également appris à exécuter des tests spécifiques et à utiliser la découverte de tests.
+
+Le test unitaire est une compétence fondamentale dans le développement logiciel, assurant la fiabilité et la correction du code. Écrire des tests approfondis permet de détecter les bogues tôt et donne confiance dans le comportement de votre code. Lorsque vous développez des applications Python, envisagez d'adopter une approche de développement piloté par les tests (Test-Driven Development - TDD), en écrivant les tests avant d'implémenter la fonctionnalité pour obtenir un code plus robuste et plus maintenable.

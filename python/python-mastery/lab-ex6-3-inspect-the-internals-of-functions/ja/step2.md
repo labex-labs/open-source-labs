@@ -1,15 +1,71 @@
 # inspect モジュールの使用
 
-inspect モジュールを使用して、関数に関する呼び出し情報を取得する：
+Python の標準ライブラリには、非常に便利な `inspect` モジュールがあります。このモジュールは、Python のライブオブジェクト（モジュール、クラス、関数など）に関する情報を収集するためのツールで、まるで探偵道具のような存在です。オブジェクトの属性を手動で調べて情報を探す代わりに、`inspect` モジュールは関数の特性を理解するための、より整理された高レベルな方法を提供します。
+
+同じ Python 対話型シェルを使って、このモジュールの動作を調べてみましょう。
+
+## 関数シグネチャ
+
+`inspect.signature()` 関数は便利なツールです。関数を引数として渡すと、`Signature` オブジェクトを返します。このオブジェクトには、関数のパラメータに関する重要な詳細が含まれています。
+
+例を見てみましょう。`add` という名前の関数があるとします。`inspect.signature()` 関数を使ってそのシグネチャを取得できます。
 
 ```python
->>> import inspect
->>> sig = inspect.signature(add)
->>> sig
-<Signature (x, y)>
->>> sig.parameters
-mappingproxy(OrderedDict([('x', <Parameter "x">), ('y', <Parameter "y">)]))
->>> tuple(sig.parameters)
-('x', 'y')
->>>
+import inspect
+sig = inspect.signature(add)
+print(sig)
 ```
+
+このコードを実行すると、出力は次のようになります。
+
+```
+(x, y)
+```
+
+この出力は関数のシグネチャを示しており、関数が受け取ることができるパラメータを教えてくれます。
+
+## パラメータの詳細を調べる
+
+さらに踏み込んで、関数の各パラメータに関するより詳細な情報を取得することができます。
+
+```python
+print(sig.parameters)
+```
+
+このコードの出力は次のようになります。
+
+```
+OrderedDict([('x', <Parameter "x">), ('y', <Parameter "y">)])
+```
+
+関数のパラメータは順序付き辞書に格納されています。時には、パラメータの名前だけに興味があることもあります。この順序付き辞書をタプルに変換することで、パラメータ名だけを抽出することができます。
+
+```python
+param_names = tuple(sig.parameters)
+print(param_names)
+```
+
+出力は次のようになります。
+
+```
+('x', 'y')
+```
+
+## 個々のパラメータを調べる
+
+個々のパラメータにも注目することができます。次のコードは、関数の各パラメータをループで処理し、それに関するいくつかの重要な詳細を出力します。
+
+```python
+for name, param in sig.parameters.items():
+    print(f"Parameter: {name}")
+    print(f"  Kind: {param.kind}")
+    print(f"  Default: {param.default if param.default is not param.empty else 'No default'}")
+```
+
+このコードは、各パラメータに関する詳細を表示します。パラメータの種類（位置引数、キーワード引数など）と、デフォルト値がある場合はその値を教えてくれます。
+
+`inspect` モジュールには、関数の内部構造を調べるための他にも多くの便利な関数があります。いくつかの例を挙げます。
+
+- `inspect.getdoc(obj)`: この関数は、オブジェクトのドキュメント文字列（docstring）を取得します。ドキュメント文字列は、プログラマがオブジェクトの機能を説明するために書くメモのようなものです。
+- `inspect.getfile(obj)`: この関数は、オブジェクトが定義されているファイルを特定するのに役立ちます。オブジェクトのソースコードを見つけたいときに非常に便利です。
+- `inspect.getsource(obj)`: この関数は、オブジェクトのソースコードを取得します。オブジェクトが実際にどのように実装されているかを確認することができます。

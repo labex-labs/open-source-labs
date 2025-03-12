@@ -86,5 +86,337 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "自定义属性访问",
+      "description": "了解用于属性控制的 `__setattr__`，使用代理创建只读对象，并探索在 Python 中委托作为继承的替代方案。",
+      "meta": {
+        "title": "自定义属性访问",
+        "description": "了解用于属性控制的 `__setattr__`，使用代理创建只读对象，并探索在 Python 中委托作为继承的替代方案。",
+        "keywords": "Python, 自定义属性访问, __setattr__, 只读对象, 委托"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解用于属性控制的 `__setattr__`",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 RestrictedStock 实现",
+                "file": "verify1-1.sh",
+                "hint": "确保你已经创建了包含 RestrictedStock 类的 restricted_stock.py 文件"
+              }
+            ]
+          },
+          {
+            "title": "使用代理创建只读对象",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 ReadonlyProxy 实现",
+                "file": "verify2-1.sh",
+                "hint": "确保你已经创建了包含 ReadonlyProxy 类的 readonly_proxy.py 文件"
+              }
+            ]
+          },
+          {
+            "title": "委托：继承的替代方案",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证委托实现",
+                "file": "verify3-1.sh",
+                "hint": "确保你已经创建了包含 DelegatingSpam 类的 delegator.py 文件"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Personalización del acceso a atributos",
+      "description": "Comprenda `__setattr__` para controlar atributos, cree objetos de solo lectura con proxies y explore la delegación como alternativa a la herencia en Python.",
+      "meta": {
+        "title": "Personalización del acceso a atributos",
+        "description": "Comprenda `__setattr__` para controlar atributos, cree objetos de solo lectura con proxies y explore la delegación como alternativa a la herencia en Python.",
+        "keywords": "Python, personalización del acceso a atributos, __setattr__, objetos de solo lectura, delegación"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprender `__setattr__` para el control de atributos",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de RestrictedStock",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber creado el archivo restricted_stock.py con la clase RestrictedStock"
+              }
+            ]
+          },
+          {
+            "title": "Creación de objetos de solo lectura con proxies",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de ReadonlyProxy",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber creado el archivo readonly_proxy.py con la clase ReadonlyProxy"
+              }
+            ]
+          },
+          {
+            "title": "Delegación como alternativa a la herencia",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de la delegación",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber creado el archivo delegator.py con la clase DelegatingSpam"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Personnalisation de l'accès aux attributs",
+      "description": "Comprenez `__setattr__` pour le contrôle des attributs, créez des objets en lecture seule avec des proxies et explorez la délégation comme alternative à l'héritage en Python.",
+      "meta": {
+        "title": "Personnalisation de l'accès aux attributs",
+        "description": "Comprenez `__setattr__` pour le contrôle des attributs, créez des objets en lecture seule avec des proxies et explorez la délégation comme alternative à l'héritage en Python.",
+        "keywords": "Python, personnalisation de l'accès aux attributs, __setattr__, objets en lecture seule, délégation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre `__setattr__` pour le contrôle des attributs",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de RestrictedStock",
+                "file": "verify1-1.sh",
+                "hint": "Assurez - vous d'avoir créé le fichier restricted_stock.py avec la classe RestrictedStock"
+              }
+            ]
+          },
+          {
+            "title": "Création d'objets en lecture seule avec des proxies",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de ReadonlyProxy",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir créé le fichier readonly_proxy.py avec la classe ReadonlyProxy"
+              }
+            ]
+          },
+          {
+            "title": "La délégation comme alternative à l'héritage",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la délégation",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir créé le fichier delegator.py avec la classe DelegatingSpam"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Anpassen des Attributzugriffs",
+      "description": "Verstehen Sie `__setattr__` zur Attributkontrolle, erstellen Sie schreibgeschützte Objekte mit Proxies und erkunden Sie die Delegation als Alternative zur Vererbung in Python.",
+      "meta": {
+        "title": "Anpassen des Attributzugriffs",
+        "description": "Verstehen Sie `__setattr__` zur Attributkontrolle, erstellen Sie schreibgeschützte Objekte mit Proxies und erkunden Sie die Delegation als Alternative zur Vererbung in Python.",
+        "keywords": "Python, Anpassen des Attributzugriffs, __setattr__, schreibgeschützte Objekte, Delegation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Verständnis von `__setattr__` für die Attributkontrolle",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Implementierung von RestrictedStock",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei restricted_stock.py mit der Klasse RestrictedStock erstellt haben"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen von schreibgeschützten Objekten mit Proxies",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Implementierung von ReadonlyProxy",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei readonly_proxy.py mit der Klasse ReadonlyProxy erstellt haben"
+              }
+            ]
+          },
+          {
+            "title": "Delegation als Alternative zur Vererbung",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen der Delegation-Implementierung",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei delegator.py mit der Klasse DelegatingSpam erstellt haben"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "属性アクセスのカスタマイズ",
+      "description": "Python で `__setattr__` を使った属性制御を理解し、プロキシを使って読み取り専用オブジェクトを作成し、継承の代替手段としての委譲を探索します。",
+      "meta": {
+        "title": "属性アクセスのカスタマイズ",
+        "description": "Python で `__setattr__` を使った属性制御を理解し、プロキシを使って読み取り専用オブジェクトを作成し、継承の代替手段としての委譲を探索します。",
+        "keywords": "Python, 属性アクセスのカスタマイズ, __setattr__, 読み取り専用オブジェクト, 委譲"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "属性制御のための `__setattr__` の理解",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "RestrictedStock の実装を検証する",
+                "file": "verify1-1.sh",
+                "hint": "RestrictedStock クラスを含む restricted_stock.py ファイルを作成したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "プロキシを使った読み取り専用オブジェクトの作成",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "ReadonlyProxy の実装を検証する",
+                "file": "verify2-1.sh",
+                "hint": "ReadonlyProxy クラスを含む readonly_proxy.py ファイルを作成したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "継承の代替手段としての委譲",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "委譲の実装を検証する",
+                "file": "verify3-1.sh",
+                "hint": "DelegatingSpam クラスを含む delegator.py ファイルを作成したことを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Настройка доступа к атрибутам",
+      "description": "Понять использование `__setattr__` для контроля атрибутов, создавать объекты только для чтения с помощью прокси и изучить делегирование как альтернативу наследованию в Python.",
+      "meta": {
+        "title": "Настройка доступа к атрибутам",
+        "description": "Понять использование `__setattr__` для контроля атрибутов, создавать объекты только для чтения с помощью прокси и изучить делегирование как альтернативу наследованию в Python.",
+        "keywords": "Python, настройка доступа к атрибутам, __setattr__, объекты только для чтения, делегирование"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание `__setattr__` для контроля атрибутов",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию RestrictedStock",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы создали файл restricted_stock.py с классом RestrictedStock"
+              }
+            ]
+          },
+          {
+            "title": "Создание объектов только для чтения с использованием прокси",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию ReadonlyProxy",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы создали файл readonly_proxy.py с классом ReadonlyProxy"
+              }
+            ]
+          },
+          {
+            "title": "Делегирование как альтернатива наследованию",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию делегирования",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы создали файл delegator.py с классом DelegatingSpam"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

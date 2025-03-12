@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Configurer des pipelines de traitement. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris à utiliser les coroutines pour construire des pipelines de traitement de données en Python. Les concepts clés incluent la compréhension des bases des coroutines, telles que leur fonctionnement, la nécessité de les initialiser (priming) et l'utilisation de décorateurs pour l'initialisation. Vous avez également exploré le flux de données, en poussant les données à travers un pipeline via la méthode `send()`, ce qui diffère du modèle « pull » des générateurs.
+
+De plus, vous avez créé des coroutines spécialisées pour des tâches telles que l'analyse de données CSV, le filtrage d'enregistrements et la mise en forme de la sortie. Vous avez appris à composer des pipelines en connectant plusieurs coroutines et à implémenter des opérations de filtrage et de transformation. Les coroutines offrent une approche puissante pour le traitement de données en continu, permettant une séparation claire des préoccupations et une modification facile des étapes individuelles.

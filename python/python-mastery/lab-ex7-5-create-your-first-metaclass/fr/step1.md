@@ -1,47 +1,24 @@
-# Créez votre première métaclasse
+# Comprendre les métaclasses
 
-Créez un fichier appelé `mymeta.py` et mettez le code suivant dedans (extrait des diapositives) :
+Les métaclasses sont une fonctionnalité avancée mais puissante en Python. En tant que débutant, vous vous demandez peut - être ce que sont les métaclasses et pourquoi elles sont importantes. Avant de commencer à créer notre première métaclasse, prenons un moment pour comprendre ces concepts.
 
-```python
-# mymeta.py
+## Qu'est - ce qu'une métaclasse ?
 
-class mytype(type):
-    @staticmethod
-    def __new__(meta, name, bases, __dict__):
-        print("Création de la classe :", name)
-        print("Classes de base   :", bases)
-        print("Attributs     :", list(__dict__))
-        return super().__new__(meta, name, bases, __dict__)
+En Python, tout est un objet, y compris les classes. Tout comme une classe normale est utilisée pour créer des instances, une métaclasse est utilisée pour créer des classes. Par défaut, Python utilise la métaclasse intégrée `type` pour créer toutes les classes.
 
-class myobject(metaclass=mytype):
-    pass
+Découpons le processus de création de classe étape par étape :
+
+1. Tout d'abord, Python lit la définition de classe que vous avez écrite dans votre code. C'est là que vous définissez le nom de la classe, ses attributs et ses méthodes.
+2. Ensuite, Python collecte des informations importantes sur la classe, telles que le nom de la classe, les classes de base dont elle hérite et tous ses attributs.
+3. Après cela, Python transmet ces informations collectées à la métaclasse. La métaclasse est chargée de prendre ces informations et de créer l'objet de classe réel.
+4. Enfin, la métaclasse crée et retourne la nouvelle classe.
+
+Une métaclasse vous donne le pouvoir de personnaliser ce processus de création de classe. Vous pouvez modifier ou inspecter les classes pendant leur création, ce qui peut être très utile dans certains scénarios.
+
+Visualisons cette relation pour faciliter la compréhension :
+
+```
+Metaclass → creates → Class → creates → Instance
 ```
 
-Une fois que vous avez fait cela, définissez une classe qui hérite de `myobject` au lieu de `object`. Par exemple :
-
-```python
-class Stock(myobject):
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
-    def cost(self):
-        return self.shares * self.price
-    def sell(self, nshares):
-        self.shares -= nshares
-```
-
-Essayez d'exécuter votre code et de créer des instances de `Stock`. Voir ce qui se passe. Vous devriez voir les instructions `print` de votre `mytype` s'exécuter une fois lorsque la classe `Stock` est définie.
-
-Que se passe-t-il si vous héritez de `Stock`?
-
-```python
-class MyStock(Stock):
-    pass
-```
-
-Vous devriez toujours voir votre métaclasse en action. Les métaclasses sont "statiques" en ce sens qu'elles s'appliquent sur toute une hiérarchie d'héritage.
-
-**Discussion**
-
-Pourquoi voudriez-vous faire quelque chose comme ça? Le principal pouvoir d'une métaclasse est qu'elle donne à un programmeur la possibilité de capturer les détails sur les classes juste avant leur création. Par exemple, dans la méthode `__new__()`, vous recevez tous les détails de base, y compris le nom de la classe, les classes de base et les données des méthodes. Si vous inspectez ces données, vous pouvez effectuer diverses vérifications de diagnostic. Si vous êtes plus audacieux, vous pouvez modifier les données et changer ce qui est placé dans la définition de la classe lors de sa création. Sans dire, il y a de nombreuses opportunités pour des actes diaboliques terribles.
+Dans ce laboratoire (lab), nous allons créer notre propre métaclasse. En faisant cela, vous pourrez voir ce processus de création de classe en action et mieux comprendre le fonctionnement des métaclasses.

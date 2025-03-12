@@ -1,9 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab lernen Sie das grundlegende Konzept der Iteration in der Python-Programmierung kennen. Iteration ermöglicht es Ihnen, Elemente in Sequenzen wie Listen, Tupeln und Dictionaries effizient zu verarbeiten. Das Beherrschen von Iterationstechniken kann Ihre Fähigkeiten in der Python-Programmierung erheblich verbessern.
 
-- Iterieren wie ein Profi
-
-**Veränderte Dateien:** Keine.
-
-Iteration ist eine essentielle Python-Fähigkeit. In dieser Übung betrachten wir eine Reihe von üblichen Iterations-Idiomen.
+Sie werden mehrere leistungsstarke Python-Iterationstechniken erkunden, darunter die einfache Iteration mit einer `for`-Schleife, die Entpackung von Sequenzen, die Verwendung von eingebauten Funktionen wie `enumerate()` und `zip()` sowie die Nutzung von Generatorausdrücken für eine bessere Speichereffizienz.

@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab "Create Code With Exec" abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie gelernt, wie Sie die `exec()`-Funktion in Python verwenden können, um Code dynamisch zur Laufzeit zu erstellen und auszuführen. Die Schlüsselpunkte umfassen die grundlegende Verwendung von `exec()` zum Ausführen von zeichenkettenbasierten Codefragmenten, die fortgeschrittene Verwendung zur dynamischen Erstellung von Klassenmethoden basierend auf Attributen und ihre reale Anwendung in Python's Standardbibliothek mit `namedtuple`.
+
+Die Fähigkeit, Code dynamisch zu generieren, ist ein leistungsstarkes Merkmal, das flexiblere und anpassungsfähigere Programme ermöglicht. Obwohl es aufgrund von Sicherheits- und Lesbarkeitsproblemen mit Vorsicht eingesetzt werden sollte, ist es ein wertvolles Werkzeug für Python-Programmierer in bestimmten Szenarien, wie z.B. beim Erstellen von APIs, Implementieren von Dekoratoren oder Bauen von domänenspezifischen Sprachen. Sie können diese Techniken anwenden, wenn Sie Code erstellen, der sich an Laufzeitbedingungen anpasst, oder Frameworks bauen, die Code basierend auf Konfigurationen generieren.

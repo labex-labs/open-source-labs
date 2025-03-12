@@ -1,7 +1,5 @@
 # Introducción
 
-**Objetivos:**
+En este laboratorio, aprenderás cómo crear un nuevo tipo primitivo en Python e implementar métodos esenciales para él. También adquirirás una comprensión del protocolo de objetos de Python. En la mayoría de los programas de Python, se utilizan tipos primitivos incorporados como `int`, `float` y `str` para representar datos. Sin embargo, Python te permite crear tipos personalizados, como se ve en módulos como `decimal` y `fractions` en la biblioteca estándar.
 
-- Crear un nuevo tipo primitivo
-
-En la mayoría de los programas, se utilizan los tipos primitivos como `int`, `float` y `str` para representar datos. Sin embargo, no está limitado a solo esos tipos. La biblioteca estándar tiene módulos como el módulo `decimal` y `fractions` que implementan nuevos tipos primitivos. También puede crear sus propios tipos siempre y cuando comprenda los protocolos subyacentes que hacen que los objetos de Python funcionen. En este ejercicio, crearemos un nuevo tipo primitivo. Hay muchos detalles pequeños por los que preocuparse, pero esto le dará una idea general de lo que se requiere.
+En este laboratorio, crearás un nuevo tipo primitivo llamado `MutInt` (Entero mutable). A diferencia de los enteros inmutables de Python, `MutInt` se puede modificar después de su creación. Este ejercicio mostrará los principios fundamentales necesarios para crear un tipo primitivo completamente funcional en Python.

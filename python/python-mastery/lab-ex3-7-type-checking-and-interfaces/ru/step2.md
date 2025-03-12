@@ -1,19 +1,104 @@
-# Абстрактные базовые классы
+# Реализация абстрактного базового класса
 
-Измените базовый класс `TableFormatter`, чтобы он был определен как правильный абстрактный базовый класс с использованием модуля `abc`. После этого попробуйте этот эксперимент:
+На этом этапе мы преобразуем класс `TableFormatter` в правильный абстрактный базовый класс (ABC) с использованием модуля `abc` в Python. Но сначала разберемся, что такое абстрактный базовый класс и зачем он нужен.
+
+## Понимание абстрактных базовых классов
+
+Абстрактный базовый класс - это особый тип класса в Python. Это класс, из которого нельзя напрямую создавать объекты, то есть его нельзя инстанцировать. Основная цель абстрактного базового класса - определить общий интерфейс для своих подклассов. Он устанавливает набор правил, которым должны следовать все подклассы. В частности, он требует от подклассов реализовать определенные методы.
+
+Вот несколько ключевых концепций, связанных с абстрактными базовыми классами:
+
+- В Python для создания абстрактных базовых классов используется модуль `abc`.
+- Методы, помеченные декоратором `@abstractmethod`, являются своего рода правилами. Любой подкласс, наследующийся от абстрактного базового класса, должен реализовать эти методы.
+- Если вы попытаетесь создать объект класса, который наследуется от абстрактного базового класса, но не реализует все обязательные методы, Python вызовет ошибку.
+
+Теперь, когда вы понимаете основы абстрактных базовых классов, посмотрим, как можно изменить класс `TableFormatter`, чтобы он стал таким классом.
+
+## Изменение класса TableFormatter
+
+Откройте файл `tableformat.py`. Мы внесем некоторые изменения в класс `TableFormatter`, чтобы он использовал модуль `abc` и стал абстрактным базовым классом.
+
+1. Сначала нам нужно импортировать необходимые элементы из модуля `abc`. Добавьте следующую инструкцию импорта в начало файла:
 
 ```python
->>> class NewFormatter(TableFormatter):
-        def headers(self, headings):
+# tableformat.py
+from abc import ABC, abstractmethod
+```
+
+Эта инструкция импорта добавляет два важных элемента: `ABC`, который является базовым классом для всех абстрактных базовых классов в Python, и `abstractmethod`, который является декоратором, с помощью которого мы будем помечать методы как абстрактные.
+
+2. Затем мы изменим класс `TableFormatter`. Он должен наследоваться от `ABC`, чтобы стать абстрактным базовым классом, и мы пометим его методы как абстрактные с использованием декоратора `@abstractmethod`. Вот как должен выглядеть измененный класс:
+
+```python
+class TableFormatter(ABC):
+    @abstractmethod
+    def headings(self, headers):
+        '''
+        Emit the table headings.
+        '''
+        pass
+
+    @abstractmethod
+    def row(self, rowdata):
+        '''
+        Emit a single row of table data.
+        '''
+        pass
+```
+
+Обратите внимание на несколько аспектов этого измененного класса:
+
+- Теперь класс наследуется от `ABC`, что означает, что он официально стал абстрактным базовым классом.
+- Оба метода `headings` и `row` помечены декоратором `@abstractmethod`. Это сообщает Python, что любой подкласс `TableFormatter` должен реализовать эти методы.
+- Мы заменили `NotImplementedError` на `pass`. Декоратор `@abstractmethod` отвечает за то, чтобы убедиться, что подклассы реализуют эти методы, поэтому нам больше не нужен `NotImplementedError`.
+
+## Тестирование абстрактного базового класса
+
+Теперь, когда мы сделали класс `TableFormatter` абстрактным базовым классом, проверим, работает ли он правильно. Мы создадим файл с именем `test_abc.py` со следующим кодом:
+
+```python
+from tableformat import TableFormatter
+
+# Test case 1: Define a class with a misspelled method
+try:
+    class NewFormatter(TableFormatter):
+        def headers(self, headings):  # Misspelled 'headings'
             pass
         def row(self, rowdata):
             pass
 
->>> f = NewFormatter()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: Can't instantiate abstract class NewFormatter with abstract methods headings
->>>
+    f = NewFormatter()
+    print("Test 1 failed - abstract method enforcement not working")
+except TypeError as e:
+    print(f"Test 1 passed - caught error: {e}")
+
+# Test case 2: Define a class that properly implements all methods
+try:
+    class ProperFormatter(TableFormatter):
+        def headings(self, headers):
+            pass
+        def row(self, rowdata):
+            pass
+
+    f = ProperFormatter()
+    print("Test 2 passed - proper implementation works")
+except TypeError as e:
+    print(f"Test 2 failed - error: {e}")
 ```
 
-Здесь абстрактный базовый класс поймал орфографическую ошибку в классе - то, что метод `headings()` был неправильно записан как `headers()`.
+В этом коде есть два тестовых случая. В первом тестовом случае определен класс `NewFormatter`, который пытается наследоваться от `TableFormatter`, но имеет ошибку в имени метода. Во втором тестовом случае определен класс `ProperFormatter`, который правильно реализует все обязательные методы.
+
+Чтобы запустить тест, откройте терминал и выполните следующую команду:
+
+```bash
+python test_abc.py
+```
+
+Вы должны увидеть вывод, похожий на следующий:
+
+```
+Test 1 passed - caught error: Can't instantiate abstract class NewFormatter with abstract methods headings
+Test 2 passed - proper implementation works
+```
+
+Этот вывод подтверждает, что наш абстрактный базовый класс работает как ожидалось. Первый тестовый случай завершается неудачей, потому что класс `NewFormatter` не реализовал метод `headings` правильно. Второй тестовый случай завершается успешно, потому что класс `ProperFormatter` реализовал все обязательные методы.

@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Découvrir davantage sur les closures. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris des aspects avancés des fermetures (closures) en Python. Tout d'abord, vous avez exploré l'utilisation des fermetures comme une structure de données, qui peut encapsuler des données et permettre aux fonctions de maintenir un état entre les appels sans avoir recours à des classes ou des variables globales. Ensuite, vous avez vu comment les fermetures peuvent agir comme un générateur de code, générant des objets propriétés avec vérification de type pour une approche plus fonctionnelle de la validation des attributs.
+
+Vous avez également découvert comment utiliser le protocole de descripteur (descriptor protocol) et la méthode `__set_name__` pour créer des attributs de vérification de type élégants qui capturent automatiquement leurs noms à partir des définitions de classe. Ces techniques montrent la puissance et la flexibilité des fermetures, vous permettant d'implémenter des comportements complexes de manière concise. Comprendre les fermetures et les descripteurs vous offre plus d'outils pour créer un code Python maintenable et robuste.

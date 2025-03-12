@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire Créer du code avec Exec. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris à utiliser la fonction `exec()` de Python pour créer et exécuter dynamiquement du code à l'exécution. Les points clés incluent l'utilisation de base de `exec()` pour exécuter des fragments de code sous forme de chaînes de caractères, l'utilisation avancée pour créer dynamiquement des méthodes de classe en fonction d'attributs, et son application dans le monde réel dans la bibliothèque standard de Python avec `namedtuple`.
+
+La capacité à générer du code dynamiquement est une fonctionnalité puissante qui permet de créer des programmes plus flexibles et adaptables. Bien qu'elle doive être utilisée avec prudence en raison de problèmes de sécurité et de lisibilité, c'est un outil précieux pour les programmeurs Python dans des scénarios spécifiques tels que la création d'API (Application Programming Interface), la mise en œuvre de décorateurs ou la construction de langages spécifiques au domaine. Vous pouvez appliquer ces techniques lors de la création de code qui s'adapte aux conditions d'exécution ou de la construction de frameworks qui génèrent du code en fonction de la configuration.

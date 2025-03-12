@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio de Reglas y Trucos de Alcance. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido sobre las reglas de alcance (scoping) de Python y algunas técnicas poderosas para manejar el alcance. Primero, exploraste cómo usar la función `locals()` para acceder a todas las variables locales dentro de una función. Segundo, aprendiste a inspeccionar los marcos de pila (stack frames) utilizando `sys._getframe()` para acceder a las variables locales del llamador.
+
+También aplicaste estas técnicas para crear un sistema de inicialización de clase flexible. Este sistema captura y establece automáticamente los parámetros de la función como atributos del objeto, mantiene las firmas de función adecuadas en la documentación y admite tanto argumentos posicionales como de palabra clave. Estas técnicas demuestran la flexibilidad y las capacidades de introspección de Python. Aunque la inspección de marcos es una técnica avanzada que debe usarse con cuidado, puede reducir eficazmente el código repetitivo (boilerplate code) cuando se utiliza adecuadamente. Comprender las reglas de alcance y estas técnicas avanzadas te proporciona más herramientas para escribir código Python más limpio y mantenible.

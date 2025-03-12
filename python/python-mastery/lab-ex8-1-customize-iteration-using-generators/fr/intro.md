@@ -1,9 +1,5 @@
 # Introduction
 
-**Objectifs :**
+Dans ce laboratoire, vous apprendrez à personnaliser les itérations à l'aide de générateurs en Python. Vous implémenterez également la fonctionnalité d'itérateur dans des classes personnalisées et créerez des générateurs pour les sources de données en flux.
 
-- Apprendre à personnaliser l'itération à l'aide de générateurs
-
-**Fichiers modifiés :** `structure.py`
-
-**Fichiers créés :** `follow.py`
+Le fichier `structure.py` sera modifié, et un nouveau fichier nommé `follow.py` sera créé au cours de l'expérience.

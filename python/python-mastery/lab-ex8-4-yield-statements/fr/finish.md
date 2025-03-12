@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations! Vous avez terminé le laboratoire sur les instructions `yield`. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire (lab), vous avez appris des techniques essentielles pour gérer les instructions `yield` dans les générateurs et les coroutines Python. Vous avez exploré la gestion du cycle de vie des générateurs, y compris la gestion de l'exception `GeneratorExit` lors de la fermeture ou de la collecte des déchets (garbage collection) et le contrôle de l'arrêt et de la reprise de l'itération. De plus, vous avez appris à gérer les exceptions dans les générateurs, par exemple en utilisant la méthode `throw()` et en écrivant des générateurs robustes pour gérer les exceptions de manière gracieuse.
+
+Ces techniques sont fondamentales pour la construction d'applications Python robustes et maintenables. Elles sont utiles pour le traitement de données, les opérations asynchrones et la gestion des ressources. En gérant correctement le cycle de vie des générateurs et en gérant les exceptions, vous pouvez créer des systèmes résilients qui gèrent les erreurs de manière gracieuse et libèrent les ressources lorsqu'elles ne sont plus nécessaires.

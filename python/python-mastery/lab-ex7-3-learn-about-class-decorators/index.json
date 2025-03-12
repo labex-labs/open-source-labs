@@ -155,5 +155,469 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "了解类装饰器",
+      "description": "使用描述符实现类型检查，创建用于验证的类装饰器，通过继承应用装饰器，添加行转换和方法参数验证，从而了解 Python 中的类装饰器。",
+      "meta": {
+        "title": "了解类装饰器",
+        "description": "使用描述符实现类型检查，创建用于验证的类装饰器，通过继承应用装饰器，添加行转换和方法参数验证，从而了解 Python 中的类装饰器。",
+        "keywords": "Python, 类装饰器, 类型检查, 验证, 继承"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用描述符实现类型检查",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Stock 类的实现",
+                "file": "verify1-1.sh",
+                "hint": "确保你已使用正确的描述符和方法实现了 Stock 类。"
+              }
+            ]
+          },
+          {
+            "title": "创建用于验证的类装饰器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证类装饰器的实现",
+                "file": "verify2-1.sh",
+                "hint": "确保你已实现 validate_attributes 装饰器并更新了 Stock 类。"
+              }
+            ]
+          },
+          {
+            "title": "通过继承应用装饰器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证基于继承的装饰器",
+                "file": "verify3-1.sh",
+                "hint": "确保你已实现 __init_subclass__ 方法并更新了 Stock 类。"
+              }
+            ]
+          },
+          {
+            "title": "添加行转换功能",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证行转换实现",
+                "file": "verify4-1.sh",
+                "hint": "确保你已实现 from_row 方法并更新了 validate_attributes 函数。"
+              }
+            ]
+          },
+          {
+            "title": "添加方法参数验证",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证方法参数验证功能",
+                "file": "verify5-1.sh",
+                "hint": "确保你已更新 validate_attributes 函数，并为 sell 方法添加了注解。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Aprende sobre decoradores de clase",
+      "description": "Implementa la comprobación de tipos con descriptores, crea un decorador de clase para validación, aplica decoradores a través de la herencia, agrega conversión de filas y validación de argumentos de métodos para aprender sobre decoradores de clase en Python.",
+      "meta": {
+        "title": "Aprende sobre decoradores de clase",
+        "description": "Implementa la comprobación de tipos con descriptores, crea un decorador de clase para validación, aplica decoradores a través de la herencia, agrega conversión de filas y validación de argumentos de métodos para aprender sobre decoradores de clase en Python.",
+        "keywords": "Python, decoradores de clase, comprobación de tipos, validación, herencia"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Implementación de la comprobación de tipos con descriptores",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de la clase Stock",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber implementado la clase Stock con descriptores y métodos adecuados."
+              }
+            ]
+          },
+          {
+            "title": "Creación de un decorador de clase para validación",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación del decorador de clase",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber implementado el decorador validate_attributes y actualizado la clase Stock."
+              }
+            ]
+          },
+          {
+            "title": "Aplicación de decoradores a través de la herencia",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar el decorador basado en herencia",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber implementado el método __init_subclass__ y actualizado la clase Stock."
+              }
+            ]
+          },
+          {
+            "title": "Agregar funcionalidad de conversión de filas",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de la conversión de filas",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de haber implementado el método from_row y actualizado la función validate_attributes."
+              }
+            ]
+          },
+          {
+            "title": "Agregar validación de argumentos de método",
+            "text": "es/step5.md",
+            "verify": [
+              {
+                "name": "Verificar la validación de argumentos de método",
+                "file": "verify5-1.sh",
+                "hint": "Asegúrate de haber actualizado la función validate_attributes y de haber agregado anotaciones al método sell."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Apprenez les décorateurs de classe",
+      "description": "Mettez en œuvre la vérification de type avec des descripteurs, créez un décorateur de classe pour la validation, appliquez des décorateurs par héritage, ajoutez la conversion de lignes et la validation des arguments de méthode pour apprendre les décorateurs de classe en Python.",
+      "meta": {
+        "title": "Apprenez les décorateurs de classe",
+        "description": "Mettez en œuvre la vérification de type avec des descripteurs, créez un décorateur de classe pour la validation, appliquez des décorateurs par héritage, ajoutez la conversion de lignes et la validation des arguments de méthode pour apprendre les décorateurs de classe en Python.",
+        "keywords": "Python, décorateurs de classe, vérification de type, validation, héritage"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Mise en œuvre de la vérification de type avec des descripteurs",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la classe Stock",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté la classe Stock avec les descripteurs et les méthodes appropriés."
+              }
+            ]
+          },
+          {
+            "title": "Création d'un décorateur de classe pour la validation",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation du décorateur de classe",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté le décorateur validate_attributes et mis à jour la classe Stock."
+              }
+            ]
+          },
+          {
+            "title": "Application de décorateurs via l'héritage",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier le décorateur basé sur l'héritage",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté la méthode __init_subclass__ et mis à jour la classe Stock."
+              }
+            ]
+          },
+          {
+            "title": "Ajout de la fonctionnalité de conversion de ligne",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation de la conversion de ligne",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous d'avoir implémenté la méthode from_row et mis à jour la fonction validate_attributes."
+              }
+            ]
+          },
+          {
+            "title": "Ajout de la validation des arguments de méthode",
+            "text": "fr/step5.md",
+            "verify": [
+              {
+                "name": "Vérifier la validation des arguments de méthode",
+                "file": "verify5-1.sh",
+                "hint": "Assurez-vous d'avoir mis à jour la fonction validate_attributes et ajouté des annotations à la méthode sell."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Lernen Sie alles über Klassen-Dekorateure",
+      "description": "Implementieren Sie Typüberprüfung mit Deskriptoren, erstellen Sie einen Klassen-Dekorator für die Validierung, wenden Sie Dekorateure über Vererbung an, fügen Sie Zeilenkonvertierung und Methoden-Argument-Validierung hinzu, um sich mit Klassen-Dekoratoren in Python vertraut zu machen.",
+      "meta": {
+        "title": "Lernen Sie alles über Klassen-Dekorateure",
+        "description": "Implementieren Sie Typüberprüfung mit Deskriptoren, erstellen Sie einen Klassen-Dekorator für die Validierung, wenden Sie Dekorateure über Vererbung an, fügen Sie Zeilenkonvertierung und Methoden-Argument-Validierung hinzu, um sich mit Klassen-Dekoratoren in Python vertraut zu machen.",
+        "keywords": "Python, Klassen-Dekorateure, Typüberprüfung, Validierung, Vererbung"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Implementierung der Typüberprüfung mit Deskriptoren",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Implementierung der Stock-Klasse",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Stock-Klasse mit geeigneten Deskriptoren und Methoden implementiert haben."
+              }
+            ]
+          },
+          {
+            "title": "Erstellen eines Klassen-Dekorators für die Validierung",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Implementierung des Klassen-Dekorators",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie den validate_attributes - Dekorator implementiert und die Stock - Klasse aktualisiert haben."
+              }
+            ]
+          },
+          {
+            "title": "Anwenden von Dekoratoren über Vererbung",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie den vererbungsbasierten Dekorator",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die __init_subclass__-Methode implementiert und die Stock-Klasse aktualisiert haben."
+              }
+            ]
+          },
+          {
+            "title": "Hinzufügen der Zeilenkonvertierungsfunktionalität",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Implementierung der Zeilenkonvertierung",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die from_row - Methode implementiert und die validate_attributes - Funktion aktualisiert haben."
+              }
+            ]
+          },
+          {
+            "title": "Hinzufügen der Methodenargumentvalidierung",
+            "text": "de/step5.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Methodenargumentvalidierung",
+                "file": "verify5-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die validate_attributes - Funktion aktualisiert und Anmerkungen zur sell - Methode hinzugefügt haben."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "クラスデコレータについて学ぶ",
+      "description": "ディスクリプタを使用した型チェックを実装し、検証用のクラスデコレータを作成し、継承を通じてデコレータを適用し、行変換とメソッド引数の検証を追加することで、Pythonのクラスデコレータについて学びます。",
+      "meta": {
+        "title": "クラスデコレータについて学ぶ",
+        "description": "ディスクリプタを使用した型チェックを実装し、検証用のクラスデコレータを作成し、継承を通じてデコレータを適用し、行変換とメソッド引数の検証を追加することで、Pythonのクラスデコレータについて学びます。",
+        "keywords": "Python, クラスデコレータ, 型チェック, 検証, 継承"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "ディスクリプタを用いた型チェックの実装",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "Stockクラスの実装を検証する",
+                "file": "verify1-1.sh",
+                "hint": "適切なディスクリプタとメソッドを用いてStockクラスを実装していることを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "検証用のクラスデコレータの作成",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "クラスデコレータの実装を検証する",
+                "file": "verify2-1.sh",
+                "hint": "validate_attributesデコレータを実装し、Stockクラスを更新していることを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "継承によるデコレータの適用",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "継承ベースのデコレータを検証する",
+                "file": "verify3-1.sh",
+                "hint": "__init_subclass__メソッドを実装し、Stockクラスを更新していることを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "行変換機能の追加",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "行変換の実装を検証する",
+                "file": "verify4-1.sh",
+                "hint": "from_rowメソッドを実装し、validate_attributes関数を更新していることを確認してください。"
+              }
+            ]
+          },
+          {
+            "title": "メソッド引数の検証機能の追加",
+            "text": "ja/step5.md",
+            "verify": [
+              {
+                "name": "メソッド引数の検証を確認する",
+                "file": "verify5-1.sh",
+                "hint": "validate_attributes関数を更新し、sellメソッドにアノテーションを追加していることを確認してください。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Изучите декораторы классов",
+      "description": "Реализуйте проверку типов с использованием дескрипторов, создайте декоратор класса для валидации, применяйте декораторы через наследование, добавьте преобразование строк и валидацию аргументов методов, чтобы узнать о декораторах классов в Python.",
+      "meta": {
+        "title": "Изучите декораторы классов",
+        "description": "Реализуйте проверку типов с использованием дескрипторов, создайте декоратор класса для валидации, применяйте декораторы через наследование, добавьте преобразование строк и валидацию аргументов методов, чтобы узнать о декораторах классов в Python.",
+        "keywords": "Python, декораторы классов, проверка типов, валидация, наследование"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Реализация проверки типов с использованием дескрипторов",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверка реализации класса Stock",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы реализовали класс Stock с правильными дескрипторами и методами."
+              }
+            ]
+          },
+          {
+            "title": "Создание декоратора класса для валидации",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверка реализации декоратора класса",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы реализовали декоратор validate_attributes и обновили класс Stock."
+              }
+            ]
+          },
+          {
+            "title": "Применение декораторов через наследование",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверка декоратора на основе наследования",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы реализовали метод __init_subclass__ и обновили класс Stock."
+              }
+            ]
+          },
+          {
+            "title": "Добавление функциональности преобразования строки",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверка реализации преобразования строки",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы реализовали метод from_row и обновили функцию validate_attributes."
+              }
+            ]
+          },
+          {
+            "title": "Добавление валидации аргументов метода",
+            "text": "ru/step5.md",
+            "verify": [
+              {
+                "name": "Проверка валидации аргументов метода",
+                "file": "verify5-1.sh",
+                "hint": "Убедитесь, что вы обновили функцию validate_attributes и добавили аннотации к методу sell."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

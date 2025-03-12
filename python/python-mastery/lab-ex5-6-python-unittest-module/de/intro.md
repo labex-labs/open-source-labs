@@ -1,9 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab lernen Sie, wie Sie das eingebaute `unittest`-Modul von Python verwenden. Dieses Modul bietet ein Framework zum Organisieren und Ausführen von Tests, was ein entscheidender Bestandteil der Softwareentwicklung ist, um sicherzustellen, dass Ihr Code korrekt funktioniert.
 
-- Lernen Sie, wie das `unittest`-Modul von Python verwendet wird
-
-**Erstellte Dateien:** `teststock.py`
-
-In dieser Übung werden Sie die grundlegenden Mechanismen des Einsatzes des `unittest`-Moduls von Python erkunden.
+Sie werden auch lernen, grundlegende Testfälle zu erstellen und auszuführen sowie auf erwartete Fehler und Ausnahmen zu testen. Das `unittest`-Modul vereinfacht den Prozess der Erstellung von Test-Suiten, des Ausführens von Tests und der Überprüfung der Ergebnisse. Die Datei `teststock.py` wird während dieses Labs erstellt.

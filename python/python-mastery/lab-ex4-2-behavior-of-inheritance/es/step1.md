@@ -1,96 +1,165 @@
-# Las direcciones de la herencia
+# Comprendiendo la Herencia Simple y Múltiple
 
-Python tiene dos "direcciones" diferentes de herencia. La primera se encuentra en el concepto de "herencia simple" donde una serie de clases heredan de un solo padre. Por ejemplo, pruebe este ejemplo:
+En este paso, aprenderemos sobre los dos tipos principales de herencia en Python: herencia simple y herencia múltiple. La herencia es un concepto fundamental en la programación orientada a objetos que permite a una clase heredar atributos y métodos de otras clases. También veremos cómo Python determina qué método llamar cuando hay múltiples candidatos, un proceso conocido como resolución de métodos.
+
+## Herencia Simple
+
+La herencia simple ocurre cuando las clases forman una sola línea de ascendencia. Puedes pensar en ello como en un árbol genealógico donde cada clase tiene solo un padre directo. Vamos a crear un ejemplo para entender cómo funciona.
+
+Primero, abre una nueva terminal en el WebIDE. Una vez abierta la terminal, inicia el intérprete de Python escribiendo el siguiente comando y luego presionando Enter:
+
+```bash
+python3
+```
+
+Ahora que estás en el intérprete de Python, crearemos tres clases que formen una cadena de herencia simple. Ingresa el siguiente código:
 
 ```python
->>> class A:
-        def spam(self):
-            print('A.spam')
+class A:
+    def spam(self):
+        print('A.spam')
 
->>> class B(A):
-        def spam(self):
-            print('B.spam')
-            super().spam()
+class B(A):
+    def spam(self):
+        print('B.spam')
+        super().spam()
 
->>> class C(B):
-        def spam(self):
-            print('C.spam')
-            super().spam()
+class C(B):
+    def spam(self):
+        print('C.spam')
+        super().spam()
+```
 
+En este código, la clase `B` hereda de la clase `A`, y la clase `C` hereda de la clase `B`. La función `super()` se utiliza para llamar al método de la clase padre.
 
->>> C.__mro__
+Después de definir estas clases, podemos averiguar el orden en el que Python busca los métodos. Este orden se llama Orden de Resolución de Métodos (Method Resolution Order, MRO). Para ver el MRO de la clase `C`, escribe el siguiente código:
+
+```python
+C.__mro__
+```
+
+Deberías ver una salida similar a esta:
+
+```
 (<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)
->>> c = C()
->>> c.spam()
+```
+
+Esta salida muestra que Python busca primero un método en la clase `C`, luego en la clase `B`, luego en la clase `A` y, finalmente, en la clase base `object`.
+
+Ahora, creemos una instancia de la clase `C` y llamemos a su método `spam()`. Escribe el siguiente código:
+
+```python
+c = C()
+c.spam()
+```
+
+Deberías ver la siguiente salida:
+
+```
 C.spam
 B.spam
 A.spam
->>>
 ```
 
-Observe que el atributo `__mro__` de la clase `C` codifica a todos sus ancestros en orden. Cuando se invoca el método `spam()`, recorre la jerarquía clase por clase siguiendo el MRO.
+Esta salida demuestra cómo funciona `super()` en una cadena de herencia simple. Cuando `C.spam()` llama a `super().spam()`, llama a `B.spam()`. Luego, cuando `B.spam()` llama a `super().spam()`, llama a `A.spam()`.
 
-Con la herencia múltiple, se obtiene un tipo diferente de herencia que permite que diferentes clases se combinen. Pruebe este ejemplo:
+## Herencia Múltiple
+
+La herencia múltiple permite que una clase herede de más de una clase padre. Esto da a una clase acceso a los atributos y métodos de todas sus clases padre. Veamos cómo funciona la resolución de métodos en este caso.
+
+Ingresa el siguiente código en tu intérprete de Python:
 
 ```python
->>> class Base:
-        def spam(self):
-            print('Base.spam')
+class Base:
+    def spam(self):
+        print('Base.spam')
 
->>> class X(Base):
-        def spam(self):
-            print('X.spam')
-            super().spam()
+class X(Base):
+    def spam(self):
+        print('X.spam')
+        super().spam()
 
->>> class Y(Base):
-        def spam(self):
-            print('Y.spam')
-            super().spam()
+class Y(Base):
+    def spam(self):
+        print('Y.spam')
+        super().spam()
 
->>> class Z(Base):
-        def spam(self):
-            print('Z.spam')
-            super().spam()
-
->>>
+class Z(Base):
+    def spam(self):
+        print('Z.spam')
+        super().spam()
 ```
 
-Tenga en cuenta que todas las clases anteriores heredan de un padre común `Base`. Sin embargo, las clases `X`, `Y` y `Z` no están directamente relacionadas entre sí (no hay una cadena de herencia que las una).
-
-Sin embargo, observe lo que sucede en la herencia múltiple:
+Ahora, crearemos una clase `M` que herede de múltiples clases padre `X`, `Y` y `Z`. Ingresa el siguiente código:
 
 ```python
->>> class M(X,Y,Z):
-        pass
+class M(X, Y, Z):
+    pass
 
->>> M.__mro__
+M.__mro__
+```
+
+Deberías ver la siguiente salida:
+
+```
 (<class '__main__.M'>, <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>, <class '__main__.Base'>, <class 'object'>)
->>> m = M()
->>> m.spam()
-X.spam
-Y.spam
-Z.spam
-Base.spam
->>>
 ```
 
-Aquí, se ven todas las clases apiladas juntas en el orden proporcionado por la subclase. Suponga que la subclase reordena el orden de las clases:
+Esta salida muestra el Orden de Resolución de Métodos para la clase `M`. Python buscará métodos en este orden.
+
+Creemos una instancia de la clase `M` y llamemos a su método `spam()`:
 
 ```python
->>> class N(Z,Y,X):
-        pass
+m = M()
+m.spam()
+```
 
->>> N.__mro__
+Deberías ver la siguiente salida:
+
+```
+X.spam
+Y.spam
+Z.spam
+Base.spam
+```
+
+Observa que `super()` no solo llama al método de la clase padre inmediata. En lugar de eso, sigue el Orden de Resolución de Métodos (MRO) definido por la clase hija.
+
+Creemos otra clase `N` con las clases padre en un orden diferente:
+
+```python
+class N(Z, Y, X):
+    pass
+
+N.__mro__
+```
+
+Deberías ver la siguiente salida:
+
+```
 (<class '__main__.N'>, <class '__main__.Z'>, <class '__main__.Y'>, <class '__main__.X'>, <class '__main__.Base'>, <class 'object'>)
->>> n = N()
->>> n.spam()
+```
+
+Ahora, crea una instancia de la clase `N` y llama a su método `spam()`:
+
+```python
+n = N()
+n.spam()
+```
+
+Deberías ver la siguiente salida:
+
+```
 Z.spam
 Y.spam
 X.spam
 Base.spam
->>>
 ```
 
-Aquí, se ve que el orden de los padres se invierte. Presta atención cuidadosamente a lo que está haciendo `super()` en ambos casos. No delega en el padre inmediato de cada clase, sino que se mueve a la siguiente clase en el MRO. No solo eso, el orden exacto está controlado por el hijo. Esto es bastante extraño.
+Esto muestra un concepto importante: en la herencia múltiple de Python, el orden de las clases padre en la definición de la clase determina el Orden de Resolución de Métodos. La función `super()` sigue este orden sin importar desde qué clase se llame.
 
-También observe que el padre común `Base` sirve para terminar la cadena de operaciones de `super()`. Específicamente, el método `Base.spam()` no llama a ningún método más. También aparece al final del MRO ya que es el padre de todas las clases que se están combinando.
+Cuando hayas terminado de explorar estos conceptos, puedes salir del intérprete de Python escribiendo el siguiente código:
+
+```python
+exit()
+```

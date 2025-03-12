@@ -1,11 +1,5 @@
 # Einführung
 
-**Ziele:**
+In diesem Lab lernen Sie über verwaltete Generatoren (managed generators) kennen und verstehen, wie Sie diese auf ungewöhnliche Weise ansteuern können. Sie werden auch einen einfachen Task-Scheduler (Aufgabenplaner) erstellen und einen Netzwerkserver mithilfe von Generatoren entwickeln.
 
-- Lernen Sie über verwaltete Generatoren
-
-**Erstellte Dateien:** `multitask.py`, `server.py`
-
-Eine Generator- oder Coroutine-Funktion kann niemals ohne die Unterstützung anderer Code ausgeführt werden. Beispielsweise führt ein Generator, der für die Iteration verwendet wird, nichts aus, es sei denn, die Iteration wird tatsächlich mithilfe einer for-Schleife durchgeführt. Ähnlich wird eine Sammlung von Coroutinen nicht ausgeführt, es sei denn, ihre `send()`-Methode wird auf irgend eine Weise aufgerufen.
-
-In fortgeschrittenen Anwendungen von Generatoren ist es möglich, Generatoren auf verschiedene ungewöhnliche Weise zu steuern. In dieser Übung betrachten wir einige Beispiele.
+Eine Generatorfunktion in Python erfordert externen Code zur Ausführung. Beispielsweise wird ein Iterationsgenerator nur ausgeführt, wenn er in einer `for`-Schleife iteriert wird, und Coroutinen (Korrekturen) müssen über ihre `send()`-Methode aufgerufen werden. In diesem Lab werden wir praktische Beispiele für die Ansteuerung von Generatoren in fortgeschrittenen Anwendungen untersuchen. Die während dieses Labs erstellten Dateien sind `multitask.py` und `server.py`.

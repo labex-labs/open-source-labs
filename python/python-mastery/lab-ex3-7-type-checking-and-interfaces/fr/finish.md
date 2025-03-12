@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire sur la vérification de type et les interfaces. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris plusieurs concepts clés de la programmation orientée objet pour améliorer le code Python. Tout d'abord, vous avez implémenté la vérification de types dans la fonction `print_table()`, ce qui garantit que seuls des formateurs valides sont utilisés, améliorant ainsi la robustesse du code. Ensuite, vous avez transformé la classe `TableFormatter` en une classe de base abstraite, obligeant les sous - classes à implémenter des méthodes spécifiques.
+
+De plus, vous avez appliqué le modèle de méthode de gabarit (template method pattern) en créant la classe de base abstraite `CSVParser` et ses implémentations concrètes. Cela réduit la duplication de code tout en maintenant une structure d'algorithme cohérente. Ces techniques sont essentielles pour créer un code Python plus maintenable et robuste, en particulier dans les applications à grande échelle. Pour approfondir vos connaissances, explorez les indications de type en Python (PEP 484), les classes de protocole et les modèles de conception en Python.

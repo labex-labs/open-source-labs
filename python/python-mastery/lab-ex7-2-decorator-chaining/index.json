@@ -140,5 +140,433 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "装饰器链式调用与参数化装饰器",
+      "description": "在 Python 中，在装饰器里保留函数元数据，创建带参数的装饰器，将装饰器应用于类方法，并构建一个带参数的类型强制装饰器。",
+      "meta": {
+        "title": "装饰器链式调用与参数化装饰器",
+        "description": "在 Python 中，在装饰器里保留函数元数据，创建带参数的装饰器，将装饰器应用于类方法，并构建一个带参数的类型强制装饰器。",
+        "keywords": "Python、装饰器链式调用、参数化装饰器、函数元数据、类型强制"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "在装饰器中保留函数元数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "检查 logcall.py 中是否导入了 wraps",
+                "file": "verify1-1.sh",
+                "hint": "确保你在 logcall.py 中从 'functools' 导入了 'wraps'"
+              },
+              {
+                "name": "检查 validate.py 中是否导入了 wraps",
+                "file": "verify1-2.sh",
+                "hint": "确保你已将 'functools' 中的 'wraps' 添加到 validate.py 中，并将其应用于包装函数"
+              }
+            ]
+          },
+          {
+            "title": "创建带参数的装饰器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "检查 logformat 装饰器的实现",
+                "file": "verify2-1.sh",
+                "hint": "确保你已在 logcall.py 中正确实现了 logformat 装饰器"
+              }
+            ]
+          },
+          {
+            "title": "将装饰器应用于类方法",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "检查 methods.py 的实现",
+                "file": "verify3-1.sh",
+                "hint": "确保你已创建了 methods.py，并且其中的装饰器顺序正确"
+              }
+            ]
+          },
+          {
+            "title": "创建带参数的类型强制装饰器",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "检查 enforce 装饰器的实现",
+                "file": "verify4-1.sh",
+                "hint": "确保你已在 validate.py 中正确实现了 enforce 装饰器"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Encadenamiento de decoradores y decoradores parametrizados",
+      "description": "Preserva los metadatos de las funciones en decoradores, crea decoradores con argumentos, aplica decoradores a métodos de clase y construye un decorador de aplicación de tipos con argumentos en Python.",
+      "meta": {
+        "title": "Encadenamiento de decoradores y decoradores parametrizados",
+        "description": "Preserva los metadatos de las funciones en decoradores, crea decoradores con argumentos, aplica decoradores a métodos de clase y construye un decorador de aplicación de tipos con argumentos en Python.",
+        "keywords": "Python, encadenamiento de decoradores, decoradores parametrizados, metadatos de funciones, aplicación de tipos"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Preservar metadatos de funciones en decoradores",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Comprobar si 'wraps' está importado en logcall.py",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber importado 'wraps' de 'functools' en logcall.py"
+              },
+              {
+                "name": "Comprobar si 'wraps' está importado en validate.py",
+                "file": "verify1-2.sh",
+                "hint": "Asegúrate de haber agregado 'wraps' de 'functools' a validate.py y de haberlo aplicado a la función envolvente (wrapper function)"
+              }
+            ]
+          },
+          {
+            "title": "Creación de decoradores con argumentos",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Comprobar la implementación del decorador logformat",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber implementado correctamente el decorador logformat en logcall.py"
+              }
+            ]
+          },
+          {
+            "title": "Aplicación de decoradores a métodos de clase",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Comprobar la implementación de methods.py",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber creado methods.py con los decoradores en el orden adecuado"
+              }
+            ]
+          },
+          {
+            "title": "Creación de un decorador de aplicación de tipos con argumentos",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Comprobar la implementación del decorador enforce",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de haber implementado correctamente el decorador enforce en validate.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Chaînage de décorateurs et décorateurs paramétrés",
+      "description": "Conservez les métadonnées des fonctions dans les décorateurs, créez des décorateurs avec des arguments, appliquez des décorateurs aux méthodes de classe et construisez un décorateur de vérification de type avec des arguments en Python.",
+      "meta": {
+        "title": "Chaînage de décorateurs et décorateurs paramétrés",
+        "description": "Conservez les métadonnées des fonctions dans les décorateurs, créez des décorateurs avec des arguments, appliquez des décorateurs aux méthodes de classe et construisez un décorateur de vérification de type avec des arguments en Python.",
+        "keywords": "Python, chaînage de décorateurs, décorateurs paramétrés, métadonnées de fonction, vérification de type"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Conservation des métadonnées de fonction dans les décorateurs",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifiez si 'wraps' est importé dans logcall.py",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous d'avoir importé 'wraps' depuis 'functools' dans logcall.py"
+              },
+              {
+                "name": "Vérifiez si 'wraps' est importé dans validate.py",
+                "file": "verify1-2.sh",
+                "hint": "Assurez-vous d'avoir ajouté 'wraps' depuis 'functools' dans validate.py et de l'avoir appliqué à la fonction wrapper"
+              }
+            ]
+          },
+          {
+            "title": "Création de décorateurs avec des arguments",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifiez l'implémentation du décorateur logformat",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir correctement implémenté le décorateur logformat dans logcall.py"
+              }
+            ]
+          },
+          {
+            "title": "Application de décorateurs aux méthodes de classe",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifiez l'implémentation de methods.py",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir créé methods.py avec des décorateurs correctement ordonnés"
+              }
+            ]
+          },
+          {
+            "title": "Création d'un décorateur de vérification de type avec des arguments",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifiez l'implémentation du décorateur enforce",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous d'avoir correctement implémenté le décorateur enforce dans validate.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Decorator Verkettung und parametrisierte Decorators",
+      "description": "Bewahren Sie Funktionsmetadaten in Decorators auf, erstellen Sie Decorators mit Argumenten, wenden Sie Decorators auf Klassenmethoden an und bauen Sie einen Typüberprüfungs-Decorator mit Argumenten in Python.",
+      "meta": {
+        "title": "Decorator Verkettung und parametrisierte Decorators",
+        "description": "Bewahren Sie Funktionsmetadaten in Decorators auf, erstellen Sie Decorators mit Argumenten, wenden Sie Decorators auf Klassenmethoden an und bauen Sie einen Typüberprüfungs-Decorator mit Argumenten in Python.",
+        "keywords": "Python, Decorator Verkettung, parametrisierte Decorators, Funktionsmetadaten, Typüberprüfung"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Aufbewahrung von Funktionsmetadaten in Decorators",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Prüfen, ob 'wraps' in logcall.py importiert ist",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie 'wraps' aus 'functools' in logcall.py importiert haben"
+              },
+              {
+                "name": "Prüfen, ob 'wraps' in validate.py importiert ist",
+                "file": "verify1-2.sh",
+                "hint": "Stellen Sie sicher, dass Sie 'wraps' aus 'functools' in validate.py hinzugefügt und es auf die Wrapper-Funktion angewendet haben"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen von Decorators mit Argumenten",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Prüfen der Implementierung des logformat-Decorators",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie den logformat-Decorator in logcall.py korrekt implementiert haben"
+              }
+            ]
+          },
+          {
+            "title": "Anwenden von Decorators auf Klassenmethoden",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Prüfen der Implementierung in methods.py",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie methods.py mit korrekt geordneten Decorators erstellt haben"
+              }
+            ]
+          },
+          {
+            "title": "Erstellen eines Typüberprüfungs-Decorators mit Argumenten",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Prüfen der Implementierung des enforce-Decorators",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie den enforce-Decorator in validate.py korrekt implementiert haben"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "デコレータの連鎖とパラメータ付きデコレータ",
+      "description": "Python で、デコレータ内の関数メタデータを保持し、引数付きのデコレータを作成し、クラスメソッドにデコレータを適用し、引数付きの型強制デコレータを構築します。",
+      "meta": {
+        "title": "デコレータの連鎖とパラメータ付きデコレータ",
+        "description": "Python で、デコレータ内の関数メタデータを保持し、引数付きのデコレータを作成し、クラスメソッドにデコレータを適用し、引数付きの型強制デコレータを構築します。",
+        "keywords": "Python, デコレータの連鎖, パラメータ付きデコレータ, 関数メタデータ, 型強制"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "デコレータで関数メタデータを保持する",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "logcall.py で wraps がインポートされているか確認する",
+                "file": "verify1-1.sh",
+                "hint": "logcall.py で 'functools' から 'wraps' をインポートしていることを確認してください"
+              },
+              {
+                "name": "validate.py で wraps がインポートされているか確認する",
+                "file": "verify1-2.sh",
+                "hint": "validate.py に 'functools' から 'wraps' を追加し、ラッパー関数に適用していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "引数付きのデコレータを作成する",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "logformat デコレータの実装を確認する",
+                "file": "verify2-1.sh",
+                "hint": "logcall.py で logformat デコレータを正しく実装していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "クラスメソッドにデコレータを適用する",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "methods.py の実装を確認する",
+                "file": "verify3-1.sh",
+                "hint": "methods.py を正しい順序でデコレータを配置して作成していることを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "引数付きの型強制デコレータを作成する",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "enforce デコレータの実装を確認する",
+                "file": "verify4-1.sh",
+                "hint": "validate.py で enforce デコレータを正しく実装していることを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Цепочки декораторов и параметризованные декораторы",
+      "description": "Сохраняйте метаданные функций в декораторах, создавайте декораторы с аргументами, применяйте декораторы к методам класса и создавайте декоратор для принудительного применения типов с аргументами на Python.",
+      "meta": {
+        "title": "Цепочки декораторов и параметризованные декораторы",
+        "description": "Сохраняйте метаданные функций в декораторах, создавайте декораторы с аргументами, применяйте декораторы к методам класса и создавайте декоратор для принудительного применения типов с аргументами на Python.",
+        "keywords": "Python, цепочки декораторов, параметризованные декораторы, метаданные функций, принудительное применение типов"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Сохранение метаданных функций в декораторах",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверьте, импортирован ли wraps в logcall.py",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы импортировали 'wraps' из 'functools' в logcall.py"
+              },
+              {
+                "name": "Проверьте, импортирован ли wraps в validate.py",
+                "file": "verify1-2.sh",
+                "hint": "Убедитесь, что вы добавили 'wraps' из 'functools' в validate.py и применили его к обёртке функции"
+              }
+            ]
+          },
+          {
+            "title": "Создание декораторов с аргументами",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверьте реализацию декоратора logformat",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы правильно реализовали декоратор logformat в logcall.py"
+              }
+            ]
+          },
+          {
+            "title": "Применение декораторов к методам класса",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверьте реализацию в methods.py",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы создали файл methods.py с правильно упорядоченными декораторами"
+              }
+            ]
+          },
+          {
+            "title": "Создание декоратора для принудительного применения типов с аргументами",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверьте реализацию декоратора enforce",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы правильно реализовали декоратор enforce в файле validate.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

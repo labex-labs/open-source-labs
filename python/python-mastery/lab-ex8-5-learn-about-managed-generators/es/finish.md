@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicitaciones! Has completado el laboratorio Aprende sobre Generadores Administrados. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido sobre el concepto de generadores gestionados en Python. Has explorado cómo pausar y reanudar generadores utilizando la declaración `yield`, y has construido un sencillo programador de tareas (task scheduler) para ejecutar múltiples generadores de forma concurrente. Además, has extendido el programador de tareas para manejar de manera eficiente la E/S de red y has implementado un servidor de red capaz de manejar múltiples conexiones simultáneamente.
+
+Este patrón de uso de generadores para la multitarea cooperativa es una técnica poderosa que sustenta muchos marcos de trabajo de programación asíncrona en Python, como el módulo incorporado `asyncio`. Este enfoque ofrece varias ventajas, incluyendo código secuencial simple, manejo eficiente de E/S no bloqueante, multitarea cooperativa sin múltiples hilos y control detallado de la ejecución de tareas. Estas técnicas son valiosas para construir aplicaciones de red de alto rendimiento y sistemas que requieran un manejo eficiente de operaciones concurrentes.

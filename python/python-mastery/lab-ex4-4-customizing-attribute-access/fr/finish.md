@@ -1,3 +1,5 @@
-# Sommaire
+# Résumé
 
-Félicitations ! Vous avez terminé le laboratoire sur la personnalisation de l'accès aux attributs. Vous pouvez pratiquer d'autres laboratoires sur LabEx pour améliorer vos compétences.
+Dans ce laboratoire, vous avez appris à connaître des mécanismes puissants de Python pour personnaliser l'accès aux attributs et le comportement des objets. Vous avez exploré comment utiliser `__setattr__` pour contrôler quels attributs peuvent être définis sur un objet, permettant ainsi un accès contrôlé aux propriétés des objets. De plus, vous avez implémenté un proxy en lecture seule pour envelopper des objets existants, empêchant les modifications tout en préservant leur fonctionnalité.
+
+Vous avez également approfondi la différence entre la délégation et l'héritage pour la réutilisation et la personnalisation du code. En utilisant `__getattr__`, vous avez appris à transférer les appels de méthode à un objet enveloppé. Ces techniques offrent des moyens flexibles de contrôler le comportement des objets au - delà de l'héritage standard, utiles pour créer des interfaces contrôlées, implémenter des restrictions d'accès, ajouter des comportements transversaux et composer des comportements à partir de plusieurs sources. Comprendre ces modèles vous aide à écrire un code Python plus maintenable et flexible.

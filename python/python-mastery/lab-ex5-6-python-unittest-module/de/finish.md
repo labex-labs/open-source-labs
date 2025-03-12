@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab zu dem Python Unittest-Modul abgeschlossen. Sie können in LabEx weitere Labs ausprobieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie gelernt, wie Sie das `unittest`-Modul von Python verwenden, um automatisierte Tests zu erstellen und auszuführen. Sie haben einen grundlegenden Testfall erstellt, indem Sie die `unittest.TestCase`-Klasse erweitert haben, Tests geschrieben, um die normale Funktionsweise der Methoden und Eigenschaften einer Klasse zu überprüfen, und Tests erstellt, um auf geeignete Ausnahmen (Exceptions) unter Fehlersituationen zu prüfen. Sie haben auch gelernt, wie Sie bestimmte Tests ausführen und die Testermittlung (test discovery) nutzen.
+
+Das Unit-Testing ist eine grundlegende Fähigkeit in der Softwareentwicklung, die die Zuverlässigkeit und Korrektheit des Codes gewährleistet. Das Schreiben umfassender Tests hilft, Fehler frühzeitig zu erkennen und gibt Ihnen Vertrauen in das Verhalten Ihres Codes. Wenn Sie Python-Anwendungen entwickeln, sollten Sie einen testgetriebenen Entwicklungsansatz (Test-Driven Development, TDD) in Betracht ziehen und Tests schreiben, bevor Sie die Funktionalität implementieren, um einen robusteren und wartbareren Code zu erhalten.

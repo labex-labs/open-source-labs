@@ -1,18 +1,25 @@
-# Meilleure représentation pour la présentation d'objets
+# Amélioration de la représentation des objets avec `__repr__`
 
-Tous les objets Python ont deux représentations sous forme de chaîne de caractères. La première représentation est créée par la conversion en chaîne via `str()` (qui est appelée par `print`). La représentation sous forme de chaîne est généralement une version bien formatée de l'objet destinée aux humains. La seconde représentation est une représentation de code de l'objet créée par `repr()` (ou simplement en visualisant une valeur dans l'interpréteur interactif). La représentation de code montre généralement le code que vous devez taper pour obtenir l'objet. Voici un exemple qui illustre l'utilisation de dates :
+En Python, les objets peuvent être représentés sous forme de chaînes de caractères de deux manières différentes. Ces représentations servent à des fins différentes et sont utiles dans diverses situations.
+
+Le premier type est la **représentation sous forme de chaîne de caractères**. Elle est créée par la fonction `str()`, qui est appelée automatiquement lorsque vous utilisez la fonction `print()`. La représentation sous forme de chaîne de caractères est conçue pour être lisible par l'homme. Elle présente l'objet dans un format que nous pouvons facilement comprendre et interpréter.
+
+Le deuxième type est la **représentation sous forme de code**. Elle est générée par la fonction `repr()`. La représentation sous forme de code montre le code que vous devriez écrire pour recréer l'objet. Elle vise plus à fournir un moyen précis et non ambigu de représenter l'objet dans le code.
+
+Regardons un exemple concret en utilisant la classe `date` intégrée à Python. Cela vous aidera à voir la différence entre les représentations sous forme de chaîne de caractères et de code en action.
 
 ```python
 >>> from datetime import date
 >>> d = date(2008, 7, 5)
->>> print(d)              # utilise str()
+>>> print(d)              # Uses str()
 2008-07-05
->>> d    # utilise repr()
+>>> d                     # Uses repr()
 datetime.date(2008, 7, 5)
->>>
 ```
 
-Il existe plusieurs techniques pour obtenir la chaîne `repr()` dans la sortie :
+Dans cet exemple, lorsque nous utilisons `print(d)`, Python appelle la fonction `str()` sur l'objet `date` `d`, et nous obtenons une date lisible par l'homme au format `AAAA-MM-JJ`. Lorsque nous tapons simplement `d` dans le shell interactif, Python appelle la fonction `repr()`, et nous voyons le code nécessaire pour recréer l'objet `date`.
+
+Vous pouvez obtenir explicitement la chaîne de caractères retournée par `repr()` de diverses manières. Voici quelques exemples :
 
 ```python
 >>> print('The date is', repr(d))
@@ -21,25 +28,64 @@ The date is datetime.date(2008, 7, 5)
 The date is datetime.date(2008, 7, 5)
 >>> print('The date is %r' % d)
 The date is datetime.date(2008, 7, 5)
->>>
 ```
 
-Modifiez l'objet `Stock` que vous avez créé de manière à ce que la méthode `__repr__()` produise une sortie plus utile. Par exemple :
+Maintenant, appliquons ce concept à notre classe `Stock`. Nous allons améliorer la classe en implémentant la méthode `__repr__`. Cette méthode spéciale est appelée par Python lorsqu'il a besoin de la représentation sous forme de code d'un objet.
+
+Pour ce faire, ouvrez le fichier `stock.py` dans votre éditeur. Ensuite, ajoutez la méthode `__repr__` à la classe `Stock`. La méthode `__repr__` doit retourner une chaîne de caractères qui montre le code nécessaire pour recréer l'objet `Stock`.
 
 ```python
->>> goog = Stock('GOOG', 100, 490.10)
+def __repr__(self):
+    return f"Stock('{self.name}', {self.shares}, {self.price})"
+```
+
+Après avoir ajouté la méthode `__repr__`, votre classe `Stock` complète devrait maintenant ressembler à ceci :
+
+```python
+class Stock:
+    def __init__(self, name, shares, price):
+        self.name = name
+        self.shares = shares
+        self.price = price
+
+    def cost(self):
+        return self.shares * self.price
+
+    def sell(self, shares):
+        self.shares -= shares
+
+    def __repr__(self):
+        return f"Stock('{self.name}', {self.shares}, {self.price})"
+```
+
+Maintenant, testons notre classe `Stock` modifiée. Ouvrez un shell interactif Python en exécutant la commande suivante dans votre terminal :
+
+```bash
+python3
+```
+
+Une fois le shell interactif ouvert, essayez les commandes suivantes :
+
+```python
+>>> import stock
+>>> goog = stock.Stock('GOOG', 100, 490.10)
 >>> goog
 Stock('GOOG', 100, 490.1)
->>>
 ```
 
-Voyez ce qui se passe lorsque vous lisez un portefeuille d'actions et que vous visualisez la liste résultante après avoir effectué ces modifications. Par exemple :
+Vous pouvez également voir comment la méthode `__repr__` fonctionne avec un portefeuille d'actions. Voici un exemple :
 
 ```python
->>> import stock, reader
+>>> import reader
 >>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> portfolio
-[Stock('AA', 100, 32.2), Stock('IBM', 50, 91.1), Stock('CAT', 150, 83.44), Stock('MSFT', 200, 51.23),
- Stock('GE', 95, 40.37), Stock('MSFT', 50, 65.1), Stock('IBM', 100, 70.44)]
->>>
+[Stock('AA', 100, 32.2), Stock('IBM', 50, 91.1), Stock('CAT', 150, 83.44), Stock('MSFT', 200, 51.23), Stock('GE', 95, 40.37), Stock('MSFT', 50, 65.1), Stock('IBM', 100, 70.44)]
+```
+
+Comme vous pouvez le voir, la méthode `__repr__` a rendu nos objets `Stock` beaucoup plus informatifs lorsqu'ils sont affichés dans le shell interactif ou le débogueur. Elle montre maintenant le code nécessaire pour recréer chaque objet, ce qui est très utile pour le débogage et la compréhension de l'état des objets.
+
+Une fois que vous avez terminé les tests, vous pouvez quitter l'interpréteur Python en exécutant la commande suivante :
+
+```python
+>>> exit()
 ```

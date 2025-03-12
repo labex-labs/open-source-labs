@@ -1,3 +1,5 @@
 # Zusammenfassung
 
-Herzlichen Glückwunsch! Sie haben das Lab zu den `yield`-Anweisungen abgeschlossen. Sie können in LabEx weitere Labs absolvieren, um Ihre Fähigkeiten zu verbessern.
+In diesem Lab haben Sie essentielle Techniken zum Verwalten von `yield`-Anweisungen in Python-Generatoren und -Koroutinen gelernt. Sie haben die Verwaltung der Lebensdauer von Generatoren untersucht, einschließlich der Behandlung der `GeneratorExit`-Ausnahme beim Schließen oder der Garbage Collection sowie der Kontrolle des Iterationsabbruchs und -fortsetzens. Darüber hinaus haben Sie die Ausnahmebehandlung in Generatoren kennengelernt, wie z. B. die Verwendung der `throw()`-Methode und das Schreiben robuster Generatoren, um Ausnahmen gracefully zu behandeln.
+
+Diese Techniken sind grundlegend für das Bauen robuster und wartbarer Python-Anwendungen. Sie sind nützlich für die Datenverarbeitung, asynchrone Operationen und die Ressourcenverwaltung. Durch die richtige Verwaltung der Lebensdauer von Generatoren und die Behandlung von Ausnahmen können Sie widerstandsfähige Systeme erstellen, die Fehler gracefully behandeln und Ressourcen aufräumen, wenn sie nicht mehr benötigt werden.

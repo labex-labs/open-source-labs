@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio de Variables de Clase y Métodos de Clase. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido sobre dos características cruciales de Python: las variables de clase y los métodos de clase. Las variables de clase se comparten entre todas las instancias de la clase y se pueden utilizar para la configuración. Los métodos de clase operan sobre la propia clase, marcados con el decorador `@classmethod`. Los constructores alternativos, un uso común de los métodos de clase, ofrecen diferentes formas de crear objetos. La herencia con variables de clase permite que las subclases personalicen el comportamiento al anularlas, y el uso de métodos de clase puede lograr un diseño de código flexible.
+
+Estos conceptos son poderosos para crear código Python bien organizado y flexible. Al colocar las conversiones de tipo dentro de la clase y proporcionar una interfaz uniforme a través de métodos de clase, puedes escribir utilidades de propósito más general. Para ampliar tus conocimientos, puedes explorar más casos de uso, crear jerarquías de clases y construir complejas tuberías de procesamiento de datos utilizando métodos de clase.

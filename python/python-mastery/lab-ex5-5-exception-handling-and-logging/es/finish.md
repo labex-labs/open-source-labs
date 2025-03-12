@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicitaciones! Has completado el laboratorio de Manejo de Excepciones y Registro. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio, has aprendido varios conceptos clave sobre el manejo de excepciones y el registro de eventos (logging) en Python. En primer lugar, has comprendido cómo se producen las excepciones durante el procesamiento de datos e implementado bloques try-except para manejarlas de manera elegante. También has modificado el código para seguir procesando los datos válidos cuando surgen errores.
+
+En segundo lugar, has aprendido sobre el módulo de registro de eventos de Python y sus ventajas en comparación con las declaraciones de impresión (`print`). Has implementado diferentes niveles de registro como WARNING y DEBUG y has visto cómo configurar el registro de eventos para diferentes niveles de detalle. Estas habilidades son cruciales para escribir aplicaciones robustas de Python, especialmente cuando se trata de datos externos propensos a errores, construir aplicaciones desatendidas o desarrollar sistemas que necesitan información de diagnóstico. Ahora puedes aplicar estas técnicas a tus proyectos de Python para una mejor confiabilidad y mantenibilidad.

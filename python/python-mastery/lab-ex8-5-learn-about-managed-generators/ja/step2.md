@@ -1,93 +1,50 @@
-# ネットワーク接続を提供するタスクとしてのジェネレータ
+# ジェネレーターを使ったタスクスケジューラーの作成
 
-`server.py` というファイルに、次のコードを入力します。
+プログラミングにおいて、タスクスケジューラーは複数のタスクを効率的に管理し実行するための重要なツールです。このセクションでは、ジェネレーターを使って、複数のジェネレーター関数を同時に実行できる簡単なタスクスケジューラーを構築します。これにより、ジェネレーターを管理して協調的なマルチタスク処理を行う方法を学びます。協調的なマルチタスク処理とは、タスクが順番に実行され、実行時間を共有することを意味します。
+
+まず、新しいファイルを作成する必要があります。`/home/labex/project` ディレクトリに移動し、`multitask.py` という名前のファイルを作成します。このファイルには、タスクスケジューラーのコードが含まれます。
 
 ```python
-# server.py
+# multitask.py
 
-from socket import *
-from select import select
 from collections import deque
 
+# Task queue
 tasks = deque()
-recv_wait = {}   #  sock -> task
-send_wait = {}   #  sock -> task
 
+# Simple task scheduler
 def run():
-    while any([tasks, recv_wait, send_wait]):
-        while not tasks:
-            can_recv, can_send, _ = select(recv_wait, send_wait, [])
-            for s in can_recv:
-                tasks.append(recv_wait.pop(s))
-            for s in can_send:
-                tasks.append(send_wait.pop(s))
-        task = tasks.popleft()
+    while tasks:
+        task = tasks.popleft()  # Get the next task
         try:
-            reason, resource = task.send(None)
-            if reason == 'recv':
-                recv_wait[resource] = task
-            elif reason == 'send':
-                send_wait[resource] = task
-            else:
-                raise RuntimeError('Unknown reason %r' % reason)
+            task.send(None)     # Resume the task
+            tasks.append(task)  # Put it back in the queue
         except StopIteration:
-            print('Task done')
+            print('Task done')  # Task is complete
+
+# Example task 1: Countdown
+def countdown(n):
+    while n > 0:
+        print('T-minus', n)
+        yield              # Pause execution
+        n -= 1
+
+# Example task 2: Count up
+def countup(n):
+    x = 0
+    while x < n:
+        print('Up we go', x)
+        yield              # Pause execution
+        x += 1
 ```
 
-このコードは、(a)のタスクスケジューラのやや複雑なバージョンです。少し勉強が必要ですが、その考え方は、各タスクがyieldするだけでなく、その理由（受信または送信）を示すことです。理由に応じて、タスクは待機エリアに移動します。その後、スケジューラは利用可能なタスクを実行するか、何もすることがなくなったときにI/Oイベントが発生するのを待ちます。
+では、このタスクスケジューラーがどのように動作するかを解説しましょう。
 
-多分少々難しいかもしれませんが、次のコードを追加してください。これは簡単なエコーサーバを実装しています。
+1. ジェネレータータスクを格納するために `deque`（両端キュー）を使用しています。`deque` は、両端から要素を効率的に追加および削除できるデータ構造です。タスクを末尾に追加し、先頭から削除する必要があるため、タスクキューに最適な選択です。
+2. `run()` 関数はタスクスケジューラーの核心部分です。キューからタスクを 1 つずつ取り出します。
+   - `send(None)` を使用して各タスクを再開します。これは、ジェネレーターに対して `next()` を使用するのと似ています。ジェネレーターに中断したところから実行を続けるように指示します。
+   - タスクが値を生成（yield）した後、キューの末尾に戻されます。これにより、タスクは後で再度実行される機会を得ます。
+   - タスクが完了すると（`StopIteration` を発生させる）、キューから削除されます。これは、タスクの実行が終了したことを示します。
+3. ジェネレータータスク内の各 `yield` 文は一時停止点として機能します。ジェネレーターが `yield` 文に到達すると、実行を一時停止し、制御をスケジューラーに戻します。これにより、他のタスクが実行できるようになります。
 
-```python
-# server.py
-...
-
-def tcp_server(address, handler):
-    sock = socket(AF_INET, SOCK_STREAM)
-    sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-    sock.bind(address)
-    sock.listen(5)
-    while True:
-        yield 'recv', sock
-        client, addr = sock.accept()
-        tasks.append(handler(client, addr))
-
-def echo_handler(client, address):
-    print('Connection from', address)
-    while True:
-        yield 'recv', client
-        data = client.recv(1000)
-        if not data:
-            break
-        yield 'send', client
-        client.send(b'GOT:' + data)
-    print('Connection closed')
-
-if __name__ == '__main__':
-    tasks.append(tcp_server(('',25000), echo_handler))
-    run()
-```
-
-このサーバを独自のターミナルウィンドウで実行します。別のターミナルで、`telnet` や `nc` などのコマンドを使って接続します。たとえば：
-
-```bash
-nc localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-`nc` や `telnet` にアクセスできない場合は、Python自体を使うこともできます。
-
-```bash
-python3 -m telnetlib localhost 25000
-Hello
-Got: Hello
-World
-Got: World
-```
-
-正常に動作していれば、出力がエコーバックされるはずです。それだけでなく、複数のクライアントを接続すると、すべてが同時に動作します。
-
-このようなジェネレータの難しい使い方は、直接コードを書く必要があることはありません。ただし、Python 3.4で標準ライブラリに追加された `asyncio` などの特定の高度なパッケージでは使用されています。
+このアプローチは協調的なマルチタスク処理を実装しています。各タスクは自発的に制御をスケジューラーに戻し、他のタスクが実行できるようにします。これにより、複数のタスクが実行時間を共有し、同時に実行できるようになります。

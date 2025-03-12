@@ -1,28 +1,66 @@
-# 准备工作
+# 理解 Python 中的异常
 
-在`reader.py`文件中，有一个核心函数`convert_csv()`，它承担了大部分工作。如果你在包含缺失或错误数据的数据上运行此函数，它将会崩溃。例如：
+在这一步中，你将学习 Python 中的异常。异常是编程中的一个重要概念，它能帮助我们处理程序运行时可能出现的意外情况。你还将了解当前代码在处理无效数据时崩溃的原因。理解这些将有助于你编写更健壮、更可靠的 Python 程序。
+
+## 什么是异常？
+
+在 Python 中，异常是程序执行过程中发生的事件，它会打乱程序的正常指令流。你可以把它想象成高速公路上的路障。一切顺利时，程序会按既定路径执行，就像汽车在畅通的道路上行驶。但当出现错误时，Python 会创建一个异常对象。这个对象就像一份报告，包含了出错信息，比如错误类型和代码中出错的位置。
+
+如果这些异常没有得到妥善处理，程序就会崩溃。程序崩溃时，Python 会显示一个回溯信息（traceback message）。这个信息就像一张地图，能精确显示代码中出错的位置，对调试非常有用。
+
+## 查看当前代码
+
+首先，我们来看看 `reader.py` 文件的结构。这个文件包含了用于读取和转换 CSV 数据的函数。要在编辑器中打开这个文件，我们需要导航到正确的目录。在终端中使用 `cd` 命令：
 
 ```bash
-$ python
->>> from reader import read_csv_as_dicts
+cd /home/labex/project
 ```
 
-```python
->>> port = read_csv_as_dicts('missing.csv', types=[str, int, float])
-回溯（最近一次调用）：
-  文件 "<stdin>"，第1行，在 <模块> 中
-  文件 "reader.py"，第24行，在 read_csv_as_dicts 中
-    return csv_as_dicts(file, types, headers=headers)
-  文件 "reader.py"，第13行，在 csv_as_dicts 中
-    lambda headers, row: { name: func(val) for name, func, val in zip(headers, types, row) })
-  文件 "reader.py"，第9行，在 convert_csv 中
-    return list(map(lambda row: converter(headers, row), rows))
-  文件 "reader.py"，第9行，在 <lambda> 中
-    return list(map(lambda row: converter(headers, row), rows))
-  文件 "reader.py"，第13行，在 <lambda> 中
-    lambda headers, row: { name: func(val) for name, func, val in zip(headers, types, row) })
-  文件 "reader.py"，第13行，在 <dictcomp> 中
-    lambda headers, row: { name: func(val) for name, func, val in zip(headers, types, row) })
-值错误：基数为10的int()的无效文字：''
->>>
+现在我们已经进入了正确的目录，来看看 `reader.py` 的内容。这个文件有几个重要的函数：
+
+1. `convert_csv()`：该函数接收数据行，并使用提供的转换器函数对其进行转换。它就像一台机器，将原材料（数据行）按照特定的配方（转换器函数）转化为另一种形式。
+2. `csv_as_dicts()`：该函数读取 CSV 数据并将其转换为字典列表。它还会进行类型转换，确保字典中的每个数据项都是正确的类型，如字符串、整数或浮点数。
+3. `read_csv_as_dicts()`：这是一个包装函数。它就像一个管理者，调用 `csv_as_dicts()` 函数来完成任务。
+
+## 演示问题
+
+让我们看看代码处理无效数据时会发生什么。我们将打开一个 Python 解释器，它就像一个游乐场，你可以在其中交互式地测试 Python 代码。在终端中使用以下命令打开 Python 解释器：
+
+```bash
+python3
 ```
+
+Python 解释器打开后，我们将尝试读取 `missing.csv` 文件。这个文件包含一些缺失或无效的数据。我们将使用 `reader.py` 文件中的 `read_csv_as_dicts()` 函数来读取数据。
+
+```python
+from reader import read_csv_as_dicts
+port = read_csv_as_dicts('missing.csv', types=[str, int, float])
+```
+
+运行这段代码时，你会看到类似这样的错误信息：
+
+```
+Traceback (most recent call last):
+  ...
+ValueError: invalid literal for int() with base 10: ''
+```
+
+这个错误的出现是因为代码试图将空字符串转换为整数。空字符串不能表示有效的整数，所以 Python 无法完成转换。函数在遇到第一个错误时就会崩溃，并且停止处理文件中其余的有效数据。
+
+要退出 Python 解释器，请输入以下命令：
+
+```python
+exit()
+```
+
+## 理解错误流程
+
+错误发生在 `convert_csv()` 函数中，具体是在以下这一行：
+
+```python
+return list(map(lambda row: converter(headers, row), rows))
+```
+
+`map()` 函数将 `converter` 函数应用于 `rows` 列表中的每一行。`converter` 函数会尝试将类型（字符串、整数、浮点数）应用到每一行。但当遇到包含缺失数据的行时，它就会失败。`map()` 函数没有内置的异常处理机制，所以一旦出现异常，整个处理过程就会崩溃。
+
+在下一个步骤中，你将修改代码以优雅地处理这些异常。这意味着程序不会崩溃，而是能够处理错误并继续处理其余的数据。

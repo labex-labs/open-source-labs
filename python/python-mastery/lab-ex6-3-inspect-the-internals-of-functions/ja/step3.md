@@ -1,62 +1,125 @@
-# まとめる
+# クラスにおける関数検査の適用
 
-演習6.1では、汎用的な `__init__()`、`__setattr__()`、および `__repr__()` メソッドを定義する `Structure` クラスを作成しました。このクラスでは、ユーザーが次のように `_fields` クラス変数を定義する必要がありました：
+ここでは、これまで学んだ関数検査の知識を活用して、クラスの実装を改善します。関数検査を使うと、関数の内部を調べ、その構造（たとえば受け取るパラメータ）を理解することができます。今回は、この機能を使ってクラスのコードをより効率的でエラーが起こりにくいものにします。`Structure` クラスを修正して、`__init__` メソッドのシグネチャから自動的にフィールド名を検出できるようにします。
 
-```python
-class Stock(Structure):
-    _fields = ('name','shares','price')
+## Structure クラスの理解
+
+`structure.py` ファイルには `Structure` クラスが含まれています。このクラスは基底クラスとして機能し、他のクラスがこれを継承して構造化されたデータオブジェクトを作成することができます。現在、`Structure` クラスを継承したクラスから作成されるオブジェクトの属性を定義するには、`_fields` クラス変数を設定する必要があります。
+
+エディタでこのファイルを開きましょう。まず、次のコマンドを使ってプロジェクトディレクトリに移動します。
+
+```bash
+cd ~/project
 ```
 
-このクラスの問題は、`__init__()` 関数がヘルプやキーワード引数の渡し方の目的では有用な引数シグネチャを持っていないことです。演習6.2では、特殊な `self._init()` 関数を使ったずるいトリックをしました。たとえば：
+このコマンドを実行したら、WebIDE 内の `structure.py` ファイルにある既存の `Structure` クラスを見つけて表示することができます。
+
+## Stock クラスの作成
+
+`Structure` クラスを継承した `Stock` クラスを作成しましょう。継承とは、`Stock` クラスが `Structure` クラスのすべての機能を受け取り、さらに独自の機能を追加できることを意味します。`structure.py` ファイルの末尾に次のコードを追加します。
 
 ```python
 class Stock(Structure):
-    _fields = ('name','shares', 'price')
+    _fields = ('name', 'shares', 'price')
+
     def __init__(self, name, shares, price):
         self._init()
-  ...
 ```
 
-これは有用なシグネチャを与えますが、ユーザーが `_fields` 変数と `__init__()` メソッドの両方を提供しなければならないため、今のクラスは奇妙になっています。
+しかし、このアプローチには問題があります。`_fields` タプルと `__init__` メソッドの両方を同じパラメータ名で定義する必要があります。これは本質的に同じ情報を 2 回書いているため冗長です。一方を変更したときに他方を更新するのを忘れると、エラーが発生する可能性があります。
 
-あなたの課題は、いくつかの関数検査技術を使って `_fields` 変数を排除することです。まず、`Stock` から引数シグネチャを次のように取得できることに注意してください：
+## set_fields クラスメソッドの追加
+
+この問題を解決するために、`Structure` クラスに `set_fields` クラスメソッドを追加します。このメソッドは、`__init__` シグネチャから自動的にフィールド名を検出します。`Structure` クラスに追加するコードは次のとおりです。
 
 ```python
->>> import inspect
->>> sig = inspect.signature(Stock)
->>> tuple(sig.parameters)
-('name','shares', 'price')
->>>
+@classmethod
+def set_fields(cls):
+    # Get the signature of the __init__ method
+    import inspect
+    sig = inspect.signature(cls.__init__)
+
+    # Get parameter names, skipping 'self'
+    params = list(sig.parameters.keys())[1:]
+
+    # Set _fields attribute on the class
+    cls._fields = tuple(params)
 ```
 
-おそらく、`__init__()` の引数シグネチャから `_fields` 変数を設定できるでしょう。`Structure` に `set_fields(cls)` というクラスメソッドを追加して、`__init__()` 関数を検査し、`_fields` 変数を適切に設定します。新しい関数を次のように使うはずです：
+このメソッドは `inspect` モジュールを使用しています。`inspect` モジュールは、関数やクラスなどのオブジェクトに関する情報を取得するための強力なツールです。まず、`__init__` メソッドのシグネチャを取得します。次に、パラメータ名を抽出しますが、`self` パラメータはスキップします。なぜなら、`self` は Python のクラスでインスタンス自体を参照する特別なパラメータだからです。最後に、これらのパラメータ名を使って `_fields` クラス変数を設定します。
+
+## Stock クラスの修正
+
+`set_fields` メソッドができたので、`Stock` クラスを簡素化することができます。前の `Stock` クラスのコードを次のコードに置き換えます。
 
 ```python
 class Stock(Structure):
     def __init__(self, name, shares, price):
         self._init()
 
-  ...
-
+# Call set_fields to automatically set _fields from __init__
 Stock.set_fields()
 ```
 
-結果として得られるクラスは、以前と同じように機能するはずです：
+このようにすると、`_fields` タプルを手動で定義する必要がなくなります。`set_fields` メソッドが自動的に処理してくれます。
+
+## 修正後のクラスのテスト
+
+修正したクラスが正しく動作することを確認するために、簡単なテストスクリプトを作成します。`test_structure.py` という新しいファイルを作成し、次のコードを追加します。
 
 ```python
->>> s = Stock(name='GOOG', shares=100, price=490.1)
->>> s
-Stock('GOOG',100,490.1)
->>> s.shares = 50
->>> s.share = 50
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "structure.py", line 12, in __setattr__
-    raise AttributeError('No attribute %s' % name)
-AttributeError: No attribute share
->>>
+from structure import Stock
+
+def test_stock():
+    # Create a Stock object
+    s = Stock(name='GOOG', shares=100, price=490.1)
+
+    # Test string representation
+    print(f"Stock representation: {s}")
+
+    # Test attribute access
+    print(f"Name: {s.name}")
+    print(f"Shares: {s.shares}")
+    print(f"Price: {s.price}")
+
+    # Test attribute modification
+    s.shares = 50
+    print(f"Updated shares: {s.shares}")
+
+    # Test attribute error
+    try:
+        s.share = 50  # Misspelled attribute
+        print("Error: Did not raise AttributeError")
+    except AttributeError as e:
+        print(f"Correctly raised: {e}")
+
+if __name__ == "__main__":
+    test_stock()
 ```
 
-再び単体テストで少し修正した `Stock` クラスを検証してください。まだ失敗はありますが、前の演習と比べて何も変化しないはずです。
+このテストスクリプトは、`Stock` オブジェクトを作成し、その文字列表現をテストし、属性にアクセスし、属性を変更し、誤ってスペルミスした属性にアクセスして正しいエラーが発生するかを確認します。
 
-この時点では、まだ少し「こじつけ」な感じがしますが、進歩しています。役に立つ `__init__()` 関数を持つ `Stock` 構造体クラスがあり、役に立つ表現文字列があり、`__setattr__()` メソッドが属性名のセットを制限しています。`set_fields()` を呼び出さなければならないという追加のステップは少し奇妙ですが、それについては後で戻ります。
+テストスクリプトを実行するには、次のコマンドを使用します。
+
+```bash
+python3 test_structure.py
+```
+
+次のような出力が表示されるはずです。
+
+```
+Stock representation: Stock('GOOG',100,490.1)
+Name: GOOG
+Shares: 100
+Price: 490.1
+Updated shares: 50
+Correctly raised: No attribute share
+```
+
+## 動作原理
+
+1. `set_fields` メソッドは `inspect.signature()` を使って `__init__` メソッドのパラメータ名を取得します。この関数は、`__init__` メソッドのパラメータに関する詳細な情報を提供します。
+2. その後、これらのパラメータ名に基づいて `_fields` クラス変数を自動的に設定します。これにより、同じパラメータ名を 2 つの異なる場所に書く必要がなくなります。
+3. これにより、`_fields` と `__init__` を一致するパラメータ名で手動で定義する必要がなくなります。`__init__` メソッドのパラメータを変更した場合、`_fields` も自動的に更新されるため、コードの保守性が向上します。
+
+このアプローチは、関数検査を使ってコードをより保守しやすく、エラーが起こりにくいものにします。これは、Python のイントロスペクション機能を実際に応用したもので、実行時にオブジェクトを調べたり変更したりすることができます。

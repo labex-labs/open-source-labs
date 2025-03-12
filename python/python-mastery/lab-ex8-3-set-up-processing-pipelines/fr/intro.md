@@ -1,13 +1,5 @@
 # Introduction
 
-**Objectifs :**
+Dans ce laboratoire, vous apprendrez à utiliser les coroutines pour construire des pipelines de traitement de données. Les coroutines, une fonctionnalité puissante de Python, prennent en charge le multitâche coopératif, permettant aux fonctions de suspendre et de reprendre leur exécution ultérieurement.
 
-- Utiliser des coroutines pour configurer des pipelines de traitement
-
-**Fichiers créés :** `cofollow.py`, `coticker.py`
-
-**Note**
-
-Pour cet exercice, le programme `stocksim.py` devrait toujours être exécuté en arrière-plan.
-
-Dans l'exercice 8.2, vous avez écrit du code qui utilisait des générateurs pour configurer un pipeline de traitement. Un aspect clé de ce programme était l'idée de flux de données entre les fonctions génératrices. Un type de flux de données très similaire peut être configuré à l'aide de coroutines. La seule différence est que avec une coroutine, vous envoyez des données dans différents éléments de traitement, contrairement à extraire des données avec une boucle `for`.
+Les objectifs de ce laboratoire sont de comprendre le fonctionnement des coroutines en Python, de mettre en œuvre des pipelines de traitement de données basés sur les coroutines et de transformer les données à travers plusieurs étapes de coroutines. Vous allez créer deux fichiers : `cofollow.py`, un suivi de fichier basé sur les coroutines, et `coticker.py`, une application de suivi des cours boursiers utilisant les coroutines. On suppose que le programme `stocksim.py` de l'exercice précédent est toujours en cours d'exécution en arrière-plan, générant des données boursières dans un fichier journal.

@@ -1,50 +1,62 @@
-# コンテキストマネージャ
+# コンテキストマネージャの作成
 
-演習3.5では、ユーザーが見やすい形式のテーブルを作成できるようにしました。たとえば：
+コンテキストマネージャは Python の特殊な種類のオブジェクトです。Python では、オブジェクトにはその振る舞いを定義するさまざまなメソッドがあります。コンテキストマネージャは特に、`__enter__` と `__exit__` という 2 つの重要なメソッドを定義します。これらのメソッドは `with` 文と連携して動作します。`with` 文は、コードブロックに特定のコンテキストを設定するために使用されます。特定のことが起こる小さな環境を作成するようなもので、コードブロックが終了すると、コンテキストマネージャが後片付けを行います。
 
-```python
->>> from tableformat import create_formatter
->>> formatter = create_formatter('text')
->>> print_table(portfolio, ['name','shares','price'], formatter)
-      name     shares      price
----------- ---------- ----------
-        AA        100       32.2
-       IBM         50       91.1
-       CAT        150      83.44
-      MSFT        200      51.23
-        GE         95      40.37
-      MSFT         50       65.1
-       IBM        100      70.44
->>>
+このステップでは、非常に便利な機能を持つコンテキストマネージャを作成します。これは、標準出力 (`sys.stdout`) を一時的にリダイレクトします。標準出力は、Python プログラムの通常の出力が行われる場所で、通常はコンソールです。標準出力をリダイレクトすることで、出力をファイルに送ることができます。これは、コンソールに表示されるだけの出力を保存したい場合に便利です。
+
+まず、コンテキストマネージャのコードを書くための新しいファイルを作成する必要があります。このファイルを `redirect.py` と名付けます。ターミナルで以下のコマンドを使用して作成できます。
+
+```bash
+touch /home/labex/project/redirect.py
 ```
 
-コードの1つの問題は、すべてのテーブルが標準出力（`sys.stdout`）に出力されることです。出力をファイルや他の場所にリダイレクトしたい場合があります。全体的に見ると、すべてのテーブル形式のコードを変更して、異なる出力ファイルを許可することができます。ただし、緊急の場合には、コンテキストマネージャを使ってこれを解決することもできます。
-
-次のコンテキストマネージャを定義します。
+ファイルが作成されたら、エディタで開きます。開いたら、以下の Python コードをファイルに追加します。
 
 ```python
->>> import sys
->>> class redirect_stdout:
-        def __init__(self, out_file):
-            self.out_file = out_file
-        def __enter__(self):
-            self.stdout = sys.stdout
-            sys.stdout = self.out_file
-            return self.out_file
-        def __exit__(self, ty, val, tb):
-            sys.stdout = self.stdout
+import sys
+
+class redirect_stdout:
+    def __init__(self, out_file):
+        self.out_file = out_file
+
+    def __enter__(self):
+        self.stdout = sys.stdout
+        sys.stdout = self.out_file
+        return self.out_file
+
+    def __exit__(self, ty, val, tb):
+        sys.stdout = self.stdout
 ```
 
-このコンテキストマネージャは、`sys.stdout`に一時的なパッチを当てて、すべての出力を異なるファイルにリダイレクトすることで機能します。終了時には、パッチが元に戻されます。試してみましょう。
+このコンテキストマネージャが行うことを分解してみましょう。
+
+1. `__init__`: これは初期化メソッドです。`redirect_stdout` クラスのインスタンスを作成するときに、ファイルオブジェクトを渡します。このメソッドは、そのファイルオブジェクトをインスタンス変数 `self.out_file` に格納します。つまり、出力をリダイレクトする先を覚えておきます。
+2. `__enter__`:
+   - まず、現在の `sys.stdout` を保存します。後で元に戻す必要があるため、これは重要です。
+   - 次に、現在の `sys.stdout` をファイルオブジェクトで置き換えます。この時点から、通常はコンソールに出力されるものはすべてファイルに出力されるようになります。
+   - 最後に、ファイルオブジェクトを返します。これは、`with` ブロック内でファイルオブジェクトを使用したい場合に便利です。
+3. `__exit__`:
+   - このメソッドは、元の `sys.stdout` を復元します。したがって、`with` ブロックが終了した後は、出力は通常通りコンソールに戻ります。
+   - このメソッドは 3 つのパラメータを受け取ります。例外の型 (`ty`)、例外の値 (`val`)、トレースバック (`tb`) です。これらのパラメータはコンテキストマネージャプロトコルで必要とされます。`with` ブロック内で発生する可能性のある例外を処理するために使用されます。
+
+では、コンテキストマネージャをテストしましょう。テーブルの出力をファイルにリダイレクトするために使用します。まず、Python インタープリターを起動します。
+
+```bash
+python3
+```
+
+次に、インタープリターで以下の Python コードを実行します。
 
 ```python
->>> from tableformat import create_formatter
->>> formatter = create_formatter('text')
+>>> import stock, reader, tableformat
+>>> from redirect import redirect_stdout
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
+>>> formatter = tableformat.create_formatter('text')
 >>> with redirect_stdout(open('out.txt', 'w')) as file:
-        tableformat.print_table(portfolio, ['name','shares','price'], formatter)
-        file.close()
-
->>> # ファイルを確認する
+...     tableformat.print_table(portfolio, ['name','shares','price'], formatter)
+...     file.close()
+...
+>>> # Let's check the content of the output file
 >>> print(open('out.txt').read())
       name     shares      price
 ---------- ---------- ----------
@@ -55,5 +67,21 @@
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
->>>
+```
+
+素晴らしい！コンテキストマネージャは期待通りに動作しました。テーブルの出力を `out.txt` ファイルに正常にリダイレクトしました。
+
+コンテキストマネージャは Python の非常に強力な機能です。適切にリソースを管理するのに役立ちます。コンテキストマネージャの一般的な使用例をいくつか紹介します。
+
+- ファイル操作: ファイルを開くときに、コンテキストマネージャはエラーが発生した場合でもファイルが適切に閉じられることを保証します。
+- データベース接続: 使用が終了した後にデータベース接続が閉じられることを確認できます。
+- スレッド化されたプログラムのロック: コンテキストマネージャは、リソースのロックとロック解除を安全に処理できます。
+- 一時的な環境設定の変更: コードブロックの間でいくつかの設定を変更し、自動的に元に戻すことができます。
+
+このパターンは非常に重要です。`with` ブロック内で例外が発生した場合でも、リソースが適切にクリーンアップされることを保証するからです。
+
+テストが終了したら、Python インタープリターを終了できます。
+
+```python
+>>> exit()
 ```
