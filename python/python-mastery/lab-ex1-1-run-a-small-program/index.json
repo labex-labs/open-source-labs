@@ -13,10 +13,11 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Launch Python",
+        "title": "Launch Python Interactive Interpreter",
         "text": "en/step1.md",
         "verify": [
           {
@@ -27,10 +28,13 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/build_in_functions", "python/python_shell"]
+        "skills": [
+          "python/build_in_functions",
+          "python/python_shell"
+        ]
       },
       {
-        "title": "Some Generative Art",
+        "title": "Create a Python Program File",
         "text": "en/step2.md",
         "verify": [
           {
@@ -58,7 +62,9 @@
           "python/type_conversion",
           "python/variables_data_types"
         ],
-        "solutions": ["art.py"]
+        "solutions": [
+          "art.py"
+        ]
       }
     ],
     "intro": {
@@ -72,279 +78,12 @@
     }
   },
   "backend": {
-    "imageid": "vnc-ubuntu:2204"
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "运行一个小程序",
-      "description": "在本实验中，你将确保Python已正确安装，启动交互式解释器，并编辑/运行一个小程序。",
-      "meta": {
-        "title": "通过生成式艺术探索Python编码",
-        "description": "学习使用Python的交互式解释器和一个简单的生成式艺术脚本来创建动态、视觉上吸引人的程序。",
-        "keywords": "Python, 生成式艺术, 交互式编码, 编程, 命令行"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "启动Python",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证学生的Python打印语句",
-                "file": "verify1-1.sh",
-                "hint": "请使用'print'语句输出'你好，世界'。"
-              }
-            ]
-          },
-          {
-            "title": "一些生成式艺术",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python脚本输出的长度",
-                "file": "verify2-1.sh",
-                "hint": "请将步骤2中的Python代码写入'art.py'。"
-              }
-            ],
-            "solutions": ["art.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Ejecutar un pequeño programa",
-      "description": "En este laboratorio, asegurará de que Python esté instalado correctamente, iniciará el intérprete interactivo y editara/ejecutará un pequeño programa.",
-      "meta": {
-        "title": "Explora la programación en Python con arte generativo",
-        "description": "Aprende a crear programas dinámicos y visualmente atractivos con el intérprete interactivo de Python y un sencillo script de arte generativo.",
-        "keywords": "python, arte generativo, codificación interactiva, programación, línea de comandos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Iniciar Python",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar las declaraciones de impresión de Python del estudiante",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, use la declaración 'print' para imprimir 'Hola Mundo'."
-              }
-            ]
-          },
-          {
-            "title": "Un poco de arte generativo",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la longitud de la salida del script de Python",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, escriba el código de Python del paso 2 en 'art.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Exécuter un petit programme",
-      "description": "Dans ce laboratoire, vous vous assurez que Python est correctement installé, démarrez l'interpréteur interactif et éditez/exécutez un petit programme.",
-      "meta": {
-        "title": "Explorer la programmation Python avec de l'art génératif",
-        "description": "Apprenez à créer des programmes dynamiques et visuellement attrayants avec l'interpréteur interactif de Python et un simple script d'art génératif.",
-        "keywords": "python, art génératif, codage interactif, programmation, ligne de commande"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Lancer Python",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier les instructions d'impression Python de l'étudiant",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez utiliser l'instruction 'print' pour afficher 'Bonjour le monde'."
-              }
-            ]
-          },
-          {
-            "title": "Un peu d'art génératif",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier la longueur de la sortie du script Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez écrire le code Python de l'étape 2 dans 'art.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Führe ein kleines Programm aus",
-      "description": "In diesem Lab werden Sie sicherstellen, dass Python richtig installiert ist, starten Sie den interaktiven Interpreter und bearbeiten/ausführen ein kleines Programm.",
-      "meta": {
-        "title": "Entdecken Sie die Python-Programmierung mit generativem Kunstwerk",
-        "description": "Lernen Sie, dynamische, visuell ansprechende Programme mit Python's interaktivem Interpreter und einem einfachen generativen Kunstwerks-Skript zu erstellen.",
-        "keywords": "python, generatives Kunstwerk, interaktive Programmierung, Programmierung, Befehlszeile"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Starte Python",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifiziere die Python-Print-Anweisungen des Studenten",
-                "file": "verify1-1.sh",
-                "hint": "Verwenden Sie bitte die 'print'-Anweisung, um 'Hello World' auszugeben."
-              }
-            ]
-          },
-          {
-            "title": "Einige generatives Kunstwerk",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifiziere die Länge der Ausgabe des Python-Skripts",
-                "file": "verify2-1.sh",
-                "hint": "Schreiben Sie bitte den Python-Code aus Schritt 2 in 'art.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "小さなプログラムを実行する",
-      "description": "この実験では、Pythonが正しくインストールされていることを確認し、対話型インタプリタを起動し、小さなプログラムを編集・実行します。",
-      "meta": {
-        "title": "生成アートを使ったPythonコーディングを探索する",
-        "description": "Pythonの対話型インタプリタと単純な生成アートスクリプトを使って、動的で視覚的に魅力的なプログラムを作成する方法を学びましょう。",
-        "keywords": "python, 生成アート, 対話型コーディング, プログラミング, コマンドライン"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pythonを起動する",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "学生のPythonのprint文を確認する",
-                "file": "verify1-1.sh",
-                "hint": "「Hello World」を出力するために、'print'文を使用してください。"
-              }
-            ]
-          },
-          {
-            "title": "いくつかの生成アート",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonスクリプトの出力の長さを確認する",
-                "file": "verify2-1.sh",
-                "hint": "手順2のPythonコードを'art.py'に書き込んでください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Запустите небольшую программу",
-      "description": "В этой лабораторной работе вы убедитесь, что Python правильно установлен, запустите интерактивный интерпретатор и отредактируете/запустите небольшую программу.",
-      "meta": {
-        "title": "Изучайте программирование на Python с помощью генеративного искусства",
-        "description": "Изучите создавать динамичные, визуально привлекательные программы с помощью интерактивного интерпретатора Python и простого скрипта генеративного искусства.",
-        "keywords": "python, генеративное искусство, интерактивная разработка, программирование, командная строка"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Запустите Python",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверьте вывод print-инструкций студента",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, используйте инструкцию 'print', чтобы вывести 'Hello World'."
-              }
-            ]
-          },
-          {
-            "title": "Некоторое генеративное искусство",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверьте длину вывода из скрипта на Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, напишите код на Python из шага 2 в 'art.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }
