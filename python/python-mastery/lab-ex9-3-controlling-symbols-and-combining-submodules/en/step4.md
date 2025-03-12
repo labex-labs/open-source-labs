@@ -45,7 +45,7 @@ Now we need to create files for each formatter:
 1. First, let's create the base formatter file:
 
 ```bash
-nano tableformat/formatter.py
+touch tableformat/formatter.py
 ```
 
 Keep the `TableFormatter` base class and any general utility functions like `print_table` and `create_formatter`. The file should look something like:
@@ -99,7 +99,7 @@ Save and exit.
 2. Next, let's create the text formatter:
 
 ```bash
-nano tableformat/formats/text.py
+touch tableformat/formats/text.py
 ```
 
 Add only the `TextTableFormatter` class:
@@ -128,7 +128,7 @@ Save and exit.
 3. Create the CSV formatter:
 
 ```bash
-nano tableformat/formats/csv.py
+touch tableformat/formats/csv.py
 ```
 
 Add only the `CSVTableFormatter` class:
@@ -156,7 +156,7 @@ Save and exit.
 4. Create the HTML formatter:
 
 ```bash
-nano tableformat/formats/html.py
+touch tableformat/formats/html.py
 ```
 
 Add only the `HTMLTableFormatter` class:
@@ -194,7 +194,7 @@ Now we need to create `__init__.py` files in both directories:
 1. First, create one for the `tableformat` package:
 
 ```bash
-nano tableformat/__init__.py
+touch tableformat/__init__.py
 ```
 
 Add this content:
@@ -209,7 +209,7 @@ Save and exit.
 2. Next, create one for the `formats` package:
 
 ```bash
-nano tableformat/formats/__init__.py
+touch tableformat/formats/__init__.py
 ```
 
 Leave this file empty or add a simple docstring:
@@ -228,7 +228,7 @@ Let's create a simple test to verify our changes work correctly:
 
 ```bash
 cd ~/project
-nano test_tableformat.py
+touch test_tableformat.py
 ```
 
 Add this content:

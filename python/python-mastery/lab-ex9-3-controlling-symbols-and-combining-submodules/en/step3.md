@@ -9,7 +9,7 @@ When we add an `__all__` list to the package's `__init__.py` file, we can contro
 Let's update the `__init__.py` file:
 
 ```bash
-nano ~/project/structly/__init__.py
+touch ~/project/structly/__init__.py
 ```
 
 Add an `__all__` list that includes all the symbols we want to export:
@@ -48,7 +48,7 @@ However, it's appropriate in specific cases:
 Let's create another test file to verify that we can import everything at once:
 
 ```bash
-nano ~/project/test_import_all.py
+touch ~/project/test_import_all.py
 ```
 
 Add this content:

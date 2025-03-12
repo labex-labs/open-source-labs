@@ -13,7 +13,7 @@ Let's add the `__all__` variable to each submodule in the `structly` package:
 1. First, let's modify `structure.py`:
 
 ```bash
-nano ~/project/structly/structure.py
+touch ~/project/structly/structure.py
 ```
 
 Add this line near the top of the file (after imports):
@@ -22,12 +22,12 @@ Add this line near the top of the file (after imports):
 __all__ = ['Structure']
 ```
 
-Save and exit (Ctrl+X, then Y, then Enter).
+Save and exit.
 
 2. Next, let's modify `reader.py`:
 
 ```bash
-nano ~/project/structly/reader.py
+touch ~/project/structly/reader.py
 ```
 
 Look through the file to identify all the `read_csv_as_*` functions. Then add an `__all__` list with all these function names. It should look something like:
@@ -43,7 +43,7 @@ Save and exit.
 3. Now, let's modify `tableformat.py`:
 
 ```bash
-nano ~/project/structly/tableformat.py
+touch ~/project/structly/tableformat.py
 ```
 
 Add this line near the top of the file:
@@ -59,7 +59,7 @@ Save and exit.
 Now that each module defines what it exports, let's update the `__init__.py` file to import all of these symbols:
 
 ```bash
-nano ~/project/structly/__init__.py
+touch ~/project/structly/__init__.py
 ```
 
 Change the content to:
@@ -79,7 +79,7 @@ Save and exit.
 Let's create a simple test file to verify that our changes work:
 
 ```bash
-nano ~/project/test_structly.py
+touch ~/project/test_structly.py
 ```
 
 Add this content:

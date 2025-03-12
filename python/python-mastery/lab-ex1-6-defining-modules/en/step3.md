@@ -10,7 +10,7 @@ Let's create a simple module for generating stock reports:
 
 ```bash
 cd ~/project
-nano report.py
+touch report.py
 ```
 
 2. Add the following code to the file:
@@ -63,7 +63,7 @@ This module includes:
 - A function to print a formatted report
 - A main block that runs when the file is executed directly
 
-3. Save and exit the editor (Ctrl+O, Enter, then Ctrl+X).
+3. Save and exit the editor.
 
 ## Testing Your Module
 

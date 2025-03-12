@@ -12,7 +12,7 @@ Let's modify the `pcost.py` program to use this pattern:
 
 ```bash
 cd ~/project
-nano pcost.py
+touch pcost.py
 ```
 
 2. Modify the file to look like this:
@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
 The key change is wrapping the code at the end in an `if __name__ == "__main__":` condition.
 
-3. Save and exit the editor (in nano, press Ctrl+O, Enter, then Ctrl+X).
+3. Save and exit the editor.
 
 ## Testing the Modified Module
 
