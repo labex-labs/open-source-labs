@@ -17,7 +17,7 @@
   "details": {
     "steps": [
       {
-        "title": "Launch Python Interactive Interpreter",
+        "title": "Verify Python Installation and Use the Interactive Interpreter",
         "text": "en/step1.md",
         "verify": [
           {
@@ -28,19 +28,16 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/python_shell"
-        ]
+        "skills": ["python/build_in_functions", "python/python_shell"]
       },
       {
-        "title": "Create a Python Program File",
+        "title": "Create a Simple Python Program",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Length of Output from Python Script",
+            "name": "Verify Python Program File Exists",
             "file": "verify2-1.sh",
-            "hint": "Please write the python code from step 2 into 'art.py'.",
+            "hint": "Create a file named hello.py in the project directory.",
             "timeout": 0,
             "showstderr": true
           }
@@ -62,9 +59,36 @@
           "python/type_conversion",
           "python/variables_data_types"
         ],
-        "solutions": [
-          "art.py"
-        ]
+        "solutions": ["art.py"]
+      },
+      {
+        "title": "Create a More Advanced Python Program",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify ASCII Art Program Output",
+            "file": "verify3-1.sh",
+            "hint": "Make sure to run art.py with appropriate parameters."
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numeric_types",
+          "python/os_system",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ],
+        "solutions": ["art.py"]
       }
     ],
     "intro": {

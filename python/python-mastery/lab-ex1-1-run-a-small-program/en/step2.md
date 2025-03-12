@@ -1,78 +1,60 @@
-# Create a Python Program File
+# Create a Simple Python Program
 
-Now that we've confirmed Python is working correctly, let's create a complete program file. In this step, we'll create a simple program that generates ASCII art patterns.
+Now that we have confirmed Python is working correctly, let us create our first Python program file. We will start with a very simple program before moving to something more complex.
 
-## Create the Program File
+## Create Your First Python File
 
-1. Open the WebIDE editor and create a new file called `art.py` in the `/home/labex/project` directory.
+1. In the WebIDE, locate the Explorer panel on the left side of the screen.
 
-2. Copy the following code into the file:
+2. Navigate to the `/home/labex/project` directory.
+
+3. Right-click in the Explorer panel and select "New File".
+
+4. Name the file `hello.py`.
+
+5. In the editor, type the following code:
 
    ```python
-   # art.py
+   # This is a simple Python program
 
-   import sys
-   import random
-
-   chars = '\|/'
-
-   def draw(rows, columns):
-       for r in range(rows):
-           print(''.join(random.choice(chars) for _ in range(columns)))
-
-   if __name__ == '__main__':
-       if len(sys.argv) != 3:
-           raise SystemExit("Usage: art.py rows columns")
-       draw(int(sys.argv[1]), int(sys.argv[2]))
+   name = input("Enter your name: ")
+   print(f"Hello, {name}! Welcome to Python programming.")
    ```
 
-3. Save the file by pressing Ctrl+S or using the "Save" option in the File menu.
+6. Save the file by pressing Ctrl+S or by selecting File > Save from the menu.
 
-## Understanding the Code
+## Run Your First Python Program
 
-Let's break down what this program does:
+1. Open a terminal in the WebIDE if it is not already open.
 
-- `import sys` and `import random`: These lines import Python modules (libraries) that provide additional functionality.
-- `chars = '\|/'`: This defines the character set that our art will use.
-- The `draw()` function creates patterns with the specified number of rows and columns.
-- The `if __name__ == '__main__':` block ensures the code only runs when the file is executed directly.
-- `sys.argv` contains command-line arguments passed to the program.
-
-## Run the Program
-
-1. Open a terminal in your LabEx environment.
-
-2. Run the program with the following command:
+2. Make sure you are in the correct directory:
 
    ```bash
-   python3 art.py 10 20
+   cd ~/project
    ```
 
-   This should attempt to generate a 10×20 pattern of characters.
+3. Run your Python program by typing:
 
-   ```
-   ||||/\||//\//\|||\|\
-   ///||\/||\//|\\|\\/\
-   |\////|//|||\//|/\||
-   |//\||\/|\///|\|\|/|
-   |/|//|/|/|\\/\/\||//
-   |\/\|\//\\//\|\||\\/
-   |||\\\\/\\\|/||||\/|
-   \\||\\\|\||||////\\|
-   //\//|/|\\|\//\|||\/
-   \\\|/\\|/|\\\|/|/\/|
+   ```bash
+   python3 hello.py
    ```
 
-This program demonstrates:
+4. When prompted, enter your name and press Enter.
 
-- Reading command-line arguments
-- Using random number generation
-- String manipulation
-- Creating functions
-- Error handling
+5. You should see output similar to:
 
-Try changing the numbers to get different sized patterns:
+   ```
+   Enter your name: John
+   Hello, John! Welcome to Python programming.
+   ```
 
-```bash
-python3 art.py 5 40
-```
+   The actual output will show the name you entered instead of "John".
+
+This simple program demonstrates:
+
+- Creating a Python file
+- Adding comments (the line starting with `#`)
+- Getting user input with the `input()` function
+- Using variables to store data
+- Displaying output with the `print()` function
+- Using f-strings for string formatting (the `f"Hello, {name}!"` part)
