@@ -1,79 +1,86 @@
-# Part 2 : String Manipulation
+# Working with Python Strings
 
-Define a string containing a series of stock ticker symbols like this:
+Strings are one of the most commonly used data types in Python. In this step, we'll explore various string operations.
+
+## Creating and Defining Strings
+
+Open a Python interactive shell again:
+
+```bash
+python3
+```
+
+Define a string containing stock ticker symbols:
 
 ```python
 >>> symbols = 'AAPL IBM MSFT YHOO SCO'
+>>> symbols
+'AAPL IBM MSFT YHOO SCO'
 ```
 
-Now, let's experiment with different string operations:
+## Accessing Characters and Substrings
 
-## Extracting individual characters and substrings
-
-Strings are arrays of characters. Try extracting a few characters:
+Strings in Python can be indexed to access individual characters, where indexing starts at 0:
 
 ```python
->>> symbols[0]
+>>> symbols[0]    # First character
 'A'
->>> symbols[1]
+>>> symbols[1]    # Second character
 'A'
->>> symbols[2]
+>>> symbols[2]    # Third character
 'P'
->>> symbols[-1]        # Last character
+>>> symbols[-1]   # Last character
 'O'
->>> symbols[-2]        # 2nd from last character
+>>> symbols[-2]   # Second to last character
 'C'
->>>
 ```
 
-Try taking a few slices:
+You can also extract substrings using slicing:
 
 ```python
->>> symbols[:4]
+>>> symbols[:4]    # First 4 characters
 'AAPL'
->>> symbols[-3:]
+>>> symbols[-3:]   # Last 3 characters
 'SCO'
->>> symbols[5:8]
+>>> symbols[5:8]   # Characters from index 5 to 7
 'IBM'
->>>
 ```
 
-## Strings as read-only objects
+## String Immutability
 
-Strings are read-only. Verify this by trying to change the first character of `symbols` to a lower-case 'a'.
+Strings in Python are immutable, meaning you cannot change individual characters:
 
 ```python
->>> symbols[0] = 'a'
+>>> symbols[0] = 'a'    # This will cause an error
+```
+
+You should see an error like:
+
+```
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'str' object does not support item assignment
->>>
 ```
 
-## String concatenation
+## String Concatenation
 
-Although string data is read-only, you can always reassign a variable to a newly created string.\
-Try the following statement which concatenates a new symbol "GOOG" to the end of `symbols`:
+Although you cannot modify strings directly, you can create new strings through concatenation:
 
 ```python
->>> symbols += ' GOOG'
+>>> symbols += ' GOOG'    # Append a new symbol
 >>> symbols
-... look at the result ...
+'AAPL IBM MSFT YHOO SCO GOOG'
+
+>>> symbols = 'HPQ ' + symbols    # Prepend a new symbol
+>>> symbols
+'HPQ AAPL IBM MSFT YHOO SCO GOOG'
 ```
 
-Now, try adding "HPQ" to the beginning of `symbols` like this:
+Remember, these operations create new strings rather than modifying the original.
 
-```python
->>> symbols = 'HPQ ' + symbols
->>> symbols
-... look at the result ...
-```
+## Testing for Substrings
 
-It should be noted in both of these examples, the original string `symbols` is _NOT_ being modified "in place." Instead, a completely new string is created. The variable name `symbols` is just bound to the result. Afterwards, the old string is destroyed since it's not being used anymore.
-
-## Membership testing (substring testing)
-
-Experiment with the `in` operator to check for substrings. At the interactive prompt, try these operations:
+Use the `in` operator to check if a substring exists within a string:
 
 ```python
 >>> 'IBM' in symbols
@@ -82,40 +89,37 @@ True
 True
 >>> 'CAT' in symbols
 False
->>>
 ```
 
-Make sure you understand why the check for "AA" returned `True`.
+Notice that 'AA' returns `True` because it's found within "AAPL".
 
 ## String Methods
 
-At the Python interactive prompt, try experimenting with some of the string methods.
+Python strings come with numerous built-in methods:
 
 ```python
->>> symbols.lower()
+>>> symbols.lower()    # Convert to lowercase
 'hpq aapl ibm msft yhoo sco goog'
->>> symbols
+
+>>> symbols    # Original string remains unchanged
 'HPQ AAPL IBM MSFT YHOO SCO GOOG'
-```
 
-Remember, strings are always read-only. If you want to save the result of an operation, you need to place it in a variable:
-
-```python
->>> lowersyms = symbols.lower()
+>>> lowersyms = symbols.lower()    # Save the result to a new variable
 >>> lowersyms
 'hpq aapl ibm msft yhoo sco goog'
->>>
-```
 
-Try some more operations:
-
-```python
->>> symbols.find('MSFT')
+>>> symbols.find('MSFT')    # Find the starting index of a substring
 13
->>> symbols[13:17]
+>>> symbols[13:17]    # Verify the substring at that position
 'MSFT'
->>> symbols = symbols.replace('SCO','')
+
+>>> symbols = symbols.replace('SCO','')    # Replace a substring
 >>> symbols
 'HPQ AAPL IBM MSFT YHOO  GOOG'
->>>
+```
+
+When you're done experimenting, you can exit the Python shell:
+
+```python
+>>> exit()
 ```

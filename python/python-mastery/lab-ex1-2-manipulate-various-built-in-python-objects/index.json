@@ -13,16 +13,17 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Part 1 : Numbers",
+        "title": "Working with Python Numbers",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History Includes Specific Commands",
+            "name": "Verify Python Number Operations",
             "file": "verify1-1.sh",
-            "hint": "Please execute the python program statement in step 1.",
+            "hint": "Please execute the python operations for numbers as shown in step 1.",
             "timeout": 0,
             "showstderr": true
           }
@@ -37,13 +38,13 @@
         ]
       },
       {
-        "title": "Part 2 : String Manipulation",
+        "title": "Working with Python Strings",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python History Commands",
+            "name": "Verify Python String Operations",
             "file": "verify2-1.sh",
-            "hint": "Please execute the python program statement in step 2.",
+            "hint": "Please execute the string operations shown in step 2.",
             "timeout": 0,
             "showstderr": true
           }
@@ -59,13 +60,13 @@
         ]
       },
       {
-        "title": "Part 3 : List Manipulation",
+        "title": "Working with Python Lists",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python String and List Operations",
+            "name": "Verify Python List Operations",
             "file": "verify3-1.sh",
-            "hint": "Please execute the python program statement in step 3.",
+            "hint": "Please execute the list operations shown in step 3.",
             "timeout": 0,
             "showstderr": true
           }
@@ -80,13 +81,13 @@
         ]
       },
       {
-        "title": "Part 4 : Dictionaries",
+        "title": "Working with Python Dictionaries",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Python History for List and Delete Operations",
+            "name": "Verify Python Dictionary Operations",
             "file": "verify4-1.sh",
-            "hint": "Please execute the python program statement in step 4.",
+            "hint": "Please execute the dictionary operations shown in step 4.",
             "timeout": 0,
             "showstderr": true
           }
@@ -112,410 +113,12 @@
     }
   },
   "backend": {
-    "imageid": "vnc-ubuntu:2204"
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "操作Python各种内置对象",
-      "description": "在本实验中，你将操作Python各种内置对象。",
-      "meta": {
-        "title": "Python基础 | 数值计算",
-        "description": "学习如何操作Python内置对象，包括进行数值计算和探索Python的数字方法。",
-        "keywords": "Python, 数值计算, 内置对象, 编程基础"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "第1部分：数字",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中包含特定命令",
-                "file": "verify1-1.sh",
-                "hint": "请执行步骤1中的Python程序语句。"
-              }
-            ]
-          },
-          {
-            "title": "第2部分：字符串操作",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python历史命令",
-                "file": "verify2-1.sh",
-                "hint": "请执行步骤2中的Python程序语句。"
-              }
-            ]
-          },
-          {
-            "title": "第3部分：列表操作",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python字符串和列表操作",
-                "file": "verify3-1.sh",
-                "hint": "请执行步骤3中的Python程序语句。"
-              }
-            ]
-          },
-          {
-            "title": "第4部分：字典",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证列表和删除操作的Python历史记录",
-                "file": "verify4-1.sh",
-                "hint": "请执行步骤4中的Python程序语句。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Manipular varios objetos integrados de Python",
-      "description": "En este laboratorio, manipulará varios objetos integrados de Python.",
-      "meta": {
-        "title": "Fundamentos de Python | Cálculos numéricos",
-        "description": "Aprenda a manipular objetos integrados de Python, incluyendo realizar cálculos numéricos y explorar los métodos numéricos de Python.",
-        "keywords": "Python, Cálculos numéricos, Objetos integrados, Fundamentos de programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Parte 1 : Números",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar que la historia de Python incluya comandos específicos",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, ejecute la declaración del programa de Python en el paso 1."
-              }
-            ]
-          },
-          {
-            "title": "Parte 2 : Manipulación de cadenas",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar los comandos de la historia de Python",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, ejecute la declaración del programa de Python en el paso 2."
-              }
-            ]
-          },
-          {
-            "title": "Parte 3 : Manipulación de listas",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar las operaciones de cadenas y listas de Python",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, ejecute la declaración del programa de Python en el paso 3."
-              }
-            ]
-          },
-          {
-            "title": "Parte 4 : Diccionarios",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la historia de Python para las operaciones de lista y eliminación",
-                "file": "verify4-1.sh",
-                "hint": "Por favor, ejecute la declaración del programa de Python en el paso 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Manipuler divers objets intégrés de Python",
-      "description": "Dans ce laboratoire, vous manipu lerez divers objets intégrés de Python.",
-      "meta": {
-        "title": "Fondamentaux de Python | Calculs numériques",
-        "description": "Découvrez comment manipuler les objets intégrés de Python, notamment en effectuant des calculs numériques et en explorant les méthodes numériques de Python.",
-        "keywords": "Python, Calculs numériques, Objets intégrés, Fondamentaux de la programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Partie 1 : Nombres",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier que l'historique Python inclut des commandes spécifiques",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez exécuter l'instruction de programme Python de l'étape 1."
-              }
-            ]
-          },
-          {
-            "title": "Partie 2 : Manipulation de chaînes de caractères",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier les commandes de l'historique Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez exécuter l'instruction de programme Python de l'étape 2."
-              }
-            ]
-          },
-          {
-            "title": "Partie 3 : Manipulation de listes",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier les opérations sur les chaînes de caractères et les listes Python",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez exécuter l'instruction de programme Python de l'étape 3."
-              }
-            ]
-          },
-          {
-            "title": "Partie 4 : Dictionnaires",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python pour les opérations de liste et de suppression",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez exécuter l'instruction de programme Python de l'étape 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Verwenden von verschiedenen eingebauten Python-Objekten manipulieren",
-      "description": "In diesem Lab werden Sie verschiedene eingebauten Python-Objekte manipulieren.",
-      "meta": {
-        "title": "Python Grundlagen | Numerische Berechnungen",
-        "description": "Lernen Sie, wie Sie eingebauten Python-Objekte manipulieren, einschließlich der Durchführung von numerischen Berechnungen und der Erkundung der Python-Zahlmethoden.",
-        "keywords": "Python, Numerische Berechnungen, eingebauten Objekte, Programmiergrundlagen"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Teil 1 : Zahlen",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren, dass die Python-Historie bestimmte Befehle enthält",
-                "file": "verify1-1.sh",
-                "hint": "Bitte führen Sie den Python-Programmausdruck in Schritt 1 aus."
-              }
-            ]
-          },
-          {
-            "title": "Teil 2 : Zeichenkettenmanipulation",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren von Python-Historie-Befehlen",
-                "file": "verify2-1.sh",
-                "hint": "Bitte führen Sie den Python-Programmausdruck in Schritt 2 aus."
-              }
-            ]
-          },
-          {
-            "title": "Teil 3 : Listenmanipulation",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren von Python-Zeichenkette- und Listenoperationen",
-                "file": "verify3-1.sh",
-                "hint": "Bitte führen Sie den Python-Programmausdruck in Schritt 3 aus."
-              }
-            ]
-          },
-          {
-            "title": "Teil 4 : Dictionaries",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Python-Historie für Listen- und Löschoperationen",
-                "file": "verify4-1.sh",
-                "hint": "Bitte führen Sie den Python-Programmausdruck in Schritt 4 aus."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "様々なPythonの組み込みオブジェクトを操作する",
-      "description": "この実験では、様々なPythonの組み込みオブジェクトを操作します。",
-      "meta": {
-        "title": "Pythonの基礎 | 数値計算",
-        "description": "Pythonの組み込みオブジェクトをどのように操作するか学びましょう。数値計算の実行やPythonの数値メソッドの探索も含まれます。",
-        "keywords": "Python, 数値計算, 組み込みオブジェクト, プログラミングの基礎"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "第1部 : 数値",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴に特定のコマンドが含まれていることを確認する",
-                "file": "verify1-1.sh",
-                "hint": "ステップ1のpythonプログラム文を実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "第2部 : 文字列操作",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴コマンドを確認する",
-                "file": "verify2-1.sh",
-                "hint": "ステップ2のpythonプログラム文を実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "第3部 : リスト操作",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonの文字列とリスト操作を確認する",
-                "file": "verify3-1.sh",
-                "hint": "ステップ3のpythonプログラム文を実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "第4部 : 辞書",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "リストと削除操作に関するPythonの履歴を確認する",
-                "file": "verify4-1.sh",
-                "hint": "ステップ4のpythonプログラム文を実行してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Обработка различных встроенных объектов Python",
-      "description": "В этой лабораторной работе вы будете обрабатывать различные встроенные объекты Python.",
-      "meta": {
-        "title": "Основы Python | Числовые вычисления",
-        "description": "Изучите, как обрабатывать встроенные объекты Python, включая выполнение числовых вычислений и изучение методов чисел в Python.",
-        "keywords": "Python, Числовые вычисления, Встроенные объекты, Основы программирования"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Часть 1: Числа",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить, что история Python содержит определенные команды",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, выполните инструкцию программы Python в шаге 1."
-              }
-            ]
-          },
-          {
-            "title": "Часть 2: Обработка строк",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить команды истории Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, выполните инструкцию программы Python в шаге 2."
-              }
-            ]
-          },
-          {
-            "title": "Часть 3: Обработка списков",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить операции со строками и списками в Python",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, выполните инструкцию программы Python в шаге 3."
-              }
-            ]
-          },
-          {
-            "title": "Часть 4: Словарь",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python для операций со списком и удаления",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, выполните инструкцию программы Python в шаге 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

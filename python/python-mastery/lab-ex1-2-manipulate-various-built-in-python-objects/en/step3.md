@@ -1,162 +1,160 @@
-# Part 3 : List Manipulation
+# Working with Python Lists
 
-In the first part, you worked with strings containing stock symbols. For example:
+Lists are versatile data structures in Python that can store collections of items. In this step, we'll explore list operations.
 
-```python
->>> symbols = 'HPQ AAPL IBM MSFT YHOO  GOOG'
->>>
+## Creating Lists from Strings
+
+Start a new Python interactive session:
+
+```bash
+python3
 ```
 
-Define the above variable and split it into a list of names using the `split()` operation of strings:
+Define a string of stock symbols and convert it to a list:
 
 ```python
->>> symlist = symbols.split()
+>>> symbols = 'HPQ AAPL IBM MSFT YHOO GOOG'
+>>> symlist = symbols.split()    # Split the string on whitespace
 >>> symlist
-['HPQ', 'AAPL', 'IBM', 'MSFT', 'YHOO', 'GOOG' ]
->>>
+['HPQ', 'AAPL', 'IBM', 'MSFT', 'YHOO', 'GOOG']
 ```
 
-## Extracting and reassigning list elements
+## Accessing and Modifying List Elements
 
-Lists work like arrays where you can look up and modify elements by numerical index. Try a few lookups:
+Lists support indexing like strings, but unlike strings, list elements can be modified:
 
 ```python
->>> symlist[0]
+>>> symlist[0]    # First element
 'HPQ'
->>> symlist[1]
+>>> symlist[1]    # Second element
 'AAPL'
->>> symlist[-1]
+>>> symlist[-1]   # Last element
 'GOOG'
->>> symlist[-2]
+>>> symlist[-2]   # Second to last element
 'YHOO'
->>>
-```
 
-Try reassigning one of the items:
-
-```python
->>> symlist[2] = 'AIG'
+>>> symlist[2] = 'AIG'    # Replace the third element
 >>> symlist
-['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG' ]
->>>
+['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG']
 ```
 
-## Looping over list items
+## Iterating Through Lists
 
-The `for` loop works by looping over data in a sequence such as a list. Check this out by typing the following loop and watching what happens:
+The `for` loop is commonly used to process each element in a list:
 
 ```python
 >>> for s in symlist:
-        print('s =', s)
-
-... look at the output ...
+...     print('s =', s)
+...
 ```
 
-## Membership tests
+You should see the following output:
 
-Use the `in` operator to check if `'AIG'`,`'AA'`, and `'CAT'` are in the list of symbols.
+```
+s = HPQ
+s = AAPL
+s = AIG
+s = MSFT
+s = YHOO
+s = GOOG
+```
+
+## Checking Membership
+
+Use the `in` operator to check if an item exists in a list:
 
 ```python
 >>> 'AIG' in symlist
 True
 >>> 'AA' in symlist
 False
->>>
+>>> 'CAT' in symlist
+False
 ```
 
-## Appending, inserting, and deleting items
+## Adding and Removing Elements
 
-Use the `append()` method to add the symbol `'RHT'` to end of `symlist`.
+Lists have methods to add and remove elements:
 
 ```python
->>> symlist.append('RHT')
+>>> symlist.append('RHT')    # Add an element to the end
 >>> symlist
 ['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG', 'RHT']
->>>
-```
 
-Use the `insert()` method to insert the symbol `'AA'` as the second item in the list.
-
-```python
->>> symlist.insert(1,'AA')
+>>> symlist.insert(1, 'AA')    # Insert at specific position
 >>> symlist
 ['HPQ', 'AA', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG', 'RHT']
->>>
-```
 
-Use the `remove()` method to remove `'MSFT'` from the list.
-
-```python
->>> symlist.remove('MSFT')
+>>> symlist.remove('MSFT')    # Remove by value
 >>> symlist
 ['HPQ', 'AA', 'AAPL', 'AIG', 'YHOO', 'GOOG', 'RHT']
 ```
 
-Try calling `remove()` again to see what happens if the item can't be found.
+Try removing an element that doesn't exist:
 
 ```python
 >>> symlist.remove('MSFT')
-... watch what happens ...
->>>
 ```
 
-Use the `index()` method to find the position of `'YHOO'` in the list.
+You should see an error like:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+```
+
+Find the position of an element:
 
 ```python
 >>> symlist.index('YHOO')
 4
->>> symlist[4]
+>>> symlist[4]    # Verify the element at that position
 'YHOO'
->>>
 ```
 
-## List sorting
+## Sorting Lists
 
-Want to sort a list? Use the `sort()` method. Try it out:
+Lists can be sorted in place:
 
 ```python
->>> symlist.sort()
+>>> symlist.sort()    # Sort alphabetically
 >>> symlist
 ['AA', 'AAPL', 'AIG', 'GOOG', 'HPQ', 'RHT', 'YHOO']
->>>
-```
 
-Want to sort in reverse? Try this:
-
-```python
->>> symlist.sort(reverse=True)
+>>> symlist.sort(reverse=True)    # Sort in reverse
 >>> symlist
 ['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA']
->>>
 ```
 
-Note: Sorting a list modifies its contents "in-place." That is, the elements of the list are shuffled around, but no new list is created as a result.
+## Nested Lists
 
-## Lists of anything
-
-Lists can contain any kind of object, including other lists (e.g., nested lists). Try this out:
+Lists can contain any type of object, including other lists:
 
 ```python
->>> nums = [101,102,103]
+>>> nums = [101, 102, 103]
 >>> items = [symlist, nums]
 >>> items
 [['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA'], [101, 102, 103]]
 ```
 
-Pay close attention to the above output. `items` is a list with two elements. Each element is list.
-
-Try some nested list lookups:
+Accessing elements in nested lists:
 
 ```python
->>> items[0]
+>>> items[0]    # First element (the symlist)
 ['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA']
->>> items[0][1]
+>>> items[0][1]    # Second element in symlist
 'RHT'
->>> items[0][1][2]
+>>> items[0][1][2]    # Third character in 'RHT'
 'T'
->>> items[1]
+>>> items[1]    # Second element (the nums list)
 [101, 102, 103]
->>> items[1][1]
+>>> items[1][1]    # Second element in nums
 102
->>>
+```
+
+Exit the Python shell when you're done:
+
+```python
+>>> exit()
 ```
