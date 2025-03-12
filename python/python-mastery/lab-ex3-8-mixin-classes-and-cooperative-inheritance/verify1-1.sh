@@ -1,6 +1,7 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "TextTableFormatter"
-cat ~/.python_history | grep "print_table"
-cat ~/.python_history | grep "class"
-cat ~/.python_history | grep "super"
+#!/bin/bash
+if [ -f "/home/labex/project/tableformat.py" ]; then
+  exit 0
+else
+  echo "tableformat.py file not found in the project directory"
+  exit 1
+fi

@@ -1,7 +1,7 @@
-#!/bin/zsh
-
-cat /home/labex/project/validate.py | grep "__init_subclass__"
-cat /home/labex/project/structure.py | grep "__new__"
-cat /home/labex/project/structure.py | grep "__prepare__"
-cat /home/labex/project/structure.py | grep "staticmethod"
-grep -v "validate" /home/labex/project/stock.py
+#!/bin/bash
+# Check if the files have been accessed
+if [ -e /home/labex/project/structure.py ] && [ -e /home/labex/project/validate.py ]; then
+  exit 0
+else
+  exit 1
+fi

@@ -13,55 +13,56 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Using the import statement",
+        "title": "Understanding Python Modules",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History Imports and Froms",
+            "name": "Verify Python Imports",
             "file": "verify1-1.sh",
-            "hint": "Please use the 'import' statement to load these programs and use their functionality.",
+            "hint": "Make sure you have imported the modules as instructed.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/importing_modules",
-          "python/python_shell",
-          "python/tuples",
-          "python/using_packages"
-        ]
+        "skills": ["python/classes_objects", "python/importing_modules"]
       },
       {
-        "title": "Main Module",
+        "title": "Understanding the Main Module in Python",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Presence of Main Function in Python Script",
+            "name": "Verify Main Function in Python Script",
             "file": "verify2-1.sh",
-            "hint": "Please modify the program as required.",
+            "hint": "Make sure you've modified pcost.py to include the if __name__ == \"__main__\" condition.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/catching_exceptions",
-          "python/comments",
           "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/file_opening_closing"
+        ],
+        "solutions": ["pcost.py"]
+      },
+      {
+        "title": "Creating Your Own Module",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Report Module Creation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've created the report.py file with the required functions."
+          }
+        ],
+        "skills": [
+          "python/creating_modules",
+          "python/file_operations",
+          "python/function_definition"
         ],
         "solutions": ["pcost.py"]
       }
@@ -108,272 +109,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "定义和导入 Python 模块",
-      "description": "在本实验中，你将学习 Python 中的模块以及如何使用 import 语句。",
-      "meta": {
-        "title": "Python 模块 | 导入语句 | 编程教程",
-        "description": "探索 Python 模块，学习如何使用 import 语句，并通过实际示例深入了解编程教程。",
-        "keywords": "Python, 模块, 导入语句, 编程教程, Python 练习"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "使用 import 语句",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录中的导入和 from 语句",
-                "file": "verify1-1.sh",
-                "hint": "请使用 'import' 语句加载这些程序并使用它们的功能。"
-              }
-            ]
-          },
-          {
-            "title": "主模块",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 脚本中主函数的存在",
-                "file": "verify2-1.sh",
-                "hint": "请按要求修改程序。"
-              }
-            ],
-            "solutions": ["pcost.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Definición e importación de módulos de Python",
-      "description": "En este laboratorio, aprenderá sobre los módulos y cómo usar la declaración import en Python.",
-      "meta": {
-        "title": "Módulos de Python | Declaraciones de importación | Tutoriales de programación",
-        "description": "Explore los módulos de Python, aprenda cómo usar la declaración import y sumérjase en tutoriales de programación con ejemplos prácticos.",
-        "keywords": "Python, Módulos, Declaraciones de importación, Tutoriales de programación, Ejercicios de Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Usando la declaración import",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar importaciones y froms en el historial de Python",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, use la declaración 'import' para cargar estos programas y usar su funcionalidad."
-              }
-            ]
-          },
-          {
-            "title": "Módulo principal",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de la función principal en el script de Python",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, modifique el programa según sea necesario."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Définition et importation de modules Python",
-      "description": "Dans ce laboratoire, vous allez découvrir les modules et apprendre à utiliser l'instruction import en Python.",
-      "meta": {
-        "title": "Modules Python | Instructions d'importation | Tutoriels de programmation",
-        "description": "Explorez les modules Python, apprenez à utiliser l'instruction d'importation et plongez dans les tutoriels de programmation avec des exemples pratiques.",
-        "keywords": "Python, Modules, Instructions d'importation, Tutoriels de programmation, Exercices Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Utilisation de l'instruction import",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier les importations et les froms de l'historique Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez utiliser l'instruction 'import' pour charger ces programmes et utiliser leur fonctionnalité."
-              }
-            ]
-          },
-          {
-            "title": "Module principal",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence de la fonction principale dans le script Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez modifier le programme selon les exigences."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Definieren und Importieren von Python-Modulen",
-      "description": "In diesem Lab lernen Sie über Module und wie Sie das import-Statement in Python verwenden.",
-      "meta": {
-        "title": "Python-Module | Import-Statements | Programmier-Tutorials",
-        "description": "Erkunden Sie Python-Module, lernen Sie, wie das import-Statement zu verwenden ist, und tauchen Sie in Programmier-Tutorials mit praxisnahen Beispielen ein.",
-        "keywords": "Python, Module, Import-Statements, Programmier-Tutorials, Python-Übungen"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Verwendung des import-Statements",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Python-Historie-Imports und Froms",
-                "file": "verify1-1.sh",
-                "hint": "Verwenden Sie bitte das 'import'-Statement, um diese Programme zu laden und ihre Funktionalität zu nutzen."
-              }
-            ]
-          },
-          {
-            "title": "Hauptmodul",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Anwesenheit der Hauptfunktion in einem Python-Skript",
-                "file": "verify2-1.sh",
-                "hint": "Bitte ändern Sie das Programm wie erforderlich."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Pythonモジュールの定義とインポート",
-      "description": "この実験では、Pythonのモジュールとimport文の使い方について学びます。",
-      "meta": {
-        "title": "Pythonモジュール | インポート文 | プログラミングチュートリアル",
-        "description": "Pythonモジュールを探り、import文の使い方を学び、実践的な例を使ったプログラミングチュートリアルに没頭しましょう。",
-        "keywords": "Python, モジュール, インポート文, プログラミングチュートリアル, Python演習"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "import文の使用",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴のインポートとfromを確認する",
-                "file": "verify1-1.sh",
-                "hint": "これらのプログラムを読み込み、その機能を使用するには、'import'文を使用してください。"
-              }
-            ]
-          },
-          {
-            "title": "メインモジュール",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonスクリプトにおけるメイン関数の存在を確認する",
-                "file": "verify2-1.sh",
-                "hint": "必要に応じてプログラムを修正してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Определение и импорт модулей в Python",
-      "description": "В этой лабораторной работе вы узнаете о модулях и о том, как использовать инструкцию import в Python.",
-      "meta": {
-        "title": "Модули Python | Инструкции import | Руководства по программированию",
-        "description": "Изучайте модули Python, узнайте, как использовать инструкцию import, и погружайтесь в руководства по программированию с примерами на практике.",
-        "keywords": "Python, модули, инструкции import, руководства по программированию, упражнения на Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Использование инструкции import",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить импорты и from в истории Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, используйте инструкцию 'import' для загрузки этих программ и использования их функциональности."
-              }
-            ]
-          },
-          {
-            "title": "Главный модуль",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить наличие главной функции в скрипте на Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, измените программу в соответствии с требованиями."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

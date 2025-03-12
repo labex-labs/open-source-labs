@@ -1,10 +1,16 @@
 # Introduction
 
+In this lab, you will enhance your understanding of type checking and interfaces in Python by extending a table formatting module. You will implement concepts like abstract base classes and interface validation to create more robust and maintainable code.
+
 **Objectives:**
 
-- Type checking and interfaces
-- Abstract base classes
+- Implement type checking for function parameters
+- Create and use interfaces with abstract base classes
+- Apply the template method pattern to reduce code duplication
 
-**Files Modified:** `tableformat.py`
+**Files You Will Modify:**
 
-In Exercise 3.5, we modified the `tableformat.py` file to have a `TableFormatter` class and to use various subclasses for different output formats. In this exercise, we extend that code a bit more.
+- `tableformat.py` - A module for formatting data as tables
+- `reader.py` - A module for reading CSV files
+
+This lab builds upon concepts from previous exercises, specifically focusing on type safety and interface design patterns.

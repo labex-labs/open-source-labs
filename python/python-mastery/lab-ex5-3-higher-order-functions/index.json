@@ -13,70 +13,70 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Using higher-order functions",
+        "title": "Understanding Code Duplication",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Presence of Lambda Functions and Python Statements",
+            "name": "Verify Understanding of Current Code",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please examine the reader.py file to understand the current functions.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
+          "python/classes_objects",
           "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lambda_functions",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/function_definition"
         ],
         "solutions": ["step1_solution.py"]
       },
       {
-        "title": "Mapping",
+        "title": "Creating a Higher-Order Function",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Student's Use of map, list, and lambda Functions",
+            "name": "Verify Creation of Higher-Order Function",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please add the convert_csv function to reader.py",
             "timeout": 0,
             "showstderr": true
           }
         ],
+        "skills": ["python/arguments_return", "python/function_definition"],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Refactoring Existing Functions",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Refactoring of Existing Functions",
+            "file": "verify3-1.sh",
+            "hint": "Please refactor both csv_as_dicts and csv_as_instances functions to use convert_csv"
+          }
+        ],
+        "skills": ["python/classes_objects", "python/function_definition"],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Using the map() Function",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Use of map() Function",
+            "file": "verify4-1.sh",
+            "hint": "Please update the convert_csv function to use map() instead of a for loop"
+          }
+        ],
         "skills": [
           "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
           "python/iterators",
-          "python/lambda_functions",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types"
+          "python/lambda_functions"
         ],
         "solutions": ["step2_solution.py"]
       }
@@ -113,273 +113,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "Python的高阶函数",
-      "description": "在本实验中，你将学习Python中的高阶函数。",
-      "meta": {
-        "title": "Python编程教程 | 高阶函数",
-        "description": "探索关于使用高阶函数来统一核心函数并提高代码效率的Python编程教程。",
-        "keywords": "Python,编程,高阶函数,代码优化,教程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "使用高阶函数",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证是否存在Lambda函数和Python语句",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "映射",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证学生对map、list和lambda函数的使用",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Funciones de Orden Superior en Python",
-      "description": "En este laboratorio, aprenderás sobre las funciones de orden superior en Python.",
-      "meta": {
-        "title": "Tutoriales de Programación en Python | Funciones de Orden Superior",
-        "description": "Explora los tutoriales de programación en Python sobre el uso de funciones de orden superior para unificar las funciones principales y mejorar la eficiencia del código.",
-        "keywords": "Python, Programación, Funciones de Orden Superior, Optimización del Código, Tutoriales"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Usando funciones de orden superior",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de funciones lambda y declaraciones de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Mapeo",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar el uso del estudiante de las funciones map, list y lambda",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Les fonctions de haut niveau en Python",
-      "description": "Dans ce laboratoire, vous allez découvrir les fonctions de haut niveau en Python.",
-      "meta": {
-        "title": "Tutoriels de programmation Python | Fonctions de haut niveau",
-        "description": "Explorez les tutoriels de programmation Python sur l'utilisation de fonctions de haut niveau pour unifier les fonctions principales et améliorer l'efficacité du code.",
-        "keywords": "Python, Programmation, Fonctions de haut niveau, Optimisation du code, Tutoriels"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Utilisation de fonctions de haut niveau",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence de fonctions Lambda et d'instructions Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Mappage",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation par l'étudiant des fonctions map, list et lambda",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Python's Higher Functions",
-      "description": "In diesem Lab lernen Sie über Higher Order Functions in Python.",
-      "meta": {
-        "title": "Python-Programmier-Tutorials | Higher Order Functions",
-        "description": "Entdecken Sie Python-Programmier-Tutorials zum Verwenden von Higher-Order-Funktionen, um Kernfunktionen zu vereinigen und die Codeeffizienz zu verbessern.",
-        "keywords": "Python, Programmierung, Higher Order Functions, Codeoptimierung, Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Verwendung von Higher-Order-Funktionen",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie das Vorhandensein von Lambda-Funktionen und Python-Anweisungen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Mapping",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie die Verwendung von map, list und lambda-Funktionen durch den Schüler",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Pythonの高階関数",
-      "description": "この実験では、Pythonにおける高階関数について学びます。",
-      "meta": {
-        "title": "Pythonプログラミングチュートリアル | 高階関数",
-        "description": "高階関数を使ってコア関数を統一し、コードの効率を向上させるPythonプログラミングチュートリアルを探索しましょう。",
-        "keywords": "Python, プログラミング, 高階関数, コード最適化, チュートリアル"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "高階関数の使用",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "ラムダ関数とPython文の存在を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "マッピング",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "学生がmap、list、およびlambda関数を使用していることを確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Высшие функции Python",
-      "description": "В этой лабораторной работе вы узнаете о функциях высшего порядка в Python.",
-      "meta": {
-        "title": "Руководства по программированию на Python | Высшие функции",
-        "description": "Изучайте руководства по программированию на Python о использовании функций высшего порядка для объединения основных функций и повышения эффективности кода.",
-        "keywords": "Python, Программирование, Функции высшего порядка, Оптимизация кода, Руководства"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Использование функций высшего порядка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить наличие лямбда-функций и Python-операторов",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Отображение",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить использование функций map, list и lambda студентом",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

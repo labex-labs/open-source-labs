@@ -1,28 +1,77 @@
-# Exporting Everything
+# Exporting Everything from the Package
 
-In the `structly/__init__.py`, define an `__all__` variable that contains all exported symbols. Once you've done this, you should be able to simplify the `stock.py` file further:
+Now let's take our package organization a step further by defining what symbols should be exported at the package level.
+
+## Adding `__all__` to the Package
+
+When we add an `__all__` list to the package's `__init__.py` file, we can control exactly which symbols are available when someone uses `from structly import *`.
+
+Let's update the `__init__.py` file:
+
+```bash
+nano ~/project/structly/__init__.py
+```
+
+Add an `__all__` list that includes all the symbols we want to export:
 
 ```python
-# stock.py
+# structly/__init__.py
+
+from .structure import *
+from .reader import *
+from .tableformat import *
+
+# Define what symbols are exported when using "from structly import *"
+__all__ = ['Structure',  # from structure
+           'read_csv_as_instances', 'read_csv_as_dicts', 'read_csv_as_columns',  # from reader
+           'create_formatter', 'print_table']  # from tableformat
+```
+
+Save and exit.
+
+## Understanding `import *`
+
+The `from module import *` pattern is generally discouraged in most Python code because:
+
+1. It can pollute your namespace with unexpected symbols
+2. It makes it unclear where particular symbols come from
+3. It can lead to shadowing issues
+
+However, it's appropriate in specific cases:
+
+- For packages designed to be used as a cohesive whole
+- When a package defines a clear interface via `__all__`
+- For interactive use (like in a Python REPL)
+
+## Testing with Import \*
+
+Let's create another test file to verify that we can import everything at once:
+
+```bash
+nano ~/project/test_import_all.py
+```
+
+Add this content:
+
+```python
+# Test importing everything at once
 
 from structly import *
 
-class Stock(Structure):
-    name = String()
-    shares = PositiveInteger()
-    price = PositiveFloat()
+# Try using the imported symbols
+print(f"Structure symbol is available: {Structure is not None}")
+print(f"read_csv_as_instances symbol is available: {read_csv_as_instances is not None}")
+print(f"create_formatter symbol is available: {create_formatter is not None}")
+print(f"print_table symbol is available: {print_table is not None}")
 
-    @property
-    def cost(self):
-        return self.shares * self.price
-
-    def sell(self, nshares: PositiveInteger):
-        self.shares -= nshares
-
-if __name__ == '__main__':
-    portfolio = read_csv_as_instances('portfolio.csv', Stock)
-    formatter = create_formatter('text')
-    print_table(portfolio, ['name','shares','price'], formatter)
+print("All symbols successfully imported!")
 ```
 
-As an aside, use of the `from module import *` statement is generally frowned upon the Python community--especially if you're not sure what you're doing. That said, there are situations where it often makes sense. For example, if a package defines a large number of commonly used symbols or constants it might be useful to use it.
+Save and exit. Now run the test:
+
+```bash
+cd ~/project
+python test_import_all.py
+```
+
+You should see confirmation that all symbols were successfully imported.

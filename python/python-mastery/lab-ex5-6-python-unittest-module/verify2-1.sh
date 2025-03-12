@@ -1,8 +1,11 @@
-#!/bin/zsh
-
-grep -E "name.*=" /home/labex/project/*.py | grep -v -w "stock.py"
-grep "cost" /home/labex/project/*.py | grep -v -w "stock.py"
-grep "sell" /home/labex/project/*.py | grep -v -w "stock.py"
-grep "from_row" /home/labex/project/*.py | grep -v -w "stock.py"
-grep "repr" /home/labex/project/*.py | grep -v -w "stock.py"
-grep "==" /home/labex/project/*.py | grep -v -w "stock.py"
+if [ -f /home/labex/project/teststock.py ]; then
+  grep -q "test_create_keyword_args" /home/labex/project/teststock.py \
+    && grep -q "test_cost" /home/labex/project/teststock.py \
+    && grep -q "test_sell" /home/labex/project/teststock.py \
+    && grep -q "test_from_row" /home/labex/project/teststock.py \
+    && grep -q "test_repr" /home/labex/project/teststock.py \
+    && grep -q "test_eq" /home/labex/project/teststock.py \
+    && echo "Success" || echo "Failed: teststock.py doesn't contain all the required test methods"
+else
+  echo "Failed: teststock.py file not found"
+fi

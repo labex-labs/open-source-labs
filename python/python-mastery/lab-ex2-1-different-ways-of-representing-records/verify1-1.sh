@@ -1,4 +1,2 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "open"
-cat ~/.python_history | grep "next"
+#!/bin/bash
+grep -q "ctabus\.csv" ~/.python_history && echo "Success"

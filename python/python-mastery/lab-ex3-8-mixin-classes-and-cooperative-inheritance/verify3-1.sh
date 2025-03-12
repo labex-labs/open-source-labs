@@ -1,5 +1,8 @@
-#!/bin/zsh
-
-cat /home/labex/project/tableformat.py | grep -E 'class.*\(.*ColumnFormatMixin'
-cat /home/labex/project/tableformat.py | grep -E 'class.*\(.*UpperHeadersMixin'
-cat ~/.python_history | grep "create_formatter"
+#!/bin/bash
+grep -q "def create_formatter.*column_formats" "/home/labex/project/tableformat.py" && grep -q "upper_headers" "/home/labex/project/tableformat.py"
+if [ $? -eq 0 ]; then
+  exit 0
+else
+  echo "The create_formatter function hasn't been properly enhanced"
+  exit 1
+fi

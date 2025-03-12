@@ -1,4 +1,8 @@
-#!/bin/zsh
+#!/bin/bash
 
-cat /home/labex/project/stock.py | grep -E '@.*shares.*\..*setter'
-cat /home/labex/project/stock.py | grep -E '@.*price.*\..*setter'
+cd /home/labex/project
+if grep -q "@shares.setter" stock.py && grep -q "raise TypeError" stock.py && grep -q "raise ValueError" stock.py; then
+  exit 0
+else
+  exit 1
+fi

@@ -1,12 +1,68 @@
-# Controlling Exported Symbols
+# Controlling Exported Symbols with `__all__`
 
-Modify all of the submodules in the `structly` package so that they explicitly define an `__all__` variable which exports selected symbols. Specifically:
+In Python, you can control which symbols (functions, classes, variables) are exported from a module when someone uses `from module import *`. This is done using the `__all__` variable.
 
-- `structure.py` should export `Structure`
-- `reader.py` should export all of the various `read_csv_as_*()` functions
-- `tableformat.py` exports `create_formatter()` and `print_table()`
+## What is `__all__`?
 
-Now, in the `__init__.py` file, unify all of the submodules like this:
+The `__all__` variable is a list of strings defining what symbols a module exports when `from module import *` is used. If `__all__` is not defined, `import *` imports all symbols that don't begin with an underscore.
+
+## Modifying Each Submodule
+
+Let's add the `__all__` variable to each submodule in the `structly` package:
+
+1. First, let's modify `structure.py`:
+
+```bash
+nano ~/project/structly/structure.py
+```
+
+Add this line near the top of the file (after imports):
+
+```python
+__all__ = ['Structure']
+```
+
+Save and exit (Ctrl+X, then Y, then Enter).
+
+2. Next, let's modify `reader.py`:
+
+```bash
+nano ~/project/structly/reader.py
+```
+
+Look through the file to identify all the `read_csv_as_*` functions. Then add an `__all__` list with all these function names. It should look something like:
+
+```python
+__all__ = ['read_csv_as_instances', 'read_csv_as_dicts', 'read_csv_as_columns']
+```
+
+(The actual function names may vary; include all `read_csv_as_*` functions you find in the file.)
+
+Save and exit.
+
+3. Now, let's modify `tableformat.py`:
+
+```bash
+nano ~/project/structly/tableformat.py
+```
+
+Add this line near the top of the file:
+
+```python
+__all__ = ['create_formatter', 'print_table']
+```
+
+Save and exit.
+
+## Unified Imports in `__init__.py`
+
+Now that each module defines what it exports, let's update the `__init__.py` file to import all of these symbols:
+
+```bash
+nano ~/project/structly/__init__.py
+```
+
+Change the content to:
 
 ```python
 # structly/__init__.py
@@ -16,28 +72,33 @@ from .reader import *
 from .tableformat import *
 ```
 
-Once you have done this, you should be able to import everything from a single logical module:
+Save and exit.
+
+## Testing Our Changes
+
+Let's create a simple test file to verify that our changes work:
+
+```bash
+nano ~/project/test_structly.py
+```
+
+Add this content:
 
 ```python
-# stock.py
+# A simple test to verify our imports work correctly
 
 from structly import Structure
+from structly import read_csv_as_instances
+from structly import create_formatter, print_table
 
-class Stock(Structure):
-    name = String()
-    shares = PositiveInteger()
-    price = PositiveFloat()
-
-    @property
-    def cost(self):
-        return self.shares * self.price
-
-    def sell(self, nshares: PositiveInteger):
-        self.shares -= nshares
-
-if __name__ == '__main__':
-    from structly import read_csv_as_instances, create_formatter, print_table
-    portfolio = read_csv_as_instances('portfolio.csv', Stock)
-    formatter = create_formatter('text')
-    print_table(portfolio, ['name','shares','price'], formatter)
+print("Successfully imported all required symbols!")
 ```
+
+Save and exit. Now let's run this test:
+
+```bash
+cd ~/project
+python test_structly.py
+```
+
+You should see the message "Successfully imported all required symbols!" if everything is working correctly.

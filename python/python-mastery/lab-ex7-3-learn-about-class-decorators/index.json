@@ -13,60 +13,40 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Descriptors Revisited",
+        "title": "Implementing Type-Checking with Descriptors",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Structure, String, PositiveInteger, PositiveFloat, and Properties",
+            "name": "Verify Stock Class Implementation",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the Stock class with proper descriptors and methods.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/tuples",
-          "python/using_packages"
-        ],
+        "skills": ["python/classes_objects", "python/encapsulation"],
         "solutions": ["stock.py"]
       },
       {
-        "title": "Using Class Decorators to Fill in Details",
+        "title": "Creating a Class Decorator for Validation",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Presence of Vars Validator and isinstance in structure.py and Decorators in stock.py",
+            "name": "Verify Class Decorator Implementation",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the validate_attributes decorator and updated the Stock class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
+          "python/class_static_methods",
           "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/polymorphism",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples",
-          "python/using_packages"
+          "python/decorators"
         ],
         "solutions": ["step2_solution.py"]
       },
@@ -75,101 +55,55 @@
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Presence of __init_subclass__ Method",
+            "name": "Verify Inheritance-Based Decorator",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the __init_subclass__ method and updated the Stock class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/polymorphism",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples",
-          "python/using_packages"
+          "python/decorators",
+          "python/inheritance"
         ],
         "solutions": ["step3_solution.py"]
       },
       {
-        "title": "Row Conversion",
+        "title": "Adding Row Conversion Functionality",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Presence of 'zip' in structure.py",
+            "name": "Verify Row Conversion Implementation",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the from_row method and updated the validate_attributes function.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
           "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
+          "python/type_conversion"
         ],
         "solutions": ["step4_solution.py"]
       },
       {
-        "title": "Method Argument Checking",
+        "title": "Adding Method Argument Validation",
         "text": "en/step5.md",
         "verify": [
           {
-            "name": "Verify Structure Python Attributes Validation",
+            "name": "Verify Method Argument Validation",
             "file": "verify5-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've updated the validate_attributes function and added annotations to the sell method.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
           "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lambda_functions",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/decorators",
+          "python/type_conversion"
         ],
         "solutions": ["step5_solution.py"]
       }
@@ -221,474 +155,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "了解类装饰器",
-      "description": "在本实验中，你将探索类装饰器并重温Python中的描述符。",
-      "meta": {
-        "title": "掌握类装饰器：提升你的Python技能",
-        "description": "深入类装饰器的世界，重温描述符以增强你的Python编程能力。",
-        "keywords": "Python实验, 类装饰器, Python, 描述符, 代码结构, Python编程, 类型检查"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "重温描述符",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Structure、String、PositiveInteger、PositiveFloat和属性",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["stock.py"]
-          },
-          {
-            "title": "使用类装饰器来填充细节",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证structure.py中是否存在Vars Validator和isinstance，以及stock.py中是否存在装饰器",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "通过继承应用装饰器",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证是否存在__init_subclass__方法",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "行转换",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证structure.py中是否存在'zip'",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step4_solution.py"]
-          },
-          {
-            "title": "方法参数检查",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Python结构属性的有效性",
-                "file": "verify5-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step5_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Aprende sobre Decoradores de Clase",
-      "description": "En este laboratorio, explorarás los decoradores de clase y volverás a revisar los descriptores en Python.",
-      "meta": {
-        "title": "Dominando los Decoradores de Clase: Eleva tus Habilidades en Python",
-        "description": "Sumérgete en el mundo de los decoradores de clase y revisa los descriptores para mejorar tu destreza en la programación de Python.",
-        "keywords": "python playground, decoradores de clase, python, descriptores, estructura de código, programación de python, comprobación de tipos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Descriptores Revisados",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verifica Structure, String, PositiveInteger, PositiveFloat y Propiedades",
-                "file": "verify1-1.sh",
-                "hint": "Sigue las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Usando Decoradores de Clase para Completar Detalles",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verifica la presencia de Vars Validator e isinstance en structure.py y Decoradores en stock.py",
-                "file": "verify2-1.sh",
-                "hint": "Sigue las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Aplicando Decoradores a través de la Herencia",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verifica la presencia del método __init_subclass__",
-                "file": "verify3-1.sh",
-                "hint": "Sigue las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Conversión de Fila",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verifica la presencia de 'zip' en structure.py",
-                "file": "verify4-1.sh",
-                "hint": "Sigue las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Verificación de Argumentos de Método",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verifica la Validación de Atributos de Estructura de Python",
-                "file": "verify5-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Apprenez les décorateurs de classe",
-      "description": "Dans ce laboratoire, vous explorerez les décorateurs de classe et revisitez les descripteurs en Python.",
-      "meta": {
-        "title": "Maîtriser les décorateurs de classe : Améliorez vos compétences en Python",
-        "description": "Plongez dans le monde des décorateurs de classe et revisitez les descripteurs pour améliorer votre habileté en programmation Python.",
-        "keywords": "plateforme de codage Python, décorateurs de classe, Python, descripteurs, structure du code, programmation Python, vérification de type"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Descripteurs revisités",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez Structure, String, PositiveInteger, PositiveFloat et les propriétés",
-                "file": "verify1-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Utilisation des décorateurs de classe pour compléter les détails",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de Vars Validator et isinstance dans structure.py et des décorateurs dans stock.py",
-                "file": "verify2-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Application de décorateurs via l'héritage",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de la méthode __init_subclass__",
-                "file": "verify3-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Conversion de ligne",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de 'zip' dans structure.py",
-                "file": "verify4-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Vérification des arguments de la méthode",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifiez la validation des attributs Python de la structure",
-                "file": "verify5-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Lernen über Klassen-Dekoratoren",
-      "description": "In diesem Lab werden Sie Klassen-Dekoratoren erkunden und die Deskriptoren in Python erneut betrachten.",
-      "meta": {
-        "title": "Meisterklasse Klassen-Dekoratoren: Steigern Sie Ihre Python-Fähigkeiten",
-        "description": "Taucht in die Welt der Klassen-Dekoratoren ein und betrachten Sie erneut die Deskriptoren, um Ihre Python-Programmierfähigkeiten zu verbessern.",
-        "keywords": "Python-Spielfeld, Klassen-Dekoratoren, Python, Deskriptoren, Code-Struktur, Python-Programmierung, Typüberprüfung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Deskriptoren erneut betrachtet",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Structure, String, PositiveInteger, PositiveFloat und Eigenschaften",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Verwendung von Klassen-Dekoratoren, um Details auszufüllen",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie das Vorhandensein von Vars Validator und isinstance in structure.py und Dekoratoren in stock.py",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Anwenden von Dekoratoren über Vererbung",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie das Vorhandensein der __init_subclass__-Methode",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Zeilenkonvertierung",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie das Vorhandensein von 'zip' in structure.py",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Überprüfung von Methodenargumenten",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Validierung von Python-Attributen in der Struktur",
-                "file": "verify5-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "クラスデコレータについて学ぶ",
-      "description": "この実験では、Pythonのクラスデコレータを調べ、ディスクリプタについて再学習します。",
-      "meta": {
-        "title": "クラスデコレータをマスターする：Pythonスキルを高める",
-        "description": "クラスデコレータの世界に浸り、ディスクリプタを再学習して、Pythonプログラミングの能力を向上させましょう。",
-        "keywords": "Pythonの演習場, クラスデコレータ, Python, ディスクリプタ, コード構造, Pythonプログラミング, 型チェック"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "ディスクリプタの再学習",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Structure、String、PositiveInteger、PositiveFloat およびプロパティを確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "クラスデコレータを使って詳細を埋める",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "structure.py における Vars Validator と isinstance および stock.py におけるデコレータの存在を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "継承を通じたデコレータの適用",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "__init_subclass__ メソッドの存在を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "行変換",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "structure.py に 'zip' が存在することを確認する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "メソッド引数のチェック",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "構造体のPython属性の検証を確認する",
-                "file": "verify5-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Изучение классовых декораторов",
-      "description": "В этой лабораторной работе вы изучите классовые декораторы и повторите дескрипторы в Python.",
-      "meta": {
-        "title": "Мастерство классовыми декораторами: повысьте свои навыки в Python",
-        "description": "Погрузитесь в мир классовых декораторов и повторите дескрипторы, чтобы повысить свою мастерство в программировании на Python.",
-        "keywords": "python playground, классовые декораторы, python, дескрипторы, структура кода, программирование на python, проверка типов"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Десерипторы: повторение",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить Structure, String, PositiveInteger, PositiveFloat и свойства",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Использование классовых декораторов для заполнения деталей",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить наличие валидатора vars и isinstance в structure.py и декораторов в stock.py",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Применение декораторов с использованием наследования",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить наличие метода __init_subclass__",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Преобразование строки",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить наличие 'zip' в structure.py",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Проверка аргументов метода",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверить валидацию атрибутов Python структуры",
-                "file": "verify5-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

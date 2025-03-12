@@ -2,9 +2,10 @@
 
 **Objectives:**
 
-- Explore the power of having first-class objects.
-- Better understand Python's memory model
+- Understand Python's first-class object concept
+- Explore Python's memory model
+- Create reusable utility functions for CSV data processing
 
 **Files Created:** `reader.py`
 
-In previous exercises, you wrote various functions for reading CSV data in different files. Surely this is a problem that could be generalized in some way. In this exercise, we explore that idea.
+Python treats everything as an object, including functions, types, and data. This treatment, known as "first-class objects," enables powerful and flexible programming patterns. In this lab, you'll explore this concept by creating a generalized function for reading CSV data, which you can reuse across different projects.

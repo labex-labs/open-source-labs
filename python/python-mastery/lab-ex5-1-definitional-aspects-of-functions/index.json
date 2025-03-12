@@ -13,135 +13,98 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Understanding the Context",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Verify Understanding",
             "file": "verify1-1.sh",
-            "hint": "This step has no verification at the moment",
+            "hint": "This step only provides context for the lab, no action needed yet.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
+          "python/classes_objects",
+          "python/data_collections",
+          "python/file_reading_writing"
         ]
       },
       {
-        "title": "Back to Basics",
+        "title": "Creating the Basic CSV Reader Functions",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify File Includes With, Open, Next, and Append",
+            "name": "Verify reader.py content",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've created the reader.py file with the two required functions.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/dictionaries",
+          "python/classes_objects",
           "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/function_definition"
         ],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "Thinking about Flexibility",
+        "title": "Making Functions More Flexible",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Presence of None in reader.py",
+            "name": "Verify refactored code",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've updated reader.py with the refactored functions.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
+          "python/arguments_return",
           "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/file_operations",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/function_definition"
         ],
         "solutions": ["step3_solution.py"]
       },
       {
-        "title": "Design Challenge: CSV Headers",
+        "title": "Handling CSV Files Without Headers",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Verify header handling",
             "file": "verify4-1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "API Challenge: Type hints",
-        "text": "en/step5.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Arrow Operators in Reader.py",
-            "file": "verify5-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've updated reader.py to handle optional headers.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/for_loops",
+          "python/default_arguments",
+          "python/file_operations",
+          "python/function_definition"
+        ]
+      },
+      {
+        "title": "Adding Type Hints",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify type hints",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've added type hints to your functions in reader.py.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_collections",
           "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/tuples",
-          "python/using_packages",
           "python/variables_data_types"
         ]
       }
@@ -193,471 +156,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "函数的定义方面",
-      "description": "在本实验中，你将探索函数/方法，使其更具灵活性，并使用类型提示。",
-      "meta": {
-        "title": "Python中函数的定义方面",
-        "description": "探索Python中定义函数和方法的关键方面，包括灵活性和类型提示。",
-        "keywords": "类型提示, Python, 方法, 函数, 编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "回归基础",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证文件包含with、open、next和append",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "思考灵活性",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证reader.py中是否存在None",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "设计挑战：CSV 标题",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify4-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "API 挑战：类型提示",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Reader.py中是否存在箭头运算符",
-                "file": "verify5-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Aspectos Definitorios de las Funciones",
-      "description": "En este laboratorio, explorarás funciones/métodos, los harás más flexibles y usarás pistas de tipo.",
-      "meta": {
-        "title": "Aspectos Definitorios de las Funciones en Python",
-        "description": "Explora los aspectos clave de la definición de funciones y métodos en Python, incluyendo flexibilidad y pistas de tipo.",
-        "keywords": "pistas de tipo, python, métodos, funciones, programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación en este momento",
-                "file": "verify1-1.sh",
-                "hint": "Este paso no tiene verificación en este momento"
-              }
-            ]
-          },
-          {
-            "title": "Volver a los Fundamentos",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar que el archivo incluya With, Open, Next y Append",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Pensando en la Flexibilidad",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de None en reader.py",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Desafío de Diseño: Encabezados CSV",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación en este momento",
-                "file": "verify4-1.sh",
-                "hint": "Este paso no tiene verificación en este momento"
-              }
-            ]
-          },
-          {
-            "title": "Desafío de API: Pistas de tipo",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de operadores de flecha en Reader.py",
-                "file": "verify5-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Aspects définitionnels des fonctions",
-      "description": "Dans ce laboratoire, vous allez explorer les fonctions/méthodes, les rendre plus flexibles et utiliser des avertissements de type.",
-      "meta": {
-        "title": "Aspects définitionnels des fonctions en Python",
-        "description": "Explorez les aspects clés de la définition de fonctions et de méthodes en Python, y compris la flexibilité et les avertissements de type.",
-        "keywords": "avertissements de type, python, méthodes, fonctions, programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify1-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Revenez aux bases",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez les inclusions de fichiers avec With, Open, Next et Append",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Penser à la flexibilité",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de None dans reader.py",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Défi de conception : Entêtes CSV",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify4-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Défi API : Indicateurs de type",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence d'opérateurs fléchés dans Reader.py",
-                "file": "verify5-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Definitorische Aspekte von Funktionen",
-      "description": "In diesem Lab werden Sie Funktionen/Methoden erkunden, sie flexibler gestalten und Typhinweise verwenden.",
-      "meta": {
-        "title": "Definitorische Aspekte von Funktionen in Python",
-        "description": "Entdecken Sie die wichtigsten Aspekte der Definition von Funktionen und Methoden in Python, einschließlich Flexibilität und Typhinweise.",
-        "keywords": "Typhinweise, Python, Methoden, Funktionen, Programmierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat momentan keine Verifizierung",
-                "file": "verify1-1.sh",
-                "hint": "Dieser Schritt hat momentan keine Verifizierung"
-              }
-            ]
-          },
-          {
-            "title": "Zurück zur Basis",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie, dass die Datei die Befehle With, Open, Next und Append enthält",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Über die Flexibilität nachdenken",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein von None in reader.py",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Design-Aufgabe: CSV-Überschriften",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat momentan keine Verifizierung",
-                "file": "verify4-1.sh",
-                "hint": "Dieser Schritt hat momentan keine Verifizierung"
-              }
-            ]
-          },
-          {
-            "title": "API-Aufgabe: Typhinweise",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein von Pfeiloperatoren in Reader.py",
-                "file": "verify5-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "関数の定義に関する諸面",
-      "description": "この実験では、関数/メソッドを調べ、それらをより柔軟にし、型ヒントを使用します。",
-      "meta": {
-        "title": "Pythonにおける関数の定義に関する諸面",
-        "description": "Pythonにおける関数とメソッドの定義の重要な側面を調べます。これには、柔軟性と型ヒントが含まれます。",
-        "keywords": "型ヒント, Python, メソッド, 関数, プログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "このステップには現在検証はありません",
-                "file": "verify1-1.sh",
-                "hint": "このステップには現在検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "基本に戻る",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "ファイルにWith、Open、Next、およびAppendが含まれていることを確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "柔軟性について考える",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "reader.pyにNoneが存在することを確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "デザイン課題：CSVヘッダー",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "このステップには現在検証はありません",
-                "file": "verify4-1.sh",
-                "hint": "このステップには現在検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "API課題：型ヒント",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "Reader.pyに矢印演算子が存在することを確認する",
-                "file": "verify5-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Аспекты определения функций",
-      "description": "В этой лабораторной работе вы изучите функции/методы, сделайте их более гибкими и используйте подсказки типов.",
-      "meta": {
-        "title": "Аспекты определения функций в Python",
-        "description": "Изучите ключевые аспекты определения функций и методов в Python, включая гибкость и подсказки типов.",
-        "keywords": "подсказки типов, python, методы, функции, программирование"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify1-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Вернемся к основам",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверьте, что файл содержит with, open, next и append",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения этапов."
-              }
-            ]
-          },
-          {
-            "title": "Размышления о гибкости",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверьте наличие None в reader.py",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения этапов."
-              }
-            ]
-          },
-          {
-            "title": "Задача по дизайну: заголовки CSV",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify4-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Задача по API: подсказки типов",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверьте наличие стрелковых операторов в Reader.py",
-                "file": "verify5-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения этапов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

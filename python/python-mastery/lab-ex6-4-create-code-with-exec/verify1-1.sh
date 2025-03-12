@@ -1,8 +1,9 @@
 #!/bin/zsh
 
-cat ~/.python_history | grep "exec"
-cat ~/.python_history | grep "class"
-cat ~/.python_history | grep "join"
-cat ~/.python_history | grep "for"
-cat ~/.python_history | grep "print"
-cat ~/.python_history | grep "__init__"
+# Check if the user has run the exec example
+if ! history | grep -q "exec"; then
+  echo "Please run the exec examples as shown in Step 1."
+  exit 1
+fi
+
+exit 0

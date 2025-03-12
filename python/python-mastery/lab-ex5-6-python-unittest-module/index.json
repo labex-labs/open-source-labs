@@ -13,84 +13,65 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preliminaries",
+        "title": "Creating Your First Unit Test",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Unittest, Main, and Assert Existence in Python Files",
+            "name": "Verify teststock.py file exists",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you have created the teststock.py file with the correct content.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects", "python/conditional_statements"],
         "solutions": ["step1_solution.py"]
       },
       {
-        "title": "Unit testing",
+        "title": "Extending Your Test Cases",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Code Correctness",
+            "name": "Verify extended test cases",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you have added all the required test methods to the TestStock class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects", "python/function_definition"],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "Unit tests with expected errors",
+        "title": "Testing for Exceptions",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Exception Handling in Project Files",
+            "name": "Verify exception tests",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you have added all the required exception test methods to the TestStock class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/with_statement"
+        "skills": ["python/catching_exceptions", "python/raising_exceptions"],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Running Selected Tests and Using Test Discovery",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify teststock.py exists with all tests",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've renamed the file back to teststock.py and it contains all the test methods."
+          }
         ],
+        "skills": ["python/classes_objects", "python/constructor"],
         "solutions": ["step3_solution.py"]
       }
     ],
@@ -121,340 +102,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "Python单元测试模块",
-      "description": "在本实验中，你将学习如何使用Python的unittest模块来编写和运行测试用例。",
-      "meta": {
-        "title": "精通Python单元测试",
-        "description": "探索Python的unittest模块的基础知识，并学习如何为你的应用程序创建有效的单元测试。",
-        "keywords": "软件开发, Python, 单元测试, 编程, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python文件中是否存在Unittest、Main和Assert",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "单元测试",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python代码的正确性",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "带有预期错误的单元测试",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证项目文件中的异常处理",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Módulo unittest de Python",
-      "description": "En este laboratorio, aprenderás a usar el módulo unittest de Python para escribir y ejecutar casos de prueba.",
-      "meta": {
-        "title": "Dominando unittest de Python",
-        "description": "Explora los fundamentos del módulo unittest de Python y aprende a crear pruebas unitarias efectivas para tus aplicaciones.",
-        "keywords": "desarrollo de software, python, pruebas unitarias, programación, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preliminares",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la existencia de unittest, Main y Assert en archivos de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Pruebas unitarias",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la corrección del código de Python",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Pruebas unitarias con errores esperados",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar el manejo de excepciones en los archivos del proyecto",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Module unittest de Python",
-      "description": "Dans ce laboratoire, vous allez apprendre à utiliser le module unittest de Python pour écrire et exécuter des cas de test.",
-      "meta": {
-        "title": "Maîtriser unittest de Python",
-        "description": "Explorez les bases du module unittest de Python et apprenez à créer des tests unitaires efficaces pour vos applications.",
-        "keywords": "développement logiciel, python, test unitaire, programmation, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préliminaires",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'existence de unittest, Main et Assert dans les fichiers Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Test unitaire",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez la correction du code Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Tests unitaires avec des erreurs attendues",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez la gestion des exceptions dans les fichiers du projet",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Python Unittest Modul",
-      "description": "In diesem Lab lernen Sie, wie Sie das unittest-Modul von Python verwenden, um Testfälle zu schreiben und auszuführen.",
-      "meta": {
-        "title": "Meisterung von Python Unittest",
-        "description": "Erkunden Sie die Grundlagen des unittest-Moduls von Python und lernen Sie, wie Sie effektive Unit-Tests für Ihre Anwendungen erstellen.",
-        "keywords": "Softwareentwicklung, Python, Unit-Testing, Programmierung, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Voraussetzungen",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein von Unittest, Main und Assert in Python-Dateien",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Unit-Testing",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Korrektheit des Python-Codes",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Unit-Tests mit erwarteten Fehlern",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Ausnahmebehandlung in den Projekt-Dateien",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Pythonのunittestモジュール",
-      "description": "この実験では、Pythonのunittestモジュールを使ってテストケースを書き、実行する方法を学びます。",
-      "meta": {
-        "title": "Pythonのunittestをマスターする",
-        "description": "Pythonのunittestモジュールの基本を探り、アプリケーションに対して効果的な単体テストを作成する方法を学びましょう。",
-        "keywords": "ソフトウェア開発, Python, 単体テスト, プログラミング, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonファイル内のunittest、Main、およびAssertの存在を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "単体テスト",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonコードの正確性を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "予期されるエラーを伴う単体テスト",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "プロジェクトファイル内の例外処理を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Модуль unittest в Python",
-      "description": "В этой лабораторной работе вы научитесь использовать модуль unittest в Python для написания и запуска тестовых случаев.",
-      "meta": {
-        "title": "Мастерство в модуле unittest Python",
-        "description": "Изучите основы модуля unittest в Python и узнайте, как создавать эффективные юнит-тесты для своих приложений.",
-        "keywords": "разработка программного обеспечения, python, юнит-тестирование, программирование, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Предварительные условия",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить наличие unittest, Main и Assert в файлах Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Юнит-тестирование",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить правильность кода на Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Юнит-тесты с ожидаемыми ошибками",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить обработку исключений в файлах проекта",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

@@ -3,9 +3,12 @@
 **Objectives:**
 
 - Learn about managed generators
+- Understand how to drive generators in unusual ways
+- Build a simple task scheduler using generators
+- Create a network server using generators
 
 **Files Created:** `multitask.py`, `server.py`
 
-A generator or coroutine function can never execute without being driven by some other code. For example, a generator used for iteration doesn't do anything unless iteration is actually carried out using a for-loop. Similarly, a collection of coroutines won't run unless their `send()` method is invoked somehow.
+A generator function in Python doesn't execute on its own - it needs to be driven by some other code. For example, a generator used for iteration only runs when you iterate over it using a `for` loop. Similarly, coroutines need their `send()` method to be called to execute.
 
-In advanced applications of generators, it is possible to drive generators in various unusual ways. In this exercise, we look at a few examples.
+In advanced applications, generators can be driven in various interesting ways. In this lab, we will explore some practical examples of managed generators.

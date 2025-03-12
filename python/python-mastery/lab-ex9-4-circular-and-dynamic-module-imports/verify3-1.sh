@@ -1,9 +1,8 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep -E "from.*import"
-cat ~/.python_history | grep "__module__"
-cat ~/.python_history | grep -E "simplemod.*\..*\(.*\)"
-cat /home/labex/project/structly/tableformat/formatter.py | grep -E "@.*classmethod"
-cat /home/labex/project/structly/tableformat/formatter.py | grep "__init_subclass__"
-cat ~/.python_history | grep "TableFormatter"
-cat /home/labex/project/structly/tableformat/formatter.py | grep -w "get"
+#!/bin/bash
+if grep -q "_formats" ~/project/structly/tableformat/formatter.py && grep -q "__init_subclass__" ~/project/structly/tableformat/formatter.py; then
+  echo "TableFormatter class has been updated correctly"
+  exit 0
+else
+  echo "Please implement the registration mechanism in TableFormatter class"
+  exit 1
+fi

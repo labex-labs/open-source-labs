@@ -1,6 +1,2 @@
-#!/bin/zsh
-
-cat /home/labex/project/readrides.py | grep 'collections'
-cat /home/labex/project/readrides.py | grep 'len'
-cat ~/.python_history | grep "ctabus.csv"
-cat ~/.python_history | grep "len"
+#!/bin/bash
+grep -E "class RideData|__len__|__getitem__" ~/project/readrides.py && echo "Success!" || echo "Couldn't find the RideData class with required methods in readrides.py."

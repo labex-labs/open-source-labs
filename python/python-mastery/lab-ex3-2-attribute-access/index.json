@@ -13,93 +13,73 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "The Three Operations",
+        "title": "Understanding Attribute Access in Python",
         "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Attribute Manipulation",
             "file": "verify1-1.sh",
-            "hint": "Please run the python code in step 1.",
+            "hint": "Make sure you've run the Python code examples in Step 1.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/python_shell",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
+        "skills": ["python/build_in_functions", "python/classes_objects"]
       },
       {
-        "title": "Using getattr()",
+        "title": "Using getattr() for Generic Object Processing",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python History for Getattr",
+            "name": "Verify Python History for Getattr Usage",
             "file": "verify2-1.sh",
-            "hint": "Please run the python code in step 2.",
+            "hint": "Make sure you've run the Python code examples in Step 2.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/for_loops",
-          "python/lists",
-          "python/python_shell",
-          "python/tuples"
+          "python/classes_objects",
+          "python/function_definition",
+          "python/using_packages"
         ]
       },
       {
-        "title": "Table Output",
+        "title": "Creating a Table Formatter Using Attribute Access",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python Files and History",
+            "name": "Verify tableformat.py File Creation",
             "file": "verify3-1.sh",
-            "hint": "Please create the 'tableformat.py' file and implement the 'print_table()' function.",
+            "hint": "Make sure you've created the tableformat.py file with the print_table() function.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
+          "python/data_collections",
           "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples"
+          "python/using_packages"
         ],
         "solutions": ["tableformat.py"]
       },
       {
-        "title": "Bound Methods",
+        "title": "Understanding Bound Methods in Python",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Python History for __self__ and __func__",
+            "name": "Verify Python History for Bound Methods Usage",
             "file": "verify4-1.sh",
-            "hint": "Please run the python code in step 4.",
+            "hint": "Make sure you've run the Python code examples about bound methods in Step 4.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/python_shell",
-          "python/tuples"
-        ]
+        "skills": ["python/classes_objects"]
       }
     ],
     "intro": {
@@ -134,404 +114,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "属性访问与绑定方法",
-      "description": "在本实验中，你将学习属性访问、如何使用getattr()、setattr()及相关函数，并体验绑定方法。",
-      "meta": {
-        "title": "Python属性访问 | 对象系统基础",
-        "description": "学习Python对象系统的核心操作，包括属性获取、设置和删除。探索getattr()、setattr()及相关函数以进行有效的对象操作。",
-        "keywords": "Python, 对象系统, 属性访问, getattr, setattr, delattr, hasattr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "三种操作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python属性操作",
-                "file": "verify1-1.sh",
-                "hint": "请运行步骤1中的Python代码。"
-              }
-            ]
-          },
-          {
-            "title": "使用getattr()",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python中getattr的使用情况",
-                "file": "verify2-1.sh",
-                "hint": "请运行步骤2中的Python代码。"
-              }
-            ]
-          },
-          {
-            "title": "表格输出",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python文件和历史记录",
-                "file": "verify3-1.sh",
-                "hint": "请创建'tableformat.py'文件并实现'print_table()'函数。"
-              }
-            ],
-            "solutions": ["tableformat.py"]
-          },
-          {
-            "title": "绑定方法",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证关于__self__和__func__的Python历史记录",
-                "file": "verify4-1.sh",
-                "hint": "请运行步骤4中的Python代码。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Acceso a Atributos y Métodos Vinculados",
-      "description": "En este laboratorio, aprenderás sobre el acceso a atributos, cómo usar getattr(), setattr() y funciones relacionadas, y experimentar con métodos vinculados.",
-      "meta": {
-        "title": "Acceso a Atributos de Python | Fundamentos del Sistema de Objetos",
-        "description": "Aprende las operaciones principales del sistema de objetos de Python, incluyendo la obtención, configuración y eliminación de atributos. Explora getattr(), setattr() y funciones relacionadas para manipular objetos de manera efectiva.",
-        "keywords": "Python, sistema de objetos, acceso a atributos, getattr, setattr, delattr, hasattr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Las Tres Operaciones",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la Manipulación de Atributos de Python",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 1."
-              }
-            ]
-          },
-          {
-            "title": "Usando getattr()",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar el Historial de Python para Getattr",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 2."
-              }
-            ]
-          },
-          {
-            "title": "Salida en Tabla",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar Archivos y Historial de Python",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, cree el archivo 'tableformat.py' e implemente la función 'print_table()'."
-              }
-            ]
-          },
-          {
-            "title": "Métodos Vinculados",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar el Historial de Python para __self__ y __func__",
-                "file": "verify4-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Accès aux attributs et méthodes liées",
-      "description": "Dans ce laboratoire, vous allez apprendre à accéder aux attributs, à utiliser getattr(), setattr() et les fonctions connexes, et à expérimenter avec les méthodes liées.",
-      "meta": {
-        "title": "Accès aux attributs Python | Fondamentals du système d'objets",
-        "description": "Découvrez les opérations principales du système d'objets Python, y compris la récupération, la définition et la suppression d'attributs. Explorez getattr(), setattr() et les fonctions connexes pour manipuler efficacement les objets.",
-        "keywords": "Python, système d'objets, accès aux attributs, getattr, setattr, delattr, hasattr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Les trois opérations",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier la manipulation des attributs Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 1."
-              }
-            ]
-          },
-          {
-            "title": "Utilisation de getattr()",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python pour getattr",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 2."
-              }
-            ]
-          },
-          {
-            "title": "Sortie en table",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier les fichiers Python et l'historique",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez créer le fichier 'tableformat.py' et implémenter la fonction 'print_table()'."
-              }
-            ]
-          },
-          {
-            "title": "Méthodes liées",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python pour __self__ et __func__",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Attributzugang und gebundene Methoden",
-      "description": "In diesem Lab lernen Sie über den Attributzugang, wie die Funktionen getattr(), setattr() und verwandte Funktionen verwendet werden, und experimentieren mit gebundenen Methoden.",
-      "meta": {
-        "title": "Python-Attributzugang | Grundlagen des Objekt-Systems",
-        "description": "Lernen Sie die Kernoperationen des Python-Objekt-Systems, einschließlich des Abrufs, Festlegens und Löschens von Attributen. Entdecken Sie getattr(), setattr() und verwandte Funktionen für eine effektive Objektmanipulation.",
-        "keywords": "Python, Objekt-System, Attributzugang, getattr, setattr, delattr, hasattr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Die drei Operationen",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Python-Attributmanipulation",
-                "file": "verify1-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 1 aus."
-              }
-            ]
-          },
-          {
-            "title": "Verwendung von getattr()",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Python-Geschichte für Getattr",
-                "file": "verify2-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 2 aus."
-              }
-            ]
-          },
-          {
-            "title": "Tabellenausgabe",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Python-Dateien und der Geschichte",
-                "file": "verify3-1.sh",
-                "hint": "Bitte erstellen Sie die Datei 'tableformat.py' und implementieren Sie die Funktion 'print_table()'."
-              }
-            ]
-          },
-          {
-            "title": "Gebundene Methoden",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Python-Geschichte für __self__ und __func__",
-                "file": "verify4-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 4 aus."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "属性アクセスとバウンドメソッド",
-      "description": "この実験では、属性アクセス、getattr()、setattr() および関連関数の使い方、そしてバウンドメソッドについて学びます。",
-      "meta": {
-        "title": "Pythonの属性アクセス | オブジェクトシステムの基本",
-        "description": "Pythonのオブジェクトシステムのコア操作、属性の取得、設定、削除について学びます。有効なオブジェクト操作のためにgetattr()、setattr() および関連関数を探ります。",
-        "keywords": "Python, オブジェクトシステム, 属性アクセス, getattr, setattr, delattr, hasattr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "3つの操作",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonの属性操作を確認する",
-                "file": "verify1-1.sh",
-                "hint": "ステップ1のPythonコードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "getattr() の使用",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "getattr に関するPythonの履歴を確認する",
-                "file": "verify2-1.sh",
-                "hint": "ステップ2のPythonコードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "テーブル出力",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonファイルと履歴を確認する",
-                "file": "verify3-1.sh",
-                "hint": "「tableformat.py」ファイルを作成し、「print_table()」関数を実装してください。"
-              }
-            ]
-          },
-          {
-            "title": "バウンドメソッド",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "__self__ と __func__ に関するPythonの履歴を確認する",
-                "file": "verify4-1.sh",
-                "hint": "ステップ4のPythonコードを実行してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Доступ к атрибутам и связанные методы",
-      "description": "В этой лабораторной работе вы узнаете о доступе к атрибутам, как использовать getattr(), setattr() и связанные функции, а также проведете эксперименты с связанными методами.",
-      "meta": {
-        "title": "Доступ к атрибутам Python | Основы объектной системы",
-        "description": "Изучите основные операции объектной системы Python, включая получение, установку и удаление атрибутов. Изучите getattr(), setattr() и связанные функции для эффективной манипуляции объектами.",
-        "keywords": "Python, объектная система, доступ к атрибутам, getattr, setattr, delattr, hasattr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Три операции",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить манипуляцию атрибутами Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 1."
-              }
-            ]
-          },
-          {
-            "title": "Использование getattr()",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python для getattr",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 2."
-              }
-            ]
-          },
-          {
-            "title": "Табличный вывод",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить файлы и историю Python",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, создайте файл 'tableformat.py' и реализуйте функцию 'print_table()'."
-              }
-            ]
-          },
-          {
-            "title": "Связанные методы",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python для __self__ и __func__",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

@@ -1,8 +1,8 @@
-#!/bin/zsh
-
-cat /home/labex/project/structure.py | grep "sys"
-cat /home/labex/project/structure.py | grep "staticmethod"
-cat /home/labex/project/structure.py | grep "_getframe"
-cat /home/labex/project/structure.py | grep "items"
-cat /home/labex/project/stock.py | grep "__init__"
-cat /home/labex/project/stock.py | grep "_init"
+#!/bin/bash
+if grep -q "_init" /home/labex/project/structure.py && grep -q "sys._getframe" /home/labex/project/structure.py; then
+  echo "Success: Structure class has been updated with frame inspection"
+  exit 0
+else
+  echo "Error: structure.py does not contain the required changes"
+  exit 1
+fi

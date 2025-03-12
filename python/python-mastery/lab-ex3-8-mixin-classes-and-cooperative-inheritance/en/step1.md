@@ -1,10 +1,52 @@
-# The Trouble with Column Formatting
+# Understanding the Problem with Column Formatting
 
-If you go all the way back to Exercise 3.1, you wrote a function `print_portfolio()` that produced a table like this:
+In this step, we'll explore a limitation in our current table formatting implementation and examine potential solutions.
+
+First, let's open the VSCode editor and take a look at the `tableformat.py` file in the project directory. This file contains the code for formatting tabular data in different ways (text, CSV, HTML).
+
+```bash
+cd ~/project
+code tableformat.py
+```
+
+When you open the file, you'll see several classes defined:
+
+- `TableFormatter`: An abstract base class with methods for formatting table headings and rows
+- `TextTableFormatter`: For plain text table output
+- `CSVTableFormatter`: For CSV format output
+- `HTMLTableFormatter`: For HTML format output
+
+Additionally, there's a `print_table()` function that uses these formatters to display tabular data.
+
+Let's explore how these classes work by running some Python code. Open a terminal and start a Python session:
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
->>> print_portfolio(portfolio)
+python3 -c "
+from tableformat import print_table, TextTableFormatter, portfolio
+formatter = TextTableFormatter()
+print_table(portfolio, ['name', 'shares', 'price'], formatter)
+"
+```
+
+You should see output similar to this:
+
+```
+      name     shares      price
+---------- ---------- ----------
+        AA        100       32.2
+       IBM         50       91.1
+       CAT        150      83.44
+      MSFT        200      51.23
+        GE         95      40.37
+      MSFT         50       65.1
+       IBM        100      70.44
+```
+
+Now, let's identify the problem: notice how the `price` column values aren't consistently formatted. Some have one decimal place (32.2), others have two (51.23). For financial data, we typically want consistent formatting.
+
+Here's what we want:
+
+```
       name     shares      price
 ---------- ---------- ----------
         AA        100      32.20
@@ -14,80 +56,48 @@ If you go all the way back to Exercise 3.1, you wrote a function `print_portfoli
         GE         95      40.37
       MSFT         50      65.10
        IBM        100      70.44
->>>
 ```
 
-The `print_table()` function developed in the last several exercises almost replaces this functionality--almost. The one problem that it has is that it can't precisely format the content of each column. For example, notice how the values in the `price` column are precisely formatted with 2 decimal points. The `TableFormatter` class and related subclasses can't do that.
-
-One way to fix it would be to modify the `print_table()` function to accept an additional formats argument. For example, maybe something like this:
+We could modify the `print_table()` function to accept format specifications:
 
 ```python
->>> def print_table(records, fields, formats, formatter):
-        formatter.headings(fields)
-        for r in records:
-            rowdata = [(fmt % getattr(r, fieldname))
-                 for fieldname,fmt in zip(fields,formats)]
-            formatter.row(rowdata)
+python3 -c "
+from tableformat import TextTableFormatter, portfolio
 
->>> import stock, reader
->>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
->>> from tableformat import TextTableFormatter
->>> formatter = TextTableFormatter()
->>> print_table(portfolio,
-                ['name','shares','price'],
-                ['%s','%d','%0.2f'],
-                formatter)
+def print_table(records, fields, formats, formatter):
+    formatter.headings(fields)
+    for r in records:
+        rowdata = [(fmt % getattr(r, fieldname))
+             for fieldname, fmt in zip(fields, formats)]
+        formatter.row(rowdata)
 
-      name     shares      price
----------- ---------- ----------
-        AA        100      32.20
-       IBM         50      91.10
-       CAT        150      83.44
-      MSFT        200      51.23
-        GE         95      40.37
-      MSFT         50      65.10
-       IBM        100      70.44
->>>
+formatter = TextTableFormatter()
+print_table(portfolio,
+            ['name','shares','price'],
+            ['%s','%d','%0.2f'],
+            formatter)
+"
 ```
 
-Yes, you could modify `print_table()` like this, but is that the right place to do it? The whole idea of all of the `TableFormatter` classes is that they could be used in different kinds of applications. Column formatting is something that could be useful elsewhere, not just in the `print_table()` function.
+This works, but it changes the function's interface, which might break existing code.
 
-Another possible approach might be to change the interface to the `TableFormatter` class in some way. For example, maybe adding a third method to apply formatting.
+Another approach would be to create a custom formatter by subclassing:
 
 ```python
-class TableFormatter:
-    def headings(self, headers):
-        ...
-    def format(self, rowdata):
-        ...
+python3 -c "
+from tableformat import TextTableFormatter, print_table, portfolio
+
+class PortfolioFormatter(TextTableFormatter):
     def row(self, rowdata):
-        ...
+        formats = ['%s','%d','%0.2f']
+        rowdata = [(fmt % d) for fmt, d in zip(formats, rowdata)]
+        super().row(rowdata)
+
+formatter = PortfolioFormatter()
+print_table(portfolio, ['name','shares','price'], formatter)
+"
 ```
 
-The problem here is that any time you change the interface on a class, you're going to have to refactor all of the existing code to work with it. Specifically, you'd have to modify all of the already written `TableFormatter` subclasses and all of the code written to use them. Let's not do that.
+This also works, but it's cumbersome. We have to create a new class each time we want different formatting, and we're tied to a specific formatter type (TextTableFormatter in this case).
 
-As an alternative, a user could use inheritance to customize a specific formatter in order to inject some formatting into it. For example, try this experiment:
-
-```python
->>> from tableformat import TextTableFormatter, print_table
->>> class PortfolioFormatter(TextTableFormatter):
-        def row(self, rowdata):
-            formats = ['%s','%d','%0.2f']
-            rowdata = [(fmt % d) for fmt, d in zip(formats, rowdata)]
-            super().row(rowdata)
-
->>> formatter = PortfolioFormatter()
->>> print_table(portfolio, ['name','shares','price'], formatter)
-      name     shares      price
----------- ---------- ----------
-        AA        100      32.20
-       IBM         50      91.10
-       CAT        150      83.44
-      MSFT        200      51.23
-        GE         95      40.37
-      MSFT         50      65.10
-       IBM        100      70.44
->>>
-```
-
-Yes, that works, but it's also a bit clumsy and weird. The user has to pick a specific formatter to customize. On top of that, they have to implement the actual column formatting code themselves. Surely there is a different way to do this.
+In the next step, we'll explore a more elegant solution using mixin classes.

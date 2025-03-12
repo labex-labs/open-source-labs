@@ -1,6 +1,4 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "id"
-cat ~/.python_history | grep "sys"
-cat ~/.python_history | grep "intern"
-cat ~/.python_history | grep "get_traced_memory"
+#!/bin/bash
+grep -q "intern" ~/.python_history \
+  && grep -q "tracemalloc" ~/.python_history \
+  && grep -q "routeids" ~/.python_history

@@ -13,75 +13,64 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Creating a Simple Stock Class",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python Class and Function Definitions",
+            "name": "Verify SimpleStock class definition",
             "file": "verify1-1.sh",
-            "hint": "Please define the 'SimpleStock' class and create a few instance objects.",
+            "hint": "Make sure you have defined the SimpleStock class and created the goog and ibm instances.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/classes_objects",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
-        ]
+        "skills": ["python/classes_objects", "python/constructor"]
       },
       {
-        "title": "Representation of Instances",
+        "title": "Exploring the Internal Dictionary of Objects",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python __dict__ Usage in History",
+            "name": "Verify __dict__ inspection",
             "file": "verify2-1.sh",
-            "hint": "Please inspect the underlying dictionaries of the instances you have created",
+            "hint": "Please check the __dict__ attribute of both the goog and ibm instances.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": ["python/python_shell"]
+        "skills": ["python/classes_objects"]
       },
       {
-        "title": "Modification of Instance Data",
+        "title": "Adding and Modifying Object Attributes",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Use of __dict__ Attribute in Python History",
+            "name": "Verify attribute additions",
             "file": "verify3-1.sh",
-            "hint": "Please add the 'time' attribute to the '__dict__' object.",
+            "hint": "Make sure you've added new attributes to the goog instance using both direct assignment and the __dict__ dictionary.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
+        "skills": ["python/classes_objects"]
       },
       {
-        "title": "The role of classes",
+        "title": "Understanding the Relationship Between Classes and Instances",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Python History for __class__ and __dict__ Usage",
+            "name": "Verify class relationship understanding",
             "file": "verify4-1.sh",
-            "hint": "Please execute the python code in step 4.",
+            "hint": "Make sure you've explored the __class__ attribute and added a class attribute.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": ["python/lists", "python/python_shell"]
+        "skills": ["python/classes_objects"]
       }
     ],
     "intro": {
@@ -102,403 +91,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "对象如何表示",
-      "description": "在本实验中，你将探索对象如何被表示，理解属性赋值和查找，并了解类定义的作用。",
-      "meta": {
-        "title": "Python 中对象的表示",
-        "description": "了解 Python 中对象如何被表示，并理解类定义的作用。",
-        "keywords": "属性赋值, Python, 对象表示, 类定义, 属性查找"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 类和函数定义",
-                "file": "verify1-1.sh",
-                "hint": "请定义 'SimpleStock' 类并创建几个实例对象。"
-              }
-            ]
-          },
-          {
-            "title": "实例的表示",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 中 __dict__ 在历史记录中的用法",
-                "file": "verify2-1.sh",
-                "hint": "请检查你创建的实例的底层字典"
-              }
-            ]
-          },
-          {
-            "title": "实例数据的修改",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录中 __dict__ 属性的使用",
-                "file": "verify3-1.sh",
-                "hint": "请向 '__dict__' 对象添加 'time' 属性。"
-              }
-            ]
-          },
-          {
-            "title": "类的作用",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录中 __class__ 和 __dict__ 的用法",
-                "file": "verify4-1.sh",
-                "hint": "请执行步骤 4 中的 Python 代码。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Cómo se Representan los Objetos",
-      "description": "En este laboratorio, explorará cómo se representan los objetos, comprenderá la asignación y búsqueda de atributos y aprenderá sobre el papel de una definición de clase.",
-      "meta": {
-        "title": "Representación de Objetos en Python",
-        "description": "Aprenda cómo se representan los objetos en Python y comprenda el papel de las definiciones de clase.",
-        "keywords": "asignación de atributos, python, representación de objetos, definición de clase, búsqueda de atributos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar definiciones de clases y funciones de Python",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, defina la clase 'SimpleStock' y cree algunos objetos de instancia."
-              }
-            ]
-          },
-          {
-            "title": "Representación de Instancias",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar el uso de __dict__ de Python en el Historial",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, inspeccione los diccionarios subyacentes de las instancias que ha creado"
-              }
-            ]
-          },
-          {
-            "title": "Modificación de los Datos de la Instancia",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar el Uso del Atributo __dict__ en el Historial de Python",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, agregue el atributo 'time' al objeto '__dict__'."
-              }
-            ]
-          },
-          {
-            "title": "El papel de las clases",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de Python para el uso de __class__ y __dict__",
-                "file": "verify4-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Comment les objets sont représentés",
-      "description": "Dans ce laboratoire, vous allez explorer la manière dont les objets sont représentés, comprendre l'attribution et la recherche d'attributs, et découvrir le rôle d'une définition de classe.",
-      "meta": {
-        "title": "Représentation des objets en Python",
-        "description": "Apprenez comment les objets sont représentés en Python et comprenez le rôle des définitions de classe.",
-        "keywords": "attribution d'attribut, python, représentation d'objet, définition de classe, recherche d'attribut"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez les définitions de classes et de fonctions Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez définir la classe 'SimpleStock' et créer quelques objets d'instance."
-              }
-            ]
-          },
-          {
-            "title": "Représentation des instances",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'utilisation de __dict__ Python dans l'historique",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez examiner les dictionnaires de base des instances que vous avez créées"
-              }
-            ]
-          },
-          {
-            "title": "Modification des données d'instance",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'utilisation de l'attribut __dict__ en Python dans l'historique",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez ajouter l'attribut 'time' à l'objet '__dict__'."
-              }
-            ]
-          },
-          {
-            "title": "Le rôle des classes",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'historique Python pour l'utilisation de __class__ et __dict__",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Wie Objekte dargestellt werden",
-      "description": "In diesem Lab werden Sie erkunden, wie Objekte dargestellt werden, das Attributzuweisung und -suche verstehen und die Rolle einer Klassendefinition kennenlernen.",
-      "meta": {
-        "title": "Darstellung von Objekten in Python",
-        "description": "Lernen Sie, wie Objekte in Python dargestellt werden und verstehen Sie die Rolle von Klassendefinitionen.",
-        "keywords": "Attributzuweisung, Python, Objektdarstellung, Klassendefinition, Attributsuche"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Python-Klassen- und Funktionsdefinitionen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte definieren Sie die Klasse 'SimpleStock' und erstellen Sie einige Instanzobjekte."
-              }
-            ]
-          },
-          {
-            "title": "Darstellung von Instanzen",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Verwendung von Python __dict__ in der Geschichte",
-                "file": "verify2-1.sh",
-                "hint": "Bitte untersuchen Sie die zugrunde liegenden Wörterbücher der von Ihnen erstellten Instanzen"
-              }
-            ]
-          },
-          {
-            "title": "Änderung von Instanzdaten",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Verwendung des __dict__-Attributs in der Python-Geschichte",
-                "file": "verify3-1.sh",
-                "hint": "Bitte fügen Sie das 'time'-Attribut zum '__dict__'-Objekt hinzu."
-              }
-            ]
-          },
-          {
-            "title": "Die Rolle von Klassen",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Python-Geschichte für die Verwendung von __class__ und __dict__",
-                "file": "verify4-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 4 aus."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "オブジェクトがどのように表現されるか",
-      "description": "この実験では、オブジェクトがどのように表現されるかを調べ、属性の割り当てと参照を理解し、クラス定義の役割について学びます。",
-      "meta": {
-        "title": "Pythonにおけるオブジェクトの表現",
-        "description": "Pythonにおけるオブジェクトの表現方法を学び、クラス定義の役割を理解しましょう。",
-        "keywords": "属性割り当て, Python, オブジェクト表現, クラス定義, 属性参照"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonクラスと関数定義を確認する",
-                "file": "verify1-1.sh",
-                "hint": "「SimpleStock」クラスを定義し、いくつかのインスタンスオブジェクトを作成してください。"
-              }
-            ]
-          },
-          {
-            "title": "インスタンスの表現",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "履歴におけるPythonの__dict__の使用を確認する",
-                "file": "verify2-1.sh",
-                "hint": "作成したインスタンスの基礎となる辞書を調べてください"
-              }
-            ]
-          },
-          {
-            "title": "インスタンスデータの変更",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴における__dict__属性の使用を確認する",
-                "file": "verify3-1.sh",
-                "hint": "「__dict__」オブジェクトに「time」属性を追加してください。"
-              }
-            ]
-          },
-          {
-            "title": "クラスの役割",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "__class__と__dict__の使用に関するPythonの履歴を確認する",
-                "file": "verify4-1.sh",
-                "hint": "ステップ4のPythonコードを実行してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Как представляются объекты",
-      "description": "В этом практикуме вы изучите, как представляются объекты, поймете назначение и поиск атрибутов и узнаете о роли определения класса.",
-      "meta": {
-        "title": "Представление объектов в Python",
-        "description": "Изучите, как представляются объекты в Python, и поймите роль определений классов.",
-        "keywords": "назначение атрибута, python, представление объекта, определение класса, поиск атрибута"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить определения классов и функций Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, определите класс 'SimpleStock' и создайте несколько объектов-экземпляров."
-              }
-            ]
-          },
-          {
-            "title": "Представление экземпляров",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить использование __dict__ в Python в истории",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, изучите внутренние словари созданных вами экземпляров"
-              }
-            ]
-          },
-          {
-            "title": "Изменение данных экземпляра",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить использование атрибута __dict__ в истории Python",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, добавьте атрибут 'time' в объект '__dict__'."
-              }
-            ]
-          },
-          {
-            "title": "Роль классов",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python для использования __class__ и __dict__",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, выполните код на Python из шага 4."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

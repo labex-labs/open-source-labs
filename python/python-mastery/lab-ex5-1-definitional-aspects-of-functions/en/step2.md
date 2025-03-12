@@ -1,6 +1,10 @@
-# Back to Basics
+# Creating the Basic CSV Reader Functions
 
-Start by reverting the changes related to class definitions. Rewrite the `reader.py` file so that it contains the two basic functions that you had before you messed it up with classes:
+Let's start by creating a `reader.py` file with two basic functions for reading CSV data. Follow these steps:
+
+1. Open up the code editor and create a new file called `reader.py` in the `/home/labex/project` directory.
+
+2. Add the following code to `reader.py`:
 
 ```python
 # reader.py
@@ -10,6 +14,13 @@ import csv
 def read_csv_as_dicts(filename, types):
     '''
     Read CSV data into a list of dictionaries with optional type conversion
+
+    Args:
+        filename: Path to the CSV file
+        types: List of type conversion functions for each column
+
+    Returns:
+        List of dictionaries with data from the CSV file
     '''
     records = []
     with open(filename) as file:
@@ -23,7 +34,14 @@ def read_csv_as_dicts(filename, types):
 
 def read_csv_as_instances(filename, cls):
     '''
-    Read CSV data into a list of instances
+    Read CSV data into a list of class instances
+
+    Args:
+        filename: Path to the CSV file
+        cls: Class to create instances from
+
+    Returns:
+        List of class instances with data from the CSV file
     '''
     records = []
     with open(filename) as file:
@@ -35,21 +53,41 @@ def read_csv_as_instances(filename, cls):
     return records
 ```
 
-Make sure the code still works as it did before:
+3. Let's test these functions to make sure they work correctly. Create a new file called `test_reader.py` with the following code:
 
 ```python
->>> import reader
->>> port = reader.read_csv_as_dicts('portfolio.csv', [str, int, float])
->>> port
-[{'name': 'AA', 'shares': 100, 'price': 32.2}, {'name': 'IBM', 'shares': 50, 'price': 91.1},
- {'name': 'CAT', 'shares': 150, 'price': 83.44}, {'name': 'MSFT', 'shares': 200, 'price': 51.23},
- {'name': 'GE', 'shares': 95, 'price': 40.37}, {'name': 'MSFT', 'shares': 50, 'price': 65.1},
- {'name': 'IBM', 'shares': 100, 'price': 70.44}]
->>> import stock
->>> port = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
->>> port
-[Stock('AA', 100, 32.2), Stock('IBM', 50, 91.1), Stock('CAT', 150, 83.44),
- Stock('MSFT', 200, 51.23), Stock('GE', 95, 40.37), Stock('MSFT', 50, 65.1),
- Stock('IBM', 100, 70.44)]
->>>
+# test_reader.py
+
+import reader
+import stock
+
+# Test reading CSV as dictionaries
+portfolio_dicts = reader.read_csv_as_dicts('portfolio.csv', [str, int, float])
+print("First portfolio item as dictionary:", portfolio_dicts[0])
+print("Total items:", len(portfolio_dicts))
+
+# Test reading CSV as class instances
+portfolio_instances = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
+print("\nFirst portfolio item as Stock instance:", portfolio_instances[0])
+print("Total items:", len(portfolio_instances))
 ```
+
+4. Run the test script from the terminal:
+
+```bash
+python test_reader.py
+```
+
+The output should look similar to this:
+
+```
+First portfolio item as dictionary: {'name': 'AA', 'shares': 100, 'price': 32.2}
+Total items: 7
+
+First portfolio item as Stock instance: Stock('AA', 100, 32.2)
+Total items: 7
+```
+
+This confirms that our two functions are working correctly. The first function converts CSV data into a list of dictionaries with proper type conversion, and the second function creates class instances using a static method on the provided class.
+
+In the next step, we'll refactor these functions to make them more flexible by allowing them to work with any iterable source of data, not just filenames.

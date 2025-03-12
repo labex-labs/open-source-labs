@@ -2,6 +2,8 @@
 
 **Objectives:**
 
-- Returning values from functions
+- Learn how to return multiple values from functions
+- Understand optional return values and handling errors
+- Explore the concept of Futures for concurrent programming
 
-In this exercise, we briefly look at problems related to returning values from functions. At first glance, it seems like this should be straightforward, but there are some subtle problems that arise.
+In this exercise, we explore different patterns for returning values from functions in Python. While returning a value might seem straightforward, there are several patterns and considerations that arise in different programming scenarios.

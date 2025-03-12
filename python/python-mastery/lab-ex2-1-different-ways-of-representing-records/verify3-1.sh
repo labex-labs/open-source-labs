@@ -1,5 +1,2 @@
-#!/bin/zsh
-
-cat /home/labex/project/readrides.py | grep 'open'
-cat /home/labex/project/readrides.py | grep '__main__'
-cat /home/labex/project/readrides.py | grep 'get_traced_memory'
+#!/bin/bash
+ls /home/labex/project/readrides.py > /dev/null 2>&1 && grep -q "read_rides_as_tuples" /home/labex/project/readrides.py && echo "Success"

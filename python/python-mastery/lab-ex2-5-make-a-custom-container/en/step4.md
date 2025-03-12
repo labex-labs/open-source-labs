@@ -1,43 +1,14 @@
-# Making a Custom Container - The Great Fake Out
+# Creating a Custom Container Class
 
-Storing the data in columns offers a much better memory savings, but the data is now rather weird to work with. In fact, none of our earlier analysis code from Exercise 2.2 can work with columns. The reason everything is broken is that you've broken the data abstraction that was used in earlier exercises--namely the assumption that data is stored as a list of dictionaries.
+While the column-oriented approach saves memory, it breaks compatibility with code that expects data to be in the form of a list of dictionaries. To solve this problem, we can create a custom container class that presents a row-oriented interface while storing data in a column-oriented format internally.
 
-This can be fixed if you're willing to make a custom container object that "fakes" it. Let's do that.
-
-The earlier analysis code assumes the data is stored in a sequence of records. Each record is represented as a dictionary. Let's start by making a new "Sequence" class. In this class, we store the four columns of data that were being using in the `read_rides_as_columns()` function.
+1. Open the `readrides.py` file in the WebIDE editor and add the following class:
 
 ```python
-# readrides.py
-
+# Add this to readrides.py
 from collections.abc import Sequence
 
-...
-
 class RideData(Sequence):
-    def __init__(self):
-        self.routes = []      # Columns
-        self.dates = []
-        self.daytypes = []
-        self.numrides = []
-```
-
-Try creating a `RideData` instance. You'll find that it fails with an error message like this:
-
-```python
->>> records = RideData()
-Traceback (most recent call last):
-...
-TypeError: Can't instantiate abstract class RideData with abstract methods __getitem__, __len__
->>>
-```
-
-Carefully read the error message. It tells us what we need to implement. Let's add a `__len__()` and `__getitem__()` method. In the `__getitem__()` method, we'll make a dictionary. In addition, we'll create an `append()` method that takes a dictionary and unpacks it into 4 separate `append()` operations.
-
-```python
-# readrides.py
-...
-
-class RideData(collections.Sequence):
     def __init__(self):
         # Each value is a list with all of the values (a column)
         self.routes = []
@@ -50,10 +21,10 @@ class RideData(collections.Sequence):
         return len(self.routes)
 
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        return {'route': self.routes[index],
+                'date': self.dates[index],
+                'daytype': self.daytypes[index],
+                'rides': self.numrides[index]}
 
     def append(self, d):
         self.routes.append(d['route'])
@@ -62,17 +33,15 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-If you've done this correctly, you should be able to drop this object into the previously written `read_rides_as_dicts()` function. It involves changing only one line of code:
+2. Now, let's implement a function that reads the bus ride data into our custom container:
 
 ```python
-# readrides.py
-...
-
+# Add this to readrides.py
 def read_rides_as_dicts(filename):
     '''
-    Read the bus ride data as a list of dicts
+    Read the bus ride data as a list of dicts, but use our custom container
     '''
-    records = RideData()      # <--- CHANGE THIS
+    records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
         headings = next(rows)     # Skip headers
@@ -85,27 +54,49 @@ def read_rides_as_dicts(filename):
                 'route': route,
                 'date': date,
                 'daytype': daytype,
-                'rides' : rides
-                }
+                'rides': rides
+            }
             records.append(record)
     return records
 ```
 
-If you've done this right, old code should work exactly as it did before. For example:
+This function creates a `RideData` object and populates it with data from the CSV file. The key aspect is that it maintains the same interface as a list of dictionaries, but internally stores the data in columns.
+
+3. Let's test our custom container in the Python shell:
 
 ```python
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
->>> rows
-<readrides.RideData object at 0x10f5054a8>
->>> len(rows)
-577563
->>> rows[0]
-{'route': '3', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
->>> rows[1]
-{'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
->>> rows[2]
-{'route': '6', 'date': '01/01/2001', 'daytype': 'U', 'rides': 6048}
->>>
+import readrides
+
+# Read the data using our custom container
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+
+# Check the type of the returned object
+type(rows)  # Should be readrides.RideData
+
+# Check the length
+len(rows)   # Should be 577563
+
+# Access individual records
+rows[0]     # Should return a dictionary for the first record
+rows[1]     # Should return a dictionary for the second record
+rows[2]     # Should return a dictionary for the third record
 ```
 
-Run your earlier CTA code from Exercise 2.2. It should work without modification, but use substantially less memory.
+Our custom container successfully implements the Sequence interface, meaning it behaves like a list. You can use `len()` to get the number of records and use indexing to access individual records. Each record appears to be a dictionary, even though the data is stored in columns internally.
+
+The advantage of this approach is that existing code that expects a list of dictionaries will continue to work with our custom container without modification, but the memory usage is much lower.
+
+4. Let's measure the memory usage of our custom container:
+
+```python
+import tracemalloc
+
+tracemalloc.start()
+rows = readrides.read_rides_as_dicts('ctabus.csv')
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+tracemalloc.stop()
+```
+
+You should see that the memory usage is similar to the column-oriented approach, which is much lower than a list of dictionaries would be.

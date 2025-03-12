@@ -1,10 +1,7 @@
 #!/bin/zsh
 
-cat /home/labex/project/server.py | grep "socket"
-cat /home/labex/project/server.py | grep "select"
-cat /home/labex/project/server.py | grep "collections"
-cat /home/labex/project/server.py | grep "any"
-cat /home/labex/project/server.py | grep "except"
-cat /home/labex/project/server.py | grep "RuntimeError"
-cat /home/labex/project/server.py | grep "send"
-cat /home/labex/project/server.py | grep "__main__"
+ls -la /home/labex/project/multitask.py
+cat /home/labex/project/multitask.py | grep "from collections import deque"
+cat /home/labex/project/multitask.py | grep "tasks = deque"
+cat /home/labex/project/multitask.py | grep "def run"
+cat /home/labex/project/multitask.py | grep "except StopIteration"

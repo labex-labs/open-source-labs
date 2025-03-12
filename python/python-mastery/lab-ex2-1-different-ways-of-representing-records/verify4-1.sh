@@ -1,7 +1,2 @@
-#!/bin/zsh
-
-cat /home/labex/project/readrides.py | grep 'reader'
-cat /home/labex/project/readrides.py | grep 'start'
-cat /home/labex/project/readrides.py | grep 'get_traced_memory'
-cat /home/labex/project/readrides.py | grep 'class'
-cat /home/labex/project/readrides.py | grep '__init__'
+#!/bin/bash
+ls /home/labex/project/compare_structures.py > /dev/null 2>&1 && grep -q "namedtuple" /home/labex/project/compare_structures.py && echo "Success"

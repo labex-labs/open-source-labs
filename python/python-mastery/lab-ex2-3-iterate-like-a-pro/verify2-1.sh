@@ -1,6 +1,4 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "for"
-cat ~/.python_history | grep "defaultdict"
-cat ~/.python_history | grep "append"
-cat ~/.python_history | grep -w "print"
+#!/bin/bash
+grep -q "enumerate" ~/.python_history \
+  && grep -q "zip" ~/.python_history \
+  && grep -q "dict(zip" ~/.python_history && echo "Success" || echo "Failure: Make sure you've executed the commands with enumerate() and zip() functions in Step 2"

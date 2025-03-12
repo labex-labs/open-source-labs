@@ -3,6 +3,6 @@
 **Objectives:**
 
 - Review of how to define simple functions
-- Exception handling
+- Learn exception handling in Python
 
 **Files Modified:** `pcost.py`

@@ -13,123 +13,74 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Understanding Validator Classes",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History Validation",
+            "name": "Verify Validator Understanding",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you have opened and examined the validate.py file",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/classes_objects",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
+        "skills": ["python/function_definition", "python/type_conversion"]
       },
       {
-        "title": "Creating a Callable Object",
+        "title": "Creating a Basic Callable Object",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Function Call and Print Statements",
+            "name": "Verify ValidatedFunction Class",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the ValidatedFunction class with __call__ method",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
           "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/keyword_arguments",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
+          "python/function_definition"
         ],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "Enforcement",
+        "title": "Implementing Type Validation with Function Annotations",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Presence of Python Validation Functions",
+            "name": "Verify Validation Logic",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the validation logic using function annotations",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/encapsulation",
-          "python/for_loops",
           "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
+          "python/type_conversion",
           "python/variables_data_types"
         ],
         "solutions": ["step3_solution.py"]
       },
       {
-        "title": "Use as a Method | Challenge",
+        "title": "Challenge: Using a Callable Object as a Method",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Stock Selling Code and History",
+            "name": "Verify Stock Implementation",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've attempted the challenge with the Stock class",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
+        "skills": ["python/classes_objects", "python/function_definition"]
       }
     ],
     "intro": {
@@ -164,405 +115,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "定义一个合适的可调用对象",
-      "description": "在本实验中，你将学习如何在Python中定义一个合适的可调用对象。",
-      "meta": {
-        "title": "在Python中定义一个合适的可调用对象",
-        "description": "学习如何在Python中创建一个可验证函数参数的可调用对象。",
-        "keywords": "Python,编程教程,可调用对象,函数验证"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录验证",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "创建一个可调用对象",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python函数调用和打印语句",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "实施",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python验证函数的存在",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "作为方法使用 | 挑战",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证股票卖出代码和历史记录",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Definir un objeto llamable adecuado",
-      "description": "En este laboratorio, aprenderás cómo definir un objeto llamable adecuado en Python.",
-      "meta": {
-        "title": "Definiendo un objeto llamable adecuado en Python",
-        "description": "Aprende cómo crear un objeto llamable que puede validar los argumentos de una función en Python.",
-        "keywords": "python, tutorial de programación, objeto llamable, validación de funciones"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la validación de la historia de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Crear un objeto llamable",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar las declaraciones de llamada a función de Python y de impresión",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Ejecución",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de funciones de validación de Python",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Usar como método | Desafío",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar el código y la historia de venta de acciones",
-                "file": "verify4-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Définir un objet appelable approprié",
-      "description": "Dans ce laboratoire, vous allez apprendre à définir un objet appelable approprié en Python.",
-      "meta": {
-        "title": "Définition d'un objet appelable approprié en Python",
-        "description": "Découvrez comment créer un objet appelable qui peut valider les arguments de fonction en Python.",
-        "keywords": "python, tutoriel de programmation, objet appelable, validation de fonction"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier la validation de l'historique Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Création d'un objet appelable",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier les instructions d'appel de fonction Python et les instructions d'impression",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Exécution",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence de fonctions de validation Python",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Utiliser comme une méthode | Défi",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier le code et l'historique de vente d'actions",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Definiere ein geeignetes aufrufbares Objekt",
-      "description": "In diesem Lab lernen Sie, wie Sie in Python ein geeignetes aufrufbares Objekt definieren.",
-      "meta": {
-        "title": "Definieren eines geeigneten aufrufbaren Objekts in Python",
-        "description": "Lernen Sie, wie Sie in Python ein aufrufbares Objekt erstellen, das Funktionsargumente validieren kann.",
-        "keywords": "python, Programmierungstutorial, aufrufbares Objekt, Funktionsvalidierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren der Python-Historie-Validierung",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu vollenden."
-              }
-            ]
-          },
-          {
-            "title": "Erstellen eines aufrufbaren Objekts",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren von Python-Funktionsaufrufen und Print-Anweisungen",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu vollenden."
-              }
-            ]
-          },
-          {
-            "title": "Durchsetzung",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren der Anwesenheit von Python-Validierungsfunktionen",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu vollenden."
-              }
-            ]
-          },
-          {
-            "title": "Als Methode verwenden | Herausforderung",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Verifizieren des Codes und der Historie des Aktienverkaufs",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu vollenden."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "適切なコール可能オブジェクトを定義する",
-      "description": "この実験では、Pythonで適切なコール可能オブジェクトを定義する方法を学びます。",
-      "meta": {
-        "title": "Pythonにおける適切なコール可能オブジェクトの定義",
-        "description": "Pythonで関数の引数を検証できるコール可能オブジェクトを作成する方法を学びましょう。",
-        "keywords": "python, プログラミングチュートリアル, コール可能オブジェクト, 関数検証"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Python履歴検証を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "コール可能オブジェクトの作成",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Python関数呼び出しとprint文を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "強制",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Python検証関数の存在を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "メソッドとして使用する | チャレンジ",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "株式売却コードと履歴を確認する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Определение правильного вызываемого объекта",
-      "description": "В этой лабораторной работе вы научитесь определять правильный вызываемый объект в Python.",
-      "meta": {
-        "title": "Определение правильного вызываемого объекта в Python",
-        "description": "Изучите, как создать вызываемый объект, который может валидировать аргументы функции в Python.",
-        "keywords": "python, учебник по программированию, вызываемый объект, проверка функции"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить проверку истории Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Создание вызываемого объекта",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить вызов функции Python и инструкции вывода",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Применение",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить наличие функций проверки Python",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Использовать в качестве метода | Задача",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить код и историю продажи акций",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

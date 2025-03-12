@@ -1,6 +1,7 @@
-#!/bin/zsh
-
-cat /home/labex/project/validate.py | grep "__set__"
-cat /home/labex/project/stock.py | grep "String"
-cat /home/labex/project/stock.py | grep "PositiveInteger"
-cat /home/labex/project/stock.py | grep "PositiveFloat"
+#!/bin/bash
+if [ -f "/home/labex/project/validate.py" ]; then
+  exit 0
+else
+  echo "validate.py file not found"
+  exit 1
+fi

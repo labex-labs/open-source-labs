@@ -1,5 +1,11 @@
-#!/bin/zsh
+#!/bin/bash
 
-cat ~/.python_history | grep "inspect"
-cat ~/.python_history | grep "parameters"
-cat ~/.python_history | grep "tuple"
+# Check if the user has used the inspect module
+if grep -q "import inspect" /home/labex/.python_history \
+  && grep -q "inspect.signature" /home/labex/.python_history \
+  && grep -q "parameters" /home/labex/.python_history \
+  && grep -q "tuple" /home/labex/.python_history; then
+  exit 0
+else
+  exit 1
+fi

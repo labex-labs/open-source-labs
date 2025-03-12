@@ -13,123 +13,65 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Understanding the Import Problem",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Verify file exploration",
             "file": "verify1-1.sh",
-            "hint": "This step has no verification at the moment",
+            "hint": "Make sure you've examined the formatter.py file to understand the structure",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/default_arguments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
+        "skills": ["python/importing_modules"]
       },
       {
-        "title": "Circular Imports",
+        "title": "Exploring Circular Imports",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Verify formatter.py layout",
             "file": "verify2-1.sh",
-            "hint": "This step has no verification at the moment",
+            "hint": "Make sure you've reverted the changes to formatter.py",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
+        "skills": ["python/importing_modules"]
       },
       {
-        "title": "Subclass Registration",
+        "title": "Implementing Subclass Registration",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python Modules, Imports, and TableFormatter Class",
+            "name": "Verify the TableFormatter class changes",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the _formats dictionary and __init_subclass__ method",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ],
+        "skills": ["python/classes_objects", "python/inheritance"],
         "solutions": ["step3_solution.md"]
       },
       {
-        "title": "Dynamic Imports",
+        "title": "Using Dynamic Imports",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Presence of __import__ Statement",
+            "name": "Verify dynamic imports implementation",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the __import__ statement to the create_formatter function",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/default_arguments",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ],
+        "skills": ["python/importing_modules"],
         "solutions": ["step4_solution.md"]
       }
     ],
@@ -165,405 +107,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "循环和动态模块导入",
-      "description": "在本实验中，你将探索循环导入和动态模块导入。",
-      "meta": {
-        "title": "Python编程教程 | 循环导入 | 动态模块导入",
-        "description": "在这个全面的Python编程教程中探索循环导入和动态模块导入，旨在提升你的编码技能。",
-        "keywords": "Python,编程,循环导入,动态模块导入,教程,编码"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "循环导入",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          },
-          {
-            "title": "子类注册",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python模块、导入和TableFormatter类",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.md"]
-          },
-          {
-            "title": "动态导入",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证是否存在__import__语句",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step4_solution.md"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Importaciones circulares y dinámicas de módulos",
-      "description": "En este laboratorio, explorarás las importaciones circulares y las importaciones dinámicas de módulos.",
-      "meta": {
-        "title": "Tutoriales de programación en Python | Importaciones circulares | Importaciones dinámicas de módulos",
-        "description": "Explora las importaciones circulares y las importaciones dinámicas de módulos en este completo tutorial de programación en Python, diseñado para mejorar tus habilidades de codificación.",
-        "keywords": "Python, programación, importaciones circulares, importaciones dinámicas de módulos, tutorial, codificación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación en este momento",
-                "file": "verify1-1.sh",
-                "hint": "Este paso no tiene verificación en este momento"
-              }
-            ]
-          },
-          {
-            "title": "Importaciones circulares",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación en este momento",
-                "file": "verify2-1.sh",
-                "hint": "Este paso no tiene verificación en este momento"
-              }
-            ]
-          },
-          {
-            "title": "Registro de subclases",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar módulos de Python, importaciones y clase TableFormatter",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Importaciones dinámicas",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de la declaración __import__",
-                "file": "verify4-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Importations circulaires et dynamiques de modules",
-      "description": "Dans ce laboratoire, vous allez explorer les importations circulaires et les importations dynamiques de modules.",
-      "meta": {
-        "title": "Tutoriels de programmation Python | Importations circulaires | Importations dynamiques de modules",
-        "description": "Explorez les importations circulaires et les importations dynamiques de modules dans ce tutoriel de programmation Python complet, conçu pour améliorer vos compétences de codage.",
-        "keywords": "Python, programmation, importations circulaires, importations dynamiques de modules, tutoriel, codage"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify1-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Importations circulaires",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify2-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          },
-          {
-            "title": "Enregistrement de sous - classes",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez les modules Python, les importations et la classe TableFormatter",
-                "file": "verify3-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Importations dynamiques",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de l'instruction __import__",
-                "file": "verify4-1.sh",
-                "hint": "Suivez les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Kreis- und Dynamische Modulimporte",
-      "description": "In diesem Lab werden Sie Kreisimporte und dynamische Modulimporte erkunden.",
-      "meta": {
-        "title": "Python-Programmier-Tutorials | Kreisimporte | Dynamische Modulimporte",
-        "description": "Entdecken Sie Kreisimporte und dynamische Modulimporte in diesem umfassenden Python-Programmier-Tutorial, das dazu gedacht ist, Ihre Programmierfähigkeiten zu verbessern.",
-        "keywords": "Python, Programmierung, Kreisimporte, dynamische Modulimporte, Tutorial, Programmieren"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat momentan keine Verifizierung",
-                "file": "verify1-1.sh",
-                "hint": "Dieser Schritt hat momentan keine Verifizierung"
-              }
-            ]
-          },
-          {
-            "title": "Kreisimporte",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat momentan keine Verifizierung",
-                "file": "verify2-1.sh",
-                "hint": "Dieser Schritt hat momentan keine Verifizierung"
-              }
-            ]
-          },
-          {
-            "title": "Unterklasse Registrierung",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie Python - Module, Imports und die TableFormatter - Klasse",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Dynamische Imports",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Verifiziere das Vorhandensein des __import__ - Statements",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folge den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "循環および動的モジュールインポート",
-      "description": "この実験では、循環インポートと動的モジュールインポートを調べます。",
-      "meta": {
-        "title": "Pythonプログラミングチュートリアル | 循環インポート | 動的モジュールインポート",
-        "description": "この包括的なPythonプログラミングチュートリアルでは、循環インポートと動的モジュールインポートを調べ、コーディングスキルを向上させます。",
-        "keywords": "Python, プログラミング, 循環インポート, 動的モジュールインポート, チュートリアル, コーディング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "このステップには現在、検証はありません",
-                "file": "verify1-1.sh",
-                "hint": "このステップには現在、検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "循環インポート",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "このステップには現在、検証はありません",
-                "file": "verify2-1.sh",
-                "hint": "このステップには現在、検証はありません"
-              }
-            ]
-          },
-          {
-            "title": "サブクラス登録",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonモジュール、インポート、およびTableFormatterクラスを検証する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "動的インポート",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "__import__ 文の存在を検証する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Циклические и динамические импорты модулей",
-      "description": "В этой лабораторной работе вы изучите циклические импорты и динамические импорты модулей.",
-      "meta": {
-        "title": "Руководства по программированию на Python | Циклические импорты | Динамические импорты модулей",
-        "description": "Изучите циклические импорты и динамические импорты модулей в этом полном руководстве по программированию на Python, созданном для улучшения ваших навыков в кодировании.",
-        "keywords": "Python, программирование, циклические импорты, динамические импорты модулей, руководство, кодирование"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify1-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Циклические импорты",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify2-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          },
-          {
-            "title": "Регистрация подкласса",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить модули Python, импорты и класс TableFormatter",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Динамические импорты",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить наличие инструкции __import__",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

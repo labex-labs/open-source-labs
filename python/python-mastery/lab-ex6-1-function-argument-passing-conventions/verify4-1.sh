@@ -1,6 +1,5 @@
-#!/bin/zsh
-
-cat /home/labex/project/structure.py | grep "startswith"
-cat /home/labex/project/structure.py | grep "super"
-cat /home/labex/project/structure.py | grep "__setattr__"
-cat /home/labex/project/structure.py | grep "AttributeError"
+#!/bin/bash
+grep -q "__setattr__" /home/labex/project/structure.py \
+  && grep -q "startswith" /home/labex/project/structure.py \
+  && grep -q "super()" /home/labex/project/structure.py \
+  && grep -q "AttributeError" /home/labex/project/structure.py

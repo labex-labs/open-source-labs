@@ -1,15 +1,33 @@
-# Working with files
+# Understanding the Problem
 
-The file `portfolio.dat` contains a list of lines with information on a portfolio of stocks. The file looks like this:
+In this step, we will understand the problem statement and examine the data we need to process.
 
-    AA 100 32.20
-    IBM 50 91.10
-    CAT 150 83.44
-    MSFT 200 51.23
-    GE 95 40.37
-    MSFT 50 65.10
-    IBM 100 70.44
+The file `portfolio.dat` has been created in your project directory. This file contains information about a portfolio of stocks. Each line in the file represents a single stock purchase with the following format:
 
-The first column is the stock name, the second column is the number of shares, and the third column is the purchase price of a single share.
+```
+[Stock Symbol] [Number of Shares] [Price per Share]
+```
 
-Write a program called `pcost.py` that opens this file, reads all lines, and calculates how much it cost to purchase all of the shares in the portfolio. To do this, compute the sum of the second column multiplied by the third column. Finally, output the results of the calculation.
+For example, let's look at the first line:
+
+```
+AA 100 32.20
+```
+
+This means 100 shares of stock "AA" were purchased at a price of $32.20 per share.
+
+You can view the contents of the file by running the following command in the terminal:
+
+```bash
+cat ~/project/portfolio.dat
+```
+
+Your task is to create a Python program called `pcost.py` that:
+
+1. Opens and reads the `portfolio.dat` file
+2. Calculates the total cost of all stock purchases in the portfolio
+3. Outputs the total cost
+
+To calculate the total cost, you need to multiply the number of shares by the price per share for each line, and then sum all these values.
+
+Let's start by creating the `pcost.py` file. You can use the editor to open and edit this file, which was already created for you in the setup step.

@@ -1,55 +1,87 @@
-# Preparation
+# Understanding Function Argument Passing
 
-We're going to recreate the `Stock` class from scratch using some new techniques. Make sure you have your unit tests from Exercise 5.4 handy. You'll want those.
+In Python, functions can be called using different argument passing techniques. This flexibility allows for cleaner, more maintainable code. Let's explore these conventions before applying them to our project.
 
-If you define a function, you probably already know that it can be called using a mix of positional or keyword arguments. For example:
+## Creating a Backup of Your Work
 
-```python
->>> def foo(x, y, z):
-        return x + y + z
+First, let's make a backup of your current `stock.py` file. Open a terminal and run:
 
->>> foo(1, 2, 3)
-6
->>> foo(1, z=3, y=2)
-6
->>>
+```bash
+cp stock.py orig_stock.py
 ```
 
-You may also know that you can pass sequences and dictionaries as function arguments using the \* and \*\* syntax. For example:
+This ensures your original work is preserved.
+
+## Exploring Function Argument Passing
+
+In Python, you can call functions using different approaches:
+
+### 1. Positional Arguments
+
+The most basic way to pass arguments is by position:
 
 ```python
->>> args = (1, 2, 3)
->>> foo(*args)
-6
->>> kwargs = {'y':2, 'z':3 }
->>> foo(1,**kwargs)
-6
->>>
+def calculate(x, y, z):
+    return x + y + z
+
+# Call with positional arguments
+result = calculate(1, 2, 3)
+print(result)  # Output: 6
 ```
 
-In addition to that, you can write functions that accept any number of positional or keyword arguments using the \* and \*\* syntax. For example:
+### 2. Keyword Arguments
+
+You can also specify arguments by name:
 
 ```python
->>> def foo(*args):
-        print(args)
-
->>> foo(1,2)
-(1, 2)
->>> foo(1,2,3,4,5)
-(1, 2, 3, 4, 5)
->>> foo()
-()
->>>
->>> def bar(**kwargs):
-        print(kwargs)
-
->>> bar(x=1,y=2)
-{'y': 2, 'x': 1}
->>> bar(x=1,y=2,z=3)
-{'y': 2, 'x': 1, 'z': 3}
->>> bar()
-{}
->>>
+# Call with a mix of positional and keyword arguments
+result = calculate(1, z=3, y=2)
+print(result)  # Output: 6
 ```
 
-Variable argument functions are sometimes useful as a technique for reducing or simplifying the amount of code you need to type. In this exercise, we'll explore that idea for simple data structures.
+### 3. Unpacking Sequences and Dictionaries
+
+Python allows you to pass sequences and dictionaries as arguments using the `*` and `**` syntax:
+
+```python
+# Unpacking a tuple into positional arguments
+args = (1, 2, 3)
+result = calculate(*args)
+print(result)  # Output: 6
+
+# Unpacking a dictionary into keyword arguments
+kwargs = {'y': 2, 'z': 3}
+result = calculate(1, **kwargs)
+print(result)  # Output: 6
+```
+
+### 4. Accepting Variable Arguments
+
+Functions can be defined to accept any number of arguments:
+
+```python
+# Accept any number of positional arguments
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2))           # Output: 3
+print(sum_all(1, 2, 3, 4, 5))  # Output: 15
+
+# Accept any number of keyword arguments
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Python", year=1991)
+# Output:
+# name: Python
+# year: 1991
+```
+
+These techniques will help us create more flexible and reusable code structures in the following steps. Let's practice by opening the Python interpreter and trying some of these examples:
+
+```bash
+python3
+```
+
+Try entering the examples above in the Python interpreter to get comfortable with these concepts.

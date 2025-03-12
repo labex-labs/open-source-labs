@@ -13,123 +13,73 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "A Simple Generator",
+        "title": "Understanding Python Generators",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python Code History",
+            "name": "Verify Python Generator Understanding",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've run the frange generator examples in the Python terminal.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples",
-          "python/while_loops"
-        ]
+        "skills": ["python/generators", "python/iterators"]
       },
       {
-        "title": "Adding Iteration to Objects",
+        "title": "Adding Iteration to Custom Classes",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Iteration and Import Statements",
+            "name": "Verify Structure Class Iteration",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the __iter__ method to the Structure class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples",
-          "python/using_packages"
-        ],
+        "skills": ["python/classes_objects", "python/iterators"],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "The Surprising Power of Iteration",
+        "title": "Enhancing Classes with Iteration Capabilities",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python History and Structure.py Usage",
+            "name": "Verify Structure Class Equality Method",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the __eq__ method to the Structure class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/booleans",
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples",
-          "python/variables_data_types"
+          "python/conditional_statements",
+          "python/iterators"
         ],
         "solutions": ["step3_solution.py"]
       },
       {
-        "title": "Monitoring a streaming data source",
+        "title": "Creating a Generator for Streaming Data",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify CSV File Existence and Python File Operations",
+            "name": "Verify Follow Generator Function",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've created the follow.py file with a follow generator function.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/while_loops",
-          "python/with_statement"
+          "python/file_operations",
+          "python/file_reading_writing",
+          "python/generators"
         ],
         "solutions": ["follow.py"]
       }
@@ -181,406 +131,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "使用生成器自定义迭代",
-      "description": "在本实验中，你将学习如何在 Python 中使用生成器自定义迭代。",
-      "meta": {
-        "title": "Python 生成器 | 自定义迭代",
-        "description": "学习如何在 Python 中使用生成器自定义迭代。探索一个简单的生成器示例，并了解生成器函数的优点。",
-        "keywords": "Python, 生成器, 迭代, 自定义迭代, 编程教程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "一个简单的生成器",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 代码历史记录",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "向对象添加迭代功能",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 迭代和导入语句",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "迭代的惊人力量",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录和 Structure.py 的用法",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "监控流数据源",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证 CSV 文件是否存在以及 Python 文件操作",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["follow.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Personalizar la iteración con generadores",
-      "description": "En este laboratorio, aprenderás a personalizar la iteración con generadores en Python.",
-      "meta": {
-        "title": "Generadores de Python | Iteración personalizada",
-        "description": "Aprende a personalizar la iteración con generadores en Python. Explora un ejemplo simple de generador y comprende los beneficios de las funciones generadoras.",
-        "keywords": "python, generadores, iteración, iteración personalizada, tutoriales de programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Un generador simple",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de código de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Agregar iteración a objetos",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar las declaraciones de iteración y de importación de Python",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "El sorprendente poder de la iteración",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de Python y el uso de Structure.py",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Monitorear una fuente de datos en streaming",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la existencia del archivo CSV y las operaciones de archivos de Python",
-                "file": "verify4-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Personnaliser l'itération à l'aide de générateurs",
-      "description": "Dans ce laboratoire, vous allez apprendre à personnaliser l'itération à l'aide de générateurs en Python.",
-      "meta": {
-        "title": "Générateurs Python | Itération personnalisée",
-        "description": "Découvrez comment personnaliser l'itération à l'aide de générateurs en Python. Explorez un exemple simple de générateur et comprenez les avantages des fonctions génératrices.",
-        "keywords": "python, générateurs, itération, itération personnalisée, tutoriels de programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Un générateur simple",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique du code Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Ajout d'une itération aux objets",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier les instructions d'itération et d'importation Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Le pouvoir surprenant de l'itération",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python et l'utilisation de Structure.py",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Surveiller une source de données en flux",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier l'existence du fichier CSV et les opérations de fichiers Python",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Iteration mit Generatoren anpassen",
-      "description": "In diesem Lab lernen Sie, wie Sie in Python die Iteration mit Generatoren anpassen.",
-      "meta": {
-        "title": "Python-Generatoren | Angepasste Iteration",
-        "description": "Lernen Sie, wie Sie in Python die Iteration mit Generatoren anpassen. Entdecken Sie ein einfaches Generatorbeispiel und verstehen Sie die Vorteile von Generatorfunktionen.",
-        "keywords": "Python, Generatoren, Iteration, angepasste Iteration, Programmier-Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Ein einfacher Generator",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Python-Code-Historie",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Iteration hinzufügen zu Objekten",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Python-Iteration und Importanweisungen",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Die überraschende Macht der Iteration",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Python-Historie und den Gebrauch von Structure.py",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Überwachen einer Streaming-Datenquelle",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein der CSV-Datei und die Python-Dateioperationen",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "ジェネレータを使った反復処理のカスタマイズ",
-      "description": "この実験では、Pythonでジェネレータを使って反復処理をカスタマイズする方法を学びます。",
-      "meta": {
-        "title": "Pythonジェネレータ | カスタマイズされた反復処理",
-        "description": "Pythonでジェネレータを使って反復処理をカスタマイズする方法を学びましょう。単純なジェネレータの例を探り、ジェネレータ関数の利点を理解しましょう。",
-        "keywords": "python, ジェネレータ, 反復処理, カスタマイズされた反復処理, プログラミングチュートリアル"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "単純なジェネレータ",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonコード履歴を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "オブジェクトに反復処理を追加する",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonの反復処理とインポート文を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "反復処理の驚くべき力",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴とStructure.pyの使用方法を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "ストリーミングデータソースの監視",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "CSVファイルの存在とPythonファイル操作を確認する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Настройка итерации с использованием генераторов",
-      "description": "В этой лабораторной работе вы научитесь настраивать итерацию с использованием генераторов в Python.",
-      "meta": {
-        "title": "Генераторы Python | Настраиваемая итерация",
-        "description": "Изучите, как настраивать итерацию с использованием генераторов в Python. Изучите простой пример генератора и понять преимущества функций-генераторов.",
-        "keywords": "python, генераторы, итерация, настраиваемая итерация, учебники по программированию"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Простой генератор",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python-кода",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Добавление итерации к объектам",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить инструкции по итерации и импорту в Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Удивительная сила итерации",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python и использование Structure.py",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Мониторинг источника потоковых данных",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить существование CSV-файла и операции с Python-файлами",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

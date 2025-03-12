@@ -13,81 +13,51 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Understanding Function Argument Passing",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python Function Definition and Usage",
+            "name": "Verify backup creation",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've created the orig_stock.py backup file.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/keyword_arguments",
-          "python/python_shell",
-          "python/tuples"
-        ]
+        "skills": ["python/arguments_return", "python/keyword_arguments"]
       },
       {
-        "title": "Simplified Data Structures",
+        "title": "Creating a Structure Base Class",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Presence of __init__, len, TypeError, and setattr",
+            "name": "Verify Structure class implementation",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've created structure.py with the Structure class and required methods.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/keyword_arguments",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects", "python/constructor"],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "Making a Useful Representation",
+        "title": "Improving Object Representation",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Presence of Type, Repr, Getattr, and Join Functions",
+            "name": "Verify __repr__ implementation",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the __repr__ method to the Structure class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects"],
         "solutions": ["step3_solution.py"]
       },
       {
@@ -95,47 +65,32 @@
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Presence of Key Python Constructs",
+            "name": "Verify __setattr__ implementation",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the __setattr__ method to restrict attribute names.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects", "python/encapsulation"],
         "solutions": ["step4_solution.py"]
       },
       {
-        "title": "Starting Over",
+        "title": "Rewriting the Stock Class",
         "text": "en/step5.md",
         "verify": [
           {
-            "name": "Verify Import Usage in Project Files",
+            "name": "Verify Stock class implementation",
             "file": "verify5-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've created the new stock.py file with the Stock class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "python/classes_objects",
-          "python/comments",
           "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/tuples",
-          "python/using_packages"
+          "python/inheritance"
         ],
         "solutions": ["stock.py"]
       }
@@ -172,473 +127,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "函数参数传递约定",
-      "description": "在本实验中，你将学习函数参数传递约定，并开始以更有条理的方式重写stock.py文件。",
-      "meta": {
-        "title": "掌握函数参数传递约定",
-        "description": "探索在Python中定义和使用带可变参数函数的高级技术。",
-        "keywords": "数据结构, Python游乐场, 软件开发, 可变参数, Python, 函数参数, Python编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python函数的定义和使用",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "简化的数据结构",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证是否存在__init__、len、TypeError和setattr",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "创建一个有用的表示形式",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证是否存在Type、Repr、Getattr和Join函数",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "限制属性名称",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证关键Python结构的存在",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step4_solution.py"]
-          },
-          {
-            "title": "重新开始",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证项目文件中的导入用法",
-                "file": "verify5-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["stock.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Convenciones de Pasaje de Argumentos de Funciones",
-      "description": "En este laboratorio, aprenderás sobre las convenciones de pasaje de argumentos de funciones y comenzarás el proceso de reescribir el archivo stock.py de manera más organizada.",
-      "meta": {
-        "title": "Dominando las Convenciones de Pasaje de Argumentos de Funciones",
-        "description": "Explora técnicas avanzadas para definir y usar funciones con argumentos variables en Python.",
-        "keywords": "estructuras de datos, playground de Python, desarrollo de software, argumentos variables, Python, argumentos de funciones, programación en Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la definición y uso de funciones de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Estructuras de datos simplificadas",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de __init__, len, TypeError y setattr",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Creando una representación útil",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de las funciones Type, Repr, Getattr y Join",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Restringiendo los nombres de atributos",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de las estructuras clave de Python",
-                "file": "verify4-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Empezando de nuevo",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verificar el uso de importaciones en los archivos del proyecto",
-                "file": "verify5-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Conventions de passage d'arguments de fonction",
-      "description": "Dans ce laboratoire, vous allez découvrir les conventions de passage d'arguments de fonction et commencer le processus de réécriture du fichier stock.py de manière plus organisée.",
-      "meta": {
-        "title": "Maîtriser les conventions de passage d'arguments de fonction",
-        "description": "Explorez des techniques avancées pour définir et utiliser des fonctions avec des arguments variables en Python.",
-        "keywords": "structures de données, terrain de jeu Python, développement logiciel, arguments variables, Python, arguments de fonction, programmation Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez la définition et l'utilisation des fonctions Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Structures de données simplifiées",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de __init__, len, TypeError et setattr",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Création d'une représentation utile",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence des fonctions Type, Repr, Getattr et Join",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Restreindre les noms d'attributs",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence des principaux éléments de construction Python",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Recommencer",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'utilisation des importations dans les fichiers du projet",
-                "file": "verify5-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Funktionsargumente - Übergabekonventionen",
-      "description": "In diesem Lab lernen Sie über die Übergabekonventionen von Funktionsargumenten und beginnen den Prozess, die Datei stock.py auf eine organisiertere Weise umzuschreiben.",
-      "meta": {
-        "title": "Meisterung der Übergabekonventionen von Funktionsargumenten",
-        "description": "Entdecken Sie fortgeschrittene Techniken zur Definition und Verwendung von Funktionen mit variablen Argumenten in Python.",
-        "keywords": "Datenstrukturen, Python-Playground, Softwareentwicklung, variable Argumente, Python, Funktionsargumente, Python-Programmierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Definition und Verwendung von Python-Funktionen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu absolvieren."
-              }
-            ]
-          },
-          {
-            "title": "Vereinfachte Datenstrukturen",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Anwesenheit von __init__, len, TypeError und setattr",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu absolvieren."
-              }
-            ]
-          },
-          {
-            "title": "Erstellung einer nützlichen Darstellung",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Anwesenheit von Type-, Repr-, Getattr- und Join-Funktionen",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu absolvieren."
-              }
-            ]
-          },
-          {
-            "title": "Einschränkung der Attributnamen",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Anwesenheit von Schlüssel-Python-Konstrukten",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu absolvieren."
-              }
-            ]
-          },
-          {
-            "title": "Von vorne beginnen",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Importverwendung in Projektdateien",
-                "file": "verify5-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu absolvieren."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "関数の引数渡し規則",
-      "description": "この実験では、関数の引数渡し規則について学び、stock.pyファイルをより整理された方法で書き直すプロセスを始めます。",
-      "meta": {
-        "title": "関数の引数渡し規則をマスターする",
-        "description": "Pythonで可変引数を持つ関数を定義および使用するための高度な技術を探求します。",
-        "keywords": "データ構造, Pythonプレイグラウンド, ソフトウェア開発, 可変引数, Python, 関数の引数, Pythonプログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Python関数の定義と使用を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "単純化されたデータ構造",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "__init__、len、TypeError、およびsetattrの存在を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "有用な表現を作る",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Type、Repr、Getattr、およびJoin関数の存在を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "属性名の制限",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "重要なPython構文の存在を確認する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "やり直し",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "プロジェクトファイルにおけるインポートの使用を確認する",
-                "file": "verify5-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Соглашения по передаче аргументов функций",
-      "description": "В этой лабораторной работе вы узнаете о соглашениях по передаче аргументов функций и начнете процесс переписывания файла stock.py в более организованном виде.",
-      "meta": {
-        "title": "Мастерство в соглашениях по передаче аргументов функций",
-        "description": "Изучайте передовые методы определения и использования функций с переменными аргументами в Python.",
-        "keywords": "структура данных, питоновая площадка, разработка программного обеспечения, переменные аргументы, питон, аргументы функций, программирование на питоне"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить определение и использование функций на Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Упрощенные структуры данных",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить наличие __init__, len, TypeError и setattr",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Создание полезного представления",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить наличие функций Type, Repr, Getattr и Join",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Ограничение имен атрибутов",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить наличие основных конструкций языка Python",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Начало сначала",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверить использование импортов в файлах проекта",
-                "file": "verify5-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

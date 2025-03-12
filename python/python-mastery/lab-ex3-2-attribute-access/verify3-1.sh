@@ -1,9 +1,6 @@
-#!/bin/zsh
-
-ls /home/labex/project/*.py | grep -v "stock.py"
-grep "def" /home/labex/project/*.py | grep -v "stock.py"
-grep "print" /home/labex/project/*.py | grep -v "stock.py"
-grep "join" /home/labex/project/*.py | grep -v "stock.py"
-grep "getattr" /home/labex/project/*.py | grep -v "stock.py"
-cat ~/.python_history | grep "stock"
-cat ~/.python_history | grep "read_portfolio"
+#!/bin/bash
+if [[ -f /home/labex/project/tableformat.py ]] && grep -q "print_table" /home/labex/project/tableformat.py; then
+  exit 0
+else
+  exit 1
+fi

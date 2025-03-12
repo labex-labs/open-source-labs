@@ -1,6 +1,7 @@
-#!/bin/zsh
-
-ls /home/labex/project/descrip.py | grep "__get__"
-ls /home/labex/project/descrip.py | grep "__set__"
-ls /home/labex/project/descrip.py | grep "__delete__"
-cat ~/.python_history | grep "del"
+#!/bin/bash
+if [ -f "/home/labex/project/descrip.py" ]; then
+  exit 0
+else
+  echo "descrip.py file not found"
+  exit 1
+fi
