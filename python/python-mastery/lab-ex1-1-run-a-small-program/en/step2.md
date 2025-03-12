@@ -50,36 +50,6 @@ Let's break down what this program does:
 
    This should attempt to generate a 10×20 pattern of characters.
 
-3. You might notice that the program crashes with an error. Look carefully at the error message.
-
-   The error occurs because the backslash (`\`) in the `chars` string has a special meaning in Python. It's used as an escape character.
-
-## Fix the Program
-
-1. Return to the editor and modify the `chars` line to fix the problem:
-
-   ```python
-   chars = '\\|/'  # Double backslash is needed to represent a literal backslash
-   ```
-
-   or alternatively:
-
-   ```python
-   chars = r'\|/'  # r prefix creates a "raw" string where backslashes aren't special
-   ```
-
-2. Save the file again.
-
-## Run the Fixed Program
-
-1. Run the program again:
-
-   ```bash
-   python3 art.py 10 20
-   ```
-
-2. This time, you should see output similar to this (your pattern will be different due to randomization):
-
    ```
    ||||/\||//\//\|||\|\
    ///||\/||\//|\\|\\/\
