@@ -1,18 +1,30 @@
-# Launch Python Interactive Interpreter
+# Verify Python Installation and Use the Interactive Interpreter
 
-The Python interactive interpreter allows you to type Python code directly and see immediate results. It is an excellent tool for learning Python, testing small code snippets, and exploring Python features.
+The Python interactive interpreter is a powerful tool that allows you to execute Python code line by line and see immediate results. Before writing complete programs, let us first make sure Python is correctly installed and learn how to use this interpreter.
 
 ## Launch the Python Interpreter
 
-1. Open a terminal in your LabEx environment.
+1. First, open a terminal in the WebIDE. You should see a terminal tab at the bottom of the screen.
 
-2. Start the Python interpreter by typing the following command:
+2. In the terminal, type the following command and press Enter:
+
+   ```bash
+   python3 --version
+   ```
+
+   This command displays the installed Python version. You should see output similar to:
+
+   ```
+   Python 3.10.x
+   ```
+
+3. Now, let us start the Python interactive interpreter by typing:
 
    ```bash
    python3
    ```
 
-3. You should see something similar to this:
+   You will see output similar to:
 
    ```
    Python 3.10.x (default, ...)
@@ -21,39 +33,70 @@ The Python interactive interpreter allows you to type Python code directly and s
    >>>
    ```
 
-   The `>>>` prompt indicates that Python is waiting for your input.
+   The `>>>` prompt indicates that Python is ready to accept commands.
 
-## Try a Simple Command
+## Try Simple Python Commands
 
-Let's write our first Python code. Type the following at the prompt:
+Let us experiment with some basic Python commands:
 
-```python
->>> print('Hello World')
-```
+1. Type the following at the prompt and press Enter:
 
-After pressing Enter, you should see:
+   ```python
+   >>> print('Hello World')
+   ```
 
-```
-Hello World
->>>
-```
+   You will see:
 
-This confirms that Python is running correctly. The `print()` function outputs text to the screen.
+   ```
+   Hello World
+   >>>
+   ```
+
+2. Try a simple math calculation:
+
+   ```python
+   >>> 2 + 3
+   ```
+
+   Python will evaluate and display the result:
+
+   ```
+   5
+   >>>
+   ```
+
+3. Create a variable and use it:
+
+   ```python
+   >>> message = "Learning Python"
+   >>> print(message)
+   ```
+
+   Output:
+
+   ```
+   Learning Python
+   >>>
+   ```
+
+The Python interpreter immediately executes each line of code as you enter it, making it perfect for testing ideas and learning Python concepts.
 
 ## Exit the Interpreter
 
-When you're done experimenting with the Python interpreter, you can exit by:
+When you finish experimenting with the Python interpreter, you can exit it using one of these methods:
 
-1. Typing `exit()` or `quit()` and pressing Enter, or
-2. Pressing Ctrl+D on your keyboard
+1. Type the following command and press Enter:
 
-```python
->>> exit()
-```
+   ```python
+   >>> exit()
+   ```
 
-The interactive interpreter is called a REPL (Read-Evaluate-Print Loop) because it:
+   Or you can use:
 
-- Reads your input
-- Evaluates (runs) your code
-- Prints the result
-- Loops back to wait for more input
+   ```python
+   >>> quit()
+   ```
+
+2. Alternatively, press Ctrl+D on your keyboard.
+
+You will return to the regular terminal prompt after exiting the interpreter.
