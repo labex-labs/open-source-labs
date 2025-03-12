@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
+
 # Create necessary portfolio data files for the lab
 cd /home/labex/project
 
@@ -35,5 +37,3 @@ DIS - 34.20
 MSFT 50 65.10
 IBM 100 70.44
 EOF
-
-wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
