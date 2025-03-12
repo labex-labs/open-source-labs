@@ -13,33 +13,30 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Defining a function",
+        "title": "Defining a Function",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Portfolio Cost Calculation",
+            "name": "Verify pcost.py file exists",
             "file": "verify1-1.sh",
-            "hint": "Please read the portfolio data in the 'portfolio.dat' file and print the Floating point number of the total cost of the portfolio.",
+            "hint": "Make sure you've created the pcost.py file in the project directory.",
             "timeout": 0,
             "showstderr": true
+          },
+          {
+            "name": "Verify portfolio_cost function",
+            "file": "verify1-2.sh",
+            "hint": "Ensure your portfolio_cost function correctly calculates the total cost."
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
           "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/file_reading_writing",
+          "python/function_definition"
         ],
         "solutions": ["pcost.py"]
       },
@@ -48,27 +45,19 @@
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Script Execution in /tmp Directory",
+            "name": "Verify exception handling implementation",
             "file": "verify2-1.sh",
-            "hint": "Please use 'try' and 'except' to catch and print a warning message about lines that can't be parsed.",
+            "hint": "Make sure you've added try-except blocks to handle ValueError exceptions.",
             "timeout": 0,
             "showstderr": true
+          },
+          {
+            "name": "Verify handling of bad data",
+            "file": "verify2-2.sh",
+            "hint": "Ensure your code can process portfolio3.dat without crashing."
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
+        "skills": ["python/catching_exceptions", "python/file_reading_writing"],
         "solutions": ["pcost.py"]
       },
       {
@@ -76,28 +65,14 @@
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python Portfolio Cost History",
+            "name": "Verify interactive Python usage",
             "file": "verify3-1.sh",
-            "hint": "Please run 'pcost.py' program and call the 'portfolio_cost()' function directly from the interactive interpreter.",
+            "hint": "Make sure you've used Python's interactive mode to call the portfolio_cost function.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
+        "skills": ["python/python_shell"],
         "solutions": ["pcost.py"]
       }
     ],
@@ -148,340 +123,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "回顾简单函数与异常处理",
-      "description": "在本实验中，你将回顾定义简单函数，并学习Python中的异常处理。",
-      "meta": {
-        "title": "回顾简单函数与异常处理",
-        "description": "探索Python编程中定义函数和处理异常的基础知识。",
-        "keywords": "Python, 异常处理, 函数, 教程, 编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "定义一个函数",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证投资组合成本计算",
-                "file": "verify1-1.sh",
-                "hint": "请读取'portfolio.dat'文件中的投资组合数据，并打印投资组合总成本的浮点数。"
-              }
-            ],
-            "solutions": ["pcost.py"]
-          },
-          {
-            "title": "添加错误处理",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证在/tmp目录中执行Python脚本",
-                "file": "verify2-1.sh",
-                "hint": "请使用'try'和'except'来捕获并打印关于无法解析的行的警告消息。"
-              }
-            ],
-            "solutions": ["pcost.py"]
-          },
-          {
-            "title": "交互式实验",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python投资组合成本历史记录",
-                "file": "verify3-1.sh",
-                "hint": "请运行'pcost.py'程序，并直接从交互式解释器中调用'portfolio_cost()'函数。"
-              }
-            ],
-            "solutions": ["pcost.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Revisión del Manejo de Excepciones en Funciones Simples",
-      "description": "En esta práctica, revisará la definición de funciones simples y aprenderá sobre el manejo de excepciones en Python.",
-      "meta": {
-        "title": "Revisión de Funciones Simples y Manejo de Excepciones",
-        "description": "Explora los fundamentos de la definición de funciones y el manejo de excepciones en la programación de Python.",
-        "keywords": "python, manejo de excepciones, funciones, tutorial, programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Definiendo una función",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el cálculo del costo del portafolio",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, lea los datos del portafolio en el archivo 'portfolio.dat' e imprima el número de punto flotante del costo total del portafolio."
-              }
-            ]
-          },
-          {
-            "title": "Agregando manejo de errores",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la ejecución del script de Python en el directorio /tmp",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, use 'try' y 'except' para capturar e imprimir un mensaje de advertencia sobre las líneas que no se pueden analizar."
-              }
-            ]
-          },
-          {
-            "title": "Experimentación interactiva",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de costos del portafolio de Python",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, ejecute el programa 'pcost.py' y llame directamente a la función 'portfolio_cost()' desde el intérprete interactivo."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Revue des fonctions simples et de la gestion des exceptions",
-      "description": "Dans ce laboratoire, vous allez réviser la définition de fonctions simples et découvrir la gestion des exceptions en Python.",
-      "meta": {
-        "title": "Revue des fonctions simples et de la gestion des exceptions",
-        "description": "Explorez les bases de la définition de fonctions et de la gestion d'exceptions en programmation Python.",
-        "keywords": "python, gestion d'exceptions, fonctions, tutoriel, programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Définition d'une fonction",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier le calcul du coût du portefeuille",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez lire les données du portefeuille dans le fichier 'portfolio.dat' et afficher le nombre à virgule flottante du coût total du portefeuille."
-              }
-            ]
-          },
-          {
-            "title": "Ajout de la gestion d'erreurs",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier l'exécution du script Python dans le répertoire /tmp",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez utiliser 'try' et 'except' pour attraper et afficher un message d'avertissement concernant les lignes qui ne peuvent pas être analysées."
-              }
-            ]
-          },
-          {
-            "title": "Expérimentation interactive",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique du coût du portefeuille Python",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez exécuter le programme 'pcost.py' et appeler directement la fonction 'portfolio_cost()' à partir de l'interpréteur interactif."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Überprüfung einfacher Funktionen und Fehlerbehandlung",
-      "description": "In diesem Lab werden Sie die Definition einfacher Funktionen überprüfen und die Fehlerbehandlung in Python kennenlernen.",
-      "meta": {
-        "title": "Überprüfung einfacher Funktionen und Fehlerbehandlung",
-        "description": "Erkunden Sie die Grundlagen der Funktionsdefinition und der Fehlerbehandlung in der Python-Programmierung.",
-        "keywords": "Python, Fehlerbehandlung, Funktionen, Tutorial, Programmierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Definition einer Funktion",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Portfolio-Kostenberechnung",
-                "file": "verify1-1.sh",
-                "hint": "Bitte lesen Sie die Portfolio-Daten in der Datei 'portfolio.dat' und geben Sie die Gleitkommazahl des Gesamtkosten des Portfolios aus."
-              }
-            ]
-          },
-          {
-            "title": "Hinzufügen von Fehlerbehandlung",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Ausführung eines Python-Skripts im /tmp-Verzeichnis",
-                "file": "verify2-1.sh",
-                "hint": "Bitte verwenden Sie 'try' und 'except', um eine Warnmeldung über Zeilen, die nicht analysiert werden können, zu fangen und auszugeben."
-              }
-            ]
-          },
-          {
-            "title": "Interaktive Experimentation",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Python-Portfolio-Kostenhistorie",
-                "file": "verify3-1.sh",
-                "hint": "Bitte führen Sie das Programm 'pcost.py' aus und rufen Sie die Funktion 'portfolio_cost()' direkt aus dem interaktiven Interpreter auf."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "シンプルな関数と例外処理の復習",
-      "description": "この実験では、シンプルな関数の定義を復習し、Pythonにおける例外処理について学びます。",
-      "meta": {
-        "title": "シンプルな関数と例外処理の復習",
-        "description": "Pythonプログラミングにおける関数の定義と例外処理の基本を探求します。",
-        "keywords": "python, 例外処理, 関数, チュートリアル, プログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "関数の定義",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "証拠書コスト計算の検証",
-                "file": "verify1-1.sh",
-                "hint": "「portfolio.dat」ファイル内の証拠書データを読み取り、証拠書の総コストの浮動小数点数を表示してください。"
-              }
-            ]
-          },
-          {
-            "title": "エラーハンドリングの追加",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "/tmpディレクトリでのPythonスクリプト実行の検証",
-                "file": "verify2-1.sh",
-                "hint": "解析できない行に関する警告メッセージをキャッチして表示するために、'try'と'except'を使用してください。"
-              }
-            ]
-          },
-          {
-            "title": "対話型の実験",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonによる証拠書コスト履歴の検証",
-                "file": "verify3-1.sh",
-                "hint": "「pcost.py」プログラムを実行し、対話型インタプリタから直接「portfolio_cost()」関数を呼び出してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Просмотр простых функций и обработки исключений",
-      "description": "В этой лабораторной работе вы будете пересматривать определение простых функций и узнавать о обработке исключений в Python.",
-      "meta": {
-        "title": "Просмотр простых функций и обработки исключений",
-        "description": "Изучите основы определения функций и обработки исключений в программировании на Python.",
-        "keywords": "python, обработка исключений, функции, туториал, программирование"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Определение функции",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить расчет стоимости портфеля",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, прочитайте данные портфеля из файла 'portfolio.dat' и распечатайте вещественное число общей стоимости портфеля."
-              }
-            ]
-          },
-          {
-            "title": "Добавление обработки ошибок",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить выполнение Python-скрипта в директории /tmp",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, используйте 'try' и 'except', чтобы перехватить и распечатать предупреждающее сообщение о строках, которые не могут быть разобраны."
-              }
-            ]
-          },
-          {
-            "title": "Взаимодействующая экспериментация",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить историю стоимости портфеля на Python",
-                "file": "verify3-1.sh",
-                "hint": "Запустите программу 'pcost.py' и вызовите функцию 'portfolio_cost()' непосредственно из интерактивного интерпретатора."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

@@ -2,6 +2,10 @@
 
 **Objectives:**
 
-- Make a new primitive type
+- Create a new primitive type in Python
+- Implement essential methods for making a functional primitive type
+- Learn about Python's object protocol
 
-In most programs, you use the primitive types such as `int`, `float`, and `str` to represent data. However, you're not limited to just those types. The standard library has modules such as the `decimal` and `fractions` module that implement new primitive types. You can also make your own types as long as you understand the underlying protocols which make Python objects work. In this exercise, we'll make a new primitive type. There are a lot of little details to worry about, but this will give you a general sense for what's required.
+In most Python programs, you use built-in primitive types such as `int`, `float`, and `str` to represent data. However, Python also allows you to create your own types. The standard library includes modules like `decimal` and `fractions` that implement custom primitive types. You can create your own primitive types by understanding the underlying protocols that make Python objects work.
+
+In this lab, you will create a new primitive type called `MutInt` (Mutable Integer), which unlike Python's immutable integers, can be modified after creation. This exercise will demonstrate the fundamental principles needed to create a fully functional primitive type in Python.

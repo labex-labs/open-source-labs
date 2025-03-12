@@ -1,7 +1,3 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "while"
-cat ~/.python_history | grep "yield"
-cat ~/.python_history | grep "for"
-cat ~/.python_history | grep "class"
-cat ~/.python_history | grep "def"
+#!/bin/bash
+# Check if the Python history contains the frange function definition and usage
+grep -q "def frange" ~/.python_history && echo "Success" || echo "Failure: Make sure you defined the frange generator function"

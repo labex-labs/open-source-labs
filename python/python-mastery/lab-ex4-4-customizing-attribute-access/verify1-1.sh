@@ -1,6 +1,2 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "class"
-cat ~/.python_history | grep "__init__"
-cat ~/.python_history | grep "__setattr__",
-cat ~/.python_history | grep "super"
+#!/bin/bash
+grep -q "__setattr__" /home/labex/project/restricted_stock.py && echo "Success" || echo "Fail: Cannot find __setattr__ method in restricted_stock.py"

@@ -1,39 +1,25 @@
-# Defining a simple object
+# Understanding Python Classes
 
-Create a file `stock.py` and define the following class:
+In Python, a class is a blueprint for creating objects. Object-oriented programming allows us to organize code by grouping related data and functions together.
 
-```python
-class Stock:
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
-    def cost(self):
-        return self.shares * self.price
-```
+A Python class consists of:
 
-Once you have done this, run your program and experiment with your new `Stock` object:
+- **Attributes**: Variables that store data within a class
+- **Methods**: Functions that belong to a class and can access or modify its attributes
 
-Note: To do this, you might have to run python using the `-i` option. For example:
+Classes provide a way to create reusable code and model real-world concepts. In this lab, we will create a `Stock` class to represent stock information such as name, number of shares, and price per share.
 
-```bash
-python3 -i stock.py
-```
+Here is the basic structure of a Python class:
 
 ```python
->>> s = Stock('GOOG',100,490.10)
->>> s.name
-'GOOG'
->>> s.shares
-100
->>> s.price
-490.1
->>> s.cost()
-49010.0
->>> print('%10s %10d %10.2f' % (s.name, s.shares, s.price))
-      GOOG        100     490.10
->>> t = Stock('IBM', 50, 91.5)
->>> t.cost()
-4575.0
->>>
+class ClassName:
+    def __init__(self, parameter1, parameter2):
+        self.attribute1 = parameter1
+        self.attribute2 = parameter2
+
+    def method_name(self):
+        # Code that uses the attributes
+        return result
 ```
+
+The `__init__` method is a special method called when creating new objects. The `self` parameter refers to the instance of the class and is used to access attributes and methods from within the class.

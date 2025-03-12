@@ -1,42 +1,36 @@
-# Making a Package
+# Understanding Python Packages
 
-In previous exercises, you created the following files that were related to type-checked structures, reading data, and making tables:
+A Python package is a directory that contains multiple Python module files and a special `__init__.py` file. This structure allows you to organize related code into a single directory hierarchy. Packages provide a way to:
 
-- `structure.py`
-- `validate.py`
-- `reader.py`
-- `tableformat.py`
+1. Structure your code logically
+2. Avoid naming conflicts between modules
+3. Make importing and using your code more convenient
 
-Your task is to take all of these files and move them into a package called `structly`. To do that, follow these steps:
+Let's examine the files we currently have in our project directory:
 
-- Make a directory called `structly`
-- Make an empty file `__init__.py` and put it in the `structly` directory
-- Move the files `structure.py`, `validate.py`, `reader.py`, and `tableformat.py` into the `structly` directory.
-- Fix any import statements between modules (specifically, the `structure` module depends on `validate`).
-
-Once you've done that, modify the `stock.py` program so that it looks exactly like this and that it works:
-
-```python
-# stock.py
-
-from structly.structure import Structure
-
-class Stock(Structure):
-    name = String()
-    shares = PositiveInteger()
-    price = PositiveFloat()
-
-    @property
-    def cost(self):
-        return self.shares * self.price
-
-    def sell(self, nshares: PositiveInteger):
-        self.shares -= nshares
-
-if __name__ == '__main__':
-    from structly.reader import read_csv_as_instances
-    from structly.tableformat import create_formatter, print_table
-    portfolio = read_csv_as_instances('portfolio.csv', Stock)
-    formatter = create_formatter('text')
-    print_table(portfolio, ['name','shares','price'], formatter)
+```bash
+ls -l
 ```
+
+You should see the following files:
+
+```
+portfolio.csv
+reader.py
+stock.py
+structure.py
+tableformat.py
+validate.py
+```
+
+These Python files work together but are currently separate modules. In this lab, we will organize them into a cohesive package called `structly`.
+
+Here's a brief description of what each file does:
+
+- `structure.py`: Defines a base `Structure` class and various descriptors for type validation
+- `validate.py`: Contains validation functionality used by the structure module
+- `reader.py`: Provides functions to read CSV data
+- `tableformat.py`: Contains classes and functions for formatting data into tables
+- `stock.py`: Uses the other modules to define a `Stock` class and process stock data
+
+In the next step, we'll create our package structure.

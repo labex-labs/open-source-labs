@@ -1,6 +1,12 @@
-# Build a Value Checker
+# Building a Validation System with Inheritance
 
-In Exercise 3.4, you added some properties to the `Stock` class that checked attributes for different types and values (e.g., shares had to be a positive integer). Let's play with that idea a bit. Start by creating a file `validate.py` and defining the following base class:
+In this step, we'll build a practical validation system using inheritance. This will demonstrate how inheritance can be used to create reusable code components that can be composed in different ways.
+
+## Creating the Base Validator Class
+
+First, let's create a new file called `validate.py` in the WebIDE. Click on "File" > "New File" or use the keyboard shortcut, then name it `validate.py`.
+
+Add the following code to create a base `Validator` class:
 
 ```python
 # validate.py
@@ -10,7 +16,11 @@ class Validator:
         return value
 ```
 
-Now, let's make some classes for type checking:
+This simple base class defines a `check` method that takes a value and returns it unchanged. The `@classmethod` decorator means we can call this method on the class itself, without creating an instance.
+
+## Adding Type Validators
+
+Now let's add some validators that check the type of a value. Add the following code to `validate.py`:
 
 ```python
 class Typed(Validator):
@@ -31,42 +41,65 @@ class String(Typed):
     expected_type = str
 ```
 
-Here's how you use these classes (Note: the use of `@classmethod` allows us to avoid the extra step of creating instances which we don't really need):
+The `Typed` class checks if a value is of the expected type, raising a `TypeError` if not. The `Integer`, `Float`, and `String` classes inherit from `Typed` and specify the exact type to check for.
+
+## Testing the Type Validators
+
+Let's test our validators. Open a new terminal and start the Python interpreter:
+
+```bash
+python3
+```
+
+Now import and test our validators:
 
 ```python
->>> Integer.check(10)
+from validate import Integer, String
+
+Integer.check(10)  # Should return 10
+
+try:
+    Integer.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+String.check('10')  # Should return '10'
+```
+
+You should see something like:
+
+```
 10
->>> Integer.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in check
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>> String.check('10')
+Error: Expected <class 'int'>
 '10'
->>>
 ```
 
-You could use the validators in a function. For example:
+We could use these validators in a function. Try this:
 
 ```python
->>> def add(x, y):
-        Integer.check(x)
-        Integer.check(y)
-        return x + y
+def add(x, y):
+    Integer.check(x)
+    Integer.check(y)
+    return x + y
 
->>> add(2, 2)
-4
->>> add('2', '3')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 2, in add
-  File "validate.py", line 11, in check
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>>
+add(2, 2)  # Should return 4
+
+try:
+    add('2', '3')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
 ```
 
-Now, make some more classes for different kinds of domain checking:
+You should see:
+
+```
+4
+Error: Expected <class 'int'>
+```
+
+## Adding Value Validators
+
+Now let's add validators that check the value rather than the type. Go back to `validate.py` and add:
 
 ```python
 class Positive(Validator):
@@ -84,7 +117,11 @@ class NonEmpty(Validator):
         return super().check(value)
 ```
 
-Where is all of this going? Let's start composing classes together with multiple inheritance like toy blocks:
+The `Positive` validator checks if a value is non-negative, and the `NonEmpty` validator checks if a value has a non-zero length.
+
+## Composing Validators with Multiple Inheritance
+
+Now let's combine our validators using multiple inheritance. Add the following code to `validate.py`:
 
 ```python
 class PositiveInteger(Integer, Positive):
@@ -97,31 +134,49 @@ class NonEmptyString(String, NonEmpty):
     pass
 ```
 
-Essentially, you're taking existing validators and composing them together into new ones. Madness! However, let's use them to validate some things now:
+These new classes combine type checking and value checking. For example, `PositiveInteger` checks that a value is both an integer and non-negative.
+
+## Testing the Composed Validators
+
+Let's test our composed validators. In the Python interpreter:
 
 ```python
->>> PositiveInteger.check(10)
-10
->>> PositiveInteger.check('10')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise TypeError(f'Expected {cls.expected_type}')
-TypeError: Expected <class 'int'>
->>> PositiveInteger.check(-10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Expected >= 0')
-ValueError: Must be >= 0
+from validate import PositiveInteger, PositiveFloat, NonEmptyString
 
+PositiveInteger.check(10)  # Should return 10
 
->>> NonEmptyString.check('hello')
-'hello'
->>> NonEmptyString.check('')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-    raise ValueError('Must be non-empty')
-ValueError: Must be non-empty
->>>
+try:
+    PositiveInteger.check('10')  # Should raise TypeError
+except TypeError as e:
+    print(f"Error: {e}")
+
+try:
+    PositiveInteger.check(-10)  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
+
+NonEmptyString.check('hello')  # Should return 'hello'
+
+try:
+    NonEmptyString.check('')  # Should raise ValueError
+except ValueError as e:
+    print(f"Error: {e}")
 ```
 
-At this point, your head is probably fully exploded. However, the problem of composing different bits of code together is one that arises in real-world programs. Cooperative multiple inheritance is one of the tools that can be used to organize it.
+You should see:
+
+```
+10
+Error: Expected <class 'int'>
+Error: Expected >= 0
+'hello'
+Error: Must be non-empty
+```
+
+This demonstrates how we can compose validators to create more complex validation rules. The order of inheritance matters here - the validators are checked in the order specified in the class definition.
+
+You can exit the Python interpreter when you're done:
+
+```python
+exit()
+```

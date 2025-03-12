@@ -1,47 +1,24 @@
-# Create your first metaclass
+# Understanding Metaclasses
 
-Create a file called `mymeta.py` and put the following code in it (from the slides):
+Metaclasses are an advanced but powerful feature in Python. Before creating our first metaclass, let's understand what they are and why they're useful.
 
-```python
-# mymeta.py
+## What is a Metaclass?
 
-class mytype(type):
-    @staticmethod
-    def __new__(meta, name, bases, __dict__):
-        print("Creating class :", name)
-        print("Base classes   :", bases)
-        print("Attributes     :", list(__dict__))
-        return super().__new__(meta, name, bases, __dict__)
+In Python, classes are objects too. Just like how a regular class creates instances, a metaclass creates classes. By default, Python uses the built-in `type` metaclass to create all classes.
 
-class myobject(metaclass=mytype):
-    pass
+The class creation process follows these steps:
+
+1. Python reads the class definition
+2. Python collects the class name, base classes, and attributes
+3. Python passes this information to the metaclass
+4. The metaclass creates and returns the new class
+
+A metaclass allows you to customize this class creation process, giving you the ability to modify or inspect classes as they are being created.
+
+Let's visualize this relationship:
+
+```
+Metaclass → creates → Class → creates → Instance
 ```
 
-Once you've done this, define a class that inherits from `myobject` instead of object. For example:
-
-```python
-class Stock(myobject):
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
-    def cost(self):
-        return self.shares * self.price
-    def sell(self, nshares):
-        self.shares -= nshares
-```
-
-Try running your code and creating instances of `Stock`. See what happens. You should see the print statements from your `mytype` running once when the `Stock` class is defined.
-
-What happens if you inherit from `Stock`?
-
-```python
-class MyStock(Stock):
-    pass
-```
-
-You should still see your metaclass at work. Metaclasses are "sticky" in that they get applied across an entire inheritance hierarchy.
-
-**Discussion**
-
-Why would you want to do something like this? The main power of a metaclass is that it gives a programmer the ability to capture details about classes just prior to their creation. For example, in the `__new__()` method, you are given all of the basic details including the name of the class, base classes, and methods data. If you inspect this data, you can perform various types of diagnostic checks. If you're more daring, you can modify the data and change what gets placed in the class definition when it is created. Needless to say, there are many opportunities for horrible diabolical evil.
+In this lab, we'll create our own metaclass to observe this process in action.

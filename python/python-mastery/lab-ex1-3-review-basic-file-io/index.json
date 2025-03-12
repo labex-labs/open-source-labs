@@ -13,31 +13,76 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Working with files",
+        "title": "Understanding the Problem",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Portfolio Cost Calculation",
+            "name": "Check if portfolio.dat exists",
             "file": "verify1-1.sh",
-            "hint": "Please calculate the data in the file as required and output the result.",
+            "hint": "Make sure you have the portfolio.dat file in your project directory.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
+          "python/data_collections",
+          "python/file_opening_closing",
+          "python/file_reading_writing"
+        ],
+        "solutions": ["pcost.py"]
+      },
+      {
+        "title": "Opening and Reading the File",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Check file reading code",
+            "file": "verify2-1.sh",
+            "hint": "Make sure your pcost.py file opens and reads the portfolio.dat file."
+          }
+        ],
+        "skills": [
+          "python/file_opening_closing",
+          "python/file_reading_writing",
+          "python/function_definition"
+        ],
+        "solutions": ["pcost.py"]
+      },
+      {
+        "title": "Processing the Data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Check data processing code",
+            "file": "verify3-1.sh",
+            "hint": "Make sure your pcost.py file processes each line of data correctly."
+          }
+        ],
+        "skills": [
           "python/file_opening_closing",
           "python/for_loops",
-          "python/lists",
-          "python/numeric_types",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/function_definition"
+        ],
+        "solutions": ["pcost.py"]
+      },
+      {
+        "title": "Finalizing the Program",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Check final program",
+            "file": "verify4-1.sh",
+            "hint": "Make sure your pcost.py file calculates and outputs the correct total cost."
+          }
+        ],
+        "skills": [
+          "python/catching_exceptions",
+          "python/conditional_statements",
+          "python/file_opening_closing"
         ],
         "solutions": ["pcost.py"]
       }
@@ -69,206 +114,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "回顾基本文件输入/输出",
-      "description": "在本实验中，你将通过处理pcost.py文件来回顾基本的文件输入/输出。",
-      "meta": {
-        "title": "掌握文件输入/输出",
-        "description": "通过详细教程探索编程中文件输入/输出的基础知识。",
-        "keywords": "Python实践, 文件输入输出, 基本文件操作, Python, 编程教程, 投资组合数据分析"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "处理文件",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证投资组合成本计算",
-                "file": "verify1-1.sh",
-                "hint": "请按要求计算文件中的数据并输出结果。"
-              }
-            ],
-            "solutions": ["pcost.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Revisión de E/S Básica de Archivos",
-      "description": "En este laboratorio, revisarás la E/S básica de archivos trabajando con el archivo pcost.py.",
-      "meta": {
-        "title": "Dominando la E/S de Archivos",
-        "description": "Explora los fundamentos de la entrada/salida de archivos en programación a través de un tutorial detallado.",
-        "keywords": "python playground, file io, operaciones básicas de archivos, python, tutorial de programación, análisis de datos de portafolio"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Trabajando con archivos",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el cálculo del costo del portafolio",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, calcule los datos del archivo según lo requerido y muestre el resultado."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Revoir les bases de l'entrée/sortie de fichiers",
-      "description": "Dans ce laboratoire, vous allez revisiter les bases de l'entrée/sortie de fichiers en travaillant avec le fichier pcost.py.",
-      "meta": {
-        "title": "Maîtriser l'entrée/sortie de fichiers",
-        "description": "Explorez les bases de l'entrée/sortie de fichiers en programmation grâce à un tutoriel détaillé.",
-        "keywords": "plateforme de programmation Python, entrée/sortie de fichiers, opérations de base sur les fichiers, Python, tutoriel de programmation, analyse de données de portefeuille"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Travailler avec des fichiers",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier le calcul du coût du portefeuille",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez calculer les données dans le fichier selon les exigences et afficher le résultat."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Überprüfung der grundlegenden Datei-E/A",
-      "description": "In diesem Lab werden Sie die grundlegenden Datei-E/A durch Arbeiten mit der Datei pcost.py überprüfen.",
-      "meta": {
-        "title": "Meisterhaftigkeit in der Datei-E/A",
-        "description": "Erkunden Sie die Grundlagen der Dateieneingabe/Ausgabe in der Programmierung durch einen detaillierten Leitfaden.",
-        "keywords": "Python-Spielplatz, Datei-E/A, grundlegende Dateioperationen, Python, Programmierleitfaden, Portfolio-Datenanalyse"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Arbeiten mit Dateien",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Portfolio-Kostenberechnung",
-                "file": "verify1-1.sh",
-                "hint": "Berechnen Sie die Daten in der Datei gemäß den Anforderungen und geben Sie das Ergebnis aus."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "基本的なファイル入出力の復習",
-      "description": "この実験では、pcost.pyファイルを使って基本的なファイル入出力を復習します。",
-      "meta": {
-        "title": "ファイル入出力のマスター",
-        "description": "詳細なチュートリアルを通じて、プログラミングにおけるファイル入出力の基本を探求しましょう。",
-        "keywords": "Pythonの演習場, ファイル入出力, 基本的なファイル操作, Python, プログラミングチュートリアル, ポートフォリオデータ分析"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "ファイルの操作",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "ポートフォリオのコスト計算を確認する",
-                "file": "verify1-1.sh",
-                "hint": "ファイル内のデータを要求通りに計算し、結果を出力してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Просмотр базового ввода-вывода файлов",
-      "description": "В этой лабораторной работе вы будете изучать базовый ввод-вывод файлов, работая с файлом pcost.py.",
-      "meta": {
-        "title": "Мастерство ввода-вывода файлов",
-        "description": "Изучите основы ввода/вывода файлов в программировании с помощью подробного руководства.",
-        "keywords": "python playground, ввод-вывод файлов, базовые операции с файлами, python, учебник по программированию, анализ портфельных данных"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Работа с файлами",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить расчет стоимости портфеля",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, вычислите данные в файле в соответствии с требованиями и выведите результат."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

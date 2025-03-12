@@ -2,9 +2,9 @@
 
 **Objectives:**
 
-- Work with various containers
-- List/Set/Dict Comprehensions
-- Collections module
-- Data analysis challenge
+- Work with various Python data containers
+- Use list, set, and dictionary comprehensions
+- Explore the collections module
+- Solve a real-world data analysis challenge
 
-Most Python programmers are generally familiar with lists, dictionaries, tuples, and other basic datatypes. In this exercise, we'll put that knowledge to work to solve various data analysis problems.
+Python offers powerful tools for data manipulation and analysis. In this lab, you will practice using Python's built-in data structures and specialized tools to analyze different datasets. Starting with a simple portfolio dataset, you will build up to analyzing Chicago Transit Authority bus data to extract meaningful insights.

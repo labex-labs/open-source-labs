@@ -1,21 +1,28 @@
-# Subclass Registration
+# Implementing Subclass Registration
 
-Try the following experiment and observe:
+Instead of directly importing formatter classes, we can use a registration pattern where subclasses register themselves with their parent class. This is a common way to avoid circular imports.
 
-```python
->>> from structly.tableformat.formats.text import TextTableFormatter
->>> TextTableFormatter.__module__
-'structly.tableformat.formats.text'
->>> TextTableFormatter.__module__.split('.')[-1]
-'text'
->>>
+First, let's explore how we can identify the module name of a class:
+
+```bash
+cd ~/project/structly
+python3 -c "from structly.tableformat.formats.text import TextTableFormatter; print(TextTableFormatter.__module__); print(TextTableFormatter.__module__.split('.')[-1])"
 ```
 
-Modify the `TableFormatter` base class by adding a dictionary and an `__init_subclass__()` method:
+You should see output like:
+
+```
+structly.tableformat.formats.text
+text
+```
+
+This shows that we can extract the name of the module from the class itself, which we'll use in our registration pattern.
+
+Now, let's modify the `TableFormatter` class in `tableformat/formatter.py` to add a registration mechanism. Open the file in the WebIDE and add the following code:
 
 ```python
 class TableFormatter(ABC):
-    _formats = { }
+    _formats = { }  # Dictionary to store registered formatters
 
     @classmethod
     def __init_subclass__(cls):
@@ -31,18 +38,9 @@ class TableFormatter(ABC):
         pass
 ```
 
-This makes the parent class track all of its subclasses. Check it out:
+The `__init_subclass__` method is called whenever a subclass of `TableFormatter` is created. It extracts the module name and registers the class in the `_formats` dictionary using the module name as a key.
 
-```python
->>> from structly.tableformat.formatter import TableFormatter
->>> TableFormatter._formats
-{'text': <class 'structly.tableformat.formats.text.TextTableFormatter'>,
- 'csv': <class 'structly.tableformat.formats.csv.CSVTableFormatter'>,
- 'html': <class 'structly.tableformat.formats.html.HTMLTableFormatter'>}
->>>
-```
-
-Modify the `create_formatter()` function to look up the class in this dictionary instead:
+Next, modify the `create_formatter` function to use the registration dictionary:
 
 ```python
 def create_formatter(name, column_formats=None, upper_headers=False):
@@ -61,4 +59,22 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-Run the `stock.py` program. Make sure it still works after you've made these changes. Just a note that all of the import statements are still there. You've mainly just cleaned up the code a bit and eliminated the hard-wired class names.
+Save the file and test if the program still works:
+
+```bash
+python3 stock.py
+```
+
+You should see the program running correctly. Let's inspect the contents of the `_formats` dictionary to understand how the registration works:
+
+```bash
+python3 -c "from structly.tableformat.formatter import TableFormatter; print(TableFormatter._formats)"
+```
+
+You should see output showing the registered formatters:
+
+```
+{'text': <class 'structly.tableformat.formats.text.TextTableFormatter'>, 'csv': <class 'structly.tableformat.formats.csv.CSVTableFormatter'>, 'html': <class 'structly.tableformat.formats.html.HTMLTableFormatter'>}
+```
+
+This confirms that our subclasses are being registered correctly. However, we still have the imports in the middle of the file. In the next step, we'll fix that with dynamic imports.

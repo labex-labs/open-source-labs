@@ -1,11 +1,21 @@
-# Changing Your Orientation (to Columns)
+# Optimizing Memory with Column-Oriented Data
 
-You can often save a lot of memory if you change your view of data. For example, what happens if you read all of the bus data into a columns using this function?
+Instead of storing each record as a separate dictionary (row-oriented), we can store data in columns to save memory. In this approach, we have separate lists for each attribute, where each list contains all values for that attribute.
+
+1. Create a new Python file named `readrides.py` in your project directory:
+
+```bash
+cd ~/project
+touch readrides.py
+```
+
+2. Open the file in the WebIDE editor and add the following code:
 
 ```python
 # readrides.py
-
-...
+import csv
+import sys
+import tracemalloc
 
 def read_rides_as_columns(filename):
     '''
@@ -26,39 +36,48 @@ def read_rides_as_columns(filename):
     return dict(routes=routes, dates=dates, daytypes=daytypes, numrides=numrides)
 ```
 
-In theory, this function should save a lot of memory. Let's analyze it before trying it.
-
-First, the datafile contained 577563 rows of data where each row contained four values. If each row is stored as a dictionary, then those dictionaries are minimally 240 bytes in size.
+3. Now let's analyze why this approach should save memory. In the Python shell:
 
 ```python
->>> nrows = 577563     # Number of rows in original file
->>> nrows * 240
-138615120
->>>
+import readrides
+import tracemalloc
+
+# Estimate memory for row-oriented approach
+nrows = 577563     # Number of rows in original file
+dict_overhead = 240  # Approximate dictionary overhead in bytes
+row_memory = nrows * dict_overhead
+print(f"Estimated memory for row-oriented data: {row_memory} bytes ({row_memory/1024/1024:.2f} MB)")
+
+# Estimate memory for column-oriented approach
+pointer_size = 8   # Size of a pointer in bytes on 64-bit systems
+column_memory = nrows * 4 * pointer_size  # 4 columns with one pointer per entry
+print(f"Estimated memory for column-oriented data: {column_memory} bytes ({column_memory/1024/1024:.2f} MB)")
+
+# Estimate savings
+savings = row_memory - column_memory
+print(f"Estimated memory savings: {savings} bytes ({savings/1024/1024:.2f} MB)")
 ```
 
-So, that's 138MB just for the dictionaries themselves. This does not include any of the values actually stored in the dictionaries.
+This calculation shows that the column-oriented approach should save around 120MB of memory compared to the row-oriented approach with dictionaries.
 
-By switching to columns, the data is stored in 4 separate lists.\
-Each list requires 8 bytes per item to store a pointer. So, here's a rough estimate of the list requirements:
+4. Let's verify this by measuring the actual memory usage with `tracemalloc`:
 
 ```python
->>> nrows * 4 * 8
-18482016
->>>
+# Start tracking memory
+tracemalloc.start()
+
+# Read the data
+columns = readrides.read_rides_as_columns('ctabus.csv')
+
+# Get current and peak memory usage
+current, peak = tracemalloc.get_traced_memory()
+print(f"Current memory usage: {current/1024/1024:.2f} MB")
+print(f"Peak memory usage: {peak/1024/1024:.2f} MB")
+
+# Stop tracking memory
+tracemalloc.stop()
 ```
 
-That's about 18MB in list overhead. So, switching to a column orientation should save about 120MB of memory solely from eliminating all of the extra information that needs to be stored in dictionaries.
+The output will show you the actual memory usage of your column-oriented data structure. This should be significantly less than our theoretical estimate for the row-oriented approach.
 
-Try using this function to read the bus data and look at the memory use.
-
-```python
->>> import tracemalloc
->>> tracemalloc.start()
->>> columns = read_rides_as_columns('ctabus.csv')
->>> tracemalloc.get_traced_memory()
-... look at the result ...
->>>
-```
-
-Does the result reflect the expected savings in memory from our rough calculations above?
+The significant memory savings come from eliminating the overhead of thousands of dictionary objects. Each dictionary in Python has a fixed overhead regardless of how many items it contains. By using column-oriented storage, we only need a few lists instead of thousands of dictionaries.

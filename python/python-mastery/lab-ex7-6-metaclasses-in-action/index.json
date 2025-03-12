@@ -13,72 +13,61 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "The Final Frontier",
+        "title": "Understanding the Problem",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Metaclass Methods and Static Methods",
+            "name": "Verify file examination",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've examined the structure.py and validate.py files.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lambda_functions",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
+        "skills": ["python/classes_objects", "python/importing_modules"],
         "solutions": ["validate.py", "structure.py", "stock.py"]
       },
       {
-        "title": "Stare in Amazement",
+        "title": "Collecting Validator Types",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python History Includes Stock Reader and read_csv_as_instances",
+            "name": "Verify Validator class modification",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've added the validators dictionary and __init_subclass__ method to the Validator class.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
+        "skills": ["python/classes_objects", "python/function_definition"]
+      },
+      {
+        "title": "Creating the StructureMeta Metaclass",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify StructureMeta implementation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've correctly implemented the StructureMeta class and modified the Structure class."
+          }
+        ],
+        "skills": ["python/classes_objects", "python/importing_modules"]
+      },
+      {
+        "title": "Testing Our Implementation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify stock.py implementation and test execution",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've created the stock.py file and run the tests."
+          }
+        ],
+        "skills": ["python/classes_objects", "python/function_definition"]
       }
     ],
     "intro": {
@@ -138,272 +127,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "元类的实际应用",
-      "description": "在本实验中，你将探索元类及其在Python中的实际应用。",
-      "meta": {
-        "title": "元类的实际应用：释放Python元编程的力量",
-        "description": "深入元类的世界，探索它们如何彻底改变你的Python编程。",
-        "keywords": "元类, Python, 元编程, 结构, 类型检查"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "最终前沿",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证元类方法和静态方法",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["validate.py", "structure.py", "stock.py"]
-          },
-          {
-            "title": "惊叹不已",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中包含股票读取器和read_csv_as_instances",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Metaclases en acción",
-      "description": "En este laboratorio, explorarás metaclases y sus aplicaciones prácticas en Python.",
-      "meta": {
-        "title": "Metaclases en acción: Desbloqueando el poder de la metaprogramación de Python",
-        "description": "Sumérgete en el mundo de las metaclases y explora cómo pueden revolucionar tu programación en Python.",
-        "keywords": "metaclase, python, metaprogramación, estructura, comprobación de tipos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "La última frontera",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar métodos y métodos estáticos de metaclase",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Mirar asombrado",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar que la historia de Python incluye Stock Reader y read_csv_as_instances",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Les métaclasses en action",
-      "description": "Dans ce laboratoire, vous allez explorer les métaclasses et leurs applications pratiques en Python.",
-      "meta": {
-        "title": "Les métaclasses en action : Découvrez le pouvoir de la métaprogrammation en Python",
-        "description": "Plongez dans le monde des métaclasses et explorez comment elles peuvent révolutionner votre programmation en Python.",
-        "keywords": "métaclasse, python, métaprogrammation, structure, vérification de type"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "La Frontière Finale",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez les méthodes de métaclasse et les méthodes statiques",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Regardez avec Étonnement",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez que l'histoire de Python inclut le lecteur de stocks et read_csv_as_instances",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Metaklassen in Aktion",
-      "description": "In diesem Lab werden Sie Metaklassen und ihre praktischen Anwendungen in Python erkunden.",
-      "meta": {
-        "title": "Metaklassen in Aktion: Entschlüsseln der Macht der Python-Metaprogrammierung",
-        "description": "Taucht in die Welt der Metaklassen ein und erkunden Sie, wie sie Ihre Python-Programmierung revolutionieren können.",
-        "keywords": "Metaklasse, Python, Metaprogrammierung, Struktur, Typüberprüfung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Die letzte Grenze",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Metaklassenmethoden und statischen Methoden",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu vollenden."
-              }
-            ]
-          },
-          {
-            "title": "Staunen Sie erstaunt",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie, dass die Python-Geschichte den Stock-Reader und read_csv_as_instances enthält",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte zu vollenden."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "メタクラスの実践",
-      "description": "この実験では、Pythonにおけるメタクラスとその実際の応用について学びます。",
-      "meta": {
-        "title": "メタクラスの実践：Pythonのメタプログラミングの力を解き放つ",
-        "description": "メタクラスの世界に浸り、それがあなたのPythonプログラミングをどのように革新的に変えるかを探りましょう。",
-        "keywords": "メタクラス, Python, メタプログラミング, 構造, 型チェック"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "最後のフロンティア",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "メタクラスメソッドと静的メソッドを確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "驚嘆の的に見つめる",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴にStock Readerとread_csv_as_instancesが含まれていることを確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Метаклассы в действии",
-      "description": "В этой лабораторной работе вы изучите метаклассы и их практическое применение в Python.",
-      "meta": {
-        "title": "Метаклассы в действии: раскрытие потенциала метапрограммирования в Python",
-        "description": "Погрузитесь в мир метаклассов и изучите, как они могут преобразовать ваше программирование на Python.",
-        "keywords": "метакласс, python, метапрограммирование, структура, проверка типов"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Последняя fronteira",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить методы метакласса и статические методы",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Смотрите в восторг",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверьте, что история Python включает Stock Reader и read_csv_as_instances",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

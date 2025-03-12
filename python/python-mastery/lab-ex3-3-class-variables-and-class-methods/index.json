@@ -13,167 +13,78 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Previous Exercise",
+        "title": "Understanding Class Variables and Class Methods",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Stock Data Manipulation and CSV File Handling",
+            "name": "Verify test_stock.py file creation and execution",
             "file": "verify1-1.sh",
-            "hint": "Please run the python code in step 1.",
+            "hint": "Make sure you've created and run the test_stock.py file",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/file_opening_closing",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
+          "python/classes_objects",
+          "python/constructor",
+          "python/function_definition"
         ]
       },
       {
-        "title": "Alternate constructors",
+        "title": "Implementing Alternative Constructors with Class Methods",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Presence of Class Methods and Zip Function",
+            "name": "Verify Stock class implementation",
             "file": "verify2-1.sh",
-            "hint": "Please implement the 'from_row()' method in the 'Stock' class.",
+            "hint": "Make sure you've added the from_row() class method to the Stock class",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
           "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types"
+          "python/type_conversion"
         ],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "Class variables and inheritance",
+        "title": "Class Variables and Inheritance",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python History Contains Cost Stock Decimal Class",
+            "name": "Verify decimal_stock.py implementation",
             "file": "verify3-1.sh",
-            "hint": "Please run the python code in step 3.",
+            "hint": "Make sure you've created the decimal_stock.py file with the DStock class",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
+        "skills": ["python/classes_objects", "python/inheritance"]
       },
       {
-        "title": "Reading Objects",
+        "title": "Creating a General-Purpose CSV Reader",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify CSV File Reading and Appending",
+            "name": "Verify reader.py implementation",
             "file": "verify4-1.sh",
-            "hint": "Please implement the 'read_portfolio()' function in the 'stock.py' file",
+            "hint": "Make sure you've added the read_csv_as_instances() function to reader.py",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
           "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/polymorphism"
         ],
         "solutions": ["step4_solution.py"]
-      },
-      {
-        "title": "Generalizing",
-        "text": "en/step5.md",
-        "verify": [
-          {
-            "name": "Verify Reader Python File Usage",
-            "file": "verify5-1.sh",
-            "hint": "Please implement the 'read_csv_as_instances()' function in the 'reader.py' file and execute the python code in step 5.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step5_solution.py"]
       }
     ],
     "intro": {
@@ -223,472 +134,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "类变量和类方法",
-      "description": "在本实验中，你将学习 Python 中的类变量和类方法。",
-      "meta": {
-        "title": "Python 编程 | 类变量和方法",
-        "description": "了解 Python 编程中的类变量和类方法。探索 Stock 类实例的创建以及 read_portfolio() 函数的使用。",
-        "keywords": "Python, 编程, 类变量, 类方法, 股票, 投资组合"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "上一个练习",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证股票数据操作和 CSV 文件处理",
-                "file": "verify1-1.sh",
-                "hint": "请运行步骤 1 中的 Python 代码。"
-              }
-            ]
-          },
-          {
-            "title": "替代构造函数",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证类方法和 zip 函数的存在",
-                "file": "verify2-1.sh",
-                "hint": "请在 'Stock' 类中实现 'from_row()' 方法。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "类变量与继承",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录中包含成本股票十进制类",
-                "file": "verify3-1.sh",
-                "hint": "请运行步骤 3 中的 Python 代码。"
-              }
-            ]
-          },
-          {
-            "title": "读取对象",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证 CSV 文件读取与追加",
-                "file": "verify4-1.sh",
-                "hint": "请在'stock.py' 文件中实现'read_portfolio()' 函数"
-              }
-            ],
-            "solutions": ["step4_solution.py"]
-          },
-          {
-            "title": "进行泛化",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证对 Reader Python 文件的使用",
-                "file": "verify5-1.sh",
-                "hint": "请在'reader.py' 文件中实现'read_csv_as_instances()' 函数，并执行步骤 5 中的 Python 代码。"
-              }
-            ],
-            "solutions": ["step5_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Variables y Métodos de Clase",
-      "description": "En este laboratorio, aprenderás sobre variables y métodos de clase en Python.",
-      "meta": {
-        "title": "Programación en Python | Variables y Métodos de Clase",
-        "description": "Aprende sobre variables y métodos de clase en la programación de Python. Explora la creación de instancias de la clase Stock y el uso de la función read_portfolio().",
-        "keywords": "Python, Programación, Variables de Clase, Métodos de Clase, Stock, Portafolio"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Ejercicio Anterior",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la manipulación de datos de Stock y el manejo de archivos CSV",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 1."
-              }
-            ]
-          },
-          {
-            "title": "Constructores alternativos",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de métodos de clase y la función zip",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, implemente el método 'from_row()' en la clase 'Stock'."
-              }
-            ]
-          },
-          {
-            "title": "Variables de clase y herencia",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar que la historia de Python contenga la clase Stock Decimal de costos",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 3."
-              }
-            ]
-          },
-          {
-            "title": "Lectura de objetos",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la lectura y la adición de archivos CSV",
-                "file": "verify4-1.sh",
-                "hint": "Por favor, implemente la función'read_portfolio()' en el archivo'stock.py'"
-              }
-            ]
-          },
-          {
-            "title": "Generalizando",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verificar el uso del archivo Python Reader",
-                "file": "verify5-1.sh",
-                "hint": "Por favor, implemente la función'read_csv_as_instances()' en el archivo'reader.py' y ejecute el código de Python en el paso 5."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Variables de classe et méthodes de classe",
-      "description": "Dans ce laboratoire, vous allez apprendre les variables de classe et les méthodes de classe en Python.",
-      "meta": {
-        "title": "Programmation Python | Variables et méthodes de classe",
-        "description": "Découvrez les variables de classe et les méthodes de classe en programmation Python. Explorez la création d'instances de la classe Stock et l'utilisation de la fonction read_portfolio().",
-        "keywords": "Python, Programmation, Variables de classe, Méthodes de classe, Stock, Portefeuille"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Exercice précédent",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier la manipulation des données Stock et la gestion des fichiers CSV",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 1."
-              }
-            ]
-          },
-          {
-            "title": "Constructeurs alternatifs",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence de méthodes de classe et de la fonction zip",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez implémenter la méthode 'from_row()' dans la classe 'Stock'."
-              }
-            ]
-          },
-          {
-            "title": "Variables de classe et héritage",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier que l'histoire de Python contient la classe Stock Decimal avec coût",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 3."
-              }
-            ]
-          },
-          {
-            "title": "Lecture d'objets",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier la lecture et l'ajout de fichiers CSV",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez implémenter la fonction'read_portfolio()' dans le fichier'stock.py'"
-              }
-            ]
-          },
-          {
-            "title": "Généralisation",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation du fichier Python Reader",
-                "file": "verify5-1.sh",
-                "hint": "Veuillez implémenter la fonction'read_csv_as_instances()' dans le fichier'reader.py' et exécuter le code Python de l'étape 5."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Klassenvariablen und Klassenmethoden",
-      "description": "In diesem Lab lernen Sie über Klassenvariablen und Klassenmethoden in Python.",
-      "meta": {
-        "title": "Python-Programmierung | Klassenvariablen und -methoden",
-        "description": "Lernen Sie über Klassenvariablen und Klassenmethoden in der Python-Programmierung. Entdecken Sie die Erstellung von Stock-Klasseninstanzen und die Verwendung der read_portfolio()-Funktion.",
-        "keywords": "Python, Programmierung, Klassenvariablen, Klassenmethoden, Stock, Portfolio"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorherige Übung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Manipulation von Aktien-Daten und das Handling von CSV-Dateien",
-                "file": "verify1-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 1 aus."
-              }
-            ]
-          },
-          {
-            "title": "Alternative Konstruktoren",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein von Klassenmethoden und der Zip-Funktion",
-                "file": "verify2-1.sh",
-                "hint": "Bitte implementieren Sie die'method from_row()' in der 'Stock'-Klasse."
-              }
-            ]
-          },
-          {
-            "title": "Klassenvariablen und Vererbung",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie, dass die Python-Geschichte die Cost Stock Decimal-Klasse enthält",
-                "file": "verify3-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 3 aus."
-              }
-            ]
-          },
-          {
-            "title": "Objekte lesen",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Lesen und Anhängen von CSV-Dateien",
-                "file": "verify4-1.sh",
-                "hint": "Bitte implementieren Sie die Funktion'read_portfolio()' in der Datei'stock.py'"
-              }
-            ]
-          },
-          {
-            "title": "Verallgemeinern",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Verwendung der Python-Datei Reader",
-                "file": "verify5-1.sh",
-                "hint": "Bitte implementieren Sie die Funktion'read_csv_as_instances()' in der Datei'reader.py' und führen Sie den Python-Code in Schritt 5 aus."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "クラス変数とクラスメソッド",
-      "description": "この実験では、Pythonにおけるクラス変数とクラスメソッドについて学びます。",
-      "meta": {
-        "title": "Pythonプログラミング | クラス変数とメソッド",
-        "description": "Pythonプログラミングにおけるクラス変数とクラスメソッドについて学びましょう。Stockクラスのインスタンスの作成とread_portfolio()関数の使用を探りましょう。",
-        "keywords": "Python, プログラミング, クラス変数, クラスメソッド, 株式, ポートフォリオ"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "前の演習",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "株価データの操作とCSVファイルの取り扱いを確認する",
-                "file": "verify1-1.sh",
-                "hint": "手順1のPythonコードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "代替コンストラクタ",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "クラスメソッドとzip関数の存在を確認する",
-                "file": "verify2-1.sh",
-                "hint": "「Stock」クラスに「from_row()」メソッドを実装してください。"
-              }
-            ]
-          },
-          {
-            "title": "クラス変数と継承",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴にコスト株式の小数クラスが含まれていることを確認する",
-                "file": "verify3-1.sh",
-                "hint": "手順3のPythonコードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "オブジェクトの読み取り",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "CSVファイルの読み取りと追加を確認する",
-                "file": "verify4-1.sh",
-                "hint": "「stock.py」ファイルに「read_portfolio()」関数を実装してください。"
-              }
-            ]
-          },
-          {
-            "title": "一般化",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "Reader Pythonファイルの使用を確認する",
-                "file": "verify5-1.sh",
-                "hint": "「reader.py」ファイルに「read_csv_as_instances()」関数を実装し、手順5のPythonコードを実行してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Классовые переменные и методы класса",
-      "description": "В этой лабораторной работе вы узнаете о классовых переменных и методах класса в Python.",
-      "meta": {
-        "title": "Программирование на Python | Классовые переменные и методы",
-        "description": "Изучите классовые переменные и методы класса в программировании на Python. Изучите создание экземпляров класса Stock и использование функции read_portfolio().",
-        "keywords": "Python, Программирование, Классовые переменные, Методы класса, Stock, Портфель"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Предыдущая задача",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить обработку данных о акциях и CSV-файлов",
-                "file": "verify1-1.sh",
-                "hint": "Запустите код на Python в шаге 1."
-              }
-            ]
-          },
-          {
-            "title": "Альтернативные конструкторы",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить наличие методов класса и функции zip",
-                "file": "verify2-1.sh",
-                "hint": "Реализуйте метод 'from_row()' в классе 'Stock'."
-              }
-            ]
-          },
-          {
-            "title": "Классовые переменные и наследование",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить, что история Python содержит класс Cost Stock Decimal",
-                "file": "verify3-1.sh",
-                "hint": "Запустите код на Python в шаге 3."
-              }
-            ]
-          },
-          {
-            "title": "Чтение объектов",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить чтение и добавление в CSV-файл",
-                "file": "verify4-1.sh",
-                "hint": "Реализуйте функцию'read_portfolio()' в файле'stock.py'"
-              }
-            ]
-          },
-          {
-            "title": "Обобщение",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверить использование файла Python-читателя",
-                "file": "verify5-1.sh",
-                "hint": "Реализуйте функцию'read_csv_as_instances()' в файле'reader.py' и выполните код на Python в шаге 5."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

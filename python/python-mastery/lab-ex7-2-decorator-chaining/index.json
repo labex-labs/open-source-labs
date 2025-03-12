@@ -13,116 +13,87 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Copying Metadata",
+        "title": "Preserving Function Metadata in Decorators",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History and Function Usage",
+            "name": "Check if wraps is imported in logcall.py",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've imported 'wraps' from 'functools' in logcall.py",
             "timeout": 0,
             "showstderr": true
+          },
+          {
+            "name": "Check if wraps is imported in validate.py",
+            "file": "verify1-2.sh",
+            "hint": "Make sure you've added 'wraps' from 'functools' to validate.py and applied it to the wrapper function"
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
+          "python/decorators",
           "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
+          "python/scope"
         ],
         "solutions": ["step1_solution.py"]
       },
       {
-        "title": "Your First Decorator with Arguments",
+        "title": "Creating Decorators with Arguments",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Presence of Formatting, Code, Filename, and Name",
+            "name": "Check logformat decorator implementation",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the logformat decorator correctly in logcall.py",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
+          "python/decorators",
           "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/python_shell",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
+          "python/lambda_functions"
         ],
         "solutions": ["logcall.py", "sample.py"]
       },
       {
-        "title": "Multiple Decorators and Methods",
+        "title": "Applying Decorators to Class Methods",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Presence of Logging, Decorator Usage, and Function Definitions",
+            "name": "Check methods.py implementation",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've created methods.py with properly ordered decorators",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
+          "python/class_static_methods",
           "python/classes_objects",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/python_shell",
-          "python/using_packages"
+          "python/decorators"
         ],
         "solutions": ["spam.py"]
       },
       {
-        "title": "Validation (Redux)",
+        "title": "Creating a Type Enforcement Decorator with Arguments",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Presence of Enforcement Annotations",
+            "name": "Check enforce decorator implementation",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've implemented the enforce decorator correctly in validate.py",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/for_loops",
+          "python/decorators",
           "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
+          "python/type_conversion"
         ],
         "solutions": ["validate.py"]
       }
@@ -169,407 +140,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "装饰器链式调用与带参数的装饰器",
-      "description": "在本实验中，你将练习装饰器链式调用以及定义接受参数的装饰器。",
-      "meta": {
-        "title": "Python 装饰器链式调用 | 函数元数据保留",
-        "description": "探索装饰器链式调用，学习如何定义接受参数的装饰器。发现使用装饰器时保留函数元数据的技巧。",
-        "keywords": "Python, 装饰器, 链式调用, 函数元数据, wraps"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "复制元数据",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录和函数用法",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "你的第一个带参数的装饰器",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证是否存在格式化、代码、文件名和名称",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["logcall.py", "sample.py"]
-          },
-          {
-            "title": "多个装饰器和方法",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证是否存在日志记录、装饰器使用情况和函数定义",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["spam.py"]
-          },
-          {
-            "title": "验证（redux）",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证强制注释是否存在",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["validate.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Encadenamiento de decoradores y decoradores con parámetros",
-      "description": "En este laboratorio, practicarás el encadenamiento de decoradores y la definición de decoradores que aceptan argumentos.",
-      "meta": {
-        "title": "Encadenamiento de decoradores de Python | Conservación de metadatos de funciones",
-        "description": "Explora el encadenamiento de decoradores y aprende cómo definir decoradores que aceptan argumentos. Descubre técnicas para conservar los metadatos de funciones al usar decoradores.",
-        "keywords": "python, decorador, encadenamiento, metadatos de función, wraps"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Copiar metadatos",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de Python y el uso de funciones",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Tu primer decorador con argumentos",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de formato, código, nombre de archivo y nombre",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Varios decoradores y métodos",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de registro, uso de decoradores y definiciones de funciones",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Validación (Redux)",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de anotaciones de aplicación",
-                "file": "verify4-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Chaînage de décorateurs et décorateurs paramétrés",
-      "description": "Dans ce laboratoire, vous allez pratiquer le chaînage de décorateurs et définir des décorateurs qui acceptent des arguments.",
-      "meta": {
-        "title": "Chaînage de décorateurs Python | Conservation des métadonnées de fonction",
-        "description": "Explorez le chaînage de décorateurs et apprenez à définir des décorateurs qui acceptent des arguments. Découvrez des techniques pour conserver les métadonnées de fonction lors de l'utilisation de décorateurs.",
-        "keywords": "python, décorateur, chaînage, métadonnées de fonction, wraps"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Copie des métadonnées",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python et l'utilisation des fonctions",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Votre premier décorateur avec des arguments",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence de formatage, de code, de nom de fichier et de nom",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Plusieurs décorateurs et méthodes",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence de journalisation, de l'utilisation de décorateurs et de définitions de fonctions",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Validation (Redux)",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier la présence d'annotations d'exécution",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Decorator Chaining und parametrisierte Dekoratoren",
-      "description": "In diesem Lab üben Sie das Decorator Chaining und definieren Dekoratoren, die Argumente akzeptieren.",
-      "meta": {
-        "title": "Python Decorator Chaining | Funktionsmetadaten-Präsenz",
-        "description": "Entdecken Sie das Decorator Chaining und lernen Sie, wie Sie Dekoratoren definieren, die Argumente akzeptieren. Entdecken Sie Techniken, um Funktionsmetadaten bei der Verwendung von Dekoratoren zu bewahren.",
-        "keywords": "python, Dekorator, Chaining, Funktionsmetadaten, wraps"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Metadaten kopieren",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Python-Historie und Funktionsverwendung überprüfen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Ihr erster Dekorator mit Argumenten",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Prüfen Sie das Vorhandensein von Formatierung, Code, Dateinamen und Name",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Mehrere Dekoratoren und Methoden",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Prüfen Sie das Vorhandensein von Protokollierung, Dekoratorverwendung und Funktionsdefinitionen",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Validierung (Redux)",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Prüfen Sie das Vorhandensein von Durchsetzungsannotationen",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "デコレータチェーニングとパラメータ付きデコレータ",
-      "description": "この実験では、デコレータチェーニングと引数を受け取るデコレータの定義を練習します。",
-      "meta": {
-        "title": "Pythonのデコレータチェーニング | 関数メタデータの保持",
-        "description": "デコレータチェーニングを探り、引数を受け取るデコレータの定義方法を学びましょう。デコレータを使用する際に関数メタデータを保持するためのテクニックを発見しましょう。",
-        "keywords": "python, デコレータ, チェーニング, 関数メタデータ, wraps"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "メタデータのコピー",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴と関数の使用を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "引数付きの最初のデコレータ",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "書式設定、コード、ファイル名、および名前の存在を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "複数のデコレータとメソッド",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "ロギング、デコレータの使用、および関数定義の存在を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "検証（再考）",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "強制アノテーションの存在を確認する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Цепочка декораторов и параметризованные декораторы",
-      "description": "В этой лабораторной работе вы будете практиковаться в цепочке декораторов и определении декораторов, которые принимают аргументы.",
-      "meta": {
-        "title": "Цепочка декораторов Python | Сохранение метаданных функции",
-        "description": "Изучите цепочку декораторов и узнайте, как определить декораторы, которые принимают аргументы. Откройте методы сохранения метаданных функции при использовании декораторов.",
-        "keywords": "python, декоратор, цепочка, метаданные функции, wraps"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Копирование метаданных",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python и использование функции",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Ваш первый декоратор с аргументами",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить наличие форматирования, кода, имени файла и имени",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Несколько декораторов и методов",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить наличие логирования, использования декоратора и определений функций",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Валидация (Redux)",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить наличие аннотаций по принудительному применению",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

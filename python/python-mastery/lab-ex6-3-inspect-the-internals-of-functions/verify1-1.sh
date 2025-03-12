@@ -1,7 +1,11 @@
-#!/bin/zsh
+#!/bin/bash
 
-cat ~/.python_history | grep "def"
-cat ~/.python_history | grep "dir"
-cat ~/.python_history | grep "__name__"
-cat ~/.python_history | grep "__module__"
-cat ~/.python_history | grep "__doc__"
+# Check if the user has used the basic function inspection commands
+if grep -q "def add" /home/labex/.python_history \
+  && grep -q "dir(add)" /home/labex/.python_history \
+  && grep -q "__name__" /home/labex/.python_history \
+  && grep -q "__code__" /home/labex/.python_history; then
+  exit 0
+else
+  exit 1
+fi

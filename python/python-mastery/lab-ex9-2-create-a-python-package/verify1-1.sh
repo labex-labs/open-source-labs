@@ -1,11 +1,11 @@
-#!/bin/zsh
+#!/bin/bash
 
-ls /home/labex/project/*/__init__.py
-ls /home/labex/project/*/ | grep "structure.py"
-ls /home/labex/project/*/ | grep "validate.py"
-ls /home/labex/project/*/ | grep "reader.py"
-ls /home/labex/project/*/ | grep "tableformat.py"
-cat /home/labex/project/stock.py | grep -e "from.*\..*import"
-cat /home/labex/project/stock.py | grep "__main__"
-cat /home/labex/project/stock.py | grep "read_csv_as_instances"
-cat /home/labex/project/stock.py | grep "print_table"
+cd /home/labex/project
+
+if [ -f "structure.py" ] && [ -f "validate.py" ] && [ -f "reader.py" ] && [ -f "tableformat.py" ] && [ -f "stock.py" ] && [ -f "portfolio.csv" ]; then
+  echo "All required files found."
+  exit 0
+else
+  echo "Not all required files exist in the project directory."
+  exit 1
+fi

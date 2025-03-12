@@ -2,7 +2,9 @@
 
 **Objectives:**
 
-- Learn how to use inheritance to write extensible code.
-- See a practical use of inheritance by writing a program that must output data in a variety of user-selectable formats such as plain-text, CSV, and HTML.
+- Learn how to use inheritance to write extensible code
+- Create a practical application using inheritance to output data in multiple formats
+- Understand how to use abstract base classes and concrete implementations
+- Implement a factory pattern to simplify class selection
 
 **Files Modified:** `tableformat.py`

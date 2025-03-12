@@ -2,8 +2,9 @@
 
 **Objectives:**
 
-- Learn more about how objects are represented.
-- Learn how attribute assignment and lookup works.
-- Better understand the role of a class definition
+- Explore how Python objects are represented internally
+- Understand the mechanisms of attribute assignment and lookup
+- Learn the relationship between classes and instances
+- Examine the role of class definitions in object-oriented programming
 
 **Files Modified:** None

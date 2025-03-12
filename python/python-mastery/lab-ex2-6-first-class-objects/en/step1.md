@@ -1,77 +1,98 @@
-# First-class Data
+# Understanding First-Class Objects in Python
 
-In the file `portfolio.csv`, you read data organized as columns that look like this:
+Python treats everything as an object, including functions and types. This makes it possible to store them in data structures, pass them as arguments, and return them from other functions. Let's explore this concept using CSV data processing as an example.
 
-```python
-"AA",100,32.20
-"IBM",50,91.10
-...
+## Exploring First-Class Types
+
+Open a new terminal in the WebIDE and start the Python interpreter by typing:
+
+```bash
+python3
 ```
 
-In previous code, this data was processed by hard-coding all of the type conversions. For example:
+In Python, we often need to convert strings from CSV files into appropriate data types. We can create a list of conversion functions:
 
 ```python
+coltypes = [str, int, float]
+```
+
+Note how we're creating a list containing the actual type functions, not strings. This is possible because in Python, types are first-class objects.
+
+Let's read some data from a portfolio CSV file to see how we can use these functions:
+
+```python
+import csv
+f = open('portfolio.csv')
 rows = csv.reader(f)
-for row in rows:
-    name   = row[0]
-    shares = int(row[1])
-    price  = float(row[2])
+headers = next(rows)
+row = next(rows)
+print(row)
 ```
 
-This kind of conversion can also be performed in a more clever manner using some list operations. Make a Python list that contains the conversions you want to carry out on each column:
+You should see output similar to:
 
-```python
->>> coltypes = [str, int, float]
->>>
 ```
-
-The reason you can even create this list is that everything in Python is "first-class." So, if you want to have a list of functions, that's fine.
-
-Now, read a row of data from the above file:
-
-```python
->>> import csv
->>> f = open('portfolio.csv')
->>> rows = csv.reader(f)
->>> headers = next(rows)
->>> row = next(rows)
->>> row
 ['AA', '100', '32.20']
->>>
 ```
 
-Zip the column types with the row and look at the result:
+Now, let's use the `zip` function to pair each value with its corresponding type conversion function:
 
 ```python
->>> r = list(zip(coltypes, row))
->>> r
-[(<class 'str'>, 'AA'), (<class 'int'>, '100'), (<class 'float'>,'32.20')]
->>>
+r = list(zip(coltypes, row))
+print(r)
 ```
 
-You will notice that this has paired a type conversion with a value. For example, `int` is paired with the value `'100'`. Now, try this:
+This produces:
+
+```
+[(<class 'str'>, 'AA'), (<class 'int'>, '100'), (<class 'float'>, '32.20')]
+```
+
+Each pair contains a type function and a string value. Now we can apply each function to convert the values:
 
 ```python
->>> record = [func(val) for func, val in zip(coltypes, row)]
->>> record
+record = [func(val) for func, val in zip(coltypes, row)]
+print(record)
+```
+
+Output:
+
+```
 ['AA', 100, 32.2]
->>>
 ```
 
-Make sure you understand what's happening in the above code. In the loop, the `func` variable is one of the type conversion functions (e.g., `str`, `int`, etc.) and the `val` variable is one of the values like `'AA'`, `'100'`. The expression `func(val)` is converting a value (kind of like a type cast).
+Notice how the values have been converted to their appropriate types - the string 'AA' remains a string, '100' becomes the integer 100, and '32.20' becomes the float 32.2.
 
-You can take it a step further and make dictionaries by using the column headers. For example:
+We can also combine these values with their column names to create a dictionary:
 
 ```python
->>> dict(zip(headers, record))
-{'name': 'AA', 'shares': 100, 'price': 32.2}
->>>
+record_dict = dict(zip(headers, record))
+print(record_dict)
 ```
 
-If you prefer, you can perform all of these steps at once using a dictionary comprehension:
+Output:
+
+```
+{'name': 'AA', 'shares': 100, 'price': 32.2}
+```
+
+You can perform all these steps in a single comprehension:
 
 ```python
->>> { name:func(val) for name, func, val in zip(headers, coltypes, row) }
-{'name': 'AA', 'shares': 100, 'price': 32.2}
->>>
+result = {name: func(val) for name, func, val in zip(headers, coltypes, row)}
+print(result)
 ```
+
+Output:
+
+```
+{'name': 'AA', 'shares': 100, 'price': 32.2}
+```
+
+Exit the Python interpreter by typing:
+
+```python
+exit()
+```
+
+This demonstration shows how Python's treatment of functions as first-class objects enables powerful data processing techniques.

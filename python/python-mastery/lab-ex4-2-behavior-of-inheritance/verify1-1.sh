@@ -1,6 +1,7 @@
-#!/bin/zsh
+#!/bin/bash
 
-cat ~/.python_history | grep "class"
-cat ~/.python_history | grep "def"
-cat ~/.python_history | grep "super"
-cat ~/.python_history | grep "__mro__"
+if grep -q "class A:" ~/.python_shell_history || grep -q "class Base:" ~/.python_shell_history; then
+  exit 0
+else
+  exit 1
+fi

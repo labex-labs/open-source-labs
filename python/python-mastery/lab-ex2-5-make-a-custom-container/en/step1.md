@@ -1,30 +1,57 @@
-# List growth
+# Understanding List Memory Allocation
 
-Python lists are highly optimized for performing `append()` operations. Each time a list grows, it grabs a larger chunk of memory than it actually needs with the expectation that more data will be added to the list later. If new items are added and space is available, the `append()` operation stores the item without allocating more memory.
+Python lists are designed to be efficient for appending operations. Instead of allocating exactly the amount of memory needed, Python allocates extra memory in anticipation of future additions. This strategy minimizes the number of memory reallocations needed when the list grows.
 
-Experiment with this feature of lists by using the `sys.getsizeof()` function on a list and appending a few more items.
+Let's examine this behavior using the `sys.getsizeof()` function, which returns the size of an object in bytes.
 
-```python
->>> import sys
->>> items = []
->>> sys.getsizeof(items)
-64
->>> items.append(1)
->>> sys.getsizeof(items)
-96
->>> items.append(2)
->>> sys.getsizeof(items)    # Notice how the size does not increase
-96
->>> items.append(3)
->>> sys.getsizeof(items)    # It still doesn't increase here
-96
->>> items.append(4)
->>> sys.getsizeof(items)    # Not yet.
-96
->>> items.append(5)
->>> sys.getsizeof(items)    # Notice the size has jumped
-128
->>>
+1. Open a Python interactive shell in your terminal:
+
+```bash
+python3
 ```
 
-A list stores its items by reference. So, the memory required for each item is a single memory address. On a 64-bit machine, an address is typically 8 bytes. However, if Python has been compiled for 32-bits, it might be 4 bytes and the numbers for the above example will be half of what's shown.
+2. Import the `sys` module and create an empty list:
+
+```python
+import sys
+items = []
+```
+
+3. Check the initial size of the empty list:
+
+```python
+sys.getsizeof(items)
+```
+
+You should see a value like `64` bytes, which represents the overhead for an empty list.
+
+4. Now, let's add items to the list one by one and observe how the memory allocation changes:
+
+```python
+items.append(1)
+sys.getsizeof(items)
+```
+
+You should see a larger value, around `96` bytes.
+
+5. Continue adding more items and check the size after each addition:
+
+```python
+items.append(2)
+sys.getsizeof(items)  # Size remains the same
+
+items.append(3)
+sys.getsizeof(items)  # Size still unchanged
+
+items.append(4)
+sys.getsizeof(items)  # Size still unchanged
+
+items.append(5)
+sys.getsizeof(items)  # Size jumps to a larger value
+```
+
+You'll notice that the size doesn't increase with every append operation. Instead, it jumps up periodically, which demonstrates that Python is allocating memory in chunks rather than individually for each new item.
+
+This behavior is by design. Python allocates more memory than needed initially to avoid frequent reallocations as the list grows. Each time the list exceeds its current capacity, Python allocates a larger chunk of memory.
+
+Remember that a list stores references to objects, not the objects themselves. On a 64-bit system, each reference typically requires 8 bytes of memory.

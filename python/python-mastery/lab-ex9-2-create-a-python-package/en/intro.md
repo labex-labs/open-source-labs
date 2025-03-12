@@ -1,9 +1,10 @@
 # Introduction
 
+In this lab, you will learn how to create and organize a Python package. Python packages are a way to structure your Python code to make it more modular, reusable, and maintainable.
+
 **Objectives:**
 
-- Learn how to create a Python package
-
-**Note**
-
-This exercise mostly just involves copying files on the file system. There shouldn't be a lot of coding.
+- Understand what a Python package is
+- Create a basic package structure
+- Organize related Python modules into a cohesive package
+- Update import statements to work with the new package structure

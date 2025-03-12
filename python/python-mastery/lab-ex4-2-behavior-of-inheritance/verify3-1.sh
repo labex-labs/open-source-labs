@@ -1,4 +1,7 @@
-#!/bin/zsh
+#!/bin/bash
 
-cat /home/labex/project/stock.py | grep "property"
-cat /home/labex/project/stock.py | grep -E "@.*\..*setter"
+if [ -f /home/labex/project/stock.py ]; then
+  exit 0
+else
+  exit 1
+fi

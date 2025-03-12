@@ -1,10 +1,26 @@
-# Preparation
+# Understanding the Import Problem
 
-In the last exercise, you split the `tableformat.py` file up into submodules. The last part of the resulting `tableformat/formatter.py` file has turned into a mess of imports.
+Let's begin by examining an example of a problematic module structure. The code in `tableformat/formatter.py` has imports scattered throughout the file, which creates maintenance and dependency issues.
+
+Open the WebIDE file explorer and navigate to the `structly` directory. Let's examine the current structure of the project by running:
+
+```bash
+cd ~/project/structly
+ls -la
+```
+
+This will show you the files in the project directory. Now let's look at one of the problematic files:
+
+```bash
+cat tableformat/formatter.py
+```
+
+You should see code similar to:
 
 ```python
-# tableformat.py
-...
+# formatter.py
+from abc import ABC, abstractmethod
+from .mixins import ColumnFormatMixin, UpperHeadersMixin
 
 class TableFormatter(ABC):
     @abstractmethod
@@ -18,8 +34,6 @@ class TableFormatter(ABC):
 from .formats.text import TextTableFormatter
 from .formats.csv import CSVTableFormatter
 from .formats.html import HTMLTableFormatter
-
-...
 
 def create_formatter(name, column_formats=None, upper_headers=False):
     if name == 'text':
@@ -42,4 +56,10 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-The imports in the middle of the file are required because the `create_formatter()` function needs them to find the appropriate classes. Really, the whole thing is a mess.
+Notice the placement of import statements in the middle of the file. This is problematic because:
+
+1. It makes the code harder to read and maintain
+2. It can lead to circular import issues
+3. It breaks the Python convention of placing all imports at the top of a file
+
+In the following steps, we'll explore these issues and learn how to resolve them.

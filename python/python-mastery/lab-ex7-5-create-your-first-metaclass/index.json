@@ -13,33 +13,61 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Create your first metaclass",
+        "title": "Understanding Metaclasses",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python File Existence and Code Constructs",
+            "name": "Check if user read the explanation",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please review the explanation of metaclasses before proceeding to the next step.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/lists",
-          "python/polymorphism",
-          "python/tuples",
-          "python/variables_data_types"
+        "skills": ["python/build_in_functions", "python/classes_objects"],
+        "solutions": ["mymeta.py"]
+      },
+      {
+        "title": "Creating Your First Metaclass",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify metaclass file exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create the mymeta.py file with the required code."
+          }
         ],
+        "skills": ["python/class_static_methods", "python/classes_objects"],
+        "solutions": ["mymeta.py"]
+      },
+      {
+        "title": "Using Your Metaclass",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Stock class implementation",
+            "file": "verify3-1.sh",
+            "hint": "Please add the Stock class to mymeta.py as instructed."
+          }
+        ],
+        "skills": ["python/classes_objects", "python/function_definition"],
+        "solutions": ["mymeta.py"]
+      },
+      {
+        "title": "Exploring Metaclass Inheritance",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify MyStock class implementation",
+            "file": "verify4-1.sh",
+            "hint": "Please add the MyStock class to mymeta.py as instructed."
+          }
+        ],
+        "skills": ["python/classes_objects", "python/inheritance"],
         "solutions": ["mymeta.py"]
       }
     ],
@@ -61,206 +89,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "创建你的第一个元类",
-      "description": "在本实验中，你将在 Python 中创建你的第一个元类。",
-      "meta": {
-        "title": "创建你的第一个元类 | Python 编程",
-        "description": "学习如何在 Python 中创建你的第一个元类，这是一项强大的功能，可让你自定义类的创建和行为。",
-        "keywords": "Python, 元类, 类创建, 面向对象编程, Python 编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "创建你的第一个元类",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 文件的存在性和代码结构",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["mymeta.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Crea tu primera metaclase",
-      "description": "En este laboratorio, crearás tu primera metaclase en Python.",
-      "meta": {
-        "title": "Crea tu primera metaclase | Programación en Python",
-        "description": "Aprende cómo crear tu primera metaclase en Python, una característica poderosa que te permite personalizar la creación y el comportamiento de las clases.",
-        "keywords": "Python, Metaclase, Creación de clases, Programación orientada a objetos, Programación en Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Crea tu primera metaclase",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verifica la existencia del archivo de Python y las estructuras de código",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Créez votre première métaclasse",
-      "description": "Dans ce laboratoire, vous allez créer votre première métaclasse en Python.",
-      "meta": {
-        "title": "Créez votre première métaclasse | Programmation Python",
-        "description": "Découvrez comment créer votre première métaclasse en Python, une fonction puissante qui vous permet de personnaliser la création de classes et leur comportement.",
-        "keywords": "Python, Métaclasse, Création de classes, Programmation orientée objet, Programmation Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Créez votre première métaclasse",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'existence du fichier Python et les constructions du code",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Erstellen Sie Ihre erste Metaklasse",
-      "description": "In diesem Lab werden Sie Ihre erste Metaklasse in Python erstellen.",
-      "meta": {
-        "title": "Erstellen Sie Ihre erste Metaklasse | Python-Programmierung",
-        "description": "Lernen Sie, wie Sie Ihre erste Metaklasse in Python erstellen, eine leistungsstarke Funktion, die Ihnen ermöglicht, die Klassenerstellung und -verhalten anzupassen.",
-        "keywords": "Python, Metaklasse, Klassenerstellung, objektorientierte Programmierung, Python-Programmierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Erstellen Sie Ihre erste Metaklasse",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein der Python-Datei und die Codekonstrukte",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "最初のメタクラスを作成する",
-      "description": "この実験では、Pythonで最初のメタクラスを作成します。",
-      "meta": {
-        "title": "最初のメタクラスを作成する | Pythonプログラミング",
-        "description": "Pythonで最初のメタクラスを作成する方法を学びましょう。これは、クラスの作成と動作をカスタマイズする強力な機能です。",
-        "keywords": "Python, メタクラス, クラス作成, オブジェクト指向プログラミング, Pythonプログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "最初のメタクラスを作成する",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonファイルの存在とコード構造を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Создайте свою первую мета-класс",
-      "description": "В этой лабораторной работе вы создадите свою первую мета-класс на Python.",
-      "meta": {
-        "title": "Создайте свою первую мета-класс | Программирование на Python",
-        "description": "Изучите, как создать свою первую мета-класс на Python, мощный инструмент, позволяющий вам настраивать создание классов и их поведение.",
-        "keywords": "Python, Метакласс, Создание класса, Объектно-ориентированное программирование, Программирование на Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Создайте свою первую мета-класс",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверьте существование файла Python и конструкции кода",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

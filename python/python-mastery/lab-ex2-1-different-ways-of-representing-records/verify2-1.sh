@@ -1,6 +1,2 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "tracemalloc"
-cat ~/.python_history | grep "open"
-cat ~/.python_history | grep "start"
-cat ~/.python_history | grep "get_traced_memory"
+#!/bin/bash
+ls /home/labex/project/memory_test1.py > /dev/null 2>&1 && ls /home/labex/project/memory_test2.py > /dev/null 2>&1 && echo "Success"

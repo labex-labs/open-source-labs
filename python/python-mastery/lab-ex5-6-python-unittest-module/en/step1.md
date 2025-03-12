@@ -1,6 +1,16 @@
-# Preliminaries
+# Creating Your First Unit Test
 
-In previous exercises, you created a file `stock.py` that contained a `Stock` class. In a separate file, `teststock.py`, define the following testing code:
+Python's `unittest` module provides a framework for organizing tests. It is built on the concept of test fixtures (setUp and tearDown methods), test cases, test suites, and test runners.
+
+In this first step, you will create a basic test file for the `Stock` class which already exists in the `stock.py` file.
+
+1. First, let's open the `stock.py` file to understand the class we'll be testing:
+
+```bash
+cat stock.py
+```
+
+2. Now, create a new file named `teststock.py` using the editor:
 
 ```python
 # teststock.py
@@ -19,13 +29,29 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-Make sure you can run the file:
+Let's understand the key components of this code:
 
-````bash
+- `import unittest`: Imports the unittest module
+- `import stock`: Imports the module containing our `Stock` class
+- `class TestStock(unittest.TestCase)`: Creates a test case class by inheriting from `unittest.TestCase`
+- `def test_create(self)`: A test method - all test methods must start with `test_`
+- `assertEqual`: A method provided by TestCase to check if two values are equal
+- `unittest.main()`: Runs all tests when this script is executed
+
+3. Save the file and run it to execute the test:
+
+```bash
 python3 teststock.py
+```
+
+You should see output similar to:
+
+```
 .
-------------------------------------------------------------------```
-Ran 1 tests in 0.001s
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
 
 OK
-````
+```
+
+The `.` indicates a passing test. If a test fails, you would see an `F` instead, along with details about the failure.

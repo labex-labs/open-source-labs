@@ -13,149 +13,88 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Understanding the Problem",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History Contains Stock, Read_csv_as_instances, Print_table",
+            "name": "Verify Python Commands Were Run",
             "file": "verify1-1.sh",
-            "hint": "Please run the python code in step 1.",
+            "hint": "Please run the Python commands to understand how the current print_table() function works.\n",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
+        "skills": ["python/classes_objects", "python/inheritance"]
       },
       {
-        "title": "Defining a generic formatter class",
+        "title": "Creating a Base Class and Modifying the Print Function",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Presence of Raise Statements",
+            "name": "Verify TableFormatter class and print_table function",
             "file": "verify2-1.sh",
-            "hint": "Please modify the 'print_table()' function and add the 'TableFormatter' class in the 'tableformat.py' file.",
+            "hint": "Please make sure you've added the TableFormatter class and updated the print_table() function in the tableformat.py file.\n",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects", "python/function_definition"],
         "solutions": ["step2_solution.py"]
       },
       {
-        "title": "Implementing a concrete formatter",
+        "title": "Implementing a Concrete Formatter",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify TextTableFormatter in tableformat.py",
+            "name": "Verify TextTableFormatter Implementation",
             "file": "verify3-1.sh",
-            "hint": "Please add the 'TextTableFormatter' class in the 'tableformat.py' file.",
+            "hint": "Please make sure you've added the TextTableFormatter class to the tableformat.py file with the required methods.\n",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/tuples"
-        ],
+        "skills": ["python/classes_objects", "python/inheritance"],
         "solutions": ["step3_solution.py"]
       },
       {
-        "title": "Adding More Implementations",
+        "title": "Creating Additional Formatters",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Presence of CSVTableFormatter and HTMLTableFormatter",
+            "name": "Verify Additional Formatters",
             "file": "verify4-1.sh",
-            "hint": "Please add the 'CSVTableFormatter' and 'HTMLTableFormatter' class in the 'tableformat.py' file.",
+            "hint": "Please make sure you've added both CSVTableFormatter and HTMLTableFormatter classes to the tableformat.py file.\n",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
+          "python/inheritance",
+          "python/polymorphism"
         ],
         "solutions": ["step4_solution.py"]
       },
       {
-        "title": "Making it Easier To Choose",
+        "title": "Creating a Factory Function",
         "text": "en/step5.md",
         "verify": [
           {
-            "name": "Verify Table Format Python Script",
+            "name": "Verify Factory Function",
             "file": "verify5-1.sh",
-            "hint": "Please implement the 'create_formatter()' function in the 'tableformat.py' file.",
+            "hint": "Please make sure you've added the create_formatter() function to the tableformat.py file.\n",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/for_loops",
           "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types"
+          "python/polymorphism"
         ],
         "solutions": ["step5_solution.py"]
       }
@@ -202,473 +141,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "继承的实际应用",
-      "description": "在本实验中，你将学习如何利用继承来创建可扩展的代码，以便以不同格式（如纯文本、CSV 和 HTML）输出数据。",
-      "meta": {
-        "title": "Python编程 | 继承 | 可扩展代码",
-        "description": "学习如何使用继承编写可扩展的Python代码，并创建一个以各种格式（如纯文本、CSV 和 HTML）输出数据的程序。",
-        "keywords": "Python, 继承, 可扩展代码, 编程, 数据输出"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中包含Stock、Read_csv_as_instances、Print_table",
-                "file": "verify1-1.sh",
-                "hint": "请运行步骤1中的Python代码。"
-              }
-            ]
-          },
-          {
-            "title": "定义一个通用格式化器类",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证是否存在引发语句",
-                "file": "verify2-1.sh",
-                "hint": "请修改 'print_table()' 函数，并在 'tableformat.py' 文件中添加 'TableFormatter' 类。"
-              }
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "实现一个具体的格式化器",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证tableformat.py中的TextTableFormatter",
-                "file": "verify3-1.sh",
-                "hint": "请在'tableformat.py'文件中添加'TextTableFormatter'类。"
-              }
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "添加更多实现",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证是否存在CSVTableFormatter和HTMLTableFormatter",
-                "file": "verify4-1.sh",
-                "hint": "请在'tableformat.py'文件中添加'CSVTableFormatter'和'HTMLTableFormatter'类。"
-              }
-            ],
-            "solutions": ["step4_solution.py"]
-          },
-          {
-            "title": "使其更易于选择",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证表格格式Python脚本",
-                "file": "verify5-1.sh",
-                "hint": "请在'tableformat.py'文件中实现'create_formatter()'函数。"
-              }
-            ],
-            "solutions": ["step5_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Uso Práctico de la Herencia",
-      "description": "En este laboratorio, aprenderás a utilizar la herencia para crear código extensible para la salida de datos en diferentes formatos, como texto plano, CSV y HTML.",
-      "meta": {
-        "title": "Programación en Python | Herencia | Código Extensible",
-        "description": "Aprende a usar la herencia para escribir código extensible en Python y crear un programa que salga datos en varios formatos, como texto plano, CSV y HTML.",
-        "keywords": "Python, Herencia, Código Extensible, Programación, Salida de Datos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar que la historia de Python contenga Stock, read_csv_as_instances, print_table",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 1."
-              }
-            ]
-          },
-          {
-            "title": "Definiendo una clase formateador genérico",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de declaraciones raise",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, modifique la función 'print_table()' y agregue la clase 'TableFormatter' en el archivo 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Implementando un formateador específico",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar TextTableFormatter en tableformat.py",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, agregue la clase 'TextTableFormatter' en el archivo 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Agregando más implementaciones",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de CSVTableFormatter y HTMLTableFormatter",
-                "file": "verify4-1.sh",
-                "hint": "Por favor, agregue las clases 'CSVTableFormatter' y 'HTMLTableFormatter' en el archivo 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Haciéndolo más fácil de elegir",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verificar el script de Python de formato de tabla",
-                "file": "verify5-1.sh",
-                "hint": "Por favor, implemente la función 'create_formatter()' en el archivo 'tableformat.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Utilisation pratique de l'héritage",
-      "description": "Dans ce laboratoire, vous allez apprendre à utiliser l'héritage pour créer un code extensible pour la sortie de données dans différents formats tels que le texte brut, le CSV et le HTML.",
-      "meta": {
-        "title": "Programmation Python | Héritage | Code extensible",
-        "description": "Apprenez à utiliser l'héritage pour écrire un code Python extensible et créer un programme qui sort des données dans divers formats comme le texte brut, le CSV et le HTML.",
-        "keywords": "Python, Héritage, Code extensible, Programmation, Sortie de données"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez que l'historique Python contient Stock, read_csv_as_instances, print_table",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 1."
-              }
-            ]
-          },
-          {
-            "title": "Définition d'une classe de formateur générique",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence d'instructions Raise",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez modifier la fonction 'print_table()' et ajouter la classe 'TableFormatter' dans le fichier 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Implémentation d'un formateur concret",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez TextTableFormatter dans tableformat.py",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez ajouter la classe 'TextTableFormatter' dans le fichier 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Ajout de plus d'implémentations",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de CSVTableFormatter et HTMLTableFormatter",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez ajouter les classes 'CSVTableFormatter' et 'HTMLTableFormatter' dans le fichier 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Le rendre plus facile à choisir",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifiez le script Python de formatage de table",
-                "file": "verify5-1.sh",
-                "hint": "Veuillez implémenter la fonction 'create_formatter()' dans le fichier 'tableformat.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Praktische Verwendung von Vererbung",
-      "description": "In diesem Lab lernen Sie, wie Sie die Vererbung nutzen, um erweiterbares Code zu erstellen, um Daten in verschiedenen Formaten wie einfache Texte, CSV und HTML auszugeben.",
-      "meta": {
-        "title": "Python-Programmierung | Vererbung | Erweiterbares Code",
-        "description": "Lernen Sie, wie Sie die Vererbung verwenden, um erweiterbares Python-Code zu schreiben und ein Programm zu erstellen, das Daten in verschiedenen Formaten wie einfache Texte, CSV und HTML ausgibt.",
-        "keywords": "Python, Vererbung, Erweiterbares Code, Programmierung, Datenausgabe"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie, dass die Python-Historie Stock, read_csv_as_instances, print_table enthält",
-                "file": "verify1-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 1 aus."
-              }
-            ]
-          },
-          {
-            "title": "Definition einer generischen Formatter-Klasse",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein von Raise-Anweisungen",
-                "file": "verify2-1.sh",
-                "hint": "Bitte ändern Sie die Funktion 'print_table()' und fügen Sie die 'TableFormatter'-Klasse zur Datei 'tableformat.py' hinzu."
-              }
-            ]
-          },
-          {
-            "title": "Implementierung eines konkreten Formatters",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie TextTableFormatter in tableformat.py",
-                "file": "verify3-1.sh",
-                "hint": "Bitte fügen Sie die 'TextTableFormatter'-Klasse zur Datei 'tableformat.py' hinzu."
-              }
-            ]
-          },
-          {
-            "title": "Hinzufügen weiterer Implementierungen",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Vorhandensein von CSVTableFormatter und HTMLTableFormatter",
-                "file": "verify4-1.sh",
-                "hint": "Bitte fügen Sie die 'CSVTableFormatter'- und 'HTMLTableFormatter'-Klasse zur Datei 'tableformat.py' hinzu."
-              }
-            ]
-          },
-          {
-            "title": "Es einfacher zu wählen machen",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie das Python-Skript für die Tabellenformatierung",
-                "file": "verify5-1.sh",
-                "hint": "Bitte implementieren Sie die Funktion 'create_formatter()' in der Datei 'tableformat.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "継承の実践的な使用",
-      "description": "この実験では、継承を利用して、平文、CSV、HTML などの異なる形式でデータを出力するための拡張可能なコードを作成する方法を学びます。",
-      "meta": {
-        "title": "Python プログラミング | 継承 | 拡張可能なコード",
-        "description": "継承を使って拡張可能な Python コードを書き、平文、CSV、HTML などのさまざまな形式でデータを出力するプログラムを作成する方法を学びます。",
-        "keywords": "Python, 継承, 拡張可能なコード, プログラミング, データ出力"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Python の履歴に stock、read_csv_as_instances、print_table が含まれていることを確認する",
-                "file": "verify1-1.sh",
-                "hint": "手順 1 の python コードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "汎用フォーマッタクラスの定義",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "raise 文の存在を確認する",
-                "file": "verify2-1.sh",
-                "hint": " 'print_table()' 関数を修正し、 'tableformat.py' ファイルに 'TableFormatter' クラスを追加してください。"
-              }
-            ]
-          },
-          {
-            "title": "具体的なフォーマッタの実装",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "tableformat.py 内の TextTableFormatter を確認する",
-                "file": "verify3-1.sh",
-                "hint": " 'tableformat.py' ファイルに 'TextTableFormatter' クラスを追加してください。"
-              }
-            ]
-          },
-          {
-            "title": "さらに実装を追加する",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "CSVTableFormatter と HTMLTableFormatter の存在を確認する",
-                "file": "verify4-1.sh",
-                "hint": " 'tableformat.py' ファイルに 'CSVTableFormatter' と 'HTMLTableFormatter' クラスを追加してください。"
-              }
-            ]
-          },
-          {
-            "title": "選択を容易にする",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "テーブル形式の Python スクリプトを確認する",
-                "file": "verify5-1.sh",
-                "hint": " 'tableformat.py' ファイルに 'create_formatter()' 関数を実装してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Практическое использование наследования",
-      "description": "В этой лабораторной работе вы научитесь использовать наследование для создания расширяемого кода для вывода данных в различных форматах, таких как простой текст, CSV и HTML.",
-      "meta": {
-        "title": "Программирование на Python | Наследование | Расширяемый код",
-        "description": "Изучите, как использовать наследование для написания расширяемого кода на Python и создать программу, которая выводит данные в различных форматах, таких как простой текст, CSV и HTML.",
-        "keywords": "Python, Наследование, Расширяемый код, Программирование, Вывод данных"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить, что в истории Python есть stock, read_csv_as_instances, print_table",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 1."
-              }
-            ]
-          },
-          {
-            "title": "Определение обобщенного класса форматировщика",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить наличие инструкций raise",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, измените функцию 'print_table()' и добавьте класс 'TableFormatter' в файл 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Реализация конкретного форматировщика",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить TextTableFormatter в tableformat.py",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, добавьте класс 'TextTableFormatter' в файл 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Добавление дополнительных реализаций",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить наличие CSVTableFormatter и HTMLTableFormatter",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, добавьте классы 'CSVTableFormatter' и 'HTMLTableFormatter' в файл 'tableformat.py'."
-              }
-            ]
-          },
-          {
-            "title": "Упрощение выбора",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверить скрипт форматирования таблиц на Python",
-                "file": "verify5-1.sh",
-                "hint": "Пожалуйста, реализуйте функцию 'create_formatter()' в файле 'tableformat.py'."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

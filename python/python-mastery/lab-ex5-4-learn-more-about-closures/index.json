@@ -2,7 +2,7 @@
   "$schema": "https://cdn.jsdelivr.net/gh/labex-labs/schema/index.json",
   "type": "lab",
   "title": "Learn More About Closures",
-  "description": "In this lab, you will explore the more unusual aspects of closures in JavaScript.",
+  "description": "In this lab, you will explore the more unusual aspects of closures in Python.",
   "meta": {
     "title": "Exploring the Power of Closures in Python",
     "description": "Dive into the fascinating world of closures and learn how to leverage their unique capabilities in Python programming.",
@@ -13,80 +13,62 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Closures as a data structure",
+        "title": "Closures as a Data Structure",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python Function Definition and Usage",
+            "name": "Verify counter.py file exists and contains correct functions",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you have created the counter.py file with the counter function as instructed",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
+          "python/arguments_return",
           "python/function_definition",
-          "python/python_shell",
           "python/scope"
         ]
       },
       {
-        "title": "Closures as a code generator",
+        "title": "Closures as a Code Generator",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Files with Properties Setters Lambdas",
+            "name": "Verify typedproperty.py file exists and contains correct functions",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you have created the typedproperty.py file with the required functions",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
           "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
           "python/function_definition",
-          "python/importing_modules",
-          "python/lambda_functions",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
+          "python/raising_exceptions"
         ],
         "solutions": ["typedproperty.py"]
       },
       {
-        "title": "Challenge: Eliminating names",
+        "title": "Eliminating Property Names with Descriptors",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
+            "name": "Verify improved_typedproperty.py file exists and contains correct classes",
             "file": "verify3-1.sh",
-            "hint": "This step has no verification at the moment",
+            "hint": "Make sure you have created the improved_typedproperty.py file with the required descriptor class",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "python/classes_objects",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/polymorphism",
-          "python/tuples",
-          "python/using_packages"
+          "python/conditional_statements",
+          "python/function_definition"
         ]
       }
     ],
@@ -108,338 +90,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "深入了解闭包",
-      "description": "在本实验中，你将探索JavaScript中闭包更不寻常的方面。",
-      "meta": {
-        "title": "探索Python中闭包的强大功能",
-        "description": "深入探索迷人的闭包世界，学习如何在Python编程中利用它们的独特功能。",
-        "keywords": "数据封装, 闭包, Python, 代码生成, 编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "作为数据结构的闭包",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python函数定义和用法",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "作为代码生成器的闭包",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证带有属性设置器lambda的Python文件",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["typedproperty.py"]
-          },
-          {
-            "title": "挑战：消除名称",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify3-1.sh",
-                "hint": "此步骤目前没有验证"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Aprende más sobre closures",
-      "description": "En este laboratorio, explorarás los aspectos más inusuales de los closures en JavaScript.",
-      "meta": {
-        "title": "Explorando el poder de los closures en Python",
-        "description": "Sumérgete en el fascinante mundo de los closures y aprende cómo aprovechar sus capacidades únicas en la programación de Python.",
-        "keywords": "encapsulación de datos, closures, python, generación de código, programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Los closures como estructura de datos",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la definición y uso de funciones de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Los closures como generador de código",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar archivos de Python con setters de propiedades en forma de lambdas",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Desafío: Eliminando nombres",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Este paso no tiene verificación en este momento",
-                "file": "verify3-1.sh",
-                "hint": "Este paso no tiene verificación en este momento"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Découvrez davantage sur les closures",
-      "description": "Dans ce laboratoire, vous explorerez les aspects les plus inhabituels des closures en JavaScript.",
-      "meta": {
-        "title": "Explorer le pouvoir des closures en Python",
-        "description": "Plongez dans le monde fascinant des closures et apprenez à exploiter leurs capacités uniques en programmation Python.",
-        "keywords": "encapsulation de données, closures, python, génération de code, programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Les closures comme une structure de données",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez la définition et l'utilisation des fonctions Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Les closures comme un générateur de code",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez les fichiers Python avec des lambdas définissant des propriétés",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Défi : élimination des noms",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Cette étape n'a pas de vérification pour le moment",
-                "file": "verify3-1.sh",
-                "hint": "Cette étape n'a pas de vérification pour le moment"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Mehr über Closures lernen",
-      "description": "In diesem Lab werden Sie die ungewöhnlicheren Aspekte von Closures in JavaScript erkunden.",
-      "meta": {
-        "title": "Das Potenzial von Closures in Python entdecken",
-        "description": "Taucht in die faszinierende Welt von Closures ein und lernen Sie, wie Sie ihre einzigartigen Möglichkeiten in der Python-Programmierung nutzen können.",
-        "keywords": "Datenkapselung, Closures, Python, Codegenerierung, Programmierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Closures als Datenstruktur",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie die Python-Funktionsdefinition und -verwendung",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Closures als Codegenerator",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren Sie Python-Dateien mit Eigenschafts-Settern-Lambdas",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Challenge: Namenselimination",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Dieser Schritt hat momentan keine Verifizierung",
-                "file": "verify3-1.sh",
-                "hint": "Dieser Schritt hat momentan keine Verifizierung"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "クロージャに関する詳細を学ぶ",
-      "description": "この実験では、JavaScriptにおけるクロージャのより珍しい側面を探ります。",
-      "meta": {
-        "title": "Pythonにおけるクロージャの力を探求する",
-        "description": "クロージャの魅力的な世界に没入し、Pythonプログラミングにおいてその独自の機能をどのように活用するか学びましょう。",
-        "keywords": "データカプセル化, クロージャ, Python, コード生成, プログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "データ構造としてのクロージャ",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Python関数の定義と使用を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "コード生成器としてのクロージャ",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "プロパティセッターラムダ付きのPythonファイルを確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "チャレンジ：名前の削除",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "このステップでは現在検証はありません",
-                "file": "verify3-1.sh",
-                "hint": "このステップでは現在検証はありません"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Изучите замыкания более глубоко",
-      "description": "В этой лабораторной работе вы изучите более необычные аспекты замыканий в JavaScript.",
-      "meta": {
-        "title": "Исследование возможностей замыканий в Python",
-        "description": "Погрузитесь в увлекательный мир замыканий и узнайте, как использовать их уникальные возможности в программировании на Python.",
-        "keywords": "инкапсуляция данных, замыкания, python, генерация кода, программирование"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Замыкания в качестве структуры данных",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить определение и использование функции на Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Замыкания в качестве генератора кода",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить Python-файлы с лямбда-функциями-установщиками свойств",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Задача: устранение имен",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "На данный момент эта стадия не имеет проверки",
-                "file": "verify3-1.sh",
-                "hint": "На данный момент эта стадия не имеет проверки"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

@@ -13,107 +13,59 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Class creation",
+        "title": "Manual Class Creation",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History Expressions and Types",
+            "name": "Verify Python Shell History",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've entered all the commands correctly in the Python interactive shell.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
           "python/constructor",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
+          "python/function_definition"
         ]
       },
       {
-        "title": "Typed structures",
+        "title": "Creating a Typed Structure Helper",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Structure Class Definitions",
+            "name": "Verify structure.py Implementation",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've correctly implemented the typed_structure function in structure.py.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
           "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lambda_functions",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/function_definition"
         ],
         "solutions": ["structure.py"]
       },
       {
-        "title": "Making a lot of classes",
+        "title": "Efficient Class Generation",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python Data Types and Globals Usage",
+            "name": "Verify Typed Class Implementation",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've correctly implemented the Typed class and dynamic class generation.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ],
+        "skills": ["python/classes_objects", "python/function_definition"],
         "solutions": ["validate.py"]
       }
     ],
@@ -149,339 +101,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "类创建的底层",
-      "description": "在本实验中，你将通过研究类创建的机制，了解创建一个类所涉及的底层步骤。",
-      "meta": {
-        "title": "掌握类创建：深入探究Python的机制",
-        "description": "探索在Python中创建类所涉及的底层步骤，从定义方法到构建类对象。",
-        "keywords": "类创建, 底层, Python, 面向对象编程, 类结构"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "类创建",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史表达式和类型",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "类型化结构",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证结构类定义",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["structure.py"]
-          },
-          {
-            "title": "创建大量类",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python数据类型和全局变量的使用",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["validate.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Nivel Bajo de Creación de Clases",
-      "description": "En este laboratorio, aprenderá sobre los pasos de bajo nivel implicados en la creación de una clase al examinar la mecánica de la creación de clases.",
-      "meta": {
-        "title": "Dominando la Creación de Clases: Una Profunda Inmersión en la Mecánica de Python",
-        "description": "Explora los pasos de bajo nivel implicados en la creación de una clase en Python, desde la definición de métodos hasta la construcción del objeto de clase.",
-        "keywords": "creación de clases, nivel bajo, python, programación orientada a objetos, estructura de clase"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Creación de clase",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar Expresiones y Tipos de la Historia de Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Estructuras tipadas",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar las definiciones de clases de estructura",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Creando muchas clases",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar los tipos de datos de Python y el uso de variables globales",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Création de classes de bas niveau",
-      "description": "Dans ce laboratoire, vous allez découvrir les étapes de bas niveau impliquées dans la création d'une classe en examinant les mécanismes de création de classe.",
-      "meta": {
-        "title": "Maîtriser la création de classes : plongée approfondie dans les mécanismes de Python",
-        "description": "Explorez les étapes de bas niveau impliquées dans la création d'une classe en Python, depuis la définition des méthodes jusqu'à la construction de l'objet de classe.",
-        "keywords": "création de classe, bas niveau, python, programmation orientée objet, structure de classe"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Création de classe",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez les expressions et les types de l'historique Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Structures typées",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez les définitions de classes de structure",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Création de nombreux classes",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez les types de données Python et l'utilisation des variables globales",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Klassenerstellung auf niedriger Ebene",
-      "description": "In diesem Lab werden Sie die grundlegenden Schritte der Klassenerstellung kennenlernen, indem Sie die Mechanismen der Klassenerstellung untersuchen.",
-      "meta": {
-        "title": "Klassenerstellung meistern: Ein tiefer Einblick in die Mechaniken von Python",
-        "description": "Entdecken Sie die grundlegenden Schritte der Klassenerstellung in Python, von der Definition von Methoden bis zur Konstruktion des Klassenobjekts.",
-        "keywords": "Klassenerstellung, niedrige Ebene, Python, objektorientierte Programmierung, Klassenstruktur"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Klassenerstellung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Python-Historieausdrücken und -Typen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Getypte Strukturen",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Strukturklassendefinitionen",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Viele Klassen erstellen",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Verwendung von Python-Datentypen und Globalvariablen",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "クラス作成の低レベル",
-      "description": "この実験では、クラス作成の仕組みを調べることで、クラスを作成する際に関係する低レベルの手順について学びます。",
-      "meta": {
-        "title": "クラス作成のマスター：Pythonの仕組みを深く掘り下げる",
-        "description": "Pythonでクラスを作成する際に関係する低レベルの手順を、メソッドの定義からクラスオブジェクトの構築まで探ります。",
-        "keywords": "クラス作成, 低レベル, Python, オブジェクト指向プログラミング, クラス構造"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "クラス作成",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴式と型を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "型付き構造体",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "構造体クラスの定義を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "多数のクラスを作成する",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonのデータ型とグローバル変数の使用を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Низкоуровневое создание классов",
-      "description": "В этой лабораторной работе вы узнаете о низкоуровневых шагах, связанных с созданием класса, изучая механику создания классов.",
-      "meta": {
-        "title": "Мастерство в создании классов: углубленный анализ механики Python",
-        "description": "Изучите низкоуровневые шаги, связанные с созданием класса в Python, начиная от определения методов и заканчивая конструированием объекта класса.",
-        "keywords": "создание класса, низкий уровень, python, объектно-ориентированное программирование, структура класса"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Создание класса",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить выражения и типы в истории Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Типизированные структуры",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить определения классов структуры",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Создание большого количества классов",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить использование типов данных Python и глобальных переменных",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

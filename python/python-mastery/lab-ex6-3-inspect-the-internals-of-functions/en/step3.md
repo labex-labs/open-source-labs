@@ -1,62 +1,121 @@
-# Putting it Together
+# Applying Function Inspection in Classes
 
-In Exercise 6.1, you created a class `Structure` that defined a generalized `__init__()`, `__setattr__()`, and `__repr__()` method. That class required a user to define a `_fields` class variable like this:
+Now, let's apply what we've learned about function inspection to improve a class implementation. We'll modify a `Structure` class to automatically detect field names from the `__init__` method signature.
 
-```python
-class Stock(Structure):
-    _fields = ('name','shares','price')
+## Understanding the Structure Class
+
+The `structure.py` file contains a `Structure` class that serves as a base class for creating structured data objects. It currently requires a `_fields` class variable to define the object's attributes:
+
+Open the file in the editor:
+
+```bash
+cd ~/project
 ```
 
-The problem with this class is that the `__init__()` function didn't have a useful argument signature for the purposes of help and keyword argument passing. In Exercise 6.2, you did a sneaky trick involving a special `self._init()` function. For example:
+You can see the existing `Structure` class in the `structure.py` file in the WebIDE.
+
+## Creating a Stock Class
+
+Let's create a `Stock` class that inherits from `Structure`. Add this code to the end of the `structure.py` file:
 
 ```python
 class Stock(Structure):
     _fields = ('name', 'shares', 'price')
+
     def __init__(self, name, shares, price):
         self._init()
-    ...
 ```
 
-This gave a useful signature, but now the class is just weird because the user has to provide both the `_fields` variable and the `__init__()` method.
+The problem with this approach is that we have to define both the `_fields` tuple and the `__init__` method with the same parameter names, which is redundant and could lead to errors if they get out of sync.
 
-Your task is to eliminate the `_fields` variable using some function inspection techniques. First, notice that you can get the argument signature from `Stock` as follows:
+## Adding a set_fields Class Method
+
+Let's improve this by adding a `set_fields` class method to `Structure` that automatically detects field names from the `__init__` signature. Add this method to the `Structure` class:
 
 ```python
->>> import inspect
->>> sig = inspect.signature(Stock)
->>> tuple(sig.parameters)
-('name', 'shares', 'price')
->>>
+@classmethod
+def set_fields(cls):
+    # Get the signature of the __init__ method
+    import inspect
+    sig = inspect.signature(cls.__init__)
+
+    # Get parameter names, skipping 'self'
+    params = list(sig.parameters.keys())[1:]
+
+    # Set _fields attribute on the class
+    cls._fields = tuple(params)
 ```
 
-Perhaps you could set the `_fields` variable from the argument signature of `__init__()`. Add a class method `set_fields(cls)` to `Structure` that inspects the `__init__()` function, and sets the `_fields` variable appropriately. You should use your new function like this:
+This method uses the `inspect` module to get the signature of the `__init__` method, extracts the parameter names (skipping `self`), and sets the `_fields` class variable.
+
+## Modifying the Stock Class
+
+Now we can simplify our `Stock` class. Replace the previous `Stock` class with:
 
 ```python
 class Stock(Structure):
     def __init__(self, name, shares, price):
         self._init()
 
-    ...
-
+# Call set_fields to automatically set _fields from __init__
 Stock.set_fields()
 ```
 
-The resulting class should work the same way as before:
+## Testing the Modified Class
+
+Let's create a simple test script to verify that our modified class works correctly. Create a new file called `test_structure.py`:
 
 ```python
->>> s = Stock(name='GOOG', shares=100, price=490.1)
->>> s
-Stock('GOOG',100,490.1)
->>> s.shares = 50
->>> s.share = 50
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "structure.py", line 12, in __setattr__
-    raise AttributeError('No attribute %s' % name)
-AttributeError: No attribute share
->>>
+from structure import Stock
+
+def test_stock():
+    # Create a Stock object
+    s = Stock(name='GOOG', shares=100, price=490.1)
+
+    # Test string representation
+    print(f"Stock representation: {s}")
+
+    # Test attribute access
+    print(f"Name: {s.name}")
+    print(f"Shares: {s.shares}")
+    print(f"Price: {s.price}")
+
+    # Test attribute modification
+    s.shares = 50
+    print(f"Updated shares: {s.shares}")
+
+    # Test attribute error
+    try:
+        s.share = 50  # Misspelled attribute
+        print("Error: Did not raise AttributeError")
+    except AttributeError as e:
+        print(f"Correctly raised: {e}")
+
+if __name__ == "__main__":
+    test_stock()
 ```
 
-Verify the slightly modified `Stock` class with your unit tests again. There will still be failures, but nothing should change from the previous exercise.
+Run the test script:
 
-At this point, it's all still a bit "hacky", but you're making progress. You have a Stock structure class with a useful `__init__()` function, there is a useful representation string, and the `__setattr__()` method restricts the set of attribute names. The extra step of having to invoke `set_fields()` is a bit odd, but we'll get back to that.
+```bash
+python3 test_structure.py
+```
+
+You should see output similar to:
+
+```
+Stock representation: Stock('GOOG',100,490.1)
+Name: GOOG
+Shares: 100
+Price: 490.1
+Updated shares: 50
+Correctly raised: No attribute share
+```
+
+## How It Works
+
+1. The `set_fields` method uses `inspect.signature()` to get the parameter names from the `__init__` method.
+2. It automatically sets the `_fields` class variable based on these parameter names.
+3. This eliminates the need to manually define both `_fields` and `__init__` with matching parameter names.
+
+This approach uses function inspection to make our code more maintainable and less error-prone. It's a practical application of Python's introspection capabilities.

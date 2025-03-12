@@ -1,5 +1,8 @@
-#!/bin/zsh
+#!/bin/bash
 
-cat ~/.python_history | grep "decimal"
-cat ~/.python_history | grep "Stock"
-cat ~/.python_history | grep "class"
+cd /home/labex/project
+if grep -q "self._types" stock.py; then
+  exit 0
+else
+  exit 1
+fi

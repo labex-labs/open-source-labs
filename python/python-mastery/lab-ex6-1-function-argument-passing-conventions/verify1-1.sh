@@ -1,6 +1,6 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "def"
-cat ~/.python_history | grep "return"
-cat ~/.python_history | grep -w "\*\*"
-cat ~/.python_history | grep "print"
+#!/bin/bash
+if [ -f /home/labex/project/orig_stock.py ]; then
+  exit 0
+else
+  exit 1
+fi

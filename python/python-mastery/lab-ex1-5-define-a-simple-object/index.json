@@ -13,30 +13,86 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Defining a simple object",
+        "title": "Understanding Python Classes",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python History and Class Definitions",
+            "name": "Check understanding",
             "file": "verify1-1.sh",
-            "hint": "Please create 'stock.py' file in the 'project' folder and define a class object as required.",
+            "hint": "This step is conceptual and only requires reading",
             "timeout": 0,
             "showstderr": true
           }
         ],
+        "skills": ["python/classes_objects", "python/constructor"],
+        "solutions": ["stock.py"]
+      },
+      {
+        "title": "Creating the Stock Class",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify stock.py file exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create the stock.py file in the project directory"
+          },
+          {
+            "name": "Verify Stock class implementation",
+            "file": "verify2-2.sh",
+            "hint": "Make sure your Stock class contains __init__ and cost methods"
+          }
+        ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
           "python/constructor",
+          "python/function_definition"
+        ],
+        "solutions": ["stock.py"]
+      },
+      {
+        "title": "Creating Stock Objects",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify interactive Python use",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have run Python in interactive mode with stock.py"
+          }
+        ],
+        "skills": ["python/classes_objects", "python/function_definition"],
+        "solutions": ["stock.py"]
+      },
+      {
+        "title": "Working with Multiple Stock Objects",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify multiple stock objects",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you created a second Stock object for IBM"
+          }
+        ],
+        "skills": ["python/classes_objects", "python/strings"],
+        "solutions": ["stock.py"]
+      },
+      {
+        "title": "Enhancing the Stock Class",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify enhanced Stock class",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you added the display method to the Stock class"
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
           "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
+          "python/function_definition"
         ],
         "solutions": ["stock.py"]
       }
@@ -59,206 +115,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "定义一个简单对象",
-      "description": "在本实验中，你将回顾如何在 Python 中定义一个简单对象。",
-      "meta": {
-        "title": "在 Python 中定义简单对象",
-        "description": "通过本编程教程概述，学习如何在 Python 中定义简单对象。",
-        "keywords": "Python, 类定义, 对象创建, 面向对象编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "定义一个简单对象",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录和类定义",
-                "file": "verify1-1.sh",
-                "hint": "请在 '项目' 文件夹中创建'stock.py' 文件，并按要求定义一个类对象。"
-              }
-            ],
-            "solutions": ["stock.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Definir un objeto simple",
-      "description": "En este laboratorio, revisarás cómo definir un objeto simple en Python.",
-      "meta": {
-        "title": "Definiendo un objeto simple en Python",
-        "description": "Aprende cómo definir un objeto simple en Python con esta revisión de tutoriales de programación.",
-        "keywords": "python, definición de clase, creación de objeto, programación orientada a objetos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Definiendo un objeto simple",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la historia de Python y las definiciones de clase",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, cree el archivo'stock.py' en la carpeta 'proyecto' y defina un objeto de clase como se requiere."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Définir un objet simple",
-      "description": "Dans ce laboratoire, vous allez réviser la manière de définir un objet simple en Python.",
-      "meta": {
-        "title": "Définition d'un objet simple en Python",
-        "description": "Apprenez à définir un objet simple en Python avec cette présentation d'un tutoriel de programmation.",
-        "keywords": "python, définition de classe, création d'objet, programmation orientée objet"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Définir un objet simple",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python et les définitions de classes",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez créer le fichier'stock.py' dans le dossier 'projet' et définir un objet de classe comme requis."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Einen einfachen Gegenstand definieren",
-      "description": "In diesem Lab werden Sie überprüfen, wie man in Python einen einfachen Gegenstand definiert.",
-      "meta": {
-        "title": "Einen einfachen Gegenstand in Python definieren",
-        "description": "Lernen Sie mit diesem Programmierungstutorial-Überblick, wie man in Python einen einfachen Gegenstand definiert.",
-        "keywords": "Python, Klassendefinition, Objekterstellung, objektorientierte Programmierung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Einen einfachen Gegenstand definieren",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie die Python-Geschichte und die Klassendefinitionen",
-                "file": "verify1-1.sh",
-                "hint": "Erstellen Sie bitte die Datei'stock.py' im Ordner 'project' und definieren Sie ein Klassenobjekt wie erforderlich."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "簡単なオブジェクトを定義する",
-      "description": "この実験では、Pythonで簡単なオブジェクトを定義する方法を復習します。",
-      "meta": {
-        "title": "Pythonにおける簡単なオブジェクトの定義",
-        "description": "このプログラミングチュートリアルの概要で、Pythonで簡単なオブジェクトを定義する方法を学びましょう。",
-        "keywords": "python, クラス定義, オブジェクト作成, オブジェクト指向プログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "簡単なオブジェクトを定義する",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴とクラス定義を確認する",
-                "file": "verify1-1.sh",
-                "hint": "プロジェクトフォルダに'stock.py'ファイルを作成し、必要に応じてクラスオブジェクトを定義してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Определение простого объекта",
-      "description": "В этой лабораторной работе вы изучите, как определить простой объект в Python.",
-      "meta": {
-        "title": "Определение простого объекта в Python",
-        "description": "Изучите, как определить простой объект в Python с помощью этого обзора по программированию.",
-        "keywords": "python, определение класса, создание объекта, объектно-ориентированное программирование"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Определение простого объекта",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python и определения классов",
-                "file": "verify1-1.sh",
-                "hint": "Создайте файл'stock.py' в папке 'project' и определите объект класса по требованиям."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

@@ -13,77 +13,58 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Closing a Generator",
+        "title": "Understanding Generator Lifetime and Closure",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python Try Except Print Statements",
+            "name": "Verify follow.py modifications",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've properly modified the follow.py file to catch the GeneratorExit exception.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/iterators",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/while_loops",
-          "python/with_statement"
-        ],
+        "skills": ["python/catching_exceptions", "python/generators"],
         "solutions": ["step1_solution.py"]
       },
       {
-        "title": "Raising Exceptions",
+        "title": "Handling Exceptions in Generators",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Exception Handling",
+            "name": "Verify cofollow.py modifications",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Make sure you've properly modified the printer() function in cofollow.py to handle exceptions.",
             "timeout": 0,
             "showstderr": true
           }
         ],
+        "skills": ["python/catching_exceptions", "python/generators"],
+        "solutions": ["cofollow.py"]
+      },
+      {
+        "title": "Practical Applications of Generator Management",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify robust_follow.py creation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've created the robust_follow.py file with the required functionality."
+          },
+          {
+            "name": "Verify pipeline.py creation",
+            "file": "verify3-2.sh",
+            "hint": "Make sure you've created the pipeline.py file with the required functionality."
+          }
+        ],
         "skills": [
-          "python/booleans",
-          "python/build_in_functions",
           "python/catching_exceptions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/numeric_types",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/while_loops",
-          "python/with_statement"
+          "python/finally_block",
+          "python/generators"
         ],
         "solutions": ["cofollow.py"]
       }
@@ -125,273 +106,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "Python 中的 yield 语句管理",
-      "description": "在本实验中，你将学习如何管理 Python 中 yield 语句处发生的事情。",
-      "meta": {
-        "title": "精通 Python 中的 yield 语句管理",
-        "description": "探索 Python 中管理 yield 语句的复杂性，包括关闭生成器和处理异常。",
-        "keywords": "SEO, Python, 异常处理, 生成器, yield 语句"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "关闭生成器",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 的 Try Except Print 语句",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "引发异常",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 异常处理",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["cofollow.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Gestión de declaraciones yield en Python",
-      "description": "En este laboratorio, aprenderás a gestionar lo que sucede en las declaraciones yield en Python.",
-      "meta": {
-        "title": "Dominando la gestión de declaraciones yield en Python",
-        "description": "Explora las complejidades de la gestión de declaraciones yield en Python, incluyendo el cierre de generadores y el manejo de excepciones.",
-        "keywords": "seo, python, manejo de excepciones, generador, declaración yield"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Cerrando un generador",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar declaraciones Print de Try Except en Python",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Lanzando excepciones",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar el manejo de excepciones en Python",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Gestion des instructions yield en Python",
-      "description": "Dans ce laboratoire, vous allez apprendre à gérer ce qui se passe aux instructions yield en Python.",
-      "meta": {
-        "title": "Maîtriser la gestion des instructions yield en Python",
-        "description": "Explorez les subtilités de la gestion des instructions yield en Python, y compris la fermeture des générateurs et la gestion des exceptions.",
-        "keywords": "seo, python, gestion des exceptions, générateur, instruction yield"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Fermeture d'un générateur",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier les instructions d'impression Try Except en Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Lèvement d'exceptions",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier la gestion des exceptions en Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Verwaltung von Yield-Anweisungen in Python",
-      "description": "In diesem Lab lernen Sie, wie Sie in Python das verwalten, was bei den Yield-Anweisungen passiert.",
-      "meta": {
-        "title": "Meisterung der Verwaltung von Yield-Anweisungen in Python",
-        "description": "Erkunden Sie die Feinheiten der Verwaltung von Yield-Anweisungen in Python, einschließlich des Schließens von Generatoren und der Behandlung von Ausnahmen.",
-        "keywords": "SEO, Python, Ausnahmebehandlung, Generator, Yield-Anweisung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Beenden eines Generators",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Verifizieren von Python Try Except Print-Anweisungen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Ausnahmen auslösen",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Verifizieren der Python-Ausnahmebehandlung",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Pythonにおけるyieldステートメントの管理",
-      "description": "この実験では、Pythonにおけるyieldステートメントで何が起こるかを管理する方法を学びます。",
-      "meta": {
-        "title": "Pythonにおけるyieldステートメントの管理をマスターする",
-        "description": "Pythonにおけるyieldステートメントの管理の複雑さを探り、ジェネレータのクローズや例外の処理などを含めます。",
-        "keywords": "SEO, Python, 例外処理, ジェネレータ, yieldステートメント"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "ジェネレータのクローズ",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "Pythonのtry-except文とprint文を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "例外の発生",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonの例外処理を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Управление операторами yield в Python",
-      "description": "В этой лабораторной работе вы научитесь управлять происходящим при операторах yield в Python.",
-      "meta": {
-        "title": "Мастерство в управлении операторами yield в Python",
-        "description": "Изучите сложности управления операторами yield в Python, включая закрытие генераторов и обработку исключений.",
-        "keywords": "seo, python, обработка исключений, генератор, оператор yield"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Закрытие генератора",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить инструкции Python Try Except Print",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Генерация исключений",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить обработку исключений в Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

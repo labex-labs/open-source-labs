@@ -13,114 +13,83 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Creating a Simple Module",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Presence of Functions, Prints, and Classes",
+            "name": "Verify simplemod.py File Creation",
             "file": "verify1-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please make sure you've created the simplemod.py file with the correct content.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
+          "python/creating_modules",
           "python/function_definition",
-          "python/scope",
-          "python/tuples"
+          "python/variables_data_types"
         ],
         "solutions": ["simplemod.py"]
       },
       {
-        "title": "Module Loading and System Path",
+        "title": "Importing and Using Modules",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Import History",
+            "name": "Verify Module Import and Usage",
             "file": "verify2-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please make sure you've imported the simplemod module and used its components.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/importing_modules",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
+        "skills": ["python/importing_modules"]
       },
       {
-        "title": "Repeated Module Loading",
+        "title": "Understanding Module Loading Behavior",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python History Commands Usage",
+            "name": "Verify Module Loading Experiments",
             "file": "verify3-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please make sure you've completed all the module loading experiments.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/importing_modules",
-          "python/lists",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
+        "skills": ["python/importing_modules"]
       },
       {
-        "title": "from module import",
+        "title": "Using from module import Syntax",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Python History Imports",
+            "name": "Verify from module import Usage",
             "file": "verify4-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please make sure you've used the from module import syntax.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/comments",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/using_packages"
-        ]
+        "skills": ["python/importing_modules"]
       },
       {
-        "title": "Broken reload()",
+        "title": "Exploring Module Reloading Limitations",
         "text": "en/step5.md",
         "verify": [
           {
-            "name": "Verify Import and Use of simplemod Module",
+            "name": "Verify Module Reloading Exploration",
             "file": "verify5-1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "Please make sure you've completed the module reloading experiments.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
+        "skills": ["python/classes_objects", "python/importing_modules"]
       }
     ],
     "intro": {
@@ -150,470 +119,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "模块基础回顾",
-      "description": "在本实验中，你将学习如何在Python中创建、导入和使用模块。",
-      "meta": {
-        "title": "Python中的模块基础回顾",
-        "description": "探索Python中模块的基础知识，包括有效地创建、导入和使用模块。",
-        "keywords": "软件开发, Python, 编码, 模块, 编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证函数、打印语句和类的存在",
-                "file": "verify1-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ],
-            "solutions": ["simplemod.py"]
-          },
-          {
-            "title": "模块加载与系统路径",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python导入历史记录",
-                "file": "verify2-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "重复模块加载",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python历史命令的使用情况",
-                "file": "verify3-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "从模块导入",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证Python历史导入记录",
-                "file": "verify4-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          },
-          {
-            "title": "损坏的reload()",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证simplemod模块的导入和使用",
-                "file": "verify5-1.sh",
-                "hint": "请按照说明完成步骤。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Una revisión de los conceptos básicos de los módulos",
-      "description": "En este laboratorio, aprenderá sobre la creación, importación y uso de módulos en Python.",
-      "meta": {
-        "title": "Una revisión de los conceptos básicos de los módulos en Python",
-        "description": "Explora los fundamentos de los módulos en Python, incluyendo la creación, importación y uso efectivo de módulos.",
-        "keywords": "desarrollo de software, python, codificación, módulos, programación"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparación",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar la presencia de funciones, impresiones y clases",
-                "file": "verify1-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Carga de módulos y ruta del sistema",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de importación de Python",
-                "file": "verify2-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "Carga repetida de módulos",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar el uso de los comandos de historial de Python",
-                "file": "verify3-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "from módulo import",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar las importaciones del historial de Python",
-                "file": "verify4-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          },
-          {
-            "title": "reload() roto",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verificar la importación y el uso del módulo simplemod",
-                "file": "verify5-1.sh",
-                "hint": "Siga las instrucciones para completar los pasos."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Un examen des bases des modules",
-      "description": "Dans ce laboratoire, vous allez apprendre à créer, importer et utiliser des modules en Python.",
-      "meta": {
-        "title": "Un examen des bases des modules en Python",
-        "description": "Explorez les bases des modules en Python, y compris la création, l'importation et l'utilisation efficace de modules.",
-        "keywords": "développement logiciel, python, codage, modules, programmation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Préparation",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifiez la présence de fonctions, d'affichages et de classes",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Chargement de module et chemin du système",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'historique d'importation de Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "Chargement répété de module",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'utilisation des commandes historiques de Python",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "from module import",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifiez les importations historiques de Python",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          },
-          {
-            "title": "reload() défaillant",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifiez l'importation et l'utilisation du module simplemod",
-                "file": "verify5-1.sh",
-                "hint": "Veuillez suivre les instructions pour compléter les étapes."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Eine Übersicht über die Grundlagen von Modulen",
-      "description": "In diesem Lab lernen Sie, wie Sie in Python Module erstellen, importieren und verwenden.",
-      "meta": {
-        "title": "Eine Übersicht über die Grundlagen von Modulen in Python",
-        "description": "Erkunden Sie die Grundlagen von Modulen in Python, einschließlich der effektiven Erstellung, des Importierens und der Verwendung von Modulen.",
-        "keywords": "Softwareentwicklung, Python, Programmierung, Module, Coding"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vorbereitung",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie das Vorhandensein von Funktionen, Ausgaben und Klassen",
-                "file": "verify1-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Modulladen und Systempfad",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie die Python-Importgeschichte",
-                "file": "verify2-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Wiederholtes Modulladen",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie die Verwendung von Python-Historiebefehlen",
-                "file": "verify3-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "from module import",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie die Python-Historie-Imports",
-                "file": "verify4-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          },
-          {
-            "title": "Fehlerhafter reload()",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Überprüfen Sie das Importieren und Verwenden des simplemod-Moduls",
-                "file": "verify5-1.sh",
-                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "モジュールの基本点のレビュー",
-      "description": "この実験では、Pythonにおけるモジュールの作成、インポート、および使用方法について学びます。",
-      "meta": {
-        "title": "Pythonにおけるモジュールの基本点のレビュー",
-        "description": "Pythonにおけるモジュールの基本原理を探求し、モジュールの作成、インポート、および効果的な使用方法を学びましょう。",
-        "keywords": "ソフトウェア開発,Python,コーディング,モジュール,プログラミング"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "準備",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "関数、print文、クラスの存在を確認する",
-                "file": "verify1-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "モジュールの読み込みとシステムパス",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonのインポート履歴を確認する",
-                "file": "verify2-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "モジュールの繰り返し読み込み",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴コマンドの使用を確認する",
-                "file": "verify3-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "fromモジュールimport",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "Pythonの履歴インポートを確認する",
-                "file": "verify4-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          },
-          {
-            "title": "壊れたreload()",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "simplemodモジュールのインポートと使用を確認する",
-                "file": "verify5-1.sh",
-                "hint": "指示に従って手順を完了してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Обзор основных аспектов модулей",
-      "description": "В рамках данной лабораторной работы вы изучите создание, импорт и использование модулей в Python.",
-      "meta": {
-        "title": "Обзор основных аспектов модулей в Python",
-        "description": "Изучите основы работы с модулями в Python, включая создание, импорт и эффективное использование модулей.",
-        "keywords": "разработка программного обеспечения, Python, программирование, модули, кодинг"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Подготовка",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить наличие функций, выводов и классов",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Загрузка модуля и системный путь",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить историю импорта Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Повторная загрузка модуля",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить использование команд истории Python",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "from module import",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить импорты из истории Python",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          },
-          {
-            "title": "Недействующая функция reload()",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверить импорт и использование модуля simplemod",
-                "file": "verify5-1.sh",
-                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

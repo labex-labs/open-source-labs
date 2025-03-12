@@ -1,21 +1,49 @@
-# Dictionary/Class Growth
+# Dictionary Memory Allocation
 
-Python dictionaries (and classes) allow up to 5 values to be stored before their reserved memory doubles. Investigate by making a dictionary and adding a few more values to it:
+Similar to lists, Python dictionaries also allocate memory in chunks. Let's explore how memory allocation works with dictionaries.
+
+1. In the same Python shell (or open a new one if you closed it), create a dictionary representing a data record:
 
 ```python
->>> row = { 'route': '22', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354 }
->>> sys.getsizeof(row)
->>> sys.getsizeof(row)
-240
->>> row['a'] = 1
->>> sys.getsizeof(row)
-240
->>> row['b'] = 2
->>> sys.getsizeof(row)
-368
->>>
+import sys  # Import sys if you're starting a new session
+row = {'route': '22', 'date': '01/01/2001', 'daytype': 'U', 'rides': 7354}
 ```
 
-Does the memory go down if you delete the item you just added?
+2. Check the initial size of the dictionary:
 
-Food for thought: If you are creating large numbers of records, representing each record as a dictionary might not be the most efficient approach--you could be paying a heavy price for the convenience of having a dictionary. It might be better to consider the use of tuples, named tuples, or classes that define `__slots__`.
+```python
+sys.getsizeof(row)
+```
+
+You should see a value around `240` bytes.
+
+3. Now, add new key-value pairs to the dictionary and observe the memory allocation:
+
+```python
+row['a'] = 1
+sys.getsizeof(row)  # Size might remain the same
+
+row['b'] = 2
+sys.getsizeof(row)  # Size may increase
+```
+
+You'll notice that after adding certain number of items, the dictionary's size suddenly increases. This is because dictionaries, like lists, allocate memory in chunks to optimize performance.
+
+4. Let's try removing an item to see if the memory usage decreases:
+
+```python
+del row['b']
+sys.getsizeof(row)
+```
+
+Interestingly, removing an item doesn't typically reduce the memory allocation. This is because Python keeps the allocated memory to avoid reallocating if items are added again.
+
+**Memory Efficiency Considerations:**
+
+When working with large datasets where you need to create many records, using dictionaries for each record might not be the most memory-efficient approach. Here are some alternatives that consume less memory:
+
+- Tuples: Simple immutable sequences
+- Named tuples: Tuples with field names
+- Classes with `__slots__`: Classes that explicitly define attributes to avoid using a dictionary for instance variables
+
+These alternatives can significantly reduce memory usage when handling many records.

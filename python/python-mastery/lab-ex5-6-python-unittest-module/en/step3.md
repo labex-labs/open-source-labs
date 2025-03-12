@@ -1,29 +1,64 @@
-# Unit tests with expected errors
+# Testing for Exceptions
 
-Suppose you wanted to write a unit test that checks for an exception. Here is how you can do it:
+An important part of testing is checking that your code properly handles error conditions. The `unittest` module provides a way to test that specific exceptions are raised when expected.
+
+1. Open the `teststock.py` file and add the following test methods that check for exceptions:
 
 ```python
-class TestStock(unittest.TestCase):
-    ...
-    def test_bad_shares(self):
-        s = stock.Stock('GOOG', 100, 490.1)
-        with self.assertRaises(TypeError):
-             s.shares = '50'
-    ...
+def test_shares_type(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(TypeError):
+        s.shares = '50'
+
+def test_shares_value(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(ValueError):
+        s.shares = -50
+
+def test_price_type(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(TypeError):
+        s.price = '490.1'
+
+def test_price_value(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(ValueError):
+        s.price = -490.1
+
+def test_attribute_error(self):
+    s = stock.Stock('GOOG', 100, 490.1)
+    with self.assertRaises(AttributeError):
+        s.share = 100  # 'share' is incorrect, should be 'shares'
 ```
 
-Using this test as a guide, write unit tests for the following failure modes:
+Let's understand how these exception tests work:
 
-- Test that setting `shares` to a string raises a `TypeError`
-- Test that setting `shares` to a negative number raises a `ValueError`
-- Test that setting `price` to a string raises a `TypeError`
-- Test that setting `price` to a negative number raises a `ValueError`
-- Test that setting a non-existent attribute `share` raises an `AttributeError`
+- `with self.assertRaises(ExceptionType):` creates a context manager that tests if the code inside the `with` block raises the specified exception
+- If the expected exception is raised, the test passes
+- If no exception is raised or a different exception is raised, the test fails
 
-In total, you should have around a dozen unit tests when you're done.
+These tests verify that:
 
-**Important Note**
+- Setting `shares` to a string raises a `TypeError`
+- Setting `shares` to a negative number raises a `ValueError`
+- Setting `price` to a string raises a `TypeError`
+- Setting `price` to a negative number raises a `ValueError`
+- Attempting to set a non-existent attribute `share` raises an `AttributeError`
 
-For later use in the course, you will want to have a fully working `stock.py` and `teststock.py` file. Save your work in progress if you have to, but you are strongly encouraged to copy the code from `Solutions/5_6` if things are still broken at this point.
+2. Save the file and run all the tests:
 
-We're going to use the `teststock.py` file as a tool for improving the `Stock` code later. You'll want it on hand to make sure that the new code behaves the same way as the old code.
+```bash
+python3 teststock.py
+```
+
+You should now see output indicating that all 12 tests have passed:
+
+```
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK
+```
+
+The twelve dots represent all the tests you've written so far (7 from the previous step plus 5 new ones).

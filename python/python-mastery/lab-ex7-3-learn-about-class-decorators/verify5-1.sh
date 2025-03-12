@@ -1,9 +1,9 @@
-#!/bin/zsh
-
-cat /home/labex/project/structure.py | grep "vars"
-cat /home/labex/project/structure.py | grep "Validator"
-cat /home/labex/project/structure.py | grep "setattr"
-cat /home/labex/project/structure.py | grep "validated"
-cat /home/labex/project/structure.py | grep "getattr"
-cat /home/labex/project/structure.py | grep "lambda"
-cat /home/labex/project/structure.py | grep "callable"
+#!/bin/bash
+cd /home/labex/project
+if grep -q "callable" structure.py \
+  && grep -q "__annotations__" structure.py \
+  && grep -q "nshares: PositiveInteger" stock.py; then
+  exit 0
+else
+  exit 1
+fi

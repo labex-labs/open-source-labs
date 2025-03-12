@@ -1,6 +1,8 @@
-#!/bin/zsh
+#!/bin/bash
 
-ls /home/labex/project/reader.py | grep "map"
-cat ~/.python_history | grep "list"
-cat ~/.python_history | grep "lambda"
-cat ~/.python_history | grep "map"
+# Check if the convert_csv function exists in reader.py
+if grep -q "def convert_csv" /home/labex/project/reader.py; then
+  exit 0
+else
+  exit 1
+fi

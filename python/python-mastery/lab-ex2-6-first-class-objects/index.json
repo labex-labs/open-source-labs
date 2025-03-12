@@ -13,162 +13,78 @@
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "verified": true,
   "details": {
     "steps": [
       {
-        "title": "First-class Data",
+        "title": "Understanding First-Class Objects in Python",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Python CSV, Open, Next, Zip, and Dict Usage",
+            "name": "Verify Python CSV operations",
             "file": "verify1-1.sh",
-            "hint": "Please run the python code in step 1.",
+            "hint": "Make sure you've run the Python commands to explore first-class objects",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
           "python/data_collections",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/inheritance",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
+          "python/function_definition",
+          "python/type_conversion"
         ]
       },
       {
-        "title": "Making a Parsing Utility Function",
+        "title": "Creating a Utility Function for CSV Processing",
         "text": "en/step2.md",
         "verify": [
           {
-            "name": "Verify Python Project Files and History",
+            "name": "Verify reader.py implementation",
             "file": "verify2-1.sh",
-            "hint": "Please create the 'reader.py' file and implement the 'read_csv_as_dicts()' function.",
+            "hint": "Make sure you've created reader.py with the read_csv_as_dicts function",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
-          "python/comments",
           "python/data_collections",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/file_operations",
+          "python/type_conversion"
         ],
         "solutions": ["reader.py"]
       },
       {
-        "title": "Memory Revisited",
+        "title": "Exploring Python's Memory Model",
         "text": "en/step3.md",
         "verify": [
           {
-            "name": "Verify Python History for Specific Commands",
+            "name": "Verify memory model exploration",
             "file": "verify3-1.sh",
-            "hint": "Please run the python code in step 3.",
+            "hint": "Make sure you've run the Python commands to explore memory usage",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/lists",
-          "python/os_system",
-          "python/python_shell",
-          "python/sets",
-          "python/standard_libraries"
-        ]
+        "skills": ["python/importing_modules", "python/scope", "python/strings"]
       },
       {
-        "title": "Special Challenge Project",
+        "title": "Column-Oriented Data Storage",
         "text": "en/step4.md",
         "verify": [
           {
-            "name": "Verify Use of Collections, defaultdict, and append",
+            "name": "Verify column-oriented reader implementation",
             "file": "verify4-1.sh",
-            "hint": "Please implement 'read_csv_as_columns()' function in 'colreader.py'",
+            "hint": "Make sure you've created colreader.py with the required classes and functions",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "python/build_in_functions",
           "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
           "python/data_collections",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/os_system",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
+          "python/file_operations"
         ],
         "solutions": ["colreader.py"]
-      },
-      {
-        "title": "Deep Thought",
-        "text": "en/step5.md",
-        "verify": [
-          {
-            "name": "Verify Python CSV File Reading",
-            "file": "verify5-1.sh",
-            "hint": "Please run the python code in step 5.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/dictionaries",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
       }
     ],
     "intro": {
@@ -208,471 +124,5 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "zh",
-      "title": "探索 Python 的一等对象内存模型",
-      "description": "在本实验中，你将通过将读取 CSV 数据的函数泛化到一个单独的文件中，来探索一等对象的概念和 Python 的内存模型。",
-      "meta": {
-        "title": "掌握 Python 的一等对象 | 内存模型",
-        "description": "通过这个全面的编程教程，探索拥有一等对象的强大功能，并更好地理解 Python 的内存模型。",
-        "keywords": "Python, 一等对象, 内存模型, 数据处理, CSV, 类型转换"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "一等数据",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 的 CSV、Open、Next、Zip 和 Dict 的用法",
-                "file": "verify1-1.sh",
-                "hint": "请运行步骤 1 中的 Python 代码。"
-              }
-            ]
-          },
-          {
-            "title": "创建一个解析实用函数",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 项目文件和历史记录",
-                "file": "verify2-1.sh",
-                "hint": "请创建'reader.py' 文件并实现'read_csv_as_dicts()' 函数。"
-              }
-            ],
-            "solutions": ["reader.py"]
-          },
-          {
-            "title": "重温内存",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证特定命令的 Python 历史记录",
-                "file": "verify3-1.sh",
-                "hint": "请运行步骤 3 中的 Python 代码。"
-              }
-            ]
-          },
-          {
-            "title": "特殊挑战项目",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证对集合、defaultdict 和 append 的使用",
-                "file": "verify4-1.sh",
-                "hint": "请在 'colreader.py' 中实现'read_csv_as_columns()' 函数"
-              }
-            ],
-            "solutions": ["colreader.py"]
-          },
-          {
-            "title": "深度思考",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证 Python CSV 文件读取",
-                "file": "verify5-1.sh",
-                "hint": "请运行步骤 5 中的 Python 代码。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    },
-    {
-      "lang": "es",
-      "title": "Explorando el modelo de memoria de los objetos de primera clase en Python",
-      "description": "En este laboratorio, explorarás el concepto de objetos de primera clase y el modelo de memoria de Python al generalizar funciones para leer datos CSV en un archivo separado.",
-      "meta": {
-        "title": "Dominando los objetos de primera clase en Python | Modelo de memoria",
-        "description": "Descubre el poder de tener objetos de primera clase y comprende mejor el modelo de memoria de Python con este completo tutorial de programación.",
-        "keywords": "Python, objetos de primera clase, modelo de memoria, procesamiento de datos, CSV, conversión de tipos"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Datos de primera clase",
-            "text": "es/step1.md",
-            "verify": [
-              {
-                "name": "Verificar el uso de CSV, Open, Next, Zip y Dict en Python",
-                "file": "verify1-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 1."
-              }
-            ]
-          },
-          {
-            "title": "Creando una función de utilidad de análisis",
-            "text": "es/step2.md",
-            "verify": [
-              {
-                "name": "Verificar archivos y historial del proyecto de Python",
-                "file": "verify2-1.sh",
-                "hint": "Por favor, cree el archivo'reader.py' e implemente la función'read_csv_as_dicts()'."
-              }
-            ]
-          },
-          {
-            "title": "La memoria revisada",
-            "text": "es/step3.md",
-            "verify": [
-              {
-                "name": "Verificar el historial de Python para comandos específicos",
-                "file": "verify3-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 3."
-              }
-            ]
-          },
-          {
-            "title": "Proyecto de desafío especial",
-            "text": "es/step4.md",
-            "verify": [
-              {
-                "name": "Verificar el uso de Collections, defaultdict y append",
-                "file": "verify4-1.sh",
-                "hint": "Por favor, implemente la función'read_csv_as_columns()' en 'colreader.py'"
-              }
-            ]
-          },
-          {
-            "title": "Pensamiento profundo",
-            "text": "es/step5.md",
-            "verify": [
-              {
-                "name": "Verificar la lectura de archivos CSV de Python",
-                "file": "verify5-1.sh",
-                "hint": "Por favor, ejecute el código de Python en el paso 5."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "es/intro.md",
-          "title": "Introducción"
-        },
-        "finish": {
-          "text": "es/finish.md",
-          "title": "Resumen"
-        }
-      }
-    },
-    {
-      "lang": "fr",
-      "title": "Explorer le modèle de mémoire des objets de première classe en Python",
-      "description": "Dans ce laboratoire, vous allez explorer le concept d'objets de première classe et le modèle de mémoire de Python en généralisant des fonctions pour lire des données CSV dans un fichier séparé.",
-      "meta": {
-        "title": "Maîtriser les objets de première classe en Python | Modèle de mémoire",
-        "description": "Explorez le pouvoir des objets de première classe et comprenez mieux le modèle de mémoire de Python avec ce tutoriel de programmation complet.",
-        "keywords": "Python, objets de première classe, modèle de mémoire, traitement de données, CSV, conversion de type"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Données de première classe",
-            "text": "fr/step1.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation de CSV, Open, Next, Zip et Dict en Python",
-                "file": "verify1-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 1."
-              }
-            ]
-          },
-          {
-            "title": "Création d'une fonction utilitaire d'analyse",
-            "text": "fr/step2.md",
-            "verify": [
-              {
-                "name": "Vérifier les fichiers et l'historique du projet Python",
-                "file": "verify2-1.sh",
-                "hint": "Veuillez créer le fichier'reader.py' et implémenter la fonction'read_csv_as_dicts()'."
-              }
-            ]
-          },
-          {
-            "title": "Revoir la mémoire",
-            "text": "fr/step3.md",
-            "verify": [
-              {
-                "name": "Vérifier l'historique Python pour des commandes spécifiques",
-                "file": "verify3-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 3."
-              }
-            ]
-          },
-          {
-            "title": "Projet de défi spécial",
-            "text": "fr/step4.md",
-            "verify": [
-              {
-                "name": "Vérifier l'utilisation de Collections, defaultdict et append",
-                "file": "verify4-1.sh",
-                "hint": "Veuillez implémenter la fonction'read_csv_as_columns()' dans 'colreader.py'"
-              }
-            ]
-          },
-          {
-            "title": "Pensée profonde",
-            "text": "fr/step5.md",
-            "verify": [
-              {
-                "name": "Vérifier la lecture de fichiers CSV en Python",
-                "file": "verify5-1.sh",
-                "hint": "Veuillez exécuter le code Python de l'étape 5."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "fr/intro.md",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "fr/finish.md",
-          "title": "Résumé"
-        }
-      }
-    },
-    {
-      "lang": "de",
-      "title": "Python's Erstklassenobjekte und das Arbeitsspeichermodell erkunden",
-      "description": "In diesem Lab werden Sie das Konzept von Erstklassenobjekten und das Arbeitsspeichermodell von Python durch die Verallgemeinerung von Funktionen zum Lesen von CSV-Daten in eine separate Datei erkunden.",
-      "meta": {
-        "title": "Python's Erstklassenobjekte meistern | Arbeitsspeichermodell",
-        "description": "Entdecken Sie die Macht von Erstklassenobjekten und verstehen Sie das Arbeitsspeichermodell von Python besser mit diesem umfassenden Programmier-Tutorial.",
-        "keywords": "Python, Erstklassenobjekte, Arbeitsspeichermodell, Datenverarbeitung, CSV, Typumwandlung"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Erstklasse Daten",
-            "text": "de/step1.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Verwendung von Python CSV, Open, Next, Zip und Dict",
-                "file": "verify1-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 1 aus."
-              }
-            ]
-          },
-          {
-            "title": "Erstellung einer Parsing-Hilfsfunktion",
-            "text": "de/step2.md",
-            "verify": [
-              {
-                "name": "Überprüfen von Python-Projektdateien und -Verlauf",
-                "file": "verify2-1.sh",
-                "hint": "Bitte erstellen Sie die Datei'reader.py' und implementieren Sie die Funktion'read_csv_as_dicts()'."
-              }
-            ]
-          },
-          {
-            "title": "Das Arbeitsspeicherkonzept erneut betrachten",
-            "text": "de/step3.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Python-Historie für bestimmte Befehle",
-                "file": "verify3-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 3 aus."
-              }
-            ]
-          },
-          {
-            "title": "Speziales Herausforderungsprojekt",
-            "text": "de/step4.md",
-            "verify": [
-              {
-                "name": "Überprüfen der Verwendung von Collections, defaultdict und append",
-                "file": "verify4-1.sh",
-                "hint": "Bitte implementieren Sie die Funktion'read_csv_as_columns()' in 'colreader.py'"
-              }
-            ]
-          },
-          {
-            "title": "Tiefes Denken",
-            "text": "de/step5.md",
-            "verify": [
-              {
-                "name": "Überprüfen des Lesens von Python-CSV-Dateien",
-                "file": "verify5-1.sh",
-                "hint": "Bitte führen Sie den Python-Code in Schritt 5 aus."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "de/intro.md",
-          "title": "Einführung"
-        },
-        "finish": {
-          "text": "de/finish.md",
-          "title": "Zusammenfassung"
-        }
-      }
-    },
-    {
-      "lang": "ja",
-      "title": "Pythonの一等公民オブジェクトのメモリモデルを探る",
-      "description": "この実験では、CSVデータを読み取る汎用関数を別のファイルにまとめることで、一等公民オブジェクトの概念とPythonのメモリモデルを探ります。",
-      "meta": {
-        "title": "Pythonの一等公民オブジェクトをマスターする | メモリモデル",
-        "description": "この包括的なプログラミングチュートリアルで、一等公民オブジェクトの力を探り、Pythonのメモリモデルをより深く理解しましょう。",
-        "keywords": "Python, 一等公民オブジェクト, メモリモデル, データ処理, CSV, 型変換"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "一等公民データ",
-            "text": "ja/step1.md",
-            "verify": [
-              {
-                "name": "PythonのCSV、Open、Next、Zip、および辞書の使用を確認する",
-                "file": "verify1-1.sh",
-                "hint": "ステップ1のPythonコードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "解析ユーティリティ関数の作成",
-            "text": "ja/step2.md",
-            "verify": [
-              {
-                "name": "Pythonプロジェクトファイルと履歴を確認する",
-                "file": "verify2-1.sh",
-                "hint": "「reader.py」ファイルを作成し、「read_csv_as_dicts()」関数を実装してください。"
-              }
-            ]
-          },
-          {
-            "title": "メモリの再訪",
-            "text": "ja/step3.md",
-            "verify": [
-              {
-                "name": "特定のコマンドのPython履歴を確認する",
-                "file": "verify3-1.sh",
-                "hint": "ステップ3のPythonコードを実行してください。"
-              }
-            ]
-          },
-          {
-            "title": "特別なチャレンジプロジェクト",
-            "text": "ja/step4.md",
-            "verify": [
-              {
-                "name": "コレクション、defaultdict、およびappendの使用を確認する",
-                "file": "verify4-1.sh",
-                "hint": "「colreader.py」に「read_csv_as_columns()」関数を実装してください。"
-              }
-            ]
-          },
-          {
-            "title": "深い思考",
-            "text": "ja/step5.md",
-            "verify": [
-              {
-                "name": "PythonのCSVファイル読み取りを確認する",
-                "file": "verify5-1.sh",
-                "hint": "ステップ5のPythonコードを実行してください。"
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ja/intro.md",
-          "title": "はじめに"
-        },
-        "finish": {
-          "text": "ja/finish.md",
-          "title": "まとめ"
-        }
-      }
-    },
-    {
-      "lang": "ru",
-      "title": "Исследование модели памяти первоклассовых объектов в Python",
-      "description": "В этой лабораторной работе вы изучите концепцию первоклассовых объектов и модель памяти Python, обобщая функции для чтения данных из CSV в отдельный файл.",
-      "meta": {
-        "title": "Мастерство в использовании первоклассовых объектов в Python | Модель памяти",
-        "description": "Исследуйте мощь первоклассовых объектов и лучше понять модель памяти Python с помощью этого полноценного программистского руководства.",
-        "keywords": "Python, первоклассовые объекты, модель памяти, обработка данных, CSV, преобразование типов"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Данные первого класса",
-            "text": "ru/step1.md",
-            "verify": [
-              {
-                "name": "Проверить использование CSV, Open, Next, Zip и Dict в Python",
-                "file": "verify1-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 1."
-              }
-            ]
-          },
-          {
-            "title": "Создание функции-утилиты для разбора",
-            "text": "ru/step2.md",
-            "verify": [
-              {
-                "name": "Проверить файлы проекта и историю в Python",
-                "file": "verify2-1.sh",
-                "hint": "Пожалуйста, создайте файл'reader.py' и реализуйте функцию'read_csv_as_dicts()'."
-              }
-            ]
-          },
-          {
-            "title": "Повторное рассмотрение памяти",
-            "text": "ru/step3.md",
-            "verify": [
-              {
-                "name": "Проверить историю Python для конкретных команд",
-                "file": "verify3-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 3."
-              }
-            ]
-          },
-          {
-            "title": "Особый проект-вызов",
-            "text": "ru/step4.md",
-            "verify": [
-              {
-                "name": "Проверить использование Collections, defaultdict и append",
-                "file": "verify4-1.sh",
-                "hint": "Пожалуйста, реализуйте функцию'read_csv_as_columns()' в 'colreader.py'"
-              }
-            ]
-          },
-          {
-            "title": "Глубокое мышление",
-            "text": "ru/step5.md",
-            "verify": [
-              {
-                "name": "Проверить чтение файла CSV в Python",
-                "file": "verify5-1.sh",
-                "hint": "Пожалуйста, запустите код на Python в шаге 5."
-              }
-            ]
-          }
-        ],
-        "intro": {
-          "text": "ru/intro.md",
-          "title": "Введение"
-        },
-        "finish": {
-          "text": "ru/finish.md",
-          "title": "Резюме"
-        }
-      }
-    }
-  ]
+  }
 }

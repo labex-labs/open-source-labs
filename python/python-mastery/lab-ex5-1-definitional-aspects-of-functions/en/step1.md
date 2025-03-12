@@ -1,20 +1,40 @@
-# Preparation
+# Understanding the Context
 
-In Exercise 2.6 you wrote a `reader.py` module that had a function for reading a CSV into a list of dictionaries. For example:
+In earlier exercises, you might have worked with code for reading CSV files into different data structures. This code typically transforms raw text data into more useful Python objects like dictionaries or class instances.
 
-```python
->>> import reader
->>> port = reader.read_csv_as_dicts('portfolio.csv', [str,int,float])
->>>
-```
-
-We later expanded to that code to work with instances in Exercise 3.3:
+The typical pattern for reading CSV files often looks like this:
 
 ```python
->>> import reader
->>> from stock import Stock
->>> port = reader.read_csv_as_instances('portfolio.csv', Stock)
->>>
+import csv
+
+def read_csv_as_dicts(filename, types):
+    records = []
+    with open(filename) as file:
+        rows = csv.reader(file)
+        headers = next(rows)
+        for row in rows:
+            record = { name: func(val)
+                       for name, func, val in zip(headers, types, row) }
+            records.append(record)
+    return records
 ```
 
-Eventually the code was refactored into a collection of classes involving inheritance in Exercise 3.7. However, the code has become rather complex and convoluted.
+This function reads a CSV file and converts each row into a dictionary, applying type conversions using the functions provided in the `types` list.
+
+A similar function might read data into class instances:
+
+```python
+def read_csv_as_instances(filename, cls):
+    records = []
+    with open(filename) as file:
+        rows = csv.reader(file)
+        headers = next(rows)
+        for row in rows:
+            record = cls.from_row(row)
+            records.append(record)
+    return records
+```
+
+In this lab, we'll refactor these functions to make them more flexible and robust, while also exploring Python's type hinting system.
+
+Let's start by creating a `reader.py` file with these initial functions and making sure they work properly.

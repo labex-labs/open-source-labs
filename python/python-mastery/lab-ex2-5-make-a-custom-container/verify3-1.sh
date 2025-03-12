@@ -1,6 +1,2 @@
-#!/bin/zsh
-
-cat /home/labex/project/readrides.py | grep 'csv'
-cat /home/labex/project/readrides.py | grep 'open'
-cat /home/labex/project/readrides.py | grep 'append'
-cat ~/.python_history | grep "get_traced_memory"
+#!/bin/bash
+grep -E "read_rides_as_columns|tracemalloc" ~/project/readrides.py && echo "Success!" || echo "Couldn't find the read_rides_as_columns function or tracemalloc in readrides.py."

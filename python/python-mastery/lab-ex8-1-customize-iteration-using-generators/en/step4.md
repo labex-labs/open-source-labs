@@ -1,19 +1,39 @@
-# Monitoring a streaming data source
+# Creating a Generator for Streaming Data
 
-Generators can also be a useful way to simply produce a stream of data. In this part, we'll explore this idea by writing a generator to watch a log file. To start, follow the next instructions carefully.
+Let's apply what we've learned about generators to a real-world problem: monitoring a streaming data source. We'll create a generator that watches a log file and yields new lines as they're added.
 
-The program `stocksim.py` is a program that simulates stock market data. As output, the program constantly writes real-time data to a file `stocklog.csv`. In a command window (not IDLE) go into the \`\` directory and run this program:
+## Setting Up the Data Source
 
-    % python3 stocksim.py
+First, let's run a simulation program that generates stock market data:
 
-If you are on Windows, just locate the `stocksim.py` program and double-click on it to run it. Now, forget about this program (just let it run). Again, just let this program run in the background---it will run for several hours (you shouldn't need to worry about it).
+1. Open a new terminal in the WebIDE
 
-Once the above program is running, let's write a little program to open the file, seek to the end, and watch for new output. Create a file `follow.py` and put this code in it:
+2. Run the stock simulation program:
+
+```bash
+cd ~/project
+python3 stocksim.py
+```
+
+This program will generate stock market data and write it to a file called `stocklog.csv` in the current directory. Let it run in the background while we work on the monitoring code.
+
+## Creating a Simple File Monitor
+
+Now, let's create a program that monitors the `stocklog.csv` file and displays any price changes that are negative:
+
+1. Create a new file called `follow.py` in the WebIDE:
+
+```bash
+cd ~/project
+```
+
+2. Add the following code to `follow.py`:
 
 ```python
 # follow.py
 import os
 import time
+
 f = open('stocklog.csv')
 f.seek(0, os.SEEK_END)   # Move file pointer 0 bytes from end of file
 
@@ -30,33 +50,68 @@ while True:
         print('%10s %10.2f %10.2f' % (name, price, change))
 ```
 
-If you run the program, you'll see a real-time stock ticker. Under the covers, this code is kind of like the Unix `tail -f` command that's used to watch a log file.
+3. Save the file and run it:
 
-**Note:** The use of the `readline()` method in this example is somewhat unusual in that it is not the usual way of reading lines from a file (normally you would just use a `for`-loop). However, in this case, we are using it to repeatedly probe the end of the file to see if more data has been added (`readline()` will either return new data or an empty string).
-
-If you look at the code carefully, the first part of the code is producing lines of data whereas the statements at the end of the `while` loop are consuming the data. A major feature of generator functions is that you can move all of the data production code into a reusable function.
-
-Modify the code so that the file-reading is performed by a generator function `follow(filename)`. Make it so the following code works:
-
-```python
->>> for line in follow('stocklog.csv'):
-          print(line, end='')
-
-... Should see lines of output produced here ...
+```bash
+python3 follow.py
 ```
 
-Modify the stock ticker code so that it looks like this:
+You should see output showing stocks with negative price changes, something like:
 
-```python
-for line in follow('stocklog.csv'):
-    fields = line.split(',')
-    name = fields[0].strip('"')
-    price = float(fields[1])
-    change = float(fields[4])
-    if change < 0:
-        print('%10s %10.2f %10.2f' % (name, price, change))
+```
+      AAPL     148.24      -1.76
+      GOOG    2498.45      -1.55
 ```
 
-**Discussion**
+Press `Ctrl+C` to stop the program.
 
-Something very powerful just happened here. You moved an interesting iteration pattern (reading lines at the end of a file) into its own little function. The `follow()` function is now this completely general purpose utility that you can use in any program. For example, you could use it to watch server logs, debugging logs, and other similar data sources. That's kind of cool.
+## Converting to a Generator Function
+
+Now, let's refactor our code to use a generator function. This will make the code more reusable and modular:
+
+1. Open `follow.py` again and modify it:
+
+```python
+# follow.py
+import os
+import time
+
+def follow(filename):
+    """
+    Generator function that yields new lines in a file as they are added.
+    Similar to the 'tail -f' Unix command.
+    """
+    f = open(filename)
+    f.seek(0, os.SEEK_END)   # Move to the end of the file
+
+    while True:
+        line = f.readline()
+        if line == '':
+            time.sleep(0.1)   # Sleep briefly and retry
+            continue
+        yield line
+
+# Example usage - monitor stocks with negative price changes
+if __name__ == '__main__':
+    for line in follow('stocklog.csv'):
+        fields = line.split(',')
+        name = fields[0].strip('"')
+        price = float(fields[1])
+        change = float(fields[4])
+        if change < 0:
+            print('%10s %10.2f %10.2f' % (name, price, change))
+```
+
+2. Save the file and run it again:
+
+```bash
+python3 follow.py
+```
+
+The output should be the same as before, but now the file monitoring logic is neatly encapsulated in a generator function that can be reused in other contexts.
+
+## Understanding the Power of Generators
+
+Notice how we've taken a pattern of reading from a file and turned it into a reusable generator function. The `follow()` function can now be used in any program that needs to monitor a file, not just for stock data.
+
+For example, you could use it to monitor server logs, application logs, or any other file that gets updated over time. This demonstrates the power of generators for handling streaming data sources in a clean, modular way.

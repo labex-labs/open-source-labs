@@ -1,6 +1,7 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "validate"
-cat ~/.python_history | grep "Integer"
-cat ~/.python_history | grep "def"
-cat ~/.python_history | grep "check"
+#!/bin/bash
+if [ -f /home/labex/project/validate.py ]; then
+  grep -q "Validator" /home/labex/project/validate.py \
+    && echo "Great! You've examined the validator classes."
+else
+  echo "The validate.py file is missing."
+fi

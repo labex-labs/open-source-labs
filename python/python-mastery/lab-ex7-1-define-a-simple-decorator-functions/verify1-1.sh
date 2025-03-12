@@ -1,8 +1,14 @@
-#!/bin/zsh
-
-cat /home/labex/project/logcall.py | grep "print"
-cat /home/labex/project/validate.py | grep "__name__"
-cat /home/labex/project/validate.py | grep "return"
-cat /home/labex/project/sample.py | grep -E "@.*\logged"
-cat /home/labex/project/sample.py | grep "def"
-cat /home/labex/project/sample.py | grep "return"
+#!/bin/bash
+if [ ! -f /home/labex/project/logcall.py ]; then
+  echo "logcall.py file not found"
+  exit 1
+fi
+if ! grep -q "def logged" /home/labex/project/logcall.py; then
+  echo "logged function not found in logcall.py"
+  exit 1
+fi
+if ! grep -q "wrapper" /home/labex/project/logcall.py; then
+  echo "wrapper function not found in logcall.py"
+  exit 1
+fi
+exit 0

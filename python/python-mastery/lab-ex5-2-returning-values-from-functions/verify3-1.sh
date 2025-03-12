@@ -1,8 +1,6 @@
-#!/bin/zsh
-
-cat ~/.python_history | grep "time"
-cat ~/.python_history | grep "def"
-cat ~/.python_history | grep "threading"
-cat ~/.python_history | grep "start"
-cat ~/.python_history | grep "concurrent"
-cat ~/.python_history | grep "ThreadPoolExecutor"
+#!/bin/bash
+if grep -q "ThreadPoolExecutor" /home/labex/project/futures_demo.py && grep -q "future.result" /home/labex/project/futures_demo.py; then
+  exit 0
+else
+  exit 1
+fi

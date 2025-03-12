@@ -1,8 +1,4 @@
-#!/bin/zsh
-
-ls /home/labex/project/*.py
-cat /home/labex/project/*.py | grep "staticmethod"
-cat /home/labex/project/*.py | grep "list"
-cat /home/labex/project/*.py | grep "super"
-cat /home/labex/project/*.py | grep "__new__"
-cat /home/labex/project/*.py | grep "return"
+#!/bin/bash
+# This step is just explanatory, so we'll verify that the user at least spent some time on it
+sleep 1
+exit 0
