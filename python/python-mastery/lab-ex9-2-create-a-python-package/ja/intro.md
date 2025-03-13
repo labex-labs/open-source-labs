@@ -1,9 +1,5 @@
-# はじめに
+# Introduction
 
-**目的**：
+In this lab, you will learn how to create and organize a Python package. Python packages are a great way to structure your code, making it more modular, reusable, and maintainable.
 
-- Pythonパッケージを作成する方法を学ぶ
-
-**注意**
-
-この実験では主にファイルシステム上のファイルをコピーする作業が主で、コーディングはあまり必要ありません。
+The objectives of this lab are to understand what a Python package is, create a basic package structure, organize related Python modules into a cohesive package, and update import statements to work with the new package structure.
