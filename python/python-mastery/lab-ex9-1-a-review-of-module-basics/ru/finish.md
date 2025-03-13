@@ -1,5 +1,5 @@
-# Summary
+# Резюме
 
-In this lab, you have learned the fundamentals of working with modules in Python. You've learned how to create a Python module as a `.py` file with variables, functions, and classes, and how to import modules using the `import` statement. You also understand that Python loads modules only once per interpreter session and can use `importlib.reload()` to force reloading.
+В этом практическом занятии вы изучили основы работы с модулями в Python. Вы узнали, как создать модуль Python в виде файла `.py` с переменными, функциями и классами, а также как импортировать модули с использованием оператора `import`. Вы также понимаете, что Python загружает модули только один раз за сессию интерпретатора и что можно использовать функцию `importlib.reload()` для принудительной перезагрузки.
 
-Moreover, you've explored the `sys.modules` dictionary for tracking loaded modules, used the `from module import` syntax to import specific components, and grasped the limitations of module reloading, especially with classes. These concepts are the foundation for organizing Python code into reusable components, which are essential for maintaining code structure and promoting reusability in larger applications.
+Кроме того, вы исследовали словарь `sys.modules` для загрузки модулей, использовали синтаксис `from module import` для импорта компонентов и поняли ограничения перезагрузки модулей, особенно в отношении классов. Эти концепции являются основой для организации кода Python в переиспользуемые компоненты, что необходимо для поддержания структуры кода и повышения повторного использования в более крупных приложениях.

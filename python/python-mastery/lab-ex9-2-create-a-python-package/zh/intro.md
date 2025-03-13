@@ -1,5 +1,5 @@
-# Introduction
+# 简介
 
-In this lab, you will learn how to create and organize a Python package. Python packages are a great way to structure your code, making it more modular, reusable, and maintainable.
+在这个实验中，你将学习如何创建和组织一个 Python 包。Python 包是一种很好的代码组织方式，它能让代码更具模块化、可复用性和可维护性。
 
-The objectives of this lab are to understand what a Python package is, create a basic package structure, organize related Python modules into a cohesive package, and update import statements to work with the new package structure.
+本实验的目标是让你理解什么是 Python 包，创建一个基本的包结构，将相关的 Python 模块组织成一个连贯的包，并更新导入语句以适应新的包结构。

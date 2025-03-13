@@ -33,7 +33,7 @@ Yow!
 
 En la primera línea, accedemos a la variable `x` definida en el módulo `simplemod`. En la segunda línea, llamamos a la función `foo` del módulo `simplemod`. En la tercera y cuarta línea, creamos una instancia de la clase `Spam` definida en el módulo `simplemod` y llamamos a su método `yow`.
 
-5. A veces, es posible que encuentres un `ImportError` cuando intentas importar un módulo. Este error se produce cuando Python no puede encontrar el módulo que estás intentando importar. Para averiguar dónde Python está buscando los módulos, puedes examinar la variable `sys.path`. La variable `sys.path` es una lista de directorios que Python busca cuando está buscando módulos. Escribe los siguientes comandos en el intérprete de Python:
+5. A veces, puedes encontrar un `ImportError` cuando intentas importar un módulo. Este error ocurre cuando Python no puede encontrar el módulo que estás intentando importar. Para averiguar dónde Python está buscando los módulos, puedes examinar la variable `sys.path`. La variable `sys.path` es una lista de directorios que Python busca cuando está buscando módulos. Escribe los siguientes comandos en el intérprete de Python:
 
 ```python
 >>> import sys

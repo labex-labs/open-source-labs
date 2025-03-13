@@ -1,16 +1,16 @@
-# Understanding Module Loading Behavior
+# Verständnis des Modulladeverhaltens
 
-In Python, the way modules are loaded has some interesting characteristics. In this step, we'll explore these behaviors to understand how Python manages module loading.
+In Python hat die Art und Weise, wie Module geladen werden, einige interessante Eigenschaften. In diesem Schritt werden wir diese Verhaltensweisen untersuchen, um zu verstehen, wie Python das Laden von Modulen verwaltet.
 
-1. First, let's see what happens when we try to import a module again within the same Python interpreter session. When you start a Python interpreter, it's like opening a workspace where you can run Python code. Once you've imported a module, importing it again might seem like it would reload the module, but that's not the case.
+1. Zunächst sehen wir uns an, was passiert, wenn wir versuchen, ein Modul erneut innerhalb derselben Python-Interpreter-Sitzung zu importieren. Wenn Sie einen Python-Interpreter starten, ist es wie das Öffnen eines Arbeitsbereichs, in dem Sie Python-Code ausführen können. Nachdem Sie ein Modul importiert haben, könnte es so aussehen, als würde das erneute Importieren des Moduls es neu laden, aber das ist nicht der Fall.
 
 ```python
 >>> import simplemod
 ```
 
-Notice that this time you do not see the "Loaded simplemod" output. This is because **Python only loads a module once** per interpreter session. Subsequent `import` statements do not reload the module. Python remembers that it has already loaded the module, so it doesn't go through the process of loading it again.
+Beachten Sie, dass Sie diesmal die Ausgabe "Loaded simplemod" nicht sehen. Dies liegt daran, dass **Python ein Modul pro Interpreter-Sitzung nur einmal lädt**. Nachfolgende `import`-Anweisungen laden das Modul nicht neu. Python merkt sich, dass es das Modul bereits geladen hat, und führt daher nicht erneut den Ladevorgang durch.
 
-2. After importing a module, you can modify the variables inside it. A module in Python is like a container that holds variables, functions, and classes. Once you've imported a module, you can access and change its variables just like you would with any other Python object.
+2. Nachdem Sie ein Modul importiert haben, können Sie die Variablen darin ändern. Ein Modul in Python ist wie ein Behälter, der Variablen, Funktionen und Klassen enthält. Nachdem Sie ein Modul importiert haben, können Sie auf seine Variablen zugreifen und sie ändern, genau wie bei jedem anderen Python-Objekt.
 
 ```python
 >>> simplemod.x
@@ -22,9 +22,9 @@ Notice that this time you do not see the "Loaded simplemod" output. This is beca
 x is 13
 ```
 
-Here, we first check the value of the variable `x` in the `simplemod` module, which is initially `42`. Then we change its value to `13` and verify that the change has been made. When we call the `foo` function in the module, it reflects the new value of `x`.
+Hier überprüfen wir zunächst den Wert der Variable `x` im `simplemod`-Modul, der zunächst `42` ist. Dann ändern wir seinen Wert auf `13` und überprüfen, ob die Änderung vorgenommen wurde. Wenn wir die Funktion `foo` im Modul aufrufen, spiegelt sie den neuen Wert von `x` wider.
 
-3. Importing the module again does not reset the changes we made to its variables. Even if we try to import the module once more, Python doesn't reload it, so the changes we made to its variables remain.
+3. Das erneute Importieren des Moduls setzt die Änderungen, die wir an seinen Variablen vorgenommen haben, nicht zurück. Selbst wenn wir versuchen, das Modul erneut zu importieren, lädt Python es nicht neu, sodass die Änderungen, die wir an seinen Variablen vorgenommen haben, bestehen bleiben.
 
 ```python
 >>> import simplemod
@@ -32,7 +32,7 @@ Here, we first check the value of the variable `x` in the `simplemod` module, wh
 13
 ```
 
-4. If you want to forcibly reload a module, you need to use the `importlib.reload()` function. Sometimes, you might have made changes to the module's code and want to see those changes take effect immediately. The `importlib.reload()` function allows you to do just that.
+4. Wenn Sie ein Modul zwangsweise neu laden möchten, müssen Sie die Funktion `importlib.reload()` verwenden. Manchmal haben Sie möglicherweise Änderungen am Code des Moduls vorgenommen und möchten, dass diese Änderungen sofort wirksam werden. Die Funktion `importlib.reload()` ermöglicht Ihnen genau das.
 
 ```python
 >>> import importlib
@@ -45,9 +45,9 @@ Loaded simplemod
 x is 42
 ```
 
-The module has been reloaded, and the value of `x` has been reset to `42`. This shows that the module has been loaded again from its source code, and all the variables have been initialized as they were originally.
+Das Modul wurde neu geladen, und der Wert von `x` wurde auf `42` zurückgesetzt. Dies zeigt, dass das Modul erneut aus seinem Quellcode geladen wurde und alle Variablen wie ursprünglich initialisiert wurden.
 
-5. Python keeps track of all loaded modules in the `sys.modules` dictionary. This dictionary acts as a registry where Python stores information about all the modules that have been loaded during the current interpreter session.
+5. Python verfolgt alle geladenen Module im `sys.modules`-Wörterbuch. Dieses Wörterbuch fungiert als Registry, in der Python Informationen über alle Module speichert, die während der aktuellen Interpreter-Sitzung geladen wurden.
 
 ```python
 >>> 'simplemod' in sys.modules
@@ -56,9 +56,9 @@ True
 <module 'simplemod' from 'simplemod.py'>
 ```
 
-By checking if a module name is in the `sys.modules` dictionary, you can see if the module has been loaded. And by accessing the dictionary with the module name as the key, you can get information about the module.
+Indem Sie überprüfen, ob ein Modulname im `sys.modules`-Wörterbuch enthalten ist, können Sie feststellen, ob das Modul geladen wurde. Und indem Sie auf das Wörterbuch mit dem Modulnamen als Schlüssel zugreifen, können Sie Informationen über das Modul erhalten.
 
-6. You can remove a module from this dictionary to force Python to reload it on the next import. If you remove a module from the `sys.modules` dictionary, Python forgets that it has already loaded the module. So, the next time you try to import it, Python will load it again from its source code.
+6. Sie können ein Modul aus diesem Wörterbuch entfernen, um Python zu zwingen, es beim nächsten Import neu zu laden. Wenn Sie ein Modul aus dem `sys.modules`-Wörterbuch entfernen, vergisst Python, dass es das Modul bereits geladen hat. Wenn Sie es das nächste Mal versuchen, zu importieren, wird Python es erneut aus seinem Quellcode laden.
 
 ```python
 >>> del sys.modules['simplemod']
@@ -68,4 +68,4 @@ Loaded simplemod
 42
 ```
 
-The module was loaded again because it was removed from `sys.modules`. This is another way to ensure that you're working with the latest version of a module's code.
+Das Modul wurde erneut geladen, weil es aus `sys.modules` entfernt wurde. Dies ist eine weitere Möglichkeit, sicherzustellen, dass Sie mit der neuesten Version des Codes eines Moduls arbeiten.

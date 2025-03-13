@@ -1,24 +1,24 @@
-# Using from module import Syntax
+# `from module import` 構文の使用
 
-In Python, there are various ways to import components from modules. One of these ways is the `from module import` syntax, which we'll explore in this section.
+Python では、モジュールからコンポーネントをインポートする方法は様々あります。そのうちの 1 つが `from module import` 構文で、このセクションではこれについて説明します。
 
-When you import components from a module, it's often a good idea to start with a clean slate. This ensures that there are no leftover variables or settings from previous interactions that could interfere with our current experiment.
+モジュールからコンポーネントをインポートする際には、新しい状態から始めることが良いアイデアです。これにより、以前の操作で残っている変数や設定が現在の実験に影響を与えることがなくなります。
 
-1. Restart the Python interpreter to get a clean state:
+1. Python インタープリタを再起動して新しい状態にする:
 
 ```python
 >>> exit()
 ```
 
-This command exits the current Python interpreter session. After exiting, we'll start a new session to ensure a fresh environment.
+このコマンドは現在の Python インタープリタセッションを終了します。終了した後、新しいセッションを開始して新しい環境を確保します。
 
 ```bash
 python3
 ```
 
-This bash command starts a new Python 3 interpreter session. Now that we have a clean Python environment, we can start importing components from a module.
+この bash コマンドは新しい Python 3 インタープリタセッションを開始します。これで新しい Python 環境ができたので、モジュールからコンポーネントをインポートし始めることができます。
 
-2. Import specific components from a module using the `from module import` syntax:
+2. `from module import` 構文を使用してモジュールから特定のコンポーネントをインポートする:
 
 ```python
 >>> from simplemod import foo
@@ -27,9 +27,9 @@ Loaded simplemod
 x is 42
 ```
 
-Here, we're using the `from simplemod import foo` statement to import only the `foo` function from the `simplemod` module. Notice that even though we only asked for the `foo` function, the entire `simplemod` module was loaded. This is indicated by the "Loaded simplemod" output. The reason for this is that Python needs to load the whole module to access the `foo` function.
+ここでは、`from simplemod import foo` 文を使用して、`simplemod` モジュールから `foo` 関数のみをインポートしています。`foo` 関数のみを要求したにもかかわらず、`simplemod` モジュール全体が読み込まれたことに注意してください。これは「Loaded simplemod」という出力で示されています。これは、Python が `foo` 関数にアクセスするためにモジュール全体を読み込む必要があるからです。
 
-3. When using `from module import`, you cannot access the module itself:
+3. `from module import` を使用すると、モジュール自体にアクセスできない:
 
 ```python
 >>> simplemod.foo()
@@ -38,9 +38,9 @@ Traceback (most recent call last):
 NameError: name 'simplemod' is not defined
 ```
 
-When we use the `from module import` syntax, we're only bringing in the specified components directly into our namespace. The module name itself is not imported. So, when we try to access `simplemod.foo()`, Python doesn't recognize `simplemod` because it wasn't imported in that way.
+`from module import` 構文を使用すると、指定されたコンポーネントのみが直接名前空間に取り込まれます。モジュール名自体はインポートされません。したがって、`simplemod.foo()` にアクセスしようとすると、Python は `simplemod` を認識できず、そのようにインポートされていないためエラーが発生します。
 
-4. You can import multiple components at once:
+4. 一度に複数のコンポーネントをインポートすることができる:
 
 ```python
 >>> from simplemod import x, foo
@@ -50,16 +50,16 @@ When we use the `from module import` syntax, we're only bringing in the specifie
 x is 42
 ```
 
-The `from module import` syntax allows us to import multiple components from a module in a single statement. Here, we're importing both the variable `x` and the function `foo` from the `simplemod` module. After importing, we can directly access these components in our code.
+`from module import` 構文を使用すると、1 つの文でモジュールから複数のコンポーネントをインポートすることができます。ここでは、`simplemod` モジュールから変数 `x` と関数 `foo` の両方をインポートしています。インポート後、これらのコンポーネントにコード内で直接アクセスすることができます。
 
-5. When you import a variable from a module, you are creating a new reference to the object, not a link to the variable in the module:
+5. モジュールから変数をインポートすると、モジュール内の変数へのリンクではなく、オブジェクトへの新しい参照が作成される:
 
 ```python
->>> x = 13  # Change the local variable x
+>>> x = 13  # ローカル変数 x を変更する
 >>> x
 13
 >>> foo()
-x is 42  # The function still uses the module's x, not your local x
+x is 42  # 関数はまだモジュールの x を使用しており、ローカルの x ではない
 ```
 
-When we import a variable from a module, we're essentially creating a new reference to the same object in our local namespace. So, when we change the local variable `x` to `13`, it doesn't affect the `x` variable inside the `simplemod` module. The `foo()` function still refers to the module's `x` variable, which is `42`. Understanding this concept is crucial to avoid confusion in your code.
+モジュールから変数をインポートすると、実質的にローカル名前空間内で同じオブジェクトへの新しい参照が作成されます。したがって、ローカル変数 `x` を `13` に変更しても、`simplemod` モジュール内の `x` 変数には影響しません。`foo()` 関数は依然としてモジュールの `x` 変数（`42`）を参照しています。この概念を理解することは、コードでの混乱を避けるために重要です。

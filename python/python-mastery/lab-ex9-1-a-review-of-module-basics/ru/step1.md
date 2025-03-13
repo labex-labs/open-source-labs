@@ -1,43 +1,43 @@
-# Creating a Simple Module
+# Создание простого модуля
 
-Let's begin our journey into Python modules by creating a simple one. In Python, a module is essentially a file with a `.py` extension that holds Python code. Think of it as a container where you can group related functions, classes, and variables together. This makes your code more organized and easier to manage, especially as your projects grow in size.
+Начнем наше знакомство с модулями Python с создания простого модуля. В Python модуль — это по сути файл с расширением `.py`, содержащий код на Python. Представьте его как контейнер, в котором можно сгруппировать связанные функции, классы и переменные. Это делает ваш код более организованным и легким для управления, особенно по мере роста размеров проектов.
 
-1. First, open the WebIDE. Once it's open, you'll need to create a new file. To do this, click on "File" in the menu bar, and then select "New File". Name this new file `simplemod.py` and save it in the `/home/labex/project` directory. This directory is where we'll keep all the files related to this experiment.
+1. Сначала откройте WebIDE. После открытия вам нужно создать новый файл. Для этого нажмите на "File" в меню и выберите "New File". Назовите этот новый файл `simplemod.py` и сохраните его в директории `/home/labex/project`. В этой директории мы будем хранить все файлы, связанные с этим экспериментом.
 
-2. Now, let's add some code to our newly created `simplemod.py` file. The code below defines a few basic elements that you'll commonly find in a Python module.
+2. Теперь добавим некоторый код в только что созданный файл `simplemod.py`. Ниже приведен код, который определяет несколько базовых элементов, которые обычно можно найти в модуле Python.
 
 ```python
 # simplemod.py
 
-x = 42        # A global variable
+x = 42        # Глобальная переменная
 
-# A simple function
+# Простая функция
 def foo():
     print('x is', x)
 
-# A simple class
+# Простой класс
 class Spam:
     def yow(self):
         print('Yow!')
 
-# A scripting statement
+# Скрипт-инструкция
 print('Loaded simplemod')
 ```
 
-In this code:
+В этом коде:
 
-- `x = 42` creates a global variable named `x` and assigns it the value `42`. Global variables can be accessed from anywhere within the module.
-- The `foo()` function is defined to print the value of the global variable `x`. Functions are reusable blocks of code that perform a specific task.
-- The `Spam` class is a blueprint for creating objects. It has a method called `yow()`, which simply prints the string 'Yow!'. Methods are functions that belong to a class.
-- The `print('Loaded simplemod')` statement is a scripting statement. It will execute as soon as the module is loaded, which helps us confirm that the module has been successfully loaded.
+- `x = 42` создает глобальную переменную с именем `x` и присваивает ей значение `42`. Глобальные переменные могут быть доступны из любого места в модуле.
+- Функция `foo()` определена для вывода значения глобальной переменной `x`. Функции — это повторно используемые блоки кода, выполняющие определенную задачу.
+- Класс `Spam` является шаблоном для создания объектов. Он имеет метод с именем `yow()`, который просто выводит строку 'Yow!'. Методы — это функции, принадлежащие классу.
+- Инструкция `print('Loaded simplemod')` является скрипт-инструкцией. Она выполнится сразу после загрузки модуля, что помогает нам убедиться, что модуль успешно загружен.
 
-3. After adding the code, save the file. You can do this by pressing `Ctrl+S` on your keyboard or by selecting "File" > "Save" from the menu. Saving the file ensures that all the changes you've made are preserved.
+3. После добавления кода сохраните файл. Вы можете сделать это, нажав `Ctrl+S` на клавиатуре или выбрав "File" > "Save" в меню. Сохранение файла гарантирует, что все изменения, которые вы внесли, будут сохранены.
 
-Let's take a closer look at what this module contains:
+Давайте более подробно рассмотрим, что содержит этот модуль:
 
-- A global variable `x` with the value `42`. This variable can be used throughout the module and even accessed from other modules if imported correctly.
-- A function `foo()` that prints the value of `x`. Functions are useful for performing repetitive tasks without having to write the same code multiple times.
-- A class `Spam` with a method `yow()`. Classes and methods are fundamental concepts in object - oriented programming, which allows you to create complex data structures and behaviors.
-- A `print` statement that executes when the module is loaded. This statement serves as a visual indicator that the module has been successfully loaded into the Python environment.
+- Глобальная переменная `x` со значением `42`. Эта переменная может быть использована в любом месте модуля и даже доступна из других модулей при правильном импорте.
+- Функция `foo()`, которая выводит значение `x`. Функции полезны для выполнения повторяющихся задач без необходимости многократно писать один и тот же код.
+- Класс `Spam` с методом `yow()`. Классы и методы — это фундаментальные концепции объектно-ориентированного программирования, которые позволяют создавать сложные структуры данных и поведения.
+- Инструкция `print`, которая выполняется при загрузке модуля. Эта инструкция служит визуальным индикатором того, что модуль успешно загружен в среду Python.
 
-The `print` statement at the bottom will help us observe when the module is loaded, which is important for debugging and understanding how modules work in Python.
+Инструкция `print` внизу поможет нам наблюдать, когда модуль загружается, что важно для отладки и понимания того, как работают модули в Python.

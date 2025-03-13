@@ -1,5 +1,5 @@
-# Summary
+# 总结
 
-In this lab, you have learned how to create and structure a Python package. Specifically, you understood the concept and usefulness of Python packages for code organization, created a basic package structure, moved Python modules into it, updated import statements, and modified code to use the package correctly.
+在本次实验中，你学习了如何创建和构建 Python 包。具体而言，你理解了 Python 包在代码组织方面的概念和用途，创建了基本的包结构，将 Python 模块移入其中，更新了导入语句，并修改代码以正确使用该包。
 
-These skills are crucial for developing larger Python applications, as proper code organization becomes increasingly important. Python packages help keep related code together, avoid naming conflicts, and make your code more reusable, maintainable, and shareable. Well - structured packages are a cornerstone of professional Python development as you continue your Python journey.
+这些技能对于开发大型 Python 应用程序至关重要，因为随着项目规模增大，合理的代码组织变得越来越重要。Python 包有助于将相关代码组织在一起，避免命名冲突，并使你的代码更具可复用性、可维护性和可共享性。在你继续 Python 学习之旅时，结构良好的包是专业 Python 开发的基石。

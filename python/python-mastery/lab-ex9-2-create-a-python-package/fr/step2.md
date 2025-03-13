@@ -1,40 +1,40 @@
-# Creating the Package Structure
+# Création de la structure du package
 
-Now, we're going to create our Python package. But first, let's understand what a Python package is. A Python package is a way to organize related Python modules into a single directory hierarchy. It helps in managing and reusing code more effectively. To create a Python package, we need to follow these steps:
+Maintenant, nous allons créer notre package Python. Mais d'abord, comprenons ce qu'est un package Python. Un package Python est un moyen d'organiser des modules Python liés dans une seule hiérarchie de répertoires. Cela aide à gérer et à réutiliser le code plus efficacement. Pour créer un package Python, nous devons suivre ces étapes :
 
-1. Create a directory with the package name. This directory will serve as the container for all the modules that belong to the package.
-2. Create an `__init__.py` file inside this directory. This file is crucial because it makes Python recognize the directory as a package. When you import the package, the code in `__init__.py` is executed, which can be used to initialize the package.
-3. Move our Python module files into this directory. This step ensures that all the related code is grouped together within the package.
+1. Créer un répertoire portant le nom du package. Ce répertoire servira de conteneur pour tous les modules appartenant au package.
+2. Créer un fichier `__init__.py` à l'intérieur de ce répertoire. Ce fichier est crucial car il permet à Python de reconnaître le répertoire comme un package. Lorsque vous importez le package, le code dans `__init__.py` est exécuté, ce qui peut être utilisé pour initialiser le package.
+3. Déplacer nos fichiers de modules Python dans ce répertoire. Cette étape garantit que tout le code lié est regroupé au sein du package.
 
-Let's create the package structure step by step:
+Créons la structure du package étape par étape :
 
-1. First, create a directory called `structly`. This will be the root directory of our package.
+1. Tout d'abord, créez un répertoire appelé `structly`. Ce sera le répertoire racine de notre package.
 
 ```bash
 mkdir structly
 ```
 
-2. Next, create an empty `__init__.py` file inside the `structly` directory.
+2. Ensuite, créez un fichier `__init__.py` vide à l'intérieur du répertoire `structly`.
 
 ```bash
 touch structly/__init__.py
 ```
 
-The `__init__.py` file can be empty, but it's required to make Python treat the directory as a package. When you import the package, the code in `__init__.py` is executed, which can be used to initialize the package.
+Le fichier `__init__.py` peut être vide, mais il est nécessaire pour que Python traite le répertoire comme un package. Lorsque vous importez le package, le code dans `__init__.py` est exécuté, ce qui peut être utilisé pour initialiser le package.
 
-3. Now, let's move our Python module files into the `structly` directory. These module files contain the functions and classes that we want to include in our package.
+3. Maintenant, déplaçons nos fichiers de modules Python dans le répertoire `structly`. Ces fichiers de modules contiennent les fonctions et les classes que nous souhaitons inclure dans notre package.
 
 ```bash
 mv structure.py validate.py reader.py tableformat.py structly/
 ```
 
-4. Verify that all files have been moved correctly. We can use the `ls -l` command to list the contents of the `structly` directory.
+4. Vérifions que tous les fichiers ont été déplacés correctement. Nous pouvons utiliser la commande `ls -l` pour lister le contenu du répertoire `structly`.
 
 ```bash
 ls -l structly/
 ```
 
-You should see the following files listed:
+Vous devriez voir les fichiers suivants listés :
 
 ```
 __init__.py
@@ -44,7 +44,7 @@ tableformat.py
 validate.py
 ```
 
-Now we have created a basic package structure. The directory hierarchy should look like this:
+Maintenant, nous avons créé une structure de package de base. La hiérarchie des répertoires devrait ressembler à ceci :
 
 ```
 project/
@@ -58,4 +58,4 @@ project/
     └── validate.py
 ```
 
-In the next step, we'll fix the import statements to make the package work correctly.
+À l'étape suivante, nous allons corriger les instructions d'importation pour que le package fonctionne correctement.

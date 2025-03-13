@@ -1,43 +1,43 @@
-# Creating a Simple Module
+# シンプルなモジュールの作成
 
-Let's begin our journey into Python modules by creating a simple one. In Python, a module is essentially a file with a `.py` extension that holds Python code. Think of it as a container where you can group related functions, classes, and variables together. This makes your code more organized and easier to manage, especially as your projects grow in size.
+Python モジュールの旅に、シンプルなモジュールを作成することから始めましょう。Python では、モジュールは本質的に `.py` 拡張子を持つ Python コードを含むファイルです。関連する関数、クラス、変数をまとめるコンテナと考えてください。これにより、特にプロジェクトが大規模になるにつれて、コードが整理され、管理しやすくなります。
 
-1. First, open the WebIDE. Once it's open, you'll need to create a new file. To do this, click on "File" in the menu bar, and then select "New File". Name this new file `simplemod.py` and save it in the `/home/labex/project` directory. This directory is where we'll keep all the files related to this experiment.
+1. まず、WebIDE を開きます。開いたら、新しいファイルを作成する必要があります。これを行うには、メニューバーの「File」をクリックし、「New File」を選択します。この新しいファイルを `simplemod.py` と名付け、`/home/labex/project` ディレクトリに保存します。このディレクトリは、この実験に関連するすべてのファイルを保管する場所です。
 
-2. Now, let's add some code to our newly created `simplemod.py` file. The code below defines a few basic elements that you'll commonly find in a Python module.
+2. 次に、新しく作成した `simplemod.py` ファイルにいくつかのコードを追加しましょう。以下のコードは、Python モジュールによく見られるいくつかの基本要素を定義しています。
 
 ```python
 # simplemod.py
 
-x = 42        # A global variable
+x = 42        # グローバル変数
 
-# A simple function
+# シンプルな関数
 def foo():
     print('x is', x)
 
-# A simple class
+# シンプルなクラス
 class Spam:
     def yow(self):
         print('Yow!')
 
-# A scripting statement
+# スクリプト文
 print('Loaded simplemod')
 ```
 
-In this code:
+このコードでは：
 
-- `x = 42` creates a global variable named `x` and assigns it the value `42`. Global variables can be accessed from anywhere within the module.
-- The `foo()` function is defined to print the value of the global variable `x`. Functions are reusable blocks of code that perform a specific task.
-- The `Spam` class is a blueprint for creating objects. It has a method called `yow()`, which simply prints the string 'Yow!'. Methods are functions that belong to a class.
-- The `print('Loaded simplemod')` statement is a scripting statement. It will execute as soon as the module is loaded, which helps us confirm that the module has been successfully loaded.
+- `x = 42` は、`x` という名前のグローバル変数を作成し、それに値 `42` を割り当てます。グローバル変数は、モジュール内のどこからでもアクセスできます。
+- `foo()` 関数は、グローバル変数 `x` の値を出力するように定義されています。関数は、特定のタスクを実行する再利用可能なコードブロックです。
+- `Spam` クラスは、オブジェクトを作成するためのブループリントです。`yow()` という名前のメソッドを持ち、単に文字列 'Yow!' を出力します。メソッドは、クラスに属する関数です。
+- `print('Loaded simplemod')` 文はスクリプト文です。モジュールが読み込まれるとすぐに実行され、モジュールが正常に読み込まれたことを確認するのに役立ちます。
 
-3. After adding the code, save the file. You can do this by pressing `Ctrl+S` on your keyboard or by selecting "File" > "Save" from the menu. Saving the file ensures that all the changes you've made are preserved.
+3. コードを追加したら、ファイルを保存します。これは、キーボードで `Ctrl+S` を押すか、メニューから「File」>「Save」を選択することで行えます。ファイルを保存することで、行ったすべての変更が保存されます。
 
-Let's take a closer look at what this module contains:
+このモジュールが含む内容をもう少し詳しく見てみましょう：
 
-- A global variable `x` with the value `42`. This variable can be used throughout the module and even accessed from other modules if imported correctly.
-- A function `foo()` that prints the value of `x`. Functions are useful for performing repetitive tasks without having to write the same code multiple times.
-- A class `Spam` with a method `yow()`. Classes and methods are fundamental concepts in object - oriented programming, which allows you to create complex data structures and behaviors.
-- A `print` statement that executes when the module is loaded. This statement serves as a visual indicator that the module has been successfully loaded into the Python environment.
+- 値が `42` のグローバル変数 `x`。この変数はモジュール全体で使用でき、正しくインポートすれば他のモジュールからもアクセスできます。
+- `x` の値を出力する関数 `foo()`。関数は、同じコードを何度も書かずに繰り返しタスクを実行するのに便利です。
+- メソッド `yow()` を持つクラス `Spam`。クラスとメソッドは、オブジェクト指向プログラミングの基本的な概念で、複雑なデータ構造と振る舞いを作成することができます。
+- モジュールが読み込まれたときに実行される `print` 文。この文は、モジュールが Python 環境に正常に読み込まれたことを視覚的に示す役割を果たします。
 
-The `print` statement at the bottom will help us observe when the module is loaded, which is important for debugging and understanding how modules work in Python.
+一番下の `print` 文は、モジュールがいつ読み込まれるかを観察するのに役立ちます。これは、デバッグや Python でのモジュールの動作を理解するために重要です。

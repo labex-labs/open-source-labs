@@ -8,7 +8,7 @@ En Python, la forma en que se cargan los módulos tiene algunas características
 >>> import simplemod
 ```
 
-Observa que esta vez no ves la salida "Loaded simplemod". Esto se debe a que **Python solo carga un módulo una vez** por sesión del intérprete. Las declaraciones `import` subsiguientes no recargan el módulo. Python recuerda que ya ha cargado el módulo, por lo que no pasa por el proceso de cargarlo nuevamente.
+Observa que esta vez no ves la salida "Loaded simplemod". Esto se debe a que **Python solo carga un módulo una vez** por sesión del intérprete. Las declaraciones `import` posteriores no recargan el módulo. Python recuerda que ya ha cargado el módulo, por lo que no pasa por el proceso de cargarlo nuevamente.
 
 2. Después de importar un módulo, puedes modificar las variables dentro de él. Un módulo en Python es como un contenedor que almacena variables, funciones y clases. Una vez que has importado un módulo, puedes acceder y cambiar sus variables al igual que con cualquier otro objeto de Python.
 
@@ -56,7 +56,7 @@ True
 <module 'simplemod' from 'simplemod.py'>
 ```
 
-Al comprobar si un nombre de módulo está en el diccionario `sys.modules`, puedes ver si el módulo se ha cargado. Y al acceder al diccionario con el nombre del módulo como clave, puedes obtener información sobre el módulo.
+Al comprobar si el nombre de un módulo está en el diccionario `sys.modules`, puedes ver si el módulo se ha cargado. Y al acceder al diccionario con el nombre del módulo como clave, puedes obtener información sobre el módulo.
 
 6. Puedes eliminar un módulo de este diccionario para forzar a Python a recargarlo en la próxima importación. Si eliminas un módulo del diccionario `sys.modules`, Python olvida que ya ha cargado el módulo. Entonces, la próxima vez que intentes importarlo, Python lo cargará nuevamente desde su código fuente.
 

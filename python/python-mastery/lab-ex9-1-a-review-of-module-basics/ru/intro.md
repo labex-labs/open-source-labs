@@ -1,5 +1,5 @@
-# Introduction
+# Введение
 
-In this lab, you will learn the basics of Python modules. Modules are Python files with function, class, and variable definitions that can be used in other Python programs. They help organize code into logical units and enhance reusability.
+В этом практическом занятии (лабораторной работе) вы научитесь основам модулей Python. Модули — это файлы Python, содержащие определения функций, классов и переменных, которые можно использовать в других программах на Python. Они помогают организовать код в логические блоки и повышают его повторное использование.
 
-By the end of this lab, you will understand how to create your own modules, import them in various ways, and grasp important module loading behaviors that impact your code.
+К концу этого практического занятия вы поймете, как создавать свои собственные модули, импортировать их различными способами и освоите важные аспекты загрузки модулей, которые влияют на ваш код.

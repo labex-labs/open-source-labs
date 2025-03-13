@@ -1,25 +1,25 @@
-# Importing and Using Modules
+# Импорт и использование модулей
 
-Now that we have created a module, it's time to understand how to import it and use its components. In Python, a module is a file containing Python definitions and statements. When you import a module, you gain access to all the functions, classes, and variables defined within it. This allows you to reuse code and organize your programs more effectively.
+Теперь, когда мы создали модуль, пришло время понять, как его импортировать и использовать его компоненты. В Python модуль — это файл, содержащий определения и инструкции на Python. Когда вы импортируете модуль, вы получаете доступ ко всем функциям, классам и переменным, определенным в нем. Это позволяет повторно использовать код и более эффективно организовать свои программы.
 
-1. First, we need to open a new terminal in the WebIDE. This terminal will serve as our workspace where we can run Python commands. To open a new terminal, click on "Terminal" > "New Terminal".
+1. Сначала нам нужно открыть новый терминал в WebIDE. Этот терминал станет нашим рабочим пространством, где мы можем запускать команды Python. Чтобы открыть новый терминал, нажмите "Terminal" > "New Terminal".
 
-2. Once the terminal is open, we need to start the Python interpreter. The Python interpreter is a program that reads and executes Python code. To start it, type the following command in the terminal and press Enter:
+2. После открытия терминала нам нужно запустить интерпретатор Python. Интерпретатор Python — это программа, которая читает и выполняет код на Python. Чтобы запустить его, введите следующую команду в терминале и нажмите Enter:
 
 ```bash
 python3
 ```
 
-3. Now that the Python interpreter is running, we can import our module. In Python, we use the `import` statement to bring a module into our current program. Type the following command in the Python interpreter:
+3. Теперь, когда интерпретатор Python запущен, мы можем импортировать наш модуль. В Python мы используем инструкцию `import` для подключения модуля к нашей текущей программе. Введите следующую команду в интерпретаторе Python:
 
 ```python
 >>> import simplemod
 Loaded simplemod
 ```
 
-You'll notice that "Loaded simplemod" appears in the output. This is because the `print` statement in our `simplemod` module executes when the module is loaded. When Python imports a module, it runs all the top - level code in that module, including any `print` statements.
+Вы заметите, что в выводе появилось "Loaded simplemod". Это происходит потому, что инструкция `print` в нашем модуле `simplemod` выполняется при загрузке модуля. Когда Python импортирует модуль, он запускает весь верхний уровень кода в этом модуле, включая любые инструкции `print`.
 
-4. After importing the module, we can access its components using dot notation. Dot notation is a way to access attributes (variables and functions) of an object in Python. In this case, the module is an object, and its functions, variables, and classes are its attributes. Here are some examples of how to access different components of the `simplemod` module:
+4. После импорта модуля мы можем обращаться к его компонентам с помощью точечной нотации. Точечная нотация — это способ обращения к атрибутам (переменным и функциям) объекта в Python. В данном случае модуль является объектом, а его функции, переменные и классы — его атрибутами. Вот несколько примеров того, как обращаться к различным компонентам модуля `simplemod`:
 
 ```python
 >>> simplemod.x
@@ -31,9 +31,9 @@ x is 42
 Yow!
 ```
 
-In the first line, we access the variable `x` defined in the `simplemod` module. In the second line, we call the function `foo` from the `simplemod` module. In the third and fourth lines, we create an instance of the `Spam` class defined in the `simplemod` module and call its method `yow`.
+В первой строке мы обращаемся к переменной `x`, определенной в модуле `simplemod`. Во второй строке мы вызываем функцию `foo` из модуля `simplemod`. В третьей и четвертой строках мы создаем экземпляр класса `Spam`, определенного в модуле `simplemod`, и вызываем его метод `yow`.
 
-5. Sometimes, you might encounter an `ImportError` when trying to import a module. This error occurs when Python cannot find the module you are trying to import. To figure out where Python is looking for modules, you can examine the `sys.path` variable. The `sys.path` variable is a list of directories that Python searches when looking for modules. Type the following commands in the Python interpreter:
+5. Иногда при попытке импортировать модуль вы можете столкнуться с ошибкой `ImportError`. Эта ошибка возникает, когда Python не может найти модуль, который вы пытаетесь импортировать. Чтобы понять, где Python ищет модули, вы можете проверить переменную `sys.path`. Переменная `sys.path` представляет собой список директорий, которые Python просматривает при поиске модулей. Введите следующие команды в интерпретаторе Python:
 
 ```python
 >>> import sys
@@ -41,4 +41,4 @@ In the first line, we access the variable `x` defined in the `simplemod` module.
 ['', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
 ```
 
-The first element in the list (the empty string) represents the current working directory. This is where Python looks for the `simplemod.py` file. If your module is not in one of the directories listed in `sys.path`, Python won't be able to find it, and you'll get an `ImportError`. Make sure your `simplemod.py` file is in the current working directory or one of the other directories in `sys.path`.
+Первый элемент в списке (пустая строка) представляет текущую рабочую директорию. Именно здесь Python ищет файл `simplemod.py`. Если ваш модуль не находится в одной из директорий, перечисленных в `sys.path`, Python не сможет его найти, и вы получите ошибку `ImportError`. Убедитесь, что файл `simplemod.py` находится в текущей рабочей директории или в одной из других директорий в `sys.path`.

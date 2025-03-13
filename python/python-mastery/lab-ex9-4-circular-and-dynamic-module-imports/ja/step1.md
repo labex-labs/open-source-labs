@@ -1,10 +1,28 @@
-# 準備
+# インポートの問題を理解する
 
-前のエクササイズでは、`tableformat.py` ファイルをサブモジュールに分割しました。結果として得られた `tableformat/formatter.py` ファイルの最後の部分は、インポートの混乱になっています。
+まず、モジュールのインポートとは何かを理解しましょう。Pythonでは、別のファイル（モジュール）の関数、クラス、または変数を使用したい場合、`import`文を使用します。ただし、インポートの構造方法によっては、様々な問題が発生することがあります。
+
+では、問題のあるモジュール構造の例を見てみましょう。`tableformat/formatter.py`のコードでは、インポート文がファイル全体に散らばっています。これは最初は大きな問題に見えないかもしれませんが、保守性と依存関係の問題を引き起こします。
+
+まず、WebIDEのファイルエクスプローラを開き、`structly`ディレクトリに移動します。プロジェクトの現在の構造を理解するために、いくつかのコマンドを実行します。`cd`コマンドは現在の作業ディレクトリを変更するために使用され、`ls -la`コマンドは現在のディレクトリ内のすべてのファイルとディレクトリ（隠しファイルも含む）を一覧表示します。
+
+```bash
+cd ~/project/structly
+ls -la
+```
+
+これにより、プロジェクトディレクトリ内のファイルが表示されます。次に、`cat`コマンドを使用して問題のあるファイルの1つを見てみましょう。`cat`コマンドはファイルの内容を表示します。
+
+```bash
+cat tableformat/formatter.py
+```
+
+以下のようなコードが表示されるはずです。
 
 ```python
-# tableformat.py
-...
+# formatter.py
+from abc import ABC, abstractmethod
+from .mixins import ColumnFormatMixin, UpperHeadersMixin
 
 class TableFormatter(ABC):
     @abstractmethod
@@ -15,11 +33,9 @@ class TableFormatter(ABC):
     def row(self, rowdata):
         pass
 
-from.formats.text import TextTableFormatter
-from.formats.csv import CSVTableFormatter
-from.formats.html import HTMLTableFormatter
-
-...
+from .formats.text import TextTableFormatter
+from .formats.csv import CSVTableFormatter
+from .formats.html import HTMLTableFormatter
 
 def create_formatter(name, column_formats=None, upper_headers=False):
     if name == 'text':
@@ -42,4 +58,10 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-ファイルの途中のインポートは必要です。なぜなら、`create_formatter()` 関数が適切なクラスを見つけるために必要だからです。実際、全体が混乱しています。
+ファイルの途中にインポート文が配置されていることに注意してください。これはいくつかの理由で問題があります。
+
+1. コードの読みやすさと保守性が低下します。ファイルを見るとき、外部モジュールの依存関係をすぐに理解できるように、すべてのインポート文が先頭にあることを期待します。
+2. 循環インポート（Circular imports）の問題を引き起こす可能性があります。循環インポートは、2つ以上のモジュールが相互に依存する場合に発生し、エラーを引き起こし、コードが予期せぬ動作をする原因になります。
+3. すべてのインポート文をファイルの先頭に配置するというPythonの慣習に違反しています。慣習に従うことで、コードの読みやすさが向上し、他の開発者が理解しやすくなります。
+
+次のステップでは、これらの問題を詳しく調べ、解決方法を学びます。

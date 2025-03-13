@@ -1,40 +1,40 @@
-# Creating the Package Structure
+# Creación de la estructura del paquete
 
-Now, we're going to create our Python package. But first, let's understand what a Python package is. A Python package is a way to organize related Python modules into a single directory hierarchy. It helps in managing and reusing code more effectively. To create a Python package, we need to follow these steps:
+Ahora, vamos a crear nuestro paquete de Python. Pero primero, entendamos qué es un paquete de Python. Un paquete de Python es una forma de organizar módulos de Python relacionados en una única jerarquía de directorios. Ayuda a gestionar y reutilizar el código de manera más efectiva. Para crear un paquete de Python, necesitamos seguir estos pasos:
 
-1. Create a directory with the package name. This directory will serve as the container for all the modules that belong to the package.
-2. Create an `__init__.py` file inside this directory. This file is crucial because it makes Python recognize the directory as a package. When you import the package, the code in `__init__.py` is executed, which can be used to initialize the package.
-3. Move our Python module files into this directory. This step ensures that all the related code is grouped together within the package.
+1. Crear un directorio con el nombre del paquete. Este directorio servirá como contenedor para todos los módulos que pertenecen al paquete.
+2. Crear un archivo `__init__.py` dentro de este directorio. Este archivo es crucial porque hace que Python reconozca el directorio como un paquete. Cuando se importa el paquete, se ejecuta el código en `__init__.py`, que se puede utilizar para inicializar el paquete.
+3. Mover nuestros archivos de módulos de Python a este directorio. Este paso asegura que todo el código relacionado se agrupe dentro del paquete.
 
-Let's create the package structure step by step:
+Vamos a crear la estructura del paquete paso a paso:
 
-1. First, create a directory called `structly`. This will be the root directory of our package.
+1. Primero, crea un directorio llamado `structly`. Este será el directorio raíz de nuestro paquete.
 
 ```bash
 mkdir structly
 ```
 
-2. Next, create an empty `__init__.py` file inside the `structly` directory.
+2. A continuación, crea un archivo `__init__.py` vacío dentro del directorio `structly`.
 
 ```bash
 touch structly/__init__.py
 ```
 
-The `__init__.py` file can be empty, but it's required to make Python treat the directory as a package. When you import the package, the code in `__init__.py` is executed, which can be used to initialize the package.
+El archivo `__init__.py` puede estar vacío, pero es necesario para que Python trate el directorio como un paquete. Cuando se importa el paquete, se ejecuta el código en `__init__.py`, que se puede utilizar para inicializar el paquete.
 
-3. Now, let's move our Python module files into the `structly` directory. These module files contain the functions and classes that we want to include in our package.
+3. Ahora, vamos a mover nuestros archivos de módulos de Python al directorio `structly`. Estos archivos de módulos contienen las funciones y clases que queremos incluir en nuestro paquete.
 
 ```bash
 mv structure.py validate.py reader.py tableformat.py structly/
 ```
 
-4. Verify that all files have been moved correctly. We can use the `ls -l` command to list the contents of the `structly` directory.
+4. Verifica que todos los archivos se hayan movido correctamente. Podemos usar el comando `ls -l` para listar el contenido del directorio `structly`.
 
 ```bash
 ls -l structly/
 ```
 
-You should see the following files listed:
+Deberías ver los siguientes archivos listados:
 
 ```
 __init__.py
@@ -44,7 +44,7 @@ tableformat.py
 validate.py
 ```
 
-Now we have created a basic package structure. The directory hierarchy should look like this:
+Ahora hemos creado una estructura básica de paquete. La jerarquía de directorios debería verse así:
 
 ```
 project/
@@ -58,4 +58,4 @@ project/
     └── validate.py
 ```
 
-In the next step, we'll fix the import statements to make the package work correctly.
+En el siguiente paso, corregiremos las declaraciones de importación para que el paquete funcione correctamente.

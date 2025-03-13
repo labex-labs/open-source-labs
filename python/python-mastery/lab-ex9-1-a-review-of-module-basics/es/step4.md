@@ -2,7 +2,7 @@
 
 En Python, hay varias formas de importar componentes de módulos. Una de estas formas es la sintaxis `from module import`, que exploraremos en esta sección.
 
-Cuando importas componentes de un módulo, a menudo es una buena idea comenzar con un entorno limpio. Esto asegura que no haya variables o configuraciones residuales de interacciones previas que puedan interferir con nuestro experimento actual.
+Cuando importas componentes de un módulo, a menudo es una buena idea comenzar con un entorno limpio. Esto asegura que no haya variables o configuraciones residuales de interacciones anteriores que puedan interferir con nuestro experimento actual.
 
 1. Reinicia el intérprete de Python para obtener un estado limpio:
 
@@ -62,4 +62,4 @@ La sintaxis `from module import` nos permite importar múltiples componentes de 
 x is 42  # The function still uses the module's x, not your local x
 ```
 
-Cuando importamos una variable de un módulo, en esencia estamos creando una nueva referencia al mismo objeto en nuestro espacio de nombres local. Entonces, cuando cambiamos la variable local `x` a `13`, no afecta a la variable `x` dentro del módulo `simplemod`. La función `foo()` sigue refiriéndose a la variable `x` del módulo, que es `42`. Comprender este concepto es crucial para evitar confusiones en tu código.
+Cuando importamos una variable de un módulo, esencialmente estamos creando una nueva referencia al mismo objeto en nuestro espacio de nombres local. Entonces, cuando cambiamos la variable local `x` a `13`, no afecta a la variable `x` dentro del módulo `simplemod`. La función `foo()` sigue refiriéndose a la variable `x` del módulo, que es `42`. Comprender este concepto es crucial para evitar confusiones en tu código.

@@ -1,16 +1,16 @@
-# Understanding Python Packages
+# Comprender los paquetes de Python
 
-Before we start creating a Python package, let's understand what a Python package is. A Python package is essentially a directory. Inside this directory, there are multiple Python module files, which are just `.py` files containing Python code. Additionally, there is a special file named `__init__.py`. This file can be empty, but its presence indicates that the directory is a Python package. The purpose of this structure is to help you organize related code into a single directory hierarchy.
+Antes de comenzar a crear un paquete de Python, entendamos qué es un paquete de Python. Un paquete de Python es esencialmente un directorio. Dentro de este directorio, hay múltiples archivos de módulos de Python, que son simplemente archivos `.py` que contienen código de Python. Además, hay un archivo especial llamado `__init__.py`. Este archivo puede estar vacío, pero su presencia indica que el directorio es un paquete de Python. El propósito de esta estructura es ayudarte a organizar el código relacionado en una única jerarquía de directorios.
 
-Packages offer several benefits. First, they allow you to structure your code logically. Instead of having all your Python files scattered around, you can group related functionality together in a package. Second, they help avoid naming conflicts between modules. Since packages create a namespace, you can have modules with the same name in different packages without any issues. Third, they make importing and using your code more convenient. You can import an entire package or specific modules from it with ease.
+Los paquetes ofrecen varios beneficios. En primer lugar, te permiten estructurar tu código de manera lógica. En lugar de tener todos tus archivos de Python dispersos, puedes agrupar la funcionalidad relacionada en un paquete. En segundo lugar, ayudan a evitar conflictos de nombres entre módulos. Dado que los paquetes crean un espacio de nombres (namespace), puedes tener módulos con el mismo nombre en diferentes paquetes sin ningún problema. En tercer lugar, facilitan la importación y el uso de tu código. Puedes importar un paquete completo o módulos específicos de él con facilidad.
 
-Now, let's take a look at the files we currently have in our project directory. To list the files, we'll use the following command in the terminal:
+Ahora, echemos un vistazo a los archivos que actualmente tenemos en nuestro directorio de proyecto. Para listar los archivos, usaremos el siguiente comando en la terminal:
 
 ```bash
 ls -l
 ```
 
-When you run this command, you should see the following files:
+Cuando ejecutes este comando, deberías ver los siguientes archivos:
 
 ```
 portfolio.csv
@@ -21,14 +21,14 @@ tableformat.py
 validate.py
 ```
 
-These Python files are all related and work together, but currently, they are just separate modules. In this lab, our goal is to organize them into a cohesive package called `structly`.
+Estos archivos de Python están todos relacionados y trabajan juntos, pero actualmente son solo módulos separados. En este laboratorio, nuestro objetivo es organizarlos en un paquete coherente llamado `structly`.
 
-Let's briefly understand what each file does:
+Comprendamos brevemente qué hace cada archivo:
 
-- `structure.py`: This file defines a base `Structure` class and various descriptors. These descriptors are used for type validation, which means they help ensure that the data used in your program has the correct type.
-- `validate.py`: It contains validation functionality that is used by the `structure` module. This helps in validating the data according to certain rules.
-- `reader.py`: This file provides functions that are used to read CSV data. CSV (Comma-Separated Values) is a common file format for storing tabular data.
-- `tableformat.py`: It contains classes and functions that are used to format data into tables. This is useful when you want to display data in a more organized way.
-- `stock.py`: This file uses the other modules to define a `Stock` class and process stock data. It combines the functionality of the other modules to perform specific tasks related to stock data.
+- `structure.py`: Este archivo define una clase base `Structure` y varios descriptores. Estos descriptores se utilizan para la validación de tipos, lo que significa que ayudan a garantizar que los datos utilizados en tu programa tengan el tipo correcto.
+- `validate.py`: Contiene la funcionalidad de validación que utiliza el módulo `structure`. Esto ayuda a validar los datos de acuerdo con ciertas reglas.
+- `reader.py`: Este archivo proporciona funciones que se utilizan para leer datos CSV. CSV (Comma-Separated Values, Valores Separados por Comas) es un formato de archivo común para almacenar datos tabulares.
+- `tableformat.py`: Contiene clases y funciones que se utilizan para formatear datos en tablas. Esto es útil cuando quieres mostrar los datos de manera más organizada.
+- `stock.py`: Este archivo utiliza los otros módulos para definir una clase `Stock` y procesar datos de acciones. Combina la funcionalidad de los otros módulos para realizar tareas específicas relacionadas con los datos de acciones.
 
-In the next step, we'll create our package structure.
+En el siguiente paso, crearemos nuestra estructura de paquete.

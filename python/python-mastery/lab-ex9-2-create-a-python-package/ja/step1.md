@@ -1,16 +1,16 @@
-# Understanding Python Packages
+# Python パッケージの理解
 
-Before we start creating a Python package, let's understand what a Python package is. A Python package is essentially a directory. Inside this directory, there are multiple Python module files, which are just `.py` files containing Python code. Additionally, there is a special file named `__init__.py`. This file can be empty, but its presence indicates that the directory is a Python package. The purpose of this structure is to help you organize related code into a single directory hierarchy.
+Python パッケージを作成する前に、Python パッケージとは何かを理解しましょう。Python パッケージは基本的にディレクトリです。このディレクトリの中には、複数の Python モジュールファイル（Python コードを含む `.py` ファイル）があります。さらに、`__init__.py` という特別なファイルがあります。このファイルは空でも構いませんが、このファイルが存在することで、そのディレクトリが Python パッケージであることが示されます。この構造の目的は、関連するコードを単一のディレクトリ階層に整理するのを助けることです。
 
-Packages offer several benefits. First, they allow you to structure your code logically. Instead of having all your Python files scattered around, you can group related functionality together in a package. Second, they help avoid naming conflicts between modules. Since packages create a namespace, you can have modules with the same name in different packages without any issues. Third, they make importing and using your code more convenient. You can import an entire package or specific modules from it with ease.
+パッケージにはいくつかの利点があります。まず、コードを論理的に構造化することができます。すべての Python ファイルが散らばっているのではなく、関連する機能をパッケージにまとめることができます。次に、モジュール間の名前の衝突を回避するのに役立ちます。パッケージは名前空間を作成するため、異なるパッケージに同じ名前のモジュールを持つことができ、問題は発生しません。最後に、コードのインポートと使用がより便利になります。パッケージ全体またはその中の特定のモジュールを簡単にインポートすることができます。
 
-Now, let's take a look at the files we currently have in our project directory. To list the files, we'll use the following command in the terminal:
+では、現在のプロジェクトディレクトリにあるファイルを見てみましょう。ファイルを一覧表示するには、ターミナルで次のコマンドを使用します。
 
 ```bash
 ls -l
 ```
 
-When you run this command, you should see the following files:
+このコマンドを実行すると、次のようなファイルが表示されるはずです。
 
 ```
 portfolio.csv
@@ -21,14 +21,14 @@ tableformat.py
 validate.py
 ```
 
-These Python files are all related and work together, but currently, they are just separate modules. In this lab, our goal is to organize them into a cohesive package called `structly`.
+これらの Python ファイルはすべて関連しており、連携して動作しますが、現在は個別のモジュールに過ぎません。この実験では、これらを `structly` というまとまりのあるパッケージに整理することを目標としています。
 
-Let's briefly understand what each file does:
+各ファイルの機能を簡単に理解してみましょう。
 
-- `structure.py`: This file defines a base `Structure` class and various descriptors. These descriptors are used for type validation, which means they help ensure that the data used in your program has the correct type.
-- `validate.py`: It contains validation functionality that is used by the `structure` module. This helps in validating the data according to certain rules.
-- `reader.py`: This file provides functions that are used to read CSV data. CSV (Comma-Separated Values) is a common file format for storing tabular data.
-- `tableformat.py`: It contains classes and functions that are used to format data into tables. This is useful when you want to display data in a more organized way.
-- `stock.py`: This file uses the other modules to define a `Stock` class and process stock data. It combines the functionality of the other modules to perform specific tasks related to stock data.
+- `structure.py`: このファイルは、基本的な `Structure` クラスとさまざまなディスクリプタを定義しています。これらのディスクリプタは型検証に使用され、つまり、プログラムで使用されるデータが正しい型であることを確認するのに役立ちます。
+- `validate.py`: このファイルには、`structure` モジュールで使用される検証機能が含まれています。これにより、特定のルールに従ってデータを検証することができます。
+- `reader.py`: このファイルは、CSV データを読み取るための関数を提供します。CSV（Comma-Separated Values）は、表形式のデータを保存するための一般的なファイル形式です。
+- `tableformat.py`: このファイルには、データを表形式に整形するためのクラスと関数が含まれています。データをより整理された形式で表示したい場合に便利です。
+- `stock.py`: このファイルは、他のモジュールを使用して `Stock` クラスを定義し、株式データを処理します。他のモジュールの機能を組み合わせて、株式データに関連する特定のタスクを実行します。
 
-In the next step, we'll create our package structure.
+次のステップでは、パッケージ構造を作成します。

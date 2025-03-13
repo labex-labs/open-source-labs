@@ -1,5 +1,5 @@
-# Introduction
+# はじめに
 
-In this lab, you will learn the basics of Python modules. Modules are Python files with function, class, and variable definitions that can be used in other Python programs. They help organize code into logical units and enhance reusability.
+この実験では、Python モジュールの基本を学びます。モジュールは、関数、クラス、変数の定義を含む Python ファイルで、他の Python プログラムで使用することができます。モジュールは、コードを論理的な単位に整理し、再利用性を高めるのに役立ちます。
 
-By the end of this lab, you will understand how to create your own modules, import them in various ways, and grasp important module loading behaviors that impact your code.
+この実験の終了時には、独自のモジュールを作成する方法、様々な方法でモジュールをインポートする方法、およびコードに影響を与える重要なモジュール読み込み動作を理解するようになります。

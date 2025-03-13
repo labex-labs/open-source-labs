@@ -1,17 +1,17 @@
-# Updating and Testing the stock.py Program
+# 更新并测试 stock.py 程序
 
-Now that we've created our package and fixed the internal imports, it's time to update the `stock.py` file to use our new package structure. A package in Python is a way to organize related modules together. It helps in keeping your codebase organized and makes it easier to manage and reuse code.
+既然我们已经创建了包并修正了内部导入语句，现在是时候更新 `stock.py` 文件以使用新的包结构了。在 Python 中，包是一种将相关模块组织在一起的方式。它有助于保持代码库的条理性，使代码更易于管理和复用。
 
-Open the `stock.py` file in the editor:
+在编辑器中打开 `stock.py` 文件：
 
 ```bash
-# Click on stock.py in the file explorer or run:
+# 在文件资源管理器中点击 stock.py 或运行：
 code stock.py
 ```
 
-The current imports in `stock.py` are based on the old structure where all files were in the same directory. In Python, when you import a module, Python looks for the module in specific locations. In the old structure, since all files were in the same directory, Python could easily find the modules. But now, with the new package structure, we need to update the imports to tell Python where to find the modules within the `structly` package.
+目前 `stock.py` 中的导入语句是基于旧结构的，在旧结构中所有文件都位于同一目录下。在 Python 中，当你导入一个模块时，Python 会在特定位置查找该模块。在旧结构中，由于所有文件都在同一目录下，Python 可以轻松找到这些模块。但现在，有了新的包结构，我们需要更新导入语句，告诉 Python 在 `structly` 包中何处可以找到这些模块。
 
-Update the `stock.py` file to look exactly like this:
+将 `stock.py` 文件更新为如下内容：
 
 ```python
 # stock.py
@@ -38,21 +38,21 @@ if __name__ == '__main__':
     print_table(portfolio, ['name','shares','price'], formatter)
 ```
 
-The key changes are:
+主要的更改如下：
 
-1. Changed `from structure import Structure, String, PositiveInteger, PositiveFloat` to `from structly.structure import Structure, String, PositiveInteger, PositiveFloat`. This change tells Python to look for the `structure` module inside the `structly` package.
-2. Changed `from reader import read_csv_as_instances` to `from structly.reader import read_csv_as_instances`. Similarly, this change directs Python to find the `reader` module within the `structly` package.
-3. Changed `from tableformat import create_formatter, print_table` to `from structly.tableformat import create_formatter, print_table`. This ensures that Python locates the `tableformat` module in the `structly` package.
+1. 将 `from structure import Structure, String, PositiveInteger, PositiveFloat` 改为 `from structly.structure import Structure, String, PositiveInteger, PositiveFloat`。这一更改告诉 Python 在 `structly` 包中查找 `structure` 模块。
+2. 将 `from reader import read_csv_as_instances` 改为 `from structly.reader import read_csv_as_instances`。同样，这一更改指示 Python 在 `structly` 包中查找 `reader` 模块。
+3. 将 `from tableformat import create_formatter, print_table` 改为 `from structly.tableformat import create_formatter, print_table`。这确保 Python 在 `structly` 包中找到 `tableformat` 模块。
 
-Save the file after making these changes. Saving the file is important because it makes sure that the changes you've made are stored and can be used when you run the program.
+做出这些更改后保存文件。保存文件很重要，因为这样可以确保你所做的更改被保存下来，并且在运行程序时可以使用这些更改。
 
-Now, let's test our updated code to ensure everything works correctly:
+现在，让我们测试更新后的代码，确保一切正常运行：
 
 ```bash
 python stock.py
 ```
 
-You should see the following output:
+你应该会看到以下输出：
 
 ```
       name      shares       price
@@ -64,4 +64,4 @@ You should see the following output:
        HPE         75       32.2
 ```
 
-If you see this output, congratulations! You have successfully created a Python package and updated your code to use it. This means that your code is now organized in a more modular way, making it easier to maintain and expand in the future.
+如果你看到了这个输出，恭喜你！你已经成功创建了一个 Python 包，并更新了代码以使用它。这意味着你的代码现在以更模块化的方式进行了组织，便于未来的维护和扩展。

@@ -1,5 +1,5 @@
-# Summary
+# まとめ
 
-In this lab, you have learned the fundamentals of working with modules in Python. You've learned how to create a Python module as a `.py` file with variables, functions, and classes, and how to import modules using the `import` statement. You also understand that Python loads modules only once per interpreter session and can use `importlib.reload()` to force reloading.
+この実験では、Python のモジュールを扱う基本的な方法を学びました。変数、関数、クラスを含む `.py` ファイルとして Python モジュールを作成する方法や、`import` 文を使用してモジュールをインポートする方法を学びました。また、Python がインタープリタセッションごとにモジュールを 1 回だけ読み込むこと、および `importlib.reload()` を使用して強制的に再読み込みできることも理解しました。
 
-Moreover, you've explored the `sys.modules` dictionary for tracking loaded modules, used the `from module import` syntax to import specific components, and grasped the limitations of module reloading, especially with classes. These concepts are the foundation for organizing Python code into reusable components, which are essential for maintaining code structure and promoting reusability in larger applications.
+さらに、読み込まれたモジュールを追跡するための `sys.modules` 辞書を調べ、`from module import` 構文を使用して特定のコンポーネントをインポートし、特にクラスに関するモジュール再読み込みの制限を理解しました。これらの概念は、Python コードを再利用可能なコンポーネントに整理するための基礎であり、大規模なアプリケーションにおけるコード構造の維持と再利用性の促進に不可欠です。

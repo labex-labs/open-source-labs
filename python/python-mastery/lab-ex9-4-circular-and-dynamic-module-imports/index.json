@@ -107,5 +107,403 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "循环和动态模块导入",
+      "description": "理解导入问题，探究循环导入，实现子类注册，并在 Python 中使用动态导入来处理循环和动态模块导入。",
+      "meta": {
+        "title": "循环和动态模块导入",
+        "description": "理解导入问题，探究循环导入，实现子类注册，并在 Python 中使用动态导入来处理循环和动态模块导入。",
+        "keywords": "Python, 循环导入, 动态导入, 导入问题, 子类注册"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解导入问题",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证文件探索情况",
+                "file": "verify1-1.sh",
+                "hint": "确保你已经查看了 formatter.py 文件以了解其结构"
+              }
+            ]
+          },
+          {
+            "title": "探究循环导入",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 formatter.py 文件布局",
+                "file": "verify2-1.sh",
+                "hint": "确保你已将 formatter.py 文件的更改恢复"
+              }
+            ]
+          },
+          {
+            "title": "实现子类注册",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 TableFormatter 类的更改",
+                "file": "verify3-1.sh",
+                "hint": "确保你已经添加了 _formats 字典和 __init_subclass__ 方法"
+              }
+            ]
+          },
+          {
+            "title": "使用动态导入",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证动态导入的实现",
+                "file": "verify4-1.sh",
+                "hint": "确保你已将 __import__ 语句添加到 create_formatter 函数中"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    },
+    {
+      "lang": "es",
+      "title": "Importaciones circulares y dinámicas de módulos",
+      "description": "Comprenda el problema de importación, explore las importaciones circulares, implemente el registro de subclases y utilice importaciones dinámicas en Python para importaciones circulares y dinámicas de módulos.",
+      "meta": {
+        "title": "Importaciones circulares y dinámicas de módulos",
+        "description": "Comprenda el problema de importación, explore las importaciones circulares, implemente el registro de subclases y utilice importaciones dinámicas en Python para importaciones circulares y dinámicas de módulos.",
+        "keywords": "Python, importaciones circulares, importaciones dinámicas, problema de importación, registro de subclases"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendiendo el problema de importación",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar la exploración del archivo",
+                "file": "verify1-1.sh",
+                "hint": "Asegúrate de haber examinado el archivo formatter.py para entender la estructura"
+              }
+            ]
+          },
+          {
+            "title": "Explorando las importaciones circulares",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar la estructura de formatter.py",
+                "file": "verify2-1.sh",
+                "hint": "Asegúrate de haber revertido los cambios en formatter.py"
+              }
+            ]
+          },
+          {
+            "title": "Implementando el registro de subclases",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar los cambios en la clase TableFormatter",
+                "file": "verify3-1.sh",
+                "hint": "Asegúrate de haber agregado el diccionario _formats y el método __init_subclass__"
+              }
+            ]
+          },
+          {
+            "title": "Utilizando importaciones dinámicas",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Verificar la implementación de importaciones dinámicas",
+                "file": "verify4-1.sh",
+                "hint": "Asegúrate de haber agregado la declaración __import__ a la función create_formatter"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Importations circulaires et dynamiques de modules",
+      "description": "Comprenez le problème d'importation, explorez les importations circulaires, mettez en œuvre l'enregistrement des sous-classes et utilisez les importations dynamiques en Python pour les importations circulaires et dynamiques de modules.",
+      "meta": {
+        "title": "Importations circulaires et dynamiques de modules",
+        "description": "Comprenez le problème d'importation, explorez les importations circulaires, mettez en œuvre l'enregistrement des sous-classes et utilisez les importations dynamiques en Python pour les importations circulaires et dynamiques de modules.",
+        "keywords": "Python, importations circulaires, importations dynamiques, problème d'importation, enregistrement des sous-classes"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Comprendre le problème d'importation",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifier l'exploration du fichier",
+                "file": "verify1-1.sh",
+                "hint": "Assurez-vous d'avoir examiné le fichier formatter.py pour comprendre la structure"
+              }
+            ]
+          },
+          {
+            "title": "Explorer les importations circulaires",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifier la disposition de formatter.py",
+                "file": "verify2-1.sh",
+                "hint": "Assurez-vous d'avoir annulé les modifications apportées à formatter.py"
+              }
+            ]
+          },
+          {
+            "title": "Mise en œuvre de l'enregistrement des sous-classes",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifier les modifications de la classe TableFormatter",
+                "file": "verify3-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté le dictionnaire _formats et la méthode __init_subclass__"
+              }
+            ]
+          },
+          {
+            "title": "Utilisation des importations dynamiques",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Vérifier l'implémentation des importations dynamiques",
+                "file": "verify4-1.sh",
+                "hint": "Assurez-vous d'avoir ajouté l'instruction __import__ à la fonction create_formatter"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Zirkuläre und dynamische Modulimporte",
+      "description": "Verstehen Sie das Importproblem, erkunden Sie zirkuläre Importe, implementieren Sie die Subklassenregistrierung und nutzen Sie dynamische Importe in Python für zirkuläre und dynamische Modulimporte.",
+      "meta": {
+        "title": "Zirkuläre und dynamische Modulimporte",
+        "description": "Verstehen Sie das Importproblem, erkunden Sie zirkuläre Importe, implementieren Sie die Subklassenregistrierung und nutzen Sie dynamische Importe in Python für zirkuläre und dynamische Modulimporte.",
+        "keywords": "Python, zirkuläre Importe, dynamische Importe, Importproblem, Subklassenregistrierung"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Verständnis des Importproblems",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Dateiuntersuchung",
+                "file": "verify1-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Datei formatter.py untersucht haben, um die Struktur zu verstehen"
+              }
+            ]
+          },
+          {
+            "title": "Untersuchung von zirkulären Importen",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie das Layout von formatter.py",
+                "file": "verify2-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die Änderungen an formatter.py rückgängig gemacht haben"
+              }
+            ]
+          },
+          {
+            "title": "Implementierung der Subklassenregistrierung",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Änderungen an der TableFormatter-Klasse",
+                "file": "verify3-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie das _formats-Dictionary und die __init_subclass__-Methode hinzugefügt haben"
+              }
+            ]
+          },
+          {
+            "title": "Verwendung dynamischer Importe",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Überprüfen Sie die Implementierung dynamischer Importe",
+                "file": "verify4-1.sh",
+                "hint": "Stellen Sie sicher, dass Sie die __import__-Anweisung zur create_formatter-Funktion hinzugefügt haben"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "循環インポートと動的モジュールインポート",
+      "description": "Pythonでインポートの問題を理解し、循環インポートを調査し、サブクラス登録を実装し、動的インポートを使用して、循環インポートと動的モジュールインポートを行います。",
+      "meta": {
+        "title": "循環インポートと動的モジュールインポート",
+        "description": "Pythonでインポートの問題を理解し、循環インポートを調査し、サブクラス登録を実装し、動的インポートを使用して、循環インポートと動的モジュールインポートを行います。",
+        "keywords": "Python, 循環インポート, 動的インポート, インポート問題, サブクラス登録"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "インポート問題の理解",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "ファイル調査の確認",
+                "file": "verify1-1.sh",
+                "hint": "構造を理解するために、formatter.py ファイルを調べたことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "循環インポートの調査",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "formatter.py のレイアウトの確認",
+                "file": "verify2-1.sh",
+                "hint": "formatter.py への変更を元に戻したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "サブクラス登録の実装",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "TableFormatter クラスの変更の確認",
+                "file": "verify3-1.sh",
+                "hint": "_formats 辞書と __init_subclass__ メソッドを追加したことを確認してください"
+              }
+            ]
+          },
+          {
+            "title": "動的インポートの使用",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "動的インポートの実装を確認する",
+                "file": "verify4-1.sh",
+                "hint": "create_formatter 関数に __import__ 文を追加したことを確認してください"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Циклические и динамические импорты модулей",
+      "description": "Понять проблему импорта, исследовать циклические импорты, реализовать регистрацию подклассов и использовать динамические импорты в Python для циклических и динамических импортов модулей.",
+      "meta": {
+        "title": "Циклические и динамические импорты модулей",
+        "description": "Понять проблему импорта, исследовать циклические импорты, реализовать регистрацию подклассов и использовать динамические импорты в Python для циклических и динамических импортов модулей.",
+        "keywords": "Python, циклические импорты, динамические импорты, проблема импорта, регистрация подклассов"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Понимание проблемы импорта",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить изучение файла",
+                "file": "verify1-1.sh",
+                "hint": "Убедитесь, что вы изучили файл formatter.py, чтобы понять его структуру"
+              }
+            ]
+          },
+          {
+            "title": "Исследование циклических импортов",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить структуру formatter.py",
+                "file": "verify2-1.sh",
+                "hint": "Убедитесь, что вы вернули исходное состояние файла formatter.py"
+              }
+            ]
+          },
+          {
+            "title": "Реализация регистрации подклассов",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить изменения в классе TableFormatter",
+                "file": "verify3-1.sh",
+                "hint": "Убедитесь, что вы добавили словарь _formats и метод __init_subclass__"
+              }
+            ]
+          },
+          {
+            "title": "Использование динамических импортов",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "Проверить реализацию динамических импортов",
+                "file": "verify4-1.sh",
+                "hint": "Убедитесь, что вы добавили оператор __import__ в функцию create_formatter"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
+    }
+  ]
 }

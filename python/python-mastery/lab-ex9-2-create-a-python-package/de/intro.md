@@ -1,5 +1,5 @@
-# Introduction
+# Einführung
 
-In this lab, you will learn how to create and organize a Python package. Python packages are a great way to structure your code, making it more modular, reusable, and maintainable.
+In diesem Lab lernen Sie, wie Sie ein Python-Paket erstellen und organisieren. Python-Pakete sind eine ausgezeichnete Möglichkeit, Ihren Code zu strukturieren, um ihn modularer, wiederverwendbarer und wartbarer zu machen.
 
-The objectives of this lab are to understand what a Python package is, create a basic package structure, organize related Python modules into a cohesive package, and update import statements to work with the new package structure.
+Die Ziele dieses Labs sind es, zu verstehen, was ein Python-Paket ist, eine grundlegende Paketstruktur zu erstellen, verwandte Python-Module zu einem zusammenhängenden Paket zu organisieren und die Import-Anweisungen so zu aktualisieren, dass sie mit der neuen Paketstruktur funktionieren.

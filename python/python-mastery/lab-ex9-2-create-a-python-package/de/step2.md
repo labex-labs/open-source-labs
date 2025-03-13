@@ -1,40 +1,40 @@
-# Creating the Package Structure
+# Erstellen der Paketstruktur
 
-Now, we're going to create our Python package. But first, let's understand what a Python package is. A Python package is a way to organize related Python modules into a single directory hierarchy. It helps in managing and reusing code more effectively. To create a Python package, we need to follow these steps:
+Jetzt werden wir unser Python-Paket erstellen. Aber zuerst verstehen wir, was ein Python-Paket ist. Ein Python-Paket ist eine Möglichkeit, verwandte Python-Module in einer einzigen Verzeichnis-Hierarchie zu organisieren. Es hilft, Code effektiver zu verwalten und wiederzuverwenden. Um ein Python-Paket zu erstellen, müssen wir die folgenden Schritte befolgen:
 
-1. Create a directory with the package name. This directory will serve as the container for all the modules that belong to the package.
-2. Create an `__init__.py` file inside this directory. This file is crucial because it makes Python recognize the directory as a package. When you import the package, the code in `__init__.py` is executed, which can be used to initialize the package.
-3. Move our Python module files into this directory. This step ensures that all the related code is grouped together within the package.
+1. Erstellen Sie ein Verzeichnis mit dem Paketnamen. Dieses Verzeichnis dient als Container für alle Module, die zum Paket gehören.
+2. Erstellen Sie eine `__init__.py`-Datei innerhalb dieses Verzeichnisses. Diese Datei ist wichtig, da sie Python dazu bringt, das Verzeichnis als Paket zu erkennen. Wenn Sie das Paket importieren, wird der Code in `__init__.py` ausgeführt, der verwendet werden kann, um das Paket zu initialisieren.
+3. Verschieben Sie unsere Python-Moduldateien in dieses Verzeichnis. Dieser Schritt stellt sicher, dass all der verwandte Code innerhalb des Pakets zusammengefasst wird.
 
-Let's create the package structure step by step:
+Lassen Sie uns die Paketstruktur Schritt für Schritt erstellen:
 
-1. First, create a directory called `structly`. This will be the root directory of our package.
+1. Zuerst erstellen Sie ein Verzeichnis namens `structly`. Dies wird das Root-Verzeichnis unseres Pakets sein.
 
 ```bash
 mkdir structly
 ```
 
-2. Next, create an empty `__init__.py` file inside the `structly` directory.
+2. Erstellen Sie als Nächstes eine leere `__init__.py`-Datei innerhalb des `structly`-Verzeichnisses.
 
 ```bash
 touch structly/__init__.py
 ```
 
-The `__init__.py` file can be empty, but it's required to make Python treat the directory as a package. When you import the package, the code in `__init__.py` is executed, which can be used to initialize the package.
+Die `__init__.py`-Datei kann leer sein, aber sie ist erforderlich, damit Python das Verzeichnis als Paket behandelt. Wenn Sie das Paket importieren, wird der Code in `__init__.py` ausgeführt, der verwendet werden kann, um das Paket zu initialisieren.
 
-3. Now, let's move our Python module files into the `structly` directory. These module files contain the functions and classes that we want to include in our package.
+3. Jetzt verschieben wir unsere Python-Moduldateien in das `structly`-Verzeichnis. Diese Moduldateien enthalten die Funktionen und Klassen, die wir in unser Paket aufnehmen möchten.
 
 ```bash
 mv structure.py validate.py reader.py tableformat.py structly/
 ```
 
-4. Verify that all files have been moved correctly. We can use the `ls -l` command to list the contents of the `structly` directory.
+4. Überprüfen Sie, ob alle Dateien korrekt verschoben wurden. Wir können den Befehl `ls -l` verwenden, um den Inhalt des `structly`-Verzeichnisses aufzulisten.
 
 ```bash
 ls -l structly/
 ```
 
-You should see the following files listed:
+Sie sollten die folgenden Dateien aufgelistet sehen:
 
 ```
 __init__.py
@@ -44,7 +44,7 @@ tableformat.py
 validate.py
 ```
 
-Now we have created a basic package structure. The directory hierarchy should look like this:
+Jetzt haben wir eine grundlegende Paketstruktur erstellt. Die Verzeichnis-Hierarchie sollte wie folgt aussehen:
 
 ```
 project/
@@ -58,4 +58,4 @@ project/
     └── validate.py
 ```
 
-In the next step, we'll fix the import statements to make the package work correctly.
+Im nächsten Schritt werden wir die Import-Anweisungen korrigieren, damit das Paket richtig funktioniert.

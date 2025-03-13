@@ -1,36 +1,36 @@
-# Fixing Import Statements
+# インポート文の修正
 
-Now, let's understand why we need to do this. When we moved our files into the `structly` package, the way Python looks for modules has changed. Import statements in each file need to be updated to match the new package structure. This is crucial because Python uses these import statements to find and use the code from other modules.
+まず、なぜこの作業が必要なのかを理解しましょう。ファイルを `structly` パッケージに移動すると、Python がモジュールを探す方法が変わります。各ファイル内のインポート文は、新しいパッケージ構造に合わせて更新する必要があります。これは、Python がこれらのインポート文を使って他のモジュールのコードを見つけて使用するため、非常に重要です。
 
-The `structure.py` file is very important to update. It imports functions and classes from the `validate.py` file. Since both of these files are now in the same `structly` package, we have to adjust the import statement accordingly.
+`structure.py` ファイルの更新は特に重要です。このファイルは `validate.py` ファイルから関数やクラスをインポートしています。これらのファイルは現在同じ `structly` パッケージ内にあるため、インポート文を適切に調整する必要があります。
 
-Let's start by opening the `structly/structure.py` file in the editor. You can either click on `structly/structure.py` in the file explorer or run the following command in the terminal:
+まず、エディタで `structly/structure.py` ファイルを開きましょう。ファイルエクスプローラーで `structly/structure.py` をクリックするか、ターミナルで以下のコマンドを実行します。
 
 ```bash
 # Click on structly/structure.py in the file explorer or run:
 code structly/structure.py
 ```
 
-Once the file is open, look at the first line of the import statement. It currently looks like this:
+ファイルが開いたら、インポート文の最初の行を見てください。現在は次のようになっています。
 
 ```python
 from validate import validate_type, PositiveInteger, PositiveFloat, String
 ```
 
-This statement was correct when the files were in a different structure. But now, we need to change it to tell Python to look for the `validate` module within the same package. So, we change it to:
+この文は、ファイルが別の構造にあったときは正しかったです。しかし、現在は、Python に同じパッケージ内の `validate` モジュールを探すように指示する必要があります。そのため、次のように変更します。
 
 ```python
 from .validate import validate_type, PositiveInteger, PositiveFloat, String
 ```
 
-The dot (`.`) before `validate` is a key part here. It's a special syntax in Python called a relative import. It tells Python to search for the `validate` module in the same package as the current module (which is `structure.py` in this case).
+`validate` の前のドット (`.`) が重要なポイントです。これは Python で相対インポートと呼ばれる特殊な構文です。これにより、Python は現在のモジュール（この場合は `structure.py`）と同じパッケージ内の `validate` モジュールを探します。
 
-After making this change, make sure to save the file. Saving is important because it makes the changes permanent, and Python will use the updated import statement when you run your code.
+この変更を加えたら、必ずファイルを保存してください。保存は、変更を永続化し、コードを実行するときに Python が更新されたインポート文を使用するために重要です。
 
-Now, let's check our other files to see if they need any updates.
+では、他のファイルに更新が必要かどうかを確認しましょう。
 
-1. `structly/reader.py` - This file doesn't import from any of our custom modules. That means we don't need to make any changes to it.
-2. `structly/tableformat.py` - Similar to the `reader.py` file, this one also doesn't import from any of our custom modules. So, no changes are required here either.
-3. `structly/validate.py` - Just like the previous two files, it doesn't import from any of our custom modules. Hence, we don't need to modify it.
+1. `structly/reader.py` - このファイルは、自作のモジュールから何もインポートしていません。つまり、変更する必要はありません。
+2. `structly/tableformat.py` - `reader.py` ファイルと同様に、このファイルも自作のモジュールから何もインポートしていません。したがって、ここでも変更は必要ありません。
+3. `structly/validate.py` - 前の 2 つのファイルと同じように、自作のモジュールから何もインポートしていません。したがって、修正する必要はありません。
 
-In real - world programming, your projects might have more complex relationships between modules. When you move files around to create or modify a package structure, always remember to update the import statements. This ensures that your code can find and use the necessary modules correctly.
+実際のプログラミングでは、プロジェクト内のモジュール間の関係がより複雑になることがあります。パッケージ構造を作成または変更するためにファイルを移動するときは、常にインポート文を更新することを忘れないでください。これにより、コードが必要なモジュールを正しく見つけて使用できるようになります。

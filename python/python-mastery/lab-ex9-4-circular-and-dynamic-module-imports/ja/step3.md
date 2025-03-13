@@ -1,21 +1,28 @@
-# サブクラス登録
+# サブクラス登録の実装
 
-次の実験を行ってみて、観察してください。
+プログラミングにおいて、循環インポート（Circular imports）は厄介な問題になります。フォーマッタークラスを直接インポートする代わりに、登録パターンを使用することができます。このパターンでは、サブクラスが自身を親クラスに登録します。これは循環インポートを回避するための一般的で効果的な方法です。
 
-```python
->>> from structly.tableformat.formats.text import TextTableFormatter
->>> TextTableFormatter.__module__
-'structly.tableformat.formats.text'
->>> TextTableFormatter.__module__.split('.')[-1]
-'text'
->>>
+まず、クラスのモジュール名を調べる方法を理解しましょう。モジュール名は、登録パターンで使用するため重要です。これを行うために、ターミナルでPythonコマンドを実行します。
+
+```bash
+cd ~/project/structly
+python3 -c "from structly.tableformat.formats.text import TextTableFormatter; print(TextTableFormatter.__module__); print(TextTableFormatter.__module__.split('.')[-1])"
 ```
 
-辞書と `__init_subclass__()` メソッドを追加することで、`TableFormatter` 基底クラスを変更します。
+このコマンドを実行すると、次のような出力が表示されます。
+
+```
+structly.tableformat.formats.text
+text
+```
+
+この出力は、クラス自体からモジュール名を抽出できることを示しています。後でこのモジュール名を使用してサブクラスを登録します。
+
+次に、`tableformat/formatter.py`ファイルの`TableFormatter`クラスを変更して、登録メカニズムを追加しましょう。WebIDEでこのファイルを開きます。`TableFormatter`クラスにいくつかのコードを追加します。このコードは、サブクラスを自動的に登録するのに役立ちます。
 
 ```python
 class TableFormatter(ABC):
-    _formats = { }
+    _formats = { }  # Dictionary to store registered formatters
 
     @classmethod
     def __init_subclass__(cls):
@@ -31,18 +38,9 @@ class TableFormatter(ABC):
         pass
 ```
 
-これにより、親クラスがそのすべてのサブクラスを追跡するようになります。確認してみましょう。
+`__init_subclass__`メソッドはPythonの特殊メソッドです。`TableFormatter`のサブクラスが作成されるたびに呼び出されます。このメソッドでは、サブクラスのモジュール名を抽出し、それをキーとして`_formats`辞書にサブクラスを登録します。
 
-```python
->>> from structly.tableformat.formatter import TableFormatter
->>> TableFormatter._formats
-{'text': <class'structly.tableformat.formats.text.TextTableFormatter'>,
- 'csv': <class'structly.tableformat.formats.csv.CSVTableFormatter'>,
- 'html': <class'structly.tableformat.formats.html.HTMLTableFormatter'>}
->>>
-```
-
-代わりにこの辞書からクラスを検索するように、`create_formatter()` 関数を変更します。
+次に、登録辞書を使用するように`create_formatter`関数を変更する必要があります。この関数は、指定された名前に基づいて適切なフォーマッターを作成する役割を持っています。
 
 ```python
 def create_formatter(name, column_formats=None, upper_headers=False):
@@ -61,4 +59,22 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-`stock.py` プログラムを実行します。これらの変更を行った後も、まだ機能することを確認してください。ただ一言ですが、すべてのインポート文はまだあります。主にコードを少し整理し、ハードコードされたクラス名を削除しただけです。
+これらの変更を加えた後、ファイルを保存します。次に、プログラムが引き続き動作するかどうかをテストしましょう。`stock.py`スクリプトを実行します。
+
+```bash
+python3 stock.py
+```
+
+プログラムが正常に実行されれば、変更によって何かが壊れていないことを意味します。次に、登録がどのように機能するかを確認するために、`_formats`辞書の内容を見てみましょう。
+
+```bash
+python3 -c "from structly.tableformat.formatter import TableFormatter; print(TableFormatter._formats)"
+```
+
+次のような出力が表示されるはずです。
+
+```
+{'text': <class 'structly.tableformat.formats.text.TextTableFormatter'>, 'csv': <class 'structly.tableformat.formats.csv.CSVTableFormatter'>, 'html': <class 'structly.tableformat.formats.html.HTMLTableFormatter'>}
+```
+
+この出力は、サブクラスが`_formats`辞書に正しく登録されていることを確認しています。ただし、ファイルの途中にまだいくつかのインポート文があります。次のステップでは、動的インポート（Dynamic imports）を使用してこの問題を解決します。

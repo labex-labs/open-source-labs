@@ -1,17 +1,17 @@
-# Updating and Testing the stock.py Program
+# stock.py プログラムの更新とテスト
 
-Now that we've created our package and fixed the internal imports, it's time to update the `stock.py` file to use our new package structure. A package in Python is a way to organize related modules together. It helps in keeping your codebase organized and makes it easier to manage and reuse code.
+パッケージを作成し、内部のインポートを修正したので、次は `stock.py` ファイルを更新して新しいパッケージ構造を使用するようにしましょう。Python のパッケージは、関連するモジュールをまとめる方法です。これにより、コードベースを整理し、コードの管理と再利用が容易になります。
 
-Open the `stock.py` file in the editor:
+エディタで `stock.py` ファイルを開きます。
 
 ```bash
 # Click on stock.py in the file explorer or run:
 code stock.py
 ```
 
-The current imports in `stock.py` are based on the old structure where all files were in the same directory. In Python, when you import a module, Python looks for the module in specific locations. In the old structure, since all files were in the same directory, Python could easily find the modules. But now, with the new package structure, we need to update the imports to tell Python where to find the modules within the `structly` package.
+現在の `stock.py` のインポート文は、すべてのファイルが同じディレクトリにある古い構造を前提としています。Python でモジュールをインポートすると、Python は特定の場所でモジュールを探します。古い構造では、すべてのファイルが同じディレクトリにあったため、Python はモジュールを簡単に見つけることができました。しかし、新しいパッケージ構造では、`structly` パッケージ内のモジュールを Python に探す場所を教えるために、インポート文を更新する必要があります。
 
-Update the `stock.py` file to look exactly like this:
+`stock.py` ファイルを以下のように更新します。
 
 ```python
 # stock.py
@@ -38,21 +38,21 @@ if __name__ == '__main__':
     print_table(portfolio, ['name','shares','price'], formatter)
 ```
 
-The key changes are:
+主な変更点は以下の通りです。
 
-1. Changed `from structure import Structure, String, PositiveInteger, PositiveFloat` to `from structly.structure import Structure, String, PositiveInteger, PositiveFloat`. This change tells Python to look for the `structure` module inside the `structly` package.
-2. Changed `from reader import read_csv_as_instances` to `from structly.reader import read_csv_as_instances`. Similarly, this change directs Python to find the `reader` module within the `structly` package.
-3. Changed `from tableformat import create_formatter, print_table` to `from structly.tableformat import create_formatter, print_table`. This ensures that Python locates the `tableformat` module in the `structly` package.
+1. `from structure import Structure, String, PositiveInteger, PositiveFloat` を `from structly.structure import Structure, String, PositiveInteger, PositiveFloat` に変更しました。この変更により、Python は `structly` パッケージ内の `structure` モジュールを探すようになります。
+2. `from reader import read_csv_as_instances` を `from structly.reader import read_csv_as_instances` に変更しました。同様に、この変更により、Python は `structly` パッケージ内の `reader` モジュールを探すようになります。
+3. `from tableformat import create_formatter, print_table` を `from structly.tableformat import create_formatter, print_table` に変更しました。これにより、Python は `structly` パッケージ内の `tableformat` モジュールを見つけることができます。
 
-Save the file after making these changes. Saving the file is important because it makes sure that the changes you've made are stored and can be used when you run the program.
+これらの変更を加えたら、ファイルを保存します。ファイルを保存することは、変更を保存し、プログラムを実行するときに使用できるようにするために重要です。
 
-Now, let's test our updated code to ensure everything works correctly:
+では、更新したコードをテストして、すべてが正しく動作することを確認しましょう。
 
 ```bash
 python stock.py
 ```
 
-You should see the following output:
+以下の出力が表示されるはずです。
 
 ```
       name      shares       price
@@ -64,4 +64,4 @@ You should see the following output:
        HPE         75       32.2
 ```
 
-If you see this output, congratulations! You have successfully created a Python package and updated your code to use it. This means that your code is now organized in a more modular way, making it easier to maintain and expand in the future.
+この出力が表示されたら、おめでとうございます！Python パッケージを正常に作成し、コードを更新して使用することができました。これは、コードがよりモジュール化された方法で整理され、将来的なメンテナンスと拡張が容易になったことを意味します。

@@ -1,5 +1,5 @@
-# Summary
+# Résumé
 
-In this lab, you have learned how to create and structure a Python package. Specifically, you understood the concept and usefulness of Python packages for code organization, created a basic package structure, moved Python modules into it, updated import statements, and modified code to use the package correctly.
+Dans ce laboratoire, vous avez appris à créer et structurer un package Python. Plus précisément, vous avez compris le concept et l'utilité des packages Python pour l'organisation du code, créé une structure de package de base, déplacé des modules Python dedans, mis à jour les instructions d'importation et modifié le code pour utiliser correctement le package.
 
-These skills are crucial for developing larger Python applications, as proper code organization becomes increasingly important. Python packages help keep related code together, avoid naming conflicts, and make your code more reusable, maintainable, and shareable. Well - structured packages are a cornerstone of professional Python development as you continue your Python journey.
+Ces compétences sont cruciales pour le développement d'applications Python plus importantes, car une bonne organisation du code devient de plus en plus importante. Les packages Python aident à regrouper le code lié, à éviter les conflits de noms et à rendre votre code plus réutilisable, maintenable et partageable. Des packages bien structurés sont la pierre angulaire du développement Python professionnel tout au long de votre parcours en Python.

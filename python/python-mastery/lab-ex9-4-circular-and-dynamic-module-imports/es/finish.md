@@ -1,3 +1,5 @@
 # Resumen
 
-¡Felicidades! Has completado el laboratorio de Importaciones Circulares y Dinámicas de Módulos. Puedes practicar más laboratorios en LabEx para mejorar tus habilidades.
+En este laboratorio (lab), has aprendido conceptos y técnicas cruciales sobre la importación de módulos en Python. Primero, has explorado las importaciones circulares, comprendiendo cómo las dependencias circulares entre módulos pueden causar problemas y por qué es necesario manejarlas con cuidado para evitarlas. Segundo, has implementado el registro de subclases, un patrón en el que las subclases se registran con su clase padre, eliminando la necesidad de importar directamente las subclases.
+
+También has utilizado la función `__import__()` para importaciones dinámicas, cargando módulos en tiempo de ejecución solo cuando sea necesario. Esto hace que el código sea más flexible y ayuda a evitar dependencias circulares. Estas técnicas son esenciales para crear paquetes de Python mantenibles con relaciones complejas entre módulos y se utilizan comúnmente en marcos de trabajo (frameworks) y bibliotecas. Aplicar estos patrones a tus proyectos puede ayudarte a construir estructuras de código más modulares, extensibles y mantenibles.

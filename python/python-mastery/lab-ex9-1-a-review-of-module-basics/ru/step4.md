@@ -1,24 +1,24 @@
-# Using from module import Syntax
+# Использование синтаксиса from module import
 
-In Python, there are various ways to import components from modules. One of these ways is the `from module import` syntax, which we'll explore in this section.
+В Python существует несколько способов импортировать компоненты из модулей. Одним из них является синтаксис `from module import`, который мы рассмотрим в этом разделе.
 
-When you import components from a module, it's often a good idea to start with a clean slate. This ensures that there are no leftover variables or settings from previous interactions that could interfere with our current experiment.
+При импорте компонентов из модуля часто хорошей идеей является начать с "чистого листа". Это гарантирует, что не остается переменных или настроек от предыдущих взаимодействий, которые могли бы повлиять на наш текущий эксперимент.
 
-1. Restart the Python interpreter to get a clean state:
+1. Перезапустите интерпретатор Python, чтобы получить чистый статус:
 
 ```python
 >>> exit()
 ```
 
-This command exits the current Python interpreter session. After exiting, we'll start a new session to ensure a fresh environment.
+Эта команда завершает текущую сессию интерпретатора Python. После выхода мы запустим новую сессию, чтобы обеспечить свежее окружение.
 
 ```bash
 python3
 ```
 
-This bash command starts a new Python 3 interpreter session. Now that we have a clean Python environment, we can start importing components from a module.
+Эта команда bash запускает новую сессию интерпретатора Python 3. Теперь, когда у нас есть чистое окружение Python, мы можем начать импортировать компоненты из модуля.
 
-2. Import specific components from a module using the `from module import` syntax:
+2. Импортируйте конкретные компоненты из модуля, используя синтаксис `from module import`:
 
 ```python
 >>> from simplemod import foo
@@ -27,9 +27,9 @@ Loaded simplemod
 x is 42
 ```
 
-Here, we're using the `from simplemod import foo` statement to import only the `foo` function from the `simplemod` module. Notice that even though we only asked for the `foo` function, the entire `simplemod` module was loaded. This is indicated by the "Loaded simplemod" output. The reason for this is that Python needs to load the whole module to access the `foo` function.
+Здесь мы используем инструкцию `from simplemod import foo` для импорта только функции `foo` из модуля `simplemod`. Обратите внимание, что даже несмотря на то, что мы запросили только функцию `foo`, весь модуль `simplemod` был загружен. Это подтверждается выводом "Loaded simplemod". Причина этого заключается в том, что Python должен загрузить весь модуль, чтобы получить доступ к функции `foo`.
 
-3. When using `from module import`, you cannot access the module itself:
+3. При использовании `from module import` вы не можете обращаться к самому модулю:
 
 ```python
 >>> simplemod.foo()
@@ -38,9 +38,9 @@ Traceback (most recent call last):
 NameError: name 'simplemod' is not defined
 ```
 
-When we use the `from module import` syntax, we're only bringing in the specified components directly into our namespace. The module name itself is not imported. So, when we try to access `simplemod.foo()`, Python doesn't recognize `simplemod` because it wasn't imported in that way.
+Когда мы используем синтаксис `from module import`, мы напрямую импортируем только указанные компоненты в наше пространство имен. Само имя модуля не импортируется. Поэтому, когда мы пытаемся обратиться к `simplemod.foo()`, Python не распознает `simplemod`, так как он не был импортирован таким образом.
 
-4. You can import multiple components at once:
+4. Вы можете импортировать несколько компонентов сразу:
 
 ```python
 >>> from simplemod import x, foo
@@ -50,9 +50,9 @@ When we use the `from module import` syntax, we're only bringing in the specifie
 x is 42
 ```
 
-The `from module import` syntax allows us to import multiple components from a module in a single statement. Here, we're importing both the variable `x` and the function `foo` from the `simplemod` module. After importing, we can directly access these components in our code.
+Синтаксис `from module import` позволяет нам импортировать несколько компонентов из модуля в одной инструкции. Здесь мы импортируем как переменную `x`, так и функцию `foo` из модуля `simplemod`. После импорта мы можем напрямую обращаться к этим компонентам в нашем коде.
 
-5. When you import a variable from a module, you are creating a new reference to the object, not a link to the variable in the module:
+5. Когда вы импортируете переменную из модуля, вы создаете новую ссылку на объект, а не ссылку на переменную в модуле:
 
 ```python
 >>> x = 13  # Change the local variable x
@@ -62,4 +62,4 @@ The `from module import` syntax allows us to import multiple components from a m
 x is 42  # The function still uses the module's x, not your local x
 ```
 
-When we import a variable from a module, we're essentially creating a new reference to the same object in our local namespace. So, when we change the local variable `x` to `13`, it doesn't affect the `x` variable inside the `simplemod` module. The `foo()` function still refers to the module's `x` variable, which is `42`. Understanding this concept is crucial to avoid confusion in your code.
+Когда мы импортируем переменную из модуля, мы по сути создаем новую ссылку на тот же объект в нашем локальном пространстве имен. Поэтому, когда мы изменяем локальную переменную `x` на `13`, это не влияет на переменную `x` внутри модуля `simplemod`. Функция `foo()` по-прежнему ссылается на переменную `x` модуля, которая равна `42`. Понимание этого концепта является важным для избежания путаницы в вашем коде.

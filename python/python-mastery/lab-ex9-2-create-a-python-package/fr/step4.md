@@ -1,17 +1,17 @@
-# Updating and Testing the stock.py Program
+# Mise à jour et test du programme stock.py
 
-Now that we've created our package and fixed the internal imports, it's time to update the `stock.py` file to use our new package structure. A package in Python is a way to organize related modules together. It helps in keeping your codebase organized and makes it easier to manage and reuse code.
+Maintenant que nous avons créé notre package et corrigé les imports internes, il est temps de mettre à jour le fichier `stock.py` pour utiliser notre nouvelle structure de package. Un package en Python est un moyen d'organiser des modules liés ensemble. Cela aide à organiser votre base de code et facilite la gestion et la réutilisation du code.
 
-Open the `stock.py` file in the editor:
+Ouvrez le fichier `stock.py` dans l'éditeur :
 
 ```bash
 # Click on stock.py in the file explorer or run:
 code stock.py
 ```
 
-The current imports in `stock.py` are based on the old structure where all files were in the same directory. In Python, when you import a module, Python looks for the module in specific locations. In the old structure, since all files were in the same directory, Python could easily find the modules. But now, with the new package structure, we need to update the imports to tell Python where to find the modules within the `structly` package.
+Les imports actuels dans `stock.py` sont basés sur l'ancienne structure où tous les fichiers étaient dans le même répertoire. En Python, lorsque vous importez un module, Python recherche le module dans des emplacements spécifiques. Dans l'ancienne structure, puisque tous les fichiers étaient dans le même répertoire, Python pouvait facilement trouver les modules. Mais maintenant, avec la nouvelle structure de package, nous devons mettre à jour les imports pour indiquer à Python où trouver les modules dans le package `structly`.
 
-Update the `stock.py` file to look exactly like this:
+Mettez à jour le fichier `stock.py` pour qu'il ressemble exactement à ceci :
 
 ```python
 # stock.py
@@ -38,21 +38,21 @@ if __name__ == '__main__':
     print_table(portfolio, ['name','shares','price'], formatter)
 ```
 
-The key changes are:
+Les principales modifications sont les suivantes :
 
-1. Changed `from structure import Structure, String, PositiveInteger, PositiveFloat` to `from structly.structure import Structure, String, PositiveInteger, PositiveFloat`. This change tells Python to look for the `structure` module inside the `structly` package.
-2. Changed `from reader import read_csv_as_instances` to `from structly.reader import read_csv_as_instances`. Similarly, this change directs Python to find the `reader` module within the `structly` package.
-3. Changed `from tableformat import create_formatter, print_table` to `from structly.tableformat import create_formatter, print_table`. This ensures that Python locates the `tableformat` module in the `structly` package.
+1. Changement de `from structure import Structure, String, PositiveInteger, PositiveFloat` en `from structly.structure import Structure, String, PositiveInteger, PositiveFloat`. Cette modification indique à Python de rechercher le module `structure` à l'intérieur du package `structly`.
+2. Changement de `from reader import read_csv_as_instances` en `from structly.reader import read_csv_as_instances`. De même, cette modification dirige Python pour trouver le module `reader` dans le package `structly`.
+3. Changement de `from tableformat import create_formatter, print_table` en `from structly.tableformat import create_formatter, print_table`. Cela garantit que Python localise le module `tableformat` dans le package `structly`.
 
-Save the file after making these changes. Saving the file is important because it makes sure that the changes you've made are stored and can be used when you run the program.
+Sauvegardez le fichier après avoir effectué ces modifications. Sauvegarder le fichier est important car cela garantit que les modifications que vous avez apportées sont enregistrées et peuvent être utilisées lorsque vous exécutez le programme.
 
-Now, let's test our updated code to ensure everything works correctly:
+Maintenant, testons notre code mis à jour pour nous assurer que tout fonctionne correctement :
 
 ```bash
 python stock.py
 ```
 
-You should see the following output:
+Vous devriez voir la sortie suivante :
 
 ```
       name      shares       price
@@ -64,4 +64,4 @@ You should see the following output:
        HPE         75       32.2
 ```
 
-If you see this output, congratulations! You have successfully created a Python package and updated your code to use it. This means that your code is now organized in a more modular way, making it easier to maintain and expand in the future.
+Si vous voyez cette sortie, félicitations ! Vous avez créé avec succès un package Python et mis à jour votre code pour l'utiliser. Cela signifie que votre code est maintenant organisé de manière plus modulaire, ce qui le rend plus facile à maintenir et à développer à l'avenir.
