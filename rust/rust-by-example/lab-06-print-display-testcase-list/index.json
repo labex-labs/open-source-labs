@@ -61,11 +61,11 @@
     {
       "lang": "zh",
       "title": "在 Rust 中为 List 实现 fmt::Display",
-      "description": "在这个实验中，我们要为 Rust 中一个名为 List 的结构体实现 fmt::Display，该结构体包含一个 Vec。挑战在于使用 write! 宏按顺序处理每个元素，因为它会生成一个 fmt::Result，需要对其进行正确处理。为了解决这个问题，我们可以使用? 运算符检查 write! 是否返回错误，如果返回错误则返回该错误，否则继续执行。通过为 List 实现 fmt::Display，我们可以遍历向量中的元素，并在方括号内打印它们，元素之间用逗号分隔。任务是修改程序，使其还能打印向量中每个元素的索引。修改后的预期输出是 [0: 1, 1: 2, 2: 3]。",
+      "description": "在这个实验中，我们要为 Rust 中一个名为 List 的结构体实现 fmt::Display，该结构体包含一个 Vec。挑战在于使用 write! 宏按顺序处理每个元素，因为它会生成一个 fmt::Result，需要对其进行正确处理。为了解决这个问题，我们可以使用？运算符检查 write! 是否返回错误，如果返回错误则返回该错误，否则继续执行。通过为 List 实现 fmt::Display，我们可以遍历向量中的元素，并在方括号内打印它们，元素之间用逗号分隔。任务是修改程序，使其还能打印向量中每个元素的索引。修改后的预期输出是 [0: 1, 1: 2, 2: 3]。",
       "meta": {
         "title": "Rust 编程 | 为 List 结构体实现 fmt::Display",
-        "description": "学习如何为 Rust 中一个名为 List 的结构体实现 fmt::Display 特性，该结构体包含一个 Vec。了解如何使用? 运算符正确处理 fmt::Result。",
-        "keywords": "Rust, 编程, fmt::Display, List, Vec, fmt::Result,?"
+        "description": "学习如何为 Rust 中一个名为 List 的结构体实现 fmt::Display 特性，该结构体包含一个 Vec。了解如何使用？运算符正确处理 fmt::Result。",
+        "keywords": "Rust, 编程，fmt::Display, List, Vec, fmt::Result,?"
       },
       "details": {
         "steps": [
@@ -193,16 +193,16 @@
     {
       "lang": "ja",
       "title": "Rust で List に対して fmt::Display を実装する",
-      "description": "この実験では、Rust の Vec を含む List と呼ばれる構造体に対して fmt::Display を実装します。課題は、write! マクロを使用して各要素を順次処理することです。これは fmt::Result を生成するため、適切に処理する必要があります。これに対処するために、write! がエラーを返すかどうかを確認し、返した場合はそれを返し、そうでなければ実行を続けるために? 演算子を使用できます。List に対して fmt::Display を実装することで、ベクトル内の要素を反復処理し、角括弧内にコンマ区切りで表示することができます。課題は、プログラムを修正して、ベクトル内の各要素のインデックスも表示することです。修正後の期待される出力は [0: 1, 1: 2, 2: 3] です。",
+      "description": "この実験では、Rust の Vec を含む List と呼ばれる構造体に対して fmt::Display を実装します。課題は、write! マクロを使用して各要素を順次処理することです。これは fmt::Result を生成するため、適切に処理する必要があります。これに対処するために、write! がエラーを返すかどうかを確認し、返した場合はそれを返し、そうでなければ実行を続けるために？演算子を使用できます。List に対して fmt::Display を実装することで、ベクトル内の要素を反復処理し、角括弧内にコンマ区切りで表示することができます。課題は、プログラムを修正して、ベクトル内の各要素のインデックスも表示することです。修正後の期待される出力は [0: 1, 1: 2, 2: 3] です。",
       "meta": {
         "title": "Rust プログラミング | List 構造体に対する fmt::Display の実装",
         "description": "List と呼ばれる Rust 構造体に対して fmt::Display トレイトをどのように実装するか学びましょう。この構造体には Vec が含まれています。? 演算子を使用した fmt::Result の適切な処理方法を見つけましょう。",
-        "keywords": "Rust, プログラミング, fmt::Display, List, Vec, fmt::Result,?"
+        "keywords": "Rust, プログラミング，fmt::Display, List, Vec, fmt::Result,?"
       },
       "details": {
         "steps": [
           {
-            "title": "テストケース: List",
+            "title": "テストケース：List",
             "text": "ja/step1.md",
             "verify": [
               {
