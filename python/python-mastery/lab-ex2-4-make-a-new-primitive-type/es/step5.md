@@ -1,6 +1,6 @@
-# Añadiendo conversiones de tipos
+# Agregando Conversiones de Tipo
 
-Nuestra clase `MutInt` actualmente admite operaciones de suma y comparación. Sin embargo, no funciona con las funciones de conversión integradas de Python, como `int()` y `float()`. Estas funciones de conversión son muy útiles en Python. Por ejemplo, cuando se desea convertir un valor a un entero o a un número de punto flotante para diferentes cálculos u operaciones, se dependen de estas funciones. Entonces, agreguemos a nuestra clase `MutInt` la capacidad de trabajar con ellas.
+Nuestra clase `MutInt` actualmente soporta operaciones de adición y comparación. Sin embargo, no funciona con las funciones de conversión integradas de Python como `int()` y `float()`. Estas funciones de conversión son muy útiles en Python. Por ejemplo, cuando quieres convertir un valor a un entero o a un número de punto flotante para diferentes cálculos u operaciones, dependes de estas funciones. Así que, agreguemos las capacidades a nuestra clase `MutInt` para que funcione con ellas.
 
 1. Abre `mutint.py` en el WebIDE y actualízalo con el siguiente código:
 
@@ -83,15 +83,35 @@ class MutInt:
         return float(self.value)
 
     __index__ = __int__  # Support array indexing and other operations requiring an index
+
+    def __lshift__(self, other):
+        """Handle left shift: self << other."""
+        if isinstance(other, MutInt):
+            return MutInt(self.value << other.value)
+        elif isinstance(other, int):
+            return MutInt(self.value << other)
+        else:
+            return NotImplemented
+
+    def __rlshift__(self, other):
+        """Handle reversed left shift: other << self."""
+        if isinstance(other, int):
+            return MutInt(other << self.value)
+        else:
+            return NotImplemented
 ```
 
-Hemos agregado tres nuevos métodos a la clase `MutInt`:
+Hemos añadido tres nuevos métodos a la clase `MutInt`:
 
-1. `__int__()`: Este método se llama cuando se utiliza la función `int()` en un objeto de nuestra clase `MutInt`. Por ejemplo, si se tiene un objeto `MutInt` llamado `a`, y se escribe `int(a)`, Python llamará al método `__int__()` del objeto `a`.
-2. `__float__()`: De manera similar, este método se llama cuando se utiliza la función `float()` en nuestro objeto `MutInt`.
-3. `__index__()`: Este método se utiliza para operaciones que específicamente requieren un índice entero. Por ejemplo, cuando se desea acceder a un elemento en una lista utilizando un índice, o realizar operaciones de longitud de bits, Python necesita un índice entero.
+1. `__int__()`: Este método es llamado cuando usas la función `int()` en un objeto de nuestra clase `MutInt`. Por ejemplo, si tienes un objeto `MutInt` llamado `a`, y escribes `int(a)`, Python llamará al método `__int__()` del objeto `a`.
+2. `__float__()`: De manera similar, este método es llamado cuando usas la función `float()` en nuestro objeto `MutInt`.
+3. `__index__()`: Este método se utiliza para operaciones que requieren específicamente un índice entero. Por ejemplo, cuando quieres acceder a un elemento en una lista usando un índice, o realizar operaciones de longitud de bits (bit-length operations), Python necesita un índice entero.
+4. `__lshift__()`: Este método maneja las operaciones de desplazamiento a la izquierda (left shift operations) cuando el objeto `MutInt` está en el lado izquierdo del operador `<<`.
+5. `__rlshift__()`: Este método maneja las operaciones de desplazamiento a la izquierda (left shift operations) cuando el objeto `MutInt` está en el lado derecho del operador `<<`.
 
-El método `__index__` es crucial para operaciones que requieren un índice entero, como la indexación de listas, el corte (slicing) y las operaciones de longitud de bits. En nuestra implementación simple, lo configuramos para que sea el mismo que `__int__` porque el valor de nuestro objeto `MutInt` se puede utilizar directamente como un índice entero.
+El método `__index__` es crucial para operaciones que demandan un índice entero, como el indexado de listas, el _slicing_ (rebanado) y las operaciones de longitud de bits. En nuestra implementación simple, lo establecemos para que sea el mismo que `__int__` porque el valor de nuestro objeto `MutInt` puede ser usado directamente como un índice entero.
+
+Los métodos `__lshift__` y `__rlshift__` son esenciales para soportar las operaciones bit a bit de desplazamiento a la izquierda. Permiten que nuestros objetos `MutInt` participen en operaciones bit a bit, lo cual es un requisito común para los tipos similares a enteros.
 
 2. Crea un nuevo archivo de prueba llamado `test_conversions.py` para probar estos nuevos métodos:
 
@@ -120,8 +140,8 @@ print(f"oct(a): {oct(a)}")
 print(f"bin(a): {bin(a)}")
 
 # Modify and test again
-a.value = 5
-print(f"\nAfter changing value to 5:")
+a.value = 4
+print(f"\nAfter changing value to 4:")
 print(f"int(a): {int(a)}")
 print(f"names[a]: {names[a]}")
 ```
@@ -137,26 +157,26 @@ Deberías ver una salida similar a esta:
 ```
 int(a): 3
 float(a): 3.0
-names[a]: Paula
+names[a]: Thomas
 1 << a: 8
 hex(a): 0x3
 oct(a): 0o3
 bin(a): 0b11
 
-After changing value to 5:
-int(a): 5
+After changing value to 4:
+int(a): 4
 names[a]: Lewis
 ```
 
-Ahora nuestra clase `MutInt` se puede convertir a tipos estándar de Python y utilizarse en operaciones que requieren un índice entero.
+Ahora nuestra clase `MutInt` puede ser convertida a tipos estándar de Python y usada en operaciones que requieren un índice entero.
 
-El método `__index__` es particularmente importante. Fue introducido en Python para permitir que los objetos se utilicen en situaciones donde se requiere un índice entero, como la indexación de listas, las operaciones bit a bit y varias funciones como `hex()`, `oct()` y `bin()`.
+El método `__index__` es particularmente importante. Fue introducido en Python para permitir que los objetos sean usados en situaciones donde se requiere un índice entero, como el indexado de listas, las operaciones bit a bit y varias funciones como `hex()`, `oct()` y `bin()`.
 
-Con estas adiciones, nuestra clase `MutInt` es ahora un tipo primitivo bastante completo. Se puede utilizar en la mayoría de los contextos donde se utilizaría un entero normal, con el beneficio adicional de ser mutable.
+Con estas adiciones, nuestra clase `MutInt` es ahora un tipo primitivo bastante completo. Puede ser usado en la mayoría de los contextos donde un entero regular sería usado, con el beneficio añadido de ser mutable.
 
-## Implementación completa de MutInt
+## Implementación Completa de MutInt
 
-Aquí está nuestra implementación completa de `MutInt` con todas las características que hemos agregado:
+Aquí está nuestra implementación completa de `MutInt` con todas las características que hemos añadido:
 
 ```python
 # mutint.py
@@ -237,6 +257,22 @@ class MutInt:
         return float(self.value)
 
     __index__ = __int__  # Support array indexing and other operations requiring an index
+
+    def __lshift__(self, other):
+        """Handle left shift: self << other."""
+        if isinstance(other, MutInt):
+            return MutInt(self.value << other.value)
+        elif isinstance(other, int):
+            return MutInt(self.value << other)
+        else:
+            return NotImplemented
+
+    def __rlshift__(self, other):
+        """Handle reversed left shift: other << self."""
+        if isinstance(other, int):
+            return MutInt(other << self.value)
+        else:
+            return NotImplemented
 ```
 
-Esta implementación cubre los aspectos clave de la creación de un nuevo tipo primitivo en Python. Para hacerlo aún más completo, se podrían implementar métodos adicionales para otras operaciones como la resta, la multiplicación, la división, etc.
+Esta implementación cubre los aspectos clave de la creación de un nuevo tipo primitivo en Python. Para hacerlo aún más completo, podrías implementar métodos adicionales para otras operaciones como la resta, la multiplicación, la división, etc.

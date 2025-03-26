@@ -83,6 +83,22 @@ class MutInt:
         return float(self.value)
 
     __index__ = __int__  # Support array indexing and other operations requiring an index
+
+    def __lshift__(self, other):
+        """Handle left shift: self << other."""
+        if isinstance(other, MutInt):
+            return MutInt(self.value << other.value)
+        elif isinstance(other, int):
+            return MutInt(self.value << other)
+        else:
+            return NotImplemented
+
+    def __rlshift__(self, other):
+        """Handle reversed left shift: other << self."""
+        if isinstance(other, int):
+            return MutInt(other << self.value)
+        else:
+            return NotImplemented
 ```
 
 We've added three new methods to the `MutInt` class:
@@ -90,8 +106,12 @@ We've added three new methods to the `MutInt` class:
 1. `__int__()`: This method is called when you use the `int()` function on an object of our `MutInt` class. For example, if you have a `MutInt` object `a`, and you write `int(a)`, Python will call the `__int__()` method of the `a` object.
 2. `__float__()`: Similarly, this method is called when you use the `float()` function on our `MutInt` object.
 3. `__index__()`: This method is used for operations that specifically require an integer index. For instance, when you want to access an element in a list using an index, or perform bit - length operations, Python needs an integer index.
+4. `__lshift__()`: This method handles left shift operations when the `MutInt` object is on the left side of the `<<` operator.
+5. `__rlshift__()`: This method handles left shift operations when the `MutInt` object is on the right side of the `<<` operator.
 
 The `__index__` method is crucial for operations that demand an integer index, like list indexing, slicing, and bit - length operations. In our simple implementation, we set it to be the same as `__int__` because our `MutInt` object's value can be directly used as an integer index.
+
+The `__lshift__` and `__rlshift__` methods are essential for supporting bitwise left shift operations. They allow our `MutInt` objects to participate in bitwise operations, which is a common requirement for integer-like types.
 
 2. Create a new test file called `test_conversions.py` to test these new methods:
 
@@ -120,8 +140,8 @@ print(f"oct(a): {oct(a)}")
 print(f"bin(a): {bin(a)}")
 
 # Modify and test again
-a.value = 5
-print(f"\nAfter changing value to 5:")
+a.value = 4
+print(f"\nAfter changing value to 4:")
 print(f"int(a): {int(a)}")
 print(f"names[a]: {names[a]}")
 ```
@@ -137,14 +157,14 @@ You should see output similar to this:
 ```
 int(a): 3
 float(a): 3.0
-names[a]: Paula
+names[a]: Thomas
 1 << a: 8
 hex(a): 0x3
 oct(a): 0o3
 bin(a): 0b11
 
-After changing value to 5:
-int(a): 5
+After changing value to 4:
+int(a): 4
 names[a]: Lewis
 ```
 
@@ -237,6 +257,22 @@ class MutInt:
         return float(self.value)
 
     __index__ = __int__  # Support array indexing and other operations requiring an index
+
+    def __lshift__(self, other):
+        """Handle left shift: self << other."""
+        if isinstance(other, MutInt):
+            return MutInt(self.value << other.value)
+        elif isinstance(other, int):
+            return MutInt(self.value << other)
+        else:
+            return NotImplemented
+
+    def __rlshift__(self, other):
+        """Handle reversed left shift: other << self."""
+        if isinstance(other, int):
+            return MutInt(other << self.value)
+        else:
+            return NotImplemented
 ```
 
 This implementation covers the key aspects of creating a new primitive type in Python. To make it even more complete, you could implement additional methods for other operations like subtraction, multiplication, division, etc.
