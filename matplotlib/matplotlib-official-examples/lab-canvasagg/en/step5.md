@@ -1,6 +1,6 @@
-# Save the Numpy Array to a Pillow Image
+# numpy 配列を Pillow 画像に保存する
 
-Now that we have the numpy array, we can pass it off to Pillow and save it in any format supported by Pillow. In this example, we will save the plot as a BMP image.
+numpy 配列ができたので、それを Pillow に渡して、Pillow がサポートする任意の形式で保存することができます。この例では、グラフを BMP 画像として保存します。
 
 ```python
 from PIL import Image

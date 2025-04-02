@@ -1,6 +1,6 @@
-# Extract the Renderer Buffer to a Numpy Array
+# レンダラーバッファを numpy 配列に抽出する
 
-The second option for saving the plot is to extract the renderer buffer to a numpy array. This allows us to use Matplotlib inside a cgi-script without needing to write a figure to disk. In this example, we will extract the renderer buffer and convert it to a numpy array.
+グラフを保存する 2 番目のオプションは、レンダラーバッファを numpy 配列に抽出することです。これにより、cgi スクリプト内で Matplotlib を使用して、グラフをディスクに書き込む必要なく済みます。この例では、レンダラーバッファを抽出して numpy 配列に変換します。
 
 ```python
 import numpy as np
