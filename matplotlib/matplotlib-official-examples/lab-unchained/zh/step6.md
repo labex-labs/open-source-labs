@@ -3,6 +3,8 @@
 现在，我们将通过把数据向右移动并填充新值来为绘图添加动画效果。
 
 ```python
+import matplotlib.animation as animation
+
 def update(*args):
     # Shift all data to the right
     data[:, 1:] = data[:, :-1]

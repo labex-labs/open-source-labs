@@ -3,6 +3,8 @@
 Теперь мы анимируем график, сдвигая данные вправо и заполняя новые значения.
 
 ```python
+import matplotlib.animation as animation
+
 def update(*args):
     # Shift all data to the right
     data[:, 1:] = data[:, :-1]

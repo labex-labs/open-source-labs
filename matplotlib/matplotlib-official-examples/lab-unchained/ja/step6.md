@@ -3,6 +3,8 @@
 ここでは、データを右にシフトして新しい値を埋めることで、グラフをアニメーション化します。
 
 ```python
+import matplotlib.animation as animation
+
 def update(*args):
     # Shift all data to the right
     data[:, 1:] = data[:, :-1]
