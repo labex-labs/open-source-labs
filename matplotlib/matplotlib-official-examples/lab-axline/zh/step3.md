@@ -21,7 +21,7 @@ plt.axvline(color="grey")
 # 绘制任意直线
 plt.axline((0, 0.5), slope=0.25, color="black", linestyle=(0, (5, 5)))
 
-# 绘制Sigmoid函数
+# 绘制 Sigmoid 函数
 plt.plot(t, sig, linewidth=2, label=r"$\sigma(t) = \frac{1}{1 + e^{-t}}$")
 plt.xlim(-10, 10)
 plt.xlabel("t")

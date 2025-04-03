@@ -18,7 +18,7 @@ plt.axhline(y=1.0, color="black", linestyle="--")
 # 绘制垂直线
 plt.axvline(color="grey")
 
-# 绘制Sigmoid函数
+# 绘制 Sigmoid 函数
 plt.plot(t, sig, linewidth=2, label=r"$\sigma(t) = \frac{1}{1 + e^{-t}}$")
 plt.xlim(-10, 10)
 plt.xlabel("t")
