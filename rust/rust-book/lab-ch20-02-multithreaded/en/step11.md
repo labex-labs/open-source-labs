@@ -69,41 +69,7 @@ The call to `recv` blocks, so if there is no job yet, the current thread will wa
 Our thread pool is now in a working state! Give it a `cargo run` and make some requests:
 
 ```bash
-$ cargo run
-   Compiling hello v0.1.0 (file:///projects/hello)
-warning: field is never read: `workers`
- --> src/lib.rs:7:5
-  |
-7 |     workers: Vec<Worker>,
-  |     ^^^^^^^^^^^^^^^^^^^^
-  |
-  = note: `#[warn(dead_code)]` on by default
 
-warning: field is never read: `id`
-  --> src/lib.rs:48:5
-   |
-48 |     id: usize,
-   |     ^^^^^^^^^
-
-warning: field is never read: `thread`
-  --> src/lib.rs:49:5
-   |
-49 |     thread: thread::JoinHandle<()>,
-   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-warning: `hello` (lib) generated 3 warnings
-    Finished dev [unoptimized + debuginfo] target(s) in 1.40s
-     Running `target/debug/hello`
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
-Worker 1 got a job; executing.
-Worker 3 got a job; executing.
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
-Worker 1 got a job; executing.
-Worker 3 got a job; executing.
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
 ```
 
 Success! We now have a thread pool that executes connections asynchronously. There are never more than four threads created, so our system won't get overloaded if the server receives a lot of requests. If we make a request to _/sleep_, the server will be able to serve other requests by having another thread run them.

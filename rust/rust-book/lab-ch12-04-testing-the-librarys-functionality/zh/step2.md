@@ -79,30 +79,7 @@ Rust 不可能知道我们需要两个参数中的哪一个，所以我们需要
 现在让我们运行测试：
 
 ```bash
-$ cargo test
-   Compiling minigrep v0.1.0 (file:///projects/minigrep)
-    Finished test [unoptimized + debuginfo] target(s) in 0.97s
-     Running unittests src/lib.rs (target/debug/deps/minigrep-9cd200e5fac0fc94)
 
-running 1 test
-test tests::one_result... FAILED
-
-failures:
-
----- tests::one_result stdout ----
-thread 'tests::one_result' panicked at 'assertion failed: `(left == right)`
-  left: `["safe, fast, productive."]`,
- right: `[]`', src/lib.rs:47:9
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-failures:
-    tests::one_result
-
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
-
-error: test failed, to rerun pass '--lib'
 ```
 
 很好，测试失败了，正如我们所期望的。让我们让测试通过！

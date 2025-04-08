@@ -79,30 +79,7 @@ D'autres langages de programmation ne vous obligent pas à connecter les argumen
 Maintenant, exécutons le test :
 
 ```bash
-$ cargo test
-   Compiling minigrep v0.1.0 (file:///projects/minigrep)
-    Finished test [unoptimized + debuginfo] target(s) in 0.97s
-     Running unittests src/lib.rs (target/debug/deps/minigrep-9cd200e5fac0fc94)
 
-running 1 test
-test tests::one_result... FAILED
-
-failures:
-
----- tests::one_result stdout ----
-thread 'tests::one_result' panicked at 'assertion failed: `(left == right)`
-  left: `["safe, fast, productive."]`,
- right: `[]`', src/lib.rs:47:9
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-failures:
-    tests::one_result
-
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
-
-error: test failed, to rerun pass '--lib'
 ```
 
 Parfait, le test échoue, exactement comme nous l'attendions. Faisons passer le test!

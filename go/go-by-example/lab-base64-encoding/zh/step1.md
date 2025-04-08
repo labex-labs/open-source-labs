@@ -10,13 +10,6 @@
 ```sh
 # 使用标准 Base64 编码器和 URL Base64 编码器对字符串进行编码时，结果会稍有不同（末尾分别是 `+` 和 `-`），
 # 但它们都能按预期解码为原始字符串。
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```
 
 以下是完整代码：

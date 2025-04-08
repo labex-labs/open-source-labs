@@ -28,18 +28,7 @@ $ cargo test
 以下のような出力が表示されるはずです。
 
 ```shell
-$ cargo test
-   Compiling blah v0.1.0 (file:///nobackup/blah)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.89 secs
-     Running target/debug/deps/blah-d3b32b97275ec472
 
-running 3 tests
-test test_bar... ok
-test test_baz... ok
-test test_foo_bar... ok
-test test_foo... ok
-
-test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
 また、名前がパターンに一致するテストを実行することもできます。
@@ -49,16 +38,7 @@ $ cargo test test_foo
 ```
 
 ```shell
-$ cargo test test_foo
-   Compiling blah v0.1.0 (file:///nobackup/blah)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.35 secs
-     Running target/debug/deps/blah-d3b32b97275ec472
 
-running 2 tests
-test test_foo... ok
-test test_foo_bar... ok
-
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out
 ```
 
 注意点として1つだけ：Cargoは複数のテストを同時に実行する場合があるので、互いに競合しないようにしてください。

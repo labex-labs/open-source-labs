@@ -12,12 +12,9 @@ Das Problem, das in diesem Labor gelöst werden soll, besteht darin, einen benan
 ```sh
 # Wenn das Programm ausgeführt wird, werden die Zähler
 # wie erwartet aktualisiert.
-$ go run mutexes.go
-map[a:20000 b:10000]
 
 # Als nächstes betrachten wir die Implementierung dieser
 # gleichen Zustandsverwaltung mit nur Goroutines und Kanälen.
-
 ```
 
 Hier ist der vollständige Code:

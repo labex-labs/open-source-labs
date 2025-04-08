@@ -48,19 +48,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 Code blocks in documentation are automatically tested when running the regular `cargo test` command:
 
 ```shell
-$ cargo test
-running 0 tests
 
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
-
-   Doc-tests doccomments
-
-running 3 tests
-test src/lib.rs - add (line 7) ... ok
-test src/lib.rs - div (line 21) ... ok
-test src/lib.rs - div (line 31) ... ok
-
-test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
 ## Motivation behind documentation tests

@@ -22,22 +22,7 @@ Le défi consiste à compléter le code pour effectuer diverses tâches liées a
 ## Exemple
 
 ```sh
-$ go run regular-expressions.go
-true
-true
-peche
-idx: [0 5]
-[peche ea]
-[0 5 1 3]
-[peche punch pinch]
-tout: [[0 5 1 3] [6 11 7 9] [12 17 13 15]]
-[peche punch]
-true
-expression régulière: p([a-z]+)ch
-une <fruit>
-une PECHE
 
 # Pour une référence complète sur les expressions régulières en Go, consultez
 # la documentation du package [`regexp`](https://pkg.go.dev/regexp).
-
 ```

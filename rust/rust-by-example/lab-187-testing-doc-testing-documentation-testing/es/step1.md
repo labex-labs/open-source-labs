@@ -48,19 +48,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 Los bloques de código en la documentación se prueban automáticamente al ejecutar el comando regular `cargo test`:
 
 ```shell
-$ cargo test
-ejecutando 0 pruebas
 
-resultado de la prueba: ok. 0 pasadas; 0 fallidas; 0 ignoradas; 0 medidas; 0 filtradas
-
-   Pruebas de documentación doccomments
-
-ejecutando 3 pruebas
-prueba src/lib.rs - add (línea 7)... ok
-prueba src/lib.rs - div (línea 21)... ok
-prueba src/lib.rs - div (línea 31)... ok
-
-resultado de la prueba: ok. 3 pasadas; 0 fallidas; 0 ignoradas; 0 medidas; 0 filtradas
 ```
 
 ## Motivación detrás de las pruebas de documentación

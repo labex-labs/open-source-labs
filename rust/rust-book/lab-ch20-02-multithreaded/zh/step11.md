@@ -69,41 +69,7 @@ impl Worker {
 我们的线程池现在处于工作状态！运行 `cargo run` 并进行一些请求：
 
 ```bash
-$ cargo run
-   Compiling hello v0.1.0 (file:///projects/hello)
-warning: field is never read: `workers`
- --> src/lib.rs:7:5
-  |
-7 |     workers: Vec<Worker>,
-  |     ^^^^^^^^^^^^^^^^^^^^
-  |
-  = note: `#[warn(dead_code)]` on by default
 
-warning: field is never read: `id`
-  --> src/lib.rs:48:5
-   |
-48 |     id: usize,
-   |     ^^^^^^^^^
-
-warning: field is never read: `thread`
-  --> src/lib.rs:49:5
-   |
-49 |     thread: thread::JoinHandle<()>,
-   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-warning: `hello` (lib) generated 3 warnings
-    Finished dev [unoptimized + debuginfo] target(s) in 1.40s
-     Running `target/debug/hello`
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
-Worker 1 got a job; executing.
-Worker 3 got a job; executing.
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
-Worker 1 got a job; executing.
-Worker 3 got a job; executing.
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
 ```
 
 成功！我们现在有了一个可以异步执行连接的线程池。创建的线程永远不会超过四个，所以如果服务器收到大量请求，我们的系统不会过载。如果我们向 _/sleep_ 发出请求，服务器将能够通过让另一个线程运行其他请求来处理它们。

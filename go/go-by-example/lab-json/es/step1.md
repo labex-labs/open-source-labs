@@ -7,28 +7,12 @@ Se te pide que completes el código proporcionado para codificar y decodificar d
 - Capacidad para leer y entender el código de Golang existente.
 
 ```sh
-$ go run json.go
-true
-1
-2.34
-"gopher"
-["apple","peach","pear"]
-{"apple":5,"lettuce":7}
-{"Page":1,"Fruits":["apple","peach","pear"]}
-{"page":1,"fruits":["apple","peach","pear"]}
-map[num:6.13 strs:[a b]]
-6.13
-a
-{1 [apple peach]}
-apple
-{"apple":5,"lettuce":7}
 
 
 # Aquí hemos cubierto los conceptos básicos de JSON en Go, pero consulta
 # la publicación del blog [JSON and Go](https://go.dev/blog/json)
 # y la documentación del paquete [JSON package docs](https://pkg.go.dev/encoding/json)
 # para obtener más información.
-
 ```
 
 A continuación se muestra el código completo:

@@ -32,33 +32,7 @@ Chaque fichier dans le répertoire `tests` est une crate séparée, donc nous de
 Nous n'avons pas besoin d'ajouter l'annotation `#[cfg(test)]` à aucun code dans `tests/integration_test.rs`. Cargo traite le répertoire `tests` de manière spéciale et ne compile les fichiers de ce répertoire que lorsque nous exécutons `cargo test`. Exécutez maintenant `cargo test` :
 
 ```bash
-$ cargo test
-   Compiling adder v0.1.0 (file:///projects/adder)
-    Finished test [unoptimized + debuginfo] target(s) in 1.31s
-     Running unittests src/lib.rs (target/debug/deps/adder-
-1082c4b063a8fbe6)
 
-1 running 1 test
-test tests::internal... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   2 Running tests/integration_test.rs
-(target/debug/deps/integration_test-1082c4b063a8fbe6)
-
-running 1 test
-3 test it_adds_two... ok
-
-4 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   Doc-tests adder
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Les trois sections de sortie incluent les tests unitaires, le test d'intégration et les tests de documentation. Notez que si un test dans une section échoue, les sections suivantes ne seront pas exécutées. Par exemple, si un test unitaire échoue, il n'y aura pas de sortie pour les tests d'intégration et de documentation car ces tests ne seront exécutés que si tous les tests unitaires sont passés.
@@ -72,16 +46,7 @@ Chaque fichier de test d'intégration a sa propre section, donc si nous ajoutons
 Nous pouvons toujours exécuter une fonction de test d'intégration particulière en spécifiant le nom de la fonction de test en tant qu'argument de `cargo test`. Pour exécuter tous les tests dans un fichier de test d'intégration particulier, utilisez l'argument `--test` de `cargo test` suivi du nom du fichier :
 
 ```bash
-$ cargo test --test integration_test
-    Finished test [unoptimized + debuginfo] target(s) in 0.64s
-     Running tests/integration_test.rs
-(target/debug/deps/integration_test-82e7799c1bc62298)
 
-running 1 test
-test it_adds_two... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Cette commande exécute seulement les tests dans le fichier `tests/integration_test.rs`.

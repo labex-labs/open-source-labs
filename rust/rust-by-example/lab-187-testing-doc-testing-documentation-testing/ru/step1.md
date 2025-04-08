@@ -48,19 +48,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 Блоки кода в документации автоматически тестируются при запуске обычной команды `cargo test`:
 
 ```shell
-$ cargo test
-running 0 tests
 
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
-
-   Doc-tests doccomments
-
-running 3 tests
-test src/lib.rs - add (line 7)... ok
-test src/lib.rs - div (line 21)... ok
-test src/lib.rs - div (line 31)... ok
-
-test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
 ## Причина тестирования документации

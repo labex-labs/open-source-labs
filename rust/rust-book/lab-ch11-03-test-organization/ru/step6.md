@@ -32,33 +32,7 @@ Listing 11-13: Интеграционный тест функции в крей�
 В файле `tests/integration_test.rs` мы не нужно аннотировать никакой код с помощью `#[cfg(test)]`. Cargo особым образом обрабатывает директорию `tests` и компилирует файлы в этой директории только при запуске `cargo test`. Теперь запустите `cargo test`:
 
 ```bash
-$ cargo test
-   Compiling adder v0.1.0 (file:///projects/adder)
-    Finished test [unoptimized + debuginfo] target(s) in 1.31s
-     Running unittests src/lib.rs (target/debug/deps/adder-
-1082c4b063a8fbe6)
 
-1 running 1 test
-test tests::internal... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   2 Running tests/integration_test.rs
-(target/debug/deps/integration_test-1082c4b063a8fbe6)
-
-running 1 test
-3 test it_adds_two... ok
-
-4 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   Doc-tests adder
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Три раздела вывода включают в себя юнит-тесты, интеграционные тесты и тесты документации. Обратите внимание, что если любой тест в разделе не пройдет, последующие разделы не будут запущены. Например, если юнит-тест не пройдет, не будет вывода для интеграционных и тестов документации, потому что эти тесты будут запущены только в том случае, если все юнит-тесты пройдут.
@@ -72,16 +46,7 @@ filtered out; finished in 0.00s
 Мы по-прежнему можем запустить конкретную функцию интеграционного теста, указав имя тестовой функции в качестве аргумента для `cargo test`. Чтобы запустить все тесты в конкретном файле интеграционных тестов, используйте аргумент `--test` для `cargo test`, за которым следует имя файла:
 
 ```bash
-$ cargo test --test integration_test
-    Finished test [unoptimized + debuginfo] target(s) in 0.64s
-     Running tests/integration_test.rs
-(target/debug/deps/integration_test-82e7799c1bc62298)
 
-running 1 test
-test it_adds_two... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Эта команда запускает только тесты в файле `tests/integration_test.rs`.

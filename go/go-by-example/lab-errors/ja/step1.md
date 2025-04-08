@@ -12,17 +12,9 @@
 - `main` 関数は、カスタムエラーのデータをプログラム的に使用する方法を示す必要があります。
 
 ```sh
-$ go run errors.go
-f1 worked: 10
-f1 failed: can't work with 42
-f2 worked: 10
-f2 failed: 42 - can't work with it
-42
-can't work with it
 
 # エラーハンドリングに関する詳細は、
 # Goのブログのこの[素晴らしい記事](https://go.dev/blog/error-handling-and-go)を参照してください。
-
 ```
 
 以下が完全なコードです：

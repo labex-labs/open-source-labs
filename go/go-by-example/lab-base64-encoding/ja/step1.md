@@ -10,13 +10,6 @@
 ```sh
 # 標準およびURLのBase64エンコーダーでは、文字列を少し異なる値にエンコードします
 # （末尾の`+`と`-`）が、どちらも望ましいように元の文字列にデコードされます。
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```
 
 以下に完全なコードがあります：

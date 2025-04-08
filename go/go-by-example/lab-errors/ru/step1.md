@@ -12,17 +12,9 @@
 - Функция `main` должна показать, как программно использовать данные в пользовательской ошибке.
 
 ```sh
-$ go run errors.go
-f1 worked: 10
-f1 failed: can't work with 42
-f2 worked: 10
-f2 failed: 42 - can't work with it
-42
-can't work with it
 
 # См. этот [отличный пост](https://go.dev/blog/error-handling-and-go)
 # на блоге Go для получения дополнительной информации о обработке ошибок.
-
 ```
 
 Ниже представлен полный код:

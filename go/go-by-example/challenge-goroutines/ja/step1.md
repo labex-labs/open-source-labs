@@ -18,17 +18,7 @@
 # その後2つのgoroutineの出力が表示されます。
 # goroutineはGo実行時に並列実行されるため、
 # goroutineの出力は入れ替わって表示される場合があります。
-$ go run goroutines.go
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-going
-goroutine : 1
-goroutine : 2
-done
 
 # 次に、並列Goプログラムにおけるgoroutineの補完機能である
 # チャネルについて見てみましょう。
-
 ```

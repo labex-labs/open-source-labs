@@ -69,41 +69,7 @@ Der Aufruf von `recv` blockiert, sodass der aktuelle Thread warten wird, wenn no
 Unser Threadpool ist jetzt im funktionierenden Zustand! Geben Sie `cargo run` aus und stellen Sie einige Anfragen:
 
 ```bash
-$ cargo run
-   Compiling hello v0.1.0 (file:///projects/hello)
-warning: field is never read: `workers`
- --> src/lib.rs:7:5
-  |
-7 |     workers: Vec<Worker>,
-  |     ^^^^^^^^^^^^^^^^^^^^
-  |
-  = note: `#[warn(dead_code)]` on by default
 
-warning: field is never read: `id`
-  --> src/lib.rs:48:5
-   |
-48 |     id: usize,
-   |     ^^^^^^^^^
-
-warning: field is never read: `thread`
-  --> src/lib.rs:49:5
-   |
-49 |     thread: thread::JoinHandle<()>,
-   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-warning: `hello` (lib) generated 3 warnings
-    Finished dev [unoptimized + debuginfo] target(s) in 1.40s
-     Running `target/debug/hello`
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
-Worker 1 got a job; executing.
-Worker 3 got a job; executing.
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
-Worker 1 got a job; executing.
-Worker 3 got a job; executing.
-Worker 0 got a job; executing.
-Worker 2 got a job; executing.
 ```
 
 Erfolg! Wir haben jetzt einen Threadpool, der Verbindungen asynchron ausführt. Es werden nie mehr als vier Threads erstellt, sodass unser System nicht überlastet wird, wenn der Server viele Anfragen erhält. Wenn wir eine Anfrage an _/sleep_ stellen, kann der Server andere Anfragen bedienen, indem ein anderer Thread sie ausführt.

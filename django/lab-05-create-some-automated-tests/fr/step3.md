@@ -65,22 +65,7 @@ python manage.py test polls
 Et vous verrez quelque chose comme :
 
 ```shell
-Création de la base de données de test pour l'alias 'default'...
-La vérification systématique n'a identifié aucun problème (0 silencés).
-F
-======================================================================
-ÉCHEC : test_was_published_recently_with_future_question (polls.tests.QuestionModelTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/path/to/mysite/polls/tests.py", line 16, in test_was_published_recently_with_future_question
-    self.assertIs(future_question.was_published_recently(), False)
-AssertionError: True n'est pas False
 
-----------------------------------------------------------------------
-1 test exécuté en 0,001s
-
-ÉCHEC (échecs=1)
-Destruction de la base de données de test pour l'alias 'default'...
 ```
 
 > Erreur différente?

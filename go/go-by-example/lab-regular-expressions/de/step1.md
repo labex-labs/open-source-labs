@@ -18,24 +18,9 @@ In diesem Lab müssen Sie den Code vervollständigen, um verschiedene reguläre-
 - Verwenden Sie `ReplaceAllFunc`, um das übereinstimmende Text mit einer angegebenen Funktion zu transformieren.
 
 ```sh
-$ go run regular-expressions.go
-true
-true
-peach
-idx: [0 5]
-[peach ea]
-[0 5 1 3]
-[peach punch pinch]
-all: [[0 5 1 3] [6 11 7 9] [12 17 13 15]]
-[peach punch]
-true
-regexp: p([a-z]+)ch
-a <fruit>
-a PEACH
 
 # Für eine vollständige Referenz zu Go regulären Ausdrücken überprüfen Sie
 # die Dokumentation des [`regexp`](https://pkg.go.dev/regexp)-Pakets.
-
 ```
 
 Hier ist der vollständige Code:

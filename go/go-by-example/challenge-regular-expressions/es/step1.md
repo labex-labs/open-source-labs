@@ -22,22 +22,7 @@ El desafío requiere que completes el código para realizar varias tareas relaci
 ## Ejemplo
 
 ```sh
-$ go run regular-expressions.go
-true
-true
-peach
-idx: [0 5]
-[peach ea]
-[0 5 1 3]
-[peach punch pinch]
-todas: [[0 5 1 3] [6 11 7 9] [12 17 13 15]]
-[peach punch]
-true
-expresión regular: p([a-z]+)ch
-una <fruta>
-una PIÑA
 
 # Para una referencia completa sobre expresiones regulares de Go consulta
 # la documentación del paquete [`regexp`](https://pkg.go.dev/regexp).
-
 ```

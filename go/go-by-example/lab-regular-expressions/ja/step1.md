@@ -18,24 +18,9 @@
 - `ReplaceAllFunc` を使用して、与えられた関数で一致するテキストを変換します。
 
 ```sh
-$ go run regular-expressions.go
-true
-true
-peach
-idx: [0 5]
-[peach ea]
-[0 5 1 3]
-[peach punch pinch]
-all: [[0 5 1 3] [6 11 7 9] [12 17 13 15]]
-[peach punch]
-true
-regexp: p([a-z]+)ch
-a <fruit>
-a PEACH
 
 # Goの正規表現の完全なリファレンスについては、
 # [「regexp」](https://pkg.go.dev/regexp) パッケージのドキュメントを参照してください。
-
 ```
 
 以下が完全なコードです：

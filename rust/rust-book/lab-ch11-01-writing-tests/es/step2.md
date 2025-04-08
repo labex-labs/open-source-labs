@@ -38,24 +38,7 @@ El cuerpo del ejemplo de función utiliza la macro `assert_eq!` \[2\] para asegu
 El comando `cargo test` ejecuta todas las pruebas en nuestro proyecto, como se muestra en la Lista 11-2.
 
 ```bash
-$ cargo test
-   Compiling adder v0.1.0 (file:///projects/adder)
-    Finished test [unoptimized + debuginfo] target(s) in 0.57s
-     Running unittests src/lib.rs (target/debug/deps/adder-
-92948b65e88960b4)
 
-1 running 1 test
-2 test tests::it_works... ok
-
-3 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-  4 Doc-tests adder
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Lista 11-2: La salida de la ejecución de la prueba generada automáticamente

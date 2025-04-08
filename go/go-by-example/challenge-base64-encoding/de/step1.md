@@ -15,11 +15,4 @@ Sie müssen ein Golang-Programm schreiben, das einen gegebenen String mit der st
 # Der String codiert sich mit den standardmäßigen und
 # URL-basierten Base64-Codern zu leicht unterschiedlichen Werten
 # (Endung `+` vs `-`), aber beide decodieren zu dem ursprünglichen String wie gewünscht.
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```

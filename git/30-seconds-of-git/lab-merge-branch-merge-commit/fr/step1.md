@@ -47,16 +47,5 @@ git merge --no-ff -m "Fusionner feature-branch" feature-branch
 Voici le résultat de l'exécution de `git log` :
 
 ```shell
-commit 45b7e0fa8656d0aa751c7ca3cee29422e3d6cf05 (HEAD -> master)
-Merge: d22f46b 1f19499
-Author: xiaoshengyunan <@users.noreply.github.com>
-Date:   Fri Jul 21 19:26:57 2023 +0800
 
-    Fusionner feature-branch
-
-commit 1f1949955387a154ff1bb5286d3d0a2b993f87e0 (feature-branch)
-Author: xiaoshengyunan <@users.noreply.github.com>
-Date:   Fri Jul 21 19:26:57 2023 +0800
-
-    Ajouter une nouvelle ligne au README.md
 ```

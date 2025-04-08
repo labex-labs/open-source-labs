@@ -1,9 +1,7 @@
 # Solutions
 
 ```shell
-git config --global core.editor <editor-command>
 
-git config --global core.editor "vim"
 # Sets vim as the git text editor
 ```
 

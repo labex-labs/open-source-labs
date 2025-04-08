@@ -12,12 +12,9 @@ The problem to be solved in this lab is to increment a named counter in a loop u
 ```sh
 # Running the program shows that the counters
 # updated as expected.
-$ go run mutexes.go
-map[a:20000 b:10000]
 
 # Next we'll look at implementing this same state
 # management task using only goroutines and channels.
-
 ```
 
 There is the full code below:

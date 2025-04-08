@@ -16,11 +16,8 @@ Das Problem, das in dieser Herausforderung gelöst werden soll, besteht darin, e
 ```sh
 # Wenn das Programm ausgeführt wird, werden die Zähler
 # wie erwartet aktualisiert.
-$ go run mutexes.go
-map[a:20000 b:10000]
 
 # Als Nächstes betrachten wir die Implementierung dieser
 # selben Zustandsverwaltungstask, indem wir nur Goroutinen
 # und Kanäle verwenden.
-
 ```

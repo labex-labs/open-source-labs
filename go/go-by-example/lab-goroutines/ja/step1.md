@@ -10,18 +10,8 @@
 
 ```sh
 # このプログラムを実行すると、ブロッキング呼び出しの出力が最初に表示され、その後2つのgoroutineの出力が表示されます。goroutineの出力は、Go実行時に並列実行されているため、入れ子になっている場合があります。
-$ go run goroutines.go
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-going
-goroutine : 1
-goroutine : 2
-done
 
 # 次に、並列Goプログラムにおけるgoroutineの補完機能であるチャネルを見てみましょう。
-
 ```
 
 以下に完全なコードがあります。

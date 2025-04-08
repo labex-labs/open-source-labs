@@ -23,31 +23,7 @@ mod tests {
 次に、トップレベルの`add`ディレクトリで`cargo test`を実行します。このように構造化されたワークスペースで`cargo test`を実行すると、ワークスペース内のすべてのクレートのテストが実行されます。
 
 ```bash
-$ cargo test
-   Compiling add_one v0.1.0 (file:///projects/add/add_one)
-   Compiling adder v0.1.0 (file:///projects/add/adder)
-    Finished test [unoptimized + debuginfo] target(s) in 0.27s
-     Running unittests src/lib.rs (target/debug/deps/add_one-f0253159197f7841)
 
-running 1 test
-test tests::it_works... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
-
-     Running unittests src/main.rs (target/debug/deps/adder-49979ff40686fa8e)
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
-
-   Doc-tests add_one
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
 ```
 
 出力の最初のセクションは、`add_one`クレート内の`it_works`テストが合格したことを示しています。次のセクションは、`adder`クレートで0個のテストが見つかったことを示しており、最後のセクションは、`add_one`クレートで0個のドキュメントテストが見つかったことを示しています。
@@ -55,22 +31,7 @@ finished in 0.00s
 ワークスペースのトップレベルディレクトリから、特定のクレートのテストを実行することもできます。`-p`フラグを使用して、テストしたいクレートの名前を指定します。
 
 ```bash
-$ cargo test -p add_one
-    Finished test [unoptimized + debuginfo] target(s) in 0.00s
-     Running unittests src/lib.rs (target/debug/deps/add_one-b3235fea9a156f74)
 
-running 1 test
-test tests::it_works... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
-
-   Doc-tests add_one
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out;
-finished in 0.00s
 ```
 
 この出力は、`cargo test`が`add_one`クレートのテストのみを実行し、`adder`クレートのテストは実行しなかったことを示しています。

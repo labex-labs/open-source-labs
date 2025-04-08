@@ -32,33 +32,7 @@ Jede Datei im `tests`-Verzeichnis ist ein separater Kasten, daher müssen wir un
 Wir müssen keinen Code in `tests/integration_test.rs` mit `#[cfg(test)]` annotieren. Cargo behandelt das `tests`-Verzeichnis speziell und kompiliert Dateien in diesem Verzeichnis nur, wenn wir `cargo test` ausführen. Führen Sie jetzt `cargo test` aus:
 
 ```bash
-$ cargo test
-   Compiling adder v0.1.0 (file:///projects/adder)
-    Finished test [unoptimized + debuginfo] target(s) in 1.31s
-     Running unittests src/lib.rs (target/debug/deps/adder-
-1082c4b063a8fbe6)
 
-1 running 1 test
-test tests::internal... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   2 Running tests/integration_test.rs
-(target/debug/deps/integration_test-1082c4b063a8fbe6)
-
-running 1 test
-3 test it_adds_two... ok
-
-4 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   Doc-tests adder
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Die drei Abschnitte der Ausgabe umfassen die Einheitstests, den Integrations-Test und die Dokutests. Beachten Sie, dass, wenn ein Test in einem Abschnitt fehlschlägt, die folgenden Abschnitte nicht ausgeführt werden. Beispielsweise wird, wenn ein Einheitstest fehlschlägt, keine Ausgabe für Integrations- und Dokutests erscheinen, da diese Tests nur ausgeführt werden, wenn alle Einheitstests bestanden werden.
@@ -72,16 +46,7 @@ Jede Integrations-Testdatei hat ihren eigenen Abschnitt, daher wird, wenn wir we
 Wir können immer noch einen bestimmten Integrations-Testfunktion ausführen, indem wir den Namen der Testfunktion als Argument für `cargo test` angeben. Um alle Tests in einer bestimmten Integrations-Testdatei auszuführen, verwenden Sie das `--test`-Argument von `cargo test` gefolgt vom Dateinamen:
 
 ```bash
-$ cargo test --test integration_test
-    Finished test [unoptimized + debuginfo] target(s) in 0.64s
-     Running tests/integration_test.rs
-(target/debug/deps/integration_test-82e7799c1bc62298)
 
-running 1 test
-test it_adds_two... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 Dieser Befehl führt nur die Tests in der Datei `tests/integration_test.rs` aus.

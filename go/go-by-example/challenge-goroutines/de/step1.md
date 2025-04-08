@@ -17,17 +17,7 @@ Das Problem, das in dieser Aufgabe gelöst werden soll, ist es, Goroutinen zu er
 # blockierenden Aufrufs, dann die Ausgabe der beiden
 # Goroutinen. Die Ausgabe der Goroutinen kann verzahnt sein,
 # da die Goroutinen von der Go-Laufzeit gleichzeitig ausgeführt werden.
-$ go run goroutines.go
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-going
-goroutine : 1
-goroutine : 2
-done
 
 # Als Nächstes betrachten wir ein Gegenstück zu Goroutinen in
 # parallelen Go-Programmen: Kanäle.
-
 ```

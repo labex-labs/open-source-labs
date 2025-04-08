@@ -3,31 +3,11 @@
 Ouvrez un terminal sur la machine virtuelle LabEx et exécutez `docker -h`, qui vous montrera la page d'aide de l'interface de ligne de commande (CLI) Docker.
 
 ```bash
-$ docker -h
-Le raccourci d'option -h est obsolète, veuillez utiliser --help
 
-Usage: docker [OPTIONS] COMMAND
 
-Un runtime autonome pour les conteneurs
 
-...
 
-Commandes de gestion :
-builder Gérer les builds
-config Gérer les configurations Docker
-container Gérer les conteneurs
-engine Gérer le moteur Docker
-image Gérer les images
-network Gérer les réseaux
-node Gérer les nœuds Swarm
-plugin Gérer les plugins
-secret Gérer les secrets Docker
-service Gérer les services
-stack Gérer les piles Docker
-swarm Gérer Swarm
-system Gérer Docker
-trust Gérer la confiance sur les images Docker
-volume Gérer les volumes
+VOLUME Gérer les volumes
 ```
 
 La ligne de commande Docker peut être utilisée pour gérer plusieurs fonctionnalités du moteur Docker. Dans ce laboratoire, nous nous concentrerons principalement sur la commande `container`.

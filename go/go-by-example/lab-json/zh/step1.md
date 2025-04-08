@@ -7,28 +7,12 @@
 - 具备阅读和理解现有Go语言代码的能力。
 
 ```sh
-$ go run json.go
-true
-1
-2.34
-"gopher"
-["apple","peach","pear"]
-{"apple":5,"lettuce":7}
-{"Page":1,"Fruits":["apple","peach","pear"]}
-{"page":1,"fruits":["apple","peach","pear"]}
-map[num:6.13 strs:[a b]]
-6.13
-a
-{1 [apple peach]}
-apple
-{"apple":5,"lettuce":7}
 
 
 # 我们在这里已经介绍了Go语言中JSON的基础知识，但是请查看
 # [JSON与Go](https://go.dev/blog/json)
 # 博客文章以及[JSON包文档](https://pkg.go.dev/encoding/json)
 # 以获取更多信息。
-
 ```
 
 以下是完整代码：

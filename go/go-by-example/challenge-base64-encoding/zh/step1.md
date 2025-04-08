@@ -15,11 +15,4 @@
 # 使用标准 Base64 编码器和 URL Base64 编码器对字符串进行编码，
 # 会得到略有不同的值（末尾的 `+` 与 `-`），
 # 但它们都能按预期解码为原始字符串。
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```

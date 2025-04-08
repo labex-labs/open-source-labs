@@ -11,13 +11,6 @@ Vous êtes requis d'écrire un programme Golang qui encode et décode une chaîn
 # La chaîne s'encode en valeurs légèrement différentes avec les
 # encodeurs Base64 standard et URL (dernier caractère `+` vs `-`)
 # mais elles se décodent toutes les deux en chaîne d'origine comme souhaité.
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```
 
 Voici le code complet ci-dessous :

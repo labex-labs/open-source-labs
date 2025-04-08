@@ -16,24 +16,5 @@ Für diese Herausforderung verwenden wir das Repository von `https://github.com/
 Dies ist das Ergebnis der Ausführung des Befehls `git show HEAD~1`:
 
 ```shell
-commit 6f0b8bbfac939af197a44ecd287ef84153817e9d
-Author: Hang <huhuhang@users.noreply.github.com>
-Date:   Wed Apr 26 14:16:25 2023 +0800
 
-    Added file1.txt
-
-diff --git a/file1.txt b/file1.txt
-new file mode 100644
-index 0000000..bfccc4a
---- /dev/null
-+++ b/file1.txt
-@@ -0,0 +1 @@
-+This is file1.
-diff --git a/hello.txt b/hello.txt
-new file mode 100644
-index 0000000..2d832d9
---- /dev/null
-+++ b/hello.txt
-@@ -0,0 +1 @@
-+hello,world
 ```

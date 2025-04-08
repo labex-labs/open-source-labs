@@ -11,26 +11,10 @@
 ## 示例
 
 ```sh
-$ go run json.go
-true
-1
-2.34
-"gopher"
-["苹果","桃子","梨"]
-{"苹果":5,"生菜":7}
-{"Page":1,"Fruits":["苹果","桃子","梨"]}
-{"page":1,"fruits":["苹果","桃子","梨"]}
-map[num:6.13 strs:[a b]]
-6.13
-a
-{1 [苹果 桃子]}
-苹果
-{"苹果":5,"生菜":7}
 
 
 # 我们在这里介绍了Go语言中JSON的基础知识，但请查看
 # [JSON与Go](https://go.dev/blog/json)
 # 博客文章以及[JSON包文档](https://pkg.go.dev/encoding/json)
 # 以获取更多信息。
-
 ```

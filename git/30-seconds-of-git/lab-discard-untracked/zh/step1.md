@@ -19,14 +19,7 @@ git status
 你应该会看到以下输出：
 
 ```shell
-On branch master
-Your branch is up to date with 'origin/master'.
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        new-file.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 3. 丢弃当前分支的所有未跟踪更改：

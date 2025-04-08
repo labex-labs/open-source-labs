@@ -12,13 +12,6 @@ Sie müssen ein Golang-Programm schreiben, das einen gegebenen String mit der st
 # URL-basierten Base64-Codierern zu leicht unterschiedlichen
 # Werten (Endung `+` vs `-`), aber beide decodieren
 # wie gewünscht zum ursprünglichen String.
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```
 
 Hier ist der vollständige Code:

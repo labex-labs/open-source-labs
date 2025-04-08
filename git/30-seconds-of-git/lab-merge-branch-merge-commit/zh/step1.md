@@ -47,16 +47,5 @@ git merge --no-ff -m "合并feature-branch" feature-branch
 这是运行 `git log` 的结果：
 
 ```shell
-commit 45b7e0fa8656d0aa751c7ca3cee29422e3d6cf05 (HEAD -> master)
-Merge: d22f46b 1f19499
-Author: xiaoshengyunan <@users.noreply.github.com>
-Date:   Fri Jul 21 19:26:57 2023 +0800
 
-    合并feature-branch
-
-commit 1f1949955387a154ff1bb5286d3d0a2b993f87e0 (feature-branch)
-Author: xiaoshengyunan <@users.noreply.github.com>
-Date:   Fri Jul 21 19:26:57 2023 +0800
-
-    向README.md添加新行
 ```

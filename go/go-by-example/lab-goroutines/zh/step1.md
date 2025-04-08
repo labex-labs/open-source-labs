@@ -10,18 +10,8 @@
 
 ```sh
 # 当我们运行这个程序时，我们首先会看到阻塞调用的输出，然后是两个协程的输出。协程的输出可能会交错，因为Go运行时会并发运行协程。
-$ go run goroutines.go
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-going
-goroutine : 1
-goroutine : 2
-done
 
 # 接下来我们将看看并发Go程序中协程的一个补充：通道。
-
 ```
 
 下面是完整代码：

@@ -12,12 +12,9 @@ El problema que se debe resolver en este laboratorio es incrementar un contador 
 ```sh
 # Ejecutar el programa muestra que los contadores
 # se actualizan como se esperaba.
-$ go run mutexes.go
-map[a:20000 b:10000]
 
 # A continuación, veremos cómo implementar esta misma tarea
 # de administración de estado utilizando solo goroutines y canales.
-
 ```
 
 A continuación se muestra el código completo:

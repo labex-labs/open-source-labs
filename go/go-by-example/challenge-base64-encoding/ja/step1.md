@@ -15,11 +15,4 @@
 # 文字列は、標準およびURLのBase64エンコーダーで
 # わずかに異なる値にエンコードされます（末尾の`+`対`-`）
 # しかし、両方とも望ましいように元の文字列にデコードされます。
-$ go run base64-encoding.go
-YWJjMTIzIT8kKiYoKSctPUB+
-abc123!?$*&()'-=@~
-
-YWJjMTIzIT8kKiYoKSctPUB-
-abc123!?$*&()'-=@~
-
 ```

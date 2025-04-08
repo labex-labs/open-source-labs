@@ -12,12 +12,9 @@ Le problème à résoudre dans ce laboratoire est d'incrémenter un compteur nom
 ```sh
 # Exécution du programme montre que les compteurs
 # sont mis à jour comme prévu.
-$ go run mutexes.go
-map[a:20000 b:10000]
 
 # Ensuite, nous allons voir comment implémenter cette même tâche
 # de gestion d'état en utilisant seulement des goroutines et des canaux.
-
 ```
 
 Voici le code complet ci-dessous :

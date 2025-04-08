@@ -16,16 +16,6 @@
 # 当我们运行此程序时，我们首先看到阻塞调用的输出，然后是两个
 # goroutine 的输出。goroutine 的输出可能会交错，因为 goroutine 由
 # Go 运行时并发运行。
-$ go run goroutines.go
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-going
-goroutine : 1
-goroutine : 2
-done
 
 # 接下来我们将看看并发 Go 程序中 goroutine 的补充：通道。
-
 ```

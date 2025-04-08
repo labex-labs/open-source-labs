@@ -1,17 +1,8 @@
 # Solutions
 
 ```shell
-git bisect start
-git bisect good <commit>
-git bisect bad <commit>
-git bisect (bad | good)
-git bisect reset [<commit>]
 
-git bisect start
-git bisect good # Current commit is good
-git bisect bad  # Current commit is buggy
 # ... some time later the bad commit will be printed
-git bisect reset # Goes to the original branch
 ```
 
 ```shell

@@ -32,33 +32,7 @@ fn it_adds_two() {
 `tests/integration_test.rs` 内のコードには `#[cfg(test)]` でアノテートする必要はありません。Cargoは `tests` ディレクトリを特別扱いし、`cargo test` を実行したときのみこのディレクトリ内のファイルをコンパイルします。今 `cargo test` を実行してみましょう。
 
 ```bash
-$ cargo test
-   Compiling adder v0.1.0 (file:///projects/adder)
-    Finished test [unoptimized + debuginfo] target(s) in 1.31s
-     Running unittests src/lib.rs (target/debug/deps/adder-
-1082c4b063a8fbe6)
 
-1 running 1 test
-test tests::internal... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   2 Running tests/integration_test.rs
-(target/debug/deps/integration_test-1082c4b063a8fbe6)
-
-running 1 test
-3 test it_adds_two... ok
-
-4 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
-
-   Doc-tests adder
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 出力の3つのセクションには、単体テスト、統合テスト、ドキュメントテストが含まれています。セクション内のテストが1つでも失敗すると、次のセクションは実行されません。たとえば、単体テストが失敗すると、統合テストとドキュメントテストの出力はありません。なぜなら、それらのテストはすべての単体テストが合格した場合にのみ実行されるからです。
@@ -72,16 +46,7 @@ filtered out; finished in 0.00s
 特定の統合テスト関数を実行するには、`cargo test` に対してテスト関数の名前を引数として指定します。特定の統合テストファイル内のすべてのテストを実行するには、`cargo test` の `--test` 引数に続けてファイル名を指定します。
 
 ```bash
-$ cargo test --test integration_test
-    Finished test [unoptimized + debuginfo] target(s) in 0.64s
-     Running tests/integration_test.rs
-(target/debug/deps/integration_test-82e7799c1bc62298)
 
-running 1 test
-test it_adds_two... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0
-filtered out; finished in 0.00s
 ```
 
 このコマンドは、`tests/integration_test.rs` ファイル内のテストのみを実行します。
