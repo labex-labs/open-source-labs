@@ -1,11 +1,18 @@
 # ガウス過程分類（Gaussian Process Classification：GPC）
 
-GaussianProcessClassifierクラスは、確率的分類に対してGPCを実装します。潜在関数にGPの事前分布を置き、それをリンク関数を通じてスカッシュ（圧縮）することでクラス確率を取得します。GPCは、one-versus-restまたはone-versus-oneに基づく学習と予測を行うことで多クラス分類をサポートします。
+GaussianProcessClassifier クラスは、確率的分類に対して GPC を実装します。潜在関数に GP の事前分布を置き、それをリンク関数を通じてスカッシュ（圧縮）することでクラス確率を取得します。GPC は、one-versus-rest または one-versus-one に基づく学習と予測を行うことで多クラス分類をサポートします。
 
 ```python
-from sklearn.gaussian_process import GaussianProcessClassifier
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
-# RBFカーネルを持つGPCモデルを作成する
+X = np.linspace(0, 10, 100).reshape(-1, 1)
+y = np.sin(X).ravel() + np.random.normal(0, 0.1, X.shape[0])
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+from sklearn.gaussian_process import GaussianProcessClassifier
+# RBF カーネルを持つ GPC モデルを作成する
 kernel = RBF()
 model = GaussianProcessClassifier(kernel=kernel)
 
