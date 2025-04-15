@@ -14,5 +14,5 @@
 これが最終結果です：
 
 ```shell
-
+[object Object]
 ```

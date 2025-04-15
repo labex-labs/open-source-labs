@@ -47,5 +47,5 @@ git merge --no-ff -m "合并feature-branch" feature-branch
 这是运行 `git log` 的结果：
 
 ```shell
-
+[object Object]
 ```

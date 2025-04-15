@@ -33,5 +33,5 @@ git push -f origin master
 Это конечный результат:
 
 ```shell
-
+[object Object]
 ```

@@ -28,7 +28,7 @@ $ cargo test
 Debería ver una salida como esta:
 
 ```shell
-
+[object Object]
 ```
 
 También puede ejecutar las pruebas cuyo nombre coincide con un patrón:
@@ -38,7 +38,7 @@ $ cargo test test_foo
 ```
 
 ```shell
-
+[object Object]
 ```
 
 Una advertencia: Cargo puede ejecutar múltiples pruebas concurrentemente, así que asegúrese de que no se interrumpen mutuamente.

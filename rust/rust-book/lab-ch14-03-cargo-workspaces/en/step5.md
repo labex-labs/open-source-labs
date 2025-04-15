@@ -23,7 +23,7 @@ mod tests {
 Now run `cargo test` in the top-level `add` directory. Running `cargo test` in a workspace structured like this one will run the tests for all the crates in the workspace:
 
 ```bash
-
+[object Object]
 ```
 
 The first section of the output shows that the `it_works` test in the `add_one` crate passed. The next section shows that zero tests were found in the `adder` crate, and then the last section shows zero documentation tests were found in the `add_one` crate.
@@ -31,7 +31,7 @@ The first section of the output shows that the `it_works` test in the `add_one` 
 We can also run tests for one particular crate in a workspace from the top-level directory by using the `-p` flag and specifying the name of the crate we want to test:
 
 ```bash
-
+[object Object]
 ```
 
 This output shows `cargo test` only ran the tests for the `add_one` crate and didn't run the `adder` crate tests.

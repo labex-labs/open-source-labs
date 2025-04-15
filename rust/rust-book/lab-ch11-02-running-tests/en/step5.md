@@ -3,7 +3,7 @@
 We can pass the name of any test function to `cargo test` to run only that test:
 
 ```bash
-
+[object Object]
 ```
 
 Only the test with the name `one_hundred` ran; the other two tests didn't match that name. The test output lets us know we had more tests that didn't run by displaying `2 filtered out` at the end.

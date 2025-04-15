@@ -14,5 +14,5 @@ Para completar este desafío, usarás el repositorio Git `git-playground` de tu 
 Este es el resultado final:
 
 ```shell
-
+[object Object]
 ```

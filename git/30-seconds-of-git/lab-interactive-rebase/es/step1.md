@@ -19,5 +19,5 @@ Para este laboratorio, usemos el repositorio de `https://github.com/labex-labs/g
 Ejecutar `git log` te dará un resultado que se parece a esto:
 
 ```shell
-
+[object Object]
 ```

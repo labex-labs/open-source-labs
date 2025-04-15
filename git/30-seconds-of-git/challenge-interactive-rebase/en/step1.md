@@ -13,5 +13,5 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 Running `git log` will give you a result that looks like this:
 
 ```shell
-
+[object Object]
 ```

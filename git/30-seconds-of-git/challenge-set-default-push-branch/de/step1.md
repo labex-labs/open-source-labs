@@ -16,6 +16,5 @@ Um diese Herausforderung zu absolvieren, verwenden Sie das Git-Repository `git-p
 Dies ist das Ergebnis von `git log`:
 
 ```shell
-
 ADD hello.txt
 ```

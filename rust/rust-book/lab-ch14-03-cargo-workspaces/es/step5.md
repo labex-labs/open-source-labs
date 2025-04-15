@@ -23,7 +23,7 @@ mod tests {
 Ahora ejecute `cargo test` en el directorio `add` de nivel superior. Ejecutar `cargo test` en un espacio de trabajo estructurado como este ejecutará las pruebas para todos los crates en el espacio de trabajo:
 
 ```bash
-
+[object Object]
 ```
 
 La primera sección de la salida muestra que la prueba `it_works` en el crate `add_one` pasó. La siguiente sección muestra que se encontraron cero pruebas en el crate `adder`, y luego la última sección muestra que se encontraron cero pruebas de documentación en el crate `add_one`.
@@ -31,7 +31,7 @@ La primera sección de la salida muestra que la prueba `it_works` en el crate `a
 También podemos ejecutar las pruebas para un crate en particular en un espacio de trabajo desde el directorio de nivel superior usando la bandera `-p` y especificando el nombre del crate que queremos probar:
 
 ```bash
-
+[object Object]
 ```
 
 Esta salida muestra que `cargo test` solo ejecutó las pruebas para el crate `add_one` y no ejecutó las pruebas del crate `adder`.

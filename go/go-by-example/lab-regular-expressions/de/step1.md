@@ -18,7 +18,6 @@ In diesem Lab müssen Sie den Code vervollständigen, um verschiedene reguläre-
 - Verwenden Sie `ReplaceAllFunc`, um das übereinstimmende Text mit einer angegebenen Funktion zu transformieren.
 
 ```sh
-
 # Für eine vollständige Referenz zu Go regulären Ausdrücken überprüfen Sie
 # die Dokumentation des [`regexp`](https://pkg.go.dev/regexp)-Pakets.
 ```

@@ -13,5 +13,5 @@ Für diese Herausforderung verwenden wir das Repository von `https://github.com/
 Wenn Sie `git log` ausführen, erhalten Sie ein Ergebnis, das wie folgt aussieht:
 
 ```shell
-
+[object Object]
 ```

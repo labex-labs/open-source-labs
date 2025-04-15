@@ -13,5 +13,5 @@ You have been working on a project and have made changes to the local `master` b
 This is the finished result:
 
 ```shell
-
+[object Object]
 ```

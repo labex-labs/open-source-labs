@@ -23,7 +23,7 @@ mod tests {
 现在在顶层的 `add` 目录中运行 `cargo test`。在像这样构建的工作区中运行 `cargo test` 将运行工作区中所有板条箱的测试：
 
 ```bash
-
+[object Object]
 ```
 
 输出的第一部分表明 `add_one` 板条箱中的 `it_works` 测试通过了。下一部分表明在 `adder` 板条箱中未找到测试，最后一部分表明在 `add_one` 板条箱中未找到文档测试。
@@ -31,7 +31,7 @@ mod tests {
 我们还可以通过使用 `-p` 标志并指定要测试的板条箱名称，从顶层目录为工作区中的一个特定板条箱运行测试：
 
 ```bash
-
+[object Object]
 ```
 
 此输出表明 `cargo test` 仅运行了 `add_one` 板条箱的测试，而未运行 `adder` 板条箱的测试。

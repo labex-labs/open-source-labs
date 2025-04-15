@@ -15,6 +15,5 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 This is the result of running `git log` on the `master` branch:
 
 ```shell
-
 ADD hello.txt
 ```

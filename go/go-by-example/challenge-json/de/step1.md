@@ -11,8 +11,6 @@ Sie müssen den bereitgestellten Code vervollständigen, um JSON-Daten in Golang
 ## Beispiel
 
 ```sh
-
-
 # Wir haben hier die Grundlagen von JSON in Go behandelt, aber schauen Sie sich
 # den [JSON and Go](https://go.dev/blog/json)
 # Blogbeitrag und die [JSON package docs](https://pkg.go.dev/encoding/json)

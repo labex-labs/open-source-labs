@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # Rewinds back 1 commits but keeps changes in the working directory
 
 # Rewinds back 3 commits and deletes changes

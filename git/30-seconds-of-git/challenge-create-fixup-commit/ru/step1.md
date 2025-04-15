@@ -16,5 +16,5 @@
 Вот результат выполнения команды `git show HEAD~1`:
 
 ```shell
-
+[object Object]
 ```

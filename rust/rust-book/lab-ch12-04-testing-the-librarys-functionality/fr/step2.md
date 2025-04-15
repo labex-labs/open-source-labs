@@ -79,7 +79,7 @@ D'autres langages de programmation ne vous obligent pas à connecter les argumen
 Maintenant, exécutons le test :
 
 ```bash
-
+[object Object]
 ```
 
 Parfait, le test échoue, exactement comme nous l'attendions. Faisons passer le test!

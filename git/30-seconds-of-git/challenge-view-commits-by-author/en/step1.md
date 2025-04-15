@@ -9,5 +9,5 @@ Retrieve all commits made by the author "Hang" in the `git-playground` repositor
 This will output a list of all commits made by "Hang" in the repository, along with information about the commit message, date, and other details:
 
 ```shell
-
+[object Object]
 ```

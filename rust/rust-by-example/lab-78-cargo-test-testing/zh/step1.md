@@ -28,7 +28,7 @@ $ cargo test
 你应该会看到如下输出：
 
 ```shell
-
+[object Object]
 ```
 
 你也可以运行名称匹配某个模式的测试：
@@ -38,7 +38,7 @@ $ cargo test test_foo
 ```
 
 ```shell
-
+[object Object]
 ```
 
 需要注意的一点是：Cargo 可能会并发运行多个测试，所以要确保它们不会相互竞争。

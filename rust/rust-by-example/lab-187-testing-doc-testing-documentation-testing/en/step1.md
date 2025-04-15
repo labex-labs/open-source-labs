@@ -48,7 +48,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 Code blocks in documentation are automatically tested when running the regular `cargo test` command:
 
 ```shell
-
+[object Object]
 ```
 
 ## Motivation behind documentation tests

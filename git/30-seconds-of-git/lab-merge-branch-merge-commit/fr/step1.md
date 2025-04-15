@@ -47,5 +47,5 @@ git merge --no-ff -m "Fusionner feature-branch" feature-branch
 Voici le résultat de l'exécution de `git log` :
 
 ```shell
-
+[object Object]
 ```

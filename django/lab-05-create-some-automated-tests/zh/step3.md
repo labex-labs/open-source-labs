@@ -64,7 +64,7 @@ python manage.py test polls
 你会看到类似这样的内容：
 
 ```shell
-
+[object Object]
 ```
 
 > 不同的错误？

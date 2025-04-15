@@ -1,8 +1,6 @@
 # Solutions
 
 ```shell
-
-
 # Picks changes from the commits `3050fc0de`, `c191f90c7` and `0b552a6d4`
 
 # Picks changes from the commits in the range `3050fc0de` - `c191f90c7`

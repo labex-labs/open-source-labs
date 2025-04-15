@@ -19,5 +19,5 @@ Pour ce laboratoire, utilisons le référentiel de `https://github.com/labex-lab
 Exécuter `git log` vous donnera un résultat ressemblant à ceci :
 
 ```shell
-
+[object Object]
 ```

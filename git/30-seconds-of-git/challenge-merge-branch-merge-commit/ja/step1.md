@@ -15,8 +15,5 @@
 これが `git log` を実行した結果です。
 
 ```shell
-
-
-
 ADD new line to README.md
 ```

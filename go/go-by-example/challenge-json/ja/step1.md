@@ -11,8 +11,6 @@ Go言語でJSONデータをエンコードおよびデコードするために�
 ## 例
 
 ```sh
-
-
 # ここではGoにおけるJSONの基本を扱いましたが、
 # 詳細については[JSON and Go](https://go.dev/blog/json)
 # のブログ記事と[JSONパッケージドキュメント](https://pkg.go.dev/encoding/json)

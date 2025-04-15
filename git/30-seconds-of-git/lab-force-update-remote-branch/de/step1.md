@@ -33,5 +33,5 @@ Das `-f`-Flag zwingt Git, den Remote-Branch mit Ihren Änderungen zu aktualisier
 Dies ist das Endresultat:
 
 ```shell
-
+[object Object]
 ```

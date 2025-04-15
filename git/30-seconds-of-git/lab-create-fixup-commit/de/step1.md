@@ -40,5 +40,5 @@ Wenn Sie den interaktiven Editor öffnen, müssen Sie den Text nicht ändern und
 Dies ist das Ergebnis des Ausführens des Befehls `git show HEAD~1`:
 
 ```shell
-
+[object Object]
 ```

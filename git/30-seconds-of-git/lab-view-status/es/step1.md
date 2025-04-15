@@ -23,5 +23,5 @@ Esto mostrará el estado actual del árbol de trabajo. Deberías ver informació
 La salida se ve así:
 
 ```shell
-
+[object Object]
 ```

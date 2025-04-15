@@ -11,8 +11,6 @@
 ## 示例
 
 ```sh
-
-
 # 我们在这里介绍了Go语言中JSON的基础知识，但请查看
 # [JSON与Go](https://go.dev/blog/json)
 # 博客文章以及[JSON包文档](https://pkg.go.dev/encoding/json)

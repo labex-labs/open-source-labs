@@ -13,5 +13,5 @@ git log --author="Hang"
 这将输出仓库中作者为 “Hang” 的所有提交记录列表，以及提交消息、日期和其他详细信息：
 
 ```shell
-
+[object Object]
 ```

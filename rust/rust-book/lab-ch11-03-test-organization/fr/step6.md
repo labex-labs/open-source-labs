@@ -32,7 +32,7 @@ Chaque fichier dans le répertoire `tests` est une crate séparée, donc nous de
 Nous n'avons pas besoin d'ajouter l'annotation `#[cfg(test)]` à aucun code dans `tests/integration_test.rs`. Cargo traite le répertoire `tests` de manière spéciale et ne compile les fichiers de ce répertoire que lorsque nous exécutons `cargo test`. Exécutez maintenant `cargo test` :
 
 ```bash
-
+[object Object]
 ```
 
 Les trois sections de sortie incluent les tests unitaires, le test d'intégration et les tests de documentation. Notez que si un test dans une section échoue, les sections suivantes ne seront pas exécutées. Par exemple, si un test unitaire échoue, il n'y aura pas de sortie pour les tests d'intégration et de documentation car ces tests ne seront exécutés que si tous les tests unitaires sont passés.
@@ -46,7 +46,7 @@ Chaque fichier de test d'intégration a sa propre section, donc si nous ajoutons
 Nous pouvons toujours exécuter une fonction de test d'intégration particulière en spécifiant le nom de la fonction de test en tant qu'argument de `cargo test`. Pour exécuter tous les tests dans un fichier de test d'intégration particulier, utilisez l'argument `--test` de `cargo test` suivi du nom du fichier :
 
 ```bash
-
+[object Object]
 ```
 
 Cette commande exécute seulement les tests dans le fichier `tests/integration_test.rs`.

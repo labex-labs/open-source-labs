@@ -48,7 +48,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 Codeblöcke in der Dokumentation werden automatisch getestet, wenn der reguläre Befehl `cargo test` ausgeführt wird:
 
 ```shell
-
+[object Object]
 ```
 
 ## Motivation hinter den Dokumentationstests

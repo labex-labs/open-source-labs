@@ -28,7 +28,7 @@ $ cargo test
 You should see output like this:
 
 ```shell
-
+[object Object]
 ```
 
 You can also run tests whose name matches a pattern:
@@ -38,7 +38,7 @@ $ cargo test test_foo
 ```
 
 ```shell
-
+[object Object]
 ```
 
 One word of caution: Cargo may run multiple tests concurrently, so make sure that they don't race with each other.

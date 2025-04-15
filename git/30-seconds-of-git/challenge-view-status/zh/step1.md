@@ -16,5 +16,5 @@
 输出如下：
 
 ```shell
-
+[object Object]
 ```

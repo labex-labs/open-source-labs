@@ -7,8 +7,6 @@ Sie müssen den bereitgestellten Code vervollständigen, um JSON-Daten in Golang
 - Fähigkeit, vorhandenen Golang-Code zu lesen und zu verstehen.
 
 ```sh
-
-
 # Wir haben hier die Grundlagen von JSON in Go behandelt, aber schauen Sie sich den [JSON and Go](https://go.dev/blog/json)
 # Blogbeitrag und die [JSON-Paketdokumentation](https://pkg.go.dev/encoding/json)
 # für mehr an.

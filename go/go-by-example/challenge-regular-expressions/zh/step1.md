@@ -22,7 +22,6 @@
 ## 示例
 
 ```sh
-
 # 有关 Go 正则表达式的完整参考，请查看
 # [`regexp`](https://pkg.go.dev/regexp) 包文档。
 ```

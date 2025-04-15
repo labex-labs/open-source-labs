@@ -47,8 +47,5 @@ git merge --no-ff -m "Merge feature-branch" feature-branch
 Вот результат выполнения `git log`:
 
 ```shell
-
-
-
 ADD new line to README.md
 ```

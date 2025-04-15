@@ -44,6 +44,5 @@ git log
 这是在 `master` 分支上运行 `git log` 的结果：
 
 ```shell
-
 ADD hello.txt
 ```

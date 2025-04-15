@@ -9,5 +9,5 @@ Rufen Sie alle Commits des Autors "Hang" im Repository `git-playground` ab.
 Dies wird eine Liste aller Commits von "Hang" im Repository ausgeben, zusammen mit Informationen über die Commit-Nachricht, das Datum und andere Details:
 
 ```shell
-
+[object Object]
 ```

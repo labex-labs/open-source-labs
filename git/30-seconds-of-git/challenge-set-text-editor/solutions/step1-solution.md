@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # Sets vim as the git text editor
 ```
 

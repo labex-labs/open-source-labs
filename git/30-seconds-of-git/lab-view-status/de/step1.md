@@ -23,5 +23,5 @@ Dies wird den aktuellen Status des Arbeitsbaums ausgeben. Sie sollten Informatio
 Die Ausgabe sieht so aus:
 
 ```shell
-
+[object Object]
 ```

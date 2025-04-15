@@ -13,5 +13,5 @@
 `git log` を実行すると、次のような結果が得られます。
 
 ```shell
-
+[object Object]
 ```

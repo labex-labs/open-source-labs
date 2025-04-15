@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # Removes the `30code` submodule
 ```
 

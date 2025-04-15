@@ -40,5 +40,5 @@ git rebase --interactive --autosquash HEAD~3
 これが `git show HEAD~1` コマンドを実行した結果です。
 
 ```shell
-
+[object Object]
 ```

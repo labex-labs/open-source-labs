@@ -16,6 +16,5 @@ Pour terminer ce défi, vous utiliserez le référentiel Git `git-playground` de
 Voici le résultat de l'exécution de `git log` :
 
 ```shell
-
 ADD hello.txt
 ```

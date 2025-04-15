@@ -44,6 +44,5 @@ git log
 Вот результат выполнения команды `git log` на ветке `master`:
 
 ```shell
-
 ADD hello.txt
 ```

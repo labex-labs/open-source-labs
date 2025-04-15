@@ -22,7 +22,6 @@ The challenge requires you to complete the code to perform various regular expre
 ## Example
 
 ```sh
-
 # For a complete reference on Go regular expressions check
 # the [`regexp`](https://pkg.go.dev/regexp) package docs.
 ```

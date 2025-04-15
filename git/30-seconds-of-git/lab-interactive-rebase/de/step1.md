@@ -19,5 +19,5 @@ Für diese Übung verwenden wir das Repository von `https://github.com/labex-lab
 Das Ausführen von `git log` gibt Ihnen ein Ergebnis wie dieses:
 
 ```shell
-
+[object Object]
 ```

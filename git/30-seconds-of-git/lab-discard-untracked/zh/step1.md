@@ -19,7 +19,7 @@ git status
 你应该会看到以下输出：
 
 ```shell
-
+[object Object]
 ```
 
 3. 丢弃当前分支的所有未跟踪更改：

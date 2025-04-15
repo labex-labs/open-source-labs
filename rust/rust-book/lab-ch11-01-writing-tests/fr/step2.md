@@ -38,7 +38,7 @@ Le corps d'exemple de fonction utilise la macro `assert_eq!` \[2\] pour affirmer
 La commande `cargo test` exécute tous les tests de notre projet, comme indiqué dans la liste 11-2.
 
 ```bash
-
+[object Object]
 ```
 
 Liste 11-2 : La sortie de l'exécution du test généré automatiquement

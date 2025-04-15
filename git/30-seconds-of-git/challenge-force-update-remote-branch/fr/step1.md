@@ -14,5 +14,5 @@ Pour terminer ce défi, vous utiliserez le référentiel Git `git-playground` de
 Voici le résultat final :
 
 ```shell
-
+[object Object]
 ```

@@ -28,7 +28,7 @@ $ cargo test
 Sie sollten eine Ausgabe wie diese sehen:
 
 ```shell
-
+[object Object]
 ```
 
 Sie können auch Tests ausführen, deren Name einem Muster entspricht:
@@ -38,7 +38,7 @@ $ cargo test test_foo
 ```
 
 ```shell
-
+[object Object]
 ```
 
 Ein Wort der Vorsicht: Cargo kann mehrere Tests gleichzeitig ausführen, also stellen Sie sicher, dass sie nicht miteinander konkurrieren.

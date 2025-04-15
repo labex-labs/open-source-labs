@@ -23,5 +23,5 @@ git status
 出力は次のようになります。
 
 ```shell
-
+[object Object]
 ```

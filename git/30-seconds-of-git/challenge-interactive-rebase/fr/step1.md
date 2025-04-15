@@ -13,5 +13,5 @@ Pour ce défi, utilisons le référentiel de `https://github.com/labex-labs/git-
 En exécutant `git log`, vous obtiendrez un résultat qui ressemblera à ceci :
 
 ```shell
-
+[object Object]
 ```

@@ -33,5 +33,5 @@ Le drapeau `-f` force Git à mettre à jour la branche distante avec vos modific
 Voici le résultat final :
 
 ```shell
-
+[object Object]
 ```

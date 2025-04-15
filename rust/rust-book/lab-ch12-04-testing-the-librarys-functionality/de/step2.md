@@ -79,7 +79,7 @@ Andere Programmiersprachen erfordern es nicht, Argumente mit Rückgabewerten in 
 Lassen Sie uns jetzt den Test ausführen:
 
 ```bash
-
+[object Object]
 ```
 
 Super, der Test fehlschlägt, genau wie wir es erwartet haben. Lassen Sie uns den Test erfolgreich machen!

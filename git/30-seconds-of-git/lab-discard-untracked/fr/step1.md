@@ -19,7 +19,7 @@ git status
 Vous devriez voir la sortie suivante :
 
 ```shell
-
+[object Object]
 ```
 
 3. Abandonnez toutes les modifications non suivies sur la branche actuelle :

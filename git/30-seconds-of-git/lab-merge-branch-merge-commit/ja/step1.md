@@ -47,8 +47,5 @@ git merge --no-ff -m "Merge feature-branch" feature-branch
 これが `git log` を実行した結果です：
 
 ```shell
-
-
-
 ADD new line to README.md
 ```

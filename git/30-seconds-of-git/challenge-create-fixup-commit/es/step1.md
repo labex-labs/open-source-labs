@@ -16,5 +16,5 @@ Para este desafío, usemos el repositorio de `https://github.com/labex-labs/git-
 Este es el resultado de ejecutar el comando `git show HEAD~1`:
 
 ```shell
-
+[object Object]
 ```

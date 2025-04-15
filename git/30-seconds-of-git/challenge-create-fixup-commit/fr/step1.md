@@ -16,5 +16,5 @@ Pour ce défi, utilisons le référentiel de `https://github.com/labex-labs/git-
 Voici le résultat de l'exécution de la commande `git show HEAD~1` :
 
 ```shell
-
+[object Object]
 ```

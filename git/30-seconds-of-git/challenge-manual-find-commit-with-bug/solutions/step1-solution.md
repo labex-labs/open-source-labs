@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # ... some time later the bad commit will be printed
 ```
 

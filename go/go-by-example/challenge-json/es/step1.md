@@ -11,8 +11,6 @@ Se te pide que completes el código proporcionado para codificar y decodificar d
 ## Ejemplo
 
 ```sh
-
-
 # Aquí hemos cubierto los conceptos básicos de JSON en Go, pero consulta
 # la publicación del blog [JSON and Go](https://go.dev/blog/json)
 # y la documentación del paquete [JSON](https://pkg.go.dev/encoding/json)

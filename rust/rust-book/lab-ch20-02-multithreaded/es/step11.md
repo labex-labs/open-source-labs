@@ -69,7 +69,7 @@ La llamada a `recv` se bloquea, por lo que si todavía no hay un trabajo, el sub
 Nuestro grupo de subprocesos ahora está en un estado de funcionamiento ¡Dale un `cargo run` y haz algunas solicitudes!
 
 ```bash
-
+[object Object]
 ```
 
 ¡Éxito! Ahora tenemos un grupo de subprocesos que ejecuta conexiones de forma asincrónica. Nunca se crean más de cuatro subprocesos, por lo que nuestro sistema no se sobrecargará si el servidor recibe muchas solicitudes. Si hacemos una solicitud a _/sleep_, el servidor podrá atender otras solicitudes haciéndolas ejecutar otro subproceso.

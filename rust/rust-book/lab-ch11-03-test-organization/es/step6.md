@@ -32,7 +32,7 @@ Cada archivo en el directorio `tests` es un crat separado, por lo que necesitamo
 No necesitamos anotar ningún código en `tests/integration_test.rs` con `#[cfg(test)]`. Cargo trata el directorio `tests` de manera especial y solo compila los archivos de este directorio cuando ejecutamos `cargo test`. Ejecute `cargo test` ahora:
 
 ```bash
-
+[object Object]
 ```
 
 Las tres secciones de salida incluyen las pruebas unitarias, la prueba de integración y las pruebas de documentación. Tenga en cuenta que si alguna prueba en una sección falla, no se ejecutarán las siguientes secciones. Por ejemplo, si una prueba unitaria falla, no habrá ninguna salida para las pruebas de integración y de documentación porque esas pruebas solo se ejecutarán si todas las pruebas unitarias pasan.
@@ -46,7 +46,7 @@ Cada archivo de prueba de integración tiene su propia sección, por lo que si a
 Todavía podemos ejecutar una función de prueba de integración específica especificando el nombre de la función de prueba como argumento para `cargo test`. Para ejecutar todas las pruebas en un archivo de prueba de integración particular, use el argumento `--test` de `cargo test` seguido del nombre del archivo:
 
 ```bash
-
+[object Object]
 ```
 
 Este comando solo ejecuta las pruebas en el archivo `tests/integration_test.rs`.

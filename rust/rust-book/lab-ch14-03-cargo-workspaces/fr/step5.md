@@ -23,7 +23,7 @@ mod tests {
 Maintenant, exécutez `cargo test` dans le répertoire `add` de niveau supérieur. Exécuter `cargo test` dans un espace de travail structuré comme celui-ci exécutera les tests pour tous les crânes de l'espace de travail :
 
 ```bash
-
+[object Object]
 ```
 
 La première section de la sortie montre que le test `it_works` dans le crâne `add_one` a réussi. La section suivante montre qu'aucun test n'a été trouvé dans le crâne `adder`, et la dernière section montre qu'aucun test de documentation n'a été trouvé dans le crâne `add_one`.
@@ -31,7 +31,7 @@ La première section de la sortie montre que le test `it_works` dans le crâne `
 Nous pouvons également exécuter les tests pour un crâne particulier dans un espace de travail à partir du répertoire de niveau supérieur en utilisant le drapeau `-p` et en spécifiant le nom du crâne que nous voulons tester :
 
 ```bash
-
+[object Object]
 ```
 
 Cette sortie montre que `cargo test` n'a exécuté que les tests pour le crâne `add_one` et n'a pas exécuté les tests du crâne `adder`.

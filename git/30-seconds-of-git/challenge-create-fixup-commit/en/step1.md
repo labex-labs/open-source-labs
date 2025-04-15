@@ -16,5 +16,5 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 This is the result of running the `git show HEAD~1` command:
 
 ```shell
-
+[object Object]
 ```

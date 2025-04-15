@@ -16,6 +16,5 @@ Para completar este desafío, usarás el repositorio Git `git-playground` de tu 
 Este es el resultado de ejecutar `git log`:
 
 ```shell
-
 ADD hello.txt
 ```

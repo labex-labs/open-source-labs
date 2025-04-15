@@ -18,7 +18,6 @@ Esta práctica requiere que completes el código para realizar varias tareas rel
 - Utiliza `ReplaceAllFunc` para transformar el texto coincidente con una función dada.
 
 ```sh
-
 # Para una referencia completa sobre las expresiones regulares de Go, consulte
 # la documentación del paquete [`regexp`](https://pkg.go.dev/regexp).
 ```

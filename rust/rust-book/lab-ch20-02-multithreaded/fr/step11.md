@@ -69,7 +69,7 @@ L'appel à `recv` bloque, donc si il n'y a pas de tâche pour le moment, le thre
 Notre thread pool est maintenant en état de fonctionnement! Donnez-lui un `cargo run` et effectuez quelques requêtes :
 
 ```bash
-
+[object Object]
 ```
 
 Succès! Nous avons maintenant un thread pool qui exécute les connexions de manière asynchrone. Il n'y a jamais plus de quatre threads créés, donc notre système ne risque pas d'être surchargé si le serveur reçoit beaucoup de requêtes. Si nous effectuons une requête à _/sleep_, le serveur sera capable de traiter d'autres requêtes en faisant exécuter celles-ci par un autre thread.

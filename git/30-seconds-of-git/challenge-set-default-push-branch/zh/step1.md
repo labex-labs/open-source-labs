@@ -16,6 +16,5 @@
 这是运行 `git log` 的结果：
 
 ```shell
-
 ADD hello.txt
 ```

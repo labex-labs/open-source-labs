@@ -26,5 +26,5 @@ Vous avez travaillé sur un projet et apporté des modifications à la branche l
 Voici le résultat final:
 
 ```shell
-
+[object Object]
 ```

@@ -33,5 +33,5 @@ The `-f` flag forces Git to update the remote branch with your changes, even tho
 This is the final result:
 
 ```shell
-
+[object Object]
 ```

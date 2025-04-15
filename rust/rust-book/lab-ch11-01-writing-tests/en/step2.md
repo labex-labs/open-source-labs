@@ -38,7 +38,7 @@ The example function body uses the `assert_eq!` macro \[2\] to assert that `resu
 The `cargo test` command runs all tests in our project, as shown in Listing 11-2.
 
 ```bash
-
+[object Object]
 ```
 
 Listing 11-2: The output from running the automatically generated test

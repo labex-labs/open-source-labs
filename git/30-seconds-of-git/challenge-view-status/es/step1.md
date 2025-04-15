@@ -16,5 +16,5 @@ Esto producirá la salida del estado actual del directorio de trabajo. Deberías
 La salida se ve así:
 
 ```shell
-
+[object Object]
 ```

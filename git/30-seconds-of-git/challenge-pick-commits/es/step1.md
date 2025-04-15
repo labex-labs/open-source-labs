@@ -15,6 +15,5 @@ Para este desafío, usemos el repositorio de `https://github.com/labex-labs/git-
 Este es el resultado de ejecutar `git log` en la rama `master`:
 
 ```shell
-
 ADD hello.txt
 ```

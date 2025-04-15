@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # Add the files `index.html` and `style.css` to the staging area
 
 # Add all files with a `.js` extension

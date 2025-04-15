@@ -11,8 +11,6 @@
 ## Пример
 
 ```sh
-
-
 # Здесь мы рассмотрели основы JSON в Go, но ознакомьтесь
 # с [JSON и Go](https://go.dev/blog/json)
 # статьей блога и [документацией по пакету JSON](https://pkg.go.dev/encoding/json)

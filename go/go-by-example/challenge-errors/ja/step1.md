@@ -16,7 +16,6 @@
 ## 例
 
 ```sh
-
 # See this [great post](https://go.dev/blog/error-handling-and-go)
 # on the Go blog for more on error handling.
 ```

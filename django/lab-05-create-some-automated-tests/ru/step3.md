@@ -65,7 +65,7 @@ python manage.py test polls
 и вы увидите что-то вроде:
 
 ```shell
-
+[object Object]
 ```
 
 > Различая ошибка?

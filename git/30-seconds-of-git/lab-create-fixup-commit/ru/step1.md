@@ -40,5 +40,5 @@ git rebase --interactive --autosquash HEAD~3
 Вот результат выполнения команды `git show HEAD~1`:
 
 ```shell
-
+[object Object]
 ```

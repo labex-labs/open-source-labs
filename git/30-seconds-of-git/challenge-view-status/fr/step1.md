@@ -16,5 +16,5 @@ Cela affichera l'état actuel de l'arbre de travail. Vous devriez voir des infor
 La sortie ressemble à ceci :
 
 ```shell
-
+[object Object]
 ```

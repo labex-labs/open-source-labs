@@ -79,7 +79,7 @@ Otros lenguajes de programación no requieren que conecten los argumentos con lo
 Ahora ejecutemos la prueba:
 
 ```bash
-
+[object Object]
 ```
 
 Genial, la prueba falla, exactamente como esperábamos. ¡Vamos a hacer que la prueba pase!

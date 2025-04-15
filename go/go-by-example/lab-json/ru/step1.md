@@ -7,8 +7,6 @@
 - Способность читать и понимать существующий код на Golang.
 
 ```sh
-
-
 # Здесь мы рассмотрели основы JSON в Go, но ознакомьтесь
 # с статьёй [JSON and Go](https://go.dev/blog/json)
 # и документацией по пакету [JSON](https://pkg.go.dev/encoding/json)

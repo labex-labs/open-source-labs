@@ -18,7 +18,6 @@ Le laboratoire vous demande de compléter le code pour effectuer diverses tâche
 - Utilisez `ReplaceAllFunc` pour transformer le texte correspondant avec une fonction donnée.
 
 ```sh
-
 # Pour une référence complète sur les expressions régulières en Go, consultez
 # la documentation du package [`regexp`](https://pkg.go.dev/regexp).
 ```

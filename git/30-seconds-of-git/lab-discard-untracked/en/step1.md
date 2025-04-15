@@ -19,7 +19,7 @@ git status
 You should see the following output:
 
 ```shell
-
+[object Object]
 ```
 
 3. Discard all untracked changes to the current branch:

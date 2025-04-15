@@ -26,5 +26,5 @@ Sie haben an einem Projekt gearbeitet und Änderungen an der lokalen `master`-Br
 Dies ist das fertige Ergebnis:
 
 ```shell
-
+[object Object]
 ```

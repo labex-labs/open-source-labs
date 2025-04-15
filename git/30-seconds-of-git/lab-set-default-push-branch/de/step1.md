@@ -35,6 +35,5 @@ Um dieses Lab zu absolvieren, verwenden Sie das Git-Repository `git-playground` 
 Dies ist das Ergebnis von `git log`:
 
 ```shell
-
 ADD hello.txt
 ```

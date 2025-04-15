@@ -32,7 +32,7 @@ fn it_adds_two() {
 我们不需要用 `#[cfg(test)]` 注解 `tests/integration_test.rs` 中的任何代码。Cargo 对 `tests` 目录有特殊处理，只有当我们运行 `cargo test` 时，才会编译这个目录中的文件。现在运行 `cargo test`：
 
 ```bash
-
+[object Object]
 ```
 
 输出的三个部分包括单元测试、集成测试和文档测试。请注意，如果某一部分中的任何测试失败，后续部分将不会运行。例如，如果一个单元测试失败，那么集成测试和文档测试将不会有任何输出，因为只有在所有单元测试都通过的情况下，这些测试才会运行。
@@ -46,7 +46,7 @@ fn it_adds_two() {
 我们仍然可以通过将测试函数的名称作为参数传递给 `cargo test` 来运行特定的集成测试函数。要运行特定集成测试文件中的所有测试，使用 `cargo test` 的 `--test` 参数，后跟文件名：
 
 ```bash
-
+[object Object]
 ```
 
 此命令仅运行 `integration_test.rs` 文件中的测试。

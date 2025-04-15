@@ -44,6 +44,5 @@ git log
 Dies ist das Ergebnis des Ausführens von `git log` auf dem `master`-Branch:
 
 ```shell
-
 ADD hello.txt
 ```

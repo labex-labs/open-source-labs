@@ -15,6 +15,5 @@ Für diese Herausforderung verwenden wir das Repository von `https://github.com/
 Dies ist das Ergebnis von `git log` auf dem `master`-Branch:
 
 ```shell
-
 ADD hello.txt
 ```

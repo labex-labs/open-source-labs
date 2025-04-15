@@ -22,7 +22,6 @@ Die Herausforderung erfordert es, den Code zu vervollständigen, um verschiedene
 ## Beispiel
 
 ```sh
-
 # Für eine vollständige Referenz zu Go regulären Ausdrücken überprüfen
 # die Dokumentation des [`regexp`](https://pkg.go.dev/regexp)-Pakets.
 ```

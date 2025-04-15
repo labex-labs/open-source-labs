@@ -79,7 +79,7 @@ Other programming languages don't require you to connect arguments to return val
 Now let's run the test:
 
 ```bash
-
+[object Object]
 ```
 
 Great, the test fails, exactly as we expected. Let's get the test to pass!

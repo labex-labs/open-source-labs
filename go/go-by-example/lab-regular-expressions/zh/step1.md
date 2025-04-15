@@ -18,7 +18,6 @@
 - 使用 `ReplaceAllFunc` 用给定函数转换匹配的文本。
 
 ```sh
-
 # 有关 Go 正则表达式的完整参考，请查看
 # [`regexp`](https://pkg.go.dev/regexp) 包文档。
 ```

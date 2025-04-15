@@ -13,5 +13,5 @@ Has estado trabajando en un proyecto y has realizado cambios en la rama local `m
 Este es el resultado final:
 
 ```shell
-
+[object Object]
 ```

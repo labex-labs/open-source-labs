@@ -69,7 +69,7 @@ The call to `recv` blocks, so if there is no job yet, the current thread will wa
 Our thread pool is now in a working state! Give it a `cargo run` and make some requests:
 
 ```bash
-
+[object Object]
 ```
 
 Success! We now have a thread pool that executes connections asynchronously. There are never more than four threads created, so our system won't get overloaded if the server receives a lot of requests. If we make a request to _/sleep_, the server will be able to serve other requests by having another thread run them.

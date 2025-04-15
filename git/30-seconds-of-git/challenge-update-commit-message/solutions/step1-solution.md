@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # The last commit's message is now "Fix the network bug"
 ```
 

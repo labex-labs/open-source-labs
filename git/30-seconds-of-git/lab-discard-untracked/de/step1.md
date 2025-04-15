@@ -19,7 +19,7 @@ git status
 Sie sollten die folgende Ausgabe sehen:
 
 ```shell
-
+[object Object]
 ```
 
 3. Verwerfen Sie alle unüberwachten Änderungen an der aktuellen Branch:

@@ -11,8 +11,6 @@ Vous êtes requis de compléter le code fourni pour coder et décoder des donné
 ## Exemple
 
 ```sh
-
-
 # Nous avons couvert les bases du JSON en Go ici, mais consultez
 # l'article de blog [JSON and Go](https://go.dev/blog/json)
 # et la [documentation du package JSON](https://pkg.go.dev/encoding/json)

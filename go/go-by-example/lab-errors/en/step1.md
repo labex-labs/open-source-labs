@@ -12,7 +12,6 @@ The lab provides two functions that return an error if the input argument is 42.
 - The `main` function must demonstrate how to programmatically use the data in a custom error.
 
 ```sh
-
 # See this [great post](https://go.dev/blog/error-handling-and-go)
 # on the Go blog for more on error handling.
 ```

@@ -32,7 +32,7 @@ Jede Datei im `tests`-Verzeichnis ist ein separater Kasten, daher müssen wir un
 Wir müssen keinen Code in `tests/integration_test.rs` mit `#[cfg(test)]` annotieren. Cargo behandelt das `tests`-Verzeichnis speziell und kompiliert Dateien in diesem Verzeichnis nur, wenn wir `cargo test` ausführen. Führen Sie jetzt `cargo test` aus:
 
 ```bash
-
+[object Object]
 ```
 
 Die drei Abschnitte der Ausgabe umfassen die Einheitstests, den Integrations-Test und die Dokutests. Beachten Sie, dass, wenn ein Test in einem Abschnitt fehlschlägt, die folgenden Abschnitte nicht ausgeführt werden. Beispielsweise wird, wenn ein Einheitstest fehlschlägt, keine Ausgabe für Integrations- und Dokutests erscheinen, da diese Tests nur ausgeführt werden, wenn alle Einheitstests bestanden werden.
@@ -46,7 +46,7 @@ Jede Integrations-Testdatei hat ihren eigenen Abschnitt, daher wird, wenn wir we
 Wir können immer noch einen bestimmten Integrations-Testfunktion ausführen, indem wir den Namen der Testfunktion als Argument für `cargo test` angeben. Um alle Tests in einer bestimmten Integrations-Testdatei auszuführen, verwenden Sie das `--test`-Argument von `cargo test` gefolgt vom Dateinamen:
 
 ```bash
-
+[object Object]
 ```
 
 Dieser Befehl führt nur die Tests in der Datei `tests/integration_test.rs` aus.

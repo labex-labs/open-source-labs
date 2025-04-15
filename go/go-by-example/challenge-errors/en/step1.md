@@ -16,7 +16,6 @@ The challenge provides two functions that return an error if the input argument 
 ## Example
 
 ```sh
-
 # See this [great post](https://go.dev/blog/error-handling-and-go)
 # on the Go blog for more on error handling.
 ```

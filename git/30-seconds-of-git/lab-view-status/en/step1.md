@@ -23,5 +23,5 @@ This will output the current status of the working tree. You should see informat
 The output looks like this:
 
 ```shell
-
+[object Object]
 ```

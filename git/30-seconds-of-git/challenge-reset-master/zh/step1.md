@@ -13,5 +13,5 @@
 这是最终结果：
 
 ```shell
-
+[object Object]
 ```

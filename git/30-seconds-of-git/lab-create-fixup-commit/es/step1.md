@@ -40,5 +40,5 @@ Al abrir el editor interactivo, no es necesario cambiar el texto y guardar para 
 Este es el resultado de ejecutar el comando `git show HEAD~1`:
 
 ```shell
-
+[object Object]
 ```

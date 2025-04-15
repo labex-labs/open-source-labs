@@ -15,8 +15,5 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 This is the result of running `git log`:
 
 ```shell
-
-
-
 ADD new line to README.md
 ```

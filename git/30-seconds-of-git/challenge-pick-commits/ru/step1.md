@@ -15,6 +15,5 @@
 Вот результат выполнения команды `git log` для ветки `master`:
 
 ```shell
-
 ADD hello.txt
 ```

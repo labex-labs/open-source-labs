@@ -28,7 +28,7 @@ $ cargo test
 Vous devriez voir une sortie comme celle-ci :
 
 ```shell
-
+[object Object]
 ```
 
 Vous pouvez également exécuter les tests dont le nom correspond à un motif :
@@ -38,7 +38,7 @@ $ cargo test test_foo
 ```
 
 ```shell
-
+[object Object]
 ```
 
 Un mot d'avertissement : Cargo peut exécuter plusieurs tests en parallèle, assurez-vous donc qu'ils ne se chevauchent pas.

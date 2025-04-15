@@ -32,7 +32,7 @@ Each file in the `tests` directory is a separate crate, so we need to bring our 
 We don't need to annotate any code in \_tests/integration`test.rs` with `#[cfg(test)]`. Cargo treats the `tests` directory specially and compiles files in this directory only when we run `cargo test`. Run `cargo test` now:
 
 ```bash
-
+[object Object]
 ```
 
 The three sections of output include the unit tests, the integration test, and the doc tests. Note that if any test in a section fails, the following sections will not be run. For example, if a unit test fails, there won't be any output for integration and doc tests because those tests will only be run if all unit tests are passing.
@@ -46,7 +46,7 @@ Each integration test file has its own section, so if we add more files in the `
 We can still run a particular integration test function by specifying the test function's name as an argument to `cargo test`. To run all the tests in a particular integration test file, use the `--test` argument of `cargo test` followed by the name of the file:
 
 ```bash
-
+[object Object]
 ```
 
 This command runs only the tests in the \_tests/integration`test.rs` file.

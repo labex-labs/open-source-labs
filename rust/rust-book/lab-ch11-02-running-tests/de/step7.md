@@ -21,13 +21,13 @@ fn expensive_test() {
 Nach `#[test]` fügen wir die Zeile `#[ignore]` zum Test hinzu, den wir ausschließen möchten. Wenn wir jetzt unsere Tests ausführen, wird `it_works` ausgeführt, aber `expensive_test` nicht:
 
 ```bash
-
+[object Object]
 ```
 
 Die Funktion `expensive_test` wird als `ignored` aufgelistet. Wenn wir nur die ignorierten Tests ausführen möchten, können wir `cargo test -- --ignored` verwenden:
 
 ```bash
-
+[object Object]
 ```
 
 Indem Sie steuern, welche Tests ausgeführt werden, können Sie sicherstellen, dass die Ergebnisse von `cargo test` schnell zurückgegeben werden. Wenn Sie an einem Punkt angelangt sind, an dem es Sinn macht, die Ergebnisse der `ignored` Tests zu überprüfen und Sie die Zeit haben, auf die Ergebnisse zu warten, können Sie stattdessen `cargo test -- --ignored` ausführen. Wenn Sie alle Tests ausführen möchten, unabhängig davon, ob sie ignoriert werden oder nicht, können Sie `cargo test -- --include-ignored` ausführen.

@@ -3,10 +3,6 @@
 Ouvrez un terminal sur la machine virtuelle LabEx et exécutez `docker -h`, qui vous montrera la page d'aide de l'interface de ligne de commande (CLI) Docker.
 
 ```bash
-
-
-
-
 VOLUME Gérer les volumes
 ```
 

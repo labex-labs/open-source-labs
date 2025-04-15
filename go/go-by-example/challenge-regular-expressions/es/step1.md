@@ -22,7 +22,6 @@ El desafío requiere que completes el código para realizar varias tareas relaci
 ## Ejemplo
 
 ```sh
-
 # Para una referencia completa sobre expresiones regulares de Go consulta
 # la documentación del paquete [`regexp`](https://pkg.go.dev/regexp).
 ```

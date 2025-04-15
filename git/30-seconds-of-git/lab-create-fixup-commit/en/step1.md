@@ -40,5 +40,5 @@ When opening the interactive editor, you don't need to change the text and save 
 This is the result of running the `git show HEAD~1` command:
 
 ```shell
-
+[object Object]
 ```

@@ -19,7 +19,7 @@ git status
 Deberías ver la siguiente salida:
 
 ```shell
-
+[object Object]
 ```
 
 3. Descarta todos los cambios no rastreados en la rama actual:

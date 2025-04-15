@@ -13,5 +13,5 @@ git log --author="Hang"
 Esto generará una lista de todos los commits realizados por "Hang" en el repositorio, junto con información sobre el mensaje del commit, la fecha y otros detalles:
 
 ```shell
-
+[object Object]
 ```

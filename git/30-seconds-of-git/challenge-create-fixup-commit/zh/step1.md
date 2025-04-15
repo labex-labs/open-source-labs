@@ -16,5 +16,5 @@
 这是运行 `git show HEAD~1` 命令的结果：
 
 ```shell
-
+[object Object]
 ```

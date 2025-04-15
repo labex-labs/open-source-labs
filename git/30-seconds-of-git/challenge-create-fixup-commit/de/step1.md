@@ -16,5 +16,5 @@ Für diese Herausforderung verwenden wir das Repository von `https://github.com/
 Dies ist das Ergebnis der Ausführung des Befehls `git show HEAD~1`:
 
 ```shell
-
+[object Object]
 ```

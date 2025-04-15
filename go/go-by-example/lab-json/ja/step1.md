@@ -7,8 +7,6 @@ Go言語でJSONデータをエンコードおよびデコードするために�
 - 既存のGo言語のコードを読み解く能力
 
 ```sh
-
-
 # ここではGoにおけるJSONの基本について説明しましたが、詳細については
 # [JSON and Go](https://go.dev/blog/json)
 # のブログ記事と[JSONパッケージのドキュメント](https://pkg.go.dev/encoding/json)

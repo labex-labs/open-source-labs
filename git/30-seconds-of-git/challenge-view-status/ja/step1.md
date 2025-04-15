@@ -16,5 +16,5 @@
 出力は次のようになります。
 
 ```shell
-
+[object Object]
 ```

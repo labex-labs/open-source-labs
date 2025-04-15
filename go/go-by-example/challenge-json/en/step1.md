@@ -11,8 +11,6 @@ You are required to complete the code provided to encode and decode JSON data in
 ## Example
 
 ```sh
-
-
 # We've covered the basic of JSON in Go here, but check
 # out the [JSON and Go](https://go.dev/blog/json)
 # blog post and [JSON package docs](https://pkg.go.dev/encoding/json)

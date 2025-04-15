@@ -1,7 +1,6 @@
 # Solutions
 
 ```shell
-
 # Remove the file `newfile.txt` from the staging area
 
 # Remove all files with a `.json` extension in the `src` directory

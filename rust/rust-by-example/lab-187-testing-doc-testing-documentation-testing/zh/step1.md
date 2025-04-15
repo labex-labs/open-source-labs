@@ -47,7 +47,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 在运行常规的 `cargo test` 命令时，文档中的代码块会自动进行测试：
 
 ```shell
-
+[object Object]
 ```
 
 ## 文档测试背后的动机

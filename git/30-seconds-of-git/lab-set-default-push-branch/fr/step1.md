@@ -35,6 +35,5 @@ Pour terminer ce laboratoire, vous utiliserez le référentiel Git `git-playgrou
 Voici le résultat de l'exécution de `git log` :
 
 ```shell
-
 ADD hello.txt
 ```

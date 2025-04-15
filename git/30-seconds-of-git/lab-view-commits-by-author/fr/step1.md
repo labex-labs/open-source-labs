@@ -13,5 +13,5 @@ git log --author="Hang"
 Cela affichera une liste de tous les commits effectués par "Hang" dans le référentiel, ainsi que des informations sur le message de commit, la date et d'autres détails :
 
 ```shell
-
+[object Object]
 ```

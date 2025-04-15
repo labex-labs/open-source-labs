@@ -18,7 +18,6 @@ The lab requires you to complete the code to perform various regular expression-
 - Use `ReplaceAllFunc` to transform matched text with a given function.
 
 ```sh
-
 # For a complete reference on Go regular expressions check
 # the [`regexp`](https://pkg.go.dev/regexp) package docs.
 ```

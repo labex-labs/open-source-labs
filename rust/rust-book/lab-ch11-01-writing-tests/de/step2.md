@@ -38,7 +38,7 @@ Der Beispiel-Funktionskörper verwendet die `assert_eq!`-Makro \[2\], um zu übe
 Der Befehl `cargo test` führt alle Tests in unserem Projekt aus, wie in Listing 11-2 gezeigt.
 
 ```bash
-
+[object Object]
 ```
 
 Listing 11-2: Die Ausgabe bei der Ausführung des automatisch generierten Tests

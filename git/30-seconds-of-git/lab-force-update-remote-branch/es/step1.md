@@ -33,5 +33,5 @@ La bandera `-f` fuerza a Git a actualizar la rama remota con tus cambios, aunque
 Este es el resultado final:
 
 ```shell
-
+[object Object]
 ```

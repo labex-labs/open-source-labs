@@ -38,7 +38,7 @@ mod tests {
 `cargo test` 命令会运行我们项目中的所有测试，如清单 11 - 2 所示。
 
 ```bash
-
+[object Object]
 ```
 
 清单 11 - 2：运行自动生成的测试的输出

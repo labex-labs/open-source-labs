@@ -22,7 +22,6 @@ Le défi consiste à compléter le code pour effectuer diverses tâches liées a
 ## Exemple
 
 ```sh
-
 # Pour une référence complète sur les expressions régulières en Go, consultez
 # la documentation du package [`regexp`](https://pkg.go.dev/regexp).
 ```

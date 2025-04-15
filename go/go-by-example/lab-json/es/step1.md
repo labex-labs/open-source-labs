@@ -7,8 +7,6 @@ Se te pide que completes el código proporcionado para codificar y decodificar d
 - Capacidad para leer y entender el código de Golang existente.
 
 ```sh
-
-
 # Aquí hemos cubierto los conceptos básicos de JSON en Go, pero consulta
 # la publicación del blog [JSON and Go](https://go.dev/blog/json)
 # y la documentación del paquete [JSON package docs](https://pkg.go.dev/encoding/json)

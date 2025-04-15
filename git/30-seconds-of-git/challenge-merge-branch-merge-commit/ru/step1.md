@@ -15,8 +15,5 @@
 Вот результат выполнения команды `git log`:
 
 ```shell
-
-
-
 ADD new line to README.md
 ```

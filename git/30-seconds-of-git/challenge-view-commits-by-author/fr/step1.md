@@ -9,5 +9,5 @@ Récupérez tous les commits effectués par l'auteur "Hang" dans le référentie
 Cela produira une liste de tous les commits effectués par "Hang" dans le référentiel, ainsi que des informations sur le message de commit, la date et autres détails :
 
 ```shell
-
+[object Object]
 ```

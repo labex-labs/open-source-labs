@@ -38,7 +38,7 @@ El cuerpo del ejemplo de función utiliza la macro `assert_eq!` \[2\] para asegu
 El comando `cargo test` ejecuta todas las pruebas en nuestro proyecto, como se muestra en la Lista 11-2.
 
 ```bash
-
+[object Object]
 ```
 
 Lista 11-2: La salida de la ejecución de la prueba generada automáticamente

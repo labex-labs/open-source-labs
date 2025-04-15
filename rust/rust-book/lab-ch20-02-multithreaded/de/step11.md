@@ -69,7 +69,7 @@ Der Aufruf von `recv` blockiert, sodass der aktuelle Thread warten wird, wenn no
 Unser Threadpool ist jetzt im funktionierenden Zustand! Geben Sie `cargo run` aus und stellen Sie einige Anfragen:
 
 ```bash
-
+[object Object]
 ```
 
 Erfolg! Wir haben jetzt einen Threadpool, der Verbindungen asynchron ausführt. Es werden nie mehr als vier Threads erstellt, sodass unser System nicht überlastet wird, wenn der Server viele Anfragen erhält. Wenn wir eine Anfrage an _/sleep_ stellen, kann der Server andere Anfragen bedienen, indem ein anderer Thread sie ausführt.
