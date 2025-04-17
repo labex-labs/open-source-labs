@@ -16,11 +16,7 @@ The `types` class variable is used internally to convert row data. To indicate t
 
 **Instructions:**
 
-1.  Open the `stock.py` file in the editor. You can use the following command in the terminal to open the file in the WebIDE:
-
-    ```bash
-    code /home/labex/project/stock.py
-    ```
+1.  Open the `stock.py` file in the editor.
 
 2.  Modify the `types` class variable by adding a leading underscore, changing it to `_types`.
 
