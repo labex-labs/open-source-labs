@@ -1,5 +1,5 @@
 # Introducción
 
-En este laboratorio, aprenderás cómo encapsular los internos de un objeto utilizando atributos privados e implementar decoradores de propiedad para controlar el acceso a los atributos. Estas técnicas son esenciales para mantener la integridad de tus objetos y garantizar un acceso adecuado a los datos.
+En este laboratorio, aprenderá cómo encapsular los elementos internos de un objeto utilizando atributos privados e implementar decoradores de propiedad (property decorators) para controlar el acceso a los atributos. Estas técnicas son esenciales para mantener la integridad de sus objetos y garantizar el manejo adecuado de los datos.
 
-Además, entenderás cómo restringir la creación de atributos utilizando `slots`. El archivo `stock.py` se modificará durante este laboratorio para aplicar estos conceptos.
+También comprenderá cómo restringir la creación de atributos utilizando `__slots__`. Modificaremos el archivo `stock.py` a lo largo de este laboratorio para aplicar estos conceptos.

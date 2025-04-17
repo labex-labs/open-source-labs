@@ -89,3 +89,11 @@ Currently, our `Stock` class uses both the `_types` class variable and property 
     ```
 
     You should see that the base `Stock` class accepts float values for the price, while the `DStock` subclass requires `Decimal` values.
+
+    ```plaintext
+    Stock: GOOG, Shares: 100, Price: 490.1, Cost: 49010.0
+    Updated Stock price: 500.25, Cost: 50025.0
+    DStock: AAPL, Shares: 50, Price: 142.50, Cost: 7125.00
+    Error updating DStock price: Expected Decimal
+    Updated DStock price: 155.25, Cost: 7762.50
+    ```

@@ -1,5 +1,5 @@
 # Einführung
 
-In diesem Lab lernen Sie, wie Sie die Interna von Objekten mithilfe von privaten Attributen kapseln und Property-Dekorateure implementieren, um den Zugriff auf Attribute zu steuern. Diese Techniken sind unerlässlich, um die Integrität Ihrer Objekte aufrechtzuerhalten und einen korrekten Datenzugriff sicherzustellen.
+In diesem Lab lernen Sie, wie Sie Objektinterna mithilfe von privaten Attributen kapseln und Property-Dekoratoren implementieren, um den Attributzugriff zu steuern. Diese Techniken sind unerlässlich, um die Integrität Ihrer Objekte zu wahren und eine korrekte Datenverarbeitung sicherzustellen.
 
-Darüber hinaus lernen Sie, wie Sie die Erstellung von Attributen mithilfe von `__slots__` einschränken können. Die Datei `stock.py` wird während dieses Labs modifiziert, um diese Konzepte anzuwenden.
+Sie werden auch verstehen, wie Sie die Attributerstellung mithilfe von `__slots__` einschränken können. Wir werden die Datei `stock.py` während dieses Labs modifizieren, um diese Konzepte anzuwenden.

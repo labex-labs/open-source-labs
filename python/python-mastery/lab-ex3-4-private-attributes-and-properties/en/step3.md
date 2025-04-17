@@ -117,3 +117,13 @@ In our `Stock` class, we want to ensure that `shares` is a non-negative integer 
     ```
 
     You should see output showing successful valid updates and appropriate error messages for invalid updates.
+
+    ```plaintext
+    Initial: Name=GOOG, Shares=100, Price=490.1, Cost=49010.0
+    After setting shares=50: Shares=50, Cost=24505.0
+    After setting price=123.45: Price=123.45, Cost=6172.5
+    Error setting shares='50': Expected integer
+    Error setting shares=-10: shares must be >= 0
+    Error setting price='123.45': Expected float
+    Error setting price=-10.0: price must be >= 0
+    ```

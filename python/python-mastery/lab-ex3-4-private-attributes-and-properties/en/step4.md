@@ -60,3 +60,11 @@ In our `Stock` class, we'll use `__slots__` to:
     ```
 
     You should see output showing that you can access the defined attributes, but attempting to add a new attribute raises an `AttributeError`.
+
+    ```plaintext
+    Name: GOOG
+    Shares: 100
+    Price: 490.1
+    Cost: 49010.0
+    Error: 'Stock' object has no attribute 'extra'
+    ```
