@@ -16,11 +16,7 @@ The `types` class variable is used inside the class to convert row data. For exa
 
 ## Instructions:
 
-1. First, we need to open the `stock.py` file in the editor. We can do this using the following command in the terminal. This command will open the file in the code editor.
-
-   ```bash
-   code /home/labex/project/stock.py
-   ```
+1. First, we need to open the `stock.py` file in the editor. 
 
 2. Now, we are going to modify the `types` class variable. We add a leading underscore to it, making it `_types`. This change indicates that this variable is private and should not be accessed directly from outside the class.
 
@@ -43,10 +39,10 @@ The `types` class variable is used inside the class to convert row data. For exa
 
 4. Once we have made these changes, we need to save the file. Saving the file ensures that our changes are stored and can be used later.
 
-5. To test our changes, we are going to create a Python script called `test_stock.py`. We can open the file in the editor using the following command.
+5. To test our changes, we are going to create a Python script called `test_stock.py`. We can create the file in the editor using the following command.
 
    ```bash
-   code /home/labex/project/test_stock.py
+   touch /home/labex/project/test_stock.py
    ```
 
 6. Now, we add the following code to the `test_stock.py` file. This code creates instances of the `Stock` class, both directly and using the `from_row` method. It then prints out information about these instances, such as the name, number of shares, price, and cost.
