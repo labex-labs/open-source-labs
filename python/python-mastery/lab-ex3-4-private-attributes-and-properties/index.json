@@ -65,7 +65,7 @@
         "solutions": ["step3_solution.py"]
       },
       {
-        "title": "Using __slots__ for Memory Optimization",
+        "title": "Using `__slots__` for Memory Optimization",
         "text": "en/step4.md",
         "verify": [
           {
@@ -125,12 +125,12 @@
   "i18n": [
     {
       "lang": "zh",
-      "title": "私有属性和属性方法",
-      "description": "在 Python 中实现私有属性、将方法转换为属性方法、实现属性验证、使用 __slots__ 进行内存优化，以及协调类型验证与类变量。",
+      "title": "私有属性和属性（Properties）",
+      "description": "在 Python 中实现私有属性、将方法转换为属性（properties）、实现属性验证、使用 __slots__ 进行内存优化，以及协调类型验证与类变量。",
       "meta": {
-        "title": "私有属性和属性方法",
-        "description": "在 Python 中实现私有属性、将方法转换为属性方法、实现属性验证、使用 __slots__ 进行内存优化，以及协调类型验证与类变量。",
-        "keywords": "Python, 私有属性，属性方法，属性验证，__slots__"
+        "title": "私有属性和属性（Properties） - Python 封装、验证和优化",
+        "description": "学习如何在 Python 中使用私有属性、属性（properties）、属性验证、__slots__ 和类型验证来提高代码的健壮性和效率。掌握 Python 类的封装、验证和优化。",
+        "keywords": "Python, 私有属性，属性（properties）, 属性验证，__slots__, 封装，优化，类变量，类型验证"
       },
       "details": {
         "steps": [
@@ -141,40 +141,40 @@
               {
                 "name": "验证 stock.py 中的私有属性",
                 "file": "verify1-1.sh",
-                "hint": "确保你已将 Stock 类中的 'types' 重命名为 '_types'"
+                "hint": "请确保你已经在 Stock 类中将 'types' 重命名为 '_types'"
               }
             ]
           },
           {
-            "title": "将方法转换为属性方法",
+            "title": "将方法转换为属性（Properties）",
             "text": "zh/step2.md",
             "verify": [
               {
-                "name": "验证 stock.py 中的属性装饰器",
+                "name": "验证 stock.py 中的 property 装饰器",
                 "file": "verify2-1.sh",
-                "hint": "确保你已在 cost 方法前添加 @property 装饰器"
+                "hint": "请确保你已经在 cost 方法之前添加了 @property 装饰器"
               }
             ]
           },
           {
-            "title": "实现属性验证",
+            "title": "实现属性验证（Property Validation）",
             "text": "zh/step3.md",
             "verify": [
               {
-                "name": "验证 stock.py 中 shares 属性的 setter 方法",
+                "name": "验证 stock.py 中 shares 属性的 setter",
                 "file": "verify3-1.sh",
-                "hint": "确保你已使用 getter 和 setter 方法实现了 shares 属性"
+                "hint": "请确保你已经实现了 shares 属性的 getter 和 setter 方法"
               }
             ]
           },
           {
-            "title": "使用 __slots__ 进行内存优化",
+            "title": "使用 `__slots__` 进行内存优化",
             "text": "zh/step4.md",
             "verify": [
               {
                 "name": "验证 stock.py 中的 __slots__",
                 "file": "verify4-1.sh",
-                "hint": "确保你已将 __slots__ 属性添加到 Stock 类中"
+                "hint": "请确保你已经将 __slots__ 属性添加到 Stock 类中"
               }
             ]
           },
@@ -185,7 +185,7 @@
               {
                 "name": "验证 stock.py 中的类型协调",
                 "file": "verify5-1.sh",
-                "hint": "确保你在属性 setter 方法中使用了 self._types"
+                "hint": "请确保你在 property setter 中使用了 self._types"
               }
             ]
           }
@@ -202,67 +202,67 @@
     },
     {
       "lang": "es",
-      "title": "Atributos privados y propiedades",
-      "description": "Implementar atributos privados, convertir métodos en propiedades, implementar validación de propiedades, usar __slots__ para optimización de memoria y reconciliar la validación de tipos con variables de clase en Python.",
+      "title": "Atributos Privados y Propiedades",
+      "description": "Implementa atributos privados, convierte métodos en propiedades, implementa la validación de propiedades, usa __slots__ para la optimización de memoria y concilia la validación de tipos con variables de clase en Python.",
       "meta": {
-        "title": "Atributos privados y propiedades",
-        "description": "Implementar atributos privados, convertir métodos en propiedades, implementar validación de propiedades, usar __slots__ para optimización de memoria y reconciliar la validación de tipos con variables de clase en Python.",
+        "title": "Atributos Privados y Propiedades",
+        "description": "Implementa atributos privados, convierte métodos en propiedades, implementa la validación de propiedades, usa __slots__ para la optimización de memoria y concilia la validación de tipos con variables de clase en Python.",
         "keywords": "Python, atributos privados, propiedades, validación de propiedades, __slots__"
       },
       "details": {
         "steps": [
           {
-            "title": "Implementación de atributos privados",
+            "title": "Implementación de Atributos Privados",
             "text": "es/step1.md",
             "verify": [
               {
-                "name": "Verificar atributo privado en stock.py",
+                "name": "Verificar el atributo privado en stock.py",
                 "file": "verify1-1.sh",
                 "hint": "Asegúrate de haber renombrado 'types' a '_types' en la clase Stock"
               }
             ]
           },
           {
-            "title": "Conversión de métodos en propiedades",
+            "title": "Conversión de Métodos a Propiedades",
             "text": "es/step2.md",
             "verify": [
               {
                 "name": "Verificar el decorador de propiedad en stock.py",
                 "file": "verify2-1.sh",
-                "hint": "Asegúrate de haber agregado el decorador @property antes del método cost"
+                "hint": "Asegúrate de haber añadido el decorador @property antes del método cost"
               }
             ]
           },
           {
-            "title": "Implementación de validación de propiedades",
+            "title": "Implementación de la Validación de Propiedades",
             "text": "es/step3.md",
             "verify": [
               {
-                "name": "Verificar el setter de la propiedad shares en stock.py",
+                "name": "Verificar el 'setter' de la propiedad 'shares' en stock.py",
                 "file": "verify3-1.sh",
-                "hint": "Asegúrate de haber implementado la propiedad shares con métodos getter y setter"
+                "hint": "Asegúrate de haber implementado la propiedad 'shares' con métodos 'getter' y 'setter'"
               }
             ]
           },
           {
-            "title": "Uso de __slots__ para optimización de memoria",
+            "title": "Usando `__slots__` para la Optimización de Memoria",
             "text": "es/step4.md",
             "verify": [
               {
-                "name": "Verificar __slots__ en stock.py",
+                "name": "Verificar `__slots__` en stock.py",
                 "file": "verify4-1.sh",
-                "hint": "Asegúrate de haber agregado el atributo __slots__ a la clase Stock"
+                "hint": "Asegúrate de haber añadido el atributo `__slots__` a la clase Stock"
               }
             ]
           },
           {
-            "title": "Reconciliación de la validación de tipos con variables de clase",
+            "title": "Conciliando la Validación de Tipos con Variables de Clase",
             "text": "es/step5.md",
             "verify": [
               {
-                "name": "Verificar la reconciliación de tipos en stock.py",
+                "name": "Verificar la conciliación de tipos en stock.py",
                 "file": "verify5-1.sh",
-                "hint": "Asegúrate de estar usando self._types en los setters de las propiedades"
+                "hint": "Asegúrate de estar usando `self._types` en los 'setters' de las propiedades"
               }
             ]
           }
@@ -279,17 +279,17 @@
     },
     {
       "lang": "fr",
-      "title": "Attributs privés et propriétés",
-      "description": "Implémenter des attributs privés, convertir des méthodes en propriétés, implémenter la validation des propriétés, utiliser __slots__ pour l'optimisation mémoire et réconcilier la validation de type avec les variables de classe en Python.",
+      "title": "Attributs Privés et Propriétés",
+      "description": "Implémentez des attributs privés, convertissez des méthodes en propriétés, implémentez la validation de propriété, utilisez __slots__ pour l'optimisation de la mémoire et conciliez la validation de type avec les variables de classe en Python.",
       "meta": {
-        "title": "Attributs privés et propriétés",
-        "description": "Implémenter des attributs privés, convertir des méthodes en propriétés, implémenter la validation des propriétés, utiliser __slots__ pour l'optimisation mémoire et réconcilier la validation de type avec les variables de classe en Python.",
-        "keywords": "Python, attributs privés, propriétés, validation des propriétés, __slots__"
+        "title": "Attributs Privés et Propriétés Python",
+        "description": "Découvrez comment implémenter des attributs privés, convertir des méthodes en propriétés, valider les propriétés, optimiser la mémoire avec __slots__ et gérer la validation de type avec les variables de classe en Python.",
+        "keywords": "Python, attributs privés, propriétés, validation de propriété, __slots__, programmation Python"
       },
       "details": {
         "steps": [
           {
-            "title": "Implémentation d'attributs privés",
+            "title": "Implémentation des Attributs Privés",
             "text": "fr/step1.md",
             "verify": [
               {
@@ -300,29 +300,29 @@
             ]
           },
           {
-            "title": "Conversion de méthodes en propriétés",
+            "title": "Conversion de Méthodes en Propriétés",
             "text": "fr/step2.md",
             "verify": [
               {
-                "name": "Vérifier le décorateur de propriété dans stock.py",
+                "name": "Vérifier le décorateur property dans stock.py",
                 "file": "verify2-1.sh",
                 "hint": "Assurez-vous d'avoir ajouté le décorateur @property avant la méthode cost"
               }
             ]
           },
           {
-            "title": "Implémentation de la validation des propriétés",
+            "title": "Implémentation de la Validation de Propriété",
             "text": "fr/step3.md",
             "verify": [
               {
-                "name": "Vérifier le mutateur (setter) de la propriété shares dans stock.py",
+                "name": "Vérifier le setter de propriété pour shares dans stock.py",
                 "file": "verify3-1.sh",
-                "hint": "Assurez-vous d'avoir implémenté la propriété shares avec des méthodes d'accesseur (getter) et de mutateur (setter)"
+                "hint": "Assurez-vous d'avoir implémenté la propriété shares avec les méthodes getter et setter"
               }
             ]
           },
           {
-            "title": "Utilisation de __slots__ pour l'optimisation mémoire",
+            "title": "Utilisation de `__slots__` pour l'Optimisation de la Mémoire",
             "text": "fr/step4.md",
             "verify": [
               {
@@ -333,13 +333,13 @@
             ]
           },
           {
-            "title": "Réconciliation de la validation de type avec les variables de classe",
+            "title": "Concilier la Validation de Type avec les Variables de Classe",
             "text": "fr/step5.md",
             "verify": [
               {
-                "name": "Vérifier la réconciliation de type dans stock.py",
+                "name": "Vérifier la conciliation de type dans stock.py",
                 "file": "verify5-1.sh",
-                "hint": "Assurez-vous d'utiliser self._types dans les mutateurs (setters) de propriétés"
+                "hint": "Assurez-vous d'utiliser self._types dans les setters de propriété"
               }
             ]
           }
@@ -356,12 +356,12 @@
     },
     {
       "lang": "de",
-      "title": "Private Attribute und Properties",
-      "description": "Implementieren Sie private Attribute, wandeln Sie Methoden in Properties um, implementieren Sie die Validierung von Properties, verwenden Sie __slots__ zur Speicheroptimierung und vereinheitlichen Sie die Typvalidierung mit Klassenvariablen in Python.",
+      "title": "Private Attribute und Properties (Eigenschaften)",
+      "description": "Implementieren Sie private Attribute, wandeln Sie Methoden in Properties (Eigenschaften) um, implementieren Sie Property (Eigenschafts)-Validierung, verwenden Sie __slots__ zur Speicheroptimierung und gleichen Sie die Typvalidierung mit Klassenvariablen in Python ab.",
       "meta": {
-        "title": "Private Attribute und Properties",
-        "description": "Implementieren Sie private Attribute, wandeln Sie Methoden in Properties um, implementieren Sie die Validierung von Properties, verwenden Sie __slots__ zur Speicheroptimierung und vereinheitlichen Sie die Typvalidierung mit Klassenvariablen in Python.",
-        "keywords": "Python, private Attribute, Properties, Property-Validierung, __slots__"
+        "title": "Private Attribute und Properties (Eigenschaften)",
+        "description": "Implementieren Sie private Attribute, wandeln Sie Methoden in Properties (Eigenschaften) um, implementieren Sie Property (Eigenschafts)-Validierung, verwenden Sie __slots__ zur Speicheroptimierung und gleichen Sie die Typvalidierung mit Klassenvariablen in Python ab.",
+        "keywords": "Python, private Attribute, Properties (Eigenschaften), Property (Eigenschafts)-Validierung, __slots__"
       },
       "details": {
         "steps": [
@@ -370,53 +370,53 @@
             "text": "de/step1.md",
             "verify": [
               {
-                "name": "Prüfen Sie das private Attribut in stock.py",
+                "name": "Überprüfen des privaten Attributs in stock.py",
                 "file": "verify1-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie 'types' in der Stock-Klasse in '_types' umbenannt haben"
+                "hint": "Stellen Sie sicher, dass Sie 'types' in der Stock-Klasse in '_types' umbenannt haben."
               }
             ]
           },
           {
-            "title": "Umwandlung von Methoden in Properties",
+            "title": "Methoden in Properties (Eigenschaften) umwandeln",
             "text": "de/step2.md",
             "verify": [
               {
-                "name": "Prüfen Sie den Property-Dekorator in stock.py",
+                "name": "Überprüfen des Property-Dekorators in stock.py",
                 "file": "verify2-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie den @property-Dekorator vor der cost-Methode hinzugefügt haben"
+                "hint": "Stellen Sie sicher, dass Sie den @property-Dekorator vor der cost-Methode hinzugefügt haben."
               }
             ]
           },
           {
-            "title": "Implementierung der Eigenschaftsvalidierung",
+            "title": "Implementierung der Property-Validierung",
             "text": "de/step3.md",
             "verify": [
               {
-                "name": "Prüfen Sie den Property-Setter für 'shares' in stock.py",
+                "name": "Überprüfen des Property-Setters für shares in stock.py",
                 "file": "verify3-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie die 'shares'-Eigenschaft mit Getter- und Setter-Methoden implementiert haben"
+                "hint": "Stellen Sie sicher, dass Sie die shares-Property mit Getter- und Setter-Methoden implementiert haben."
               }
             ]
           },
           {
-            "title": "Verwendung von __slots__ zur Speicheroptimierung",
+            "title": "Verwendung von `__slots__` zur Speicheroptimierung",
             "text": "de/step4.md",
             "verify": [
               {
-                "name": "Prüfen Sie __slots__ in stock.py",
+                "name": "Überprüfen von __slots__ in stock.py",
                 "file": "verify4-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie das __slots__-Attribut zur Stock-Klasse hinzugefügt haben"
+                "hint": "Stellen Sie sicher, dass Sie das __slots__-Attribut zur Stock-Klasse hinzugefügt haben."
               }
             ]
           },
           {
-            "title": "Abstimmung der Typvalidierung mit Klassenvariablen",
+            "title": "Abgleich der Typvalidierung mit Klassenvariablen",
             "text": "de/step5.md",
             "verify": [
               {
-                "name": "Prüfen Sie die Typabstimmung in stock.py",
+                "name": "Überprüfen des Typabgleichs in stock.py",
                 "file": "verify5-1.sh",
-                "hint": "Stellen Sie sicher, dass Sie self._types in den Property-Settern verwenden"
+                "hint": "Stellen Sie sicher, dass Sie self._types in den Property-Settern verwenden."
               }
             ]
           }
@@ -433,56 +433,56 @@
     },
     {
       "lang": "ja",
-      "title": "プライベート属性とプロパティ",
-      "description": "Python でプライベート属性を実装し、メソッドをプロパティに変換し、プロパティのバリデーションを実装し、__slots__を使用してメモリを最適化し、型バリデーションとクラス変数を調和させます。",
+      "title": "Private 属性とプロパティ",
+      "description": "Python で private 属性を実装し、メソッドをプロパティに変換し、プロパティの検証を実装し、メモリ最適化のために__slots__を使用し、クラス変数との型検証を調整します。",
       "meta": {
-        "title": "プライベート属性とプロパティ",
-        "description": "Python でプライベート属性を実装し、メソッドをプロパティに変換し、プロパティのバリデーションを実装し、__slots__を使用してメモリを最適化し、型バリデーションとクラス変数を調和させます。",
-        "keywords": "Python, プライベート属性，プロパティ，プロパティバリデーション，__slots__"
+        "title": "Private 属性とプロパティ",
+        "description": "Python で private 属性を実装し、メソッドをプロパティに変換し、プロパティの検証を実装し、メモリ最適化のために__slots__を使用し、クラス変数との型検証を調整します。",
+        "keywords": "Python, private 属性，プロパティ，プロパティ検証，__slots__"
       },
       "details": {
         "steps": [
           {
-            "title": "プライベート属性の実装",
+            "title": "Private 属性の実装",
             "text": "ja/step1.md",
             "verify": [
               {
-                "name": "stock.py のプライベート属性を確認する",
+                "name": "stock.py 内の private 属性の検証",
                 "file": "verify1-1.sh",
-                "hint": "Stock クラスで 'types' を '_types' に名前を変更したことを確認してください"
+                "hint": "Stock クラスで'types'を'_types'にリネームしたことを確認してください"
               }
             ]
           },
           {
-            "title": "メソッドをプロパティに変換する",
+            "title": "メソッドをプロパティに変換",
             "text": "ja/step2.md",
             "verify": [
               {
-                "name": "stock.py のプロパティデコレータを確認する",
+                "name": "stock.py 内のプロパティデコレータの検証",
                 "file": "verify2-1.sh",
-                "hint": "cost メソッドの前に @property デコレータを追加したことを確認してください"
+                "hint": "cost メソッドの前に@property デコレータを追加したことを確認してください"
               }
             ]
           },
           {
-            "title": "プロパティ検証の実装",
+            "title": "プロパティの検証の実装",
             "text": "ja/step3.md",
             "verify": [
               {
-                "name": "stock.py の shares のプロパティセッターを確認する",
+                "name": "stock.py 内の shares のプロパティセッターの検証",
                 "file": "verify3-1.sh",
-                "hint": "shares プロパティをゲッターとセッターメソッドで実装したことを確認してください"
+                "hint": "getter と setter メソッドを持つ shares プロパティを実装したことを確認してください"
               }
             ]
           },
           {
-            "title": "__slots__ を使用したメモリ最適化",
+            "title": "メモリ最適化のための `__slots__` の使用",
             "text": "ja/step4.md",
             "verify": [
               {
-                "name": "stock.py の __slots__ を確認する",
+                "name": "stock.py 内の__slots__の検証",
                 "file": "verify4-1.sh",
-                "hint": "Stock クラスに __slots__ 属性を追加したことを確認してください"
+                "hint": "Stock クラスに__slots__属性を追加したことを確認してください"
               }
             ]
           },
@@ -491,7 +491,7 @@
             "text": "ja/step5.md",
             "verify": [
               {
-                "name": "stock.py の型調整を確認する",
+                "name": "stock.py 内の型調整の検証",
                 "file": "verify5-1.sh",
                 "hint": "プロパティセッターで self._types を使用していることを確認してください"
               }
@@ -510,65 +510,65 @@
     },
     {
       "lang": "ru",
-      "title": "Приватные атрибуты и свойства",
-      "description": "Реализуйте приватные атрибуты, преобразуйте методы в свойства, реализуйте валидацию свойств, используйте __slots__ для оптимизации памяти и согласуйте валидацию типов с переменными класса в Python.",
+      "title": "Приватные атрибуты и свойства (Private Attributes and Properties)",
+      "description": "Реализация приватных атрибутов, преобразование методов в свойства (properties), реализация валидации свойств (property validation), использование __slots__ для оптимизации памяти (memory optimization) и согласование валидации типов (type validation) с переменными класса (class variables) в Python.",
       "meta": {
-        "title": "Приватные атрибуты и свойства",
-        "description": "Реализуйте приватные атрибуты, преобразуйте методы в свойства, реализуйте валидацию свойств, используйте __slots__ для оптимизации памяти и согласуйте валидацию типов с переменными класса в Python.",
+        "title": "Приватные атрибуты и свойства (Private Attributes and Properties)",
+        "description": "Реализация приватных атрибутов, преобразование методов в свойства (properties), реализация валидации свойств (property validation), использование __slots__ для оптимизации памяти (memory optimization) и согласование валидации типов (type validation) с переменными класса (class variables) в Python.",
         "keywords": "Python, приватные атрибуты, свойства, валидация свойств, __slots__"
       },
       "details": {
         "steps": [
           {
-            "title": "Реализация приватных атрибутов",
+            "title": "Реализация приватных атрибутов (Implementing Private Attributes)",
             "text": "ru/step1.md",
             "verify": [
               {
-                "name": "Проверить приватный атрибут в файле stock.py",
+                "name": "Проверка приватного атрибута в stock.py",
                 "file": "verify1-1.sh",
                 "hint": "Убедитесь, что вы переименовали 'types' в '_types' в классе Stock"
               }
             ]
           },
           {
-            "title": "Преобразование методов в свойства",
+            "title": "Преобразование методов в свойства (Converting Methods to Properties)",
             "text": "ru/step2.md",
             "verify": [
               {
-                "name": "Проверить декоратор свойства в stock.py",
+                "name": "Проверка декоратора property в stock.py",
                 "file": "verify2-1.sh",
                 "hint": "Убедитесь, что вы добавили декоратор @property перед методом cost"
               }
             ]
           },
           {
-            "title": "Реализация валидации свойств",
+            "title": "Реализация валидации свойств (Implementing Property Validation)",
             "text": "ru/step3.md",
             "verify": [
               {
-                "name": "Проверить сеттер свойства shares в stock.py",
+                "name": "Проверка сеттера свойства shares в stock.py",
                 "file": "verify3-1.sh",
-                "hint": "Убедитесь, что вы реализовали свойство shares с методами геттера и сеттера"
+                "hint": "Убедитесь, что вы реализовали свойство shares с методами getter и setter"
               }
             ]
           },
           {
-            "title": "Использование __slots__ для оптимизации памяти",
+            "title": "Использование `__slots__` для оптимизации памяти (Using `__slots__` for Memory Optimization)",
             "text": "ru/step4.md",
             "verify": [
               {
-                "name": "Проверить __slots__ в stock.py",
+                "name": "Проверка __slots__ в stock.py",
                 "file": "verify4-1.sh",
                 "hint": "Убедитесь, что вы добавили атрибут __slots__ в класс Stock"
               }
             ]
           },
           {
-            "title": "Согласование валидации типов с переменными класса",
+            "title": "Согласование проверки типов с переменными класса (Reconciling Type Validation with Class Variables)",
             "text": "ru/step5.md",
             "verify": [
               {
-                "name": "Проверить согласование типов в stock.py",
+                "name": "Проверка согласования типов в stock.py",
                 "file": "verify5-1.sh",
                 "hint": "Убедитесь, что вы используете self._types в сеттерах свойств"
               }

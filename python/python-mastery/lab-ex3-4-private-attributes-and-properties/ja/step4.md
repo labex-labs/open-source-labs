@@ -1,85 +1,70 @@
 # メモリ最適化のための `__slots__` の使用
 
-Pythonでは、`__slots__` 属性はクラスをより効率的に管理するのに役立つ特別なツールです。これは、クラスが持つことのできる属性を制限します。通常、Pythonはインスタンス属性を `__dict__` と呼ばれる辞書に格納します。これにより、新しい属性を動的に追加することができます。しかし、`__slots__` を定義すると、Pythonはインスタンスに対して静的な構造を作成します。これには2つの主な効果があります。1つは、インスタンスに新しい属性を追加することを防ぎ、もう1つは `__dict__` を維持する必要がないため、メモリ使用量を削減します。
+`__slots__` 属性は、クラスが持つことができる属性を制限します。インスタンスへの新しい属性の追加を防ぎ、メモリ使用量を削減します。
 
-`Stock` クラスでは、`__slots__` を使用する2つの重要な理由があります。
+`Stock` クラスでは、`__slots__` を使用して以下を行います。
 
-1. 定義した属性のみで属性の作成を制限すること。これは、クラスのユーザーが意図的または誤って、予定していない新しい属性を追加できないようにすることを意味します。
-2. 特に多数のインスタンスを作成する場合のメモリ効率を向上させること。`Stock` クラスのオブジェクトを大量に持っている場合、`__slots__` を使用することでかなりのメモリを節約できます。
+1.  属性の作成を、定義した属性のみに制限します。
+2.  特に多数のインスタンスを作成する場合に、メモリ効率を向上させます。
 
-## 手順:
+**手順：**
 
-1. まず、エディタで `stock.py` ファイルを開く必要があります。ここで `Stock` クラスに変更を加えます。ターミナルで次のコマンドを使用します。
+1.  エディターで `stock.py` ファイルを開きます。
+2.  `__slots__` クラス変数（class variable）を追加し、クラスで使用されるすべての private 属性名をリストします。
 
-   ```bash
-   code /home/labex/project/stock.py
-   ```
+    ```python
+    class Stock:
+        # Class variable for type conversions
+        _types = (str, int, float)
 
-2. `stock.py` ファイル内で、`__slots__` クラス変数を追加します。この変数には、クラスで使用されるすべてのプライベート属性名をリストする必要があります。次のように行います。
+        # Define slots to restrict attribute creation
+        __slots__ = ('name', '_shares', '_price')
 
-   ```python
-   class Stock:
-       # Class variable for type conversions
-       _types = (str, int, float)
+        # Rest of the class...
+    ```
 
-       # Define slots to restrict attribute creation
-       __slots__ = ('name', '_shares', '_price')
+3.  ファイルを保存します。
 
-       # Rest of the class...
-   ```
+4.  `test_slots.py` という名前のテストスクリプトを作成します。
 
-   このように `__slots__` を定義することで、`Stock` クラスのインスタンスは `name`、`_shares`、`_price` の属性のみを持つことができることをPythonに伝えています。
+    ```bash
+    touch /home/labex/project/test_slots.py
+    ```
 
-3. これらの変更を加えた後、ファイルを保存します。これにより、変更が保存されます。
+5.  次のコードを `test_slots.py` ファイルに追加します。
 
-4. 次に、`__slots__` が期待通りに動作していることを確認するためのテストスクリプトを作成する必要があります。次のコマンドを使用して `test_slots.py` という名前の新しいファイルを開きます。
+    ```python
+    from stock import Stock
 
-   ```bash
-   code /home/labex/project/test_slots.py
-   ```
+    # Create a stock instance
+    s = Stock('GOOG', 100, 490.10)
 
-5. `test_slots.py` ファイルに次のコードを追加します。このコードは `Stock` クラスのインスタンスを作成し、既存の属性にアクセスした後、新しい属性を追加しようとします。
+    # Access existing attributes
+    print(f"Name: {s.name}")
+    print(f"Shares: {s.shares}")
+    print(f"Price: {s.price}")
+    print(f"Cost: {s.cost}")
 
-   ```python
-   from stock import Stock
+    # Try to add a new attribute
+    try:
+        s.extra = "This will fail"
+        print(f"Extra: {s.extra}")
+    except AttributeError as e:
+        print(f"Error: {e}")
+    ```
 
-   # Create a stock instance
-   s = Stock('GOOG', 100, 490.10)
+6.  テストスクリプトを実行します。
 
-   # Access existing attributes
-   print(f"Name: {s.name}")
-   print(f"Shares: {s.shares}")
-   print(f"Price: {s.price}")
-   print(f"Cost: {s.cost}")
+    ```bash
+    python /home/labex/project/test_slots.py
+    ```
 
-   # Try to add a new attribute
-   try:
-       s.extra = "This will fail"
-       print(f"Extra: {s.extra}")
-   except AttributeError as e:
-       print(f"Error: {e}")
-   ```
+    定義された属性にアクセスできるものの、新しい属性を追加しようとすると `AttributeError` が発生することが出力に表示されるはずです。
 
-   `try` ブロックでは、`Stock` インスタンス `s` に新しい属性 `extra` を追加しようとしています。`__slots__` が正しく動作している場合、`extra` は `__slots__` にリストされていないため、`AttributeError` が発生するはずです。
-
-6. 最後に、次のコマンドを使用してテストスクリプトを実行します。
-   ```bash
-   python /home/labex/project/test_slots.py
-   ```
-
-定義された属性にはアクセスできるが、新しい属性を追加しようとすると `AttributeError` が発生することを示す出力が表示されるはずです。これにより、`__slots__` が意図通りに動作していることが確認されます。
-
-### `__slots__` の理解
-
-`__slots__` を使用する際には、次の点に注意する必要があります。
-
-1. インスタンスに格納されるすべての属性をリストする必要があります。属性をリストするのを忘れると、その属性をインスタンスに割り当てることができません。
-2. `__slots__` にリストされた属性のみをインスタンスに割り当てることができます。これにより、オブジェクトに厳格な構造を強制することができます。
-3. インスタンスにはもはや `__dict__` 属性がなくなります。`__slots__` が静的な構造を作成するため、動的な辞書は必要なくなります。
-4. サブクラスは、独自の `__slots__` を定義しない限り、親クラスの `__slots__` を継承しません。これは、サブクラスが独自の属性制限を定義する柔軟性を持っていることを意味します。
-
-`__slots__` を使用する主な利点は次のとおりです。
-
-1. **メモリ効率**: インスタンスは属性を格納する `__dict__` がないため、より少ないメモリを使用します。
-2. **速度**: Pythonが辞書内で属性を検索する必要がないため、属性アクセスがわずかに高速になります。
-3. **誤った属性作成の防止**: 予期しない属性の追加を防ぐことで、タイプミスやプログラミングエラーを検出するのに役立ちます。
+    ```plaintext
+    Name: GOOG
+    Shares: 100
+    Price: 490.1
+    Cost: 49010.0
+    Error: 'Stock' object has no attribute 'extra'
+    ```
