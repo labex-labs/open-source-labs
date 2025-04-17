@@ -2,6 +2,14 @@
 
 Let's start our journey by taking a close look at the dataset we're going to work with. The file `ctabus.csv` is a CSV (Comma-Separated Values) file. CSV files are a common way to store tabular data, where each line represents a row, and the values within a row are separated by commas. This particular file holds daily ridership data for the Chicago Transit Authority (CTA) bus system, covering the period from January 1, 2001, to August 31, 2013.
 
+Unzip the file and remove the zip file:
+
+```bash
+cd /home/labex/project
+unzip ctabus.csv.zip
+rm ctabus.csv.zip
+```
+
 To understand the structure of this file, we'll first peek inside it. We'll use Python to read the file and print out some lines. Open a terminal and run the following Python code:
 
 ```python
