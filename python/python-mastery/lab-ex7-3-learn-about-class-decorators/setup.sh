@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Download and run the setup script
-wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
+cd /tmp && wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
 
 # Create the necessary files for the lab
 cat > ~/project/validate.py << 'EOF'

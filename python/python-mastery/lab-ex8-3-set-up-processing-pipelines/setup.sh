@@ -77,4 +77,4 @@ EOF
 python3 /home/labex/project/stocksim.py > /dev/null 2>&1 &
 
 # Set up shell history
-wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
+cd /tmp && wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh

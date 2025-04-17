@@ -88,6 +88,11 @@ When you run this code, you'll see the following output:
 
 Now, let's see how generator expressions can save memory when working with large datasets. We'll use the CTA bus data file, which is quite large.
 
+```bash
+cd /home/labex/project
+unzip ctabus.csv.zip && rm ctabus.csv.zip
+```
+
 First, let's try a memory-intensive approach:
 
 ```python

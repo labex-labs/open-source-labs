@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Download and set up the Python shell history script
-wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
+cd /tmp && wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
 
 # Create initial files with starter code
 cat > /home/labex/project/logcall.py << 'EOL'
