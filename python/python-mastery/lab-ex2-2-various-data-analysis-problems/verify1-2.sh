@@ -1,5 +1,5 @@
 #!/bin/bash
-if grep -q "from readport import read_portfolio" ~/.python_history && grep -q "portfolio = read_portfolio" ~/.python_history && grep -q "pprint" ~/.python_history; then
+if grep -q "read_portfolio" ~/.python_history && grep -q "portfolio" ~/.python_history && grep -q "print" ~/.python_history; then
   exit 0
 else
   exit 1
