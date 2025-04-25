@@ -25,8 +25,8 @@ for ax, y_pred in zip([ax0, ax1], [y_pred_ridge, y_pred_ridge_with_trans_target]
         ax.plot([], [], " ", label=f"{name}={score}")
     ax.legend(loc="upper left")
 
-ax0.set_title("Ridge回帰 \n ターゲット変換なし")
-ax1.set_title("Ridge回帰 \n ターゲット変換あり")
+ax0.set_title("Ridge 回帰 \n ターゲット変換なし")
+ax1.set_title("Ridge 回帰 \n ターゲット変換あり")
 f.suptitle("合成データ", y=1.05)
 plt.tight_layout()
 ```

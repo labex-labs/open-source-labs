@@ -4,7 +4,7 @@
 
 ```python
 class RadarAxes(PolarAxes):
-    # RadarAxesクラスのコードはここに記載します
+    # RadarAxes クラスのコードはここに記載します
 
     def set_varlabels(self, labels):
         self.set_thetagrids(np.degrees(theta), labels)

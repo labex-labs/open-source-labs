@@ -1,4 +1,4 @@
-# BayesianRidgeに続くAnova単変量特徴選択
+# BayesianRidge に続く Anova 単変量特徴選択
 
 ```python
 f_regression = mem.cache(feature_selection.f_regression)  # キャッシュ関数

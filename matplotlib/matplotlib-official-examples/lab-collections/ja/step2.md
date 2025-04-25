@@ -12,4 +12,4 @@ yy = r * np.cos(theta)
 spiral = np.column_stack([xx, yy])
 ```
 
-次のステップは、Numpyを使って渦巻きを作成することです。渦巻きを作成するために、sinとcos関数を使用します。
+次のステップは、Numpy を使って渦巻きを作成することです。渦巻きを作成するために、sin と cos 関数を使用します。

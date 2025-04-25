@@ -5,7 +5,7 @@
 ```python
 def update_lines(num, walks, lines):
     for line, walk in zip(lines, walks):
-        # 注意：对于三维数据没有.set_data()方法...
+        # 注意：对于三维数据没有.set_data() 方法...
         line.set_data(walk[:num, :2].T)
         line.set_3d_properties(walk[:num, 2])
     return lines

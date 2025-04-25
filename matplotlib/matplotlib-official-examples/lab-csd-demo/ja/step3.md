@@ -1,6 +1,6 @@
 # 信号をプロットする
 
-生成した2つの信号を、Matplotlibのplot関数を使ってプロットすることができます。
+生成した 2 つの信号を、Matplotlib の plot 関数を使ってプロットすることができます。
 
 ```python
 fig, ax = plt.subplots()

@@ -43,7 +43,7 @@ func main() {
 	defer resp.Body.Close()
 
 	// 打印 HTTP 响应状态。
-	fmt.Println("响应状态:", resp.Status)
+	fmt.Println("响应状态：", resp.Status)
 
 	// 打印响应体的前 5 行。
 	scanner := bufio.NewScanner(resp.Body)

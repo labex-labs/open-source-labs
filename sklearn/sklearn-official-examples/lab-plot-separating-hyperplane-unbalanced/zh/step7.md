@@ -1,6 +1,6 @@
 # 添加图例
 
-我们将使用 `matplotlib.pyplot` 中的 `legend` 函数为图表添加图例。我们将分别把标签设置为 “未加权” 和 “加权”。
+我们将使用 `matplotlib.pyplot` 中的 `legend` 函数为图表添加图例。我们将分别把标签设置为“未加权”和“加权”。
 
 ```python
 plt.legend(

@@ -1,6 +1,6 @@
 # 目录
 
-创建一个Go程序，该程序在当前工作目录中创建一个新的子目录，创建一个包含父目录的目录层次结构，列出目录内容，更改当前工作目录，并递归访问一个目录。
+创建一个 Go 程序，该程序在当前工作目录中创建一个新的子目录，创建一个包含父目录的目录层次结构，列出目录内容，更改当前工作目录，并递归访问一个目录。
 
 - 在当前工作目录中创建一个新的子目录。
 - 创建临时目录时，最好使用`defer`来删除它们。`os.RemoveAll`将删除整个目录树（类似于`rm -rf`）。
@@ -30,7 +30,7 @@ subdir/parent/file3 false
 以下是完整代码：
 
 ```go
-// Go有几个用于处理文件系统中*目录*的实用函数。
+// Go 有几个用于处理文件系统中*目录*的实用函数。
 
 package main
 
@@ -52,7 +52,7 @@ func main() {
 	err := os.Mkdir("subdir", 0755)
 	check(err)
 
-	// 创建临时目录时，最好使用`defer`来删除它们。`os.RemoveAll`
+	// 创建临时目录时，最好使用 `defer` 来删除它们。`os.RemoveAll`
 	// 将删除整个目录树（类似于`rm -rf`）。
 	defer os.RemoveAll("subdir")
 
@@ -64,7 +64,7 @@ func main() {
 
 	createEmptyFile("subdir/file1")
 
-	// 我们可以使用`MkdirAll`创建一个包含父目录的目录层次结构。这类似于
+	// 我们可以使用 `MkdirAll` 创建一个包含父目录的目录层次结构。这类似于
 	// 命令行中的`mkdir -p`。
 	err = os.MkdirAll("subdir/parent/child", 0755)
 	check(err)
@@ -73,7 +73,7 @@ func main() {
 	createEmptyFile("subdir/parent/file3")
 	createEmptyFile("subdir/parent/child/file4")
 
-	// `ReadDir`列出目录内容，返回一个`os.DirEntry`对象的切片。
+	// `ReadDir`列出目录内容，返回一个 `os.DirEntry` 对象的切片。
 	c, err := os.ReadDir("subdir/parent")
 	check(err)
 
@@ -82,11 +82,11 @@ func main() {
 		fmt.Println(" ", entry.Name(), entry.IsDir())
 	}
 
-	// `Chdir`允许我们更改当前工作目录，类似于`cd`。
+	// `Chdir` 允许我们更改当前工作目录，类似于 `cd`。
 	err = os.Chdir("subdir/parent/child")
 	check(err)
 
-	// 现在，当列出*当前*目录时，我们将看到`subdir/parent/child`的内容。
+	// 现在，当列出*当前*目录时，我们将看到 `subdir/parent/child` 的内容。
 	c, err = os.ReadDir(".")
 	check(err)
 
@@ -95,17 +95,17 @@ func main() {
 		fmt.Println(" ", entry.Name(), entry.IsDir())
 	}
 
-	// `cd`回到我们开始的地方。
+	// `cd` 回到我们开始的地方。
 	err = os.Chdir("../../..")
 	check(err)
 
-	// 我们还可以递归访问一个目录，包括其所有子目录。`Walk`接受
+	// 我们还可以递归访问一个目录，包括其所有子目录。`Walk` 接受
 	// 一个回调函数来处理访问的每个文件或目录。
 	fmt.Println("访问 subdir")
 	err = filepath.Walk("subdir", visit)
 }
 
-// `visit`由`filepath.Walk`递归找到的每个文件或目录调用。
+// `visit`由 `filepath.Walk` 递归找到的每个文件或目录调用。
 func visit(p string, info os.FileInfo, err error) error {
 	if err!= nil {
 		return err

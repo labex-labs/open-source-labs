@@ -4,8 +4,8 @@
 
 この実験を完了するには、以下が必要です。
 
-- Go言語の構文に関する基本的な知識
-- あなたのマシンにGo言語がインストールされていること
+- Go 言語の構文に関する基本的な知識
+- あなたのマシンに Go 言語がインストールされていること
 
 ```sh
 $ go run range.go
@@ -60,8 +60,8 @@ func main() {
 		fmt.Println("key:", k)
 	}
 
-	// 文字列での `range` は、Unicodeコードポイントを反復処理します。
-	// 最初の値は `rune` の開始バイトインデックスで、2番目の値は `rune` 自体です。
+	// 文字列での `range` は、Unicode コードポイントを反復処理します。
+	// 最初の値は `rune` の開始バイトインデックスで、2 番目の値は `rune` 自体です。
 	// 詳細については、[Strings and Runes](strings-and-runes) を参照してください。
 	for i, c := range "go" {
 		fmt.Println(i, c)

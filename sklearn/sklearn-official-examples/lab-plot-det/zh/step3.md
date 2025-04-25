@@ -1,6 +1,6 @@
-# 绘制ROC和DET曲线
+# 绘制 ROC 和 DET 曲线
 
-我们将分别使用scikit-learn的`RocCurveDisplay`和`DetCurveDisplay`类来绘制ROC曲线和DET曲线。`RocCurveDisplay.from_estimator`函数计算ROC曲线并将其绘制在给定的轴上。类似地，`DetCurveDisplay.from_estimator`函数计算DET曲线并将其绘制在给定的轴上。我们将创建两个子图，一个用于ROC曲线，一个用于DET曲线，并为每个分类器绘制曲线。
+我们将分别使用 scikit-learn 的`RocCurveDisplay`和`DetCurveDisplay`类来绘制 ROC 曲线和 DET 曲线。`RocCurveDisplay.from_estimator`函数计算 ROC 曲线并将其绘制在给定的轴上。类似地，`DetCurveDisplay.from_estimator`函数计算 DET 曲线并将其绘制在给定的轴上。我们将创建两个子图，一个用于 ROC 曲线，一个用于 DET 曲线，并为每个分类器绘制曲线。
 
 ```python
 import matplotlib.pyplot as plt

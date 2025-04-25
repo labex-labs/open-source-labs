@@ -1,12 +1,12 @@
 # [可选] OverlayFS
 
-OverlayFS是Linux的一种「联合挂载文件系统」实现。要理解什么是Docker卷，有助于了解层和文件系统在Docker中是如何工作的。
+OverlayFS 是 Linux 的一种「联合挂载文件系统」实现。要理解什么是 Docker 卷，有助于了解层和文件系统在 Docker 中是如何工作的。
 
-要启动一个容器，Docker会获取只读镜像并在其之上创建一个新的读写层。为了将这些层视为一个整体，Docker使用联合文件系统或OverlayFS（覆盖文件系统），具体来说是`overlay2`存储驱动程序。
+要启动一个容器，Docker 会获取只读镜像并在其之上创建一个新的读写层。为了将这些层视为一个整体，Docker 使用联合文件系统或 OverlayFS（覆盖文件系统），具体来说是`overlay2`存储驱动程序。
 
-要查看由Docker主机管理的文件，你需要访问Docker进程文件系统。使用`--privileged`和`--pid=host`标志，你可以从像`busybox`这样的容器内部访问主机的进程ID命名空间。然后，你可以浏览到Docker的`/var/lib/docker/overlay2`目录，查看由Docker管理的已下载层。
+要查看由 Docker 主机管理的文件，你需要访问 Docker 进程文件系统。使用`--privileged`和`--pid=host`标志，你可以从像`busybox`这样的容器内部访问主机的进程 ID 命名空间。然后，你可以浏览到 Docker 的`/var/lib/docker/overlay2`目录，查看由 Docker 管理的已下载层。
 
-要查看Docker中当前的层列表：
+要查看 Docker 中当前的层列表：
 
 ```bash
 $ docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
@@ -34,7 +34,7 @@ docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
 ls -l /var/lib/docker/overlay2/ & exit
 ```
 
-你会看到拉取`ubuntu`镜像时，隐式地拉取了4个新层：
+你会看到拉取`ubuntu`镜像时，隐式地拉取了 4 个新层：
 
 - a611792b4cac502995fa88a888261dfba0b5d852e72f9db9e075050991423779
 - d181f1a41fc35a45c16e8bfcb8eee6f768f3b98f82210a43ea65f284a45fcd65
@@ -43,22 +43,22 @@ ls -l /var/lib/docker/overlay2/ & exit
 
 `overlay2`存储驱动程序本质上是将主机上的不同目录分层，并将它们呈现为一个单一目录。
 
-- 基础层或lowerdir
-- `diff`层或upperdir
+- 基础层或 lowerdir
+- `diff`层或 upperdir
 - 覆盖层（用户视图）
 - `work`目录
 
-OverlayFS将较低的目录称为`lowerdir`，其中包含基础镜像和拉取下来的只读（R/O）层。
+OverlayFS 将较低的目录称为`lowerdir`，其中包含基础镜像和拉取下来的只读（R/O）层。
 
 上层目录称为`upperdir`，是读写（R/W）容器层。
 
 统一视图或`overlay`层称为`merged`。
 
-最后，`workdir`是必需的，它是overlay用于内部使用的空目录。
+最后，`workdir`是必需的，它是 overlay 用于内部使用的空目录。
 
-`overlay2`驱动程序最多支持128个较低的OverlayFS层。`l`目录包含作为符号链接的缩短层标识符。
+`overlay2`驱动程序最多支持 128 个较低的 OverlayFS 层。`l`目录包含作为符号链接的缩短层标识符。
 
-![Overlay2存储驱动程序](../assets/overlay2-driver.png)
+![Overlay2 存储驱动程序](../assets/overlay2-driver.png)
 
 清理：
 

@@ -11,5 +11,5 @@ print(f"弹性网络（ElasticNet）拟合完成，耗时{(time() - t0):.3f}秒"
 
 y_pred_enet = enet.predict(X_test)
 r2_score_enet = r2_score(y_test, y_pred_enet)
-print(f"弹性网络（ElasticNet）在测试数据上的R平方值 : {r2_score_enet:.3f}")
+print(f"弹性网络（ElasticNet）在测试数据上的 R 平方值 : {r2_score_enet:.3f}")
 ```

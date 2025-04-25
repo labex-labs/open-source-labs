@@ -1,6 +1,6 @@
-# 演習3.3: CSVファイルの読み取り
+# 演習 3.3: CSV ファイルの読み取り
 
-まずは、CSVファイルを辞書のリストに読み込む問題に焦点を当てましょう。`fileparse_3.3.py` ファイルに、次のような関数を定義します。
+まずは、CSV ファイルを辞書のリストに読み込む問題に焦点を当てましょう。`fileparse_3.3.py` ファイルに、次のような関数を定義します。
 
 ```python
 # fileparse_3.3.py
@@ -8,7 +8,7 @@ import csv
 
 def parse_csv(filename):
     '''
-    CSVファイルをレコードのリストに解析する
+    CSV ファイルをレコードのリストに解析する
     '''
     with open(filename) as f:
         rows = csv.reader(f)
@@ -25,11 +25,11 @@ def parse_csv(filename):
     return records
 ```
 
-この関数は、ファイルを開く詳細、`csv` モジュールでラップすること、空行を無視することなどの詳細を隠しながら、CSVファイルを辞書のリストに読み込みます。
+この関数は、ファイルを開く詳細、`csv` モジュールでラップすること、空行を無視することなどの詳細を隠しながら、CSV ファイルを辞書のリストに読み込みます。
 
 試してみましょう。
 
-ヒント: `python3 -i fileparse_3.3.py`。
+ヒント：`python3 -i fileparse_3.3.py`。
 
 ```python
 >>> portfolio = parse_csv('/home/labex/project/portfolio.csv')

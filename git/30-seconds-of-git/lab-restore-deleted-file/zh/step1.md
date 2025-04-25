@@ -6,7 +6,7 @@
 
 1. 使用命令 `cd git-playground` 导航到仓库目录。
 2. 运行命令 `git log --oneline` 查看提交历史记录。
-3. 找到一条提交信息为 “Added file2.txt” 的提交，该提交中删除了文件。
+3. 找到一条提交信息为“Added file2.txt”的提交，该提交中删除了文件。
 4. 运行命令 `git checkout <commit> -- <file>` 恢复在指定 `<commit>` 中删除的指定 `<file>`。将 `<commit>` 替换为提交哈希，将 `<file>` 替换为已删除文件的名称。
 
 例如，如果文件 `file2.txt` 在提交 `d22f46b` 中被删除，你将运行以下命令：

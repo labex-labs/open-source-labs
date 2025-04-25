@@ -1,6 +1,6 @@
-# 绘制AIC和BIC值
+# 绘制 AIC 和 BIC 值
 
-最后，我们将绘制不同alpha值对应的AIC和BIC值。图中的垂直线对应于为每个准则选择的alpha值。所选的alpha值对应于AIC或BIC准则的最小值。
+最后，我们将绘制不同 alpha 值对应的 AIC 和 BIC 值。图中的垂直线对应于为每个准则选择的 alpha 值。所选的 alpha 值对应于 AIC 或 BIC 准则的最小值。
 
 ```python
 ax = results.plot()

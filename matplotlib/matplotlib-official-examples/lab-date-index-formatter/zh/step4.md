@@ -10,7 +10,7 @@ class MyFormatter(Formatter):
         self.fmt = fmt
 
     def __call__(self, x, pos=0):
-        """返回位置pos处时间x的标签。"""
+        """返回位置 pos 处时间 x 的标签。"""
         try:
             return self.dates[round(x)].item().strftime(self.fmt)
         except IndexError:

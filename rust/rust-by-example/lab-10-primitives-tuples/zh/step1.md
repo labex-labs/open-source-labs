@@ -23,18 +23,18 @@ fn main() {
                       'a', true);
 
     // 可以使用元组索引从元组中提取值。
-    println!("长元组的第一个值: {}", long_tuple.0);
-    println!("长元组的第二个值: {}", long_tuple.1);
+    println!("长元组的第一个值：{}", long_tuple.0);
+    println!("长元组的第二个值：{}", long_tuple.1);
 
     // 元组可以作为其他元组的成员。
     let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);
 
     // 元组是可打印的。
-    println!("元组的元组: {:?}", tuple_of_tuples);
+    println!("元组的元组：{:?}", tuple_of_tuples);
 
-    // 但是长元组（超过12个元素）不能被打印。
+    // 但是长元组（超过 12 个元素）不能被打印。
     //let too_long_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
-    //println!("过长的元组: {:?}", too_long_tuple);
+    //println!("过长的元组：{:?}", too_long_tuple);
     // TODO ^ 取消注释上面两行以查看编译器错误
 
     let pair = (1, true);
@@ -43,8 +43,8 @@ fn main() {
     println!("反转后的对是 {:?}", reverse(pair));
 
     // 要创建单元素元组，需要逗号来将它们与括号包围的字面量区分开。
-    println!("单元素元组: {:?}", (5u32,));
-    println!("只是一个整数: {:?}", (5u32));
+    println!("单元素元组：{:?}", (5u32,));
+    println!("只是一个整数：{:?}", (5u32));
 
     // 元组可以解构以创建绑定。
     let tuple = (1, "hello", 4.5, true);
@@ -78,10 +78,10 @@ fn main() {
    结果输出为：
 
    ```plaintext
-   矩阵:
+   矩阵：
    ( 1.1 1.2 )
    ( 2.1 2.2 )
-   转置:
+   转置：
    ( 1.1 2.1 )
    ( 1.2 2.2 )
    ```

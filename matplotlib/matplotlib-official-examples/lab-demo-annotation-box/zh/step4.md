@@ -1,6 +1,6 @@
-# 使用OffsetImage进行注释
+# 使用 OffsetImage 进行注释
 
-最后，让我们使用一张格蕾丝·霍珀（Grace Hopper）的图片，通过OffsetImage为第二个点添加注释。
+最后，让我们使用一张格蕾丝·霍珀（Grace Hopper）的图片，通过 OffsetImage 为第二个点添加注释。
 
 ```python
 from matplotlib.cbook import get_sample_data

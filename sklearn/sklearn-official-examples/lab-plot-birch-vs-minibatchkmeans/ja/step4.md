@@ -1,6 +1,6 @@
-# MiniBatchKMeansモデル
+# MiniBatchKMeans モデル
 
-4番目のステップは、MiniBatchKMeansを使ってクラスタリングを計算することです。モデルをデータセットに適合させ、MiniBatchKMeansを実行するのにかかった時間を表示します。
+4 番目のステップは、MiniBatchKMeans を使ってクラスタリングを計算することです。モデルをデータセットに適合させ、MiniBatchKMeans を実行するのにかかった時間を表示します。
 
 ```python
 # Compute clustering with MiniBatchKMeans.

@@ -1,4 +1,4 @@
-# 定义MenuItem类
+# 定义 MenuItem 类
 
 现在我们定义一个`MenuItem`类，该类将用于创建菜单中的每个项目。我们将图形、标签字符串、属性、悬停属性和选择时的回调函数作为参数传递给这个类。`MenuItem`类继承自`artist.Artist`类。
 

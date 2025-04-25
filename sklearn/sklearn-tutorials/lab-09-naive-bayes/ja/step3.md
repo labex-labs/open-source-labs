@@ -16,5 +16,5 @@ y_pred = gnb.predict(X_test)
 
 # 分類器の正解率を計算する
 accuracy = (y_pred == y_test).sum() / len(y_test)
-print("正解率:", accuracy)
+print("正解率：", accuracy)
 ```

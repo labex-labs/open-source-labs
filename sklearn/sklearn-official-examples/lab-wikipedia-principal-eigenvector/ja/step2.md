@@ -8,7 +8,7 @@ SHORTNAME_SLICE = slice(DBPEDIA_RESOURCE_PREFIX_LEN + 1, -1)
 
 
 def short_name(nt_uri):
-    """< と > URIマーカーと共通のURI接頭辞を削除する"""
+    """< と > URI マーカーと共通の URI 接頭辞を削除する"""
     return nt_uri[SHORTNAME_SLICE]
 
 
@@ -21,15 +21,15 @@ def index(redirects, index_map, k):
 def get_redirects(redirects_filename):
     """リダイレクトを解析し、それから推移的に閉じたマップを作成する"""
     redirects = {}
-    print("NTリダイレクトファイルを解析中")
+    print("NT リダイレクトファイルを解析中")
     for l, line in enumerate(BZ2File(redirects_filename)):
         split = line.split()
         if len(split)!= 4:
-            print("整形されていない行を無視: " + line)
+            print("整形されていない行を無視：" + line)
             continue
         redirects[short_name(split[0])] = short_name(split[2])
         if l % 1000000 == 0:
-            print("[%s] 行: %08d" % (datetime.now().isoformat(), l))
+            print("[%s] 行：%08d" % (datetime.now().isoformat(), l))
 
     # 推移的閉包を計算する
     print("リダイレクト関係の推移的閉包を計算中")
@@ -45,7 +45,7 @@ def get_redirects(redirects_filename):
             seen.add(target)
         redirects[source] = transitive_target
         if l % 1000000 == 0:
-            print("[%s] 行: %08d" % (datetime.now().isoformat(), l))
+            print("[%s] 行：%08d" % (datetime.now().isoformat(), l))
 
     return redirects
 

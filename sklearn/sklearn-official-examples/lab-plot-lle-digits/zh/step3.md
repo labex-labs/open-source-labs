@@ -48,7 +48,7 @@ embeddings = {
     "谱嵌入": SpectralEmbedding(
         n_components=2, random_state=0, eigen_solver="arpack"
     ),
-    "t-SNE嵌入": TSNE(
+    "t-SNE 嵌入": TSNE(
         n_components=2,
         n_iter=500,
         n_iter_without_progress=150,
@@ -64,7 +64,7 @@ projections, timing = {}, {}
 for name, transformer in embeddings.items():
     if name.startswith("线性判别分析"):
         data = X.copy()
-        data.flat[:: X.shape[1] + 1] += 0.01  # 使X可逆
+        data.flat[:: X.shape[1] + 1] += 0.01  # 使 X 可逆
     else:
         data = X
 

@@ -1,6 +1,6 @@
 # 导入所需库
 
-第一步是导入所需的库。本教程将使用NumPy和Matplotlib。
+第一步是导入所需的库。本教程将使用 NumPy 和 Matplotlib。
 
 ```python
 import matplotlib.pyplot as plt

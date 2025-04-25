@@ -1,6 +1,6 @@
 # テキスト特徴抽出
 
-このステップでは、scikit-learnの`CountVectorizer`と`TfidfVectorizer`クラスを使ってテキスト特徴抽出を行う方法を学びます。これらのクラスは、テキストデータを数値特徴に変換するために使用できます。
+このステップでは、scikit-learn の`CountVectorizer`と`TfidfVectorizer`クラスを使ってテキスト特徴抽出を行う方法を学びます。これらのクラスは、テキストデータを数値特徴に変換するために使用できます。
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer

@@ -1,22 +1,22 @@
 # 静的なもの
 
-Rust にはいくつかの予約済みの寿命名があります。その1つが `'static` です。2つの状況で遭遇するかもしれません。
+Rust にはいくつかの予約済みの寿命名があります。その 1 つが `'static` です。2 つの状況で遭遇するかもしれません。
 
 ```rust
-// 'static寿命を持つ参照:
+// 'static 寿命を持つ参照：
 let s: &'static str = "hello world";
 
 // トレイト境界の一部としての 'static:
 fn generic<T>(x: T) where T: 'static {}
 ```
 
-どちらも関連していますが、微妙に異なり、これはRustを学ぶ際の混乱の一般的な原因です。以下は、それぞれの状況の例です。
+どちらも関連していますが、微妙に異なり、これは Rust を学ぶ際の混乱の一般的な原因です。以下は、それぞれの状況の例です。
 
 ## 参照寿命
 
 参照寿命としての `'static` は、参照によって指されるデータが実行中のプログラムの生存期間全体にわたって存在することを示します。それでも、短い寿命に強制変換することができます。
 
-`'static` 寿命を持つ変数を作成する方法は2つあり、どちらもバイナリの読み取り専用メモリに格納されます。
+`'static` 寿命を持つ変数を作成する方法は 2 つあり、どちらもバイナリの読み取り専用メモリに格納されます。
 
 - `static` 宣言で定数を作成する。
 - 型が `&'static str` である `string` リテラルを作成する。
@@ -24,17 +24,17 @@ fn generic<T>(x: T) where T: 'static {}
 各方法の表示については、以下の例を参照してください。
 
 ```rust
-// 'static寿命を持つ定数を作成する。
+// 'static 寿命を持つ定数を作成する。
 static NUM: i32 = 18;
 
-// 入力引数の寿命に 'static寿命を強制変換して、NUMへの参照を返す。
+// 入力引数の寿命に 'static 寿命を強制変換して、NUM への参照を返す。
 fn coerce_static<'a>(_: &'a i32) -> &'a i32 {
     &NUM
 }
 
 fn main() {
     {
-        // `string` リテラルを作成して表示する:
+        // `string` リテラルを作成して表示する：
         let static_string = "I'm in read-only memory";
         println!("static_string: {}", static_string);
 
@@ -42,10 +42,10 @@ fn main() {
     }
 
     {
-        // `coerce_static` に使用する整数を作成する:
+        // `coerce_static` に使用する整数を作成する：
         let lifetime_num = 9;
 
-        // `NUM` を `lifetime_num` の寿命に強制変換する:
+        // `NUM` を `lifetime_num` の寿命に強制変換する：
         let coerced_static = coerce_static(&lifetime_num);
 
         println!("coerced_static: {}", coerced_static);
@@ -69,11 +69,11 @@ fn print_it( input: impl Debug + 'static ) {
 }
 
 fn main() {
-    // iは所有されており、参照を含まないため、'staticです:
+    // i は所有されており、参照を含まないため、'static です：
     let i = 5;
     print_it(i);
 
-    // うーん、&iはmain()のスコープによって定義された寿命のみを持っているため、'staticではありません:
+    // うーん、&i は main() のスコープによって定義された寿命のみを持っているため、'static ではありません：
     print_it(&i);
 }
 ```

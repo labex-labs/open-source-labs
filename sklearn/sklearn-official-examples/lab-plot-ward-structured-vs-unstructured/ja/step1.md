@@ -1,6 +1,6 @@
 # データの生成
 
-まず、Scikit-learnの`make_swiss_roll`関数を使ってスイスロールデータセットを生成します。スイスロールデータセットは、渦巻き形状の3次元データセットです。
+まず、Scikit-learn の`make_swiss_roll`関数を使ってスイスロールデータセットを生成します。スイスロールデータセットは、渦巻き形状の 3 次元データセットです。
 
 ```python
 from sklearn.datasets import make_swiss_roll

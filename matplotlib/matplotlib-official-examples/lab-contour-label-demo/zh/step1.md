@@ -1,6 +1,6 @@
 # 定义我们的曲面
 
-我们将首先使用numpy和matplotlib来定义我们的曲面。这将为我们提供一个可处理的数据集。
+我们将首先使用 numpy 和 matplotlib 来定义我们的曲面。这将为我们提供一个可处理的数据集。
 
 ```python
 import matplotlib.pyplot as plt

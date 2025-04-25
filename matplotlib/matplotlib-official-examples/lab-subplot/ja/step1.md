@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。MatplotlibとNumPyを使用します。NumPyはサンプルデータを生成するために使用されます。
+まず、必要なライブラリをインポートする必要があります。Matplotlib と NumPy を使用します。NumPy はサンプルデータを生成するために使用されます。
 
 ```python
 import matplotlib.pyplot as plt

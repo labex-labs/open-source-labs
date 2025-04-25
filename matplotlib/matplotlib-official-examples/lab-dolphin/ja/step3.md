@@ -1,6 +1,6 @@
 # イルカの形を回転させる
 
-`Affine2D().rotate_deg()`関数を使って、イルカの形を60度回転させます。
+`Affine2D().rotate_deg()`関数を使って、イルカの形を 60 度回転させます。
 
 ```python
 from matplotlib.transforms import Affine2D

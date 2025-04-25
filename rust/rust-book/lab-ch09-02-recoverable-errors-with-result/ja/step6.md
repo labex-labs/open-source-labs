@@ -1,8 +1,8 @@
-# エラーを伝播するためのショートカット: 疑問符演算子 `?`
+# エラーを伝播するためのショートカット：疑問符演算子 `?`
 
 リスト 9-7 は、リスト 9-6 と同じ機能を持つ `read_username_from_file` の実装を示していますが、この実装では疑問符演算子 `?` を使用しています。
 
-ファイル名: `src/main.rs`
+ファイル名：`src/main.rs`
 
 ```rust
 use std::fs::File;
@@ -28,7 +28,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 
 `?` 演算子は、多くの定型コードを削除し、この関数の実装を簡単にします。また、`?` の直後にメソッド呼び出しをチェーン化することで、さらにコードを短縮することができます。これをリスト 9-8 に示します。
 
-ファイル名: `src/main.rs`
+ファイル名：`src/main.rs`
 
 ```rust
 use std::fs::File;
@@ -49,7 +49,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 
 リスト 9-9 は、`fs::read_to_string` を使ってさらに短くする方法を示しています。
 
-ファイル名: `src/main.rs`
+ファイル名：`src/main.rs`
 
 ```rust
 use std::fs;

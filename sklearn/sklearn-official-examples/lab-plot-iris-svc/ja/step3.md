@@ -1,13 +1,13 @@
 # 分類器の決定領域を描画する
 
 ```python
-# 描画用の2x2グリッドを設定する。
+# 描画用の 2x2 グリッドを設定する。
 fig, sub = plt.subplots(2, 2)
 plt.subplots_adjust(wspace=0.4, hspace=0.4)
 
 X0, X1 = X[:, 0], X[:, 1]
 
-# 各分類器に対してDecisionBoundaryDisplayを作成する
+# 各分類器に対して DecisionBoundaryDisplay を作成する
 for clf, title, ax in zip(models, titles, sub.flatten()):
     disp = DecisionBoundaryDisplay.from_estimator(
         clf,

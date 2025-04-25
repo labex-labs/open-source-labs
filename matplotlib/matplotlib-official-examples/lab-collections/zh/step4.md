@@ -1,4 +1,4 @@
-# 使用偏移量创建LineCollection
+# 使用偏移量创建 LineCollection
 
 ```python
 col = collections.LineCollection(
@@ -13,4 +13,4 @@ ax1.autoscale_view()
 ax1.set_title('LineCollection using offsets')
 ```
 
-第四步是使用偏移量创建一个LineCollection。我们将使用LineCollection来创建带有偏移量的曲线。我们还将使用offset_transform来设置曲线的位置。
+第四步是使用偏移量创建一个 LineCollection。我们将使用 LineCollection 来创建带有偏移量的曲线。我们还将使用 offset_transform 来设置曲线的位置。

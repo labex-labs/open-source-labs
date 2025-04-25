@@ -1,4 +1,4 @@
-# Jaccard類似度スコアをプロットする
+# Jaccard 類似度スコアをプロットする
 
 ```python
 model_scores = [ovr_jaccard_score] + chain_jaccard_scores

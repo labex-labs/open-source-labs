@@ -1,6 +1,6 @@
 # 定义切换选择器函数
 
-每当用户按下“t”键时，切换选择器函数都会被调用。此函数将切换RectangleSelector和EllipseSelector小部件的活动状态。
+每当用户按下“t”键时，切换选择器函数都会被调用。此函数将切换 RectangleSelector 和 EllipseSelector 小部件的活动状态。
 
 ```python
 def toggle_selector(event):

@@ -2,7 +2,7 @@
 
 ## バグを特定する
 
-幸いなことに、`polls` アプリケーションにはすぐに修正する必要のある小さなバグがあります。`Question.was_published_recently()` メソッドは、`Question` が過去1日以内に公開された場合（これは正しい）に `True` を返しますが、`Question` の `pub_date` フィールドが未来の場合も `True` を返します（これは明らかに正しくありません）。
+幸いなことに、`polls` アプリケーションにはすぐに修正する必要のある小さなバグがあります。`Question.was_published_recently()` メソッドは、`Question` が過去 1 日以内に公開された場合（これは正しい）に `True` を返しますが、`Question` の `pub_date` フィールドが未来の場合も `True` を返します（これは明らかに正しくありません）。
 
 未来の日付を持つ質問に対するメソッドを `shell` を使って確認することで、このバグを確認しましょう：
 
@@ -15,7 +15,7 @@ python manage.py shell
 >>> import datetime
 >>> from django.utils import timezone
 >>> from polls.models import Question
->>> # 未来30日後のpub_dateを持つQuestionインスタンスを作成
+>>> # 未来 30 日後の pub_date を持つ Question インスタンスを作成
 >>> future_question = Question(pub_date=timezone.now() + datetime.timedelta(days=30))
 >>> # 最近公開されましたか？
 >>> future_question.was_published_recently()
@@ -44,7 +44,7 @@ from.models import Question
 class QuestionModelTests(TestCase):
     def test_was_published_recently_with_future_question(self):
         """
-        was_published_recently()は、pub_dateが未来の質問に対してFalseを返します。
+        was_published_recently() は、pub_date が未来の質問に対して False を返します。
         """
         time = timezone.now() + datetime.timedelta(days=30)
         future_question = Question(pub_date=time)
@@ -77,7 +77,7 @@ python manage.py test polls
 - `django.test.TestCase` クラスのサブクラスを見つけます。
 - テスト用に特別なデータベースを作成します。
 - テストメソッド（`test` で始まる名前のもの）を探します。
-- `test_was_published_recently_with_future_question` では、`pub_date` フィールドが未来30日後の `Question` インスタンスを作成します。
+- `test_was_published_recently_with_future_question` では、`pub_date` フィールドが未来 30 日後の `Question` インスタンスを作成します。
 - `assertIs()` メソッドを使って、`was_published_recently()` が `True` を返すことを発見しました。ただし、私たちは `False` を返すことを望んでいました。
 
 テストは、どのテストが失敗したか、さらには失敗が発生した行までを通知します。
@@ -111,14 +111,14 @@ Destroying test database for alias 'default'...
 
 ## より包括的なテスト
 
-ここで、`was_published_recently()` メソッドをさらに固定することができます。実際、1つのバグを修正した際に別のバグを導入してしまったら恥ずかしいことになります。
+ここで、`was_published_recently()` メソッドをさらに固定することができます。実際、1 つのバグを修正した際に別のバグを導入してしまったら恥ずかしいことになります。
 
-同じクラスにさらに2つのテストメソッドを追加して、メソッドの動作をより包括的にテストします：
+同じクラスにさらに 2 つのテストメソッドを追加して、メソッドの動作をより包括的にテストします：
 
 ```python
 def test_was_published_recently_with_old_question(self):
     """
-    was_published_recently()は、pub_dateが1日以上前の質問に対してFalseを返します。
+    was_published_recently() は、pub_date が 1 日以上前の質問に対して False を返します。
     """
     time = timezone.now() - datetime.timedelta(days=1, seconds=1)
     old_question = Question(pub_date=time)
@@ -127,13 +127,13 @@ def test_was_published_recently_with_old_question(self):
 
 def test_was_published_recently_with_recent_question(self):
     """
-    was_published_recently()は、pub_dateが過去1日以内の質問に対してTrueを返します。
+    was_published_recently() は、pub_date が過去 1 日以内の質問に対して True を返します。
     """
     time = timezone.now() - datetime.timedelta(hours=23, minutes=59, seconds=59)
     recent_question = Question(pub_date=time)
     self.assertIs(recent_question.was_published_recently(), True)
 ```
 
-そして今、`Question.was_published_recently()` が過去、最近、未来の質問に対して適切な値を返すことを確認する3つのテストがあります。
+そして今、`Question.was_published_recently()` が過去、最近、未来の質問に対して適切な値を返すことを確認する 3 つのテストがあります。
 
 再び申しますが、`polls` は最小限のアプリケーションですが、これからどんなに複雑になっても、他のどのコードと相互作用しても、テストを書いたメソッドが期待通りに動作することが保証されています。

@@ -6,7 +6,7 @@
 
 要完成此挑战，你将使用来自 `https://github.com/labex-labs/git-playground.git` 的 Git 仓库 `git-playground`。
 
-1. 找到一个提交，其中删除了一个文件，提交消息为 “添加了 file2.txt”。
+1. 找到一个提交，其中删除了一个文件，提交消息为“添加了 file2.txt”。
 2. 通过检出删除之前的提交来恢复已删除的文件。
 
 这会将 `file2.txt` 文件恢复到你的本地仓库。

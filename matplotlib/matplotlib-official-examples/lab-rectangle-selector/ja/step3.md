@@ -1,6 +1,6 @@
 # トグルセレクタ関数を定義する
 
-ユーザーが「t」キーを押すたびに、トグルセレクタ関数が呼び出されます。この関数は、RectangleSelectorとEllipseSelectorウィジェットのアクティブ状態を切り替えます。
+ユーザーが「t」キーを押すたびに、トグルセレクタ関数が呼び出されます。この関数は、RectangleSelector と EllipseSelector ウィジェットのアクティブ状態を切り替えます。
 
 ```python
 def toggle_selector(event):

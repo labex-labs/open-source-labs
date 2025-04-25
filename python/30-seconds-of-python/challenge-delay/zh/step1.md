@@ -13,7 +13,7 @@ def add(x, y):
   return x + y
 
 result = delay(add, 2000, 2, 3)
-print(result) # 输出: 5
+print(result) # 输出：5
 ```
 
 在上面的示例中，`add` 函数在使用参数 `2` 和 `3` 调用之前被延迟了 2000 毫秒（2 秒）。然后返回 `add` 函数的结果并打印到控制台。

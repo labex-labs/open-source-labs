@@ -1,6 +1,6 @@
-# 純粋なPython関数の実装
+# 純粋な Python 関数の実装
 
-まずは、DataFrameに対して行ごとに操作を行う純粋なPython関数を作成します。
+まずは、DataFrame に対して行ごとに操作を行う純粋な Python 関数を作成します。
 
 ```python
 # 関数を定義

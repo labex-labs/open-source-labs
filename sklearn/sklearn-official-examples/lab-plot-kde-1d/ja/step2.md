@@ -11,7 +11,7 @@ X_src = np.zeros((1, 1))
 fig, ax = plt.subplots(2, 3, sharex=True, sharey=True)
 fig.subplots_adjust(left=0.05, right=0.95, hspace=0.05, wspace=0.05)
 
-# x軸のラベル用のフォーマット関数
+# x 軸のラベル用のフォーマット関数
 def format_func(x, loc):
     if x == 0:
         return "0"
@@ -38,7 +38,7 @@ for i, kernel in enumerate(
     axi.set_ylim(0, 1.05)
     axi.set_xlim(-2.9, 2.9)
 
-# 2行目のタイトルを設定
+# 2 行目のタイトルを設定
 ax[0, 1].set_title("利用可能なカーネル")
 
 # グラフを表示

@@ -1,6 +1,6 @@
 # 学習したラベルをプロットする
 
-最後に、LabelPropagationの精度を視覚化するために、学習したラベルをプロットします。
+最後に、LabelPropagation の精度を視覚化するために、学習したラベルをプロットします。
 
 ```python
 output_labels = label_spread.transduction_

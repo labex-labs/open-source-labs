@@ -28,9 +28,9 @@ cd ~/project/mysite
 python manage.py runserver
 ```
 
-在桌面环境的 Firefox 中打开 `http://127.0.0.1:8000/admin/`，然后点击 “Questions” 链接。你应该会看到一个如下所示的表单。
+在桌面环境的 Firefox 中打开 `http://127.0.0.1:8000/admin/`，然后点击“Questions”链接。你应该会看到一个如下所示的表单。
 
-上面这个特定的更改使得 “发布日期” 字段出现在 “问题” 字段之前：
+上面这个特定的更改使得“发布日期”字段出现在“问题”字段之前：
 
 ![管理表单字段重新排序](../assets/20230908-16-06-41-wiBfnHS8.png)
 

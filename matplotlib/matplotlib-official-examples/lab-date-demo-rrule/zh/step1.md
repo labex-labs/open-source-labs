@@ -1,6 +1,6 @@
 # 导入必要的库
 
-首先，你需要导入必要的库，包括Matplotlib、NumPy和datetime。
+首先，你需要导入必要的库，包括 Matplotlib、NumPy 和 datetime。
 
 ```python
 import datetime

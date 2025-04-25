@@ -13,4 +13,4 @@
    你将看到仓库中所有本地分支的列表。使用箭头键浏览列表，然后按 <kbd>Q</kbd> 退出。
 
 这是最终结果：
-![Git本地分支列表](../assets/challenge-view-all-branches.png)
+![Git 本地分支列表](../assets/challenge-view-all-branches.png)

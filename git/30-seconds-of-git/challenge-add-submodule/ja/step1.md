@@ -8,4 +8,4 @@
 
 これがチャレンジを完了した後の結果です。
 
-![Gitサブモジュールが正常に追加されました](../assets/challenge-add-submodule-step1-1.png)
+![Git サブモジュールが正常に追加されました](../assets/challenge-add-submodule-step1-1.png)

@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-この実験に必要なライブラリをインポートして始めましょう。この実験ではnumpy、matplotlib、scikit-learnを使用します。
+この実験に必要なライブラリをインポートして始めましょう。この実験では numpy、matplotlib、scikit-learn を使用します。
 
 ```python
 import numpy as np

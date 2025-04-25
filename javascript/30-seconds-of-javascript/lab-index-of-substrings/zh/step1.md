@@ -2,7 +2,7 @@
 
 要在给定字符串中找到子字符串的所有索引，请执行以下步骤：
 
-1. 打开终端/SSH并输入 `node` 以开始练习编码。
+1. 打开终端/SSH 并输入 `node` 以开始练习编码。
 2. 使用内置方法 `Array.prototype.indexOf()` 在 `str` 中搜索 `searchValue`。
 3. 如果找到该值，则使用 `yield` 返回索引并更新索引 `i`。
 4. 使用 `while` 循环，一旦 `Array.prototype.indexOf()` 返回的值为 `-1`，就终止生成器。

@@ -8,7 +8,7 @@
 
 1. 导航到该目录。
 2. 对最后两次提交执行交互式变基。
-3. 在提交消息 “Added file2.txt” 中将 “pick” 改为 “squash”，按下 <kbd>Esc</kbd> 并输入 <kbd>:wq</kbd> 命令，然后按下 <kbd>Enter</kbd> 保存更改并退出编辑器，以同样的方式将提交消息改为 “Added file1.txt and file2.txt” 并退出。
+3. 在提交消息“Added file2.txt”中将“pick”改为“squash”，按下 <kbd>Esc</kbd> 并输入 <kbd>:wq</kbd> 命令，然后按下 <kbd>Enter</kbd> 保存更改并退出编辑器，以同样的方式将提交消息改为“Added file1.txt and file2.txt”并退出。
 
 运行 `git log` 将得到如下结果：
 

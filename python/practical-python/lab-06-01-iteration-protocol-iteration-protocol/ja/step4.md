@@ -1,4 +1,4 @@
-# 演習6.1: 反復処理の例示
+# 演習 6.1: 反復処理の例示
 
 次のリストを作成します。
 
@@ -33,7 +33,7 @@ StopIteration
 
 ```python
 >>> f = open('portfolio.csv')
->>> f.__iter__()    # 注: これはファイル自体を返します
+>>> f.__iter__()    # 注：これはファイル自体を返します
 <_io.TextIOWrapper name='portfolio.csv' mode='r' encoding='UTF-8'>
 >>> next(f)
 'name,shares,price\n'

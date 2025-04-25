@@ -18,8 +18,8 @@
 以下が完全なコードです：
 
 ```go
-// 前の例では、[原子操作](atomic-counters)を使用して簡単なカウンタ状態を管理する方法を見ました。
-// より複雑な状態では、複数の goroutine 間で安全にデータにアクセスするために、[ミューテックス](https://en.wikipedia.org/wiki/Mutual_exclusion)を使用できます。
+// 前の例では、[原子操作](atomic-counters) を使用して簡単なカウンタ状態を管理する方法を見ました。
+// より複雑な状態では、複数の goroutine 間で安全にデータにアクセスするために、[ミューテックス](https://en.wikipedia.org/wiki/Mutual_exclusion) を使用できます。
 
 package main
 
@@ -62,7 +62,7 @@ func main() {
 	}
 
 	// 複数の goroutine を同時に実行します。すべてが同じ `Container` にアクセスし、
-	// 2つは同じカウンタにアクセスすることに注意してください。
+	// 2 つは同じカウンタにアクセスすることに注意してください。
 	wg.Add(3)
 	go doIncrement("a", 10000)
 	go doIncrement("a", 10000)

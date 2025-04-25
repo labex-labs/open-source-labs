@@ -1,6 +1,6 @@
 # 学習誤差とテスト誤差の計算
 
-Scikit-learnのElastic-Net回帰モデルを使って学習誤差とテスト誤差を計算します。正則化パラメータ`alpha`を`np.logspace()`を使って10^-5から10^1の範囲の値に設定します。また、`l1_ratio`を0.7に、`max_iter`を10000に設定します。
+Scikit-learn の Elastic-Net 回帰モデルを使って学習誤差とテスト誤差を計算します。正則化パラメータ`alpha`を`np.logspace()`を使って 10^-5 から 10^1 の範囲の値に設定します。また、`l1_ratio`を 0.7 に、`max_iter`を 10000 に設定します。
 
 ```python
 alphas = np.logspace(-5, 1, 60)

@@ -1,6 +1,6 @@
-# 情報基準を使ったLassoの選択
+# 情報基準を使った Lasso の選択
 
-正則化パラメータalphaの最適値を選択するために、赤池情報量基準(AIC)またはベイズ情報量基準(BIC)を使用するLasso推定器を提供するために、`sklearn.linear_model` からの `LassoLarsIC` 関数を使用します。まず、AIC基準を使ってLassoモデルをフィットさせます。
+正則化パラメータ alpha の最適値を選択するために、赤池情報量基準 (AIC) またはベイズ情報量基準 (BIC) を使用する Lasso 推定器を提供するために、`sklearn.linear_model` からの `LassoLarsIC` 関数を使用します。まず、AIC 基準を使って Lasso モデルをフィットさせます。
 
 ```python
 import time

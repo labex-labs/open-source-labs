@@ -1,6 +1,6 @@
-# 为每个主要的3D视图平面添加标签
+# 为每个主要的 3D 视图平面添加标签
 
-我们使用步骤2中定义的 `annotate_axes` 函数，为每个主要的3D视图平面标注其各自的角度。
+我们使用步骤 2 中定义的 `annotate_axes` 函数，为每个主要的 3D 视图平面标注其各自的角度。
 
 ```python
 for plane, angles in views:

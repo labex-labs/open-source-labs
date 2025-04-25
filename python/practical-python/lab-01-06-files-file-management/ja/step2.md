@@ -8,7 +8,7 @@ with open('foo.txt', 'rt') as file:
     # `data` は `foo.txt` のすべてのテキストが含まれた文字列です
 ```
 
-イテレーションを使ってファイルを1行ずつ読み取る。
+イテレーションを使ってファイルを 1 行ずつ読み取る。
 
 ```python
 with open(filename, 'rt') as file:

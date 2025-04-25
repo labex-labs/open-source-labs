@@ -1,4 +1,4 @@
-# MenuItemクラスを定義する
+# MenuItem クラスを定義する
 
 次に、メニュー内の各項目を作成するために使用される`MenuItem`クラスを定義します。このクラスには、グラフ、ラベル文字列、プロパティ、ホバー時のプロパティ、および選択時のコールバック関数をパラメータとして渡します。`MenuItem`クラスは`artist.Artist`クラスから継承されています。
 
@@ -23,7 +23,7 @@ class MenuItem(artist.Artist):
 
         self.on_select = on_select
 
-        # IdentityTransform()に変換を設定することで、
+        # IdentityTransform() に変換を設定することで、
         # 座標を直接ピクセル単位で指定できます。
         self.label = fig.text(0, 0, labelstr, transform=IdentityTransform(),
                               size=props.fontsize)

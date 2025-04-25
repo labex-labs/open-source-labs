@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。このプロットを作成するために、Matplotlibとそのparasite_axesモジュールを使用します。
+まず、必要なライブラリをインポートする必要があります。このプロットを作成するために、Matplotlib とその parasite_axes モジュールを使用します。
 
 ```python
 import matplotlib.pyplot as plt

@@ -1,29 +1,29 @@
 # 数据库设置
 
-现在，打开 `mysite/settings.py`。它是一个普通的Python模块，其中的模块级变量代表Django设置。
+现在，打开 `mysite/settings.py`。它是一个普通的 Python 模块，其中的模块级变量代表 Django 设置。
 
-默认情况下，配置使用SQLite。如果你是数据库新手，或者只是想尝试一下Django，这是最简单的选择。SQLite包含在Python中，所以你不需要安装任何其他东西来支持你的数据库。然而，当你开始第一个实际项目时，你可能想要使用像PostgreSQL这样更具可扩展性的数据库，以避免日后切换数据库带来的麻烦。
+默认情况下，配置使用 SQLite。如果你是数据库新手，或者只是想尝试一下 Django，这是最简单的选择。SQLite 包含在 Python 中，所以你不需要安装任何其他东西来支持你的数据库。然而，当你开始第一个实际项目时，你可能想要使用像 PostgreSQL 这样更具可扩展性的数据库，以避免日后切换数据库带来的麻烦。
 
 如果你希望使用其他数据库，请安装相应的 `数据库绑定 <database-installation>`，并在 `DATABASES` 的 `'default'` 项中更改以下键，以匹配你的数据库连接设置：
 
 - `ENGINE <DATABASE-ENGINE>` -- 可以是 `'django.db.backends.sqlite3'`、`'django.db.backends.postgresql'`、`'django.db.backends.mysql'` 或 `'django.db.backends.oracle'`。其他后端也 `可用<third-party-notes>`。
-- `NAME` -- 你的数据库名称。如果你使用SQLite，数据库将是你计算机上的一个文件；在这种情况下，`NAME` 应该是该文件的完整绝对路径，包括文件名。默认值 `BASE_DIR / 'db.sqlite3'` 将把文件存储在你的项目目录中。
+- `NAME` -- 你的数据库名称。如果你使用 SQLite，数据库将是你计算机上的一个文件；在这种情况下，`NAME` 应该是该文件的完整绝对路径，包括文件名。默认值 `BASE_DIR / 'db.sqlite3'` 将把文件存储在你的项目目录中。
 
-如果你不使用SQLite作为数据库，则必须添加其他设置，如 `USER`、`PASSWORD` 和 `HOST`。有关更多详细信息，请参阅 `DATABASES` 的参考文档。
+如果你不使用 SQLite 作为数据库，则必须添加其他设置，如 `USER`、`PASSWORD` 和 `HOST`。有关更多详细信息，请参阅 `DATABASES` 的参考文档。
 
-> 对于非SQLite数据库
+> 对于非 SQLite 数据库
 
-如果你使用的是除SQLite之外的数据库，请确保此时已经创建了数据库。在数据库的交互式提示符中使用 “`CREATE DATABASE database_name;`” 来创建。
+如果你使用的是除 SQLite 之外的数据库，请确保此时已经创建了数据库。在数据库的交互式提示符中使用“`CREATE DATABASE database_name;`”来创建。
 
-还要确保 `mysite/settings.py` 中提供的数据库用户具有 “创建数据库” 权限。这允许自动创建一个 `测试数据库 <the-test-database>`，这在后面的教程中会用到。
+还要确保 `mysite/settings.py` 中提供的数据库用户具有“创建数据库”权限。这允许自动创建一个 `测试数据库 <the-test-database>`，这在后面的教程中会用到。
 
-如果你使用SQLite，则无需事先创建任何东西 —— 数据库文件将在需要时自动创建。
+如果你使用 SQLite，则无需事先创建任何东西 —— 数据库文件将在需要时自动创建。
 
 在编辑 `mysite/settings.py` 时，将 `TIME_ZONE` 设置为你的时区。
 
-另外，请注意文件顶部的 `INSTALLED_APPS` 设置。它包含在此Django实例中激活的所有Django应用的名称。应用可以在多个项目中使用，你可以打包并分发它们供其他人在他们的项目中使用。
+另外，请注意文件顶部的 `INSTALLED_APPS` 设置。它包含在此 Django 实例中激活的所有 Django 应用的名称。应用可以在多个项目中使用，你可以打包并分发它们供其他人在他们的项目中使用。
 
-默认情况下，`INSTALLED_APPS` 包含以下所有随Django一起提供的应用：
+默认情况下，`INSTALLED_APPS` 包含以下所有随 Django 一起提供的应用：
 
 - `django.contrib.admin` -- 管理站点。你很快就会用到它。
 - `django.contrib.auth` -- 一个认证系统。
@@ -65,7 +65,7 @@ Running migrations:
   Applying sessions.0001_initial... OK
 ```
 
-`migrate` 命令会查看 `INSTALLED_APPS` 设置，并根据 `mysite/settings.py` 文件中的数据库设置以及应用附带的数据库迁移（我们稍后会介绍）创建任何必要的数据库表。你会看到它应用的每个迁移的消息。如果你感兴趣，可以运行数据库的命令行客户端并输入 `\dt`（PostgreSQL）、`SHOW TABLES;`（MariaDB、MySQL）、`.tables`（SQLite）或 `SELECT TABLE_NAME FROM USER_TABLES;`（Oracle）来显示Django创建的表。
+`migrate` 命令会查看 `INSTALLED_APPS` 设置，并根据 `mysite/settings.py` 文件中的数据库设置以及应用附带的数据库迁移（我们稍后会介绍）创建任何必要的数据库表。你会看到它应用的每个迁移的消息。如果你感兴趣，可以运行数据库的命令行客户端并输入 `\dt`（PostgreSQL）、`SHOW TABLES;`（MariaDB、MySQL）、`.tables`（SQLite）或 `SELECT TABLE_NAME FROM USER_TABLES;`（Oracle）来显示 Django 创建的表。
 
 > 对于极简主义者
 

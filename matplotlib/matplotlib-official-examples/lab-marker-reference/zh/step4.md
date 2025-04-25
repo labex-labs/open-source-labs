@@ -1,6 +1,6 @@
-# 由TeX符号创建的标记
+# 由 TeX 符号创建的标记
 
-使用 :ref:`MathText <mathtext>` 来使用自定义标记符号，例如 `"$\u266B$"`。有关STIX字体符号的概述，请参阅 `STIX字体表 <http://www.stixfonts.org/allGlyphs.html>`\_。另请参阅 :doc:`/gallery/text_labels_and_annotations/stix_fonts_demo`。
+使用 :ref:`MathText <mathtext>` 来使用自定义标记符号，例如 `"$\u266B$"`。有关 STIX 字体符号的概述，请参阅 `STIX字体表 <http://www.stixfonts.org/allGlyphs.html>`\_。另请参阅 :doc:`/gallery/text_labels_and_annotations/stix_fonts_demo`。
 
 ```python
 fig, ax = plt.subplots()

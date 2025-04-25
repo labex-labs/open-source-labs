@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA, FactorAnalysis
 from sklearn.covariance import ShrunkCovariance, LedoitWolf
 from sklearn.model_selection import cross_val_score, GridSearchCV
 
-n_components = np.arange(0, n_features, 5)  # n_componentsのオプション
+n_components = np.arange(0, n_features, 5)  # n_components のオプション
 
 def compute_scores(X):
     pca = PCA(svd_solver="full")
@@ -40,14 +40,14 @@ for X, title in [(X_homo, "同分散ノイズ"), (X_hetero, "異分散ノイズ"
     pca.fit(X)
     n_components_pca_mle = pca.n_components_
 
-    print("PCA CVによる最適なn_components = %d" % n_components_pca)
-    print("FactorAnalysis CVによる最適なn_components = %d" % n_components_fa)
-    print("PCA MLEによる最適なn_components = %d" % n_components_pca_mle)
+    print("PCA CV による最適な n_components = %d" % n_components_pca)
+    print("FactorAnalysis CV による最適な n_components = %d" % n_components_fa)
+    print("PCA MLE による最適な n_components = %d" % n_components_pca_mle)
 
     plt.figure()
-    plt.plot(n_components, pca_scores, "b", label="PCAスコア")
-    plt.plot(n_components, fa_scores, "r", label="FAスコア")
-    plt.axvline(rank, color="g", label="真値: %d" % rank, linestyle="-")
+    plt.plot(n_components, pca_scores, "b", label="PCA スコア")
+    plt.plot(n_components, fa_scores, "r", label="FA スコア")
+    plt.axvline(rank, color="g", label="真値：%d" % rank, linestyle="-")
     plt.axvline(
         n_components_pca,
         color="b",
@@ -71,7 +71,7 @@ for X, title in [(X_homo, "同分散ノイズ"), (X_hetero, "異分散ノイズ"
     plt.axhline(
         shrunk_cov_score(X),
         color="violet",
-        label="シュリンク共分散MLE",
+        label="シュリンク共分散 MLE",
         linestyle="-.",
     )
     plt.axhline(
@@ -82,7 +82,7 @@ for X, title in [(X_homo, "同分散ノイズ"), (X_hetero, "異分散ノイズ"
     )
 
     plt.xlabel("成分数")
-    plt.ylabel("CVスコア")
+    plt.ylabel("CV スコア")
     plt.legend(loc="lower right")
     plt.title(title)
 

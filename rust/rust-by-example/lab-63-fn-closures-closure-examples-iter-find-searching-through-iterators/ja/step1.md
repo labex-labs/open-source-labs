@@ -24,18 +24,18 @@ fn main() {
     // Vec の `into_iter()` は `i32` を返します。
     let mut into_iter = vec2.into_iter();
 
-    // Vec の `iter()` は `&i32` を返します。そして、その要素の1つを参照したいので、`&&i32` を `i32` に分解する必要があります。
-    println!("vec1 で 2 を見つける: {:?}", iter.find(|&&x| x == 2));
-    // Vec の `into_iter()` は `i32` を返します。そして、その要素の1つを参照したいので、`&i32` を `i32` に分解する必要があります。
-    println!("vec2 で 2 を見つける: {:?}", into_iter.find(| &x| x == 2));
+    // Vec の `iter()` は `&i32` を返します。そして、その要素の 1 つを参照したいので、`&&i32` を `i32` に分解する必要があります。
+    println!("vec1 で 2 を見つける：{:?}", iter.find(|&&x| x == 2));
+    // Vec の `into_iter()` は `i32` を返します。そして、その要素の 1 つを参照したいので、`&i32` を `i32` に分解する必要があります。
+    println!("vec2 で 2 を見つける：{:?}", into_iter.find(| &x| x == 2));
 
     let array1 = [1, 2, 3];
     let array2 = [4, 5, 6];
 
     // 配列の `iter()` は `&&i32` を返します。
-    println!("array1 で 2 を見つける: {:?}", array1.iter().find(|&&x| x == 2));
+    println!("array1 で 2 を見つける：{:?}", array1.iter().find(|&&x| x == 2));
     // 配列の `into_iter()` は `&i32` を返します。
-    println!("array2 で 2 を見つける: {:?}", array2.into_iter().find(|&x| x == 2));
+    println!("array2 で 2 を見つける：{:?}", array2.into_iter().find(|&x| x == 2));
 }
 ```
 

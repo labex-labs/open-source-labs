@@ -5,7 +5,7 @@
 with cbook.get_sample_data('grace_hopper.jpg') as image_file:
     image = plt.imread(image_file)
 
-# 使用256x256的16位整数加载另一张图片。
+# 使用 256x256 的 16 位整数加载另一张图片。
 w, h = 256, 256
 with cbook.get_sample_data('s1045.ima.gz') as datafile:
     s = datafile.read()
@@ -18,7 +18,7 @@ fig, ax = plt.subplot_mosaic([
 ], figsize=(7, 3.5))
 
 ax['hopper'].imshow(image)
-ax['hopper'].axis('off')  # 清除x轴和y轴
+ax['hopper'].axis('off')  # 清除 x 轴和 y 轴
 
 im = ax['mri'].imshow(A, cmap=plt.cm.hot, origin='upper', extent=extent)
 

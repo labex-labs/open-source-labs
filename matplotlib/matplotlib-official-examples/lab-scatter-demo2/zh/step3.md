@@ -1,6 +1,6 @@
 # 计算散点图所需的值
 
-我们将计算用于散点图的delta1、成交量和收盘价的值。
+我们将计算用于散点图的 delta1、成交量和收盘价的值。
 
 ```python
 delta1 = np.diff(price_data.adj_close) / price_data.adj_close[:-1]

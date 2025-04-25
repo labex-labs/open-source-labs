@@ -23,7 +23,7 @@ plt.waitforbuttonpress()
 while True:
     pts = []
     while len(pts) < 3:
-        tellme('用鼠标选择3个角点')
+        tellme('用鼠标选择 3 个角点')
         pts = np.asarray(plt.ginput(3, timeout=-1))
         if len(pts) < 3:
             tellme('点太少，重新开始')

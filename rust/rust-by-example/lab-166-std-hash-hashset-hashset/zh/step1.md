@@ -47,16 +47,16 @@ fn main() {
     println!("B: {:?}", b);
 
     // 以任意顺序打印 [1, 2, 3, 4, 5]
-    println!("并集: {:?}", a.union(&b).collect::<Vec<&i32>>());
+    println!("并集：{:?}", a.union(&b).collect::<Vec<&i32>>());
 
     // 这应该打印 [1]
-    println!("差集: {:?}", a.difference(&b).collect::<Vec<&i32>>());
+    println!("差集：{:?}", a.difference(&b).collect::<Vec<&i32>>());
 
     // 以任意顺序打印 [2, 3, 4]
-    println!("交集: {:?}", a.intersection(&b).collect::<Vec<&i32>>());
+    println!("交集：{:?}", a.intersection(&b).collect::<Vec<&i32>>());
 
     // 打印 [1, 5]
-    println!("对称差集: {:?}",
+    println!("对称差集：{:?}",
              a.symmetric_difference(&b).collect::<Vec<&i32>>());
 }
 ```

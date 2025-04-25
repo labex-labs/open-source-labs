@@ -1,6 +1,6 @@
 # 绘制最不确定的预测结果
 
-我们挑选并展示前10个最不确定的预测结果。
+我们挑选并展示前 10 个最不确定的预测结果。
 
 ```python
 pred_entropies = stats.distributions.entropy(lp_model.label_distributions_.T)

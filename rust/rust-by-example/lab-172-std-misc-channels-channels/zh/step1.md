@@ -1,6 +1,6 @@
 # 通道
 
-Rust提供了用于线程间通信的异步 `通道`。通道允许在两个端点之间进行单向信息流传输：`发送端`（Sender）和 `接收端`（Receiver）。
+Rust 提供了用于线程间通信的异步 `通道`。通道允许在两个端点之间进行单向信息流传输：`发送端`（Sender）和 `接收端`（Receiver）。
 
 ```rust
 use std::sync::mpsc::{Sender, Receiver};
@@ -20,7 +20,7 @@ fn main() {
         // 发送端端点可以被复制
         let thread_tx = tx.clone();
 
-        // 每个线程将通过通道发送其ID
+        // 每个线程将通过通道发送其 ID
         let child = thread::spawn(move || {
             // 线程获取 `thread_tx` 的所有权
             // 每个线程在通道中排队一条消息

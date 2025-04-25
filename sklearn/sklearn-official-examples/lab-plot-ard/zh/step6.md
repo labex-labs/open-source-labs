@@ -1,6 +1,6 @@
 # 拟合回归器
 
-我们尝试使用10次多项式来可能地过拟合，尽管贝叶斯线性模型会对多项式系数的大小进行正则化。由于ARDRegression和BayesianRidge默认`fit_intercept=True`，那么PolynomialFeatures不应引入额外的偏差特征。通过设置`return_std=True`，贝叶斯回归器会返回模型参数后验分布的标准差。
+我们尝试使用 10 次多项式来可能地过拟合，尽管贝叶斯线性模型会对多项式系数的大小进行正则化。由于 ARDRegression 和 BayesianRidge 默认`fit_intercept=True`，那么 PolynomialFeatures 不应引入额外的偏差特征。通过设置`return_std=True`，贝叶斯回归器会返回模型参数后验分布的标准差。
 
 ```python
 ard_poly = make_pipeline(

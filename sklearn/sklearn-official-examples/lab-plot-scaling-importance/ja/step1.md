@@ -1,6 +1,6 @@
 # データの読み込みと準備
 
-scikit-learnからワインのデータセットを読み込み、学習用とテスト用のセットに分割します。また、scikit-learnの前処理モジュールからのStandardScalerを使って、学習用セットの特徴量をスケーリングします。
+scikit-learn からワインのデータセットを読み込み、学習用とテスト用のセットに分割します。また、scikit-learn の前処理モジュールからの StandardScaler を使って、学習用セットの特徴量をスケーリングします。
 
 ```python
 from sklearn.datasets import load_wine

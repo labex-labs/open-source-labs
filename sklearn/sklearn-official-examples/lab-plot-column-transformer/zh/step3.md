@@ -7,14 +7,14 @@ pipeline = Pipeline(
     [
         # 提取主题和正文
         ("subjectbody", subject_body_transformer),
-        # 使用ColumnTransformer组合主题和正文特征
+        # 使用 ColumnTransformer 组合主题和正文特征
         (
             "union",
             ColumnTransformer(
                 [
-                    # 主题（第0列）的词袋模型
+                    # 主题（第 0 列）的词袋模型
                     ("subject", TfidfVectorizer(min_df=50), 0),
-                    # 正文（第1列）的带分解的词袋模型
+                    # 正文（第 1 列）的带分解的词袋模型
                     (
                         "body_bow",
                         Pipeline(
@@ -43,7 +43,7 @@ pipeline = Pipeline(
                         1,
                     ),
                 ],
-                # 上述ColumnTransformer特征的权重
+                # 上述 ColumnTransformer 特征的权重
                 transformer_weights={
                     "subject": 0.8,
                     "body_bow": 0.5,
@@ -51,7 +51,7 @@ pipeline = Pipeline(
                 },
             ),
         ),
-        # 在组合特征上使用SVC分类器
+        # 在组合特征上使用 SVC 分类器
         ("svc", LinearSVC(dual=False)),
     ],
     verbose=True,

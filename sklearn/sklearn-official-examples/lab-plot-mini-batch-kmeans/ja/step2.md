@@ -1,6 +1,6 @@
-# KMeansを使ったクラスタリングの計算
+# KMeans を使ったクラスタリングの計算
 
-KMeansを使ってクラスタリングを計算します。
+KMeans を使ってクラスタリングを計算します。
 
 ```python
 import time

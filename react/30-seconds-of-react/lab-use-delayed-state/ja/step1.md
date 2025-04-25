@@ -1,6 +1,6 @@
-# React useDelayedStateフック
+# React useDelayedState フック
 
-> VM内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
+> VM 内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
 
 条件が満たされるまで状態付き値の作成を遅らせるには、次の手順に従います。
 
@@ -64,4 +64,4 @@ const App = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。

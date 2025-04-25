@@ -1,6 +1,6 @@
 # 创建一个基本绘图
 
-在这一步中，我们将创建一个基本绘图，以展示Matplotlib中不同的轴脊（spine）放置选项。
+在这一步中，我们将创建一个基本绘图，以展示 Matplotlib 中不同的轴脊（spine）放置选项。
 
 ```python
 x = np.linspace(0, 2*np.pi, 100)

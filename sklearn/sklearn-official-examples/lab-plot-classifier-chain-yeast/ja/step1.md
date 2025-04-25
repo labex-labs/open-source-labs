@@ -1,4 +1,4 @@
-# yeastデータセットを読み込む
+# yeast データセットを読み込む
 
 ```python
 X, Y = fetch_openml("yeast", version=4, return_X_y=True, parser="pandas")

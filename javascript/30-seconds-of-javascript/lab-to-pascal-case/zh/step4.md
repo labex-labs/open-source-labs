@@ -4,7 +4,7 @@
 
 1. 创建一个 JavaScript 文件来保存我们的函数。通过按两次 Ctrl+C 或输入 `.exit` 退出 Node.js 会话。
 
-2. 在 WebIDE 中，通过点击顶部菜单中的 “File” > “New File” 创建一个新文件。
+2. 在 WebIDE 中，通过点击顶部菜单中的“File” > “New File”创建一个新文件。
 
 3. 将文件保存为 `pascalCase.js`，保存路径为 `/home/labex/project` 目录。
 
@@ -43,7 +43,7 @@ console.log(
 ); // "SomeMixedStringWithSpacesUnderscoresAndHyphens"
 ```
 
-5. 按 Ctrl+S 或从菜单中选择 “File” > “Save” 来保存文件。
+5. 按 Ctrl+S 或从菜单中选择“File” > “Save”来保存文件。
 
 6. 打开终端并输入以下命令，使用 Node.js 运行该文件：
 

@@ -1,6 +1,6 @@
 # 创建并训练模型
 
-我们将创建两个AdaBoost模型，一个使用SAMME，另一个使用SAMME.R。两个模型都将使用最大深度为2且有300个估计器的决策树分类器。
+我们将创建两个 AdaBoost 模型，一个使用 SAMME，另一个使用 SAMME.R。两个模型都将使用最大深度为 2 且有 300 个估计器的决策树分类器。
 
 ```python
 bdt_real = AdaBoostClassifier(

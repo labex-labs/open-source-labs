@@ -13,7 +13,7 @@ def add(x, y):
   return x + y
 
 result = delay(add, 2000, 2, 3)
-print(result) # 出力: 5
+print(result) # 出力：5
 ```
 
 上記の例では、`add` 関数は、引数 `2` と `3` で呼び出される前に 2000 ミリ秒（2 秒）遅延されます。その後、`add` 関数の結果が返され、コンソールに出力されます。

@@ -6,7 +6,7 @@
 kernel = C(0.1, (1e-5, np.inf)) * DotProduct(sigma_0=0.1) ** 2
 ```
 
-然后，我们可以创建一个GPC模型并使用数据对其进行训练。
+然后，我们可以创建一个 GPC 模型并使用数据对其进行训练。
 
 ```python
 gp = GaussianProcessClassifier(kernel=kernel)

@@ -3,7 +3,7 @@
 在这一步中，我们将使用 Matplotlib 对象创建一个自定义图例。首先，我们从 `matplotlib.lines` 模块中导入 `Line2D` 类。接下来，我们创建一个包含 `Line2D` 对象的列表，并为其设置自定义的颜色、宽度和标签属性。最后，我们再次使用 `plot` 函数绘制数据，并使用自定义线条和相应标签调用 `legend()`。
 
 ```python
-# 导入Line2D类
+# 导入 Line2D 类
 from matplotlib.lines import Line2D
 
 # 创建自定义线条

@@ -1,6 +1,6 @@
 # 共分散の推定
 
-2番目のステップは、共分散を推定することです。疎な精度行列を学習するために、GraphicalLassoCVを使用します。また、結果をLedoit-Wolf推定器と比較します。
+2 番目のステップは、共分散を推定することです。疎な精度行列を学習するために、GraphicalLassoCV を使用します。また、結果を Ledoit-Wolf 推定器と比較します。
 
 ```python
 from sklearn.covariance import GraphicalLassoCV, ledoit_wolf

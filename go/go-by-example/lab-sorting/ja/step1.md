@@ -19,7 +19,7 @@ Sorted: true
 以下に完全なコードがあります。
 
 ```go
-// Goの`sort`パッケージは、組み込み型と
+// Go の `sort` パッケージは、組み込み型と
 // ユーザー定義型のソートを実装しています。
 // まずは組み込み型のソートを見てみましょう。
 
@@ -46,7 +46,7 @@ func main() {
 	fmt.Println("Ints:   ", ints)
 
 	// スライスが既にソートされているかどうかを
-	// 確認するためにも`sort`を使うことができます。
+	// 確認するためにも `sort` を使うことができます。
 	s := sort.IntsAreSorted(ints)
 	fmt.Println("Sorted: ", s)
 }

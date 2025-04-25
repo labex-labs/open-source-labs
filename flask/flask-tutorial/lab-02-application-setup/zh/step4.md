@@ -20,4 +20,4 @@ flask --app flaskr run --debug --host=0.0.0.0
 
 然后，打开 **Web 5000** 标签页，你应该会看到如下内容：
 
-![Flask应用程序的Hello World页面](../assets/hello-world.png)
+![Flask 应用程序的 Hello World 页面](../assets/hello-world.png)

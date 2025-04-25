@@ -1,6 +1,6 @@
-# プロットにPathPatchを追加する
+# プロットに PathPatch を追加する
 
-ここで、axesオブジェクトの`add_patch`メソッドを使って、パッチオブジェクトをプロットに追加します。
+ここで、axes オブジェクトの`add_patch`メソッドを使って、パッチオブジェクトをプロットに追加します。
 
 ```python
 fig, ax = plt.subplots()

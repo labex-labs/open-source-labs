@@ -1,6 +1,6 @@
 # 加载数据集
 
-我们将从scikit-learn中加载数字数据集，并选择数据的一个子集用于数字1和2的二分类。
+我们将从 scikit-learn 中加载数字数据集，并选择数据的一个子集用于数字 1 和 2 的二分类。
 
 ```python
 from sklearn.datasets import load_digits

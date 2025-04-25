@@ -1,6 +1,6 @@
-# 比较二维柯西分布随机数上的 “symlog” 和 “asinh” 缩放
+# 比较二维柯西分布随机数上的“symlog”和“asinh”缩放
 
-最后，我们将比较二维柯西分布随机数上的 “symlog” 和 “asinh” 缩放。我们将把同一个图绘制两次，一次使用 “symlog”，另一次使用 “asinh”。
+最后，我们将比较二维柯西分布随机数上的“symlog”和“asinh”缩放。我们将把同一个图绘制两次，一次使用“symlog”，另一次使用“asinh”。
 
 ```python
 fig3 = plt.figure()

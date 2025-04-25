@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートして画像配列を作成する
 
-まず、必要なライブラリをインポートし、NumPyライブラリの`arange`関数と`reshape`関数を使って4つの10x10の画像配列を作成します。
+まず、必要なライブラリをインポートし、NumPy ライブラリの`arange`関数と`reshape`関数を使って 4 つの 10x10 の画像配列を作成します。
 
 ```python
 import matplotlib.pyplot as plt

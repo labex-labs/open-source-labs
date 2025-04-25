@@ -1,6 +1,6 @@
-# Matplotlibをインポートしてグラフと軸を作成する
+# Matplotlib をインポートしてグラフと軸を作成する
 
-まず、Matplotlibをインポートしてグラフと軸を作成する必要があります。グラフと軸は、プロットのコンテナです。
+まず、Matplotlib をインポートしてグラフと軸を作成する必要があります。グラフと軸は、プロットのコンテナです。
 
 ```python
 import matplotlib.pyplot as plt

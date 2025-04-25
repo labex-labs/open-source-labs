@@ -1,4 +1,4 @@
-# 创建点的x和y坐标
+# 创建点的 x 和 y 坐标
 
 ```python
 n_angles = 30
@@ -21,5 +21,5 @@ y = (radii*np.sin(angles)).flatten()
 - `min_radius` 是圆的最小半径。
 - `radii` 是半径数组。
 - `angles` 是角度数组。
-- `x` 是x坐标数组。
-- `y` 是y坐标数组。
+- `x` 是 x 坐标数组。
+- `y` 是 y 坐标数组。

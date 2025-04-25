@@ -47,7 +47,7 @@ const MyApp = () => {
 
   return (
     <>
-      <p>Post 参数值: {post || "null"}</p>
+      <p>Post 参数值：{post || "null"}</p>
       <button
         onClick={() =>
           history.pushState({}, "", location.pathname + "?post=42")

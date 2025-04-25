@@ -1,6 +1,6 @@
 # 軸の範囲を設定してグラフを保存する
 
-軸のxとyの範囲を設定し、`io.BytesIO()` と `plt.savefig()` を使ってグラフをSVG形式のバイト文字列として保存します。
+軸の x と y の範囲を設定し、`io.BytesIO()` と `plt.savefig()` を使ってグラフを SVG 形式のバイト文字列として保存します。
 
 ```python
 ax.set_xlim(0., 1.)

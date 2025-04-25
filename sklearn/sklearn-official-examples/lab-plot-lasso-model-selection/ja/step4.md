@@ -1,6 +1,6 @@
-# 結果の保存と最適なalphaの確認
+# 結果の保存と最適な alpha の確認
 
-`fit` 中に使用された各alphaの値に対するAIC指標を保存します。次に、BIC基準を使用して同じ分析を行います。最後に、どの `alpha` の値が最小のAICとBICにつながるかを確認します。
+`fit` 中に使用された各 alpha の値に対する AIC 指標を保存します。次に、BIC 基準を使用して同じ分析を行います。最後に、どの `alpha` の値が最小の AIC と BIC につながるかを確認します。
 
 ```python
 results = pd.DataFrame(

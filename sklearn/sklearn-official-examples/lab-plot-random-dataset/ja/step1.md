@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。matplotlibとscikit - learnを使用します。
+まず、必要なライブラリをインポートする必要があります。matplotlib と scikit - learn を使用します。
 
 ```python
 import matplotlib.pyplot as plt

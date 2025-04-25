@@ -1,6 +1,6 @@
-# 创建一个wxPython应用程序
+# 创建一个 wxPython 应用程序
 
-创建一个新的Python文件，并导入所需的库。
+创建一个新的 Python 文件，并导入所需的库。
 
 ```python
 import wx

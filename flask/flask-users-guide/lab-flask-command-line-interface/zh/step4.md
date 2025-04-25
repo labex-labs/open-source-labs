@@ -1,8 +1,8 @@
 # 创建自定义命令
 
-Flask CLI允许你创建可从命令行执行的自定义命令。让我们创建一个名为 `greet` 的自定义命令，它接受一个名字作为参数并打印一条问候消息。
+Flask CLI 允许你创建可从命令行执行的自定义命令。让我们创建一个名为 `greet` 的自定义命令，它接受一个名字作为参数并打印一条问候消息。
 
-创建一个名为 `commands.py` 的新Python文件，并添加以下代码：
+创建一个名为 `commands.py` 的新 Python 文件，并添加以下代码：
 
 ```python
 import click
@@ -22,4 +22,4 @@ if __name__ == '__main__':
 python commands.py John
 ```
 
-你应该会在终端中看到 “Hello, John!” 这条消息被打印出来。
+你应该会在终端中看到“Hello, John!”这条消息被打印出来。

@@ -5,7 +5,7 @@
 - wxPython
 - Matplotlib
 
-你可以使用pip安装这些库。
+你可以使用 pip 安装这些库。
 
 ```python
 pip install wxPython

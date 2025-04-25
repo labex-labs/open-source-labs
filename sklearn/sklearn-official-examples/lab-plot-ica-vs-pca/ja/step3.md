@@ -1,6 +1,6 @@
-# FastICAアルゴリズムの使用
+# FastICA アルゴリズムの使用
 
-このステップでは、FastICAアルゴリズムを使用します。このアルゴリズムは、非ガウス性の高い射影に対応する特徴空間内の方向を見つけます。
+このステップでは、FastICA アルゴリズムを使用します。このアルゴリズムは、非ガウス性の高い射影に対応する特徴空間内の方向を見つけます。
 
 ```python
 ica = FastICA(random_state=rng, whiten="arbitrary-variance")

@@ -1,6 +1,6 @@
 # 导入必要的库并加载数据
 
-我们将首先导入必要的库，并从scikit-learn中加载数字数据集。
+我们将首先导入必要的库，并从 scikit-learn 中加载数字数据集。
 
 ```python
 import numpy as np

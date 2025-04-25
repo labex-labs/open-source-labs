@@ -5,7 +5,7 @@
 ```python
 from sklearn.svm import LinearSVC
 
-# 在原始特征上训练一个线性SVM
+# 在原始特征上训练一个线性 SVM
 lsvm = LinearSVC(dual="auto")
 lsvm.fit(X_train, y_train)
 lsvm_score = 100 * lsvm.score(X_test, y_test)

@@ -14,7 +14,7 @@ const unwind = (key, obj) => {
 };
 ```
 
-使用例:
+使用例：
 
 ```js
 unwind("b", { a: true, b: [1, 2] }); // [{ a: true, b: 1 }, { a: true, b: 2 }]

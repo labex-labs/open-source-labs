@@ -1,4 +1,4 @@
-# RibbonBoxImageクラスの作成
+# RibbonBoxImage クラスの作成
 
 このステップでは、実際のリボンボックスを作成するために使用される`RibbonBoxImage`クラスを作成します。
 

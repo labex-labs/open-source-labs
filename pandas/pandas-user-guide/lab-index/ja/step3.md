@@ -1,6 +1,6 @@
-# DataFrameの理解
+# DataFrame の理解
 
-さて、ここで先ほど作成したDataFrameについてもう少し理解してみましょう。
+さて、ここで先ほど作成した DataFrame についてもう少し理解してみましょう。
 
 ```python
 # Displaying the DataFrame

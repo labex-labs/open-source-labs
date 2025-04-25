@@ -1,6 +1,6 @@
 # 绘制结果
 
-最后，我们绘制基线以及离散和真实AdaBoost分类器的训练误差和测试误差。
+最后，我们绘制基线以及离散和真实 AdaBoost 分类器的训练误差和测试误差。
 
 ```python
 import matplotlib.pyplot as plt

@@ -8,7 +8,7 @@ triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),
                 < min_radius)
 ```
 
-解説:
+解説：
 
 - `Triangulation`は一連の点からデロネ三角分割を作成するクラスです。
 - `triang`は`Triangulation`クラスのインスタンスです。

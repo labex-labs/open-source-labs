@@ -123,7 +123,7 @@ python test_csv_reader.py
 
 ## 关于类方法的最后说明
 
-在 Python 中，类方法通常用作替代构造函数。你通常可以通过它们的名称来区分，因为它们的名称中通常包含 “from” 这个词。例如：
+在 Python 中，类方法通常用作替代构造函数。你通常可以通过它们的名称来区分，因为它们的名称中通常包含“from”这个词。例如：
 
 ```python
 # Some examples from Python's built-in types

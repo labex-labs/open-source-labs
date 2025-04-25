@@ -1,7 +1,7 @@
-# SVM分類器を作成してデータに適合させる
+# SVM 分類器を作成してデータに適合させる
 
 ```python
-C = 1.0  # SVM正則化パラメータ
+C = 1.0  # SVM 正則化パラメータ
 models = (
     svm.SVC(kernel="linear", C=C),
     svm.LinearSVC(C=C, max_iter=10000, dual="auto"),

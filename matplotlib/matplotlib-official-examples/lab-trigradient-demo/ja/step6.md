@@ -20,7 +20,7 @@ ax.set_title('Gradient Plot: Electrical Dipole')
 plt.show()
 ```
 
-解説:
+解説：
 
 - `fig`と`ax`はそれぞれグラフと軸のオブジェクトです。
 - `ax.set_aspect`は軸のアスペクト比を設定します。

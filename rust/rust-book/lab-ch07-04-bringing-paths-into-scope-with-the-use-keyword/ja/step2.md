@@ -2,7 +2,7 @@
 
 リスト 7-11 では、なぜ `use crate::front_of_house::hosting` を指定してから、`eat_at_restaurant` で `hosting::add_to_waitlist` を呼び出したのか、リスト 7-13 のように、同じ結果を得るために `add_to_waitlist` 関数までの `use` パスを指定しなかったのか疑問に思ったかもしれません。
 
-ファイル名: `src/lib.rs`
+ファイル名：`src/lib.rs`
 
 ```rust
 mod front_of_house {
@@ -24,7 +24,7 @@ pub fn eat_at_restaurant() {
 
 一方、`use` を使って構造体、列挙体、その他の項目を持ち込む場合、完全なパスを指定するのが慣用的です。リスト 7-14 は、標準ライブラリの `HashMap` 構造体をバイナリ クレートのスコープに持ち込む慣用的な方法を示しています。
 
-ファイル名: `src/main.rs`
+ファイル名：`src/main.rs`
 
 ```rust
 use std::collections::HashMap;
@@ -41,7 +41,7 @@ fn main() {
 
 この慣用的な書き方の例外は、同じ名前の 2 つの項目を `use` 文でスコープに持ち込む場合です。なぜなら、Rust はそれを許可していないからです。リスト 7-15 は、同じ名前で異なる親モジュールを持つ 2 つの `Result` 型をスコープに持ち込む方法と、それらを参照する方法を示しています。
 
-ファイル名: `src/lib.rs`
+ファイル名：`src/lib.rs`
 
 ```rust
 use std::fmt;

@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。`numpy`、`matplotlib`、およびscikit-learnの`RandomForestRegressor`、`train_test_split`、`MultiOutputRegressor`を使用します。
+まず、必要なライブラリをインポートする必要があります。`numpy`、`matplotlib`、および scikit-learn の`RandomForestRegressor`、`train_test_split`、`MultiOutputRegressor`を使用します。
 
 ```python
 import numpy as np

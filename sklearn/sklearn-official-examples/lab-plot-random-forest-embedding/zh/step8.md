@@ -21,11 +21,11 @@ ax.set_xlim(-1.4, 1.4)
 ax.set_xticks(())
 ax.set_yticks(())
 
-# 使用ExtraTreesClassifier变换网格
+# 使用 ExtraTreesClassifier 变换网格
 y_grid_pred = trees.predict_proba(np.c_[xx.ravel(), yy.ravel()])[:, 1]
 
 ax = plt.subplot(224)
-ax.set_title("ExtraTrees预测")
+ax.set_title("ExtraTrees 预测")
 ax.pcolormesh(xx, yy, y_grid_pred.reshape(xx.shape))
 ax.scatter(X[:, 0], X[:, 1], c=y, s=50, edgecolor="k")
 ax.set_ylim(-1.4, 1.4)

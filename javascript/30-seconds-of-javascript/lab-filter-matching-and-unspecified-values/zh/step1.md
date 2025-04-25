@@ -37,7 +37,7 @@ const data = [
 ];
 
 reducedFilter(data, ["id", "name"], (item) => item.age > 24);
-// 输出: [{ id: 2, name:'mike'}]
+// 输出：[{ id: 2, name:'mike'}]
 ```
 
 要开始练习编码，请打开终端/SSH 并输入 `node`。

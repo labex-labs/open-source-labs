@@ -1,6 +1,6 @@
 # 多項ロジスティック回帰モデルの決定境界の描画
 
-ここでは、scikit-learnの`DecisionBoundaryDisplay`関数を使って、多項ロジスティック回帰モデルの決定面を描画します。応答方法を`"predict"`に、カラーマップを`"plt.cm.Paired"`に設定し、学習ポイントも描画します。
+ここでは、scikit-learn の`DecisionBoundaryDisplay`関数を使って、多項ロジスティック回帰モデルの決定面を描画します。応答方法を`"predict"`に、カラーマップを`"plt.cm.Paired"`に設定し、学習ポイントも描画します。
 
 ```python
 _, ax = plt.subplots()

@@ -1,6 +1,6 @@
-# 执行t分布随机邻域嵌入（t-SNE）
+# 执行 t 分布随机邻域嵌入（t-SNE）
 
-最后，我们将执行t分布随机邻域嵌入（t-distributed Stochastic Neighbor Embedding，t-SNE）流形学习。t-SNE是一种技术，它寻求数据的低维表示，这种表示能保留各点之间的局部距离。
+最后，我们将执行 t 分布随机邻域嵌入（t-distributed Stochastic Neighbor Embedding，t-SNE）流形学习。t-SNE 是一种技术，它寻求数据的低维表示，这种表示能保留各点之间的局部距离。
 
 ```python
 t0 = time()

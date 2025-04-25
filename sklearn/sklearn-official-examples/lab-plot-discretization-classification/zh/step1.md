@@ -1,6 +1,6 @@
 # 导入库
 
-在这一步中，我们将导入本实验所需的库。我们将使用scikit-learn库进行机器学习任务，使用numpy进行数学运算，使用matplotlib进行数据可视化。
+在这一步中，我们将导入本实验所需的库。我们将使用 scikit-learn 库进行机器学习任务，使用 numpy 进行数学运算，使用 matplotlib 进行数据可视化。
 
 ```python
 import numpy as np

@@ -12,4 +12,4 @@ pub fn notify(item: &(impl Summary + Display)) {
 pub fn notify<T: Summary + Display>(item: &T) {
 ```
 
-2つのトレイト境界が指定されると、`notify` の本体は `summarize` を呼び出し、`{}` を使って `item` をフォーマットすることができます。
+2 つのトレイト境界が指定されると、`notify` の本体は `summarize` を呼び出し、`{}` を使って `item` をフォーマットすることができます。

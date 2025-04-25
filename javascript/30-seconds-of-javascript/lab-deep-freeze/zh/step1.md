@@ -1,6 +1,6 @@
-# 如何在JavaScript中深度冻结对象
+# 如何在 JavaScript 中深度冻结对象
 
-要在JavaScript中深度冻结一个对象，请遵循以下步骤：
+要在 JavaScript 中深度冻结一个对象，请遵循以下步骤：
 
 1. 使用 `Object.keys()` 获取传入对象的所有属性。
 2. 使用 `Array.prototype.forEach()` 遍历这些属性。

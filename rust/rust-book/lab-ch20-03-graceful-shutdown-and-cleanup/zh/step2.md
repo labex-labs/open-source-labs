@@ -1,6 +1,6 @@
 # 在线程池上实现 Drop 特性
 
-让我们从在线程池上实现 `Drop` 特性开始。当线程池被丢弃时，我们的线程应该全部调用 `join` 以确保它们完成工作。清单20-22展示了对 `Drop` 实现的首次尝试；这段代码目前还不能正常工作。
+让我们从在线程池上实现 `Drop` 特性开始。当线程池被丢弃时，我们的线程应该全部调用 `join` 以确保它们完成工作。清单 20-22 展示了对 `Drop` 实现的首次尝试；这段代码目前还不能正常工作。
 
 文件名：`src/lib.rs`
 
@@ -16,7 +16,7 @@ impl Drop for ThreadPool {
 }
 ```
 
-清单20-22：当线程池超出作用域时，让每个线程调用 join
+清单 20-22：当线程池超出作用域时，让每个线程调用 join
 
 首先，我们遍历线程池中的每个 `worker` \[1\]。这里我们使用 `&mut`，因为 `self` 是一个可变引用，并且我们还需要能够修改 `worker`。对于每个 `worker`，我们打印一条消息，表明这个特定的 `Worker` 实例正在关闭 \[2\]，然后我们在该 `Worker` 实例的线程上调用 `join` \[3\]。如果对 `join` 的调用失败，我们使用 `unwrap` 使 Rust 发生恐慌并进入非优雅关闭状态。
 
@@ -38,7 +38,7 @@ note: this function takes ownership of the receiver `self`, which moves
 `worker.thread`
 ```
 
-错误提示我们不能调用 `join`，因为我们对每个 `worker` 只有一个可变借用，而 `join` 会获取其参数的所有权。为了解决这个问题，我们需要将线程从拥有 `thread` 的 `Worker` 实例中移出，这样 `join` 才能消耗该线程。我们在清单17-15中就是这么做的：如果 `Worker` 持有一个 `Option<thread::JoinHandle<()>>`，而不是其他类型，我们就可以在 `Option` 上调用 `take` 方法，将值从 `Some` 变体中移出，并在其位置留下一个 `None` 变体。换句话说，正在运行的 `Worker` 在 `thread` 中会有一个 `Some` 变体，当我们想要清理一个 `Worker` 时，我们会用 `None` 替换 `Some`，这样 `Worker` 就没有线程可运行了。
+错误提示我们不能调用 `join`，因为我们对每个 `worker` 只有一个可变借用，而 `join` 会获取其参数的所有权。为了解决这个问题，我们需要将线程从拥有 `thread` 的 `Worker` 实例中移出，这样 `join` 才能消耗该线程。我们在清单 17-15 中就是这么做的：如果 `Worker` 持有一个 `Option<thread::JoinHandle<()>>`，而不是其他类型，我们就可以在 `Option` 上调用 `take` 方法，将值从 `Some` 变体中移出，并在其位置留下一个 `None` 变体。换句话说，正在运行的 `Worker` 在 `thread` 中会有一个 `Some` 变体，当我们想要清理一个 `Worker` 时，我们会用 `None` 替换 `Some`，这样 `Worker` 就没有线程可运行了。
 
 所以我们知道需要像这样更新 `Worker` 的定义：
 
@@ -115,4 +115,4 @@ impl Drop for ThreadPool {
 }
 ```
 
-如第17章所述，`Option` 上的 `take` 方法会取出 `Some` 变体并在其位置留下 `None`。我们使用 `if let` 来解构 `Some` 并获取线程 \[1\]；然后我们在线程上调用 `join` \[2\]。如果一个 `Worker` 实例的线程已经是 `None`，我们知道该 `Worker` 的线程已经被清理，所以在这种情况下什么也不会发生。
+如第 17 章所述，`Option` 上的 `take` 方法会取出 `Some` 变体并在其位置留下 `None`。我们使用 `if let` 来解构 `Some` 并获取线程 \[1\]；然后我们在线程上调用 `join` \[2\]。如果一个 `Worker` 实例的线程已经是 `None`，我们知道该 `Worker` 的线程已经被清理，所以在这种情况下什么也不会发生。

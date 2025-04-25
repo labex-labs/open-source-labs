@@ -1,6 +1,6 @@
 # 定义序列核
 
-我们定义一个 `SequenceKernel` 类，它继承自scikit-learn的 `Kernel` 和 `GenericKernelMixin` 类。这个核定义了可变长度序列之间的相似性度量。它通过R卷积来实现，这涉及到在一对字符串中的所有字母对之间对二元字母级核进行积分。然后，我们可以使用这个核在序列上执行回归和分类任务。
+我们定义一个 `SequenceKernel` 类，它继承自 scikit-learn 的 `Kernel` 和 `GenericKernelMixin` 类。这个核定义了可变长度序列之间的相似性度量。它通过 R 卷积来实现，这涉及到在一对字符串中的所有字母对之间对二元字母级核进行积分。然后，我们可以使用这个核在序列上执行回归和分类任务。
 
 ```python
 import numpy as np

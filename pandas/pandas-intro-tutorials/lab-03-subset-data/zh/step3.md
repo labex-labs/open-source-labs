@@ -6,6 +6,6 @@
 # 选择 'Age' 和 'Sex' 列
 age_sex = titanic[["Age", "Sex"]]
 
-# 显示前5行
+# 显示前 5 行
 age_sex.head()
 ```

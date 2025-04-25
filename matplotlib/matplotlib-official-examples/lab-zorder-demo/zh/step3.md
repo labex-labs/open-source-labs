@@ -1,4 +1,4 @@
-# 设置刻度和网格线的Zorder
+# 设置刻度和网格线的 Zorder
 
 我们可以使用 `set_axisbelow()` 方法或 `axes.axisbelow` 参数来设置刻度和网格线的 `zorder`。
 

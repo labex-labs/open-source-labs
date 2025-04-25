@@ -1,6 +1,6 @@
 # 添加另一文本
 
-使用PathPatch向图像中添加另一文本。使用以下代码添加另一文本：
+使用 PathPatch 向图像中添加另一文本。使用以下代码添加另一文本：
 
 ```python
 for usetex, ypos, string in [

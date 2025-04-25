@@ -7,7 +7,7 @@ const indexOfAll = (arr, val) =>
   arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
 ```
 
-使用例:
+使用例：
 
 ```js
 indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0, 3]

@@ -1,6 +1,6 @@
 # ラベルを追加してレイアウトを調整する
 
-matplotlib.pyplotのtitle、xlabel、およびylabel関数を使って、サブプロットにタイトルと軸ラベルを追加します。tight_layout関数を使ってサブプロットのレイアウトを調整します。
+matplotlib.pyplot の title、xlabel、および ylabel 関数を使って、サブプロットにタイトルと軸ラベルを追加します。tight_layout 関数を使ってサブプロットのレイアウトを調整します。
 
 ```python
 axs[0].set_title('Cosine with Radian X-Axis')

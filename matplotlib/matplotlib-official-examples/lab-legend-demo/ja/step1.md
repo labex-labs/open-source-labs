@@ -17,7 +17,7 @@ l1, = ax.plot(t2, np.exp(-t2))
 l2, l3 = ax.plot(t2, np.sin(2 * np.pi * t2), '--o', t1, np.log(1 + t1), '.')
 l4, = ax.plot(t2, np.exp(-t2) * np.sin(2 * np.pi * t2),'s-.')
 
-# 2つの線に対する凡例を作成
+# 2 つの線に対する凡例を作成
 ax.legend((l2, l4), ('oscillatory', 'damped'), loc='upper right', shadow=True)
 
 # グラフにラベルとタイトルを追加

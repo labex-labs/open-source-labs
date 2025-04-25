@@ -15,7 +15,7 @@ const randomHexColorCode = () => {
 
 4. ランダムな 16 進数カラーコードを生成するには、`randomHexColorCode()` 関数を呼び出します。
 
-例:
+例：
 
 ```js
 randomHexColorCode(); // '#e34155'

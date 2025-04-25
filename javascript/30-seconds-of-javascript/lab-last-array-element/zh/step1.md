@@ -1,6 +1,6 @@
-# 如何在JavaScript中获取数组的最后一个元素
+# 如何在 JavaScript 中获取数组的最后一个元素
 
-要开始编码，请打开终端/SSH并输入 `node`。以下函数返回数组中的最后一个元素：
+要开始编码，请打开终端/SSH 并输入 `node`。以下函数返回数组中的最后一个元素：
 
 ```js
 const last = (arr) => (arr && arr.length ? arr[arr.length - 1] : undefined);

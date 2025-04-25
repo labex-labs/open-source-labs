@@ -17,8 +17,8 @@ const nthElement = (arr, n = 0) =>
 この関数を次の例でテストできます。
 
 ```js
-nthElement(["a", "b", "c"], 1); // 出力: 'b'
-nthElement(["a", "b", "b"], -3); // 出力: 'a'
+nthElement(["a", "b", "c"], 1); // 出力：'b'
+nthElement(["a", "b", "b"], -3); // 出力：'a'
 ```
 
 これらの手順に従えば、JavaScript を使って配列の n 番目の要素を簡単に見つけることができます。

@@ -1,6 +1,6 @@
 # 更新関数を作成する
 
-更新関数は、FuncAnimationオブジェクトによって呼び出され、アニメーションの間に散布図を更新します。
+更新関数は、FuncAnimation オブジェクトによって呼び出され、アニメーションの間に散布図を更新します。
 
 ```python
 def update(frame_number):

@@ -13,17 +13,17 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 def bench_k_means(kmeans, name, data, labels):
-    """评估KMeans初始化方法的基准。
+    """评估 KMeans 初始化方法的基准。
 
     参数
     ----------
-    kmeans : KMeans实例
-        一个已设置好初始化的`KMeans`实例。
+    kmeans : KMeans 实例
+        一个已设置好初始化的 `KMeans` 实例。
     name : str
         赋予该策略的名称。它将用于在表格中展示结果。
-    data : 形状为(n_samples, n_features)的ndarray
+    data : 形状为 (n_samples, n_features) 的 ndarray
         要聚类的数据。
-    labels : 形状为(n_samples,)的ndarray
+    labels : 形状为 (n_samples,) 的 ndarray
         用于计算需要一些监督的聚类指标的标签。
     """
     t0 = time()

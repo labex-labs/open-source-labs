@@ -1,6 +1,6 @@
 # 估计协方差
 
-第二步是估计协方差。我们使用图形拉索交叉验证（GraphicalLassoCV）来学习稀疏精度矩阵。我们还将结果与莱杜瓦-沃尔夫（Ledoit-Wolf）估计器进行比较。
+第二步是估计协方差。我们使用图形拉索交叉验证（GraphicalLassoCV）来学习稀疏精度矩阵。我们还将结果与莱杜瓦 - 沃尔夫（Ledoit-Wolf）估计器进行比较。
 
 ```python
 from sklearn.covariance import GraphicalLassoCV, ledoit_wolf

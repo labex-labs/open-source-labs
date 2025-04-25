@@ -24,7 +24,7 @@ from sklearn.naive_bayes import MultinomialNB
 
 
 class ReutersParser(HTMLParser):
-    """SGMLファイルを解析し、1回に1つの文書を生成するためのユーティリティクラス。"""
+    """SGML ファイルを解析し、1 回に 1 つの文書を生成するためのユーティリティクラス。"""
 
     def __init__(self, encoding="latin-1"):
         HTMLParser.__init__(self)

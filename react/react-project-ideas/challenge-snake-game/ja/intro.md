@@ -1,3 +1,3 @@
 # はじめに
 
-このチャレンジでは、useState、useEffect、useRefなどのReactフックを使って、基本的なJS概念を駆使してヘビゲームを開発します。
+このチャレンジでは、useState、useEffect、useRef などの React フックを使って、基本的な JS 概念を駆使してヘビゲームを開発します。

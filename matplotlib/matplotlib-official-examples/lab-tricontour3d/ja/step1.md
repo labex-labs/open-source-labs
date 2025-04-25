@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-この実験に必要なライブラリをインポートして始めましょう。これにはMatplotlibとNumPyが含まれます。
+この実験に必要なライブラリをインポートして始めましょう。これには Matplotlib と NumPy が含まれます。
 
 ```python
 import matplotlib.pyplot as plt

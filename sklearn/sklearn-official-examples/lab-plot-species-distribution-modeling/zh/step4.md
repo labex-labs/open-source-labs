@@ -1,6 +1,6 @@
 # 创建物种集合物
 
-在这一步中，我们将创建一个包含特定生物体信息的集合物。我们将创建一个名为create_species_bunch的函数，该函数以物种名称、训练集、测试集、覆盖范围、x网格和y网格作为输入，并返回一个集合物对象。
+在这一步中，我们将创建一个包含特定生物体信息的集合物。我们将创建一个名为 create_species_bunch 的函数，该函数以物种名称、训练集、测试集、覆盖范围、x 网格和 y 网格作为输入，并返回一个集合物对象。
 
 ```python
 def create_species_bunch(species_name, train, test, coverages, xgrid, ygrid):

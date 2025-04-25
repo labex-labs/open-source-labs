@@ -5,7 +5,7 @@
 with cbook.get_sample_data('grace_hopper.jpg') as image_file:
     image = plt.imread(image_file)
 
-# 256x256の16ビット整数を使って別の画像を読み込む。
+# 256x256 の 16 ビット整数を使って別の画像を読み込む。
 w, h = 256, 256
 with cbook.get_sample_data('s1045.ima.gz') as datafile:
     s = datafile.read()
@@ -18,7 +18,7 @@ fig, ax = plt.subplot_mosaic([
 ], figsize=(7, 3.5))
 
 ax['hopper'].imshow(image)
-ax['hopper'].axis('off')  # x軸とy軸を消す
+ax['hopper'].axis('off')  # x 軸と y 軸を消す
 
 im = ax['mri'].imshow(A, cmap=plt.cm.hot, origin='upper', extent=extent)
 

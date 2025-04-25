@@ -54,7 +54,7 @@ type point struct {
 
 func main() {
 
-	// Go 提供了几个用于格式化一般 Go 值的打印 “动词”。
+	// Go 提供了几个用于格式化一般 Go 值的打印“动词”。
 	// 例如，这会打印我们 `point` 结构体的一个实例。
 	p := point{1, 2}
 	fmt.Printf("struct1: %v\n", p)

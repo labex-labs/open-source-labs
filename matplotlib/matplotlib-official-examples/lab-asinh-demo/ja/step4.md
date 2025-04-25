@@ -1,6 +1,6 @@
-# サンプルのy=xグラフにおける「symlog」と「asinh」の挙動を比較する
+# サンプルの y=x グラフにおける「symlog」と「asinh」の挙動を比較する
 
-サンプルのy=xグラフにおける「symlog」と「asinh」の挙動を比較します。同じグラフを2回プロットします。1回は「symlog」で、もう1回は「asinh」でプロットします。
+サンプルの y=x グラフにおける「symlog」と「asinh」の挙動を比較します。同じグラフを 2 回プロットします。1 回は「symlog」で、もう 1 回は「asinh」でプロットします。
 
 ```python
 fig1 = plt.figure()

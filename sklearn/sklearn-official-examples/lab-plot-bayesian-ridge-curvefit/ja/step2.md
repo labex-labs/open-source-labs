@@ -1,6 +1,6 @@
-# 3次多項式でフィットさせる
+# 3 次多項式でフィットさせる
 
-データを3次多項式を使ってフィットさせます。
+データを 3 次多項式を使ってフィットさせます。
 
 ```python
 from sklearn.linear_model import BayesianRidge

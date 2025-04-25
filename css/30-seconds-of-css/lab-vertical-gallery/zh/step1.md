@@ -133,4 +133,4 @@ slideGallery.addEventListener("scroll", (e) => scrollThumb());
 scrollThumb();
 ```
 
-请点击右下角的“Go Live”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。
+请点击右下角的“Go Live”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。

@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-このステップでは、Matplotlib、NumPy、およびMatplotlibのカラーを含む必要なライブラリをインポートします。
+このステップでは、Matplotlib、NumPy、および Matplotlib のカラーを含む必要なライブラリをインポートします。
 
 ```python
 import matplotlib.pyplot as plt

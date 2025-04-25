@@ -6,6 +6,6 @@ X = data.data
 y = data.target
 feature_names = data.feature_names
 
-# 创建一个DataFrame以便于数据操作
+# 创建一个 DataFrame 以便于数据操作
 df = pd.DataFrame(X, columns=feature_names)
 ```

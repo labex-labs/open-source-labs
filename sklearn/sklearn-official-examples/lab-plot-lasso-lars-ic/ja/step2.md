@@ -1,6 +1,6 @@
 # データの前処理
 
-StandardScalerメソッドを使ってデータセットをスケーリングし、AIC基準でLassoLarsIC推定器をフィットさせます。
+StandardScaler メソッドを使ってデータセットをスケーリングし、AIC 基準で LassoLarsIC 推定器をフィットさせます。
 
 ```python
 from sklearn.preprocessing import StandardScaler

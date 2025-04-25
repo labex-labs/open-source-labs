@@ -4,5 +4,5 @@
 
 - `dim` = データセットの特徴量の数
 - `n_classes` = データセットのクラスの数
-- `n_neighbors` = KNN分類器の近傍点の数
+- `n_neighbors` = KNN 分類器の近傍点の数
 - `random_state` = 再現性のための乱数シード

@@ -1,20 +1,20 @@
 # XML
 
-XMLにマッピングできる`Plant`という名前の構造体を作成する必要があります。この構造体は以下のフィールドを持つ必要があります。
+XML にマッピングできる`Plant`という名前の構造体を作成する必要があります。この構造体は以下のフィールドを持つ必要があります。
 
-- `Id` (int) - XML属性
-- `Name` (string) - ネストされたXML要素
-- `Origin` ([]string) - ネストされたXML要素
+- `Id` (int) - XML 属性
+- `Name` (string) - ネストされた XML 要素
+- `Origin` ([]string) - ネストされた XML 要素
 
-また、`Plant`構造体のスライスを含む`Nesting`という名前の構造体も作成する必要があります。`Nesting`構造体は`nesting`という名前のXML要素にマッピングされ、`Plant`構造体は`<parent><child>...</child></parent>`の下にネストされる必要があります。
+また、`Plant`構造体のスライスを含む`Nesting`という名前の構造体も作成する必要があります。`Nesting`構造体は`nesting`という名前の XML 要素にマッピングされ、`Plant`構造体は`<parent><child>...</child></parent>`の下にネストされる必要があります。
 
-次に、`Plant`と`Nesting`構造体をXMLにマーシャリングし、XMLデータを`Plant`構造体にアンマーシャリングするコードを書く必要があります。
+次に、`Plant`と`Nesting`構造体を XML にマーシャリングし、XML データを`Plant`構造体にアンマーシャリングするコードを書く必要があります。
 
-- `Plant`構造体は`plant`という名前のXML要素にマッピングされる必要があります。
-- `Plant`構造体の`Id`フィールドは`id`という名前のXML属性にマッピングされる必要があります。
-- `Plant`構造体の`Name`フィールドは`name`という名前のネストされたXML要素にマッピングされる必要があります。
-- `Plant`構造体の`Origin`フィールドは`origin`という名前のネストされたXML要素にマッピングされる必要があります。
-- `Nesting`構造体は`nesting`という名前のXML要素にマッピングされる必要があります。
+- `Plant`構造体は`plant`という名前の XML 要素にマッピングされる必要があります。
+- `Plant`構造体の`Id`フィールドは`id`という名前の XML 属性にマッピングされる必要があります。
+- `Plant`構造体の`Name`フィールドは`name`という名前のネストされた XML 要素にマッピングされる必要があります。
+- `Plant`構造体の`Origin`フィールドは`origin`という名前のネストされた XML 要素にマッピングされる必要があります。
+- `Nesting`構造体は`nesting`という名前の XML 要素にマッピングされる必要があります。
 - `Nesting`スライス内の`Plant`構造体は`<parent><child>...</child></parent>`の下にネストされる必要があります。
 
 ```sh
@@ -53,7 +53,7 @@ Plant id=27, name=Coffee, origin=[Ethiopia Brazil]
 以下が完全なコードです。
 
 ```go
-// Goは`encoding.xml`パッケージを使ってXMLおよびXMLに似た
+// Go は `encoding.xml` パッケージを使って XML および XML に似た
 // 形式に対する組み込みのサポートを提供しています。
 
 package main
@@ -63,10 +63,10 @@ import (
 	"fmt"
 )
 
-// PlantはXMLにマッピングされます。JSONの例と同様に、フィールドタグには
-// エンコーダとデコーダに対する指示が含まれています。ここではXMLパッケージの
-// いくつかの特別な機能を使っています。`XMLName`フィールド名はこの構造体を表す
-// XML要素の名前を指定します。`id,attr`は`Id`フィールドがXMLの
+// Plant は XML にマッピングされます。JSON の例と同様に、フィールドタグには
+// エンコーダとデコーダに対する指示が含まれています。ここでは XML パッケージの
+// いくつかの特別な機能を使っています。`XMLName` フィールド名はこの構造体を表す
+// XML 要素の名前を指定します。`id,attr`は `Id` フィールドが XML の
 // _属性_ であり、ネストされた要素ではないことを意味します。
 type Plant struct {
 	XMLName xml.Name `xml:"plant"`
@@ -84,16 +84,16 @@ func main() {
 	coffee := &Plant{Id: 27, Name: "Coffee"}
 	coffee.Origin = []string{"Ethiopia", "Brazil"}
 
-	// 私たちの植物を表すXMLを生成します。`MarshalIndent`を使って
+	// 私たちの植物を表す XML を生成します。`MarshalIndent` を使って
 	// より読みやすい出力を生成します。
 	out, _ := xml.MarshalIndent(coffee, " ", "  ")
 	fmt.Println(string(out))
 
-	// 出力に汎用的なXMLヘッダを追加するには、明示的に追加します。
+	// 出力に汎用的な XML ヘッダを追加するには、明示的に追加します。
 	fmt.Println(xml.Header + string(out))
 
-	// `Unmarshal`を使ってXMLで構成されたバイト列をデータ構造に
-	// パースします。XMLが不正またはPlantにマッピングできない場合、
+	// `Unmarshal` を使って XML で構成されたバイト列をデータ構造に
+	// パースします。XML が不正または Plant にマッピングできない場合、
 	// 記述的なエラーが返されます。
 	var p Plant
 	if err := xml.Unmarshal(out, &p); err!= nil {
@@ -104,8 +104,8 @@ func main() {
 	tomato := &Plant{Id: 81, Name: "Tomato"}
 	tomato.Origin = []string{"Mexico", "California"}
 
-	// `parent>child>plant`フィールドタグはエンコーダに指示して、
-	// すべての`plant`を`<parent><child>...</child></parent>`の下に
+	// `parent>child>plant` フィールドタグはエンコーダに指示して、
+	// すべての `plant`を`<parent><child>...</child></parent>` の下に
 	// ネストさせます。
 	type Nesting struct {
 		XMLName xml.Name `xml:"nesting"`

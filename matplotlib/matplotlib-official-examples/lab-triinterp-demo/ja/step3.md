@@ -1,6 +1,6 @@
-# 3次補間によるデータの補間
+# 3 次補間によるデータの補間
 
-3番目のステップは、3次補間法を使ってデータを補間することです。kindパラメータを'geom'または'min_E'に設定したCubicTriInterpolatorメソッドを使います。最後に、補間されたデータをプロットします。
+3 番目のステップは、3 次補間法を使ってデータを補間することです。kind パラメータを'geom'または'min_E'に設定した CubicTriInterpolator メソッドを使います。最後に、補間されたデータをプロットします。
 
 ```python
 # Interpolate using cubic method with kind=geom.

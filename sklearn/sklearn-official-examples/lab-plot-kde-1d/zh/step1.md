@@ -22,11 +22,11 @@ bins = np.linspace(-5, 10, 10)
 fig, ax = plt.subplots(2, 2, sharex=True, sharey=True)
 fig.subplots_adjust(hspace=0.05, wspace=0.05)
 
-# 绘制直方图1
+# 绘制直方图 1
 ax[0, 0].hist(X[:, 0], bins=bins, fc="#AAAAFF", density=True)
 ax[0, 0].text(-3.5, 0.31, "直方图")
 
-# 绘制直方图2
+# 绘制直方图 2
 ax[0, 1].hist(X[:, 0], bins=bins + 0.75, fc="#AAAAFF", density=True)
 ax[0, 1].text(-3.5, 0.31, "直方图，箱线图偏移")
 
@@ -48,11 +48,11 @@ for axi in ax.ravel():
     axi.set_xlim(-4, 9)
     axi.set_ylim(-0.02, 0.34)
 
-# 设置左列的y轴标签
+# 设置左列的 y 轴标签
 for axi in ax[:, 0]:
     axi.set_ylabel("归一化密度")
 
-# 设置底行的x轴标签
+# 设置底行的 x 轴标签
 for axi in ax[1, :]:
     axi.set_xlabel("x")
 

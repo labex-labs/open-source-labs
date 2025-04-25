@@ -15,7 +15,7 @@ def print_glyphs(path):
     パラメータ
     ----------
     path : str or None
-        フォントファイルへのパス。Noneの場合、Matplotlibのデフォルトフォントを使用します。
+        フォントファイルへのパス。None の場合、Matplotlib のデフォルトフォントを使用します。
     """
     if path is None:
         path = fm.findfont(fm.FontProperties())  # デフォルトフォント。
@@ -25,7 +25,7 @@ def print_glyphs(path):
     charmap = font.get_charmap()
     max_indices_len = len(str(max(charmap.values())))
 
-    print("このフォントフェイスには次のグリフが含まれています:")
+    print("このフォントフェイスには次のグリフが含まれています：")
     for char_code, glyph_index in charmap.items():
         char = chr(char_code)
         name = unicodedata.name(

@@ -1,6 +1,6 @@
 # 加载糖尿病数据集
 
-我们首先从scikit-learn中加载糖尿病数据集，并仅从数据集中选择一个特征。
+我们首先从 scikit-learn 中加载糖尿病数据集，并仅从数据集中选择一个特征。
 
 ```python
 import numpy as np

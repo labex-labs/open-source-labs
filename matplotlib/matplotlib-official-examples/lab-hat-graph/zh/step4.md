@@ -6,7 +6,7 @@
 fig, ax = plt.subplots()
 hat_graph(ax, xlabels, [playerA, playerB], ['Player A', 'Player B'])
 
-# 添加一些文本用于标签、标题和自定义x轴刻度标签等
+# 添加一些文本用于标签、标题和自定义 x 轴刻度标签等
 ax.set_xlabel('Games')
 ax.set_ylabel('Score')
 ax.set_ylim(0, 60)

@@ -8,8 +8,8 @@ y = [2, 4, 6, 8, 10]
 
 plt.plot(x, y)
 plt.title('我的图表')
-plt.xlabel('X轴标签')
-plt.ylabel('Y轴标签')
+plt.xlabel('X 轴标签')
+plt.ylabel('Y 轴标签')
 plt.savefig('my_plot.png')
 ```
 

@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-この実験に必要なライブラリをインポートして始めましょう。凝集型クラスタリングを実行するために、numpy、matplotlib、manifold、およびscikit-learnのdatasetsを使用します。
+この実験に必要なライブラリをインポートして始めましょう。凝集型クラスタリングを実行するために、numpy、matplotlib、manifold、および scikit-learn の datasets を使用します。
 
 ```python
 import numpy as np

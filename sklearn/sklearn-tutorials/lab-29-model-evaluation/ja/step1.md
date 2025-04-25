@@ -1,8 +1,8 @@
-# Estimatorスコアメソッド
+# Estimator スコアメソッド
 
-Estimatorスコアメソッドは、scikit - learnによって各Estimatorに対して提供される既定の評価基準です。これは、モデルの予測の品質を表すスコアを計算します。各Estimatorのドキュメントでこれに関する詳細を見つけることができます。
+Estimator スコアメソッドは、scikit - learn によって各 Estimator に対して提供される既定の評価基準です。これは、モデルの予測の品質を表すスコアを計算します。各 Estimator のドキュメントでこれに関する詳細を見つけることができます。
 
-以下は、Estimatorに対して`score`メソッドを使用する例です。
+以下は、Estimator に対して`score`メソッドを使用する例です。
 
 ```python
 from sklearn.linear_model import LogisticRegression

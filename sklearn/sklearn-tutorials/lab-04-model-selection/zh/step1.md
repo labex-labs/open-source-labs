@@ -20,7 +20,7 @@ score = svc.fit(X_digits[:-100], y_digits[:-100]).score(X_digits[-100:], y_digit
 ```python
 import numpy as np
 
-# 将数据拆分为3折
+# 将数据拆分为 3 折
 X_folds = np.array_split(X_digits, 3)
 y_folds = np.array_split(y_digits, 3)
 

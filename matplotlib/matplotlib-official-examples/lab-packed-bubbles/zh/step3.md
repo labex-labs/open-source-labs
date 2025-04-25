@@ -17,7 +17,7 @@ class BubbleChart:
 
         注意事项
         -----
-        如果 “area” 是排序的，结果可能看起来很奇怪。
+        如果“area”是排序的，结果可能看起来很奇怪。
         """
         area = np.asarray(area)
         r = np.sqrt(area / np.pi)

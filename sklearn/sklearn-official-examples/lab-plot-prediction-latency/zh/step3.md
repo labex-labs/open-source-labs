@@ -1,6 +1,6 @@
 # 基准测试：特征数量对预测延迟的影响
 
-我们将使用Scikit-Learn的 `Ridge()` 估计器来评估特征数量对预测时间的影响。我们会使用 `n_feature_influence()` 函数来评估这种影响，并使用 `plot_n_features_influence()` 函数来绘制预测时间随特征数量的变化情况。
+我们将使用 Scikit-Learn 的 `Ridge()` 估计器来评估特征数量对预测时间的影响。我们会使用 `n_feature_influence()` 函数来评估这种影响，并使用 `plot_n_features_influence()` 函数来绘制预测时间随特征数量的变化情况。
 
 ```python
 def n_feature_influence(estimators, n_train, n_test, n_features, percentile):

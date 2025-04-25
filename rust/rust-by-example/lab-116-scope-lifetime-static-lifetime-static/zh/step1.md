@@ -1,16 +1,16 @@
 # 静态生命周期
 
-Rust有一些保留的生命周期名称。其中之一是`'static`。你可能会在两种情况下遇到它：
+Rust 有一些保留的生命周期名称。其中之一是`'static`。你可能会在两种情况下遇到它：
 
 ```rust
-// 具有'static生命周期的引用：
+// 具有'static 生命周期的引用：
 let s: &'static str = "hello world";
 
-// 'static作为trait约束的一部分：
+// 'static 作为 trait 约束的一部分：
 fn generic<T>(x: T) where T: 'static {}
 ```
 
-两者相关但又略有不同，这是学习Rust时常见的混淆来源。以下是每种情况的一些示例：
+两者相关但又略有不同，这是学习 Rust 时常见的混淆来源。以下是每种情况的一些示例：
 
 ## 引用生命周期
 
@@ -24,10 +24,10 @@ fn generic<T>(x: T) where T: 'static {}
 以下是每种方法的示例：
 
 ```rust
-// 创建具有'static生命周期的常量。
+// 创建具有'static 生命周期的常量。
 static NUM: i32 = 18;
 
-// 返回对NUM的引用，其'static生命周期被强制转换为输入参数的生命周期。
+// 返回对 NUM 的引用，其'static 生命周期被强制转换为输入参数的生命周期。
 fn coerce_static<'a>(_: &'a i32) -> &'a i32 {
     &NUM
 }
@@ -38,14 +38,14 @@ fn main() {
         let static_string = "I'm in read-only memory";
         println!("static_string: {}", static_string);
 
-        // 当static_string超出作用域时，引用不再可用，但数据仍保留在二进制文件中。
+        // 当 static_string 超出作用域时，引用不再可用，但数据仍保留在二进制文件中。
     }
 
     {
-        // 创建一个整数用于coerce_static：
+        // 创建一个整数用于 coerce_static：
         let lifetime_num = 9;
 
-        // 将NUM的生命周期强制转换为lifetime_num的生命周期：
+        // 将 NUM 的生命周期强制转换为 lifetime_num 的生命周期：
         let coerced_static = coerce_static(&lifetime_num);
 
         println!("coerced_static: {}", coerced_static);
@@ -55,9 +55,9 @@ fn main() {
 }
 ```
 
-## trait约束
+## trait 约束
 
-作为trait约束，它意味着类型不包含任何非静态引用。例如，接收者可以根据需要长时间持有该类型，并且在丢弃它之前它永远不会变得无效。
+作为 trait 约束，它意味着类型不包含任何非静态引用。例如，接收者可以根据需要长时间持有该类型，并且在丢弃它之前它永远不会变得无效。
 
 重要的是要理解这意味着任何拥有的数据总是通过`'static`生命周期约束，但对该拥有数据的引用通常不是：
 
@@ -69,11 +69,11 @@ fn print_it( input: impl Debug + 'static ) {
 }
 
 fn main() {
-    // i是拥有的且不包含引用，因此它是'static的：
+    // i 是拥有的且不包含引用，因此它是'static 的：
     let i = 5;
     print_it(i);
 
-    // 哎呀，&i仅具有由main()作用域定义的生命周期，因此它不是'static的：
+    // 哎呀，&i 仅具有由 main() 作用域定义的生命周期，因此它不是'static 的：
     print_it(&i);
 }
 ```

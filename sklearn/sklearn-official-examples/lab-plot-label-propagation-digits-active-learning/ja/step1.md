@@ -1,6 +1,6 @@
 # 数字のデータセットを読み込む
 
-scikit-learnライブラリから数字のデータセットを読み込んで始めましょう。
+scikit-learn ライブラリから数字のデータセットを読み込んで始めましょう。
 
 ```python
 from sklearn import datasets

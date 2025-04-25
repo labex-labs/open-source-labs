@@ -1,6 +1,6 @@
 # 添加交互性
 
-我们通过创建一个工具提示来为绘图添加交互性，当鼠标悬停在补丁上时，该工具提示将被打开和关闭。我们通过从SVG文件创建一个XML树、隐藏工具提示，并为补丁分配 `onmouseover` 和 `onmouseout` 回调来实现这一点。我们还定义了在鼠标悬停在补丁上时将被调用的 `ShowTooltip` 和 `HideTooltip` 函数。
+我们通过创建一个工具提示来为绘图添加交互性，当鼠标悬停在补丁上时，该工具提示将被打开和关闭。我们通过从 SVG 文件创建一个 XML 树、隐藏工具提示，并为补丁分配 `onmouseover` 和 `onmouseout` 回调来实现这一点。我们还定义了在鼠标悬停在补丁上时将被调用的 `ShowTooltip` 和 `HideTooltip` 函数。
 
 ```python
 tree, xmlid = ET.XMLID(f.getvalue())

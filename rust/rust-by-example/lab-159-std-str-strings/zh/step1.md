@@ -1,17 +1,17 @@
 # 字符串
 
-Rust中有两种类型的字符串：`String` 和 `&str`。
+Rust 中有两种类型的字符串：`String` 和 `&str`。
 
-`String` 作为字节向量（`Vec<u8>`）存储，但保证始终是有效的UTF-8序列。`String` 在堆上分配，可增长且不以空字符结尾。
+`String` 作为字节向量（`Vec<u8>`）存储，但保证始终是有效的 UTF-8 序列。`String` 在堆上分配，可增长且不以空字符结尾。
 
-`&str` 是一个切片（`&[u8]`），它始终指向一个有效的UTF-8序列，并且可用于查看 `String`，就像 `&[T]` 是 `Vec<T>` 的视图一样。
+`&str` 是一个切片（`&[u8]`），它始终指向一个有效的 UTF-8 序列，并且可用于查看 `String`，就像 `&[T]` 是 `Vec<T>` 的视图一样。
 
 ```rust
 fn main() {
     // （所有类型注释都是多余的）
     // 指向只读内存中分配的字符串的引用
     let pangram: &'static str = "the quick brown fox jumps over the lazy dog";
-    println!("全字母句: {}", pangram);
+    println!("全字母句：{}", pangram);
 
     // 反向遍历单词，不分配新字符串
     println!("反向的单词");
@@ -37,15 +37,15 @@ fn main() {
     // 分配
     let chars_to_trim: &[char] = &[' ', ','];
     let trimmed_str: &str = string.trim_matches(chars_to_trim);
-    println!("使用的字符: {}", trimmed_str);
+    println!("使用的字符：{}", trimmed_str);
 
     // 在堆上分配一个字符串
     let alice = String::from("I like dogs");
     // 分配新内存并将修改后的字符串存储在那里
     let bob: String = alice.replace("dog", "cat");
 
-    println!("爱丽丝说: {}", alice);
-    println!("鲍勃说: {}", bob);
+    println!("爱丽丝说：{}", alice);
+    println!("鲍勃说：{}", bob);
 }
 ```
 
@@ -63,13 +63,13 @@ fn main() {
 fn main() {
     // 你可以使用转义字符通过十六进制值来编写字节...
     let byte_escape = "I'm writing \x52\x75\x73\x74!";
-    println!("你在做什么\x3F （\\x3F 表示?） {}", byte_escape);
+    println!("你在做什么\x3F（\\x3F 表示？） {}", byte_escape);
 
-    //...或者Unicode代码点。
+    //...或者 Unicode 代码点。
     let unicode_codepoint = "\u{211D}";
     let character_name = "\"DOUBLE-STRUCK CAPITAL R\"";
 
-    println!("Unicode字符 {} （U+211D） 被称为 {}",
+    println!("Unicode 字符 {} （U+211D）被称为 {}",
                 unicode_codepoint, character_name );
 
 
@@ -89,17 +89,17 @@ fn main() {
     println!("{}", raw_str);
 
     // 如果你在原始字符串中需要引号，添加一对 #
-    let quotes = r#"然后我说: "没有转义！""#;
+    let quotes = r#"然后我说："没有转义！""#;
     println!("{}", quotes);
 
     // 如果你在字符串中需要 "#，只需在分隔符中使用更多的 #。
-    // 你最多可以使用65535个 #。
+    // 你最多可以使用 65535 个 #。
     let longer_delimiter = r###"一个包含 "# 的字符串。甚至还有 "##！"###;
     println!("{}", longer_delimiter);
 }
 ```
 
-想要一个不是UTF-8的字符串？（记住，`str` 和 `String` 必须是有效的UTF-8）。或者也许你想要一个大部分是文本的字节数组？字节字符串来救场！
+想要一个不是 UTF-8 的字符串？（记住，`str` 和 `String` 必须是有效的 UTF-8）。或者也许你想要一个大部分是文本的字节数组？字节字符串来救场！
 
 ```rust
 use std::str;
@@ -109,13 +109,13 @@ fn main() {
     let bytestring: &[u8; 21] = b"this is a byte string";
 
     // 字节数组没有 `Display` 特性，所以打印它们有点受限
-    println!("一个字节字符串: {:?}", bytestring);
+    println!("一个字节字符串：{:?}", bytestring);
 
     // 字节字符串可以有字节转义...
     let escaped = b"\x52\x75\x73\x74 as bytes";
-    //...但没有Unicode转义
+    //...但没有 Unicode 转义
     // let escaped = b"\u{211D} is not allowed";
-    println!("一些转义后的字节: {:?}", escaped);
+    println!("一些转义后的字节：{:?}", escaped);
 
 
     // 原始字节字符串的工作方式与原始字符串相同
@@ -124,23 +124,23 @@ fn main() {
 
     // 将字节数组转换为 `str` 可能会失败
     if let Ok(my_str) = str::from_utf8(raw_bytestring) {
-        println!("作为文本也是一样: '{}'", my_str);
+        println!("作为文本也是一样：'{}'", my_str);
     }
 
     let _quotes = br#"你也可以使用 "更花哨" 的格式， \
                     就像普通的原始字符串一样"#;
 
-    // 字节字符串不必是UTF-8
-    let shift_jis = b"\x82\xe6\x82\xa8\x82\xb1\x82\xbb"; // "ようこそ" 的SHIFT-JIS编码
+    // 字节字符串不必是 UTF-8
+    let shift_jis = b"\x82\xe6\x82\xa8\x82\xb1\x82\xbb"; // "ようこそ" 的 SHIFT-JIS 编码
 
     // 但这样它们并不总是能转换为 `str`
     match str::from_utf8(shift_jis) {
-        Ok(my_str) => println!("转换成功: '{}'", my_str),
-        Err(e) => println!("转换失败: {:?}", e),
+        Ok(my_str) => println!("转换成功：'{}'", my_str),
+        Err(e) => println!("转换失败：{:?}", e),
     };
 }
 ```
 
-有关字符编码之间的转换，请查看encoding crate。
+有关字符编码之间的转换，请查看 encoding crate。
 
-Rust参考手册的“Tokens”一章中给出了编写字符串字面量和转义字符的更详细列表。
+Rust 参考手册的“Tokens”一章中给出了编写字符串字面量和转义字符的更详细列表。

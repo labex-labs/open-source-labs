@@ -74,16 +74,16 @@ func main() {
 	// 下面的两个循环测试我们的每个返回错误的函数。请注意，在 `if` 行上使用内联错误检查是 Go 代码中的常见习惯用法。
 	for _, i := range []int{7, 42} {
 		if r, e := f1(i); e!= nil {
-			fmt.Println("f1 运行失败:", e)
+			fmt.Println("f1 运行失败：", e)
 		} else {
-			fmt.Println("f1 运行成功:", r)
+			fmt.Println("f1 运行成功：", r)
 		}
 	}
 	for _, i := range []int{7, 42} {
 		if r, e := f2(i); e!= nil {
-			fmt.Println("f2 运行失败:", e)
+			fmt.Println("f2 运行失败：", e)
 		} else {
-			fmt.Println("f2 运行成功:", r)
+			fmt.Println("f2 运行成功：", r)
 		}
 	}
 

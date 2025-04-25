@@ -92,11 +92,11 @@ from structly import create_formatter, print_table
 print("Successfully imported all required symbols!")
 ```
 
-这些行尝试从 `structly` 包中导入 `Structure` 类、`read_csv_as_instances` 函数以及 `create_formatter` 和 `print_table` 函数。如果导入成功，程序将打印消息 “Successfully imported all required symbols!”。保存文件并退出编辑器。现在让我们运行这个测试：
+这些行尝试从 `structly` 包中导入 `Structure` 类、`read_csv_as_instances` 函数以及 `create_formatter` 和 `print_table` 函数。如果导入成功，程序将打印消息“Successfully imported all required symbols!”。保存文件并退出编辑器。现在让我们运行这个测试：
 
 ```bash
 cd ~/project
 python test_structly.py
 ```
 
-`cd ~/project` 命令将当前工作目录更改为项目目录。`python test_structly.py` 命令运行 `test_structly.py` 脚本。如果一切正常，你应该会在屏幕上看到消息 “Successfully imported all required symbols!”。
+`cd ~/project` 命令将当前工作目录更改为项目目录。`python test_structly.py` 命令运行 `test_structly.py` 脚本。如果一切正常，你应该会在屏幕上看到消息“Successfully imported all required symbols!”。

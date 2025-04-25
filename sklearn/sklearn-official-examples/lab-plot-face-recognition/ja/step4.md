@@ -10,4 +10,4 @@ X_train_pca = pca.transform(X_train)
 X_test_pca = pca.transform(X_test)
 ```
 
-主成分分析（Principal Component Analysis, PCA）を実行して、入力データから特徴量を抽出します。成分数を150に設定し、PCAモデルを訓練データに適合させます。次に、固有顔（eigenfaces）を取得し、入力データを主成分に変換します。
+主成分分析（Principal Component Analysis, PCA）を実行して、入力データから特徴量を抽出します。成分数を 150 に設定し、PCA モデルを訓練データに適合させます。次に、固有顔（eigenfaces）を取得し、入力データを主成分に変換します。

@@ -1,6 +1,6 @@
 # データセットをシャッフルする
 
-numpyの `permutation()` 関数を使用して、データセットをシャッフルします。
+numpy の `permutation()` 関数を使用して、データセットをシャッフルします。
 
 ```python
 rng = np.random.RandomState(0)

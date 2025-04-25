@@ -1,6 +1,6 @@
-# 使x轴线在y = 0处可见
+# 使 x 轴线在 y = 0 处可见
 
-现在我们要让x轴线在y = 0处可见。这通过将xzero轴设置为可见来实现。
+现在我们要让 x 轴线在 y = 0 处可见。这通过将 xzero 轴设置为可见来实现。
 
 ```python
 ax.axis["xzero"].set_visible(True)

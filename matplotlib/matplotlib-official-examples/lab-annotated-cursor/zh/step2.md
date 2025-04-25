@@ -1,6 +1,6 @@
 # 创建一个绘图
 
-我们使用NumPy的`linspace`函数创建一个简单的抛物线图，为x生成-5到5之间的1000个值，然后将y计算为x的平方。
+我们使用 NumPy 的`linspace`函数创建一个简单的抛物线图，为 x 生成 -5 到 5 之间的 1000 个值，然后将 y 计算为 x 的平方。
 
 ```python
 fig, ax = plt.subplots(figsize=(8, 6))

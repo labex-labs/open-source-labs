@@ -8,4 +8,4 @@ rs = np.random.RandomState(19680801)
 xyo = rs.randn(npts, 2)
 ```
 
-第三步是使用Numpy创建偏移量。我们将使用随机函数来创建偏移量。
+第三步是使用 Numpy 创建偏移量。我们将使用随机函数来创建偏移量。

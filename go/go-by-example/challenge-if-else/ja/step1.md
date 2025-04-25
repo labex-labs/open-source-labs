@@ -18,6 +18,6 @@ $ go run if-else.go
 8は4で割り切れます
 9は1桁です
 
-# Goには[三項演算子](https://en.wikipedia.org/wiki/%3F:)(ternary if)はありませんので、
-# 基本的な条件でも完全な`if`文を使用する必要があります。
+# Go には [三項演算子](https://en.wikipedia.org/wiki/%3F:)(ternary if) はありませんので、
+# 基本的な条件でも完全な `if` 文を使用する必要があります。
 ```

@@ -1,6 +1,6 @@
 # 绘制验证曲线
 
-我们将使用matplotlib绘制训练分数和验证分数作为gamma的函数。
+我们将使用 matplotlib 绘制训练分数和验证分数作为 gamma 的函数。
 
 ```python
 import matplotlib.pyplot as plt

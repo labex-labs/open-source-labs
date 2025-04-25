@@ -5,7 +5,7 @@
 ```python
 from sklearn.svm import SVC
 
-# 创建SVM分类器
+# 创建 SVM 分类器
 clf = SVC(kernel='linear')
 
 # 使用训练数据训练分类器

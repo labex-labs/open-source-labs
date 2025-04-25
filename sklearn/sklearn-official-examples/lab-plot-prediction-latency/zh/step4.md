@@ -1,6 +1,6 @@
 # 基准测试吞吐量
 
-我们将使用Scikit-Learn的 `predict()` 方法来测量不同估计器的吞吐量。我们会使用 `benchmark_throughputs()` 函数来进行吞吐量的基准测试，并使用 `plot_benchmark_throughput()` 函数来绘制不同估计器的预测吞吐量。
+我们将使用 Scikit-Learn 的 `predict()` 方法来测量不同估计器的吞吐量。我们会使用 `benchmark_throughputs()` 函数来进行吞吐量的基准测试，并使用 `plot_benchmark_throughput()` 函数来绘制不同估计器的预测吞吐量。
 
 ```python
 def benchmark_throughputs(configuration, duration_secs=0.1):

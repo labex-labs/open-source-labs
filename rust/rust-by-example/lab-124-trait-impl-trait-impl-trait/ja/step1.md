@@ -1,6 +1,6 @@
 # `impl Trait`
 
-`impl Trait`は2つの場所で使用できます。
+`impl Trait`は 2 つの場所で使用できます。
 
 1. 引数型として
 2. 戻り値型として
@@ -20,14 +20,14 @@ fn parse_csv_document<R: std::io::BufRead>(src: R) -> std::io::Result<Vec<Vec<St
                 // 行が正常に読み取られた場合、処理します。読み取れなかった場合はエラーを返します
                 line.split(',') // コンマで区切られた行を分割します
                  .map(|entry| String::from(entry.trim())) // 前後の空白を削除します
-                 .collect() // 1行のすべての文字列をVec<String>に収集します
+                 .collect() // 1 行のすべての文字列を Vec<String>に収集します
             })
         })
-     .collect() // すべての行をVec<Vec<String>>に収集します
+     .collect() // すべての行を Vec<Vec<String>>に収集します
 }
 ```
 
-`parse_csv_document`はジェネリックで、BufReadを実装する任意の型、たとえば`BufReader<File>`や`[u8]`を受け取ることができますが、`R`がどの型であるかは重要ではなく、`R`は`src`の型を宣言するためだけに使用されるため、関数は次のように書くこともできます。
+`parse_csv_document`はジェネリックで、BufRead を実装する任意の型、たとえば`BufReader<File>`や`[u8]`を受け取ることができますが、`R`がどの型であるかは重要ではなく、`R`は`src`の型を宣言するためだけに使用されるため、関数は次のように書くこともできます。
 
 ```rust
 fn parse_csv_document(src: impl std::io::BufRead) -> std::io::Result<Vec<Vec<String>>> {
@@ -38,14 +38,14 @@ fn parse_csv_document(src: impl std::io::BufRead) -> std::io::Result<Vec<Vec<Str
                 // 行が正常に読み取られた場合、処理します。読み取れなかった場合はエラーを返します
                 line.split(',') // コンマで区切られた行を分割します
                  .map(|entry| String::from(entry.trim())) // 前後の空白を削除します
-                 .collect() // 1行のすべての文字列をVec<String>に収集します
+                 .collect() // 1 行のすべての文字列を Vec<String>に収集します
             })
         })
-     .collect() // すべての行をVec<Vec<String>>に収集します
+     .collect() // すべての行を Vec<Vec<String>>に収集します
 }
 ```
 
-引数型として`impl Trait`を使用すると、使用する関数の形式を明示的に指定できないことに注意してください。つまり、`parse_csv_document::<std::io::Empty>(std::io::empty())`は2番目の例では機能しません。
+引数型として`impl Trait`を使用すると、使用する関数の形式を明示的に指定できないことに注意してください。つまり、`parse_csv_document::<std::io::Empty>(std::io::empty())`は 2 番目の例では機能しません。
 
 ## 戻り値型として
 
@@ -55,7 +55,7 @@ fn parse_csv_document(src: impl std::io::BufRead) -> std::io::Result<Vec<Vec<Str
 use std::iter;
 use std::vec::IntoIter;
 
-// この関数は2つの`Vec<i32>`を結合し、それを返すイテレータを返します。
+// この関数は 2 つの `Vec<i32>` を結合し、それを返すイテレータを返します。
 // その戻り値型がどれほど複雑であるか見てみましょう！
 fn combine_vecs_explicit_return_type(
     v: Vec<i32>,
@@ -86,10 +86,10 @@ fn main() {
 }
 ```
 
-より重要なことは、一部のRust型は書き出すことができません。たとえば、すべてのクロージャには独自の名前のない具体的な型があります。`impl Trait`構文が登場する前は、クロージャを返すためにヒープ上に割り当てる必要がありました。しかし今では、次のようにすべてを静的に行うことができます。
+より重要なことは、一部の Rust 型は書き出すことができません。たとえば、すべてのクロージャには独自の名前のない具体的な型があります。`impl Trait`構文が登場する前は、クロージャを返すためにヒープ上に割り当てる必要がありました。しかし今では、次のようにすべてを静的に行うことができます。
 
 ```rust
-// 入力に`y`を加える関数を返します
+// 入力に `y` を加える関数を返します
 fn make_adder_function(y: i32) -> impl Fn(i32) -> i32 {
     let closure = move |x: i32| { x + y };
     closure

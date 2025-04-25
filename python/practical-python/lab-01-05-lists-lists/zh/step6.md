@@ -10,9 +10,9 @@
 [1, 2, 3, 4, 5, 10, 11, 12, 13, 14]
 ```
 
-具体来说，列表并不像在MATLAB、Octave、R等语言中那样表示向量/矩阵。不过，有一些包可以帮助你进行相关操作（例如 [numpy](https://numpy.org)）。
+具体来说，列表并不像在 MATLAB、Octave、R 等语言中那样表示向量/矩阵。不过，有一些包可以帮助你进行相关操作（例如 [numpy](https://numpy.org)）。
 
-在本实验中，我们将探索Python的列表数据类型。在上一部分中，你处理过包含股票代码的字符串。
+在本实验中，我们将探索 Python 的列表数据类型。在上一部分中，你处理过包含股票代码的字符串。
 
 ```python
 >>> symbols = 'HPQ,AAPL,IBM,MSFT,YHOO,DOA,GOOG'

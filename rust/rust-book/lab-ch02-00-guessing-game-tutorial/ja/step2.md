@@ -1,6 +1,6 @@
 # 新しいプロジェクトのセットアップ
 
-新しいプロジェクトをセットアップするには、第1章で作成した`project`ディレクトリに移動し、Cargoを使って新しいプロジェクトを作成します。次のようにします。
+新しいプロジェクトをセットアップするには、第 1 章で作成した`project`ディレクトリに移動し、Cargo を使って新しいプロジェクトを作成します。次のようにします。
 
 ```bash
 cargo new guessing_game
@@ -25,7 +25,7 @@ https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 ```
 
-第1章で見たように、`cargo new`はあなたに「Hello, world!」プログラムを生成します。`src/main.rs`ファイルを見てみましょう。
+第 1 章で見たように、`cargo new`はあなたに「Hello, world!」プログラムを生成します。`src/main.rs`ファイルを見てみましょう。
 
 ファイル名：`src/main.rs`
 

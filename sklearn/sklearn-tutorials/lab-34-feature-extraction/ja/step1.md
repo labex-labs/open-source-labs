@@ -1,6 +1,6 @@
 # 辞書からの特徴の読み込み
 
-このステップでは、scikit-learnの`DictVectorizer`クラスを使って辞書から特徴を読み込む方法を学びます。
+このステップでは、scikit-learn の`DictVectorizer`クラスを使って辞書から特徴を読み込む方法を学びます。
 
 ```python
 from sklearn.feature_extraction import DictVectorizer

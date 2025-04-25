@@ -30,7 +30,7 @@ def _get_color_filter(name):
         其中 (M, N) 是图像尺寸，D 是颜色深度（RGB 为 3，RGBA 为 4）。透明度通道直接传递，其他情况下忽略。
     """
     if name not in _MENU_ENTRIES:
-        raise ValueError(f"不支持的滤镜名称: {name!r}")
+        raise ValueError(f"不支持的滤镜名称：{name!r}")
     name = _MENU_ENTRIES[name]
 
     if name is None:

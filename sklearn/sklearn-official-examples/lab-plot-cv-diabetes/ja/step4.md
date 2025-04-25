@@ -1,6 +1,6 @@
-# LassoCVを使ってalphaの選択を確認する
+# LassoCV を使って alpha の選択を確認する
 
-最後に、LassoCVを使ってalphaの選択にどれだけ信頼できるかを確認します。3分割のKFoldを使用します。
+最後に、LassoCV を使って alpha の選択にどれだけ信頼できるかを確認します。3 分割の KFold を使用します。
 
 ```python
 from sklearn.linear_model import LassoCV

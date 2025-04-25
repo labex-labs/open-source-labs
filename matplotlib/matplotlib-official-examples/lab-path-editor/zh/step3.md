@@ -1,4 +1,4 @@
-# 创建PathInteractor类
+# 创建 PathInteractor 类
 
 在这一步中，我们创建 `PathInteractor` 类，它处理路径对象的事件回调。这个类允许我们通过在绘图上拖动标记来交互式地编辑路径。
 

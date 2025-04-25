@@ -5,7 +5,7 @@
 ```python
 from sklearn.covariance import ShrunkCovariance
 
-# 创建一个ShrunkCovariance对象并将其拟合到数据上
+# 创建一个 ShrunkCovariance 对象并将其拟合到数据上
 shrunk_estimator = ShrunkCovariance().fit(data)
 
 # 计算收缩协方差矩阵

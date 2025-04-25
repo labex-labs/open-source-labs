@@ -4,7 +4,7 @@
 
 リスト 9-10 では、戻り値型が使用対象の値の型と互換性のない `main` 関数で `?` 演算子を使用した場合に得られるエラーを見てみましょう。
 
-ファイル名: `src/main.rs`
+ファイル名：`src/main.rs`
 
 ```rust
 use std::fs::File;
@@ -58,7 +58,7 @@ fn last_char_of_first_line(text: &str) -> Option<char> {
 
 幸いなことに、`main` は `Result<(), E>` を返すこともできます。リスト 9-12 には、リスト 9-10 のコードがありますが、`main` の戻り値型を `Result<(), Box<dyn Error>>` に変更し、末尾に `Ok(())` の戻り値を追加しています。このコードは今ではコンパイルされます。
 
-ファイル名: `src/main.rs`
+ファイル名：`src/main.rs`
 
 ```rust
 use std::error::Error;

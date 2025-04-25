@@ -1,6 +1,6 @@
 # データセットのインポート
 
-最初のステップは、次のコードを使ってscikit-learnから手書き数字データセットをインポートすることです。
+最初のステップは、次のコードを使って scikit-learn から手書き数字データセットをインポートすることです。
 
 ```python
 from sklearn import datasets

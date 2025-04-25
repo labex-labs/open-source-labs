@@ -1,6 +1,6 @@
-# 在JavaScript中初始化二维数组
+# 在 JavaScript 中初始化二维数组
 
-要在JavaScript中初始化二维数组，你可以使用以下代码：
+要在 JavaScript 中初始化二维数组，你可以使用以下代码：
 
 ```js
 const initialize2DArray = (width, height, value = null) => {
@@ -18,4 +18,4 @@ const initialize2DArray = (width, height, value = null) => {
 initialize2DArray(2, 2, 0); // [[0, 0], [0, 0]]
 ```
 
-这将创建一个宽度为2、高度为2且所有值都设置为0的二维数组。
+这将创建一个宽度为 2、高度为 2 且所有值都设置为 0 的二维数组。

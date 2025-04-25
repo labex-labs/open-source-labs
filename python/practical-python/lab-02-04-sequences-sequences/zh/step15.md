@@ -1,4 +1,4 @@
-# 练习2.16：使用zip()函数
+# 练习 2.16：使用 zip() 函数
 
 在文件`portfolio.csv`中，第一行包含列标题。在之前所有的代码中，我们都忽略了它们。
 
@@ -48,7 +48,7 @@ def portfolio_cost(filename):
                 nshares = int(record['shares'])
                 price = float(record['price'])
                 total_cost += nshares * price
-            # 这捕获了上面int()和float()转换中的错误
+            # 这捕获了上面 int() 和 float() 转换中的错误
             except ValueError:
                 print(f'第{rowno}行：错误的行：{row}')
   ...
@@ -75,8 +75,8 @@ name,date,time,shares,price
 
 如果你做对了，你会发现即使数据文件的列格式与之前完全不同，你的程序仍然可以工作。这很酷！
 
-这里所做的更改很细微，但很重要。`portfolio_cost()`不再硬编码为读取单一固定文件格式，新版本可以读取任何CSV文件并从中提取感兴趣的值。只要文件有所需的列，代码就会起作用。
+这里所做的更改很细微，但很重要。`portfolio_cost()`不再硬编码为读取单一固定文件格式，新版本可以读取任何 CSV 文件并从中提取感兴趣的值。只要文件有所需的列，代码就会起作用。
 
-修改你在2.3节中编写的`report.py`程序，使其使用相同的技术来提取列标题。
+修改你在 2.3 节中编写的`report.py`程序，使其使用相同的技术来提取列标题。
 
 尝试在`portfoliodate.csv`文件上运行`report.py`程序，看看它是否能产生与之前相同的答案。

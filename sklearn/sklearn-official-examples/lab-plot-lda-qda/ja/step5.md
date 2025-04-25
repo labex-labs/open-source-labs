@@ -1,6 +1,6 @@
-# QDAの共分散楕円をプロットする
+# QDA の共分散楕円をプロットする
 
-QDAの共分散楕円体をプロットします。
+QDA の共分散楕円体をプロットします。
 
 ```python
 def plot_qda_cov(qda, splot):

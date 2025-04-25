@@ -1,6 +1,6 @@
 # 決定境界を可視化する
 
-「uniform」と「distance」の2つの異なる重み値をループして、各重み値に対する決定境界をプロットします。分類を行うために、`neighbors`モジュールの`KNeighborsClassifier`クラスを使用します。
+「uniform」と「distance」の 2 つの異なる重み値をループして、各重み値に対する決定境界をプロットします。分類を行うために、`neighbors`モジュールの`KNeighborsClassifier`クラスを使用します。
 
 ```python
 n_neighbors = 15

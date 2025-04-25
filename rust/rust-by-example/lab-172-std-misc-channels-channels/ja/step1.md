@@ -1,6 +1,6 @@
 # チャネル
 
-Rustは、スレッド間の通信に非同期の「チャネル」を提供します。チャネルは、2つのエンドポイントである「送信者（Sender）」と「受信者（Receiver）」の間で情報を単方向に流すことができます。
+Rust は、スレッド間の通信に非同期の「チャネル」を提供します。チャネルは、2 つのエンドポイントである「送信者（Sender）」と「受信者（Receiver）」の間で情報を単方向に流すことができます。
 
 ```rust
 use std::sync::mpsc::{Sender, Receiver};
@@ -10,7 +10,7 @@ use std::thread;
 static NTHREADS: i32 = 3;
 
 fn main() {
-    // チャネルには2つのエンドポイントがあります。「Sender<T>」と「Receiver<T>」で、
+    // チャネルには 2 つのエンドポイントがあります。「Sender<T>」と「Receiver<T>」で、
     // ここで「T」は送信するメッセージの型です（型注釈は不要です）
     let (tx, rx): (Sender<i32>, Receiver<i32>) = mpsc::channel();
     let mut children = Vec::new();
@@ -19,7 +19,7 @@ fn main() {
         // 送信者エンドポイントはコピー可能です
         let thread_tx = tx.clone();
 
-        // 各スレッドはチャネルを通じてそのIDを送信します
+        // 各スレッドはチャネルを通じてその ID を送信します
         let child = thread::spawn(move || {
             // スレッドは「thread_tx」の所有権を取得します
             // 各スレッドはチャネルにメッセージをキューに入れます
@@ -35,7 +35,7 @@ fn main() {
     // ここで、すべてのメッセージが収集されます
     let mut ids = Vec::with_capacity(NTHREADS as usize);
     for _ in 0..NTHREADS {
-        // 「recv」メソッドはチャネルからメッセージを1つ選択します
+        // 「recv」メソッドはチャネルからメッセージを 1 つ選択します
         // 利用可能なメッセージがない場合、「recv」は現在のスレッドをブロックします
         ids.push(rx.recv());
     }

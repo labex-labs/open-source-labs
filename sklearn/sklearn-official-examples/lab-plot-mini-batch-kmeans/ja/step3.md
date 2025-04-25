@@ -1,6 +1,6 @@
-# MiniBatchKMeansを使ったクラスタリングの計算
+# MiniBatchKMeans を使ったクラスタリングの計算
 
-MiniBatchKMeansを使ってクラスタリングを計算します。
+MiniBatchKMeans を使ってクラスタリングを計算します。
 
 ```python
 from sklearn.cluster import MiniBatchKMeans

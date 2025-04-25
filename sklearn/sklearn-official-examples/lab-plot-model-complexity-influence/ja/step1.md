@@ -1,3 +1,3 @@
 # データの読み込み
 
-回帰用のデータセットであるdiabetes datasetと分類用のデータセットである20newsgroups datasetの両方を読み込みます。
+回帰用のデータセットである diabetes dataset と分類用のデータセットである 20newsgroups dataset の両方を読み込みます。

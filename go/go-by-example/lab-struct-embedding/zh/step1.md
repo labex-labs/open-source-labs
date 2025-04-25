@@ -21,7 +21,7 @@ describer: base with num=1
 ```go
 // Go 支持结构体和接口的 _嵌入_，
 // 以表达更无缝的类型 _组合_。
-// 这不要与[`//go:embed`](embed-directive)混淆，
+// 这不要与 [`//go:embed`](embed-directive) 混淆，
 // 它是 Go 1.16+ 版本中引入的一个 Go 指令，用于将
 // 文件和文件夹嵌入到应用程序二进制文件中。
 

@@ -1,6 +1,6 @@
 # 隙間を狭める
 
-NumPyの`indices`関数を使って各ボクセルの座標を変更することで、各ボクセル間の隙間を狭めます。
+NumPy の`indices`関数を使って各ボクセルの座標を変更することで、各ボクセル間の隙間を狭めます。
 
 ```python
 x, y, z = np.indices(np.array(filled_2.shape) + 1).astype(float) // 2

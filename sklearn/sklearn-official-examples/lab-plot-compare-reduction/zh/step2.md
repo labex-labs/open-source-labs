@@ -6,7 +6,7 @@
 pipe = Pipeline(
     [
         ("scaling", MinMaxScaler()),
-        # 降维阶段由param_grid填充
+        # 降维阶段由 param_grid 填充
         ("reduce_dim", "passthrough"),
         ("classify", LinearSVC(dual=False, max_iter=10000)),
     ]

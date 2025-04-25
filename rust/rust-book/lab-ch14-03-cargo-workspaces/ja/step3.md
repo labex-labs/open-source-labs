@@ -1,8 +1,8 @@
-# ワークスペース内の2番目のパッケージの作成
+# ワークスペース内の 2 番目のパッケージの作成
 
 次に、ワークスペース内に別のメンバーパッケージを作成して「add_one」と呼びましょう。トップレベルの`Cargo.toml`を変更して、`members`リストに「add_one」のパスを指定します。
 
-ファイル名: `Cargo.toml`
+ファイル名：`Cargo.toml`
 
 ```toml
 [workspace]
@@ -36,7 +36,7 @@ Created library $(add_one) package
 
 `add_one/src/lib.rs`ファイルに、`add_one`関数を追加しましょう。
 
-ファイル名: `add_one/src/lib.rs`
+ファイル名：`add_one/src/lib.rs`
 
 ```rust
 pub fn add_one(x: i32) -> i32 {
@@ -46,18 +46,18 @@ pub fn add_one(x: i32) -> i32 {
 
 これで、バイナリを持つ`adder`パッケージが、ライブラリを持つ`add_one`パッケージに依存するようになりました。まず、`adder/Cargo.toml`に`add_one`へのパス依存を追加する必要があります。
 
-ファイル名: `adder/Cargo.toml`
+ファイル名：`adder/Cargo.toml`
 
 ```tomlrust
 [dependencies]
 add_one = { path = "../add_one" }
 ```
 
-Cargoは、ワークスペース内のクレートが互いに依存することを想定していません。そのため、依存関係を明示する必要があります。
+Cargo は、ワークスペース内のクレートが互いに依存することを想定していません。そのため、依存関係を明示する必要があります。
 
-次に、`adder`クレートで`add_one`関数（`add_one`クレートから）を使用しましょう。`adder/src/main.rs`ファイルを開き、新しい`add_one`ライブラリクレートをスコープ内に持ち込むために、先頭に`use`行を追加します。その後、`main`関数を変更して`add_one`関数を呼び出します。以下はリスト14-7のようになります。
+次に、`adder`クレートで`add_one`関数（`add_one`クレートから）を使用しましょう。`adder/src/main.rs`ファイルを開き、新しい`add_one`ライブラリクレートをスコープ内に持ち込むために、先頭に`use`行を追加します。その後、`main`関数を変更して`add_one`関数を呼び出します。以下はリスト 14-7 のようになります。
 
-ファイル名: `adder/src/main.rs`
+ファイル名：`adder/src/main.rs`
 
 ```rust
 use add_one;
@@ -71,7 +71,7 @@ fn main() {
 }
 ```
 
-リスト14-7: `adder`クレートから`add_one`ライブラリクレートを使用する
+リスト 14-7: `adder`クレートから`add_one`ライブラリクレートを使用する
 
 トップレベルの`add`ディレクトリで`cargo build`を実行して、ワークスペースをビルドしましょう！
 

@@ -1,6 +1,6 @@
 # 卷
 
-「数据卷」（data volume）或「卷」（volume）是绕过Docker的「联合文件系统」的目录。
+「数据卷」（data volume）或「卷」（volume）是绕过 Docker 的「联合文件系统」的目录。
 
 卷有三种类型：
 
@@ -10,9 +10,9 @@
 
 ## 匿名卷
 
-让我们创建一个流行的开源NoSQL数据库CouchDB的实例，并使用「匿名卷」来存储数据库的数据文件。
+让我们创建一个流行的开源 NoSQL 数据库 CouchDB 的实例，并使用「匿名卷」来存储数据库的数据文件。
 
-要运行CouchDB实例，请使用Docker Hub上的CouchDB镜像，网址为[https://hub.docker.com/\_/couchdb](https://hub.docker.com/_/couchdb)。文档中提到，CouchDB的默认设置是「使用其自己的内部卷管理将数据库文件写入主机系统的磁盘」。
+要运行 CouchDB 实例，请使用 Docker Hub 上的 CouchDB 镜像，网址为[https://hub.docker.com/\_/couchdb](https://hub.docker.com/_/couchdb)。文档中提到，CouchDB 的默认设置是「使用其自己的内部卷管理将数据库文件写入主机系统的磁盘」。
 
 运行以下命令：
 
@@ -20,7 +20,7 @@
 docker run -d -p 5984:5984 --name my-couchdb -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
 ```
 
-CouchDB将创建一个匿名卷并生成一个哈希名称。检查主机系统上的卷：
+CouchDB 将创建一个匿名卷并生成一个哈希名称。检查主机系统上的卷：
 
 ```bash
 labex:~/ $ docker volume ls
@@ -51,7 +51,7 @@ $ docker volume inspect $VOLUME
 ]
 ```
 
-你会看到Docker已经在Docker主机文件系统的`/var/lib/docker/volumes/$VOLUME_NAME/_data`下创建并管理了一个卷。请注意，这不是主机上的路径，而是Docker管理的文件系统的一部分。
+你会看到 Docker 已经在 Docker 主机文件系统的`/var/lib/docker/volumes/$VOLUME_NAME/_data`下创建并管理了一个卷。请注意，这不是主机上的路径，而是 Docker 管理的文件系统的一部分。
 
 创建一个新数据库`mydb`，并插入一条带有「hello world」消息的新文档。
 
@@ -122,7 +122,7 @@ hello from busybox1
 / # exit
 ```
 
-Docker创建了你能够使用`--volumes-from`选项共享的匿名卷，并创建了一个新的匿名卷。
+Docker 创建了你能够使用`--volumes-from`选项共享的匿名卷，并创建了一个新的匿名卷。
 
 ```bash
 labex:~/ $ docker volume ls
@@ -144,7 +144,7 @@ clear
 
 ## 命名卷
 
-「命名卷」和「匿名卷」的相似之处在于，Docker管理它们的位置。然而，「命名卷」在挂载到容器目录时可以通过名称引用。如果你想在多个容器之间共享一个卷，这会很有帮助。
+「命名卷」和「匿名卷」的相似之处在于，Docker 管理它们的位置。然而，「命名卷」在挂载到容器目录时可以通过名称引用。如果你想在多个容器之间共享一个卷，这会很有帮助。
 
 首先，创建一个「命名卷」：
 
@@ -160,13 +160,13 @@ DRIVER VOLUME NAME
 local my-couchdb-data-volume
 ```
 
-现在使用「命名卷」创建名为`my-couchdb-name-vol`的CouchDB容器：
+现在使用「命名卷」创建名为`my-couchdb-name-vol`的 CouchDB 容器：
 
 ```bash
 docker run -d -p 59840:5984 --name my-couchdb-name-vol -v my-couchdb-data-volume:/opt/couchdb/data -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
 ```
 
-等待CouchDB容器运行并实例可用。
+等待 CouchDB 容器运行并实例可用。
 
 创建一个新数据库`mydb`，并插入一条带有「hello world」消息的新文档。
 
@@ -191,7 +191,7 @@ drwxr-xr-x 4 5984 5984 4096 Jan 23 07:30 shards
 / # exit
 ```
 
-你可以通过以特权权限运行`busybox`容器并将进程ID设置为`host`来检查Docker管理的文件系统中的卷，以检查主机系统，并浏览到Docker管理的目录。
+你可以通过以特权权限运行`busybox`容器并将进程 ID 设置为`host`来检查 Docker 管理的文件系统中的卷，以检查主机系统，并浏览到 Docker 管理的目录。
 
 ```bash
 docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
@@ -215,9 +215,9 @@ clear
 
 ## 主机卷
 
-当你希望直接从主机轻松访问卷目录，而不是使用Docker管理的目录时，可以创建一个「主机卷」。
+当你希望直接从主机轻松访问卷目录，而不是使用 Docker 管理的目录时，可以创建一个「主机卷」。
 
-让我们使用当前工作目录（通过命令`pwd`指示）中的一个名为`data`的目录，或者在主机上选择你自己的数据目录，例如`/home/couchdb/data`。如果`$(pwd)/data`目录尚不存在，我们让Docker创建它。我们将CouchDB容器内的「主机卷」挂载到容器目录`/opt/couchdb/data`，这是CouchDB的默认数据目录。
+让我们使用当前工作目录（通过命令`pwd`指示）中的一个名为`data`的目录，或者在主机上选择你自己的数据目录，例如`/home/couchdb/data`。如果`$(pwd)/data`目录尚不存在，我们让 Docker 创建它。我们将 CouchDB 容器内的「主机卷」挂载到容器目录`/opt/couchdb/data`，这是 CouchDB 的默认数据目录。
 
 运行以下命令：
 
@@ -236,7 +236,7 @@ drwxr-x--- 25 labex labex 4096 Aug 29 14:14..
 drwxr-xr-x 3 5984 5984 4096 Aug 29 14:14 data
 ```
 
-并且CouchDB已在此处创建数据文件：
+并且 CouchDB 已在此处创建数据文件：
 
 ```bash
 $ ls -al data
@@ -248,7 +248,7 @@ drwxr-xr-x 2 5984 5984 4096 Aug 29 14:14.delete
 -rw-r--r-- 1 5984 5984 8385 Aug 29 14:14 _nodes.couch
 ```
 
-还要检查现在Docker没有创建管理卷，因为我们现在使用的是「主机卷」。
+还要检查现在 Docker 没有创建管理卷，因为我们现在使用的是「主机卷」。
 
 ```bash
 docker volume ls
@@ -273,7 +273,7 @@ curl -X PUT -u admin:passw0rd1 http://127.0.0.1:5984/mydb
 curl -X PUT -u admin:passw0rd1 http://127.0.0.1:5984/mydb/1 -d '{"msg": "hello world"}'
 ```
 
-请注意，CouchDB创建了一个`shards`文件夹：
+请注意，CouchDB 创建了一个`shards`文件夹：
 
 ```bash
 $ ls -al data
@@ -307,7 +307,7 @@ drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15..
 -rw-r--r-- 1 5984 5984 8346 Aug 29 14:15 mydb.1693289721.couch
 ```
 
-[分片](https://docs.couchdb.org/en/stable/cluster/sharding.html)是数据库中数据的水平分区。将数据划分为分片并将每个分片的副本分布到集群中的不同节点，可以使数据在节点丢失时具有更高的耐久性。CouchDB会自动对数据库进行分片，并在节点之间分布文档子集。
+[分片](https://docs.couchdb.org/en/stable/cluster/sharding.html)是数据库中数据的水平分区。将数据划分为分片并将每个分片的副本分布到集群中的不同节点，可以使数据在节点丢失时具有更高的耐久性。CouchDB 会自动对数据库进行分片，并在节点之间分布文档子集。
 
 清理：
 

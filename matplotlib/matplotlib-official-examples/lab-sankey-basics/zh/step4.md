@@ -16,4 +16,4 @@ diagrams[-1].patch.set_hatch('/')
 plt.legend()
 ```
 
-这段代码将创建一个连接两个系统的桑基图。生成的图表将显示标题 “Two Systems”。
+这段代码将创建一个连接两个系统的桑基图。生成的图表将显示标题“Two Systems”。

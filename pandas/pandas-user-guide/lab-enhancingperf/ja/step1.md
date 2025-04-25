@@ -1,13 +1,13 @@
 # セットアップとサンプルデータの作成
 
-始める前に、必要なモジュールをインポートしてサンプルのDataFrameを作成しましょう。
+始める前に、必要なモジュールをインポートしてサンプルの DataFrame を作成しましょう。
 
 ```python
 # 必要なモジュールをインポート
 import pandas as pd
 import numpy as np
 
-# サンプルのDataFrameを作成
+# サンプルの DataFrame を作成
 df = pd.DataFrame(
     {
         "a": np.random.randn(1000),

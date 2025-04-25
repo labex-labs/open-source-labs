@@ -2,14 +2,14 @@
 
 積み重ねヒストグラムを作成する関数を定義します。この関数は以下のパラメータを取ります。
 
-- `ax`：アーティストを追加するAxes
+- `ax`：アーティストを追加する Axes
 - `stacked_data`：(M, N) の形状の配列。最初の次元を反復処理して、行方向にヒストグラムを計算します。
-- `sty_cycle`：各セットに適用するスタイルを表すCyclerまたは辞書の操作可能なオブジェクト
-- `bottoms`：配列、既定値: 0、下端の初期位置
-- `hist_func`：コール可能オブジェクト（オプション）。署名 `bin_vals, bin_edges = f(data)` を持たなければなりません。`bin_edges` は `bin_vals` よりも1つ長いことが期待されます。
-- `labels`：文字列のリスト（オプション）、各セットのラベル。指定されない場合、stacked_dataが配列の場合は 'default set {n}' が既定値となります。stacked_dataがマッピングで、labelsがNoneの場合はキーが既定値となります。stacked_dataがマッピングで、labelsが指定された場合は、列挙された列のみが描画されます。
+- `sty_cycle`：各セットに適用するスタイルを表す Cycler または辞書の操作可能なオブジェクト
+- `bottoms`：配列、既定値：0、下端の初期位置
+- `hist_func`：コール可能オブジェクト（オプション）。署名 `bin_vals, bin_edges = f(data)` を持たなければなりません。`bin_edges` は `bin_vals` よりも 1 つ長いことが期待されます。
+- `labels`：文字列のリスト（オプション）、各セットのラベル。指定されない場合、stacked_data が配列の場合は 'default set {n}' が既定値となります。stacked_data がマッピングで、labels が None の場合はキーが既定値となります。stacked_data がマッピングで、labels が指定された場合は、列挙された列のみが描画されます。
 - `plot_func`：コール可能オブジェクト（オプション）、ヒストグラムを描画するために呼び出す関数。署名 `ret = plot_func(ax, edges, top, bottoms=bottoms, label=label, **kwargs)` を持たなければなりません。
-- `plot_kwargs`：辞書（オプション）、描画関数に渡す任意の追加のキーワード引数。これは、描画関数のすべての呼び出しに対して同じで、sty_cycle内の値を上書きします。
+- `plot_kwargs`：辞書（オプション）、描画関数に渡す任意の追加のキーワード引数。これは、描画関数のすべての呼び出しに対して同じで、sty_cycle 内の値を上書きします。
 
 ```python
 def stack_hist(ax, stacked_data, sty_cycle, bottoms=None, hist_func=None, labels=None, plot_func=None, plot_kwargs=None):

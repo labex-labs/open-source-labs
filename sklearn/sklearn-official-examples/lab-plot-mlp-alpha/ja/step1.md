@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-この実験に必要なライブラリをインポートして始めましょう。合成データセットを作成するためにscikit-learnを、MLPモデルを構築するためにMLPClassifierを、データを標準化するためにStandardScalerを、変換と分類器のパイプラインを作成するためにmake_pipelineを使用します。
+この実験に必要なライブラリをインポートして始めましょう。合成データセットを作成するために scikit-learn を、MLP モデルを構築するために MLPClassifier を、データを標準化するために StandardScaler を、変換と分類器のパイプラインを作成するために make_pipeline を使用します。
 
 ```python
 import numpy as np

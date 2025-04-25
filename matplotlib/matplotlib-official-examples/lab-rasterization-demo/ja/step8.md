@@ -1,6 +1,6 @@
 # グラフを保存する
 
-グラフをpdfとeps形式で保存します。
+グラフを pdf と eps 形式で保存します。
 
 ```python
 plt.savefig("test_rasterization.pdf", dpi=150)

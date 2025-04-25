@@ -1,6 +1,6 @@
 # 数据预处理
 
-第一步是对数据集进行预处理。在本示例中，我们使用Scikit-Learn的`datasets`模块中可用的真实世界数据集。为了加快计算速度，一些数据集的样本大小被缩减。数据预处理后，数据集的目标将有两类，0表示内点，1表示离群点。`preprocess_dataset`函数返回数据和目标。
+第一步是对数据集进行预处理。在本示例中，我们使用 Scikit-Learn 的`datasets`模块中可用的真实世界数据集。为了加快计算速度，一些数据集的样本大小被缩减。数据预处理后，数据集的目标将有两类，0 表示内点，1 表示离群点。`preprocess_dataset`函数返回数据和目标。
 
 ```python
 import numpy as np
@@ -42,8 +42,8 @@ def preprocess_dataset(dataset_name):
         X = X[idx]  # 缩减样本大小
         y = y[idx]
 
-        # 内点是具有属性2的那些
-        # 离群点是具有属性4的那些
+        # 内点是具有属性 2 的那些
+        # 离群点是具有属性 4 的那些
         s = (y == 2) + (y == 4)
         X = X[s, :]
         y = y[s]
@@ -64,7 +64,7 @@ def preprocess_dataset(dataset_name):
             X_mal, y_mal = X[s], y[s]
             X_ben, y_ben = X[~s], y[~s]
 
-            # 下采样到39个点（9.8%的离群点）
+            # 下采样到 39 个点（9.8% 的离群点）
             idx = rng.choice(y_mal.shape[0], 39, replace=False)
             X_mal2 = X_mal[idx]
             y_mal2 = y_mal[idx]
@@ -73,7 +73,7 @@ def preprocess_dataset(dataset_name):
         if dataset_name == "cardiotocography":
             s = y == "3"
             y = s.astype(int)
-    # 0表示内点，1表示离群点
+    # 0 表示内点，1 表示离群点
     y = pd.Series(y, dtype="category")
     return (X, y)
 ```

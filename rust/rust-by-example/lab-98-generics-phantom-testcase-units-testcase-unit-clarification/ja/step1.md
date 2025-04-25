@@ -1,10 +1,10 @@
-# テストケース: 単位の明確化
+# テストケース：単位の明確化
 
 ファントム型パラメータを持つ`Add`を実装することで、単位変換の便利な方法を調べることができます。以下では`Add`トレイトを調べます。
 
 ```rust
-// この構築により: `Self + RHS = Output`
-// ただし、実装で指定されていない場合、RHSはデフォルトでSelfになります。
+// この構築により：`Self + RHS = Output`
+// ただし、実装で指定されていない場合、RHS はデフォルトで Self になります。
 pub trait Add<RHS = Self> {
     type Output;
 
@@ -18,7 +18,7 @@ impl<U> Add for T<U> {
 }
 ```
 
-全体の実装:
+全体の実装：
 
 ```rust
 use std::ops::Add;
@@ -65,7 +65,7 @@ fn main() {
     println!("one foot + one_foot = {:?} in", two_feet.0);
     println!("one meter + one_meter = {:?} mm", two_meters.0);
 
-    // 無意味な演算は失敗するはずです:
+    // 無意味な演算は失敗するはずです：
     // コンパイル時エラー: 型の不一致。
     //let one_feter = one_foot + one_meter;
 }

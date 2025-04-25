@@ -1,6 +1,6 @@
-# MNISTデータセットの読み込み
+# MNIST データセットの読み込み
 
-scikit-learnの`fetch_openml`関数を使ってMNISTデータセットを読み込みます。また、`train_samples`の数を5000に設定することで、データのサブセットを選択します。
+scikit-learn の`fetch_openml`関数を使って MNIST データセットを読み込みます。また、`train_samples`の数を 5000 に設定することで、データのサブセットを選択します。
 
 ```python
 # Turn down for faster convergence

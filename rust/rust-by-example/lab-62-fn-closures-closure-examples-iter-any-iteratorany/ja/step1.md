@@ -30,7 +30,7 @@ fn main() {
     // `into_iter()` は `vec2` とその要素を移動させるので、再利用できません。
     // println!("First element of vec2 is: {}", vec2[0]);
     // println!("vec2 len: {}", vec2.len());
-    // TODO: 上の2行をコメントアウト解除してコンパイラエラーを確認してください。
+    // TODO: 上の 2 行をコメントアウト解除してコンパイラエラーを確認してください。
 
     let array1 = [1, 2, 3];
     let array2 = [4, 5, 6];

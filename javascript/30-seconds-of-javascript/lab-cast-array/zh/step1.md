@@ -11,8 +11,8 @@ const castArray = (val) => (Array.isArray(val) ? val : [val]);
 以下是如何使用 `castArray` 的示例：
 
 ```js
-castArray("foo"); // 返回: ['foo']
-castArray([1]); // 返回: [1]
+castArray("foo"); // 返回：['foo']
+castArray([1]); // 返回：[1]
 ```
 
 要开始练习 JavaScript 编码，请打开终端或 SSH 并输入 `node`。

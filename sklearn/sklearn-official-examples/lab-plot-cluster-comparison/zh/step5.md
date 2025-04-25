@@ -40,7 +40,7 @@ for i_dataset, (dataset, algo_params) in enumerate(datasets):
     for name, algorithm in clustering_algorithms:
         t0 = time.time()
 
-        # 捕获与kneighbors_graph相关的警告
+        # 捕获与 kneighbors_graph 相关的警告
         with warnings.catch_warnings():
             warnings.filterwarnings(
                 "ignore",

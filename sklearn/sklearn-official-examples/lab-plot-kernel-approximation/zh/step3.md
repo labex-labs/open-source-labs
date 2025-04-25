@@ -1,4 +1,4 @@
-# RBF核支持向量机和线性支持向量机的决策面
+# RBF 核支持向量机和线性支持向量机的决策面
 
 ```python
 # 可视化决策面，投影到数据集的前两个主成分上
@@ -18,16 +18,16 @@ flat_grid = grid.reshape(-1, data.shape[1])
 
 # 绘图标题
 titles = [
-    "带rbf核的支持向量分类器",
-    "带傅里叶rbf特征映射的支持向量分类器（线性核）\nn_components=100",
-    "带Nystroem rbf特征映射的支持向量分类器（线性核）\nn_components=100",
+    "带 rbf 核的支持向量分类器",
+    "带傅里叶 rbf 特征映射的支持向量分类器（线性核）\nn_components=100",
+    "带 Nystroem rbf 特征映射的支持向量分类器（线性核）\nn_components=100",
 ]
 
 plt.figure(figsize=(18, 7.5))
 plt.rcParams.update({"font.size": 14})
 # 预测并绘图
 for i, clf in enumerate((kernel_svm, nystroem_approx_svm, fourier_approx_svm)):
-    # 绘制决策边界。为此，我们将为网格[x_min, x_max]x[y_min, y_max]中的每个点分配一种颜色。
+    # 绘制决策边界。为此，我们将为网格 [x_min, x_max]x[y_min, y_max] 中的每个点分配一种颜色。
     plt.subplot(1, 3, i + 1)
     Z = clf.predict(flat_grid)
 

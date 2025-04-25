@@ -1,6 +1,6 @@
 # 预处理文本数据
 
-在我们将文本数据用于机器学习之前，需要对其进行预处理。这涉及几个步骤，例如去除标点符号、将所有文本转换为小写，以及将文本分词为单个单词。我们可以使用scikit-learn的`CountVectorizer`和`TfidfTransformer`来执行这些预处理步骤。
+在我们将文本数据用于机器学习之前，需要对其进行预处理。这涉及几个步骤，例如去除标点符号、将所有文本转换为小写，以及将文本分词为单个单词。我们可以使用 scikit-learn 的`CountVectorizer`和`TfidfTransformer`来执行这些预处理步骤。
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer

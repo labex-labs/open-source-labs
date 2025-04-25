@@ -25,7 +25,7 @@ function updateTimer() {
   const currentTime = new Date();
   const elapsedSeconds = getSecondsDiffBetweenDates(startTime, currentTime);
 
-  // 将时间格式化为 小时:分钟:秒
+  // 将时间格式化为 小时：分钟:秒
   const hours = Math.floor(elapsedSeconds / 3600);
   const minutes = Math.floor((elapsedSeconds % 3600) / 60);
   const seconds = Math.floor(elapsedSeconds % 60);
@@ -70,7 +70,7 @@ node timer.js
 3. 定义 `updateTimer` 函数，该函数：
    - 获取当前时间。
    - 计算自起始时间以来经过的秒数。
-   - 将经过的时间格式化为 小时:分钟:秒。
+   - 将经过的时间格式化为 小时：分钟:秒。
    - 显示格式化后的时间。
 4. 使用 `setInterval` 每 1000 毫秒（1 秒）运行一次 `updateTimer` 函数。
 5. 使用 `setTimeout` 在 60000 毫秒（1 分钟）后停止计时器。

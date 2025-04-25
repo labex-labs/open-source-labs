@@ -14,4 +14,4 @@
 
 ![README 文件更改已应用](../assets/challenge-apply-latest-stash-step1-1.png)
 
-此命令将最新保存的更改重新应用到当前工作目录，并在 `README.md` 文件中添加新行 “这是一行新内容”。
+此命令将最新保存的更改重新应用到当前工作目录，并在 `README.md` 文件中添加新行“这是一行新内容”。

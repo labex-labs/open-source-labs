@@ -41,13 +41,13 @@ python manage.py shell
 >>> # 从'/'获取响应
 >>> response = client.get("/")
 Not Found: /
->>> # 我们应该从那个地址得到一个404；如果你看到的是
->>> # "Invalid HTTP_HOST header" 错误和一个400响应，你可能
+>>> # 我们应该从那个地址得到一个 404；如果你看到的是
+>>> # "Invalid HTTP_HOST header" 错误和一个 400 响应，你可能
 >>> # 省略了前面描述的 setup_test_environment() 调用。
 >>> response.status_code
 404
 >>> # 另一方面，我们应该期望在'/polls/'找到一些东西
->>> # 我们将使用'reverse()'而不是硬编码的URL
+>>> # 我们将使用'reverse()'而不是硬编码的 URL
 >>> from django.urls import reverse
 >>> response = client.get(reverse("polls:index"))
 >>> response.status_code
@@ -174,7 +174,7 @@ class QuestionIndexViewTests(TestCase):
 
 首先是一个问题快捷函数 `create_question`，用于减少创建问题过程中的重复操作。
 
-`test_no_questions` 不创建任何问题，但检查消息：“No polls are available.” 并验证 `latest_question_list` 为空。请注意，`django.test.TestCase` 类提供了一些额外的断言方法。在这些示例中，我们使用了 `~django.test.SimpleTestCase.assertContains()` 和 `~django.test.TransactionTestCase.assertQuerySetEqual()`。
+`test_no_questions` 不创建任何问题，但检查消息：“No polls are available.”并验证 `latest_question_list` 为空。请注意，`django.test.TestCase` 类提供了一些额外的断言方法。在这些示例中，我们使用了 `~django.test.SimpleTestCase.assertContains()` 和 `~django.test.TransactionTestCase.assertQuerySetEqual()`。
 
 在 `test_past_question` 中，我们创建一个问题并验证它出现在列表中。
 
@@ -203,7 +203,7 @@ class DetailView(generic.DetailView):
 class QuestionDetailViewTests(TestCase):
     def test_future_question(self):
         """
-        未来发布时间的问题的详细视图返回404未找到。
+        未来发布时间的问题的详细视图返回 404 未找到。
         """
         future_question = create_question(question_text="Future question.", days=5)
         url = reverse("polls:detail", args=(future_question.id,))

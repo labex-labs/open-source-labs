@@ -23,7 +23,7 @@ const unionBy = (a, b, fn) => {
 以下是一些使用 `unionBy` 函数的示例：
 
 ```js
-unionBy([2.1], [1.2, 2.3], Math.floor); // 输出: [2.1, 1.2]
+unionBy([2.1], [1.2, 2.3], Math.floor); // 输出：[2.1, 1.2]
 unionBy([{ id: 1 }, { id: 2 }], [{ id: 2 }, { id: 3 }], (x) => x.id);
-// 输出: [{ id: 1 }, { id: 2 }, { id: 3 }]
+// 输出：[{ id: 1 }, { id: 2 }, { id: 3 }]
 ```

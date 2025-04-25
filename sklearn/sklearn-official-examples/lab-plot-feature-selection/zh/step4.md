@@ -12,7 +12,7 @@ from sklearn.svm import LinearSVC
 clf = make_pipeline(MinMaxScaler(), LinearSVC(dual="auto"))
 clf.fit(X_train, y_train)
 print(
-    "未选择特征时的分类准确率: {:.3f}".format(
+    "未选择特征时的分类准确率：{:.3f}".format(
         clf.score(X_test, y_test)
     )
 )
@@ -29,7 +29,7 @@ clf_selected = make_pipeline(
 )
 clf_selected.fit(X_train, y_train)
 print(
-    "单变量特征选择后的分类准确率: {:.3f}".format(
+    "单变量特征选择后的分类准确率：{:.3f}".format(
         clf_selected.score(X_test, y_test)
     )
 )

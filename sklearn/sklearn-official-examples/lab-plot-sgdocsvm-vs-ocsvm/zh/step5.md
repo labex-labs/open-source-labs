@@ -28,7 +28,7 @@ plt.legend(
     loc="upper left"
 )
 plt.xlabel(
-    "训练误差: %d/%d; 新常规观测值误差: %d/%d; 新异常观测值误差: %d/%d"
+    "训练误差：%d/%d; 新常规观测值误差：%d/%d; 新异常观测值误差：%d/%d"
     % (
         n_error_train,
         X_train.shape[0],
@@ -64,7 +64,7 @@ plt.legend(
     loc="upper left"
 )
 plt.xlabel(
-    "训练误差: %d/%d; 新常规观测值误差: %d/%d; 新异常观测值误差: %d/%d"
+    "训练误差：%d/%d; 新常规观测值误差：%d/%d; 新异常观测值误差：%d/%d"
     % (
         n_error_train_sgd,
         X_train.shape[0],

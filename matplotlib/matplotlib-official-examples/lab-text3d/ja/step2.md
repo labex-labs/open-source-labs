@@ -1,6 +1,6 @@
-# 3Dプロットの作成
+# 3D プロットの作成
 
-`add_subplot` メソッドを使って3Dプロットを作成します。
+`add_subplot` メソッドを使って 3D プロットを作成します。
 
 ```python
 ax = plt.figure().add_subplot(projection='3d')

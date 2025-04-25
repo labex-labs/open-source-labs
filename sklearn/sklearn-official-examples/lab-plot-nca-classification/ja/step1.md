@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-必要なライブラリをインポートして始めましょう。最近傍法による分類とNCAを実行するためにscikit-learnを使用します。クラス決定境界をプロットするためにmatplotlibを使用します。
+必要なライブラリをインポートして始めましょう。最近傍法による分類と NCA を実行するために scikit-learn を使用します。クラス決定境界をプロットするために matplotlib を使用します。
 
 ```python
 import matplotlib.pyplot as plt

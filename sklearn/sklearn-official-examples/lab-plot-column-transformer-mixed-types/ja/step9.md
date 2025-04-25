@@ -1,4 +1,4 @@
-# データ型に基づいて列を選択してColumnTransformerを使用する
+# データ型に基づいて列を選択して ColumnTransformer を使用する
 
 このステップでは、データ型に基づいて列を選択して`ColumnTransformer`を使用します。列を選択するために`make_column_selector`を使用します。
 

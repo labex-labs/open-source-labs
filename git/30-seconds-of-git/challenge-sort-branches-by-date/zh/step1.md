@@ -7,7 +7,7 @@
 对于这个挑战，我们使用来自 `https://github.com/labex-labs/git-playground` 的仓库。
 
 1. 克隆仓库，导航到该目录并配置身份信息。
-2. 创建一个名为 `one` 的分支，创建一个名为 `hello.txt` 的文件，并使用提交消息 “hello.txt” 提交它。
+2. 创建一个名为 `one` 的分支，创建一个名为 `hello.txt` 的文件，并使用提交消息“hello.txt”提交它。
 3. 切换到名为 `master` 的分支，并创建一个名为 `two` 的分支。
 4. 现在，按日期对分支进行排序。
 

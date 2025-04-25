@@ -1,6 +1,6 @@
 # 计算验证分数
 
-我们将使用scikit-learn中的`validation_curve`函数来计算具有不同gamma值的支持向量机（SVM）分类器的训练分数和验证分数。
+我们将使用 scikit-learn 中的`validation_curve`函数来计算具有不同 gamma 值的支持向量机（SVM）分类器的训练分数和验证分数。
 
 ```python
 from sklearn.svm import SVC

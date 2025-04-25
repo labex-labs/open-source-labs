@@ -1,6 +1,6 @@
 # 曲面を描画する
 
-このステップでは、Matplotlibの `plot_surface()` 関数を使って曲面を描画します。曲面の色を設定するために、カラーマップ `YlGnBu_r` を使います。
+このステップでは、Matplotlib の `plot_surface()` 関数を使って曲面を描画します。曲面の色を設定するために、カラーマップ `YlGnBu_r` を使います。
 
 ```python
 fig = plt.figure()

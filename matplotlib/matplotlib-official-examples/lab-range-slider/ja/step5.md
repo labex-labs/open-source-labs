@@ -4,8 +4,8 @@
 
 ```python
 def update(val):
-    # RangeSliderによってコールバックに渡されるvalは
-    # (min, max)のタプルになります
+    # RangeSlider によってコールバックに渡される val は
+    # (min, max) のタプルになります
 
     # 画像のカラーマップを更新する
     im.norm.vmin = val[0]

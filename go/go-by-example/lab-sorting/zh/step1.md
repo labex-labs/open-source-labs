@@ -38,17 +38,17 @@ func main() {
 	// 返回新的切片。
 	strs := []string{"c", "a", "b"}
 	sort.Strings(strs)
-	fmt.Println("字符串:", strs)
+	fmt.Println("字符串：", strs)
 
 	// 对 `int` 进行排序的示例。
 	ints := []int{7, 2, 4}
 	sort.Ints(ints)
-	fmt.Println("整数:   ", ints)
+	fmt.Println("整数：  ", ints)
 
 	// 我们还可以使用 `sort` 检查切片是否
 	// 已经按顺序排列。
 	s := sort.IntsAreSorted(ints)
-	fmt.Println("已排序: ", s)
+	fmt.Println("已排序：", s)
 }
 
 ```

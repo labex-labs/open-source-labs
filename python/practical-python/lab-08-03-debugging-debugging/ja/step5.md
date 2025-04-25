@@ -5,7 +5,7 @@
 ```python
 def some_function():
  ...
-    breakpoint()      # デバッガに入る (Python 3.7以降)
+    breakpoint()      # デバッガに入る (Python 3.7 以降)
  ...
 ```
 

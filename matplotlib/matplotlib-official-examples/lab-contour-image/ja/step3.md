@@ -1,6 +1,6 @@
 # 等高線画像の作成
 
-このステップでは、Matplotlibの`contour`と`contourf`関数を使って等高線画像を作成します。
+このステップでは、Matplotlib の`contour`と`contourf`関数を使って等高線画像を作成します。
 
 ```python
 # Boost the upper limit to avoid truncation errors.

@@ -1,10 +1,10 @@
 # 部署更改
 
-“你好，世界！” 这个应用程序有点过时了，让我们更新一下应用程序，使其显示 “你好，美丽的世界！”。
+“你好，世界！”这个应用程序有点过时了，让我们更新一下应用程序，使其显示“你好，美丽的世界！”。
 
 ## 更新 `app.py`
 
-在 `app.py` 中，将字符串 “Hello World” 替换为 “Hello Beautiful World！”。你可以使用以下命令更新文件。（复制粘贴整个代码块）
+在 `app.py` 中，将字符串“Hello World”替换为“Hello Beautiful World！”。你可以使用以下命令更新文件。（复制粘贴整个代码块）
 
 ```bash
 echo 'from flask import Flask
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 docker image build -t $DOCKERHUB_USERNAME/python-hello-world.
 ```
 
-注意步骤 1 - 3 显示 “使用缓存”。Docker 镜像的这些层已经构建过，`docker image build` 将使用缓存中的这些层，而不是重新构建它们。
+注意步骤 1 - 3 显示“使用缓存”。Docker 镜像的这些层已经构建过，`docker image build` 将使用缓存中的这些层，而不是重新构建它们。
 
 ```bash
 docker push $DOCKERHUB_USERNAME/python-hello-world

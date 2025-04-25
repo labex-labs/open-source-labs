@@ -7,7 +7,7 @@ estimator = Estimator(param1=1, param2=2)
 print(estimator.param1)
 ```
 
-出力:
+出力：
 
 ```
 1

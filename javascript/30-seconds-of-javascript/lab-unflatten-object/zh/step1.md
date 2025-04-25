@@ -1,8 +1,8 @@
-# 如何在JavaScript中扁平化对象
+# 如何在 JavaScript 中扁平化对象
 
-要在JavaScript中使用带键路径的对象来实现扁平化，可按以下步骤操作：
+要在 JavaScript 中使用带键路径的对象来实现扁平化，可按以下步骤操作：
 
-1. 打开终端/SSH并输入 `node` 以开始练习编码。
+1. 打开终端/SSH 并输入 `node` 以开始练习编码。
 
 2. 使用嵌套的 `Array.prototype.reduce()` 将扁平路径转换为叶节点。
 
@@ -31,7 +31,7 @@ const unflattenObject = (obj) =>
   }, {});
 ```
 
-你可以使用 `unflattenObject` 函数在JavaScript中扁平化对象：
+你可以使用 `unflattenObject` 函数在 JavaScript 中扁平化对象：
 
 ```js
 unflattenObject({ "a.b.c": 1, d: 1 }); // { a: { b: { c: 1 } }, d: 1 }

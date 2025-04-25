@@ -1,6 +1,6 @@
 # 理論的な境界（続き）
 
-2番目のグラフは、許容可能な歪み `eps` を増やすことで、与えられたサンプル数 `n_samples` に対して最小次元数 `n_components` を減らすことができることを示しています。
+2 番目のグラフは、許容可能な歪み `eps` を増やすことで、与えられたサンプル数 `n_samples` に対して最小次元数 `n_components` を減らすことができることを示しています。
 
 ```python
 # range of admissible distortions

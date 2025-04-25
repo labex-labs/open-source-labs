@@ -1,6 +1,6 @@
-# SimpleImputerを使った欠損値の補完
+# SimpleImputer を使った欠損値の補完
 
-Scikit-Learnの`SimpleImputer`クラスを使って、平均値と中央値の戦略を用いて欠損値を補完します。
+Scikit-Learn の`SimpleImputer`クラスを使って、平均値と中央値の戦略を用いて欠損値を補完します。
 
 ```python
 score_simple_imputer = pd.DataFrame()

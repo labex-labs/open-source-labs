@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-numpy、matplotlib、およびDecisionTreeRegressorを含む必要なライブラリとモジュールをインポートします。
+numpy、matplotlib、および DecisionTreeRegressor を含む必要なライブラリとモジュールをインポートします。
 
 ```python
 import numpy as np

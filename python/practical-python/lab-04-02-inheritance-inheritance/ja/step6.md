@@ -18,7 +18,7 @@ class MyStock(Stock):
 
 前のバージョンを呼び出すには `super()` を使用します。
 
-_注意: Python 2 では、構文がもっと冗長でした。_
+_注意：Python 2 では、構文がもっと冗長でした。_
 
 ```python
 actual_cost = super(MyStock, self).cost()

@@ -13,7 +13,7 @@ def survey(results, category_names):
     category_names : list of str
         类别标签。
     """
-    # 将结果和类别转换为numpy数组
+    # 将结果和类别转换为 numpy 数组
     labels = list(results.keys())
     data = np.array(list(results.values()))
 

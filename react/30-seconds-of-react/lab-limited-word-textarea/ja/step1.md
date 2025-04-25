@@ -48,7 +48,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-変更内容:
+変更内容：
 
 - コードの各部分が何を行うかを説明するコメントを追加しました。
 - `setFormattedContent` のロジックを単純化して、より簡潔にしました。

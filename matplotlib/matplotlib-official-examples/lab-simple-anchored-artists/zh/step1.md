@@ -1,6 +1,6 @@
 # 导入库
 
-首先，你需要导入Matplotlib和必要的模块。
+首先，你需要导入 Matplotlib 和必要的模块。
 
 ```python
 import matplotlib.pyplot as plt

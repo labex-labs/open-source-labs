@@ -1,6 +1,6 @@
-# PCAの基底を学習する
+# PCA の基底を学習する
 
-線形PCAとKernel PCAの両方を使ってPCAの基底を学習します。Kernel PCAは、放射状基底関数（RBF）カーネルを使って基底を学習します。
+線形 PCA と Kernel PCA の両方を使って PCA の基底を学習します。Kernel PCA は、放射状基底関数（RBF）カーネルを使って基底を学習します。
 
 ```python
 from sklearn.decomposition import PCA, KernelPCA

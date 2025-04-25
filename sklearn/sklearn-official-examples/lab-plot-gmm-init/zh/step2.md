@@ -4,7 +4,7 @@
 
 ```python
 def get_initial_means(X, init_params, r):
-    # 运行一个max_iter=0的高斯混合模型以输出初始化均值
+    # 运行一个 max_iter=0 的高斯混合模型以输出初始化均值
     gmm = GaussianMixture(
         n_components=4, init_params=init_params, tol=1e-9, max_iter=0, random_state=r
     ).fit(X)

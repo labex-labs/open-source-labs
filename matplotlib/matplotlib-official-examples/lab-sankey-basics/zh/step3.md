@@ -20,4 +20,4 @@ diagrams[0].texts[-1].set_color('r')
 diagrams[0].text.set_fontweight('bold')
 ```
 
-这段代码将创建一个具有更长路径、中间有一个标签以及其他自定义参数的桑基图。生成的图表将显示标题 “Flow Diagram of a Widget”。
+这段代码将创建一个具有更长路径、中间有一个标签以及其他自定义参数的桑基图。生成的图表将显示标题“Flow Diagram of a Widget”。

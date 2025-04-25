@@ -15,6 +15,6 @@
 python -m django --version
 ```
 
-如果安装了 Django，你应该会看到安装的版本。如果没有安装，你会收到一个错误消息，提示 “No module named django”。
+如果安装了 Django，你应该会看到安装的版本。如果没有安装，你会收到一个错误消息，提示“No module named django”。
 
 本教程是为支持 Python 3.10 及更高版本的 Django 编写的。如果 Django 版本不匹配，你可以使用此页面右下角的版本切换器参考适用于你版本的 Django 的教程，或者将 Django 更新到最新版本。

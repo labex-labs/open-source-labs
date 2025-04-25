@@ -8,7 +8,7 @@ def adjust_spines(ax, spines):
     根据指定的轴脊位置调整轴脊的位置。
 
     参数：
-        ax (Axes)：要调整轴脊的Matplotlib Axes对象。
+        ax (Axes)：要调整轴脊的 Matplotlib Axes 对象。
         spines (字符串列表)：所需的轴脊位置。有效选项为'left'（左）、'right'（右）、'top'（上）、'bottom'（下）。
 
     返回：
@@ -16,7 +16,7 @@ def adjust_spines(ax, spines):
     """
     for loc, spine in ax.spines.items():
         if loc in spines:
-            spine.set_position(('outward', 10))  # 将轴脊向外移动10个点
+            spine.set_position(('outward', 10))  # 将轴脊向外移动 10 个点
         else:
             spine.set_color('none')  # 不绘制轴脊
 

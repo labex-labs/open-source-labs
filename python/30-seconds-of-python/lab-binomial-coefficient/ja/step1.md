@@ -1,6 +1,6 @@
 # 二項係数
 
-2つの整数 `n` と `k` を引数にとり、`n` と `k` の二項係数を返す `binomial_coefficient(n, k)` という関数を作成します。この関数は、二項係数を計算するために `math.comb()` メソッドを使用する必要があります。
+2 つの整数 `n` と `k` を引数にとり、`n` と `k` の二項係数を返す `binomial_coefficient(n, k)` という関数を作成します。この関数は、二項係数を計算するために `math.comb()` メソッドを使用する必要があります。
 
 ```python
 from math import comb

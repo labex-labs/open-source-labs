@@ -1,6 +1,6 @@
 # パーミュテーション特徴量重要度の計算
 
-次に、scikit - learnの`permutation_importance`関数を使ってパーミュテーション特徴量重要度を計算します。この関数は、訓練済みのモデル、検証セット、および特徴量を入れ替える回数を入力として受け取ります。
+次に、scikit - learn の`permutation_importance`関数を使ってパーミュテーション特徴量重要度を計算します。この関数は、訓練済みのモデル、検証セット、および特徴量を入れ替える回数を入力として受け取ります。
 
 ```python
 from sklearn.inspection import permutation_importance

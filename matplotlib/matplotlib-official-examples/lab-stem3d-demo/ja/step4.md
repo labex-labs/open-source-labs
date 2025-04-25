@@ -1,6 +1,6 @@
 # プロットをカスタマイズする
 
-このステップでは、`bottom`パラメータを使ってベースラインを変更し、`linefmt`、`markerfmt`、`basefmt`パラメータを使って形式を変更することで、3Dのステムプロットをカスタマイズします。
+このステップでは、`bottom`パラメータを使ってベースラインを変更し、`linefmt`、`markerfmt`、`basefmt`パラメータを使って形式を変更することで、3D のステムプロットをカスタマイズします。
 
 ```python
 fig, ax = plt.subplots(subplot_kw=dict(projection='3d'))

@@ -1,6 +1,6 @@
 # 导入库
 
-首先，我们需要为本实验导入必要的库，包括scikit-learn。
+首先，我们需要为本实验导入必要的库，包括 scikit-learn。
 
 ```python
 import numpy as np

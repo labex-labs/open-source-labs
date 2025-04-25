@@ -1,6 +1,6 @@
-# 练习3.3：读取CSV文件
+# 练习 3.3：读取 CSV 文件
 
-首先，让我们专注于将CSV文件读取为字典列表的问题。在 `fileparse_3.3.py` 文件中，定义一个如下所示的函数：
+首先，让我们专注于将 CSV 文件读取为字典列表的问题。在 `fileparse_3.3.py` 文件中，定义一个如下所示的函数：
 
 ```python
 # fileparse_3.3.py
@@ -8,7 +8,7 @@ import csv
 
 def parse_csv(filename):
     '''
-    将CSV文件解析为记录列表
+    将 CSV 文件解析为记录列表
     '''
     with open(filename) as f:
         rows = csv.reader(f)
@@ -25,7 +25,7 @@ def parse_csv(filename):
     return records
 ```
 
-此函数将CSV文件读取为字典列表，同时隐藏了打开文件、用 `csv` 模块包装它、忽略空行等细节。
+此函数将 CSV 文件读取为字典列表，同时隐藏了打开文件、用 `csv` 模块包装它、忽略空行等细节。
 
 试试看：
 

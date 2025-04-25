@@ -1,6 +1,6 @@
-# DBSCANを使ってデータをクラスタリングする
+# DBSCAN を使ってデータをクラスタリングする
 
-異なるepsilon値でDBSCANを使ってデータをクラスタリングします。この例では、epsilonを0.5と2に設定します。
+異なる epsilon 値で DBSCAN を使ってデータをクラスタリングします。この例では、epsilon を 0.5 と 2 に設定します。
 
 ```python
 labels_050 = cluster_optics_dbscan(

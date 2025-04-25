@@ -2,13 +2,13 @@
 
 实现一个工作池，它通过 `jobs` 通道接收任务，并通过 `results` 通道发送相应的结果。工作池应该有多个并发实例，并且每个工作线程应该为每个任务休眠一秒，以模拟耗时的任务。
 
-- 使用Go语言的goroutine和通道来实现工作池。
+- 使用 Go 语言的 goroutine 和通道来实现工作池。
 - 工作池应该有多个并发实例。
 - 每个工作线程应该为每个任务休眠一秒，以模拟耗时的任务。
 - 工作池应该通过 `jobs` 通道接收任务，并通过 `results` 通道发送相应的结果。
 
 ```sh
-# 我们运行的程序展示了5个任务由不同的工作线程执行。尽管总工作量约为5秒，但程序仅耗时约2秒，因为有3个工作线程并发运行。
+# 我们运行的程序展示了 5 个任务由不同的工作线程执行。尽管总工作量约为 5 秒，但程序仅耗时约 2 秒，因为有 3 个工作线程并发运行。
 $ time go run worker-pools.go
 worker 1 started job 1
 worker 2 started job 2
@@ -27,7 +27,7 @@ real 0m2.358s
 以下是完整代码：
 
 ```go
-// 在这个示例中，我们将研究如何使用Go语言的goroutine和通道来实现一个 _工作池_。
+// 在这个示例中，我们将研究如何使用 Go 语言的 goroutine 和通道来实现一个 _工作池_。
 
 package main
 
@@ -48,23 +48,23 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 
 func main() {
 
-	// 为了使用我们的工作线程池，我们需要向它们发送任务并收集结果。为此我们创建2个通道。
+	// 为了使用我们的工作线程池，我们需要向它们发送任务并收集结果。为此我们创建 2 个通道。
 	const numJobs = 5
 	jobs := make(chan int, numJobs)
 	results := make(chan int, numJobs)
 
-	// 启动3个工作线程，最初它们会被阻塞，因为还没有任务。
+	// 启动 3 个工作线程，最初它们会被阻塞，因为还没有任务。
 	for w := 1; w <= 3; w++ {
 		go worker(w, jobs, results)
 	}
 
-	// 这里我们发送5个 `jobs`，然后 `关闭` 该通道，以表明这就是我们所有的任务。
+	// 这里我们发送 5 个 `jobs`，然后 `关闭` 该通道，以表明这就是我们所有的任务。
 	for j := 1; j <= numJobs; j++ {
 		jobs <- j
 	}
 	close(jobs)
 
-	// 最后我们收集所有任务的结果。这也确保了工作线程的goroutine已经完成。另一种等待多个goroutine完成的方法是使用 [WaitGroup](waitgroups)。
+	// 最后我们收集所有任务的结果。这也确保了工作线程的 goroutine 已经完成。另一种等待多个 goroutine 完成的方法是使用 [WaitGroup](waitgroups)。
 	for a := 1; a <= numJobs; a++ {
 		<-results
 	}

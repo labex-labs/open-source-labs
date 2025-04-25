@@ -1,6 +1,6 @@
 # 绘制结果
 
-我们将使用Matplotlib绘制系数和误差随正则化强度变化的函数图像。
+我们将使用 Matplotlib 绘制系数和误差随正则化强度变化的函数图像。
 
 ```python
 plt.figure(figsize=(20, 6))

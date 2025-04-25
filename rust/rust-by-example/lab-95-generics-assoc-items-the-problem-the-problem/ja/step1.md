@@ -9,7 +9,7 @@
 ```rust
 struct Container(i32, i32);
 
-// コンテナ内に2つの項目が格納されているかどうかをチェックするtrait。
+// コンテナ内に 2 つの項目が格納されているかどうかをチェックする trait。
 // また、最初または最後の値を取得します。
 trait Contains<A, B> {
     fn contains(&self, _: &A, _: &B) -> bool; // 明示的に `A` と `B` が必要です。
@@ -18,7 +18,7 @@ trait Contains<A, B> {
 }
 
 impl Contains<i32, i32> for Container {
-    // 格納されている数値が等しい場合はtrue。
+    // 格納されている数値が等しい場合は true。
     fn contains(&self, number_1: &i32, number_2: &i32) -> bool {
         (&self.0 == number_1) && (&self.1 == number_2)
     }

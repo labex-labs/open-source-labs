@@ -4,10 +4,10 @@
 
 - `ax`：要添加艺术家对象的坐标轴
 - `stacked_data`：一个形状为 (M, N) 的数组。将对第一维进行迭代，按行计算直方图
-- `sty_cycle`：一个Cycler对象或可操作的字典，应用于每组的样式
-- `bottoms`：一个数组，默认值为0，底部的初始位置
+- `sty_cycle`：一个 Cycler 对象或可操作的字典，应用于每组的样式
+- `bottoms`：一个数组，默认值为 0，底部的初始位置
 - `hist_func`：一个可调用对象，可选。必须具有签名 `bin_vals, bin_edges = f(data)`。预期 `bin_edges` 比 `bin_vals` 长一个
-- `labels`：一个字符串列表，可选，每组的标签。如果未给出，且 `stacked_data` 是数组，则默认为 'default set {n}'。如果 `stacked_data` 是映射且 `labels` 为None，则默认为键。如果 `stacked_data` 是映射且给出了 `labels`，则只绘制列出的列
+- `labels`：一个字符串列表，可选，每组的标签。如果未给出，且 `stacked_data` 是数组，则默认为 'default set {n}'。如果 `stacked_data` 是映射且 `labels` 为 None，则默认为键。如果 `stacked_data` 是映射且给出了 `labels`，则只绘制列出的列
 - `plot_func`：一个可调用对象，可选，用于绘制直方图的函数。必须具有签名 `ret = plot_func(ax, edges, top, bottoms=bottoms, label=label, **kwargs)`
 - `plot_kwargs`：一个字典，可选，要传递给绘图函数的任何额外关键字参数。这对于绘图函数的所有调用都是相同的，并且将覆盖 `sty_cycle` 中的值
 
@@ -22,10 +22,10 @@ def stack_hist(ax, stacked_data, sty_cycle, bottoms=None, hist_func=None, labels
     stacked_data : 数组或映射
         一个形状为 (M, N) 的数组。将对第一维进行迭代，按行计算直方图
 
-    sty_cycle : Cycler或可操作的字典
+    sty_cycle : Cycler 或可操作的字典
         应用于每组的样式
 
-    bottoms : 数组，默认值为0
+    bottoms : 数组，默认值为 0
         底部的初始位置
 
     hist_func : 可调用对象，可选
@@ -37,7 +37,7 @@ def stack_hist(ax, stacked_data, sty_cycle, bottoms=None, hist_func=None, labels
 
         如果未给出，且 `stacked_data` 是数组，则默认为 'default set {n}'
 
-        如果 *stacked_data* 是映射，且 *labels* 为None，则默认为键。
+        如果 *stacked_data* 是映射，且 *labels* 为 None，则默认为键。
 
         如果 *stacked_data* 是映射且 *labels* 为给定，则只绘制列出的列。
 

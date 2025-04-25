@@ -1,6 +1,6 @@
-# Matplotlibをインポートしてテキストを定義する
+# Matplotlib をインポートしてテキストを定義する
 
-このステップでは、Matplotlibをインポートし、異なるフォントを使って描画するテキストを定義します。
+このステップでは、Matplotlib をインポートし、異なるフォントを使って描画するテキストを定義します。
 
 ```python
 import matplotlib.pyplot as plt

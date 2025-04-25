@@ -8,10 +8,10 @@ from sklearn.model_selection import GridSearchCV
 # 定义一个参数值网格
 Cs = np.logspace(-6, -1, 10)
 
-# 使用支持向量机分类器和参数网格创建一个GridSearchCV对象
+# 使用支持向量机分类器和参数网格创建一个 GridSearchCV 对象
 clf = GridSearchCV(estimator=svc, param_grid=dict(C=Cs), n_jobs=-1)
 
-# 在训练数据上拟合GridSearchCV对象
+# 在训练数据上拟合 GridSearchCV 对象
 clf.fit(X_digits[:1000], y_digits[:1000])
 
 print(clf.best_score_)

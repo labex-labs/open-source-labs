@@ -12,14 +12,14 @@ from matplotlib.ticker import MaxNLocator
 # 将这些值设置得更小以提高分辨率
 dx, dy = 0.05, 0.05
 
-# 为x和y边界生成2个二维网格
+# 为 x 和 y 边界生成 2 个二维网格
 y, x = np.mgrid[slice(1, 5 + dy, dy),
                 slice(1, 5 + dx, dx)]
 
 z = np.sin(x)**10 + np.cos(10 + y*x) * np.cos(x)
 
-# x和y是边界，因此z应该是这些边界内的值。
-# 因此，从z数组中删除最后一个值。
+# x 和 y 是边界，因此 z 应该是这些边界内的值。
+# 因此，从 z 数组中删除最后一个值。
 z = z[:-1, :-1]
 levels = MaxNLocator(nbins=15).tick_values(z.min(), z.max())
 
@@ -43,7 +43,7 @@ cf = ax1.contourf(x[:-1, :-1] + dx/2.,
 fig.colorbar(cf, ax=ax1)
 ax1.set_title('contourf with levels')
 
-# 调整子图之间的间距，使`ax1`的标题和`ax0`的刻度标签不重叠
+# 调整子图之间的间距，使 `ax1`的标题和`ax0` 的刻度标签不重叠
 fig.tight_layout()
 
 plt.show()

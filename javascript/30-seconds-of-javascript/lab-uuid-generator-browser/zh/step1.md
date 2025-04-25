@@ -1,10 +1,10 @@
-# 在浏览器中生成UUID
+# 在浏览器中生成 UUID
 
-要在浏览器中生成符合 [RFC4122](https://www.ietf.org/rfc/rfc4122.txt) 版本4的UUID，请按以下步骤操作：
+要在浏览器中生成符合 [RFC4122](https://www.ietf.org/rfc/rfc4122.txt) 版本 4 的 UUID，请按以下步骤操作：
 
-1. 打开终端/SSH并输入 `node`。
-2. 使用 `Crypto.getRandomValues()` 方法生成UUID。
-3. 使用 `Number.prototype.toString()` 方法将UUID转换为十六进制字符串。
+1. 打开终端/SSH 并输入 `node`。
+2. 使用 `Crypto.getRandomValues()` 方法生成 UUID。
+3. 使用 `Number.prototype.toString()` 方法将 UUID 转换为十六进制字符串。
 4. 实现以下代码：
 
 ```js
@@ -17,4 +17,4 @@ const UUIDGeneratorBrowser = () =>
   );
 ```
 
-5. 调用 `UUIDGeneratorBrowser()` 函数生成UUID。例如，`UUIDGeneratorBrowser()` 将返回 `'7982fcfe-5721-4632-bede-6000885be57d'`。
+5. 调用 `UUIDGeneratorBrowser()` 函数生成 UUID。例如，`UUIDGeneratorBrowser()` 将返回 `'7982fcfe-5721-4632-bede-6000885be57d'`。

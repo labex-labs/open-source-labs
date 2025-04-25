@@ -1,6 +1,6 @@
 # 连接轴
 
-在这一步中，我们将连接轴并创建缩放效果。我们将创建一个包含四个轴的图形，并使用zoom_effect01和zoom_effect02函数将它们连接起来。
+在这一步中，我们将连接轴并创建缩放效果。我们将创建一个包含四个轴的图形，并使用 zoom_effect01 和 zoom_effect02 函数将它们连接起来。
 
 ```python
 axs = plt.figure().subplot_mosaic([

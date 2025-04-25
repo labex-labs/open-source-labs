@@ -5,9 +5,9 @@
 - `strconv` パッケージを使用して文字列から数値を解析します。
 - `ParseFloat` を使用して浮動小数点数を解析します。
 - `ParseInt` を使用して整数を解析します。
-- `ParseInt` を使用して16進形式の数値を解析します。
+- `ParseInt` を使用して 16 進形式の数値を解析します。
 - `ParseUint` を使用して符号なし整数を解析します。
-- `Atoi` を使用して10進数の整数を解析します。
+- `Atoi` を使用して 10 進数の整数を解析します。
 - 解析関数が返すエラーを処理します。
 
 ```sh
@@ -19,14 +19,14 @@ $ go run number-parsing.go
 135
 strconv.ParseInt: parsing "wat": invalid syntax
 
-# 次に、もう一つの一般的な解析タスクであるURLを見てみましょう。
+# 次に、もう一つの一般的な解析タスクである URL を見てみましょう。
 ```
 
 以下に完全なコードを示します。
 
 ```go
 // 文字列から数値を解析することは、多くのプログラムで基本的で一般的なタスクです。
-// ここでは、Go言語でそれを行う方法を示します。
+// ここでは、Go 言語でそれを行う方法を示します。
 
 package main
 
@@ -43,11 +43,11 @@ func main() {
 	fmt.Println(f)
 
 	// `ParseInt` の場合、`0` は文字列から基数を推測することを意味します。
-	// `64` は結果が64ビットに収まることを要求します。
+	// `64` は結果が 64 ビットに収まることを要求します。
 	i, _ := strconv.ParseInt("123", 0, 64)
 	fmt.Println(i)
 
-	// `ParseInt` は16進形式の数値を認識します。
+	// `ParseInt` は 16 進形式の数値を認識します。
 	d, _ := strconv.ParseInt("0x1c8", 0, 64)
 	fmt.Println(d)
 
@@ -55,7 +55,7 @@ func main() {
 	u, _ := strconv.ParseUint("789", 0, 64)
 	fmt.Println(u)
 
-	// `Atoi` は基本的な10進数の `int` 解析のための便利関数です。
+	// `Atoi` は基本的な 10 進数の `int` 解析のための便利関数です。
 	k, _ := strconv.Atoi("135")
 	fmt.Println(k)
 

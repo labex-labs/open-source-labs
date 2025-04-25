@@ -1,6 +1,6 @@
 # データ可視化
 
-matplotlib.pyplotモジュールを使って、生成されたデータを可視化することができます。
+matplotlib.pyplot モジュールを使って、生成されたデータを可視化することができます。
 
 ```python
 import matplotlib.pyplot as plt

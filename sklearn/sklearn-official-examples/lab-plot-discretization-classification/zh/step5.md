@@ -1,6 +1,6 @@
 # 实现特征离散化
 
-在这一步中，我们将使用scikit-learn中的KBinsDiscretizer类对数据集实现特征离散化。这将通过创建一组箱（bin）并对离散值进行独热编码来离散化特征。然后，我们将数据拟合到线性分类器并评估性能。
+在这一步中，我们将使用 scikit-learn 中的 KBinsDiscretizer 类对数据集实现特征离散化。这将通过创建一组箱（bin）并对离散值进行独热编码来离散化特征。然后，我们将数据拟合到线性分类器并评估性能。
 
 ```python
 # 遍历分类器
@@ -13,7 +13,7 @@ for est_idx, (name, (estimator, param_grid)) in enumerate(zip(names, classifiers
     score = clf.score(X_test, y_test)
     print(f"{name}: {score:.2f}")
 
-    # 绘制决策边界。为此，我们将为网格[x_min, x_max]*[y_min, y_max]中的每个点分配一种颜色。
+    # 绘制决策边界。为此，我们将为网格 [x_min, x_max]*[y_min, y_max] 中的每个点分配一种颜色。
     if hasattr(clf, "decision_function"):
         Z = clf.decision_function(np.column_stack([xx.ravel(), yy.ravel()]))
     else:

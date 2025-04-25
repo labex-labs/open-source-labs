@@ -1,6 +1,6 @@
 # 建立核支持向量机模型
 
-我们将训练一个核支持向量机（SVM），以了解PolynomialCountSketch在近似核性能方面的表现如何。
+我们将训练一个核支持向量机（SVM），以了解 PolynomialCountSketch 在近似核性能方面的表现如何。
 
 ```python
 from sklearn.svm import SVC

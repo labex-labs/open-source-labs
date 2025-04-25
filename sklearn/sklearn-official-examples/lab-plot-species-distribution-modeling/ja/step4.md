@@ -1,6 +1,6 @@
 # 種のバンチを作成する
 
-このステップでは、特定の生物に関する情報を持つバンチを作成します。種名、学習用データ、テスト用データ、カバレッジ、xグリッド、yグリッドを入力として受け取り、バンチオブジェクトを返すcreate_species_bunchという関数を作成します。
+このステップでは、特定の生物に関する情報を持つバンチを作成します。種名、学習用データ、テスト用データ、カバレッジ、x グリッド、y グリッドを入力として受け取り、バンチオブジェクトを返す create_species_bunch という関数を作成します。
 
 ```python
 def create_species_bunch(species_name, train, test, coverages, xgrid, ygrid):

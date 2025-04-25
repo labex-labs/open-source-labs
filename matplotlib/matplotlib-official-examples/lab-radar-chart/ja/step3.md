@@ -4,8 +4,8 @@
 
 ```python
 class RadarTransform(PolarAxes.PolarTransform):
-    # RadarTransformクラスのコードはここに記載します
+    # RadarTransform クラスのコードはここに記載します
 
 class RadarAxes(PolarAxes):
-    # RadarAxesクラスのコードはここに記載します
+    # RadarAxes クラスのコードはここに記載します
 ```

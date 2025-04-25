@@ -13,7 +13,7 @@ outer_colors = cmap(np.arange(3)*4)
 inner_colors = cmap([1, 2, 5, 6, 9, 10])
 
 # 添加标签
-labels = ['组1', '组2', '组3']
+labels = ['组 1', '组 2', '组 3']
 ax.pie(vals.sum(axis=1), radius=1, colors=outer_colors,
        wedgeprops=dict(width=size, edgecolor='w'), labels=labels, labeldistance=0.7)
 

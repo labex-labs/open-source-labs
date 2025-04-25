@@ -1,11 +1,11 @@
 # 定义线条样式
 
-在Matplotlib中有多种定义线条样式的方法。我们可以使用预定义的样式，如'solid'（实线）、'dashed'（虚线）、'dotted'（点线）和'dashdot'（点划线）。我们也可以使用破折号元组来定义自定义线条样式。
+在 Matplotlib 中有多种定义线条样式的方法。我们可以使用预定义的样式，如'solid'（实线）、'dashed'（虚线）、'dotted'（点线）和'dashdot'（点划线）。我们也可以使用破折号元组来定义自定义线条样式。
 
 ```python
 linestyle_str = [
-     ('solid','solid'),      # 与(0, ())或'-'相同
-     ('dotted', 'dotted'),    # 与(0, (1, 1))或':'相同
+     ('solid','solid'),      # 与 (0, ()) 或'-'相同
+     ('dotted', 'dotted'),    # 与 (0, (1, 1)) 或':'相同
      ('dashed', 'dashed'),    # 与'--'相同
      ('dashdot', 'dashdot')]  # 与'-.'相同
 

@@ -4,7 +4,7 @@
 
 - 使用 `Object.keys()` 和 `Array.prototype.filter()` 来移除 `fn` 返回假值的键。
 - 使用 `Array.prototype.reduce()` 将过滤后的键转换回具有相应键值对的对象。
-- 回调函数会使用两个参数调用：(值, 键)。
+- 回调函数会使用两个参数调用：(值，键)。
 
 以下是 `pickBy()` 函数的代码：
 

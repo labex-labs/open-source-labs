@@ -15,7 +15,7 @@ for angle in angles:
     ellipse = Ellipse((0, 0), 4, 2, angle=angle, alpha=0.1)
     ax.add_artist(ellipse)
 
-# 设置绘图的x和y轴范围
+# 设置绘图的 x 和 y 轴范围
 ax.set_xlim(-2.2, 2.2)
 ax.set_ylim(-2.2, 2.2)
 

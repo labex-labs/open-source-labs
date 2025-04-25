@@ -1,6 +1,6 @@
 # 生成并分割数据集
 
-我们将首先使用Scikit-learn的`make_classification`函数生成一个二元分类数据集。我们还将使用Scikit-learn的`train_test_split`函数将数据集拆分为训练子集和测试子集。
+我们将首先使用 Scikit-learn 的`make_classification`函数生成一个二元分类数据集。我们还将使用 Scikit-learn 的`train_test_split`函数将数据集拆分为训练子集和测试子集。
 
 ```python
 from sklearn.datasets import make_classification

@@ -1,7 +1,7 @@
-# Pythonパッケージとデータセットのインポート、データセットの読み込み
+# Python パッケージとデータセットのインポート、データセットの読み込み
 
 ```python
-# 標準的な科学的Pythonのインポート
+# 標準的な科学的 Python のインポート
 import matplotlib.pyplot as plt
 import numpy as np
 from time import time

@@ -2,7 +2,7 @@
 
 #### CCA モデルをフィットさせる
 
-`CCA` アルゴリズムは PLS の特殊なケースで、標準相関分析（Canonical Correlation Analysis）を表します。これは2つの変数セット間の相関を見つけます。
+`CCA` アルゴリズムは PLS の特殊なケースで、標準相関分析（Canonical Correlation Analysis）を表します。これは 2 つの変数セット間の相関を見つけます。
 
 ```python
 cca = CCA(n_components=2)

@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-必要なライブラリをインポートして始めましょう。scikit-learn、matplotlib、およびnumpyを使用します。
+必要なライブラリをインポートして始めましょう。scikit-learn、matplotlib、および numpy を使用します。
 
 ```python
 from time import time

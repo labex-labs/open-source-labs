@@ -1,6 +1,6 @@
-# 创建ROC曲线显示
+# 创建 ROC 曲线显示
 
-ROC曲线需要估计器的概率或非阈值化决策值。由于逻辑回归提供了一个决策函数，我们将使用它来绘制ROC曲线。
+ROC 曲线需要估计器的概率或非阈值化决策值。由于逻辑回归提供了一个决策函数，我们将使用它来绘制 ROC 曲线。
 
 ```python
 from sklearn.metrics import roc_curve

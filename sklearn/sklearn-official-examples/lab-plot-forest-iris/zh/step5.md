@@ -27,7 +27,7 @@ for pair in ([0, 1], [0, 2], [2, 3]):
         model.fit(X, y)
 
         scores = model.score(X, y)
-        # 通过使用str()并切片去除字符串中无用的部分，为每列和控制台创建一个标题
+        # 通过使用 str() 并切片去除字符串中无用的部分，为每列和控制台创建一个标题
         model_title = str(type(model)).split(".")[-1][:-2][: -len("Classifier")]
 
         model_details = model_title
@@ -47,14 +47,14 @@ for pair in ([0, 1], [0, 2], [2, 3]):
             np.arange(x_min, x_max, plot_step), np.arange(y_min, y_max, plot_step)
         )
 
-        # 绘制单个决策树分类器，或者对分类器集成的决策面进行alpha混合
+        # 绘制单个决策树分类器，或者对分类器集成的决策面进行 alpha 混合
         if isinstance(model, DecisionTreeClassifier):
             Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
             Z = Z.reshape(xx.shape)
             cs = plt.contourf(xx, yy, Z, cmap=cmap)
         else:
-            # 根据正在使用的估计器数量选择alpha混合级别
-            # （注意，如果AdaBoost早期就达到了足够好的拟合，它可以使用比其最大值更少的估计器）
+            # 根据正在使用的估计器数量选择 alpha 混合级别
+            # （注意，如果 AdaBoost 早期就达到了足够好的拟合，它可以使用比其最大值更少的估计器）
             estimator_alpha = 1.0 / len(model.estimators_)
             for tree in model.estimators_:
                 Z = tree.predict(np.c_[xx.ravel(), yy.ravel()])

@@ -4,7 +4,7 @@
 
 以下は、派生可能なトレイトの一覧です。
 
-- 比較トレイト: `Eq`、`PartialEq`、`Ord`、`PartialOrd`。
+- 比較トレイト：`Eq`、`PartialEq`、`Ord`、`PartialOrd`。
 - `Clone`、コピーを介して`&T`から`T`を作成します。
 - `Copy`、型に「ムーブセマンティクス」ではなく「コピーセマンティクス」を与えます。
 - `Hash`、`&T`からハッシュを計算します。
@@ -34,11 +34,11 @@ struct Seconds(i32);
 fn main() {
     let _one_second = Seconds(1);
 
-    // エラー: `Seconds`は表示できません。`Debug`トレイトを実装していません
+    // エラー: `Seconds`は表示できません。`Debug` トレイトを実装していません
     //println!("One second looks like: {:?}", _one_second);
     // TODO ^ この行のコメントを外してみてください
 
-    // エラー: `Seconds`は比較できません。`PartialEq`トレイトを実装していません
+    // エラー: `Seconds`は比較できません。`PartialEq` トレイトを実装していません
     //let _this_is_true = (_one_second == _one_second);
     // TODO ^ この行のコメントを外してみてください
 

@@ -1,6 +1,6 @@
 # クラスタを可視化する
 
-k-meansアルゴリズムによって形成されたクラスタを可視化しましょう。
+k-means アルゴリズムによって形成されたクラスタを可視化しましょう。
 
 ```python
 # Get the cluster labels for each data point

@@ -1,6 +1,6 @@
 # 绘制特征数量与交叉验证分数的关系图
 
-我们将绘制所选特征数量与交叉验证分数的关系图。我们将使用matplotlib来创建该图。
+我们将绘制所选特征数量与交叉验证分数的关系图。我们将使用 matplotlib 来创建该图。
 
 ```python
 import matplotlib.pyplot as plt

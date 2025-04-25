@@ -1,6 +1,6 @@
 # データセットの読み込み
 
-このステップでは、scikit-learnライブラリから糖尿病データセットを読み込み、データを標準化します。
+このステップでは、scikit-learn ライブラリから糖尿病データセットを読み込み、データを標準化します。
 
 ```python
 from sklearn import datasets

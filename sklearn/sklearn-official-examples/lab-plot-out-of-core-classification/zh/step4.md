@@ -2,9 +2,9 @@
 
 ```python
 def get_minibatch(doc_iter, size, pos_class=positive_class):
-    """提取一批示例，返回一个元组X_text, y。
+    """提取一批示例，返回一个元组 X_text, y。
 
-    注意：size是在排除没有分配主题的无效文档之前的数量。
+    注意：size 是在排除没有分配主题的无效文档之前的数量。
 
     """
     data = [

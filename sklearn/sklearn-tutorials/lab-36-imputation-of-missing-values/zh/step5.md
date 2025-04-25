@@ -1,6 +1,6 @@
 # 保持特征数量不变
 
-默认情况下，scikit-learn插补器会删除仅包含缺失值的列。然而，在某些情况下，有必要保留空特征以保持数据的形状。我们可以通过将`keep_empty_features`参数设置为True来实现这一点。
+默认情况下，scikit-learn 插补器会删除仅包含缺失值的列。然而，在某些情况下，有必要保留空特征以保持数据的形状。我们可以通过将`keep_empty_features`参数设置为 True 来实现这一点。
 
 ```python
 imputer = SimpleImputer(keep_empty_features=True)

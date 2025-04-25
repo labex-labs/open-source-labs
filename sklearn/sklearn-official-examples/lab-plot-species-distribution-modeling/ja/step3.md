@@ -1,6 +1,6 @@
 # マップグリッドの構築
 
-このステップでは、データオブジェクトからマップグリッドを構築します。データオブジェクトを入力として受け取り、xgridとygridを返すconstruct_gridsという関数を作成します。
+このステップでは、データオブジェクトからマップグリッドを構築します。データオブジェクトを入力として受け取り、xgrid と ygrid を返す construct_grids という関数を作成します。
 
 ```python
 def construct_grids(batch):

@@ -7,7 +7,7 @@
 对于这个挑战，我们使用来自 `https://github.com/labex-labs/git-playground` 的仓库。
 
 1. 导航到该目录并在环境中配置身份。
-2. 将 “hello,labex” 添加到 `README.md` 文件中，将其添加到暂存区，并使用消息 “更新 README.md” 提交它。
+2. 将“hello,labex”添加到 `README.md` 文件中，将其添加到暂存区，并使用消息“更新 README.md”提交它。
 
 这是运行 `git log` 命令的结果：
 

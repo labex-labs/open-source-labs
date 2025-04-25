@@ -29,10 +29,10 @@ def text3d(ax, xyz, s, zdir="z", size=None, angle=0, usetex=False, **kwargs):
     art3d.pathpatch_2d_to_3d(p1, z=z1, zdir=zdir)
 
 
-text3d(ax, (4, -2, 0), "X軸", zdir="z", size=.5, usetex=False,
+text3d(ax, (4, -2, 0), "X 軸", zdir="z", size=.5, usetex=False,
        ec="none", fc="k")
-text3d(ax, (12, 4, 0), "Y軸", zdir="z", size=.5, usetex=False,
+text3d(ax, (12, 4, 0), "Y 軸", zdir="z", size=.5, usetex=False,
        angle=np.pi / 2, ec="none", fc="k")
-text3d(ax, (12, 10, 4), "Z軸", zdir="y", size=.5, usetex=False,
+text3d(ax, (12, 10, 4), "Z 軸", zdir="y", size=.5, usetex=False,
        angle=np.pi / 2, ec="none", fc="k")
 ```

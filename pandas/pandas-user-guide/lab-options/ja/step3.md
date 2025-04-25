@@ -1,6 +1,6 @@
 # オプションのリセット
 
-1つ以上のオプションを既定値にリセットしたい場合は、`pd.reset_option` を使用できます。
+1 つ以上のオプションを既定値にリセットしたい場合は、`pd.reset_option` を使用できます。
 
 ```python
 # Reset the maximum display rows to default

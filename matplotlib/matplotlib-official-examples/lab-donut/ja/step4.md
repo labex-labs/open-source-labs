@@ -1,6 +1,6 @@
 # ドーナツの作成
 
-内側と外側のサブパスを連結してドーナツを作成します。各頂点の種類（MOVETO、LINETOなど）を指定するために`codes`を使用します。その後、`mpath.Path`を使って`Path`オブジェクトを作成し、`mpatches.PathPatch`を使って`PathPatch`オブジェクトを作成します。最後に、`ax.add_patch()`を使って`PathPatch`オブジェクトを`Axes`オブジェクトに追加します。
+内側と外側のサブパスを連結してドーナツを作成します。各頂点の種類（MOVETO、LINETO など）を指定するために`codes`を使用します。その後、`mpath.Path`を使って`Path`オブジェクトを作成し、`mpatches.PathPatch`を使って`PathPatch`オブジェクトを作成します。最後に、`ax.add_patch()`を使って`PathPatch`オブジェクトを`Axes`オブジェクトに追加します。
 
 ```python
 Path = mpath.Path
@@ -20,7 +20,7 @@ for i, (inside, outside) in enumerate(((1, 1), (1, -1), (-1, 1), (-1, -1))):
     vertices[:, 0] += i * 2.5
     # コードは、各サブパスの先頭の "MOVETO" 以外はすべて "LINETO" コマンドになります
     all_codes = np.concatenate((codes, codes))
-    # Pathオブジェクトを作成します
+    # Path オブジェクトを作成します
     path = mpath.Path(vertices, all_codes)
     # プロットして追加します
     patch = mpatches.PathPatch(path, facecolor='#885500', edgecolor='black')

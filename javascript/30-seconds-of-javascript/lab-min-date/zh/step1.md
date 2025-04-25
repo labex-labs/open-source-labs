@@ -1,6 +1,6 @@
-# 如何在JavaScript中找到最小日期
+# 如何在 JavaScript 中找到最小日期
 
-要在JavaScript中找到最小日期值，可以将ES6展开语法与`Math.min()`和`Date`构造函数一起使用。以下是一个示例代码片段：
+要在 JavaScript 中找到最小日期值，可以将 ES6 展开语法与`Math.min()`和`Date`构造函数一起使用。以下是一个示例代码片段：
 
 ```js
 const minDate = (...dates) => new Date(Math.min(...dates));
@@ -15,7 +15,7 @@ const dates = [
   new Date(2016, 0, 10),
   new Date(2016, 0, 9)
 ];
-minDate(...dates); // 返回一个表示2016-01-08T22:00:00.000Z的`Date`对象
+minDate(...dates); // 返回一个表示 2016-01-08T22:00:00.000Z 的 `Date` 对象
 ```
 
-通过使用此代码，你可以轻松地在JavaScript中找到最小日期值。
+通过使用此代码，你可以轻松地在 JavaScript 中找到最小日期值。

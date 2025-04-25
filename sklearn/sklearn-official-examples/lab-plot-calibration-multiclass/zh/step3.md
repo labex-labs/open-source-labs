@@ -22,14 +22,14 @@ for i in range(clf_probs.shape[0]):
     )
 
 # 在每个顶点绘制完美预测
-plt.plot([1.0], [0.0], "ro", ms=20, label="类别1")
-plt.plot([0.0], [1.0], "go", ms=20, label="类别2")
-plt.plot([0.0], [0.0], "bo", ms=20, label="类别3")
+plt.plot([1.0], [0.0], "ro", ms=20, label="类别 1")
+plt.plot([0.0], [1.0], "go", ms=20, label="类别 2")
+plt.plot([0.0], [0.0], "bo", ms=20, label="类别 3")
 
 # 绘制单位单纯形的边界
 plt.plot([0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], "k", label="单纯形")
 
-# 在单纯形周围注释6个点，并在单纯形内部注释中点
+# 在单纯形周围注释 6 个点，并在单纯形内部注释中点
 plt.annotate(
     r"($\frac{1}{3}$, $\frac{1}{3}$, $\frac{1}{3}$)",
     xy=(1.0 / 3, 1.0 / 3),
@@ -101,9 +101,9 @@ for x in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
     plt.plot([0, 0 + (1 - x) / 2], [x, x + (1 - x) / 2], "k", alpha=0.2)
     plt.plot([x, x + (1 - x) / 2], [0, 0 + (1 - x) / 2], "k", alpha=0.2)
 
-plt.title("sigmoid校准后测试样本预测概率的变化")
-plt.xlabel("类别1的概率")
-plt.ylabel("类别2的概率")
+plt.title("sigmoid 校准后测试样本预测概率的变化")
+plt.xlabel("类别 1 的概率")
+plt.ylabel("类别 2 的概率")
 plt.xlim(-0.05, 1.05)
 plt.ylim(-0.05, 1.05)
 _ = plt.legend(loc="最佳")

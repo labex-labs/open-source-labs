@@ -1,6 +1,6 @@
 # 別のブランチからファイルをコピーする
 
-あなたは `https://github.com/labex-labs/git-playground.git` という名前の Git リポジトリ内のプロジェクトを作業しています。 `feature-1` と `feature-2` という 2 つのブランチがあります。 あなたは `feature-1` ブランチから `hello.txt` ファイルを `feature-2` ブランチにコピーする必要があります。
+あなたは `https://github.com/labex-labs/git-playground.git` という名前の Git リポジトリ内のプロジェクトを作業しています。 `feature-1` と `feature-2` という 2 つのブランチがあります。あなたは `feature-1` ブランチから `hello.txt` ファイルを `feature-2` ブランチにコピーする必要があります。
 
 ## タスク
 

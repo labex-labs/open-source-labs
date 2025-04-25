@@ -1,6 +1,6 @@
-# 使用DrawingArea进行注释
+# 使用 DrawingArea 进行注释
 
-接下来，让我们使用DrawingArea用一个圆形补丁为第二个点添加注释。
+接下来，让我们使用 DrawingArea 用一个圆形补丁为第二个点添加注释。
 
 ```python
 from matplotlib.offsetbox import DrawingArea

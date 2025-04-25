@@ -1,6 +1,6 @@
 # データセットの読み込み
 
-scikit - learnの`load_digits()`関数を使って数字のデータセットを読み込みます。この関数はデータセットの特徴とラベルを返します。
+scikit - learn の`load_digits()`関数を使って数字のデータセットを読み込みます。この関数はデータセットの特徴とラベルを返します。
 
 ```python
 import numpy as np

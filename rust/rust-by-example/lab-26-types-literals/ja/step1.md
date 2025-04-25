@@ -16,11 +16,11 @@ fn main() {
     let f = 1.0;
 
     // `size_of_val` は、バイト数で変数のサイズを返します
-    println!("`x` のバイト数: {}", std::mem::size_of_val(&x));
-    println!("`y` のバイト数: {}", std::mem::size_of_val(&y));
-    println!("`z` のバイト数: {}", std::mem::size_of_val(&z));
-    println!("`i` のバイト数: {}", std::mem::size_of_val(&i));
-    println!("`f` のバイト数: {}", std::mem::size_of_val(&f));
+    println!("`x` のバイト数：{}", std::mem::size_of_val(&x));
+    println!("`y` のバイト数：{}", std::mem::size_of_val(&y));
+    println!("`z` のバイト数：{}", std::mem::size_of_val(&z));
+    println!("`i` のバイト数：{}", std::mem::size_of_val(&i));
+    println!("`f` のバイト数：{}", std::mem::size_of_val(&f));
 }
 ```
 

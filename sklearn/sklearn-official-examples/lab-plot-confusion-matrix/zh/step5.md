@@ -1,6 +1,6 @@
 # 生成混淆矩阵
 
-我们将使用scikit-learn中的ConfusionMatrixDisplay类生成一个混淆矩阵。该混淆矩阵会展示每个类别的正确预测和错误预测的数量。
+我们将使用 scikit-learn 中的 ConfusionMatrixDisplay 类生成一个混淆矩阵。该混淆矩阵会展示每个类别的正确预测和错误预测的数量。
 
 ```python
 np.set_printoptions(precision=2)

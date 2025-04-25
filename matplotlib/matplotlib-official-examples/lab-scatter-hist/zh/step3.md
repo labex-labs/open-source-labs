@@ -1,6 +1,6 @@
-# 定义scatter_hist函数
+# 定义 scatter_hist 函数
 
-我们需要定义`scatter_hist`函数，它接受x和y数据，以及三个坐标轴，一个用于散点图的主坐标轴，和两个边缘坐标轴。然后它将在所提供的坐标轴内创建散点图和直方图。
+我们需要定义`scatter_hist`函数，它接受 x 和 y 数据，以及三个坐标轴，一个用于散点图的主坐标轴，和两个边缘坐标轴。然后它将在所提供的坐标轴内创建散点图和直方图。
 
 ```python
 def scatter_hist(x, y, ax, ax_histx, ax_histy):

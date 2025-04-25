@@ -1,6 +1,6 @@
-# 存储结果并检查最优alpha
+# 存储结果并检查最优 alpha
 
-我们将存储在 `fit` 过程中使用的每个alpha值的AIC指标。然后，我们将使用BIC准则进行相同的分析。最后，我们将检查哪个 `alpha` 值会导致最小的AIC和BIC。
+我们将存储在 `fit` 过程中使用的每个 alpha 值的 AIC 指标。然后，我们将使用 BIC 准则进行相同的分析。最后，我们将检查哪个 `alpha` 值会导致最小的 AIC 和 BIC。
 
 ```python
 results = pd.DataFrame(

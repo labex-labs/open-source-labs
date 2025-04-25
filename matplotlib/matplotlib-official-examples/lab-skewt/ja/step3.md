@@ -1,6 +1,6 @@
-# SkewXAxisクラスを定義する
+# SkewXAxis クラスを定義する
 
-SkewXAxisクラスは、目盛りに2つの別々の区間セットを提供し、カスタム目盛りのインスタンスを作成するために使用されます。
+SkewXAxis クラスは、目盛りに 2 つの別々の区間セットを提供し、カスタム目盛りのインスタンスを作成するために使用されます。
 
 ```python
 class SkewXAxis(maxis.XAxis):

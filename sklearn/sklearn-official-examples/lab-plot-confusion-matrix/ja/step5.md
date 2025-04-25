@@ -1,6 +1,6 @@
 # 混同行列の生成
 
-scikit-learnのConfusionMatrixDisplayクラスを使用して混同行列を生成します。混同行列は、各クラスに対する正解予測と不正解予測の数を示します。
+scikit-learn の ConfusionMatrixDisplay クラスを使用して混同行列を生成します。混同行列は、各クラスに対する正解予測と不正解予測の数を示します。
 
 ```python
 np.set_printoptions(precision=2)

@@ -44,14 +44,14 @@ cd ~/project/mysite
 python manage.py runserver 0.0.0.0:8080
 ```
 
-**Web 8080** タブに切り替えて、`/polls/34/` にアクセスします。`detail()` メソッドが実行され、URLに提供したIDが表示されます。`/polls/34/results/` と `/polls/34/vote/` も試してみてください。これらは、仮の結果と投票ページを表示します。
+**Web 8080** タブに切り替えて、`/polls/34/` にアクセスします。`detail()` メソッドが実行され、URL に提供した ID が表示されます。`/polls/34/results/` と `/polls/34/vote/` も試してみてください。これらは、仮の結果と投票ページを表示します。
 
 ![Django URL routing diagram](../assets/20230908-09-30-06-2n54ROPe.png)
 
-誰かがあなたのウェブサイトからページを要求するとき、たとえば `/polls/34/` の場合、Djangoは `ROOT_URLCONF` 設定によって指定されているため、`mysite.urls` Pythonモジュールを読み込みます。`urlpatterns` という名前の変数を見つけ、順番にパターンを辿ります。`'polls/'` で一致するものを見つけた後、一致するテキスト（`"polls/"`）を取り除き、残りのテキスト（`"34/"`）を 'polls.urls' URLconfに送り、さらに処理します。そこでは `'<int:question_id>/'` と一致し、次のように `detail()` ビューが呼び出されます。
+誰かがあなたのウェブサイトからページを要求するとき、たとえば `/polls/34/` の場合、Django は `ROOT_URLCONF` 設定によって指定されているため、`mysite.urls` Python モジュールを読み込みます。`urlpatterns` という名前の変数を見つけ、順番にパターンを辿ります。`'polls/'` で一致するものを見つけた後、一致するテキスト（`"polls/"`）を取り除き、残りのテキスト（`"34/"`）を 'polls.urls' URLconf に送り、さらに処理します。そこでは `'<int:question_id>/'` と一致し、次のように `detail()` ビューが呼び出されます。
 
 ```python
 detail(request=<HttpRequest object>, question_id=34)
 ```
 
-`question_id=34` の部分は `<int:question_id>` から来ています。角括弧を使うことで、URLの一部を「キャプチャ」し、ビュー関数にキーワード引数として渡します。文字列の `question_id` の部分は、一致したパターンを識別するために使用される名前を定義し、`int` の部分は、URLパスのこの部分に一致するパターンを決定するコンバーターです。コロン（`:`）はコンバーターとパターン名を区切ります。
+`question_id=34` の部分は `<int:question_id>` から来ています。角括弧を使うことで、URL の一部を「キャプチャ」し、ビュー関数にキーワード引数として渡します。文字列の `question_id` の部分は、一致したパターンを識別するために使用される名前を定義し、`int` の部分は、URL パスのこの部分に一致するパターンを決定するコンバーターです。コロン（`:`）はコンバーターとパターン名を区切ります。

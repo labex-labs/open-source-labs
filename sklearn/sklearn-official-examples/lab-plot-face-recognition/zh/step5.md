@@ -12,4 +12,4 @@ clf = RandomizedSearchCV(
 clf = clf.fit(X_train_pca, y_train)
 ```
 
-我们使用变换后的数据训练一个SVM分类模型。我们使用`RandomizedSearchCV()`来为SVM模型找到最佳超参数。
+我们使用变换后的数据训练一个 SVM 分类模型。我们使用`RandomizedSearchCV()`来为 SVM 模型找到最佳超参数。

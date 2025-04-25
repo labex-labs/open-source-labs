@@ -1,4 +1,4 @@
-# React useTimeoutフック
+# React useTimeout フック
 
 > VM には既に `index.html` と `script.js` が用意されています。一般的には、`script.js` と `style.css` にのみコードを追加すればよいです。
 

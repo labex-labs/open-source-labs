@@ -4,7 +4,7 @@
 
 - “uniform”（均匀）：在每个特征上进行均匀离散化，这意味着每个维度上的箱宽度是恒定的。
 - “quantile”（分位数）：基于分位数进行离散化，这意味着每个箱中的样本数量大致相同。
-- “kmeans”：离散化基于KMeans聚类过程的质心。
+- “kmeans”：离散化基于 KMeans 聚类过程的质心。
 
 ```python
 strategies = ["uniform", "quantile", "kmeans"]

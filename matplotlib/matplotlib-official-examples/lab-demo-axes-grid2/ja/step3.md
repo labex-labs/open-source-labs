@@ -1,6 +1,6 @@
 # サンプルデータを準備する
 
-サンプルデータを取得するために、cbookから`get_sample_data`関数を使用します。その後、グリッドに表示する画像を準備します。
+サンプルデータを取得するために、cbook から`get_sample_data`関数を使用します。その後、グリッドに表示する画像を準備します。
 
 ```python
 Z = cbook.get_sample_data("axes_grid/bivariate_normal.npy")

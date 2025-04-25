@@ -21,7 +21,7 @@ class AngleAnnotation(Arc):
             以下字符串之一，用于指定 *size* 的单位：
 
             * "pixels"：像素
-            * "points"：点，使用点而不是像素，以避免依赖DPI
+            * "points"：点，使用点而不是像素，以避免依赖 DPI
             * "axes width", "axes height"：轴宽度、高度的相对单位
             * "axes min", "axes max"：相对轴宽度、高度的最小值或最大值
 
@@ -98,7 +98,7 @@ class AngleAnnotation(Arc):
     def set_theta(self, angle):
         pass
 
-    # 重新定义Arc的属性，始终在像素空间中给出值
+    # 重新定义 Arc 的属性，始终在像素空间中给出值
     _center = property(get_center_in_pixels, set_center)
     theta1 = property(get_theta1, set_theta)
     theta2 = property(get_theta2, set_theta)

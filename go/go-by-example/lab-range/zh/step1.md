@@ -37,14 +37,14 @@ func main() {
 	for _, num := range nums {
 		sum += num
 	}
-	fmt.Println("总和:", sum)
+	fmt.Println("总和：", sum)
 
 	// 对数组和切片使用 `range` 会为每个元素提供索引和值。
 	// 上面我们不需要索引，所以用下划线标识符 `_` 忽略了它。
 	// 但有时我们实际上需要索引。
 	for i, num := range nums {
 		if num == 3 {
-			fmt.Println("索引:", i)
+			fmt.Println("索引：", i)
 		}
 	}
 
@@ -56,7 +56,7 @@ func main() {
 
 	// `range` 也可以只遍历映射的键。
 	for k := range kvs {
-		fmt.Println("键:", k)
+		fmt.Println("键：", k)
 	}
 
 	// 对字符串使用 `range` 会遍历 Unicode 码点。

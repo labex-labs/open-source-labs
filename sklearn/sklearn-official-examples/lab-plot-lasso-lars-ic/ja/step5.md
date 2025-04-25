@@ -1,6 +1,6 @@
-# AICとBIC基準をプロットする
+# AIC と BIC 基準をプロットする
 
-AICとBIC基準とその後選択された正則化パラメータをプロットします。
+AIC と BIC 基準とその後選択された正則化パラメータをプロットします。
 
 ```python
 plt.plot(aic_criterion, color="tab:blue", marker="o", label="AIC criterion")

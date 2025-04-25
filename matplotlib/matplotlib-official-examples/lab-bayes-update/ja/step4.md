@@ -1,6 +1,6 @@
 # アニメーションを作成する
 
-これで `UpdateDist` クラスを定義したので、Matplotlibの `FuncAnimation` クラスを使ってアニメーションを作成できます。グラフオブジェクトと軸オブジェクトを作成し、軸オブジェクトを `UpdateDist` クラスに渡して、そのクラスの新しいインスタンスを作成します。
+これで `UpdateDist` クラスを定義したので、Matplotlib の `FuncAnimation` クラスを使ってアニメーションを作成できます。グラフオブジェクトと軸オブジェクトを作成し、軸オブジェクトを `UpdateDist` クラスに渡して、そのクラスの新しいインスタンスを作成します。
 
 ```python
 fig, ax = plt.subplots()

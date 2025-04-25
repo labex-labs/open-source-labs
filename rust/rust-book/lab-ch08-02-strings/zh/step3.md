@@ -21,7 +21,7 @@ let s = "initial contents".to_string();
 
 清单 8-12：使用 `to_string` 方法从字符串字面值创建 `String`
 
-这段代码创建了一个包含 “initial contents” 的字符串。
+这段代码创建了一个包含“initial contents”的字符串。
 
 我们还可以使用函数 `String::from` 从字符串字面值创建 `String`。清单 8-13 中的代码与清单 8-12 中使用 `to_string` 的代码等效。
 

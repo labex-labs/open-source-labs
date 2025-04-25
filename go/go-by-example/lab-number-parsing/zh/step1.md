@@ -26,7 +26,7 @@ strconv.ParseInt: 解析 "wat": 语法无效
 
 ```go
 // 从字符串解析数字是许多程序中一项基本但常见的任务
-// 以下是在Go语言中实现的方法。
+// 以下是在 Go 语言中实现的方法。
 
 package main
 
@@ -45,7 +45,7 @@ func main() {
 	fmt.Println(f)
 
 	// 对于 `ParseInt`，`0` 表示从字符串推断基数。`64`
-	// 要求结果能容纳在64位中。
+	// 要求结果能容纳在 64 位中。
 	i, _ := strconv.ParseInt("123", 0, 64)
 	fmt.Println(i)
 

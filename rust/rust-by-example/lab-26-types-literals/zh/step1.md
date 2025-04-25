@@ -16,11 +16,11 @@ fn main() {
     let f = 1.0;
 
     // `size_of_val` 返回变量以字节为单位的大小
-    println!("`x` 的字节大小: {}", std::mem::size_of_val(&x));
-    println!("`y` 的字节大小: {}", std::mem::size_of_val(&y));
-    println!("`z` 的字节大小: {}", std::mem::size_of_val(&z));
-    println!("`i` 的字节大小: {}", std::mem::size_of_val(&i));
-    println!("`f` 的字节大小: {}", std::mem::size_of_val(&f));
+    println!("`x` 的字节大小：{}", std::mem::size_of_val(&x));
+    println!("`y` 的字节大小：{}", std::mem::size_of_val(&y));
+    println!("`z` 的字节大小：{}", std::mem::size_of_val(&z));
+    println!("`i` 的字节大小：{}", std::mem::size_of_val(&i));
+    println!("`f` 的字节大小：{}", std::mem::size_of_val(&f));
 }
 ```
 

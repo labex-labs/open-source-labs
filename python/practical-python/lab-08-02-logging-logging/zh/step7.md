@@ -1,4 +1,4 @@
-# 练习8.2：向模块添加日志记录
+# 练习 8.2：向模块添加日志记录
 
 在`fileparse.py`中，有一些与错误输入导致的异常相关的错误处理。它看起来像这样：
 
@@ -8,7 +8,7 @@ import csv
 
 def parse_csv(lines, select=None, types=None, has_headers=True, delimiter=',', silence_errors=False):
     '''
-    将CSV文件解析为具有类型转换的记录列表。
+    将 CSV 文件解析为具有类型转换的记录列表。
     '''
     if select and not has_headers:
         raise RuntimeError('select requires column headers')
@@ -62,7 +62,7 @@ log = logging.getLogger(__name__)
 
 def parse_csv(lines, select=None, types=None, has_headers=True, delimiter=',', silence_errors=False):
     '''
-    将CSV文件解析为具有类型转换的记录列表。
+    将 CSV 文件解析为具有类型转换的记录列表。
     '''
     if select and not has_headers:
         raise RuntimeError('select requires column headers')

@@ -1,6 +1,6 @@
 # データにノイズを追加する
 
-次に、numpyを使ってデータポイント間の対距離にノイズを追加します。
+次に、numpy を使ってデータポイント間の対距離にノイズを追加します。
 
 ```python
 similarities = euclidean_distances(X_true)

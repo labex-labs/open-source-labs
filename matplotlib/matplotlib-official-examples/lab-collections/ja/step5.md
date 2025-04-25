@@ -1,4 +1,4 @@
-# オフセットを使ってPolyCollectionを作成する
+# オフセットを使って PolyCollection を作成する
 
 ```python
 col = collections.PolyCollection(
@@ -13,4 +13,4 @@ ax2.autoscale_view()
 ax2.set_title('PolyCollection using offsets')
 ```
 
-5番目のステップは、オフセットを使ってPolyCollectionを作成することです。曲線に色を塗りつぶすためにPolyCollectionを使用します。また、offset_transformを使って曲線の位置を設定します。
+5 番目のステップは、オフセットを使って PolyCollection を作成することです。曲線に色を塗りつぶすために PolyCollection を使用します。また、offset_transform を使って曲線の位置を設定します。

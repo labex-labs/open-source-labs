@@ -15,13 +15,13 @@ im = plt.imshow(Z, interpolation='bilinear', cmap=cm.gray,
                 origin='lower', extent=[-3, 3, -3, 3])
 ```
 
-画像にハイパーリンクを追加するには、画像オブジェクトの`set_url()`メソッドを使用します。このメソッドは、URLを引数として取ります。更新されたコードは次のとおりです。
+画像にハイパーリンクを追加するには、画像オブジェクトの`set_url()`メソッドを使用します。このメソッドは、URL を引数として取ります。更新されたコードは次のとおりです。
 
 ```python
 im.set_url('https://www.google.com/')
 ```
 
-画像は`https://www.google.com/`へのハイパーリンクを持ちます。最後に、`fig.savefig()`を使用してプロットをSVGファイルとして保存できます。
+画像は`https://www.google.com/`へのハイパーリンクを持ちます。最後に、`fig.savefig()`を使用してプロットを SVG ファイルとして保存できます。
 
 ```python
 fig.savefig('image.svg')

@@ -5,7 +5,7 @@
 ```python
 from sklearn.linear_model import LogisticRegression
 
-# l1ペナルティを持つロジスティック回帰のインスタンスを作成する
+# l1 ペナルティを持つロジスティック回帰のインスタンスを作成する
 lr = LogisticRegression(penalty="l1")
 
 # 推定器を表示する

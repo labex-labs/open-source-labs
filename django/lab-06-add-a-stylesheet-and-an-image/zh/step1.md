@@ -2,7 +2,7 @@
 
 首先，在你的 `polls` 目录中创建一个名为 `static` 的目录。Django 会在那里查找静态文件，这与 Django 在 `polls/templates/` 中查找模板的方式类似。
 
-Django 的 `STATICFILES_FINDERS` 设置包含一个查找器列表，这些查找器知道如何从各种来源发现静态文件。其中一个默认查找器是 `AppDirectoriesFinder`，它会在每个 `INSTALLED_APPS` 中查找一个 “static” 子目录，就像我们刚刚在 `polls` 中创建的那个一样。管理站点对其静态文件使用相同的目录结构。
+Django 的 `STATICFILES_FINDERS` 设置包含一个查找器列表，这些查找器知道如何从各种来源发现静态文件。其中一个默认查找器是 `AppDirectoriesFinder`，它会在每个 `INSTALLED_APPS` 中查找一个“static”子目录，就像我们刚刚在 `polls` 中创建的那个一样。管理站点对其静态文件使用相同的目录结构。
 
 在你刚刚创建的 `static` 目录中，再创建一个名为 `polls` 的目录，并在其中创建一个名为 `style.css` 的文件。换句话说，你的样式表应该位于 `polls/static/polls/style.css`。由于 `AppDirectoriesFinder` 静态文件查找器的工作方式，你可以在 Django 中将此静态文件引用为 `polls/style.css`，类似于你引用模板路径的方式。
 

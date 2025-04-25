@@ -1,6 +1,6 @@
 # 导入库并生成数据
 
-首先，我们需要导入必要的库并生成一些示例数据以供使用。在这个例子中，我们将使用numpy生成数据，并使用matplotlib进行可视化。
+首先，我们需要导入必要的库并生成一些示例数据以供使用。在这个例子中，我们将使用 numpy 生成数据，并使用 matplotlib 进行可视化。
 
 ```python
 import matplotlib.pyplot as plt

@@ -3,7 +3,7 @@
 在这一步中，我们将定义一个创建帽形图的函数。该函数接受以下参数：
 
 - ax：要绘制图形的坐标轴。
-- xlabels：要在x轴上显示的类别名称。
+- xlabels：要在 x 轴上显示的类别名称。
 - values：数据值。行是组，列是类别。
 - group_labels：图例中显示的组标签。
 
@@ -17,7 +17,7 @@ def hat_graph(ax, xlabels, values, group_labels):
     ax : matplotlib.axes.Axes
         要绘制图形的坐标轴。
     xlabels : list of str
-        要在x轴上显示的类别名称。
+        要在 x 轴上显示的类别名称。
     values : (M, N) 类似数组
         数据值。
         行是组 (len(group_labels) == M)。
@@ -31,7 +31,7 @@ def hat_graph(ax, xlabels, values, group_labels):
         for height, rect in zip(heights, rects):
             ax.annotate(f'{height}',
                         xy=(rect.get_x() + rect.get_width() / 2, height),
-                        xytext=(0, 4),  # 4个点的垂直偏移。
+                        xytext=(0, 4),  # 4 个点的垂直偏移。
                         textcoords='offset points',
                         ha='center', va='bottom')
 

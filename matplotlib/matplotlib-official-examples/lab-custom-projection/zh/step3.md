@@ -1,11 +1,11 @@
 # 创建 HammerAxes 类
 
-我们将为艾托夫-哈默投影（一种等积地图投影）创建一个自定义类，名为 `HammerAxes`。
+我们将为艾托夫 - 哈默投影（一种等积地图投影）创建一个自定义类，名为 `HammerAxes`。
 
 ```python
 class HammerAxes(GeoAxes):
     """
-    艾托夫-哈默投影的自定义类，这是一种等积地图投影。
+    艾托夫 - 哈默投影的自定义类，这是一种等积地图投影。
 
     https://en.wikipedia.org/wiki/Hammer_projection
     """

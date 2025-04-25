@@ -15,8 +15,8 @@ def demo_locatable_axes_hard(fig):
 
     divider.set_horizontal([
         Size.AxesX(ax),  # 主坐标轴
-        Size.Fixed(0.05),  # 填充，0.1英寸
-        Size.Fixed(0.2),  # 颜色条，0.3英寸
+        Size.Fixed(0.05),  # 填充，0.1 英寸
+        Size.Fixed(0.2),  # 颜色条，0.3 英寸
     ])
     divider.set_vertical([Size.AxesY(ax)])
 

@@ -1,6 +1,6 @@
 # 加载数据
 
-接下来，我们将使用`load_iris`函数从scikit-learn中加载鸢尾花数据集。
+接下来，我们将使用`load_iris`函数从 scikit-learn 中加载鸢尾花数据集。
 
 ```python
 data = load_iris()

@@ -64,9 +64,9 @@ plt.show()
 
 3. `face_alphas = [0.2 + 0.8 * (val / max_abs_y) for val in abs_y]` - 正規化された絶対 y 値に基づいて、0.2 から 1.0 の間のアルファ値を計算します。
 
-4. `colors_with_alphas = list(zip(facecolors, face_alphas))` - 各色とそれに対応するアルファ値をペアにして、(色, アルファ) のタプルのリストを作成します。
+4. `colors_with_alphas = list(zip(facecolors, face_alphas))` - 各色とそれに対応するアルファ値をペアにして、(色，アルファ) のタプルのリストを作成します。
 
-5. `ax.bar(..., color=colors_with_alphas, ...)` - (色, アルファ) のタプルを使用して、各棒に異なるアルファ値を設定します。
+5. `ax.bar(..., color=colors_with_alphas, ...)` - (色，アルファ) のタプルを使用して、各棒に異なるアルファ値を設定します。
 
 このように異なる透明度レベルを使用するアプローチは、以下の点で有効です。
 

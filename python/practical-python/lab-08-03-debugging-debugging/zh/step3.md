@@ -1,6 +1,6 @@
 # 使用交互式解释器（REPL）
 
-使用选项`-i`在执行脚本时保持Python处于活动状态。
+使用选项`-i`在执行脚本时保持 Python 处于活动状态。
 
 ```bash
 $ python3 -i blah.py

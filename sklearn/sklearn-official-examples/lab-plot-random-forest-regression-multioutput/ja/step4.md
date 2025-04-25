@@ -1,6 +1,6 @@
 # ランダムフォレスト回帰器を作成する
 
-scikit-learnの`RandomForestRegressor`を使って、最大深さ30と推定器100個のランダムフォレスト回帰器を作成します。
+scikit-learn の`RandomForestRegressor`を使って、最大深さ 30 と推定器 100 個のランダムフォレスト回帰器を作成します。
 
 ```python
 max_depth = 30

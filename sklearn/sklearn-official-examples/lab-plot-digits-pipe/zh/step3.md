@@ -1,6 +1,6 @@
-# 加载数据集并为GridSearchCV定义参数
+# 加载数据集并为 GridSearchCV 定义参数
 
-我们将加载数字数据集，并为GridSearchCV定义参数。我们将设置主成分分析（PCA）截断和分类器正则化的参数。
+我们将加载数字数据集，并为 GridSearchCV 定义参数。我们将设置主成分分析（PCA）截断和分类器正则化的参数。
 
 ```python
 X_digits, y_digits = datasets.load_digits(return_X_y=True)

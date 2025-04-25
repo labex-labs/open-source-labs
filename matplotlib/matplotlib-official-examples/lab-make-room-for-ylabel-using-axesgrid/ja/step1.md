@@ -1,6 +1,6 @@
 # ライブラリのインポートとグラフの作成
 
-最初のステップは、必要なライブラリをインポートしてグラフを作成することです。私たちは、`matplotlib.pyplot`モジュールを使ってグラフを作成し、`mpl_toolkits.axes_grid1`モジュールを使ってy軸のラベルにスペースを作ります。
+最初のステップは、必要なライブラリをインポートしてグラフを作成することです。私たちは、`matplotlib.pyplot`モジュールを使ってグラフを作成し、`mpl_toolkits.axes_grid1`モジュールを使って y 軸のラベルにスペースを作ります。
 
 ```python
 import matplotlib.pyplot as plt

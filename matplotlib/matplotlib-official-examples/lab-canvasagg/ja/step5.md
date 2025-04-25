@@ -1,6 +1,6 @@
-# numpy配列をPillow画像に保存する
+# numpy 配列を Pillow 画像に保存する
 
-numpy配列ができたので、それをPillowに渡して、Pillowがサポートする任意の形式で保存することができます。この例では、グラフをBMP画像として保存します。
+numpy 配列ができたので、それを Pillow に渡して、Pillow がサポートする任意の形式で保存することができます。この例では、グラフを BMP 画像として保存します。
 
 ```python
 from PIL import Image

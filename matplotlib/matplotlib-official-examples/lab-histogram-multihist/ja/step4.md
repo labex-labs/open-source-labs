@@ -1,6 +1,6 @@
 # ラベルとタイトルを追加する
 
-`xlabel`、`ylabel`、`title`関数を使って、x軸とy軸にラベルを付け、グラフにタイトルを追加することができます。
+`xlabel`、`ylabel`、`title`関数を使って、x 軸と y 軸にラベルを付け、グラフにタイトルを追加することができます。
 
 ```python
 plt.hist(x, n_bins)

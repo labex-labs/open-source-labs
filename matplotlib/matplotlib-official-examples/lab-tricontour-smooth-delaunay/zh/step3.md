@@ -1,6 +1,6 @@
 # 生成测试数据点
 
-我们生成一组随机的测试数据点，其x和y值在 -1 到 1 之间。我们还使用步骤2中定义的 `experiment_res` 函数生成相应的一组z值。
+我们生成一组随机的测试数据点，其 x 和 y 值在 -1 到 1 之间。我们还使用步骤 2 中定义的 `experiment_res` 函数生成相应的一组 z 值。
 
 ```python
 # User parameters for data test points

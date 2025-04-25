@@ -1,6 +1,6 @@
 # 导入库
 
-首先，我们需要导入必要的库。我们将使用Matplotlib、GTK3以及来自gi.repository的Gtk模块。
+首先，我们需要导入必要的库。我们将使用 Matplotlib、GTK3 以及来自 gi.repository 的 Gtk 模块。
 
 ```python
 import matplotlib

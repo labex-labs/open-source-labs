@@ -1,6 +1,6 @@
 # モデルの評価
 
-最後に、すべてのモデルに対する異なるROC曲線を表示できます。
+最後に、すべてのモデルに対する異なる ROC 曲線を表示できます。
 
 ```python
 import matplotlib.pyplot as plt

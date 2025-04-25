@@ -12,7 +12,7 @@
 ## 示例
 
 ```sh
-# 根据你运行此示例的位置，一些生成的数字可能会有所不同。请注意，在Go Playground上，由于其实现方式，使用 `time.Now()` 作为种子仍然会产生确定性的结果。
+# 根据你运行此示例的位置，一些生成的数字可能会有所不同。请注意，在 Go Playground 上，由于其实现方式，使用 `time.Now()` 作为种子仍然会产生确定性的结果。
 $ go run random-numbers.go
 81,87
 0.6645600532184904
@@ -21,5 +21,5 @@ $ go run random-numbers.go
 5,87
 5,87
 
-# 有关Go可以提供的其他随机量的参考，请参阅[`math/rand`](https://pkg.go.dev/math/rand)包文档。
+# 有关 Go 可以提供的其他随机量的参考，请参阅 [`math/rand`](https://pkg.go.dev/math/rand) 包文档。
 ```

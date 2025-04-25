@@ -1,6 +1,6 @@
 # 创建动画
 
-既然我们已经定义了`UpdateDist`类，那么我们可以使用Matplotlib的`FuncAnimation`类来创建动画。我们创建一个图形对象和一个轴对象，并将轴对象传递给`UpdateDist`类以创建该类的一个新实例。
+既然我们已经定义了`UpdateDist`类，那么我们可以使用 Matplotlib 的`FuncAnimation`类来创建动画。我们创建一个图形对象和一个轴对象，并将轴对象传递给`UpdateDist`类以创建该类的一个新实例。
 
 ```python
 fig, ax = plt.subplots()

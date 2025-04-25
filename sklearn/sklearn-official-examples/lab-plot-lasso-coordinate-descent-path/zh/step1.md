@@ -1,6 +1,6 @@
 # 加载数据集
 
-在这一步中，我们将从scikit-learn库中加载糖尿病数据集并对数据进行标准化。
+在这一步中，我们将从 scikit-learn 库中加载糖尿病数据集并对数据进行标准化。
 
 ```python
 from sklearn import datasets

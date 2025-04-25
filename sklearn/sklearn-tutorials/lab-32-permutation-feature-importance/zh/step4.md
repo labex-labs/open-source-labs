@@ -1,6 +1,6 @@
 # 计算排列特征重要性
 
-现在，我们将使用scikit-learn中的`permutation_importance`函数来计算排列特征重要性。此函数将训练好的模型、验证集以及特征应被置换的次数作为输入。
+现在，我们将使用 scikit-learn 中的`permutation_importance`函数来计算排列特征重要性。此函数将训练好的模型、验证集以及特征应被置换的次数作为输入。
 
 ```python
 from sklearn.inspection import permutation_importance

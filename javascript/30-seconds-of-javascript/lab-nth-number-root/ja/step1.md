@@ -10,7 +10,7 @@
 
 ```js
 const nthRoot = (x, n) => Math.pow(x, 1 / n);
-nthRoot(32, 5); // 出力: 2
+nthRoot(32, 5); // 出力：2
 ```
 
 このコードは、32 の n 乗根（n は 5）を計算し、出力として 2 を返します。

@@ -1,6 +1,6 @@
 # フォントテーブルを描画する
 
-このステップでは、指定されたフォントの最初の255文字のフォントテーブルを描画する関数`draw_font_table`を定義します。
+このステップでは、指定されたフォントの最初の 255 文字のフォントテーブルを描画する関数`draw_font_table`を定義します。
 
 ```python
 import os
@@ -12,12 +12,12 @@ from matplotlib.ft2font import FT2Font
 
 def draw_font_table(path):
     """
-    指定されたフォントの最初の255文字のフォントテーブルを描画します。
+    指定されたフォントの最初の 255 文字のフォントテーブルを描画します。
 
     パラメータ
     ----------
     path : str or None
-        フォントファイルへのパス。Noneの場合、Matplotlibのデフォルトフォントを使用します。
+        フォントファイルへのパス。None の場合、Matplotlib のデフォルトフォントを使用します。
     """
     if path is None:
         path = fm.findfont(fm.FontProperties())  # デフォルトフォント。
@@ -38,7 +38,7 @@ def draw_font_table(path):
         row, col = divmod(char_code, 16)
         chars[row][col] = chr(char_code)
 
-    # MatplotlibのAxes.tableを使ってテーブルを描画する
+    # Matplotlib の Axes.table を使ってテーブルを描画する
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.set_title(os.path.basename(path))
     ax.set_axis_off()

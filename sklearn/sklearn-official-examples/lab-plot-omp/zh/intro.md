@@ -1,11 +1,11 @@
 # 简介
 
-正交匹配追踪（Orthogonal Matching Pursuit，OMP）是一种从用字典编码的噪声测量中恢复稀疏信号的方法。在本实验中，我们将使用scikit-learn实现OMP，以便从噪声测量中恢复稀疏信号。
+正交匹配追踪（Orthogonal Matching Pursuit，OMP）是一种从用字典编码的噪声测量中恢复稀疏信号的方法。在本实验中，我们将使用 scikit-learn 实现 OMP，以便从噪声测量中恢复稀疏信号。
 
 ## 虚拟机使用提示
 
-虚拟机启动完成后，点击左上角切换到“**笔记本**”标签页，以访问Jupyter Notebook进行练习。
+虚拟机启动完成后，点击左上角切换到“**笔记本**”标签页，以访问 Jupyter Notebook 进行练习。
 
-有时，你可能需要等待几秒钟让Jupyter Notebook完成加载。由于Jupyter Notebook的限制，操作验证无法自动化。
+有时，你可能需要等待几秒钟让 Jupyter Notebook 完成加载。由于 Jupyter Notebook 的限制，操作验证无法自动化。
 
-如果你在学习过程中遇到问题，随时向Labby提问。课程结束后提供反馈，我们会及时为你解决问题。
+如果你在学习过程中遇到问题，随时向 Labby 提问。课程结束后提供反馈，我们会及时为你解决问题。

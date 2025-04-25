@@ -1,6 +1,6 @@
 # ラベルとタイトルの追加
 
-次に、`set_xlabel()`、`set_ylabel()`、および `set_title()` メソッドを使用して、x軸とy軸にラベルを追加し、グラフにタイトルを追加します。
+次に、`set_xlabel()`、`set_ylabel()`、および `set_title()` メソッドを使用して、x 軸と y 軸にラベルを追加し、グラフにタイトルを追加します。
 
 ```python
 # Add labels and title

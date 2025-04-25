@@ -1,8 +1,8 @@
-# 将字符串转换为URL Slug的函数
+# 将字符串转换为 URL Slug 的函数
 
-要将字符串转换为可用于URL的slug，请执行以下步骤：
+要将字符串转换为可用于 URL 的 slug，请执行以下步骤：
 
-1. 打开终端/SSH并输入`node`以开始练习编码。
+1. 打开终端/SSH 并输入`node`以开始练习编码。
 2. 使用`String.prototype.toLowerCase()`和`String.prototype.trim()`方法规范化字符串。
 3. 使用`String.prototype.replace()`方法将空格、破折号和下划线替换为`-`，并删除特殊字符。
 4. 实现以下代码：

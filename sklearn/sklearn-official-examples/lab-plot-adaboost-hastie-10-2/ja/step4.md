@@ -1,6 +1,6 @@
 # 結果をプロットする
 
-最後に、ベースラインと離散的なAdaboost分類器および実際のAdaboost分類器の訓練エラーとテストエラーをプロットします。
+最後に、ベースラインと離散的な Adaboost 分類器および実際の Adaboost 分類器の訓練エラーとテストエラーをプロットします。
 
 ```python
 import matplotlib.pyplot as plt

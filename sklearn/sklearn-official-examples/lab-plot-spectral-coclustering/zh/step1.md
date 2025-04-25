@@ -1,6 +1,6 @@
 # 导入必要的库
 
-我们需要导入必要的库，如numpy、matplotlib、scikit-learn。
+我们需要导入必要的库，如 numpy、matplotlib、scikit-learn。
 
 ```python
 import numpy as np

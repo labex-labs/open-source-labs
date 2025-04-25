@@ -1,6 +1,6 @@
 # コマンドラインツール
 
-Pythonはしばしばコマンドラインツールに使用されます。
+Python はしばしばコマンドラインツールに使用されます。
 
 ```bash
 $ python3 report.py portfolio.csv prices.csv

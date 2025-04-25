@@ -20,5 +20,5 @@
 - なし -> 例外
 - [] -> []
 - 一般的なケース
-  - 入力: ['ram', 'act', 'arm', 'bat', 'cat', 'tab']
-  - 結果: ['arm', 'ram', 'act', 'cat', 'bat', 'tab']
+  - 入力：['ram', 'act', 'arm', 'bat', 'cat', 'tab']
+  - 結果：['arm', 'ram', 'act', 'cat', 'bat', 'tab']

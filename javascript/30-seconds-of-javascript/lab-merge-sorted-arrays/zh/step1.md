@@ -20,7 +20,7 @@ const mergeSortedArrays = (a, b) => {
   });
 };
 
-console.log(mergeSortedArrays([1, 4, 5], [2, 3, 6])); // 输出: [1, 2, 3, 4, 5, 6]
+console.log(mergeSortedArrays([1, 4, 5], [2, 3, 6])); // 输出：[1, 2, 3, 4, 5, 6]
 ```
 
 在上述代码中，`mergeSortedArrays` 函数接受两个已排序数组作为参数，并按照上述步骤返回合并后的数组。示例代码的输出是 `[1, 2, 3, 4, 5, 6]`。

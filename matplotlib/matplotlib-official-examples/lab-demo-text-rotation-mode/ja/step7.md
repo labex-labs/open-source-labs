@@ -1,6 +1,6 @@
 # サブフィギュアを作成して `test_rotation_mode` 関数を呼び出す
 
-2つのサブフィギュアを作成し、`fig` と `mode` のパラメータを使って `test_rotation_mode` 関数を呼び出します。
+2 つのサブフィギュアを作成し、`fig` と `mode` のパラメータを使って `test_rotation_mode` 関数を呼び出します。
 
 ```python
 fig = plt.figure(figsize=(8, 5))

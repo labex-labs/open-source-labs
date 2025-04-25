@@ -62,7 +62,7 @@ Unpacked name: email
 Unpacked value: guido@python.org
 ```
 
-**解説:**
+**解説：**
 
 - `parse_line` 関数は、`split` メソッドを使用して入力文字列を '=' 文字で分割します。このメソッドは、指定された区切り文字に基づいて文字列を部分に分割します。
 - `return (name, value)` という構文を使用して、両方の部分をタプルとして返します。タプルは、複数の値をまとめる方法です。

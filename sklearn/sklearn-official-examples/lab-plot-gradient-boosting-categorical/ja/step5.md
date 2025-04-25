@@ -1,6 +1,6 @@
 # ネイティブカテゴリカルサポートパイプライン
 
-HistGradientBoostingRegressor推定器のネイティブカテゴリカルサポートを使ってカテゴリカル特徴を処理するパイプラインを作成します。データの前処理には依然としてOrdinalEncoderを使用します。
+HistGradientBoostingRegressor 推定器のネイティブカテゴリカルサポートを使ってカテゴリカル特徴を処理するパイプラインを作成します。データの前処理には依然として OrdinalEncoder を使用します。
 
 ```python
 hist_native = make_pipeline(

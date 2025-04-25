@@ -20,7 +20,7 @@ class Child(Mother, Father):
 ```python
 def print_report(reportdata):
     '''
-    (名前, 株数, 価格, 変動) のタプルのリストから、見やすくフォーマットされたテーブルを表示します。
+    (名前，株数，価格，変動) のタプルのリストから、見やすくフォーマットされたテーブルを表示します。
     '''
     headers = ('Name','Shares','Price','Change')
     print('%10s %10s %10s %10s' % headers)

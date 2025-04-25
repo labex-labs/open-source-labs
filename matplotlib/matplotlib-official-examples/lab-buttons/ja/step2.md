@@ -1,6 +1,6 @@
 # 初期のグラフを設定する
 
-次に、初期のグラフを設定します。`numpy`の`arange`関数を使って周波数2Hzの正弦波を作成し、`matplotlib.pyplot`の`plot`関数を使ってプロットします。
+次に、初期のグラフを設定します。`numpy`の`arange`関数を使って周波数 2Hz の正弦波を作成し、`matplotlib.pyplot`の`plot`関数を使ってプロットします。
 
 ```python
 freqs = np.arange(2, 20, 3)

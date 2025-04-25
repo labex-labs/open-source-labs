@@ -1,6 +1,6 @@
-# 配置变换器以输出DataFrame
+# 配置变换器以输出 DataFrame
 
-要配置像`preprocessing.StandardScaler`这样的估计器以返回DataFrame，请调用`set_output`。
+要配置像`preprocessing.StandardScaler`这样的估计器以返回 DataFrame，请调用`set_output`。
 
 ```python
 from sklearn.preprocessing import StandardScaler

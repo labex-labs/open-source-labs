@@ -1,6 +1,6 @@
 # 決定境界を描画する
 
-このステップでは、前のステップで作成した決定境界を描画します。SVMモデルの`coef_`と`intercept_`属性を使って決定境界を描画します。
+このステップでは、前のステップで作成した決定境界を描画します。SVM モデルの`coef_`と`intercept_`属性を使って決定境界を描画します。
 
 ```python
     for coef, intercept, col in zip(svm.coef_, svm.intercept_, classes):

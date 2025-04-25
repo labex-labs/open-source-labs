@@ -1,6 +1,6 @@
 # サンプルデータの生成
 
-3つの独立成分からなるサンプルの混合信号を生成します。信号にノイズを加え、データを標準化します。また、3つの独立成分を混合するための混合行列も生成します。
+3 つの独立成分からなるサンプルの混合信号を生成します。信号にノイズを加え、データを標準化します。また、3 つの独立成分を混合するための混合行列も生成します。
 
 ```python
 import numpy as np
@@ -10,9 +10,9 @@ np.random.seed(0)
 n_samples = 2000
 time = np.linspace(0, 8, n_samples)
 
-s1 = np.sin(2 * time)  # 信号1: 正弦波信号
-s2 = np.sign(np.sin(3 * time))  # 信号2: 方形波信号
-s3 = signal.sawtooth(2 * np.pi * time)  # 信号3: のこぎり波信号
+s1 = np.sin(2 * time)  # 信号 1: 正弦波信号
+s2 = np.sign(np.sin(3 * time))  # 信号 2: 方形波信号
+s3 = signal.sawtooth(2 * np.pi * time)  # 信号 3: のこぎり波信号
 
 S = np.c_[s1, s2, s3]
 S += 0.2 * np.random.normal(size=S.shape)  # ノイズを加える

@@ -18,7 +18,7 @@ git config --global user.name "your-username"
 git config --global user.email "your-email"
 ```
 
-3. 创建并切换到 `new-branch` 分支，在该分支上进行一些代码更改，然后提交，提交消息为 “Create a new-branch branch”：
+3. 创建并切换到 `new-branch` 分支，在该分支上进行一些代码更改，然后提交，提交消息为“Create a new-branch branch”：
 
 ```shell
 git checkout -b new-branch
@@ -26,13 +26,13 @@ echo "hello,world" > file1.txt
 git commit -am "Create a new-branch branch"
 ```
 
-4. 查看提交消息为 “Create a new-branch branch” 的提交哈希值：
+4. 查看提交消息为“Create a new-branch branch”的提交哈希值：
 
 ```shell
 git log
 ```
 
-5. 查找所有不包含提交消息为 “Create a new-branch branch” 的哈希值的分支。为此，我们可以使用以下命令：
+5. 查找所有不包含提交消息为“Create a new-branch branch”的哈希值的分支。为此，我们可以使用以下命令：
 
 ```shell
 git branch --no-contains 31c5ac20129151af1

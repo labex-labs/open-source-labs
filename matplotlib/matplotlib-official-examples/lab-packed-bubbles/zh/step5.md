@@ -25,7 +25,7 @@
                 # 从气泡到质心的方向向量
                 dir_vec = self.com - self.bubbles[i, :2]
 
-                # 缩短方向向量使其长度为1
+                # 缩短方向向量使其长度为 1
                 dir_vec = dir_vec / np.sqrt(dir_vec.dot(dir_vec))
 
                 # 计算新的气泡位置

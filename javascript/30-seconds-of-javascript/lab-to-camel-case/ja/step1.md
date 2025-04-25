@@ -2,7 +2,7 @@
 
 文字列をキャメルケースに変換するには、次の手順に従います。
 
-1. ターミナル/SSHを開き、コーディングの練習を始めるために `node` と入力します。
+1. ターミナル/SSH を開き、コーディングの練習を始めるために `node` と入力します。
 2. 適切な正規表現を使って `String.prototype.match()` を使って文字列を単語に分割します。
 3. `Array.prototype.map()`, `Array.prototype.slice()`, `Array.prototype.join()`, `String.prototype.toLowerCase()`、および `String.prototype.toUpperCase()` を使って単語を結合し、各単語の先頭文字を大文字にします。
 4. 以下に示す `toCamelCase` 関数を使って変換を行います。

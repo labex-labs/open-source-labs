@@ -3,7 +3,7 @@
 在这一步中，我们将使用 scikit-learn 的 `GaussianMixture` 类来实现高斯混合模型。我们会将模型拟合到我们的数据集上，并预测每个数据点的聚类标签。最后，我们将绘制结果。
 
 ```python
-# 创建一个具有5个组件的高斯混合模型对象
+# 创建一个具有 5 个组件的高斯混合模型对象
 gmm = mixture.GaussianMixture(n_components=5, covariance_type="full")
 
 # 将高斯混合模型拟合到数据上

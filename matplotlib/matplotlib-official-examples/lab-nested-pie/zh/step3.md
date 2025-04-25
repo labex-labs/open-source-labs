@@ -7,7 +7,7 @@ fig, ax = plt.subplots(subplot_kw=dict(projection="polar"))
 
 size = 0.3
 vals = np.array([[60., 32.], [37., 40.], [29., 10.]])
-# 将vals归一化到2π
+# 将 vals 归一化到 2π
 valsnorm = vals/np.sum(vals)*2*np.pi
 # 获取条形边缘的纵坐标
 valsleft = np.cumsum(np.append(0, valsnorm.flatten()[:-1])).reshape(vals.shape)

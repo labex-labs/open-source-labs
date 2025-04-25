@@ -1,6 +1,6 @@
-# 演示1 - 每个轴上都有颜色条
+# 演示 1 - 每个轴上都有颜色条
 
-我们将使用以下代码创建一个包含3张图像的网格，每个轴上都有一个颜色条：
+我们将使用以下代码创建一个包含 3 张图像的网格，每个轴上都有一个颜色条：
 
 ```python
 grid = ImageGrid(
@@ -15,13 +15,13 @@ for i, (ax, z) in enumerate(zip(grid, ZS)):
     if i in [1, 2]:
         cb.set_ticks([-1, 0, 1])
 
-for ax, im_title in zip(grid, ["图像1", "图像2", "图像3"]):
+for ax, im_title in zip(grid, ["图像 1", "图像 2", "图像 3"]):
     add_inner_title(ax, im_title, loc='lower left')
 ```
 
-- 我们使用 `ImageGrid` 创建一个包含3张图像的网格。
+- 我们使用 `ImageGrid` 创建一个包含 3 张图像的网格。
 - 我们将 `cbar_mode` 设置为 "each"，以便在每个轴上添加一个颜色条。
-- 我们将 `share_all` 参数设置为True，以便在所有图像之间共享x轴和y轴。
+- 我们将 `share_all` 参数设置为 True，以便在所有图像之间共享 x 轴和 y 轴。
 - 我们将 `cbar_location` 参数设置为 "top"，以便将颜色条定位在顶部。
 - 我们为第一张图像设置 `xticks` 和 `yticks`。
 - 我们遍历每张图像，并使用 `imshow` 将图像添加到轴上。

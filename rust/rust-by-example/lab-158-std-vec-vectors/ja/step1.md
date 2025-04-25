@@ -23,7 +23,7 @@ fn main() {
     xs.push(4);
     println!("Vector: {:?}", xs);
 
-    // エラー！ 不変ベクトルは拡大できません
+    // エラー！不変ベクトルは拡大できません
     collected_iterator.push(0);
     // FIXME ^ Comment out this line
 

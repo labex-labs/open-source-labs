@@ -1,4 +1,4 @@
-# 练习1.33：从命令行读取
+# 练习 1.33：从命令行读取
 
 在`pcost.py`程序中，输入文件的名称被硬编码到了代码中：
 
@@ -60,9 +60,9 @@ print('Total cost:', cost)
 
 `sys.argv`是一个列表，它包含命令行上传递的参数（如果有的话）。
 
-要运行你的程序，你需要在终端中运行Python。
+要运行你的程序，你需要在终端中运行 Python。
 
-例如，在Unix上的bash中：
+例如，在 Unix 上的 bash 中：
 
 ```bash
 $ python3 pcost.py portfolio.csv

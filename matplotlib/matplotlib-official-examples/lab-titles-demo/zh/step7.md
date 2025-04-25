@@ -1,4 +1,4 @@
-# 使用rcParams设置标题的Y轴位置
+# 使用 rcParams 设置标题的 Y 轴位置
 
 设置`rcParams`的`titley`和`titlepad`参数来调整标题的垂直位置。
 

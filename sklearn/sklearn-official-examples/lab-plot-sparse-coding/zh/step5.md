@@ -4,8 +4,8 @@
 
 ```python
 # 按以下格式列出不同的稀疏编码方法：
-# (标题, 变换算法, 变换α,
-#  变换非零系数数量, 颜色)
+# (标题，变换算法，变换α,
+#  变换非零系数数量，颜色)
 estimators = [
     ("正交匹配追踪（OMP）", "omp", None, 15, "海军蓝"),
     ("套索（Lasso）", "lasso_lars", 2, None, "青绿色"),
@@ -35,7 +35,7 @@ for subplot, (D, title) in enumerate(
             x,
             color=color,
             lw=lw,
-            label="%s: %s 个非零系数,\n%.2f 误差" % (标题, density, squared_error),
+            label="%s: %s 个非零系数，\n%.2f 误差" % (标题, density, squared_error),
         )
 
     # 软阈值去偏
@@ -51,7 +51,7 @@ for subplot, (D, title) in enumerate(
         x,
         color="深橙色",
         lw=lw,
-        label="带去偏的阈值处理:\n%d 个非零系数, %.2f 误差"
+        label="带去偏的阈值处理:\n%d 个非零系数，%.2f 误差"
         % (len(idx), squared_error),
     )
     plt.axis("tight")

@@ -1,6 +1,6 @@
-# ImageGridに画像を表示する
+# ImageGrid に画像を表示する
 
-最後に、`imshow`関数と`zip`関数を使用してImageGridに画像を表示し、グリッド内の軸を反復処理します。
+最後に、`imshow`関数と`zip`関数を使用して ImageGrid に画像を表示し、グリッド内の軸を反復処理します。
 
 ```python
 for ax, im in zip(grid, [im1, im2, im3]):

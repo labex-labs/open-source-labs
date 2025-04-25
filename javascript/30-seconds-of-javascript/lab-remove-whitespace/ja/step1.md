@@ -12,12 +12,12 @@ const removeWhitespace = (str) => str.replace(/\s+/g, "");
 
 - `/\s+/g` は次のように解釈されます。
   - `\s`: 任意の空白文字（スペース、タブ、改行）を一致させます
-  - `+`: 直前の文字の1回以上の出現を一致させます
-  - `/g`: グローバルフラグ - 文字列内のすべての出現を一致させます。最初の1つだけではなく
+  - `+`: 直前の文字の 1 回以上の出現を一致させます
+  - `/g`: グローバルフラグ - 文字列内のすべての出現を一致させます。最初の 1 つだけではなく
 
 ## 正規表現のクイックリファレンス
 
-一般的な空白パターン:
+一般的な空白パターン：
 
 - `\s` - 任意の空白（スペース、タブ、改行）を一致させます
 - `\t` - タブ文字を一致させます
@@ -31,7 +31,7 @@ const removeWhitespace = (str) => str.replace(/\s+/g, "");
 removeWhitespace("Lorem ipsum.\n Dolor sit amet. ");
 // 'Loremipsum.Dolorsitamet.'
 
-// さらに例:
+// さらに例：
 removeWhitespace("Hello    World"); // "HelloWorld"
 removeWhitespace("Tab\there\nNew line"); // "TabhereNewline"
 ```

@@ -22,7 +22,7 @@ ax1.legend()
 ax2.legend()
 ```
 
-`tree_disp.axes_` 是一个numpy数组，包含用于绘制局部依赖图的轴。这可以传递给 `mlp_disp`，以产生将图绘制在彼此之上的相同效果。此外，`mlp_disp.figure_` 存储图形，这允许在调用 `plot` 后调整图形大小。在这种情况下，`tree_disp.axes_` 有两个维度，因此 `plot` 只会在最左边的图上显示y标签和y刻度。
+`tree_disp.axes_` 是一个 numpy 数组，包含用于绘制局部依赖图的轴。这可以传递给 `mlp_disp`，以产生将图绘制在彼此之上的相同效果。此外，`mlp_disp.figure_` 存储图形，这允许在调用 `plot` 后调整图形大小。在这种情况下，`tree_disp.axes_` 有两个维度，因此 `plot` 只会在最左边的图上显示 y 标签和 y 刻度。
 
 ```python
 tree_disp.plot(line_kw={"label": "决策树"})

@@ -5,7 +5,7 @@
 ```python
 from sklearn.manifold import LocallyLinearEmbedding
 
-# LLEアルゴリズムのインスタンスを作成
+# LLE アルゴリズムのインスタンスを作成
 lle = LocallyLinearEmbedding(n_components=2)
 
 # アルゴリズムをデータに適合させ、データを低次元空間に変換

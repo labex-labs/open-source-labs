@@ -40,7 +40,7 @@ impl Sheep {
 
 // `Sheep` に対して `Animal` トレイトを実装します。
 impl Animal for Sheep {
-    // `Self` は実装型: `Sheep` です。
+    // `Self` は実装型：`Sheep` です。
     fn new(name: &'static str) -> Sheep {
         Sheep { name: name, naked: false }
     }

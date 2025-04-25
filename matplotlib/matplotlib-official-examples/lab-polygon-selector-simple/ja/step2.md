@@ -6,7 +6,7 @@
 fig, ax = plt.subplots()
 selector = PolygonSelector(ax, lambda *args: None)
 
-# 3つの頂点を追加する
+# 3 つの頂点を追加する
 selector.verts = [(0.1, 0.4), (0.5, 0.9), (0.3, 0.2)]
 
 # 多角形を描画する

@@ -1,6 +1,6 @@
 # 乱数データの生成
 
-NumPyの`random`モジュールを使って乱数データを生成します。
+NumPy の`random`モジュールを使って乱数データを生成します。
 
 ```python
 x = np.random.rand(10)

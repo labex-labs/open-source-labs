@@ -6,7 +6,7 @@
 # 仅筛选二氧化氮（no2）数据
 no2 = air_quality[air_quality["parameter"] == "no2"]
 
-# 对每个地点（按地点分组）使用2个测量值（取前两行）
+# 对每个地点（按地点分组）使用 2 个测量值（取前两行）
 no2_subset = no2.sort_index().groupby(["location"]).head(2)
 
 # 透视数据

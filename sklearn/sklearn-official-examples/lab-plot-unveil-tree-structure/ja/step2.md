@@ -13,15 +13,15 @@ threshold = clf.tree_.threshold
 
 node_depth = np.zeros(shape=n_nodes, dtype=np.int64)
 is_leaves = np.zeros(shape=n_nodes, dtype=bool)
-stack = [(0, 0)]  # 根ノードID(0)とその深さ(0)で始める
+stack = [(0, 0)]  # 根ノード ID(0) とその深さ (0) で始める
 while len(stack) > 0:
-    # `pop`により、各ノードが1回だけ訪問されるようにする
+    # `pop` により、各ノードが 1 回だけ訪問されるようにする
     node_id, depth = stack.pop()
     node_depth[node_id] = depth
 
     # ノードの左と右の子が同じでなければ、分割ノードである
     is_split_node = children_left[node_id]!= children_right[node_id]
-    # 分割ノードの場合、左と右の子と深さを`stack`に追加して、それらをループできるようにする
+    # 分割ノードの場合、左と右の子と深さを `stack` に追加して、それらをループできるようにする
     if is_split_node:
         stack.append((children_left[node_id], depth + 1))
         stack.append((children_right[node_id], depth + 1))
@@ -40,7 +40,7 @@ for i in range(n_nodes):
         )
     else:
         print(
-            "{space}node={node}は分割ノードです: "
+            "{space}node={node}は分割ノードです："
             "X[:, {feature}] <= {threshold}の場合、ノード{left}に移動し、そうでなければノード{right}に移動します。".format(
                 space=node_depth[i] * "\t",
                 node=i,

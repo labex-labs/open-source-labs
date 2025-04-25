@@ -10,7 +10,7 @@ fn main() {
     let mut index = 0;
 
     while index < 5 {
-        println!("值是: {}", a[index]);
+        println!("值是：{}", a[index]);
 
         index += 1;
     }
@@ -46,7 +46,7 @@ fn main() {
     let a = [10, 20, 30, 40, 50];
 
     for element in a {
-        println!("值是: {element}");
+        println!("值是：{element}");
     }
 }
 ```

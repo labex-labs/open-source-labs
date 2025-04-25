@@ -1,6 +1,6 @@
 # 生成样本数据
 
-我们生成具有40个特征和20个样本的样本数据。我们使用 `np.random.normal()` 函数来创建正态分布。
+我们生成具有 40 个特征和 20 个样本的样本数据。我们使用 `np.random.normal()` 函数来创建正态分布。
 
 ```python
 import numpy as np

@@ -1,6 +1,6 @@
 # 分類器のベンチマーク
 
-ここでは、8つの異なる分類モデルを使ってデータセットを訓練とテストし、各モデルの性能結果を取得します。この研究の目的は、このような多クラスのテキスト分類問題に対する異なる種類の分類器の計算量/精度のトレードオフを明らかにすることです。
+ここでは、8 つの異なる分類モデルを使ってデータセットを訓練とテストし、各モデルの性能結果を取得します。この研究の目的は、このような多クラスのテキスト分類問題に対する異なる種類の分類器の計算量/精度のトレードオフを明らかにすることです。
 
 ```python
 from sklearn.utils.extmath import density
@@ -19,9 +19,9 @@ for clf, name in (
     (RidgeClassifier(alpha=1.0, solver="sparse_cg"), "リッジ分類器"),
     (KNeighborsClassifier(n_neighbors=100), "kNN"),
     (RandomForestClassifier(), "ランダムフォレスト"),
-    # L2ペナルティ付きの線形SVC
-    (LinearSVC(C=0.1, dual=False, max_iter=1000), "線形SVC"),
-    # L2ペナルティ付きの線形SGD
+    # L2 ペナルティ付きの線形 SVC
+    (LinearSVC(C=0.1, dual=False, max_iter=1000), "線形 SVC"),
+    # L2 ペナルティ付きの線形 SGD
     (
         SGDClassifier(
             loss="log_loss", alpha=1e-4, n_iter_no_change=3, early_stopping=True

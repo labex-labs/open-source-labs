@@ -4,14 +4,14 @@
 
 ```python
 class RadarAxes(PolarAxes):
-    # RadarAxesクラスのコードはここに記載します
+    # RadarAxes クラスのコードはここに記載します
 
     def fill(self, *args, closed=True, **kwargs):
-        # fillメソッドをオーバーライドする
+        # fill メソッドをオーバーライドする
         return super().fill(closed=closed, *args, **kwargs)
 
     def plot(self, *args, **kwargs):
-        # plotメソッドをオーバーライドする
+        # plot メソッドをオーバーライドする
         lines = super().plot(*args, **kwargs)
         for line in lines:
             self._close_line(line)

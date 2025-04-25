@@ -9,7 +9,7 @@ class PauseAnimation:
         fig, ax = plt.subplots()
         ax.set_title('Click to pause/resume the animation')
 
-        # 创建x轴的值
+        # 创建 x 轴的值
         x = np.linspace(-0.1, 0.1, 1000)
 
         # 从一个正态分布开始

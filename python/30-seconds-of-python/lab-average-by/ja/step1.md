@@ -10,7 +10,7 @@
 - `sum()` を使用してすべてのマッピングされた値を合計し、`len(lst)` で割ります。
 - デフォルトの同一関数を使用するには、最後の引数 `fn` を省略します。
 
-関数のシグネチャ: `def average_by(lst, fn = lambda x: x) -> float:`
+関数のシグネチャ：`def average_by(lst, fn = lambda x: x) -> float:`
 
 ```python
 def average_by(lst, fn = lambda x: x):

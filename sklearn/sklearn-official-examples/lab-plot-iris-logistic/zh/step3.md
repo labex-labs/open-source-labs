@@ -1,6 +1,6 @@
 # 在散点图上显示决策边界
 
-我们将使用scikit-learn库中的DecisionBoundaryDisplay在散点图上显示决策边界。
+我们将使用 scikit-learn 库中的 DecisionBoundaryDisplay 在散点图上显示决策边界。
 
 ```python
 _, ax = plt.subplots(figsize=(4, 3))

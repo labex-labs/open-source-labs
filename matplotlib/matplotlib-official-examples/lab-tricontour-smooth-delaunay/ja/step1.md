@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-最初のステップは、必要なライブラリをインポートすることです。このチュートリアルでは、NumPyとMatplotlibを使用します。
+最初のステップは、必要なライブラリをインポートすることです。このチュートリアルでは、NumPy と Matplotlib を使用します。
 
 ```python
 import matplotlib.pyplot as plt

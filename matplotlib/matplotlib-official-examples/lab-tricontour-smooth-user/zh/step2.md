@@ -1,6 +1,6 @@
 # 创建三角剖分
 
-在这一步中，我们使用`np.linspace`和`np.repeat`创建点的x和y坐标。然后，我们使用第一步中定义的`function_z`来计算z值。最后，我们使用`tri.Triangulation`创建三角剖分。
+在这一步中，我们使用`np.linspace`和`np.repeat`创建点的 x 和 y 坐标。然后，我们使用第一步中定义的`function_z`来计算 z 值。最后，我们使用`tri.Triangulation`创建三角剖分。
 
 ```python
 n_angles = 20

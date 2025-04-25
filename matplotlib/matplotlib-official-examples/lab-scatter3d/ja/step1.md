@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-3D散布図を作成するには、Matplotlibライブラリを使用します。また、NumPyライブラリを使ってランダムなデータを生成します。
+3D 散布図を作成するには、Matplotlib ライブラリを使用します。また、NumPy ライブラリを使ってランダムなデータを生成します。
 
 ```python
 import matplotlib.pyplot as plt

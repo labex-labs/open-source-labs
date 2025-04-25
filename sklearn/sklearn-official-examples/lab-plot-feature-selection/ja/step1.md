@@ -1,13 +1,13 @@
 # サンプルデータを生成する
 
-まず、このデモ用にいくつかのサンプルデータを生成します。irisデータセットを使用し、それに相関のないノイズデータを追加します。
+まず、このデモ用にいくつかのサンプルデータを生成します。iris データセットを使用し、それに相関のないノイズデータを追加します。
 
 ```python
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 
-# irisデータセット
+# iris データセット
 X, y = load_iris(return_X_y=True)
 
 # 相関のないいくつかのノイズデータ

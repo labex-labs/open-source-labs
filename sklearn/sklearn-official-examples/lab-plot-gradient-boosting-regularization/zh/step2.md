@@ -1,6 +1,6 @@
 # 加载并分割数据
 
-我们将使用make_hastie_10_2数据集，并将其分割为训练集和测试集。
+我们将使用 make_hastie_10_2 数据集，并将其分割为训练集和测试集。
 
 ```python
 X, y = datasets.make_hastie_10_2(n_samples=4000, random_state=1)

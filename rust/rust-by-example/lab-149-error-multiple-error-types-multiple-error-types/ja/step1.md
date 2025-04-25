@@ -4,12 +4,12 @@
 
 時には、`Option` が `Result` と相互作用する必要があり、または `Result<T, Error1>` が `Result<T, Error2>` と相互作用する必要があります。そのような場合、私たちは異なるエラー型を、それらが組み合わせやすく相互作用しやすいように管理したいと考えます。
 
-次のコードでは、`unwrap` の2つのインスタンスが異なるエラー型を生成します。`Vec::first` は `Option` を返し、`parse::<i32>` は `Result<i32, ParseIntError>` を返します。
+次のコードでは、`unwrap` の 2 つのインスタンスが異なるエラー型を生成します。`Vec::first` は `Option` を返し、`parse::<i32>` は `Result<i32, ParseIntError>` を返します。
 
 ```rust
 fn double_first(vec: Vec<&str>) -> i32 {
-    let first = vec.first().unwrap(); // エラー1を生成
-    2 * first.parse::<i32>().unwrap() // エラー2を生成
+    let first = vec.first().unwrap(); // エラー1 を生成
+    2 * first.parse::<i32>().unwrap() // エラー2 を生成
 }
 
 fn main() {

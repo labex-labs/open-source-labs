@@ -1,6 +1,6 @@
 # 埋め込みディレクティブ
 
-与えられたコードを修正して、ファイルとフォルダをGoバイナリに埋め込み、その内容を表示することがあなたの課題です。
+与えられたコードを修正して、ファイルとフォルダを Go バイナリに埋め込み、その内容を表示することがあなたの課題です。
 
 - ファイルとフォルダを埋め込むには、`embed`パッケージを使用する必要があります。
 - 埋め込まれたファイルの内容を格納するには、`string`型と`[]byte`型を使用する必要があります。
@@ -9,7 +9,7 @@
 
 ```sh
 # これらのコマンドを使ってサンプルを実行します。
-# （注：Go Playgroundの制限により、
+# （注：Go Playground の制限により、
 # このサンプルはローカルマシン上でのみ実行できます。）
 $ mkdir -p folder
 $ echo "hello go" > folder/single_file.txt
@@ -26,31 +26,31 @@ hello go
 以下に完全なコードがあります。
 
 ```go
-// `//go:embed`は、プログラムがビルド時にGoバイナリに任意のファイルやフォルダを含めることを可能にする
-// [コンパイラディレクティブ](https://pkg.go.dev/cmd/compile#hdr-Compiler_Directives)です。
+// `//go:embed` は、プログラムがビルド時に Go バイナリに任意のファイルやフォルダを含めることを可能にする
+// [コンパイラディレクティブ](https://pkg.go.dev/cmd/compile#hdr-Compiler_Directives) です。
 // 埋め込みディレクティブに関する詳細は、
-// [ここ](https://pkg.go.dev/embed)を参照してください。
+// [ここ](https://pkg.go.dev/embed) を参照してください。
 package main
 
-// `embed`パッケージをインポートします。このパッケージからエクスポートされた識別子を使わない場合、
+// `embed` パッケージをインポートします。このパッケージからエクスポートされた識別子を使わない場合、
 // `_ "embed"`でブランクインポートを行うことができます。
 import (
 	"embed"
 )
 
-// `embed`ディレクティブは、Goソースファイルが含まれるディレクトリに対する相対パスを受け付けます。
-// このディレクティブは、その直後に続く`string`変数にファイルの内容を埋め込みます。
+// `embed` ディレクティブは、Go ソースファイルが含まれるディレクトリに対する相対パスを受け付けます。
+// このディレクティブは、その直後に続く `string` 変数にファイルの内容を埋め込みます。
 //
 //go:embed folder/single_file.txt
 var fileString string
 
-// または、ファイルの内容を`[]byte`に埋め込むこともできます。
+// または、ファイルの内容を `[]byte` に埋め込むこともできます。
 //
 //go:embed folder/single_file.txt
 var fileByte []byte
 
 // ワイルドカードを使って複数のファイルやフォルダを埋め込むこともできます。
-// これは、[embed.FS型](https://pkg.go.dev/embed#FS)の変数を使い、
+// これは、[embed.FS 型](https://pkg.go.dev/embed#FS) の変数を使い、
 // 簡単な仮想ファイルシステムを実装します。
 //
 //go:embed folder/single_file.txt
@@ -59,7 +59,7 @@ var folder embed.FS
 
 func main() {
 
-	// `single_file.txt`の内容を表示します。
+	// `single_file.txt` の内容を表示します。
 	print(fileString)
 	print(string(fileByte))
 

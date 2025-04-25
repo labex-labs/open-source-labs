@@ -13,7 +13,7 @@ git config --global user.name "你的用户名"
 git config --global user.email "你的邮箱"
 ```
 
-2. 创建并切换到名为 `feature1` 的分支，创建一个名为 `file.txt` 的文件，并在其中写入 `feature 1`，将其添加到暂存区并使用消息 “添加功能 1” 提交：
+2. 创建并切换到名为 `feature1` 的分支，创建一个名为 `file.txt` 的文件，并在其中写入 `feature 1`，将其添加到暂存区并使用消息“添加功能 1”提交：
 
 ```shell
 git checkout -b feature1

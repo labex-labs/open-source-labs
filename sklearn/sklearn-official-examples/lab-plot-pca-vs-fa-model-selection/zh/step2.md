@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA, FactorAnalysis
 from sklearn.covariance import ShrunkCovariance, LedoitWolf
 from sklearn.model_selection import cross_val_score, GridSearchCV
 
-n_components = np.arange(0, n_features, 5)  # n_components的选项
+n_components = np.arange(0, n_features, 5)  # n_components 的选项
 
 def compute_scores(X):
     pca = PCA(svd_solver="full")
@@ -40,30 +40,30 @@ for X, title in [(X_homo, "同方差噪声"), (X_hetero, "异方差噪声")]:
     pca.fit(X)
     n_components_pca_mle = pca.n_components_
 
-    print("通过PCA交叉验证得到的最佳n_components = %d" % n_components_pca)
-    print("通过因子分析交叉验证得到的最佳n_components = %d" % n_components_fa)
-    print("通过PCA最大似然估计得到的最佳n_components = %d" % n_components_pca_mle)
+    print("通过 PCA 交叉验证得到的最佳 n_components = %d" % n_components_pca)
+    print("通过因子分析交叉验证得到的最佳 n_components = %d" % n_components_fa)
+    print("通过 PCA 最大似然估计得到的最佳 n_components = %d" % n_components_pca_mle)
 
     plt.figure()
-    plt.plot(n_components, pca_scores, "b", label="PCA分数")
+    plt.plot(n_components, pca_scores, "b", label="PCA 分数")
     plt.plot(n_components, fa_scores, "r", label="因子分析分数")
-    plt.axvline(rank, color="g", label="真实值: %d" % rank, linestyle="-")
+    plt.axvline(rank, color="g", label="真实值：%d" % rank, linestyle="-")
     plt.axvline(
         n_components_pca,
         color="b",
-        label="PCA交叉验证: %d" % n_components_pca,
+        label="PCA 交叉验证：%d" % n_components_pca,
         linestyle="--"
     )
     plt.axvline(
         n_components_fa,
         color="r",
-        label="因子分析交叉验证: %d" % n_components_fa,
+        label="因子分析交叉验证：%d" % n_components_fa,
         linestyle="--"
     )
     plt.axvline(
         n_components_pca_mle,
         color="k",
-        label="PCA最大似然估计: %d" % n_components_pca_mle,
+        label="PCA 最大似然估计：%d" % n_components_pca_mle,
         linestyle="--"
     )
 
@@ -77,7 +77,7 @@ for X, title in [(X_homo, "同方差噪声"), (X_hetero, "异方差噪声")]:
     plt.axhline(
         lw_score(X),
         color="orange",
-        label="LedoitWolf最大似然估计 %d" % n_components_pca_mle,
+        label="LedoitWolf 最大似然估计 %d" % n_components_pca_mle,
         linestyle="-."
     )
 

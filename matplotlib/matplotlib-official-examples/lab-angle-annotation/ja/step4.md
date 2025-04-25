@@ -1,11 +1,11 @@
-# 2本の交差する線を描画し、それらの間の各角度に上記の `AngleAnnotation` ツールを使ってラベルを付ける。
+# 2 本の交差する線を描画し、それらの間の各角度に上記の `AngleAnnotation` ツールを使ってラベルを付ける。
 
 ```python
 fig, ax = plt.subplots()
 fig.canvas.draw()  # レンダラーを定義するために図を描画する必要があります
 ax.set_title("AngleLabel example")
 
-# 2本の交差する線を描画し、それらの間の各角度に上記の
+# 2 本の交差する線を描画し、それらの間の各角度に上記の
 # ``AngleAnnotation`` ツールを使ってラベルを付ける。
 center = (4.5, 650)
 p1 = [(2.5, 710), (6.0, 605)]

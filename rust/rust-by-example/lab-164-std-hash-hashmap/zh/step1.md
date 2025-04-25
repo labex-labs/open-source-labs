@@ -25,7 +25,7 @@ fn main() {
     contacts.insert("Katie", "435-8291");
     contacts.insert("Robert", "956-1745");
 
-    // 接受一个引用并返回Option<&V>
+    // 接受一个引用并返回 Option<&V>
     match contacts.get(&"Daniel") {
         Some(&number) => println!("Calling Daniel: {}", call(number)),
         _ => println!("Don't have Daniel's number."),

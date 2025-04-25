@@ -11,7 +11,7 @@
    git config --global user.name "你的用户名"
    git config --global user.email "你的邮箱"
    ```
-2. 将最后一次提交的消息更正为 “修复网络错误”：
+2. 将最后一次提交的消息更正为“修复网络错误”：
    ```
    git commit --amend -m "Fix the network bug"
    ```

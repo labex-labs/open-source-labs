@@ -71,7 +71,7 @@ print("The plot has been saved in PNG, PDF, and SVG formats in the current direc
 
 你可以通过导航到 Jupyter 的文件浏览器来查看保存的文件：
 
-1. 点击左上角的 “Jupyter” 徽标
+1. 点击左上角的“Jupyter”徽标
 2. 在文件浏览器中，你应该能看到保存的图像文件
 3. 点击任何文件即可查看或下载
 

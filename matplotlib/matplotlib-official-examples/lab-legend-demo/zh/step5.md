@@ -6,7 +6,7 @@
 # 定义图表数据
 class HandlerDashedLines(HandlerLineCollection):
     """
-    用于LineCollection实例的自定义处理器。
+    用于 LineCollection 实例的自定义处理器。
     """
     def create_artists(self, legend, orig_handle,
                        xdescent, ydescent, width, height, fontsize, trans):
@@ -24,7 +24,7 @@ class HandlerDashedLines(HandlerLineCollection):
             legline = Line2D(xdata, ydata * (numlines - i) - ydescent)
             self.update_prop(legline, orig_handle, legend)
             # 将颜色、虚线样式和线宽设置为
-            # 与LineCollection中的线相同
+            # 与 LineCollection 中的线相同
             try:
                 color = orig_handle.get_colors()[i]
             except IndexError:

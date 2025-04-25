@@ -12,4 +12,4 @@
 
 这是完成挑战后的结果：
 
-![自动纠正git命令结果](../assets/challenge-autocorrect-step1-1.jpg)
+![自动纠正 git 命令结果](../assets/challenge-autocorrect-step1-1.jpg)

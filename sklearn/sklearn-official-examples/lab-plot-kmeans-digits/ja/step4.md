@@ -1,6 +1,6 @@
-# PCAにより次元削減したデータの結果を可視化する
+# PCA により次元削減したデータの結果を可視化する
 
-PCAを使ってデータセットを2次元に削減し、この新しい空間でデータとクラスタをプロットします。
+PCA を使ってデータセットを 2 次元に削減し、この新しい空間でデータとクラスタをプロットします。
 
 ```python
 import matplotlib.pyplot as plt
@@ -9,7 +9,7 @@ reduced_data = PCA(n_components=2).fit_transform(data)
 kmeans = KMeans(init="k-means++", n_clusters=n_digits, n_init=4)
 kmeans.fit(reduced_data)
 
-# メッシュのステップサイズ。VQの品質を向上させるには、この値を小さくする。
+# メッシュのステップサイズ。VQ の品質を向上させるには、この値を小さくする。
 h = 0.02  # メッシュ内の点 [x_min, x_max]x[y_min, y_max]。
 
 # 決定境界をプロットする。そのために、各点に色を割り当てます。
@@ -34,7 +34,7 @@ plt.imshow(
 )
 
 plt.plot(reduced_data[:, 0], reduced_data[:, 1], "k.", markersize=2)
-# 重心を白いXでプロットする
+# 重心を白い X でプロットする
 centroids = kmeans.cluster_centers_
 plt.scatter(
     centroids[:, 0],
@@ -46,7 +46,7 @@ plt.scatter(
     zorder=10,
 )
 plt.title(
-    "K-meansクラスタリング on the digits dataset (PCAにより次元削減したデータ)\n"
+    "K-means クラスタリング on the digits dataset (PCA により次元削減したデータ)\n"
     "重心は白い十字でマークされています"
 )
 plt.xlim(x_min, x_max)

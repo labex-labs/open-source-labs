@@ -1,6 +1,6 @@
 # 导入所需库
 
-首先，导入创建TextPath所需的库。
+首先，导入创建 TextPath 所需的库。
 
 ```python
 import matplotlib.pyplot as plt

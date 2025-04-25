@@ -1,4 +1,4 @@
-# LabelPropagationを使ってラベルを学習する
+# LabelPropagation を使ってラベルを学習する
 
 未知のサンプルのラベルを学習するために、`LabelSpreading`を使います。
 

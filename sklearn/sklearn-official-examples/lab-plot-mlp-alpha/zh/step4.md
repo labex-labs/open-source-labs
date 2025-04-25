@@ -1,6 +1,6 @@
 # 创建数据集
 
-我们将使用scikit-learn中的make_classification、make_moons和make_circles函数创建三个合成数据集。我们将使用train_test_split将每个数据集拆分为训练集和测试集。
+我们将使用 scikit-learn 中的 make_classification、make_moons 和 make_circles 函数创建三个合成数据集。我们将使用 train_test_split 将每个数据集拆分为训练集和测试集。
 
 ```python
 X, y = make_classification(

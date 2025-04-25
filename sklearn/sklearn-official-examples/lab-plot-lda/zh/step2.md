@@ -1,10 +1,10 @@
 # 实现线性判别分析（LDA）
 
-接下来，我们将使用scikit-learn的`LinearDiscriminantAnalysis`类来实现LDA。我们将创建三个分类器：
+接下来，我们将使用 scikit-learn 的`LinearDiscriminantAnalysis`类来实现 LDA。我们将创建三个分类器：
 
-- 无收缩的LDA
-- 具有Ledoit-Wolf收缩的LDA
-- 具有OAS收缩的LDA
+- 无收缩的 LDA
+- 具有 Ledoit-Wolf 收缩的 LDA
+- 具有 OAS 收缩的 LDA
 
 ```python
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis

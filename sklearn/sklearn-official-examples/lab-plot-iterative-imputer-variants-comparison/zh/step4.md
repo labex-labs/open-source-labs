@@ -1,6 +1,6 @@
 # 使用简单插补器填充缺失值
 
-我们将使用Scikit-Learn的`SimpleImputer`类，通过均值和中位数策略来填充缺失值。
+我们将使用 Scikit-Learn 的`SimpleImputer`类，通过均值和中位数策略来填充缺失值。
 
 ```python
 score_simple_imputer = pd.DataFrame()

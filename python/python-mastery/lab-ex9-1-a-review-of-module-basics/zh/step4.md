@@ -27,7 +27,7 @@ Loaded simplemod
 x is 42
 ```
 
-在这里，我们使用 `from simplemod import foo` 语句仅从 `simplemod` 模块导入 `foo` 函数。注意，尽管我们只请求了 `foo` 函数，但整个 `simplemod` 模块都被加载了。这可以从 “Loaded simplemod” 输出看出来。原因是 Python 需要加载整个模块才能访问 `foo` 函数。
+在这里，我们使用 `from simplemod import foo` 语句仅从 `simplemod` 模块导入 `foo` 函数。注意，尽管我们只请求了 `foo` 函数，但整个 `simplemod` 模块都被加载了。这可以从“Loaded simplemod”输出看出来。原因是 Python 需要加载整个模块才能访问 `foo` 函数。
 
 3. 使用 `from module import` 时，你无法直接访问模块本身：
 

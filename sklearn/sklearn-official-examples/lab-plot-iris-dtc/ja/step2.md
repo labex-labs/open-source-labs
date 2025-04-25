@@ -16,7 +16,7 @@ plot_colors = "ryb"
 plot_step = 0.02
 
 for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]):
-    # 対応する2つの特徴量のみを取り出す
+    # 対応する 2 つの特徴量のみを取り出す
     X = iris.data[:, pair]
     y = iris.target
 

@@ -1,6 +1,6 @@
 # 训练集成方法
 
-对于每种集成方法，我们将使用10个估计器，最大深度为3层。
+对于每种集成方法，我们将使用 10 个估计器，最大深度为 3 层。
 
 ```python
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier

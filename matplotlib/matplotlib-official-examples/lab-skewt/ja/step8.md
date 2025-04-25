@@ -1,6 +1,6 @@
-# SkewT - logP図を作成する
+# SkewT - logP 図を作成する
 
-ここでは、先ほど登録したSkewXAxes射影を使ってSkewT - logP図を作成します。まず、figureオブジェクトを作成し、SkewXAxes射影付きのサブプロットを追加します。その後、semilogy関数を使って温度と露点データを図にプロットします。最後に、X軸とY軸の範囲と目盛りを設定し、プロットを表示します。
+ここでは、先ほど登録した SkewXAxes 射影を使って SkewT - logP 図を作成します。まず、figure オブジェクトを作成し、SkewXAxes 射影付きのサブプロットを追加します。その後、semilogy 関数を使って温度と露点データを図にプロットします。最後に、X 軸と Y 軸の範囲と目盛りを設定し、プロットを表示します。
 
 ```python
 fig = plt.figure(figsize=(6.5875, 6.2125))

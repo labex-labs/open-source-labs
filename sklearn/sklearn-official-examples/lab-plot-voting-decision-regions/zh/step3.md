@@ -12,7 +12,7 @@ f, axarr = plt.subplots(2, 2, sharex="col", sharey="row", figsize=(10, 8))
 for idx, clf, tt in zip(
     product([0, 1], [0, 1]),
     [clf1, clf2, clf3, eclf],
-    ["决策树（深度 = 4）", "K近邻（k = 7）", "核支持向量机", "软投票"],
+    ["决策树（深度 = 4）", "K 近邻（k = 7）", "核支持向量机", "软投票"],
 ):
     DecisionBoundaryDisplay.from_estimator(
         clf, X, alpha=0.4, ax=axarr[idx[0], idx[1]], response_method="predict"

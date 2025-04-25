@@ -1,8 +1,8 @@
 # フルスクリーン
 
-VM内には既に`index.html`と`style.css`が用意されています。
+VM 内には既に`index.html`と`style.css`が用意されています。
 
-フルスクリーンモードで要素にスタイルを適用するには、`:fullscreen` CSS疑似要素セレクタを使用できます。また、`<button>`と`Element.requestFullscreen()`を使って、プレビュー用に要素をフルスクリーンにするボタンを作成することもできます。以下はコード例です。
+フルスクリーンモードで要素にスタイルを適用するには、`:fullscreen` CSS 疑似要素セレクタを使用できます。また、`<button>`と`Element.requestFullscreen()`を使って、プレビュー用に要素をフルスクリーンにするボタンを作成することもできます。以下はコード例です。
 
 ```html
 <div class="container">
@@ -41,7 +41,7 @@ VM内には既に`index.html`と`style.css`が用意されています。
   font-size: 3em;
 }
 
-/* Internet Explorer用 */
+/* Internet Explorer 用 */
 .element:-ms-fullscreen p {
   visibility: visible;
 }
@@ -54,4 +54,4 @@ VM内には既に`index.html`と`style.css`が用意されています。
 }
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。

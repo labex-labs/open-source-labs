@@ -15,7 +15,7 @@ const toHSLObject = (hslStr) => {
 };
 ```
 
-使用例:
+使用例：
 
 ```js
 toHSLObject("hsl(50, 10%, 10%)"); // { hue: 50, saturation: 10, lightness: 10 }

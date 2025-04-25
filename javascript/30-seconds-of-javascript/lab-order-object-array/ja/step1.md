@@ -31,9 +31,9 @@ const users = [
 
 // 名前で昇順、年齢で降順にソート
 orderBy(users, ["name", "age"], ["asc", "desc"]);
-// 出力: [{name: 'barney', age: 36}, {name: 'fred', age: 48}, {name: 'fred', age: 40}]
+// 出力：[{name: 'barney', age: 36}, {name: 'fred', age: 48}, {name: 'fred', age: 40}]
 
 // 名前で昇順、年齢で昇順（既定の順序）にソート
 orderBy(users, ["name", "age"]);
-// 出力: [{name: 'barney', age: 36}, {name: 'fred', age: 40}, {name: 'fred', age: 48}]
+// 出力：[{name: 'barney', age: 36}, {name: 'fred', age: 40}, {name: 'fred', age: 48}]
 ```

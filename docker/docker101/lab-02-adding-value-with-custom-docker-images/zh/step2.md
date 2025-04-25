@@ -20,9 +20,9 @@ COPY app.py /app.py' > Dockerfile
 
 `alpine` 版本意味着它使用 [Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux) 发行版，该发行版比许多其他 Linux 变体小得多，大小约为 8MB，而最小的磁盘安装可能约为 130MB。较小的镜像意味着它将更快地下载（部署），并且在安全方面也有优势，因为它的攻击面较小。[Alpine Linux](https://alpinelinux.org/downloads/) 是一个基于 musl 和 BusyBox 的 Linux 发行版。
 
-在这里，我们使用 “3.8-alpine” 标签来标记 Python 镜像。查看 [Docker Hub](https://hub.docker.com/_/python/) 上官方 Python 镜像的可用标签。在继承父镜像时使用特定标签是最佳实践，这样可以控制对父依赖项的更改。如果未指定标签，则 “latest” 标签将生效，它充当指向镜像最新版本的动态指针。
+在这里，我们使用“3.8-alpine”标签来标记 Python 镜像。查看 [Docker Hub](https://hub.docker.com/_/python/) 上官方 Python 镜像的可用标签。在继承父镜像时使用特定标签是最佳实践，这样可以控制对父依赖项的更改。如果未指定标签，则“latest”标签将生效，它充当指向镜像最新版本的动态指针。
 
-出于安全原因，了解你在其上构建 Docker 镜像的层非常重要。因此，强烈建议仅使用在 [docker hub](https://hub.docker.com/) 中找到的 “官方” 镜像，或在 docker-store 中找到的非社区镜像。这些镜像经过 [审核](https://docs.docker.com/docker-hub/official_repos/) 以满足某些安全要求，并且也有非常好的文档供用户参考。你可以在 [docker hub](https://hub.docker.com) 上找到有关此 [Python 基础镜像](https://hub.docker.com/_/python) 以及所有其他可用镜像的更多信息。
+出于安全原因，了解你在其上构建 Docker 镜像的层非常重要。因此，强烈建议仅使用在 [docker hub](https://hub.docker.com/) 中找到的“官方”镜像，或在 docker-store 中找到的非社区镜像。这些镜像经过 [审核](https://docs.docker.com/docker-hub/official_repos/) 以满足某些安全要求，并且也有非常好的文档供用户参考。你可以在 [docker hub](https://hub.docker.com) 上找到有关此 [Python 基础镜像](https://hub.docker.com/_/python) 以及所有其他可用镜像的更多信息。
 
 对于更复杂的应用程序，你可能会发现需要使用更高层次的 `FROM` 镜像。例如，我们的 Python 应用程序的父 [Dockerfile](https://github.com/docker-library/python/blob/9ff5f04241c7bcb224303ff8cea9434e9976f8af/3.8/alpine3.12/Dockerfile) 以 `FROM alpine` 开头，然后为镜像指定一系列 `CMD` 和 `RUN` 命令。如果你需要更精细的控制，可以从 `FROM alpine`（或其他发行版）开始并自己运行这些步骤。不过，一开始，我建议使用与你需求紧密匹配的官方镜像。
 

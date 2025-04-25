@@ -4,10 +4,10 @@
 
 1. 正規表現を使用してパターンマッチングと文字列変換を行う方法を学びました。
 2. さまざまな入力形式を扱うことができる関数を実装しました。
-   - キャメルケース（例: `camelCase` → `camel_case`）
-   - パスカルケース（例: `HelloWorld` → `hello_world`）
-   - 空白を含む文字列（例: `some text` → `some_text`）
-   - ハイフンを含む文字列（例: `hello-world` → `hello_world`）
+   - キャメルケース（例：`camelCase` → `camel_case`）
+   - パスカルケース（例：`HelloWorld` → `hello_world`）
+   - 空白を含む文字列（例：`some text` → `some_text`）
+   - ハイフンを含む文字列（例：`hello-world` → `hello_world`）
    - さまざまな区切り文字と大文字小文字の使い方が混在した形式
 
 使用した主要な技術は以下の通りです。

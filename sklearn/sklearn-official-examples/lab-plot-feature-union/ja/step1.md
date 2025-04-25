@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-必要なライブラリをインポートして始めましょう。scikit - learnの`Pipeline`、`FeatureUnion`、`GridSearchCV`、`SVC`、`load_iris`、`PCA`、および`SelectKBest`クラスを使用します。
+必要なライブラリをインポートして始めましょう。scikit - learn の`Pipeline`、`FeatureUnion`、`GridSearchCV`、`SVC`、`load_iris`、`PCA`、および`SelectKBest`クラスを使用します。
 
 ```python
 from sklearn.pipeline import Pipeline, FeatureUnion

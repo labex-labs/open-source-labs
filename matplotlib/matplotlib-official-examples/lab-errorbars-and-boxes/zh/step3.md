@@ -1,6 +1,6 @@
 # 创建误差框函数
 
-现在我们将创建一个名为 `make_error_boxes` 的函数，该函数将创建一个由x和y方向上的误差线限制定义的矩形补丁。
+现在我们将创建一个名为 `make_error_boxes` 的函数，该函数将创建一个由 x 和 y 方向上的误差线限制定义的矩形补丁。
 
 ```python
 def make_error_boxes(ax, xdata, ydata, xerror, yerror, facecolor='r',

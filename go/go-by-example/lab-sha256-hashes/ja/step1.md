@@ -19,7 +19,7 @@ sha256 this string
 # `sha512.New()` を使用します。
 
 # 暗号学的に安全なハッシュが必要な場合は、
-# [ハッシュの強度](https://en.wikipedia.org/wiki/Cryptographic_hash_function)について
+# [ハッシュの強度](https://en.wikipedia.org/wiki/Cryptographic_hash_function) について
 # 注意深く調査する必要があります！
 ```
 

@@ -9,9 +9,9 @@ n_components = 10
 n_top_words = 20
 init = "nndsvda"
 
-# 拟合NMF模型
+# 拟合 NMF 模型
 print(
-    "使用tf - idf特征拟合NMF模型（弗罗贝尼乌斯范数），"
+    "使用 tf - idf 特征拟合 NMF 模型（弗罗贝尼乌斯范数），"
     "n_samples = %d 且 n_features = %d..." % (n_samples, n_features)
 )
 nmf = NMF(
@@ -24,7 +24,7 @@ nmf = NMF(
     l1_ratio=1,
 ).fit(tfidf)
 
-# 绘制NMF模型的前几个关键词
+# 绘制 NMF 模型的前几个关键词
 def plot_top_words(model, feature_names, n_top_words, title):
     fig, axes = plt.subplots(2, 5, figsize=(30, 15), sharex=True)
     axes = axes.flatten()
@@ -47,13 +47,13 @@ def plot_top_words(model, feature_names, n_top_words, title):
 
 tfidf_feature_names = tfidf_vectorizer.get_feature_names_out()
 plot_top_words(
-    nmf, tfidf_feature_names, n_top_words, "NMF模型中的主题（弗罗贝尼乌斯范数）"
+    nmf, tfidf_feature_names, n_top_words, "NMF 模型中的主题（弗罗贝尼乌斯范数）"
 )
 
-# 使用广义库尔贝克 - 莱布勒散度拟合NMF模型
+# 使用广义库尔贝克 - 莱布勒散度拟合 NMF 模型
 print(
     "\n" * 2,
-    "使用tf - idf特征拟合NMF模型（广义库尔贝克 - 莱布勒散度），"
+    "使用 tf - idf 特征拟合 NMF 模型（广义库尔贝克 - 莱布勒散度），"
     "n_samples = %d 且 n_features = %d..."
     % (n_samples, n_features),
 )
@@ -69,23 +69,23 @@ nmf = NMF(
     l1_ratio=0.5,
 ).fit(tfidf)
 
-# 绘制使用广义库尔贝克 - 莱布勒散度的NMF模型的前几个关键词
+# 绘制使用广义库尔贝克 - 莱布勒散度的 NMF 模型的前几个关键词
 tfidf_feature_names = tfidf_vectorizer.get_feature_names_out()
 plot_top_words(
     nmf,
     tfidf_feature_names,
     n_top_words,
-    "NMF模型中的主题（广义库尔贝克 - 莱布勒散度）"
+    "NMF 模型中的主题（广义库尔贝克 - 莱布勒散度）"
 )
 
-# 拟合MiniBatchNMF模型
+# 拟合 MiniBatchNMF 模型
 from sklearn.decomposition import MiniBatchNMF
 
 batch_size = 128
 
 print(
     "\n" * 2,
-    "使用tf - idf特征拟合MiniBatchNMF模型（弗罗贝尼乌斯范数），"
+    "使用 tf - idf 特征拟合 MiniBatchNMF 模型（弗罗贝尼乌斯范数），"
     "n_samples = %d 且 n_features = %d，batch_size = %d..."
     % (n_samples, n_features, batch_size),
 )
@@ -100,19 +100,19 @@ mbnmf = MiniBatchNMF(
     l1_ratio=0.5,
 ).fit(tfidf)
 
-# 绘制使用弗罗贝尼乌斯范数的MiniBatchNMF模型的前几个关键词
+# 绘制使用弗罗贝尼乌斯范数的 MiniBatchNMF 模型的前几个关键词
 tfidf_feature_names = tfidf_vectorizer.get_feature_names_out()
 plot_top_words(
     mbnmf,
     tfidf_feature_names,
     n_top_words,
-    "MiniBatchNMF模型中的主题（弗罗贝尼乌斯范数）"
+    "MiniBatchNMF 模型中的主题（弗罗贝尼乌斯范数）"
 )
 
-# 使用广义库尔贝克 - 莱布勒散度拟合MiniBatchNMF模型
+# 使用广义库尔贝克 - 莱布勒散度拟合 MiniBatchNMF 模型
 print(
     "\n" * 2,
-    "使用tf - idf特征拟合MiniBatchNMF模型（广义库尔贝克 - 莱布勒散度），"
+    "使用 tf - idf 特征拟合 MiniBatchNMF 模型（广义库尔贝克 - 莱布勒散度），"
     "n_samples = %d 且 n_features = %d，batch_size = %d..."
     % (n_samples, n_features, batch_size),
 )
@@ -127,13 +127,13 @@ mbnmf = MiniBatchNMF(
     l1_ratio=0.5,
 ).fit(tfidf)
 
-# 绘制使用广义库尔贝克 - 莱布勒散度的MiniBatchNMF模型的前几个关键词
+# 绘制使用广义库尔贝克 - 莱布勒散度的 MiniBatchNMF 模型的前几个关键词
 tfidf_feature_names = tfidf_vectorizer.get_feature_names_out()
 plot_top_words(
     mbnmf,
     tfidf_feature_names,
     n_top_words,
-    "MiniBatchNMF模型中的主题（广义库尔贝克 - 莱布勒散度）"
+    "MiniBatchNMF 模型中的主题（广义库尔贝克 - 莱布勒散度）"
 )
 
 

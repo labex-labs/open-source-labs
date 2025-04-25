@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートします。ここでは、Matplotlibとmpl_toolkits.mplot3dからのAxes3Dをインポートします。
+まず、必要なライブラリをインポートします。ここでは、Matplotlib と mpl_toolkits.mplot3d からの Axes3D をインポートします。
 
 ```python
 import matplotlib.pyplot as plt

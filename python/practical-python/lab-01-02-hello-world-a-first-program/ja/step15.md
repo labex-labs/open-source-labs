@@ -1,6 +1,6 @@
 # 出力
 
-`print` 関数は、渡された値とともに1行の文字列を生成します。
+`print` 関数は、渡された値とともに 1 行の文字列を生成します。
 
 ```python
 print('Hello world!') # 文字列'Hello world!' を出力します

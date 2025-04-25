@@ -68,7 +68,7 @@ const MyApp = () => {
 
   return (
     <p>
-      窗口尺寸: ({width} x {height})
+      窗口尺寸：({width} x {height})
     </p>
   );
 };

@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-必要なライブラリであるMatplotlib、NumPy、およびmpl_toolkits.mplot3d.art3dをインポートして始めましょう。
+必要なライブラリである Matplotlib、NumPy、および mpl_toolkits.mplot3d.art3d をインポートして始めましょう。
 
 ```python
 import matplotlib.pyplot as plt

@@ -1,10 +1,10 @@
 # 界限
 
-在使用泛型时，类型参数通常必须使用trait作为*界限*，以规定类型实现了哪些功能。例如，以下示例使用trait `Display` 进行打印，因此它要求 `T` 受 `Display` 约束；也就是说，`T` _必须_ 实现 `Display`。
+在使用泛型时，类型参数通常必须使用 trait 作为*界限*，以规定类型实现了哪些功能。例如，以下示例使用 trait `Display` 进行打印，因此它要求 `T` 受 `Display` 约束；也就是说，`T` _必须_ 实现 `Display`。
 
 ```rust
 // 定义一个函数 `printer`，它接受一个泛型类型 `T`，该类型
-// 必须实现trait `Display`。
+// 必须实现 trait `Display`。
 fn printer<T: Display>(t: T) {
     println!("{}", t);
 }
@@ -20,10 +20,10 @@ struct S<T: Display>(T);
 let s = S(vec![1]);
 ```
 
-设定界限的另一个作用是，泛型实例可以访问界限中指定的trait的[方法]。例如：
+设定界限的另一个作用是，泛型实例可以访问界限中指定的 trait 的[方法]。例如：
 
 ```rust
-// 一个实现打印标记 `{:?}` 的trait。
+// 一个实现打印标记 `{:?}` 的 trait。
 use std::fmt::Debug;
 
 trait HasArea {

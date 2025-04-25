@@ -1,4 +1,4 @@
-# オフセットを使ってLineCollectionを作成する
+# オフセットを使って LineCollection を作成する
 
 ```python
 col = collections.LineCollection(
@@ -13,4 +13,4 @@ ax1.autoscale_view()
 ax1.set_title('LineCollection using offsets')
 ```
 
-4番目のステップは、オフセットを使ってLineCollectionを作成することです。オフセット付きの曲線を作成するためにLineCollectionを使用します。また、offset_transformを使って曲線の位置を設定します。
+4 番目のステップは、オフセットを使って LineCollection を作成することです。オフセット付きの曲線を作成するために LineCollection を使用します。また、offset_transform を使って曲線の位置を設定します。

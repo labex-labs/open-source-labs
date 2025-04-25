@@ -1,10 +1,10 @@
 # 创建带有右侧颜色条的网格
 
-我们创建一个2x2的图像网格，每行都有一个颜色条。
+我们创建一个 2x2 的图像网格，每行都有一个颜色条。
 
 ```python
 def demo_right_cbar(fig):
-    grid = AxesGrid(fig, 122,  # 类似于subplot(122)
+    grid = AxesGrid(fig, 122,  # 类似于 subplot(122)
                     nrows_ncols=(2, 2),
                     axes_pad=0.10,
                     label_mode="1",
@@ -24,7 +24,7 @@ def demo_right_cbar(fig):
     for cax in grid.cbar_axes:
         cax.axis[cax.orientation].set_label('Foo')
 
-    # 因为我们设置了share_all = True，所以这会影响所有轴。
+    # 因为我们设置了 share_all = True，所以这会影响所有轴。
     grid.axes_llc.set_xticks([-2, 0, 2])
     grid.axes_llc.set_yticks([-2, 0, 2])
 ```

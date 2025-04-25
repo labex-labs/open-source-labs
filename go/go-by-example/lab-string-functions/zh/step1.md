@@ -25,7 +25,7 @@ $ go run string-functions.go
 以下是完整代码：
 
 ```go
-// 标准库的`strings`包提供了许多
+// 标准库的 `strings` 包提供了许多
 // 与字符串相关的实用函数。以下是一些示例
 // 让你了解这个包。
 
@@ -36,15 +36,15 @@ import (
 	s "strings"
 )
 
-// 我们将`fmt.Println`别名到一个更短的名字，因为我们将在下面
+// 我们将 `fmt.Println` 别名到一个更短的名字，因为我们将在下面
 // 大量使用它。
 var p = fmt.Println
 
 func main() {
 
-	// 以下是`strings`包中可用函数的一个示例。由于这些是包中的函数，
+	// 以下是 `strings` 包中可用函数的一个示例。由于这些是包中的函数，
 	// 而不是字符串对象本身的方法，我们需要将相关字符串作为第一个
-	// 参数传递给函数。你可以在[`strings`](https://pkg.go.dev/strings)
+	// 参数传递给函数。你可以在 [`strings`](https://pkg.go.dev/strings)
 	// 包文档中找到更多函数。
 	p("包含：  ", s.Contains("test", "es"))
 	p("计数：     ", s.Count("test", "t"))

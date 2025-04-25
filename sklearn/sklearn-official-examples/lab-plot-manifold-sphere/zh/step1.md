@@ -1,6 +1,6 @@
 # 导入库
 
-我们将首先导入必要的库。我们会用到scikit-learn、matplotlib和numpy。
+我们将首先导入必要的库。我们会用到 scikit-learn、matplotlib 和 numpy。
 
 ```python
 from time import time

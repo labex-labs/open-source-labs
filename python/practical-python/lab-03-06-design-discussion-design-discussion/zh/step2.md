@@ -18,7 +18,7 @@ def read_data(lines):
 这意味着我们可以将它用于其他的“行”。
 
 ```python
-# 一个CSV文件
+# 一个 CSV 文件
 lines = open('data.csv')
 data = read_data(lines)
 

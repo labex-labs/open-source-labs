@@ -1,6 +1,6 @@
 # 添加标签和标题
 
-现在我们将使用`set_xlabel()`、`set_ylabel()`和`set_title()`方法为x轴和y轴添加标签，并为图形添加标题。
+现在我们将使用`set_xlabel()`、`set_ylabel()`和`set_title()`方法为 x 轴和 y 轴添加标签，并为图形添加标题。
 
 ```python
 # 添加标签和标题

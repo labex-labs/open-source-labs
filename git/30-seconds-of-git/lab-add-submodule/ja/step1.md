@@ -19,4 +19,4 @@ git submodule add https://github.com/labex-labs/git-playground.git./git-playgrou
 
 この実験を完了した後の結果は次の通りです。
 
-![Gitサブモジュール追加結果](../assets/challenge-add-submodule-step1-1.png)
+![Git サブモジュール追加結果](../assets/challenge-add-submodule-step1-1.png)

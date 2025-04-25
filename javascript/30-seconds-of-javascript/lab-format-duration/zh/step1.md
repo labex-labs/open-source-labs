@@ -30,7 +30,7 @@ const formatDuration = (ms) => {
 以下是一些示例：
 
 ```js
-formatDuration(1001); // '1 秒, 1 毫秒'
+formatDuration(1001); // '1 秒，1 毫秒'
 formatDuration(34325055574);
-// '397 天, 6 小时, 44 分钟, 15 秒, 574 毫秒'
+// '397 天，6 小时，44 分钟，15 秒，574 毫秒'
 ```

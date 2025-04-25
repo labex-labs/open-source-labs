@@ -1,6 +1,6 @@
 # 分類器とデータセットの初期化
 
-まず、3つの分類器と玩具データセットを初期化します。分類器としてLogisticRegression、GaussianNB、RandomForestClassifierを使用し、玩具データセットとしてXとyを使用します。
+まず、3 つの分類器と玩具データセットを初期化します。分類器として LogisticRegression、GaussianNB、RandomForestClassifier を使用し、玩具データセットとして X と y を使用します。
 
 ```python
 import numpy as np

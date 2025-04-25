@@ -19,15 +19,15 @@ true_coef = (-1) ** idx * np.exp(-idx / 10)
 true_coef[n_informative:] = 0  # 使系数稀疏化
 y = np.dot(X, true_coef)
 
-# 使用numpy.random.random_sample引入随机相位
-# 使用numpy.random.normal添加一些高斯噪声
+# 使用 numpy.random.random_sample 引入随机相位
+# 使用 numpy.random.normal 添加一些高斯噪声
 for i in range(n_features):
     X[:, i] = np.sin(freqs[i] * time_step + 2 * (rng.random_sample() - 0.5))
     X[:, i] += 0.2 * rng.normal(0, 1, n_samples)
 
 y += 0.2 * rng.normal(0, 1, n_samples)
 
-# 使用sklearn中的train_test_split将数据拆分为训练集和测试集
+# 使用 sklearn 中的 train_test_split 将数据拆分为训练集和测试集
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, shuffle=False)
 ```

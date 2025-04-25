@@ -1,4 +1,4 @@
-# None型
+# None 型
 
 ```python
 email_address = None

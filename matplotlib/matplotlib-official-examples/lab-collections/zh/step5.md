@@ -1,4 +1,4 @@
-# 使用偏移量创建PolyCollection
+# 使用偏移量创建 PolyCollection
 
 ```python
 col = collections.PolyCollection(
@@ -13,4 +13,4 @@ ax2.autoscale_view()
 ax2.set_title('PolyCollection using offsets')
 ```
 
-第五步是使用偏移量创建一个PolyCollection。我们将使用PolyCollection为曲线填充颜色。我们还将使用offset_transform来设置曲线的位置。
+第五步是使用偏移量创建一个 PolyCollection。我们将使用 PolyCollection 为曲线填充颜色。我们还将使用 offset_transform 来设置曲线的位置。

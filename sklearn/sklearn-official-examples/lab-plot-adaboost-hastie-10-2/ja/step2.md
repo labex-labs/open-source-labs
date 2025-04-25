@@ -1,6 +1,6 @@
-# 離散的なSAMMEと実際のSAMME.Rを使ったAdaboost
+# 離散的な SAMME と実際の SAMME.R を使った Adaboost
 
-次に、離散的なAdaboost分類器と実際のAdaboost分類器を定義し、訓練セットに適合させます。
+次に、離散的な Adaboost 分類器と実際の Adaboost 分類器を定義し、訓練セットに適合させます。
 
 ```python
 from sklearn.ensemble import AdaBoostClassifier

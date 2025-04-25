@@ -19,9 +19,9 @@ selector = RFE(estimator, n_features_to_select=2)
 # 最適な特徴を選択する
 X_selected = selector.fit_transform(X, y)
 
-print("元の X の形状:", X.shape)
-print("選択された特徴を持つ X の形状:", X_selected.shape)
-print("選択された特徴:", selector.get_support(indices=True))
+print("元の X の形状：", X.shape)
+print("選択された特徴を持つ X の形状：", X_selected.shape)
+print("選択された特徴：", selector.get_support(indices=True))
 ```
 
 この例では、外部推定器としてサポートベクトル分類器 (SVC) を使って、Iris データセットから 2 つの最適な特徴を選択します。出力には、データセットの元の形状と、最適な特徴を選択した後の形状が表示されます。

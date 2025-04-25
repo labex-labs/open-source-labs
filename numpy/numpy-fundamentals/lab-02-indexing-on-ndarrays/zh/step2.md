@@ -8,8 +8,8 @@ NumPy 数组可以使用标准的 Python 语法 `x[obj]` 进行索引，其中 `
 
 ```python
 x = np.arange(10)
-print(x[2])  # 输出: 2
-print(x[-2])  # 输出: 8
+print(x[2])  # 输出：2
+print(x[-2])  # 输出：8
 ```
 
 ## 多维索引
@@ -18,8 +18,8 @@ print(x[-2])  # 输出: 8
 
 ```python
 x = np.arange(10).reshape(2, 5)
-print(x[1, 3])  # 输出: 8
-print(x[1, -1])  # 输出: 9
+print(x[1, 3])  # 输出：8
+print(x[1, -1])  # 输出：9
 ```
 
 ## 子维度数组索引
@@ -28,5 +28,5 @@ print(x[1, -1])  # 输出: 9
 
 ```python
 x = np.arange(10).reshape(2, 5)
-print(x[0])  # 输出: [0, 1, 2, 3, 4]
+print(x[0])  # 输出：[0, 1, 2, 3, 4]
 ```

@@ -1,6 +1,6 @@
 # 信号の生成
 
-Matplotlibを使って信号を生成し、可視化します。
+Matplotlib を使って信号を生成し、可視化します。
 
 ```python
 resolution = 1024

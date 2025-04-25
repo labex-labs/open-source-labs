@@ -1,6 +1,6 @@
 # 外部函数接口
 
-Rust为C库提供了一个外部函数接口（FFI）。外部函数必须在一个用包含外部库名称的 `#[link]` 属性注释的 `extern` 块内声明。
+Rust 为 C 库提供了一个外部函数接口（FFI）。外部函数必须在一个用包含外部库名称的 `#[link]` 属性注释的 `extern` 块内声明。
 
 ```rust
 use std::fmt;
@@ -30,7 +30,7 @@ fn main() {
 
     println!("the square root of {:?} is {:?}", z, z_sqrt);
 
-    // 调用围绕不安全操作包装的安全API
+    // 调用围绕不安全操作包装的安全 API
     println!("cos({:?}) = {:?}", z, cos(z));
 }
 

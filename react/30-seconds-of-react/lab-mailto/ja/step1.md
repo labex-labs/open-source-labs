@@ -21,7 +21,7 @@ const Mailto = ({ email, subject = "", body = "", children }) => {
 };
 ```
 
-使用例:
+使用例：
 
 ```jsx
 ReactDOM.createRoot(document.getElementById("root")).render(

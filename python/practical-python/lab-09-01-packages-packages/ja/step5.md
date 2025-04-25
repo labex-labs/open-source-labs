@@ -22,7 +22,7 @@ def read_portfolio(filename):
 すべてのインポートは _絶対的_ であり、相対的ではありません。
 
 ```python
-import fileparse    # エラーになります。fileparseが見つかりません
+import fileparse    # エラーになります。fileparse が見つかりません
 
 ...
 ```

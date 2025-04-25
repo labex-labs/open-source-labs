@@ -1,6 +1,6 @@
-# サブプロット1を作成する
+# サブプロット 1 を作成する
 
-最初のサブプロットでは、`axisartist.Axes` を使ってy = 0を通る新しい軸を作成します。また、他のスパインを非表示にします。
+最初のサブプロットでは、`axisartist.Axes` を使って y = 0 を通る新しい軸を作成します。また、他のスパインを非表示にします。
 
 ```python
 ax0 = fig.add_subplot(gs[0, 0], axes_class=axisartist.Axes)

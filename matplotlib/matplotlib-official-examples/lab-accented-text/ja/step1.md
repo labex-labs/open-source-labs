@@ -1,11 +1,11 @@
-# Mathtextの使用
+# Mathtext の使用
 
-Mathtextは、Matplotlibの機能で、TeXコマンドを使って数学記号や方程式をレンダリングできるようにします。Mathtextはアクセント付き文字もサポートしています。
+Mathtext は、Matplotlib の機能で、TeX コマンドを使って数学記号や方程式をレンダリングできるようにします。Mathtext はアクセント付き文字もサポートしています。
 
 ```python
 import matplotlib.pyplot as plt
 
-# Mathtextのデモ
+# Mathtext のデモ
 fig, ax = plt.subplots()
 ax.plot(range(10))
 ax.set_title(r'$\ddot{o}\acute{e}\grave{e}\hat{O}'

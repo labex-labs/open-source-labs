@@ -1,6 +1,6 @@
 # 字符串格式化
 
-在Python 3.6及以上版本中，一种格式化字符串的方法是使用 `f-strings`。
+在 Python 3.6 及以上版本中，一种格式化字符串的方法是使用 `f-strings`。
 
 ```python
 >>> name = 'IBM'

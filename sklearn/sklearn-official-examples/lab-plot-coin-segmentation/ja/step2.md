@@ -1,6 +1,6 @@
 # 画像を辺の勾配値付きのグラフに変換する
 
-画像を辺の勾配値付きのグラフに変換します。betaの値が小さいほど、分割は実際の画像から独立します。beta=1の場合、分割はボロノイ分割に近くなります。
+画像を辺の勾配値付きのグラフに変換します。beta の値が小さいほど、分割は実際の画像から独立します。beta=1 の場合、分割はボロノイ分割に近くなります。
 
 ```python
 # Convert the image into a graph with the value of the gradient on the

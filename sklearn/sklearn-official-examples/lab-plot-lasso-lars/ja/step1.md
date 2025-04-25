@@ -1,6 +1,6 @@
 # データの読み込み
 
-最初のステップは、Scikit-Learnから糖尿病データセットを読み込むことです。
+最初のステップは、Scikit-Learn から糖尿病データセットを読み込むことです。
 
 ```python
 from sklearn import datasets

@@ -18,7 +18,7 @@ const frozenSet = (iterable) => {
 };
 
 console.log(frozenSet([1, 2, 3, 1, 2]));
-// 出力: Set { 1, 2, 3, add: undefined, delete: undefined, clear: undefined }
+// 出力：Set { 1, 2, 3, add: undefined, delete: undefined, clear: undefined }
 ```
 
 このコードは、数値の反復可能オブジェクトから凍結された `Set` オブジェクトを作成し、その `add`、`delete`、および `clear` メソッドが `undefined` に設定されたオブジェクトを返します。

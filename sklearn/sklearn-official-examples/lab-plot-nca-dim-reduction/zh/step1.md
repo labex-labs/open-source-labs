@@ -8,7 +8,7 @@
 - train_test_split
 - PCA
 - 线性判别分析（LinearDiscriminantAnalysis）
-- K近邻分类器（KNeighborsClassifier）
+- K 近邻分类器（KNeighborsClassifier）
 - 邻域成分分析（NeighborhoodComponentsAnalysis）
 - make_pipeline
 - 标准缩放器（StandardScaler）

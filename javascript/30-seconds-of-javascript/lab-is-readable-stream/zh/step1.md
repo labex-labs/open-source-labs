@@ -2,7 +2,7 @@
 
 要检查给定参数是否为可读流，请执行以下步骤：
 
-- 首先，打开终端/SSH并输入 `node` 以开始练习编码。
+- 首先，打开终端/SSH 并输入 `node` 以开始练习编码。
 - 检查该值是否不为 `null`。
 - 使用 `typeof` 检查该值是否为 `object` 且 `pipe` 属性是否为 `function`。
 - 此外，检查 `_read` 和 `_readableState` 属性的 `typeof` 是否分别为 `function` 和 `object`。

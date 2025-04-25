@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-このステップでは、分析に必要なライブラリをインポートします。機械学習のためのscikit-learnライブラリ、数値計算のためのnumpy、可視化のためのmatplotlibをインポートします。
+このステップでは、分析に必要なライブラリをインポートします。機械学習のための scikit-learn ライブラリ、数値計算のための numpy、可視化のための matplotlib をインポートします。
 
 ```python
 from time import time

@@ -59,7 +59,7 @@ def plot_feature_effects():
     )
     ax.legend(loc="lower right")
 
-    print("每个类别的前5个关键词:")
+    print("每个类别的前 5 个关键词：")
     print(top)
 
     return ax

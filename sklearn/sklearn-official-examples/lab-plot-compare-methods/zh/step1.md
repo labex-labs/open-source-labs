@@ -1,6 +1,6 @@
 # 数据集准备
 
-我们首先生成S曲线数据集。
+我们首先生成 S 曲线数据集。
 
 ```python
 import matplotlib.pyplot as plt

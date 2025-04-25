@@ -1,6 +1,6 @@
 # 表示範囲を調整して軸ラベルを追加する
 
-最後に、Matplotlibの `set_zlim()` と `set_xlabel()`、`set_ylabel()`、`set_zlabel()` 関数を使って、描画の表示範囲を調整して軸ラベルを追加します。また、軸ラベルを記述するためにLaTeXの数式モードを使います。
+最後に、Matplotlib の `set_zlim()` と `set_xlabel()`、`set_ylabel()`、`set_zlabel()` 関数を使って、描画の表示範囲を調整して軸ラベルを追加します。また、軸ラベルを記述するために LaTeX の数式モードを使います。
 
 ```python
 ax.set_zlim(0, 1)

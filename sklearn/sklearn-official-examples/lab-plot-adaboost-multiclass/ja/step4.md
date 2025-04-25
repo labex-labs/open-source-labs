@@ -1,6 +1,6 @@
 # モデルを作成して訓練する
 
-SAMMEを使用するAdaBoostモデルとSAMME.Rを使用するAdaBoostモデルの2つを作成します。両方のモデルは、最大深さが2で推定器が300個のDecisionTreeClassifierを使用します。
+SAMME を使用する AdaBoost モデルと SAMME.R を使用する AdaBoost モデルの 2 つを作成します。両方のモデルは、最大深さが 2 で推定器が 300 個の DecisionTreeClassifier を使用します。
 
 ```python
 bdt_real = AdaBoostClassifier(

@@ -1,6 +1,6 @@
 # グラフの作成
 
-ここでは、6つの分布それぞれについてグラフを作成し、元の分布とBox-Cox、Yeo-Johnson、Quantile Transformerを使った変換後の分布を表示します。
+ここでは、6 つの分布それぞれについてグラフを作成し、元の分布と Box-Cox、Yeo-Johnson、Quantile Transformer を使った変換後の分布を表示します。
 
 ```python
 distributions = [
@@ -30,7 +30,7 @@ for distribution, color, axes in zip(distributions, colors, axes_list):
     name, X = distribution
     X_train, X_test = train_test_split(X, test_size=0.5)
 
-    # パワー変換とQuantile変換を実行
+    # パワー変換と Quantile 変換を実行
     X_trans_bc = bc.fit(X_train).transform(X_test)
     lmbda_bc = round(bc.lambdas_[0], 2)
     X_trans_yj = yj.fit(X_train).transform(X_test)

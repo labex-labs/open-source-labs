@@ -15,7 +15,7 @@ plt.show()
 plt.boxplot(data, vert=False)
 plt.show()
 
-# 1つのプロットに複数のボックスプロットを作成する
+# 1 つのプロットに複数のボックスプロットを作成する
 data1 = np.random.normal(0, 1, 50)
 data2 = np.random.normal(1, 1, 50)
 data3 = np.random.normal(2, 1, 50)

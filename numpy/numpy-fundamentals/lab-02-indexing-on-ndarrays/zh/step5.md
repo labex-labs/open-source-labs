@@ -4,5 +4,5 @@
 
 ```python
 x = np.array([(1, 2), (3, 4), (5, 6)], dtype=[('a', np.int32), ('b', np.int32)])
-print(x['a'])  # 输出: [1, 3, 5]
+print(x['a'])  # 输出：[1, 3, 5]
 ```

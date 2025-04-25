@@ -4,7 +4,7 @@
 def stream_reuters_documents(data_path=None):
     """遍历路透社数据集的文档。
 
-    如果`data_path`目录不存在，路透社存档将自动下载并解压。
+    如果 `data_path` 目录不存在，路透社存档将自动下载并解压。
 
     文档表示为具有'body'（字符串）、'title'（字符串）、'topics'（字符串列表）键的字典。
 

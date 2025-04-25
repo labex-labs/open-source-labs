@@ -5,7 +5,7 @@
 ```python
 from sklearn.covariance import GraphicalLasso
 
-# 创建一个GraphicalLasso对象并将其拟合到数据上
+# 创建一个 GraphicalLasso 对象并将其拟合到数据上
 graphical_lasso = GraphicalLasso().fit(data)
 
 # 计算稀疏逆协方差矩阵

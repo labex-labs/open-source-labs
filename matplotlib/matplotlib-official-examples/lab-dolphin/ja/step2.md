@@ -1,6 +1,6 @@
 # イルカの形を作成する
 
-次に、`Path`と`PathPatch`関数を使ってイルカの形を作成します。Andy FitzsimonによるOpenClipartライブラリのイルカの形のパスを使用します。
+次に、`Path`と`PathPatch`関数を使ってイルカの形を作成します。Andy Fitzsimon による OpenClipart ライブラリのイルカの形のパスを使用します。
 
 ```python
 from matplotlib.path import Path

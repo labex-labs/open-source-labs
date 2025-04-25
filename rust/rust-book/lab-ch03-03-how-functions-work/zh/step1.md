@@ -40,4 +40,4 @@ Hello, world!
 Another function.
 ```
 
-这些行按照它们在 `main` 函数中出现的顺序执行。首先打印 “Hello, world!” 消息，然后调用 `another_function` 并打印其消息。
+这些行按照它们在 `main` 函数中出现的顺序执行。首先打印“Hello, world!”消息，然后调用 `another_function` 并打印其消息。

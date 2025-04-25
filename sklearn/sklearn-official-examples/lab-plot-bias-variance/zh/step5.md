@@ -54,10 +54,10 @@ for n, (name, estimator) in enumerate(estimators):
         plt.legend(loc=(1.1, 0.5))
 
     plt.subplot(2, n_estimators, n_estimators + n + 1)
-    plt.plot(X_test, y_error, "r", label="$误差(x)$")
+    plt.plot(X_test, y_error, "r", label="$误差 (x)$")
     plt.plot(X_test, y_bias, "b", label="$偏差^2(x)$"),
-    plt.plot(X_test, y_var, "g", label="$方差(x)$"),
-    plt.plot(X_test, y_noise, "c", label="$噪声(x)$")
+    plt.plot(X_test, y_var, "g", label="$方差 (x)$"),
+    plt.plot(X_test, y_noise, "c", label="$噪声 (x)$")
 
     plt.xlim([-5, 5])
     plt.ylim([0, 0.1])

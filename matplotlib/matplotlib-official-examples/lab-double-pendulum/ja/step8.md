@@ -1,6 +1,6 @@
 # アニメーションを作成する
 
-次に、MatplotlibのFuncAnimation関数を使ってアニメーションを作成します。
+次に、Matplotlib の FuncAnimation 関数を使ってアニメーションを作成します。
 
 ```python
 ani = animation.FuncAnimation(

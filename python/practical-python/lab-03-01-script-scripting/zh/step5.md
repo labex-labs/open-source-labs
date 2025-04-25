@@ -10,7 +10,7 @@ def funcname(args):
   return result
 ```
 
-任何Python语句都可以用在函数内部。
+任何 Python 语句都可以用在函数内部。
 
 ```python
 def foo():
@@ -19,4 +19,4 @@ def foo():
     help(math)
 ```
 
-Python中没有特殊语句（这使得它很容易记忆）。
+Python 中没有特殊语句（这使得它很容易记忆）。

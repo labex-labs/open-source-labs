@@ -1,9 +1,9 @@
 # 拟合岭回归器
 
-我们现在将把岭回归器（Ridge regressor）拟合到数据集上，并将其性能与HuberRegressor的性能进行比较。
+我们现在将把岭回归器（Ridge regressor）拟合到数据集上，并将其性能与 HuberRegressor 的性能进行比较。
 
 ```python
-# 拟合一个岭回归器以与Huber回归器进行比较。
+# 拟合一个岭回归器以与 Huber 回归器进行比较。
 ridge = Ridge(alpha=0.0, random_state=0)
 ridge.fit(X, y)
 coef_ridge = ridge.coef_

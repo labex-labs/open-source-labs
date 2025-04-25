@@ -1,6 +1,6 @@
 # 軸の範囲とラベルの設定
 
-`set()`関数を使用して、各軸のx軸とy軸の範囲とラベルを設定します。
+`set()`関数を使用して、各軸の x 軸と y 軸の範囲とラベルを設定します。
 
 ```python
 host.set(xlim=(0, 2), ylim=(0, 2), xlabel="Distance", ylabel="Density")

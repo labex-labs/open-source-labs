@@ -1,8 +1,8 @@
-# React useEffectOnceフック
+# React useEffectOnce フック
 
-> VM内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
+> VM 内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
 
-以下のコードは、`when`条件が真になったときに`callback`を1回だけ実行する関数`useEffectOnce(callback, when)`を実装しています。
+以下のコードは、`when`条件が真になったときに`callback`を 1 回だけ実行する関数`useEffectOnce(callback, when)`を実装しています。
 
 この関数を実装するには：
 
@@ -36,6 +36,6 @@ const App = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
-この例では、`useEffectOnce()`はボタンが初めてクリックされたときにコンソールに「mounted」とログを出力するために使用されています。`useEffectOnce()`フックには2つの引数が渡されます：実行する`callback`とチェックする`when`条件です。`when`条件は`clicked`状態に設定されているため、`callback`は`clicked`が初めて`true`になったときにのみ実行されます。
+この例では、`useEffectOnce()`はボタンが初めてクリックされたときにコンソールに「mounted」とログを出力するために使用されています。`useEffectOnce()`フックには 2 つの引数が渡されます：実行する`callback`とチェックする`when`条件です。`when`条件は`clicked`状態に設定されているため、`callback`は`clicked`が初めて`true`になったときにのみ実行されます。
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080**タブを更新して、ウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080**タブを更新して、ウェブページをプレビューできます。

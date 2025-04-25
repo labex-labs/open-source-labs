@@ -1,6 +1,6 @@
-# 使用KMeans进行聚类计算
+# 使用 KMeans 进行聚类计算
 
-我们将使用KMeans进行聚类计算。
+我们将使用 KMeans 进行聚类计算。
 
 ```python
 import time

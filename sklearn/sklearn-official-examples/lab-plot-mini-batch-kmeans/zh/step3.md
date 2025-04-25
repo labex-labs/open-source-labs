@@ -1,6 +1,6 @@
-# 使用MiniBatchKMeans进行聚类计算
+# 使用 MiniBatchKMeans 进行聚类计算
 
-我们将使用MiniBatchKMeans进行聚类计算。
+我们将使用 MiniBatchKMeans 进行聚类计算。
 
 ```python
 from sklearn.cluster import MiniBatchKMeans

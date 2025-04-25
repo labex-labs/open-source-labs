@@ -16,8 +16,8 @@ sizes = 1000 * np.random.rand(50)
 plt.scatter(x, y, c=colors, s=sizes, alpha=0.5)
 
 # ラベルとタイトルを追加する
-plt.xlabel('X軸')
-plt.ylabel('Y軸')
+plt.xlabel('X 軸')
+plt.ylabel('Y 軸')
 plt.title('散布図')
 
 # グラフを表示する

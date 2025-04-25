@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。numpy、matplotlib、PowerTransformer、QuantileTransformer、およびtrain_test_splitです。
+まず、必要なライブラリをインポートする必要があります。numpy、matplotlib、PowerTransformer、QuantileTransformer、および train_test_split です。
 
 ```python
 import numpy as np

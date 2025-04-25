@@ -1,6 +1,6 @@
 # プロット
 
-このステップでは、RBMによって抽出された100個のコンポーネントをプロットします。画像をプロットするために `matplotlib.pyplot` モジュールを使用します。
+このステップでは、RBM によって抽出された 100 個のコンポーネントをプロットします。画像をプロットするために `matplotlib.pyplot` モジュールを使用します。
 
 ```python
 import matplotlib.pyplot as plt

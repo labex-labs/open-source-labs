@@ -1,6 +1,6 @@
 # 加载并准备数据
 
-我们将从scikit-learn中加载葡萄酒数据集，并将其拆分为训练集和测试集。我们还将使用scikit-learn预处理模块中的StandardScaler对训练集中的特征进行缩放。
+我们将从 scikit-learn 中加载葡萄酒数据集，并将其拆分为训练集和测试集。我们还将使用 scikit-learn 预处理模块中的 StandardScaler 对训练集中的特征进行缩放。
 
 ```python
 from sklearn.datasets import load_wine

@@ -4,8 +4,8 @@
 
 ```python
 # 比较估计出的协方差矩阵
-print("稳健协方差矩阵:")
+print("稳健协方差矩阵：")
 print(robust_cov)
-print("\n经验协方差矩阵:")
+print("\n经验协方差矩阵：")
 print(emp_cov)
 ```

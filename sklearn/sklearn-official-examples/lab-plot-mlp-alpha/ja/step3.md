@@ -1,6 +1,6 @@
 # 分類器の作成
 
-alphaの各値に対してMLP分類器を作成します。データを標準化するためのStandardScalerと、異なるalpha値のMLPClassifierを含むパイプラインを作成します。ソルバーを'lbfgs'に設定します。これは準ニュートン法のファミリーに属する最適化手法です。オーバーフィットを防ぐためにmax_iterを2000に設定し、early_stoppingをTrueに設定します。2つの隠れ層を持ち、各層に10個のニューロンを使用します。
+alpha の各値に対して MLP 分類器を作成します。データを標準化するための StandardScaler と、異なる alpha 値の MLPClassifier を含むパイプラインを作成します。ソルバーを'lbfgs'に設定します。これは準ニュートン法のファミリーに属する最適化手法です。オーバーフィットを防ぐために max_iter を 2000 に設定し、early_stopping を True に設定します。2 つの隠れ層を持ち、各層に 10 個のニューロンを使用します。
 
 ```python
 classifiers = []

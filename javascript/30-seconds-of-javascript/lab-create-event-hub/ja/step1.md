@@ -40,16 +40,16 @@ const handler = (data) => console.log(data);
 const hub = createEventHub();
 let increment = 0;
 
-// 購読: 異なる種類のイベントをリッスンする
+// 購読：異なる種類のイベントをリッスンする
 hub.on("message", handler);
 hub.on("message", () => console.log("Message event fired"));
 hub.on("increment", () => increment++);
 
-// 発行: それらに購読されているすべてのハンドラを呼び出すイベントを発行し、データを引数として渡す
+// 発行：それらに購読されているすべてのハンドラを呼び出すイベントを発行し、データを引数として渡す
 hub.emit("message", "hello world"); // 'hello world' と 'Message event fired' がログに表示されます
 hub.emit("message", { hello: "world" }); // オブジェクトと 'Message event fired' がログに表示されます
 hub.emit("increment"); // `increment` 変数は現在 1 になります
 
-// 購読解除: 'message' イベントをリッスンしている特定のハンドラを停止する
+// 購読解除：'message' イベントをリッスンしている特定のハンドラを停止する
 hub.off("message", handler);
 ```

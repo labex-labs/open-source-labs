@@ -1,6 +1,6 @@
 # データの生成
 
-このステップでは、`numpy.random.RandomState`関数とステップ3で定義されたパラメータを使用してデータを生成します。
+このステップでは、`numpy.random.RandomState`関数とステップ 3 で定義されたパラメータを使用してデータを生成します。
 
 ```python
 rng = np.random.RandomState(random_state)

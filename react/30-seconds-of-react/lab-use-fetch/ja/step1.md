@@ -52,7 +52,7 @@ const ImageFetch = (props) => {
 ReactDOM.createRoot(document.getElementById("root")).render(<ImageFetch />);
 ```
 
-解説:
+解説：
 
 - このコードの目的は、React フックを使って宣言的に `fetch()` 呼び出しを実装することです。
 - `useFetch` フックは 2 つのパラメータを取ります。`url` と `options` オブジェクトです。

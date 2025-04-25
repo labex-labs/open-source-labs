@@ -1,24 +1,24 @@
 # セレクタクラスの作成
 
-`LassoSelector`を使ってMatplotlibコレクションからインデックスを選択する`SelectFromCollection`クラスを作成します。
+`LassoSelector`を使って Matplotlib コレクションからインデックスを選択する`SelectFromCollection`クラスを作成します。
 
 ```python
 class SelectFromCollection:
     """
-    `LassoSelector`を使ってmatplotlibコレクションからインデックスを選択します。
+    `LassoSelector` を使って matplotlib コレクションからインデックスを選択します。
 
-    選択されたインデックスは`ind`属性に保存されます。このツールは、選択の一部でない点を消えるようにします（つまり、それらのアルファ値を減らします）。コレクションのアルファ値が1未満の場合、このツールはアルファ値を恒久的に変更します。
+    選択されたインデックスは `ind` 属性に保存されます。このツールは、選択の一部でない点を消えるようにします（つまり、それらのアルファ値を減らします）。コレクションのアルファ値が 1 未満の場合、このツールはアルファ値を恒久的に変更します。
 
     このツールは、コレクションオブジェクトの*原点*（つまり、`offsets`）に基づいて選択します。
 
     パラメータ
     ----------
     ax : `~matplotlib.axes.Axes`
-        対話するAxes。
-    collection : `matplotlib.collections.Collection`サブクラス
+        対話する Axes。
+    collection : `matplotlib.collections.Collection` サブクラス
         選択するコレクション。
     alpha_other : 0 <= float <= 1
-        選択を強調するために、このツールはすべての選択された点のアルファ値を1に設定し、選択されていない点のアルファ値を*alpha_other*に設定します。
+        選択を強調するために、このツールはすべての選択された点のアルファ値を 1 に設定し、選択されていない点のアルファ値を*alpha_other*に設定します。
     """
 
     def __init__(self, ax, collection, alpha_other=0.3):
@@ -32,7 +32,7 @@ class SelectFromCollection:
         # 各オブジェクトに別々の色があることを確認します
         self.fc = collection.get_facecolors()
         if len(self.fc) == 0:
-            raise ValueError('コレクションにはfacecolorが必要です')
+            raise ValueError('コレクションには facecolor が必要です')
         elif len(self.fc) == 1:
             self.fc = np.tile(self.fc, (self.Npts, 1))
 

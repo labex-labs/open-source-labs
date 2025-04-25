@@ -6,7 +6,7 @@
 fig, ax = plt.subplots(figsize=(10, 6), layout='constrained')
 ```
 
-接下来，我们将设置轴的x和y限制，并关闭轴。
+接下来，我们将设置轴的 x 和 y 限制，并关闭轴。
 
 ```python
 ax.set_xlim(-5, 5)

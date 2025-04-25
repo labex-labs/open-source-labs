@@ -1,6 +1,6 @@
 # 回帰モデルのフィッティング
 
-潜在的に過適合するために、10次の多項式を試します。ただし、ベイズ線形モデルは多項式係数のサイズを正則化します。ARDRegressionとBayesianRidgeのデフォルト設定は`fit_intercept=True`なので、PolynomialFeaturesは追加のバイアス特徴を導入しないはずです。`return_std=True`を設定することで、ベイズ回帰モデルはモデルパラメータの事後分布の標準偏差を返します。
+潜在的に過適合するために、10 次の多項式を試します。ただし、ベイズ線形モデルは多項式係数のサイズを正則化します。ARDRegression と BayesianRidge のデフォルト設定は`fit_intercept=True`なので、PolynomialFeatures は追加のバイアス特徴を導入しないはずです。`return_std=True`を設定することで、ベイズ回帰モデルはモデルパラメータの事後分布の標準偏差を返します。
 
 ```python
 ard_poly = make_pipeline(

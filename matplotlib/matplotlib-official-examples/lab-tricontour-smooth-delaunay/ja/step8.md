@@ -1,6 +1,6 @@
 # データをプロットする
 
-Matplotlibの`tricontour`関数を使って、微調整されたデータをプロットします。
+Matplotlib の`tricontour`関数を使って、微調整されたデータをプロットします。
 
 ```python
 # Graphical options for tricontouring

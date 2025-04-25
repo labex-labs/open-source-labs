@@ -1,6 +1,6 @@
 # 评估
 
-我们将使用几个分类指标来评估这些分类器：布里尔分数损失（brier_score_loss）、对数损失（log_loss）、精确率（precision）、召回率（recall）、F1分数（F1 score）和ROC曲线下面积（ROC AUC）。
+我们将使用几个分类指标来评估这些分类器：布里尔分数损失（brier_score_loss）、对数损失（log_loss）、精确率（precision）、召回率（recall）、F1 分数（F1 score）和 ROC 曲线下面积（ROC AUC）。
 
 ```python
 from collections import defaultdict

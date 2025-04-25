@@ -1,6 +1,6 @@
 # 给数据添加噪声
 
-然后，我们将使用numpy给数据点之间的成对距离添加噪声。
+然后，我们将使用 numpy 给数据点之间的成对距离添加噪声。
 
 ```python
 similarities = euclidean_distances(X_true)

@@ -1,6 +1,6 @@
 # バイオリンプロットの外観をカスタマイズする
 
-ここでは、バイオリンプロットの外観をカスタマイズします。まず、`showmeans`、`showmedians`、`showextrema`の各引数を`False`に設定することで、Matplotlibが描画する内容を制限します。次に、`set_facecolor`と`set_alpha`メソッドを使って、バイオリンの本体の色と不透明度を変更します。最後に、NumPyの`percentile`関数を使って四分位数、中央値、ひげを計算し、バイオリンプロットの上に箱ひげ図の簡略化された表現を追加します。
+ここでは、バイオリンプロットの外観をカスタマイズします。まず、`showmeans`、`showmedians`、`showextrema`の各引数を`False`に設定することで、Matplotlib が描画する内容を制限します。次に、`set_facecolor`と`set_alpha`メソッドを使って、バイオリンの本体の色と不透明度を変更します。最後に、NumPy の`percentile`関数を使って四分位数、中央値、ひげを計算し、バイオリンプロットの上に箱ひげ図の簡略化された表現を追加します。
 
 ```python
 # customize violin plot appearance

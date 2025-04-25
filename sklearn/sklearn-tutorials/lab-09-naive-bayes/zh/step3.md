@@ -16,5 +16,5 @@ y_pred = gnb.predict(X_test)
 
 # 计算分类器的准确率
 accuracy = (y_pred == y_test).sum() / len(y_test)
-print("准确率:", accuracy)
+print("准确率：", accuracy)
 ```

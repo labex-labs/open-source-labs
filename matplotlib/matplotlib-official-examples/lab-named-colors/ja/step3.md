@@ -5,10 +5,10 @@ Matplotlib をインポートしたので、これを使って単純なグラフ
 ```python
 import matplotlib.pyplot as plt
 
-# x軸の値
+# x 軸の値
 x = [1, 2, 3, 4, 5]
 
-# y軸の値
+# y 軸の値
 y = [2, 4, 6, 8, 10]
 
 # 線を描画
@@ -17,10 +17,10 @@ plt.plot(x, y)
 # タイトルを設定
 plt.title("Simple Line Plot")
 
-# x軸のラベルを設定
+# x 軸のラベルを設定
 plt.xlabel("X-axis")
 
-# y軸のラベルを設定
+# y 軸のラベルを設定
 plt.ylabel("Y-axis")
 
 # グラフを表示

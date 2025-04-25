@@ -6,7 +6,7 @@
 
 1. 将名为 `https://github.com/labex-labs/git-playground` 的 Git 仓库克隆到你的本地机器。
 2. 导航到 `git-playground` 目录。
-3. 对 `README.md` 文件进行一些更改，例如在 `README.md` 文件中写入 “This is a new line”。
+3. 对 `README.md` 文件进行一些更改，例如在 `README.md` 文件中写入“This is a new line”。
 4. 运行命令 `git stash` 来贮藏你的更改。
 5. 运行命令 `git stash list` 查看你的贮藏列表。你应该会在列表中看到一个贮藏。
 6. 运行命令 `git stash apply` 将最新的贮藏应用到你的工作目录。

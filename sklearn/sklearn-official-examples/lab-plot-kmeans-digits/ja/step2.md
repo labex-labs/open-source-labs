@@ -1,6 +1,6 @@
 # 評価基準の定義
 
-K - Meansの異なる初期化方法を比較するための基準を定義します。私たちの基準は、以下のことを行います。
+K - Means の異なる初期化方法を比較するための基準を定義します。私たちの基準は、以下のことを行います。
 
 - `StandardScaler`を使ってデータをスケーリングするパイプラインを作成する
 - パイプラインのフィッティングを学習し、その時間を計測する
@@ -13,17 +13,17 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 def bench_k_means(kmeans, name, data, labels):
-    """KMeans初期化方法を評価するための基準。
+    """KMeans 初期化方法を評価するための基準。
 
     パラメータ
     ----------
-    kmeans : KMeansインスタンス
-        初期化が既に設定された`KMeans`インスタンス。
+    kmeans : KMeans インスタンス
+        初期化が既に設定された `KMeans` インスタンス。
     name : str
         戦略に与えられた名前。表に結果を表示する際に使用されます。
-    data : 形状 (n_samples, n_features) のndarray
+    data : 形状 (n_samples, n_features) の ndarray
         クラスタリングするデータ。
-    labels : 形状 (n_samples,) のndarray
+    labels : 形状 (n_samples,) の ndarray
         ある程度の監視が必要なクラスタリング指標を計算する際に使用されるラベル。
     """
     t0 = time()

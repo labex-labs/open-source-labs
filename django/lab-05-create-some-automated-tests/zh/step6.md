@@ -2,7 +2,7 @@
 
 本教程仅介绍了测试的一些基础知识。你还可以做很多其他事情，并且有许多非常有用的工具可供你使用，以实现一些非常巧妙的功能。
 
-例如，虽然我们这里的测试涵盖了模型的一些内部逻辑以及视图发布信息的方式，但你可以使用诸如 [Selenium](https://www.selenium.dev/) 这样的“浏览器内”框架来测试你的HTML在浏览器中的实际渲染方式。这些工具不仅可以让你检查Django代码的行为，还可以检查例如你的JavaScript的行为。看到测试启动一个浏览器，并开始与你的网站进行交互，就好像是一个人在操作它一样，这是非常了不起的！Django包含 `~django.test.LiveServerTestCase` 以方便与Selenium等工具集成。
+例如，虽然我们这里的测试涵盖了模型的一些内部逻辑以及视图发布信息的方式，但你可以使用诸如 [Selenium](https://www.selenium.dev/) 这样的“浏览器内”框架来测试你的 HTML 在浏览器中的实际渲染方式。这些工具不仅可以让你检查 Django 代码的行为，还可以检查例如你的 JavaScript 的行为。看到测试启动一个浏览器，并开始与你的网站进行交互，就好像是一个人在操作它一样，这是非常了不起的！Django 包含 `~django.test.LiveServerTestCase` 以方便与 Selenium 等工具集成。
 
 如果你有一个复杂的应用程序，你可能希望为了 [持续集成](https://en.wikipedia.org/wiki/Continuous_integration) 的目的，在每次提交时自动运行测试，以便质量控制本身——至少部分——实现自动化。
 

@@ -22,7 +22,7 @@ git diff
 git diff --staged
 ```
 
-这是完成步骤2后的结果：
+这是完成步骤 2 后的结果：
 
 ```
 diff --git a/file1.txt b/file1.txt
@@ -34,7 +34,7 @@ index bfccc4a..ee23125 100644
 +hello,labex
 ```
 
-这是完成步骤3后的结果：
+这是完成步骤 3 后的结果：
 
 ```
 diff --git a/README.md b/README.md

@@ -14,7 +14,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y)
 pipeline.fit(X_train, y_train)
 y_pred = pipeline.predict(X_test)
 print(
-    "测试集上的微平均F1分数: %0.3f"
+    "测试集上的微平均 F1 分数：%0.3f"
     % f1_score(y_test, y_pred, average="micro")
 )
 ```

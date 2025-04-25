@@ -5,7 +5,7 @@
 ```python
 def lower_bound(cv_results):
     """
-    计算最佳 `mean_test_scores` 的1个标准差范围内的下限。
+    计算最佳 `mean_test_scores` 的 1 个标准差范围内的下限。
 
     参数
     ----------
@@ -15,7 +15,7 @@ def lower_bound(cv_results):
     返回
     -------
     float
-        最佳 `mean_test_score` 的1个标准差范围内的下限。
+        最佳 `mean_test_score` 的 1 个标准差范围内的下限。
     """
     best_score_idx = np.argmax(cv_results["mean_test_score"])
 
@@ -37,7 +37,7 @@ def best_low_complexity(cv_results):
     返回
     ------
     int
-        具有最少PCA组件数量且其测试分数在最佳 `mean_test_score` 的1个标准差范围内的模型的索引。
+        具有最少 PCA 组件数量且其测试分数在最佳 `mean_test_score` 的 1 个标准差范围内的模型的索引。
     """
     threshold = lower_bound(cv_results)
     candidate_idx = np.flatnonzero(cv_results["mean_test_score"] >= threshold)

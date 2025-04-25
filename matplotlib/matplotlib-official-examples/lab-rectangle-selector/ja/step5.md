@@ -1,6 +1,6 @@
 # サブプロットに何かをプロットする
 
-RectangleSelectorとEllipseSelectorの効果をユーザーが確認できるように、サブプロットに何かをプロットします。
+RectangleSelector と EllipseSelector の効果をユーザーが確認できるように、サブプロットに何かをプロットします。
 
 ```python
 N = 100000  # If N is large one can see improvement by using blitting.

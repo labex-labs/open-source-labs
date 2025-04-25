@@ -1,6 +1,6 @@
 # ローカルブランチを表示する
 
-`https://github.com/labex-labs/git-playground` という名前の Git リポジトリで作業してきました。 このリポジトリ内のすべてのローカルブランチの一覧を表示したいと思います。
+`https://github.com/labex-labs/git-playground` という名前の Git リポジトリで作業してきました。このリポジトリ内のすべてのローカルブランチの一覧を表示したいと思います。
 
 ## タスク
 

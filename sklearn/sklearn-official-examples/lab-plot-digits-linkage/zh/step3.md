@@ -1,6 +1,6 @@
 # 可视化数据集
 
-我们通过使用manifold.SpectralEmbedding()计算数字数据集的二维嵌入，并为每个数字绘制带有不同标记的散点图，来可视化数据集。
+我们通过使用 manifold.SpectralEmbedding() 计算数字数据集的二维嵌入，并为每个数字绘制带有不同标记的散点图，来可视化数据集。
 
 ```python
 def plot_dataset(X_red):

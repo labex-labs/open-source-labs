@@ -1,6 +1,6 @@
 # 控制文本位置和样式
 
-我们还可以控制Matplotlib绘图中文字的位置和样式。尝试在你的脚本中添加以下代码：
+我们还可以控制 Matplotlib 绘图中文字的位置和样式。尝试在你的脚本中添加以下代码：
 
 ```python
 plt.text(2, 8, "Top Left", fontsize=12, color='red')

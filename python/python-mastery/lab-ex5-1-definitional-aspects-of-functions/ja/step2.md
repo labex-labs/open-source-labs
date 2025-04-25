@@ -19,11 +19,11 @@ def read_csv_as_dicts(filename, types):
     '''
     CSV データを、オプションで型変換を行った辞書のリストに読み込む
 
-    引数:
+    引数：
         filename: CSV ファイルへのパス
         types: 各列の型変換関数のリスト
 
-    戻り値:
+    戻り値：
         CSV ファイルのデータを含む辞書のリスト
     '''
     records = []
@@ -40,11 +40,11 @@ def read_csv_as_instances(filename, cls):
     '''
     CSV データをクラスインスタンスのリストに読み込む
 
-    引数:
+    引数：
         filename: CSV ファイルへのパス
         cls: インスタンスを作成するクラス
 
-    戻り値:
+    戻り値：
         CSV ファイルのデータを含むクラスインスタンスのリスト
     '''
     records = []

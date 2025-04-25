@@ -12,7 +12,7 @@ print("Coefficients: \n", regr.coef_)
 print("Mean squared error: %.2f"
       % mean_squared_error(diabetes_y_test, diabetes_y_pred))
 
-# 決定係数: 1は完全な予測
+# 決定係数：1 は完全な予測
 print("Coefficient of determination: %.2f"
       % r2_score(diabetes_y_test, diabetes_y_pred))
 ```

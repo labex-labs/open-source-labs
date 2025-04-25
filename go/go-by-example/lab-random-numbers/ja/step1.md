@@ -10,7 +10,7 @@
 ```sh
 # このサンプルを実行する場所によっては、
 # 生成される一部の数字が異なる場合があります。
-# Goのプレイグラウンドでは、`time.Now()`でシードを設定しても、
+# Go のプレイグラウンドでは、`time.Now()` でシードを設定しても、
 # プレイグラウンドの実装方法のため、決定論的な結果が得られます。
 $ go run random-numbers.go
 81,87
@@ -20,7 +20,7 @@ $ go run random-numbers.go
 5,87
 5,87
 
-# Goが提供できる他の乱数に関する参照については、
+# Go が提供できる他の乱数に関する参照については、
 # [`math/rand`](https://pkg.go.dev/math/rand)
 # パッケージのドキュメントを参照してください。
 ```
@@ -28,7 +28,7 @@ $ go run random-numbers.go
 以下に完全なコードがあります。
 
 ```go
-// Goの`math/rand`パッケージは、
+// Go の `math/rand` パッケージは、
 // [疑似乱数](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)
 // の生成を提供します。
 
@@ -42,15 +42,15 @@ import (
 
 func main() {
 
-	// たとえば、`rand.Intn`は0以上100未満の乱数の`int` nを返します。
+	// たとえば、`rand.Intn` は 0 以上 100 未満の乱数の `int` n を返します。
 	fmt.Print(rand.Intn(100), ",")
 	fmt.Print(rand.Intn(100))
 	fmt.Println()
 
-	// `rand.Float64`は0.0以上1.0未満の`float64` `f`を返します。
+	// `rand.Float64` は 0.0 以上 1.0 未満の `float64` `f` を返します。
 	fmt.Println(rand.Float64())
 
-	// これを使って、たとえば5.0以上10.0未満の乱数の浮動小数点数を生成できます。
+	// これを使って、たとえば 5.0 以上 10.0 未満の乱数の浮動小数点数を生成できます。
 	fmt.Print((rand.Float64()*5)+5, ",")
 	fmt.Print((rand.Float64() * 5) + 5)
 	fmt.Println()
@@ -59,12 +59,12 @@ func main() {
 	// デフォルトでは毎回同じ数字のシーケンスを生成します。
 	// 様々なシーケンスを生成するには、変更するシードを与えます。
 	// これは、秘密にする予定の乱数には安全ではありません。
-	// その場合は`crypto/rand`を使用してください。
+	// その場合は `crypto/rand` を使用してください。
 	s1 := rand.NewSource(time.Now().UnixNano())
 	r1 := rand.New(s1)
 
-	// 結果として得られる`rand.Rand`を、
-	// `rand`パッケージの関数と同じように呼び出します。
+	// 結果として得られる `rand.Rand` を、
+	// `rand` パッケージの関数と同じように呼び出します。
 	fmt.Print(r1.Intn(100), ",")
 	fmt.Print(r1.Intn(100))
 	fmt.Println()

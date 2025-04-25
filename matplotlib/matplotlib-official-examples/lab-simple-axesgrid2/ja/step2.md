@@ -1,6 +1,6 @@
-# グラフとImageGridを作成する
+# グラフと ImageGrid を作成する
 
-次に、グリッドの行数と列数を定義するための`nrows_ncols`パラメータを使用して、グラフとImageGridを作成します。
+次に、グリッドの行数と列数を定義するための`nrows_ncols`パラメータを使用して、グラフと ImageGrid を作成します。
 
 ```python
 fig = plt.figure(figsize=(5.5, 3.5))

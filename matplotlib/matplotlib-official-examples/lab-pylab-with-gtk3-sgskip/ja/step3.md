@@ -1,6 +1,6 @@
-# ツールバーとVBoxにアクセスする
+# ツールバーと VBox にアクセスする
 
-それぞれ `manager.toolbar` と `manager.vbox` メソッドを使って、グラフキャンバスマネージャのツールバーとvbox属性にアクセスします。
+それぞれ `manager.toolbar` と `manager.vbox` メソッドを使って、グラフキャンバスマネージャのツールバーと vbox 属性にアクセスします。
 
 ```python
 manager = fig.canvas.manager

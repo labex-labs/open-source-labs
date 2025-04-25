@@ -37,7 +37,7 @@ const data = [
 ];
 
 reducedFilter(data, ["id", "name"], (item) => item.age > 24);
-// 出力: [{ id: 2, name:'mike'}]
+// 出力：[{ id: 2, name:'mike'}]
 ```
 
 コーディングの練習を始めるには、ターミナル/SSH を開いて `node` と入力します。

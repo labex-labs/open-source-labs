@@ -22,7 +22,7 @@ cd git-playground
 git log --oneline
 ```
 
-4. 确保你想要回退到的提交消息是 “Initial commit” 的提交哈希。
+4. 确保你想要回退到的提交消息是“Initial commit”的提交哈希。
 5. 使用命令 `git reset <commit>` 来回退到指定的提交。例如，你想要回退到哈希为 `3050fc0d3` 的提交：
 
 ```shell

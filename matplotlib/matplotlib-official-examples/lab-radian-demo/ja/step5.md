@@ -1,6 +1,6 @@
-# 2番目のサブプロットにデータをプロットする
+# 2 番目のサブプロットにデータをプロットする
 
-matplotlib.pyplotのplot関数を使って、2番目のサブプロットにx値のコサインをプロットします。x軸を度で表すようにxunitsパラメータを使って指定します。
+matplotlib.pyplot の plot 関数を使って、2 番目のサブプロットに x 値のコサインをプロットします。x 軸を度で表すように xunits パラメータを使って指定します。
 
 ```python
 from basic_units import degrees

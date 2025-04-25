@@ -4,7 +4,7 @@
 
 リスト 7-11 では、`crate::front_of_house::hosting` モジュールを `eat_at_restaurant` 関数のスコープに持ち込み、`eat_at_restaurant` で `add_to_waitlist` 関数を呼び出すために、`hosting::add_to_waitlist` を指定するだけで済むようにします。
 
-ファイル名: `src/lib.rs`
+ファイル名：`src/lib.rs`
 
 ```rust
 mod front_of_house {
@@ -26,7 +26,7 @@ pub fn eat_at_restaurant() {
 
 `use` は、`use` が発生する特定のスコープに対してのみショートカットを作成することに注意してください。リスト 7-12 では、`eat_at_restaurant` 関数を新しい子モジュール `customer` に移動します。このとき、`customer` は `use` 文とは異なるスコープになるため、関数本体はコンパイルされません。
 
-ファイル名: `src/lib.rs`
+ファイル名：`src/lib.rs`
 
 ```rust
 mod front_of_house {

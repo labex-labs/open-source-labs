@@ -35,7 +35,7 @@ ax.legend(loc='upper right')
 plt.show()
 ```
 
-在单元格中输入此代码后，按下 Shift+Enter 或点击工具栏中的 “Run” 按钮来运行它。
+在单元格中输入此代码后，按下 Shift+Enter 或点击工具栏中的“Run”按钮来运行它。
 
 ## 理解输出结果
 

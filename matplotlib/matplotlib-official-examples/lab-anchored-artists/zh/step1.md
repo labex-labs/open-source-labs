@@ -1,6 +1,6 @@
 # 导入库
 
-第一步是导入所需的库。在本实验中我们将使用Matplotlib。
+第一步是导入所需的库。在本实验中我们将使用 Matplotlib。
 
 ```python
 from matplotlib import pyplot as plt

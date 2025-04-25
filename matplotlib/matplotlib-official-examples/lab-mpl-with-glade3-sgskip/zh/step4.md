@@ -12,7 +12,7 @@ def main():
     window = builder.get_object("window1")
     sw = builder.get_object("scrolledwindow1")
 
-    # 开始Matplotlib特定代码
+    # 开始 Matplotlib 特定代码
     figure = Figure(figsize=(8, 6), dpi=71)
     axis = figure.add_subplot()
     t = np.arange(0.0, 3.0, 0.01)
@@ -22,10 +22,10 @@ def main():
     axis.set_xlabel('time [s]')
     axis.set_ylabel('voltage [V]')
 
-    canvas = FigureCanvas(figure)  # 一个Gtk.DrawingArea
+    canvas = FigureCanvas(figure)  # 一个 Gtk.DrawingArea
     canvas.set_size_request(800, 600)
     sw.add(canvas)
-    # 结束Matplotlib特定代码
+    # 结束 Matplotlib 特定代码
 
     window.show_all()
     Gtk.main()

@@ -1,6 +1,6 @@
 # 基准测试并绘制原子和批量预测延迟图
 
-我们将使用Scikit-Learn的 `predict()` 方法来测量每个实例和整个输入的运行时预测。我们将使用 `benchmark_estimator()` 函数来测量原子和批量模式下的预测运行时。然后，我们将使用 `boxplot_runtimes()` 函数以箱线图的形式绘制预测延迟的分布。
+我们将使用 Scikit-Learn 的 `predict()` 方法来测量每个实例和整个输入的运行时预测。我们将使用 `benchmark_estimator()` 函数来测量原子和批量模式下的预测运行时。然后，我们将使用 `boxplot_runtimes()` 函数以箱线图的形式绘制预测延迟的分布。
 
 ```python
 def benchmark_estimator(estimator, X_test, n_bulk_repeats=30, verbose=False):

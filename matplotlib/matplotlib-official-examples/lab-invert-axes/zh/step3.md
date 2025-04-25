@@ -1,6 +1,6 @@
 # 创建绘图
 
-现在，我们可以使用Matplotlib创建绘图。我们将使用`plot`函数来绘制数据，并使用`set_xlim`函数设置x轴的范围。
+现在，我们可以使用 Matplotlib 创建绘图。我们将使用`plot`函数来绘制数据，并使用`set_xlim`函数设置 x 轴的范围。
 
 ```python
 fig, ax = plt.subplots()

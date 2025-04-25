@@ -2,7 +2,7 @@
 
 ```python
 fig, (ax1, ax2) = plt.subplots(nrows=2, sharex=True)
-fig.suptitle("AngleLabel关键字参数")
+fig.suptitle("AngleLabel 关键字参数")
 fig.canvas.draw()  # 需要绘制图形以定义渲染器
 
 # 展示不同的文本位置。

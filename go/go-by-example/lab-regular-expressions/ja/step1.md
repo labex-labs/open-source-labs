@@ -1,6 +1,6 @@
 # 正規表現
 
-この実験では、Go言語で様々な正規表現関連のタスクを実行するためのコードを完成させる必要があります。
+この実験では、Go 言語で様々な正規表現関連のタスクを実行するためのコードを完成させる必要があります。
 
 - `regexp` パッケージを使用して正規表現関連のタスクを実行します。
 - `MatchString` を使用して、パターンが文字列と一致するかどうかをテストします。
@@ -18,15 +18,15 @@
 - `ReplaceAllFunc` を使用して、与えられた関数で一致するテキストを変換します。
 
 ```sh
-# Goの正規表現の完全なリファレンスについては、
+# Go の正規表現の完全なリファレンスについては、
 # [「regexp」](https://pkg.go.dev/regexp) パッケージのドキュメントを参照してください。
 ```
 
 以下が完全なコードです：
 
 ```go
-// Goは[正規表現](https://en.wikipedia.org/wiki/Regular_expression)に対する組み込みのサポートを提供しています。
-// 以下は、Goにおける一般的な正規表現関連のタスクのいくつかの例です。
+// Go は [正規表現](https://en.wikipedia.org/wiki/Regular_expression) に対する組み込みのサポートを提供しています。
+// 以下は、Go における一般的な正規表現関連のタスクのいくつかの例です。
 
 package main
 
@@ -73,7 +73,7 @@ func main() {
 	fmt.Println("all:", r.FindAllStringSubmatchIndex(
 		"peach punch pinch", -1))
 
-	// これらの関数に対して2番目の引数として非負の整数を指定すると、一致の数が制限されます。
+	// これらの関数に対して 2 番目の引数として非負の整数を指定すると、一致の数が制限されます。
 	fmt.Println(r.FindAllString("peach punch pinch", 2))
 
 	// 上の例では文字列引数を使用し、`MatchString` のような名前を使っていました。

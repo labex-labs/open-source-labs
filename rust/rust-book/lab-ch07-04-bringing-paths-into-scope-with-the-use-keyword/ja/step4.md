@@ -4,7 +4,7 @@
 
 リスト 7-17 は、ルートモジュールの `use` を `pub use` に変更したリスト 7-11 のコードを示しています。
 
-ファイル名: `src/lib.rs`
+ファイル名：`src/lib.rs`
 
 ```rust
 mod front_of_house {

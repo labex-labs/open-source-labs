@@ -1,6 +1,6 @@
 # モデルの定義
 
-このステップでは、ベルヌーイRBM特徴抽出器とロジスティック回帰分類器を使用して分類パイプラインを定義します。それぞれ `sklearn.neural_network` と `sklearn.linear_model` モジュールから `BernoulliRBM` と `LogisticRegression` クラスを使用します。その後、2つのモデルを結合するためのパイプラインオブジェクト `rbm_features_classifier` を作成します。
+このステップでは、ベルヌーイ RBM 特徴抽出器とロジスティック回帰分類器を使用して分類パイプラインを定義します。それぞれ `sklearn.neural_network` と `sklearn.linear_model` モジュールから `BernoulliRBM` と `LogisticRegression` クラスを使用します。その後、2 つのモデルを結合するためのパイプラインオブジェクト `rbm_features_classifier` を作成します。
 
 ```python
 from sklearn import linear_model

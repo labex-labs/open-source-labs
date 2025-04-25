@@ -1,6 +1,6 @@
-# 使用TextArea进行注释
+# 使用 TextArea 进行注释
 
-现在让我们使用TextArea为第一个点添加注释。
+现在让我们使用 TextArea 为第一个点添加注释。
 
 ```python
 from matplotlib.offsetbox import AnnotationBbox, TextArea

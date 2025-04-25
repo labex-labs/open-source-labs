@@ -1,8 +1,8 @@
-# run関数でsearch関数を使用する
+# run 関数で search 関数を使用する
 
 `search`関数が機能し、テストに合格したので、`run`関数から`search`を呼び出す必要があります。`config.query`の値と、`run`がファイルから読み取った`contents`を`search`関数に渡す必要があります。そして`run`は、`search`から返された各行を出力します。
 
-ファイル名: `src/lib.rs`
+ファイル名：`src/lib.rs`
 
 ```rust
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
@@ -18,7 +18,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 まだ`for`ループを使って、`search`から返された各行を取得して出力しています。
 
-これで、全体のプログラムが機能するはずです！試してみましょう。まずは、エミリー・ディキンソンの詩から正確に1行を返す単語「frog」を使ってみます。
+これで、全体のプログラムが機能するはずです！試してみましょう。まずは、エミリー・ディキンソンの詩から正確に 1 行を返す単語「frog」を使ってみます。
 
 ```bash
 $ cargo run -- frog poem.txt

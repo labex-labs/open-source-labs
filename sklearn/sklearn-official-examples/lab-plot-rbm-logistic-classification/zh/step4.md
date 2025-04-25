@@ -7,7 +7,7 @@ from sklearn import metrics
 
 Y_pred = rbm_features_classifier.predict(X_test)
 print(
-    "使用RBM特征的逻辑回归:\n%s\n"
+    "使用 RBM 特征的逻辑回归:\n%s\n"
     % (metrics.classification_report(Y_test, Y_pred))
 )
 

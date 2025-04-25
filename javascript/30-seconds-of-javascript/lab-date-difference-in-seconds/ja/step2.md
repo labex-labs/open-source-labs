@@ -1,6 +1,6 @@
 # JavaScript での日付計算の理解
 
-これで `Date` オブジェクトの作成方法がわかったので、2つの日付の差を計算する方法を学んでみましょう。
+これで `Date` オブジェクトの作成方法がわかったので、2 つの日付の差を計算する方法を学んでみましょう。
 
 ## JavaScript での日付演算
 
@@ -29,7 +29,7 @@ console.log(differenceInSeconds); // 60
 
 ## 日付差を計算する関数の作成
 
-ここまでの概念が理解できたので、2つの日付の差を秒単位で計算する簡単な関数を作成してみましょう。
+ここまでの概念が理解できたので、2 つの日付の差を秒単位で計算する簡単な関数を作成してみましょう。
 
 ```javascript
 function getDateDifferenceInSeconds(startDate, endDate) {

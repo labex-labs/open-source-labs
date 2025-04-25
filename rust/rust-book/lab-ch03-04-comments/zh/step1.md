@@ -35,4 +35,4 @@ fn main() {
 }
 ```
 
-Rust 还有另一种注释，即文档注释，我们将在 “将一个 Crate 发布到 Crates.io” 中讨论。
+Rust 还有另一种注释，即文档注释，我们将在“将一个 Crate 发布到 Crates.io”中讨论。

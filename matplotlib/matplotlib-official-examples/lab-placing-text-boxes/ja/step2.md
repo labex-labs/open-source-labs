@@ -4,7 +4,7 @@
 
 ## ヒストグラムの作成
 
-Jupyter Notebookの新しいセルに以下のコードを入力して実行します。
+Jupyter Notebook の新しいセルに以下のコードを入力して実行します。
 
 ```python
 # Create a figure and axes
@@ -31,14 +31,14 @@ plt.show()
 
 1. `fig, ax = plt.subplots(figsize=(10, 6))`：グラフと軸のオブジェクトを作成します。`figsize` パラメータはグラフのサイズをインチ（幅、高さ）で設定します。
 
-2. `histogram = ax.hist(x, bins=50, color='skyblue', edgecolor='black')`：データ `x` のヒストグラムを50のビンで作成します。ビンは黒い枠線の水色に着色されます。
+2. `histogram = ax.hist(x, bins=50, color='skyblue', edgecolor='black')`：データ `x` のヒストグラムを 50 のビンで作成します。ビンは黒い枠線の水色に着色されます。
 
-3. `ax.set_title('Distribution of Random Data', fontsize=16)`：フォントサイズ16のタイトルをグラフに追加します。
+3. `ax.set_title('Distribution of Random Data', fontsize=16)`：フォントサイズ 16 のタイトルをグラフに追加します。
 
-4. `ax.set_xlabel('Value', fontsize=12)` と `ax.set_ylabel('Frequency', fontsize=12)`：フォントサイズ12のラベルをx軸とy軸に追加します。
+4. `ax.set_xlabel('Value', fontsize=12)` と `ax.set_ylabel('Frequency', fontsize=12)`：フォントサイズ 12 のラベルを x 軸と y 軸に追加します。
 
 5. `plt.tight_layout()`：グラフを自動的に調整して図の領域に収めます。
 
 6. `plt.show()`：グラフを表示します。
 
-ヒストグラムはデータの分布を示しています。`np.random.randn()` を使用して正規分布からデータを生成したため、ヒストグラムは0を中心とした釣鐘型になっています。各棒の高さはその範囲内に含まれるデータポイントの数を表しています。
+ヒストグラムはデータの分布を示しています。`np.random.randn()` を使用して正規分布からデータを生成したため、ヒストグラムは 0 を中心とした釣鐘型になっています。各棒の高さはその範囲内に含まれるデータポイントの数を表しています。

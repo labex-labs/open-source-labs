@@ -1,6 +1,6 @@
 # 创建 `NBPlot` 实例并将数据发送到 `ProcessPlotter`
 
-创建 `NBPlot` 类的实例，并将随机数据发送到 `ProcessPlotter` 类。我们将发送10组数据，每组数据之间延迟0.5秒。
+创建 `NBPlot` 类的实例，并将随机数据发送到 `ProcessPlotter` 类。我们将发送 10 组数据，每组数据之间延迟 0.5 秒。
 
 ```python
 def main():

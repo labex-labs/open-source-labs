@@ -11,8 +11,8 @@ const castArray = (val) => (Array.isArray(val) ? val : [val]);
 以下は、`castArray` を使用する方法の例です。
 
 ```js
-castArray("foo"); // 返す値: ['foo']
-castArray([1]); // 返す値: [1]
+castArray("foo"); // 返す値：['foo']
+castArray([1]); // 返す値：[1]
 ```
 
 JavaScript でコーディングを練習するには、ターミナルまたは SSH を開き、`node` と入力します。

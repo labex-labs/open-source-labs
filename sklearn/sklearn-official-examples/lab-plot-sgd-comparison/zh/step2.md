@@ -13,8 +13,8 @@ from sklearn.linear_model import SGDClassifier, Perceptron, PassiveAggressiveCla
 classifiers = [
     ("随机梯度下降（SGD）", SGDClassifier(max_iter=1000)),
     ("感知机", Perceptron(max_iter=1000)),
-    ("被动攻击I型", PassiveAggressiveClassifier(max_iter=1000, loss="hinge", C=1.0, tol=1e-4)),
-    ("被动攻击II型", PassiveAggressiveClassifier(max_iter=1000, loss="squared_hinge", C=1.0, tol=1e-4)),
+    ("被动攻击 I 型", PassiveAggressiveClassifier(max_iter=1000, loss="hinge", C=1.0, tol=1e-4)),
+    ("被动攻击 II 型", PassiveAggressiveClassifier(max_iter=1000, loss="squared_hinge", C=1.0, tol=1e-4)),
     ("逻辑回归", LogisticRegression(max_iter=1000))
 ]
 ```

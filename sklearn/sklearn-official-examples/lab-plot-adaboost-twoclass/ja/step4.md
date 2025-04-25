@@ -1,6 +1,6 @@
 # 決定境界と学習ポイントを描画する
 
-このステップでは、決定境界と学習ポイントを描画します。`sklearn.inspection`モジュールの`from_estimator`メソッドを使って`DecisionBoundaryDisplay`オブジェクトを作成し、AdaBoost分類器、データセット、その他のパラメータを渡します。また、各クラスに異なる色を使って学習ポイントを描画します。
+このステップでは、決定境界と学習ポイントを描画します。`sklearn.inspection`モジュールの`from_estimator`メソッドを使って`DecisionBoundaryDisplay`オブジェクトを作成し、AdaBoost 分類器、データセット、その他のパラメータを渡します。また、各クラスに異なる色を使って学習ポイントを描画します。
 
 ```python
 plot_colors = "br"

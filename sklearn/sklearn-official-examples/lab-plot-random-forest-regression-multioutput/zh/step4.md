@@ -1,6 +1,6 @@
 # 创建随机森林回归器
 
-我们将使用scikit-learn的`RandomForestRegressor`创建一个最大深度为30且有100个估计器的随机森林回归器。
+我们将使用 scikit-learn 的`RandomForestRegressor`创建一个最大深度为 30 且有 100 个估计器的随机森林回归器。
 
 ```python
 max_depth = 30

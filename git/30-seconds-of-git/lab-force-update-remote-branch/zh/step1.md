@@ -10,7 +10,7 @@
 git clone https://github.com/your-username/git-playground.git
 ```
 
-2. 将提交消息为 “Added file2.txt” 的提交更新为提交消息为 “Update file2.txt” 的提交：
+2. 将提交消息为“Added file2.txt”的提交更新为提交消息为“Update file2.txt”的提交：
 
 ```shell
 git commit --amend

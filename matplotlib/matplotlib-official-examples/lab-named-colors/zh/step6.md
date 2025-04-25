@@ -1,6 +1,6 @@
 # 创建饼图
 
-我们也可以使用Matplotlib来创建饼图。在这个例子中，我们将创建一个饼图，展示喜欢不同类型披萨的人的百分比。
+我们也可以使用 Matplotlib 来创建饼图。在这个例子中，我们将创建一个饼图，展示喜欢不同类型披萨的人的百分比。
 
 ```python
 import matplotlib.pyplot as plt

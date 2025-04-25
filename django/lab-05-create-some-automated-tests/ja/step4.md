@@ -10,9 +10,9 @@
 
 何かを修正しようとする前に、利用可能なツールを見てみましょう。
 
-## Djangoテストクライアント
+## Django テストクライアント
 
-Djangoは、ユーザーがビューレベルでコードと対話することをシミュレートするためのテスト用の `~django.test.Client` を提供しています。これを `tests.py` で、あるいは `shell` でも使用できます。
+Django は、ユーザーがビューレベルでコードと対話することをシミュレートするためのテスト用の `~django.test.Client` を提供しています。これを `tests.py` で、あるいは `shell` でも使用できます。
 
 ここでは再び `shell` から始めます。ここでは、`tests.py` では必要ないいくつかのことを行う必要があります。最初のことは、`shell` 内でテスト環境を設定することです：
 
@@ -41,13 +41,13 @@ python manage.py shell
 >>> # '/' からレスポンスを取得
 >>> response = client.get("/")
 Not Found: /
->>> # そのアドレスから404が返ることを期待する必要があります。代わりに
->>> # "Invalid HTTP_HOST header" エラーと400レスポンスが表示される場合、おそらく
->>> # 前述のsetup_test_environment() の呼び出しを省略しています。
+>>> # そのアドレスから 404 が返ることを期待する必要があります。代わりに
+>>> # "Invalid HTTP_HOST header" エラーと 400 レスポンスが表示される場合、おそらく
+>>> # 前述の setup_test_environment() の呼び出しを省略しています。
 >>> response.status_code
 404
 >>> # 一方、'/polls/' には何かが見つかるはずです
->>> # ハードコードされたURLではなく'reverse()' を使用します
+>>> # ハードコードされた URL ではなく'reverse()' を使用します
 >>> from django.urls import reverse
 >>> response = client.get(reverse("polls:index"))
 >>> response.status_code
@@ -190,7 +190,7 @@ class QuestionIndexViewTests(TestCase):
 
 ## `DetailView` のテスト
 
-これまでの作業でうまくいっています。しかし、未来の質問はインデックスには表示されませんが、ユーザーが正しいURLを知っているか、または推測すれば、まだ到達できてしまいます。ですから、`DetailView` にも同様の制約を追加する必要があります：
+これまでの作業でうまくいっています。しかし、未来の質問はインデックスには表示されませんが、ユーザーが正しい URL を知っているか、または推測すれば、まだ到達できてしまいます。ですから、`DetailView` にも同様の制約を追加する必要があります：
 
 ```python
 class DetailView(generic.DetailView):

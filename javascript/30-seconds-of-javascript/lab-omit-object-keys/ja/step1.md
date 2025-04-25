@@ -16,7 +16,7 @@ const omit = (obj, keysToRemove) =>
     }, {});
 ```
 
-使用例:
+使用例：
 
 ```js
 omit({ a: 1, b: "2", c: 3 }, ["b"]); // { 'a': 1, 'c': 3 }

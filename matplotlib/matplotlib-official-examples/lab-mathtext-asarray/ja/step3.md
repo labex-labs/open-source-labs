@@ -1,6 +1,6 @@
 # 図にテキスト画像を描画する
 
-テキストをRGBA画像に変換したら、`.Figure.figimage`を使って図に描画できます。
+テキストを RGBA 画像に変換したら、`.Figure.figimage`を使って図に描画できます。
 
 ```python
 fig = plt.figure()

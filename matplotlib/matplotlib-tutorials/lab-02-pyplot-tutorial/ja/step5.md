@@ -15,7 +15,7 @@ plt.setp(line, color='r', linewidth=2.0)  # Set the color and linewidth properti
 plt.show()
 ```
 
-解説:
+解説：
 
 - 配列 `x` を作成し、`np.sin` 関数を使って対応する y 値を計算します。
 - `plot` 関数を呼び出して線グラフを作成します。

@@ -2,7 +2,7 @@
 
 现在，让我们创建一个 JavaScript 文件，以更实用的方式实现我们的字节大小计算函数。这将展示你如何在实际应用中使用这个函数。
 
-1. 在 WebIDE 中创建一个新文件。点击文件资源管理器侧边栏中的 “New File” 图标，并将其命名为 `byteSizeCalculator.js`。
+1. 在 WebIDE 中创建一个新文件。点击文件资源管理器侧边栏中的“New File”图标，并将其命名为 `byteSizeCalculator.js`。
 
 2. 在文件中添加以下代码：
 
@@ -22,7 +22,7 @@ const examples = [
   "😀",
   "The quick brown fox jumps over the lazy dog",
   "123!@#$%^&*()",
-  "Hello, 世界!",
+  "Hello, 世界！",
   "😀😃😄😁"
 ];
 
@@ -40,7 +40,7 @@ examples.forEach((example) => {
 });
 ```
 
-3. 按下 Ctrl+S 或从菜单中选择 “File > Save” 来保存文件。
+3. 按下 Ctrl+S 或从菜单中选择“File > Save”来保存文件。
 
 4. 从终端运行该文件：
 

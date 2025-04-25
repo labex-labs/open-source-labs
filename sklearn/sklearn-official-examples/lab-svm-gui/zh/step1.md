@@ -7,4 +7,4 @@
 - tkinter
 - scikit-learn
 
-你可以使用pip安装这些软件包。
+你可以使用 pip 安装这些软件包。

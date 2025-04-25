@@ -1,6 +1,6 @@
 # グラフとサブプロットを作成する
 
-2つのサブプロットを持つグラフを作成します。1つはRectangleSelector用で、もう1つはEllipseSelector用です。
+2 つのサブプロットを持つグラフを作成します。1 つは RectangleSelector 用で、もう 1 つは EllipseSelector 用です。
 
 ```python
 fig = plt.figure(layout='constrained')

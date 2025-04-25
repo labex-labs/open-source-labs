@@ -13,5 +13,5 @@ print(f"套索（Lasso）拟合完成，耗时{(time() - t0):.3f}秒")
 
 y_pred_lasso = lasso.predict(X_test)
 r2_score_lasso = r2_score(y_test, y_pred_lasso)
-print(f"套索（Lasso）在测试数据上的R平方值 : {r2_score_lasso:.3f}")
+print(f"套索（Lasso）在测试数据上的 R 平方值 : {r2_score_lasso:.3f}")
 ```

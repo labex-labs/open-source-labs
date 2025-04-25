@@ -1,6 +1,6 @@
 # 小波辞書の計算
 
-Matplotlibを使って小波辞書を計算し、可視化します。
+Matplotlib を使って小波辞書を計算し、可視化します。
 
 ```python
 # Compute a wavelet dictionary

@@ -1,6 +1,6 @@
 # 计算测试误差
 
-现在，让我们计算在集成中添加到`n_estimators`的每个新树桩时，离散和真实AdaBoost分类器的测试误差。
+现在，让我们计算在集成中添加到`n_estimators`的每个新树桩时，离散和真实 AdaBoost 分类器的测试误差。
 
 ```python
 import numpy as np

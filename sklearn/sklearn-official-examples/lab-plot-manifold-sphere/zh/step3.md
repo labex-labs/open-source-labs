@@ -1,6 +1,6 @@
 # 执行局部线性嵌入流形学习
 
-现在我们将执行局部线性嵌入（Locally Linear Embedding，LLE）流形学习。LLE是一种强大的技术，它能够用少量样本展开复杂的流形。我们将使用LLE的四种变体并比较它们的结果。
+现在我们将执行局部线性嵌入（Locally Linear Embedding，LLE）流形学习。LLE 是一种强大的技术，它能够用少量样本展开复杂的流形。我们将使用 LLE 的四种变体并比较它们的结果。
 
 ```python
 methods = ["standard", "ltsa", "hessian", "modified"]

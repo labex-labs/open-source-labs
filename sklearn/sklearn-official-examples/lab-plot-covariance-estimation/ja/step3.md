@@ -1,6 +1,6 @@
 # 正則化パラメータの設定方法を比較する
 
-正則化パラメータの設定方法として、交差検証、Ledoit-Wolf、およびOASの3つのアプローチを比較します。
+正則化パラメータの設定方法として、交差検証、Ledoit-Wolf、および OAS の 3 つのアプローチを比較します。
 
 ```python
 from sklearn.model_selection import GridSearchCV

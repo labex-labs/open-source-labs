@@ -1,6 +1,6 @@
 # 反转颜色映射表
 
-Matplotlib提供了通过在颜色映射表名称后附加 `_r` 来反转颜色映射表的功能。
+Matplotlib 提供了通过在颜色映射表名称后附加 `_r` 来反转颜色映射表的功能。
 
 ```python
 import matplotlib.pyplot as plt

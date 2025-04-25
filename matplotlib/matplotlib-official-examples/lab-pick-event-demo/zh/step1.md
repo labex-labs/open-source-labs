@@ -10,6 +10,6 @@ line, = ax1.plot(rand(100), 'o', picker=True, pickradius=5)
 
 # 拾取矩形。
 ax2.bar(range(10), rand(10), picker=True)
-for label in ax2.get_xticklabels():  # 使x轴刻度标签可拾取。
+for label in ax2.get_xticklabels():  # 使 x 轴刻度标签可拾取。
     label.set_picker(True)
 ```

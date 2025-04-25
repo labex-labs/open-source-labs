@@ -23,7 +23,7 @@ for i in range(2):
     plt.contourf(X, Y, Z, levels=levels, cmap=plt.cm.Reds)
 
     if basemap:
-        print(" - 使用Basemap绘制海岸线")
+        print(" - 使用 Basemap 绘制海岸线")
         m = Basemap(
             projection="cyl",
             llcrnrlat=Y.min(),

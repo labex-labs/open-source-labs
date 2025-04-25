@@ -1,6 +1,6 @@
 # モジュールの検索
 
-Pythonは、モジュールを探す際にパスリスト（sys.path）を参照します。
+Python は、モジュールを探す際にパスリスト（sys.path）を参照します。
 
 ```python
 >>> import sys

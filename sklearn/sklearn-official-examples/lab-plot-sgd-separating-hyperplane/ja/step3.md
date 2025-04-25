@@ -1,6 +1,6 @@
 # 最大マージンを分離するハイパープレーンを描画する
 
-最後に、SGDを使ったSVMアルゴリズムで得た最大マージンを分離するハイパープレーンを描画することができます。`np.meshgrid`を使って点のグリッドを作成し、その後、SVMモデルの`decision_function`メソッドを使ってグリッド上の各点に対する決定関数を計算します。その後、`plt.contour`を使って決定境界を描画し、`plt.scatter`を使ってデータポイントを描画します。
+最後に、SGD を使った SVM アルゴリズムで得た最大マージンを分離するハイパープレーンを描画することができます。`np.meshgrid`を使って点のグリッドを作成し、その後、SVM モデルの`decision_function`メソッドを使ってグリッド上の各点に対する決定関数を計算します。その後、`plt.contour`を使って決定境界を描画し、`plt.scatter`を使ってデータポイントを描画します。
 
 ```python
 # plot the line, the points, and the nearest vectors to the plane

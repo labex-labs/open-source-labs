@@ -19,7 +19,7 @@ two
 以下に完全なコードがあります：
 
 ```go
-// [前の](range)例では、`for`と`range`が基本的なデータ構造の反復処理をどのように提供するかを見ました。
+// [前の](range) 例では、`for`と `range` が基本的なデータ構造の反復処理をどのように提供するかを見ました。
 // この構文を使って、チャネルから受け取った値を反復処理することもできます。
 
 package main
@@ -28,13 +28,13 @@ import "fmt"
 
 func main() {
 
-	// `queue`チャネルの2つの値を反復処理します。
+	// `queue` チャネルの 2 つの値を反復処理します。
 	queue := make(chan string, 2)
 	queue <- "one"
 	queue <- "two"
 	close(queue)
 
-	// この`range`は、`queue`から受け取った各要素を反復処理します。上でチャネルを`close`したので、2つの要素を受け取った後に反復処理は終了します。
+	// この `range`は、`queue`から受け取った各要素を反復処理します。上でチャネルを`close` したので、2 つの要素を受け取った後に反復処理は終了します。
 	for elem := range queue {
 		fmt.Println(elem)
 	}

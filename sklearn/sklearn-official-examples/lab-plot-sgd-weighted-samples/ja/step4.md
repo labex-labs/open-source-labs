@@ -1,6 +1,6 @@
 # 重みなしモデルをフィットさせる
 
-scikit-learnライブラリのSGDClassifierアルゴリズムを使って重みなしモデルをフィットさせます。その後、重みなしモデルの決定関数をプロットします。
+scikit-learn ライブラリの SGDClassifier アルゴリズムを使って重みなしモデルをフィットさせます。その後、重みなしモデルの決定関数をプロットします。
 
 ```python
 clf = linear_model.SGDClassifier(alpha=0.01, max_iter=100)

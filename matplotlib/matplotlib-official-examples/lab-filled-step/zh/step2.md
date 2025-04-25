@@ -2,11 +2,11 @@
 
 我们将定义一个函数，用于绘制作为阶梯状补丁的直方图。该函数将接受以下参数：
 
-- `ax`：要绘制到的Axes对象
-- `edges`：一个长度为n + 1的数组，给出每个区间的左边缘以及最后一个区间的右边缘
-- `values`：一个长度为n的区间计数或值的数组
-- `bottoms`：一个浮点数或数组，可选，一个长度为n的数组，表示条形的底部。如果为None，则使用零
-- `orientation`：一个字符串，可选，直方图的方向。'v'（默认）表示条形在正y方向上增加
+- `ax`：要绘制到的 Axes 对象
+- `edges`：一个长度为 n + 1 的数组，给出每个区间的左边缘以及最后一个区间的右边缘
+- `values`：一个长度为 n 的区间计数或值的数组
+- `bottoms`：一个浮点数或数组，可选，一个长度为 n 的数组，表示条形的底部。如果为 None，则使用零
+- `orientation`：一个字符串，可选，直方图的方向。'v'（默认）表示条形在正 y 方向上增加
 
 ```python
 def filled_hist(ax, edges, values, bottoms=None, orientation='v', **kwargs):
@@ -19,24 +19,24 @@ def filled_hist(ax, edges, values, bottoms=None, orientation='v', **kwargs):
         要绘制到的轴
 
     edges : 数组
-        一个长度为n + 1的数组，给出每个区间的左边缘以及最后一个区间的右边缘。
+        一个长度为 n + 1 的数组，给出每个区间的左边缘以及最后一个区间的右边缘。
 
     values : 数组
-        一个长度为n的区间计数或值的数组
+        一个长度为 n 的区间计数或值的数组
 
     bottoms : 浮点数或数组，可选
-        一个长度为n的数组，表示条形的底部。如果为None，则使用零。
+        一个长度为 n 的数组，表示条形的底部。如果为 None，则使用零。
 
     orientation : {'v', 'h'}
-        直方图的方向。'v'（默认）表示条形在正y方向上增加。
+        直方图的方向。'v'（默认）表示条形在正 y 方向上增加。
 
     **kwargs
-        额外的关键字参数将传递给`.fill_between`。
+        额外的关键字参数将传递给 `.fill_between`。
 
     返回
     -------
     ret : PolyCollection
-        添加到Axes的艺术家对象
+        添加到 Axes 的艺术家对象
     """
     if orientation not in 'hv':
         raise ValueError(f"方向必须在{{'h', 'v'}}中，而不是{orientation}")

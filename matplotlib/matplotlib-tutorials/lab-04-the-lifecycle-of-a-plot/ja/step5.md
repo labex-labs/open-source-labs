@@ -2,14 +2,14 @@
 
 グラフの外観をさらにカスタマイズすることができます。以下の手順に従ってください。
 
-1. x軸のラベルを回転させて、読みやすくします。
+1. x 軸のラベルを回転させて、読みやすくします。
 
 ```python
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 ```
 
-2. x軸とy軸の範囲、ラベル、タイトルを設定します。
+2. x 軸と y 軸の範囲、ラベル、タイトルを設定します。
 
 ```python
 ax.set(xlim=[-10000, 140000],

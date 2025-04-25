@@ -1,6 +1,6 @@
-# 使用LassoCV检查alpha值的选择
+# 使用 LassoCV 检查 alpha 值的选择
 
-最后，我们将使用LassoCV来了解我们对alpha值选择的信任程度。我们将使用3折的KFold。
+最后，我们将使用 LassoCV 来了解我们对 alpha 值选择的信任程度。我们将使用 3 折的 KFold。
 
 ```python
 from sklearn.linear_model import LassoCV

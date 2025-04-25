@@ -10,4 +10,4 @@ target_names = lfw_people.target_names
 n_classes = target_names.shape[0]
 ```
 
-scikit-learnの`fetch_lfw_people()`関数を使用してデータセットをダウンロードします。次に、画像のサンプル数、高さ、幅を取得することでデータセットを探索します。また、入力データ`X`、ターゲット`y`、ターゲット名`target_names`、クラス数`n_classes`も取得します。
+scikit-learn の`fetch_lfw_people()`関数を使用してデータセットをダウンロードします。次に、画像のサンプル数、高さ、幅を取得することでデータセットを探索します。また、入力データ`X`、ターゲット`y`、ターゲット名`target_names`、クラス数`n_classes`も取得します。

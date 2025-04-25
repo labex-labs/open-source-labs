@@ -1,6 +1,6 @@
 # 交差検証を行い結果を記録する
 
-Cの各値に対して、10分割交差検証を行い、スコアの平均と標準偏差を記録します。
+C の各値に対して、10 分割交差検証を行い、スコアの平均と標準偏差を記録します。
 
 ```python
 from sklearn.model_selection import cross_val_score

@@ -1,6 +1,6 @@
 # まとめてみる
 
-Matplotlibのリリース日付を使って簡単なタイムラインを作成するための最終コードは以下の通りです。
+Matplotlib のリリース日付を使って簡単なタイムラインを作成するための最終コードは以下の通りです。
 
 ```python
 from datetime import datetime
@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.dates as mdates
 
 try:
-    # Matplotlibのリリースとその日付のリストを
+    # Matplotlib のリリースとその日付のリストを
     # https://api.github.com/repos/matplotlib/matplotlib/releases から取得しようとする
     import json
     import urllib.request
@@ -26,7 +26,7 @@ try:
         if 'rc' not in item['tag_name'] and 'b' not in item['tag_name']:
             dates.append(item['published_at'].split("T")[0])
             names.append(item['tag_name'])
-    # 日付文字列を（例：2014-10-18）datetimeに変換する
+    # 日付文字列を（例：2014-10-18）datetime に変換する
     dates = [datetime.strptime(d, "%Y-%m-%d") for d in dates]
 
 except Exception:
@@ -44,7 +44,7 @@ except Exception:
              '2016-07-03', '2016-01-10', '2015-10-29', '2015-02-16',
              '2014-10-26', '2014-10-18', '2014-08-26']
 
-    # 日付文字列を（例：2014-10-18）datetimeに変換する
+    # 日付文字列を（例：2014-10-18）datetime に変換する
     dates = [datetime.strptime(d, "%Y-%m-%d") for d in dates]
 
 # いくつかの良いレベルを選ぶ
@@ -66,12 +66,12 @@ for d, l, r in zip(dates, levels, names):
                 horizontalalignment="right",
                 verticalalignment="bottom" if l > 0 else "top")
 
-# 4ヶ月間隔でx軸をフォーマットする
+# 4 ヶ月間隔で x 軸をフォーマットする
 ax.xaxis.set_major_locator(mdates.MonthLocator(interval=4))
 ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
 plt.setp(ax.get_xticklabels(), rotation=30, ha="right")
 
-# y軸とスパインを削除する
+# y 軸とスパインを削除する
 ax.yaxis.set_visible(False)
 ax.spines[["left", "top", "right"]].set_visible(False)
 

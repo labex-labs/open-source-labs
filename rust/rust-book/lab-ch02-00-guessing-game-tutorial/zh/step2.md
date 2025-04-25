@@ -25,7 +25,7 @@ https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 ```
 
-正如你在第一章中看到的，`cargo new` 为你生成了一个 “Hello, world!” 程序。看看 `src/main.rs` 文件：
+正如你在第一章中看到的，`cargo new` 为你生成了一个“Hello, world!”程序。看看 `src/main.rs` 文件：
 
 文件名：`src/main.rs`
 
@@ -35,7 +35,7 @@ fn main() {
 }
 ```
 
-现在让我们编译这个 “Hello, world!” 程序，并使用 `cargo run` 命令在同一步骤中运行它：
+现在让我们编译这个“Hello, world!”程序，并使用 `cargo run` 命令在同一步骤中运行它：
 
 ```bash
 $ cargo run

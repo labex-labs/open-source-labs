@@ -1,6 +1,6 @@
 # 导入必要的库
 
-首先，我们需要导入必要的库。我们将使用scikit-learn来构建和训练决策树分类器。
+首先，我们需要导入必要的库。我们将使用 scikit-learn 来构建和训练决策树分类器。
 
 ```python
 from sklearn import tree

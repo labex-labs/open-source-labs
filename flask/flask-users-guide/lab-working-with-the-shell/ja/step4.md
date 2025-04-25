@@ -22,7 +22,7 @@ def drop_tables():
 
 from shelltools import initialize_database, drop_tables
 
-# shelltoolsモジュールから必要なメソッドをインポート
+# shelltools モジュールから必要なメソッドをインポート
 from shelltools import *
 
 # インポートしたメソッドを使用

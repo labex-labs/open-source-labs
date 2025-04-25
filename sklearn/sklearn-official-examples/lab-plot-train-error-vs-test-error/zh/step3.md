@@ -21,7 +21,7 @@ plt.ylim([0, 1.2])
 plt.xlabel("Regularization parameter")
 plt.ylabel("Performance")
 
-# 显示估计的系数coef_与真实系数
+# 显示估计的系数 coef_与真实系数
 plt.subplot(2, 1, 2)
 plt.plot(coef, label="True coef")
 plt.plot(coef_, label="Estimated coef")

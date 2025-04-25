@@ -1,6 +1,6 @@
 # 線形回帰モデルのフィット
 
-次に、OLS、Theil-Sen、およびRANSAC手法を使って3つの線形回帰モデルをフィットさせます。
+次に、OLS、Theil-Sen、および RANSAC 手法を使って 3 つの線形回帰モデルをフィットさせます。
 
 ```python
 estimators = [

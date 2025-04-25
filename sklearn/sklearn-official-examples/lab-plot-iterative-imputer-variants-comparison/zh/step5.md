@@ -1,6 +1,6 @@
 # 使用迭代插补器填充缺失值
 
-我们将使用Scikit-Learn的`IterativeImputer`类，通过不同的估计器来填充缺失值。
+我们将使用 Scikit-Learn 的`IterativeImputer`类，通过不同的估计器来填充缺失值。
 
 ```python
 estimators = [

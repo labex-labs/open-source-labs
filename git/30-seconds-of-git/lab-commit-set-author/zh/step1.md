@@ -24,4 +24,4 @@ git commit -m "修复错误" --author="John Doe <john.doe@example.com>"
 
 这是最终结果：
 
-![Git提交作者更改结果](../assets/challenge-commit-set-author-step1-1.png)
+![Git 提交作者更改结果](../assets/challenge-commit-set-author-step1-1.png)

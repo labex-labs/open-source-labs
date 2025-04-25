@@ -1,6 +1,6 @@
-# 如何在JavaScript中从数组末尾移除元素
+# 如何在 JavaScript 中从数组末尾移除元素
 
-要在JavaScript中从数组末尾移除元素，可以使用 `Array.prototype.slice()` 方法。具体做法如下：
+要在 JavaScript 中从数组末尾移除元素，可以使用 `Array.prototype.slice()` 方法。具体做法如下：
 
 ```js
 const takeRight = (arr, n = 1) => arr.slice(arr.length - n, arr.length);
@@ -13,4 +13,4 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
 
-要使用此函数，请打开终端/SSH并输入 `node` 开始练习编码。
+要使用此函数，请打开终端/SSH 并输入 `node` 开始练习编码。

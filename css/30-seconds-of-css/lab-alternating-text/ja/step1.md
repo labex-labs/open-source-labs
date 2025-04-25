@@ -1,6 +1,6 @@
 # 交互テキスト
 
-VM内には既に`index.html`と`style.css`が用意されています。
+VM 内には既に`index.html`と`style.css`が用意されています。
 
 交互テキストのアニメーションを作成するには、次の手順に従ってください。
 
@@ -10,7 +10,7 @@ VM内には既に`index.html`と`style.css`が用意されています。
 <p>I love coding in <span class="alternating" id="alternating-text"></span>.</p>
 ```
 
-2. CSSでは、`display: none`を設定することで`<span>`要素を非表示にする`alternating-text`というアニメーションを定義します。
+2. CSS では、`display: none`を設定することで`<span>`要素を非表示にする`alternating-text`というアニメーションを定義します。
 
 ```css
 .alternating {
@@ -27,7 +27,7 @@ VM内には既に`index.html`と`style.css`が用意されています。
 }
 ```
 
-3. JavaScriptでは、交互表示する異なる単語の配列を定義し、最初の単語を使って`<span>`要素のコンテンツを初期化します。
+3. JavaScript では、交互表示する異なる単語の配列を定義し、最初の単語を使って`<span>`要素のコンテンツを初期化します。
 
 ```js
 const texts = ["Java", "Python", "C", "C++", "C#", "Javascript"];
@@ -48,4 +48,4 @@ const listener = (e) => {
 element.addEventListener("animationiteration", listener, false);
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でWebサービスを実行してください。その後、**Web 8080**タブを更新してWebページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 で Web サービスを実行してください。その後、**Web 8080**タブを更新して Web ページをプレビューできます。

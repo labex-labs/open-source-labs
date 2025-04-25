@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-この実験で必要なライブラリをインポートするのが最初のステップです。この実験では、numpy、matplotlib、fetch_species_distributions、およびKernelDensityライブラリを使用します。
+この実験で必要なライブラリをインポートするのが最初のステップです。この実験では、numpy、matplotlib、fetch_species_distributions、および KernelDensity ライブラリを使用します。
 
 ```python
 import numpy as np

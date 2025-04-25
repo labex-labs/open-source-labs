@@ -1,8 +1,8 @@
 # 美しいテキストの下線
 
-VM内には既に`index.html`と`style.css`が用意されています。
+VM 内には既に`index.html`と`style.css`が用意されています。
 
-下線を引いた文字が下線を切り取らないようにするには、`text-shadow`を4つの値で使用して、下線との交差部分を覆う太い影を作成します。`text-shadow`の色を`background`の色と一致させ、より大きなフォントに対して`px`値を調整します。`background-image`と`linear-gradient()`と`currentColor`を使って実際の下線を作成します。`background-position`、`background-repeat`、`background-size`を設定して、グラデーションを正しい位置に配置します。`::selection`疑似クラスセレクタを使って、テキストの影がテキスト選択を妨げないようにします。この効果は本来`text-decoration-skip-ink: auto`として実装されていますが、下線に対する制御が少ないことに注意してください。
+下線を引いた文字が下線を切り取らないようにするには、`text-shadow`を 4 つの値で使用して、下線との交差部分を覆う太い影を作成します。`text-shadow`の色を`background`の色と一致させ、より大きなフォントに対して`px`値を調整します。`background-image`と`linear-gradient()`と`currentColor`を使って実際の下線を作成します。`background-position`、`background-repeat`、`background-size`を設定して、グラデーションを正しい位置に配置します。`::selection`疑似クラスセレクタを使って、テキストの影がテキスト選択を妨げないようにします。この効果は本来`text-decoration-skip-ink: auto`として実装されていますが、下線に対する制御が少ないことに注意してください。
 
 以下はコードの例です。
 
@@ -40,4 +40,4 @@ VM内には既に`index.html`と`style.css`が用意されています。
 }
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。

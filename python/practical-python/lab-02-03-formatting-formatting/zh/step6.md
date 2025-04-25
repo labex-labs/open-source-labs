@@ -1,6 +1,6 @@
-# 练习2.8：如何格式化数字
+# 练习 2.8：如何格式化数字
 
-打印数字时常见的一个问题是指定小数位数。解决这个问题的一种方法是使用f字符串。试试这些示例：
+打印数字时常见的一个问题是指定小数位数。解决这个问题的一种方法是使用 f 字符串。试试这些示例：
 
 ```python
 >>> value = 42863.1
@@ -17,7 +17,7 @@
 >>>
 ```
 
-有关f字符串中使用的格式化代码的完整文档可在[此处](https://docs.python.org/3/library/string.html#format-specification-mini-language)找到。格式化有时也使用字符串的`%`运算符来执行。
+有关 f 字符串中使用的格式化代码的完整文档可在[此处](https://docs.python.org/3/library/string.html#format-specification-mini-language)找到。格式化有时也使用字符串的`%`运算符来执行。
 
 ```python
 >>> print('%0.4f' % value)

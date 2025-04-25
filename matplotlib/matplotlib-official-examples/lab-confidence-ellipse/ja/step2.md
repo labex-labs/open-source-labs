@@ -30,7 +30,7 @@ def confidence_ellipse(x, y, ax, n_std=3.0, facecolor='none', **kwargs):
 
     cov = np.cov(x, y)
     pearson = cov[0, 1]/np.sqrt(cov[0, 0] * cov[1, 1])
-    # この2次元データセットの固有値を取得するための特殊なケースを使用します。
+    # この 2 次元データセットの固有値を取得するための特殊なケースを使用します。
     ell_radius_x = np.sqrt(1 + pearson)
     ell_radius_y = np.sqrt(1 - pearson)
     ellipse = Ellipse((0, 0), width=ell_radius_x * 2, height=ell_radius_y * 2,

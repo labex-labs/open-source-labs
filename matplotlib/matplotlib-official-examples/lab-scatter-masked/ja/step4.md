@@ -1,6 +1,6 @@
 # マスク領域を区切る線の追加
 
-最後に、マスク領域を区切る線を追加します。theta値の配列を作成し、`np.cos(theta)`と`np.sin(theta)`を使って半径`r0`の円を描画します。
+最後に、マスク領域を区切る線を追加します。theta 値の配列を作成し、`np.cos(theta)`と`np.sin(theta)`を使って半径`r0`の円を描画します。
 
 ```python
 # Show the boundary between the regions:

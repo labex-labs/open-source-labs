@@ -1,10 +1,10 @@
-# Set-Cookie选项
+# Set-Cookie 选项
 
-在Flask中设置Cookie时，考虑安全选项以保护敏感数据非常重要。一些推荐的选项如下：
+在 Flask 中设置 Cookie 时，考虑安全选项以保护敏感数据非常重要。一些推荐的选项如下：
 
-- Secure：将Cookie限制为仅通过HTTPS流量传输。
-- HttpOnly：保护Cookie的内容不被JavaScript读取。
-- SameSite：限制从外部站点发送请求时如何发送Cookie。
+- Secure：将 Cookie 限制为仅通过 HTTPS 流量传输。
+- HttpOnly：保护 Cookie 的内容不被 JavaScript 读取。
+- SameSite：限制从外部站点发送请求时如何发送 Cookie。
 
 示例代码：
 

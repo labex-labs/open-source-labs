@@ -5,7 +5,7 @@
 ```python
 from sklearn.base import clone
 
-# ハイパーパラメータ。これらはGridSearchCVを使った交差検証によって設定されました。
+# ハイパーパラメータ。これらは GridSearchCV を使った交差検証によって設定されました。
 # ここでは時間を節約するために交差検証を行っていません。
 rbm.learning_rate = 0.06
 rbm.n_iter = 10
@@ -15,6 +15,6 @@ rbm.n_iter = 10
 rbm.n_components = 100
 logistic.C = 6000
 
-# RBM-Logisticパイプラインの学習
+# RBM-Logistic パイプラインの学習
 rbm_features_classifier.fit(X_train, Y_train)
 ```

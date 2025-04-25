@@ -1,6 +1,6 @@
 # 评估模型
 
-我们最终可以展示所有模型的不同ROC曲线。
+我们最终可以展示所有模型的不同 ROC 曲线。
 
 ```python
 import matplotlib.pyplot as plt

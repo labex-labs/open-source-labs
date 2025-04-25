@@ -7,7 +7,7 @@
 no_2 = air_quality.pivot(index="datetime", columns="location", values="value")
 no_2.head()
 
-# 创建一个从5月20日到5月21日结束的不同站点值的图表
+# 创建一个从 5 月 20 日到 5 月 21 日结束的不同站点值的图表
 no_2["2019-05-20":"2019-05-21"].plot()
 
 # 重采样时间序列数据

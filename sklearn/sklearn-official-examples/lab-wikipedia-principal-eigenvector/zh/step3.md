@@ -1,6 +1,6 @@
 # 计算邻接矩阵
 
-我们将提取邻接图作为一个SciPy稀疏矩阵。首先解析重定向。返回X，即SciPy稀疏邻接矩阵，重定向信息作为从文章名称到文章名称的Python字典，以及index_map，一个从文章名称到Python整数（文章索引）的Python字典。
+我们将提取邻接图作为一个 SciPy 稀疏矩阵。首先解析重定向。返回 X，即 SciPy 稀疏邻接矩阵，重定向信息作为从文章名称到文章名称的 Python 字典，以及 index_map，一个从文章名称到 Python 整数（文章索引）的 Python 字典。
 
 ```python
 import numpy as np

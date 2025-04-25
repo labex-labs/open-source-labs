@@ -1,6 +1,6 @@
 # ワンホットエンコードパイプライン
 
-カテゴリカル特徴をワンホットエンコードし、HistGradientBoostingRegressor推定器を学習するパイプラインを作成します。
+カテゴリカル特徴をワンホットエンコードし、HistGradientBoostingRegressor 推定器を学習するパイプラインを作成します。
 
 ```python
 from sklearn.preprocessing import OneHotEncoder

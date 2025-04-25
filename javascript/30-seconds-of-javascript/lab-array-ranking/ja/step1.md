@@ -13,7 +13,7 @@ const ranking = (arr, compFn) =>
   arr.map((a) => arr.filter((b) => compFn(a, b)).length + 1);
 ```
 
-例:
+例：
 
 ```js
 ranking([8, 6, 9, 5], (a, b) => a < b);

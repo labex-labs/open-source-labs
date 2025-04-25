@@ -1,6 +1,6 @@
 # 加载并准备数据
 
-我们将加载20个新闻组数据集，并排除“comp.os.ms-windows.misc”类别。我们还将定义矢量化器。
+我们将加载 20 个新闻组数据集，并排除“comp.os.ms-windows.misc”类别。我们还将定义矢量化器。
 
 ```python
 categories = [

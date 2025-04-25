@@ -1,6 +1,6 @@
 # テスト画像を再構成してノイズを除去する
 
-PCAとKernel PCAの両方を使って、ノイズのあるテストセットを変換して再構成します。その後、再構成された画像を描画して結果を比較します。
+PCA と Kernel PCA の両方を使って、ノイズのあるテストセットを変換して再構成します。その後、再構成された画像を描画して結果を比較します。
 
 ```python
 X_reconstructed_kernel_pca = kernel_pca.inverse_transform(

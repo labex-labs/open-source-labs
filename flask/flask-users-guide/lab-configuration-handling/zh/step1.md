@@ -18,4 +18,4 @@ def hello():
 python app.py
 ```
 
-打开你的网页浏览器，访问 `http://localhost:5000` 以查看 “Hello, Flask!” 消息。
+打开你的网页浏览器，访问 `http://localhost:5000` 以查看“Hello, Flask!”消息。

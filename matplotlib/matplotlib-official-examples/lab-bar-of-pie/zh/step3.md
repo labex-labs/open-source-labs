@@ -11,7 +11,7 @@ fig.subplots_adjust(wspace=0)
 然后我们设置饼图的参数并绘制它：
 
 ```python
-# 旋转以便第一个楔形被x轴分割
+# 旋转以便第一个楔形被 x 轴分割
 angle = -180 * overall_ratios[0]
 wedges, *_ = ax1.pie(overall_ratios, autopct='%1.1f%%', startangle=angle,
                      labels=labels, explode=explode)

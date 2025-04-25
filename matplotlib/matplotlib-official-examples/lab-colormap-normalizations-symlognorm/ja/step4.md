@@ -1,4 +1,4 @@
-# AsinhNormを適用する
+# AsinhNorm を適用する
 
 このステップでは、合成データに`AsinhNorm`を適用し、結果を可視化します。
 

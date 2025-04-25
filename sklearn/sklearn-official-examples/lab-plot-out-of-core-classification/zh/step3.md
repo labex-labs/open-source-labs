@@ -4,7 +4,7 @@
 # 创建向量化器并将特征数量限制在合理的最大值
 vectorizer = HashingVectorizer(decode_error="ignore", n_features=2**18, alternate_sign=False)
 
-# 遍历解析后的路透社SGML文件的迭代器。
+# 遍历解析后的路透社 SGML 文件的迭代器。
 data_stream = stream_reuters_documents()
 
 # 我们学习“acq”类与其他所有类之间的二分类。
@@ -12,7 +12,7 @@ data_stream = stream_reuters_documents()
 all_classes = np.array([0, 1])
 positive_class = "acq"
 
-# 这里有一些支持`partial_fit`方法的分类器
+# 这里有一些支持 `partial_fit` 方法的分类器
 partial_fit_classifiers = {
     "SGD": SGDClassifier(max_iter=5),
     "Perceptron": Perceptron(),

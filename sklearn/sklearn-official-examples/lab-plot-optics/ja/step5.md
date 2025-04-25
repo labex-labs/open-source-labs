@@ -1,6 +1,6 @@
 # 到達可能性プロットとクラスタリング結果をプロットする
 
-異なるepsilon値でのOPTICSとDBSCANの到達可能性プロットとクラスタリング結果をプロットします。
+異なる epsilon 値での OPTICS と DBSCAN の到達可能性プロットとクラスタリング結果をプロットします。
 
 ```python
 space = np.arange(len(X))
@@ -23,7 +23,7 @@ for klass, color in zip(range(0, 5), colors):
 ax1.plot(space[labels == -1], reachability[labels == -1], "k.", alpha=0.3)
 ax1.plot(space, np.full_like(space, 2.0, dtype=float), "k-", alpha=0.5)
 ax1.plot(space, np.full_like(space, 0.5, dtype=float), "k-.", alpha=0.5)
-ax1.set_ylabel("到達可能性 (epsilon距離)")
+ax1.set_ylabel("到達可能性 (epsilon 距離)")
 ax1.set_title("到達可能性プロット")
 
 # OPTICS
@@ -34,21 +34,21 @@ for klass, color in zip(range(0, 5), colors):
 ax2.plot(X[clust.labels_ == -1, 0], X[clust.labels_ == -1, 1], "k+", alpha=0.1)
 ax2.set_title("自動クラスタリング\nOPTICS")
 
-# 0.5でのDBSCAN
+# 0.5 での DBSCAN
 colors = ["g.", "r.", "b.", "c."]
 for klass, color in zip(range(0, 4), colors):
     Xk = X[labels_050 == klass]
     ax3.plot(Xk[:, 0], Xk[:, 1], color, alpha=0.3)
 ax3.plot(X[labels_050 == -1, 0], X[labels_050 == -1, 1], "k+", alpha=0.1)
-ax3.set_title("0.5 epsilonカットでのクラスタリング\nDBSCAN")
+ax3.set_title("0.5 epsilon カットでのクラスタリング\nDBSCAN")
 
-# 2.でのDBSCAN
+# 2.での DBSCAN
 colors = ["g.", "m.", "y.", "c."]
 for klass, color in zip(range(0, 4), colors):
     Xk = X[labels_200 == klass]
     ax4.plot(Xk[:, 0], Xk[:, 1], color, alpha=0.3)
 ax4.plot(X[labels_200 == -1, 0], X[labels_200 == -1, 1], "k+", alpha=0.1)
-ax4.set_title("2.0 epsilonカットでのクラスタリング\nDBSCAN")
+ax4.set_title("2.0 epsilon カットでのクラスタリング\nDBSCAN")
 
 plt.tight_layout()
 plt.show()

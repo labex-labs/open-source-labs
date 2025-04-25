@@ -1,6 +1,6 @@
-# 创建Delaunay三角剖分
+# 创建 Delaunay 三角剖分
 
-我们将通过提供点的x和y坐标来创建一个不指定三角形的Delaunay三角剖分。
+我们将通过提供点的 x 和 y 坐标来创建一个不指定三角形的 Delaunay 三角剖分。
 
 ```python
 n_angles = 36

@@ -35,7 +35,7 @@ const recordAnimationFrames = (callback, autoStart = true) => {
 };
 ```
 
-コードの使用例:
+コードの使用例：
 
 ```js
 const cb = () => console.log("Animation frame fired");

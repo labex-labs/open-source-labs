@@ -1,6 +1,6 @@
 # プロットにカラーバーを追加する
 
-次に、Matplotlibの`make_axes_locatable`関数を使って、各サブプロットにカラーバーを追加します。この関数は既存の軸を受け取り、新しい`AxesDivider`に追加して`AxesDivider`を返します。その後、`AxesDivider`の`append_axes`メソッドを使って、元の軸の特定の側（「上」、「右」、「下」、または「左」）に新しい軸を作成できます。
+次に、Matplotlib の`make_axes_locatable`関数を使って、各サブプロットにカラーバーを追加します。この関数は既存の軸を受け取り、新しい`AxesDivider`に追加して`AxesDivider`を返します。その後、`AxesDivider`の`append_axes`メソッドを使って、元の軸の特定の側（「上」、「右」、「下」、または「左」）に新しい軸を作成できます。
 
 ```python
 ax1_divider = make_axes_locatable(ax1)

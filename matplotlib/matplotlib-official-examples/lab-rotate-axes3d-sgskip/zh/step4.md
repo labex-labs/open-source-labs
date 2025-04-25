@@ -1,6 +1,6 @@
 # 旋转轴并更新绘图
 
-最后，我们将使用一个for循环来旋转轴并更新绘图，该循环会遍历仰角、方位角、滚动角以及全方位的完整旋转。我们将使用 `ax.view_init()` 函数来更新轴视图和标题，并使用 `plt.title()`、`plt.draw()` 和 `plt.pause()` 函数来显示动画。
+最后，我们将使用一个 for 循环来旋转轴并更新绘图，该循环会遍历仰角、方位角、滚动角以及全方位的完整旋转。我们将使用 `ax.view_init()` 函数来更新轴视图和标题，并使用 `plt.title()`、`plt.draw()` 和 `plt.pause()` 函数来显示动画。
 
 ```python
 # Rotate the axes and update the plot

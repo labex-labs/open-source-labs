@@ -6,7 +6,7 @@
 # グラフ用のデータを定義
 class HandlerDashedLines(HandlerLineCollection):
     """
-    LineCollectionインスタンス用のカスタムハンドラ。
+    LineCollection インスタンス用のカスタムハンドラ。
     """
     def create_artists(self, legend, orig_handle,
                        xdescent, ydescent, width, height, fontsize, trans):
@@ -24,7 +24,7 @@ class HandlerDashedLines(HandlerLineCollection):
             legline = Line2D(xdata, ydata * (numlines - i) - ydescent)
             self.update_prop(legline, orig_handle, legend)
             # 色、破線パターン、および線幅を
-            # LineCollection内の線のそれに設定する
+            # LineCollection 内の線のそれに設定する
             try:
                 color = orig_handle.get_colors()[i]
             except IndexError:

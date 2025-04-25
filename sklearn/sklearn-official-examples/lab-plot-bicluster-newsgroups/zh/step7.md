@@ -1,6 +1,6 @@
-# 使用MiniBatchKMeans进行聚类
+# 使用 MiniBatchKMeans 进行聚类
 
-我们将使用MiniBatchKMeans对数据进行聚类。
+我们将使用 MiniBatchKMeans 对数据进行聚类。
 
 ```python
 kmeans = MiniBatchKMeans(

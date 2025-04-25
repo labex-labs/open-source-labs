@@ -14,7 +14,7 @@ fn main() {
     println!("My path is {}.", args[0]);
 
     // 残りの引数は、渡されたコマンドラインパラメータです。
-    // このようにプログラムを呼び出します:
+    // このようにプログラムを呼び出します：
     //   $./args arg1 arg2
     println!("I got {:?} arguments: {:?}.", args.len() - 1, &args[1..]);
 }

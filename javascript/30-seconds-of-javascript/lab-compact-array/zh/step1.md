@@ -12,7 +12,7 @@ const compact = (arr) => arr.filter(Boolean);
 
 ```js
 compact([0, 1, false, 2, "", 3, "a", "e" * 23, NaN, "s", 34]);
-// 输出: [ 1, 2, 3, 'a','s', 34 ]
+// 输出：[ 1, 2, 3, 'a','s', 34 ]
 ```
 
 通过这种方式使用 `Array.prototype.filter()`，你可以轻松创建一个只包含真值的精简数组。

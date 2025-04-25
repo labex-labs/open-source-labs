@@ -11,5 +11,5 @@ print(f"自动相关性确定（ARD）拟合完成，耗时{(time() - t0):.3f}�
 
 y_pred_ard = ard.predict(X_test)
 r2_score_ard = r2_score(y_test, y_pred_ard)
-print(f"自动相关性确定（ARD）在测试数据上的R平方值 : {r2_score_ard:.3f}")
+print(f"自动相关性确定（ARD）在测试数据上的 R 平方值 : {r2_score_ard:.3f}")
 ```

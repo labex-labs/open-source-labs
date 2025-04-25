@@ -13,5 +13,5 @@ def delay(fn, ms, *args):
 ```
 
 ```python
-delay(lambda x: print(x), 1000, 'later') # 1秒後に 'later' と表示されます
+delay(lambda x: print(x), 1000, 'later') # 1 秒後に 'later' と表示されます
 ```

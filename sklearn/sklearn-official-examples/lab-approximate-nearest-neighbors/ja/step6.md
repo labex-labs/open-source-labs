@@ -1,6 +1,6 @@
-# TSNE埋め込みを可視化する
+# TSNE 埋め込みを可視化する
 
-異なる最近傍点変換器を使用してTSNE埋め込みを可視化します。`transformers`を、「内部のNearestNeighbors付きTSNE」、「KNeighborsTransformer付きTSNE」、「NMSlibTransformer付きTSNE」の3つのパイプラインを含むリストとして定義します。データセットと変換器を反復処理し、TSNE埋め込みをプロットします。これらは、方法によらず似たようになるはずです。最後にプロットを表示します。
+異なる最近傍点変換器を使用して TSNE 埋め込みを可視化します。`transformers`を、「内部の NearestNeighbors 付き TSNE」、「KNeighborsTransformer 付き TSNE」、「NMSlibTransformer 付き TSNE」の 3 つのパイプラインを含むリストとして定義します。データセットと変換器を反復処理し、TSNE 埋め込みをプロットします。これらは、方法によらず似たようになるはずです。最後にプロットを表示します。
 
 ```python
 transformers = [

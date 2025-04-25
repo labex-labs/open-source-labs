@@ -1,6 +1,6 @@
 # データを準備する
 
-SkewT - logP図用のデータを準備します。文字列を読み取るためにStringIOモジュールと、配列に読み込むためにNumPyを使用します。
+SkewT - logP 図用のデータを準備します。文字列を読み取るために StringIO モジュールと、配列に読み込むために NumPy を使用します。
 
 ```python
 data_txt = '''

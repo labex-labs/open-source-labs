@@ -17,14 +17,14 @@ axs[0, 1].imshow(ls.hillshade(z, vert_exag=ve), cmap='gray')
 axs[0, 1].set(xlabel='光照强度')
 ```
 
-我们将再创建两个子图，一个将 `blend_mode` 设置为 “hsv”，另一个设置为 “overlay”。
+我们将再创建两个子图，一个将 `blend_mode` 设置为“hsv”，另一个设置为“overlay”。
 
 ```python
 rgb = ls.shade(z, cmap=cmap, vert_exag=ve, blend_mode='hsv')
 axs[1, 0].imshow(rgb)
-axs[1, 0].set(xlabel='混合模式: "hsv"（默认）')
+axs[1, 0].set(xlabel='混合模式："hsv"（默认）')
 
 rgb = ls.shade(z, cmap=cmap, vert_exag=ve, blend_mode='overlay')
 axs[1, 1].imshow(rgb)
-axs[1, 1].set(xlabel='混合模式: "overlay"')
+axs[1, 1].set(xlabel='混合模式："overlay"')
 ```

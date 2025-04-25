@@ -20,7 +20,7 @@ drwxr-xr-x 91 mark 3.0K Oct 3 12:50..
 以下是完整代码：
 
 ```go
-// 在之前的示例中，我们研究了[生成外部进程](spawning-processes)。当我们需要一个正在运行的 Go 进程能够访问外部进程时，就会这样做。有时我们只是想用另一个（可能是非 Go 的）进程完全替换当前的 Go 进程。为此，我们将使用 Go 语言对经典的
+// 在之前的示例中，我们研究了 [生成外部进程](spawning-processes)。当我们需要一个正在运行的 Go 进程能够访问外部进程时，就会这样做。有时我们只是想用另一个（可能是非 Go 的）进程完全替换当前的 Go 进程。为此，我们将使用 Go 语言对经典的
 // <a href="https://en.wikipedia.org/wiki/Exec_(operating_system)"><code>exec</code></a>
 // 函数的实现。
 
@@ -43,7 +43,7 @@ func main() {
 	// `Exec` 要求参数以切片形式提供（而不是一个大字符串）。我们将给 `ls` 一些常见参数。请注意，第一个参数应该是程序名。
 	args := []string{"ls", "-a", "-l", "-h"}
 
-	// `Exec` 还需要一组[环境变量](environment-variables)来使用。这里我们只提供当前环境。
+	// `Exec` 还需要一组 [环境变量](environment-variables) 来使用。这里我们只提供当前环境。
 	env := os.Environ()
 
 	// 这是实际的 `syscall.Exec` 调用。如果此调用成功，我们的进程执行将在此处结束，并被 `/bin/ls -a -l -h` 进程替换。如果有错误，我们将得到一个返回值。

@@ -1,6 +1,6 @@
-# さまざまなMatplotlibオブジェクトを使ったカスタム凡例の作成
+# さまざまな Matplotlib オブジェクトを使ったカスタム凡例の作成
 
-このステップでは、`Line2D` や `Patch` など、さまざまなMatplotlibオブジェクトを使ってカスタム凡例を作成します。まず、`matplotlib.patches` モジュールから `Patch` クラスをインポートします。次に、カスタム属性を持つ `Line2D` と `Patch` オブジェクトのリストを作成します。最後に、カスタムオブジェクトと対応するラベルを使って `legend()` を呼び出します。
+このステップでは、`Line2D` や `Patch` など、さまざまな Matplotlib オブジェクトを使ってカスタム凡例を作成します。まず、`matplotlib.patches` モジュールから `Patch` クラスをインポートします。次に、カスタム属性を持つ `Line2D` と `Patch` オブジェクトのリストを作成します。最後に、カスタムオブジェクトと対応するラベルを使って `legend()` を呼び出します。
 
 ```python
 # Import Line2D and Patch classes

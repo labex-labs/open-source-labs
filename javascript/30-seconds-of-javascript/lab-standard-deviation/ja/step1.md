@@ -1,11 +1,11 @@
 # 標準偏差
 
-JavaScriptにおいて数値の配列の標準偏差を計算するには、次の手順に従います。
+JavaScript において数値の配列の標準偏差を計算するには、次の手順に従います。
 
-1. ターミナル/SSHを開き、コーディングの練習を始めるために `node` と入力します。
+1. ターミナル/SSH を開き、コーディングの練習を始めるために `node` と入力します。
 2. 以下に示す `standardDeviation(arr, usePopulation = false)` 関数を使用します。
 3. 数値の配列を関数の最初の引数として渡します。
-4. サンプル標準偏差を取得するには、2番目の引数 `usePopulation` を省略します。母集団標準偏差を取得するには、それを `true` に設定します。
+4. サンプル標準偏差を取得するには、2 番目の引数 `usePopulation` を省略します。母集団標準偏差を取得するには、それを `true` に設定します。
 
 ```js
 const standardDeviation = (arr, usePopulation = false) => {
@@ -19,7 +19,7 @@ const standardDeviation = (arr, usePopulation = false) => {
 };
 ```
 
-使用例:
+使用例：
 
 ```js
 standardDeviation([10, 2, 38, 23, 38, 23, 21]); // 13.284434142114991 (サンプル)

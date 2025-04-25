@@ -1,6 +1,6 @@
-# K-Meansモデルをフィットさせる
+# K-Means モデルをフィットさせる
 
-画像データの小さなサブサンプルにK-Meansモデルをフィットさせ、それを使って画像全体の色インデックスを予測します。
+画像データの小さなサブサンプルに K-Means モデルをフィットさせ、それを使って画像全体の色インデックスを予測します。
 
 ```python
 from sklearn.cluster import KMeans
@@ -9,7 +9,7 @@ from time import time
 
 n_colors = 64
 
-# データの小さなサブサンプルにK-Meansモデルをフィットさせる
+# データの小さなサブサンプルに K-Means モデルをフィットさせる
 print("Fitting model on a small sub-sample of the data")
 t0 = time()
 image_array_sample = shuffle(image_array, random_state=0, n_samples=1000)

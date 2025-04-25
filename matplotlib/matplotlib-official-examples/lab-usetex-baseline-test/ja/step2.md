@@ -1,6 +1,6 @@
-# Matplotlibのフォントを設定する
+# Matplotlib のフォントを設定する
 
-Matplotlibのテキストに使用するフォントを設定する必要があります。Computer Modernフォントを使用し、Matplotlibの既定のフォントとして設定します。
+Matplotlib のテキストに使用するフォントを設定する必要があります。Computer Modern フォントを使用し、Matplotlib の既定のフォントとして設定します。
 
 ```python
 plt.rcParams.update({"mathtext.fontset": "cm", "mathtext.rm": "serif"})

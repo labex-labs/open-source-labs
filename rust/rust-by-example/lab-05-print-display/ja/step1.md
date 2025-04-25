@@ -31,7 +31,7 @@ impl fmt::Display for Structure {
 ```rust
 use std::fmt; // `fmt` をインポート
 
-// 2つの数値を保持する構造体。`Debug` を派生させるので、結果を `Display` と比較できます。
+// 2 つの数値を保持する構造体。`Debug` を派生させるので、結果を `Display` と比較できます。
 #[derive(Debug)]
 struct MinMax(i64, i64);
 
@@ -61,9 +61,9 @@ impl fmt::Display for Point2D {
 fn main() {
     let minmax = MinMax(0, 14);
 
-    println!("構造体を比較します:");
-    println!("表示: {}", minmax);
-    println!("デバッグ: {:?}", minmax);
+    println!("構造体を比較します：");
+    println!("表示：{}", minmax);
+    println!("デバッグ：{:?}", minmax);
 
     let big_range =   MinMax(-300, 300);
     let small_range = MinMax(-3, 3);
@@ -74,12 +74,12 @@ fn main() {
 
     let point = Point2D { x: 3.3, y: 7.2 };
 
-    println!("点を比較します:");
-    println!("表示: {}", point);
-    println!("デバッグ: {:?}", point);
+    println!("点を比較します：");
+    println!("表示：{}", point);
+    println!("デバッグ：{:?}", point);
 
     // エラー。`Debug` と `Display` の両方が実装されていますが、`{:b}` には `fmt::Binary` の実装が必要です。これは機能しません。
-    // println!("Point2D を2進数で見るとどうなるでしょう: {:b}?", point);
+    // println!("Point2D を 2 進数で見るとどうなるでしょう：{:b}?", point);
 }
 ```
 
@@ -90,6 +90,6 @@ fn main() {
 上記の例の出力を確認した後、`Point2D` 構造体を参考に例に `Complex` 構造体を追加してください。同じ方法で印刷した場合、出力は次のようになるはずです。
 
 ```txt
-表示: 3.3 + 7.2i
-デバッグ: Complex { real: 3.3, imag: 7.2 }
+表示：3.3 + 7.2i
+デバッグ：Complex { real: 3.3, imag: 7.2 }
 ```

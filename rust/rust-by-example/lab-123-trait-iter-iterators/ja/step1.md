@@ -2,7 +2,7 @@
 
 `Iterator` トレイトは、配列などのコレクションに対する反復子を実装するために使用されます。
 
-このトレイトでは、`next` 要素に対してただ1つのメソッドが定義される必要があり、これは `impl` ブロックで手動で定義することも、（配列や範囲の場合のように）自動的に定義することもできます。
+このトレイトでは、`next` 要素に対してただ 1 つのメソッドが定義される必要があり、これは `impl` ブロックで手動で定義することも、（配列や範囲の場合のように）自動的に定義することもできます。
 
 一般的なケースにおける便利さとして、`for` 構文は `.into_iter()` メソッドを使っていくつかのコレクションを反復子に変換します。
 
@@ -13,7 +13,7 @@ struct Fibonacci {
 }
 
 // `Fibonacci` に対して `Iterator` を実装します。
-// `Iterator` トレイトでは、`next` 要素に対してただ1つのメソッドが定義される必要があります。
+// `Iterator` トレイトでは、`next` 要素に対してただ 1 つのメソッドが定義される必要があります。
 impl Iterator for Fibonacci {
     // この型を `Self::Item` を使って参照できます。
     type Item = u32;
@@ -45,7 +45,7 @@ fn main() {
     // `0..3` は、0、1、2 を生成する `Iterator` です。
     let mut sequence = 0..3;
 
-    println!("0..3 に対する4つの連続した `next` 呼び出し");
+    println!("0..3 に対する 4 つの連続した `next` 呼び出し");
     println!("> {:?}", sequence.next());
     println!("> {:?}", sequence.next());
     println!("> {:?}", sequence.next());
@@ -59,13 +59,13 @@ fn main() {
     }
 
     // `take(n)` メソッドは、`Iterator` を最初の `n` 項までに絞ります。
-    println!("フィボナッチ数列の最初の4項は: ");
+    println!("フィボナッチ数列の最初の 4 項は：");
     for i in fibonacci().take(4) {
         println!("> {}", i);
     }
 
     // `skip(n)` メソッドは、最初の `n` 項を捨てることで `Iterator` を短縮します。
-    println!("フィボナッチ数列の次の4項は: ");
+    println!("フィボナッチ数列の次の 4 項は：");
     for i in fibonacci().skip(4).take(4) {
         println!("> {}", i);
     }

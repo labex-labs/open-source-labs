@@ -9,7 +9,7 @@ use std::mem;
 
 // 此函数借用一个切片。
 fn analyze_slice(slice: &[i32]) {
-    println!("切片的第一个元素: {}", slice[0]);
+    println!("切片的第一个元素：{}", slice[0]);
     println!("该切片有 {} 个元素", slice.len());
 }
 
@@ -21,11 +21,11 @@ fn main() {
     let ys: [i32; 500] = [0; 500];
 
     // 索引从 0 开始。
-    println!("数组的第一个元素: {}", xs[0]);
-    println!("数组的第二个元素: {}", xs[1]);
+    println!("数组的第一个元素：{}", xs[0]);
+    println!("数组的第二个元素：{}", xs[1]);
 
     // `len` 返回数组中的元素数量。
-    println!("数组中的元素数量: {}", xs.len());
+    println!("数组中的元素数量：{}", xs.len());
 
     // 数组在栈上分配。
     println!("数组占用 {} 字节", mem::size_of_val(&xs));

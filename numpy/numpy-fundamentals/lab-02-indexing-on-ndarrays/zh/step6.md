@@ -5,5 +5,5 @@
 ```python
 x = np.arange(10)
 iterator = x.flat
-print(iterator[1:5])  # 输出: [1, 2, 3, 4]
+print(iterator[1:5])  # 输出：[1, 2, 3, 4]
 ```

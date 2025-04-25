@@ -11,7 +11,7 @@ def dipole_potential(x, y):
 V = dipole_potential(x, y)
 ```
 
-解説:
+解説：
 
 - `dipole_potential`は電気双極子の電位を計算する関数です。
 - `V`は電気双極子の電位の配列です。

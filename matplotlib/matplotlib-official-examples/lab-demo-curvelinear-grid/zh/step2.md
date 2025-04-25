@@ -44,7 +44,7 @@ def curvelinear_test2(fig):
     # 使用给定的变换创建一个寄生轴
     ax2 = ax1.get_aux_axes(tr)
 
-    # 在ax2中绘制的任何内容都将与ax1的刻度和网格匹配。
+    # 在 ax2 中绘制的任何内容都将与 ax1 的刻度和网格匹配。
     ax2.plot(np.linspace(0, 30, 51), np.linspace(10, 10, 51), linewidth=2)
 
     ax2.pcolor(np.linspace(0, 90, 4), np.linspace(0, 10, 4),

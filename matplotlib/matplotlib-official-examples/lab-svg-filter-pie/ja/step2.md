@@ -1,6 +1,6 @@
-# グラフをSVGとして保存する
+# グラフを SVG として保存する
 
-ioとxml.etree.ElementTreeモジュールを使って、円グラフをSVGファイルとして保存します。ガウシアンブラーと照明効果を使って、シャドウ用のフィルタ定義を定義します。照明フィルタはhttp://www.w3.org/TR/SVG/filters.htmlからコピーしました。InkscapeとFirefox3を使ってフィルタをテストしますが、Inkscapeのエクスポートはサポートしていない場合があります。
+io と xml.etree.ElementTree モジュールを使って、円グラフを SVG ファイルとして保存します。ガウシアンブラーと照明効果を使って、シャドウ用のフィルタ定義を定義します。照明フィルタは http://www.w3.org/TR/SVG/filters.html からコピーしました。Inkscape と Firefox3 を使ってフィルタをテストしますが、Inkscape のエクスポートはサポートしていない場合があります。
 
 ```python
 import io

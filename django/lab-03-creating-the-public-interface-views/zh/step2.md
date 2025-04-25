@@ -44,14 +44,14 @@ cd ~/project/mysite
 python manage.py runserver 0.0.0.0:8080
 ```
 
-切换到 **Web 8080** 标签页，访问 `/polls/34/`。它将运行 `detail()` 方法并显示你在URL中提供的任何ID。也试试 `/polls/34/results/` 和 `/polls/34/vote/` —— 这些将显示占位符结果和投票页面。
+切换到 **Web 8080** 标签页，访问 `/polls/34/`。它将运行 `detail()` 方法并显示你在 URL 中提供的任何 ID。也试试 `/polls/34/results/` 和 `/polls/34/vote/` —— 这些将显示占位符结果和投票页面。
 
-![Django URL路由图](../assets/20230908-09-30-06-2n54ROPe.png)
+![Django URL 路由图](../assets/20230908-09-30-06-2n54ROPe.png)
 
-当有人从你的网站请求一个页面时 —— 比如说，`/polls/34/`，Django将加载 `mysite.urls` Python模块，因为它由 `ROOT_URLCONF` 设置指向。它找到名为 `urlpatterns` 的变量并按顺序遍历这些模式。在 `'polls/'` 处找到匹配项后，它去掉匹配的文本 (`"polls/"`) 并将剩余的文本 ——`"34/"` —— 发送到 `polls.urls` URL配置进行进一步处理。在那里它匹配 `'<int:question_id>/'`，从而调用 `detail()` 视图，如下所示：
+当有人从你的网站请求一个页面时 —— 比如说，`/polls/34/`，Django 将加载 `mysite.urls` Python 模块，因为它由 `ROOT_URLCONF` 设置指向。它找到名为 `urlpatterns` 的变量并按顺序遍历这些模式。在 `'polls/'` 处找到匹配项后，它去掉匹配的文本 (`"polls/"`) 并将剩余的文本 ——`"34/"` —— 发送到 `polls.urls` URL 配置进行进一步处理。在那里它匹配 `'<int:question_id>/'`，从而调用 `detail()` 视图，如下所示：
 
 ```python
 detail(request=<HttpRequest对象>, question_id=34)
 ```
 
-`question_id=34` 部分来自 `<int:question_id>`。使用尖括号“捕获”URL的一部分，并将其作为关键字参数发送到视图函数。字符串中的 `question_id` 部分定义了用于标识匹配模式的名称，而 `int` 部分是一个转换器，它确定哪些模式应该与URL路径的这一部分匹配。冒号 (`:`) 分隔转换器和模式名称。
+`question_id=34` 部分来自 `<int:question_id>`。使用尖括号“捕获”URL 的一部分，并将其作为关键字参数发送到视图函数。字符串中的 `question_id` 部分定义了用于标识匹配模式的名称，而 `int` 部分是一个转换器，它确定哪些模式应该与 URL 路径的这一部分匹配。冒号 (`:`) 分隔转换器和模式名称。

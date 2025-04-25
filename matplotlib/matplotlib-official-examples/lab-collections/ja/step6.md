@@ -1,4 +1,4 @@
-# オフセットを使ってRegularPolyCollectionを作成する
+# オフセットを使って RegularPolyCollection を作成する
 
 ```python
 col = collections.RegularPolyCollection(
@@ -13,4 +13,4 @@ ax3.autoscale_view()
 ax3.set_title('RegularPolyCollection using offsets')
 ```
 
-6番目のステップは、オフセットを使ってRegularPolyCollectionを作成することです。オフセット付きの正多角形を作成するためにRegularPolyCollectionを使用します。また、offset_transformを使って多角形の位置を設定します。
+6 番目のステップは、オフセットを使って RegularPolyCollection を作成することです。オフセット付きの正多角形を作成するために RegularPolyCollection を使用します。また、offset_transform を使って多角形の位置を設定します。

@@ -15,7 +15,7 @@ gray_image = image.mean(axis=2)
 
 X = gray_image.reshape((-1, 1))
 
-# 执行K均值聚类
+# 执行 K 均值聚类
 k_means = cluster.KMeans(n_clusters=5, n_init=1)
 k_means.fit(X)
 

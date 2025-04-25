@@ -1,6 +1,6 @@
-# CSDを計算する
+# CSD を計算する
 
-2つの信号の相互スペクトル密度（Cross Spectral Density, CSD）を計算するには、Matplotlibのcsd関数を使用する必要があります。この関数は、2つの信号、FFT（高速フーリエ変換）のポイント数、およびサンプリング周波数を入力として受け取ります。
+2 つの信号の相互スペクトル密度（Cross Spectral Density, CSD）を計算するには、Matplotlib の csd 関数を使用する必要があります。この関数は、2 つの信号、FFT（高速フーリエ変換）のポイント数、およびサンプリング周波数を入力として受け取ります。
 
 ```python
 fig, ax = plt.subplots()

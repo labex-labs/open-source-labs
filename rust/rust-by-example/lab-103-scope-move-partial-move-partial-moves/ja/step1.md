@@ -22,7 +22,7 @@ fn main() {
 
     println!("The person's name is {}", name);
 
-    // エラー！部分的にムーブされた値の借用: `person` 部分的なムーブが発生します
+    // エラー！部分的にムーブされた値の借用：`person` 部分的なムーブが発生します
     //println!("The person struct is {:?}", person);
 
     // `person` は使用できませんが、`person.age` はムーブされていないため使用できます

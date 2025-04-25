@@ -11,7 +11,7 @@ X = np.array([[1., -1., 2.],
               [2., 0., 0.],
               [0., 1., -1.]])
 
-# 初始化MinMaxScaler
+# 初始化 MinMaxScaler
 min_max_scaler = MinMaxScaler()
 
 # 拟合并转换训练数据
@@ -20,7 +20,7 @@ X_minmax = min_max_scaler.fit_transform(X)
 # 打印转换后的数据
 print(X_minmax)
 
-# 初始化MaxAbsScaler
+# 初始化 MaxAbsScaler
 max_abs_scaler = MaxAbsScaler()
 
 # 拟合并转换训练数据

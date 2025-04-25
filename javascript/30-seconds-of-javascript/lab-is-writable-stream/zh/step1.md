@@ -1,6 +1,6 @@
 # 检查流是否可写
 
-要检查一个流是否可写，请打开终端/SSH并输入 `node` 以开始练习编码。然后，按照以下步骤操作：
+要检查一个流是否可写，请打开终端/SSH 并输入 `node` 以开始练习编码。然后，按照以下步骤操作：
 
 1. 检查给定的参数是否不为 `null`。
 2. 使用 `typeof` 检查该值是否为 `object` 类型，以及 `pipe` 属性是否为 `function` 类型。
@@ -17,7 +17,7 @@ const isWritableStream = (val) =>
   typeof val._writableState === "object";
 ```
 
-你可以使用Node.js中的 `fs` 模块来测试此函数。例如：
+你可以使用 Node.js 中的 `fs` 模块来测试此函数。例如：
 
 ```js
 const fs = require("fs");

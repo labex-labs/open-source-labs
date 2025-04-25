@@ -3,7 +3,7 @@
 最后，我们使用 `ConnectionPatch` 连接饼图和条形图：
 
 ```python
-# 使用ConnectionPatch在两个图之间绘制线条
+# 使用 ConnectionPatch 在两个图之间绘制线条
 theta1, theta2 = wedges[0].theta1, wedges[0].theta2
 center, r = wedges[0].center, wedges[0].r
 bar_height = sum(age_ratios)

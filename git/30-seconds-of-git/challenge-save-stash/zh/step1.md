@@ -10,8 +10,8 @@
 
 1. 首先，导航到 `git-playground` 目录。
 2. 切换到名为 `feature` 的分支。
-3. 在 `README.md` 文件中添加一行 “Some changes”。
-4. 将你的更改保存到一个贮藏，并为该贮藏添加一条描述性消息 “My changes”。
+3. 在 `README.md` 文件中添加一行“Some changes”。
+4. 将你的更改保存到一个贮藏，并为该贮藏添加一条描述性消息“My changes”。
 5. 切换到另一个分支。
 6. 在另一个分支上完成更改后，切换回 `feature` 分支并应用你的贮藏。
 

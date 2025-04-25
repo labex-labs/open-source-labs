@@ -7,15 +7,15 @@ from sklearn.feature_selection import VarianceThreshold
 
 X = [[0, 0, 1], [0, 1, 0], [1, 0, 0], [0, 1, 1], [0, 1, 0], [0, 1, 1]]
 
-# 分散の80%の閾値で VarianceThreshold を初期化
+# 分散の 80% の閾値で VarianceThreshold を初期化
 sel = VarianceThreshold(threshold=(.8 * (1 -.8)))
 
 # 高い分散を持つ特徴を選択
 X_selected = sel.fit_transform(X)
 
-print("元の X の形状:", X.shape)
-print("選択された特徴を持つ X の形状:", X_selected.shape)
-print("選択された特徴:", sel.get_support(indices=True))
+print("元の X の形状：", X.shape)
+print("選択された特徴を持つ X の形状：", X_selected.shape)
+print("選択された特徴：", sel.get_support(indices=True))
 ```
 
 このコード スニペットは、データセットからゼロ分散の特徴を削除するために `VarianceThreshold` をどのように使うかを示しています。出力には、データセットの元の形状と、高い分散を持つ特徴を選択した後の形状が表示されます。

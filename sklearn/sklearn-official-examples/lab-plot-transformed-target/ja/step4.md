@@ -1,6 +1,6 @@
 # 変換後のターゲットに対して線形回帰モデルを学習して評価する
 
-TransformedTargetRegressorを使って、変換後のターゲットに対して線形回帰モデルを学習して評価します。対数関数はターゲットを線形化し、中央絶対誤差（MedAE）によって報告されるように、同様の線形モデルでもより良い予測が可能になります。
+TransformedTargetRegressor を使って、変換後のターゲットに対して線形回帰モデルを学習して評価します。対数関数はターゲットを線形化し、中央絶対誤差（MedAE）によって報告されるように、同様の線形モデルでもより良い予測が可能になります。
 
 ```python
 ridge_cv_with_trans_target = TransformedTargetRegressor(

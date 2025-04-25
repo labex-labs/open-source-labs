@@ -8,4 +8,4 @@
 d = read_prices('prices.csv', debug=True)
 ```
 
-Python开发工具会在帮助功能和文档中显示这些名称。
+Python 开发工具会在帮助功能和文档中显示这些名称。

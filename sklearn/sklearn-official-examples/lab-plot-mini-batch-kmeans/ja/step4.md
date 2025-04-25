@@ -1,6 +1,6 @@
 # クラスタ間の同等性の確立
 
-MiniBatchKMeansとKMeansアルゴリズムの両方で、同じクラスタに同じ色を付けたいと思います。最も近いものごとにクラスタ中心をペアにしましょう。
+MiniBatchKMeans と KMeans アルゴリズムの両方で、同じクラスタに同じ色を付けたいと思います。最も近いものごとにクラスタ中心をペアにしましょう。
 
 ```python
 from sklearn.metrics.pairwise import pairwise_distances_argmin

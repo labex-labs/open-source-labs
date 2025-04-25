@@ -1,6 +1,6 @@
 # ブロブの生成
 
-次のステップは、MiniBatchKMeansとBIRCHを比較するためにブロブを生成することです。matplotlibがデフォルトで提供するすべての色を使用します。
+次のステップは、MiniBatchKMeans と BIRCH を比較するためにブロブを生成することです。matplotlib がデフォルトで提供するすべての色を使用します。
 
 ```python
 # Generate centers for the blobs so that it forms a 10 X 10 grid.

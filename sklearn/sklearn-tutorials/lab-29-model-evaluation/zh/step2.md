@@ -1,8 +1,8 @@
 # 评分参数
 
-Scikit-learn 在一些模型评估工具中提供了一个 “scoring” 参数，比如交叉验证和网格搜索。“scoring” 参数控制在评估期间应用于估计器的指标。
+Scikit-learn 在一些模型评估工具中提供了一个“scoring”参数，比如交叉验证和网格搜索。“scoring”参数控制在评估期间应用于估计器的指标。
 
-以下是在交叉验证中使用 “scoring” 参数的示例：
+以下是在交叉验证中使用“scoring”参数的示例：
 
 ```python
 from sklearn.model_selection import cross_val_score

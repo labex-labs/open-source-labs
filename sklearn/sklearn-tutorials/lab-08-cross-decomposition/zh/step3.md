@@ -1,6 +1,6 @@
 # 偏最小二乘回归（PLSRegression）
 
-#### 拟合PLSRegression模型
+#### 拟合 PLSRegression 模型
 
 我们将从“偏最小二乘回归（PLSRegression）”算法开始，它是一种正则化线性回归形式。我们将把这个模型拟合到我们的数据上。
 

@@ -1,6 +1,6 @@
-# 创建一个Flask应用程序
+# 创建一个 Flask 应用程序
 
-创建一个名为 `app.py` 的新Python文件，并添加以下代码以创建一个基本的Flask应用程序：
+创建一个名为 `app.py` 的新 Python 文件，并添加以下代码以创建一个基本的 Flask 应用程序：
 
 ```python
 from flask import Flask

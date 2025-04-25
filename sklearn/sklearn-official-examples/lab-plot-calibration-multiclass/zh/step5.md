@@ -20,7 +20,7 @@ prediction = np.vstack(
     ]
 ).T
 
-# 重新归一化校准后的预测结果，以确保它们保持在单纯形内。在多类别问题上，CalibratedClassifierCV的predict方法内部也会执行相同的归一化步骤。
+# 重新归一化校准后的预测结果，以确保它们保持在单纯形内。在多类别问题上，CalibratedClassifierCV 的 predict 方法内部也会执行相同的归一化步骤。
 prediction /= prediction.sum(axis=1)[:, None]
 
 # 绘制校准器引起的预测概率变化
@@ -43,9 +43,9 @@ for x in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
     plt.plot([0, 0 + (1 - x) / 2], [x, x + (1 - x) / 2], "k", alpha=0.2)
     plt.plot([x, x + (1 - x) / 2], [0, 0 + (1 - x) / 2], "k", alpha=0.2)
 
-plt.title("学习到的sigmoid校准映射")
-plt.xlabel("类别1的概率")
-plt.ylabel("类别2的概率")
+plt.title("学习到的 sigmoid 校准映射")
+plt.xlabel("类别 1 的概率")
+plt.ylabel("类别 2 的概率")
 plt.xlim(-0.05, 1.05)
 plt.ylim(-0.05, 1.05)
 

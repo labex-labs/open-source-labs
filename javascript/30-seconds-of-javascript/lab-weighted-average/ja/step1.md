@@ -1,12 +1,12 @@
-# JavaScriptで加重平均を計算する方法
+# JavaScript で加重平均を計算する方法
 
-JavaScriptで2つ以上の数値の加重平均を計算するには、次の手順に従います。
+JavaScript で 2 つ以上の数値の加重平均を計算するには、次の手順に従います。
 
-1. ターミナル/SSHを開き、コーディングを練習するために `node` と入力します。
+1. ターミナル/SSH を開き、コーディングを練習するために `node` と入力します。
 2. `Array.prototype.reduce()` を使って値の加重和と重みの和を作成します。
 3. 値の加重和を重みの和で割って加重平均を求めます。
 
-以下は、`weightedAverage` 関数のJavaScriptコードです。
+以下は、`weightedAverage` 関数の JavaScript コードです。
 
 ```js
 const weightedAverage = (nums, weights) => {

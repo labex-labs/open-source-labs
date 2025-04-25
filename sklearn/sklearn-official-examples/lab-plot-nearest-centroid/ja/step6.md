@@ -1,6 +1,6 @@
 # 決定境界を可視化する
 
-Scikit-learnのDecisionBoundaryDisplay関数を使って、分類器の決定境界を可視化します。
+Scikit-learn の DecisionBoundaryDisplay 関数を使って、分類器の決定境界を可視化します。
 
 ```python
 _, ax = plt.subplots()

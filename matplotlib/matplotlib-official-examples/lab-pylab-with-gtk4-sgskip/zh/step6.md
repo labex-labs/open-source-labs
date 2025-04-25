@@ -11,4 +11,4 @@ def update(event):
 fig.canvas.mpl_connect('motion_notify_event', update)
 ```
 
-我们创建了一个函数，当光标在绘图区域上移动时，该函数会使用光标的x和y坐标来更新标签。我们将该函数连接到画布的 `motion_notify_event`。
+我们创建了一个函数，当光标在绘图区域上移动时，该函数会使用光标的 x 和 y 坐标来更新标签。我们将该函数连接到画布的 `motion_notify_event`。

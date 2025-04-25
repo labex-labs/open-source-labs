@@ -1,6 +1,6 @@
 # 線グラフの作成
 
-これで、`matplotlib.pyplot` の `plot()` 関数を使って線グラフを作成できます。Solarized Lightカラースキームの異なる色を使って8つのランダムな線をプロットします。
+これで、`matplotlib.pyplot` の `plot()` 関数を使って線グラフを作成できます。Solarized Light カラースキームの異なる色を使って 8 つのランダムな線をプロットします。
 
 ```python
 with plt.style.context('Solarize_Light2'):

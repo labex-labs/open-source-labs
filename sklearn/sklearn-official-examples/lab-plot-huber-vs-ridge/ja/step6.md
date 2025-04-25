@@ -1,6 +1,6 @@
-# Ridge回帰器をフィットさせる
+# Ridge 回帰器をフィットさせる
 
-ここでは、Ridge回帰器をデータセットにフィットさせ、その性能をHuberRegressorの性能と比較します。
+ここでは、Ridge 回帰器をデータセットにフィットさせ、その性能を HuberRegressor の性能と比較します。
 
 ```python
 # Fit a ridge regressor to compare it to huber regressor.

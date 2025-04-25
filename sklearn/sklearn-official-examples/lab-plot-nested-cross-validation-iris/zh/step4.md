@@ -1,6 +1,6 @@
 # 非嵌套交叉验证
 
-我们使用非嵌套交叉验证来调整超参数并评估模型的性能。`GridSearchCV` 函数会对估计器的指定参数值进行详尽搜索。我们使用4折交叉验证。
+我们使用非嵌套交叉验证来调整超参数并评估模型的性能。`GridSearchCV` 函数会对估计器的指定参数值进行详尽搜索。我们使用 4 折交叉验证。
 
 ```python
 from sklearn.model_selection import GridSearchCV

@@ -1,6 +1,6 @@
 # 加载鸢尾花数据集
 
-首先，我们将把鸢尾花数据集加载为一个DataFrame，以演示`set_output` API。
+首先，我们将把鸢尾花数据集加载为一个 DataFrame，以演示`set_output` API。
 
 ```python
 from sklearn.datasets import load_iris

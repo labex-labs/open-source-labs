@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。numpy、matplotlib、scikit-learn、およびscikit-learnからのPCAを使用します。
+まず、必要なライブラリをインポートする必要があります。numpy、matplotlib、scikit-learn、および scikit-learn からの PCA を使用します。
 
 ```python
 import numpy as np

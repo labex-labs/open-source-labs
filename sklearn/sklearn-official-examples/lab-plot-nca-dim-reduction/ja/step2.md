@@ -1,3 +1,3 @@
-# Digitsデータセットの読み込み
+# Digits データセットの読み込み
 
-scikit-learnの`load_digits()`関数を使ってDigitsデータセットを読み込みます。
+scikit-learn の`load_digits()`関数を使って Digits データセットを読み込みます。

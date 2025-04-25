@@ -1,6 +1,6 @@
 # 異なるスケールパラメータ「linear_width」の「asinh」グラフを比較する
 
-ここでは、異なるスケールパラメータ「linear_width」の「asinh」グラフを比較します。異なる「linear_width」値の3つのグラフをプロットします。
+ここでは、異なるスケールパラメータ「linear_width」の「asinh」グラフを比較します。異なる「linear_width」値の 3 つのグラフをプロットします。
 
 ```python
 fig2 = plt.figure(layout='constrained')

@@ -1,10 +1,10 @@
-# ブラウザでUUIDを生成する
+# ブラウザで UUID を生成する
 
-ブラウザで[RFC4122](https://www.ietf.org/rfc/rfc4122.txt)バージョン4に準拠するUUIDを生成するには、次の手順に従います。
+ブラウザで[RFC4122](https://www.ietf.org/rfc/rfc4122.txt)バージョン 4 に準拠する UUID を生成するには、次の手順に従います。
 
-1. ターミナル/SSHを開き、`node`と入力します。
-2. `Crypto.getRandomValues()`メソッドを使ってUUIDを生成します。
-3. `Number.prototype.toString()`メソッドを使ってUUIDを16進数文字列に変換します。
+1. ターミナル/SSH を開き、`node`と入力します。
+2. `Crypto.getRandomValues()`メソッドを使って UUID を生成します。
+3. `Number.prototype.toString()`メソッドを使って UUID を 16 進数文字列に変換します。
 4. 次のコードを実装します。
 
 ```js
@@ -17,4 +17,4 @@ const UUIDGeneratorBrowser = () =>
   );
 ```
 
-5. `UUIDGeneratorBrowser()`関数を呼び出してUUIDを生成します。たとえば、`UUIDGeneratorBrowser()`は`'7982fcfe-5721-4632-bede-6000885be57d'`を返します。
+5. `UUIDGeneratorBrowser()`関数を呼び出して UUID を生成します。たとえば、`UUIDGeneratorBrowser()`は`'7982fcfe-5721-4632-bede-6000885be57d'`を返します。

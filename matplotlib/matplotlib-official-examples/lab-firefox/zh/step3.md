@@ -1,6 +1,6 @@
-# 解析SVG路径数据
+# 解析 SVG 路径数据
 
-我们将使用 `svg_parse` 函数把SVG路径数据解析为顶点和代码，以便Matplotlib使用。
+我们将使用 `svg_parse` 函数把 SVG 路径数据解析为顶点和代码，以便 Matplotlib 使用。
 
 ```python
 def svg_parse(path):
@@ -23,7 +23,7 @@ def svg_parse(path):
         vertices.append(points)
     return np.array(codes), np.concatenate(vertices)
 
-# 解析Firefox标志路径数据
+# 解析 Firefox 标志路径数据
 codes, verts = svg_parse(firefox)
 path = Path(verts, codes)
 ```

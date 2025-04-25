@@ -5,7 +5,7 @@
 ```python
 from sklearn.covariance import MinCovDet
 
-# 创建一个MinCovDet对象并将其拟合到数据上
+# 创建一个 MinCovDet 对象并将其拟合到数据上
 min_cov_det = MinCovDet().fit(data)
 
 # 计算稳健协方差矩阵

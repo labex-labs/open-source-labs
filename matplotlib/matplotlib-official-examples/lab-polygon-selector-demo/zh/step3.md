@@ -5,9 +5,9 @@
 ```python
 class SelectFromCollection:
     """
-    使用 `PolygonSelector` 从matplotlib集合中选择索引。
+    使用 `PolygonSelector` 从 matplotlib 集合中选择索引。
 
-    所选索引保存在 `ind` 属性中。此工具会淡化不属于所选内容的点（即降低它们的透明度值）。如果你的集合的透明度小于1，此工具将永久更改透明度值。
+    所选索引保存在 `ind` 属性中。此工具会淡化不属于所选内容的点（即降低它们的透明度值）。如果你的集合的透明度小于 1，此工具将永久更改透明度值。
 
     请注意，此工具根据集合对象的 *原点*（即 `offsets`）来选择它们。
 
@@ -18,7 +18,7 @@ class SelectFromCollection:
     collection : `matplotlib.collections.Collection` 的子类
         你要从中选择的集合。
     alpha_other : 0 <= 浮点数 <= 1
-        为了突出显示所选内容，此工具将所有选定的点设置为透明度值1，未选定的点设置为 *alpha_other*。
+        为了突出显示所选内容，此工具将所有选定的点设置为透明度值 1，未选定的点设置为 *alpha_other*。
     """
 
     def __init__(self, ax, collection, alpha_other=0.3):

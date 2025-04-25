@@ -1,6 +1,6 @@
 # データの取得
 
-タイムラインを作成するには、日付や名前などのデータを取得する必要があります。この例では、GitHubからMatplotlibのリリースとその日付を使います。何らかの理由でデータを取得できない場合は、バックアップとして代替データを使います。以下はデータを取得するコードです。
+タイムラインを作成するには、日付や名前などのデータを取得する必要があります。この例では、GitHub から Matplotlib のリリースとその日付を使います。何らかの理由でデータを取得できない場合は、バックアップとして代替データを使います。以下はデータを取得するコードです。
 
 ```python
 from datetime import datetime
@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.dates as mdates
 
 try:
-    # Matplotlibのリリースとその日付のリストを
+    # Matplotlib のリリースとその日付のリストを
     # https://api.github.com/repos/matplotlib/matplotlib/releases から取得しようとする
     import json
     import urllib.request
@@ -26,7 +26,7 @@ try:
         if 'rc' not in item['tag_name'] and 'b' not in item['tag_name']:
             dates.append(item['published_at'].split("T")[0])
             names.append(item['tag_name'])
-    # 日付文字列を（例：2014-10-18）datetimeに変換する
+    # 日付文字列を（例：2014-10-18）datetime に変換する
     dates = [datetime.strptime(d, "%Y-%m-%d") for d in dates]
 
 except Exception:
@@ -44,6 +44,6 @@ except Exception:
              '2016-07-03', '2016-01-10', '2015-10-29', '2015-02-16',
              '2014-10-26', '2014-10-18', '2014-08-26']
 
-    # 日付文字列を（例：2014-10-18）datetimeに変換する
+    # 日付文字列を（例：2014-10-18）datetime に変換する
     dates = [datetime.strptime(d, "%Y-%m-%d") for d in dates]
 ```

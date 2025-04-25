@@ -1,6 +1,6 @@
-# 练习4.4：使用你的类
+# 练习 4.4：使用你的类
 
-修改 `report.py` 程序中的 `read_portfolio()` 函数，使其像练习4.3中那样将投资组合读入 `Stock` 实例列表。完成此操作后，修复 `report.py` 和 `pcost.py` 中的所有代码，使其与 `Stock` 实例而非字典一起工作。
+修改 `report.py` 程序中的 `read_portfolio()` 函数，使其像练习 4.3 中那样将投资组合读入 `Stock` 实例列表。完成此操作后，修复 `report.py` 和 `pcost.py` 中的所有代码，使其与 `Stock` 实例而非字典一起工作。
 
 提示：你无需对代码进行重大更改。主要是将字典访问（如 `s['shares']`）改为 `s.shares`。
 

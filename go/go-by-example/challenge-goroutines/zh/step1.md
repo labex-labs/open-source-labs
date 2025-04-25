@@ -5,10 +5,10 @@
 ## 要求
 
 - `f` 函数应将其输入字符串和一个计数器变量打印三次。
-- `main` 函数应同步调用 `f` 函数，并将 “direct” 和一个计数器变量打印三次。
-- `main` 函数应使用 goroutine 异步调用 `f` 函数，并将 “goroutine” 和一个计数器变量打印三次。
+- `main` 函数应同步调用 `f` 函数，并将“direct”和一个计数器变量打印三次。
+- `main` 函数应使用 goroutine 异步调用 `f` 函数，并将“goroutine”和一个计数器变量打印三次。
 - `main` 函数应启动一个 goroutine 来执行一个打印消息的匿名函数。
-- `main` 函数应在打印 “done” 之前等待 goroutine 完成执行。
+- `main` 函数应在打印“done”之前等待 goroutine 完成执行。
 
 ## 示例
 

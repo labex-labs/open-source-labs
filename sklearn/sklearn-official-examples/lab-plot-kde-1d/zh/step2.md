@@ -11,7 +11,7 @@ X_src = np.zeros((1, 1))
 fig, ax = plt.subplots(2, 3, sharex=True, sharey=True)
 fig.subplots_adjust(left=0.05, right=0.95, hspace=0.05, wspace=0.05)
 
-# x轴标签的格式化函数
+# x 轴标签的格式化函数
 def format_func(x, loc):
     if x == 0:
         return "0"

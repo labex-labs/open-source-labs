@@ -11,7 +11,7 @@ from sklearn.linear_model import SGDClassifier
 # アイリスデータセットを読み込む
 iris = datasets.load_iris()
 
-# 最初の2つの特徴量を取得する
+# 最初の 2 つの特徴量を取得する
 X = iris.data[:, :2]
 y = iris.target
 colors = "bry"

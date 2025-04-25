@@ -1,6 +1,6 @@
-# nmslib用のラッパークラスを定義する
+# nmslib 用のラッパークラスを定義する
 
-`nmslib`に対してscikit - learn APIを実装するためのラッパークラスと、読み込み関数を定義します。`NMSlibTransformer`クラスは、`n_neighbors`、`metric`、`method`、および`n_jobs`をパラメータとして取ります。`fit()`メソッドは`nmslib`を初期化し、そこにデータポイントを追加します。`transform()`メソッドは最も近い近傍点を見つけ、疎行列を返します。
+`nmslib`に対して scikit - learn API を実装するためのラッパークラスと、読み込み関数を定義します。`NMSlibTransformer`クラスは、`n_neighbors`、`metric`、`method`、および`n_jobs`をパラメータとして取ります。`fit()`メソッドは`nmslib`を初期化し、そこにデータポイントを追加します。`transform()`メソッドは最も近い近傍点を見つけ、疎行列を返します。
 
 ```python
 class NMSlibTransformer(TransformerMixin, BaseEstimator):

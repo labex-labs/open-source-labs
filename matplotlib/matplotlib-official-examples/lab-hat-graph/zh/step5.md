@@ -1,6 +1,6 @@
 # 完整代码
 
-以下是用Python创建帽形图的完整代码。
+以下是用 Python 创建帽形图的完整代码。
 
 ```python
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ def hat_graph(ax, xlabels, values, group_labels):
     ax : matplotlib.axes.Axes
         要绘制图形的坐标轴。
     xlabels : list of str
-        要在x轴上显示的类别名称。
+        要在 x 轴上显示的类别名称。
     values : (M, N) 类似数组
         数据值。
         行是组 (len(group_labels) == M)。
@@ -30,7 +30,7 @@ def hat_graph(ax, xlabels, values, group_labels):
         for height, rect in zip(heights, rects):
             ax.annotate(f'{height}',
                         xy=(rect.get_x() + rect.get_width() / 2, height),
-                        xytext=(0, 4),  # 4个点的垂直偏移。
+                        xytext=(0, 4),  # 4 个点的垂直偏移。
                         textcoords='offset points',
                         ha='center', va='bottom')
 
@@ -47,8 +47,8 @@ def hat_graph(ax, xlabels, values, group_labels):
         label_bars(heights, rects)
 
 
-# 初始化标签和一个NumPy数组，确保数组中有
-# N个值对应的N个标签
+# 初始化标签和一个 NumPy 数组，确保数组中有
+# N 个值对应的 N 个标签
 xlabels = ['I', 'II', 'III', 'IV', 'V']
 playerA = np.array([5, 15, 22, 20, 25])
 playerB = np.array([25, 32, 34, 30, 27])
@@ -56,7 +56,7 @@ playerB = np.array([25, 32, 34, 30, 27])
 fig, ax = plt.subplots()
 hat_graph(ax, xlabels, [playerA, playerB], ['Player A', 'Player B'])
 
-# 添加一些文本用于标签、标题和自定义x轴刻度标签等
+# 添加一些文本用于标签、标题和自定义 x 轴刻度标签等
 ax.set_xlabel('Games')
 ax.set_ylabel('Score')
 ax.set_ylim(0, 60)

@@ -53,7 +53,7 @@ plt.xlabel("树的数量")
 plt.ylim((0, discrete_estimator_weights.max() * 1.2))
 plt.xlim((-20, n_trees_discrete + 20))
 
-# 防止y轴标签重叠
+# 防止 y 轴标签重叠
 plt.subplots_adjust(wspace=0.25)
 plt.show()
 ```

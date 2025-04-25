@@ -13,8 +13,8 @@ y = [2, 4, 6, 8, 10]
 plt.plot(x, y, color='red', linewidth=2, linestyle='--', marker='o', markersize=8, markerfacecolor='yellow')
 
 # ラベルとタイトルを追加する
-plt.xlabel('X軸')
-plt.ylabel('Y軸')
+plt.xlabel('X 軸')
+plt.ylabel('Y 軸')
 plt.title('カスタマイズされたグラフ')
 
 # グラフを表示する

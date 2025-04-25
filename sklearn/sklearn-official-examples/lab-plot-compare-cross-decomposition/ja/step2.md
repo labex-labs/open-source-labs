@@ -1,6 +1,6 @@
-# 標準PLS
+# 標準 PLS
 
-データを変換するためにPLS Canonicalアルゴリズムを使用します。その後、スコアの散布図を作成します。
+データを変換するために PLS Canonical アルゴリズムを使用します。その後、スコアの散布図を作成します。
 
 ```python
 from sklearn.cross_decomposition import PLSCanonical
@@ -12,7 +12,7 @@ X_test_r, Y_test_r = plsca.transform(X_test, Y_test)
 
 import matplotlib.pyplot as plt
 
-# 各コンポーネントにおける対角線上のプロット: XとYのスコア
+# 各コンポーネントにおける対角線上のプロット：X と Y のスコア
 plt.figure(figsize=(12, 8))
 plt.subplot(221)
 plt.scatter(X_train_r[:, 0], Y_train_r[:, 0], label="train", marker="o", s=25)
@@ -40,7 +40,7 @@ plt.xticks(())
 plt.yticks(())
 plt.legend(loc="best")
 
-# 対角線外のプロット: XとYのコンポーネント1とコンポーネント2
+# 対角線外のプロット：X と Y のコンポーネント 1 とコンポーネント 2
 plt.subplot(222)
 plt.scatter(X_train_r[:, 0], X_train_r[:, 1], label="train", marker="*", s=50)
 plt.scatter(X_test_r[:, 0], X_test_r[:, 1], label="test", marker="*", s=50)

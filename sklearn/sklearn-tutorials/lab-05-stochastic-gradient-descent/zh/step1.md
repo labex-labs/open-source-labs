@@ -1,6 +1,6 @@
 # 导入必要的库
 
-首先，我们需要导入必要的库。我们将使用scikit-learn库进行机器学习和数据预处理。
+首先，我们需要导入必要的库。我们将使用 scikit-learn 库进行机器学习和数据预处理。
 
 ```python
 import numpy as np

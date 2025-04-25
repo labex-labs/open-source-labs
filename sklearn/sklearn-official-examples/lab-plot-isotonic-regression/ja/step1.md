@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-このチュートリアルで必要なライブラリをインポートして始めましょう。それはNumPy、Matplotlib、およびscikit - learnです。
+このチュートリアルで必要なライブラリをインポートして始めましょう。それは NumPy、Matplotlib、および scikit - learn です。
 
 ```python
 import numpy as np

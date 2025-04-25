@@ -1,6 +1,6 @@
 # 绘制加权数据集
 
-我们使用matplotlib库绘制加权数据集。点的大小与其权重成正比。
+我们使用 matplotlib 库绘制加权数据集。点的大小与其权重成正比。
 
 ```python
 xx, yy = np.meshgrid(np.linspace(-4, 5, 500), np.linspace(-4, 5, 500))

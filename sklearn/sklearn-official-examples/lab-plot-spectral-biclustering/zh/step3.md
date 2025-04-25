@@ -13,5 +13,5 @@ model.fit(data)
 score = consensus_score(
     model.biclusters_, (rows[:, row_idx_shuffled], columns[:, col_idx_shuffled])
 )
-print(f"一致性得分: {score:.1f}")
+print(f"一致性得分：{score:.1f}")
 ```

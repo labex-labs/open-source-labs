@@ -14,7 +14,7 @@ const checkProp = (predicate, prop) => (obj) => !!predicate(obj[prop]);
 const lengthIs4 = checkProp((l) => l === 4, "length");
 lengthIs4([]); // false
 lengthIs4([1, 2, 3, 4]); // true
-lengthIs4(new Set([1, 2, 3, 4])); // false (SetはサイズをSizeとして使用し、lengthではありません)
+lengthIs4(new Set([1, 2, 3, 4])); // false (Set はサイズを Size として使用し、length ではありません)
 
 const session = { user: {} };
 const validUserSession = checkProp((u) => u.active && !u.disabled, "user");

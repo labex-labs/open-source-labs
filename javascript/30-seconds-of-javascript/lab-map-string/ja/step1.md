@@ -17,7 +17,7 @@ const mapString = (str, fn) =>
     .join("");
 ```
 
-使用例:
+使用例：
 
 ```js
 mapString("lorem ipsum", (c) => c.toUpperCase()); // 'LOREM IPSUM'

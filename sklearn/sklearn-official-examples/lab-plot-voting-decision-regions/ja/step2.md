@@ -1,6 +1,6 @@
 # 分類器の学習
 
-3つの分類器を初期化します：`DecisionTreeClassifier`、`KNeighborsClassifier`、および`SVC`。その後、これら3つの分類器を使って`VotingClassifier`を初期化し、アヤメの花のクラスを予測するために使用します。
+3 つの分類器を初期化します：`DecisionTreeClassifier`、`KNeighborsClassifier`、および`SVC`。その後、これら 3 つの分類器を使って`VotingClassifier`を初期化し、アヤメの花のクラスを予測するために使用します。
 
 ```python
 from sklearn.tree import DecisionTreeClassifier

@@ -17,7 +17,7 @@ results = []
 for clf, name in (
     (LogisticRegression(C=5, max_iter=1000), "逻辑回归"),
     (RidgeClassifier(alpha=1.0, solver="sparse_cg"), "岭分类器"),
-    (KNeighborsClassifier(n_neighbors=100), "k近邻"),
+    (KNeighborsClassifier(n_neighbors=100), "k 近邻"),
     (RandomForestClassifier(), "随机森林"),
     # L2 惩罚的线性支持向量分类器
     (LinearSVC(C=0.1, dual=False, max_iter=1000), "线性支持向量分类器"),

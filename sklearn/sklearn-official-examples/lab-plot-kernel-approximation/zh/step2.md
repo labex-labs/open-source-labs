@@ -2,7 +2,7 @@
 
 ```python
 # 要在此数据上应用分类器，我们需要将图像展平，
-# 把数据转换为（样本数, 特征数）矩阵：
+# 把数据转换为（样本数，特征数）矩阵：
 n_samples = len(digits.data)
 data = digits.data / 16.0
 data -= data.mean(axis=0)
@@ -68,23 +68,23 @@ for D in sample_sizes:
 # 绘制结果：
 plt.figure(figsize=(16, 4))
 accuracy = plt.subplot(121)
-# 第二个y轴用于时间
+# 第二个 y 轴用于时间
 timescale = plt.subplot(122)
 
-accuracy.plot(sample_sizes, nystroem_scores, label="Nystroem近似核")
-timescale.plot(sample_sizes, nystroem_times, "--", label="Nystroem近似核")
+accuracy.plot(sample_sizes, nystroem_scores, label="Nystroem 近似核")
+timescale.plot(sample_sizes, nystroem_times, "--", label="Nystroem 近似核")
 
 accuracy.plot(sample_sizes, fourier_scores, label="傅里叶近似核")
 timescale.plot(sample_sizes, fourier_times, "--", label="傅里叶近似核")
 
-# 精确的rbf和线性核的水平线：
+# 精确的 rbf 和线性核的水平线：
 accuracy.plot([sample_sizes[0], sample_sizes[-1]], [linear_svm_score, linear_svm_score], label="线性支持向量机")
 timescale.plot([sample_sizes[0], sample_sizes[-1]], [linear_svm_time, linear_svm_time], "--", label="线性支持向量机")
 
-accuracy.plot([sample_sizes[0], sample_sizes[-1]], [kernel_svm_score, kernel_svm_score], label="rbf支持向量机")
-timescale.plot([sample_sizes[0], sample_sizes[-1]], [kernel_svm_time, kernel_svm_time], "--", label="rbf支持向量机")
+accuracy.plot([sample_sizes[0], sample_sizes[-1]], [kernel_svm_score, kernel_svm_score], label="rbf 支持向量机")
+timescale.plot([sample_sizes[0], sample_sizes[-1]], [kernel_svm_time, kernel_svm_time], "--", label="rbf 支持向量机")
 
-# 数据集维度 = 64的垂直线
+# 数据集维度 = 64 的垂直线
 accuracy.plot([64, 64], [0.7, 1], label="n_features")
 
 # 图例和标签

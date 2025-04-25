@@ -31,7 +31,7 @@ byteSize("123!@#$%^&*()");
 3. ASCII 和非 ASCII 字符的混合：
 
 ```javascript
-byteSize("Hello, 世界!");
+byteSize("Hello, 世界！");
 ```
 
 预期输出：

@@ -1,6 +1,6 @@
 # トランスフォーマーの作成
 
-データセットから特徴を抽出するトランスフォーマーを作成します。データ変換を行う2つの関数を定義し、その後Scikit-Learnの「FunctionTransformer」を使ってトランスフォーマーを作成します。
+データセットから特徴を抽出するトランスフォーマーを作成します。データ変換を行う 2 つの関数を定義し、その後 Scikit-Learn の「FunctionTransformer」を使ってトランスフォーマーを作成します。
 
 ```python
 def subject_body_extractor(posts):

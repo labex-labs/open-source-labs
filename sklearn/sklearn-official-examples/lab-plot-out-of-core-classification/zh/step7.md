@@ -65,9 +65,9 @@ cls_names = list(sorted(cls_stats.keys()))
 for cls_name, stats in sorted(cls_stats.items()):
     cls_runtime.append(stats["prediction_time"])
 cls_runtime.append(parsing_time)
-cls_names.append("读取/解析\n+特征提取")
+cls_names.append("读取/解析\n+ 特征提取")
 cls_runtime.append(vectorizing_time)
-cls_names.append("哈希\n+向量化")
+cls_names.append("哈希\n+ 向量化")
 
 ax = plt.subplot(111)
 rectangles = plt.bar(range(len(cls_names)), cls_runtime, width=0.5, color=bar_colors)

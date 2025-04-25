@@ -1,6 +1,6 @@
 # 创建一个自定义图形子类
 
-创建一个名为 `WatermarkFigure` 的自定义图形子类，该子类会在绘图上添加文本水印。这个类继承自Matplotlib的 `Figure` 类。
+创建一个名为 `WatermarkFigure` 的自定义图形子类，该子类会在绘图上添加文本水印。这个类继承自 Matplotlib 的 `Figure` 类。
 
 ```python
 from matplotlib.figure import Figure

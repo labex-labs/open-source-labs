@@ -13,7 +13,7 @@ def setup_axes(fig, rect):
     grid_locator2 = grid_finder.MaxNLocator(5)
     tick_formatter1 = angle_helper.FormatterDMS()
 
-    # 定义GridHelperCurveLinear
+    # 定义 GridHelperCurveLinear
     grid_helper = GridHelperCurveLinear(tr, extreme_finder=extreme_finder, grid_locator1=grid_locator1, grid_locator2=grid_locator2, tick_formatter1=tick_formatter1)
 
     # 创建轴对象并设置其界限

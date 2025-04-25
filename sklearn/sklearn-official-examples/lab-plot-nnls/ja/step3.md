@@ -1,6 +1,6 @@
 # 非負最小二乗回帰を適合させる
 
-ここでは、非負最小二乗回帰を使ってデータを適合させます。これは、scikit - learnの`LinearRegression`クラスを`positive=True`パラメータで使って行います。その後、テストセットの値を予測し、R2スコアを計算します。
+ここでは、非負最小二乗回帰を使ってデータを適合させます。これは、scikit - learn の`LinearRegression`クラスを`positive=True`パラメータで使って行います。その後、テストセットの値を予測し、R2 スコアを計算します。
 
 ```python
 from sklearn.linear_model import LinearRegression

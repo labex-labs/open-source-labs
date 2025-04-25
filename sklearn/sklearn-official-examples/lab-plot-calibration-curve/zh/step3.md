@@ -4,7 +4,7 @@
 
 - 逻辑回归（基线）
 - 未校准的线性支持向量分类器（SVC）
-- 具有等渗和Sigmoid校准的线性SVC
+- 具有等渗和 Sigmoid 校准的线性 SVC
 
 ```python
 import numpy as np

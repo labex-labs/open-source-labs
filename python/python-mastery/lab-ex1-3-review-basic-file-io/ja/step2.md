@@ -27,7 +27,7 @@ def portfolio_cost(filename):
 
 # ポートフォリオファイルを引数にして関数を呼び出す
 total_cost = portfolio_cost('portfolio.dat')
-print(f'総コスト: ${total_cost}')
+print(f'総コスト：${total_cost}')
 ```
 
 このコードが何をするかを分解してみましょう。

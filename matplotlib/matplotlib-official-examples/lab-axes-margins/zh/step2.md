@@ -15,7 +15,7 @@ poly_coords = [
 # 创建子图
 fig, (ax1, ax2) = plt.subplots(ncols=2)
 
-# 对ax1使用粘性边缘，对ax2关闭粘性边缘
+# 对 ax1 使用粘性边缘，对 ax2 关闭粘性边缘
 ax2.use_sticky_edges = False
 
 # 在两个子图上绘图

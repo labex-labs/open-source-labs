@@ -36,7 +36,7 @@ console.log(
     new Date("2020-12-24 00:00:15"),
     new Date("2020-12-24 00:00:17")
   )
-); // 预期输出: 2
+); // 预期输出：2
 
 console.log("\nExample 2:");
 console.log(
@@ -44,7 +44,7 @@ console.log(
     new Date("2020-12-24 00:00:00"),
     new Date("2020-12-24 00:01:00")
   )
-); // 预期输出: 60
+); // 预期输出：60
 
 console.log("\nExample 3:");
 console.log(
@@ -52,7 +52,7 @@ console.log(
     new Date("2020-12-24 00:00:00"),
     new Date("2020-12-24 01:00:00")
   )
-); // 预期输出: 3600
+); // 预期输出：3600
 ```
 
 按 Ctrl+S 或点击“File > Save”保存文件。

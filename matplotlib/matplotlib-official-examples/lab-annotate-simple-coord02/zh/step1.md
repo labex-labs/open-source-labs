@@ -1,6 +1,6 @@
-# 导入Matplotlib
+# 导入 Matplotlib
 
-在我们开始使用Matplotlib为图表添加注释之前，必须先导入该库。在这一步中，我们将导入Matplotlib并创建一个简单的图表用于注释。
+在我们开始使用 Matplotlib 为图表添加注释之前，必须先导入该库。在这一步中，我们将导入 Matplotlib 并创建一个简单的图表用于注释。
 
 ```python
 import matplotlib.pyplot as plt

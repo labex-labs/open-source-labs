@@ -1,6 +1,6 @@
 # データセットを読み込む
 
-`sklearn.datasets` の `make_circles` 関数を使って、2つの入れ子になった円から構成されるデータセットを作成します。
+`sklearn.datasets` の `make_circles` 関数を使って、2 つの入れ子になった円から構成されるデータセットを作成します。
 
 ```python
 from sklearn.datasets import make_circles

@@ -24,7 +24,7 @@ const unescapeHTML = (str) =>
 4. `unescapeHTML` 関数を呼び出し、エスケープされた文字を含む文字列を渡します。
 5. 関数はデエスケープされた文字列を返します。
 
-使用例:
+使用例：
 
 ```js
 unescapeHTML("&lt;a href=&quot;#&quot;&gt;Me &amp; you&lt;/a&gt;");

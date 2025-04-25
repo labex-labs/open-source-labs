@@ -1,6 +1,6 @@
 # 欠損値の処理
 
-Pandasは、データのクリーニングと欠損値の埋め込みに様々なメソッドを提供しています。
+Pandas は、データのクリーニングと欠損値の埋め込みに様々なメソッドを提供しています。
 
 ```python
 # Creating a DataFrame with missing values

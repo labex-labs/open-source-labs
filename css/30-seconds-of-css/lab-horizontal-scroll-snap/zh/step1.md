@@ -8,7 +8,7 @@
 2. 使用 `scroll-snap-type: x mandatory` 和 `overscroll-behavior-x: contain` 在水平滚动时创建捕捉效果。
 3. 将 `scroll-snap-align` 更改为 `start`、`stop` 或 `center` 以调整捕捉对齐方式。
 
-以下是你可以使用的示例HTML和CSS代码：
+以下是你可以使用的示例 HTML 和 CSS 代码：
 
 HTML
 
@@ -54,4 +54,4 @@ CSS
 }
 ```
 
-请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。
+请点击右下角的“Go Live”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。

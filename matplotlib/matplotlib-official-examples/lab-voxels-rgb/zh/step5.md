@@ -1,6 +1,6 @@
 # 绘制体素图
 
-最后，我们可以使用 `ax.voxels` 函数来绘制体素图。我们将传入RGB值、球体的条件、面颜色、边颜色和线宽。
+最后，我们可以使用 `ax.voxels` 函数来绘制体素图。我们将传入 RGB 值、球体的条件、面颜色、边颜色和线宽。
 
 ```python
 ax = plt.figure().add_subplot(projection='3d')

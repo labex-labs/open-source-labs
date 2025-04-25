@@ -1,6 +1,6 @@
 # 执行层次聚类
 
-现在，我们将对在步骤1中加载的简单数据集执行层次聚类。我们将使用不同的链接方法，如单链、平均链、完全链和沃德法来构建聚类。
+现在，我们将对在步骤 1 中加载的简单数据集执行层次聚类。我们将使用不同的链接方法，如单链、平均链、完全链和沃德法来构建聚类。
 
 ```python
 # 设置聚类参数
@@ -58,7 +58,7 @@ for i_dataset, (dataset, algo_params) in enumerate(datasets):
     for name, algorithm in clustering_algorithms:
         t0 = time.time()
 
-        # 捕获与kneighbors_graph相关的警告
+        # 捕获与 kneighbors_graph 相关的警告
         with warnings.catch_warnings():
             warnings.filterwarnings(
                 "ignore",

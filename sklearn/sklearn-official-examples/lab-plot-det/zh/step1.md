@@ -1,6 +1,6 @@
 # 生成合成数据
 
-我们将使用scikit-learn的`make_classification`函数来生成合成数据。此函数会生成一个随机的n分类问题，具有n_informative个信息特征、n_redundant个冗余特征以及每个类别n_clusters_per_class个聚类。我们将生成1000个样本，有2个信息特征，随机状态设为1。然后，我们会以60/40的比例将数据拆分为训练集和测试集。
+我们将使用 scikit-learn 的`make_classification`函数来生成合成数据。此函数会生成一个随机的 n 分类问题，具有 n_informative 个信息特征、n_redundant 个冗余特征以及每个类别 n_clusters_per_class 个聚类。我们将生成 1000 个样本，有 2 个信息特征，随机状态设为 1。然后，我们会以 60/40 的比例将数据拆分为训练集和测试集。
 
 ```python
 from sklearn.datasets import make_classification

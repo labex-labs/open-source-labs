@@ -13,7 +13,7 @@ score = {
     "MedAE": f"{median_absolute_error(y_test, y_pred_ridge):.3f}",
 }
 
-print("\n元のターゲットに対する線形回帰:")
+print("\n元のターゲットに対する線形回帰：")
 for key, val in score.items():
     print(f"{key}: {val}")
 ```

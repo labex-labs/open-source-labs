@@ -1,6 +1,6 @@
 # 使用随机梯度下降（SGD）训练分类器
 
-现在我们将使用SGDClassifier类训练一个分类器。我们将使用对数损失（log_loss）损失函数和L2正则化。
+现在我们将使用 SGDClassifier 类训练一个分类器。我们将使用对数损失（log_loss）损失函数和 L2 正则化。
 
 ```python
 # 使用随机梯度下降训练分类器
@@ -14,5 +14,5 @@ y_pred = clf.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 # 打印准确率
-print("分类器准确率:", accuracy)
+print("分类器准确率：", accuracy)
 ```

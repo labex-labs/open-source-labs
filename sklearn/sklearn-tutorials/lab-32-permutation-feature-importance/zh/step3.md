@@ -5,5 +5,5 @@
 ```python
 # 在验证集上评估模型
 score = model.score(X_val, y_val)
-print("验证分数:", score)
+print("验证分数：", score)
 ```

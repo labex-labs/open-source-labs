@@ -16,7 +16,7 @@ const toSnakeCase = (str) => {
 
 この関数は、適切な正規表現を使用して `String.prototype.match()` を使って文字列を単語に分解します。そして、単語を結合して `_` を区切り文字として追加するために、`Array.prototype.map()`、`Array.prototype.slice()`、`Array.prototype.join()`、および `String.prototype.toLowerCase()` を使用します。
 
-使用例:
+使用例：
 
 ```js
 toSnakeCase("camelCase"); // 'camel_case'

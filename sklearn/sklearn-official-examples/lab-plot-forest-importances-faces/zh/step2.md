@@ -11,7 +11,7 @@ img_shape = data.images[0].shape
 importances = forest.feature_importances_
 elapsed_time = time.time() - start_time
 
-print(f"计算重要性所花费的时间: {elapsed_time:.3f} 秒")
+print(f"计算重要性所花费的时间：{elapsed_time:.3f} 秒")
 imp_reshaped = importances.reshape(img_shape)
 plt.matshow(imp_reshaped, cmap=plt.cm.hot)
 plt.title("使用杂质值的像素重要性")

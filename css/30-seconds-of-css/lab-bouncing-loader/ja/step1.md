@@ -1,16 +1,16 @@
 # バウンシングローダー
 
-VM内には既に`index.html`と`style.css`が用意されています。
+VM 内には既に`index.html`と`style.css`が用意されています。
 
 バウンシングローダーアニメーションを作成するには：
 
 1. `opacity`と`transform`プロパティを使った`@keyframes`アニメーションを定義し、より良いパフォーマンスのために`transform: translate3d()`で単一軸の平行移動を行います。
 2. `.bouncing-loader`クラスを持つ親コンテナを作成し、`display: flex`と`justify-content: center`を使ってバウンシングする円を中央に配置します。
-3. バウンシングする円用の3つの`<div>`要素に同じ`width`、`height`、`border-radius: 50%`を与えて円形にします。
-4. 3つのバウンシングする円それぞれに`bouncing-loader`アニメーションを適用します。
+3. バウンシングする円用の 3 つの`<div>`要素に同じ`width`、`height`、`border-radius: 50%`を与えて円形にします。
+4. 3 つのバウンシングする円それぞれに`bouncing-loader`アニメーションを適用します。
 5. 各円に異なる`animation-delay`を使い、`animation-direction: alternate`を使って適切な効果を作成します。
 
-以下がHTMLコードです：
+以下が HTML コードです：
 
 ```html
 <div class="bouncing-loader">
@@ -20,7 +20,7 @@ VM内には既に`index.html`と`style.css`が用意されています。
 </div>
 ```
 
-以下がCSSコードです：
+以下が CSS コードです：
 
 ```css
 @keyframes bouncing-loader {
@@ -53,4 +53,4 @@ VM内には既に`index.html`と`style.css`が用意されています。
 }
 ```
 
-右下隅の「Go Live」をクリックして8080番ポートでウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして 8080 番ポートでウェブサービスを実行してください。その後、**Web 8080**タブを更新してウェブページをプレビューできます。

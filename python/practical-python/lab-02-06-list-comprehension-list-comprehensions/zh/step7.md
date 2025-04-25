@@ -1,6 +1,6 @@
-# 练习2.20：序列归约
+# 练习 2.20：序列归约
 
-使用一条Python语句计算投资组合的总成本。
+使用一条 Python 语句计算投资组合的总成本。
 
 ```python
 >>> portfolio = read_portfolio('portfolio.csv')

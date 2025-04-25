@@ -1,6 +1,6 @@
-# 基本的pcolormesh
+# 基本的 pcolormesh
 
-我们通常通过定义四边形的边缘和四边形的值来指定一个pcolormesh。请注意，这里的*x*和*y*在各自的维度上比*Z*都多一个元素。
+我们通常通过定义四边形的边缘和四边形的值来指定一个 pcolormesh。请注意，这里的*x*和*y*在各自的维度上比*Z*都多一个元素。
 
 ```python
 import matplotlib.pyplot as plt

@@ -1,6 +1,6 @@
 # 加载数据集
 
-`sklearn.datasets` 模块中的 `make_classification` 函数用于生成一个分类数据集。该数据集包含400个样本和12个特征。加载数据集的代码如下：
+`sklearn.datasets` 模块中的 `make_classification` 函数用于生成一个分类数据集。该数据集包含 400 个样本和 12 个特征。加载数据集的代码如下：
 
 ```python
 rng = np.random.RandomState(0)

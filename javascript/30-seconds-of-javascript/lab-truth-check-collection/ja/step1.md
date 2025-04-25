@@ -11,7 +11,7 @@ const truthCheckCollection = (collection, pre) =>
   collection.every((obj) => obj[pre]);
 ```
 
-使用例:
+使用例：
 
 ```js
 truthCheckCollection(

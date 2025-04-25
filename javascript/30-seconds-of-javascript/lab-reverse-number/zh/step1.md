@@ -1,6 +1,6 @@
 # 反转数字
 
-要使用JavaScript反转一个数字，你可以按以下步骤使用`reverseNumber()`函数：
+要使用 JavaScript 反转一个数字，你可以按以下步骤使用`reverseNumber()`函数：
 
 1. 使用`Object.prototype.toString()`将数字`n`转换为字符串。
 2. 使用`String.prototype.split()`、`Array.prototype.reverse()`和`Array.prototype.join()`来获取`n`反转后的字符串值。

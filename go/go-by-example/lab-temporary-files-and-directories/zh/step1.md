@@ -1,6 +1,6 @@
 # 临时文件和目录
 
-在这个实验中，你需要在Go语言中创建临时文件和目录。
+在这个实验中，你需要在 Go 语言中创建临时文件和目录。
 
 - 使用 `os.CreateTemp` 创建临时文件。
 - 使用 `os.MkdirTemp` 创建临时目录。
@@ -40,9 +40,9 @@ func main() {
 	f, err := os.CreateTemp("", "sample")
 	check(err)
 
-	// 显示临时文件的名称。在基于Unix的操作系统上，目录可能是 `/tmp`。
+	// 显示临时文件的名称。在基于 Unix 的操作系统上，目录可能是 `/tmp`。
 	// 文件名以作为 `os.CreateTemp` 第二个参数给出的前缀开头，其余部分会自动选择以确保并发调用总是创建不同的文件名。
-	fmt.Println("临时文件名:", f.Name())
+	fmt.Println("临时文件名：", f.Name())
 
 	// 完成后清理文件。操作系统可能会在一段时间后自行清理临时文件，但显式地这样做是个好习惯。
 	defer os.Remove(f.Name())
@@ -55,7 +55,7 @@ func main() {
 	// `os.MkdirTemp` 的参数与 `CreateTemp` 的相同，但它返回一个目录 *名称* 而不是一个打开的文件。
 	dname, err := os.MkdirTemp("", "sampledir")
 	check(err)
-	fmt.Println("临时目录名:", dname)
+	fmt.Println("临时目录名：", dname)
 
 	defer os.RemoveAll(dname)
 

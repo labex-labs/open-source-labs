@@ -4,7 +4,7 @@
 
 - 逻辑回归（用作基线）
 - 未校准的高斯朴素贝叶斯
-- 具有等渗和Sigmoid校准的高斯朴素贝叶斯
+- 具有等渗和 Sigmoid 校准的高斯朴素贝叶斯
 
 ```python
 import matplotlib.pyplot as plt

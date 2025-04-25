@@ -1,6 +1,6 @@
-# 用JavaScript从日期获取一年中的周数
+# 用 JavaScript 从日期获取一年中的周数
 
-要在JavaScript中获取与某个日期对应的一年中的零索引周数，请执行以下步骤：
+要在 JavaScript 中获取与某个日期对应的一年中的零索引周数，请执行以下步骤：
 
 1. 创建一个接受 `date` 参数的 `weekOfYear` 函数。
 2. 使用 `Date` 构造函数和 `Date.prototype.getFullYear()` 以获取作为 `Date` 对象的一年中的第一天。

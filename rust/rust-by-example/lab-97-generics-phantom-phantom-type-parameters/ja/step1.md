@@ -17,7 +17,7 @@ struct PhantomTuple<A, B>(A, PhantomData<B>);
 #[derive(PartialEq)] // この型に対して等価性テストを許可する。
 struct PhantomStruct<A, B> { first: A, phantom: PhantomData<B> }
 
-// 注: ジェネリック型 `A` には格納領域が割り当てられますが、`B` には割り当てられません。
+// 注：ジェネリック型 `A` には格納領域が割り当てられますが、`B` には割り当てられません。
 //       したがって、`B` は計算で使用できません。
 
 fn main() {
@@ -38,11 +38,11 @@ fn main() {
         phantom: PhantomData,
     };
 
-    // コンパイル時エラー！型が一致しないため、これらは比較できません:
+    // コンパイル時エラー！型が一致しないため、これらは比較できません：
     // println!("_tuple1 == _tuple2 yields: {}",
     //           _tuple1 == _tuple2);
 
-    // コンパイル時エラー！型が一致しないため、これらは比較できません:
+    // コンパイル時エラー！型が一致しないため、これらは比較できません：
     // println!("_struct1 == _struct2 yields: {}",
     //           _struct1 == _struct2);
 }

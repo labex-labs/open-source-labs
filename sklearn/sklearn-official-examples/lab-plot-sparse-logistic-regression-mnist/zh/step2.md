@@ -1,6 +1,6 @@
-# 加载MNIST数据集
+# 加载 MNIST 数据集
 
-我们将使用scikit-learn中的`fetch_openml`函数来加载MNIST数据集。我们还将通过将`train_samples`的数量设置为5000来选择数据的一个子集。
+我们将使用 scikit-learn 中的`fetch_openml`函数来加载 MNIST 数据集。我们还将通过将`train_samples`的数量设置为 5000 来选择数据的一个子集。
 
 ```python
 # Turn down for faster convergence

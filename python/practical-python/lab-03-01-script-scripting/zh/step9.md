@@ -5,7 +5,7 @@
 ```python
 def read_prices(filename):
     '''
-    从包含名称、价格数据的CSV文件中读取价格
+    从包含名称、价格数据的 CSV 文件中读取价格
     '''
     prices = {}
     with open(filename) as f:

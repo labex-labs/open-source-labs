@@ -10,7 +10,7 @@ def funcname(args):
   return result
 ```
 
-内部では、Pythonの「任意の」文を使用できます。
+内部では、Python の「任意の」文を使用できます。
 
 ```python
 def foo():
@@ -19,4 +19,4 @@ def foo():
     help(math)
 ```
 
-Pythonには特別な文はありません（覚えやすいです）。
+Python には特別な文はありません（覚えやすいです）。

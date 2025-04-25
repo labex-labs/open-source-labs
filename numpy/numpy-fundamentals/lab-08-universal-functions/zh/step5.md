@@ -5,7 +5,7 @@
 ```python
 import numpy as np
 
-# 检查int是否可以安全地转换为float
+# 检查 int 是否可以安全地转换为 float
 result = np.can_cast(np.int, np.float)
 
 # 打印结果

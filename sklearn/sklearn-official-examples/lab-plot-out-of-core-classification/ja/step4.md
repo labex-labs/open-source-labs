@@ -2,7 +2,7 @@
 
 ```python
 def get_minibatch(doc_iter, size, pos_class=positive_class):
-    """サンプルのミニバッチを抽出し、タプルX_text, yを返す。
+    """サンプルのミニバッチを抽出し、タプル X_text, y を返す。
 
     注：サイズは、割り当てられていないトピックがない無効な文書を除外する前のものである。
 

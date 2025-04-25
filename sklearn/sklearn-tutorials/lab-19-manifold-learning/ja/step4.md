@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # 変換後のデータの散布図を作成
 plt.scatter(X_transformed[:, 0], X_transformed[:, 1], c=y)
 plt.title('多様体学習')
-plt.xlabel('成分1')
-plt.ylabel('成分2')
+plt.xlabel('成分 1')
+plt.ylabel('成分 2')
 plt.show()
 ```

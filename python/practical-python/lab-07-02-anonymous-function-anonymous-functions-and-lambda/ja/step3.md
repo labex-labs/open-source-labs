@@ -1,6 +1,6 @@
 # Lambda：匿名関数
 
-関数を作成する代わりにlambdaを使用します。先ほどのソートの例では、
+関数を作成する代わりに lambda を使用します。先ほどのソートの例では、
 
 ```python
 portfolio.sort(key=lambda s: s['name'])

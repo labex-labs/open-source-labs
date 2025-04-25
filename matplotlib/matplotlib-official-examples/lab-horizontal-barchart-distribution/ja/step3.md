@@ -13,7 +13,7 @@ def survey(results, category_names):
     category_names : list of str
         カテゴリのラベル。
     """
-    # 結果とカテゴリをnumpy配列に変換
+    # 結果とカテゴリを numpy 配列に変換
     labels = list(results.keys())
     data = np.array(list(results.values()))
 

@@ -1,6 +1,6 @@
 # ライブラリとデータセットのインポート
 
-まず、必要なライブラリをインポートし、scikit - learnからCalifornia Housingデータセットを読み込む必要があります。
+まず、必要なライブラリをインポートし、scikit - learn から California Housing データセットを読み込む必要があります。
 
 ```python
 import numpy as np

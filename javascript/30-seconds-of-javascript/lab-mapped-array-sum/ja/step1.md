@@ -9,7 +9,7 @@ const sumBy = (arr, fn) =>
     .reduce((acc, val) => acc + val, 0);
 ```
 
-使用例:
+使用例：
 
 ```js
 sumBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], (x) => x.n); // 20 を返す

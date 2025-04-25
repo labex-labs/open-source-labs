@@ -74,9 +74,9 @@ $ rustdoc --test --extern doc="libdoc.rlib" doc.rs
 #[doc(inline)]
 pub use bar::Bar;
 
-/// barのドキュメント
+/// bar のドキュメント
 mod bar {
-    /// Barのドキュメント
+    /// Bar のドキュメント
     pub struct Bar;
 }
 ```
@@ -96,9 +96,9 @@ pub use crate::mem::drop;
 これを使用すると、`rustdoc` にこれをドキュメントに含めないように伝えます。
 
 ```rust
-// futures-rsライブラリからの例
+// futures-rs ライブラリからの例
 #[doc(hidden)]
 pub use self::async_await::*;
 ```
 
-ドキュメントに関しては、コミュニティによって `rustdoc` が広く使用されています。これが \[stdライブラリのドキュメント\](https://doc.rust-lang.org/std/) を生成するために使用されています。
+ドキュメントに関しては、コミュニティによって `rustdoc` が広く使用されています。これが \[std ライブラリのドキュメント\](https://doc.rust-lang.org/std/) を生成するために使用されています。

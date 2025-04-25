@@ -18,7 +18,7 @@ ax.set_title('你今天想多快到达？')
 
 # 用特殊格式的浮点数标注
 ax.bar_label(水平柱状图, fmt='%.2f')
-ax.set_xlim(right=15)  # 调整xlim以适应标签
+ax.set_xlim(right=15)  # 调整 xlim 以适应标签
 
 plt.show()
 ```

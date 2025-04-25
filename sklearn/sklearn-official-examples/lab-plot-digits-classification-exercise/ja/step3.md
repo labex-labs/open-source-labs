@@ -1,6 +1,6 @@
 # データセットを学習用とテスト用に分割する
 
-次に、scikit-learnの`train_test_split`関数を使ってデータセットを学習用とテスト用に分割します。学習にはデータの90%を、テストには10%を使います。
+次に、scikit-learn の`train_test_split`関数を使ってデータセットを学習用とテスト用に分割します。学習にはデータの 90% を、テストには 10% を使います。
 
 ```python
 from sklearn.model_selection import train_test_split

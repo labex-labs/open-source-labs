@@ -1,6 +1,6 @@
-# Huber回帰器をフィットさせる
+# Huber 回帰器をフィットさせる
 
-ここでは、HuberRegressorをデータセットにフィットさせます。epsilonの値の範囲でモデルをフィットさせて、epsilonの値が増加するにつれて決定関数がRidge回帰のものにどのように近づくかを示します。
+ここでは、HuberRegressor をデータセットにフィットさせます。epsilon の値の範囲でモデルをフィットさせて、epsilon の値が増加するにつれて決定関数が Ridge 回帰のものにどのように近づくかを示します。
 
 ```python
 # Define the range of values for epsilon

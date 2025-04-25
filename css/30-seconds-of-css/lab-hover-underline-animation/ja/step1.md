@@ -1,6 +1,6 @@
 # ホバー時の下線アニメーション
 
-VM内には既に `index.html` と `style.css` が用意されています。
+VM 内には既に `index.html` と `style.css` が用意されています。
 
 ユーザーがテキストの上にホバーしたときにアニメーション付きの下線効果を作成するには、次の手順に従います。
 
@@ -11,13 +11,13 @@ VM内には既に `index.html` と `style.css` が用意されています。
 5. `transform-origin: left` と適切な `transition` を使用して、`transform` をアニメーション化します。
 6. 要素の中央から変換が始まるように、`transform-origin` プロパティを削除します。
 
-ここに、テキスト要素にこの効果を適用するための例のHTMLコードがあります。
+ここに、テキスト要素にこの効果を適用するための例の HTML コードがあります。
 
 ```html
 <p class="hover-underline-animation">Hover this text to see the effect!</p>
 ```
 
-そして、対応するCSSコードはこちらです。
+そして、対応する CSS コードはこちらです。
 
 ```css
 .hover-underline-animation {
@@ -45,4 +45,4 @@ VM内には既に `index.html` と `style.css` が用意されています。
 }
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080** タブを更新して、ウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080** タブを更新して、ウェブページをプレビューできます。

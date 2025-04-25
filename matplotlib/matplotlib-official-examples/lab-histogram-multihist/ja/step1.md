@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-まず、MatplotlibとNumPyを含む必要なライブラリをインポートする必要があります。
+まず、Matplotlib と NumPy を含む必要なライブラリをインポートする必要があります。
 
 ```python
 import matplotlib.pyplot as plt

@@ -1,6 +1,6 @@
 # 创建绘图
 
-使用`subplots`函数创建一个2x2的子图网格。然后，使用`plot`函数在每个子图上绘制数据。
+使用`subplots`函数创建一个 2x2 的子图网格。然后，使用`plot`函数在每个子图上绘制数据。
 
 ```python
 fig, axs = plt.subplots(2, 2, layout='constrained')

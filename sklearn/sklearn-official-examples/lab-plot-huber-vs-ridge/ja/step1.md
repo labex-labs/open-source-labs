@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-まず、必要なライブラリをインポートします。データ操作と可視化にnumpyとmatplotlibを、回帰モデリングにscikit-learnからのHuberRegressorとRidgeを使用します。
+まず、必要なライブラリをインポートします。データ操作と可視化に numpy と matplotlib を、回帰モデリングに scikit-learn からの HuberRegressor と Ridge を使用します。
 
 ```python
 import numpy as np

@@ -1,6 +1,6 @@
 # エラーボックス用の関数を作成する
 
-ここでは、`make_error_boxes` という関数を作成します。この関数は、x方向とy方向のバーの限界で定義された四角形のパッチを作成します。
+ここでは、`make_error_boxes` という関数を作成します。この関数は、x 方向と y 方向のバーの限界で定義された四角形のパッチを作成します。
 
 ```python
 def make_error_boxes(ax, xdata, ydata, xerror, yerror, facecolor='r',

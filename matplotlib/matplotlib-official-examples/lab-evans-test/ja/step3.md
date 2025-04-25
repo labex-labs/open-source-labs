@@ -1,6 +1,6 @@
 # コンバータークラスの作成
 
-このステップでは、コンバータークラス - `FooConverter` を作成します。このクラスは、3つの静的メソッド - `axisinfo`、`convert`、および `default_units` を定義します。
+このステップでは、コンバータークラス - `FooConverter` を作成します。このクラスは、3 つの静的メソッド - `axisinfo`、`convert`、および `default_units` を定義します。
 
 ```python
 class FooConverter(units.ConversionInterface):

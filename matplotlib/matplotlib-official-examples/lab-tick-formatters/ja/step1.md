@@ -1,6 +1,6 @@
-# Matplotlibのインポートとグラフの設定
+# Matplotlib のインポートとグラフの設定
 
-まず、Matplotlibライブラリをインポートしてグラフを設定します。1つのy軸と1つのx軸を持つ空のグラフを作成します。また、軸を設定して下側の目盛り線のみを表示し、目盛りの位置を設定し、目盛りの長さを定義します。
+まず、Matplotlib ライブラリをインポートしてグラフを設定します。1 つの y 軸と 1 つの x 軸を持つ空のグラフを作成します。また、軸を設定して下側の目盛り線のみを表示し、目盛りの位置を設定し、目盛りの長さを定義します。
 
 ```python
 import matplotlib.pyplot as plt
@@ -29,16 +29,16 @@ fig, ax = plt.subplots(figsize=(8, 2))
 setup(ax, "Tick Formatters")
 ```
 
-# Matplotlibをインポートしてグラフを設定する
+# Matplotlib をインポートしてグラフを設定する
 
-まず、Matplotlibライブラリをインポートしてグラフを設定します。1つのy軸と1つのx軸を持つ空のグラフを作成します。また、軸を設定して下側の目盛り線のみを表示し、目盛りの位置を設定し、目盛りの長さを定義します。
+まず、Matplotlib ライブラリをインポートしてグラフを設定します。1 つの y 軸と 1 つの x 軸を持つ空のグラフを作成します。また、軸を設定して下側の目盛り線のみを表示し、目盛りの位置を設定し、目盛りの長さを定義します。
 
 ```python
 import matplotlib.pyplot as plt
 from matplotlib import ticker
 
 def setup(ax, title):
-    """この例でのAxesの共通パラメータを設定します。"""
+    """この例での Axes の共通パラメータを設定します。"""
     # 下側の目盛り線のみを表示
     ax.yaxis.set_major_locator(ticker.NullLocator())
     ax.spines[['left', 'right', 'top']].set_visible(False)

@@ -25,7 +25,7 @@ for e in ells:
     e.set_alpha(np.random.rand())
     e.set_facecolor(np.random.rand(3))
 
-# 设置绘图的x和y轴范围
+# 设置绘图的 x 和 y 轴范围
 ax.set_xlim(0, 10)
 ax.set_ylim(0, 10)
 

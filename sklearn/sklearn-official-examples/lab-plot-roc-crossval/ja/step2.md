@@ -1,6 +1,6 @@
-# 分類とROC分析
+# 分類と ROC 分析
 
-次に、交差検証を行ったSVM分類器を実行し、ROC曲線をフォールドごとにプロットします。Scikit-learnのStratifiedKFoldを使って交差検証の分割を生成します。また、ROC曲線の平均AUCを計算し、TPRの標準偏差をプロットすることで分類器出力の変動性を見ます。
+次に、交差検証を行った SVM 分類器を実行し、ROC 曲線をフォールドごとにプロットします。Scikit-learn の StratifiedKFold を使って交差検証の分割を生成します。また、ROC 曲線の平均 AUC を計算し、TPR の標準偏差をプロットすることで分類器出力の変動性を見ます。
 
 ```python
 import matplotlib.pyplot as plt

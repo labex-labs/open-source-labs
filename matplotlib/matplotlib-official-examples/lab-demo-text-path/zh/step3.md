@@ -1,6 +1,6 @@
 # 创建一个路径裁剪图像补丁
 
-创建一个PathClippedImagePatch对象来绘制文本路径的图像。使用以下代码创建一个PathClippedImagePatch对象：
+创建一个 PathClippedImagePatch 对象来绘制文本路径的图像。使用以下代码创建一个 PathClippedImagePatch 对象：
 
 ```python
 class PathClippedImagePatch(PathPatch):

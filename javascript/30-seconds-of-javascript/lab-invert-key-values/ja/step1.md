@@ -20,7 +20,7 @@ const invertKeyValues = (obj, fn) =>
   }, {});
 ```
 
-使用例:
+使用例：
 
 ```js
 invertKeyValues({ a: 1, b: 2, c: 1 }); // { 1: [ 'a', 'c' ], 2: [ 'b' ] }

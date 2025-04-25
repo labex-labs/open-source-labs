@@ -1,3 +1,3 @@
-# 手法を評価するためにKNN分類器を使用する
+# 手法を評価するために KNN 分類器を使用する
 
-パラメータとして `n_neighbors` を持つKNeighborsClassifierを作成します。
+パラメータとして `n_neighbors` を持つ KNeighborsClassifier を作成します。

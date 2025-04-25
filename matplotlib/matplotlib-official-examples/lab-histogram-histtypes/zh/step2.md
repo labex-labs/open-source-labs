@@ -1,6 +1,6 @@
 # 生成随机数据
 
-我们将使用NumPy的 `random.normal` 函数生成两组随机数据。这两组数据将用于创建不同样式的直方图。
+我们将使用 NumPy 的 `random.normal` 函数生成两组随机数据。这两组数据将用于创建不同样式的直方图。
 
 ```python
 np.random.seed(19680801)

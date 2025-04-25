@@ -1,6 +1,6 @@
 # ズーム
 
-このステップでは、プロットをズームインします。ズームボックスの2つの角を選択するために `ginput` 関数を、ズームを終了するために `waitforbuttonpress` 関数を使用します。
+このステップでは、プロットをズームインします。ズームボックスの 2 つの角を選択するために `ginput` 関数を、ズームを終了するために `waitforbuttonpress` 関数を使用します。
 
 ```python
 tellme('Now do a nested zoom, click to begin')

@@ -1,6 +1,6 @@
 # 创建一个海豚形状
 
-接下来，我们将使用 `Path` 和 `PathPatch` 函数创建一个海豚形状。我们将使用来自安迪·菲茨西蒙斯（Andy Fitzsimon）的OpenClipart库中的海豚形状路径。
+接下来，我们将使用 `Path` 和 `PathPatch` 函数创建一个海豚形状。我们将使用来自安迪·菲茨西蒙斯（Andy Fitzsimon）的 OpenClipart 库中的海豚形状路径。
 
 ```python
 from matplotlib.path import Path

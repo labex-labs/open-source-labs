@@ -8,8 +8,8 @@
 
 ```rust
 fn double_first(vec: Vec<&str>) -> i32 {
-    let first = vec.first().unwrap(); // 生成错误1
-    2 * first.parse::<i32>().unwrap() // 生成错误2
+    let first = vec.first().unwrap(); // 生成错误 1
+    2 * first.parse::<i32>().unwrap() // 生成错误 2
 }
 
 fn main() {
@@ -20,10 +20,10 @@ fn main() {
     println!("The first doubled is {}", double_first(numbers));
 
     println!("The first doubled is {}", double_first(empty));
-    // 错误1：输入向量为空
+    // 错误 1：输入向量为空
 
     println!("The first doubled is {}", double_first(strings));
-    // 错误2：元素无法解析为数字
+    // 错误 2：元素无法解析为数字
 }
 ```
 

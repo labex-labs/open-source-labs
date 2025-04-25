@@ -19,7 +19,7 @@ Don't know type string
 以下に完全なコードがあります。
 
 ```go
-// _Switch文_ は、多くのブランチに渡る条件分岐を表現します。
+// _Switch 文_ は、多くのブランチに渡る条件分岐を表現します。
 
 package main
 

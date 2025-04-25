@@ -1,6 +1,6 @@
 # サンプルデータの生成
 
-Scikit-learnの`make_regression()`関数を使ってサンプルデータを生成します。学習サンプル数を75、テストサンプル数を150、特徴数を500に設定します。また、`n_informative`を50に、`shuffle`をFalseに設定します。
+Scikit-learn の`make_regression()`関数を使ってサンプルデータを生成します。学習サンプル数を 75、テストサンプル数を 150、特徴数を 500 に設定します。また、`n_informative`を 50 に、`shuffle`を False に設定します。
 
 ```python
 import numpy as np

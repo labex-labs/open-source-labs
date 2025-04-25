@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-このステップでは、この実験に必要なライブラリをインポートします。グラフ作成にはMatplotlibを、配列作成にはNumPyを、3次元グラフ作成にはmpl_toolkitsを使用します。
+このステップでは、この実験に必要なライブラリをインポートします。グラフ作成には Matplotlib を、配列作成には NumPy を、3 次元グラフ作成には mpl_toolkits を使用します。
 
 ```python
 import matplotlib.pyplot as plt

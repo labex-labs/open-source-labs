@@ -8,8 +8,8 @@ n_comps = 2
 
 methods = [
     ("PCA", PCA()),
-    ("回転なしのFA", FactorAnalysis()),
-    ("バリマックスFA", FactorAnalysis(rotation="varimax")),
+    ("回転なしの FA", FactorAnalysis()),
+    ("バリマックス FA", FactorAnalysis(rotation="varimax")),
 ]
 fig, axes = plt.subplots(ncols=len(methods), figsize=(10, 8), sharey=True)
 

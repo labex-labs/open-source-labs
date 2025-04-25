@@ -20,7 +20,7 @@ const mergeSortedArrays = (a, b) => {
   });
 };
 
-console.log(mergeSortedArrays([1, 4, 5], [2, 3, 6])); // 出力: [1, 2, 3, 4, 5, 6]
+console.log(mergeSortedArrays([1, 4, 5], [2, 3, 6])); // 出力：[1, 2, 3, 4, 5, 6]
 ```
 
 上記のコードでは、`mergeSortedArrays` 関数は 2 つのソート済み配列を引数として取り、上記の手順に従ってマージされた配列を返します。例のコードの出力は `[1, 2, 3, 4, 5, 6]` です。

@@ -1,6 +1,6 @@
 # 导入库
 
-我们将首先导入必要的库。在本实验中，我们将使用Scikit-learn、NumPy和Matplotlib。
+我们将首先导入必要的库。在本实验中，我们将使用 Scikit-learn、NumPy 和 Matplotlib。
 
 ```python
 import numpy as np

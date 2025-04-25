@@ -1,9 +1,9 @@
-# SGDを使って分類器を訓練する
+# SGD を使って分類器を訓練する
 
-今度は、SGDClassifierクラスを使って分類器を訓練します。log_loss損失関数とl2ペナルティを使用します。
+今度は、SGDClassifier クラスを使って分類器を訓練します。log_loss 損失関数と l2 ペナルティを使用します。
 
 ```python
-# SGDを使って分類器を訓練する
+# SGD を使って分類器を訓練する
 clf = SGDClassifier(loss="log_loss", penalty="l2", max_iter=100, random_state=42)
 clf.fit(X_train, y_train)
 

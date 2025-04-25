@@ -1,4 +1,4 @@
-# DRY（Don't Repeat Yourself）
+# DRY (Don't Repeat Yourself)
 
 マクロを使うことで、関数やテスト スートの共通部分を抽出して、DRY なコードを書くことができます。ここでは、`Vec<T>` 上の `+=`、`*=`、`-=` 演算子を実装してテストする例を示します。
 
@@ -9,7 +9,7 @@ macro_rules! assert_equal_len {
     // `tt`（トークン ツリー）指定子は、演算子やトークンに使用されます。
     ($a:expr, $b:expr, $func:ident, $op:tt) => {
         assert!($a.len() == $b.len(),
-                "{:?}: 次元の不一致: {:?} {:?} {:?}",
+                "{:?}: 次元の不一致：{:?} {:?} {:?}",
                 stringify!($func),
                 ($a.len(),),
                 stringify!($op),

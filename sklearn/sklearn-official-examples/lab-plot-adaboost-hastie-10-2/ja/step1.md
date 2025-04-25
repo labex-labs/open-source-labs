@@ -1,6 +1,6 @@
 # データとベースラインモデルの準備
 
-まず、Hastie他2009年の例10.2で使用される二値分類データセットを生成します。次に、AdaBoost分類器のハイパーパラメータを設定します。データを訓練用とテスト用に分割します。その後、ベースライン分類器である`depth=9`の`DecisionTreeClassifier`と`depth=1`の「ハズレ木」`DecisionTreeClassifier`を訓練し、テストエラーを計算します。
+まず、Hastie 他 2009 年の例 10.2 で使用される二値分類データセットを生成します。次に、AdaBoost 分類器のハイパーパラメータを設定します。データを訓練用とテスト用に分割します。その後、ベースライン分類器である`depth=9`の`DecisionTreeClassifier`と`depth=1`の「ハズレ木」`DecisionTreeClassifier`を訓練し、テストエラーを計算します。
 
 ```python
 from sklearn import datasets

@@ -1,6 +1,6 @@
 # 创建直方图、图例和标题
 
-首先，我们将使用Matplotlib创建直方图、图例和标题。我们还将使用`set_gid()`方法为每个对象分配ID。这将有助于关联在Python中创建的Matplotlib对象和在第二步中解析的相应SVG结构。
+首先，我们将使用 Matplotlib 创建直方图、图例和标题。我们还将使用`set_gid()`方法为每个对象分配 ID。这将有助于关联在 Python 中创建的 Matplotlib 对象和在第二步中解析的相应 SVG 结构。
 
 ```python
 import matplotlib.pyplot as plt

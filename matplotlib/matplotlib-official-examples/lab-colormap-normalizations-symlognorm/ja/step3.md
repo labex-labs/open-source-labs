@@ -1,4 +1,4 @@
-# SymLogNormを適用する
+# SymLogNorm を適用する
 
 このステップでは、合成データに`SymLogNorm`を適用し、結果を可視化します。
 

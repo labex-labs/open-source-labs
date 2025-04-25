@@ -13,11 +13,11 @@ fn main() {
     let temperature = Temperature::Celsius(35);
     // ^ `temperature` に対して異なる値を試してみてください
     match temperature {
-        Temperature::Celsius(t) if t > 30 => println!("{}Cは摂氏30度を超えています", t),
+        Temperature::Celsius(t) if t > 30 => println!("{}C は摂氏 30 度を超えています", t),
         // `if condition` の部分 ^ がガードです
-        Temperature::Celsius(t) => println!("{}Cは摂氏30度未満です", t),
-        Temperature::Fahrenheit(t) if t > 86 => println!("{}Fは華氏86度を超えています", t),
-        Temperature::Fahrenheit(t) => println!("{}Fは華氏86度未満です", t),
+        Temperature::Celsius(t) => println!("{}C は摂氏 30 度未満です", t),
+        Temperature::Fahrenheit(t) if t > 86 => println!("{}F は華氏 86 度を超えています", t),
+        Temperature::Fahrenheit(t) => println!("{}F は華氏 86 度未満です", t),
     }
 }
 ```

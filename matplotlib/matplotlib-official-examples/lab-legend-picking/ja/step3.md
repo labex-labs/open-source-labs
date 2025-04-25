@@ -1,6 +1,6 @@
 # グラフと軸を作成する
 
-Matplotlibを使ってグラフと軸を作成し、グラフのタイトルを設定します。
+Matplotlib を使ってグラフと軸を作成し、グラフのタイトルを設定します。
 
 ```python
 fig, ax = plt.subplots()

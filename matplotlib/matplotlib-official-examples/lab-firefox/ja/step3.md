@@ -1,6 +1,6 @@
-# SVGパスデータを解析する
+# SVG パスデータを解析する
 
-SVGパスデータをMatplotlibで使用できる頂点とコードに解析するために、`svg_parse`関数を使用します。
+SVG パスデータを Matplotlib で使用できる頂点とコードに解析するために、`svg_parse`関数を使用します。
 
 ```python
 def svg_parse(path):
@@ -23,7 +23,7 @@ def svg_parse(path):
         vertices.append(points)
     return np.array(codes), np.concatenate(vertices)
 
-# Firefoxロゴのパスデータを解析する
+# Firefox ロゴのパスデータを解析する
 codes, verts = svg_parse(firefox)
 path = Path(verts, codes)
 ```

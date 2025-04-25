@@ -1,6 +1,6 @@
 # エラーのボックス化
 
-元のエラーを保持しながらシンプルなコードを書く方法の1つは、それらを「ボックス化」することです。欠点は、潜在的なエラー型が実行時にのみ判明し、静的には決定されないことです。
+元のエラーを保持しながらシンプルなコードを書く方法の 1 つは、それらを「ボックス化」することです。欠点は、潜在的なエラー型が実行時にのみ判明し、静的には決定されないことです。
 
 標準ライブラリは、`Box` が `From` を介して `Error` トレイトを実装する任意の型からトレイトオブジェクト `Box<Error>` への変換を実装することで、エラーのボックス化を支援します。
 
@@ -24,10 +24,10 @@ impl error::Error for EmptyVec {}
 
 fn double_first(vec: Vec<&str>) -> Result<i32> {
     vec.first()
-     .ok_or_else(|| EmptyVec.into()) // Boxに変換
+     .ok_or_else(|| EmptyVec.into()) // Box に変換
      .and_then(|s| {
             s.parse::<i32>()
-             .map_err(|e| e.into()) // Boxに変換
+             .map_err(|e| e.into()) // Box に変換
              .map(|i| 2 * i)
         })
 }

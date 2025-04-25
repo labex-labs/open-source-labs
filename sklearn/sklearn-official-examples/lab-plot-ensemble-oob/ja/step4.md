@@ -1,6 +1,6 @@
-# OOBエラー率を計算する
+# OOB エラー率を計算する
 
-各分類器に対して、`n_estimators`値の範囲をループして分類器をデータセットにフィットさせます。各`n_estimators`値に対するOOBエラー率を記録し、`OrderedDict`オブジェクトに格納します。
+各分類器に対して、`n_estimators`値の範囲をループして分類器をデータセットにフィットさせます。各`n_estimators`値に対する OOB エラー率を記録し、`OrderedDict`オブジェクトに格納します。
 
 ```python
 error_rate = OrderedDict((label, []) for label, _ in ensemble_clfs)

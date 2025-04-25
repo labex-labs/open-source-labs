@@ -1,6 +1,6 @@
 # 古典的な線形回帰を適合させる
 
-ここでは、古典的な線形回帰を使ってデータを適合させます。これは、scikit - learnの`LinearRegression`クラスを使って行います。その後、テストセットの値を予測し、R2スコアを計算します。
+ここでは、古典的な線形回帰を使ってデータを適合させます。これは、scikit - learn の`LinearRegression`クラスを使って行います。その後、テストセットの値を予測し、R2 スコアを計算します。
 
 ```python
 reg_ols = LinearRegression()

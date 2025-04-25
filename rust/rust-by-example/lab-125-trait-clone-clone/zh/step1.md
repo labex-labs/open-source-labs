@@ -20,19 +20,19 @@ fn main() {
     let copied_unit = unit;
 
     // 两个 `Unit` 都可以独立使用
-    println!("原始: {:?}", unit);
-    println!("副本: {:?}", copied_unit);
+    println!("原始：{:?}", unit);
+    println!("副本：{:?}", copied_unit);
 
     // 实例化 `Pair`
     let pair = Pair(Box::new(1), Box::new(2));
-    println!("原始: {:?}", pair);
+    println!("原始：{:?}", pair);
 
     // 将 `pair` 移动到 `moved_pair` 中，移动资源
     let moved_pair = pair;
-    println!("已移动: {:?}", moved_pair);
+    println!("已移动：{:?}", moved_pair);
 
     // 错误！`pair` 已经失去了它的资源
-    //println!("原始: {:?}", pair);
+    //println!("原始：{:?}", pair);
     // TODO ^ 尝试取消注释这一行
 
     // 将 `moved_pair` 克隆到 `cloned_pair` 中（包括资源）
@@ -41,10 +41,10 @@ fn main() {
     drop(moved_pair);
 
     // 错误！`moved_pair` 已经被丢弃
-    //println!("副本: {:?}", moved_pair);
+    //println!("副本：{:?}", moved_pair);
     // TODO ^ 尝试取消注释这一行
 
     // 来自.clone() 的结果仍然可以使用！
-    println!("克隆: {:?}", cloned_pair);
+    println!("克隆：{:?}", cloned_pair);
 }
 ```

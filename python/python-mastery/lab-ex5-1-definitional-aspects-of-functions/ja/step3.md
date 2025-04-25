@@ -15,11 +15,11 @@ def csv_as_dicts(lines, types):
     '''
     反復可能オブジェクトからの CSV データを辞書のリストに解析する
 
-    引数:
+    引数：
         lines: CSV 行を生成する反復可能オブジェクト
         types: 各列の型変換関数のリスト
 
-    戻り値:
+    戻り値：
         CSV 行のデータを含む辞書のリスト
     '''
     records = []
@@ -35,11 +35,11 @@ def csv_as_instances(lines, cls):
     '''
     反復可能オブジェクトからの CSV データをクラスインスタンスのリストに解析する
 
-    引数:
+    引数：
         lines: CSV 行を生成する反復可能オブジェクト
         cls: インスタンスを作成するクラス
 
-    戻り値:
+    戻り値：
         CSV 行のデータを含むクラスインスタンスのリスト
     '''
     records = []
@@ -54,11 +54,11 @@ def read_csv_as_dicts(filename, types):
     '''
     CSV データを、オプションで型変換を行った辞書のリストに読み込む
 
-    引数:
+    引数：
         filename: CSV ファイルへのパス
         types: 各列の型変換関数のリスト
 
-    戻り値:
+    戻り値：
         CSV ファイルのデータを含む辞書のリスト
     '''
     with open(filename) as file:
@@ -68,11 +68,11 @@ def read_csv_as_instances(filename, cls):
     '''
     CSV データをクラスインスタンスのリストに読み込む
 
-    引数:
+    引数：
         filename: CSV ファイルへのパス
         cls: インスタンスを作成するクラス
 
-    戻り値:
+    戻り値：
         CSV ファイルのデータを含むクラスインスタンスのリスト
     '''
     with open(filename) as file:

@@ -1,6 +1,6 @@
 # スコアと確率
 
-- SVMは直接確率推定を提供しませんが、`probability` パラメータを `True` に設定することで確率推定を有効にすることができます：
+- SVM は直接確率推定を提供しませんが、`probability` パラメータを `True` に設定することで確率推定を有効にすることができます：
 
 ```python
 clf = svm.SVC(probability=True)

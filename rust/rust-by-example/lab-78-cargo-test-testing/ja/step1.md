@@ -1,6 +1,6 @@
 # テスト
 
-私たちが知っているように、テストはソフトウェアのどの部分にも不可欠です！Rustは、ユニットテストと統合テストに対して一流のサポートを備えています（TRPLの[この章](https://doc.rust-lang.org/book/ch11-00-testing.html)を参照）。
+私たちが知っているように、テストはソフトウェアのどの部分にも不可欠です！Rust は、ユニットテストと統合テストに対して一流のサポートを備えています（TRPL の[この章](https://doc.rust-lang.org/book/ch11-00-testing.html)を参照）。
 
 上記のリンクされたテストの章から、ユニットテストと統合テストを書く方法がわかります。組織的には、ユニットテストをそれがテストするモジュールに配置し、統合テストを独自の`tests/`ディレクトリに配置することができます。
 
@@ -17,7 +17,7 @@ foo
 
 `tests`内の各ファイルは、独立した[統合テスト](https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests)です。つまり、依存クレートから呼び出されているかのように、ライブラリをテストするためのテストです。
 
-テストの章では、3つの異なるテストスタイル：ユニット、ドキュメント、および統合について詳しく説明されています。
+テストの章では、3 つの異なるテストスタイル：ユニット、ドキュメント、および統合について詳しく説明されています。
 
 `cargo`は自然に、すべてのテストを実行する簡単な方法を提供します！
 
@@ -41,9 +41,9 @@ $ cargo test test_foo
 [object Object]
 ```
 
-注意点として1つだけ：Cargoは複数のテストを同時に実行する場合があるので、互いに競合しないようにしてください。
+注意点として 1 つだけ：Cargo は複数のテストを同時に実行する場合があるので、互いに競合しないようにしてください。
 
-この並列実行が問題を引き起こす1つの例は、2つのテストがファイルに出力する場合です。例えば、以下のようになります。
+この並列実行が問題を引き起こす 1 つの例は、2 つのテストがファイルに出力する場合です。例えば、以下のようになります。
 
 ```rust
 #[cfg(test)]
@@ -55,14 +55,14 @@ mod tests {
     // このテストはファイルに書き込みます
     #[test]
     fn test_file() {
-        // ferris.txtを開き、存在しない場合は作成します。
+        // ferris.txt を開き、存在しない場合は作成します。
         let mut file = OpenOptions::new()
          .append(true)
          .create(true)
          .open("ferris.txt")
          .expect("Failed to open ferris.txt");
 
-        // "Ferris"を5回表示します。
+        // "Ferris"を 5 回表示します。
         for _ in 0..5 {
             file.write_all("Ferris\n".as_bytes())
              .expect("Could not write to ferris.txt");
@@ -72,14 +72,14 @@ mod tests {
     // このテストは同じファイルに書き込もうとします
     #[test]
     fn test_file_also() {
-        // ferris.txtを開き、存在しない場合は作成します。
+        // ferris.txt を開き、存在しない場合は作成します。
         let mut file = OpenOptions::new()
          .append(true)
          .create(true)
          .open("ferris.txt")
          .expect("Failed to open ferris.txt");
 
-        // "Corro"を5回表示します。
+        // "Corro"を 5 回表示します。
         for _ in 0..5 {
             file.write_all("Corro\n".as_bytes())
              .expect("Could not write to ferris.txt");

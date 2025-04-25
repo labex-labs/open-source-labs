@@ -13,15 +13,15 @@ threshold = clf.tree_.threshold
 
 node_depth = np.zeros(shape=n_nodes, dtype=np.int64)
 is_leaves = np.zeros(shape=n_nodes, dtype=bool)
-stack = [(0, 0)]  # 从根节点ID（0）及其深度（0）开始
+stack = [(0, 0)]  # 从根节点 ID（0）及其深度（0）开始
 while len(stack) > 0:
-    # `pop`操作确保每个节点只被访问一次
+    # `pop` 操作确保每个节点只被访问一次
     node_id, depth = stack.pop()
     node_depth[node_id] = depth
 
     # 如果一个节点的左子节点和右子节点不同，那么它就是一个分裂节点
     is_split_node = children_left[node_id]!= children_right[node_id]
-    # 如果是分裂节点，将左子节点、右子节点及其深度添加到`stack`中
+    # 如果是分裂节点，将左子节点、右子节点及其深度添加到 `stack` 中
     # 以便我们可以遍历它们
     if is_split_node:
         stack.append((children_left[node_id], depth + 1))

@@ -1,6 +1,6 @@
 # 建立核近似模型
 
-现在，我们将在由PolynomialCountSketch生成的具有不同n_components值的特征上训练线性支持向量机（SVM）。我们将使用一个循环来遍历不同的n_components值，并打印每个模型的准确率。
+现在，我们将在由 PolynomialCountSketch 生成的具有不同 n_components 值的特征上训练线性支持向量机（SVM）。我们将使用一个循环来遍历不同的 n_components 值，并打印每个模型的准确率。
 
 ```python
 from sklearn.kernel_approximation import PolynomialCountSketch
@@ -11,7 +11,7 @@ N_COMPONENTS = [250, 500, 1000, 2000]
 for n_components in N_COMPONENTS:
     ps_lsvm_score = 0
     for _ in range(n_runs):
-        # 在由PolynomialCountSketch生成的特征上训练一个线性SVM
+        # 在由 PolynomialCountSketch 生成的特征上训练一个线性 SVM
         pipeline = make_pipeline(
             PolynomialCountSketch(n_components=n_components, degree=4),
             LinearSVC(dual="auto"),

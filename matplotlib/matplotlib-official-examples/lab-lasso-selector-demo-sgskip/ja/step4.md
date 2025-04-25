@@ -5,7 +5,7 @@
 ```python
 def accept(event):
     if event.key == "enter":
-        print("選択された点:")
+        print("選択された点：")
         print(selector.xys[selector.ind])
         selector.disconnect()
         ax.set_title("")

@@ -1,6 +1,6 @@
 # 軸を接続する
 
-このステップでは、軸を接続してズーム効果を作成します。4つの軸を持つ図を作成し、zoom_effect01とzoom_effect02関数を使ってそれらを接続します。
+このステップでは、軸を接続してズーム効果を作成します。4 つの軸を持つ図を作成し、zoom_effect01 と zoom_effect02 関数を使ってそれらを接続します。
 
 ```python
 axs = plt.figure().subplot_mosaic([

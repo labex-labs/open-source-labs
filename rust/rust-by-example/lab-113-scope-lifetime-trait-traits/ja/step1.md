@@ -9,7 +9,7 @@ struct Borrowed<'a> {
     x: &'a i32,
 }
 
-// implに寿命を注釈付けする。
+// impl に寿命を注釈付けする。
 impl<'a> Default for Borrowed<'a> {
     fn default() -> Self {
         Self {

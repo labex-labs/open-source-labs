@@ -5,14 +5,14 @@
 ```python
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
-# 对NMF使用tf - idf特征。
+# 对 NMF 使用 tf - idf 特征。
 print("Extracting tf-idf features for NMF...")
 tfidf_vectorizer = TfidfVectorizer(
     max_df=0.95, min_df=2, max_features=n_features, stop_words="english"
 )
 tfidf = tfidf_vectorizer.fit_transform(data_samples)
 
-# 对LDA使用原始词频特征。
+# 对 LDA 使用原始词频特征。
 print("Extracting tf features for LDA...")
 tf_vectorizer = CountVectorizer(
     max_df=0.95, min_df=2, max_features=n_features, stop_words="english"

@@ -1,6 +1,6 @@
-# Matplotlibをインポートする
+# Matplotlib をインポートする
 
-Matplotlibを使ってグラフに注釈を付ける前に、まずライブラリをインポートする必要があります。このステップでは、Matplotlibをインポートして、注釈に使用する単純なグラフを作成します。
+Matplotlib を使ってグラフに注釈を付ける前に、まずライブラリをインポートする必要があります。このステップでは、Matplotlib をインポートして、注釈に使用する単純なグラフを作成します。
 
 ```python
 import matplotlib.pyplot as plt

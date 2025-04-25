@@ -66,7 +66,7 @@ func main() {
 	copy(c, s)
 	fmt.Println("cpy:", c)
 
-	// 切片支持一种 “切片” 运算符，语法为 `slice[low:high]`。
+	// 切片支持一种“切片”运算符，语法为 `slice[low:high]`。
 	// 例如，这将获取元素 `s[2]`、`s[3]` 和 `s[4]` 组成的切片。
 	l := s[2:5]
 	fmt.Println("sl1:", l)

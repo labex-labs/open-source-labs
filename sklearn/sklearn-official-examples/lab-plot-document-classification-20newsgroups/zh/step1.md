@@ -1,6 +1,6 @@
-# 加载并向量化20新闻组文本数据集
+# 加载并向量化 20 新闻组文本数据集
 
-我们定义一个函数来从20新闻组数据集中加载数据，该数据集包含约18,000篇关于20个主题的新闻组帖子，分为两个子集：一个用于训练，另一个用于测试。我们将在不剥离元数据的情况下加载并向量化数据集。
+我们定义一个函数来从 20 新闻组数据集中加载数据，该数据集包含约 18,000 篇关于 20 个主题的新闻组帖子，分为两个子集：一个用于训练，另一个用于测试。我们将在不剥离元数据的情况下加载并向量化数据集。
 
 ```python
 from sklearn.datasets import fetch_20newsgroups
@@ -14,7 +14,7 @@ categories = [
 ]
 
 def load_dataset(verbose=False, remove=()):
-    """加载并向量化20新闻组数据集。"""
+    """加载并向量化 20 新闻组数据集。"""
     data_train = fetch_20newsgroups(
         subset="train",
         categories=categories,
@@ -52,8 +52,8 @@ def load_dataset(verbose=False, remove=()):
         print(f"{len(data_train.data)} 个文档")
         print(f"{len(data_test.data)} 个文档")
         print(f"{len(target_names)} 个类别")
-        print(f"样本数: {X_train.shape[0]}, 特征数: {X_train.shape[1]}")
-        print(f"样本数: {X_test.shape[0]}, 特征数: {X_test.shape[1]}")
+        print(f"样本数：{X_train.shape[0]}, 特征数：{X_train.shape[1]}")
+        print(f"样本数：{X_test.shape[0]}, 特征数：{X_test.shape[1]}")
 
     return X_train, X_test, y_train, y_test, feature_names, target_names
 

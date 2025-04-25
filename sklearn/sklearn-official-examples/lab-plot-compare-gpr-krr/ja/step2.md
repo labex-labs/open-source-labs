@@ -1,6 +1,6 @@
 # 単純な線形モデルの制限
 
-Ridgeモデルをフィットさせ、このモデルの予測をデータセットに対して確認します。
+Ridge モデルをフィットさせ、このモデルの予測をデータセットに対して確認します。
 
 ```python
 from sklearn.linear_model import Ridge

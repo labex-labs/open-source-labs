@@ -1,4 +1,4 @@
-# 通过数据类型选择列来使用ColumnTransformer
+# 通过数据类型选择列来使用 ColumnTransformer
 
 在这一步中，我们将通过按数据类型选择列来使用 `ColumnTransformer`。我们将使用 `make_column_selector` 根据数据类型选择列。
 

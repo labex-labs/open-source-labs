@@ -1,6 +1,6 @@
 # 绘制信号
 
-我们可以使用Matplotlib的绘图函数来绘制生成的两个信号。
+我们可以使用 Matplotlib 的绘图函数来绘制生成的两个信号。
 
 ```python
 fig, ax = plt.subplots()

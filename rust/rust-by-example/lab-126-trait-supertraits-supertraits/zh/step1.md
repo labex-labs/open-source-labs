@@ -1,6 +1,6 @@
 # 超级 trait
 
-Rust 没有 “继承”，但你可以将一个 trait 定义为另一个 trait 的超集。例如：
+Rust 没有“继承”，但你可以将一个 trait 定义为另一个 trait 的超集。例如：
 
 ```rust
 trait Person {

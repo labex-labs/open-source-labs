@@ -1,6 +1,6 @@
 # 最初のサブプロットにデータをプロットする
 
-matplotlib.pyplotのplot関数を使って、最初のサブプロットにx値のコサインをプロットします。x軸をラジアンで表すようにxunitsパラメータを使って指定します。
+matplotlib.pyplot の plot 関数を使って、最初のサブプロットに x 値のコサインをプロットします。x 軸をラジアンで表すように xunits パラメータを使って指定します。
 
 ```python
 from basic_units import cos

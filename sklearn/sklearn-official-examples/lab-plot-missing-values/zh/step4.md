@@ -1,6 +1,6 @@
-# 用0替换缺失值
+# 用 0 替换缺失值
 
-现在我们将估计在缺失值被替换为0的数据上的分数：
+现在我们将估计在缺失值被替换为 0 的数据上的分数：
 
 ```python
 def get_impute_zero_score(X_missing, y_missing):

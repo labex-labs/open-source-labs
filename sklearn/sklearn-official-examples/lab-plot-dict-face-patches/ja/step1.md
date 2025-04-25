@@ -1,6 +1,6 @@
 # データの読み込み
 
-まず、scikit - learnからOlivetti facesデータセットを読み込みます。
+まず、scikit - learn から Olivetti faces データセットを読み込みます。
 
 ```python
 from sklearn import datasets

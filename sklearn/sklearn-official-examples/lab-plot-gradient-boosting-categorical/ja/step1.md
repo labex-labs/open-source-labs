@@ -1,6 +1,6 @@
 # データセットの読み込み
 
-Scikit-Learnの`fetch_openml`関数を使ってエイムズ住宅データセットを読み込み、サンプルを高速化するために特徴量のサブセットを選択します。また、カテゴリカル特徴量を'category'型に変換します。
+Scikit-Learn の`fetch_openml`関数を使ってエイムズ住宅データセットを読み込み、サンプルを高速化するために特徴量のサブセットを選択します。また、カテゴリカル特徴量を'category'型に変換します。
 
 ```python
 from sklearn.datasets import fetch_openml

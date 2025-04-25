@@ -16,12 +16,12 @@ fn main() {
         let apple = Arc::clone(&apple);
 
         thread::spawn(move || {
-            // 由于使用了Arc，所以可以使用Arc变量指针位置处分配的值来创建线程。
+            // 由于使用了 Arc，所以可以使用 Arc 变量指针位置处分配的值来创建线程。
             println!("{:?}", apple);
         });
     }
 
-    // 确保所有从创建的线程中打印出的Arc实例都已输出。
+    // 确保所有从创建的线程中打印出的 Arc 实例都已输出。
     thread::sleep(Duration::from_secs(1));
 }
 ```

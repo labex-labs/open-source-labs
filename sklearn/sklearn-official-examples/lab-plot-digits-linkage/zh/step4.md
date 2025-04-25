@@ -1,6 +1,6 @@
 # 使用不同链接策略的凝聚聚类
 
-我们使用不同的链接策略进行凝聚聚类：ward、average、complete和single。对于所有策略，我们将聚类数设置为10。然后，我们使用不同颜色表示每个数字来绘制聚类结果。
+我们使用不同的链接策略进行凝聚聚类：ward、average、complete 和 single。对于所有策略，我们将聚类数设置为 10。然后，我们使用不同颜色表示每个数字来绘制聚类结果。
 
 ```python
 def plot_clustering(X_red, labels, title=None):

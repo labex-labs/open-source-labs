@@ -1,9 +1,9 @@
-# SGDを使って回帰器を訓練する
+# SGD を使って回帰器を訓練する
 
-次に、SGDRegressorクラスを使って回帰器を訓練します。二乗誤差（squared_error）損失関数とl2ペナルティを使用します。
+次に、SGDRegressor クラスを使って回帰器を訓練します。二乗誤差（squared_error）損失関数と l2 ペナルティを使用します。
 
 ```python
-# SGDを使って回帰器を訓練する
+# SGD を使って回帰器を訓練する
 reg = SGDRegressor(loss="squared_error", penalty="l2", max_iter=100, random_state=42)
 reg.fit(X_train, y_train)
 

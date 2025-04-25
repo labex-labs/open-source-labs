@@ -7,13 +7,13 @@ fig = plt.figure()
 s = plt.scatter([1, 2, 3], [4, 5, 6])
 ```
 
-ハイパーリンクを追加するには、散布図オブジェクトの`set_urls()`メソッドを使用します。このメソッドは、URLのリストを引数として取ります。更新されたコードは次のとおりです。
+ハイパーリンクを追加するには、散布図オブジェクトの`set_urls()`メソッドを使用します。このメソッドは、URL のリストを引数として取ります。更新されたコードは次のとおりです。
 
 ```python
 s.set_urls(['https://www.bbc.com/news', 'https://www.google.com/', None])
 ```
 
-最初の2つのマーカーはそれぞれ`https://www.bbc.com/news`と`https://www.google.com/`へのハイパーリンクを持ちます。3番目のマーカーはハイパーリンクを持ちません。最後に、`fig.savefig()`を使用してプロットをSVGファイルとして保存できます。
+最初の 2 つのマーカーはそれぞれ`https://www.bbc.com/news`と`https://www.google.com/`へのハイパーリンクを持ちます。3 番目のマーカーはハイパーリンクを持ちません。最後に、`fig.savefig()`を使用してプロットを SVG ファイルとして保存できます。
 
 ```python
 fig.savefig('scatter.svg')

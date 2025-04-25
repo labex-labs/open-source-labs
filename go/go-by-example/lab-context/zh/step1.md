@@ -60,7 +60,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 
-	// 与之前一样，我们在 “/hello” 路由上注册处理程序，
+	// 与之前一样，我们在“/hello”路由上注册处理程序，
 	// 并开始提供服务。
 	http.HandleFunc("/hello", hello)
 	http.ListenAndServe(":8090", nil)

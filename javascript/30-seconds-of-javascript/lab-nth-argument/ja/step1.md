@@ -16,9 +16,9 @@ const nthArg =
 
 ```js
 const third = nthArg(2);
-console.log(third(1, 2, 3)); // 出力: 3
-console.log(third(1, 2)); // 出力: undefined
+console.log(third(1, 2, 3)); // 出力：3
+console.log(third(1, 2)); // 出力：undefined
 
 const last = nthArg(-1);
-console.log(last(1, 2, 3, 4, 5)); // 出力: 5
+console.log(last(1, 2, 3, 4, 5)); // 出力：5
 ```

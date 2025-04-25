@@ -1,6 +1,6 @@
 # データがディスクにない場合はダウンロードする
 
-Wikipediaコンテンツの潜在的な構造化データの抽出であるDBpediaダンプからデータをダウンロードします。
+Wikipedia コンテンツの潜在的な構造化データの抽出である DBpedia ダンプからデータをダウンロードします。
 
 ```python
 from bz2 import BZ2File

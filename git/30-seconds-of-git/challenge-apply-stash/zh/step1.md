@@ -4,11 +4,11 @@
 
 ## 任务
 
-更改已贮藏在 `feature-branch` 分支上，贮藏消息是 “my changes”。
+更改已贮藏在 `feature-branch` 分支上，贮藏消息是“my changes”。
 
 1. 切换到 `git-playground` 目录。
-2. 切换到 `master` 分支，在修复漏洞后贮藏它，贮藏消息是 “fix the bug”。通过将 `file1.txt` 文件的内容更新为 “hello,world” 来修复漏洞。
-3. 切换到 `feature-branch` 分支，查看贮藏列表，并应用信息为 “my changes” 的贮藏。
+2. 切换到 `master` 分支，在修复漏洞后贮藏它，贮藏消息是“fix the bug”。通过将 `file1.txt` 文件的内容更新为“hello,world”来修复漏洞。
+3. 切换到 `feature-branch` 分支，查看贮藏列表，并应用信息为“my changes”的贮藏。
 
 这是 `README.md` 文件的内容：
 

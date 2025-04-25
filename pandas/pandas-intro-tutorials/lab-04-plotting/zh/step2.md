@@ -1,6 +1,6 @@
 # 加载数据
 
-本教程我们将使用空气质量数据。数据将从CSV文件加载到Pandas DataFrame中。
+本教程我们将使用空气质量数据。数据将从 CSV 文件加载到 Pandas DataFrame 中。
 
 ```python
 # 加载数据

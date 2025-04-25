@@ -1,6 +1,6 @@
 # グラフとサブプロットの作成
 
-`add_gridspec` メソッドを使って、2つのサブプロット付きのグラフを作成します。
+`add_gridspec` メソッドを使って、2 つのサブプロット付きのグラフを作成します。
 
 ```python
 fig = plt.figure(figsize=(6, 3), layout="constrained")

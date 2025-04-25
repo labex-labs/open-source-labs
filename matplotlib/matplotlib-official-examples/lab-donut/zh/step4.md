@@ -31,7 +31,7 @@ for i, (inside, outside) in enumerate(((1, 1), (1, -1), (-1, 1), (-1, -1))):
 
 ax.set_xlim(-2, 10)
 ax.set_ylim(-3, 2)
-ax.set_title('Mmm, 甜甜圈!')
+ax.set_title('Mmm, 甜甜圈！')
 ax.set_aspect(1.0)
 plt.show()
 ```

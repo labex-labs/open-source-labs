@@ -1,6 +1,6 @@
 # 执行网格搜索
 
-在这一步中，我们将使用GridSearchCV函数来执行网格搜索。我们将为决策树分类器模型的min_samples_split参数搜索最佳超参数。
+在这一步中，我们将使用 GridSearchCV 函数来执行网格搜索。我们将为决策树分类器模型的 min_samples_split 参数搜索最佳超参数。
 
 ```python
 gs = GridSearchCV(

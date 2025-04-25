@@ -1,6 +1,6 @@
-# スイスロールデータセットのLLEとt-SNE埋め込みの計算
+# スイスロールデータセットの LLE と t-SNE 埋め込みの計算
 
-`sklearn` の `manifold.locally_linear_embedding()` と `manifold.TSNE()` 関数をそれぞれ使って、スイスロールデータセットのLLEとt-SNE埋め込みを計算します。
+`sklearn` の `manifold.locally_linear_embedding()` と `manifold.TSNE()` 関数をそれぞれ使って、スイスロールデータセットの LLE と t-SNE 埋め込みを計算します。
 
 ```python
 sr_lle, sr_err = manifold.locally_linear_embedding(sr_points, n_neighbors=12, n_components=2)

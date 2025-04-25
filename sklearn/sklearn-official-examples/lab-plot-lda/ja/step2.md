@@ -1,10 +1,10 @@
-# LDAを実装する
+# LDA を実装する
 
-次に、scikit - learnの`LinearDiscriminantAnalysis`クラスを使用してLDAを実装します。3つの分類器を作成します。
+次に、scikit - learn の`LinearDiscriminantAnalysis`クラスを使用して LDA を実装します。3 つの分類器を作成します。
 
-- 収縮なしのLDA
-- Ledoit - Wolf収縮を伴うLDA
-- OAS収縮を伴うLDA
+- 収縮なしの LDA
+- Ledoit - Wolf 収縮を伴う LDA
+- OAS 収縮を伴う LDA
 
 ```python
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis

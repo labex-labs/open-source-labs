@@ -1,12 +1,12 @@
 # 正のラッソを使って正則化パスを計算する
 
-このステップでは、正のラッソ手法を使って正則化パスを計算し、matplotlibを使って結果を表示します。
+このステップでは、正のラッソ手法を使って正則化パスを計算し、matplotlib を使って結果を表示します。
 
 ```python
 # 正のラッソを使って正則化パスを計算する
 alphas_positive_lasso, coefs_positive_lasso, _ = lasso_path(X, y, eps=eps, positive=True)
 
-# matplotlibを使って結果を表示する
+# matplotlib を使って結果を表示する
 plt.figure(2)
 neg_log_alphas_positive_lasso = -np.log10(alphas_positive_lasso)
 for coef_l, coef_pl, c in zip(coefs_lasso, coefs_positive_lasso, colors):

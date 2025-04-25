@@ -12,4 +12,4 @@ clf = RandomizedSearchCV(
 clf = clf.fit(X_train_pca, y_train)
 ```
 
-変換後のデータを使用してSVM分類モデルを訓練します。`RandomizedSearchCV()`を使用して、SVMモデルの最適なハイパーパラメータを見つけます。
+変換後のデータを使用して SVM 分類モデルを訓練します。`RandomizedSearchCV()`を使用して、SVM モデルの最適なハイパーパラメータを見つけます。

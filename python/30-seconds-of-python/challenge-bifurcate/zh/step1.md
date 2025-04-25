@@ -12,7 +12,7 @@
 
 ```python
 bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
-# 输出: [['beep', 'boop', 'bar'], ['foo']]
+# 输出：[['beep', 'boop', 'bar'], ['foo']]
 ```
 
 在上述示例中，筛选条件是 `[True, True, False, True]`。`lst` 的前两个元素通过筛选条件，因此它们被添加到第一个列表中。第三个元素未通过筛选条件，因此它被添加到第二个列表中。第四个元素通过筛选条件，因此它被添加到第一个列表中。

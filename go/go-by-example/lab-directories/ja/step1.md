@@ -1,6 +1,6 @@
 # ディレクトリ
 
-現在の作業ディレクトリに新しいサブディレクトリを作成し、親ディレクトリを含むディレクトリ階層を作成し、ディレクトリの内容を一覧表示し、現在の作業ディレクトリを変更し、再帰的にディレクトリを訪問するGoプログラムを作成します。
+現在の作業ディレクトリに新しいサブディレクトリを作成し、親ディレクトリを含むディレクトリ階層を作成し、ディレクトリの内容を一覧表示し、現在の作業ディレクトリを変更し、再帰的にディレクトリを訪問する Go プログラムを作成します。
 
 - 現在の作業ディレクトリに新しいサブディレクトリを作成します。
 - 一時的なディレクトリを作成する場合、削除を`defer`で行うのが良い作法です。`os.RemoveAll`は、ディレクトリツリー全体を削除します（`rm -rf`と同様）。
@@ -30,7 +30,7 @@ subdir/parent/file3 false
 以下が完全なコードです：
 
 ```go
-// Goは、ファイルシステム内の*ディレクトリ*を操作するためのいくつかの便利な関数を持っています。
+// Go は、ファイルシステム内の*ディレクトリ*を操作するためのいくつかの便利な関数を持っています。
 
 package main
 
@@ -52,7 +52,7 @@ func main() {
 	err := os.Mkdir("subdir", 0755)
 	check(err)
 
-	// 一時的なディレクトリを作成する場合、削除を`defer`で行うのが良い作法です。`os.RemoveAll`は、ディレクトリツリー全体を削除します（`rm -rf`と同様）。
+	// 一時的なディレクトリを作成する場合、削除を `defer`で行うのが良い作法です。`os.RemoveAll` は、ディレクトリツリー全体を削除します（`rm -rf`と同様）。
 	defer os.RemoveAll("subdir")
 
 	// 新しい空のファイルを作成するためのヘルパー関数。
@@ -63,7 +63,7 @@ func main() {
 
 	createEmptyFile("subdir/file1")
 
-	// `MkdirAll`を使って、親ディレクトリを含むディレクトリ階層を作成します。これはコマンドラインの`mkdir -p`に似ています。
+	// `MkdirAll` を使って、親ディレクトリを含むディレクトリ階層を作成します。これはコマンドラインの`mkdir -p`に似ています。
 	err = os.MkdirAll("subdir/parent/child", 0755)
 	check(err)
 
@@ -71,7 +71,7 @@ func main() {
 	createEmptyFile("subdir/parent/file3")
 	createEmptyFile("subdir/parent/child/file4")
 
-	// `ReadDir`はディレクトリの内容を一覧表示し、`os.DirEntry`オブジェクトのスライスを返します。
+	// `ReadDir`はディレクトリの内容を一覧表示し、`os.DirEntry` オブジェクトのスライスを返します。
 	c, err := os.ReadDir("subdir/parent")
 	check(err)
 
@@ -80,11 +80,11 @@ func main() {
 		fmt.Println(" ", entry.Name(), entry.IsDir())
 	}
 
-	// `Chdir`を使って、現在の作業ディレクトリを変更できます。これは`cd`と同様です。
+	// `Chdir`を使って、現在の作業ディレクトリを変更できます。これは `cd` と同様です。
 	err = os.Chdir("subdir/parent/child")
 	check(err)
 
-	// 現在のディレクトリを一覧表示するときに、`subdir/parent/child`の内容が表示されます。
+	// 現在のディレクトリを一覧表示するときに、`subdir/parent/child` の内容が表示されます。
 	c, err = os.ReadDir(".")
 	check(err)
 
@@ -93,16 +93,16 @@ func main() {
 		fmt.Println(" ", entry.Name(), entry.IsDir())
 	}
 
-	// 元の場所に`cd`します。
+	// 元の場所に `cd` します。
 	err = os.Chdir("../../..")
 	check(err)
 
-	// 再帰的にディレクトリを訪問し、そのサブディレクトリすべてを含めることもできます。`Walk`は、訪問されるすべてのファイルまたはディレクトリを処理するためのコールバック関数を受け取ります。
+	// 再帰的にディレクトリを訪問し、そのサブディレクトリすべてを含めることもできます。`Walk` は、訪問されるすべてのファイルまたはディレクトリを処理するためのコールバック関数を受け取ります。
 	fmt.Println("Visiting subdir")
 	err = filepath.Walk("subdir", visit)
 }
 
-// `visit`は、`filepath.Walk`によって再帰的に見つけられたすべてのファイルまたはディレクトリに対して呼び出されます。
+// `visit`は、`filepath.Walk` によって再帰的に見つけられたすべてのファイルまたはディレクトリに対して呼び出されます。
 func visit(p string, info os.FileInfo, err error) error {
 	if err!= nil {
 		return err

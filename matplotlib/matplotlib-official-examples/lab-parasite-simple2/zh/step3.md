@@ -1,14 +1,14 @@
 # 创建图表
 
-现在我们将使用`parasite_axes`模块中的`HostAxes`和`twin()`函数来创建图表。`HostAxes`用于创建主图表，而`twin()`用于创建次y轴。
+现在我们将使用`parasite_axes`模块中的`HostAxes`和`twin()`函数来创建图表。`HostAxes`用于创建主图表，而`twin()`用于创建次 y 轴。
 
 ```python
 fig = plt.figure()
 
-# 创建HostAxes对象
+# 创建 HostAxes 对象
 ax_kms = fig.add_subplot(axes_class=HostAxes, aspect=1)
 
-# 使用变换后的坐标创建次y轴
+# 使用变换后的坐标创建次 y 轴
 aux_trans = mtransforms.Affine2D().scale(pm_to_kms, 1.)
 ax_pm = ax_kms.twin(aux_trans)
 
@@ -24,7 +24,7 @@ ax_kms.axis["bottom"].set_label("Linear velocity at 2.3 kpc [km/s]")
 ax_kms.axis["left"].set_label("FWHM [km/s]")
 ax_pm.axis["top"].set_label(r"Proper Motion [$''$/yr]")
 
-# 隐藏次y轴上的刻度标签
+# 隐藏次 y 轴上的刻度标签
 ax_pm.axis["right"].major_ticklabels.set_visible(False)
 
 # 设置图表范围

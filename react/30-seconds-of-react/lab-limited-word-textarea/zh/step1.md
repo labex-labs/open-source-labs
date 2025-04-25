@@ -23,7 +23,7 @@ const LimitedWordTextarea = ({ rows, cols, value, limit }) => {
     [limit, setContent]
   );
 
-  // 在content的初始值上调用setFormattedContent。
+  // 在 content 的初始值上调用 setFormattedContent。
   React.useEffect(() => {
     setFormattedContent(content);
   }, []);
@@ -56,4 +56,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 - 为保持一致性，重新排列了 `<textarea>` 组件中的属性。
 - 删除了不必要的空格和换行符。
 
-请点击右下角的“Go Live”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。
+请点击右下角的“Go Live”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。

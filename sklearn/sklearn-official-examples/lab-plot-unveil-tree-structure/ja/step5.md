@@ -6,7 +6,7 @@
 sample_ids = [0, 1]
 # 両方のサンプルが通過するノードを示すブール配列
 common_nodes = node_indicator.toarray()[sample_ids].sum(axis=0) == len(sample_ids)
-# 配列内の位置を使ってノードIDを取得する
+# 配列内の位置を使ってノード ID を取得する
 common_node_id = np.arange(n_nodes)[common_nodes]
 
 print(

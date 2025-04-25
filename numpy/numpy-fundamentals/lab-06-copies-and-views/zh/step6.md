@@ -15,10 +15,10 @@ y = x.reshape(3, 3)
 z = y[[2, 1]]
 
 # 检查 y 是否是视图
-print(y.base)  # 输出: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+print(y.base)  # 输出：[0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 # 检查 z 是否是副本
-print(z.base is None)  # 输出: True
+print(z.base is None)  # 输出：True
 ```
 
 在上述示例中，`y` 是视图，`z` 是副本。

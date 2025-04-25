@@ -1,6 +1,6 @@
 # 导入库
 
-我们将首先导入必要的库。我们将使用scikit-learn来执行最近邻分类和NCA。我们将使用matplotlib来绘制类别决策边界。
+我们将首先导入必要的库。我们将使用 scikit-learn 来执行最近邻分类和 NCA。我们将使用 matplotlib 来绘制类别决策边界。
 
 ```python
 import matplotlib.pyplot as plt

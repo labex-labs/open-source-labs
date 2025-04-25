@@ -1,6 +1,6 @@
-# Digitsデータセットを読み込む
+# Digits データセットを読み込む
 
-scikit-learnの`load_digits`関数を使ってDigitsデータセットを読み込みます。この関数は2つの配列を返します。入力データを含む`X_digits`とターゲットラベルを含む`y_digits`です。
+scikit-learn の`load_digits`関数を使って Digits データセットを読み込みます。この関数は 2 つの配列を返します。入力データを含む`X_digits`とターゲットラベルを含む`y_digits`です。
 
 ```python
 from sklearn import datasets

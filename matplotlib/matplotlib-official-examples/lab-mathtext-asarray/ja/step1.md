@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-必要なライブラリをインポートして始めましょう。これにはMatplotlibとBytesIOが含まれます。
+必要なライブラリをインポートして始めましょう。これには Matplotlib と BytesIO が含まれます。
 
 ```python
 from io import BytesIO

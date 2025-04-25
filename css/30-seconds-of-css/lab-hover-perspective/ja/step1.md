@@ -1,6 +1,6 @@
 # ホバー時の透視変換
 
-VM内には既に `index.html` と `style.css` が用意されています。
+VM 内には既に `index.html` と `style.css` が用意されています。
 
 要素にホバーアニメーション付きの透視変換を作成するには：
 
@@ -10,7 +10,7 @@ VM内には既に `index.html` と `style.css` が用意されています。
 
 3. 透視効果を左右にミラーリングするには、右の透視では `rotateY()` の値を負に変更します。たとえば `transform: perspective(1500px) rotateY(-15deg);` を使用します。
 
-例のHTML：
+例の HTML：
 
 ```html
 <div class="card-container">
@@ -19,7 +19,7 @@ VM内には既に `index.html` と `style.css` が用意されています。
 </div>
 ```
 
-例のCSS：
+例の CSS：
 
 ```css
 .image-card {
@@ -53,4 +53,4 @@ VM内には既に `index.html` と `style.css` が用意されています。
 }
 ```
 
-画面右下の「Go Live」をクリックして8080番ポートでウェブサービスを実行してください。その後、**Web 8080** タブを更新してウェブページをプレビューできます。
+画面右下の「Go Live」をクリックして 8080 番ポートでウェブサービスを実行してください。その後、**Web 8080** タブを更新してウェブページをプレビューできます。

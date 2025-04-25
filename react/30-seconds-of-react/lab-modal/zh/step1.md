@@ -10,7 +10,7 @@
 - 它使用`useEffect()`钩子向`Document`添加或移除`keydown`事件监听器，为每个事件调用`keydownHandler`。
 - 它添加了一个样式化的`<span>`元素作为关闭按钮，点击时调用`onClose`。
 - 它使用从父组件传递下来的`isVisible`属性来确定是否应该显示模态框。
-- 它包含一个CSS文件，用于设置模态框组件的样式。
+- 它包含一个 CSS 文件，用于设置模态框组件的样式。
 
 ```jsx
 const Modal = ({ isVisible = false, title, content, footer, onClose }) => {
@@ -154,4 +154,4 @@ const App = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
-请点击右下角的“Go Live”在端口8080上运行Web服务。然后，你可以刷新**Web 8080**标签页来预览网页。
+请点击右下角的“Go Live”在端口 8080 上运行 Web 服务。然后，你可以刷新**Web 8080**标签页来预览网页。

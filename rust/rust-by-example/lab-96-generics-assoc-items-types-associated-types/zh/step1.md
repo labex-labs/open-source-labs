@@ -71,9 +71,9 @@ fn main() {
     println!("容器中是否包含 {} 和 {}: {}",
         &number_1, &number_2,
         container.contains(&number_1, &number_2));
-    println!("第一个数字: {}", container.first());
-    println!("最后一个数字: {}", container.last());
+    println!("第一个数字：{}", container.first());
+    println!("最后一个数字：{}", container.last());
 
-    println!("差值是: {}", difference(&container));
+    println!("差值是：{}", difference(&container));
 }
 ```

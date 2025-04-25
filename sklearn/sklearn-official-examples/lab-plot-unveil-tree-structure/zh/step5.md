@@ -6,7 +6,7 @@
 sample_ids = [0, 1]
 # 布尔数组，指示两个样本都经过的节点
 common_nodes = node_indicator.toarray()[sample_ids].sum(axis=0) == len(sample_ids)
-# 使用数组中的位置获取节点ID
+# 使用数组中的位置获取节点 ID
 common_node_id = np.arange(n_nodes)[common_nodes]
 
 print(

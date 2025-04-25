@@ -5,7 +5,7 @@
 ```python
 from sklearn.manifold import LocallyLinearEmbedding
 
-# 创建LLE算法的实例
+# 创建 LLE 算法的实例
 lle = LocallyLinearEmbedding(n_components=2)
 
 # 将算法应用于数据并将数据转换到低维空间

@@ -10,7 +10,7 @@
 4. 将 `bouncing-loader` 动画应用于三个弹跳圆圈中的每一个。
 5. 为每个圆圈使用不同的 `animation-delay` 并设置 `animation-direction: alternate` 以创建适当的效果。
 
-以下是HTML代码：
+以下是 HTML 代码：
 
 ```html
 <div class="bouncing-loader">
@@ -20,7 +20,7 @@
 </div>
 ```
 
-以下是CSS代码：
+以下是 CSS 代码：
 
 ```css
 @keyframes bouncing-loader {
@@ -53,4 +53,4 @@
 }
 ```
 
-请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。
+请点击右下角的“Go Live”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。

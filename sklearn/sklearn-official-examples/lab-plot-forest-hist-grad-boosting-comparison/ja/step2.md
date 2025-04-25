@@ -1,6 +1,6 @@
 # モデルとパラメータグリッドの定義
 
-scikit-learnの`RandomForestRegressor`、`HistGradientBoostingRegressor`、および`GridSearchCV`クラスを使って、ランダムフォレストとヒストグラム勾配ブースティングの2つのモデルとそれに対応するパラメータグリッドを定義します。また、並列処理に使用するホストマシン上の物理コア数も設定します。
+scikit-learn の`RandomForestRegressor`、`HistGradientBoostingRegressor`、および`GridSearchCV`クラスを使って、ランダムフォレストとヒストグラム勾配ブースティングの 2 つのモデルとそれに対応するパラメータグリッドを定義します。また、並列処理に使用するホストマシン上の物理コア数も設定します。
 
 ```python
 import joblib

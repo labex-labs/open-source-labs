@@ -1,6 +1,6 @@
 # 複雑なデータのアウトライア検出
 
-「バナナ」形状のWineデータセットに対してアウトライア検出を行います。以前と同じ3つの識別器を使用し、結果をプロットします。
+「バナナ」形状の Wine データセットに対してアウトライア検出を行います。以前と同じ 3 つの識別器を使用し、結果をプロットします。
 
 ```python
 # Learn a frontier for outlier detection with several classifiers

@@ -1,6 +1,6 @@
 # 创建一个随机数据集
 
-我们将使用NumPy创建一个随机数据集，并给它添加一些噪声。
+我们将使用 NumPy 创建一个随机数据集，并给它添加一些噪声。
 
 ```python
 rng = np.random.RandomState(1)

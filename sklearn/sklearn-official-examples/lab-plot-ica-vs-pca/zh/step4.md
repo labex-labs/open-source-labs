@@ -1,6 +1,6 @@
 # 绘制结果
 
-在这一步中，我们使用matplotlib绘制结果。
+在这一步中，我们使用 matplotlib 绘制结果。
 
 ```python
 import matplotlib.pyplot as plt

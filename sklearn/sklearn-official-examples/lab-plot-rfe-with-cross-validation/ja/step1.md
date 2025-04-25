@@ -1,6 +1,6 @@
 # データ生成
 
-scikit-learnの`make_classification`関数を使って分類タスクを生成します。15個の特徴を持つ500個のサンプルを生成します。そのうち3個は情報的で、2個は冗長で、10個は非情報的です。
+scikit-learn の`make_classification`関数を使って分類タスクを生成します。15 個の特徴を持つ 500 個のサンプルを生成します。そのうち 3 個は情報的で、2 個は冗長で、10 個は非情報的です。
 
 ```python
 from sklearn.datasets import make_classification

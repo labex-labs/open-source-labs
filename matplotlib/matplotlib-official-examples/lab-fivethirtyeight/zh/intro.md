@@ -1,10 +1,10 @@
 # 简介
 
-Matplotlib 是 Python 中一个流行的数据可视化库。它提供了一个易于使用的接口，用于创建从简单折线图到复杂热图等各种各样的可视化图表。在本实验中，我们将介绍 Matplotlib 的基础知识，并使用 “fivethirtyeight” 样式表创建一个简单的折线图。
+Matplotlib 是 Python 中一个流行的数据可视化库。它提供了一个易于使用的接口，用于创建从简单折线图到复杂热图等各种各样的可视化图表。在本实验中，我们将介绍 Matplotlib 的基础知识，并使用“fivethirtyeight”样式表创建一个简单的折线图。
 
 ## 虚拟机使用提示
 
-虚拟机启动完成后，点击左上角切换到 “笔记本” 标签页，以访问 Jupyter Notebook 进行练习。
+虚拟机启动完成后，点击左上角切换到“笔记本”标签页，以访问 Jupyter Notebook 进行练习。
 
 有时，你可能需要等待几秒钟让 Jupyter Notebook 完成加载。由于 Jupyter Notebook 的限制，操作验证无法自动化。
 

@@ -1,6 +1,6 @@
-# RGBAxesプロットを作成する
+# RGBAxes プロットを作成する
 
-このステップでは、`RGBAxes`クラスを使ってRGBAxesプロットを作成します。`RGBAxes`オブジェクトの`imshow_rgb()`メソッドを使ってRGB画像を表示します。
+このステップでは、`RGBAxes`クラスを使って RGBAxes プロットを作成します。`RGBAxes`オブジェクトの`imshow_rgb()`メソッドを使って RGB 画像を表示します。
 
 ```python
 def demo_rgb1():

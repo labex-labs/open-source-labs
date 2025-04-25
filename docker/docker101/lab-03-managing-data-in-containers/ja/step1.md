@@ -1,8 +1,8 @@
 # ボリューム
 
-「データボリューム」または「ボリューム」は、Dockerの「ユニオンファイルシステム」を迂回するディレクトリです。
+「データボリューム」または「ボリューム」は、Docker の「ユニオンファイルシステム」を迂回するディレクトリです。
 
-ボリュームには3種類あります。
+ボリュームには 3 種類あります。
 
 - 匿名ボリューム
 - 名前付きボリューム
@@ -10,9 +10,9 @@
 
 ## 匿名ボリューム
 
-人気のあるオープンソースのNoSQLデータベースであるCouchDBのインスタンスを作成し、データベースのデータファイルを保存するために「匿名ボリューム」を使用しましょう。
+人気のあるオープンソースの NoSQL データベースである CouchDB のインスタンスを作成し、データベースのデータファイルを保存するために「匿名ボリューム」を使用しましょう。
 
-CouchDBのインスタンスを実行するには、Docker HubのCouchDBイメージを[https://hub.docker.com/\_/couchdb](https://hub.docker.com/_/couchdb)から使用します。ドキュメントによると、CouchDBの既定値は、「独自の内部ボリューム管理を使用して、ホストシステムのディスクにデータベースファイルを書き込む」ことです。
+CouchDB のインスタンスを実行するには、Docker Hub の CouchDB イメージを[https://hub.docker.com/\_/couchdb](https://hub.docker.com/_/couchdb)から使用します。ドキュメントによると、CouchDB の既定値は、「独自の内部ボリューム管理を使用して、ホストシステムのディスクにデータベースファイルを書き込む」ことです。
 
 次のコマンドを実行します。
 
@@ -20,7 +20,7 @@ CouchDBのインスタンスを実行するには、Docker HubのCouchDBイメ�
 docker run -d -p 5984:5984 --name my-couchdb -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
 ```
 
-CouchDBは匿名ボリュームを作成し、ハッシュ付きの名前を生成します。ホストシステムのボリュームを確認します。
+CouchDB は匿名ボリュームを作成し、ハッシュ付きの名前を生成します。ホストシステムのボリュームを確認します。
 
 ```bash
 labex:~/ $ docker volume ls
@@ -51,7 +51,7 @@ $ docker volume inspect $VOLUME
 ]
 ```
 
-DockerがDockerホストファイルシステムの`/var/lib/docker/volumes/$VOLUME_NAME/_data`以下にボリュームを作成して管理していることがわかります。これは、ホストマシン上のパスではなく、Dockerが管理するファイルシステムの一部であることに注意してください。
+Docker が Docker ホストファイルシステムの`/var/lib/docker/volumes/$VOLUME_NAME/_data`以下にボリュームを作成して管理していることがわかります。これは、ホストマシン上のパスではなく、Docker が管理するファイルシステムの一部であることに注意してください。
 
 新しいデータベース「mydb」を作成し、「hello world」のメッセージを持つ新しいドキュメントを挿入します。
 
@@ -108,7 +108,7 @@ f4dbf9ee7513   busybox                               "sh"                     2 
 
 ```
 
-次に、`--volumes-from`オプションを使用して、`busybox1`によって作成されたボリュームを共有するための2番目の`busybox`コンテナ`busybox2`を作成します。
+次に、`--volumes-from`オプションを使用して、`busybox1`によって作成されたボリュームを共有するための 2 番目の`busybox`コンテナ`busybox2`を作成します。
 
 ```bash
 $ docker run --rm -it --name busybox2 --volumes-from busybox1 busybox sh
@@ -122,7 +122,7 @@ hello from busybox1
 / # exit
 ```
 
-Dockerは、`--volumes-from`オプションを使用して共有できる匿名ボリュームを作成し、新しい匿名ボリュームを作成しました。
+Docker は、`--volumes-from`オプションを使用して共有できる匿名ボリュームを作成し、新しい匿名ボリュームを作成しました。
 
 ```bash
 labex:~/ $ docker volume ls
@@ -144,7 +144,7 @@ clear
 
 ## 名前付きボリューム
 
-「名前付きボリューム」と「匿名ボリューム」は、Dockerがそれらの配置場所を管理する点で似ています。ただし、「名前付きボリューム」は、コンテナディレクトリにマウントする際に名前で参照できます。これは、複数のコンテナ間でボリュームを共有したい場合に便利です。
+「名前付きボリューム」と「匿名ボリューム」は、Docker がそれらの配置場所を管理する点で似ています。ただし、「名前付きボリューム」は、コンテナディレクトリにマウントする際に名前で参照できます。これは、複数のコンテナ間でボリュームを共有したい場合に便利です。
 
 まず、「名前付きボリューム」を作成します。
 
@@ -160,13 +160,13 @@ DRIVER VOLUME NAME
 local my-couchdb-data-volume
 ```
 
-次に、「名前付きボリューム」を使用して、名前が「my-couchdb-name-vol」のCouchDBコンテナを作成します。
+次に、「名前付きボリューム」を使用して、名前が「my-couchdb-name-vol」の CouchDB コンテナを作成します。
 
 ```bash
 docker run -d -p 59840:5984 --name my-couchdb-name-vol -v my-couchdb-data-volume:/opt/couchdb/data -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
 ```
 
-CouchDBコンテナが実行され、インスタンスが利用可能になるまで待ちます。
+CouchDB コンテナが実行され、インスタンスが利用可能になるまで待ちます。
 
 新しいデータベース「mydb」を作成し、「hello world」のメッセージを持つ新しいドキュメントを挿入します。
 
@@ -191,7 +191,7 @@ drwxr-xr-x 4 5984 5984 4096 Jan 23 07:30 shards
 / # exit
 ```
 
-特権付きの権限で`busybox`コンテナを実行し、プロセスIDを`host`に設定してホストシステムを調べ、Dockerが管理するディレクトリに移動することで、Dockerが管理するボリュームのファイルシステムを確認できます。
+特権付きの権限で`busybox`コンテナを実行し、プロセス ID を`host`に設定してホストシステムを調べ、Docker が管理するディレクトリに移動することで、Docker が管理するボリュームのファイルシステムを確認できます。
 
 ```bash
 docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
@@ -215,9 +215,9 @@ clear
 
 ## ホストボリューム
 
-ホストマシンから直接ボリュームディレクトリにアクセスしたい場合、Dockerが管理するディレクトリではなく、「ホストボリューム」を作成できます。
+ホストマシンから直接ボリュームディレクトリにアクセスしたい場合、Docker が管理するディレクトリではなく、「ホストボリューム」を作成できます。
 
-現在の作業ディレクトリ（コマンド`pwd`で示される）にある`data`というディレクトリを使用します。または、ホストマシン上の独自のデータディレクトリを選択します。たとえば、`/home/couchdb/data`です。まだ存在しない場合は、dockerが`$(pwd)/data`ディレクトリを作成します。CouchDBの既定のデータディレクトリであるコンテナディレクトリ`/opt/couchdb/data`に、CouchDBコンテナ内の「ホストボリューム」をマウントします。
+現在の作業ディレクトリ（コマンド`pwd`で示される）にある`data`というディレクトリを使用します。または、ホストマシン上の独自のデータディレクトリを選択します。たとえば、`/home/couchdb/data`です。まだ存在しない場合は、docker が`$(pwd)/data`ディレクトリを作成します。CouchDB の既定のデータディレクトリであるコンテナディレクトリ`/opt/couchdb/data`に、CouchDB コンテナ内の「ホストボリューム」をマウントします。
 
 次のコマンドを実行します。
 
@@ -236,7 +236,7 @@ drwxr-x--- 25 labex labex 4096 Aug 29 14:14..
 drwxr-xr-x 3 5984 5984 4096 Aug 29 14:14 data
 ```
 
-そして、CouchDBがここにデータファイルを作成したことを確認します。
+そして、CouchDB がここにデータファイルを作成したことを確認します。
 
 ```bash
 $ ls -al data
@@ -248,7 +248,7 @@ drwxr-xr-x 2 5984 5984 4096 Aug 29 14:14.delete
 -rw-r--r-- 1 5984 5984 8385 Aug 29 14:14 _nodes.couch
 ```
 
-また、dockerが管理するボリュームは作成されていないことを確認します。なぜなら、今回は「ホストボリューム」を使用しているからです。
+また、docker が管理するボリュームは作成されていないことを確認します。なぜなら、今回は「ホストボリューム」を使用しているからです。
 
 ```bash
 docker volume ls
@@ -273,7 +273,7 @@ curl -X PUT -u admin:passw0rd1 http://127.0.0.1:5984/mydb
 curl -X PUT -u admin:passw0rd1 http://127.0.0.1:5984/mydb/1 -d '{"msg": "hello world"}'
 ```
 
-CouchDBが`shards`フォルダを作成したことに注意してください。
+CouchDB が`shards`フォルダを作成したことに注意してください。
 
 ```bash
 $ ls -al data
@@ -307,7 +307,7 @@ drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15..
 -rw-r--r-- 1 5984 5984 8346 Aug 29 14:15 mydb.1693289721.couch
 ```
 
-[シャード](https://docs.couchdb.org/en/stable/cluster/sharding.html)は、データベース内のデータの水平分割です。データをシャードに分割し、各シャードのコピーをクラスタ内の異なるノードに分散させることで、ノードの損失に対するデータの耐久性を高めます。CouchDBは自動的にデータベースをシャード化し、ドキュメントのサブセットをノード間で分散させます。
+[シャード](https://docs.couchdb.org/en/stable/cluster/sharding.html)は、データベース内のデータの水平分割です。データをシャードに分割し、各シャードのコピーをクラスタ内の異なるノードに分散させることで、ノードの損失に対するデータの耐久性を高めます。CouchDB は自動的にデータベースをシャード化し、ドキュメントのサブセットをノード間で分散させます。
 
 クリーンアップします。
 

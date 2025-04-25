@@ -10,7 +10,7 @@
 
 ### 步骤 1：创建一个新文件
 
-首先，在 WebIDE 中打开一个新文件。你可以通过点击 “File” 菜单，然后选择 “New File” 来完成。将这个文件命名为 `restricted_stock.py`，并将其保存到 `/home/labex/project` 目录中。这个文件将包含我们使用 `__setattr__` 来控制属性赋值的类定义。
+首先，在 WebIDE 中打开一个新文件。你可以通过点击“File”菜单，然后选择“New File”来完成。将这个文件命名为 `restricted_stock.py`，并将其保存到 `/home/labex/project` 目录中。这个文件将包含我们使用 `__setattr__` 来控制属性赋值的类定义。
 
 ### 步骤 2：向 `restricted_stock.py` 添加代码
 

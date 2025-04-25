@@ -7,7 +7,7 @@
 对于这个挑战，让我们使用来自 `https://github.com/labex-labs/git-playground` 的存储库。
 
 1. 导航到该目录并配置身份。
-2. 创建并切换到名为 `feature1` 的分支，创建一个名为 `file.txt` 的文件，并在其中写入 “feature 1”，将其添加到暂存区并使用消息 “Add feature 1” 提交。
+2. 创建并切换到名为 `feature1` 的分支，创建一个名为 `file.txt` 的文件，并在其中写入“feature 1”，将其添加到暂存区并使用消息“Add feature 1”提交。
 3. 切换回 `master` 分支，合并 `feature1` 分支，禁用前向合并，保存并退出，不更改文本。
 4. 查看排除合并提交后的所有提交的简短摘要。
 

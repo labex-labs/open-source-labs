@@ -2,7 +2,7 @@
 
 ```python
 # このデータに分類器を適用するには、画像をフラット化して
-# データを (サンプル数, 特徴量) の行列に変換する必要があります。
+# データを (サンプル数，特徴量) の行列に変換する必要があります。
 n_samples = len(digits.data)
 data = digits.data / 16.0
 data -= data.mean(axis=0)
@@ -10,14 +10,14 @@ data -= data.mean(axis=0)
 # 最初の半分の手書き数字で学習します
 data_train, targets_train = (data[: n_samples // 2], digits.target[: n_samples // 2])
 
-# 次に、後半の手書き数字の値を予測します:
+# 次に、後半の手書き数字の値を予測します：
 data_test, targets_test = (data[n_samples // 2 :], digits.target[n_samples // 2 :])
 
-# 分類器を作成します: サポートベクトル分類器
+# 分類器を作成します：サポートベクトル分類器
 kernel_svm = svm.SVC(gamma=0.2)
 linear_svm = svm.LinearSVC(dual="auto")
 
-# カーネル近似と線形SVMからパイプラインを作成します
+# カーネル近似と線形 SVM からパイプラインを作成します
 feature_map_fourier = RBFSampler(gamma=0.2, random_state=1)
 feature_map_nystroem = Nystroem(gamma=0.2, random_state=1)
 
@@ -31,7 +31,7 @@ nystroem_approx_svm = pipeline.Pipeline([
   ("svm", svm.LinearSVC(dual="auto"))
 ])
 
-# 線形およびカーネルSVMを使って学習と予測を行います:
+# 線形およびカーネル SVM を使って学習と予測を行います：
 kernel_svm_time = time()
 kernel_svm.fit(data_train, targets_train)
 kernel_svm_score = kernel_svm.score(data_test, targets_test)
@@ -65,21 +65,21 @@ for D in sample_sizes:
   nystroem_scores.append(nystroem_score)
   fourier_scores.append(fourier_score)
 
-# 結果をプロットします:
+# 結果をプロットします：
 plt.figure(figsize=(16, 4))
 accuracy = plt.subplot(121)
-# 計測時間用の2番目のy軸
+# 計測時間用の 2 番目の y 軸
 timescale = plt.subplot(122)
 
-accuracy.plot(sample_sizes, nystroem_scores, label="Nystroem近似カーネル")
-timescale.plot(sample_sizes, nystroem_times, "--", label="Nystroem近似カーネル")
+accuracy.plot(sample_sizes, nystroem_scores, label="Nystroem 近似カーネル")
+timescale.plot(sample_sizes, nystroem_times, "--", label="Nystroem 近似カーネル")
 
-accuracy.plot(sample_sizes, fourier_scores, label="Fourier近似カーネル")
-timescale.plot(sample_sizes, fourier_times, "--", label="Fourier近似カーネル")
+accuracy.plot(sample_sizes, fourier_scores, label="Fourier 近似カーネル")
+timescale.plot(sample_sizes, fourier_times, "--", label="Fourier 近似カーネル")
 
-# 正確なRBFと線形カーネル用の水平線:
-accuracy.plot([sample_sizes[0], sample_sizes[-1]], [linear_svm_score, linear_svm_score], label="線形SVM")
-timescale.plot([sample_sizes[0], sample_sizes[-1]], [linear_svm_time, linear_svm_time], "--", label="線形SVM")
+# 正確な RBF と線形カーネル用の水平線：
+accuracy.plot([sample_sizes[0], sample_sizes[-1]], [linear_svm_score, linear_svm_score], label="線形 SVM")
+timescale.plot([sample_sizes[0], sample_sizes[-1]], [linear_svm_time, linear_svm_time], "--", label="線形 SVM")
 
 accuracy.plot([sample_sizes[0], sample_sizes[-1]], [kernel_svm_score, kernel_svm_score], label="RBF SVM")
 timescale.plot([sample_sizes[0], sample_sizes[-1]], [kernel_svm_time, kernel_svm_time], "--", label="RBF SVM")

@@ -1,6 +1,6 @@
 # テストエラーの計算
 
-次に、アンサンブルに追加される`n_estimators`の各新しいハズレ木に対して、離散的なAdaboost分類器と実際のAdaboost分類器のテストエラーを計算しましょう。
+次に、アンサンブルに追加される`n_estimators`の各新しいハズレ木に対して、離散的な Adaboost 分類器と実際の Adaboost 分類器のテストエラーを計算しましょう。
 
 ```python
 import numpy as np

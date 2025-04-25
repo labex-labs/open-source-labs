@@ -23,7 +23,7 @@ const URLJoin = (...args) =>
     .replace("&", "?");
 ```
 
-使用例:
+使用例：
 
 ```js
 URLJoin("http://www.google.com", "a", "/b/cd", "?foo=123", "?bar=foo");

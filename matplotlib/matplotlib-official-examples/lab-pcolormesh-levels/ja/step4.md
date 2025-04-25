@@ -1,6 +1,6 @@
 # 規範を使ったレベルの作成
 
-`.axes.Axes.pcolor`、`.axes.Axes.pcolormesh`、`.axes.Axes.imshow`タイプのプロットにおいて、NormalizationとColormapインスタンスを組み合わせて「レベル」を描画する方法を示します。これは、contour/contourfのレベルキーワード引数と同じように行います。
+`.axes.Axes.pcolor`、`.axes.Axes.pcolormesh`、`.axes.Axes.imshow`タイプのプロットにおいて、Normalization と Colormap インスタンスを組み合わせて「レベル」を描画する方法を示します。これは、contour/contourf のレベルキーワード引数と同じように行います。
 
 ```python
 import matplotlib.pyplot as plt
@@ -12,14 +12,14 @@ from matplotlib.ticker import MaxNLocator
 # 解像度を上げるためにこれらを小さくします
 dx, dy = 0.05, 0.05
 
-# xとyの境界のための2つの2次元グリッドを生成します
+# x と y の境界のための 2 つの 2 次元グリッドを生成します
 y, x = np.mgrid[slice(1, 5 + dy, dy),
                 slice(1, 5 + dx, dx)]
 
 z = np.sin(x)**10 + np.cos(10 + y*x) * np.cos(x)
 
-# xとyは境界なので、zはそれらの境界の「内側」の値でなければなりません。
-# したがって、z配列から最後の値を削除します。
+# x と y は境界なので、z はそれらの境界の「内側」の値でなければなりません。
+# したがって、z 配列から最後の値を削除します。
 z = z[:-1, :-1]
 levels = MaxNLocator(nbins=15).tick_values(z.min(), z.max())
 
@@ -43,7 +43,7 @@ cf = ax1.contourf(x[:-1, :-1] + dx/2.,
 fig.colorbar(cf, ax=ax1)
 ax1.set_title('contourf with levels')
 
-# サブプロット間の間隔を調整して、`ax1`のタイトルと`ax0`の目盛りラベルが
+# サブプロット間の間隔を調整して、`ax1`のタイトルと `ax0` の目盛りラベルが
 # 重ならないようにします
 fig.tight_layout()
 

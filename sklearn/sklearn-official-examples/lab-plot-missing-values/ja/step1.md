@@ -18,7 +18,7 @@ y_diabetes = y_diabetes[:400]
 def add_missing_values(X_full, y_full):
     n_samples, n_features = X_full.shape
 
-    # 75%の行に欠損値を追加する
+    # 75% の行に欠損値を追加する
     missing_rate = 0.75
     n_missing_samples = int(n_samples * missing_rate)
 

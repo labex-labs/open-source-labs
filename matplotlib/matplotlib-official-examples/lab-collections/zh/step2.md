@@ -12,4 +12,4 @@ yy = r * np.cos(theta)
 spiral = np.column_stack([xx, yy])
 ```
 
-下一步是使用Numpy创建螺旋线。我们将使用正弦和余弦函数来创建螺旋线。
+下一步是使用 Numpy 创建螺旋线。我们将使用正弦和余弦函数来创建螺旋线。

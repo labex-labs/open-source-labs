@@ -1,6 +1,6 @@
 # 导入必要的库并创建图像数组
 
-我们首先导入必要的库，并使用NumPy库中的`arange`和`reshape`函数创建四个10x10的图像数组。
+我们首先导入必要的库，并使用 NumPy 库中的`arange`和`reshape`函数创建四个 10x10 的图像数组。
 
 ```python
 import matplotlib.pyplot as plt

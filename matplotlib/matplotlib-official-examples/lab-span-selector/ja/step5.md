@@ -1,6 +1,6 @@
 # コールバック関数を定義する
 
-Span Selectorを使用して範囲が選択されたときに呼び出されるコールバック関数を定義します。
+Span Selector を使用して範囲が選択されたときに呼び出されるコールバック関数を定義します。
 
 ```python
 def onselect(xmin, xmax):

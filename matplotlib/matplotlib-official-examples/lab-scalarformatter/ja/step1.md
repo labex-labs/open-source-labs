@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-PythonのMatplotlibライブラリを使うには、Python環境にインポートする必要があります。また、例としてのグラフにデータを生成するためにNumPyライブラリも使います。
+Python の Matplotlib ライブラリを使うには、Python 環境にインポートする必要があります。また、例としてのグラフにデータを生成するために NumPy ライブラリも使います。
 
 ```python
 import matplotlib.pyplot as plt

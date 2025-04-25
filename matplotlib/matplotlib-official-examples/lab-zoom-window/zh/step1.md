@@ -1,6 +1,6 @@
 # 设置环境
 
-首先，我们需要设置Python环境并导入必要的库。
+首先，我们需要设置 Python 环境并导入必要的库。
 
 ```python
 import matplotlib.pyplot as plt

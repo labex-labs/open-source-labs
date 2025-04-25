@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。ここでは、MatplotlibライブラリとNumPyを使ってランダムなデータを生成します。
+まず、必要なライブラリをインポートする必要があります。ここでは、Matplotlib ライブラリと NumPy を使ってランダムなデータを生成します。
 
 ```python
 import matplotlib.pyplot as plt

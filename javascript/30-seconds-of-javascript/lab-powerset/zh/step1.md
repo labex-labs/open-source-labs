@@ -1,8 +1,8 @@
-# 如何在JavaScript中生成幂集
+# 如何在 JavaScript 中生成幂集
 
-要在JavaScript中生成给定数字数组的幂集，请遵循以下步骤：
+要在 JavaScript 中生成给定数字数组的幂集，请遵循以下步骤：
 
-1. 打开终端/SSH并输入 `node` 以开始练习编码。
+1. 打开终端/SSH 并输入 `node` 以开始练习编码。
 2. 使用 `Array.prototype.reduce()` 方法结合 `Array.prototype.map()` 方法来遍历元素，并将它们组合成一个包含所有组合的数组。
 3. 实现以下代码：
 

@@ -1,6 +1,6 @@
 # ベースラインパイプライン - カテゴリカル特徴の削除
 
-カテゴリカル特徴を削除し、HistGradientBoostingRegressor推定器を学習するパイプラインを作成します。
+カテゴリカル特徴を削除し、HistGradientBoostingRegressor 推定器を学習するパイプラインを作成します。
 
 ```python
 from sklearn.ensemble import HistGradientBoostingRegressor

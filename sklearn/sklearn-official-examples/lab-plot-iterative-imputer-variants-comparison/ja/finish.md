@@ -1,3 +1,3 @@
 # まとめ
 
-この実験では、Scikit-Learnの`IterativeImputer`クラスを使ってデータセットの欠損値を補完する方法を学びました。`SimpleImputer`を使った平均値と中央値による欠損値補完と、`IterativeImputer`を使った異なる推定器を用いて、異なる欠損値補完戦略を比較しました。カリフォルニア住宅データセットのこの特定の欠損値のパターンに対して、`BayesianRidge`と`RandomForestRegressor`が最良の結果をもたらすことがわかりました。
+この実験では、Scikit-Learn の`IterativeImputer`クラスを使ってデータセットの欠損値を補完する方法を学びました。`SimpleImputer`を使った平均値と中央値による欠損値補完と、`IterativeImputer`を使った異なる推定器を用いて、異なる欠損値補完戦略を比較しました。カリフォルニア住宅データセットのこの特定の欠損値のパターンに対して、`BayesianRidge`と`RandomForestRegressor`が最良の結果をもたらすことがわかりました。

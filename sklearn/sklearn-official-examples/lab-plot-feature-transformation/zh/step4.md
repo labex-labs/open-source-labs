@@ -1,6 +1,6 @@
 # 使用随机森林和梯度提升进行特征转换
 
-现在，我们将创建两个管道，它们将使用上述嵌入作为预处理阶段。特征转换将通过调用`apply`方法来实现。然后，我们将随机森林或梯度提升与逻辑回归进行管道连接。然而，scikit-learn中的管道期望调用`transform`。因此，我们将对`apply`的调用包装在一个`FunctionTransformer`中。
+现在，我们将创建两个管道，它们将使用上述嵌入作为预处理阶段。特征转换将通过调用`apply`方法来实现。然后，我们将随机森林或梯度提升与逻辑回归进行管道连接。然而，scikit-learn 中的管道期望调用`transform`。因此，我们将对`apply`的调用包装在一个`FunctionTransformer`中。
 
 ```python
 from sklearn.preprocessing import FunctionTransformer

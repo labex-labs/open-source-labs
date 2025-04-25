@@ -1,6 +1,6 @@
-# 3Dのステムプロットを作成する
+# 3D のステムプロットを作成する
 
-このステップでは、Matplotlibの`stem`関数を使って3Dのステムプロットを作成します。`stem`関数にx座標、y座標、z座標を引数として渡します。
+このステップでは、Matplotlib の`stem`関数を使って 3D のステムプロットを作成します。`stem`関数に x 座標、y 座標、z 座標を引数として渡します。
 
 ```python
 fig, ax = plt.subplots(subplot_kw=dict(projection='3d'))

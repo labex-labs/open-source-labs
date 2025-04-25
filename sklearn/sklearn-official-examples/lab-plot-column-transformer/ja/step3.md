@@ -1,6 +1,6 @@
 # 分類パイプライン
 
-データセットから特徴を抽出し、それらを結合し、結合された特徴セットで分類器を学習するパイプラインを作成します。これを達成するために、Scikit-Learnの「Pipeline」と「ColumnTransformer」を使用します。
+データセットから特徴を抽出し、それらを結合し、結合された特徴セットで分類器を学習するパイプラインを作成します。これを達成するために、Scikit-Learn の「Pipeline」と「ColumnTransformer」を使用します。
 
 ```python
 pipeline = Pipeline(

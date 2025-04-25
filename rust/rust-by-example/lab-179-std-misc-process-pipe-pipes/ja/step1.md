@@ -21,7 +21,7 @@ fn main() {
 
     // `wc` の `stdin` に文字列を書き込む。
     //
-    // `stdin` は `Option<ChildStdin>` 型ですが、このインスタンスには必ず1つ存在することがわかっているので、直接 `unwrap` できます。
+    // `stdin` は `Option<ChildStdin>` 型ですが、このインスタンスには必ず 1 つ存在することがわかっているので、直接 `unwrap` できます。
     match process.stdin.unwrap().write_all(PANGRAM.as_bytes()) {
         Err(why) => panic!("couldn't write to wc stdin: {}", why),
         Ok(_) => println!("sent pangram to wc"),

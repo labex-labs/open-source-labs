@@ -1,6 +1,6 @@
 # 导入库
 
-我们将首先导入本实验所需的库。我们将使用scikit-learn创建合成数据集，使用MLPClassifier构建MLP模型，使用StandardScaler对数据进行标准化，并使用make_pipeline创建一个由变换和分类器组成的管道。
+我们将首先导入本实验所需的库。我们将使用 scikit-learn 创建合成数据集，使用 MLPClassifier 构建 MLP 模型，使用 StandardScaler 对数据进行标准化，并使用 make_pipeline 创建一个由变换和分类器组成的管道。
 
 ```python
 import numpy as np

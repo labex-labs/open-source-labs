@@ -1,6 +1,6 @@
 # さまざまな状況での堅牢なフィッティングのデモ
 
-ここでは、4つの異なる推定器（OLS、Theil - Sen、RANSAC、およびHuberRegressor）を使って、さまざまな状況での堅牢なフィッティングをデモします。
+ここでは、4 つの異なる推定器（OLS、Theil - Sen、RANSAC、および HuberRegressor）を使って、さまざまな状況での堅牢なフィッティングをデモします。
 
 ```python
 estimators = [

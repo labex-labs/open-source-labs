@@ -5,15 +5,15 @@
 ```python
 x = np.arange(0, 1,.01)
 
-# 图表1
+# 图表 1
 plot1_x = x * 1e5 + 1e10
 plot1_y = x * 1e-10 + 1e-5
 
-# 图表2
+# 图表 2
 plot2_x = x * 1e5
 plot2_y = x * 1e-4
 
-# 图表3
+# 图表 3
 plot3_x = -x * 1e5 - 1e10
 plot3_y = -x * 1e-5 - 1e-10
 ```

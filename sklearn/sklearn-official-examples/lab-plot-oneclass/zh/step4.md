@@ -32,10 +32,10 @@ plt.legend(
     prop=matplotlib.font_manager.FontProperties(size=11)
 )
 plt.xlabel(
-    "训练错误: %d/200 ; 常规新观测值错误: %d/40 ; 异常新观测值错误: %d/40"
+    "训练错误：%d/200 ; 常规新观测值错误：%d/40 ; 异常新观测值错误：%d/40"
     % (n_error_train, n_error_test, n_error_outliers)
 )
 plt.show()
 ```
 
-注：代码中的 `matplotlib.font_manager.FontProperties` 未翻译，因为它是Python中用于设置字体属性的类，保留英文更符合编程语境。
+注：代码中的 `matplotlib.font_manager.FontProperties` 未翻译，因为它是 Python 中用于设置字体属性的类，保留英文更符合编程语境。

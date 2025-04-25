@@ -1,6 +1,6 @@
 # 绘制一维密度示例
 
-我们将绘制一个一维密度示例，其中包含100个样本。我们将比较三种不同的核密度估计：顶帽核（tophat）、高斯核（Gaussian）和叶甫根尼科夫核（epanechnikov）。
+我们将绘制一个一维密度示例，其中包含 100 个样本。我们将比较三种不同的核密度估计：顶帽核（tophat）、高斯核（Gaussian）和叶甫根尼科夫核（epanechnikov）。
 
 ```python
 # 生成数据
@@ -44,7 +44,7 @@ ax.text(6, 0.38, "N={0} 个点".format(N))
 ax.legend(loc="左上角")
 ax.plot(X[:, 0], -0.005 - 0.01 * np.random.random(X.shape[0]), "+k")
 
-# 设置x和y轴范围
+# 设置 x 和 y 轴范围
 ax.set_xlim(-4, 9)
 ax.set_ylim(-0.02, 0.4)
 

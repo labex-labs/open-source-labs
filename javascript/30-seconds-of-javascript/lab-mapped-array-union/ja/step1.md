@@ -23,7 +23,7 @@ const unionBy = (a, b, fn) => {
 `unionBy` 関数の使い方の例をいくつか示します。
 
 ```js
-unionBy([2.1], [1.2, 2.3], Math.floor); // 出力: [2.1, 1.2]
+unionBy([2.1], [1.2, 2.3], Math.floor); // 出力：[2.1, 1.2]
 unionBy([{ id: 1 }, { id: 2 }], [{ id: 2 }, { id: 3 }], (x) => x.id);
-// 出力: [{ id: 1 }, { id: 2 }, { id: 3 }]
+// 出力：[{ id: 1 }, { id: 2 }, { id: 3 }]
 ```

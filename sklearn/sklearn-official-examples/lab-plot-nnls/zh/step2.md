@@ -1,6 +1,6 @@
 # 将数据拆分为训练集和测试集
 
-我们会将数据拆分为训练集和测试集，每个集合各占 50%的数据。
+我们会将数据拆分为训练集和测试集，每个集合各占 50% 的数据。
 
 ```python
 from sklearn.model_selection import train_test_split

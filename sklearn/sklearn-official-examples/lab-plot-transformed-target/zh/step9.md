@@ -14,7 +14,7 @@ score = {
     "MedAE": f"{median_absolute_error(y_test, y_pred_ridge_with_trans_target):.3f}",
 }
 
-print("\n针对变换后目标的线性回归:")
+print("\n针对变换后目标的线性回归：")
 for key, val in score.items():
     print(f"{key}: {val}")
 ```

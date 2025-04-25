@@ -7,7 +7,7 @@
 要完成这个挑战，你将使用来自 `https://github.com/labex-labs/git-playground.git` 的 Git 仓库 `git-playground`。
 
 1. 查看仓库的提交历史记录。
-2. 确保你想要回退到的提交消息是 “Initial commit” 的提交哈希值。
+2. 确保你想要回退到的提交消息是“Initial commit”的提交哈希值。
 3. 回退到该提交哈希值。
 4. 再次查看仓库的提交历史记录。
 

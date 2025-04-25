@@ -1,6 +1,6 @@
 # 可视化决策边界
 
-我们将遍历两个不同的权重值，即 “uniform” 和 “distance”，并为每个权重值绘制决策边界。我们将使用 `neighbors` 模块中的 `KNeighborsClassifier` 类来执行分类。
+我们将遍历两个不同的权重值，即“uniform”和“distance”，并为每个权重值绘制决策边界。我们将使用 `neighbors` 模块中的 `KNeighborsClassifier` 类来执行分类。
 
 ```python
 n_neighbors = 15

@@ -1,6 +1,6 @@
 # データ前処理
 
-最初のステップは、データセットを前処理することです。この例では、Scikit-Learnの`datasets`モジュールにある実際のデータセットを使用します。一部のデータセットのサンプルサイズを削減して、計算を高速化します。データ前処理後、データセットのターゲットは2つのクラスになり、0はインライアを表し、1はアウトライアを表します。`preprocess_dataset`関数はデータとターゲットを返します。
+最初のステップは、データセットを前処理することです。この例では、Scikit-Learn の`datasets`モジュールにある実際のデータセットを使用します。一部のデータセットのサンプルサイズを削減して、計算を高速化します。データ前処理後、データセットのターゲットは 2 つのクラスになり、0 はインライアを表し、1 はアウトライアを表します。`preprocess_dataset`関数はデータとターゲットを返します。
 
 ```python
 import numpy as np
@@ -42,8 +42,8 @@ def preprocess_dataset(dataset_name):
         X = X[idx]  # サンプルサイズを削減
         y = y[idx]
 
-        # インライアは属性2を持つもの
-        # アウトライアは属性4を持つもの
+        # インライアは属性 2 を持つもの
+        # アウトライアは属性 4 を持つもの
         s = (y == 2) + (y == 4)
         X = X[s, :]
         y = y[s]
@@ -64,7 +64,7 @@ def preprocess_dataset(dataset_name):
             X_mal, y_mal = X[s], y[s]
             X_ben, y_ben = X[~s], y[~s]
 
-            # 39点にダウンサンプリング (9.8% アウトライア)
+            # 39 点にダウンサンプリング (9.8% アウトライア)
             idx = rng.choice(y_mal.shape[0], 39, replace=False)
             X_mal2 = X_mal[idx]
             y_mal2 = y_mal[idx]
@@ -73,7 +73,7 @@ def preprocess_dataset(dataset_name):
         if dataset_name == "cardiotocography":
             s = y == "3"
             y = s.astype(int)
-    # 0はインライアを表し、1はアウトライアを表す
+    # 0 はインライアを表し、1 はアウトライアを表す
     y = pd.Series(y, dtype="category")
     return (X, y)
 ```

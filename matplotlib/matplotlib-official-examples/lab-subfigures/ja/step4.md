@@ -1,6 +1,6 @@
 # サブフィギュアをカスタマイズする
 
-Matplotlibに用意されているさまざまな関数を使って、サブフィギュアをカスタマイズできます。たとえば、`set_title()` と `set_xlabel()` / `set_ylabel()` を使ってタイトルと軸ラベルを設定できます。
+Matplotlib に用意されているさまざまな関数を使って、サブフィギュアをカスタマイズできます。たとえば、`set_title()` と `set_xlabel()` / `set_ylabel()` を使ってタイトルと軸ラベルを設定できます。
 
 ```python
 ax1.set_title('Subfigure 1')

@@ -1,10 +1,10 @@
-# HTTPサーバ
+# HTTP サーバ
 
-2つのルート：`/hello` と `/headers` を処理できる簡単なHTTPサーバを書くように求められています。`/hello` ルートは単純な "hello" レスポンスを返す必要があり、`/headers` ルートはすべてのHTTPリクエストヘッダを返す必要があります。
+2 つのルート：`/hello` と `/headers` を処理できる簡単な HTTP サーバを書くように求められています。`/hello` ルートは単純な "hello" レスポンスを返す必要があり、`/headers` ルートはすべての HTTP リクエストヘッダを返す必要があります。
 
 - サーバは `net/http` パッケージを使用する必要があります。
 - `/hello` ルートは "hello" レスポンスを返す必要があります。
-- `/headers` ルートはすべてのHTTPリクエストヘッダを返す必要があります。
+- `/headers` ルートはすべての HTTP リクエストヘッダを返す必要があります。
 - サーバはポート `8090` で待ち受ける必要があります。
 
 ```sh
@@ -19,7 +19,7 @@ hello
 以下が完全なコードです：
 
 ```go
-// `net/http` パッケージを使えば、基本的なHTTPサーバを書くのは簡単です。
+// `net/http` パッケージを使えば、基本的な HTTP サーバを書くのは簡単です。
 package main
 
 import (
@@ -34,14 +34,14 @@ func hello(w http.ResponseWriter, req *http.Request) {
 
 	// ハンドラとして機能する関数は
 	// `http.ResponseWriter` と `http.Request` を引数に取ります。
-	// レスポンスライタはHTTPレスポンスを埋めるために使用されます。
+	// レスポンスライタは HTTP レスポンスを埋めるために使用されます。
 	// ここでの単純なレスポンスはただ "hello\n" です。
 	fmt.Fprintf(w, "hello\n")
 }
 
 func headers(w http.ResponseWriter, req *http.Request) {
 
-	// このハンドラは、すべてのHTTPリクエストヘッダを読み取り、
+	// このハンドラは、すべての HTTP リクエストヘッダを読み取り、
 	// それらをレスポンスボディにエコーすることで、もう少し洗練されたことを行います。
 	for name, headers := range req.Header {
 		for _, h := range headers {

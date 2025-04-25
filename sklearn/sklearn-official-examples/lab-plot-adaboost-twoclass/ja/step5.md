@@ -1,9 +1,9 @@
-# 2クラスの決定スコアを描画する
+# 2 クラスの決定スコアを描画する
 
-このステップでは、2クラスの決定スコアを描画します。AdaBoost分類器の`decision_function`メソッドを使って、データセットの各サンプルに対する決定スコアを取得します。そして、各クラスの決定スコアのヒストグラムを描画します。
+このステップでは、2 クラスの決定スコアを描画します。AdaBoost 分類器の`decision_function`メソッドを使って、データセットの各サンプルに対する決定スコアを取得します。そして、各クラスの決定スコアのヒストグラムを描画します。
 
 ```python
-# 2クラスの決定スコアを描画する
+# 2 クラスの決定スコアを描画する
 twoclass_output = bdt.decision_function(X)
 plot_range = (twoclass_output.min(), twoclass_output.max())
 plt.subplot(122)

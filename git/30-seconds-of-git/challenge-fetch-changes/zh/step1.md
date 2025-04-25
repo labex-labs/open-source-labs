@@ -7,7 +7,7 @@
 为了演示如何从远程仓库获取最新变更，我们将使用你 GitHub 账户中的 `git-playground` 仓库，它是从 `https://github.com/labex-labs/git-playground.git` 派生而来的。
 
 1. 克隆仓库，导航到该目录。
-2. 在 Github 网站上你的账户中找到 `git-playground` 仓库，创建并切换到一个名为 `fetch-branch` 的分支，创建一个名为 `hello.txt` 的文件，添加 “hello, world” 并提交，提交消息为 “Create hello.txt”。
+2. 在 Github 网站上你的账户中找到 `git-playground` 仓库，创建并切换到一个名为 `fetch-branch` 的分支，创建一个名为 `hello.txt` 的文件，添加“hello, world”并提交，提交消息为“Create hello.txt”。
 3. 查看远程仓库中的分支。
 4. 从远程仓库获取最新变更。
 5. 再次查看远程仓库中的分支，并验证是否已获取到最新变更。

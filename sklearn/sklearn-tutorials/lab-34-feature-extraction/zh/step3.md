@@ -1,6 +1,6 @@
 # 文本特征提取
 
-在这一步中，我们将学习如何使用scikit-learn中的`CountVectorizer`和`TfidfVectorizer`类来执行文本特征提取。这些类可用于将文本数据转换为数值特征。
+在这一步中，我们将学习如何使用 scikit-learn 中的`CountVectorizer`和`TfidfVectorizer`类来执行文本特征提取。这些类可用于将文本数据转换为数值特征。
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer

@@ -1,6 +1,6 @@
-# Matplotlibをインポートする
+# Matplotlib をインポートする
 
-Matplotlibを使用するには、まずインポートする必要があります。
+Matplotlib を使用するには、まずインポートする必要があります。
 
 ```python
 import matplotlib.pyplot as plt

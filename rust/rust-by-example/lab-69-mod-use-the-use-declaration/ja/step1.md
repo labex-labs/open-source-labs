@@ -17,7 +17,7 @@ fn main() {
 `as`キーワードを使って、インポートを別の名前にバインドすることもできます。
 
 ```rust
-// `deeply::nested::function`パスを`other_function`にバインドします。
+// `deeply::nested::function`パスを `other_function` にバインドします。
 use deeply::nested::function as other_function;
 
 fn function() {
@@ -33,17 +33,17 @@ mod deeply {
 }
 
 fn main() {
-    // `deeply::nested::function`へのアクセスを簡単にします
+    // `deeply::nested::function` へのアクセスを簡単にします
     other_function();
 
     println!("Entering block");
     {
         // これは`use deeply::nested::function as function`と同等です。
-        // この`function()`は外側のものを上書きします。
+        // この `function()` は外側のものを上書きします。
         use crate::deeply::nested::function;
 
-        // `use`のバインドはローカルスコープを持ちます。この場合、
-        // `function()`の上書きはこのブロック内だけです。
+        // `use` のバインドはローカルスコープを持ちます。この場合、
+        // `function()` の上書きはこのブロック内だけです。
         function();
 
         println!("Leaving block");

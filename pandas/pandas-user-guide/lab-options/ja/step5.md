@@ -1,4 +1,4 @@
-# option_contextの使用
+# option_context の使用
 
 `option_context` 関数を使用すると、実行後に以前の設定に戻る一連のオプションでコード ブロックを実行できます。
 

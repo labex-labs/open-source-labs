@@ -31,9 +31,9 @@ const users = [
 
 // 按名字升序和年龄降序排序
 orderBy(users, ["name", "age"], ["asc", "desc"]);
-// 输出: [{name: 'barney', age: 36}, {name: 'fred', age: 48}, {name: 'fred', age: 40}]
+// 输出：[{name: 'barney', age: 36}, {name: 'fred', age: 48}, {name: 'fred', age: 40}]
 
 // 按名字升序和年龄升序排序（默认顺序）
 orderBy(users, ["name", "age"]);
-// 输出: [{name: 'barney', age: 36}, {name: 'fred', age: 40}, {name: 'fred', age: 48}]
+// 输出：[{name: 'barney', age: 36}, {name: 'fred', age: 40}, {name: 'fred', age: 48}]
 ```

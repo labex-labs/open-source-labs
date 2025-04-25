@@ -2,7 +2,7 @@
 
 時々、テスト（またはサンプル、またはベンチマーク）にのみ依存関係が必要な場合があります。このような依存関係は、`[dev-dependencies]` セクションの `Cargo.toml` に追加されます。これらの依存関係は、このパッケージに依存する他のパッケージには伝播されません。
 
-そのような例の1つは、[`pretty_assertions`](https://docs.rs/pretty_assertions/1.0.0/pretty_assertions/index.html) です。これは、標準の `assert_eq!` と `assert_ne!` マクロを拡張して、カラー付きの差分を提供します。
+そのような例の 1 つは、[`pretty_assertions`](https://docs.rs/pretty_assertions/1.0.0/pretty_assertions/index.html) です。これは、標準の `assert_eq!` と `assert_ne!` マクロを拡張して、カラー付きの差分を提供します。
 ファイル `Cargo.toml`:
 
 ```toml

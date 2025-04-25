@@ -4,7 +4,7 @@
 
 ```python
 a = 'hello'
-for c in a: # 遍历字符串a中的字符
+for c in a: # 遍历字符串 a 中的字符
   ...
 
 b = { 'name': 'Dave', 'password':'foo'}

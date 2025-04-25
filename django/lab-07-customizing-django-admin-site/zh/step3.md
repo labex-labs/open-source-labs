@@ -58,7 +58,7 @@ list_filter = ["pub_date"]
 
 ![管理列表过滤侧边栏](../assets/20230908-16-16-39-otfMNyYo.png)
 
-显示的过滤器类型取决于你正在过滤的字段类型。因为 `pub_date` 是一个 `~django.db.models.DateTimeField`，Django 知道要给出适当的过滤选项：“任何日期”、“今天”、“过去7天”、“本月”、“今年”。
+显示的过滤器类型取决于你正在过滤的字段类型。因为 `pub_date` 是一个 `~django.db.models.DateTimeField`，Django 知道要给出适当的过滤选项：“任何日期”、“今天”、“过去 7 天”、“本月”、“今年”。
 
 这看起来很不错了。让我们添加一些搜索功能：
 
@@ -68,4 +68,4 @@ search_fields = ["question_text"]
 
 这会在更改列表顶部添加一个搜索框。当有人输入搜索词时，Django 将在 `question_text` 字段中进行搜索。你可以使用任意多个字段 —— 不过因为它在幕后使用 `LIKE` 查询，将搜索字段数量限制在合理数量会让你的数据库更容易进行搜索。
 
-现在也是时候注意一下更改列表会自动提供分页功能了。默认是每页显示100项。`更改列表分页 <django.contrib.admin.ModelAdmin.list_per_page>`、`搜索框 <django.contrib.admin.ModelAdmin.search_fields>`、`过滤器 <django.contrib.admin.ModelAdmin.list_filter>`、`日期层次结构 <django.contrib.admin.ModelAdmin.date_hierarchy>` 和 `列标题排序 <django.contrib.admin.ModelAdmin.list_display>` 都能像你期望的那样协同工作。
+现在也是时候注意一下更改列表会自动提供分页功能了。默认是每页显示 100 项。`更改列表分页 <django.contrib.admin.ModelAdmin.list_per_page>`、`搜索框 <django.contrib.admin.ModelAdmin.search_fields>`、`过滤器 <django.contrib.admin.ModelAdmin.list_filter>`、`日期层次结构 <django.contrib.admin.ModelAdmin.date_hierarchy>` 和 `列标题排序 <django.contrib.admin.ModelAdmin.list_display>` 都能像你期望的那样协同工作。

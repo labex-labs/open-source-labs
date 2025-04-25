@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-このステップでは、必要なライブラリ - matplotlibをインポートします。
+このステップでは、必要なライブラリ - matplotlib をインポートします。
 
 ```python
 import matplotlib.pyplot as plt

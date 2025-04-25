@@ -1,4 +1,4 @@
-# React useIntervalフック
+# React useInterval フック
 
 > VM には既に `index.html` と `script.js` が用意されています。一般的には、`script.js` と `style.css` にのみコードを追加すればよいです。
 
@@ -42,4 +42,4 @@ const Timer = (props) => {
 ReactDOM.createRoot(document.getElementById("root")).render(<Timer />);
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080** タブを更新してウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080** タブを更新してウェブページをプレビューできます。

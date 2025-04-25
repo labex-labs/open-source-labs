@@ -1,4 +1,4 @@
-# 色を設定してPatchCollectionを作成する
+# 色を設定して PatchCollection を作成する
 
 我々は図形の色を設定し、`PatchCollection()` を作成します。
 

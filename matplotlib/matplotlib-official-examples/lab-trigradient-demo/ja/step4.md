@@ -5,7 +5,7 @@ refiner = UniformTriRefiner(triang)
 tri_refi, z_test_refi = refiner.refine_field(V, subdiv=3)
 ```
 
-解説:
+解説：
 
 - `UniformTriRefiner`は、より正確なプロットを作成するために三角分割を微調整するクラスです。
 - `refiner`は`UniformTriRefiner`クラスのインスタンスです。

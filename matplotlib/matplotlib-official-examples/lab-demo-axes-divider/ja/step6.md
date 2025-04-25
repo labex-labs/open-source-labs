@@ -1,6 +1,6 @@
-# 固定パディング付きで横並びの2つの画像
+# 固定パディング付きで横並びの 2 つの画像
 
-このステップでは、固定パディング付きで横並びの2つの画像を作成します。`mpl_toolkits.axes_grid1` から `make_axes_locatable` を使用して、軸とカラーバー用の分割器を作成します。
+このステップでは、固定パディング付きで横並びの 2 つの画像を作成します。`mpl_toolkits.axes_grid1` から `make_axes_locatable` を使用して、軸とカラーバー用の分割器を作成します。
 
 ```python
 def demo_images_side_by_side(ax):

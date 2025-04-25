@@ -1,6 +1,6 @@
 # クラス確率のプロット
 
-棒グラフを使って、各分類器とVotingClassifierのクラス確率をプロットします。
+棒グラフを使って、各分類器と VotingClassifier のクラス確率をプロットします。
 
 ```python
 N = 4  # グループの数
@@ -9,7 +9,7 @@ width = 0.35  # 棒の幅
 
 fig, ax = plt.subplots()
 
-# 分類器1 - 3用の棒
+# 分類器 1 - 3 用の棒
 p1 = ax.bar(ind, np.hstack(([class1_1[:-1], [0]])), width, color="green", edgecolor="k")
 p2 = ax.bar(
     ind + width,
@@ -19,7 +19,7 @@ p2 = ax.bar(
     edgecolor="k",
 )
 
-# VotingClassifier用の棒
+# VotingClassifier 用の棒
 p3 = ax.bar(ind, [0, 0, 0, class1_1[-1]], width, color="blue", edgecolor="k")
 p4 = ax.bar(
     ind + width, [0, 0, 0, class2_1[-1]], width, color="steelblue", edgecolor="k"

@@ -1,6 +1,6 @@
 # 中心坐标
 
-通常，用户希望将与*Z*大小相同的*X*和*Y*传递给`.axes.Axes.pcolormesh`。如果传递了`shading='auto'`（由:rc:`pcolor.shading`设置的默认值），这也是允许的。在Matplotlib 3.3之前，`shading='flat'`会丢弃*Z*的最后一列和最后一行，但现在会报错。如果这确实是你想要的，那么只需手动丢弃*Z*的最后一行和最后一列：
+通常，用户希望将与*Z*大小相同的*X*和*Y*传递给`.axes.Axes.pcolormesh`。如果传递了`shading='auto'`（由:rc:`pcolor.shading`设置的默认值），这也是允许的。在 Matplotlib 3.3 之前，`shading='flat'`会丢弃*Z*的最后一列和最后一行，但现在会报错。如果这确实是你想要的，那么只需手动丢弃*Z*的最后一行和最后一列：
 
 ```python
 import matplotlib.pyplot as plt

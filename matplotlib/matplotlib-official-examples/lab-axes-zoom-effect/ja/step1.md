@@ -1,6 +1,6 @@
 # 必要なライブラリのインポート
 
-このステップでは、このチュートリアルに必要なライブラリをインポートします。matplotlibと、mpl_toolkits.axes_grid1からの関連ライブラリをインポートします。
+このステップでは、このチュートリアルに必要なライブラリをインポートします。matplotlib と、mpl_toolkits.axes_grid1 からの関連ライブラリをインポートします。
 
 ```python
 import matplotlib.pyplot as plt

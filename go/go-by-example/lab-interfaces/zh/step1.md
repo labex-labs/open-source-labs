@@ -1,8 +1,8 @@
 # 接口
 
-问题在于如何在Go语言中实现一个接口，我们只需要实现接口中的所有方法即可。在这里，我们在`rect`（矩形）和`circle`（圆形）上实现`geometry`（几何图形）接口。
+问题在于如何在 Go 语言中实现一个接口，我们只需要实现接口中的所有方法即可。在这里，我们在`rect`（矩形）和`circle`（圆形）上实现`geometry`（几何图形）接口。
 
-- 在Go语言中实现一个接口。
+- 在 Go 语言中实现一个接口。
 - 实现接口中的所有方法。
 - 使用一个通用的`measure`函数来处理任何`geometry`。
 - 使用`circle`和`rect`结构体的实例作为`measure`的参数。
@@ -16,7 +16,7 @@ $ go run interfaces.go
 78.53981633974483
 31.41592653589793
 
-# 要了解更多关于Go语言接口的内容，请查看这篇
+# 要了解更多关于 Go 语言接口的内容，请查看这篇
 # [很棒的博客文章](https://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go)。
 ```
 
@@ -47,7 +47,7 @@ type circle struct {
 	radius float64
 }
 
-// 要在Go语言中实现一个接口，我们只需要
+// 要在 Go 语言中实现一个接口，我们只需要
 // 实现接口中的所有方法。在这里，我们在
 // `rect`（矩形）上实现 `geometry`（几何图形）接口。
 func (r rect) area() float64 {

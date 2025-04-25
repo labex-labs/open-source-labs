@@ -1,6 +1,6 @@
-# ReactのuseHashフック
+# React の useHash フック
 
-> VM内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
+> VM 内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
 
 このコードは、ブラウザのロケーションハッシュ値を追跡して更新します。それを使用するには、次の手順に従ってください。
 
@@ -59,4 +59,4 @@ const MyApp = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でWebサービスを実行してください。その後、**Web 8080**タブを更新してWebページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 で Web サービスを実行してください。その後、**Web 8080**タブを更新して Web ページをプレビューできます。

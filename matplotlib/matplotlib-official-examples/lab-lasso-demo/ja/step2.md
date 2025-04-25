@@ -5,7 +5,7 @@
 ```python
 class LassoManager:
     def __init__(self, ax, data):
-        # 点が選択されているかどうかの情報は、コレクションの配列に格納されます (0 = 外, 1 = 内)。その後、これがマッピングされて青 (外) と赤 (内) に色付けされます。
+        # 点が選択されているかどうかの情報は、コレクションの配列に格納されます (0 = 外，1 = 内)。その後、これがマッピングされて青 (外) と赤 (内) に色付けされます。
         self.collection = RegularPolyCollection(
             6, sizes=(100,), offset_transform=ax.transData,
             offsets=data, array=np.zeros(len(data)),

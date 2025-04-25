@@ -1,6 +1,6 @@
 # 可视化结果
 
-最后，我们将绘制每个分类器的分类准确率与特征数量的函数关系图。我们将使用matplotlib来创建该图。
+最后，我们将绘制每个分类器的分类准确率与特征数量的函数关系图。我们将使用 matplotlib 来创建该图。
 
 ```python
 import matplotlib.pyplot as plt
@@ -39,8 +39,8 @@ plt.legend(loc="lower left")
 plt.ylim((0.65, 1.0))
 plt.suptitle(
     "LDA (线性判别分析) 与\n"
-    + "带Ledoit Wolf的LDA 与\n"
-    + "带OAS的LDA (1个判别性特征)"
+    + "带 Ledoit Wolf 的 LDA 与\n"
+    + "带 OAS 的 LDA (1 个判别性特征)"
 )
 plt.show()
 ```

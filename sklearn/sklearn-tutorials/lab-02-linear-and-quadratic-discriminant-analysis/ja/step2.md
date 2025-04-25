@@ -1,6 +1,6 @@
 # 合成データを生成する
 
-次に、LDA と QDA の違いを示すために合成データを生成します。scikit-learn の `make_classification` 関数を使用して、異なるパターンを持つ2つのクラスを作成します。
+次に、LDA と QDA の違いを示すために合成データを生成します。scikit-learn の `make_classification` 関数を使用して、異なるパターンを持つ 2 つのクラスを作成します。
 
 ```python
 from sklearn.datasets import make_classification

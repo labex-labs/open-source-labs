@@ -11,7 +11,7 @@ plt.xlabel("X")
 plt.ylabel("y")
 _ = plt.title(
     (
-        f"初始值: {kernel}\n最优值: {gpr.kernel_}\n对数边缘似然: "
+        f"初始值：{kernel}\n最优值：{gpr.kernel_}\n对数边缘似然："
         f"{gpr.log_marginal_likelihood(gpr.kernel_.theta)}"
     ),
     fontsize=8,

@@ -1,6 +1,6 @@
 # レーダーチャート関数の定義
 
-次に、レーダーチャートを作成する関数を定義します。この関数は2つの引数を取ります。`num_vars`と`frame`です。`num_vars`はレーダーチャートの変数の数であり、`frame`は軸を囲む枠の形状を指定します。
+次に、レーダーチャートを作成する関数を定義します。この関数は 2 つの引数を取ります。`num_vars`と`frame`です。`num_vars`はレーダーチャートの変数の数であり、`frame`は軸を囲む枠の形状を指定します。
 
 ```python
 from matplotlib.patches import Circle, RegularPolygon

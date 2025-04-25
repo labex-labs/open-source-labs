@@ -7,12 +7,12 @@ fn main() {
     let _immutable_binding = 1;
     let mut mutable_binding = 1;
 
-    println!("変更前: {}", mutable_binding);
+    println!("変更前：{}", mutable_binding);
 
     // オッケー
     mutable_binding += 1;
 
-    println!("変更後: {}", mutable_binding);
+    println!("変更後：{}", mutable_binding);
 
     // エラー！不変変数に新しい値を割り当てることはできません
     _immutable_binding += 1;

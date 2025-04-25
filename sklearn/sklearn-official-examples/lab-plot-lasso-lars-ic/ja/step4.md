@@ -1,6 +1,6 @@
-# BIC基準でLassoLarsIC推定器をフィットさせる
+# BIC 基準で LassoLarsIC 推定器をフィットさせる
 
-次に、BIC基準でLassoLarsIC推定器をフィットさせます。
+次に、BIC 基準で LassoLarsIC 推定器をフィットさせます。
 
 ```python
 lasso_lars_ic.set_params(lassolarsic__criterion="bic").fit(X, y)

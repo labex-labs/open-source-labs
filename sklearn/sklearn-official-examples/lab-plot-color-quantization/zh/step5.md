@@ -1,6 +1,6 @@
 # 重建图像
 
-我们将使用从K均值模型和随机码本获得的码本和标签来重建压缩图像。
+我们将使用从 K 均值模型和随机码本获得的码本和标签来重建压缩图像。
 
 ```python
 def recreate_image(codebook, labels, w, h):
@@ -17,13 +17,13 @@ plt.imshow(china)
 plt.figure()
 plt.clf()
 plt.axis("off")
-plt.title(f"量化图像 ({n_colors} 种颜色, K均值)")
+plt.title(f"量化图像 ({n_colors} 种颜色，K 均值)")
 plt.imshow(recreate_image(kmeans.cluster_centers_, labels, w, h))
 
 plt.figure()
 plt.clf()
 plt.axis("off")
-plt.title(f"量化图像 ({n_colors} 种颜色, 随机)")
+plt.title(f"量化图像 ({n_colors} 种颜色，随机)")
 plt.imshow(recreate_image(codebook_random, labels_random, w, h))
 
 plt.show()

@@ -1,6 +1,6 @@
-# 导入Matplotlib并定义文本
+# 导入 Matplotlib 并定义文本
 
-在这一步中，我们导入Matplotlib并定义将使用不同字体绘制的文本。
+在这一步中，我们导入 Matplotlib 并定义将使用不同字体绘制的文本。
 
 ```python
 import matplotlib.pyplot as plt

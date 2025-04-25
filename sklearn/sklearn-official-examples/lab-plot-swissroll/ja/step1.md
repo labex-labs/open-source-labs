@@ -1,6 +1,6 @@
 # スイスロールデータセットの生成
 
-まず、`sklearn.datasets` の `make_swiss_roll()` 関数を使ってスイスロールデータセットを生成します。この関数は、渦巻き状の3次元データセットを生成します。
+まず、`sklearn.datasets` の `make_swiss_roll()` 関数を使ってスイスロールデータセットを生成します。この関数は、渦巻き状の 3 次元データセットを生成します。
 
 ```python
 import matplotlib.pyplot as plt

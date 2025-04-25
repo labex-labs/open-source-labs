@@ -23,7 +23,7 @@ fn main() {
 }
 ```
 
-你还可以使用绑定来 “解构” `enum` 变体，比如 `Option`：
+你还可以使用绑定来“解构” `enum` 变体，比如 `Option`：
 
 ```rust
 fn some_number() -> Option<u32> {

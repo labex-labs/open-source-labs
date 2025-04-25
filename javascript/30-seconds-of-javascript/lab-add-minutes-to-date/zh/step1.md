@@ -4,11 +4,11 @@
 
 ```js
 const addMinutesToDate = (date, n) => {
-  // 根据给定日期创建一个Date对象
+  // 根据给定日期创建一个 Date 对象
   const d = new Date(date);
-  // 为Date对象添加n分钟
+  // 为 Date 对象添加 n 分钟
   d.setTime(d.getTime() + n * 60000);
-  // 以yyyy-mm-dd HH:MM:SS格式返回新日期的字符串表示形式
+  // 以 yyyy-mm-dd HH:MM:SS 格式返回新日期的字符串表示形式
   return d.toISOString().split(".")[0].replace("T", " ");
 };
 ```

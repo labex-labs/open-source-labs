@@ -15,16 +15,16 @@ fig, ax = plt.subplots()
 scatter = ax.scatter(volume, amount, c=ranking, s=0.3 * (price * 3) ** 2,
                      vmin=-3, vmax=3, cmap="Spectral")
 
-# 为排名（颜色）生成一个图例。即使有40种不同的排名，
-# 我们只想在图例中显示其中的5种。
+# 为排名（颜色）生成一个图例。即使有 40 种不同的排名，
+# 我们只想在图例中显示其中的 5 种。
 legend1 = ax.legend(*scatter.legend_elements(num=5),
                     loc="upper left", title="Ranking")
 ax.add_artist(legend1)
 
 # 为价格（大小）生成一个图例。因为我们想用美元显示价格，
 # 所以我们使用 *func* 参数来提供用于从上面计算大小的函数的反函数。
-# *fmt* 确保以美元显示价格。请注意，我们这里目标是5个元素，
-# 但由于为我们自动选择的舍入价格，在创建的图例中只得到了4个。
+# *fmt* 确保以美元显示价格。请注意，我们这里目标是 5 个元素，
+# 但由于为我们自动选择的舍入价格，在创建的图例中只得到了 4 个。
 kw = dict(prop="sizes", num=5, color=scatter.cmap(0.7), fmt="$ {x:.2f}",
           func=lambda s: np.sqrt(s/.3)/3)
 legend2 = ax.legend(*scatter.legend_elements(**kw),

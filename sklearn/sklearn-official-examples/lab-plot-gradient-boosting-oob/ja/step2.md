@@ -1,6 +1,6 @@
-# OOB推定を備えた分類器を適合させる
+# OOB 推定を備えた分類器を適合させる
 
-次に、`sklearn.ensemble` モジュールの `GradientBoostingClassifier` クラスを使用して、OOB推定を備えた勾配ブースティング分類器を作成します。推定器の数を100に設定し、学習率を0.1に設定します。
+次に、`sklearn.ensemble` モジュールの `GradientBoostingClassifier` クラスを使用して、OOB 推定を備えた勾配ブースティング分類器を作成します。推定器の数を 100 に設定し、学習率を 0.1 に設定します。
 
 ```python
 from sklearn.ensemble import GradientBoostingClassifier

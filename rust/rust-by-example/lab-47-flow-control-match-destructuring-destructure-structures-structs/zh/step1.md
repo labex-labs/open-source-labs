@@ -21,13 +21,13 @@ fn main() {
 
         // 你也可以忽略一些变量：
         Foo { y,.. } => println!("y = {}, we don't care about x", y),
-        // 这会给出一个错误：模式未提及字段`x`
+        // 这会给出一个错误：模式未提及字段 `x`
         //Foo { y } => println!("y = {}", y),
     }
 
     let faa = Foo { x: (1, 2), y: 3 };
 
-    // 解构结构体不需要`match`块：
+    // 解构结构体不需要 `match` 块：
     let Foo { x : x0, y: y0 } = faa;
     println!("Outside: x0 = {x0:?}, y0 = {y0}");
 }

@@ -6,7 +6,7 @@
 const isOdd = (num) => num % 2 === 1;
 ```
 
-使用例:
+使用例：
 
 ```js
 isOdd(3); // true

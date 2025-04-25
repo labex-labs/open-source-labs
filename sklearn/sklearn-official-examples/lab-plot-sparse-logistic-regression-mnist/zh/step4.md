@@ -1,6 +1,6 @@
 # 训练模型
 
-我们将使用带有L1惩罚的逻辑回归和SAGA算法来训练模型。我们将把`C`的值设置为50.0除以训练样本的数量。
+我们将使用带有 L1 惩罚的逻辑回归和 SAGA 算法来训练模型。我们将把`C`的值设置为 50.0 除以训练样本的数量。
 
 ```python
 # Turn up tolerance for faster convergence

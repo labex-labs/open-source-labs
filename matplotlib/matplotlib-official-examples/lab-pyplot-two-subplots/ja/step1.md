@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-このチュートリアルでは、Matplotlibライブラリの`pyplot`モジュールと`numpy`ライブラリを使用します。
+このチュートリアルでは、Matplotlib ライブラリの`pyplot`モジュールと`numpy`ライブラリを使用します。
 
 ```python
 import matplotlib.pyplot as plt

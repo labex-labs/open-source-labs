@@ -1,6 +1,6 @@
 # 生成回归数据集
 
-我们将使用Scikit-Learn的 `make_regression` 函数，根据给定参数生成一个回归数据集。该数据集将包含 `n_train` 个训练实例、`n_test` 个测试实例、`n_features` 个特征，噪声（`noise`）为0.1。
+我们将使用 Scikit-Learn 的 `make_regression` 函数，根据给定参数生成一个回归数据集。该数据集将包含 `n_train` 个训练实例、`n_test` 个测试实例、`n_features` 个特征，噪声（`noise`）为 0.1。
 
 ```python
 X, y, coef = make_regression(

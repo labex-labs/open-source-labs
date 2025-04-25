@@ -1,6 +1,6 @@
 # 导入必要的库并生成数据
 
-第一步是导入必要的库并生成数据。我们将使用numpy和matplotlib来生成和可视化数据，使用scikit-learn来构建单类支持向量机模型。
+第一步是导入必要的库并生成数据。我们将使用 numpy 和 matplotlib 来生成和可视化数据，使用 scikit-learn 来构建单类支持向量机模型。
 
 ```python
 import numpy as np

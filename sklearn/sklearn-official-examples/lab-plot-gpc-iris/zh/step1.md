@@ -1,6 +1,6 @@
 # 导入必要的库和数据集
 
-首先，我们将导入必要的库，并从scikit-learn中加载鸢尾花数据集。
+首先，我们将导入必要的库，并从 scikit-learn 中加载鸢尾花数据集。
 
 ```python
 import numpy as np

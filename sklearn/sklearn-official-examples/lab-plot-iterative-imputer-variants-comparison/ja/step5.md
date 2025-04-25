@@ -1,6 +1,6 @@
-# IterativeImputerを使った欠損値の補完
+# IterativeImputer を使った欠損値の補完
 
-Scikit-Learnの`IterativeImputer`クラスを使って、異なる推定器を用いて欠損値を補完します。
+Scikit-Learn の`IterativeImputer`クラスを使って、異なる推定器を用いて欠損値を補完します。
 
 ```python
 estimators = [

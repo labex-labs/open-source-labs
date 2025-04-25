@@ -9,11 +9,11 @@ ncolors = len(plt.rcParams['axes.prop_cycle'])
 shift = np.linspace(0, L, ncolors, endpoint=False)
 
 for s in shift:
-    # 位相シフトsのサイン波をプロットする
+    # 位相シフト s のサイン波をプロットする
     ax.plot(x, np.sin(x + s), 'o-')
 
-ax.set_xlabel('x軸')
-ax.set_ylabel('y軸')
+ax.set_xlabel('x 軸')
+ax.set_ylabel('y 軸')
 ax.set_title("'dark_background' スタイルシート")
 
 plt.show()

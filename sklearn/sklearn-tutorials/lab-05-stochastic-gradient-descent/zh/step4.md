@@ -1,6 +1,6 @@
 # 使用随机梯度下降（SGD）训练回归器
 
-接下来，我们将使用SGDRegressor类训练一个回归器。我们将使用平方误差（squared_error）损失函数和L2正则化。
+接下来，我们将使用 SGDRegressor 类训练一个回归器。我们将使用平方误差（squared_error）损失函数和 L2 正则化。
 
 ```python
 # 使用随机梯度下降训练回归器
@@ -14,5 +14,5 @@ y_pred = reg.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 
 # 打印均方误差
-print("回归器均方误差:", mse)
+print("回归器均方误差：", mse)
 ```

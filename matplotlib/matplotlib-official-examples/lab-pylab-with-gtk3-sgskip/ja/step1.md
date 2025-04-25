@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。Matplotlib、GTK3、およびgi.repositoryからのGtkモジュールを使用します。
+まず、必要なライブラリをインポートする必要があります。Matplotlib、GTK3、および gi.repository からの Gtk モジュールを使用します。
 
 ```python
 import matplotlib

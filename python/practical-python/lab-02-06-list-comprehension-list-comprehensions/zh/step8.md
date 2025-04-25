@@ -1,8 +1,8 @@
-# 练习2.21：数据查询
+# 练习 2.21：数据查询
 
 尝试以下各种数据查询示例。
 
-首先，列出所有持有股份超过100股的投资组合。
+首先，列出所有持有股份超过 100 股的投资组合。
 
 ```python
 >>> more100 = [ s for s in portfolio if s['shares'] > 100 ]
@@ -11,7 +11,7 @@
 >>>
 ```
 
-所有持有微软（MSFT）和IBM股票的投资组合。
+所有持有微软（MSFT）和 IBM 股票的投资组合。
 
 ```python
 >>> msftibm = [ s for s in portfolio if s['name'] in {'MSFT', 'IBM'} ]
@@ -21,7 +21,7 @@
 >>>
 ```
 
-列出所有成本超过10000美元的投资组合。
+列出所有成本超过 10000 美元的投资组合。
 
 ```python
 >>> cost10k = [ s for s in portfolio if s['shares'] * s['price'] > 10000 ]

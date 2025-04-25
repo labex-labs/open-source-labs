@@ -1,6 +1,6 @@
 # `GridSpec` を使ってサブプロットを生成する
 
-このステップでは、`GridSpec` を使ってサブプロットを生成します。2行2列の図を作成します。また、サブプロットの相対サイズを制御するために `width_ratios` と `height_ratios` を指定します。
+このステップでは、`GridSpec` を使ってサブプロットを生成します。2 行 2 列の図を作成します。また、サブプロットの相対サイズを制御するために `width_ratios` と `height_ratios` を指定します。
 
 ```python
 fig = plt.figure()

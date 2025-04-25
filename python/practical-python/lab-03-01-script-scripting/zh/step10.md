@@ -5,7 +5,7 @@
 ```python
 def read_prices(filename: str) -> dict:
     '''
-    从包含名称、价格数据的CSV文件中读取价格
+    从包含名称、价格数据的 CSV 文件中读取价格
     '''
     prices = {}
     with open(filename) as f:
@@ -17,7 +17,7 @@ def read_prices(filename: str) -> dict:
 
 这些提示在操作上没有任何作用。它们纯粹是提供信息的。然而，集成开发环境（IDE）、代码检查器和其他工具可能会利用它们做更多的事情。
 
-在第2节中，你编写了一个名为 `report.py` 的程序，它打印出一份显示股票投资组合表现的报告。这个程序由一些函数组成。例如：
+在第 2 节中，你编写了一个名为 `report.py` 的程序，它打印出一份显示股票投资组合表现的报告。这个程序由一些函数组成。例如：
 
 ```python
 # report.py

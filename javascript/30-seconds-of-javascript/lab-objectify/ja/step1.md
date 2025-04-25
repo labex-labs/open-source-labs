@@ -26,7 +26,7 @@ const people = [
 
 // 名前プロパティをキーとしてオブジェクト配列をオブジェクトにマッピングする
 objectify(people, (p) => p.name.toLowerCase());
-// 出力: { john: { name: 'John', age: 42 }, adam: { name: 'Adam', age: 39 } }
+// 出力：{ john: { name: 'John', age: 42 }, adam: { name: 'Adam', age: 39 } }
 
 // 名前プロパティをキーとし、年齢プロパティを値としてオブジェクト配列をオブジェクトにマッピングする
 objectify(
@@ -34,5 +34,5 @@ objectify(
   (p) => p.name.toLowerCase(),
   (p) => p.age
 );
-// 出力: { john: 42, adam: 39 }
+// 出力：{ john: 42, adam: 39 }
 ```

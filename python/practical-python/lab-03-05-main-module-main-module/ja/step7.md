@@ -9,7 +9,7 @@ $ python3 report.py portfolio.csv prices.csv
 この文字列のリストは、`sys.argv` の中にあります。
 
 ```python
-# 前のbashコマンドで
+# 前の bash コマンドで
 sys.argv # ['report.py', 'portfolio.csv', 'prices.csv']
 ```
 

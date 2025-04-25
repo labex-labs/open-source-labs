@@ -1,6 +1,6 @@
-# NumPyのロゴを作成する
+# NumPy のロゴを作成する
 
-ここでは、`n_voxels`と呼ばれる3次元NumPy配列を使ってNumPyのロゴを作成し始めます。配列内の特定の要素を`True`に設定して、ロゴの形状を表します。また、ボクセルに色を付けるために使われる`facecolors`と`edgecolors`と呼ばれる他の2つのNumPy配列も定義します。
+ここでは、`n_voxels`と呼ばれる 3 次元 NumPy 配列を使って NumPy のロゴを作成し始めます。配列内の特定の要素を`True`に設定して、ロゴの形状を表します。また、ボクセルに色を付けるために使われる`facecolors`と`edgecolors`と呼ばれる他の 2 つの NumPy 配列も定義します。
 
 ```python
 n_voxels = np.zeros((4, 3, 4), dtype=bool)

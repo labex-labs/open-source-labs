@@ -14,12 +14,12 @@ fn main() {
     // ^ TODO 尝试为 `temperature` 设置不同的值
 
     match temperature {
-        Temperature::Celsius(t) if t > 30 => println!("{}摄氏度高于30摄氏度", t),
+        Temperature::Celsius(t) if t > 30 => println!("{}摄氏度高于 30 摄氏度", t),
         // `if condition` 部分 ^ 是一个守卫
-        Temperature::Celsius(t) => println!("{}摄氏度低于30摄氏度", t),
+        Temperature::Celsius(t) => println!("{}摄氏度低于 30 摄氏度", t),
 
-        Temperature::Fahrenheit(t) if t > 86 => println!("{}华氏度高于86华氏度", t),
-        Temperature::Fahrenheit(t) => println!("{}华氏度低于86华氏度", t),
+        Temperature::Fahrenheit(t) if t > 86 => println!("{}华氏度高于 86 华氏度", t),
+        Temperature::Fahrenheit(t) => println!("{}华氏度低于 86 华氏度", t),
     }
 }
 ```

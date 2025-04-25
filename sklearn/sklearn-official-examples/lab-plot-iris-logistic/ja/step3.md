@@ -1,6 +1,6 @@
 # 散布図上に決定境界を表示する
 
-scikit-learnライブラリのDecisionBoundaryDisplayを使って、散布図上に決定境界を表示します。
+scikit-learn ライブラリの DecisionBoundaryDisplay を使って、散布図上に決定境界を表示します。
 
 ```python
 _, ax = plt.subplots(figsize=(4, 3))

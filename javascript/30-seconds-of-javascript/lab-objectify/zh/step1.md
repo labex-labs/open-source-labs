@@ -26,7 +26,7 @@ const people = [
 
 // 使用 name 属性作为键将对象数组映射为对象
 objectify(people, (p) => p.name.toLowerCase());
-// 输出: { john: { name: 'John', age: 42 }, adam: { name: 'Adam', age: 39 } }
+// 输出：{ john: { name: 'John', age: 42 }, adam: { name: 'Adam', age: 39 } }
 
 // 使用 name 属性作为键，age 属性作为值将对象数组映射为对象
 objectify(
@@ -34,5 +34,5 @@ objectify(
   (p) => p.name.toLowerCase(),
   (p) => p.age
 );
-// 输出: { john: 42, adam: 39 }
+// 输出：{ john: 42, adam: 39 }
 ```

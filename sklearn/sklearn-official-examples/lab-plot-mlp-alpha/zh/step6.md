@@ -1,6 +1,6 @@
 # 拟合分类器并绘制决策边界
 
-我们将在每个数据集上拟合每个分类器，并绘制决策边界。我们将使用contourf来绘制决策边界，使用scatter来绘制训练点和测试点。我们还将在每个图上显示准确率得分。
+我们将在每个数据集上拟合每个分类器，并绘制决策边界。我们将使用 contourf 来绘制决策边界，使用 scatter 来绘制训练点和测试点。我们还将在每个图上显示准确率得分。
 
 ```python
     # 遍历分类器
@@ -9,7 +9,7 @@
         clf.fit(X_train, y_train)
         score = clf.score(X_test, y_test)
 
-        # 绘制决策边界。为此，我们将为网格[x_min, x_max] x [y_min, y_max]中的每个点分配一种颜色。
+        # 绘制决策边界。为此，我们将为网格 [x_min, x_max] x [y_min, y_max] 中的每个点分配一种颜色。
         if hasattr(clf, "decision_function"):
             Z = clf.decision_function(np.column_stack([xx.ravel(), yy.ravel()]))
         else:

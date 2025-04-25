@@ -20,4 +20,4 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
 
-コーディングの練習を始めるには、ターミナル/SSHを開いて`node`と入力します。
+コーディングの練習を始めるには、ターミナル/SSH を開いて`node`と入力します。

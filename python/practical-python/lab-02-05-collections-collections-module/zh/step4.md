@@ -1,6 +1,6 @@
 # 示例：记录历史
 
-问题：我们想要记录最近N件事情的历史。解决方案：使用 `deque`。
+问题：我们想要记录最近 N 件事情的历史。解决方案：使用 `deque`。
 
 ```python
 from collections import deque

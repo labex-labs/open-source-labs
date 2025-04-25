@@ -5,11 +5,11 @@
 1. 任意の形式の文字列をスネークケースに変換する必要があります。
 2. スネークケースとは、単語間にアンダースコアがあり、すべて小文字の形式です。
 3. 異なる入力形式を扱う必要があります。
-   - キャメルケース（camelCase）（例: `camelCase` → `camel_case`）
-   - 空白を含む文字列（例: `some text` → `some_text`）
+   - キャメルケース（camelCase）（例：`camelCase` → `camel_case`）
+   - 空白を含む文字列（例：`some text` → `some_text`）
    - 混合形式（ハイフン、アンダースコア、大文字小文字の混合など）の文字列
 
-スネークケース関数用の新しいPythonファイルを作成しましょう。WebIDEでプロジェクトディレクトリに移動し、`snake_case.py` という名前の新しいファイルを作成します。
+スネークケース関数用の新しい Python ファイルを作成しましょう。WebIDE でプロジェクトディレクトリに移動し、`snake_case.py` という名前の新しいファイルを作成します。
 
 ```python
 # This function will convert a string to snake case
@@ -42,4 +42,4 @@ Original: helloWorld
 Snake case: None
 ```
 
-結果が `None` となっているのは、現在の関数がデフォルトのPythonの `None` 値を返しているだけだからです。次のステップで、実際の変換ロジックを追加します。
+結果が `None` となっているのは、現在の関数がデフォルトの Python の `None` 値を返しているだけだからです。次のステップで、実際の変換ロジックを追加します。

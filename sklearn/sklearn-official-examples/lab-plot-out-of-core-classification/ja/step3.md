@@ -4,10 +4,10 @@
 # ベクトル化器を作成し、機能の数を合理的な最大値に制限する
 vectorizer = HashingVectorizer(decode_error="ignore", n_features=2**18, alternate_sign=False)
 
-# 解析済みのルイト社のSGMLファイルの反復処理。
+# 解析済みのルイト社の SGML ファイルの反復処理。
 data_stream = stream_reuters_documents()
 
-# 「acq」クラスとその他のすべてのクラスの間の2値分類を学習する。
+# 「acq」クラスとその他のすべてのクラスの間の 2 値分類を学習する。
 # 「acq」はルイト社のファイルにほぼ均等に分布しているため選択された。他のデータセットの場合、正例の現実的な割合を持つテストセットを作成することに注意する必要がある。
 all_classes = np.array([0, 1])
 positive_class = "acq"

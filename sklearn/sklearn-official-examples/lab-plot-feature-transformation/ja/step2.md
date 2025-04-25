@@ -1,6 +1,6 @@
 # アンサンブル手法の学習
 
-各アンサンブル手法について、推定器を10個、最大深さを3段階に設定します。
+各アンサンブル手法について、推定器を 10 個、最大深さを 3 段階に設定します。
 
 ```python
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier

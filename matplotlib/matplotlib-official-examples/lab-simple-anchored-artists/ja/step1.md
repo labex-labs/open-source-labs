@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-始めるには、Matplotlibと必要なモジュールをインポートする必要があります。
+始めるには、Matplotlib と必要なモジュールをインポートする必要があります。
 
 ```python
 import matplotlib.pyplot as plt

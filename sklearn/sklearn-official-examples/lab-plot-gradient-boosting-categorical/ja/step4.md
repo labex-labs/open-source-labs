@@ -1,6 +1,6 @@
 # 順序エンコードパイプライン
 
-カテゴリカル特徴を順序値として扱い、HistGradientBoostingRegressor推定器を学習するパイプラインを作成します。カテゴリカル特徴をエンコードするためにOrdinalEncoderを使用します。
+カテゴリカル特徴を順序値として扱い、HistGradientBoostingRegressor 推定器を学習するパイプラインを作成します。カテゴリカル特徴をエンコードするために OrdinalEncoder を使用します。
 
 ```python
 from sklearn.preprocessing import OrdinalEncoder

@@ -1,6 +1,6 @@
 # タイトルと軸ラベルを追加する
 
-Matplotlibのtitle、xlabel、ylabel関数を使って、プロットにタイトルと軸ラベルを追加します。
+Matplotlib の title、xlabel、ylabel 関数を使って、プロットにタイトルと軸ラベルを追加します。
 
 ```python
 plt.title("Nearest Centroid Classification")

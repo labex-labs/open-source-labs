@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-必要なライブラリをインポートして始めます。Scikit-learn、NumPy、SciPyが必要です。
+必要なライブラリをインポートして始めます。Scikit-learn、NumPy、SciPy が必要です。
 
 ```python
 from time import time

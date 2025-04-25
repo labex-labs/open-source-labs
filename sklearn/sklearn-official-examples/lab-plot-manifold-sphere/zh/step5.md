@@ -1,6 +1,6 @@
 # 执行多维缩放（MDS）
 
-现在我们将执行多维缩放（Multi-dimensional Scaling，MDS）流形学习。MDS是一种技术，它寻求数据的低维表示，其中点之间的距离与原始高维空间中的距离一致。
+现在我们将执行多维缩放（Multi-dimensional Scaling，MDS）流形学习。MDS 是一种技术，它寻求数据的低维表示，其中点之间的距离与原始高维空间中的距离一致。
 
 ```python
 t0 = time()

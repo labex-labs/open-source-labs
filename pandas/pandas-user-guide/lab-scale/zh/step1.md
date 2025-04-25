@@ -1,6 +1,6 @@
 # 生成数据集
 
-第一步是生成一个大型数据集用于测试。我们创建一个包含许多列的数据集，并将其存储在一个Parquet文件中。此步骤需要pandas和numpy库。
+第一步是生成一个大型数据集用于测试。我们创建一个包含许多列的数据集，并将其存储在一个 Parquet 文件中。此步骤需要 pandas 和 numpy 库。
 
 ```python
 import pandas as pd

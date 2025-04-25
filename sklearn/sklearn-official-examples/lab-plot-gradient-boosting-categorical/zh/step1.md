@@ -1,13 +1,13 @@
 # 加载数据集
 
-我们将使用Scikit-Learn的`fetch_openml`函数加载艾姆斯房屋数据集，并选择部分特征子集以加快示例运行速度。我们还会将分类特征转换为“category”数据类型。
+我们将使用 Scikit-Learn 的`fetch_openml`函数加载艾姆斯房屋数据集，并选择部分特征子集以加快示例运行速度。我们还会将分类特征转换为“category”数据类型。
 
 ```python
 from sklearn.datasets import fetch_openml
 
 X, y = fetch_openml(data_id=42165, as_frame=True, return_X_y=True, parser="pandas")
 
-# 仅选择X的部分特征子集以加快示例运行速度
+# 仅选择 X 的部分特征子集以加快示例运行速度
 categorical_columns_subset = [
     "BldgType",
     "GarageFinish",

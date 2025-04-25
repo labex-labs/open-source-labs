@@ -1,6 +1,6 @@
 # はじめに
 
-このチュートリアルでは、Python の人気のある機械学習ライブラリである Scikit-Learn を使って、Kernel Ridge Regression (KRR) と Support Vector Regression (SVR) を比較します。両モデルは、カーネルトリックを用いて非線形関数を学習します。KRR と SVR は、損失関数とフィッティング方法において異なります。我々は、正弦波の目的関数と、5番目のデータポイントに強いノイズが加えられた人工的なデータセットを使います。
+このチュートリアルでは、Python の人気のある機械学習ライブラリである Scikit-Learn を使って、Kernel Ridge Regression (KRR) と Support Vector Regression (SVR) を比較します。両モデルは、カーネルトリックを用いて非線形関数を学習します。KRR と SVR は、損失関数とフィッティング方法において異なります。我々は、正弦波の目的関数と、5 番目のデータポイントに強いノイズが加えられた人工的なデータセットを使います。
 
 ## VM のヒント
 

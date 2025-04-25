@@ -1,6 +1,6 @@
 # 例としてのグラフ用のデータを生成する
 
-`~.axes.Axes.ticklabel_format`を使ったさまざまな設定を示すために、3つのグラフ用のデータを生成します。
+`~.axes.Axes.ticklabel_format`を使ったさまざまな設定を示すために、3 つのグラフ用のデータを生成します。
 
 ```python
 x = np.arange(0, 1,.01)

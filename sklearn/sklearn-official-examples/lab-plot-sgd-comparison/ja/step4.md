@@ -1,3 +1,3 @@
 # 結果を解釈する
 
-グラフから、SGDClassifier、Perceptron、およびPassive-Aggressive分類器は同様の性能を示し、Passive-Aggressive II分類器がやや良好な性能を示していることがわかります。LogisticRegression分類器は全体的に最も良好な性能を示し、学習データのすべての割合に対して最も低いテスト誤差率を示しています。
+グラフから、SGDClassifier、Perceptron、および Passive-Aggressive 分類器は同様の性能を示し、Passive-Aggressive II 分類器がやや良好な性能を示していることがわかります。LogisticRegression 分類器は全体的に最も良好な性能を示し、学習データのすべての割合に対して最も低いテスト誤差率を示しています。

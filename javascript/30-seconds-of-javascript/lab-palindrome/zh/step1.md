@@ -1,8 +1,8 @@
-# 如何在JavaScript中检查一个字符串是否为回文？
+# 如何在 JavaScript 中检查一个字符串是否为回文？
 
-要在JavaScript中检查给定的字符串是否为回文，请遵循以下步骤：
+要在 JavaScript 中检查给定的字符串是否为回文，请遵循以下步骤：
 
-1. 打开终端/SSH并输入`node`以开始练习编码。
+1. 打开终端/SSH 并输入`node`以开始练习编码。
 2. 使用`String.prototype.toLowerCase()`方法将字符串转换为小写。
 3. 使用`String.prototype.replace()`方法和正则表达式`[\W_]`从字符串中删除非字母数字字符。
 4. 使用展开运算符（`...`）将规范化后的字符串拆分为单个字符。

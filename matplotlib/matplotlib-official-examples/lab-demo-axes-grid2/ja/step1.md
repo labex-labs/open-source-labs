@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-画像のグリッドを作成するために、MatplotlibのImageGridを使用します。また、サンプルデータを生成するためにnumpyを、サンプルデータセットにアクセスするためにcbookを使用します。
+画像のグリッドを作成するために、Matplotlib の ImageGrid を使用します。また、サンプルデータを生成するために numpy を、サンプルデータセットにアクセスするために cbook を使用します。
 
 ```python
 import matplotlib.pyplot as plt

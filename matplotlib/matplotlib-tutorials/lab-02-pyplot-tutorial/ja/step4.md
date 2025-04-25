@@ -19,7 +19,7 @@ plt.suptitle('Categorical Plotting')
 plt.show()
 ```
 
-解説:
+解説：
 
 - 3 つのカテゴリ値を持つリスト `names` と、それに対応する値を表すリスト `values` を作成します。
 - `figure` 関数を呼び出して、指定されたサイズの新しいグラフを作成します。

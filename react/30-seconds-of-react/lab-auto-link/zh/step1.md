@@ -2,9 +2,9 @@
 
 > 虚拟机中已经提供了 `index.html` 和 `script.js`。一般来说，你只需要在 `script.js` 和 `style.css` 中添加代码。
 
-这个组件将字符串渲染为纯文本，同时将URL转换为适当的链接元素。
+这个组件将字符串渲染为纯文本，同时将 URL 转换为适当的链接元素。
 
-为了实现这一点，它使用 `String.prototype.split()` 和 `String.prototype.match()` 以及一个正则表达式在给定字符串中查找URL。然后，匹配到的URL将作为 `<a>` 元素返回，必要时会处理缺失的协议前缀。字符串的其余部分将渲染为纯文本。
+为了实现这一点，它使用 `String.prototype.split()` 和 `String.prototype.match()` 以及一个正则表达式在给定字符串中查找 URL。然后，匹配到的 URL 将作为 `<a>` 元素返回，必要时会处理缺失的协议前缀。字符串的其余部分将渲染为纯文本。
 
 以下是代码：
 
@@ -36,4 +36,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-请点击右下角的“Go Live”在8080端口运行Web服务。然后，你可以刷新**Web 8080**标签页来预览网页。
+请点击右下角的“Go Live”在 8080 端口运行 Web 服务。然后，你可以刷新**Web 8080**标签页来预览网页。

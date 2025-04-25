@@ -6,6 +6,6 @@
 # 空気質パラメータのデータを読み込む
 air_quality_parameters = pd.read_csv("data/air_quality_parameters.csv")
 
-# air_qualityとair_quality_parametersのデータフレームを結合する
+# air_quality と air_quality_parameters のデータフレームを結合する
 air_quality = pd.merge(air_quality, air_quality_parameters, how='left', left_on='parameter', right_on='id')
 ```

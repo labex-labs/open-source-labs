@@ -1,16 +1,16 @@
-# 将pcolor与类似函数进行比较
+# 将 pcolor 与类似函数进行比较
 
-第二步是将pcolor与类似函数进行比较，例如pcolormesh、imshow和pcolorfast。这将帮助你理解这些函数之间的差异以及何时使用它们。
+第二步是将 pcolor 与类似函数进行比较，例如 pcolormesh、imshow 和 pcolorfast。这将帮助你理解这些函数之间的差异以及何时使用它们。
 
 ```python
 # 缩小这些值以提高分辨率
 dx, dy = 0.15, 0.05
 
-# 为x和y边界生成2个二维网格
+# 为 x 和 y 边界生成 2 个二维网格
 y, x = np.mgrid[-3:3+dy:dy, -3:3+dx:dx]
 z = (1 - x/2 + x**5 + y**3) * np.exp(-x**2 - y**2)
-# x和y是边界，因此z应该是这些边界内的值。
-# 因此，从z数组中删除最后一个值。
+# x 和 y 是边界，因此 z 应该是这些边界内的值。
+# 因此，从 z 数组中删除最后一个值。
 z = z[:-1, :-1]
 z_min, z_max = -abs(z).max(), abs(z).max()
 

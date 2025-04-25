@@ -4,49 +4,49 @@
 
 Node.js コンソールで、様々な文字列で `byteSize` 関数をテストしてみましょう。
 
-1. 単純な英語のテキスト:
+1. 単純な英語のテキスト：
 
 ```javascript
 byteSize("The quick brown fox jumps over the lazy dog");
 ```
 
-期待される出力:
+期待される出力：
 
 ```
 43
 ```
 
-2. 数字と特殊文字:
+2. 数字と特殊文字：
 
 ```javascript
 byteSize("123!@#$%^&*()");
 ```
 
-期待される出力:
+期待される出力：
 
 ```
 13
 ```
 
-3. ASCII 文字と非 ASCII 文字の混合:
+3. ASCII 文字と非 ASCII 文字の混合：
 
 ```javascript
-byteSize("Hello, 世界!");
+byteSize("Hello, 世界！");
 ```
 
-期待される出力:
+期待される出力：
 
 ```
 13
 ```
 
-4. 複数の絵文字:
+4. 複数の絵文字：
 
 ```javascript
 byteSize("😀😃😄😁");
 ```
 
-期待される出力:
+期待される出力：
 
 ```
 16

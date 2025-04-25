@@ -18,7 +18,7 @@
    git config --global user.email "你的邮箱"
    ```
 
-3. 将 “hello,labex” 添加到 `README.md` 文件中，将其添加到暂存区并使用消息 “更新 README.md” 提交：
+3. 将“hello,labex”添加到 `README.md` 文件中，将其添加到暂存区并使用消息“更新 README.md”提交：
 
    ```
    echo "hello,labex" >> README.md

@@ -1,6 +1,6 @@
 # 定义模型和参数网格
 
-我们将使用scikit-learn的`RandomForestRegressor`、`HistGradientBoostingRegressor`和`GridSearchCV`类定义两个模型——随机森林和直方图梯度提升，并为它们设置相应的参数网格。我们还将设置主机上用于并行处理的物理核心数量。
+我们将使用 scikit-learn 的`RandomForestRegressor`、`HistGradientBoostingRegressor`和`GridSearchCV`类定义两个模型——随机森林和直方图梯度提升，并为它们设置相应的参数网格。我们还将设置主机上用于并行处理的物理核心数量。
 
 ```python
 import joblib

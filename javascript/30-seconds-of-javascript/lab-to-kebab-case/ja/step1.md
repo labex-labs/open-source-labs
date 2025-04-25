@@ -2,7 +2,7 @@
 
 文字列をケバブケースに変換するには、次の手順に従います。
 
-1. ターミナル/SSHを開き、コーディングを練習するために `node` と入力します。
+1. ターミナル/SSH を開き、コーディングを練習するために `node` と入力します。
 2. `String.prototype.match()` を使用して、適切な正規表現を使って文字列を単語に分割します。
 3. `Array.prototype.map()`、`Array.prototype.join()`、および `String.prototype.toLowerCase()` を使用して、単語を結合し、区切り文字として `-` を追加します。
 

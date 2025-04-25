@@ -6,13 +6,13 @@
 if font.scalable:
     # フェイスのグローバルな境界ボックス (xmin, ymin, xmax, ymax)
     print('Bbox:               ', font.bbox)
-    # EMで覆われるフォント単位の数
+    # EM で覆われるフォント単位の数
     print('EM:                 ', font.units_per_EM)
-    # 26.6単位での昇格部
+    # 26.6 単位での昇格部
     print('Ascender:           ', font.ascender)
-    # 26.6単位での降格部
+    # 26.6 単位での降格部
     print('Descender:          ', font.descender)
-    # 26.6単位での高さ
+    # 26.6 単位での高さ
     print('Height:             ', font.height)
     # 最大水平カーソル進行量
     print('Max adv width:      ', font.max_advance_width)

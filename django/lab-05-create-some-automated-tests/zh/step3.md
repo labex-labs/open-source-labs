@@ -15,7 +15,7 @@ python manage.py shell
 >>> import datetime
 >>> from django.utils import timezone
 >>> from polls.models import Question
->>> # 创建一个发布时间在未来30天的Question实例
+>>> # 创建一个发布时间在未来 30 天的 Question 实例
 >>> future_question = Question(pub_date=timezone.now() + datetime.timedelta(days=30))
 >>> # 它是最近发布的吗？
 >>> future_question.was_published_recently()
@@ -69,7 +69,7 @@ python manage.py test polls
 
 > 不同的错误？
 
-如果你在这里得到一个 `NameError`，你可能在《教程02 - 导入时区》的第2部分中遗漏了一个步骤，我们在那里将 `datetime` 和 `timezone` 的导入添加到了 `polls/models.py` 中。从该部分复制导入内容，然后再次尝试运行你的测试。
+如果你在这里得到一个 `NameError`，你可能在《教程 02 - 导入时区》的第 2 部分中遗漏了一个步骤，我们在那里将 `datetime` 和 `timezone` 的导入添加到了 `polls/models.py` 中。从该部分复制导入内容，然后再次尝试运行你的测试。
 
 发生的情况如下：
 
@@ -77,7 +77,7 @@ python manage.py test polls
 - 它找到了 `django.test.TestCase` 类的一个子类
 - 它为测试目的创建了一个特殊的数据库
 - 它查找测试方法——那些名字以 `test` 开头的方法
-- 在 `test_was_published_recently_with_future_question` 中，它创建了一个 `Question` 实例，其 `pub_date` 字段在未来30天
+- 在 `test_was_published_recently_with_future_question` 中，它创建了一个 `Question` 实例，其 `pub_date` 字段在未来 30 天
 - …… 并使用 `assertIs()` 方法，它发现其 `was_published_recently()` 返回 `True`，尽管我们希望它返回 `False`
 
 测试告诉我们哪个测试失败了，甚至是失败发生的行。
@@ -118,7 +118,7 @@ Destroying test database for alias 'default'...
 ```python
 def test_was_published_recently_with_old_question(self):
     """
-    对于发布时间早于1天的问题，was_published_recently() 返回 False。
+    对于发布时间早于 1 天的问题，was_published_recently() 返回 False。
     """
     time = timezone.now() - datetime.timedelta(days=1, seconds=1)
     old_question = Question(pub_date=time)

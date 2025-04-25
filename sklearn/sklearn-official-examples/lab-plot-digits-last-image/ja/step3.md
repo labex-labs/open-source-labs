@@ -1,6 +1,6 @@
 # 機械学習用のデータセットの準備
 
-データセットで機械学習モデルを学習させる前に、データを訓練用とテスト用のセットに分割することでデータを準備する必要があります。これは、scikit-learnの`train_test_split`関数を使って行うことができます。
+データセットで機械学習モデルを学習させる前に、データを訓練用とテスト用のセットに分割することでデータを準備する必要があります。これは、scikit-learn の`train_test_split`関数を使って行うことができます。
 
 ```python
 from sklearn.model_selection import train_test_split

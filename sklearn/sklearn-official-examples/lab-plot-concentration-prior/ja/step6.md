@@ -1,6 +1,6 @@
 # 結果の描画
 
-このステップでは、ステップ2で定義した`plot_results`関数を使用して、各推定器の結果を描画します。
+このステップでは、ステップ 2 で定義した`plot_results`関数を使用して、各推定器の結果を描画します。
 
 ```python
 for title, estimator, concentrations_prior in estimators:

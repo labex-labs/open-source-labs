@@ -1,6 +1,6 @@
 # 打印结果
 
-我们将打印在步骤8中找到的最佳双聚类的结果。
+我们将打印在步骤 8 中找到的最佳双聚类的结果。
 
 ```python
 for idx, cluster in enumerate(best_idx):
@@ -31,7 +31,7 @@ for idx, cluster in enumerate(best_idx):
         feature_names[cluster_words[i]] for i in word_scores.argsort()[:-11:-1]
     )
 
-    print("双聚类 {} : {} 个文档, {} 个单词".format(idx, n_rows, n_cols))
+    print("双聚类 {} : {} 个文档，{} 个单词".format(idx, n_rows, n_cols))
     print("类别   : {}".format(cat_string))
     print("单词   : {}\n".format(", ".join(重要单词)))
 ```

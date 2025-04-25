@@ -1,10 +1,10 @@
-# Jupyter Notebookの作成とデータの準備
+# Jupyter Notebook の作成とデータの準備
 
-最初のステップでは、新しいJupyter Notebookを作成し、データビジュアライゼーションのためのデータを準備します。
+最初のステップでは、新しい Jupyter Notebook を作成し、データビジュアライゼーションのためのデータを準備します。
 
-## 新しいNotebookの作成
+## 新しい Notebook の作成
 
-Notebookの最初のセルで、必要なライブラリをインポートしましょう。以下のコードを入力し、「Run」ボタンをクリックするか、Shift+Enterキーを押して実行します。
+Notebook の最初のセルで、必要なライブラリをインポートしましょう。以下のコードを入力し、「Run」ボタンをクリックするか、Shift+Enter キーを押して実行します。
 
 ```python
 import matplotlib.pyplot as plt
@@ -13,10 +13,10 @@ import numpy as np
 
 ![libraries-imported](../assets/screenshot-20250306-Azb1cb3S@2x.png)
 
-このコードは、2つの重要なライブラリをインポートします。
+このコードは、2 つの重要なライブラリをインポートします。
 
-- `matplotlib.pyplot`：matplotlibをMATLABのように動作させる関数のコレクション
-- `numpy`：Pythonにおける科学計算のための基本的なパッケージ
+- `matplotlib.pyplot`：matplotlib を MATLAB のように動作させる関数のコレクション
+- `numpy`：Python における科学計算のための基本的なパッケージ
 
 ## サンプルデータの作成
 
@@ -48,7 +48,7 @@ Median: -0.28
 Standard Deviation (σ): 29.86
 ```
 
-正確な値は多少異なる場合があります。私たちは、正規分布から生成された10,000個の乱数を含むデータセットを作成し、3つの重要な統計量を計算しました。
+正確な値は多少異なる場合があります。私たちは、正規分布から生成された 10,000 個の乱数を含むデータセットを作成し、3 つの重要な統計量を計算しました。
 
 1. 平均 (μ)：すべてのデータポイントの平均値
 2. 中央値：データを順番に並べたときの中央の値

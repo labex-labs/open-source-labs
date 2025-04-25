@@ -45,13 +45,13 @@ func main() {
 	r := rect{width: 10, height: 5}
 
 	// 这里我们调用为我们的结构体定义的两个方法。
-	fmt.Println("面积: ", r.area())
-	fmt.Println("周长: ", r.perim())
+	fmt.Println("面积：", r.area())
+	fmt.Println("周长：", r.perim())
 
 	// Go 语言会自动处理方法调用时的值和指针之间的转换。你可能希望使用指针接收者类型，以避免在方法调用时进行复制，或者允许方法修改接收的结构体。
 	rp := &r
-	fmt.Println("面积: ", rp.area())
-	fmt.Println("周长: ", rp.perim())
+	fmt.Println("面积：", rp.area())
+	fmt.Println("周长：", rp.perim())
 }
 
 ```

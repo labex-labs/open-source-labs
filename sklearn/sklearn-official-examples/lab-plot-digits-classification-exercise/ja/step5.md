@@ -1,6 +1,6 @@
 # ロジスティック回帰分類器を学習とテストする
 
-ここでは、scikit-learnの`LogisticRegression`関数を使ってロジスティック回帰分類器を学習し、テストセットでテストします。その後、分類器の精度スコアを表示します。
+ここでは、scikit-learn の`LogisticRegression`関数を使ってロジスティック回帰分類器を学習し、テストセットでテストします。その後、分類器の精度スコアを表示します。
 
 ```python
 from sklearn.linear_model import LogisticRegression

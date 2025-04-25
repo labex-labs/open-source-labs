@@ -17,7 +17,7 @@ for nn, ax in enumerate(axs):
     # 这些大多只是上一级的格式...
     formatter.zero_formats = [''] + formatter.formats[:-1]
     #...除了刻度大多是小时的情况，此时最好有
-    # 月-日：
+    # 月 - 日：
     formatter.zero_formats[3] = '%d-%b'
 
     formatter.offset_formats = ['',

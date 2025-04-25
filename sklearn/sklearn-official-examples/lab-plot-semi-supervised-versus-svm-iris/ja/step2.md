@@ -1,6 +1,6 @@
-# Label Spreading分類器をセットアップする
+# Label Spreading 分類器をセットアップする
 
-異なる割合のラベル付きデータ（30％、50％、100％）を持つ3つのLabel Spreading分類器をセットアップします。Label Spreadingは、半教師あり学習アルゴリズムであり、ラベル付きデータポイントから非ラベル付きデータポイントへの類似性に基づいてラベルを伝播させます。
+異なる割合のラベル付きデータ（30％、50％、100％）を持つ 3 つの Label Spreading 分類器をセットアップします。Label Spreading は、半教師あり学習アルゴリズムであり、ラベル付きデータポイントから非ラベル付きデータポイントへの類似性に基づいてラベルを伝播させます。
 
 ```python
 from sklearn.semi_supervised import LabelSpreading

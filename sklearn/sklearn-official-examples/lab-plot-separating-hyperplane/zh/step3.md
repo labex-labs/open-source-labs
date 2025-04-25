@@ -1,6 +1,6 @@
 # 绘制最大间隔分离超平面
 
-为了绘制最大间隔分离超平面，我们将使用scikit-learn中的`DecisionBoundaryDisplay.from_estimator()`函数。此函数绘制SVM分类器的决策函数和支持向量。我们还将把支持向量绘制为没有填充、只有黑色边缘的圆圈。
+为了绘制最大间隔分离超平面，我们将使用 scikit-learn 中的`DecisionBoundaryDisplay.from_estimator()`函数。此函数绘制 SVM 分类器的决策函数和支持向量。我们还将把支持向量绘制为没有填充、只有黑色边缘的圆圈。
 
 ```python
 from sklearn.inspection import DecisionBoundaryDisplay

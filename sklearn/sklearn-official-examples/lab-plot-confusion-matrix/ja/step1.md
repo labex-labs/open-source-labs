@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-まず、必要なライブラリをインポートする必要があります。scikit-learn、matplotlib、numpy、およびdatasetsを使用します。
+まず、必要なライブラリをインポートする必要があります。scikit-learn、matplotlib、numpy、および datasets を使用します。
 
 ```python
 import numpy as np

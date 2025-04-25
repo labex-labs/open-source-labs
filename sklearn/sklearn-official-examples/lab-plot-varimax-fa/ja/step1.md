@@ -26,6 +26,6 @@ ax.set_yticks([0, 1, 2, 3])
 ax.set_yticklabels(list(feature_names))
 
 plt.colorbar(im).ax.set_ylabel("$r$", rotation=0)
-ax.set_title("Iris特徴量相関行列")
+ax.set_title("Iris 特徴量相関行列")
 plt.tight_layout()
 ```

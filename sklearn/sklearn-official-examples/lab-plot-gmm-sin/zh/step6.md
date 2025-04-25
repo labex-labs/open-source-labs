@@ -10,6 +10,6 @@ plot_results(
     dpgmm.covariances_,
     1,
     "具有狄利克雷过程先验的贝叶斯高斯混合模型，"
-    r"$\gamma_0 = 0.01$。",
+    r"$\gamma_0 = 0.01$.",
 )
 ```

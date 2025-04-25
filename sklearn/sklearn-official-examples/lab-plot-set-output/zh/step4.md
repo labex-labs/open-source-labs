@@ -1,6 +1,6 @@
-# 配置管道以输出DataFrame
+# 配置管道以输出 DataFrame
 
-在`pipeline.Pipeline`中，`set_output`会将所有步骤配置为输出DataFrame。
+在`pipeline.Pipeline`中，`set_output`会将所有步骤配置为输出 DataFrame。
 
 ```python
 from sklearn.pipeline import make_pipeline

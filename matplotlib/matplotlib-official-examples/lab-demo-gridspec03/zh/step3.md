@@ -1,6 +1,6 @@
 # 控制子图周围和之间的间距
 
-在这一步中，我们将使用 `GridSpec` 来控制子图周围和之间的间距。我们将创建一个包含2个网格布局（gridspec）的图形，每个网格布局有3行3列。我们将指定 `left`、`right`、`bottom`、`top`、`wspace` 和 `hspace` 参数来控制间距。
+在这一步中，我们将使用 `GridSpec` 来控制子图周围和之间的间距。我们将创建一个包含 2 个网格布局（gridspec）的图形，每个网格布局有 3 行 3 列。我们将指定 `left`、`right`、`bottom`、`top`、`wspace` 和 `hspace` 参数来控制间距。
 
 ```python
 fig = plt.figure()

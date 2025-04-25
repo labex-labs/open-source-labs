@@ -1,6 +1,6 @@
-# OpenMLを使ってデータセットを読み込む
+# OpenML を使ってデータセットを読み込む
 
-scikit-learnの`fetch_openml()`関数を使って、USPSの数字データセットを読み込みます。その後、`MinMaxScaler()`を使ってデータを正規化します。
+scikit-learn の`fetch_openml()`関数を使って、USPS の数字データセットを読み込みます。その後、`MinMaxScaler()`を使ってデータを正規化します。
 
 ```python
 import numpy as np

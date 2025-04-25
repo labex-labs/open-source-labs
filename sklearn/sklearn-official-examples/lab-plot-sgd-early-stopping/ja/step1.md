@@ -1,6 +1,6 @@
-# 必要なライブラリとMNISTデータセットを読み込む
+# 必要なライブラリと MNIST データセットを読み込む
 
-最初のステップは、必要なライブラリとデータセットを読み込むことです。`pandas`、`numpy`、`matplotlib`、および`scikit-learn`ライブラリを使用します。また、scikit-learnの`fetch_openml`関数を使ってMNISTデータセットを読み込みます。
+最初のステップは、必要なライブラリとデータセットを読み込むことです。`pandas`、`numpy`、`matplotlib`、および`scikit-learn`ライブラリを使用します。また、scikit-learn の`fetch_openml`関数を使って MNIST データセットを読み込みます。
 
 ```python
 import time
@@ -15,13 +15,13 @@ from sklearn.utils._testing import ignore_warnings
 from sklearn.exceptions import ConvergenceWarning
 from sklearn.utils import shuffle
 
-# MNISTデータセットを読み込む
+# MNIST データセットを読み込む
 def load_mnist(n_samples=None, class_0="0", class_1="8"):
-    """MNISTを読み込み、2つのクラスを選択し、シャッフルしてn_samplesのみを返す。"""
+    """MNIST を読み込み、2 つのクラスを選択し、シャッフルして n_samples のみを返す。"""
     # http://openml.org/d/554からデータを読み込む
     mnist = fetch_openml("mnist_784", version=1, as_frame=False, parser="pandas")
 
-    # 2値分類のために2つのクラスのみを取り出す
+    # 2 値分類のために 2 つのクラスのみを取り出す
     mask = np.logical_or(mnist.target == class_0, mnist.target == class_1)
 
     X, y = shuffle(mnist.data[mask], mnist.target[mask], random_state=42)

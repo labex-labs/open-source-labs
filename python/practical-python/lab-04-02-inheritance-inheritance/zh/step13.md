@@ -1,4 +1,4 @@
-# 练习4.6：使用继承生成不同输出
+# 练习 4.6：使用继承生成不同输出
 
 你在（a）部分定义的 `TableFormatter` 类旨在通过继承进行扩展。实际上，这就是整个思路。为了说明这一点，定义一个如下的 `TextTableFormatter` 类：
 
@@ -60,14 +60,14 @@ def portfolio_report(portfoliofile, pricefile):
 >>>
 ```
 
-然而，让我们将输出改为其他格式。定义一个新的 `CSVTableFormatter` 类，以CSV格式输出：
+然而，让我们将输出改为其他格式。定义一个新的 `CSVTableFormatter` 类，以 CSV 格式输出：
 
 ```python
 # tableformat.py
 ...
 class CSVTableFormatter(TableFormatter):
     '''
-    以CSV格式输出投资组合数据。
+    以 CSV 格式输出投资组合数据。
     '''
     def headings(self, headers):
         print(','.join(headers))
@@ -95,7 +95,7 @@ def portfolio_report(portfoliofile, pricefile):
     print_report(report, formatter)
 ```
 
-现在你应该会看到如下的CSV输出：
+现在你应该会看到如下的 CSV 输出：
 
 ```python
 >>> ================================ RESTART ================================

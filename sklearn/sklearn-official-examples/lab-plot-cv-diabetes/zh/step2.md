@@ -1,6 +1,6 @@
-# 应用GridSearchCV
+# 应用 GridSearchCV
 
-接下来，我们将应用GridSearchCV来找到套索回归的最佳alpha值。我们将使用从10^-4到10^-0.5的一系列alpha值，中间有30个值。我们将使用5折交叉验证。
+接下来，我们将应用 GridSearchCV 来找到套索回归的最佳 alpha 值。我们将使用从 10^-4 到 10^-0.5 的一系列 alpha 值，中间有 30 个值。我们将使用 5 折交叉验证。
 
 ```python
 from sklearn.linear_model import Lasso

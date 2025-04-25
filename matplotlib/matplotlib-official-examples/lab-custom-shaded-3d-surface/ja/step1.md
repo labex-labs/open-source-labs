@@ -1,6 +1,6 @@
 # データの読み込みとフォーマット
 
-このステップでは、3Dサーフェスプロット用のデータを読み込み、フォーマットします。「jacksboro_fault_dem.npz」と呼ばれるサンプルデータセットを使用します。
+このステップでは、3D サーフェスプロット用のデータを読み込み、フォーマットします。「jacksboro_fault_dem.npz」と呼ばれるサンプルデータセットを使用します。
 
 ```python
 import matplotlib.pyplot as plt

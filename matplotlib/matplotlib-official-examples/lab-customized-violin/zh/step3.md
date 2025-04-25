@@ -1,6 +1,6 @@
 # 自定义小提琴图外观
 
-现在我们将自定义小提琴图的外观。首先，我们通过将`showmeans`、`showmedians`和`showextrema`参数设置为`False`来限制Matplotlib绘制的内容。然后，我们使用`set_facecolor`和`set_alpha`方法更改小提琴主体的颜色和透明度。最后，我们在小提琴图上方添加一个简化的箱线图表示，使用NumPy的`percentile`函数来计算四分位数、中位数和须线。
+现在我们将自定义小提琴图的外观。首先，我们通过将`showmeans`、`showmedians`和`showextrema`参数设置为`False`来限制 Matplotlib 绘制的内容。然后，我们使用`set_facecolor`和`set_alpha`方法更改小提琴主体的颜色和透明度。最后，我们在小提琴图上方添加一个简化的箱线图表示，使用 NumPy 的`percentile`函数来计算四分位数、中位数和须线。
 
 ```python
 # 自定义小提琴图外观

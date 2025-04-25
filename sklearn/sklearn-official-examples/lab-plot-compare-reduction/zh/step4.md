@@ -6,9 +6,9 @@
 import pandas as pd
 
 mean_scores = np.array(grid.cv_results_["mean_test_score"])
-# 分数按照param_grid迭代顺序排列，即字母顺序
+# 分数按照 param_grid 迭代顺序排列，即字母顺序
 mean_scores = mean_scores.reshape(len(C_OPTIONS), -1, len(N_FEATURES_OPTIONS))
-# 选择最佳C的分数
+# 选择最佳 C 的分数
 mean_scores = mean_scores.max(axis=0)
 # 创建一个数据框以方便绘图
 mean_scores = pd.DataFrame(

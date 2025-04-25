@@ -1,6 +1,6 @@
 # 可视化结果
 
-最后，我们将使用matplotlib可视化结果。我们将绘制数据点的真实位置、使用多维缩放（MDS）得到的数据点位置以及使用非度量多维缩放（Non-Metric MDS）得到的数据点位置。我们还将使用matplotlib的LineCollection绘制数据点之间的成对距离。
+最后，我们将使用 matplotlib 可视化结果。我们将绘制数据点的真实位置、使用多维缩放（MDS）得到的数据点位置以及使用非度量多维缩放（Non-Metric MDS）得到的数据点位置。我们还将使用 matplotlib 的 LineCollection 绘制数据点之间的成对距离。
 
 ```python
 fig = plt.figure(1)

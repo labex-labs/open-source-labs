@@ -1,6 +1,6 @@
 # 数据生成
 
-我们将使用scikit-learn的`make_classification`函数生成一个分类任务。我们将生成500个样本，每个样本有15个特征，其中3个是信息性的，2个是冗余的，10个是非信息性的。
+我们将使用 scikit-learn 的`make_classification`函数生成一个分类任务。我们将生成 500 个样本，每个样本有 15 个特征，其中 3 个是信息性的，2 个是冗余的，10 个是非信息性的。
 
 ```python
 from sklearn.datasets import make_classification

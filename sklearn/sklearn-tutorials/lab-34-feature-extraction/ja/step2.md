@@ -1,6 +1,6 @@
 # 特徴ハッシュ
 
-このステップでは、scikit-learnの`FeatureHasher`クラスを使って特徴ハッシュを行う方法を学びます。特徴ハッシュは、ハッシュ関数を使って特徴を固定長のベクトルにマッピングする手法です。
+このステップでは、scikit-learn の`FeatureHasher`クラスを使って特徴ハッシュを行う方法を学びます。特徴ハッシュは、ハッシュ関数を使って特徴を固定長のベクトルにマッピングする手法です。
 
 ```python
 from sklearn.feature_extraction import FeatureHasher

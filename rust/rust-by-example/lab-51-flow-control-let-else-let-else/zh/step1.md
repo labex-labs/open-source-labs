@@ -8,7 +8,7 @@ use std::str::FromStr;
 fn get_count_item(s: &str) -> (u64, &str) {
     let mut it = s.split(' ');
     let (Some(count_str), Some(item)) = (it.next(), it.next()) else {
-        panic!("无法分割计数-物品对：'{s}'");
+        panic!("无法分割计数 - 物品对：'{s}'");
     };
     let Ok(count) = u64::from_str(count_str) else {
         panic!("无法解析整数：'{count_str}'");
@@ -30,7 +30,7 @@ fn get_count_item(s: &str) -> (u64, &str) {
     let mut it = s.split(' ');
     let (count_str, item) = match (it.next(), it.next()) {
         (Some(count_str), Some(item)) => (count_str, item),
-        _ => panic!("无法分割计数-物品对：'{s}'"),
+        _ => panic!("无法分割计数 - 物品对：'{s}'"),
     };
     let count = if let Ok(count) = u64::from_str(count_str) {
         count

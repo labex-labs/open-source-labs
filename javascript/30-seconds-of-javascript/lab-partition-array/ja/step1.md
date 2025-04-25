@@ -24,7 +24,7 @@ const partitionBy = (arr, fn) =>
   ).res;
 ```
 
-使用例:
+使用例：
 
 ```js
 const numbers = [1, 1, 3, 3, 4, 5, 5, 5];

@@ -16,7 +16,7 @@ const zip = (...arrays) => {
 };
 ```
 
-使用例:
+使用例：
 
 ```js
 zip(["a", "b"], [1, 2], [true, false]); // [['a', 1, true], ['b', 2, false]]

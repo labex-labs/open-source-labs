@@ -1,6 +1,6 @@
 # 中心座標
 
-ユーザーは、`.axes.Axes.pcolormesh`に対して、*X*と*Y*を*Z*と同じサイズで渡したい場合が多いです。`shading='auto'`を渡す場合（:rc:`pcolor.shading`による既定の設定）もこれは許可されます。Matplotlib 3.3以前では、`shading='flat'`では*Z*の最後の列と行が削除されましたが、現在はエラーが発生します。これが本当に必要な場合、簡単に*Z*の最後の行と列を手動で削除してください：
+ユーザーは、`.axes.Axes.pcolormesh`に対して、*X*と*Y*を*Z*と同じサイズで渡したい場合が多いです。`shading='auto'`を渡す場合（:rc:`pcolor.shading`による既定の設定）もこれは許可されます。Matplotlib 3.3 以前では、`shading='flat'`では*Z*の最後の列と行が削除されましたが、現在はエラーが発生します。これが本当に必要な場合、簡単に*Z*の最後の行と列を手動で削除してください：
 
 ```python
 import matplotlib.pyplot as plt

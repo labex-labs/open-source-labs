@@ -13,12 +13,12 @@ def csv_as_dicts(lines, types, headers=None):
     '''
     反復可能オブジェクトからの CSV データを辞書のリストに解析する
 
-    引数:
+    引数：
         lines: CSV 行を生成する反復可能オブジェクト
         types: 各列の型変換関数のリスト
         headers: 列名のオプションリスト。None の場合、最初の行がヘッダーとして使用される
 
-    戻り値:
+    戻り値：
         CSV 行のデータを含む辞書のリスト
     '''
     records = []
@@ -38,12 +38,12 @@ def csv_as_instances(lines, cls, headers=None):
     '''
     反復可能オブジェクトからの CSV データをクラスインスタンスのリストに解析する
 
-    引数:
+    引数：
         lines: CSV 行を生成する反復可能オブジェクト
         cls: インスタンスを作成するクラス
         headers: 列名のオプションリスト。None の場合、最初の行がヘッダーとして使用される
 
-    戻り値:
+    戻り値：
         CSV 行のデータを含むクラスインスタンスのリスト
     '''
     records = []
@@ -62,12 +62,12 @@ def read_csv_as_dicts(filename, types, headers=None):
     '''
     CSV データを、オプションで型変換を行った辞書のリストに読み込む
 
-    引数:
+    引数：
         filename: CSV ファイルへのパス
         types: 各列の型変換関数のリスト
         headers: 列名のオプションリスト。None の場合、最初の行がヘッダーとして使用される
 
-    戻り値:
+    戻り値：
         CSV ファイルのデータを含む辞書のリスト
     '''
     with open(filename) as file:
@@ -77,12 +77,12 @@ def read_csv_as_instances(filename, cls, headers=None):
     '''
     CSV データをクラスインスタンスのリストに読み込む
 
-    引数:
+    引数：
         filename: CSV ファイルへのパス
         cls: インスタンスを作成するクラス
         headers: 列名のオプションリスト。None の場合、最初の行がヘッダーとして使用される
 
-    戻り値:
+    戻り値：
         CSV ファイルのデータを含むクラスインスタンスのリスト
     '''
     with open(filename) as file:

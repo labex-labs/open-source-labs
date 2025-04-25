@@ -1,6 +1,6 @@
 # 展示字体族
 
-接下来，我们将展示Matplotlib中可用的不同字体族。我们将使用`fig.text()`方法来展示每个字体族，将字体族名称作为文本，并将相应的字体族作为关键字参数。
+接下来，我们将展示 Matplotlib 中可用的不同字体族。我们将使用`fig.text()`方法来展示每个字体族，将字体族名称作为文本，并将相应的字体族作为关键字参数。
 
 ```python
 alignment = {'horizontalalignment': 'center', 'verticalalignment': 'baseline'}

@@ -8,7 +8,7 @@
 
 1. 导航到该目录并配置身份信息。
 2. 创建一个 `feature-branch-A` 分支。切换到该分支。
-3. 在 `file2.txt` 文件中添加 “hello,world”，将其添加到暂存区，并使用消息 “fix file2.txt” 提交。
+3. 在 `file2.txt` 文件中添加“hello,world”，将其添加到暂存区，并使用消息“fix file2.txt”提交。
 4. 切换到 `master` 分支。
 5. 将 `feature-branch-A` 合并到 `master` 分支。
 6. 解决合并过程中可能出现的任何冲突。

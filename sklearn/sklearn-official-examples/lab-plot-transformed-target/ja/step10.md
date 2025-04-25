@@ -45,7 +45,7 @@ PredictionErrorDisplay.from_predictions(
 ax1[0].set_title("ターゲット変換なしのリッジ回帰 \n")
 ax1[1].set_title("ターゲット変換ありのリッジ回帰 \n")
 
-f.suptitle("エイムズ住宅データ: 販売価格", y=1.05)
+f.suptitle("エイムズ住宅データ：販売価格", y=1.05)
 plt.tight_layout()
 plt.show()
 ```

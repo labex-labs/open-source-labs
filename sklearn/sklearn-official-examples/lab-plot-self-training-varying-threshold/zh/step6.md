@@ -25,4 +25,4 @@ for i, threshold in enumerate(x_values):
         scores[i, fold] = accuracy_score(y_test_true, y_pred)
 ```
 
-我们使用基础分类器和scikit-learn中的`SelfTrainingClassifier`类，在不同阈值下进行自训练。我们使用分层k折交叉验证将数据拆分为训练集和测试集。然后我们在训练集上拟合自训练分类器，并计算分类器在测试集上的准确率。我们还存储了每个折的标记样本数量和迭代次数。
+我们使用基础分类器和 scikit-learn 中的`SelfTrainingClassifier`类，在不同阈值下进行自训练。我们使用分层 k 折交叉验证将数据拆分为训练集和测试集。然后我们在训练集上拟合自训练分类器，并计算分类器在测试集上的准确率。我们还存储了每个折的标记样本数量和迭代次数。

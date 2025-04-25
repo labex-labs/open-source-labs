@@ -1,6 +1,6 @@
 # 最小限のフォームを作成する
 
-前回のチュートリアルで作成した投票詳細テンプレート（`polls/detail.html`）を更新しましょう。このテンプレートにHTMLの`<form>`要素を含めます。
+前回のチュートリアルで作成した投票詳細テンプレート（`polls/detail.html`）を更新しましょう。このテンプレートに HTML の`<form>`要素を含めます。
 
 ```html+django
 <form action="{% url 'polls:vote' question.id %}" method="post">
@@ -19,12 +19,12 @@
 
 簡単な説明：
 
-- 上記のテンプレートは、各質問の選択肢に対してラジオボタンを表示します。各ラジオボタンの`value`は、関連する質問の選択肢のIDです。各ラジオボタンの`name`は`"choice"`です。つまり、誰かがラジオボタンの1つを選択してフォームを送信すると、POSTデータ`choice=#`が送信されます。ここで`#`は選択された選択肢のIDです。これがHTMLフォームの基本的な概念です。
-- フォームの`action`を`{% url 'polls:vote' question.id %}`に設定し、`method="post"`に設定しました。`method="post"`（`method="get"`とは対照的）を使用することは非常に重要です。なぜなら、このフォームを送信するとサーバーサイドのデータが変更されるからです。サーバーサイドのデータを変更するフォームを作成する場合は常に`method="post"`を使用します。このヒントはDjangoに特有のものではありません。一般的な良いウェブ開発の慣習です。
+- 上記のテンプレートは、各質問の選択肢に対してラジオボタンを表示します。各ラジオボタンの`value`は、関連する質問の選択肢の ID です。各ラジオボタンの`name`は`"choice"`です。つまり、誰かがラジオボタンの 1 つを選択してフォームを送信すると、POST データ`choice=#`が送信されます。ここで`#`は選択された選択肢の ID です。これが HTML フォームの基本的な概念です。
+- フォームの`action`を`{% url 'polls:vote' question.id %}`に設定し、`method="post"`に設定しました。`method="post"`（`method="get"`とは対照的）を使用することは非常に重要です。なぜなら、このフォームを送信するとサーバーサイドのデータが変更されるからです。サーバーサイドのデータを変更するフォームを作成する場合は常に`method="post"`を使用します。このヒントは Django に特有のものではありません。一般的な良いウェブ開発の慣習です。
 - `forloop.counter`は、`for`タグがループを何回行ったかを示します。
-- 私たちが作成しているのはPOSTフォーム（データを変更する可能性がある）なので、クロスサイトリクエスト偽装について心配する必要があります。幸いなことに、あまり苦労する必要はありません。なぜなら、Djangoには対策するための便利なシステムが備えているからです。要するに、内部URLを対象とするすべてのPOSTフォームは、`{% csrf_token %}<csrf_token>`テンプレートタグを使用する必要があります。
+- 私たちが作成しているのは POST フォーム（データを変更する可能性がある）なので、クロスサイトリクエスト偽装について心配する必要があります。幸いなことに、あまり苦労する必要はありません。なぜなら、Django には対策するための便利なシステムが備えているからです。要するに、内部 URL を対象とするすべての POST フォームは、`{% csrf_token %}<csrf_token>`テンプレートタグを使用する必要があります。
 
-では、送信されたデータを処理して何かを行うDjangoのビューを作成しましょう。覚えておいてください。`**パブリックインターフェイスビューの作成**`では、投票アプリケーション用のURLconfを作成しました。このURLconfには次の行が含まれています。
+では、送信されたデータを処理して何かを行う Django のビューを作成しましょう。覚えておいてください。`**パブリックインターフェイスビューの作成**`では、投票アプリケーション用の URLconf を作成しました。この URLconf には次の行が含まれています。
 
 ```python
 path("<int:question_id>/vote/", views.vote, name="vote"),
@@ -58,29 +58,29 @@ def vote(request, question_id):
     else:
         selected_choice.votes += 1
         selected_choice.save()
-        # POSTデータを正常に処理した後は常にHttpResponseRedirectを返します。
-        # これにより、ユーザーが戻るボタンを押した場合にデータが2回送信されるのを防ぎます。
+        # POST データを正常に処理した後は常に HttpResponseRedirect を返します。
+        # これにより、ユーザーが戻るボタンを押した場合にデータが 2 回送信されるのを防ぎます。
         return HttpResponseRedirect(reverse("polls:results", args=(question.id,)))
 ```
 
 このコードには、このチュートリアルでまだ扱っていないいくつかの要素が含まれています。
 
-- `request.POST <django.http.HttpRequest.POST>`は、キー名で送信されたデータにアクセスできる辞書のようなオブジェクトです。この場合、`request.POST['choice']`は選択された選択肢のIDを文字列として返します。`request.POST <django.http.HttpRequest.POST>`の値は常に文字列です。
+- `request.POST <django.http.HttpRequest.POST>`は、キー名で送信されたデータにアクセスできる辞書のようなオブジェクトです。この場合、`request.POST['choice']`は選択された選択肢の ID を文字列として返します。`request.POST <django.http.HttpRequest.POST>`の値は常に文字列です。
 
-  ただし、Djangoは同じ方法でGETデータにアクセスするための`request.GET
+  ただし、Django は同じ方法で GET データにアクセスするための`request.GET
 <django.http.HttpRequest.GET>`も提供しています。ただし、私たちはコードで明示的に`request.POST
-<django.http.HttpRequest.POST>`を使用しています。これにより、データがPOST呼び出しを介してのみ変更されることを確認します。
+<django.http.HttpRequest.POST>`を使用しています。これにより、データが POST 呼び出しを介してのみ変更されることを確認します。
 
-- `request.POST['choice']`は、POSTデータに`choice`が提供されていない場合に`KeyError`を発生させます。上記のコードは`KeyError`をチェックし、`choice`が指定されていない場合にエラーメッセージ付きで質問フォームを再表示します。
-- 選択肢のカウントを増やした後、コードは通常の`~django.http.HttpResponse`ではなく`~django.http.HttpResponseRedirect`を返します。`~django.http.HttpResponseRedirect`は1つの引数を取ります。この引数は、ユーザーがリダイレクトされるURLです（この場合、URLを構築する方法については次の項を参照）。
+- `request.POST['choice']`は、POST データに`choice`が提供されていない場合に`KeyError`を発生させます。上記のコードは`KeyError`をチェックし、`choice`が指定されていない場合にエラーメッセージ付きで質問フォームを再表示します。
+- 選択肢のカウントを増やした後、コードは通常の`~django.http.HttpResponse`ではなく`~django.http.HttpResponseRedirect`を返します。`~django.http.HttpResponseRedirect`は 1 つの引数を取ります。この引数は、ユーザーがリダイレクトされる URL です（この場合、URL を構築する方法については次の項を参照）。
 
-  上のPythonのコメントにもあるように、POSTデータを正常に処理した後は常に`~django.http.HttpResponseRedirect`を返す必要があります。このヒントはDjangoに特有のものではありません。一般的な良いウェブ開発の慣習です。
+  上の Python のコメントにもあるように、POST データを正常に処理した後は常に`~django.http.HttpResponseRedirect`を返す必要があります。このヒントは Django に特有のものではありません。一般的な良いウェブ開発の慣習です。
 
-- この例では、`~django.http.HttpResponseRedirect`コンストラクタで`~django.urls.reverse`関数を使用しています。この関数は、ビュー関数でURLをハードコードする必要を回避するのに役立ちます。これには、制御を渡したいビューの名前と、そのビューを指すURLパターンの可変部分が与えられます。この場合、`**パブリックインターフェイスビューの作成**`で設定したURLconfを使用すると、この`~django.urls.reverse`呼び出しは次のような文字列を返します。
+- この例では、`~django.http.HttpResponseRedirect`コンストラクタで`~django.urls.reverse`関数を使用しています。この関数は、ビュー関数で URL をハードコードする必要を回避するのに役立ちます。これには、制御を渡したいビューの名前と、そのビューを指す URL パターンの可変部分が与えられます。この場合、`**パブリックインターフェイスビューの作成**`で設定した URLconf を使用すると、この`~django.urls.reverse`呼び出しは次のような文字列を返します。
 
       "/polls/3/results/"
 
-  ここで`3`は`question.id`の値です。このリダイレクトされたURLは、最終的なページを表示するために`'results'`ビューを呼び出します。
+  ここで`3`は`question.id`の値です。このリダイレクトされた URL は、最終的なページを表示するために`'results'`ビューを呼び出します。
 
 `**パブリックインターフェイスビューの作成**`で述べたように、`request`は`~django.http.HttpRequest`オブジェクトです。`~django.http.HttpRequest`オブジェクトに関する詳細については、`request and
 response documentation </ref/request-response>`を参照してください。
@@ -123,6 +123,6 @@ python manage.py runserver 0.0.0.0:8080
 
 **注記**：
 
-私たちの`vote()`ビューのコードには小さな問題があります。まず、データベースから`selected_choice`オブジェクトを取得し、次に`votes`の新しい値を計算し、そしてそれをデータベースに保存します。あなたのウェブサイトの2人のユーザーがまさに同時に投票しようとした場合、これがうまくいかないことがあります。同じ値、たとえば42が`votes`として取得されます。そして、両方のユーザーにとって新しい値43が計算されて保存されますが、期待される値は44です。
+私たちの`vote()`ビューのコードには小さな問題があります。まず、データベースから`selected_choice`オブジェクトを取得し、次に`votes`の新しい値を計算し、そしてそれをデータベースに保存します。あなたのウェブサイトの 2 人のユーザーがまさに同時に投票しようとした場合、これがうまくいかないことがあります。同じ値、たとえば 42 が`votes`として取得されます。そして、両方のユーザーにとって新しい値 43 が計算されて保存されますが、期待される値は 44 です。
 
 これは「競合条件」と呼ばれます。興味があれば、`avoiding-race-conditions-using-f`を読んで、この問題をどのように解決するか学ぶことができます。

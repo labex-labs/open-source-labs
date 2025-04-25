@@ -1,6 +1,6 @@
-# 简单的pcolor演示
+# 简单的 pcolor 演示
 
-第一步是创建一个简单的pcolor演示。这将向你展示如何创建一个基本的pcolor绘图。
+第一步是创建一个简单的 pcolor 演示。这将向你展示如何创建一个基本的 pcolor 绘图。
 
 ```python
 Z = np.random.rand(6, 10)

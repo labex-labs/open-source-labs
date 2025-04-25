@@ -16,10 +16,10 @@ plt.bar(["Apples", "Bananas", "Oranges"], [apples, bananas, oranges])
 # タイトルを設定
 plt.title("Simple Bar Plot")
 
-# x軸のラベルを設定
+# x 軸のラベルを設定
 plt.xlabel("Fruits")
 
-# y軸のラベルを設定
+# y 軸のラベルを設定
 plt.ylabel("Quantity")
 
 # グラフを表示

@@ -1,6 +1,6 @@
-# Lassoパスの計算
+# Lasso パスの計算
 
-次に、LARSアルゴリズムを使用してLassoパスを計算します。Scikit-Learnの`linear_model`モジュールの`lars_path`関数を使用してLassoパスを計算します。この関数は、入力特徴、目的変数、およびメソッドをパラメータとして受け取ります。この場合、L1正則化には「lasso」メソッドを使用します。
+次に、LARS アルゴリズムを使用して Lasso パスを計算します。Scikit-Learn の`linear_model`モジュールの`lars_path`関数を使用して Lasso パスを計算します。この関数は、入力特徴、目的変数、およびメソッドをパラメータとして受け取ります。この場合、L1 正則化には「lasso」メソッドを使用します。
 
 ```python
 from sklearn import linear_model

@@ -1,6 +1,6 @@
 # 绘制多项式逻辑回归模型的决策边界
 
-现在我们将使用scikit-learn中的`DecisionBoundaryDisplay`函数绘制多项式逻辑回归模型的决策面。我们将响应方法设置为`"predict"`，颜色映射设置为`"plt.cm.Paired"`，并绘制训练点。
+现在我们将使用 scikit-learn 中的`DecisionBoundaryDisplay`函数绘制多项式逻辑回归模型的决策面。我们将响应方法设置为`"predict"`，颜色映射设置为`"plt.cm.Paired"`，并绘制训练点。
 
 ```python
 _, ax = plt.subplots()

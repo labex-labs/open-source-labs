@@ -1,6 +1,6 @@
-# K-Meansクラスタリング
+# K-Means クラスタリング
 
-scikit-learnの`KMeans`クラスを使ってデータをクラスタリングします。次のコードブロックでは、各データセットに対してk-meansによって得られたクラスタを示す2x2のプロットを作成します。
+scikit-learn の`KMeans`クラスを使ってデータをクラスタリングします。次のコードブロックでは、各データセットに対して k-means によって得られたクラスタを示す 2x2 のプロットを作成します。
 
 ```python
 from sklearn.cluster import KMeans

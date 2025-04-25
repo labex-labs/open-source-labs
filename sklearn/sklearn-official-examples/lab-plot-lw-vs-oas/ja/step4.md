@@ -1,6 +1,6 @@
 # 結果のプロット
 
-最後に、Ledoit-Wolf法とOAS法のMSEとシュリンクレッジを比較するために、結果をプロットします。
+最後に、Ledoit-Wolf 法と OAS 法の MSE とシュリンクレッジを比較するために、結果をプロットします。
 
 ```python
 plt.subplot(2, 1, 1)

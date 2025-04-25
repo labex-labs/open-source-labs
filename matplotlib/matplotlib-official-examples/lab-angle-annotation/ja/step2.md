@@ -3,30 +3,30 @@
 ```python
 class AngleAnnotation(Arc):
     """
-    表示空間で円形に見える2つのベクトル間の弧を描画します。
+    表示空間で円形に見える 2 つのベクトル間の弧を描画します。
     """
     def __init__(self, xy, p1, p2, size=75, unit="points", ax=None,
                  text="", textposition="inside", text_kw=None, **kwargs):
         """
         パラメータ
         ----------
-        xy, p1, p2 : 2つの浮動小数点数のタプルまたは配列
-            中心位置と2つの点。角度注釈は、それぞれ *p1* と *p2* を *xy* と接続する2つのベクトルの間に描画されます。
+        xy, p1, p2 : 2 つの浮動小数点数のタプルまたは配列
+            中心位置と 2 つの点。角度注釈は、それぞれ *p1* と *p2* を *xy* と接続する 2 つのベクトルの間に描画されます。
             単位はデータ座標です。
 
         size : 浮動小数点数
             *unit* で指定された単位での角度注釈の直径。
 
         unit : 文字列
-            *size* の単位を指定するための次の文字列の1つ：
+            *size* の単位を指定するための次の文字列の 1 つ：
 
             * "pixels": ピクセル
-            * "points": ポイント。DPIに依存しないように、ピクセルの代わりにポイントを使用します
-            * "axes width", "axes height": Axes幅、高さの相対単位
-            * "axes min", "axes max": 相対Axes幅、高さの最小値または最大値
+            * "points": ポイント。DPI に依存しないように、ピクセルの代わりにポイントを使用します
+            * "axes width", "axes height": Axes 幅、高さの相対単位
+            * "axes min", "axes max": 相対 Axes 幅、高さの最小値または最大値
 
         ax : `matplotlib.axes.Axes`
-            角度注釈を追加するAxes。
+            角度注釈を追加する Axes。
 
         text : 文字列
             角度をマークするためのテキスト。
@@ -98,14 +98,14 @@ class AngleAnnotation(Arc):
     def set_theta(self, angle):
         pass
 
-    # Arcの属性を再定義して、常にピクセル空間での値を返すようにする
+    # Arc の属性を再定義して、常にピクセル空間での値を返すようにする
     _center = property(get_center_in_pixels, set_center)
     theta1 = property(get_theta1, set_theta)
     theta2 = property(get_theta2, set_theta)
     width = property(get_size, set_size)
     height = property(get_size, set_size)
 
-    # 以下の2つのメソッドは、テキスト位置を更新するために必要です。
+    # 以下の 2 つのメソッドは、テキスト位置を更新するために必要です。
     def draw(self, renderer):
         self.update_text()
         super().draw(renderer)

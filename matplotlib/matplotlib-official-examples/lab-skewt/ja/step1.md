@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-必要なライブラリをインポートして始めましょう。この例では、Matplotlib、NumPy、およびStringIOを使用します。
+必要なライブラリをインポートして始めましょう。この例では、Matplotlib、NumPy、および StringIO を使用します。
 
 ```python
 from contextlib import ExitStack

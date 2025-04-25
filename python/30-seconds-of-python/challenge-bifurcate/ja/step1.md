@@ -12,7 +12,7 @@
 
 ```python
 bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
-# 出力: [['beep', 'boop', 'bar'], ['foo']]
+# 出力：[['beep', 'boop', 'bar'], ['foo']]
 ```
 
 上記の例では、フィルターは `[True, True, False, True]` です。`lst` の最初の 2 つの要素はフィルターを通過するので、最初のリストに追加されます。3 番目の要素はフィルターを通過しないので、2 番目のリストに追加されます。4 番目の要素はフィルターを通過するので、最初のリストに追加されます。

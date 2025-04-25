@@ -1,6 +1,6 @@
 # 生成样本数据
 
-我们将使用Scikit-learn中的`make_regression()`函数来生成样本数据。我们将训练样本数量设置为75，测试样本数量设置为150，特征数量设置为500。我们还将`n_informative`设置为50，并将`shuffle`设置为False。
+我们将使用 Scikit-learn 中的`make_regression()`函数来生成样本数据。我们将训练样本数量设置为 75，测试样本数量设置为 150，特征数量设置为 500。我们还将`n_informative`设置为 50，并将`shuffle`设置为 False。
 
 ```python
 import numpy as np

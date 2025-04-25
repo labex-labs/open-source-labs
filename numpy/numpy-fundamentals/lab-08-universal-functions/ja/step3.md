@@ -1,6 +1,6 @@
 # 出力型の決定
 
-すべての入力引数がndarrayでない場合、ufuncの出力は必ずしもndarrayではありません。出力型は、入力型と型キャストの規則に基づいて決定できます。例を見てみましょう。
+すべての入力引数が ndarray でない場合、ufunc の出力は必ずしも ndarray ではありません。出力型は、入力型と型キャストの規則に基づいて決定できます。例を見てみましょう。
 
 ```python
 import numpy as np
@@ -15,7 +15,7 @@ result = np.multiply.reduce(arr, dtype=float)
 print(result)
 ```
 
-出力:
+出力：
 
 ```
 array([ 0., 28., 80.])

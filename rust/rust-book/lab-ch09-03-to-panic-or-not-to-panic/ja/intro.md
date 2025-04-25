@@ -1,5 +1,5 @@
 # はじめに
 
-**パニックするかしないか**へようこそ。この実験は、[Rust Book](https://doc.rust-lang.org/book/)の一部です。LabExでRustのスキルを練習できます。
+**パニックするかしないか**へようこそ。この実験は、[Rust Book](https://doc.rust-lang.org/book/)の一部です。LabEx で Rust のスキルを練習できます。
 
 この実験では、`panic!`を呼び出すか、`Result`を返すかの判断は、エラー状況の回復可能性と呼び出しコードが利用できるオプションに依存します。

@@ -1,6 +1,6 @@
-# AICとBICの再スケーリング
+# AIC と BIC の再スケーリング
 
-[ZHT2007]\_の定義に合わせるために、AICとBICを再スケーリングする必要があります。
+[ZHT2007]\_の定義に合わせるために、AIC と BIC を再スケーリングする必要があります。
 
 ```python
 def zou_et_al_criterion_rescaling(criterion, n_samples, noise_variance):

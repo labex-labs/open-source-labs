@@ -1,19 +1,19 @@
 # 使用套索回归（Lasso）计算正则化路径
 
-在这一步中，我们将使用套索回归（Lasso）技术计算正则化路径，并使用matplotlib显示结果。
+在这一步中，我们将使用套索回归（Lasso）技术计算正则化路径，并使用 matplotlib 显示结果。
 
 ```python
 from sklearn.linear_model import lasso_path
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 设置eps的值
+# 设置 eps 的值
 eps = 5e-3
 
 # 使用套索回归计算正则化路径
 alphas_lasso, coefs_lasso, _ = lasso_path(X, y, eps=eps)
 
-# 使用matplotlib显示结果
+# 使用 matplotlib 显示结果
 plt.figure(1)
 colors = cycle(["b", "r", "g", "c", "k"])
 neg_log_alphas_lasso = -np.log10(alphas_lasso)

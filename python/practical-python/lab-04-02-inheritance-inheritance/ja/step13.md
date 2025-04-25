@@ -1,4 +1,4 @@
-# 演習4.6: 継承を使って異なる出力を生成する
+# 演習 4.6: 継承を使って異なる出力を生成する
 
 (a) で定義した `TableFormatter` クラスは、継承を通じて拡張することを目的としています。実際、それが全体のアイデアです。例として、次のように `TextTableFormatter` クラスを定義します。
 
@@ -60,14 +60,14 @@ def portfolio_report(portfoliofile, pricefile):
 >>>
 ```
 
-しかし、出力を別のものに変更しましょう。CSV形式で出力を生成する新しいクラス `CSVTableFormatter` を定義します。
+しかし、出力を別のものに変更しましょう。CSV 形式で出力を生成する新しいクラス `CSVTableFormatter` を定義します。
 
 ```python
 # tableformat.py
 ...
 class CSVTableFormatter(TableFormatter):
     '''
-    ポートフォリオデータをCSV形式で出力します。
+    ポートフォリオデータを CSV 形式で出力します。
     '''
     def headings(self, headers):
         print(','.join(headers))
@@ -95,7 +95,7 @@ def portfolio_report(portfoliofile, pricefile):
     print_report(report, formatter)
 ```
 
-これで、次のようなCSV出力が表示されるはずです。
+これで、次のような CSV 出力が表示されるはずです。
 
 ```python
 >>> ================================ RESTART ================================

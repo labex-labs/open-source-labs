@@ -1,6 +1,6 @@
 # 标准化
 
-标准化是许多机器学习算法常见的预处理步骤。它将特征转换为均值为零、方差为一。我们可以使用scikit-learn中的`StandardScaler`来执行标准化。
+标准化是许多机器学习算法常见的预处理步骤。它将特征转换为均值为零、方差为一。我们可以使用 scikit-learn 中的`StandardScaler`来执行标准化。
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -11,10 +11,10 @@ X = np.array([[1., -1., 2.],
               [2., 0., 0.],
               [0., 1., -1.]])
 
-# 初始化StandardScaler
+# 初始化 StandardScaler
 scaler = StandardScaler()
 
-# 在训练数据上拟合scaler
+# 在训练数据上拟合 scaler
 scaler.fit(X)
 
 # 转换训练数据

@@ -1,6 +1,6 @@
 # モデルの評価
 
-モデルの性能を評価するには、scikit-learnの`accuracy_score`関数を使うことができます。
+モデルの性能を評価するには、scikit-learn の`accuracy_score`関数を使うことができます。
 
 ```python
 from sklearn.metrics import accuracy_score

@@ -1,6 +1,6 @@
-# 创建精确率-召回率显示
+# 创建精确率 - 召回率显示
 
-同样，可以使用上一节中的“y_score”来绘制精确率-召回率曲线。
+同样，可以使用上一节中的“y_score”来绘制精确率 - 召回率曲线。
 
 ```python
 from sklearn.metrics import precision_recall_curve

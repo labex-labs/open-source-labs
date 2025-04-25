@@ -1,4 +1,4 @@
-# 绘制Delaunay三角剖分
+# 绘制 Delaunay 三角剖分
 
 我们将使用 `triplot` 函数绘制三角剖分图。
 

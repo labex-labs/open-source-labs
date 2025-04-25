@@ -6,7 +6,7 @@
 from sklearn.base import clone
 
 # 超参数。这些是通过交叉验证设置的，
-# 使用GridSearchCV。这里为了节省时间我们不进行交叉验证。
+# 使用 GridSearchCV。这里为了节省时间我们不进行交叉验证。
 rbm.learning_rate = 0.06
 rbm.n_iter = 10
 
@@ -14,6 +14,6 @@ rbm.n_iter = 10
 rbm.n_components = 100
 logistic.C = 6000
 
-# 训练RBM-逻辑回归管道
+# 训练 RBM-逻辑回归管道
 rbm_features_classifier.fit(X_train, Y_train)
 ```

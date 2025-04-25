@@ -1,6 +1,6 @@
 # 回帰モデルの適合
 
-このステップでは、回帰モデルを適合させます。異なる最大深さで3つの異なるモデルを適合させるために、sklearn.treeからの`DecisionTreeRegressor`を使用します。
+このステップでは、回帰モデルを適合させます。異なる最大深さで 3 つの異なるモデルを適合させるために、sklearn.tree からの`DecisionTreeRegressor`を使用します。
 
 ```python
 # Fit regression model

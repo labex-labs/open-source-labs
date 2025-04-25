@@ -1,6 +1,6 @@
 # 可视化
 
-我们可以使用Matplotlib来可视化不同的组件。
+我们可以使用 Matplotlib 来可视化不同的组件。
 
 ```python
 import matplotlib.pyplot as plt

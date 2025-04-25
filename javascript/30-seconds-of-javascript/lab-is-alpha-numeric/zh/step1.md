@@ -7,7 +7,7 @@
 首先，打开你的代码编辑器。在 WebIDE 中，导航到左侧的文件资源管理器，创建一个新的 JavaScript 文件：
 
 1. 在文件资源管理器面板中右键单击
-2. 选择 “New File”
+2. 选择“New File”
 3. 将文件命名为 `alphanumeric.js`
 
 创建文件后，它应该会自动在编辑器中打开。如果没有打开，请在文件资源管理器中点击 `alphanumeric.js` 来打开它。
@@ -30,9 +30,9 @@ console.log("Is 'hello 123' alphanumeric?", isAlphaNumeric("hello 123"));
 console.log("Is 'hello@123' alphanumeric?", isAlphaNumeric("hello@123"));
 ```
 
-按 `Ctrl + S` 或从菜单中选择 “File” > “Save” 来保存文件。
+按 `Ctrl + S` 或从菜单中选择“File” > “Save”来保存文件。
 
-现在，运行这个 JavaScript 文件以查看输出。通过从菜单中选择 “Terminal” > “New Terminal” 或按 `` Ctrl+` `` 来在 WebIDE 中打开终端。
+现在，运行这个 JavaScript 文件以查看输出。通过从菜单中选择“Terminal” > “New Terminal”或按 `` Ctrl+` `` 来在 WebIDE 中打开终端。
 
 在终端中，执行以下命令：
 

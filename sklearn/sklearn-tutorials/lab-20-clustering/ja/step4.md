@@ -1,6 +1,6 @@
-# k-meansクラスタリングを実行する
+# k-means クラスタリングを実行する
 
-次に、k-meansクラスタリングアルゴリズムをデータに適用しましょう。
+次に、k-means クラスタリングアルゴリズムをデータに適用しましょう。
 
 ```python
 # Perform K-Means clustering

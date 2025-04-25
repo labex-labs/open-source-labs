@@ -1,6 +1,6 @@
-# 定义GridSearchCV对象
+# 定义 GridSearchCV 对象
 
-我们将定义GridSearchCV对象并拟合模型。
+我们将定义 GridSearchCV 对象并拟合模型。
 
 ```python
 grid = GridSearchCV(

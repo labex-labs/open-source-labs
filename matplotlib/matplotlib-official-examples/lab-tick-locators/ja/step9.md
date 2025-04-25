@@ -1,6 +1,6 @@
-# MaxNロケータの定義
+# MaxN ロケータの定義
 
-MaxNロケータは、軸上に最大数の目盛りを配置するロケータです。`ticker.MaxNLocator()` を使用してMaxNロケータを定義できます。
+MaxN ロケータは、軸上に最大数の目盛りを配置するロケータです。`ticker.MaxNLocator()` を使用して MaxN ロケータを定義できます。
 
 ```python
 setup(axs[6], title="MaxNLocator(n=4)")

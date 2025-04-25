@@ -1,6 +1,6 @@
 # 导入库并生成样本数据
 
-我们将首先导入必要的库，并使用scikit-learn中的`make_blobs`函数生成一些样本数据。
+我们将首先导入必要的库，并使用 scikit-learn 中的`make_blobs`函数生成一些样本数据。
 
 ```python
 import matplotlib.pyplot as plt

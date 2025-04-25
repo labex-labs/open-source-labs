@@ -1,6 +1,6 @@
-# 如何在JavaScript中从数组中提取值
+# 如何在 JavaScript 中从数组中提取值
 
-要在JavaScript中从数组中提取特定值，可以使用`Array.prototype.filter()`和`Array.prototype.includes()`方法。以下是具体做法：
+要在 JavaScript 中从数组中提取特定值，可以使用`Array.prototype.filter()`和`Array.prototype.includes()`方法。以下是具体做法：
 
 ```js
 const pull = (arr, ...args) => {

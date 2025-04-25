@@ -1,6 +1,6 @@
-# 3次元プロットの作成
+# 3 次元プロットの作成
 
-次に、`plt.figure()`と`fig.add_subplot()`関数を使って3次元プロットを作成します。また、`ax.plot_wireframe()`関数を使ってデータセットをワイヤーフレームとしてプロットします。
+次に、`plt.figure()`と`fig.add_subplot()`関数を使って 3 次元プロットを作成します。また、`ax.plot_wireframe()`関数を使ってデータセットをワイヤーフレームとしてプロットします。
 
 ```python
 # Create 3D plot

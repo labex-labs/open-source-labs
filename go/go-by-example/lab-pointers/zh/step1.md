@@ -40,7 +40,7 @@ func zeroptr(iptr *int) {
 
 func main() {
 	i := 1
-	fmt.Println("初始值:", i)
+	fmt.Println("初始值：", i)
 
 	zeroval(i)
 	fmt.Println("zeroval:", i)
@@ -51,7 +51,7 @@ func main() {
 	fmt.Println("zeroptr:", i)
 
 	// 指针也可以打印出来。
-	fmt.Println("指针:", &i)
+	fmt.Println("指针：", &i)
 }
 
 ```

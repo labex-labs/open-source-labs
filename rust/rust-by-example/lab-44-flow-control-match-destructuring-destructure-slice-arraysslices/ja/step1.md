@@ -8,7 +8,7 @@ fn main() {
     let array = [1, -2, 6];
 
     match array {
-        // 2番目と3番目の要素をそれぞれの変数にバインドします
+        // 2 番目と 3 番目の要素をそれぞれの変数にバインドします
         [0, second, third] =>
             println!("array[0] = 0, array[1] = {}, array[2] = {}", second, third),
 

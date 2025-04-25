@@ -7,11 +7,11 @@ Rust では独自のエラー型を定義できます。一般的に、「良い
 - 同じ型で異なるエラーを表現する
 - ユーザーに分かりやすいエラー メッセージを表示する
 - 他の型との比較が容易である
-  - 良い例: `Err(EmptyVec)`
-  - 悪い例: `Err("Please use a vector with at least one element".to_owned())`
+  - 良い例：`Err(EmptyVec)`
+  - 悪い例：`Err("Please use a vector with at least one element".to_owned())`
 - エラーに関する情報を保持できる
-  - 良い例: `Err(BadChar(c, position))`
-  - 悪い例: `Err("+ cannot be used here".to_owned())`
+  - 良い例：`Err(BadChar(c, position))`
+  - 悪い例：`Err("+ cannot be used here".to_owned())`
 - 他のエラーとの組み合わせが良好である
 
 ```rust

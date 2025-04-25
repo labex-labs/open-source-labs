@@ -15,7 +15,7 @@ $ go run recursion.go
 以下に完全なコードがあります。
 
 ```go
-// Go言語は
+// Go 言語は
 // <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)"><em>再帰関数</em></a>をサポートしています。
 // ここに典型的な例を示します。
 
@@ -23,7 +23,7 @@ package main
 
 import "fmt"
 
-// この`fact`関数は、`fact(0)`のベースケースに到達するまで自分自身を呼び出します。
+// この `fact`関数は、`fact(0)` のベースケースに到達するまで自分自身を呼び出します。
 func fact(n int) int {
 	if n == 0 {
 		return 1
@@ -34,7 +34,7 @@ func fact(n int) int {
 func main() {
 	fmt.Println(fact(7))
 
-	// クロージャも再帰的になることができますが、これにはクロージャを定義する前に明示的に型付きの`var`で宣言する必要があります。
+	// クロージャも再帰的になることができますが、これにはクロージャを定義する前に明示的に型付きの `var` で宣言する必要があります。
 	var fib func(n int) int
 
 	fib = func(n int) int {
@@ -42,7 +42,7 @@ func main() {
 			return n
 		}
 
-		// `fib`が以前に`main`で宣言されていたので、Go言語はここで`fib`を使ってどの関数を呼び出すかを知っています。
+		// `fib`が以前に `main`で宣言されていたので、Go 言語はここで`fib` を使ってどの関数を呼び出すかを知っています。
 		return fib(n-1) + fib(n-2)
 	}
 

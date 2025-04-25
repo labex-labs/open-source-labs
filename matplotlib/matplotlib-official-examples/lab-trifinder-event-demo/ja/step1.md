@@ -1,6 +1,6 @@
-# Triangulationオブジェクトを作成する
+# Triangulation オブジェクトを作成する
 
-まず、Triangulationオブジェクトを作成する必要があります。`matplotlib.tri`から`Triangulation`クラスを使用します。この例では、ランダムなデータでTriangulationオブジェクトを作成します。
+まず、Triangulation オブジェクトを作成する必要があります。`matplotlib.tri`から`Triangulation`クラスを使用します。この例では、ランダムなデータで Triangulation オブジェクトを作成します。
 
 ```python
 import matplotlib.pyplot as plt

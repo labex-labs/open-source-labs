@@ -1,10 +1,10 @@
-# KBinsDiscretizerを使ったベクトル量子化
+# KBinsDiscretizer を使ったベクトル量子化
 
-ここでは、KBinsDiscretizerを使ってアライグマの顔画像に対してベクトル量子化を行います。画像を表すために8つのグレーレベルを使用し、1ピクセル当たり3ビットのみを使用して圧縮することができます。ピクセル値を8つのグレーレベルにマッピングするために、一様およびk-meansクラスタリング戦略を使用します。
+ここでは、KBinsDiscretizer を使ってアライグマの顔画像に対してベクトル量子化を行います。画像を表すために 8 つのグレーレベルを使用し、1 ピクセル当たり 3 ビットのみを使用して圧縮することができます。ピクセル値を 8 つのグレーレベルにマッピングするために、一様および k-means クラスタリング戦略を使用します。
 
 #### 一様サンプリング戦略
 
-まず、一様サンプリング戦略を使ってピクセル値を8つのグレーレベルにマッピングします。
+まず、一様サンプリング戦略を使ってピクセル値を 8 つのグレーレベルにマッピングします。
 
 ```python
 from sklearn.preprocessing import KBinsDiscretizer
@@ -28,9 +28,9 @@ ax[1].set_title("Distribution of the pixel values")
 _ = fig.suptitle("Raccoon face compressed using 3 bits and a uniform strategy")
 ```
 
-#### k-meansクラスタリング戦略
+#### k-means クラスタリング戦略
 
-次に、k-meansクラスタリング戦略を使ってピクセル値を8つのグレーレベルにマッピングします。
+次に、k-means クラスタリング戦略を使ってピクセル値を 8 つのグレーレベルにマッピングします。
 
 ```python
 encoder = KBinsDiscretizer(

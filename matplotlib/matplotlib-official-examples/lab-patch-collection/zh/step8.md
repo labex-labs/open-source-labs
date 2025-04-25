@@ -1,4 +1,4 @@
-# 设置颜色并创建PatchCollection
+# 设置颜色并创建 PatchCollection
 
 我们设置形状的颜色并创建一个 `PatchCollection()`。
 

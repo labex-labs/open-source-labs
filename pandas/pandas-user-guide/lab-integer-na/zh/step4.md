@@ -8,5 +8,5 @@ a = pd.array([1, None], dtype="Int64")
 
 # 切片第二个元素，该元素是一个缺失值
 missing_value = a[1]
-# 输出: <NA>
+# 输出：<NA>
 ```

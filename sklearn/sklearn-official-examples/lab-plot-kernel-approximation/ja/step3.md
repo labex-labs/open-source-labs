@@ -1,16 +1,16 @@
-# RBFカーネルSVMと線形SVMの決定面
+# RBF カーネル SVM と線形 SVM の決定面
 
 ```python
-# 決定面を可視化します。データセットの最初の2つの主成分に射影します
+# 決定面を可視化します。データセットの最初の 2 つの主成分に射影します
 pca = PCA(n_components=8).fit(data_train)
 
 X = pca.transform(data_train)
 
-# 最初の2つの主成分に沿ってグリッドを生成します
+# 最初の 2 つの主成分に沿ってグリッドを生成します
 multiples = np.arange(-2, 2, 0.1)
 # 最初の成分に沿ったステップ
 first = multiples[:, np.newaxis] * pca.components_[0, :]
-# 2番目の成分に沿ったステップ
+# 2 番目の成分に沿ったステップ
 second = multiples[:, np.newaxis] * pca.components_[1, :]
 # 結合
 grid = first[np.newaxis, :, :] + second[:, np.newaxis, :]
@@ -18,16 +18,16 @@ flat_grid = grid.reshape(-1, data.shape[1])
 
 # プロットのタイトル
 titles = [
-    "rbfカーネルを持つSVC",
-    "Fourier rbf特徴マップを持つSVC(線形カーネル)\nn_components=100",
-    "Nystroem rbf特徴マップを持つSVC(線形カーネル)\nn_components=100",
+    "rbf カーネルを持つ SVC",
+    "Fourier rbf 特徴マップを持つ SVC(線形カーネル)\nn_components=100",
+    "Nystroem rbf 特徴マップを持つ SVC(線形カーネル)\nn_components=100",
 ]
 
 plt.figure(figsize=(18, 7.5))
 plt.rcParams.update({"font.size": 14})
 # 予測とプロット
 for i, clf in enumerate((kernel_svm, nystroem_approx_svm, fourier_approx_svm)):
-    # 決定境界をプロットします。そのために、メッシュ[x_min, x_max]x[y_min, y_max]内の各点に色を割り当てます。
+    # 決定境界をプロットします。そのために、メッシュ [x_min, x_max]x[y_min, y_max] 内の各点に色を割り当てます。
     plt.subplot(1, 3, i + 1)
     Z = clf.predict(flat_grid)
 

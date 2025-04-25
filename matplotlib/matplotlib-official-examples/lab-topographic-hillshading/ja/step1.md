@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-必要なライブラリをインポートして始めます。これには、Matplotlib、NumPy、およびLightSourceが含まれます。
+必要なライブラリをインポートして始めます。これには、Matplotlib、NumPy、および LightSource が含まれます。
 
 ```python
 import matplotlib.pyplot as plt

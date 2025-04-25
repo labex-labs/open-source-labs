@@ -1,4 +1,4 @@
-# BayesianRidgeに続くWardクラスタリング
+# BayesianRidge に続く Ward クラスタリング
 
 ```python
 connectivity = grid_to_graph(n_x=size, n_y=size)

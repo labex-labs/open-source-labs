@@ -1,6 +1,6 @@
 # 导入库
 
-首先，我们需要导入必要的库。我们将使用numpy、matplotlib、scikit-learn以及scikit-learn中的PCA。
+首先，我们需要导入必要的库。我们将使用 numpy、matplotlib、scikit-learn 以及 scikit-learn 中的 PCA。
 
 ```python
 import numpy as np

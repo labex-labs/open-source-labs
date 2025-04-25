@@ -1,6 +1,6 @@
-# 导入Matplotlib并创建图形和坐标轴
+# 导入 Matplotlib 并创建图形和坐标轴
 
-首先，你需要导入Matplotlib并创建一个图形和坐标轴。图形和坐标轴是你绘图的容器。
+首先，你需要导入 Matplotlib 并创建一个图形和坐标轴。图形和坐标轴是你绘图的容器。
 
 ```python
 import matplotlib.pyplot as plt

@@ -10,9 +10,9 @@ np.random.seed(0)
 n_samples = 2000
 time = np.linspace(0, 8, n_samples)
 
-s1 = np.sin(2 * time)  # 信号1：正弦信号
-s2 = np.sign(np.sin(3 * time))  # 信号2：方波信号
-s3 = signal.sawtooth(2 * np.pi * time)  # 信号3：锯齿波信号
+s1 = np.sin(2 * time)  # 信号 1：正弦信号
+s2 = np.sign(np.sin(3 * time))  # 信号 2：方波信号
+s3 = signal.sawtooth(2 * np.pi * time)  # 信号 3：锯齿波信号
 
 S = np.c_[s1, s2, s3]
 S += 0.2 * np.random.normal(size=S.shape)  # 添加噪声

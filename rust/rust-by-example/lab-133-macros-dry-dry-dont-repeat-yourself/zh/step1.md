@@ -1,6 +1,6 @@
 # DRY（不要重复自己）
 
-宏允许通过提取函数和/或测试套件的公共部分来编写DRY代码。以下是一个在 `Vec<T>` 上实现并测试 `+=`、`*=` 和 `-=` 运算符的示例：
+宏允许通过提取函数和/或测试套件的公共部分来编写 DRY 代码。以下是一个在 `Vec<T>` 上实现并测试 `+=`、`*=` 和 `-=` 运算符的示例：
 
 ```rust
 use std::ops::{Add, Mul, Sub};
@@ -10,7 +10,7 @@ macro_rules! assert_equal_len {
     // 运算符和标记。
     ($a:expr, $b:expr, $func:ident, $op:tt) => {
         assert!($a.len() == $b.len(),
-                "{:?}: 维度不匹配: {:?} {:?} {:?}",
+                "{:?}: 维度不匹配：{:?} {:?} {:?}",
                 stringify!($func),
                 ($a.len(),),
                 stringify!($op),

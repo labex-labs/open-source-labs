@@ -6,6 +6,6 @@
 # 測定所の座標データを読み込む
 stations_coord = pd.read_csv("data/air_quality_stations.csv")
 
-# air_qualityとstations_coordのデータフレームを結合する
+# air_quality と stations_coord のデータフレームを結合する
 air_quality = pd.merge(air_quality, stations_coord, how="left", on="location")
 ```

@@ -14,7 +14,7 @@ cd git-playground
 git branch --merged
 ```
 
-出力:
+出力：
 
 ```
 * master

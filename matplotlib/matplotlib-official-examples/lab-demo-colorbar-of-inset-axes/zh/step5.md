@@ -4,7 +4,7 @@
 
 ```python
 cax = inset_axes(axins,
-                 width="5%",  # 宽度 = 父边界框宽度的10%
+                 width="5%",  # 宽度 = 父边界框宽度的 10%
                  height="100%",  # 高度 : 50%
                  loc='lower left',
                  bbox_to_anchor=(1.05, 0., 1, 1),

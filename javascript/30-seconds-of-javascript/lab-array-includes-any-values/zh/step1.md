@@ -1,6 +1,6 @@
 # 检查数组是否包含任何值
 
-要开始练习编码，请打开终端/SSH并输入 `node`。
+要开始练习编码，请打开终端/SSH 并输入 `node`。
 
 要检查一个数组是否至少包含另一个数组中的一个元素，请使用 `Array.prototype.some()` 和 `Array.prototype.includes()`。以下是一个示例函数：
 

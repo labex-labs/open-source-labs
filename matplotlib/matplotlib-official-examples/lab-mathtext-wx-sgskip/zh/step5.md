@@ -1,6 +1,6 @@
 # 创建一个画布框架
 
-创建一个继承自wx.Frame的新类。这个类创建一个画布，用于显示所选函数。
+创建一个继承自 wx.Frame 的新类。这个类创建一个画布，用于显示所选函数。
 
 ```python
 class CanvasFrame(wx.Frame):

@@ -1,6 +1,6 @@
 # 疎成分 - MiniBatchSparsePCA
 
-疎主成分分析（Sparse PCA）は、主成分分析（PCA）のバリアントで、ロードベクトルに疎性を促すことで、より解釈可能な分解をもたらします。私たちは、大規模なデータセットにより適した、SparsePCAの高速バージョンであるMiniBatchSparsePCAを使用します。
+疎主成分分析（Sparse PCA）は、主成分分析（PCA）のバリアントで、ロードベクトルに疎性を促すことで、より解釈可能な分解をもたらします。私たちは、大規模なデータセットにより適した、SparsePCA の高速バージョンである MiniBatchSparsePCA を使用します。
 
 ```python
 # 疎成分 - MiniBatchSparsePCA

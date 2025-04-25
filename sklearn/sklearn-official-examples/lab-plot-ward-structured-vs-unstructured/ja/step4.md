@@ -1,6 +1,6 @@
 # 構造化階層的クラスタリング
 
-Scikit-learnの`kneighbors_graph`関数を使って、10個の近傍点を持つk近傍法（k-Nearest Neighbors）を定義します。
+Scikit-learn の`kneighbors_graph`関数を使って、10 個の近傍点を持つ k 近傍法（k-Nearest Neighbors）を定義します。
 
 ```python
 from sklearn.neighbors import kneighbors_graph

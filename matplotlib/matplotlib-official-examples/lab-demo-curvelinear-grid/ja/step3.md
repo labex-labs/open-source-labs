@@ -1,6 +1,6 @@
 # 最終コード
 
-最終コードは、ステップ1とステップ2のコードを組み合わせたものです。
+最終コードは、ステップ 1 とステップ 2 のコードを組み合わせたものです。
 
 ```python
 import matplotlib.pyplot as plt
@@ -61,10 +61,10 @@ def curvelinear_test2(fig):
     ax1.axis["right"].major_ticklabels.set_visible(True)
     ax1.axis["top"].major_ticklabels.set_visible(True)
 
-    # 右軸に第1座標（角度）の目盛りラベルを表示させる
+    # 右軸に第 1 座標（角度）の目盛りラベルを表示させる
     ax1.axis["right"].get_helper().nth_coord_ticks = 0
 
-    # 下軸に第2座標（半径）の目盛りラベルを表示させる
+    # 下軸に第 2 座標（半径）の目盛りラベルを表示させる
     ax1.axis["bottom"].get_helper().nth_coord_ticks = 1
 
     # サブプロットのアスペクト比と範囲を設定する

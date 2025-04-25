@@ -1,6 +1,6 @@
 # 缺失值插补
 
-数据集中的缺失值可能会给机器学习算法带来问题。我们可以使用scikit-learn的`impute`模块中提供的方法来处理缺失值。在这里，我们将使用`SimpleImputer`来插补缺失值。
+数据集中的缺失值可能会给机器学习算法带来问题。我们可以使用 scikit-learn 的`impute`模块中提供的方法来处理缺失值。在这里，我们将使用`SimpleImputer`来插补缺失值。
 
 ```python
 from sklearn.impute import SimpleImputer
@@ -11,7 +11,7 @@ X = np.array([[1., 2., np.nan],
               [3., np.nan, 5.],
               [np.nan, 4., 6.]])
 
-# 初始化SimpleImputer
+# 初始化 SimpleImputer
 imputer = SimpleImputer()
 
 # 拟合并转换训练数据

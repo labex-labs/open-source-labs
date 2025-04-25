@@ -1,6 +1,6 @@
-# LDAの共分散楕円をプロットする
+# LDA の共分散楕円をプロットする
 
-LDAの共分散楕円体をプロットします。
+LDA の共分散楕円体をプロットします。
 
 ```python
 def plot_lda_cov(lda, splot):

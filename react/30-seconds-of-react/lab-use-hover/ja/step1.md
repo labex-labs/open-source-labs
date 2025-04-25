@@ -1,13 +1,13 @@
-# React useHoverフック
+# React useHover フック
 
-> VM内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
+> VM 内には既に`index.html`と`script.js`が用意されています。一般的には、`script.js`と`style.css`にのみコードを追加すればよいです。
 
 このコードは、ラップされたコンポーネントにマウスオーバーするイベントを処理するカスタムフックを作成します。
 
 このフックを使用するには：
 
 - `useState()`を使用して、マウスオーバー状態を保持する変数を作成します。
-- `useCallback()`を使用して、状態を更新する2つのハンドラ関数をメモ化します。
+- `useCallback()`を使用して、状態を更新する 2 つのハンドラ関数をメモ化します。
 - `useCallback()`を使用して、コールバックリフを作成し、`'mouseover'`と`'mouseout'`イベントのリスナーを作成または更新します。
 - `useRef()`を使用して、最後に`callbackRef`に渡されたノードを追跡し、そのリスナーを削除できるようにします。
 
@@ -47,4 +47,4 @@ const MyApp = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でWebサービスを実行してください。その後、**Web 8080**タブを更新してWebページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 で Web サービスを実行してください。その後、**Web 8080**タブを更新して Web ページをプレビューできます。

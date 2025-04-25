@@ -1,6 +1,6 @@
 # 散布図用の値を計算する
 
-散布図用にdelta1、volume、およびcloseの値を計算します。
+散布図用に delta1、volume、および close の値を計算します。
 
 ```python
 delta1 = np.diff(price_data.adj_close) / price_data.adj_close[:-1]

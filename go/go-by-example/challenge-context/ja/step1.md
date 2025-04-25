@@ -4,7 +4,7 @@
 
 ## 要件
 
-- Golang 1.13以上
+- Golang 1.13 以上
 
 ## 例
 
@@ -12,8 +12,8 @@
 # サーバーをバックグラウンドで実行します。
 $ go run context-in-http-servers.go &
 
-# `/hello`に対するクライアント要求をシミュレートします。
-# 開始直後にCtrl+Cを押してキャンセル信号を送信します。
+# `/hello` に対するクライアント要求をシミュレートします。
+# 開始直後に Ctrl+C を押してキャンセル信号を送信します。
 $ curl localhost:8090/hello
 server: hello handler started
 ^C

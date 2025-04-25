@@ -9,7 +9,7 @@ width = 0.35  # 柱状图宽度
 
 fig, ax = plt.subplots()
 
-# 分类器1 - 3的柱状图
+# 分类器 1 - 3 的柱状图
 p1 = ax.bar(ind, np.hstack(([class1_1[:-1], [0]])), width, color="green", edgecolor="k")
 p2 = ax.bar(
     ind + width,
@@ -30,17 +30,17 @@ plt.axvline(2.8, color="k", linestyle="dashed")
 ax.set_xticks(ind + width)
 ax.set_xticklabels(
     [
-        "逻辑回归\n权重1",
-        "高斯朴素贝叶斯\n权重1",
-        "随机森林分类器\n权重5",
+        "逻辑回归\n权重 1",
+        "高斯朴素贝叶斯\n权重 1",
+        "随机森林分类器\n权重 5",
         "投票分类器\n（平均概率）",
     ],
     rotation=40,
     ha="right",
 )
 plt.ylim([0, 1])
-plt.title("不同分类器对样本1的类别概率")
-plt.legend([p1[0], p2[0]], ["类别1", "类别2"], loc="upper left")
+plt.title("不同分类器对样本 1 的类别概率")
+plt.legend([p1[0], p2[0]], ["类别 1", "类别 2"], loc="upper left")
 plt.tight_layout()
 plt.show()
 ```

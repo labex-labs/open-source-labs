@@ -1,6 +1,6 @@
 # 結果の分析
 
-探索オブジェクトの`cv_results_`属性には探索の結果が含まれています。以下のコードを使ってそれをpandasのデータフレームに変換します：
+探索オブジェクトの`cv_results_`属性には探索の結果が含まれています。以下のコードを使ってそれを pandas のデータフレームに変換します：
 
 ```python
 results = pd.DataFrame(rsh.cv_results_)

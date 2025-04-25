@@ -1,6 +1,6 @@
-# 多クラス分類のためのPrecision-Recall曲線を描画する
+# 多クラス分類のための Precision-Recall 曲線を描画する
 
-Precision-Recall曲線は、マルチラベル設定をサポートしていません。ただし、このケースをどのように処理するかを決めることができます。マルチラベルデータセットを作成し、OneVsRestClassifierを使用してフィットと予測を行い、その後Precision-Recall曲線を描画します。
+Precision-Recall 曲線は、マルチラベル設定をサポートしていません。ただし、このケースをどのように処理するかを決めることができます。マルチラベルデータセットを作成し、OneVsRestClassifier を使用してフィットと予測を行い、その後 Precision-Recall 曲線を描画します。
 
 ```python
 from sklearn.preprocessing import label_binarize
@@ -15,7 +15,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(
     X, Y, test_size=0.5, random_state=random_state
 )
 
-# OneVsRestClassifierを使用してフィットと予測
+# OneVsRestClassifier を使用してフィットと予測
 classifier = OneVsRestClassifier(
     make_pipeline(StandardScaler(), LinearSVC(random_state=random_state, dual="auto"))
 )
@@ -34,7 +34,7 @@ for i in range(n_classes):
 precision["micro"], recall["micro"], _ = precision_recall_curve(Y_test.ravel(), y_score.ravel())
 average_precision["micro"] = average_precision_score(Y_test, y_score, average="micro")
 
-# マイクロ平均Precision-Recall曲線を描画
+# マイクロ平均 Precision-Recall 曲線を描画
 display = PrecisionRecallDisplay(
     recall=recall["micro"],
     precision=precision["micro"],
@@ -44,7 +44,7 @@ display = PrecisionRecallDisplay(
 display.plot(plot_chance_level=True)
 _ = display.ax_.set_title("Micro-averaged over all classes")
 
-# 各クラスのPrecision-Recall曲線とiso-f1曲線を描画
+# 各クラスの Precision-Recall 曲線と iso-f1 曲線を描画
 colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
 _, ax = plt.subplots(figsize=(7, 8))
 f_scores = np.linspace(0.2, 0.8, num=4)

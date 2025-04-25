@@ -1,6 +1,6 @@
-# 基本的なpcolormesh
+# 基本的な pcolormesh
 
-通常、四角形の辺と四角形の値を定義することでpcolormeshを指定します。ここでは、それぞれの次元において、*x*と*y*はZよりも1要素多いことに注意してください。
+通常、四角形の辺と四角形の値を定義することで pcolormesh を指定します。ここでは、それぞれの次元において、*x*と*y*は Z よりも 1 要素多いことに注意してください。
 
 ```python
 import matplotlib.pyplot as plt

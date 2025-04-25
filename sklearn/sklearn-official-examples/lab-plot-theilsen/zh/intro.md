@@ -1,6 +1,6 @@
 # 简介
 
-在本教程中，我们将学习泰尔-森回归（Theil-Sen Regression）及其使用 Python 的 scikit-learn 库的实现。我们还将了解它与普通最小二乘法（OLS）和稳健随机抽样一致性（RANSAC）回归有何不同。
+在本教程中，我们将学习泰尔 - 森回归（Theil-Sen Regression）及其使用 Python 的 scikit-learn 库的实现。我们还将了解它与普通最小二乘法（OLS）和稳健随机抽样一致性（RANSAC）回归有何不同。
 
 ## 虚拟机使用提示
 

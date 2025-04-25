@@ -1,6 +1,6 @@
 # 创建一个基本绘图
 
-让我们从创建一个带有文本元素的基本绘图开始。在你的Python脚本中，添加以下代码：
+让我们从创建一个带有文本元素的基本绘图开始。在你的 Python 脚本中，添加以下代码：
 
 ```python
 import matplotlib.pyplot as plt

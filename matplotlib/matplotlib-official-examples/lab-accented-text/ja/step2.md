@@ -1,11 +1,11 @@
-# Unicode文字の使用
+# Unicode 文字の使用
 
-Matplotlibは、文字列に直接Unicode文字を使用することもサポートしています。
+Matplotlib は、文字列に直接 Unicode 文字を使用することもサポートしています。
 
 ```python
 import matplotlib.pyplot as plt
 
-# Unicodeのデモ
+# Unicode のデモ
 fig, ax = plt.subplots()
 ax.set_title("GISCARD CHAHUTÉ À L'ASSEMBLÉE")
 ax.set_xlabel("LE COUP DE DÉ DE DE GAULLE")

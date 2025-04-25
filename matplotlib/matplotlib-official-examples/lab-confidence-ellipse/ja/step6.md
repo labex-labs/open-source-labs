@@ -13,7 +13,7 @@ ax_kwargs.axvline(c='grey', lw=1)
 ax_kwargs.axhline(c='grey', lw=1)
 
 x, y = get_correlated_dataset(500, dependency_kwargs, mu, scale)
-# 透明度（alphaの使用による）を示すために、zorder=0で楕円をプロットします。
+# 透明度（alpha の使用による）を示すために、zorder=0 で楕円をプロットします。
 confidence_ellipse(x, y, ax_kwargs,
                    alpha=0.5, facecolor='pink', edgecolor='purple', zorder=0)
 

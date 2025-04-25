@@ -17,8 +17,8 @@ const nthElement = (arr, n = 0) =>
 你可以使用以下示例测试此函数：
 
 ```js
-nthElement(["a", "b", "c"], 1); // 输出: 'b'
-nthElement(["a", "b", "b"], -3); // 输出: 'a'
+nthElement(["a", "b", "c"], 1); // 输出：'b'
+nthElement(["a", "b", "b"], -3); // 输出：'a'
 ```
 
 按照这些步骤，你可以使用 JavaScript 轻松找到数组的第 n 个元素。

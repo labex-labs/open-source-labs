@@ -1,6 +1,6 @@
 # 使聚类结果具有一致性
 
-我们希望MiniBatchKMeans和KMeans算法中相同的聚类具有相同的颜色。让我们根据最近的聚类中心进行配对。
+我们希望 MiniBatchKMeans 和 KMeans 算法中相同的聚类具有相同的颜色。让我们根据最近的聚类中心进行配对。
 
 ```python
 from sklearn.metrics.pairwise import pairwise_distances_argmin

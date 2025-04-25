@@ -1,6 +1,6 @@
-# X軸とY軸の両方に制限を追加する
+# X 軸と Y 軸の両方に制限を追加する
 
-最後に、X軸とY軸の両方に制限を追加します。X軸のエラーバーに制限を追加するには、`xlolims`と`xuplims`のパラメータを使用します。
+最後に、X 軸と Y 軸の両方に制限を追加します。X 軸のエラーバーに制限を追加するには、`xlolims`と`xuplims`のパラメータを使用します。
 
 ```python
 # Plot a series with lower and upper limits in both x & y

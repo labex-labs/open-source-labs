@@ -16,7 +16,7 @@ struct DebugPrintable(i32);
 すべての `std` ライブラリの型も、`{:?}` で自動的に表示可能です：
 
 ```rust
-// `Structure` に対して `fmt::Debug` の実装を派生させます。`Structure` は、1つの `i32` を含む構造体です。
+// `Structure` に対して `fmt::Debug` の実装を派生させます。`Structure` は、1 つの `i32` を含む構造体です。
 #[derive(Debug)]
 struct Structure(i32);
 

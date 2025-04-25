@@ -9,7 +9,7 @@ $ python3 report.py portfolio.csv prices.csv
 这个文本字符串列表可以在 `sys.argv` 中找到。
 
 ```python
-# 在上一个bash命令中
+# 在上一个 bash 命令中
 sys.argv # ['report.py', 'portfolio.csv', 'prices.csv']
 ```
 

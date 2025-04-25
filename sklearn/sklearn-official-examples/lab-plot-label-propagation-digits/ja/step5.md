@@ -1,6 +1,6 @@
 # 最も不確実な予測をプロットする
 
-最も不確実な上位10件の予測を選択して表示します。
+最も不確実な上位 10 件の予測を選択して表示します。
 
 ```python
 pred_entropies = stats.distributions.entropy(lp_model.label_distributions_.T)

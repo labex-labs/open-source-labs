@@ -1,6 +1,6 @@
 # 撤销最后一次提交
 
-你刚刚将更改提交到了你的Git仓库，但你意识到自己犯了一个错误。你想撤销最后一次提交，同时又不丢失你所做的任何更改。你该怎么做呢？
+你刚刚将更改提交到了你的 Git 仓库，但你意识到自己犯了一个错误。你想撤销最后一次提交，同时又不丢失你所做的任何更改。你该怎么做呢？
 
 对于本实验，让我们使用来自 `https://github.com/labex-labs/git-playground` 的仓库。请按照以下步骤操作：
 
@@ -34,7 +34,7 @@ git log
 这是运行 `git log --oneline` 命令的结果：
 
 ```shell
-532b49b (HEAD -> master) 撤销 "添加了file2.txt"
+532b49b (HEAD -> master) 撤销 "添加了 file2.txt"
 d22f46b (origin/master, origin/HEAD) 添加了file2.txt
 cf80005 添加了file1.txt
 b00b937 初始提交

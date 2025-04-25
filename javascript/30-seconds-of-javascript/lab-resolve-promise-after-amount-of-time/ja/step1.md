@@ -18,7 +18,7 @@ const resolveAfter = (value, delay) =>
 
 ```js
 resolveAfter("Hello", 1000);
-// 1秒後に 'Hello' に解決する Promise を返します
+// 1 秒後に 'Hello' に解決する Promise を返します
 ```
 
 コーディングの練習を始めるには、ターミナルまたは SSH を開いて `node` と入力します。

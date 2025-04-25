@@ -1,6 +1,6 @@
-# Triangulationの作成
+# Triangulation の作成
 
-このステップでは、`np.linspace`と`np.repeat`を使って点のx座標とy座標を作成します。その後、ステップ1で定義した`function_z`を使ってz値を計算します。最後に、`tri.Triangulation`を使ってTriangulationを作成します。
+このステップでは、`np.linspace`と`np.repeat`を使って点の x 座標と y 座標を作成します。その後、ステップ 1 で定義した`function_z`を使って z 値を計算します。最後に、`tri.Triangulation`を使って Triangulation を作成します。
 
 ```python
 n_angles = 20

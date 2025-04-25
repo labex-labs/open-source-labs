@@ -1,6 +1,6 @@
 # 对象包含数据和行为
 
-由艾瑞克·伽马（Erich Gamma）、理查德·海尔姆（Richard Helm）、拉尔夫·约翰森（Ralph Johnson）和约翰·维利斯ides（John Vlissides）所著的《设计模式：可复用的面向对象软件元素》（_Design Patterns: Elements of Reusable Object-Oriented Software_，艾迪生-韦斯利出版社，1994 年），通俗地被称为「四人帮」的书，是一本面向对象设计模式的目录。它以这种方式定义了面向对象编程：
+由艾瑞克·伽马（Erich Gamma）、理查德·海尔姆（Richard Helm）、拉尔夫·约翰森（Ralph Johnson）和约翰·维利斯 ides（John Vlissides）所著的《设计模式：可复用的面向对象软件元素》（_Design Patterns: Elements of Reusable Object-Oriented Software_，艾迪生 - 韦斯利出版社，1994 年），通俗地被称为「四人帮」的书，是一本面向对象设计模式的目录。它以这种方式定义了面向对象编程：
 
 面向对象程序由对象组成。一个**对象**封装了数据以及对该数据进行操作的过程。这些过程通常被称为**方法**或**操作**。
 

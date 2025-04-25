@@ -1,6 +1,6 @@
 # 修改坐标格式化器
 
-现在我们将修改坐标格式化器，以便根据给定的 x 和 y 报告最近像素的图像 “z” 值。这可以通过自定义 `~.axes.Axes.format_coord` 函数来实现。
+现在我们将修改坐标格式化器，以便根据给定的 x 和 y 报告最近像素的图像“z”值。这可以通过自定义 `~.axes.Axes.format_coord` 函数来实现。
 
 ```python
 def format_coord(x, y):

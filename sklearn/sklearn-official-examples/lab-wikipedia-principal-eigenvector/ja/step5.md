@@ -22,7 +22,7 @@ def centrality_scores(X, alpha=0.85, max_iter=100, tol=1e-10):
             alpha * (scores * X + np.dot(dangle, prev_scores))
             + (1 - alpha) * prev_scores.sum() / n
         )
-        # 収束を確認する: 正規化されたl_infノルム
+        # 収束を確認する：正規化された l_inf ノルム
         scores_max = np.abs(scores).max()
         if scores_max == 0.0:
             scores_max = 1.0

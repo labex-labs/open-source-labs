@@ -6,7 +6,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 创建包含100个元素的示例数据
+# 创建包含 100 个元素的示例数据
 x = [f'{xx}' for xx in np.arange(100)]
 y = np.arange(100)
 
@@ -17,7 +17,7 @@ ax.set_xlabel('Categories')
 plt.show()
 ```
 
-在这个示例中，x 轴上有100个字符串值，导致出现过多无法读取的刻度。
+在这个示例中，x 轴上有 100 个字符串值，导致出现过多无法读取的刻度。
 
 要解决这个问题，我们需要将字符串转换为浮点数。以下是一个示例：
 
@@ -25,7 +25,7 @@ plt.show()
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 创建包含100个元素的示例数据
+# 创建包含 100 个元素的示例数据
 x = [f'{xx}' for xx in np.arange(100)]
 y = np.arange(100)
 

@@ -34,6 +34,6 @@ for k, col in zip(unique_labels, colors):
         markersize=6,
     )
 
-plt.title(f"估计的聚类数量: {n_clusters_}")
+plt.title(f"估计的聚类数量：{n_clusters_}")
 plt.show()
 ```

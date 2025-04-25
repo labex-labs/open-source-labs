@@ -1,6 +1,6 @@
-# 比较具有不同比例参数 “linear_width” 的 “asinh” 图
+# 比较具有不同比例参数“linear_width”的“asinh”图
 
-现在我们将比较具有不同比例参数 “linear_width” 的 “asinh” 图。我们将绘制三个具有不同 “linear_width” 值的图。
+现在我们将比较具有不同比例参数“linear_width”的“asinh”图。我们将绘制三个具有不同“linear_width”值的图。
 
 ```python
 fig2 = plt.figure(layout='constrained')

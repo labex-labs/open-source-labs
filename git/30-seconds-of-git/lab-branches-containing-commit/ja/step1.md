@@ -1,6 +1,6 @@
 # 特定のコミットを含むブランチを見つける
 
-`https://github.com/labex-labs/git-playground` という名前の Git リポジトリが与えられています。 あなたのタスクは、コミットメッセージが "Added file2.txt" のハッシュを含むすべてのブランチを見つけることです。
+`https://github.com/labex-labs/git-playground` という名前の Git リポジトリが与えられています。あなたのタスクは、コミットメッセージが "Added file2.txt" のハッシュを含むすべてのブランチを見つけることです。
 
 1. リポジトリディレクトリに移動します。
 

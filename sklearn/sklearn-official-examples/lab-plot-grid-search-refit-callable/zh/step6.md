@@ -11,10 +11,10 @@ plt.bar(n_components, test_scores, width=1.3, color="b")
 
 lower = lower_bound(grid.cv_results_)
 plt.axhline(np.max(test_scores), linestyle="--", color="y", label="最佳分数")
-plt.axhline(lower, linestyle="--", color=".5", label="最佳分数 - 1个标准差")
+plt.axhline(lower, linestyle="--", color=".5", label="最佳分数 - 1 个标准差")
 
 plt.title("平衡模型复杂度和交叉验证分数")
-plt.xlabel("使用的PCA组件数量")
+plt.xlabel("使用的 PCA 组件数量")
 plt.ylabel("数字分类准确率")
 plt.xticks(n_components.tolist())
 plt.ylim((0, 1.0))

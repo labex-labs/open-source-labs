@@ -1,6 +1,6 @@
 # 拟合回归模型
 
-在这一步中，我们将拟合回归模型。我们将使用来自scikit-learn库中sklearn.tree的`DecisionTreeRegressor`来拟合三个具有不同最大深度的不同模型。
+在这一步中，我们将拟合回归模型。我们将使用来自 scikit-learn 库中 sklearn.tree 的`DecisionTreeRegressor`来拟合三个具有不同最大深度的不同模型。
 
 ```python
 # 拟合回归模型

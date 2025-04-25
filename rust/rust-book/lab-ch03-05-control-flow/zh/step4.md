@@ -9,7 +9,7 @@ fn main() {
     let condition = true;
     let number = if condition { 5 } else { 6 };
 
-    println!("number 的值是: {number}");
+    println!("number 的值是：{number}");
 }
 ```
 
@@ -35,7 +35,7 @@ fn main() {
 
     let number = if condition { 5 } else { "six" };
 
-    println!("number 的值是: {number}");
+    println!("number 的值是：{number}");
 }
 ```
 

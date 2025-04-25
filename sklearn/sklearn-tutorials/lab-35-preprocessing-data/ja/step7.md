@@ -1,6 +1,6 @@
 # カスタムトランスフォーマーの作成
 
-場合によっては、既存のPython関数をトランスフォーマーに変換して、データのクリーニングや処理を支援したい場合があります。これは、scikit-learnの `FunctionTransformer` を使用して達成できます。
+場合によっては、既存の Python 関数をトランスフォーマーに変換して、データのクリーニングや処理を支援したい場合があります。これは、scikit-learn の `FunctionTransformer` を使用して達成できます。
 
 ```python
 from sklearn.preprocessing import FunctionTransformer

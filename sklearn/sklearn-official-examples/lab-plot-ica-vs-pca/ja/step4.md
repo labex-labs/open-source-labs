@@ -1,6 +1,6 @@
 # 結果のプロット
 
-このステップでは、matplotlibを使って結果をプロットします。
+このステップでは、matplotlib を使って結果をプロットします。
 
 ```python
 import matplotlib.pyplot as plt

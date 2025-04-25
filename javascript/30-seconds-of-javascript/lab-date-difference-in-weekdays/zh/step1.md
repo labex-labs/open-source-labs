@@ -2,7 +2,7 @@
 
 要计算两个日期之间的工作日，请执行以下步骤：
 
-1. 打开终端/SSH并输入`node`以开始练习编码。
+1. 打开终端/SSH 并输入`node`以开始练习编码。
 2. 使用`Array.from()`创建一个长度等于`startDate`和`endDate`之间天数的数组。
 3. 使用`Array.prototype.reduce()`遍历数组，检查每个日期是否为工作日，并增加`count`。
 4. 在每次循环中使用`Date.prototype.getDate()`和`Date.prototype.setDate()`将`startDate`更新为下一天，使其前进一天。

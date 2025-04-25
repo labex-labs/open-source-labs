@@ -4,8 +4,8 @@
 
 ```python
 def update(val):
-    # 由RangeSlider传递给回调的val
-    # 将是一个(min, max)元组
+    # 由 RangeSlider 传递给回调的 val
+    # 将是一个 (min, max) 元组
 
     # 更新图像的颜色映射
     im.norm.vmin = val[0]

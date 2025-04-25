@@ -27,10 +27,10 @@
 
 ### extract_min
 
-- 空のリストからの`extract_min`：Noneを返す。
+- 空のリストからの`extract_min`：None を返す。
 - `extract_min`の一般的なケース：優先度付きキューから最小ノードを削除して返す。
 
 ### decrease_key
 
-- 無効なキーの`decrease_key`：Noneを返す。
+- 無効なキーの`decrease_key`：None を返す。
 - `decrease_key`の一般的なケース：優先度付きキュー内の指定されたノードのキーを減らす。

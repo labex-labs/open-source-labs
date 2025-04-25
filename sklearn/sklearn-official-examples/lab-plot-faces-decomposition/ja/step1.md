@@ -1,6 +1,6 @@
 # データセットの準備
 
-まず、オリベッティ顔データセットを読み込み、前処理を行います。データをゼロ平均にするために、グローバル（1つの特徴に焦点を当ててすべてのサンプルを中心化）とローカル（1つのサンプルに焦点を当ててすべての特徴を中心化）の両方で中心化します。また、顔のギャラリーを描画するための基本関数も定義します。
+まず、オリベッティ顔データセットを読み込み、前処理を行います。データをゼロ平均にするために、グローバル（1 つの特徴に焦点を当ててすべてのサンプルを中心化）とローカル（1 つのサンプルに焦点を当ててすべての特徴を中心化）の両方で中心化します。また、顔のギャラリーを描画するための基本関数も定義します。
 
 ```python
 # オリベッティ顔データセットを読み込み、前処理を行う。
@@ -22,10 +22,10 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 faces, _ = fetch_olivetti_faces(return_X_y=True, shuffle=True, random_state=rng)
 n_samples, n_features = faces.shape
 
-# グローバル中心化（1つの特徴に焦点を当ててすべてのサンプルを中心化）
+# グローバル中心化（1 つの特徴に焦点を当ててすべてのサンプルを中心化）
 faces_centered = faces - faces.mean(axis=0)
 
-# ローカル中心化（1つのサンプルに焦点を当ててすべての特徴を中心化）
+# ローカル中心化（1 つのサンプルに焦点を当ててすべての特徴を中心化）
 faces_centered -= faces_centered.mean(axis=1).reshape(n_samples, -1)
 
 print("Dataset consists of %d faces" % n_samples)

@@ -12,11 +12,11 @@ def gradient_image(ax, direction=0.3, cmap_range=(0, 1), **kwargs):
     ax : Axes
         要绘制的坐标轴。
     direction : float
-        渐变方向。这是一个介于0（=垂直）到1（=水平）之间的数字。
+        渐变方向。这是一个介于 0（=垂直）到 1（=水平）之间的数字。
     cmap_range : float, float
-        颜色映射表中应用于渐变的部分（cmin, cmax），其中完整的颜色映射表范围是(0, 1)。
+        颜色映射表中应用于渐变的部分（cmin, cmax），其中完整的颜色映射表范围是 (0, 1)。
     **kwargs
-        其他参数将传递给`.Axes.imshow()`。
+        其他参数将传递给 `.Axes.imshow()`。
         特别是，*cmap*、*extent*和*transform*可能会很有用。
     """
     phi = direction * np.pi / 2

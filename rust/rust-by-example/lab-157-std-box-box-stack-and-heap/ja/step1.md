@@ -51,9 +51,9 @@ fn main() {
     // 二重の間接参照
     let box_in_a_box: Box<Box<Point>> = Box::new(boxed_origin());
 
-    println!("Pointはスタック上で {} バイトを占めています",
+    println!("Point はスタック上で {} バイトを占めています",
              mem::size_of_val(&point));
-    println!("Rectangleはスタック上で {} バイトを占めています",
+    println!("Rectangle はスタック上で {} バイトを占めています",
              mem::size_of_val(&rectangle));
 
     // ボックスのサイズ == ポインタのサイズ

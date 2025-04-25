@@ -1,13 +1,13 @@
-# 一对一多类ROC
+# 一对一多类 ROC
 
-一对一（One-vs-One，OvO）多类策略包括为每对类别拟合一个分类器。由于它需要训练 \(n_classes \times (n_classes - 1) / 2\) 个分类器，由于其 \(O(n_classes ^2)\) 的复杂度，这种方法通常比一对其余（One-vs-Rest）方法慢。在这一步中，我们展示如何使用OvO多类策略计算ROC曲线。
+一对一（One-vs-One，OvO）多类策略包括为每对类别拟合一个分类器。由于它需要训练 \(n_classes \times (n_classes - 1) / 2\) 个分类器，由于其 \(O(n_classes ^2)\) 的复杂度，这种方法通常比一对其余（One-vs-Rest）方法慢。在这一步中，我们展示如何使用 OvO 多类策略计算 ROC 曲线。
 
 ```python
 pair_list = [(0, 1), (1, 2), (0, 2)]
 pair_scores = []
 mean_tpr = dict()
 
-# 为每对类别计算ROC曲线和ROC AUC分数
+# 为每对类别计算 ROC 曲线和 ROC AUC 分数
 for ix, (label_a, label_b) in enumerate(pair_list):
     a_mask = y_test == target_names[label_a]
     b_mask = y_test == target_names[label_b]
@@ -57,7 +57,7 @@ for ix, (label_a, label_b) in enumerate(pair_list):
     plt.legend()
     plt.show()
 
-# 计算宏平均ROC曲线和ROC AUC分数
+# 计算宏平均 ROC 曲线和 ROC AUC 分数
 mean_tpr = np.zeros_like(fpr_grid)
 for ix in range(len(pair_list)):
     mean_tpr += mean_tpr[ix]
@@ -77,7 +77,7 @@ plt.plot([0, 1], [0, 1], "k--", label="随机水平")
 plt.axis("square")
 plt.xlabel("False Positive Rate")
 plt.ylabel("True Positive Rate")
-plt.title("一对一ROC曲线")
+plt.title("一对一 ROC 曲线")
 plt.legend()
 plt.show()
 ```

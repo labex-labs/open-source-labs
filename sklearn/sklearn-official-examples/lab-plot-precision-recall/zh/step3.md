@@ -1,6 +1,6 @@
-# 绘制多标签分类的精确率-召回率曲线
+# 绘制多标签分类的精确率 - 召回率曲线
 
-精确率-召回率曲线不支持多标签设置。不过，我们可以决定如何处理这种情况。我们将创建一个多标签数据集，使用一对多分类器（OneVsRestClassifier）进行拟合和预测，然后绘制精确率-召回率曲线。
+精确率 - 召回率曲线不支持多标签设置。不过，我们可以决定如何处理这种情况。我们将创建一个多标签数据集，使用一对多分类器（OneVsRestClassifier）进行拟合和预测，然后绘制精确率 - 召回率曲线。
 
 ```python
 from sklearn.preprocessing import label_binarize
@@ -34,7 +34,7 @@ for i in range(n_classes):
 precision["micro"], recall["micro"], _ = precision_recall_curve(Y_test.ravel(), y_score.ravel())
 average_precision["micro"] = average_precision_score(Y_test, y_score, average="micro")
 
-# 绘制微平均精确率-召回率曲线
+# 绘制微平均精确率 - 召回率曲线
 display = PrecisionRecallDisplay(
     recall=recall["micro"],
     precision=precision["micro"],
@@ -44,7 +44,7 @@ display = PrecisionRecallDisplay(
 display.plot(plot_chance_level=True)
 _ = display.ax_.set_title("所有类别上的微平均")
 
-# 绘制每个类别的精确率-召回率曲线和等 f1 曲线
+# 绘制每个类别的精确率 - 召回率曲线和等 f1 曲线
 colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
 _, ax = plt.subplots(figsize=(7, 8))
 f_scores = np.linspace(0.2, 0.8, num=4)
@@ -60,7 +60,7 @@ display = PrecisionRecallDisplay(
     precision=precision["micro"],
     average_precision=average_precision["micro"],
 )
-display.plot(ax=ax, name="微平均精确率-召回率", color="gold")
+display.plot(ax=ax, name="微平均精确率 - 召回率", color="gold")
 
 for i, color in zip(range(n_classes), colors):
     display = PrecisionRecallDisplay(
@@ -68,7 +68,7 @@ for i, color in zip(range(n_classes), colors):
         precision=precision[i],
         average_precision=average_precision[i],
     )
-    display.plot(ax=ax, name=f"类别 {i} 的精确率-召回率", color=color)
+    display.plot(ax=ax, name=f"类别 {i} 的精确率 - 召回率", color=color)
 
 handles, labels = display.ax_.get_legend_handles_labels()
 handles.extend([l])
@@ -76,6 +76,6 @@ labels.extend(["等 f1 曲线"])
 ax.set_xlim([0.0, 1.0])
 ax.set_ylim([0.0, 1.05])
 ax.legend(handles=handles, labels=labels, loc="best")
-ax.set_title("精确率-召回率曲线扩展到多类别")
+ax.set_title("精确率 - 召回率曲线扩展到多类别")
 plt.show()
 ```

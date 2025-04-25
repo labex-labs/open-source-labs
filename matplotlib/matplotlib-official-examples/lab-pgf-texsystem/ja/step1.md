@@ -1,6 +1,6 @@
-# Matplotlibをインポートしてpgf.texsystemパラメータを設定する
+# Matplotlib をインポートして pgf.texsystem パラメータを設定する
 
-まず、Matplotlibライブラリをインポートして、`pgf.texsystem`パラメータを`pdflatex`に設定する必要があります。このパラメータを使うと、LaTeXを使ってプロットのフォントファミリをカスタマイズできます。
+まず、Matplotlib ライブラリをインポートして、`pgf.texsystem`パラメータを`pdflatex`に設定する必要があります。このパラメータを使うと、LaTeX を使ってプロットのフォントファミリをカスタマイズできます。
 
 ```python
 import matplotlib.pyplot as plt

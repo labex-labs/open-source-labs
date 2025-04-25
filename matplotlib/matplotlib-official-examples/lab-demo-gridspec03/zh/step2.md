@@ -1,6 +1,6 @@
 # 使用 `GridSpec` 生成子图
 
-在这一步中，我们将使用 `GridSpec` 来生成子图。我们将创建一个2行2列的图形。我们还将指定 `width_ratios` 和 `height_ratios` 来控制子图的相对大小。
+在这一步中，我们将使用 `GridSpec` 来生成子图。我们将创建一个 2 行 2 列的图形。我们还将指定 `width_ratios` 和 `height_ratios` 来控制子图的相对大小。
 
 ```python
 fig = plt.figure()

@@ -1,6 +1,6 @@
 # アウトライア予測関数
 
-次のステップは、アウトライア予測関数を定義することです。この例では、`LocalOutlierFactor` と `IsolationForest` アルゴリズムを使用します。`compute_prediction` 関数は、Xの平均アウトライアスコアを返します。
+次のステップは、アウトライア予測関数を定義することです。この例では、`LocalOutlierFactor` と `IsolationForest` アルゴリズムを使用します。`compute_prediction` 関数は、X の平均アウトライアスコアを返します。
 
 ```python
 from sklearn.neighbors import LocalOutlierFactor

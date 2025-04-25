@@ -1,6 +1,6 @@
-# Triangulationと高解像度の等高線を描画する
+# Triangulation と高解像度の等高線を描画する
 
-このステップでは、`ax.triplot`、`ax.tricontourf`、および`ax.tricontour`を使ってTriangulationと高解像度の等高線を描画します。
+このステップでは、`ax.triplot`、`ax.tricontourf`、および`ax.tricontour`を使って Triangulation と高解像度の等高線を描画します。
 
 ```python
 fig, ax = plt.subplots()

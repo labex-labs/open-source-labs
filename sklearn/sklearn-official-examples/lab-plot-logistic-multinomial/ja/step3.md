@@ -1,6 +1,6 @@
 # 多項ロジスティック回帰モデルの学習
 
-ここでは、scikit-learnの`LogisticRegression`関数を使って多項ロジスティック回帰モデルを学習します。ソルバーを`sag`に、最大反復回数を100に、乱数シードを42に、多クラスオプションを`"multinomial"`に設定します。その後、モデルの学習スコアを表示します。
+ここでは、scikit-learn の`LogisticRegression`関数を使って多項ロジスティック回帰モデルを学習します。ソルバーを`sag`に、最大反復回数を 100 に、乱数シードを 42 に、多クラスオプションを`"multinomial"`に設定します。その後、モデルの学習スコアを表示します。
 
 ```python
 clf = LogisticRegression(

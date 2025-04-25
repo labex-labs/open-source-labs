@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-最初のステップは、必要なライブラリをインポートすることです。Matplotlib、NumPy、PathPatch、およびPathを使用します。
+最初のステップは、必要なライブラリをインポートすることです。Matplotlib、NumPy、PathPatch、および Path を使用します。
 
 ```python
 import matplotlib.pyplot as plt

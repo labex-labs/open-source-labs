@@ -18,7 +18,7 @@ alert("hello!");
 
 > 右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、「Web 8080」タブを更新して、ウェブページをプレビューできます。
 
-変数名のように見えるものがあり、その後に丸括弧 `()` が続いている場合、それはおそらく関数です。関数はしばしば [引数](https://developer.mozilla.org/ja/docs/Glossary/Argument) を取ります： 関数が仕事をするために必要なデータの断片です。引数は丸括弧の中に入り、引数が複数ある場合はコンマで区切られます。
+変数名のように見えるものがあり、その後に丸括弧 `()` が続いている場合、それはおそらく関数です。関数はしばしば [引数](https://developer.mozilla.org/ja/docs/Glossary/Argument) を取ります：関数が仕事をするために必要なデータの断片です。引数は丸括弧の中に入り、引数が複数ある場合はコンマで区切られます。
 
 例えば、`alert()` 関数はブラウザウィンドウ内にポップアップボックスを表示しますが、表示するメッセージを関数に伝えるために、文字列を引数として与える必要があります。
 
@@ -43,4 +43,4 @@ multiply(20, 20);
 multiply(0.5, 3);
 ```
 
-> **注:** [`return`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/return) 文は、ブラウザに `result` 変数を関数の外に返すように指示します。そうすることで、それを使うことができるようになります。これは必要です。なぜなら、関数内で定義された変数はそれらの関数内でのみ利用可能だからです。これは変数のスコープと呼ばれます。([変数のスコープ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope) に関する詳細はこちらを参照してください。)
+> **注：** [`return`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/return) 文は、ブラウザに `result` 変数を関数の外に返すように指示します。そうすることで、それを使うことができるようになります。これは必要です。なぜなら、関数内で定義された変数はそれらの関数内でのみ利用可能だからです。これは変数のスコープと呼ばれます。([変数のスコープ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope) に関する詳細はこちらを参照してください。)

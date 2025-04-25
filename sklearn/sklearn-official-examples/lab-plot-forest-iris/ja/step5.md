@@ -7,7 +7,7 @@ plot_idx = 1
 
 for pair in ([0, 1], [0, 2], [2, 3]):
     for model in models:
-        # 2つの対応する特徴量のみを取り出す
+        # 2 つの対応する特徴量のみを取り出す
         X = iris.data[:, pair]
         y = iris.target
 
@@ -27,7 +27,7 @@ for pair in ([0, 1], [0, 2], [2, 3]):
         model.fit(X, y)
 
         scores = model.score(X, y)
-        # 各列とコンソール用のタイトルを作成するために、str()を使って
+        # 各列とコンソール用のタイトルを作成するために、str() を使って
         # 文字列の不要な部分を切り取る
         model_title = str(type(model)).split(".")[-1][:-2][: -len("Classifier")]
 
@@ -49,7 +49,7 @@ for pair in ([0, 1], [0, 2], [2, 3]):
             np.arange(x_min, x_max, plot_step), np.arange(y_min, y_max, plot_step)
         )
 
-        # 単一のDecisionTreeClassifierをプロットするか、
+        # 単一の DecisionTreeClassifier をプロットするか、
         # 分類器のアンサンブルの決定面をアルファブレンドする
         if isinstance(model, DecisionTreeClassifier):
             Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
@@ -57,7 +57,7 @@ for pair in ([0, 1], [0, 2], [2, 3]):
             cs = plt.contourf(xx, yy, Z, cmap=cmap)
         else:
             # 使用中の推定器の数に応じてアルファブレンドレベルを選択する
-            # （AdaBoostは十分な適合が早く達成される場合、最大数より少ない推定器を使用できることに注意）
+            # （AdaBoost は十分な適合が早く達成される場合、最大数より少ない推定器を使用できることに注意）
             estimator_alpha = 1.0 / len(model.estimators_)
             for tree in model.estimators_:
                 Z = tree.predict(np.c_[xx.ravel(), yy.ravel()])

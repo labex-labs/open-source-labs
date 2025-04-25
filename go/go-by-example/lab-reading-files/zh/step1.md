@@ -1,9 +1,9 @@
 # 读取文件
 
-你需要在Go程序中读取文件，并对文件中的数据执行不同的操作。
+你需要在 Go 程序中读取文件，并对文件中的数据执行不同的操作。
 
-- 你应该熟悉基本的Go编程概念。
-- 你的计算机上应安装了Go。
+- 你应该熟悉基本的 Go 编程概念。
+- 你的计算机上应安装了 Go。
 
 ```sh
 $ echo "hello" > /tmp/dat
@@ -22,7 +22,7 @@ go
 以下是完整代码：
 
 ```go
-// 读取和写入文件是许多Go程序所需的基本任务。首先我们来看一些读取文件的示例。
+// 读取和写入文件是许多 Go 程序所需的基本任务。首先我们来看一些读取文件的示例。
 
 package main
 
@@ -50,18 +50,18 @@ func main() {
     fmt.Print(string(dat))
 
     // 你通常会希望对如何读取文件以及读取文件的哪些部分有更多控制。对于这些任务，
-    // 首先通过`Open`打开一个文件以获得一个`os.File`值。
+    // 首先通过 `Open`打开一个文件以获得一个`os.File` 值。
     f, err := os.Open("/tmp/dat")
     check(err)
 
     // 从文件开头读取一些字节。
-    // 最多允许读取5个字节，但也要注意实际读取的字节数。
+    // 最多允许读取 5 个字节，但也要注意实际读取的字节数。
     b1 := make([]byte, 5)
     n1, err := f.Read(b1)
     check(err)
     fmt.Printf("%d字节: %s\n", n1, string(b1[:n1]))
 
-    // 你也可以`Seek`到文件中的已知位置并从那里`Read`。
+    // 你也可以 `Seek` 到文件中的已知位置并从那里`Read`。
     o2, err := f.Seek(6, 0)
     check(err)
     b2 := make([]byte, 2)
@@ -70,8 +70,8 @@ func main() {
     fmt.Printf("%d字节 @ %d: ", n2, o2)
     fmt.Printf("%v\n", string(b2[:n2]))
 
-    // `io`包提供了一些可能对文件读取有帮助的函数。例如，
-    // 像上面那样的读取可以用`ReadAtLeast`更健壮地实现。
+    // `io` 包提供了一些可能对文件读取有帮助的函数。例如，
+    // 像上面那样的读取可以用 `ReadAtLeast` 更健壮地实现。
     o3, err := f.Seek(6, 0)
     check(err)
     b3 := make([]byte, 2)
@@ -83,14 +83,14 @@ func main() {
     _, err = f.Seek(0, 0)
     check(err)
 
-    // `bufio`包实现了一个带缓冲的读取器，
+    // `bufio` 包实现了一个带缓冲的读取器，
     // 它对于许多小读取的效率以及它提供的额外读取方法可能都很有用。
     r4 := bufio.NewReader(f)
     b4, err := r4.Peek(5)
     check(err)
     fmt.Printf("5字节: %s\n", string(b4))
 
-    // 完成后关闭文件（通常这会在`Open`后立即用`defer`安排）。
+    // 完成后关闭文件（通常这会在 `Open`后立即用`defer` 安排）。
     f.Close()
 }
 

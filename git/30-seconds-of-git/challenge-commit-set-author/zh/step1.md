@@ -4,8 +4,8 @@
 
 ## 任务
 
-假设你正在处理托管在 `https://github.com/labex-labs/git-playground` 仓库中的一个项目。你对代码做了一些修改，例如在你的 GitHub 账户的 `README.md` 文件中添加了 “修复漏洞” 的内容，而你需要代表你的同事 John Doe 进行提交，他本人无法亲自提交这些修改。
+假设你正在处理托管在 `https://github.com/labex-labs/git-playground` 仓库中的一个项目。你对代码做了一些修改，例如在你的 GitHub 账户的 `README.md` 文件中添加了“修复漏洞”的内容，而你需要代表你的同事 John Doe 进行提交，他本人无法亲自提交这些修改。
 
-此命令将创建一个新的提交，提交信息为 “修复漏洞”，并将其归功于 John Doe：
+此命令将创建一个新的提交，提交信息为“修复漏洞”，并将其归功于 John Doe：
 
 ![Git commit author command](../assets/challenge-commit-set-author-step1-1.png)

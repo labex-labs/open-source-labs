@@ -1,6 +1,6 @@
 # コンテナ内に画像を収める
 
-VM内には既に `index.html` と `style.css` が用意されています。
+VM 内には既に `index.html` と `style.css` が用意されています。
 
 画像のアスペクト比を維持しながら、その画像をコンテナ内に収めるには、`object-fit: contain` を使用します。画像のアスペクト比を維持しながらコンテナを埋めるには、`object-fit: cover` を使用します。画像をコンテナの中央に配置したい場合は、`object-position: center` を使用できます。
 
@@ -11,7 +11,7 @@ VM内には既に `index.html` と `style.css` が用意されています。
 <img class="image image-cover" src="https://picsum.photos/600/200" />
 ```
 
-そして対応するCSS：
+そして対応する CSS：
 
 ```css
 .image {
@@ -32,4 +32,4 @@ VM内には既に `index.html` と `style.css` が用意されています。
 }
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でWebサービスを実行してください。その後、**Web 8080** タブを更新してWebページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 で Web サービスを実行してください。その後、**Web 8080** タブを更新して Web ページをプレビューできます。

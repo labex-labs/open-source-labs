@@ -1,6 +1,6 @@
 # シンプルな fill_betweenx のプロット作成
 
-このステップでは、`fill_betweenx` 関数を使ってシンプルなプロットを作成する方法を学びます。2つの曲線の間の領域を塗りつぶします。
+このステップでは、`fill_betweenx` 関数を使ってシンプルなプロットを作成する方法を学びます。2 つの曲線の間の領域を塗りつぶします。
 
 ```python
 import matplotlib.pyplot as plt

@@ -1,6 +1,6 @@
 # イベントハンドラの定義
 
-ここでは、4つのイベントハンドラ関数を定義します。`on_enter_axes`、`on_leave_axes`、`on_enter_figure`、および`on_leave_figure`。これらの関数は、マウスが軸または図に入ったり離れたりするときに呼び出されます。
+ここでは、4 つのイベントハンドラ関数を定義します。`on_enter_axes`、`on_leave_axes`、`on_enter_figure`、および`on_leave_figure`。これらの関数は、マウスが軸または図に入ったり離れたりするときに呼び出されます。
 
 ```python
 def on_enter_axes(event):

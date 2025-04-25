@@ -8,7 +8,7 @@ from sklearn.model_selection import KFold
 # 使用 KFold 交叉验证将数据拆分为 K 折
 k_fold = KFold(n_splits=5)
 for train_indices, test_indices in k_fold.split(X_digits):
-    print(f'训练集: {train_indices} | 测试集: {test_indices}')
+    print(f'训练集：{train_indices} | 测试集：{test_indices}')
 ```
 
 `cross_val_score` 辅助函数可用于直接计算交叉验证分数。它在交叉验证的每次迭代中将数据拆分为训练集和测试集，在训练集上训练估计器，并根据测试集计算分数。

@@ -1,15 +1,15 @@
 # タイプライターエフェクト
 
-VM内には既に`index.html`と`style.css`が用意されています。
+VM 内には既に`index.html`と`style.css`が用意されています。
 
 タイプライターエフェクトのアニメーションを作成するには、次の手順に従ってください。
 
-1. `typing`と`blink`の2つのアニメーションを定義します。`typing`は文字をアニメーション化し、`blink`はカレットをアニメーション化します。
+1. `typing`と`blink`の 2 つのアニメーションを定義します。`typing`は文字をアニメーション化し、`blink`はカレットをアニメーション化します。
 2. `::after`疑似要素を使用して、ケアレットをコンテナ要素に追加します。
-3. JavaScriptを使用して、内部要素のテキストを設定し、文字数を含む`--characters`変数を設定します。この変数は、テキストをアニメーション化するために使用されます。
+3. JavaScript を使用して、内部要素のテキストを設定し、文字数を含む`--characters`変数を設定します。この変数は、テキストをアニメーション化するために使用されます。
 4. 必要に応じて、`white-space: nowrap`と`overflow: hidden`を使用してコンテンツを非表示にします。
 
-以下がHTMLコードです。
+以下が HTML コードです。
 
 ```html
 <div class="typewriter-effect">
@@ -17,7 +17,7 @@ VM内には既に`index.html`と`style.css`が用意されています。
 </div>
 ```
 
-以下がCSSコードです。
+以下が CSS コードです。
 
 ```css
 .typewriter-effect {
@@ -58,7 +58,7 @@ VM内には既に`index.html`と`style.css`が用意されています。
 }
 ```
 
-最後に、以下がJavaScriptコードです。
+最後に、以下が JavaScript コードです。
 
 ```js
 const typeWriter = document.getElementById("typewriter-text");
@@ -68,4 +68,4 @@ typeWriter.innerHTML = text;
 typeWriter.style.setProperty("--characters", text.length);
 ```
 
-右下隅の「Go Live」をクリックして、ポート8080でウェブサービスを実行してください。その後、**Web 8080**タブを更新して、ウェブページをプレビューできます。
+右下隅の「Go Live」をクリックして、ポート 8080 でウェブサービスを実行してください。その後、**Web 8080**タブを更新して、ウェブページをプレビューできます。

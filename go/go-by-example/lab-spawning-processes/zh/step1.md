@@ -56,7 +56,7 @@ func main() {
 	if err!= nil {
 		switch e := err.(type) {
 		case *exec.Error:
-			fmt.Println("执行失败:", err)
+			fmt.Println("执行失败：", err)
 		case *exec.ExitError:
 			fmt.Println("命令退出返回码 =", e.ExitCode())
 		default:

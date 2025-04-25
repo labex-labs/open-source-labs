@@ -1,10 +1,10 @@
 # 创建带有底部颜色条的网格
 
-我们创建一个2x2的图像网格，每列都有一个颜色条。
+我们创建一个 2x2 的图像网格，每列都有一个颜色条。
 
 ```python
 def demo_bottom_cbar(fig):
-    grid = AxesGrid(fig, 121,  # 类似于subplot(121)
+    grid = AxesGrid(fig, 121,  # 类似于 subplot(121)
                     nrows_ncols=(2, 2),
                     axes_pad=0.10,
                     share_all=True,
@@ -26,7 +26,7 @@ def demo_bottom_cbar(fig):
     for cax in grid.cbar_axes:
         cax.axis[cax.orientation].set_label("Bar")
 
-    # 由于share_all = True，这会影响所有轴。
+    # 由于 share_all = True，这会影响所有轴。
     grid.axes_llc.set_xticks([-2, 0, 2])
     grid.axes_llc.set_yticks([-2, 0, 2])
 ```

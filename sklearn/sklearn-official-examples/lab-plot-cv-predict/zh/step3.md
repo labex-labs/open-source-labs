@@ -1,6 +1,6 @@
 # 生成交叉验证预测
 
-我们将使用scikit-learn中的`cross_val_predict`函数来生成交叉验证预测。
+我们将使用 scikit-learn 中的`cross_val_predict`函数来生成交叉验证预测。
 
 ```python
 from sklearn.model_selection import cross_val_predict

@@ -1,6 +1,6 @@
 # はじめに
 
-線形判別分析 (Linear Discriminant Analysis, LDA) と二次判別分析 (Quadratic Discriminant Analysis, QDA) は、機械学習で使用される2つの古典的な分類器です。LDA は線形の決定面を使用し、QDA は二次の決定面を使用します。これらの分類器は、閉形式の解があり、実際の運用でも良好な結果を得られ、調整するハイパーパラメータがないため、人気があります。
+線形判別分析 (Linear Discriminant Analysis, LDA) と二次判別分析 (Quadratic Discriminant Analysis, QDA) は、機械学習で使用される 2 つの古典的な分類器です。LDA は線形の決定面を使用し、QDA は二次の決定面を使用します。これらの分類器は、閉形式の解があり、実際の運用でも良好な結果を得られ、調整するハイパーパラメータがないため、人気があります。
 
 この実験では、Python で人気のある機械学習ライブラリである scikit-learn を使用して、LDA と QDA を実行する方法を探ります。
 

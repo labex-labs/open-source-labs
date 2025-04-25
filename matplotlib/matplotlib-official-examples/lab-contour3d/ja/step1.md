@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-3Dコントアープロットを作成するための必要なライブラリをインポートして始めましょう。`matplotlib`と`mpl_toolkits`ライブラリを使用します。
+3D コントアープロットを作成するための必要なライブラリをインポートして始めましょう。`matplotlib`と`mpl_toolkits`ライブラリを使用します。
 
 ```python
 import matplotlib.pyplot as plt

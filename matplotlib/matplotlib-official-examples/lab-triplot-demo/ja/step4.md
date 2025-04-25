@@ -1,6 +1,6 @@
 # デロネ三角分割を描画する
 
-triplot関数を使って三角分割を描画します。
+triplot 関数を使って三角分割を描画します。
 
 ```python
 fig1, ax1 = plt.subplots()

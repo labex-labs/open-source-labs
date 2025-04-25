@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートする
 
-まず、必要なライブラリをインポートする必要があります。これには、Numpy、Matplotlib、Scikit-learnのデータセット、NearestCentroid、およびDecisionBoundaryDisplayが含まれます。
+まず、必要なライブラリをインポートする必要があります。これには、Numpy、Matplotlib、Scikit-learn のデータセット、NearestCentroid、および DecisionBoundaryDisplay が含まれます。
 
 ```python
 import numpy as np

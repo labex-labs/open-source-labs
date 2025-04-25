@@ -12,7 +12,7 @@ params = {"bandwidth": np.logspace(-1, 1, 20)}
 grid = GridSearchCV(KernelDensity(), params)
 grid.fit(data)
 
-print("最佳带宽: {0}".format(grid.best_estimator_.bandwidth))
+print("最佳带宽：{0}".format(grid.best_estimator_.bandwidth))
 
 # 使用最佳估计器计算核密度估计
 kde = grid.best_estimator_

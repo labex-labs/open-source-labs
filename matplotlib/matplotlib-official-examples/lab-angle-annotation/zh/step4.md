@@ -3,7 +3,7 @@
 ```python
 fig, ax = plt.subplots()
 fig.canvas.draw()  # 需要绘制图形以定义渲染器
-ax.set_title("AngleLabel示例")
+ax.set_title("AngleLabel 示例")
 
 # 绘制两条相交直线，并使用上述
 # ``AngleAnnotation`` 工具标记它们之间的每个角度。

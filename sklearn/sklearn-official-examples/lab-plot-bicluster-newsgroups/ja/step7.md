@@ -1,6 +1,6 @@
-# MiniBatchKMeansを使ったクラスタリング
+# MiniBatchKMeans を使ったクラスタリング
 
-MiniBatchKMeansを使ってデータをクラスタリングします。
+MiniBatchKMeans を使ってデータをクラスタリングします。
 
 ```python
 kmeans = MiniBatchKMeans(

@@ -1,6 +1,6 @@
 # 绘制数据
 
-我们使用Matplotlib的 `tricontour` 函数绘制细化后的数据。
+我们使用 Matplotlib 的 `tricontour` 函数绘制细化后的数据。
 
 ```python
 # Graphical options for tricontouring

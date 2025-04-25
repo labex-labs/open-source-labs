@@ -7,4 +7,4 @@ import numpy as np
 from matplotlib import collections, transforms
 ```
 
-第一步是导入必要的库。在本教程中，我们将使用Matplotlib和Numpy。
+第一步是导入必要的库。在本教程中，我们将使用 Matplotlib 和 Numpy。

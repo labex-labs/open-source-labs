@@ -27,7 +27,7 @@ fn main() {
             acc += n_squared;
         }
     }
-    println!("命令式风格: {}", acc);
+    println!("命令式风格：{}", acc);
 
     // 函数式方法
     let sum_of_squared_odd_numbers: u32 =
@@ -35,7 +35,7 @@ fn main() {
             .take_while(|&n_squared| n_squared < upper) // 低于上限
             .filter(|&n_squared| is_odd(n_squared))     // 是奇数的
             .sum();                                     // 求和
-    println!("函数式风格: {}", sum_of_squared_odd_numbers);
+    println!("函数式风格：{}", sum_of_squared_odd_numbers);
 }
 ```
 

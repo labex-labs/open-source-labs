@@ -1,6 +1,6 @@
 # モデルの学習
 
-学習データを使ってIsolation Forestモデルを学習します。
+学習データを使って Isolation Forest モデルを学習します。
 
 ```python
 from sklearn.ensemble import IsolationForest

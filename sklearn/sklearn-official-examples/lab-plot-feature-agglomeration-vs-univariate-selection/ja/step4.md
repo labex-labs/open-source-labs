@@ -1,4 +1,4 @@
-# GridSearchを用いたBayesian Ridgeの係数の計算
+# GridSearch を用いた Bayesian Ridge の係数の計算
 
 ```python
 cv = KFold(2)  # モデル選択のための交差検証ジェネレータ

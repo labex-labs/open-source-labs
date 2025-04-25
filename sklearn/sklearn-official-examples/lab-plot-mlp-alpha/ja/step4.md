@@ -1,6 +1,6 @@
 # データセットの作成
 
-scikit-learnのmake_classification、make_moons、make_circles関数を使って3つの合成データセットを作成します。train_test_splitを使って各データセットを訓練用とテスト用に分割します。
+scikit-learn の make_classification、make_moons、make_circles 関数を使って 3 つの合成データセットを作成します。train_test_split を使って各データセットを訓練用とテスト用に分割します。
 
 ```python
 X, y = make_classification(

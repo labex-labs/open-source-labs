@@ -1,6 +1,6 @@
 # 在网格上进行插值
 
-我们通过在网格上进行插值来创建不规则间隔数据坐标的等高线图。我们首先使用 `np.linspace` 创建x和y的网格值。然后，我们使用 `tri.LinearTriInterpolator` 在由 (xi, yi) 定义的网格上对数据 (x, y) 进行线性插值。我们使用常规的 `axes.Axes.contour` 绘制插值后的数据。
+我们通过在网格上进行插值来创建不规则间隔数据坐标的等高线图。我们首先使用 `np.linspace` 创建 x 和 y 的网格值。然后，我们使用 `tri.LinearTriInterpolator` 在由 (xi, yi) 定义的网格上对数据 (x, y) 进行线性插值。我们使用常规的 `axes.Axes.contour` 绘制插值后的数据。
 
 ```python
 ngridx = 100

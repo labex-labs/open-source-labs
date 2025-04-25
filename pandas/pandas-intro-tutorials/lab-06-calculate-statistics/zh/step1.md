@@ -3,7 +3,7 @@
 第一步是导入我们将使用的数据集。
 
 ```python
-# 导入pandas库
+# 导入 pandas 库
 import pandas as pd
 
 # 读取数据集

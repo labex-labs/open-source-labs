@@ -1,6 +1,6 @@
 # 简介
 
-在本实验中，我们将学习如何使用Matplotlib创建自定义投影。我们将通过展示Matplotlib的许多特性来展示 Hammer 投影。我们将使用 Python 作为编程语言。
+在本实验中，我们将学习如何使用 Matplotlib 创建自定义投影。我们将通过展示 Matplotlib 的许多特性来展示 Hammer 投影。我们将使用 Python 作为编程语言。
 
 ## 虚拟机提示
 

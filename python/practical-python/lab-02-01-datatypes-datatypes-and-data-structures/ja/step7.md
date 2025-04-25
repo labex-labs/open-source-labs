@@ -5,5 +5,5 @@
 ```python
 record = ('GOOG', 100, 490.1)       # ポートフォリオ内のレコードを表すタプル
 
-symbols = [ 'GOOG', 'AAPL', 'IBM' ]  # 3つの株式シンボルを表すリスト
+symbols = [ 'GOOG', 'AAPL', 'IBM' ]  # 3 つの株式シンボルを表すリスト
 ```

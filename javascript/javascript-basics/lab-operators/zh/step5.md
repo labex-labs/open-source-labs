@@ -5,7 +5,7 @@
 对于“非”，基本表达式为真，但比较返回 `false`，因为我们对其进行了取反：
 
 ```js
-// 非(!)
+// 非 (!)
 let myVariable = 3;
 !(myVariable === 3);
 ```
@@ -13,7 +13,7 @@ let myVariable = 3;
 “不等于”使用不同的语法给出基本相同的结果。这里我们测试“`myVariable` 是否不等于 3”。这返回 `false`，因为 `myVariable` 等于 3：
 
 ```js
-// 不等于(!==)
+// 不等于 (!==)
 let myVariable = 3;
 myVariable !== 3;
 ```

@@ -7,7 +7,7 @@ const pad = (str, length, char = " ") =>
   str.padStart((str.length + length) / 2, char).padEnd(length, char);
 ```
 
-この関数は、`String.prototype.padStart()` と `String.prototype.padEnd()` を使って、与えられた文字列を両端に埋めます。3番目の引数 `char` を省略すると、空白文字を既定の埋め文字として使用できます。
+この関数は、`String.prototype.padStart()` と `String.prototype.padEnd()` を使って、与えられた文字列を両端に埋めます。3 番目の引数 `char` を省略すると、空白文字を既定の埋め文字として使用できます。
 
 以下は、`pad()` 関数の使い方のいくつかの例です。
 

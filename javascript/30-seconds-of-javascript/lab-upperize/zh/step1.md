@@ -1,6 +1,6 @@
-# 如何在JavaScript中将对象的键转换为大写
+# 如何在 JavaScript 中将对象的键转换为大写
 
-要在JavaScript中将对象的所有键转换为大写，请执行以下步骤：
+要在 JavaScript 中将对象的所有键转换为大写，请执行以下步骤：
 
 1. 使用 `Object.keys()` 获取对象键的数组。
 2. 使用 `Array.prototype.reduce()` 将数组映射到一个对象。

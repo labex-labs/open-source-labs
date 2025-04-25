@@ -36,6 +36,6 @@ const App = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
-在这个示例中，`useEffectOnce()` 用于在按钮首次被点击时将 “mounted” 打印到控制台。`useEffectOnce()` 钩子接收两个参数：要运行的 `callback` 和要检查的 `when` 条件。`when` 条件被设置为 `clicked` 状态，因此只有当 `clicked` 首次变为 `true` 时，`callback` 才会运行。
+在这个示例中，`useEffectOnce()` 用于在按钮首次被点击时将“mounted”打印到控制台。`useEffectOnce()` 钩子接收两个参数：要运行的 `callback` 和要检查的 `when` 条件。`when` 条件被设置为 `clicked` 状态，因此只有当 `clicked` 首次变为 `true` 时，`callback` 才会运行。
 
-请点击右下角的 “Go Live” 在端口 8080 上运行网络服务。然后，你可以刷新 “Web 8080” 标签页来预览网页。
+请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。

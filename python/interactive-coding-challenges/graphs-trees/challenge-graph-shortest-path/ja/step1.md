@@ -2,7 +2,7 @@
 
 ## 問題
 
-重み付きの有向グラフが与えられたとき、2つのノード間の最短経路を求める。
+重み付きの有向グラフが与えられたとき、2 つのノード間の最短経路を求める。
 
 ## 要件
 
@@ -10,10 +10,10 @@
 
 - これは有向グラフか？ - はい
 - グラフにサイクルがあり得るか？ - はい
-  - 注：答えが「いいえ」の場合、これはDAGになる。
-    - DAGは[トポロジカルソート](http://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/)を使って解くことができる。
+  - 注：答えが「いいえ」の場合、これは DAG になる。
+    - DAG は[トポロジカルソート](http://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/)を使って解くことができる。
 - 辺に重みがあるか？ - はい
-  - 注：辺に重みがない場合、BFSを行うことができる。
+  - 注：辺に重みがない場合、BFS を行うことができる。
 - 辺はすべて非負の数か？ - はい
   - 注：負の辺があるグラフはベルマンフォード法で解くことができる。
     - 負のコストサイクルがあるグラフには定義された最短経路はない。
@@ -50,7 +50,7 @@ graph.add_edge('h', 'f', weight=2)
 graph.add_edge('h', 'g', weight=2)
 ```
 
-ShortestPathクラスを使ってノード'a'とノード'i'間の最短経路を求めることができる。
+ShortestPath クラスを使ってノード'a'とノード'i'間の最短経路を求めることができる。
 
 ```txt
 shortest_path = ShortestPath(graph)

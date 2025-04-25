@@ -1,6 +1,6 @@
 # ライブラリのインポート
 
-このステップでは、必要なライブラリをインポートします。それはnumpy、matplotlib.pyplot、およびsklearn.treeからのDecisionTreeRegressorです。
+このステップでは、必要なライブラリをインポートします。それは numpy、matplotlib.pyplot、および sklearn.tree からの DecisionTreeRegressor です。
 
 ```python
 import numpy as np

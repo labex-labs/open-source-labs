@@ -1,6 +1,6 @@
 # 拟合未加权模型
 
-我们使用scikit-learn库中的SGDClassifier算法拟合一个未加权模型。然后，我们绘制未加权模型的决策函数。
+我们使用 scikit-learn 库中的 SGDClassifier 算法拟合一个未加权模型。然后，我们绘制未加权模型的决策函数。
 
 ```python
 clf = linear_model.SGDClassifier(alpha=0.01, max_iter=100)

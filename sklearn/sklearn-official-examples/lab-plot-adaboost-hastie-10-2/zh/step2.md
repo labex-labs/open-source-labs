@@ -1,6 +1,6 @@
-# 使用离散SAMME和真实SAMME.R的Adaboost
+# 使用离散 SAMME 和真实 SAMME.R 的 Adaboost
 
-我们现在定义离散和真实的AdaBoost分类器，并将它们拟合到训练集上。
+我们现在定义离散和真实的 AdaBoost 分类器，并将它们拟合到训练集上。
 
 ```python
 from sklearn.ensemble import AdaBoostClassifier

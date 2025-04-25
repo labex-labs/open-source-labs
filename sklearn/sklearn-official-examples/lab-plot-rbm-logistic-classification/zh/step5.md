@@ -1,6 +1,6 @@
 # 绘图
 
-在这一步中，我们绘制由受限玻尔兹曼机（RBM）提取的100个组件。我们使用`matplotlib.pyplot`模块来绘制图像。
+在这一步中，我们绘制由受限玻尔兹曼机（RBM）提取的 100 个组件。我们使用`matplotlib.pyplot`模块来绘制图像。
 
 ```python
 import matplotlib.pyplot as plt
@@ -11,7 +11,7 @@ for i, comp in enumerate(rbm.components_):
     plt.imshow(comp.reshape((8, 8)), cmap=plt.cm.gray_r, interpolation="nearest")
     plt.xticks(())
     plt.yticks(())
-plt.suptitle("RBM提取的100个组件", fontsize=16)
+plt.suptitle("RBM 提取的 100 个组件", fontsize=16)
 plt.subplots_adjust(0.08, 0.02, 0.92, 0.85, 0.08, 0.23)
 
 plt.show()

@@ -12,7 +12,7 @@ const compact = (arr) => arr.filter(Boolean);
 
 ```js
 compact([0, 1, false, 2, "", 3, "a", "e" * 23, NaN, "s", 34]);
-// 出力: [ 1, 2, 3, 'a','s', 34 ]
+// 出力：[ 1, 2, 3, 'a','s', 34 ]
 ```
 
 このように `Array.prototype.filter()` を使うことで、真の値のみを含むコンパクトな配列を簡単に作成できます。

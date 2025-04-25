@@ -1,11 +1,11 @@
-# 演習7.11：実践におけるクラスメソッド
+# 演習 7.11：実践におけるクラスメソッド
 
 あなたの `report.py` と `portfolio.py` ファイルでは、`Portfolio` オブジェクトの作成が少し混乱しています。たとえば、`report.py` プログラムにはこのようなコードがあります：
 
 ```python
 def read_portfolio(filename, **opts):
     '''
-    株式ポートフォリオファイルを、name、shares、およびpriceというキーを持つ辞書のリストに読み込みます。
+    株式ポートフォリオファイルを、name、shares、および price というキーを持つ辞書のリストに読み込みます。
     '''
     with open(filename) as lines:
         portdicts = fileparse.parse_csv(lines,
@@ -44,7 +44,7 @@ class Portfolio:
   ...
 ```
 
-もしCSVファイルからポートフォリオを読み込みたいなら、多分そのためのクラスメソッドを作るべきです：
+もし CSV ファイルからポートフォリオを読み込みたいなら、多分そのためのクラスメソッドを作るべきです：
 
 ```python
 # portfolio.py

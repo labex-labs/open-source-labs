@@ -1,6 +1,6 @@
 # 超参数鲁棒性
 
-我们将证明，由于`min_cluster_size`和`min_samples`参数具有明确的含义，有助于对其进行调整，因此HDBSCAN对各种实际示例具有相对较强的鲁棒性。
+我们将证明，由于`min_cluster_size`和`min_samples`参数具有明确的含义，有助于对其进行调整，因此 HDBSCAN 对各种实际示例具有相对较强的鲁棒性。
 
 ```python
 PARAM = ({"min_cluster_size": 5}, {"min_cluster_size": 3}, {"min_cluster_size": 25})

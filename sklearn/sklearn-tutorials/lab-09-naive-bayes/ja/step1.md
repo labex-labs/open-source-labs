@@ -10,7 +10,7 @@ iris = load_iris()
 X = iris.data  # 特徴量
 y = iris.target  # 目的変数
 
-print("サンプル数:", X.shape[0])
-print("特徴量数:", X.shape[1])
-print("クラス数:", len(set(y)))
+print("サンプル数：", X.shape[0])
+print("特徴量数：", X.shape[1])
+print("クラス数：", len(set(y)))
 ```

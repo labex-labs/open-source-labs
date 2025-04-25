@@ -1,6 +1,6 @@
-# 手动对齐y轴标签
+# 手动对齐 y 轴标签
 
-第四步是使用y轴对象的`~.Axis.set_label_coords`方法手动对齐y轴标签。
+第四步是使用 y 轴对象的`~.Axis.set_label_coords`方法手动对齐 y 轴标签。
 
 ```python
 fig, axs = plt.subplots(2, 2)
