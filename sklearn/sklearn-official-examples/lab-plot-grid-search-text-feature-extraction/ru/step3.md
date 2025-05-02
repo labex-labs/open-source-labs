@@ -3,6 +3,7 @@
 Мы используем RandomizedSearchCV для исследования сетки гиперпараметров и нахождения наилучшей комбинации гиперпараметров для конвейера (pipeline). В данном случае мы устанавливаем n_iter=40, чтобы ограничить пространство поиска. Мы можем увеличить значение n_iter, чтобы получить более информативный анализ, но это увеличит время вычислений.
 
 ```python
+from pprint import pprint
 from sklearn.model_selection import RandomizedSearchCV
 
 random_search = RandomizedSearchCV(

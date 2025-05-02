@@ -3,6 +3,7 @@
 Nous utilisons RandomizedSearchCV pour explorer la grille d'hyperparamètres et trouver la meilleure combinaison d'hyperparamètres pour le pipeline. Dans ce cas, nous définissons n_iter = 40 pour limiter l'espace de recherche. Nous pouvons augmenter n_iter pour obtenir une analyse plus informative, mais cela augmentera le temps de calcul.
 
 ```python
+from pprint import pprint
 from sklearn.model_selection import RandomizedSearchCV
 
 random_search = RandomizedSearchCV(

@@ -3,6 +3,7 @@
 Wir verwenden RandomizedSearchCV, um das Raster (Grid) der Hyperparameter zu erkunden und die beste Kombination von Hyperparametern für die Pipeline (Bearbeitungsreihenfolge) zu finden. In diesem Fall setzen wir n_iter=40, um den Suchraum zu begrenzen. Wir können n_iter erhöhen, um eine informativere Analyse zu erhalten, aber dies erhöht die Rechenzeit.
 
 ```python
+from pprint import pprint
 from sklearn.model_selection import RandomizedSearchCV
 
 random_search = RandomizedSearchCV(

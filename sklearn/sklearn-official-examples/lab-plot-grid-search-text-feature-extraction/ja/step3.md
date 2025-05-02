@@ -3,6 +3,7 @@
 RandomizedSearchCV を使用してハイパーパラメータのグリッドを探索し、パイプラインに最適なハイパーパラメータの組み合わせを見つけます。この場合、探索空間を制限するために `n_iter=40` を設定しています。`n_iter` を増やすとより詳細な分析が可能になりますが、計算時間が増加します。
 
 ```python
+from pprint import pprint
 from sklearn.model_selection import RandomizedSearchCV
 
 random_search = RandomizedSearchCV(

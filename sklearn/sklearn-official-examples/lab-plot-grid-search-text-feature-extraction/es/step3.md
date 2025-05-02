@@ -3,6 +3,7 @@
 Usamos RandomizedSearchCV para explorar la cuadrícula de hiperparámetros y encontrar la mejor combinación de hiperparámetros para la canalización. En este caso, establecemos n_iter = 40 para limitar el espacio de búsqueda. Podemos aumentar n_iter para obtener un análisis más informativo, pero aumentará el tiempo de cálculo.
 
 ```python
+from pprint import pprint
 from sklearn.model_selection import RandomizedSearchCV
 
 random_search = RandomizedSearchCV(
