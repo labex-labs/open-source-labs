@@ -57,3 +57,5 @@ nohup /home/labex/.local/bin/jupyter-notebook > /dev/null 2>&1 &
 
 # Wait for notebook service
 sleep 1
+
+pip install plotly
