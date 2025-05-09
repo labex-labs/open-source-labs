@@ -7,5 +7,5 @@
 在 Git 中，分支用于开发功能或隔离对代码库所做的更改。本地分支是仅存在于你本地机器上的分支。在这个挑战中，你将学习如何查看 Git 仓库中所有本地分支的列表。
 
 <div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
-这是一个挑战（Challenge），与实验（Lab）不同，您需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果您觉得困难，可以与 Labby 讨论或查看解决方案。
+这是一个挑战（Challenge），与实验（Lab）不同，你需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果你觉得困难，可以与 Labby 讨论或查看解决方案。
 </div>

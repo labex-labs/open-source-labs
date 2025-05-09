@@ -7,5 +7,5 @@
 使用 Git 处理项目时，创建和合并分支很常见。然而，随着时间的推移，这些分支可能会累积并使本地仓库变得杂乱。删除已合并的分支是保持仓库整洁有序的良好做法。
 
 <div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
-这是一个挑战（Challenge），与实验（Lab）不同，您需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果您觉得困难，可以与 Labby 讨论或查看解决方案。
+这是一个挑战（Challenge），与实验（Lab）不同，你需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果你觉得困难，可以与 Labby 讨论或查看解决方案。
 </div>
