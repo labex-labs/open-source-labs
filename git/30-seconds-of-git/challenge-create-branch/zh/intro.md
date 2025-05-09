@@ -5,3 +5,7 @@
 </div>
 
 在 Git 中，分支是指向提交对象的轻量级可移动指针。创建新分支可让你在不影响主代码库的情况下处理新功能或修复漏洞。在本挑战中，你将学习如何在 Git 中创建新分支。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个挑战（Challenge），与实验（Lab）不同，您需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果您觉得困难，可以与 Labby 讨论或查看解决方案。
+</div>

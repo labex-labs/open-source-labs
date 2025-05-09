@@ -5,3 +5,7 @@
 </div>
 
 In Git ist ein Branch ein leichtgewichtiger, beweglicher Zeiger auf einen Commit. Branches werden verwendet, um Funktionen zu entwickeln, Änderungen zu isolieren und Experimente durchzuführen, ohne die anderen Teile des Repositorys zu beeinflussen. Remote Branches sind Verweise auf den Zustand von Branches in Remote-Repositorys. Sie werden verwendet, um den Fortschritt der Arbeit anderer Entwickler zu verfolgen und an Projekten zusammenzuarbeiten.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Dies ist eine Challenge, die sich von einem Guided Lab dadurch unterscheidet, dass Sie die Aufgabe der Herausforderung selbstständig lösen müssen, anstatt die Schritte eines Labors zum Lernen zu befolgen. Challenges sind in der Regel etwas schwieriger. Wenn es Ihnen schwerfällt, können Sie mit Labby diskutieren oder die Lösung einsehen.
+</div>

@@ -5,3 +5,7 @@
 </div>
 
 En Git, les branches sont utilisées pour développer des fonctionnalités ou isoler des modifications à des fins spécifiques. Une fois les modifications fusionnées dans la branche principale, la branche a servi son but et peut être supprimée. Supprimer une branche dans Git est un processus simple.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Ceci est un Challenge, qui diffère d'un Guided Lab en ce sens que vous devez essayer de réaliser la tâche du challenge de manière indépendante, plutôt que de suivre les étapes d'un laboratoire pour apprendre. Les challenges sont généralement un peu difficiles. Si vous trouvez cela difficile, vous pouvez discuter avec Labby ou consulter la solution.
+</div>

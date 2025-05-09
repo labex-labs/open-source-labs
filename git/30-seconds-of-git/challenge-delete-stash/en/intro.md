@@ -5,3 +5,7 @@
 </div>
 
 In Git, a stash is a way to save changes that are not yet ready to be committed. Stashes are useful when you need to switch to a different branch or work on a different task, but you don't want to commit your changes yet. However, sometimes you may need to delete a stash that is no longer needed. In this challenge, you will learn how to delete a specific stash in Git.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+This is a Challenge, which differs from a Guided Lab in that you need to try to complete the challenge task independently, rather than following the steps of a lab to learn. Challenges are usually a bit difficult. If you find it difficult, you can discuss with Labby or check the solution.
+</div>

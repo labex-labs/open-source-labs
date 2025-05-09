@@ -5,3 +5,7 @@
 </div>
 
 Git 是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git 最有用的特性之一是能够回退到特定的提交。当你需要撤销更改或恢复到代码的早期版本时，这会很有帮助。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个挑战（Challenge），与实验（Lab）不同，您需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果您觉得困难，可以与 Labby 讨论或查看解决方案。
+</div>

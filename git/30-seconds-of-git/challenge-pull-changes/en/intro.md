@@ -5,3 +5,7 @@
 </div>
 
 Git is a popular version control system that allows developers to collaborate on projects and keep track of changes made to the codebase. One of the most important features of Git is the ability to pull the latest changes from a remote repository. In this challenge, you will learn how to pull the latest changes from a remote repository using Git.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+This is a Challenge, which differs from a Guided Lab in that you need to try to complete the challenge task independently, rather than following the steps of a lab to learn. Challenges are usually a bit difficult. If you find it difficult, you can discuss with Labby or check the solution.
+</div>

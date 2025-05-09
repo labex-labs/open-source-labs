@@ -5,3 +5,7 @@
 </div>
 
 Git es un popular sistema de control de versiones que permite a los desarrolladores rastrear los cambios en su código base. Una de las características esenciales de Git es la capacidad de ver el último commit realizado en un repositorio. En este desafío, aprenderás a ver el último commit realizado en un repositorio Git.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este es un Challenge, que se diferencia de un Guided Lab en que debes intentar completar la tarea del desafío de forma independiente, en lugar de seguir los pasos de un laboratorio para aprender. Los challenges suelen ser un poco difíciles. Si lo encuentras difícil, puedes discutir con Labby o revisar la solución.
+</div>

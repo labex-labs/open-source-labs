@@ -5,3 +5,7 @@
 </div>
 
 Git es un sistema de control de versiones popular que permite a los desarrolladores colaborar en proyectos y mantener un registro de los cambios realizados en la base de código. Una de las características más importantes de Git es la capacidad de extraer los últimos cambios de un repositorio remoto. En este desafío, aprenderás cómo extraer los últimos cambios de un repositorio remoto utilizando Git.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este es un Challenge, que se diferencia de un Guided Lab en que debes intentar completar la tarea del desafío de forma independiente, en lugar de seguir los pasos de un laboratorio para aprender. Los challenges suelen ser un poco difíciles. Si lo encuentras difícil, puedes discutir con Labby o revisar la solución.
+</div>

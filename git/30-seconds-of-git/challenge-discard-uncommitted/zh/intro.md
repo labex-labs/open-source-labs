@@ -5,3 +5,7 @@
 </div>
 
 Git 是一个版本控制系统，它允许开发者跟踪其代码库中的更改。有时，开发者可能会对代码进行更改，但之后又决定不保留这些更改。在这种情况下，有必要丢弃这些更改并恢复到代码的上一个提交版本。本挑战将专注于在 Git 中丢弃未提交的更改。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个挑战（Challenge），与实验（Lab）不同，您需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果您觉得困难，可以与 Labby 讨论或查看解决方案。
+</div>

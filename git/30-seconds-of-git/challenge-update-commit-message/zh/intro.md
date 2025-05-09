@@ -5,3 +5,7 @@
 </div>
 
 Git 是一个强大的版本控制系统，它允许开发者跟踪其代码库中的更改。Git 的关键特性之一是能够修改提交历史记录。在这个挑战中，你将学习如何在不改变最后一次提交内容的情况下更改其提交消息。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个挑战（Challenge），与实验（Lab）不同，您需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果您觉得困难，可以与 Labby 讨论或查看解决方案。
+</div>

@@ -5,3 +5,7 @@
 </div>
 
 In Git ist das Einsparen von Änderungen (Stashing) eine Möglichkeit, Änderungen vorübergehend zu speichern, die noch nicht zum Commit bereit sind. Mit Stashing können Sie zu einer anderen Branch wechseln oder an einer anderen Aufgabe arbeiten, ohne Ihren aktuellen Fortschritt zu verlieren. Wenn Sie wieder an den Änderungen arbeiten möchten, können Sie das Einsparobjekt anwenden und an der Stelle fortfahren, an der Sie aufgehört haben. In dieser Herausforderung lernen Sie, wie Sie alle Einsparobjekte in einem Git-Repository auflisten.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Dies ist eine Challenge, die sich von einem Guided Lab dadurch unterscheidet, dass Sie die Aufgabe der Herausforderung selbstständig lösen müssen, anstatt die Schritte eines Labors zum Lernen zu befolgen. Challenges sind in der Regel etwas schwieriger. Wenn es Ihnen schwerfällt, können Sie mit Labby diskutieren oder die Lösung einsehen.
+</div>

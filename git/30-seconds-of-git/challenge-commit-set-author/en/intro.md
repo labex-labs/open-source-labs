@@ -5,3 +5,7 @@
 </div>
 
 Git is a popular version control system used by developers to manage their codebase. One of the essential features of Git is the ability to create commits, which are snapshots of the code at a particular point in time. By default, Git uses the user's name and email to identify the author of a commit. However, there may be situations where you need to create a commit by a different author. In this challenge, you will learn how to create a commit by a different author in Git.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+This is a Challenge, which differs from a Guided Lab in that you need to try to complete the challenge task independently, rather than following the steps of a lab to learn. Challenges are usually a bit difficult. If you find it difficult, you can discuss with Labby or check the solution.
+</div>
