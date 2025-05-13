@@ -1,17 +1,18 @@
-# Erstellen einer benutzerfreundlichen API für Mixins
+# Erstellung einer benutzerfreundlichen API für Mixins
 
-Mixins sind eine leistungsstarke Funktion in Python, aber sie können für Anfänger etwas schwierig sein, da sie Mehrfachvererbung (multiple inheritance) betreffen, die recht komplex werden kann. In diesem Schritt werden wir es den Benutzern einfacher machen, indem wir die Funktion `create_formatter()` verbessern. Auf diese Weise müssen sich die Benutzer nicht so sehr um die Details der Mehrfachvererbung kümmern.
+Mixins sind leistungsstark, aber die direkte Verwendung von Mehrfachvererbung (multiple inheritance) kann sich komplex anfühlen. In diesem Schritt werden wir die Funktion `create_formatter()` verbessern, um diese Komplexität zu verbergen und eine einfachere API für Benutzer bereitzustellen.
 
-Zunächst müssen Sie die Datei `tableformat.py` öffnen. Sie können dies tun, indem Sie die folgenden Befehle in Ihrem Terminal ausführen. Der Befehl `cd` wechselt das Verzeichnis in Ihren Projektordner, und der Befehl `code` öffnet die Datei `tableformat.py` in Ihrem Code-Editor.
+Stellen Sie zunächst sicher, dass `tableformat.py` in Ihrem Editor geöffnet ist:
 
 ```bash
 cd ~/project
-code tableformat.py
+touch tableformat.py
 ```
 
-Sobald die Datei geöffnet ist, suchen Sie die Funktion `create_formatter()`. Derzeit sieht sie so aus:
+Suchen Sie die vorhandene Funktion `create_formatter()`:
 
 ```python
+# Existing function in tableformat.py
 def create_formatter(name):
     """
     Create an appropriate formatter based on the name.
@@ -26,11 +27,11 @@ def create_formatter(name):
         raise RuntimeError(f'Unknown format {name}')
 ```
 
-Diese Funktion nimmt einen Namen als Argument und gibt den entsprechenden Formatter zurück. Aber wir möchten sie flexibler machen. Wir werden sie so ändern, dass sie optionale Argumente für unsere Mixins akzeptieren kann.
-
-Ersetzen Sie die vorhandene Funktion `create_formatter()` durch die verbesserte Version unten. Diese neue Funktion ermöglicht es Ihnen, Spaltenformate und festzulegen, ob die Überschriften in Großbuchstaben umgewandelt werden sollen.
+Ersetzen Sie die _gesamte vorhandene_ Funktionsdefinition `create_formatter()` durch die unten stehende erweiterte Version. Diese neue Version akzeptiert optionale Argumente für Spaltenformate und die Umwandlung von Headern in Großbuchstaben.
 
 ```python
+# Replace the old create_formatter with this in tableformat.py
+
 def create_formatter(name, column_formats=None, upper_headers=False):
     """
     Create a formatter with optional enhancements.
@@ -39,9 +40,11 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     name : str
         Name of the formatter ('text', 'csv', 'html')
     column_formats : list, optional
-        List of format strings for column formatting
+        List of format strings for column formatting.
+        Note: Relies on ColumnFormatMixin existing above this function.
     upper_headers : bool, optional
-        Whether to convert headers to uppercase
+        Whether to convert headers to uppercase.
+        Note: Relies on UpperHeadersMixin existing above this function.
     """
     if name == 'text':
         formatter_cls = TextTableFormatter
@@ -52,41 +55,57 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     else:
         raise RuntimeError(f'Unknown format {name}')
 
-    # Apply mixins if requested
-    if column_formats and upper_headers:
-        class CustomFormatter(ColumnFormatMixin, UpperHeadersMixin, formatter_cls):
+    # Build the inheritance list dynamically
+    bases = []
+    if column_formats:
+        bases.append(ColumnFormatMixin)
+    if upper_headers:
+        bases.append(UpperHeadersMixin)
+    bases.append(formatter_cls) # Base formatter class comes last
+
+    # Create the custom class dynamically
+    # Need to ensure ColumnFormatMixin and UpperHeadersMixin are defined before this point
+    class CustomFormatter(*bases):
+        # Set formats if ColumnFormatMixin is used
+        if column_formats:
             formats = column_formats
-        return CustomFormatter()
-    elif column_formats:
-        class CustomFormatter(ColumnFormatMixin, formatter_cls):
-            formats = column_formats
-        return CustomFormatter()
-    elif upper_headers:
-        class CustomFormatter(UpperHeadersMixin, formatter_cls):
-            pass
-        return CustomFormatter()
-    else:
-        return formatter_cls()
+
+    return CustomFormatter() # Return an instance of the dynamically created class
 ```
 
-Diese verbesserte Funktion funktioniert, indem sie zunächst die Basis-Formatter-Klasse anhand des Arguments `name` bestimmt. Dann, je nachdem, ob `column_formats` und `upper_headers` angegeben werden, erstellt sie eine benutzerdefinierte Formatter-Klasse, die die entsprechenden Mixins enthält. Schließlich gibt sie eine Instanz der benutzerdefinierten Formatter-Klasse zurück.
+_Selbstkorrektur: Erstellen Sie das Klassentupel für die Vererbung dynamisch anstelle von mehreren if/elif-Zweigen._
 
-Jetzt testen wir unsere verbesserte Funktion mit verschiedenen Kombinationen von Optionen.
+Diese erweiterte Funktion bestimmt zunächst die Basisformatiererklasse (`TextTableFormatter`, `CSVTableFormatter` usw.). Dann konstruiert sie basierend auf den optionalen Argumenten `column_formats` und `upper_headers` dynamisch eine neue Klasse (`CustomFormatter`), die von den erforderlichen Mixins und der Basisformatiererklasse erbt. Schließlich gibt sie eine Instanz dieses benutzerdefinierten Formatierers zurück.
 
-Zunächst versuchen wir die Spaltenformatierung. Führen Sie den folgenden Befehl in Ihrem Terminal aus. Dieser Befehl importiert die erforderlichen Funktionen und Daten aus der Datei `tableformat.py`, erstellt einen Formatter mit Spaltenformatierung und gibt dann eine Tabelle mit diesem Formatter aus.
+**Denken Sie daran, die Änderungen an `tableformat.py` zu speichern.**
+
+Lassen Sie uns nun unsere erweiterte Funktion testen. **Stellen Sie sicher, dass Sie die aktualisierte Funktion `create_formatter` in `tableformat.py` gespeichert haben.**
+
+Testen Sie zunächst die Spaltenformatierung. Erstellen Sie `step3_test1.py`:
 
 ```python
-python3 -c "
+# step3_test1.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'])
+# Using the same formats as before, subject to type issues.
+# Use formats compatible with strings if '%d', '%.2f' cause errors.
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'])
+
+print("--- Running Step 3 Test 1 (create_formatter with column_formats) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("--------------------------------------------------------------------")
 ```
 
-Sie sollten die Tabelle mit formatierten Spalten sehen. Die Ausgabe wird so aussehen:
+Führen Sie das Skript aus:
+
+```bash
+python3 step3_test1.py
+```
+
+Sie sollten die Tabelle mit formatierten Spalten sehen (wiederum vorbehaltlich der Typbehandlung des Preisformats):
 
 ```
+--- Running Step 3 Test 1 (create_formatter with column_formats) ---
       name     shares      price
 ---------- ---------- ----------
         AA        100      32.20
@@ -96,22 +115,32 @@ Sie sollten die Tabelle mit formatierten Spalten sehen. Die Ausgabe wird so auss
         GE         95      40.37
       MSFT         50      65.10
        IBM        100      70.44
+--------------------------------------------------------------------
 ```
 
-Als Nächstes versuchen wir die Verwendung von Großbuchstabenüberschriften. Führen Sie den folgenden Befehl aus:
+Testen Sie als Nächstes die Großbuchstaben-Header. Erstellen Sie `step3_test2.py`:
 
 ```python
-python3 -c "
+# step3_test2.py
 from tableformat import create_formatter, portfolio, print_table
 
 formatter = create_formatter('text', upper_headers=True)
+
+print("--- Running Step 3 Test 2 (create_formatter with upper_headers) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("-------------------------------------------------------------------")
 ```
 
-Sie sollten die Tabelle mit Großbuchstabenüberschriften sehen. Die Ausgabe wird sein:
+Führen Sie das Skript aus:
+
+```bash
+python3 step3_test2.py
+```
+
+Sie sollten die Tabelle mit Großbuchstaben-Headern sehen:
 
 ```
+--- Running Step 3 Test 2 (create_formatter with upper_headers) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100       32.2
@@ -121,22 +150,33 @@ Sie sollten die Tabelle mit Großbuchstabenüberschriften sehen. Die Ausgabe wir
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
+-------------------------------------------------------------------
 ```
 
-Schließlich kombinieren wir beide Optionen. Führen Sie diesen Befehl aus:
+Kombinieren Sie schließlich beide Optionen. Erstellen Sie `step3_test3.py`:
 
 ```python
-python3 -c "
+# step3_test3.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'], upper_headers=True)
+# Using the same formats as before
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 3 (create_formatter with both options) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("------------------------------------------------------------------")
 ```
 
-Dies sollte eine Tabelle mit formatierten Spalten und Großbuchstabenüberschriften anzeigen. Die Ausgabe wird sein:
+Führen Sie das Skript aus:
+
+```bash
+python3 step3_test3.py
+```
+
+Dies sollte eine Tabelle mit sowohl formatierten Spalten als auch Großbuchstaben-Headern anzeigen:
 
 ```
+--- Running Step 3 Test 3 (create_formatter with both options) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100      32.20
@@ -146,23 +186,35 @@ Dies sollte eine Tabelle mit formatierten Spalten und Großbuchstabenüberschrif
         GE         95      40.37
       MSFT         50      65.10
        IBM        100      70.44
+------------------------------------------------------------------
 ```
 
-Die verbesserte Funktion funktioniert auch mit anderen Formatter-Typen. Beispielsweise versuchen wir es mit dem CSV-Formatter. Führen Sie den folgenden Befehl aus:
+Die erweiterte Funktion funktioniert auch mit anderen Formatierertypen. Probieren Sie sie beispielsweise mit dem CSV-Formatierer aus. Erstellen Sie `step3_test4.py`:
 
 ```python
-python3 -c "
+# step3_test4.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('csv', column_formats=['\\"%s\\"', '%d', '%0.2f'])
+# For CSV, ensure formats produce valid CSV fields.
+# Adding quotes around the string name field.
+formatter = create_formatter('csv', column_formats=['"%s"', '%d', '%.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 4 (create_formatter with CSV) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("---------------------------------------------------------")
 ```
 
-Dies sollte eine CSV-Ausgabe mit formatierten Spalten erzeugen. Die Ausgabe wird sein:
+Führen Sie das Skript aus:
+
+```bash
+python3 step3_test4.py
+```
+
+Dies sollte Großbuchstaben-Header und formatierte Spalten im CSV-Format erzeugen (wiederum potenzielles Typproblem für die `%d`/`%.2f`-Formatierung von Strings, die von `print_table` übergeben werden):
 
 ```
-name,shares,price
+--- Running Step 3 Test 4 (create_formatter with CSV) ---
+NAME,SHARES,PRICE
 "AA",100,32.20
 "IBM",50,91.10
 "CAT",150,83.44
@@ -170,6 +222,7 @@ name,shares,price
 "GE",95,40.37
 "MSFT",50,65.10
 "IBM",100,70.44
+---------------------------------------------------------
 ```
 
-Durch die Verbesserung der Funktion `create_formatter()` haben wir eine benutzerfreundliche API erstellt. Benutzer können jetzt einfach Mixins verwenden, ohne die komplexen Details der Mehrfachvererbung verstehen zu müssen. Dies gibt ihnen die Flexibilität, die Formatter nach ihren Bedürfnissen anzupassen.
+Durch die Erweiterung der Funktion `create_formatter()` haben wir eine benutzerfreundliche API erstellt. Benutzer können nun auf einfache Weise Mixin-Funktionen anwenden, ohne die Mehrfachvererbungsstruktur selbst verwalten zu müssen.

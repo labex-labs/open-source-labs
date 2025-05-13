@@ -8,7 +8,7 @@ To open the file, we'll use the following commands in the terminal. The `cd` com
 
 ```bash
 cd ~/project
-code tableformat.py
+touch tableformat.py
 ```
 
 When you open the file, you'll notice that there are several classes defined. These classes play different roles in formatting the table data.
@@ -20,19 +20,28 @@ When you open the file, you'll notice that there are several classes defined. Th
 
 There's also a `print_table()` function in the file. This function uses the formatter classes we just mentioned to display the tabular data.
 
-Now, let's see how these classes work by running some Python code. Open a terminal and start a Python session. The following code imports the necessary functions and classes from the `tableformat.py` file, creates a `TextTableFormatter` object, and then uses the `print_table()` function to display the portfolio data.
+Now, let's see how these classes work. In your `/home/labex/project` directory, create a new file named `step1_test1.py` using your editor or the `touch` command. Add the following Python code to it:
 
 ```python
-python3 -c "
+# step1_test1.py
 from tableformat import print_table, TextTableFormatter, portfolio
+
 formatter = TextTableFormatter()
+print("--- Running Step 1 Test 1 ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("-----------------------------")
 ```
 
-After running the code, you should see output similar to this:
+Save the file and run it from your terminal:
+
+```bash
+python3 step1_test1.py
+```
+
+After running the script, you should see output similar to this:
 
 ```
+--- Running Step 1 Test 1 ---
       name     shares      price
 ---------- ---------- ----------
         AA        100       32.2
@@ -42,6 +51,7 @@ After running the code, you should see output similar to this:
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
+-----------------------------
 ```
 
 Now, let's find the problem. Notice that the values in the `price` column aren't formatted consistently. Some values have one decimal place, like 32.2, while others have two decimal places, like 51.23. In financial data, we usually want the formatting to be consistent.
@@ -60,46 +70,81 @@ Here's what we want the output to look like:
        IBM        100      70.44
 ```
 
-One way to fix this is to modify the `print_table()` function to accept format specifications. The following code shows how we can do this. We define a new `print_table()` function that takes an additional `formats` parameter. Inside the function, we use these format specifications to format each value in the row.
+One way to fix this is to modify the `print_table()` function to accept format specifications. Let's see how this works _without_ actually modifying `tableformat.py`. Create a new file named `step1_test2.py` with the following content. This script redefines the `print_table` function locally for demonstration purposes.
 
 ```python
-python3 -c "
-from tableformat import TextTableFormatter, portfolio
+# step1_test2.py
+from tableformat import TextTableFormatter
 
-def print_table(records, fields, formats, formatter):
+# Re-define Stock and portfolio locally for this example
+class Stock:
+    def __init__(self, name, shares, price):
+        self.name = name
+        self.shares = shares
+        self.price = price
+
+portfolio = [
+    Stock('AA', 100, 32.20), Stock('IBM', 50, 91.10), Stock('CAT', 150, 83.44),
+    Stock('MSFT', 200, 51.23), Stock('GE', 95, 40.37), Stock('MSFT', 50, 65.10),
+    Stock('IBM', 100, 70.44)
+]
+
+# Define a modified print_table locally
+def print_table_modified(records, fields, formats, formatter):
     formatter.headings(fields)
     for r in records:
+        # Apply formats to the original attribute values
         rowdata = [(fmt % getattr(r, fieldname))
-             for fieldname, fmt in zip(fields, formats)]
+                   for fieldname, fmt in zip(fields, formats)]
+        # Pass the already formatted strings to the formatter's row method
         formatter.row(rowdata)
 
+print("--- Running Step 1 Test 2 ---")
 formatter = TextTableFormatter()
-print_table(portfolio,
-            ['name','shares','price'],
-            ['%s','%d','%0.2f'],
-            formatter)
-"
+# Note: TextTableFormatter.row expects strings already formatted for width.
+# This example might not align perfectly yet, but demonstrates passing formats.
+print_table_modified(portfolio,
+                     ['name', 'shares', 'price'],
+                     ['%10s', '%10d', '%10.2f'], # Using widths
+                     formatter)
+print("-----------------------------")
+
 ```
 
-This solution works, but it has a drawback. Changing the function's interface might break existing code that uses the old version of the `print_table()` function.
+Run this script:
 
-Another approach is to create a custom formatter by subclassing. We can create a new class that inherits from `TextTableFormatter` and override the `row()` method to apply the desired formatting.
+```bash
+python3 step1_test2.py
+```
+
+This approach demonstrates passing formats, but modifying `print_table` has a drawback: changing the function's interface might break existing code that uses the original version.
+
+Another approach is to create a custom formatter by subclassing. We can create a new class that inherits from `TextTableFormatter` and override the `row()` method. Create a file `step1_test3.py`:
 
 ```python
-python3 -c "
+# step1_test3.py
 from tableformat import TextTableFormatter, print_table, portfolio
 
 class PortfolioFormatter(TextTableFormatter):
     def row(self, rowdata):
-        formats = ['%s','%d','%0.2f']
-        rowdata = [(fmt % d) for fmt, d in zip(formats, rowdata)]
-        super().row(rowdata)
+        # Example: Add a prefix to demonstrate overriding
+        # Note: The original lab description's formatting example had data type issues
+        # because print_table sends strings to this method. This is a simpler demo.
+        print("> ", end="") # Add a simple prefix to the line start
+        super().row(rowdata) # Call the parent method
 
+print("--- Running Step 1 Test 3 ---")
 formatter = PortfolioFormatter()
-print_table(portfolio, ['name','shares','price'], formatter)
-"
+print_table(portfolio, ['name', 'shares', 'price'], formatter)
+print("-----------------------------")
 ```
 
-This solution also works, but it's not very convenient. Every time we want different formatting, we have to create a new class. And we're limited to the specific formatter type we're subclassing from, in this case, `TextTableFormatter`.
+Run the script:
+
+```bash
+python3 step1_test3.py
+```
+
+This solution works for demonstrating subclassing, but creating a new class for every formatting variation isn't convenient. Plus, you're tied to the base class you inherit from (here, `TextTableFormatter`).
 
 In the next step, we'll explore a more elegant solution using mixin classes.

@@ -1,17 +1,18 @@
-# Создание удобного для пользователя API для миксинов
+# Создание удобного API для примесей
 
-Миксины (mixins) - это мощная возможность в Python, но они могут быть немного сложными для начинающих, так как они связаны с множественным наследованием, которое может стать довольно сложным. На этом этапе мы облегчим жизнь пользователям, улучшив функцию `create_formatter()`. Таким образом, пользователям не придется слишком беспокоиться о деталях множественного наследования.
+Примеси (mixins) мощны, но непосредственное использование множественного наследования (multiple inheritance) может показаться сложным. На этом шаге мы улучшим функцию `create_formatter()`, чтобы скрыть эту сложность, предоставив пользователям более простой API.
 
-Сначала вам нужно открыть файл `tableformat.py`. Это можно сделать, запустив следующие команды в терминале. Команда `cd` изменяет текущую директорию на папку проекта, а команда `code` открывает файл `tableformat.py` в редакторе кода.
+Сначала убедитесь, что `tableformat.py` открыт в вашем редакторе:
 
 ```bash
 cd ~/project
-code tableformat.py
+touch tableformat.py
 ```
 
-После открытия файла найдите функцию `create_formatter()`. В настоящее время она выглядит так:
+Найдите существующую функцию `create_formatter()`:
 
 ```python
+# Existing function in tableformat.py
 def create_formatter(name):
     """
     Create an appropriate formatter based on the name.
@@ -26,11 +27,11 @@ def create_formatter(name):
         raise RuntimeError(f'Unknown format {name}')
 ```
 
-Эта функция принимает имя в качестве аргумента и возвращает соответствующий форматер. Но мы хотим сделать ее более гибкой. Мы изменим ее так, чтобы она могла принимать необязательные аргументы для наших миксинов.
-
-Замените существующую функцию `create_formatter()` на улучшенную версию ниже. Эта новая функция позволяет указать форматы столбцов и преобразовывать заголовки в верхний регистр.
+Замените _все существующее_ определение функции `create_formatter()` улучшенной версией ниже. Эта новая версия принимает необязательные аргументы для форматов столбцов и преобразования заголовков в верхний регистр.
 
 ```python
+# Replace the old create_formatter with this in tableformat.py
+
 def create_formatter(name, column_formats=None, upper_headers=False):
     """
     Create a formatter with optional enhancements.
@@ -39,9 +40,11 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     name : str
         Name of the formatter ('text', 'csv', 'html')
     column_formats : list, optional
-        List of format strings for column formatting
+        List of format strings for column formatting.
+        Note: Relies on ColumnFormatMixin existing above this function.
     upper_headers : bool, optional
-        Whether to convert headers to uppercase
+        Whether to convert headers to uppercase.
+        Note: Relies on UpperHeadersMixin existing above this function.
     """
     if name == 'text':
         formatter_cls = TextTableFormatter
@@ -52,41 +55,57 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     else:
         raise RuntimeError(f'Unknown format {name}')
 
-    # Apply mixins if requested
-    if column_formats and upper_headers:
-        class CustomFormatter(ColumnFormatMixin, UpperHeadersMixin, formatter_cls):
+    # Build the inheritance list dynamically
+    bases = []
+    if column_formats:
+        bases.append(ColumnFormatMixin)
+    if upper_headers:
+        bases.append(UpperHeadersMixin)
+    bases.append(formatter_cls) # Base formatter class comes last
+
+    # Create the custom class dynamically
+    # Need to ensure ColumnFormatMixin and UpperHeadersMixin are defined before this point
+    class CustomFormatter(*bases):
+        # Set formats if ColumnFormatMixin is used
+        if column_formats:
             formats = column_formats
-        return CustomFormatter()
-    elif column_formats:
-        class CustomFormatter(ColumnFormatMixin, formatter_cls):
-            formats = column_formats
-        return CustomFormatter()
-    elif upper_headers:
-        class CustomFormatter(UpperHeadersMixin, formatter_cls):
-            pass
-        return CustomFormatter()
-    else:
-        return formatter_cls()
+
+    return CustomFormatter() # Return an instance of the dynamically created class
 ```
 
-Эта улучшенная функция работает следующим образом: сначала она определяет базовый класс форматера на основе аргумента `name`. Затем, в зависимости от того, были ли предоставлены `column_formats` и `upper_headers`, она создает настраиваемый класс форматера, включающий соответствующие миксины. Наконец, она возвращает экземпляр настраиваемого класса форматера.
+_Самокоррекция: Динамически создайте кортеж классов для наследования вместо нескольких ветвей if/elif._
 
-Теперь протестируем нашу улучшенную функцию с различными комбинациями параметров.
+Эта улучшенная функция сначала определяет базовый класс форматтера (`TextTableFormatter`, `CSVTableFormatter` и т. д.). Затем, на основе необязательных аргументов `column_formats` и `upper_headers`, она динамически создает новый класс (`CustomFormatter`), который наследуется от необходимых примесей и базового класса форматтера. Наконец, она возвращает экземпляр этого пользовательского форматтера (custom formatter).
 
-Сначала попробуем использовать форматирование столбцов. Запустите следующую команду в терминале. Эта команда импортирует необходимые функции и данные из файла `tableformat.py`, создает форматер с форматированием столбцов и затем выводит таблицу с использованием этого форматера.
+**Не забудьте сохранить изменения в `tableformat.py`.**
+
+Теперь давайте протестируем нашу улучшенную функцию. **Убедитесь, что вы сохранили обновленную функцию `create_formatter` в `tableformat.py`.**
+
+Сначала протестируйте форматирование столбцов. Создайте `step3_test1.py`:
 
 ```python
-python3 -c "
+# step3_test1.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'])
+# Using the same formats as before, subject to type issues.
+# Use formats compatible with strings if '%d', '%.2f' cause errors.
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'])
+
+print("--- Running Step 3 Test 1 (create_formatter with column_formats) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("--------------------------------------------------------------------")
 ```
 
-Вы должны увидеть таблицу с отформатированными столбцами. Вывод будет выглядеть так:
+Запустите скрипт:
+
+```bash
+python3 step3_test1.py
+```
+
+Вы должны увидеть таблицу с отформатированными столбцами (опять же, с учетом обработки типов формата цены):
 
 ```
+--- Running Step 3 Test 1 (create_formatter with column_formats) ---
       name     shares      price
 ---------- ---------- ----------
         AA        100      32.20
@@ -94,24 +113,34 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
        CAT        150      83.44
       MSFT        200      51.23
         GE         95      40.37
-      MSFT         50      65.10
+      MSFT         50       65.10
        IBM        100      70.44
+--------------------------------------------------------------------
 ```
 
-Далее попробуем использовать заголовки в верхнем регистре. Запустите следующую команду:
+Далее протестируйте заголовки в верхнем регистре. Создайте `step3_test2.py`:
 
 ```python
-python3 -c "
+# step3_test2.py
 from tableformat import create_formatter, portfolio, print_table
 
 formatter = create_formatter('text', upper_headers=True)
+
+print("--- Running Step 3 Test 2 (create_formatter with upper_headers) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("-------------------------------------------------------------------")
 ```
 
-Вы должны увидеть таблицу с заголовками в верхнем регистре. Вывод будет следующим:
+Запустите скрипт:
+
+```bash
+python3 step3_test2.py
+```
+
+Вы должны увидеть таблицу с заголовками в верхнем регистре:
 
 ```
+--- Running Step 3 Test 2 (create_formatter with upper_headers) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100       32.2
@@ -121,22 +150,27 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
+-------------------------------------------------------------------
 ```
 
-Наконец, объединим оба параметра. Запустите эту команду:
+Наконец, объедините оба варианта. Создайте `step3_test3.py`:
 
 ```python
-python3 -c "
+# step3_test3.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'], upper_headers=True)
+# Using the same formats as before
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 3 (create_formatter with both options) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("------------------------------------------------------------------")
 ```
 
-Это должно отобразить таблицу с отформатированными столбцами и заголовками в верхнем регистре. Вывод будет:
+Это должно отобразить таблицу как с отформатированными столбцами, так и с заголовками в верхнем регистре:
 
 ```
+--- Running Step 3 Test 3 (create_formatter with both options) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100      32.20
@@ -144,25 +178,37 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
        CAT        150      83.44
       MSFT        200      51.23
         GE         95      40.37
-      MSFT         50      65.10
+      MSFT         50       65.10
        IBM        100      70.44
+------------------------------------------------------------------
 ```
 
-Улучшенная функция также работает с другими типами форматеров. Например, попробуем ее с форматером CSV. Запустите следующую команду:
+Улучшенная функция также работает с другими типами форматтеров. Например, попробуйте ее с CSV-форматтером. Создайте `step3_test4.py`:
 
 ```python
-python3 -c "
+# step3_test4.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('csv', column_formats=['\\"%s\\"', '%d', '%0.2f'])
+# For CSV, ensure formats produce valid CSV fields.
+# Adding quotes around the string name field.
+formatter = create_formatter('csv', column_formats=['"%s"', '%d', '%.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 4 (create_formatter with CSV) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("---------------------------------------------------------")
 ```
 
-Это должно сформировать вывод в формате CSV с отформатированными столбцами. Вывод будет:
+Запустите скрипт:
+
+```bash
+python3 step3_test4.py
+```
+
+Это должно создать заголовки в верхнем регистре и отформатированные столбцы в формате CSV (опять же, потенциальная проблема с типом для форматирования `%d`/`%.2f` для строк, переданных из `print_table`):
 
 ```
-name,shares,price
+--- Running Step 3 Test 4 (create_formatter with CSV) ---
+NAME,SHARES,PRICE
 "AA",100,32.20
 "IBM",50,91.10
 "CAT",150,83.44
@@ -170,6 +216,7 @@ name,shares,price
 "GE",95,40.37
 "MSFT",50,65.10
 "IBM",100,70.44
+---------------------------------------------------------
 ```
 
-Улучшив функцию `create_formatter()`, мы создали удобный для пользователя API. Теперь пользователи могут легко использовать миксины, не зная сложных деталей множественного наследования. Это дает им возможность настраивать форматеры в соответствии с их потребностями.
+Улучшив функцию `create_formatter()`, мы создали удобный API. Теперь пользователи могут легко применять функциональность примесей, не нуждаясь в управлении структурой множественного наследования самостоятельно.

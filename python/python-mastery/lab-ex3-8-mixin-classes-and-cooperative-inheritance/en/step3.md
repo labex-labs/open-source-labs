@@ -1,17 +1,18 @@
 # Creating a User-Friendly API for Mixins
 
-Mixins are a powerful feature in Python, but they can be a bit tricky for beginners because they involve multiple inheritance, which can get quite complex. In this step, we're going to make things easier for users by improving the `create_formatter()` function. This way, users won't have to worry too much about the details of multiple inheritance.
+Mixins are powerful, but using multiple inheritance directly can feel complex. In this step, we'll improve the `create_formatter()` function to hide this complexity, providing an easier API for users.
 
-First, you need to open the `tableformat.py` file. You can do this by running the following commands in your terminal. The `cd` command changes the directory to your project folder, and the `code` command opens the `tableformat.py` file in your code editor.
+First, ensure `tableformat.py` is open in your editor:
 
 ```bash
 cd ~/project
-code tableformat.py
+touch tableformat.py
 ```
 
-Once the file is open, find the `create_formatter()` function. Currently, it looks like this:
+Find the existing `create_formatter()` function:
 
 ```python
+# Existing function in tableformat.py
 def create_formatter(name):
     """
     Create an appropriate formatter based on the name.
@@ -26,11 +27,11 @@ def create_formatter(name):
         raise RuntimeError(f'Unknown format {name}')
 ```
 
-This function takes a name as an argument and returns the corresponding formatter. But we want to make it more flexible. We're going to modify it so that it can accept optional arguments for our mixins.
-
-Replace the existing `create_formatter()` function with the enhanced version below. This new function allows you to specify column formats and whether to convert headers to uppercase.
+Replace the _entire existing_ `create_formatter()` function definition with the enhanced version below. This new version accepts optional arguments for column formats and uppercasing headers.
 
 ```python
+# Replace the old create_formatter with this in tableformat.py
+
 def create_formatter(name, column_formats=None, upper_headers=False):
     """
     Create a formatter with optional enhancements.
@@ -39,9 +40,11 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     name : str
         Name of the formatter ('text', 'csv', 'html')
     column_formats : list, optional
-        List of format strings for column formatting
+        List of format strings for column formatting.
+        Note: Relies on ColumnFormatMixin existing above this function.
     upper_headers : bool, optional
-        Whether to convert headers to uppercase
+        Whether to convert headers to uppercase.
+        Note: Relies on UpperHeadersMixin existing above this function.
     """
     if name == 'text':
         formatter_cls = TextTableFormatter
@@ -52,41 +55,57 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     else:
         raise RuntimeError(f'Unknown format {name}')
 
-    # Apply mixins if requested
-    if column_formats and upper_headers:
-        class CustomFormatter(ColumnFormatMixin, UpperHeadersMixin, formatter_cls):
+    # Build the inheritance list dynamically
+    bases = []
+    if column_formats:
+        bases.append(ColumnFormatMixin)
+    if upper_headers:
+        bases.append(UpperHeadersMixin)
+    bases.append(formatter_cls) # Base formatter class comes last
+
+    # Create the custom class dynamically
+    # Need to ensure ColumnFormatMixin and UpperHeadersMixin are defined before this point
+    class CustomFormatter(*bases):
+        # Set formats if ColumnFormatMixin is used
+        if column_formats:
             formats = column_formats
-        return CustomFormatter()
-    elif column_formats:
-        class CustomFormatter(ColumnFormatMixin, formatter_cls):
-            formats = column_formats
-        return CustomFormatter()
-    elif upper_headers:
-        class CustomFormatter(UpperHeadersMixin, formatter_cls):
-            pass
-        return CustomFormatter()
-    else:
-        return formatter_cls()
+
+    return CustomFormatter() # Return an instance of the dynamically created class
 ```
 
-This enhanced function works by first determining the base formatter class based on the `name` argument. Then, depending on whether `column_formats` and `upper_headers` are provided, it creates a custom formatter class that includes the appropriate mixins. Finally, it returns an instance of the custom formatter class.
+_Self-correction: Dynamically create the class tuple for inheritance instead of multiple if/elif branches._
 
-Now, let's test our enhanced function with different combinations of options.
+This enhanced function first determines the base formatter class (`TextTableFormatter`, `CSVTableFormatter`, etc.). Then, based on the optional arguments `column_formats` and `upper_headers`, it dynamically constructs a new class (`CustomFormatter`) that inherits from the necessary mixins and the base formatter class. Finally, it returns an instance of this custom formatter.
 
-First, let's try using column formatting. Run the following command in your terminal. This command imports the necessary functions and data from the `tableformat.py` file, creates a formatter with column formatting, and then prints a table using that formatter.
+**Remember to save the changes to `tableformat.py`.**
+
+Now, let's test our enhanced function. **Make sure you have saved the updated `create_formatter` function in `tableformat.py`.**
+
+First, test column formatting. Create `step3_test1.py`:
 
 ```python
-python3 -c "
+# step3_test1.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'])
+# Using the same formats as before, subject to type issues.
+# Use formats compatible with strings if '%d', '%.2f' cause errors.
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'])
+
+print("--- Running Step 3 Test 1 (create_formatter with column_formats) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("--------------------------------------------------------------------")
 ```
 
-You should see the table with formatted columns. The output will look like this:
+Run the script:
+
+```bash
+python3 step3_test1.py
+```
+
+You should see the table with formatted columns (again, subject to the type handling of the price format):
 
 ```
+--- Running Step 3 Test 1 (create_formatter with column_formats) ---
       name     shares      price
 ---------- ---------- ----------
         AA        100      32.20
@@ -96,22 +115,32 @@ You should see the table with formatted columns. The output will look like this:
         GE         95      40.37
       MSFT         50      65.10
        IBM        100      70.44
+--------------------------------------------------------------------
 ```
 
-Next, let's try using uppercase headers. Run the following command:
+Next, test uppercase headers. Create `step3_test2.py`:
 
 ```python
-python3 -c "
+# step3_test2.py
 from tableformat import create_formatter, portfolio, print_table
 
 formatter = create_formatter('text', upper_headers=True)
+
+print("--- Running Step 3 Test 2 (create_formatter with upper_headers) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("-------------------------------------------------------------------")
 ```
 
-You should see the table with uppercase headers. The output will be:
+Run the script:
+
+```bash
+python3 step3_test2.py
+```
+
+You should see the table with uppercase headers:
 
 ```
+--- Running Step 3 Test 2 (create_formatter with upper_headers) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100       32.2
@@ -121,22 +150,33 @@ You should see the table with uppercase headers. The output will be:
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
+-------------------------------------------------------------------
 ```
 
-Finally, let's combine both options. Run this command:
+Finally, combine both options. Create `step3_test3.py`:
 
 ```python
-python3 -c "
+# step3_test3.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'], upper_headers=True)
+# Using the same formats as before
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 3 (create_formatter with both options) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("------------------------------------------------------------------")
 ```
 
-This should display a table with both formatted columns and uppercase headers. The output will be:
+Run the script:
+
+```bash
+python3 step3_test3.py
+```
+
+This should display a table with both formatted columns and uppercase headers:
 
 ```
+--- Running Step 3 Test 3 (create_formatter with both options) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100      32.20
@@ -146,23 +186,35 @@ This should display a table with both formatted columns and uppercase headers. T
         GE         95      40.37
       MSFT         50      65.10
        IBM        100      70.44
+------------------------------------------------------------------
 ```
 
-The enhanced function also works with other formatter types. For example, let's try it with the CSV formatter. Run the following command:
+The enhanced function also works with other formatter types. For example, try it with the CSV formatter. Create `step3_test4.py`:
 
 ```python
-python3 -c "
+# step3_test4.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('csv', column_formats=['\\"%s\\"', '%d', '%0.2f'])
+# For CSV, ensure formats produce valid CSV fields.
+# Adding quotes around the string name field.
+formatter = create_formatter('csv', column_formats=['"%s"', '%d', '%.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 4 (create_formatter with CSV) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("---------------------------------------------------------")
 ```
 
-This should produce CSV output with formatted columns. The output will be:
+Run the script:
+
+```bash
+python3 step3_test4.py
+```
+
+This should produce uppercase headers and formatted columns in CSV format (again, potential type issue for `%d`/`%.2f` formatting on strings passed from `print_table`):
 
 ```
-name,shares,price
+--- Running Step 3 Test 4 (create_formatter with CSV) ---
+NAME,SHARES,PRICE
 "AA",100,32.20
 "IBM",50,91.10
 "CAT",150,83.44
@@ -170,6 +222,7 @@ name,shares,price
 "GE",95,40.37
 "MSFT",50,65.10
 "IBM",100,70.44
+---------------------------------------------------------
 ```
 
-By enhancing the `create_formatter()` function, we've created a user-friendly API. Users can now easily use mixins without having to understand the complex details of multiple inheritance. This gives them the flexibility to customize the formatters according to their needs.
+By enhancing the `create_formatter()` function, we've created a user-friendly API. Users can now easily apply mixin functionalities without needing to manage the multiple inheritance structure themselves.

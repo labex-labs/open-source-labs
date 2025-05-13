@@ -1,38 +1,47 @@
-# Comprendre le problème de formatage des colonnes
+# Comprendre le problème avec le formatage des colonnes
 
-Dans cette étape, nous allons examiner une limitation de notre implémentation actuelle de formatage de tableaux. Nous allons également étudier quelques solutions possibles à ce problème.
+Dans cette étape, nous allons examiner une limitation de notre implémentation actuelle du formatage de tableau. Nous examinerons également certaines solutions possibles à ce problème.
 
-Tout d'abord, comprenons ce que nous allons faire. Nous allons ouvrir l'éditeur VSCode et regarder le fichier `tableformat.py` dans le répertoire du projet. Ce fichier est important car il contient le code qui nous permet de formater des données tabulaires de différentes manières, comme en texte brut, au format CSV ou au format HTML.
+Tout d'abord, comprenons ce que nous allons faire. Nous allons ouvrir l'éditeur VSCode et examiner le fichier `tableformat.py` dans le répertoire du projet. Ce fichier est important car il contient le code qui nous permet de formater des données tabulaires de différentes manières, comme en texte, CSV ou HTML.
 
-Pour ouvrir le fichier, nous allons utiliser les commandes suivantes dans le terminal. La commande `cd` change le répertoire pour le répertoire du projet, et la commande `code` ouvre le fichier `tableformat.py` dans VSCode.
+Pour ouvrir le fichier, nous utiliserons les commandes suivantes dans le terminal. La commande `cd` change le répertoire vers le répertoire du projet, et la commande `code` ouvre le fichier `tableformat.py` dans VSCode.
 
 ```bash
 cd ~/project
-code tableformat.py
+touch tableformat.py
 ```
 
-Lorsque vous ouvrez le fichier, vous remarquerez qu'il y a plusieurs classes définies. Ces classes jouent différents rôles dans le formatage des données du tableau.
+Lorsque vous ouvrez le fichier, vous remarquerez que plusieurs classes sont définies. Ces classes jouent différents rôles dans le formatage des données du tableau.
 
-- `TableFormatter` : Il s'agit d'une classe abstraite de base. Elle a des méthodes qui sont utilisées pour formater les en-têtes et les lignes du tableau. Considérez-la comme un modèle pour les autres classes de formateur.
-- `TextTableFormatter` : Cette classe est utilisée pour afficher le tableau au format texte brut.
-- `CSVTableFormatter` : Elle est responsable du formatage des données du tableau au format CSV (Comma-Separated Values, valeurs séparées par des virgules).
+- `TableFormatter` : Il s'agit d'une classe de base abstraite. Elle possède des méthodes qui sont utilisées pour formater les en-têtes et les lignes du tableau. Considérez-la comme un modèle pour les autres classes de formatage.
+- `TextTableFormatter` : Cette classe est utilisée pour afficher le tableau en format texte brut.
+- `CSVTableFormatter` : Elle est responsable du formatage des données du tableau au format CSV (Comma-Separated Values - Valeurs séparées par des virgules).
 - `HTMLTableFormatter` : Cette classe formate les données du tableau au format HTML.
 
-Il y a également une fonction `print_table()` dans le fichier. Cette fonction utilise les classes de formateur que nous venons de mentionner pour afficher les données tabulaires.
+Il existe également une fonction `print_table()` dans le fichier. Cette fonction utilise les classes de formatage que nous venons de mentionner pour afficher les données tabulaires.
 
-Maintenant, voyons comment ces classes fonctionnent en exécutant un peu de code Python. Ouvrez un terminal et démarrez une session Python. Le code suivant importe les fonctions et les classes nécessaires du fichier `tableformat.py`, crée un objet `TextTableFormatter`, puis utilise la fonction `print_table()` pour afficher les données du portefeuille.
+Maintenant, voyons comment ces classes fonctionnent. Dans votre répertoire `/home/labex/project`, créez un nouveau fichier nommé `step1_test1.py` en utilisant votre éditeur ou la commande `touch`. Ajoutez le code Python suivant :
 
 ```python
-python3 -c "
+# step1_test1.py
 from tableformat import print_table, TextTableFormatter, portfolio
+
 formatter = TextTableFormatter()
+print("--- Running Step 1 Test 1 ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("-----------------------------")
 ```
 
-Après avoir exécuté le code, vous devriez voir une sortie similaire à ceci :
+Enregistrez le fichier et exécutez-le depuis votre terminal :
+
+```bash
+python3 step1_test1.py
+```
+
+Après avoir exécuté le script, vous devriez voir une sortie similaire à celle-ci :
 
 ```
+--- Running Step 1 Test 1 ---
       name     shares      price
 ---------- ---------- ----------
         AA        100       32.2
@@ -42,11 +51,12 @@ Après avoir exécuté le code, vous devriez voir une sortie similaire à ceci :
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
+-----------------------------
 ```
 
 Maintenant, trouvons le problème. Remarquez que les valeurs dans la colonne `price` ne sont pas formatées de manière cohérente. Certaines valeurs ont une décimale, comme 32.2, tandis que d'autres en ont deux, comme 51.23. Dans les données financières, nous voulons généralement que le formatage soit cohérent.
 
-Voici à quoi nous aimerions que la sortie ressemble :
+Voici à quoi nous voulons que la sortie ressemble :
 
 ```
       name     shares      price
@@ -60,46 +70,81 @@ Voici à quoi nous aimerions que la sortie ressemble :
        IBM        100      70.44
 ```
 
-Une façon de résoudre ce problème est de modifier la fonction `print_table()` pour qu'elle accepte des spécifications de format. Le code suivant montre comment nous pouvons le faire. Nous définissons une nouvelle fonction `print_table()` qui prend un paramètre supplémentaire `formats`. À l'intérieur de la fonction, nous utilisons ces spécifications de format pour formater chaque valeur de la ligne.
+Une façon de résoudre ce problème est de modifier la fonction `print_table()` pour accepter des spécifications de format. Voyons comment cela fonctionne _sans_ réellement modifier `tableformat.py`. Créez un nouveau fichier nommé `step1_test2.py` avec le contenu suivant. Ce script redéfinit la fonction `print_table` localement à des fins de démonstration.
 
 ```python
-python3 -c "
-from tableformat import TextTableFormatter, portfolio
+# step1_test2.py
+from tableformat import TextTableFormatter
 
-def print_table(records, fields, formats, formatter):
+# Re-define Stock and portfolio locally for this example
+class Stock:
+    def __init__(self, name, shares, price):
+        self.name = name
+        self.shares = shares
+        self.price = price
+
+portfolio = [
+    Stock('AA', 100, 32.20), Stock('IBM', 50, 91.10), Stock('CAT', 150, 83.44),
+    Stock('MSFT', 200, 51.23), Stock('GE', 95, 40.37), Stock('MSFT', 50, 65.10),
+    Stock('IBM', 100, 70.44)
+]
+
+# Define a modified print_table locally
+def print_table_modified(records, fields, formats, formatter):
     formatter.headings(fields)
     for r in records:
+        # Apply formats to the original attribute values
         rowdata = [(fmt % getattr(r, fieldname))
-             for fieldname, fmt in zip(fields, formats)]
+                   for fieldname, fmt in zip(fields, formats)]
+        # Pass the already formatted strings to the formatter's row method
         formatter.row(rowdata)
 
+print("--- Running Step 1 Test 2 ---")
 formatter = TextTableFormatter()
-print_table(portfolio,
-            ['name','shares','price'],
-            ['%s','%d','%0.2f'],
-            formatter)
-"
+# Note: TextTableFormatter.row expects strings already formatted for width.
+# This example might not align perfectly yet, but demonstrates passing formats.
+print_table_modified(portfolio,
+                     ['name', 'shares', 'price'],
+                     ['%10s', '%10d', '%10.2f'], # Using widths
+                     formatter)
+print("-----------------------------")
+
 ```
 
-Cette solution fonctionne, mais elle a un inconvénient. Changer l'interface de la fonction peut casser le code existant qui utilise l'ancienne version de la fonction `print_table()`.
+Exécutez ce script :
 
-Une autre approche consiste à créer un formateur personnalisé en utilisant la sous-classification. Nous pouvons créer une nouvelle classe qui hérite de `TextTableFormatter` et qui remplace la méthode `row()` pour appliquer le formatage souhaité.
+```bash
+python3 step1_test2.py
+```
+
+Cette approche démontre le passage de formats, mais la modification de `print_table` a un inconvénient : la modification de l'interface de la fonction pourrait casser le code existant qui utilise la version originale.
+
+Une autre approche consiste à créer un formateur personnalisé par sous-classement (subclassing). Nous pouvons créer une nouvelle classe qui hérite de `TextTableFormatter` et redéfinir (override) la méthode `row()`. Créez un fichier `step1_test3.py` :
 
 ```python
-python3 -c "
+# step1_test3.py
 from tableformat import TextTableFormatter, print_table, portfolio
 
 class PortfolioFormatter(TextTableFormatter):
     def row(self, rowdata):
-        formats = ['%s','%d','%0.2f']
-        rowdata = [(fmt % d) for fmt, d in zip(formats, rowdata)]
-        super().row(rowdata)
+        # Example: Add a prefix to demonstrate overriding
+        # Note: The original lab description's formatting example had data type issues
+        # because print_table sends strings to this method. This is a simpler demo.
+        print("> ", end="") # Add a simple prefix to the line start
+        super().row(rowdata) # Call the parent method
 
+print("--- Running Step 1 Test 3 ---")
 formatter = PortfolioFormatter()
-print_table(portfolio, ['name','shares','price'], formatter)
-"
+print_table(portfolio, ['name', 'shares', 'price'], formatter)
+print("-----------------------------")
 ```
 
-Cette solution fonctionne également, mais elle n'est pas très pratique. Chaque fois que nous voulons un formatage différent, nous devons créer une nouvelle classe. Et nous sommes limités au type de formateur spécifique dont nous dérivons, dans ce cas, `TextTableFormatter`.
+Exécutez le script :
 
-Dans l'étape suivante, nous allons explorer une solution plus élégante en utilisant les classes mixin.
+```bash
+python3 step1_test3.py
+```
+
+Cette solution fonctionne pour démontrer le sous-classement, mais la création d'une nouvelle classe pour chaque variation de formatage n'est pas pratique. De plus, vous êtes lié à la classe de base dont vous héritez (ici, `TextTableFormatter`).
+
+Dans l'étape suivante, nous explorerons une solution plus élégante utilisant les classes mixin.

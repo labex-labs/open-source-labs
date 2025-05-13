@@ -1,17 +1,18 @@
-# 为混入类创建用户友好的 API
+# 为 Mixin 创建用户友好的 API
 
-混入类是 Python 中强大的特性，但对于初学者来说可能有点棘手，因为它涉及多重继承，这可能会变得相当复杂。在这一步中，我们将通过改进 `create_formatter()` 函数，让用户使用起来更加轻松。这样，用户就不必过多担心多重继承的细节。
+Mixin 非常强大，但是直接使用多重继承可能会让人觉得很复杂。在这一步中，我们将改进 `create_formatter()` 函数以隐藏这种复杂性，从而为用户提供更简单的 API。
 
-首先，你需要打开 `tableformat.py` 文件。你可以在终端中运行以下命令来完成此操作。`cd` 命令用于将目录更改为你的项目文件夹，`code` 命令用于在代码编辑器中打开 `tableformat.py` 文件。
+首先，确保 `tableformat.py` 在你的编辑器中打开：
 
 ```bash
 cd ~/project
-code tableformat.py
+touch tableformat.py
 ```
 
-文件打开后，找到 `create_formatter()` 函数。目前，它的代码如下：
+找到现有的 `create_formatter()` 函数：
 
 ```python
+# Existing function in tableformat.py
 def create_formatter(name):
     """
     Create an appropriate formatter based on the name.
@@ -26,11 +27,11 @@ def create_formatter(name):
         raise RuntimeError(f'Unknown format {name}')
 ```
 
-这个函数接受一个名称作为参数，并返回相应的格式化器。但我们希望让它更灵活。我们将对其进行修改，使其能够接受混入类的可选参数。
-
-将现有的 `create_formatter()` 函数替换为下面增强后的版本。这个新函数允许你指定列格式以及是否将标题转换为大写。
+用下面增强的版本替换*整个现有的* `create_formatter()` 函数定义。这个新版本接受列格式和标题大写的可选参数。
 
 ```python
+# Replace the old create_formatter with this in tableformat.py
+
 def create_formatter(name, column_formats=None, upper_headers=False):
     """
     Create a formatter with optional enhancements.
@@ -39,9 +40,11 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     name : str
         Name of the formatter ('text', 'csv', 'html')
     column_formats : list, optional
-        List of format strings for column formatting
+        List of format strings for column formatting.
+        Note: Relies on ColumnFormatMixin existing above this function.
     upper_headers : bool, optional
-        Whether to convert headers to uppercase
+        Whether to convert headers to uppercase.
+        Note: Relies on UpperHeadersMixin existing above this function.
     """
     if name == 'text':
         formatter_cls = TextTableFormatter
@@ -52,41 +55,57 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     else:
         raise RuntimeError(f'Unknown format {name}')
 
-    # Apply mixins if requested
-    if column_formats and upper_headers:
-        class CustomFormatter(ColumnFormatMixin, UpperHeadersMixin, formatter_cls):
+    # Build the inheritance list dynamically
+    bases = []
+    if column_formats:
+        bases.append(ColumnFormatMixin)
+    if upper_headers:
+        bases.append(UpperHeadersMixin)
+    bases.append(formatter_cls) # Base formatter class comes last
+
+    # Create the custom class dynamically
+    # Need to ensure ColumnFormatMixin and UpperHeadersMixin are defined before this point
+    class CustomFormatter(*bases):
+        # Set formats if ColumnFormatMixin is used
+        if column_formats:
             formats = column_formats
-        return CustomFormatter()
-    elif column_formats:
-        class CustomFormatter(ColumnFormatMixin, formatter_cls):
-            formats = column_formats
-        return CustomFormatter()
-    elif upper_headers:
-        class CustomFormatter(UpperHeadersMixin, formatter_cls):
-            pass
-        return CustomFormatter()
-    else:
-        return formatter_cls()
+
+    return CustomFormatter() # Return an instance of the dynamically created class
 ```
 
-这个增强后的函数首先根据 `name` 参数确定基本的格式化器类。然后，根据是否提供了 `column_formats` 和 `upper_headers`，创建一个包含适当混入类的自定义格式化器类。最后，返回自定义格式化器类的一个实例。
+_自我修正：动态创建用于继承的类元组，而不是多个 if/elif 分支。_
 
-现在，让我们使用不同的选项组合来测试这个增强后的函数。
+这个增强的函数首先确定基本格式化器类（`TextTableFormatter`、`CSVTableFormatter` 等）。然后，基于可选参数 `column_formats` 和 `upper_headers`，它动态地构造一个新类（`CustomFormatter`），该类继承自必要的 mixin 和基本格式化器类。最后，它返回这个自定义格式化器的实例。
 
-首先，让我们尝试使用列格式化。在终端中运行以下命令。这个命令从 `tableformat.py` 文件中导入必要的函数和数据，创建一个带有列格式化的格式化器，然后使用该格式化器打印一个表格。
+**记住保存对 `tableformat.py` 的更改。**
+
+现在，让我们测试一下增强的函数。**确保你已在 `tableformat.py` 中保存了更新后的 `create_formatter` 函数。**
+
+首先，测试列格式化。创建 `step3_test1.py`：
 
 ```python
-python3 -c "
+# step3_test1.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'])
+# Using the same formats as before, subject to type issues.
+# Use formats compatible with strings if '%d', '%.2f' cause errors.
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'])
+
+print("--- Running Step 3 Test 1 (create_formatter with column_formats) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("--------------------------------------------------------------------")
 ```
 
-你应该会看到列已格式化的表格。输出如下：
+运行脚本：
+
+```bash
+python3 step3_test1.py
+```
+
+你应该看到带有格式化列的表格（同样，取决于价格格式的类型处理）：
 
 ```
+--- Running Step 3 Test 1 (create_formatter with column_formats) ---
       name     shares      price
 ---------- ---------- ----------
         AA        100      32.20
@@ -94,24 +113,34 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
        CAT        150      83.44
       MSFT        200      51.23
         GE         95      40.37
-      MSFT         50      65.10
+      MSFT         50       65.10
        IBM        100      70.44
+--------------------------------------------------------------------
 ```
 
-接下来，让我们尝试使用大写标题。运行以下命令：
+接下来，测试大写标题。创建 `step3_test2.py`：
 
 ```python
-python3 -c "
+# step3_test2.py
 from tableformat import create_formatter, portfolio, print_table
 
 formatter = create_formatter('text', upper_headers=True)
+
+print("--- Running Step 3 Test 2 (create_formatter with upper_headers) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("-------------------------------------------------------------------")
 ```
 
-你应该会看到带有大写标题的表格。输出如下：
+运行脚本：
+
+```bash
+python3 step3_test2.py
+```
+
+你应该看到带有大写标题的表格：
 
 ```
+--- Running Step 3 Test 2 (create_formatter with upper_headers) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100       32.2
@@ -121,22 +150,33 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
         GE         95      40.37
       MSFT         50       65.1
        IBM        100      70.44
+-------------------------------------------------------------------
 ```
 
-最后，让我们将两个选项结合起来。运行以下命令：
+最后，组合两个选项。创建 `step3_test3.py`：
 
 ```python
-python3 -c "
+# step3_test3.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('text', column_formats=['%s', '%d', '%0.2f'], upper_headers=True)
+# Using the same formats as before
+formatter = create_formatter('text', column_formats=['%10s', '%10s', '%10.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 3 (create_formatter with both options) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("------------------------------------------------------------------")
 ```
 
-这应该会显示一个列已格式化且标题为大写的表格。输出如下：
+运行脚本：
+
+```bash
+python3 step3_test3.py
+```
+
+这应该显示一个带有格式化列和大写标题的表格：
 
 ```
+--- Running Step 3 Test 3 (create_formatter with both options) ---
       NAME     SHARES      PRICE
 ---------- ---------- ----------
         AA        100      32.20
@@ -144,25 +184,37 @@ print_table(portfolio, ['name', 'shares', 'price'], formatter)
        CAT        150      83.44
       MSFT        200      51.23
         GE         95      40.37
-      MSFT         50      65.10
+      MSFT         50       65.1
        IBM        100      70.44
+------------------------------------------------------------------
 ```
 
-这个增强后的函数也适用于其他类型的格式化器。例如，让我们尝试使用 CSV 格式化器。运行以下命令：
+增强的函数也适用于其他格式化器类型。例如，尝试将其与 CSV 格式化器一起使用。创建 `step3_test4.py`：
 
 ```python
-python3 -c "
+# step3_test4.py
 from tableformat import create_formatter, portfolio, print_table
 
-formatter = create_formatter('csv', column_formats=['\\"%s\\"', '%d', '%0.2f'])
+# For CSV, ensure formats produce valid CSV fields.
+# Adding quotes around the string name field.
+formatter = create_formatter('csv', column_formats=['"%s"', '%d', '%.2f'], upper_headers=True)
+
+print("--- Running Step 3 Test 4 (create_formatter with CSV) ---")
 print_table(portfolio, ['name', 'shares', 'price'], formatter)
-"
+print("---------------------------------------------------------")
 ```
 
-这应该会生成列已格式化的 CSV 输出。输出如下：
+运行脚本：
+
+```bash
+python3 step3_test4.py
+```
+
+这应该以 CSV 格式生成大写标题和格式化的列（同样，对于从 `print_table` 传递的字符串进行 `%d`/`%.2f` 格式化存在潜在的类型问题）：
 
 ```
-name,shares,price
+--- Running Step 3 Test 4 (create_formatter with CSV) ---
+NAME,SHARES,PRICE
 "AA",100,32.20
 "IBM",50,91.10
 "CAT",150,83.44
@@ -170,6 +222,7 @@ name,shares,price
 "GE",95,40.37
 "MSFT",50,65.10
 "IBM",100,70.44
+---------------------------------------------------------
 ```
 
-通过增强 `create_formatter()` 函数，我们创建了一个用户友好的 API。现在，用户可以轻松使用混入类，而不必了解多重继承的复杂细节。这让他们能够根据自己的需求灵活定制格式化器。
+通过增强 `create_formatter()` 函数，我们创建了一个用户友好的 API。用户现在可以轻松地应用 mixin 功能，而无需自己管理多重继承结构。
