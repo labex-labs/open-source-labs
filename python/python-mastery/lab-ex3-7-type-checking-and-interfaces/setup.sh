@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+cd /tmp && curl -s https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/setup-python-history-v3.sh | bash
+
 # Download the necessary files for the lab
 mkdir -p /home/labex/project
 cd /home/labex/project
@@ -147,6 +149,3 @@ GE,95,40.37
 MSFT,50,65.10
 IBM,100,70.44
 EOF
-
-# Download the Python shell history setup script
-wget -q https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh

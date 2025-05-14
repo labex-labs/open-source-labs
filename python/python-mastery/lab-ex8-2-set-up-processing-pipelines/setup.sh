@@ -1,10 +1,9 @@
 #!/bin/zsh
 
+cd /tmp && curl -s https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/setup-python-history-v3.sh | bash
+
 # Download and set up the Python shell history script
 cd /home/labex/project
-wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh
-chmod +x .setup-python-shell-history.sh
-zsh .setup-python-shell-history.sh
 
 # Make sure we have necessary base files
 if [ ! -f "follow.py" ]; then

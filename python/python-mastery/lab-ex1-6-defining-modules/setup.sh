@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+cd /tmp && curl -s https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/setup-python-history-v3.sh | bash
+
 # Create stock.py file
 cat > /home/labex/project/stock.py << 'EOF'
 class Stock:
@@ -54,6 +56,3 @@ IBM 75 91.10
 CAT 50 78.44
 MSFT 100 65.10
 EOF
-
-# Set up Python shell history for easier verification
-wget -q https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh

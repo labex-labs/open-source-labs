@@ -1,8 +1,8 @@
 #!/bin/zsh
+cd /tmp && curl -s https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/setup-python-history-v3.sh | bash
 
 # Set up the necessary files for the lab
 cd /home/labex/project
-wget -q https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
 
 # Create the necessary files
 cat > structure.py << 'EOF'
