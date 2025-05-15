@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 ls -la /home/labex/project/generator_demo.py
 cat /home/labex/project/generator_demo.py | grep "def countdown"

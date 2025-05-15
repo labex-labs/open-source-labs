@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Navigate to the project directory
 cd /home/labex/project/git-playground

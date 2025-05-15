@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create the initial reader.py file
 cat > /home/labex/project/reader.py << 'EOL'

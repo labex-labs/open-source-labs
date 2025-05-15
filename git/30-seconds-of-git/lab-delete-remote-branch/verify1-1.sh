@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Check if the following command is in the history:
 # git push -u origin feature-branch

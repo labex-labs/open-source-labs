@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Download initial files for the lab
 mkdir -p /home/labex/project

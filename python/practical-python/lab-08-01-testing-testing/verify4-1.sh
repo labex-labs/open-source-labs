@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 cat /home/labex/project/test_simple.py | grep "simple"

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Setup for the Python attribute access lab
 mkdir -p /home/labex/project

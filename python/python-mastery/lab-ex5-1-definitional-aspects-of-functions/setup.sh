@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create necessary files for the lab
 cd /home/labex/project

@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 grep -q "end=" ~/.python_history && echo "True"

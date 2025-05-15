@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create structure.py if it doesn't exist
 if [ ! -f /home/labex/project/structure.py ]; then

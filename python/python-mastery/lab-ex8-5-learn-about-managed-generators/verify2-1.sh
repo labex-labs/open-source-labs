@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 ls -la /home/labex/project/multitask.py
 cat /home/labex/project/multitask.py | grep "from collections import deque"

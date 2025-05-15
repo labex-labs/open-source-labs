@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 cd ~/project
 git status | grep 'script.js'

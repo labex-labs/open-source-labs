@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create necessary directories
 mkdir -p /home/labex/project

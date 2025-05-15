@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Running this program shows the first operation timing
 # out and the second succeeding.
 cd /home/labex/project

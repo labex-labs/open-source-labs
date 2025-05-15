@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Run the Python script and capture the output in the file "debug5"
 python3 ~/project/mortgage.py > debug5

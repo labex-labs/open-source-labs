@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 cat > /home/labex/project/stock.py << 'EOF'
 class Stock:

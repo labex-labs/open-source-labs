@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Note that maps appear in the form `map[k:v k:v]` when
 # printed with `fmt.Println`.
 cd /home/labex/project

@@ -1,3 +1,3 @@
-#!/bin/zsh
+#!/bin/bash
 
 ls -la | grep 'edgeCaseTester.js'

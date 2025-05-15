@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Check if structure.py exists and contains the create_init method
 if ! grep -q "create_init" /home/labex/project/structure.py; then

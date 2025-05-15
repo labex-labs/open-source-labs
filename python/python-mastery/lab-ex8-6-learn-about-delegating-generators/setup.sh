@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create the project directory structure
 mkdir -p /home/labex/project

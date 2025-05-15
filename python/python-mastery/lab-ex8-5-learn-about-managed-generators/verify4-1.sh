@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 ls -la /home/labex/project/server.py
 cat /home/labex/project/server.py | grep "from socket import"

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Download and set up necessary files
 mkdir -p /home/labex/project

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Set up Python shell history for this lab
 cd /tmp && curl -s https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/setup-python-history-v3.sh | bash

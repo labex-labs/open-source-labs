@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # To try out our line filter, first make a file with a few
 # lowercase lines.
 cd /home/labex/project

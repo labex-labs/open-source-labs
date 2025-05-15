@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Setup the project directory and create initial stock.py file
 cd /home/labex/project

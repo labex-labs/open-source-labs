@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Check if the user has run the exec example
 if ! cat ~/.zsh_history | grep -q "exec"; then

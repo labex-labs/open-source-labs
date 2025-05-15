@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Running the program confirms that the file is closed
 # after being written.
 cd /home/labex/project

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 cat /home/labex/project/server.py | grep "def tcp_server"
 cat /home/labex/project/server.py | grep "def echo_handler"

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Set up the environment for the lab
 mkdir -p /home/labex/project

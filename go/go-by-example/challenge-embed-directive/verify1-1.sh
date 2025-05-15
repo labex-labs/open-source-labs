@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Use these commands to run the example.
 # (Note: due to limitation on go playground,
 # this example can only be run on your local machine.)

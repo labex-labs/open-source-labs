@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 cd ~/project
 git init
 git config --global user.email 'labex@labex.io'

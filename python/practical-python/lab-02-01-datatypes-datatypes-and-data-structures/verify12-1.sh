@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 (grep -q "d={" ~/.python_history || grep -q "d = {" ~/.python_history) && grep -q "}" ~/.python_history && grep -q "d\[" ~/.python_history && echo "True"

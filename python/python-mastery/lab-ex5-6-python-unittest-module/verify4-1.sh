@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -f /home/labex/project/teststock.py ]; then
   grep -q "assertRaises" /home/labex/project/teststock.py \
     && grep -q "assertEqual" /home/labex/project/teststock.py \

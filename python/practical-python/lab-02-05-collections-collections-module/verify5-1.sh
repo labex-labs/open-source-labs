@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 grep -q "Counter" ~/.python_history && grep -q "most_common" ~/.python_history && echo "True"

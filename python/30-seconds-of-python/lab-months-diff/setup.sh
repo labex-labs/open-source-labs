@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Create a test file for verification
 cat > /tmp/test_months_diff.py << 'EOL'
 import unittest

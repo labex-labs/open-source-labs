@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 python3 /home/labex/project/timethis.py > debug && grep -q "countdown" debug && echo "true"

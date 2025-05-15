@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 python3 ~/project/hello.py

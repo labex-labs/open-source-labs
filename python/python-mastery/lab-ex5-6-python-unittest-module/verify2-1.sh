@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -f /home/labex/project/teststock.py ]; then
   grep -q "test_create_keyword_args" /home/labex/project/teststock.py \
     && grep -q "test_cost" /home/labex/project/teststock.py \

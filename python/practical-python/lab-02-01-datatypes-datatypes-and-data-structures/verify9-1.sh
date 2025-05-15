@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 grep -q "del" ~/.python_history && grep -q "s\[" ~/.python_history && echo "True"

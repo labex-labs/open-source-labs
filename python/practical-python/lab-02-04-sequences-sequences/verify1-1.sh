@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 cat ~/.python_history | grep -q "len" && cat ~/.python_history | grep -q "'" && cat ~/.python_history | grep -q "\[" && echo "True"

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create a test file to verify our snake case function
 cat > /tmp/test_snake.py << 'EOF'

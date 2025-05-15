@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create necessary files for the lab
 touch /home/labex/project/stocklog.csv

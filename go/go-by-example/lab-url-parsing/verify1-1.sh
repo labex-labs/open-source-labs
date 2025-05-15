@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Running our URL parsing program shows all the different
 # pieces that we extracted.
 cd /home/labex/project

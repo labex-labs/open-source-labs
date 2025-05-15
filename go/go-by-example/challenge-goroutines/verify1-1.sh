@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # When we run this program, we see the output of the
 # blocking call first, then the output of the two
 # goroutines. The goroutines' output may be interleaved,

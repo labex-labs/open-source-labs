@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # To experiment with command-line arguments it's best to
 # build a binary with `go build` first.
 cd /home/labex/project

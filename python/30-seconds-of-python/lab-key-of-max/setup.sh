@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 mkdir -p /home/labex/project
 cd /home/labex/project
 touch key_of_max.py

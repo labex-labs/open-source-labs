@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Create the initial stock.py file with the Stock class definition
 cat > /home/labex/project/stock.py << 'EOF'

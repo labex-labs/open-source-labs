@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Check if the user has examined the source code of namedtuple
 if ! cat ~/.zsh_history | grep -q "inspect.getsource"; then

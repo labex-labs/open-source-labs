@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Check if the lines "=Player" or "= Player" exist in the file ~/.python_history
 player_line=$(grep -E "^\s*=?\s*Player" ~/.python_history)

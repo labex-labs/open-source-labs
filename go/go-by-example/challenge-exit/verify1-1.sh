@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 #  If you run `exit.go` using `/usr/local/go/bin/go run`, the exit
 # will be picked up by `go` and printed.
 cd /home/labex/project

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Running our program we see the first batch of requests
 # handled once every ~200 milliseconds as desired.
 cd /home/labex/project

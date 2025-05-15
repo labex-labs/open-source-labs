@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 cd /tmp && python3 test_coin_change.py

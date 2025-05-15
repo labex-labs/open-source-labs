@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # To run the program, put the code in `hello-world.go` and
 # use `/usr/local/go/bin/go run`.
 cd /home/labex/project

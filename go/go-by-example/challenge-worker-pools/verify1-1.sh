@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Our running program shows the 5 jobs being executed by
 # various workers. The program only takes about 2 seconds
 # despite doing about 5 seconds of total work because
