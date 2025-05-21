@@ -7,7 +7,7 @@ Now that we understand our project files, let's create the HTML structure for ou
 2. We need to add a container element for our checkerboard pattern. Inside the `<body>` tag, replace the comment with a `<div>` element that has a class of "checkerboard":
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

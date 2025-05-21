@@ -7,7 +7,7 @@
 2. チェッカーボードパターンのコンテナ要素を追加する必要があります。`<body>` タグ内のコメントを、クラス名が "checkerboard" の `<div>` 要素に置き換えます。
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

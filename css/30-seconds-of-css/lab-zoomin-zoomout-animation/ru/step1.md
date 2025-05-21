@@ -7,7 +7,7 @@
 2. Если файл пустой или отсутствует, создайте его со следующим содержимым:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

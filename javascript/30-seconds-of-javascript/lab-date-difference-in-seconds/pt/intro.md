@@ -1,0 +1,3 @@
+# Introdução
+
+Neste laboratório, exploraremos como calcular a diferença entre duas datas em segundos usando JavaScript. Compreender como trabalhar com datas e tempo é essencial para muitas aplicações web. Criaremos uma função que recebe dois objetos `Date` como entrada e retorna a diferença de tempo entre eles em segundos. Esta técnica é útil para várias aplicações, incluindo medição de intervalos de tempo, cálculo de durações ou criação de temporizadores. Ao final deste laboratório, você terá uma melhor compreensão dos objetos `Date` do JavaScript e como realizar cálculos de tempo de forma eficiente.

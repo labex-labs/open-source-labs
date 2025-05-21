@@ -11,23 +11,15 @@ Now let's add the second linear gradient to complete our checkerboard pattern an
   width: 240px;
   height: 240px;
   background-color: #fff;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       45deg,
       #000 25%,
       transparent 25%,
       transparent 75%,
       #000 75%,
       #000
-    ),
-    linear-gradient(
-      -45deg,
-      #000 25%,
-      transparent 25%,
-      transparent 75%,
-      #000 75%,
-      #000
-    );
+    ), linear-gradient(-45deg, #000 25%, transparent 25%, transparent 75%, #000
+        75%, #000);
   background-size: 60px 60px;
   background-repeat: repeat;
 }

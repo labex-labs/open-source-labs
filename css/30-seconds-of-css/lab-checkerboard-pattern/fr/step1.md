@@ -7,7 +7,7 @@ Avant de commencer à créer notre motif de damier, examinons les fichiers du pr
 Le fichier HTML initial devrait ressembler à ceci :
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

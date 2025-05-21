@@ -31,7 +31,7 @@ Expected output:
 3. A mix of ASCII and non-ASCII characters:
 
 ```javascript
-byteSize("Hello, 世界!");
+byteSize("Hello, 世界！");
 ```
 
 Expected output:

@@ -31,7 +31,7 @@ byteSize("123!@#$%^&*()");
 3. Смесь ASCII и не-ASCII символов:
 
 ```javascript
-byteSize("Hello, 世界!");
+byteSize("Hello, 世界！");
 ```
 
 Ожидаемый вывод:

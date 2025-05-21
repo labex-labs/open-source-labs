@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu várias habilidades importantes. Primeiro, você explorou o comportamento de alocação de memória em listas e dicionários Python e aprendeu a otimizar o uso de memória, mudando do armazenamento de dados orientado a linhas para o orientado a colunas. Segundo, você criou uma classe contêiner personalizada que mantém a interface original, usando menos memória, e a aprimorou para lidar com operações de fatiamento (slicing) corretamente.
+
+Essas técnicas são altamente valiosas para trabalhar com grandes conjuntos de dados, pois podem reduzir significativamente o uso de memória sem alterar a interface do seu código. A capacidade de criar classes de contêiner personalizadas que imitam contêineres Python embutidos com diferentes representações internas é uma ferramenta de otimização poderosa para aplicações Python. Você pode aplicar esses conceitos a outros projetos críticos em termos de memória, especialmente aqueles que envolvem grandes conjuntos de dados estruturados regularmente.

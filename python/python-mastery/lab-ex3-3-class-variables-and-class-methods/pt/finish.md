@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu sobre dois recursos cruciais do Python: variáveis de classe e métodos de classe. Variáveis de classe são compartilhadas entre todas as instâncias da classe e podem ser usadas para configuração. Métodos de classe operam na própria classe, marcados com o decorador `@classmethod`. Construtores alternativos, um uso comum de métodos de classe, oferecem diferentes maneiras de criar objetos. A herança com variáveis de classe permite que subclasses personalizem o comportamento substituindo-as, e o uso de métodos de classe pode alcançar um design de código flexível.
+
+Esses conceitos são poderosos para criar código Python bem organizado e flexível. Ao colocar as conversões de tipo dentro da classe e fornecer uma interface uniforme via métodos de classe, você pode escrever utilitários de propósito mais geral. Para estender seu aprendizado, você pode explorar mais casos de uso, criar hierarquias de classe e construir pipelines complexos de processamento de dados usando métodos de classe.

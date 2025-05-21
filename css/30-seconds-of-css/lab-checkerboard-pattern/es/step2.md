@@ -7,7 +7,7 @@ Ahora que comprendemos los archivos de nuestro proyecto, creemos la estructura H
 2. Necesitamos agregar un elemento contenedor para nuestro patrón de tablero de ajedrez. Dentro de la etiqueta `<body>`, reemplaza el comentario con un elemento `<div>` que tenga una clase de "checkerboard":
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

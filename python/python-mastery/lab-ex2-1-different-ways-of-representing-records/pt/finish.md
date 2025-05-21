@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu diferentes maneiras de representar registros em Python e analisou sua eficiência de memória. Primeiro, você entendeu a estrutura básica do conjunto de dados CSV e comparou os métodos de armazenamento de texto bruto. Em seguida, você trabalhou com dados estruturados usando tuplas e implementou cinco estruturas de dados diferentes: tuplas, dicionários, named tuples, classes regulares e classes com **slots**.
+
+As principais conclusões incluem que diferentes estruturas de dados oferecem _trade-offs_ (compensações) entre eficiência de memória, legibilidade e funcionalidade. A sobrecarga de objetos do Python tem um impacto significativo no uso de memória para grandes conjuntos de dados, e a escolha da estrutura de dados pode afetar muito o consumo de memória. Named tuples e classes com **slots** são bons compromissos entre eficiência de memória e legibilidade do código. Esses conceitos são valiosos para desenvolvedores Python em processamento de dados, especialmente ao lidar com grandes conjuntos de dados onde a eficiência de memória é crucial.

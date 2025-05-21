@@ -7,7 +7,7 @@
 2. 如果文件为空或缺失，请使用以下内容创建它：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

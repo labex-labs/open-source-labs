@@ -30,7 +30,9 @@ function updateTimer() {
   const minutes = Math.floor((elapsedSeconds % 3600) / 60);
   const seconds = Math.floor(elapsedSeconds % 60);
 
-  const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes
+    .toString()
+    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
   // Clear the console and display the updated time
   console.clear();
@@ -70,7 +72,7 @@ node timer.js
 3. `updateTimer` 関数を定義します。この関数は以下のことを行います。
    - 現在の時間を取得します。
    - 開始時間から経過した秒数を計算します。
-   - 経過時間を「時：分:秒」の形式に整形します。
+   - 経過時間を「時：分：秒」の形式に整形します。
    - 整形された時間を表示します。
 4. `setInterval` を使用して、`updateTimer` 関数を 1000 ミリ秒（1 秒）ごとに実行します。
 5. `setTimeout` を使用して、60000 ミリ秒（1 分）後にタイマーを停止します。

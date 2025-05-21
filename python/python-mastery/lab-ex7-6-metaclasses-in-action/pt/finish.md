@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu a aproveitar o poder das metaclasses em Python. Primeiro, você entendeu o desafio de gerenciar as importações para os tipos de validadores. Em seguida, você modificou a classe `Validator` para reunir automaticamente suas subclasses e criou uma metaclasse `StructureMeta` para injetar os tipos de validadores nos namespaces das classes. Finalmente, você testou a implementação com uma classe `Stock`, eliminando a necessidade de importações explícitas.
+
+As metaclasses, um recurso avançado do Python, permitem a personalização do processo de criação de classes. Embora devam ser usadas com moderação, elas oferecem soluções elegantes para problemas específicos, como demonstrado neste laboratório. Ao usar uma metaclasse, você simplificou o código para definir estruturas com atributos validados, removeu a necessidade de importações explícitas de tipos de validadores e criou uma API mais sustentável e elegante. Este padrão de injeção de namespace baseado em metaclasse pode ser aplicado a outros cenários para uma API de usuário simplificada.

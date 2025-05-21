@@ -438,6 +438,116 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "특수 메서드 재정의",
+      "description": "`__repr__` 을 사용하여 객체 표현 개선, `__eq__` 로 객체 비교 가능하게 만들기, Python 에서 특수 메서드를 재정의하여 컨텍스트 관리자 생성.",
+      "meta": {
+        "title": "Python 특수 메서드 재정의: __repr__, __eq__ 활용",
+        "description": "Python 에서 `__repr__` 메서드를 사용하여 객체 표현을 개선하고, `__eq__` 메서드를 통해 객체를 비교 가능하게 만들고, 특수 메서드를 재정의하여 컨텍스트 관리자를 생성하는 방법을 알아보세요. Python 프로그래밍 팁.",
+        "keywords": "Python, 특수 메서드, __repr__, __eq__, 객체 표현, 컨텍스트 관리자, 파이썬 튜토리얼, 파이썬 프로그래밍"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "__repr__을 사용한 객체 표현 개선",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "__repr__ 메서드 구현 확인",
+                "file": "verify1-1.sh",
+                "hint": "stock.py 파일의 Stock 클래스에 __repr__ 메서드를 추가했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "__eq__를 사용하여 객체 비교 가능하게 만들기",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "__eq__ 메서드 구현 확인",
+                "file": "verify2-1.sh",
+                "hint": "Stock 클래스에 isinstance 검사를 포함한 __eq__ 메서드를 추가했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "컨텍스트 매니저 생성",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "redirect_stdout 컨텍스트 매니저 확인",
+                "file": "verify3-1.sh",
+                "hint": "redirect.py 파일을 컨텍스트 매니저 구현과 함께 생성했는지 확인하세요."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Redefinindo Métodos Especiais",
+      "description": "Melhore a representação de objetos usando `__repr__`, torne objetos comparáveis com `__eq__` e crie um gerenciador de contexto redefinindo métodos especiais em Python.",
+      "meta": {
+        "title": "Python: Redefinindo Métodos Especiais - __repr__, __eq__ e Gerenciadores de Contexto",
+        "description": "Aprenda a aprimorar a representação de objetos em Python com `__repr__`, comparar objetos usando `__eq__` e criar gerenciadores de contexto. Guia completo sobre métodos especiais.",
+        "keywords": "Python, métodos especiais, __repr__, __eq__, gerenciador de contexto, representação de objetos, comparação de objetos"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Melhorando a Representação de Objetos com __repr__",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação do método __repr__",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de ter adicionado o método __repr__ à classe Stock em stock.py"
+              }
+            ]
+          },
+          {
+            "title": "Tornando Objetos Comparáveis com __eq__",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação do método __eq__",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de ter adicionado o método __eq__ com uma verificação isinstance à classe Stock"
+              }
+            ]
+          },
+          {
+            "title": "Criando um Gerenciador de Contexto",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verificar o gerenciador de contexto redirect_stdout",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo redirect.py com a implementação do gerenciador de contexto"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

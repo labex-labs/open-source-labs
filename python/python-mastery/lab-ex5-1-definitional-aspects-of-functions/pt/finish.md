@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu vários aspectos-chave do design de funções em Python. Primeiro, você aprendeu o design básico de funções, especificamente como escrever funções para processar dados CSV em várias estruturas de dados. Você também explorou a flexibilidade da função, refatorando funções para trabalhar com qualquer fonte iterável, aprimorando a versatilidade e a reutilização do código.
+
+Além disso, você dominou a adição de parâmetros opcionais para lidar com diferentes casos de uso, como arquivos CSV com ou sem cabeçalhos, e o uso do sistema de dicas de tipo (type hinting) do Python para melhorar a legibilidade e a capacidade de manutenção do código. Essas habilidades são cruciais para escrever código Python robusto e, à medida que seus programas se tornam mais complexos, esses princípios de design manterão seu código organizado e compreensível. As técnicas podem ser aplicadas além do processamento CSV, tornando-as valiosas em seu kit de ferramentas de programação Python.

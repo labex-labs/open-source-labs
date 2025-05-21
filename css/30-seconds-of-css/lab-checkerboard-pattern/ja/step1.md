@@ -7,7 +7,7 @@
 最初の HTML ファイルは次のようになっているはずです。
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

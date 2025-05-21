@@ -7,7 +7,7 @@ Bevor wir mit der Erstellung unseres Schachbrettmusters beginnen, lassen Sie uns
 Die ursprüngliche HTML-Datei sollte wie folgt aussehen:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

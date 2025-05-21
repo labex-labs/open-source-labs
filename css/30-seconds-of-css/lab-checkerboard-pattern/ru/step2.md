@@ -7,7 +7,7 @@
 2. Нам нужно добавить контейнерный элемент для нашего узора шахматной доски. Внутри тега `<body>` замените комментарий на элемент `<div>` с классом "checkerboard":
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

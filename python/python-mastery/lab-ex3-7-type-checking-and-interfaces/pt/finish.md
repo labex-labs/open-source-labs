@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu vários conceitos-chave de programação orientada a objetos (object-oriented programming) para aprimorar o código Python. Primeiro, você implementou a verificação de tipos (type checking) na função `print_table()`, que garante que apenas formatadores válidos sejam usados, melhorando assim a robustez do código. Em segundo lugar, você transformou a classe `TableFormatter` em uma classe base abstrata (abstract base class), forçando as subclasses a implementar métodos específicos.
+
+Além disso, você aplicou o padrão de método de modelo (template method pattern) criando a classe base abstrata `CSVParser` e suas implementações concretas. Isso reduz a duplicação de código, mantendo uma estrutura de algoritmo consistente. Essas técnicas são cruciais para criar um código Python mais sustentável e robusto, especialmente em aplicações em larga escala. Para aprofundar seu aprendizado, explore as dicas de tipo (type hints) em Python (PEP 484), classes de protocolo e padrões de design em Python.

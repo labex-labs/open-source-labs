@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu sobre as regras de escopo do Python e algumas técnicas poderosas para lidar com escopo. Primeiro, você explorou como usar a função `locals()` para acessar todas as variáveis locais dentro de uma função. Em segundo lugar, você aprendeu a inspecionar frames da pilha (stack frames) usando `sys._getframe()` para acessar as variáveis locais do chamador.
+
+Você também aplicou essas técnicas para criar um sistema de inicialização de classe flexível. Este sistema captura e define automaticamente os parâmetros da função como atributos de objeto, mantém as assinaturas de função adequadas na documentação e suporta argumentos posicionais e de palavra-chave. Essas técnicas demonstram a flexibilidade e as capacidades de introspecção do Python. Embora a inspeção do frame seja uma técnica avançada que deve ser usada com cuidado, ela pode reduzir efetivamente o código boilerplate quando usada apropriadamente. Compreender as regras de escopo e essas técnicas avançadas equipa você com mais ferramentas para escrever um código Python mais limpo e mais fácil de manter.

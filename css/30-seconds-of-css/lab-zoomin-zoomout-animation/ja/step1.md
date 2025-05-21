@@ -7,7 +7,7 @@
 2. ファイルが空または存在しない場合は、以下の内容で作成します。
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

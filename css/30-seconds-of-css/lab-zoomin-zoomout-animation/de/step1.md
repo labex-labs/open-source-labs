@@ -7,7 +7,7 @@ Bevor wir mit der Erstellung unserer Animation beginnen, müssen wir die HTML-St
 2. Wenn die Datei leer ist oder fehlt, erstellen Sie sie mit folgendem Inhalt:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

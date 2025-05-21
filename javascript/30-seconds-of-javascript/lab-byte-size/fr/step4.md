@@ -22,7 +22,7 @@ const examples = [
   "😀",
   "The quick brown fox jumps over the lazy dog",
   "123!@#$%^&*()",
-  "Hello, 世界!",
+  "Hello, 世界！",
   "😀😃😄😁"
 ];
 

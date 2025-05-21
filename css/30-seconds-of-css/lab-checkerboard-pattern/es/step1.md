@@ -7,7 +7,7 @@ Antes de comenzar a crear nuestro patrón de tablero de ajedrez, examinemos los 
 El archivo HTML inicial debería verse así:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

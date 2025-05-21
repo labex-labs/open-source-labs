@@ -7,7 +7,7 @@ Before we start creating our animation, we need to understand the HTML structure
 2. If the file is empty or missing, create it with the following content:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

@@ -30,7 +30,9 @@ function updateTimer() {
   const minutes = Math.floor((elapsedSeconds % 3600) / 60);
   const seconds = Math.floor(elapsedSeconds % 60);
 
-  const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes
+    .toString()
+    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
   // Очищаем консоль и отображаем обновленное время
   console.clear();

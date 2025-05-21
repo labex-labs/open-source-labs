@@ -684,6 +684,180 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "최댓값의 키 찾기",
+      "description": "Python 에서 딕셔너리는 키 - 값 쌍을 저장할 수 있는 유용한 데이터 구조입니다. 때로는 딕셔너리에서 최댓값의 키를 찾아야 할 수 있습니다. 이 챌린지에서는 딕셔너리를 인수로 받아 최댓값의 키를 반환하는 함수를 작성합니다.",
+      "meta": {
+        "title": "Python 딕셔너리에서 최댓값을 가진 키 찾는 방법",
+        "description": "max(), lambda, 딕셔너리 메서드를 사용하여 Python 딕셔너리에서 최댓값을 가진 키를 찾는 방법을 알아보세요. 효율적인 딕셔너리 연산을 위한 실용적인 예제와 함께 단계별 가이드 제공.",
+        "keywords": "키, 파이썬, 딕셔너리, 프로그래밍, 최댓값, 최대값, 딕셔너리 키"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "기본 함수 생성",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "함수 정의 확인",
+                "file": "verify1-1.sh",
+                "hint": "`key_of_max` 함수가 정의되었는지 확인합니다."
+              },
+              {
+                "name": "max 함수 사용 확인",
+                "file": "verify1-2.sh",
+                "hint": "`max(d, key=d.get)`이 사용되었는지 확인합니다."
+              }
+            ]
+          },
+          {
+            "title": "빈 딕셔너리 처리",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "빈 딕셔너리 확인 검증",
+                "file": "verify2-1.sh",
+                "hint": "'if not d:' 조건문을 확인합니다."
+              },
+              {
+                "name": "None 반환 확인",
+                "file": "verify2-2.sh",
+                "hint": "빈 딕셔너리에 대해 'return None'이 사용되었는지 확인합니다."
+              }
+            ]
+          },
+          {
+            "title": "유닛 테스트 생성: 기본 테스트",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "테스트 파일 존재 여부 확인",
+                "file": "verify3-1.sh",
+                "hint": "`test_key_of_max.py` 파일이 존재하는지 확인합니다."
+              }
+            ]
+          },
+          {
+            "title": "빈 딕셔너리 테스트 (엣지 케이스)",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "빈 딕셔너리 테스트 검증",
+                "file": "verify4-1.sh",
+                "hint": "'test_empty_dictionary' 메서드를 확인합니다."
+              }
+            ]
+          },
+          {
+            "title": "모두 음수 값으로 테스트",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "모든 테스트 통과 여부 확인",
+                "file": "verify5-1.sh",
+                "hint": "모든 테스트를 실행합니다. 모두 통과해야 합니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Chave do Valor Máximo",
+      "description": "Em Python, os dicionários são uma estrutura de dados útil que permite armazenar pares chave-valor. Às vezes, você pode precisar encontrar a chave do valor máximo em um dicionário. Neste desafio, você escreverá uma função que recebe um dicionário como argumento e retorna a chave do valor máximo no dicionário.",
+      "meta": {
+        "title": "Como Encontrar a Chave com o Valor Máximo em um Dicionário Python",
+        "description": "Aprenda como encontrar a chave com o valor máximo em um dicionário Python usando max(), lambda e métodos de dicionário. Guia passo a passo com exemplos práticos para operações eficientes em dicionários.",
+        "keywords": "chave, python, dicionário, programação, valor máximo, encontrar chave maior valor"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Criando a Função Básica",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verificar Definição da Função",
+                "file": "verify1-1.sh",
+                "hint": "Verifique se a função `key_of_max` está definida."
+              },
+              {
+                "name": "Verificar Uso da Função max",
+                "file": "verify1-2.sh",
+                "hint": "Certifique-se de que `max(d, key=d.get)` seja usado."
+              }
+            ]
+          },
+          {
+            "title": "Tratando o Caso de Dicionário Vazio",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verificar a Verificação de Dicionário Vazio",
+                "file": "verify2-1.sh",
+                "hint": "Verifique a condição 'if not d:'."
+              },
+              {
+                "name": "Verificar Retorno None",
+                "file": "verify2-2.sh",
+                "hint": "Certifique-se de que 'return None' seja usado para dicionários vazios."
+              }
+            ]
+          },
+          {
+            "title": "Criando Testes Unitários: Testes Básicos",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verificar Existência do Arquivo de Teste",
+                "file": "verify3-1.sh",
+                "hint": "Verifique se `test_key_of_max.py` existe."
+              }
+            ]
+          },
+          {
+            "title": "Testando o Dicionário Vazio (Caso Extremo)",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Verificar Teste de Dicionário Vazio",
+                "file": "verify4-1.sh",
+                "hint": "Verifique o método 'test_empty_dictionary'."
+              }
+            ]
+          },
+          {
+            "title": "Testando com Todos os Valores Negativos",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Verificar se Todos os Testes Passam",
+                "file": "verify5-1.sh",
+                "hint": "Execute todos os testes; todos devem passar."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

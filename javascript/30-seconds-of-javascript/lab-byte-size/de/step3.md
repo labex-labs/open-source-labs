@@ -31,7 +31,7 @@ Erwartete Ausgabe:
 3. Eine Mischung aus ASCII- und Nicht-ASCII-Zeichen:
 
 ```javascript
-byteSize("Hello, 世界!");
+byteSize("Hello, 世界！");
 ```
 
 Erwartete Ausgabe:

@@ -7,7 +7,7 @@
 2. 我们需要为棋盘图案添加一个容器元素。在 `<body>` 标签内，将注释替换为一个类名为 "checkerboard" 的 `<div>` 元素：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

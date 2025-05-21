@@ -1,0 +1,5 @@
+# Resumo
+
+Neste laboratório, você aprendeu sobre mecanismos Python poderosos para personalizar o acesso e o comportamento de atributos. Você explorou como usar `__setattr__` para controlar quais atributos podem ser definidos em um objeto, permitindo o acesso controlado às propriedades do objeto. Além disso, você implementou um proxy somente leitura para encapsular objetos existentes, impedindo modificações enquanto preserva sua funcionalidade.
+
+Você também se aprofundou na diferença entre delegação e herança para reutilização e personalização de código. Ao usar `__getattr__`, você aprendeu a encaminhar chamadas de métodos para um objeto encapsulado. Essas técnicas oferecem maneiras flexíveis de controlar o comportamento do objeto além da herança padrão, útil para criar interfaces controladas, implementar restrições de acesso, adicionar comportamentos transversais (cross-cutting behaviors) e compor comportamento de múltiplas fontes. Compreender esses padrões ajuda você a escrever um código Python mais sustentável e flexível.

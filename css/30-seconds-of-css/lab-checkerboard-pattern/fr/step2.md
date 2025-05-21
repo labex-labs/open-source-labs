@@ -7,7 +7,7 @@ Maintenant que nous comprenons les fichiers de notre projet, créons la structur
 2. Nous devons ajouter un élément conteneur pour notre motif de damier. À l'intérieur de la balise `<body>`, remplacez le commentaire par un élément `<div>` qui a une classe "checkerboard" :
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

@@ -416,6 +416,116 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "함수에서 값 반환하기",
+      "description": "Python 에서 함수에서 여러 값을 반환하고, 선택적 반환 값을 처리하며, 동시 프로그래밍을 위해 futures 를 사용하는 방법을 알아보세요.",
+      "meta": {
+        "title": "Python 함수 값 반환: 튜플, None, Future 활용법",
+        "description": "Python 함수에서 여러 값 반환, 선택적 값 처리, 동시 프로그래밍 (futures) 활용 방법 학습. 튜플, None, Future 예제.",
+        "keywords": "Python, 함수, 값 반환, 튜플, None, Future, 동시 프로그래밍, 멀티스레딩, 비동기 프로그래밍"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "함수에서 여러 값 반환하기",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "parse_line 함수 구현 검증",
+                "file": "verify1-1.sh",
+                "hint": "튜플을 반환하는 parse_line 함수가 포함된 return_values.py 파일을 생성했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "선택적 값 반환",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "업데이트된 parse_line 함수 검증",
+                "file": "verify2-1.sh",
+                "hint": "parse_line 함수가 유효하지 않은 입력에 대해 None 을 반환하도록 수정했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "동시 프로그래밍을 위한 Future 사용",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "Futures 구현 검증",
+                "file": "verify3-1.sh",
+                "hint": "ThreadPoolExecutor 예제가 포함된 futures_demo.py 파일을 생성했는지 확인하세요."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Retornando Valores de Funções",
+      "description": "Aprenda a retornar múltiplos valores de funções, lidar com valores de retorno opcionais e trabalhar com futures para programação concorrente em Python.",
+      "meta": {
+        "title": "Retornando Valores de Funções em Python: Guia Completo",
+        "description": "Descubra como retornar múltiplos valores de funções, gerenciar valores opcionais e usar futures para programação concorrente em Python. Melhore a eficiência do seu código!",
+        "keywords": "Python, retornar valores, múltiplos valores, valores opcionais, futures, programação concorrente, tutorial Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Retornando Múltiplos Valores de Funções",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação da função parse_line",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo return_values.py com a função parse_line que retorna uma tupla."
+              }
+            ]
+          },
+          {
+            "title": "Retornando Valores Opcionais",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verificar a função parse_line atualizada",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de ter modificado a função parse_line para retornar None para entradas inválidas."
+              }
+            ]
+          },
+          {
+            "title": "Trabalhando com Futures para Programação Concorrente",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação de futures",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo futures_demo.py com o exemplo ThreadPoolExecutor."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

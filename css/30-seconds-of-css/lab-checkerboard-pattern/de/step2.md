@@ -7,7 +7,7 @@ Nachdem wir nun die Projekt-Dateien verstanden haben, erstellen wir die HTML-Str
 2. Wir müssen ein Container-Element für unser Schachbrettmuster hinzufügen. Innerhalb des `<body>`-Tags ersetzen Sie den Kommentar durch ein `<div>`-Element mit der Klasse "checkerboard":
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

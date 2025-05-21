@@ -7,7 +7,7 @@
 Начальный HTML-файл должен выглядеть следующим образом:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

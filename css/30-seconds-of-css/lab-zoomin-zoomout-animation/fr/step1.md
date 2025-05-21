@@ -7,7 +7,7 @@ Avant de commencer à créer notre animation, nous devons comprendre la structur
 2. Si le fichier est vide ou manquant, créez - le avec le contenu suivant :
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

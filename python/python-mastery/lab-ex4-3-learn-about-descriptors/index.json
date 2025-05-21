@@ -658,6 +658,178 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "Descriptor 학습",
+      "description": "Python descriptor 에 대해 배우기 위해 descriptor 프로토콜 이해, 사용자 정의 descriptor 생성, descriptor 를 사용한 유효성 검사기 구현, descriptor 구현 개선을 수행합니다.",
+      "meta": {
+        "title": "Python Descriptor 학습 - 프로토콜, 사용자 정의, 유효성 검사",
+        "description": "Python descriptor 프로토콜을 이해하고, 사용자 정의 descriptor 를 생성하며, descriptor 를 사용하여 유효성 검사기를 구현하고, descriptor 구현을 개선하여 Python descriptor 에 대해 학습하세요.",
+        "keywords": "Python, descriptor, descriptor 프로토콜, 사용자 정의 descriptor, 유효성 검사기, 파이썬 descriptor"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Descriptor 프로토콜 이해",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "Stock 클래스 파일 존재 여부 확인",
+                "file": "verify1-1.sh",
+                "hint": "Stock 클래스를 포함하는 stock.py 파일을 생성했는지 확인하세요."
+              },
+              {
+                "name": "Stock 클래스 구현 확인",
+                "file": "verify1-2.sh",
+                "hint": "Stock 클래스에 property 메서드가 구현되었는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "사용자 정의 Descriptor 생성",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "Descriptor 파일 존재 여부 확인",
+                "file": "verify2-1.sh",
+                "hint": "Descriptor 클래스를 포함하는 descrip.py 파일을 생성했는지 확인하세요."
+              },
+              {
+                "name": "Descriptor 클래스 구현 확인",
+                "file": "verify2-2.sh",
+                "hint": "Descriptor 클래스에 매직 메서드가 구현되었는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "Descriptor 를 사용한 유효성 검사 구현",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "validate.py 파일 존재 여부 확인",
+                "file": "verify3-1.sh",
+                "hint": "유효성 검사기 클래스를 포함하는 validate.py 파일을 생성했는지 확인하세요."
+              },
+              {
+                "name": "유효성 검사기 구현 확인",
+                "file": "verify3-2.sh",
+                "hint": "유효성 검사기 클래스가 올바르게 구현되었는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "Descriptor 구현 개선",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "업데이트된 validate.py 파일 확인",
+                "file": "verify4-1.sh",
+                "hint": "__set_name__ 메서드를 사용하여 validate.py 파일을 업데이트했는지 확인하세요."
+              },
+              {
+                "name": "개선된 구현 확인",
+                "file": "verify4-2.sh",
+                "hint": "improved_stock.py 파일을 생성했는지 확인하세요."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Aprenda sobre Descriptors",
+      "description": "Compreenda o protocolo de *descriptor*, crie *descriptors* personalizados, implemente validadores usando *descriptors* e aprimore a implementação de *descriptors* para aprender sobre *descriptors* Python.",
+      "meta": {
+        "title": "Descriptors Python: Guia Completo e Prático",
+        "description": "Domine os *descriptors* Python! Aprenda o protocolo, crie *descriptors* personalizados, implemente validação de dados e otimize seu código. Tutorial passo a passo para iniciantes e avançados.",
+        "keywords": "Python, descriptors, protocolo de descriptor, descriptors personalizados, validadores, tutorial Python, programação Python, classes Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Entendendo o Protocolo de Descriptor",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verificar se o arquivo da classe Stock existe",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de criar o arquivo stock.py com a classe Stock"
+              },
+              {
+                "name": "Verificar a implementação da classe Stock",
+                "file": "verify1-2.sh",
+                "hint": "Certifique-se de que sua classe Stock possui os métodos de propriedade"
+              }
+            ]
+          },
+          {
+            "title": "Criando Descriptors Personalizados",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verificar se o arquivo do descriptor existe",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de criar o arquivo descrip.py com a classe Descriptor"
+              },
+              {
+                "name": "Verificar a implementação da classe Descriptor",
+                "file": "verify2-2.sh",
+                "hint": "Certifique-se de que sua classe Descriptor possui os métodos mágicos"
+              }
+            ]
+          },
+          {
+            "title": "Implementando Validadores Usando Descriptors",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verificar se o arquivo validate.py existe",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de criar o arquivo validate.py com as classes de validador"
+              },
+              {
+                "name": "Verificar a implementação do validador",
+                "file": "verify3-2.sh",
+                "hint": "Certifique-se de que suas classes de validador estão implementadas corretamente"
+              }
+            ]
+          },
+          {
+            "title": "Melhorando a Implementação de Descriptors",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Verificar o arquivo validate.py atualizado",
+                "file": "verify4-1.sh",
+                "hint": "Certifique-se de atualizar o arquivo validate.py com o método __set_name__"
+              },
+              {
+                "name": "Verificar a implementação aprimorada",
+                "file": "verify4-2.sh",
+                "hint": "Certifique-se de criar o arquivo improved_stock.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

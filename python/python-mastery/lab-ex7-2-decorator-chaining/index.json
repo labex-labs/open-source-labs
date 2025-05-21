@@ -567,6 +567,148 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "데코레이터 체이닝 및 매개변수화된 데코레이터",
+      "description": "Python 에서 데코레이터의 함수 메타데이터를 보존하고, 인수가 있는 데코레이터를 생성하며, 클래스 메서드에 데코레이터를 적용하고, 인수가 있는 유형 강제 데코레이터를 구축하는 방법을 알아보세요.",
+      "meta": {
+        "title": "Python 데코레이터 체이닝 및 매개변수화된 데코레이터 사용법",
+        "description": "Python 데코레이터 체이닝, 매개변수화된 데코레이터, 함수 메타데이터 보존, 유형 강제 데코레이터 구축 방법 안내.",
+        "keywords": "Python, 데코레이터 체이닝, 매개변수화된 데코레이터, 함수 메타데이터, 유형 강제, 파이썬 데코레이터"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "데코레이터에서 함수 메타데이터 보존하기",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "logcall.py 에서 wraps 가 import 되었는지 확인",
+                "file": "verify1-1.sh",
+                "hint": "logcall.py 에서 'functools'로부터 'wraps'를 import 했는지 확인하세요."
+              },
+              {
+                "name": "validate.py 에서 wraps 가 import 되었는지 확인",
+                "file": "verify1-2.sh",
+                "hint": "validate.py 에 'functools'에서 'wraps'를 추가하고 wrapper 함수에 적용했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "인수를 사용하는 데코레이터 생성",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "logformat 데코레이터 구현 확인",
+                "file": "verify2-1.sh",
+                "hint": "logcall.py 에서 logformat 데코레이터를 올바르게 구현했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "클래스 메서드에 데코레이터 적용하기",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "methods.py 구현 확인",
+                "file": "verify3-1.sh",
+                "hint": "methods.py 를 생성하고 데코레이터를 올바른 순서로 적용했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "인수를 사용하는 타입 검사 데코레이터 생성",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "enforce 데코레이터 구현 확인",
+                "file": "verify4-1.sh",
+                "hint": "validate.py 에서 enforce 데코레이터를 올바르게 구현했는지 확인하세요."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Encadeamento de Decorators e Decorators Parametrizados",
+      "description": "Preserve metadados de função em decorators, crie decorators com argumentos, aplique decorators a métodos de classe e construa um decorator de aplicação de tipos com argumentos em Python.",
+      "meta": {
+        "title": "Decorators Python: Encadeamento e Parâmetros",
+        "description": "Aprenda sobre encadeamento de decorators, decorators parametrizados, preservação de metadados de função e aplicação de tipos em Python. Melhore a organização e reutilização do seu código.",
+        "keywords": "Python, decorators, encadeamento de decorators, decorators parametrizados, metadados de função, aplicação de tipos, programação Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Preservando Metadados de Função em Decorators",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verifique se 'wraps' foi importado em logcall.py",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de ter importado 'wraps' de 'functools' em logcall.py"
+              },
+              {
+                "name": "Verifique se 'wraps' foi importado em validate.py",
+                "file": "verify1-2.sh",
+                "hint": "Certifique-se de ter adicionado 'wraps' de 'functools' a validate.py e aplicado à função wrapper"
+              }
+            ]
+          },
+          {
+            "title": "Criando Decorators com Argumentos",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verifique a implementação do decorator logformat",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de ter implementado o decorator logformat corretamente em logcall.py"
+              }
+            ]
+          },
+          {
+            "title": "Aplicando Decorators a Métodos de Classe",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verifique a implementação de methods.py",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de ter criado methods.py com os decorators devidamente ordenados"
+              }
+            ]
+          },
+          {
+            "title": "Criando um Decorator de Aplicação de Tipos com Argumentos",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Verifique a implementação do decorator enforce",
+                "file": "verify4-1.sh",
+                "hint": "Certifique-se de ter implementado o decorator enforce corretamente em validate.py"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

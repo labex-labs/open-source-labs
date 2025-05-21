@@ -584,6 +584,160 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "Private 속성 및 Property",
+      "description": "Python 에서 private 속성을 구현하고, 메서드를 property 로 변환하며, property 유효성 검사를 구현하고, 메모리 최적화를 위해 __slots__를 사용하고, 클래스 변수를 사용한 타입 유효성 검사를 일치시키는 방법을 알아보세요.",
+      "meta": {
+        "title": "Python Private 속성 및 Property 구현 방법 | LabEx",
+        "description": "Python 에서 private 속성, property, property 유효성 검사, __slots__를 사용한 메모리 최적화, 클래스 변수를 사용한 타입 유효성 검사 일치시키는 방법 등, 파이썬 클래스 설계 및 구현 관련 기술을 LabEx 에서 학습하세요.",
+        "keywords": "Python, private 속성, property, property 유효성 검사, __slots__, 파이썬 클래스, 캡슐화, 데이터 은닉, 파이썬 프로그래밍"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Private 속성 구현하기",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "stock.py 에서 private 속성 확인",
+                "file": "verify1-1.sh",
+                "hint": "Stock 클래스에서 'types'를 '_types'로 이름을 변경했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "메서드를 Property 로 변환하기",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "stock.py 에서 property 데코레이터 확인",
+                "file": "verify2-1.sh",
+                "hint": "cost 메서드 앞에 @property 데코레이터를 추가했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "Property 유효성 검사 구현하기",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "stock.py 에서 shares property setter 확인",
+                "file": "verify3-1.sh",
+                "hint": "getter 및 setter 메서드를 사용하여 shares property 를 구현했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "__slots__를 사용한 메모리 최적화",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "stock.py 에서 __slots__ 확인",
+                "file": "verify4-1.sh",
+                "hint": "Stock 클래스에 __slots__ 속성을 추가했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "클래스 변수를 사용한 타입 유효성 검사 조정",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "stock.py 에서 타입 조정 확인",
+                "file": "verify5-1.sh",
+                "hint": "property setter 에서 self._types 를 사용하고 있는지 확인하세요."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Atributos Privados e Propriedades",
+      "description": "Implemente atributos privados, converta métodos em propriedades, implemente validação de propriedade, use __slots__ para otimização de memória e reconcilie a validação de tipo com variáveis de classe em Python.",
+      "meta": {
+        "title": "Atributos Privados e Propriedades Python: Guia Completo",
+        "description": "Aprenda a usar atributos privados, propriedades, validação de propriedades, __slots__ e otimização de memória em Python. Melhore a organização e eficiência do seu código.",
+        "keywords": "Python, atributos privados, propriedades, validação de propriedade, __slots__, otimização de memória, programação orientada a objetos"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Implementando Atributos Privados",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verificar atributo privado em stock.py",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de que renomeou 'types' para '_types' na classe Stock"
+              }
+            ]
+          },
+          {
+            "title": "Convertendo Métodos em Propriedades",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verificar o decorador @property em stock.py",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de ter adicionado o decorador @property antes do método cost"
+              }
+            ]
+          },
+          {
+            "title": "Implementando Validação de Propriedades",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verificar o setter da propriedade shares em stock.py",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de ter implementado a propriedade shares com métodos getter e setter"
+              }
+            ]
+          },
+          {
+            "title": "Usando __slots__ para Otimização de Memória",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Verificar __slots__ em stock.py",
+                "file": "verify4-1.sh",
+                "hint": "Certifique-se de ter adicionado o atributo __slots__ à classe Stock"
+              }
+            ]
+          },
+          {
+            "title": "Conciliação da Validação de Tipos com Variáveis de Classe",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Verificar a conciliação de tipos em stock.py",
+                "file": "verify5-1.sh",
+                "hint": "Certifique-se de estar usando self._types nos setters das propriedades"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

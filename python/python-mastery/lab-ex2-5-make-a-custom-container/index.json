@@ -604,6 +604,160 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "사용자 정의 컨테이너 만들기",
+      "description": "Python 에서 리스트와 딕셔너리 메모리 할당을 이해하고, 열 중심 데이터를 사용하여 메모리를 최적화하며, 사용자 정의 컨테이너 클래스를 만들고 슬라이싱을 위해 향상시킵니다.",
+      "meta": {
+        "title": "Python 사용자 정의 컨테이너 제작: 메모리 최적화 및 슬라이싱",
+        "description": "Python 에서 리스트와 딕셔너리 메모리 할당을 이해하고, 열 중심 데이터를 사용하여 메모리를 최적화하며, 사용자 정의 컨테이너 클래스를 만들고 슬라이싱을 위해 향상시키는 방법을 알아보세요. 대용량 데이터 처리 효율성을 높이는 기술.",
+        "keywords": "Python, 사용자 정의 컨테이너, 메모리 할당, 열 중심 데이터, 슬라이싱, 파이썬 메모리 최적화, 파이썬 데이터 처리"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "리스트 메모리 할당 이해",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "Python 히스토리에 sys.getsizeof 사용 포함 여부 확인",
+                "file": "verify1-1.sh",
+                "hint": "Python 쉘에서 sys.getsizeof() 명령을 실행했는지 확인하십시오."
+              }
+            ]
+          },
+          {
+            "title": "딕셔너리 메모리 할당",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "Python 딕셔너리 연산 확인",
+                "file": "verify2-1.sh",
+                "hint": "딕셔너리를 생성하고 항목을 추가했는지 확인하십시오."
+              }
+            ]
+          },
+          {
+            "title": "컬럼 기반 데이터로 메모리 최적화",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "readrides.py 파일에 필요한 코드 존재 여부 확인",
+                "file": "verify3-1.sh",
+                "hint": "read_rides_as_columns 함수를 포함하는 readrides.py 파일을 생성했는지 확인하십시오."
+              }
+            ]
+          },
+          {
+            "title": "사용자 정의 컨테이너 클래스 생성",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "RideData 클래스 구현 확인",
+                "file": "verify4-1.sh",
+                "hint": "RideData 클래스를 readrides.py 에 추가했는지 확인하십시오."
+              }
+            ]
+          },
+          {
+            "title": "슬라이싱을 위한 사용자 정의 컨테이너 개선",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "RideData 클래스 내 슬라이스 처리 확인",
+                "file": "verify5-1.sh",
+                "hint": "__getitem__ 메서드가 슬라이스를 처리하도록 업데이트되었는지 확인하십시오."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Crie um Contêiner Personalizado",
+      "description": "Entenda a alocação de memória em listas e dicionários, otimize a memória com dados orientados a colunas, crie uma classe de contêiner personalizada e aprimore-a para fatiamento (slicing) em Python.",
+      "meta": {
+        "title": "Crie um Contêiner Personalizado em Python: Otimização de Memória e Fatiamento",
+        "description": "Aprenda a otimizar o uso de memória em Python com contêineres personalizados. Descubra como a alocação de memória em listas e dicionários funciona e como implementar fatiamento (slicing) eficiente. Ideal para lidar com grandes conjuntos de dados.",
+        "keywords": "Python, contêiner personalizado, alocação de memória, dados orientados a colunas, fatiamento, otimização de memória, Python tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Entendendo a Alocação de Memória em Listas",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verifique se o histórico do Python contém o uso de sys.getsizeof",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de ter executado os comandos sys.getsizeof() no shell do Python"
+              }
+            ]
+          },
+          {
+            "title": "Alocação de Memória em Dicionários",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verifique as operações com dicionários em Python",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de ter criado um dicionário e adicionado itens a ele"
+              }
+            ]
+          },
+          {
+            "title": "Otimização de Memória com Dados Orientados por Colunas",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verifique se o arquivo readrides.py existe com o código necessário",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo readrides.py com a função read_rides_as_columns"
+              }
+            ]
+          },
+          {
+            "title": "Criando uma Classe Contêiner Personalizada",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Verifique a implementação da classe RideData",
+                "file": "verify4-1.sh",
+                "hint": "Certifique-se de ter adicionado a classe RideData ao arquivo readrides.py"
+              }
+            ]
+          },
+          {
+            "title": "Aprimorando o Contêiner Personalizado para Slicing (Fatiamento)",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Verifique o tratamento de slices na classe RideData",
+                "file": "verify5-1.sh",
+                "hint": "Certifique-se de ter atualizado o método __getitem__ para lidar com slices (fatias)"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

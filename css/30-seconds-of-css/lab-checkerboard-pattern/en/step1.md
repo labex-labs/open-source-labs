@@ -7,7 +7,7 @@ Before we start creating our checkerboard pattern, let's examine the project fil
 The initial HTML file should look like this:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

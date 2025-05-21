@@ -417,6 +417,116 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "속성 접근 사용자 정의",
+      "description": "Python 에서 `__setattr__` 을 사용하여 속성을 제어하고, 프록시로 읽기 전용 객체를 만들고, 상속의 대안으로 위임을 탐구합니다.",
+      "meta": {
+        "title": "Python 속성 접근 제어: __setattr__ 및 위임",
+        "description": "Python 에서 `__setattr__` 을 사용하여 속성을 제어하고, 프록시를 활용하여 읽기 전용 객체를 만들고, 상속 대신 위임을 사용하는 방법을 알아보세요. 파이썬 속성 접근, __setattr__, 읽기 전용 객체, 위임",
+        "keywords": "Python, 파이썬, 속성 접근, __setattr__, 읽기 전용 객체, 위임, 상속, 객체 지향 프로그래밍"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "__setattr__을 사용한 속성 제어 이해",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "RestrictedStock 구현 검증",
+                "file": "verify1-1.sh",
+                "hint": "restricted_stock.py 파일을 생성하고 RestrictedStock 클래스를 구현했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "프록시를 사용하여 읽기 전용 객체 생성",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "ReadonlyProxy 구현 검증",
+                "file": "verify2-1.sh",
+                "hint": "readonly_proxy.py 파일을 생성하고 ReadonlyProxy 클래스를 구현했는지 확인하세요."
+              }
+            ]
+          },
+          {
+            "title": "상속의 대안으로서의 위임 (Delegation)",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "위임 구현 검증",
+                "file": "verify3-1.sh",
+                "hint": "delegator.py 파일을 생성하고 DelegatingSpam 클래스를 구현했는지 확인하세요."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Personalizando o Acesso a Atributos",
+      "description": "Compreenda o uso de `__setattr__` para controle de atributos, crie objetos somente leitura com proxies e explore a delegação como alternativa à herança em Python.",
+      "meta": {
+        "title": "Python: Personalizando o Acesso a Atributos - Técnicas Avançadas",
+        "description": "Aprenda a controlar o acesso a atributos em Python com `__setattr__`, crie objetos somente leitura usando proxies e descubra a delegação como uma alternativa flexível à herança. Otimize seu código Python!",
+        "keywords": "Python, __setattr__, acesso a atributos, objetos somente leitura, delegação, herança em Python, programação orientada a objetos, POO"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Entendendo __setattr__ para Controle de Atributos",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação de RestrictedStock",
+                "file": "verify1-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo restricted_stock.py com a classe RestrictedStock"
+              }
+            ]
+          },
+          {
+            "title": "Criando Objetos Somente Leitura com Proxies",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação de ReadonlyProxy",
+                "file": "verify2-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo readonly_proxy.py com a classe ReadonlyProxy"
+              }
+            ]
+          },
+          {
+            "title": "Delegação como Alternativa à Herança",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verificar a implementação de delegação",
+                "file": "verify3-1.sh",
+                "hint": "Certifique-se de ter criado o arquivo delegator.py com a classe DelegatingSpam"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }
