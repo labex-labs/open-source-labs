@@ -6,7 +6,7 @@ In this tutorial, we will learn how to create a broken axis plot using Matplotli
 
 ## VM Tips
 
-After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access [Jupyter Notebook](https://support.labex.io/en/labex-vm/jupyter) for practice.
 
 ![click-notebook](https://file.labex.io/images/click-notebook.png)
 

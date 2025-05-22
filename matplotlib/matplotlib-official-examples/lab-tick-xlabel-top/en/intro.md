@@ -6,7 +6,7 @@ This technique is particularly useful in data visualization scenarios where you 
 
 ## VM Tips
 
-After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+After the VM startup is complete, click the top left corner to switch to the **Notebook** tab to access [Jupyter Notebook](https://support.labex.io/en/labex-vm/jupyter) for practice.
 
 ![click-notebook](https://file.labex.io/images/click-notebook.png)
 

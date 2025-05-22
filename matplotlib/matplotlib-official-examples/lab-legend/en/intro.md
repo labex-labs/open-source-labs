@@ -4,7 +4,7 @@ In data visualization, a legend is a key to interpreting the visual elements of 
 
 ## VM Tips
 
-After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access [Jupyter Notebook](https://support.labex.io/en/labex-vm/jupyter) for practice.
 
 Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
 
