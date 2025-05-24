@@ -31,7 +31,7 @@ Jedes Feld wird durch eine Instanz einer `~django.db.models.Field`-Klasse darges
 
 Der Name jeder `~django.db.models.Field`-Instanz (z.B. `question_text` oder `pub_date`) ist der Feldname im maschinenlesbaren Format. Sie werden diesen Wert in Ihrem Python-Code verwenden, und Ihre Datenbank wird ihn als Spaltennamen verwenden.
 
-Sie können einen optionalen ersten Positionsargument für eine `~django.db.models.Field` verwenden, um einen menschenlesbaren Namen zu指定. Dies wird in einigen introspektiven Teilen von Django verwendet und dient gleichzeitig als Dokumentation. Wenn dieses Feld nicht angegeben wird, wird Django den maschinenlesbaren Namen verwenden. In diesem Beispiel haben wir nur einen menschenlesbaren Namen für `Question.pub_date` definiert. Für alle anderen Felder in diesem Modell wird der maschinenlesbare Name des Felds als menschenlesbarer Name ausreichen.
+Sie können einen optionalen ersten Positionsargument für eine `~django.db.models.Field` verwenden, um einen menschenlesbaren Namen zu 指定。Dies wird in einigen introspektiven Teilen von Django verwendet und dient gleichzeitig als Dokumentation. Wenn dieses Feld nicht angegeben wird, wird Django den maschinenlesbaren Namen verwenden. In diesem Beispiel haben wir nur einen menschenlesbaren Namen für `Question.pub_date` definiert. Für alle anderen Felder in diesem Modell wird der maschinenlesbare Name des Felds als menschenlesbarer Name ausreichen.
 
 Einige `~django.db.models.Field`-Klassen haben erforderliche Argumente. `~django.db.models.CharField` erfordert beispielsweise, dass Sie ihm eine `~django.db.models.CharField.max_length` angeben. Dies wird nicht nur im Datenbank-Schema verwendet, sondern auch bei der Validierung, wie wir bald sehen werden.
 

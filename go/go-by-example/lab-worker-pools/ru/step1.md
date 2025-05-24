@@ -60,7 +60,7 @@ func main() {
 
 	// Чтобы использовать наш пул рабочих потоков, нам
 	// нужно отправить им задания и собрать их результаты.
-	//为此我们创建2个通道。
+	//为此我们创建 2 个通道。
 	const numJobs = 5
 	jobs := make(chan int, numJobs)
 	results := make(chan int, numJobs)

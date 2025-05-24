@@ -73,7 +73,7 @@ func main() {
 	createEmptyFile("subdir/parent/file3")
 	createEmptyFile("subdir/parent/child/file4")
 
-	// `ReadDir`列出目录内容，返回一个 `os.DirEntry` 对象的切片。
+	// `ReadDir` 列出目录内容，返回一个 `os.DirEntry` 对象的切片。
 	c, err := os.ReadDir("subdir/parent")
 	check(err)
 
@@ -105,7 +105,7 @@ func main() {
 	err = filepath.Walk("subdir", visit)
 }
 
-// `visit`由 `filepath.Walk` 递归找到的每个文件或目录调用。
+// `visit` 由 `filepath.Walk` 递归找到的每个文件或目录调用。
 func visit(p string, info os.FileInfo, err error) error {
 	if err!= nil {
 		return err

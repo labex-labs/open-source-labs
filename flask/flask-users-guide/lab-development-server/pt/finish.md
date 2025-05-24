@@ -1,0 +1,3 @@
+# Resumo
+
+Neste tutorial, você aprendeu como usar o servidor de desenvolvimento no Flask para executar sua aplicação Flask durante o desenvolvimento local. Você aprendeu como executar o servidor de desenvolvimento com o comando da CLI (Command Line Interface) do Flask, habilitar o modo de depuração (debug mode), especificar o arquivo da aplicação e lidar com problemas comuns, como "Address already in use" (Endereço já em uso). Você também aprendeu como iniciar o servidor de desenvolvimento a partir do código Python. Com o servidor de desenvolvimento, você pode facilmente testar e depurar sua aplicação Flask antes de implantá-la em produção.

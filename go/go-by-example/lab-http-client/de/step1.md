@@ -5,7 +5,7 @@ Sie müssen ein Programm schreiben, das einen HTTP GET-Anfrage an einen Server s
 - Das Programm sollte das `net/http`-Paket verwenden, um eine HTTP GET-Anfrage zu senden.
 - Das Programm sollte den HTTP-Antwortstatus ausgeben.
 - Das Programm sollte die ersten 5 Zeilen des Antwortkörpers ausgeben.
-- Das Programm sollte Fehler优雅地 behandeln.
+- Das Programm sollte Fehler 优雅地 behandeln.
 
 ```sh
 $ go run http-clients.go

@@ -23,7 +23,7 @@ package main
 
 import "fmt"
 
-// この `fact`関数は、`fact(0)` のベースケースに到達するまで自分自身を呼び出します。
+// この `fact` 関数は、`fact(0)` のベースケースに到達するまで自分自身を呼び出します。
 func fact(n int) int {
 	if n == 0 {
 		return 1
@@ -42,7 +42,7 @@ func main() {
 			return n
 		}
 
-		// `fib`が以前に `main`で宣言されていたので、Go 言語はここで`fib` を使ってどの関数を呼び出すかを知っています。
+		// `fib` が以前に `main` で宣言されていたので、Go 言語はここで `fib` を使ってどの関数を呼び出すかを知っています。
 		return fib(n-1) + fib(n-2)
 	}
 

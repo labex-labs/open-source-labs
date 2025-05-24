@@ -66,7 +66,7 @@ import (
 // Plant は XML にマッピングされます。JSON の例と同様に、フィールドタグには
 // エンコーダとデコーダに対する指示が含まれています。ここでは XML パッケージの
 // いくつかの特別な機能を使っています。`XMLName` フィールド名はこの構造体を表す
-// XML 要素の名前を指定します。`id,attr`は `Id` フィールドが XML の
+// XML 要素の名前を指定します。`id,attr` は `Id` フィールドが XML の
 // _属性_ であり、ネストされた要素ではないことを意味します。
 type Plant struct {
 	XMLName xml.Name `xml:"plant"`
@@ -105,7 +105,7 @@ func main() {
 	tomato.Origin = []string{"Mexico", "California"}
 
 	// `parent>child>plant` フィールドタグはエンコーダに指示して、
-	// すべての `plant`を`<parent><child>...</child></parent>` の下に
+	// すべての `plant` を `<parent><child>...</child></parent>` の下に
 	// ネストさせます。
 	type Nesting struct {
 		XMLName xml.Name `xml:"nesting"`

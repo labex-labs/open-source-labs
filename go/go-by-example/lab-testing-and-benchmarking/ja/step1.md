@@ -79,8 +79,8 @@ func TestIntMinTableDriven(t *testing.T) {
 	}
 }
 
-// ベンチマークテストは通常、`_test.go`ファイルに記述され、`Benchmark` で始まる名前を持ちます。
-// `testing`ランナーは、各ベンチマーク関数を何度も実行し、各実行で `b.N` を増やして
+// ベンチマークテストは通常、`_test.go` ファイルに記述され、`Benchmark` で始まる名前を持ちます。
+// `testing` ランナーは、各ベンチマーク関数を何度も実行し、各実行で `b.N` を増やして
 // 精密な測定値を収集します。
 func BenchmarkIntMin(b *testing.B) {
 	// 通常、ベンチマークは、ベンチマーク対象の関数を `b.N` 回ループで実行します。

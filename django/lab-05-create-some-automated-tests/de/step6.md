@@ -6,6 +6,6 @@ Zum Beispiel haben unsere Tests hier einige der internen Logik eines Modells und
 
 Wenn Sie eine komplexe Anwendung haben, möchten Sie möglicherweise Tests automatisch mit jedem Commit für die Zwecke der [kontinuierlichen Integration](https://en.wikipedia.org/wiki/Continuous_integration) ausführen, so dass die Qualitätssicherung zumindest teilweise automatisiert ist.
 
-Ein guter Weg, um ungetestete Teile Ihrer Anwendung zu entdecken, ist die Prüfung der Codeabdeckung. Dies hilft auch, fragiles oder sogar todes代码 zu identifizieren. Wenn Sie einen Codeausschnitt nicht testen können, bedeutet das normalerweise, dass der Code umgebaut oder entfernt werden sollte. Die Abdeckung wird helfen, todes代码 zu identifizieren. Einzelheiten finden Sie unter `topics-testing-code-coverage`.
+Ein guter Weg, um ungetestete Teile Ihrer Anwendung zu entdecken, ist die Prüfung der Codeabdeckung. Dies hilft auch, fragiles oder sogar todes 代码 zu identifizieren. Wenn Sie einen Codeausschnitt nicht testen können, bedeutet das normalerweise, dass der Code umgebaut oder entfernt werden sollte. Die Abdeckung wird helfen, todes 代码 zu identifizieren. Einzelheiten finden Sie unter `topics-testing-code-coverage`.
 
 `Testing in Django </topics/testing/index>` enthält umfassende Informationen zum Testen.

@@ -32,7 +32,7 @@ import (
 
 func main() {
 
-	// サーバーに HTTP GET リクエストを発行します。`http.Get`は、`http.Client`オブジェクトを作成してその `Get`メソッドを呼び出すことの便利なショートカットです。これは、便利なデフォルト設定を持つ`http.DefaultClient` オブジェクトを使用します。
+	// サーバーに HTTP GET リクエストを発行します。`http.Get` は、`http.Client` オブジェクトを作成してその `Get` メソッドを呼び出すことの便利なショートカットです。これは、便利なデフォルト設定を持つ `http.DefaultClient` オブジェクトを使用します。
 	resp, err := http.Get("https://gobyexample.com")
 	if err!= nil {
 		panic(err)

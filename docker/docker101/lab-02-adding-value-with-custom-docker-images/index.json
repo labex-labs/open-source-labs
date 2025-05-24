@@ -727,6 +727,204 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "맞춤형 Docker Image 로 가치 더하기",
+      "description": "이 랩에서는 Docker 명령을 사용하여 컨테이너를 실행했던 랩 1 에서 얻은 지식을 바탕으로 진행합니다. Dockerfile 에서 빌드된 맞춤형 Docker Image 를 생성합니다. Image 를 빌드한 후, 중앙 레지스트리에 푸시하여 다른 환경에 배포하기 위해 가져올 수 있습니다. 또한 Image 레이어와 Docker 가 'copy-on-write' 및 유니온 파일 시스템을 통합하여 Image 를 효율적으로 저장하고 컨테이너를 실행하는 방법에 대해 간략하게 설명합니다.",
+      "meta": {
+        "title": "Docker Image 생성 | 파이썬 앱 개발 (Docker 이미지 만들기)",
+        "description": "Dockerfile 에서 맞춤형 Docker Image 를 생성하고, 레지스트리에 푸시하여 다른 환경에 배포하는 방법을 알아보세요. Docker 의 효율적인 Image 저장 및 컨테이너 관리 기능을 탐색하세요. (Docker, Dockerfile, 파이썬, 플라스크)",
+        "keywords": "Docker, Docker Image, Dockerfile, 파이썬, Flask, 웹 개발, Docker 이미지, 도커"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Step 1: 파이썬 앱 생성 (Docker 미사용)",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "Flask 앱이 실행 중인지 확인",
+                "file": "verify1-1.sh",
+                "hint": "지침을 주의 깊게 따르세요."
+              }
+            ]
+          },
+          {
+            "title": "Step 2: Docker Image 생성 및 빌드",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "python-hello-world Image 가 생성되었는지 확인",
+                "file": "verify2-1.sh",
+                "hint": "지침을 주의 깊게 따르세요."
+              }
+            ]
+          },
+          {
+            "title": "Step 3: Docker Image 실행",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "python-hello-world 컨테이너가 실행 중인지 확인",
+                "file": "verify3-1.sh",
+                "hint": "지침을 주의 깊게 따르세요."
+              }
+            ]
+          },
+          {
+            "title": "Step 4: 중앙 레지스트리에 Push",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증 단계가 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계는 검증 단계가 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "Step 5: 변경 사항 배포",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증 단계가 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계는 검증 단계가 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "Step 6: 이미지 레이어 이해",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증 단계가 없습니다.",
+                "file": "verify6-1.sh",
+                "hint": "현재 이 단계는 검증 단계가 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "Step 7: 정리",
+            "text": "ko/step7.md",
+            "verify": [
+              {
+                "name": "컨테이너가 중지되고 제거되었는지 확인",
+                "file": "verify7-1.sh",
+                "hint": "단계 완료를 위해 지침을 따르십시오."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Adicionando Valor com Imagens Docker Personalizadas",
+      "description": "Neste laboratório, vamos aprofundar nossos conhecimentos do laboratório 1, onde usamos comandos Docker para executar contêineres. Criaremos uma Imagem Docker personalizada construída a partir de um Dockerfile. Depois de construir a imagem, vamos enviá-la para um registro central, onde poderá ser puxada para ser implantada em outros ambientes. Além disso, descreveremos brevemente as camadas de imagem e como o Docker incorpora 'copy-on-write' e o sistema de arquivos de união para armazenar imagens e executar contêineres de forma eficiente.",
+      "meta": {
+        "title": "Criação de Imagem Docker | Desenvolvimento de App Python",
+        "description": "Aprenda a criar uma imagem Docker personalizada a partir de um Dockerfile, enviá-la para um registro e implantá-la em outros ambientes. Explore o armazenamento eficiente de imagens e os recursos de gerenciamento de contêineres do Docker.",
+        "keywords": "Docker, Imagem Docker, Dockerfile, Python, Flask, Desenvolvimento Web"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Passo 1: Crie um App Python (sem usar Docker)",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Verifique se o aplicativo Flask está em execução",
+                "file": "verify1-1.sh",
+                "hint": "Por favor, siga as instruções cuidadosamente."
+              }
+            ]
+          },
+          {
+            "title": "Passo 2: Crie e Construa a Imagem Docker",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Verifique se a imagem python-hello-world foi criada",
+                "file": "verify2-1.sh",
+                "hint": "Por favor, siga as instruções cuidadosamente."
+              }
+            ]
+          },
+          {
+            "title": "Passo 3: Execute a Imagem Docker",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Verifique se o container python-hello-world está em execução",
+                "file": "verify3-1.sh",
+                "hint": "Por favor, siga as instruções cuidadosamente."
+              }
+            ]
+          },
+          {
+            "title": "Passo 4: Envie para um Registro Central",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Passo 5: Implementando uma Mudança",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Passo 6: Compreendendo as Camadas de Imagem",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Passo 7: Limpeza",
+            "text": "pt/step7.md",
+            "verify": [
+              {
+                "name": "Verifique se os containers foram parados e removidos",
+                "file": "verify7-1.sh",
+                "hint": "Por favor, siga as instruções para completar os passos."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

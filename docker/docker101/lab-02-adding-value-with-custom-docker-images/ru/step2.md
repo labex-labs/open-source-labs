@@ -22,9 +22,9 @@ Dockerfile перечисляет инструкции, необходимые �
 
 Здесь мы используем тег "3.8-alpine" для образа Python. Посмотрите на доступные теги для официального образа Python на [Docker Hub](https://hub.docker.com/_/python/). Лучшим практикой является использование конкретного тега при наследовании родительского образа, чтобы контролировать изменения в родительской зависимости. Если тег не указан, то действует тег "latest", который является динамической ссылкой, указывающей на последнюю версию образа.
 
-出于安全考虑，了解您在其上构建Docker镜像的层非常重要。因此，强烈建议仅使用在 [docker hub](https://hub.docker.com/) 中找到的“官方”镜像，或在docker-store中找到的非社区镜像。这些镜像经过 [审核](https://docs.docker.com/docker-hub/official_repos/) 以满足某些安全要求，并且也有非常好的文档供用户参考。您可以在 [docker hub](https://hub.docker.com) 上找到有关此 [Python基础镜像](https://hub.docker.com/_/python) 以及您可以使用的所有其他镜像的更多信息。
+出于安全考虑，了解您在其上构建 Docker 镜像的层非常重要。因此，强烈建议仅使用在 [docker hub](https://hub.docker.com/) 中找到的“官方”镜像，或在 docker-store 中找到的非社区镜像。这些镜像经过 [审核](https://docs.docker.com/docker-hub/official_repos/) 以满足某些安全要求，并且也有非常好的文档供用户参考。您可以在 [docker hub](https://hub.docker.com) 上找到有关此 [Python 基础镜像](https://hub.docker.com/_/python) 以及您可以使用的所有其他镜像的更多信息。
 
-对于更复杂的应用程序，您可能会发现需要使用更高层次的 `FROM` 镜像。例如，我们的Python应用程序的父 [Dockerfile](https://github.com/docker-library/python/blob/9ff5f04241c7bcb224303ff8cea9434e9976f8af/3.8/alpine3.12/Dockerfile) 以 `FROM alpine` 开头，然后为镜像指定一系列 `CMD` 和 `RUN` 命令。如果您需要更细粒度的控制，可以从 `FROM alpine`（或其他发行版）开始并自己运行这些步骤。不过，首先我建议使用与您的需求密切匹配的官方镜像。
+对于更复杂的应用程序，您可能会发现需要使用更高层次的 `FROM` 镜像。例如，我们的 Python 应用程序的父 [Dockerfile](https://github.com/docker-library/python/blob/9ff5f04241c7bcb224303ff8cea9434e9976f8af/3.8/alpine3.12/Dockerfile) 以 `FROM alpine` 开头，然后为镜像指定一系列 `CMD` 和 `RUN` 命令。如果您需要更细粒度的控制，可以从 `FROM alpine`（或其他发行版）开始并自己运行这些步骤。不过，首先我建议使用与您的需求密切匹配的官方镜像。
 
 **RUN pip install flask**
 `RUN` команда выполняет команды, необходимые для настройки образа для вашего приложения, таких как установка пакетов, редактирование файлов или изменение прав доступа к файлам. В этом случае мы устанавливаем flask. Команды `RUN` выполняются во время сборки и добавляются в слои вашего образа.

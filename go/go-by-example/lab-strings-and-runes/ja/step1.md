@@ -77,7 +77,7 @@ func main() {
 	// このカウントの結果は予想外になる場合があります。
 	fmt.Println("Rune count:", utf8.RuneCountInString(s))
 
-	// `range`ループは、文字列を特別に扱い、各 `rune` とその文字列内の
+	// `range` ループは、文字列を特別に扱い、各 `rune` とその文字列内の
 	// オフセットをデコードします。
 	for idx, runeValue := range s {
 		fmt.Printf("%#U starts at %d\n", runeValue, idx)

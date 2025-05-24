@@ -52,7 +52,7 @@ func main() {
 	err := os.Mkdir("subdir", 0755)
 	check(err)
 
-	// 一時的なディレクトリを作成する場合、削除を `defer`で行うのが良い作法です。`os.RemoveAll` は、ディレクトリツリー全体を削除します（`rm -rf`と同様）。
+	// 一時的なディレクトリを作成する場合、削除を `defer` で行うのが良い作法です。`os.RemoveAll` は、ディレクトリツリー全体を削除します（`rm -rf`と同様）。
 	defer os.RemoveAll("subdir")
 
 	// 新しい空のファイルを作成するためのヘルパー関数。
@@ -71,7 +71,7 @@ func main() {
 	createEmptyFile("subdir/parent/file3")
 	createEmptyFile("subdir/parent/child/file4")
 
-	// `ReadDir`はディレクトリの内容を一覧表示し、`os.DirEntry` オブジェクトのスライスを返します。
+	// `ReadDir` はディレクトリの内容を一覧表示し、`os.DirEntry` オブジェクトのスライスを返します。
 	c, err := os.ReadDir("subdir/parent")
 	check(err)
 
@@ -80,7 +80,7 @@ func main() {
 		fmt.Println(" ", entry.Name(), entry.IsDir())
 	}
 
-	// `Chdir`を使って、現在の作業ディレクトリを変更できます。これは `cd` と同様です。
+	// `Chdir` を使って、現在の作業ディレクトリを変更できます。これは `cd` と同様です。
 	err = os.Chdir("subdir/parent/child")
 	check(err)
 
@@ -102,7 +102,7 @@ func main() {
 	err = filepath.Walk("subdir", visit)
 }
 
-// `visit`は、`filepath.Walk` によって再帰的に見つけられたすべてのファイルまたはディレクトリに対して呼び出されます。
+// `visit` は、`filepath.Walk` によって再帰的に見つけられたすべてのファイルまたはディレクトリに対して呼び出されます。
 func visit(p string, info os.FileInfo, err error) error {
 	if err!= nil {
 		return err

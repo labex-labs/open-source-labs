@@ -21,7 +21,7 @@ $ go run if-else.go
 以下に完全なコードがあります。
 
 ```go
-// Go における `if`文と`else` 文による分岐は
+// Go における `if` 文と `else` 文による分岐は
 // 簡単です。
 
 package main
@@ -37,7 +37,7 @@ func main() {
 		fmt.Println("7 は奇数")
 	}
 
-	// `else`なしの `if` 文もあります。
+	// `else` なしの `if` 文もあります。
 	if 8%4 == 0 {
 		fmt.Println("8 は 4 で割り切れる")
 	}

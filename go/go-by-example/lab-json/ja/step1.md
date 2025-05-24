@@ -99,7 +99,7 @@ func main() {
 
 	// デコードされたマップ内の値を使用するには、
 	// それらを適切な型に変換する必要があります。
-	// たとえばここでは `num`の値を期待される`float64` 型に変換しています。
+	// たとえばここでは `num` の値を期待される `float64` 型に変換しています。
 	num := dat["num"].(float64)
 	fmt.Println(num)
 
@@ -118,7 +118,7 @@ func main() {
 	fmt.Println(res.Fruits[0])
 
 	// 上の例では、常にバイトと文字列をデータと標準出力上の JSON 表現の間の中間データとして使用していました。
-	// また、JSON エンコードを `os.Stdout`のような`os.Writer` に直接ストリーミングしたり、
+	// また、JSON エンコードを `os.Stdout` のような `os.Writer` に直接ストリーミングしたり、
 	// さらには HTTP レスポンスボディに直接ストリーミングすることもできます。
 	enc := json.NewEncoder(os.Stdout)
 	d := map[string]int{"apple": 5, "lettuce": 7}

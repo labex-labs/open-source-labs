@@ -42,7 +42,7 @@ func main() {
 
 		go func() {
 			for c := 0; c < 1000; c++ {
-				// 为了原子地递增计数器，我们使用 `AddUint64`，通过`&`语法将其传递给我们的`ops` 计数器的内存地址。
+				// 为了原子地递增计数器，我们使用 `AddUint64`，通过 `&` 语法将其传递给我们的 `ops` 计数器的内存地址。
 				atomic.AddUint64(&ops, 1)
 			}
 			wg.Done()
@@ -52,7 +52,7 @@ func main() {
 	// 等待直到所有 goroutine 完成。
 	wg.Wait()
 
-	// 现在访问 `ops`是安全的，因为我们知道没有其他 goroutine 正在写入它。在原子变量更新时安全地读取它也是可能的，使用像`atomic.LoadUint64` 这样的函数。
+	// 现在访问 `ops` 是安全的，因为我们知道没有其他 goroutine 正在写入它。在原子变量更新时安全地读取它也是可能的，使用像 `atomic.LoadUint64` 这样的函数。
 	fmt.Println("ops:", ops)
 }
 

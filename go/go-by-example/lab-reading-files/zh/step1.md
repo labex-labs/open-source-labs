@@ -50,7 +50,7 @@ func main() {
     fmt.Print(string(dat))
 
     // 你通常会希望对如何读取文件以及读取文件的哪些部分有更多控制。对于这些任务，
-    // 首先通过 `Open`打开一个文件以获得一个`os.File` 值。
+    // 首先通过 `Open` 打开一个文件以获得一个 `os.File` 值。
     f, err := os.Open("/tmp/dat")
     check(err)
 
@@ -61,7 +61,7 @@ func main() {
     check(err)
     fmt.Printf("%d字节: %s\n", n1, string(b1[:n1]))
 
-    // 你也可以 `Seek` 到文件中的已知位置并从那里`Read`。
+    // 你也可以 `Seek` 到文件中的已知位置并从那里 `Read`。
     o2, err := f.Seek(6, 0)
     check(err)
     b2 := make([]byte, 2)
@@ -90,7 +90,7 @@ func main() {
     check(err)
     fmt.Printf("5字节: %s\n", string(b4))
 
-    // 完成后关闭文件（通常这会在 `Open`后立即用`defer` 安排）。
+    // 完成后关闭文件（通常这会在 `Open` 后立即用 `defer` 安排）。
     f.Close()
 }
 

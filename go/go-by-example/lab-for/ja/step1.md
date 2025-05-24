@@ -46,7 +46,7 @@ func main() {
 		fmt.Println(j)
 	}
 
-	// 条件がない `for`は、`break` 文でループを抜けるか、
+	// 条件がない `for` は、`break` 文でループを抜けるか、
 	// 囲まれた関数から `return` するまで、繰り返し実行されます。
 	for {
 		fmt.Println("loop")

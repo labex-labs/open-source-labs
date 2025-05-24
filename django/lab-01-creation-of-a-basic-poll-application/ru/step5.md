@@ -51,9 +51,9 @@ urlpatterns = [
 ]
 ```
 
-Функция `~django.urls.include` позволяет ссылаться на другие URLconf.每当Django遇到`~django.urls.include`时，它会切掉到该点为止匹配的URL的任何部分，并将剩余的字符串发送到包含的URLconf进行进一步处理。
+Функция `~django.urls.include` позволяет ссылаться на другие URLconf.每当 Django 遇到`~django.urls.include`时，它会切掉到该点为止匹配的 URL 的任何部分，并将剩余的字符串发送到包含的 URLconf 进行进一步处理。
 
-`~django.urls.include`背后的想法是使URL的即插即用变得容易。由于投票在自己的URLconf（`polls/urls.py`）中，它们可以放在“/polls/”下，或“/fun_polls/”下，或“/content/polls/”下，或任何其他路径根目录下，应用程序仍然可以正常工作。
+`~django.urls.include`背后的想法是使 URL 的即插即用变得容易。由于投票在自己的 URLconf（`polls/urls.py`）中，它们可以放在“/polls/”下，或“/fun_polls/”下，或“/content/polls/”下，或任何其他路径根目录下，应用程序仍然可以正常工作。
 
 > Когда использовать `~django.urls.include()`
 > Вы должны всегда использовать `include()` при включении других URL-шаблонов. `admin.site.urls` - единственное исключение из этого правила.

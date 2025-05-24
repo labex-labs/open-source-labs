@@ -23,7 +23,7 @@ $ go run templates.go
 以下是完整代码：
 
 ```go
-// Go 通过 `text/template`包提供了对创建动态内容或向用户展示定制化输出的内置支持。一个名为`html/template` 的姊妹包提供相同的 API，但具有额外的安全特性，应用于生成 HTML。
+// Go 通过 `text/template` 包提供了对创建动态内容或向用户展示定制化输出的内置支持。一个名为 `html/template` 的姊妹包提供相同的 API，但具有额外的安全特性，应用于生成 HTML。
 
 package main
 
@@ -42,10 +42,10 @@ func main() {
 		panic(err)
 	}
 
-	// 或者，我们可以使用 `template.Must`函数，以便在`Parse` 返回错误时引发恐慌。这在全局作用域中初始化的模板中特别有用。
+	// 或者，我们可以使用 `template.Must` 函数，以便在 `Parse` 返回错误时引发恐慌。这在全局作用域中初始化的模板中特别有用。
 	t1 = template.Must(t1.Parse("值：{{.}}\n"))
 
-	// 通过“执行”模板，我们使用其操作的特定值生成其文本。`{{.}}`操作被替换为作为参数传递给 `Execute` 的值。
+	// 通过“执行”模板，我们使用其操作的特定值生成其文本。`{{.}}` 操作被替换为作为参数传递给 `Execute` 的值。
 	t1.Execute(os.Stdout, "some text")
 	t1.Execute(os.Stdout, 5)
 	t1.Execute(os.Stdout, []string{
