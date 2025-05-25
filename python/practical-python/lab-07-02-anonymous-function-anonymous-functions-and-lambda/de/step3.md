@@ -6,7 +6,7 @@ Verwenden Sie eine Lambda-Funktion anstelle der Funktion zu erstellen. Im vorher
 portfolio.sort(key=lambda s: s['name'])
 ```
 
-Dies erstellt eine _namenlose_ Funktion, die einen _einzigen_ Ausdruck计算. Der obige Code ist viel kürzer als der ursprüngliche Code.
+Dies erstellt eine _namenlose_ Funktion, die einen _einzigen_ Ausdruck 计算。Der obige Code ist viel kürzer als der ursprüngliche Code.
 
 ```python
 def stock_name(s):

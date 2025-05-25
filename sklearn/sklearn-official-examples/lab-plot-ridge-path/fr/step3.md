@@ -1,6 +1,6 @@
-# Calculer les chemins de régression岭
+# Calculer les chemins de régression 岭
 
-Dans cette étape, nous allons calculer les chemins de régression岭 pour différentes forces de régularisation.
+Dans cette étape, nous allons calculer les chemins de régression 岭 pour différentes forces de régularisation.
 
 ```python
 n_alphas = 200

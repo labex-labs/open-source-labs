@@ -24,10 +24,10 @@ fn first_word(s: &str) -> &str {
 fn main() {
     let my_string = String::from("hello world");
 
-    // `first_word`は、部分的または全体的な `String` のスライスに対して機能します
+    // `first_word` は、部分的または全体的な `String` のスライスに対して機能します
     let word = first_word(&my_string[0..6]);
     let word = first_word(&my_string[..]);
-    // `first_word`は、`String`への参照にも機能します。これは、`String` の全体のスライスと同等です
+    // `first_word` は、`String` への参照にも機能します。これは、`String` の全体のスライスと同等です
     let word = first_word(&my_string);
 
     let my_string_literal = "hello world";

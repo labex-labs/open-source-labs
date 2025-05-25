@@ -1,0 +1,5 @@
+# Armazenando Texto Codificado em UTF-8 com Strings
+
+Falamos sobre strings no Capítulo 4, mas agora vamos analisá-las com mais profundidade. Novos Rustaceans geralmente ficam presos em strings por uma combinação de três razões: a propensão do Rust para expor possíveis erros, as strings serem uma estrutura de dados mais complicada do que muitos programadores lhes dão crédito e UTF-8. Esses fatores se combinam de uma forma que pode parecer difícil quando você vem de outras linguagens de programação.
+
+Discutimos strings no contexto de coleções porque as strings são implementadas como uma coleção de bytes, além de alguns métodos para fornecer funcionalidade útil quando esses bytes são interpretados como texto. Nesta secção, falaremos sobre as operações em `String` que todo tipo de coleção possui, como criar, atualizar e ler. Também discutiremos as maneiras pelas quais `String` é diferente das outras coleções, nomeadamente como a indexação em uma `String` é complicada pelas diferenças entre como as pessoas e os computadores interpretam os dados `String`.

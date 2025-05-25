@@ -44,6 +44,6 @@ fn main() {
 
     println!("end of the main function");
 
-    // `_a`はここでは再度 `drop`されません。既に（手動で）`drop` されているためです
+    // `_a` はここでは再度 `drop` されません。既に（手動で）`drop` されているためです
 }
 ```

@@ -1,0 +1,3 @@
+# Características de Linguagens Orientadas a Objetos
+
+Não há consenso na comunidade de programação sobre quais características uma linguagem deve ter para ser considerada orientada a objetos. Rust é influenciado por muitos paradigmas de programação, incluindo OOP (Programação Orientada a Objetos); por exemplo, exploramos as características que vieram da programação funcional no Capítulo 13. Argumentavelmente, as linguagens OOP compartilham certas características comuns, nomeadamente objetos, encapsulamento e herança. Vamos analisar o que cada uma dessas características significa e se Rust as suporta.

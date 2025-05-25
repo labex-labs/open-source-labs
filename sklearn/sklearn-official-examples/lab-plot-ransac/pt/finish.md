@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, demonstramos como ajustar robustamente um modelo linear a dados com erros utilizando o algoritmo RANSAC no scikit-learn. Gerámos dados aleatórios usando o conjunto de dados `make_regression`, adicionámos valores discrepantes aos dados, ajustámos um modelo linear e um regressor RANSAC aos dados, previmos os dados dos dois modelos, comparámos os seus coeficientes estimados e visualizámos os resultados. O regressor RANSAC divide automaticamente os dados em valores interiores e exteriores, e a linha ajustada é determinada apenas pelos valores interiores identificados, tornando-o um método mais robusto para ajustar modelos a dados com valores discrepantes.

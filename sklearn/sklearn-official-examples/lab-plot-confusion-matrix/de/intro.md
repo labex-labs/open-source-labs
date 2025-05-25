@@ -1,6 +1,6 @@
 # Einführung
 
-Die Konfusionsmatrix ist ein Werkzeug zur计算 der Leistung eines Klassifizierungsalgorithmus. Es ist eine Tabelle, die die Leistung eines Klassifizierungsmodells durch Vergleich der vorhergesagten Klassenbezeichnungen mit den tatsächlichen Klassenbezeichnungen zusammenfasst. In diesem Tutorial wird gezeigt, wie die scikit-learn-Bibliothek verwendet wird, um eine Konfusionsmatrix zu generieren und deren Ergebnisse zu visualisieren.
+Die Konfusionsmatrix ist ein Werkzeug zur 计算 der Leistung eines Klassifizierungsalgorithmus. Es ist eine Tabelle, die die Leistung eines Klassifizierungsmodells durch Vergleich der vorhergesagten Klassenbezeichnungen mit den tatsächlichen Klassenbezeichnungen zusammenfasst. In diesem Tutorial wird gezeigt, wie die scikit-learn-Bibliothek verwendet wird, um eine Konfusionsmatrix zu generieren und deren Ergebnisse zu visualisieren.
 
 ## Tipps für die VM
 

@@ -1,0 +1,5 @@
+# Controlando Como os Testes são Executados
+
+Assim como `cargo run` compila seu código e então executa o binário resultante, `cargo test` compila seu código em modo de teste e executa o binário de teste resultante. O comportamento padrão do binário produzido por `cargo test` é executar todos os testes em paralelo e capturar a saída gerada durante as execuções dos testes, impedindo que a saída seja exibida e tornando mais fácil ler a saída relacionada aos resultados dos testes. Você pode, no entanto, especificar opções de linha de comando para alterar este comportamento padrão.
+
+Algumas opções de linha de comando vão para `cargo test`, e algumas vão para o binário de teste resultante. Para separar esses dois tipos de argumentos, você lista os argumentos que vão para `cargo test` seguidos pelo separador `--` e, em seguida, aqueles que vão para o binário de teste. Executar `cargo test --help` exibe as opções que você pode usar com `cargo test`, e executar `cargo test -- --help` exibe as opções que você pode usar após o separador.

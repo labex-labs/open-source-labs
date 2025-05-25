@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como utilizar estimadores do Scikit-Learn para avaliar a latência de previsão de vários regressores. Medimos a latência ao realizar previsões em modo em massa ou atômico, e representamos graficamente a distribuição da latência de previsão como um boxplot. Também estimamos a influência do número de características no tempo de previsão e representamos graficamente a evolução do tempo de previsão com o número de características. Finalmente, medimos a taxa de processamento para diferentes estimadores e representamos graficamente a taxa de processamento de previsão para diferentes estimadores.

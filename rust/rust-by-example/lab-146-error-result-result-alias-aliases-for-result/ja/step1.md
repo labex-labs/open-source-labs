@@ -9,7 +9,7 @@
 ```rust
 use std::num::ParseIntError;
 
-// エラー型が `ParseIntError`の`Result` の汎用エイリアスを定義します。
+// エラー型が `ParseIntError` の `Result` の汎用エイリアスを定義します。
 type AliasedResult<T> = Result<T, ParseIntError>;
 
 // 上記のエイリアスを使用して、特定の `Result` 型を参照します。

@@ -1,6 +1,6 @@
 # Unsafe Rust
 
-Aller Code, den wir bisher besprochen haben, hat die von Rust gewährleisteten Speichersicherheiten bei der Kompilierung强制执行. Allerdings hat Rust eine zweite Sprache in sich versteckt, die diese Speichersicherheitsgarantien nicht durchsetzt: Sie heißt _unsafe Rust_ und funktioniert wie regulärer Rust, gibt uns aber zusätzliche Superkräfte.
+Aller Code, den wir bisher besprochen haben, hat die von Rust gewährleisteten Speichersicherheiten bei der Kompilierung 强制执行。Allerdings hat Rust eine zweite Sprache in sich versteckt, die diese Speichersicherheitsgarantien nicht durchsetzt: Sie heißt _unsafe Rust_ und funktioniert wie regulärer Rust, gibt uns aber zusätzliche Superkräfte.
 
 Unsafe Rust existiert, weil statische Analysen von Natur aus konservativ sind. Wenn der Compiler versucht, zu bestimmen, ob der Code die Garantien einhält, ist es besser, wenn er einige gültige Programme ablehnt, als wenn er einige ungültige Programme akzeptiert. Auch wenn der Code _eventuell_ in Ordnung ist, wird der Rust-Compiler den Code ablehnen, wenn er nicht genug Informationen hat, um sich sicher zu sein. In diesen Fällen kannst du unsafe Code verwenden, um dem Compiler zu sagen: "Vertraue mir, ich weiß, was ich mache." Achte jedoch darauf, dass du unsafe Rust auf eigene Gefahr verwendest: Wenn du unsafe Code falsch verwendest, können Probleme aufgrund von Speichersicherheitsfehlern auftreten, wie z. B. das Dereferenzieren eines Nullzeigers.
 

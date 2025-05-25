@@ -1,8 +1,8 @@
-# Temporizador倒计时器
+# Temporizador 倒计时器
 
 > En la máquina virtual ya se han proporcionado `index.html` y `script.js`. En general, solo es necesario agregar código a `script.js` y `style.css`.
 
-Este código crea un temporizador倒计时器 que imprime un mensaje cuando llega a cero. Para implementarlo, se siguen los siguientes pasos:
+Este código crea un temporizador 倒计时器 que imprime un mensaje cuando llega a cero. Para implementarlo, se siguen los siguientes pasos:
 
 1. Utilice el hook `useState()` para crear una variable de estado `time` que almacene el valor del tiempo. Inicialícela a partir de las propiedades y desestructúrela en sus componentes.
 2. Utilice el hook `useState()` para crear las variables de estado `paused` y `over`, que se utilizan para evitar que el temporizador marque si está en pausa o se agotó el tiempo.

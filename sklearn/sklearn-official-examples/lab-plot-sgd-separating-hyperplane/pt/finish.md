@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos a utilizar Máquinas de Vetores de Suporte (SVM) com Gradiente Descendente Estocástico (SGD) para classificar dados. Geramos um conjunto de dados adequado para classificação, treinamos o modelo SVM usando SGD e plotamos o hiperplano separador de margem máxima. SVM é um poderoso algoritmo de classificação amplamente utilizado em aprendizado de máquina para análise de classificação e regressão. A ideia por trás do SVM é encontrar o melhor hiperplano que separa os dados em classes com a maior margem possível. O Gradiente Descendente Estocástico (SGD) é um algoritmo de otimização usado para encontrar os melhores parâmetros para o algoritmo SVM.

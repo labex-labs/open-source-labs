@@ -1,0 +1,3 @@
+# Gerar o conjunto de dados
+
+Geramos um conjunto de dados simulado de salários por hora, experiência profissional, capacidade, salários por hora dos pais e diplomas universitários. A experiência profissional em anos e uma medida de capacidade são extraídas de distribuições normais. O salário por hora de um dos pais é extraído de uma distribuição Beta. Criamos um indicador de diploma universitário que é positivamente afetado pela capacidade e pelo salário por hora dos pais. Finalmente, modelamos os salários por hora como uma função linear de todas as variáveis anteriores e um componente aleatório.

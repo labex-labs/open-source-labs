@@ -16,8 +16,8 @@ struct FooBar;
 #[derive(Debug)]
 struct BarFoo;
 
-// `std::ops::Add`トレイトは、`+` の機能を指定するために使用されます。
-// ここでは、`Add<Bar>`を作成します。これは、右辺の型が `Bar` の加算用のトレイトです。
+// `std::ops::Add` トレイトは、`+` の機能を指定するために使用されます。
+// ここでは、`Add<Bar>` を作成します。これは、右辺の型が `Bar` の加算用のトレイトです。
 // 次のブロックでは、演算子の操作を実装します。Foo + Bar = FooBar
 impl ops::Add<Bar> for Foo {
     type Output = FooBar;
@@ -30,7 +30,7 @@ impl ops::Add<Bar> for Foo {
 }
 
 // 型を逆にすることで、非可換な加算を実装します。
-// ここでは、`Add<Foo>`を作成します。これは、右辺の型が `Foo` の加算用のトレイトです。
+// ここでは、`Add<Foo>` を作成します。これは、右辺の型が `Foo` の加算用のトレイトです。
 // このブロックでは、演算子の操作を実装します。Bar + Foo = BarFoo
 impl ops::Add<Foo> for Bar {
     type Output = BarFoo;

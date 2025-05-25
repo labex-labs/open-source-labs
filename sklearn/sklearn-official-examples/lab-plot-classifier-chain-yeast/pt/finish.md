@@ -1,0 +1,3 @@
+# Resumo
+
+Este laboratório demonstrou como usar o algoritmo Classifier Chain para construir um conjunto de cadeias de classificadores de regressão logística para explorar correlações entre as classes. A pontuação de similaridade Jaccard para cada cadeia tende a ser maior do que a do conjunto de modelos logísticos independentes. Finalmente, construímos um conjunto de votação de cadeias de classificadores, calculando a média das previsões binárias das cadeias e aplicando um limiar de 0,5. A pontuação de similaridade Jaccard do conjunto foi maior do que a dos modelos independentes e tendeu a exceder a pontuação de cada cadeia no conjunto.

@@ -1,0 +1,3 @@
+# Comentário: Não deveríamos estar usando Pandas para isso?
+
+Cientistas de dados são rápidos em apontar que bibliotecas como [Pandas](https://pandas.pydata.org) já possuem uma função para ler arquivos CSV. Isso é verdade - e funciona muito bem. No entanto, este não é um curso sobre como aprender Pandas. Ler arquivos é um problema mais geral do que as especificidades dos arquivos CSV. A principal razão pela qual estamos trabalhando com um arquivo CSV é que ele é um formato familiar para a maioria dos codificadores e é relativamente fácil de trabalhar diretamente - ilustrando muitos recursos do Python no processo. Então, use Pandas quando voltar ao trabalho. Para o restante deste curso, no entanto, vamos nos ater à funcionalidade padrão do Python.

@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como usar a validação cruzada para visualizar as previsões e erros do modelo utilizando as funções `cross_val_predict` e `PredictionErrorDisplay` no scikit-learn. Carregamos o conjunto de dados de diabetes, criamos uma instância de um modelo de regressão linear e usamos a validação cruzada para obter um array de previsões. Em seguida, usamos `PredictionErrorDisplay` para plotar os valores reais versus os valores preditos, bem como os resíduos versus os valores preditos. Finalmente, interpretamos os resultados e discutimos a importância de usar métricas de desempenho por dobra para a avaliação do modelo.

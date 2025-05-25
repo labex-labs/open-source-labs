@@ -1,0 +1,3 @@
+# Resumo
+
+Este laboratório demonstrou como usar regressão linear com recursos polinomiais para aproximar funções não lineares e como avaliar o desempenho do modelo usando validação cruzada. Vimos que uma função linear não é suficiente para ajustar as amostras de treinamento e que um polinômio de grau 4 aproxima a função verdadeira quase perfeitamente. No entanto, para graus mais altos, o modelo irá superajustar os dados de treinamento e aprender o ruído dos dados de treinamento. Podemos usar validação cruzada e o erro quadrático médio (MSE) para avaliar o desempenho do modelo e evitar o superajuste.

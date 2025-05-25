@@ -722,6 +722,204 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "기울기 부스팅 회귀를 위한 예측 구간",
+      "description": "이 실습에서는 scikit-learn 을 사용하여 사분위수 회귀를 통해 예측 구간을 만드는 방법을 보여줍니다. 회귀 문제에 대한 합성 데이터를 생성하고, 함수를 적용하며, 로그 정규 분포를 사용하여 대상의 관측치를 생성합니다. 그런 다음 데이터를 훈련 및 테스트 데이터셋으로 분할하고, 비선형 사분위수 및 최소 제곱 회귀자를 적합하며, [0, 10] 범위에 걸쳐 균등하게 간격을 둔 입력 값의 평가 집합을 생성합니다. 예측 중앙값과 예측 평균을 비교하고, 오차 지표를 분석하며, 신뢰 구간을 보정합니다. 마지막으로 사분위수 회귀자의 하이퍼파라미터를 조정합니다.",
+      "meta": {
+        "title": "사분위수 회귀 | 예측 구간 | Scikit-Learn",
+        "description": "scikit-learn 을 사용하여 사분위수 회귀를 통해 예측 구간을 만드는 방법을 학습합니다. 합성 데이터를 생성하고, 비선형 모델을 적합하며, 하이퍼파라미터를 조정하는 방법을 배웁니다.",
+        "keywords": "사분위수 회귀, 예측 구간, scikit-learn, 합성 데이터, 비선형 모델, 하이퍼파라미터 튜닝, 기울기 부스팅 회귀, 회귀 예측"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "합성 데이터 생성",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "데이터를 훈련 및 테스트 데이터셋으로 분할",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "비선형 분위수 회귀 및 최소 제곱 회귀 모델 적합",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "균등 간격의 입력값 평가 집합 생성",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "실제 조건부 평균 함수 f 를 플롯합니다.",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "오류 지표 분석",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify6-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "분위수 회귀자의 하이퍼파라미터를 조정합니다.",
+            "text": "ko/step7.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify7-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Intervalos de Previsão para Regressão Boosting Gradiente",
+      "description": "Este laboratório demonstra como utilizar a regressão de quantis para criar intervalos de previsão usando o scikit-learn. Iremos gerar dados sintéticos para um problema de regressão, aplicá-los à função e criar observações da variável-alvo utilizando uma distribuição log-normal. Em seguida, dividiremos os dados em conjuntos de treino e teste, ajustando regressores de quantis não-lineares e de mínimos quadrados, e criaremos um conjunto de avaliação com valores de entrada espaçados uniformemente, abrangendo o intervalo [0, 10]. Compararemos a mediana prevista com a média prevista, analisaremos as métricas de erro e calibraremos o intervalo de confiança. Finalmente, ajustaremos os hiperparâmetros dos regressores de quantis.",
+      "meta": {
+        "title": "Regressão de Quantis | Intervalos de Previsão | Scikit-Learn",
+        "description": "Aprenda como utilizar a regressão de quantis para criar intervalos de previsão usando o scikit-learn. Gere dados sintéticos, ajuste modelos não-lineares e ajuste hiperparâmetros.",
+        "keywords": "regressão de quantis, intervalos de previsão, scikit-learn, dados sintéticos, modelos não-lineares, ajuste de hiperparâmetros, regressão, boosting gradiente, aprendizado de máquina"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Gerar Dados Sintéticos",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Dividir os Dados em Conjuntos de Treino e Teste",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Ajustar Regressores de Quantil Não-Linear e Mínimos Quadrados",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Criar um Conjunto de Avaliação de Valores de Entrada Espacialmente Iguais",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar a Função de Média Condicional Verdadeira f",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Analisar as Métricas de Erro",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Ajustar os Hiperparâmetros dos Regressores de Quantil",
+            "text": "pt/step7.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify7-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

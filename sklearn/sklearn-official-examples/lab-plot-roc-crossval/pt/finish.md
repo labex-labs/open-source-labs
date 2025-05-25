@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como estimar e visualizar a variância da métrica Receiver Operating Characteristic (ROC) usando validação cruzada em Python. Carregamos o conjunto de dados iris, criamos recursos ruidosos e classificamos o conjunto de dados com SVM. Em seguida, plotamos as curvas ROC com validação cruzada e calculamos a AUC média para observar a variabilidade da saída do classificador quando o conjunto de treinamento é dividido em diferentes subconjuntos. As curvas ROC podem nos ajudar a avaliar o desempenho de um classificador binário e a ver o trade-off entre verdadeiros positivos e falsos positivos. A validação cruzada pode nos ajudar a estimar a variabilidade da saída do classificador e escolher o melhor modelo para nosso problema.

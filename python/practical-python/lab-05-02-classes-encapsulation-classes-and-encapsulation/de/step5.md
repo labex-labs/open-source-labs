@@ -23,7 +23,7 @@ Ein überraschendes Merkmal ist, dass Sie die Attribute beliebig auf einen belie
 Sie könnten sich das ansehen und denken, dass Sie zusätzliche Überprüfungen benötigen.
 
 ```python
-s.shares = '50'     #引发一个TypeError，这是一个字符串
+s.shares = '50'     #引发一个 TypeError，这是一个字符串
 ```
 
 Wie würden Sie das tun?

@@ -193,7 +193,7 @@
     {
       "lang": "ja",
       "title": "Rust のループと範囲",
-      "description": "この実験では、Rust で `for`ループと範囲を使用する方法を学びます。`for`ループを範囲表記`a..b`とともに使用することで、値の範囲を反復処理できます。たとえば、`while`ループの代わりに`for`ループを使って FizzBuzz プログラムを書くことができます。また、両端を含む範囲には`..=`表記を使用できます。`for`ループは、コレクションの各要素を借用する`iter`、コレクションを消費する`into_iter`、またはコレクションの各要素を可変的に借用する`iter_mut` など、さまざまな方法で反復子と相互作用することもできます。これらの各メソッドは、コレクション内のデータの異なるビューを提供し、さまざまなアクションを実行できるようにします。",
+      "description": "この実験では、Rust で `for`ループと範囲を使用する方法を学びます。`for` ループを範囲表記 `a..b`とともに使用することで、値の範囲を反復処理できます。たとえば、`while` ループの代わりに `for` ループを使って FizzBuzz プログラムを書くことができます。また、両端を含む範囲には `..=` 表記を使用できます。`for` ループは、コレクションの各要素を借用する `iter`、コレクションを消費する`into_iter`、またはコレクションの各要素を可変的に借用する`iter_mut` など、さまざまな方法で反復子と相互作用することもできます。これらの各メソッドは、コレクション内のデータの異なるビューを提供し、さまざまなアクションを実行できるようにします。",
       "meta": {
         "title": "Rust プログラミング | for ループと範囲",
         "description": "Rust プログラミング言語で `for` ループと範囲をどのように使用するか学びましょう。コレクションと相互作用するさまざまな反復子メソッドを探りましょう。",
@@ -253,6 +253,72 @@
         "finish": {
           "text": "ru/finish.md",
           "title": "Резюме"
+        }
+      }
+    },
+    {
+      "lang": "ko",
+      "title": "Rust 반복문과 범위",
+      "description": "이 실습에서는 Rust 에서 for 반복문과 범위를 사용하는 방법을 배웁니다. for 반복문과 범위 표기법 a..b 를 사용하여 값의 범위를 반복할 수 있습니다. 예를 들어, while 루프 대신 for 루프를 사용하여 FizzBuzz 프로그램을 작성할 수 있습니다. 또한, 양쪽 끝을 모두 포함하는 범위를 위해 ..= 표기법을 사용할 수 있습니다. for 반복문은 iter 를 사용하여 컬렉션의 각 요소를 참조하거나, into_iter 를 사용하여 컬렉션을 소비하거나, iter_mut 를 사용하여 컬렉션의 각 요소를 가변적으로 참조하는 등 다양한 방법으로 반복자와 상호 작용할 수 있습니다. 각 방법은 컬렉션 내 데이터에 대한 다른 뷰를 제공하여 서로 다른 작업을 수행할 수 있도록 합니다.",
+      "meta": {
+        "title": "Rust 프로그래밍 | for 반복문과 범위",
+        "description": "Rust 프로그래밍 언어에서 for 반복문과 범위를 사용하는 방법을 배우세요. 컬렉션과 상호 작용하기 위한 다양한 반복자 메서드를 탐색하세요.",
+        "keywords": "Rust, for 반복문, 범위, 반복자, FizzBuzz, 프로그래밍 튜토리얼, Rust for 루프, Rust 범위, Rust 반복자, Rust FizzBuzz"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "for 반복문",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Laços e Intervalos em Rust",
+      "description": "Neste laboratório, aprendemos a usar laços `for` e intervalos em Rust. Podemos usar o laço `for` juntamente com a notação de intervalo `a..b` para iterar sobre uma sequência de valores. Por exemplo, podemos escrever o programa FizzBuzz usando um laço `for` em vez de um laço `while`. Além disso, podemos usar a notação `..=` para um intervalo inclusivo em ambas as extremidades. O laço `for` também pode interagir com iteradores de diferentes maneiras, como usar `iter` para emprestar cada elemento de uma coleção, `into_iter` para consumir a coleção ou `iter_mut` para emprestar mutávelmente cada elemento da coleção. Cada um desses métodos fornece uma visão diferente dos dados dentro da coleção, permitindo diferentes ações.",
+      "meta": {
+        "title": "Programação em Rust | Laços `for` e Intervalos",
+        "description": "Aprenda a usar laços `for` e intervalos na linguagem de programação Rust. Explore diferentes métodos de iteradores para interagir com coleções.",
+        "keywords": "Rust, laços for, intervalos, iteradores, FizzBuzz, tutoriais de programação, programação Rust, laços em Rust, intervalos em Rust, iteradores em Rust"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Laços `for`",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
         }
       }
     }

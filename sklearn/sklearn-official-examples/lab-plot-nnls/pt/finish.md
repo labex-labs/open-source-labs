@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos sobre a regressão de mínimos quadrados não negativos e como ela difere da regressão linear clássica. Usamos o scikit-learn para implementar este algoritmo e compará-lo à regressão linear clássica, gerando dados aleatórios e dividindo-os em um conjunto de treino e um conjunto de teste. Em seguida, ajustamos ambos os modelos aos dados, previmos os valores para o conjunto de teste e calculamos a pontuação R2. Finalmente, comparamos os coeficientes de regressão entre os dois modelos e observamos que a regressão de mínimos quadrados não negativos produz resultados esparsos.

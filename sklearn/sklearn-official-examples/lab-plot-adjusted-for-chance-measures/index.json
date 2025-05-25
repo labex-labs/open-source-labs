@@ -566,6 +566,160 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "클러스터링 성능 평가에서 우연성 조정",
+      "description": "이 실험에서는 균일 분포된 랜덤 레이블링이 일부 클러스터링 평가 지표의 동작에 미치는 영향을 탐구합니다. 클러스터링 알고리즘은 기본적으로 지도 학습이 아닌 방법이며, 평가 지표는 '지도'된 참값 정보를 활용하여 생성된 클러스터의 품질을 정량화합니다. 그러나 조정되지 않은 클러스터링 평가 지표는 세분화된 레이블링에 대해 큰 값을 출력하여 완전히 랜덤할 수 있기 때문에 오해의 소지가 있습니다. 따라서, 조정된 측정값만이 데이터 세트의 다양한 중첩된 하위 샘플에 대해 주어진 k 값에 대한 클러스터링 알고리즘의 평균 안정성을 평가하는 합의 지표로 안전하게 사용될 수 있습니다.",
+      "meta": {
+        "title": "클러스터링 평가 지표 | 비지도 학습",
+        "description": "V-측도, 랜드 지수, 조정된 상호 정보량과 같은 클러스터링 평가 지표에 대한 랜덤 레이블링의 영향을 탐색합니다.",
+        "keywords": "클러스터링, 평가 지표, 비지도 학습, V-측도, 랜드 지수, 조정된 상호 정보량, 클러스터링 알고리즘, 안정성 평가"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "평가할 지표 목록 정의",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "실험 1 - 고정된 참값 레이블과 증가하는 클러스터 수",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "실험 1 결과 플롯팅",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "실험 2 - 클래스 및 클러스터 수 변경",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "실험 2 결과 플롯팅",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Ajustando para o Acaso na Avaliação de Desempenho de Agrupamento",
+      "description": "Este laboratório explora o impacto da rotulação aleatória uniformemente distribuída no comportamento de algumas métricas de avaliação de agrupamento. Os algoritmos de agrupamento são fundamentalmente métodos de aprendizado não supervisionado, e as métricas de avaliação que utilizam informações de \"verdade fundamental\" supervisionada para quantificar a qualidade dos clusters resultantes. No entanto, métricas de avaliação de agrupamento não ajustadas podem ser enganosas, pois produzem valores elevados para rotulações detalhadas, que podem ser totalmente aleatórias. Portanto, apenas as medidas ajustadas podem ser usadas com segurança como um índice de consenso para avaliar a estabilidade média dos algoritmos de agrupamento para um determinado valor de k em vários subconjuntos sobrepostos do conjunto de dados.",
+      "meta": {
+        "title": "Métricas de Avaliação de Agrupamento | Aprendizado Não Supervisionado",
+        "description": "Explore o impacto da rotulação aleatória em métricas de avaliação de agrupamento, como V-measure, Índice Rand e Informação Mútua Ajustada.",
+        "keywords": "agrupamento, métricas de avaliação, aprendizado não supervisionado, V-measure, Índice Rand, Informação Mútua Ajustada, avaliação de algoritmos de agrupamento, estabilidade de algoritmos de agrupamento, rotulação aleatória, conjuntos de dados"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Definindo a Lista de Métricas para Avaliação",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Experimento 1 - Rótulos de Verdade Fundamentais Fixos e Número Crescente de Clusters",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotando os Resultados do Experimento 1",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Experimento 2 - Variando o Número de Classes e Clusters",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotando os Resultados do Experimento 2",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

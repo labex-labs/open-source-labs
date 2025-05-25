@@ -1,0 +1,3 @@
+# Interpretar Resultados
+
+Podemos observar que ambos os modelos HGBT e RF melhoram ao aumentar o número de árvores no conjunto. No entanto, as pontuações atingem um platô onde adicionar novas árvores apenas torna o ajuste e a pontuação mais lentos. O modelo RF atinge esse platô mais cedo e nunca consegue alcançar a pontuação de teste do modelo HGBDT maior. Os modelos HGBT dominam uniformemente os modelos RF no "trade-off entre pontuação de teste e velocidade de treinamento" e o "trade-off entre pontuação de teste e velocidade de predição" também pode ser mais favorável aos HGBT. O HGBT quase sempre oferece um trade-off velocidade-precisão mais favorável do que o RF, seja com os hiperparâmetros padrão ou incluindo o custo de ajuste de hiperparâmetros.

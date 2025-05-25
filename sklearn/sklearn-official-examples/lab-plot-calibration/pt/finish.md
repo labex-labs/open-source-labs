@@ -1,0 +1,3 @@
+# Sumário
+
+Neste laboratório, geramos um conjunto de dados sintético, utilizamos Naive Bayes Gaussiano para classificação e comparamos a probabilidade estimada usando um classificador Naive Bayes Gaussiano sem calibração, com calibração sigmóide e com calibração isotônica não paramétrica. Em seguida, plotamos os dados e as probabilidades previstas. Ao comparar as perdas do score de Brier, descobrimos que apenas o modelo não paramétrico é capaz de fornecer uma calibração de probabilidade que retorna probabilidades próximas a 0,5 para a maioria das amostras pertencentes ao cluster central com rótulos heterogêneos. Isso resulta em uma melhoria significativa do score de Brier.

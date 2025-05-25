@@ -7,7 +7,7 @@ node_indicator = clf.decision_path(X_test)
 leaf_id = clf.apply(X_test)
 
 sample_id = 0
-# 获取样本 `sample_id` 所经过的节点 ID，即行`sample_id`
+# 获取样本 `sample_id` 所经过的节点 ID，即行 `sample_id`
 node_index = node_indicator.indices[
     node_indicator.indptr[sample_id] : node_indicator.indptr[sample_id + 1]
 ]

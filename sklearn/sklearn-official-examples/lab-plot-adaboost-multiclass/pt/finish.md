@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, exploramos como o boosting pode melhorar a precisão de previsão em um problema multiclasse. Usamos um conjunto de dados construído a partir de uma distribuição normal padrão de dez dimensões, definindo três classes separadas por esferas concêntricas aninhadas de dez dimensões. Comparamos o desempenho dos algoritmos SAMME e SAMME.R e plotamos o erro de teste, o erro de classificação e o peso de reforço de cada modelo. Os resultados mostraram que o SAMME.R geralmente converge mais rapidamente que o SAMME, alcançando um erro de teste menor com menos iterações de boosting.

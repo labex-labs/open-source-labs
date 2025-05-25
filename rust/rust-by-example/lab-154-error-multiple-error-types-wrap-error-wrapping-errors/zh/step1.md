@@ -34,14 +34,14 @@ impl error::Error for DoubleError {
     fn source(&self) -> Option<&(dyn error::Error + 'static)> {
         match *self {
             DoubleError::EmptyVec => None,
-            // 原因是底层实现错误类型。它会隐式转换为 trait 对象 `&error::Error`。这之所以可行，是因为底层类型已经实现了`Error` trait。
+            // 原因是底层实现错误类型。它会隐式转换为 trait 对象 `&error::Error`。这之所以可行，是因为底层类型已经实现了 `Error` trait。
             DoubleError::Parse(ref e) => Some(e),
         }
     }
 }
 
-// 实现从 `ParseIntError`到`DoubleError` 的转换。
-// 如果需要将 `ParseIntError`转换为`DoubleError`，`?` 会自动调用此函数。
+// 实现从 `ParseIntError` 到 `DoubleError` 的转换。
+// 如果需要将 `ParseIntError` 转换为 `DoubleError`，`?` 会自动调用此函数。
 impl From<ParseIntError> for DoubleError {
     fn from(err: ParseIntError) -> DoubleError {
         DoubleError::Parse(err)
@@ -50,7 +50,7 @@ impl From<ParseIntError> for DoubleError {
 
 fn double_first(vec: Vec<&str>) -> Result<i32> {
     let first = vec.first().ok_or(DoubleError::EmptyVec)?;
-    // 这里我们隐式使用了 `From`的`ParseIntError` 实现（我们上面定义的）来创建一个`DoubleError`。
+    // 这里我们隐式使用了 `From` 的 `ParseIntError` 实现（我们上面定义的）来创建一个 `DoubleError`。
     let parsed = first.parse::<i32>()?;
 
     Ok(2 * parsed)

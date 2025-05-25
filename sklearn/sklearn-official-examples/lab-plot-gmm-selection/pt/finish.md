@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como realizar a seleção de modelos com Modelos de Mistura Gaussiana (GMM) usando critérios de teoria da informação. Usamos o Critério de Informação de Akaike (AIC) e o Critério de Informação de Bayes (BIC) para selecionar o melhor modelo. Geramos dois componentes amostrando aleatoriamente a distribuição normal padrão. Um componente foi mantido esférico, mas deslocado e redimensionado. O outro foi deformado para ter uma matriz de covariância mais geral. Visualizamos os diferentes componentes, treinamos e selecionamos o melhor modelo, plotamos as pontuações BIC e plotamos o melhor modelo.

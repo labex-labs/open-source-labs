@@ -1112,6 +1112,314 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "이웃 성분 분석을 이용한 차원 축소",
+      "description": "이 실습에서는 scikit-learn 라이브러리를 사용하여 이웃 성분 분석 (NCA) 을 차원 축소에 적용하는 방법을 보여줍니다. 이 실습에서는 Digits 데이터 세트에 적용된 다른 (선형) 차원 축소 방법과 NCA 를 비교합니다. Digits 데이터 세트는 각 클래스당 약 180 개의 샘플을 포함하여 0 부터 9 까지의 숫자 이미지를 포함합니다.",
+      "meta": {
+        "title": "이웃 성분 분석 | 차원 축소 | Digits 데이터셋",
+        "description": "scikit-learn 라이브러리를 사용하여 이웃 성분 분석 (NCA) 을 차원 축소에 적용하는 방법을 배우세요. Digits 데이터셋을 탐색하고 다른 선형 차원 축소 방법과 NCA 를 비교해 보세요.",
+        "keywords": "이웃 성분 분석, 차원 축소, Digits 데이터셋, Scikit-learn, PCA, LDA, KNN, 차원 축소 방법, 머신러닝, 데이터 분석"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "라이브러리 가져오기",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "Digits 데이터셋 로드",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "데이터셋 분할",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "변수 정의",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "PCA 를 이용한 차원 축소",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "선형 판별 분석을 이용한 차원 축소",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify6-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "근접성 기반 요소 분석을 이용한 차원 축소",
+            "text": "ko/step7.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify7-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "KNN 분류기를 사용하여 방법 평가",
+            "text": "ko/step8.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify8-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "비교할 방법 목록 생성",
+            "text": "ko/step9.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify9-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "모델 학습 및 테스트 정확도 평가",
+            "text": "ko/step10.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify10-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "예측된 점들을 플롯하고 평가 점수 표시",
+            "text": "ko/step11.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify11-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "차트 표시",
+            "text": "ko/step12.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify12-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Redução de Dimensionalidade com Análise de Componentes de Vizinhança",
+      "description": "Este laboratório demonstra como aplicar a Análise de Componentes de Vizinhança (NCA) para redução de dimensionalidade utilizando a biblioteca scikit-learn. Este laboratório compara a NCA com outros métodos de redução de dimensionalidade (lineares) aplicados ao conjunto de dados Digits. O conjunto de dados Digits contém imagens de dígitos de 0 a 9 com aproximadamente 180 amostras de cada classe.",
+      "meta": {
+        "title": "Análise de Componentes de Vizinhança | Redução de Dimensionalidade | Conjunto de Dados Digits",
+        "description": "Aprenda como aplicar a Análise de Componentes de Vizinhança (NCA) para redução de dimensionalidade usando a biblioteca scikit-learn. Explore o conjunto de dados Digits e compare a NCA com outros métodos lineares de redução de dimensionalidade.",
+        "keywords": "Análise de Componentes de Vizinhança, Redução de Dimensionalidade, Conjunto de Dados Digits, Scikit-learn, PCA, LDA, KNN"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importar Bibliotecas",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Carregar o conjunto de dados Digits",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Dividir o conjunto de dados",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir variáveis",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Redução de dimensionalidade com PCA",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Redução de dimensionalidade com Análise Discriminante Linear",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Redução de dimensionalidade com Análise de Componentes de Vizinhança",
+            "text": "pt/step7.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify7-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Utilize o classificador KNN para avaliar os métodos",
+            "text": "pt/step8.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify8-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Criar lista de métodos a serem comparados",
+            "text": "pt/step9.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify9-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Ajustar modelos e avaliar a precisão do teste",
+            "text": "pt/step10.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify10-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar os pontos projetados e exibir a pontuação de avaliação",
+            "text": "pt/step11.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify11-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Exibir gráficos",
+            "text": "pt/step12.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify12-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

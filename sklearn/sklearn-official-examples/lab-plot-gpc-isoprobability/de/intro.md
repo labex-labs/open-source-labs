@@ -1,6 +1,6 @@
 # Einführung
 
-In diesem Lab wird gezeigt, wie man Gaussian Process Classification (GPC) in der scikit-learn-Bibliothek für Python verwendet. Ziel ist es, zu zeigen, wie man ein GPC-Modell trainiert und testet, iso-Wahrscheinlichkeitslinien zeichnet und die Klassifizierungsleistung计算.
+In diesem Lab wird gezeigt, wie man Gaussian Process Classification (GPC) in der scikit-learn-Bibliothek für Python verwendet. Ziel ist es, zu zeigen, wie man ein GPC-Modell trainiert und testet, iso-Wahrscheinlichkeitslinien zeichnet und die Klassifizierungsleistung 计算。
 
 ## Tipps für die virtuelle Maschine
 

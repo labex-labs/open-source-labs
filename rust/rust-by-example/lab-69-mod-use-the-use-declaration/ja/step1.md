@@ -17,7 +17,7 @@ fn main() {
 `as`キーワードを使って、インポートを別の名前にバインドすることもできます。
 
 ```rust
-// `deeply::nested::function`パスを `other_function` にバインドします。
+// `deeply::nested::function` パスを `other_function` にバインドします。
 use deeply::nested::function as other_function;
 
 fn function() {

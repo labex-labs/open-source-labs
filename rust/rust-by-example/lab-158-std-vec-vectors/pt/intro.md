@@ -1,0 +1,5 @@
+# Introdução
+
+Neste laboratório, aprenderemos sobre vetores, que são _arrays_ redimensionáveis em Rust que podem crescer ou diminuir a qualquer momento. Um vetor é representado usando três parâmetros: um ponteiro para os dados, o comprimento e a capacidade. A capacidade indica quanta memória é reservada para o vetor, e quando o comprimento ultrapassa a capacidade, o vetor é realocado com uma capacidade maior. Podemos coletar iteradores em vetores usando o método `collect`, inicializar vetores usando a _macro_ `vec!`, inserir novos elementos no final usando o método `push` e obter o número de elementos usando o método `len`. Também podemos acessar elementos usando indexação, remover o último elemento usando o método `pop` e iterar sobre o vetor usando os métodos `iter` ou `iter_mut`. Adicionalmente, existem mais métodos disponíveis para vetores no módulo `std::vec`.
+
+> **Nota:** Se o laboratório não especificar um nome de arquivo, você pode usar qualquer nome de arquivo que desejar. Por exemplo, você pode usar `main.rs`, compilar e executá-lo com `rustc main.rs && ./main`.

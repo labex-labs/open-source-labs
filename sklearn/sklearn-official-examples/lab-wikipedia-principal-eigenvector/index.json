@@ -566,6 +566,160 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "위키피디아 페이지랭크와 무작위 SVD",
+      "description": "이 실험에서는 위키피디아 문서 내부의 링크 그래프를 분석하여 고유 벡터 중심성에 따라 문서의 상대적 중요도를 기준으로 문서를 랭킹합니다. 전통적인 주요 고유 벡터 계산 방법은 멱승 반복법입니다. 이번 실험에서는 scikit-learn 에 구현된 Martinsson 의 무작위 SVD 알고리즘을 사용합니다.",
+      "meta": {
+        "title": "무작위 SVD 를 이용한 위키피디아 링크 그래프 분석",
+        "description": "고유 벡터 중심성을 활용하여 무작위 SVD 를 통해 위키피디아 문서의 중요도를 랭킹하는 방법을 탐색합니다.",
+        "keywords": "머신러닝, 그래프 분석, 고유 벡터 중심성, 페이지랭크, 무작위 SVD, 위키피디아, scikit-learn, 머신러닝 실습, scikit-learn 실습, 위키피디아 문서 중요도, 문서 랭킹, SVD 알고리즘"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "데이터 다운로드 (이미 디스크에 있는 경우 제외)",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "리디렉션 파일 로드",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "인접 행렬 계산",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "랜덤화된 SVD 를 사용하여 주요 특이 벡터 계산",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "중심성 점수 계산",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Classificação de Páginas da Wikipédia com SVD Aleatorizado",
+      "description": "Neste laboratório, analisaremos o grafo de links entre artigos da Wikipédia para classificá-los por importância relativa com base na centralidade do autovetor. O método tradicional para calcular o autovetor principal é a iteração de potência. Aqui, utilizaremos o algoritmo SVD Aleatorizado de Martinsson, implementado no scikit-learn.",
+      "meta": {
+        "title": "Analisando o Grafo de Links da Wikipédia com SVD Aleatorizado",
+        "description": "Explore o poder do SVD Aleatorizado para classificar artigos da Wikipédia por importância usando a centralidade do autovetor.",
+        "keywords": "machine learning, análise de grafos, centralidade do autovetor, pagerank, svd aleatorizado, wikipedia, scikit-learn, playground de machine learning, playground scikit-learn, classificação de artigos wikipedia, análise de rede wikipedia"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Baixar os dados, se ainda não estiverem no disco",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Carregar os arquivos de redirecionamento",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Calculando a matriz de adjacência",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Calculando o Vetor Singular Principal usando SVD Aleatorizado",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Calculando as pontuações de centralidade",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

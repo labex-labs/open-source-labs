@@ -1,0 +1,5 @@
+# Introdução
+
+Neste laboratório, aprendemos sobre testes unitários em Rust. Testes unitários são funções Rust que verificam o código não-teste realizando a configuração, executando o código e afirmando os resultados. Estes testes são escritos em um módulo `tests` com o atributo `#[cfg(test)]` e marcados com o atributo `#[test]`. Os testes podem falhar se algo na função de teste falhar (panic), e macros auxiliares como `assert!`, `assert_eq!`, e `assert_ne!` são usadas para afirmações. Rust 2018 permite que testes unitários retornem `Result<()>` para usar o operador `?` para testes concisos. Há também suporte para testar falhas (panics) usando o atributo `#[should_panic]`. Testes específicos podem ser executados usando o nome do teste com o comando `cargo test`, e testes podem ser ignorados usando o atributo `#[ignore]` ou executando `cargo test -- --ignored`.
+
+> **Nota:** Se o laboratório não especificar um nome de arquivo, você pode usar qualquer nome de arquivo que desejar. Por exemplo, você pode usar `main.rs`, compilar e executá-lo com `rustc main.rs && ./main`.

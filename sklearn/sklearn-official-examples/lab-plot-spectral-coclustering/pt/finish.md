@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos a gerar um conjunto de dados e a realizar o biclustering utilizando o algoritmo de Co-Clustering Espectral. O conjunto de dados original foi gerado usando a função `make_biclusters`, que criou uma matriz com valores pequenos e implantou biclusters com valores grandes. Embaralhamos as linhas e colunas do conjunto de dados e o passamos para o algoritmo de Co-Clustering Espectral. Calculamos a pontuação de consenso dos biclusters e reorganizamos o conjunto de dados embaralhado para tornar os biclusters contíguos. Finalmente, visualizamos os biclusters para mostrar a precisão com que o algoritmo os encontrou.

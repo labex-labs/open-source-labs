@@ -1,0 +1,3 @@
+# Resumo
+
+Neste tutorial, aprendemos sobre as curvas de Comércio de Erros de Detecção (DET) e as comparámos com as curvas Característica Operacional do Receptor (ROC). Usámos o scikit-learn para gerar dados sintéticos e comparar o desempenho estatístico de dois classificadores através de limiares usando as curvas ROC e DET. As curvas DET são uma variação das curvas ROC, onde a Taxa de Falso Negativo (FNR) é plotada no eixo y em vez da Taxa de Verdadeiro Positivo (TPR). As curvas DET fornecem feedback direto sobre o trade-off de erro de detecção para auxiliar na análise do ponto de operação, tornando-as uma ferramenta útil para avaliar o desempenho de algoritmos de classificação.

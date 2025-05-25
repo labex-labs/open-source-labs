@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, comparamos quatro pipelines diferentes para lidar com recursos categóricos em estimadores de Gradient Boosting usando o conjunto de dados de Habitação de Ames. Descobrimos que a exclusão de recursos categóricos levou a um desempenho de previsão pior e que os três modelos que utilizaram recursos categóricos apresentaram taxas de erro comparáveis. A codificação one-hot dos recursos categóricos foi de longe o método mais lento, enquanto tratar os recursos categóricos como valores ordinais e usar o suporte categórico nativo do estimador HistGradientBoostingRegressor teve tempos de ajuste semelhantes. Quando o número total de divisões foi limitado, a estratégia de suporte categórico nativo apresentou o melhor desempenho.

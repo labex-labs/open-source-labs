@@ -192,7 +192,7 @@
     {
       "lang": "ja",
       "title": "Rust における演算子のオーバーロード",
-      "description": "この実験では、Rust における演算子のオーバーロードと、トレイトを通じてそれを実現する方法を探ります。Rust の演算子は、トレイトを使用してオーバーロードできます。これにより、演算子は入力引数に基づいて異なるタスクを実行できます。たとえば、`+`演算子は `add`メソッドのシンタックス・シュガーであり、`Add`トレイトの実装者によって使用できます。演算子をオーバーロードするトレイト、`Add`を含めて、`core::ops`にあります。提供された Rust コードは、カスタム型`Foo`と`Bar`に対して`+`演算子をオーバーロードする方法を示しており、それぞれ異なる出力型`FooBar`と`BarFoo` を生成します。",
+      "description": "この実験では、Rust における演算子のオーバーロードと、トレイトを通じてそれを実現する方法を探ります。Rust の演算子は、トレイトを使用してオーバーロードできます。これにより、演算子は入力引数に基づいて異なるタスクを実行できます。たとえば、`+` 演算子は `add`メソッドのシンタックス・シュガーであり、`Add`トレイトの実装者によって使用できます。演算子をオーバーロードするトレイト、`Add` を含めて、`core::ops` にあります。提供された Rust コードは、カスタム型 `Foo`と `Bar`に対して`+` 演算子をオーバーロードする方法を示しており、それぞれ異なる出力型`FooBar` と `BarFoo` を生成します。",
       "meta": {
         "title": "Rust における演算子のオーバーロードをマスターする",
         "description": "Rust における演算子のオーバーロードの力を探求し、独自の動作を持つカスタム型を作成する方法を学びましょう。",
@@ -252,6 +252,72 @@
         "finish": {
           "text": "ru/finish.md",
           "title": "Резюме"
+        }
+      }
+    },
+    {
+      "lang": "ko",
+      "title": "Rust 에서의 연산자 오버로딩",
+      "description": "이 랩에서는 Rust 에서 연산자 오버로딩을 살펴보고 트레이트를 통해 어떻게 구현할 수 있는지 알아봅니다. Rust 의 연산자는 트레이트를 사용하여 오버로딩할 수 있으며, 이를 통해 입력 인수에 따라 다른 작업을 수행할 수 있습니다. 예를 들어, + 연산자는 add 메서드의 구문적 설탕이며 Add 트레이트를 구현하는 모든 객체에서 사용할 수 있습니다. Add 를 포함하여 연산자를 오버로딩하는 트레이트는 core::ops 에서 찾을 수 있습니다. 제공된 Rust 코드는 사용자 정의 타입 Foo 와 Bar 에 대해 + 연산자를 오버로딩하여 각각 다른 출력 타입 FooBar 와 BarFoo 를 생성하는 방법을 보여줍니다.",
+      "meta": {
+        "title": "Rust 연산자 오버로딩 마스터하기",
+        "description": "Rust 에서 연산자 오버로딩의 강력함을 탐구하고 고유한 동작을 가진 사용자 정의 타입을 만드는 방법을 배우세요.",
+        "keywords": "러스트 플레이그라운드, 소프트웨어 개발, 러스트 튜터, 러스트 온라인 컴파일러, 연산자 오버로딩, 러스트 명령어, 트레이트, 러스트 연습, 러스트 온라인 플레이그라운드, 러스트 온라인"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "연산자 오버로딩",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Sobrecarga de Operadores em Rust",
+      "description": "Neste laboratório, exploramos a sobrecarga de operadores em Rust e como ela pode ser alcançada através de traits. Os operadores em Rust podem ser sobrecarregados usando traits, o que lhes permite realizar diferentes tarefas com base em seus argumentos de entrada. O operador +, por exemplo, é açúcar sintático para o método add e pode ser usado por qualquer implementador da trait Add. As traits que sobrecarregam operadores, incluindo Add, podem ser encontradas em core::ops. O código Rust fornecido demonstra como sobrecarregar o operador + para tipos personalizados Foo e Bar, resultando em diferentes tipos de saída FooBar e BarFoo, respectivamente.",
+      "meta": {
+        "title": "Dominando a Sobrecarga de Operadores em Rust - Guia Completo",
+        "description": "Explore o poder da sobrecarga de operadores em Rust e aprenda a criar tipos personalizados com comportamentos únicos. Domine as técnicas de programação em Rust com este tutorial prático.",
+        "keywords": "rust playground, desenvolvimento de software, tutorial rust, compilador online rust, sobrecarga de operadores, comandos rust, traits, prática rust, playground online rust, rust online, programação rust, tutorial rust português"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Sobrecarga de Operadores",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
         }
       }
     }

@@ -1,0 +1,3 @@
+# Transformando Nosso Servidor de Thread Única em um Servidor Multithread
+
+Atualmente, o servidor processará cada requisição por vez, o que significa que ele não processará uma segunda conexão até que a primeira termine o processamento. Se o servidor receber cada vez mais requisições, essa execução serial se tornará cada vez menos otimizada. Se o servidor receber uma requisição que leva muito tempo para processar, as requisições subsequentes terão que esperar até que a requisição demorada seja finalizada, mesmo que as novas requisições possam ser processadas rapidamente. Precisaremos corrigir isso, mas primeiro analisaremos o problema em ação.

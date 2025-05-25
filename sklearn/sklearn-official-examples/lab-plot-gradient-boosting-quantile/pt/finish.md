@@ -1,0 +1,3 @@
+# Resumo
+
+Este laboratório demonstrou como usar regressão de quantil para criar intervalos de previsão usando o scikit-learn. Geramos dados sintéticos para um problema de regressão, aplicamos a função a eles e criamos observações da variável-alvo usando uma distribuição log-normal. Dividimos os dados em conjuntos de treino e teste, ajustamos regressores de quantil não-lineares e de mínimos quadrados, e criamos um conjunto de avaliação com valores de entrada igualmente espaçados, abrangendo a faixa [0, 10]. Comparámos a mediana prevista com a média prevista, analisámos as métricas de erro e calibramos o intervalo de confiança. Finalmente, ajustámos os hiperparâmetros dos regressores de quantil.
