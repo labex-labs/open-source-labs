@@ -1,6 +1,6 @@
 # Einführung
 
-In diesem Lab werden wir untersuchen, wie man mit Text-Daten mithilfe von scikit-learn, einer beliebten Machine-Learning-Bibliothek in Python, umgeht. Wir werden lernen, wie man Text-Daten lädt, sie vorverarbeitet, Merkmale extrahiert, ein Modell trainiert und dessen Leistung计算t.
+In diesem Lab werden wir untersuchen, wie man mit Text-Daten mithilfe von scikit-learn, einer beliebten Machine-Learning-Bibliothek in Python, umgeht. Wir werden lernen, wie man Text-Daten lädt, sie vorverarbeitet, Merkmale extrahiert, ein Modell trainiert und dessen Leistung 计算 t.
 
 ## VM-Tipps
 

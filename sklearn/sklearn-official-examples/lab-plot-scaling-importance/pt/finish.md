@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos sobre a importância da escala de recursos em aprendizado de máquina e seu efeito no desempenho do modelo. Exploramos o efeito da escala de recursos em um modelo de vizinhos mais próximos (K-NN) e na redução de dimensionalidade por PCA. Também treinamos um modelo de regressão logística com dados reduzidos por PCA para avaliar o efeito da escala de recursos no desempenho do modelo. Descobrimos que escalar os recursos antes de reduzir a dimensionalidade resulta em componentes com a mesma ordem de grandeza e melhora a separabilidade das classes, levando a um melhor desempenho do modelo.

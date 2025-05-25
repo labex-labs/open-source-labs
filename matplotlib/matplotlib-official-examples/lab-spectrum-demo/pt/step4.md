@@ -1,0 +1,3 @@
+# Interpretar os gráficos
+
+Podemos ver que o primeiro gráfico mostra o sinal no domínio do tempo. O segundo gráfico mostra o espectro de magnitude do sinal, que nos informa a força dos diferentes componentes de frequência no sinal. O terceiro gráfico mostra o espectro de magnitude logarítmica, que é útil para visualizar todo o espectro quando há valores muito grandes e muito pequenos. O quarto gráfico mostra o espectro de fase, que nos informa o deslocamento de fase de cada componente de frequência no sinal. Finalmente, o quinto gráfico mostra o espectro de ângulo, que é semelhante ao espectro de fase, mas usa radianos em vez de graus.

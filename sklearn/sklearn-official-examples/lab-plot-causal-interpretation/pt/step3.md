@@ -1,0 +1,3 @@
+# Treinar modelos preditivos com observações parciais
+
+Treinamos novamente um modelo preditivo, mas desta vez omitimos a característica de capacidade, que não é observada ou apenas estimada a partir de proxies que inadvertidamente medem também a educação (por exemplo, através de testes de QI). Prevemos novamente os salários por hora utilizando características como experiência, salário por hora dos pais e diploma universitário. Em seguida, verificamos se os coeficientes do modelo são diferentes do verdadeiro modelo gerador. Para compensar a variável omitida, o modelo infla o coeficiente da característica de diploma universitário. Portanto, interpretar este valor de coeficiente como um efeito causal do verdadeiro modelo gerador é incorreto.

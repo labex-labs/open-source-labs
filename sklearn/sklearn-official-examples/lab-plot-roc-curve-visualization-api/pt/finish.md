@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, exploramos como usar a API de visualização do scikit-learn para plotar curvas ROC para dois classificadores diferentes. Começamos carregando o conjunto de dados de vinho e treinando um classificador de vetores de suporte nos dados de treinamento. Em seguida, plotamos a curva ROC para este classificador usando a função `RocCurveDisplay`. Finalmente, treinamos um classificador de floresta aleatória e plotamos sua curva ROC ao lado da curva ROC do SVC. A API de visualização do scikit-learn facilita a comparação de diferentes classificadores e a visualização de seu desempenho.

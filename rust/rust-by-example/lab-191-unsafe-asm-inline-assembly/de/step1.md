@@ -281,7 +281,7 @@ assert_eq!(x, 4 * 6);
 
 ## Symboloperanden und ABI-Belege
 
-Standardmäßig nimmt `asm!` an, dass der Inhalt jedes Registers, das nicht als Ausgabe angegeben ist, durch den Assembly-Code beibehalten wird. Der \[`clobber_abi`\]-Parameter von `asm!`告诉编译器，根据给定的调用约定ABI自动插入必要的覆盖操作数：在该ABI中未完全保留的任何寄存器将被视为已覆盖。可以提供多个`clobber_abi`参数，并且将插入所有指定ABI的所有覆盖。
+Standardmäßig nimmt `asm!` an, dass der Inhalt jedes Registers, das nicht als Ausgabe angegeben ist, durch den Assembly-Code beibehalten wird. Der \[`clobber_abi`\]-Parameter von `asm!`告诉编译器，根据给定的调用约定 ABI 自动插入必要的覆盖操作数：在该 ABI 中未完全保留的任何寄存器将被视为已覆盖。可以提供多个`clobber_abi`参数，并且将插入所有指定 ABI 的所有覆盖。
 
 ```rust
 # #[cfg(target_arch = "x86_64")] {

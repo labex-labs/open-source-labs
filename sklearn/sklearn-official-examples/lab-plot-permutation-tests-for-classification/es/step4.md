@@ -31,4 +31,4 @@ ax.set_ylabel("Densidad de probabilidad")
 plt.show()
 ```
 
-注：这里代码中的`densidad`是对`density`不太准确的翻译，实际使用中建议保留`density`英文原文；`tamaño_fuente`是对`fontsize`不太准确的翻译，实际使用中建议保留`fontsize`英文原文 。
+注：这里代码中的`densidad`是对`density`不太准确的翻译，实际使用中建议保留`density`英文原文；`tamaño_fuente`是对`fontsize`不太准确的翻译，实际使用中建议保留`fontsize`英文原文。

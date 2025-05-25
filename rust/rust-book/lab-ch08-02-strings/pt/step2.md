@@ -1,0 +1,5 @@
+# O Que é uma String?
+
+Primeiramente, definiremos o que queremos dizer com o termo _string_. Rust tem apenas um tipo de string na linguagem principal, que é a fatia de string `str`, que geralmente é vista em sua forma emprestada `&str`. No Capítulo 4, falamos sobre _fatias de string_ (string slices), que são referências a alguns dados de string codificados em UTF-8 armazenados em outro lugar. Literais de string, por exemplo, são armazenados no binário do programa e, portanto, são fatias de string.
+
+O tipo `String`, que é fornecido pela biblioteca padrão do Rust em vez de ser codificado na linguagem principal, é um tipo de string codificado em UTF-8, mutável, de propriedade e expansível. Quando os Rustaceans se referem a "strings" em Rust, eles podem estar se referindo tanto ao `String` quanto ao tipo de fatia de string `&str`, e não apenas a um desses tipos. Embora esta seção seja em grande parte sobre `String`, ambos os tipos são amplamente utilizados na biblioteca padrão do Rust, e tanto `String` quanto as fatias de string são codificadas em UTF-8.

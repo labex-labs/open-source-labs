@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como usar o algoritmo de agrupamento K-Means para realizar quantização de cores numa imagem. Carregámos e exibimos a imagem original, convertendo-a para valores em ponto flutuante e remodelando-a num array numpy 2D. Ajustámos o modelo K-Means a uma subamostra dos dados da imagem e utilizámo-lo para prever os índices de cores na imagem completa. Também previmos os índices de cores na imagem completa usando um livro de códigos aleatório. Finalmente, recriámos a imagem comprimida usando o livro de códigos e as etiquetas obtidas do modelo K-Means e do livro de códigos aleatório, exibindo a imagem original juntamente com as imagens quantizadas.

@@ -1,0 +1,3 @@
+# Testes de Integração
+
+No Rust, os testes de integração são inteiramente externos à sua biblioteca. Eles usam sua biblioteca da mesma forma que qualquer outro código usaria, o que significa que eles só podem chamar funções que fazem parte da API pública da sua biblioteca. Seu objetivo é testar se muitas partes da sua biblioteca funcionam corretamente em conjunto. Unidades de código que funcionam corretamente por conta própria podem ter problemas quando integradas, por isso a cobertura de teste do código integrado também é importante. Para criar testes de integração, você primeiro precisa de um diretório `tests`.

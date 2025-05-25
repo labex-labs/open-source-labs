@@ -2,7 +2,7 @@
 
 La **propiedad** es un conjunto de reglas que gobiernan cómo un programa de Rust gestiona la memoria. Todos los programas deben manejar la forma en que utilizan la memoria de un computador mientras se ejecutan. Algunos lenguajes tienen recolección de basura que busca regularmente la memoria que ya no se está utilizando mientras el programa se ejecuta; en otros lenguajes, el programador debe asignar y liberar explícitamente la memoria. Rust utiliza un tercer enfoque: la memoria se gestiona a través de un sistema de propiedad con un conjunto de reglas que el compilador verifica. Si se viola alguna de las reglas, el programa no se compilará. Ninguna de las características de la propiedad ralentizará su programa mientras se está ejecutando.
 
-Debido a que la propiedad es un concepto nuevo para muchos programadores,确实需要一些时间来适应。好消息是，你对 Rust 和所有权系统的规则越有经验，就会发现自然地编写安全高效的代码就越容易。坚持下去！
+Debido a que la propiedad es un concepto nuevo para muchos programadores，确实需要一些时间来适应。好消息是，你对 Rust 和所有权系统的规则越有经验，就会发现自然地编写安全高效的代码就越容易。坚持下去！
 
 Cuando comprenda la propiedad, tendrá una base sólida para entender las características que hacen a Rust único. En este capítulo, aprenderá sobre la propiedad trabajando a través de algunos ejemplos que se centran en una estructura de datos muy común: las cadenas.
 

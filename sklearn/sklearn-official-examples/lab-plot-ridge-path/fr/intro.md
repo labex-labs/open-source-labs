@@ -1,8 +1,8 @@
 # Introduction
 
-Ce laboratoire montre comment utiliser la régression岭 pour estimer les coefficients colinéaires d'un estimateur. La régression岭 est un type de régression linéaire qui applique une régularisation L2 au modèle.
+Ce laboratoire montre comment utiliser la régression 岭 pour estimer les coefficients colinéaires d'un estimateur. La régression 岭 est un type de régression linéaire qui applique une régularisation L2 au modèle.
 
-Dans cet exemple, nous allons générer une matrice de Hilbert 10x10 et utiliser la régression岭 pour estimer les coefficients de la matrice.
+Dans cet exemple, nous allons générer une matrice de Hilbert 10x10 et utiliser la régression 岭 pour estimer les coefficients de la matrice.
 
 ## Conseils sur la VM
 

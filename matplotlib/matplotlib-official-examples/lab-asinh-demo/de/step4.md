@@ -1,6 +1,6 @@
 # Vergleiche das Verhalten von "symlog" und "asinh" auf einem Beispiel y=x-Graphen
 
-Wir werden das Verhalten von "symlog" und "asinh" auf einem Beispiel y=x-Graphen vergleichen. Wir werden denselben Graphen两次mals plotten, einmal mit "symlog" und einmal mit "asinh".
+Wir werden das Verhalten von "symlog" und "asinh" auf einem Beispiel y=x-Graphen vergleichen. Wir werden denselben Graphen 两次 mals plotten, einmal mit "symlog" und einmal mit "asinh".
 
 ```python
 fig1 = plt.figure()

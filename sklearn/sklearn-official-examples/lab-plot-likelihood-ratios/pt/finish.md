@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos a calcular as razões de verossimilhança positiva e negativa para avaliar o poder preditivo de um classificador binário. Essas métricas são independentes da proporção entre as classes no conjunto de teste, tornando-as muito úteis quando os dados disponíveis para um estudo têm uma proporção de classes diferente da aplicação alvo. Também aprendemos a avaliar a variabilidade das medidas das razões de verossimilhança das classes em alguns casos específicos usando validação cruzada e como demonstrar que as razões de verossimilhança das classes são independentes da prevalência da doença.

@@ -253,6 +253,72 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "Rust 구조체에서의 라이프타임 관리",
+      "description": "이 랩에서는 구조체에서 라이프타임을 사용하는 방법을 보여주는 Rust 코드를 다룹니다. 코드는 i32 에 대한 참조를 보유하는 Borrowed 라는 구조체를 포함하며, 이 참조는 구조체 자체보다 오래 지속되어야 합니다. 또한, i32 에 대한 두 개의 참조를 가진 NamedBorrowed 구조체도 있으며, 둘 다 구조체보다 오래 지속되어야 합니다. 추가적으로, i32 이거나 이에 대한 참조일 수 있는 Either 라는 열거형 (enum) 이 있으며, 참조는 열거형보다 오래 지속되어야 합니다. 마지막으로, 코드는 이러한 구조체와 열거형의 인스턴스를 생성하고 내용을 출력하여 Rust 에서 라이프타임의 사용법을 보여줍니다.",
+      "meta": {
+        "title": "Rust 라이프타임 개념 | 프로그래밍 튜토리얼",
+        "description": "Rust 구조체와 열거형에서 라이프타임 사용법을 알아보세요. 참조를 관리하고 데이터 구조체보다 오래 지속되도록 하는 방법을 이해하세요.",
+        "keywords": "Rust, 라이프타임, 구조체, 열거형, 프로그래밍 튜토리얼, 러스트, 참조, 메모리 관리"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "구조체 (Structs)",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Gerenciamento de Tempo de Vida (Lifetime) em Structs do Rust",
+      "description": "Neste laboratório, temos um código Rust que demonstra o uso de *lifetimes* (tempo de vida) em *structs* (estruturas). O código inclui uma *struct* chamada `Borrowed` que contém uma referência a um `i32`, e a referência deve sobreviver à própria *struct*. Há também uma *struct* chamada `NamedBorrowed` com duas referências a `i32`, ambas as quais devem sobreviver à *struct*. Adicionalmente, existe um *enum* chamado `Either` que pode ser um `i32` ou uma referência a um, e a referência deve sobreviver ao *enum*. Finalmente, o código cria instâncias dessas *structs* e *enum*, e imprime seus conteúdos para mostrar o uso de *lifetimes* em Rust.",
+      "meta": {
+        "title": "Conceitos de Tempo de Vida (Lifetime) em Rust | Tutoriais de Programação",
+        "description": "Explore o uso de *lifetimes* (tempo de vida) em *structs* (estruturas) e *enums* (enumerações) do Rust. Entenda como gerenciar referências e garantir que elas sobrevivam às estruturas de dados.",
+        "keywords": "Rust, Lifetimes, Structs, Enums, Tutoriais de Programação, Tempo de Vida, Estruturas, Enumerações"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Structs (Estruturas)",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

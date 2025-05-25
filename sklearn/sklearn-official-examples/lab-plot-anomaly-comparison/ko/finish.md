@@ -1,0 +1,3 @@
+# 요약
+
+이 실험에서는 이차원 데이터셋에 대한 다양한 이상치 탐지 알고리즘을 비교했습니다. 데이터셋은 다중 모드 (높은 밀도의 영역) 를 하나 또는 둘 포함하여 알고리즘이 다중 모드 데이터를 처리하는 능력을 보여주었습니다. 내부 데이터와 외부 데이터 사이의 결정 경계는 Local Outlier Factor (LOF) 를 제외하고 검정색으로 표시되었습니다. LOF 는 이상치 탐지를 위해 새로운 데이터에 적용할 예측 메서드가 없기 때문입니다. :class:`~sklearn.svm.OneClassSVM`은 이상치에 민감하여 이상치 탐지에 매우 효과적이지 않았습니다. :class:`sklearn.linear_model.SGDOneClassSVM`은 확률적 경사 하강법 (SGD) 을 기반으로 한 One-Class SVM 의 구현이었습니다. :class:`sklearn.covariance.EllipticEnvelope`는 데이터가 가우시안 분포를 따른다고 가정하고 타원을 학습했으며, :class:`~sklearn.ensemble.IsolationForest`와 :class:`~sklearn.neighbors.LocalOutlierFactor`는 다중 모드 데이터셋에 대해 상당히 잘 수행하는 것으로 보였습니다.

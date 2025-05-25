@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, utilizamos o KBinsDiscretizer do Scikit-learn para realizar quantização vetorial numa imagem de amostra de um rosto de guaxinim. Usamos 8 níveis de cinza para representar a imagem, que pode ser comprimida para usar apenas 3 bits por pixel. Comparámos as estratégias de agrupamento uniforme e k-means para mapear os valores de pixel para os 8 níveis de cinza. Observámos que a estratégia de agrupamento k-means proporcionou uma distribuição mais equilibrada dos valores de pixel. Também verificámos o consumo de memória das imagens comprimidas e descobrimos que a imagem comprimida utilizava 8 vezes mais memória que a imagem original devido ao uso de uma representação de ponto flutuante de 64 bits para a imagem comprimida.

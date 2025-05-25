@@ -1269,6 +1269,336 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "모듈성 및 오류 처리 개선을 위한 리팩토링",
+      "description": "이 랩에서는 작업을 분리하고, 구성 변수를 그룹화하며, 의미 있는 오류 메시지를 제공하고, 오류 처리 코드를 통합하여 프로그램의 모듈성과 오류 처리를 개선하기 위해 리팩토링을 수행합니다.",
+      "meta": {
+        "title": "모듈성 및 오류 처리 개선 리팩토링 | Rust 프로그래밍",
+        "description": "Rust 프로그램을 리팩토링하여 모듈성과 오류 처리를 개선하는 방법을 알아보세요. 작업을 분리하고, 구성 변수를 그룹화하며, 의미 있는 오류 메시지를 제공하고, 오류 처리 코드를 통합하세요.",
+        "keywords": "Rust 프로그래밍, 리팩토링, 모듈성, 오류 처리, 코드 최적화, Rust 튜토리얼, Rust 학습"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "모듈성 및 오류 처리 개선을 위한 리팩토링",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "바이너리 프로젝트의 관심사 분리",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "인자 파서 추출",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "설정 값 그룹화",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "Config 생성자 만들기",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "오류 처리 수정",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify6-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "오류 메시지 개선",
+            "text": "ko/step7.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify7-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "panic! 호출 대신 결과 반환",
+            "text": "ko/step8.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify8-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "Config::build 호출 및 오류 처리",
+            "text": "ko/step9.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify9-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "main 함수에서 로직 추출",
+            "text": "ko/step10.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify10-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "run 함수에서 오류 반환",
+            "text": "ko/step11.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify11-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "main 함수에서 run 함수가 반환한 오류 처리",
+            "text": "ko/step12.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify12-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "코드를 라이브러리 Crate 로 분할",
+            "text": "ko/step13.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify13-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Refatoração para Melhorar a Modularidade e o Tratamento de Erros",
+      "description": "Neste laboratório, refatoraremos o programa para melhorar a modularidade e o tratamento de erros, separando tarefas, agrupando variáveis de configuração, fornecendo mensagens de erro significativas e consolidando o código de tratamento de erros.",
+      "meta": {
+        "title": "Refatoração em Rust: Melhore a Modularidade e o Tratamento de Erros | Programação Rust",
+        "description": "Aprenda como refatorar seu programa Rust para melhorar a modularidade e o tratamento de erros. Separe tarefas, agrupe variáveis de configuração, forneça mensagens de erro significativas e consolide o código de tratamento de erros.",
+        "keywords": "Programação Rust, Refatoração, Modularidade, Tratamento de Erros, Otimização de Código, Rust"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Refatoração para Melhorar a Modularidade e o Tratamento de Erros",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Separação de Preocupações para Projetos Binários",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Extraindo o Analisador de Argumentos",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Agrupando Valores de Configuração",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Criando um Construtor para Configuração",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Corrigindo o Tratamento de Erros",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Melhorando a Mensagem de Erro",
+            "text": "pt/step7.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify7-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Retornando um Resultado em Vez de Chamar panic!",
+            "text": "pt/step8.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify8-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Chamando Config::build e Tratando Erros",
+            "text": "pt/step9.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify9-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Extraindo Lógica da Função main",
+            "text": "pt/step10.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify10-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Retornando Erros da Função run",
+            "text": "pt/step11.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify11-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Tratamento de Erros Retornados da Função run em main",
+            "text": "pt/step12.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify12-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Dividindo o Código em uma Library Crate",
+            "text": "pt/step13.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify13-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

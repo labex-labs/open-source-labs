@@ -674,6 +674,182 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "참조 사이클은 메모리 누수를 발생시킬 수 있습니다",
+      "description": "이 랩에서는 Rust 의 메모리 안전 보장이 실수로 메모리 누수를 생성하는 것을 어렵게 만들지만 불가능하게 하지는 않는 방법을 살펴봅니다. 특히 Rc<T>와 RefCell<T>를 사용할 때 참조 사이클이 발생하여 값이 drop 되지 않아 메모리 누수가 발생할 수 있습니다.",
+      "meta": {
+        "title": "Rust 에서 참조 사이클로 인한 메모리 누수 발생",
+        "description": "Rust 의 메모리 안전 보장이 Rc 를 사용하여 실수로 메모리 누수를 생성하는 것을 어렵게 만드는 방법을 알아보세요.",
+        "keywords": "러스트 플레이그라운드, rc, 참조 사이클, 메모리 누수, 러스트 튜터, 러스트 온라인 컴파일러, 러스트 명령어, 러스트 연습, 러스트 온라인, 러스트 온라인 플레이그라운드"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "참조 사이클은 메모리 누수를 발생시킬 수 있습니다",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "참조 사이클 생성하기",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "Weak<T>를 사용하여 참조 사이클 방지하기",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "트리 자료 구조 생성: 자식 노드를 가진 노드",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "자식 노드에서 부모 노드로의 참조 추가",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "strong_count 및 weak_count 변경 시각화",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다",
+                "file": "verify6-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Ciclos de Referência Podem Causar Vazamento de Memória",
+      "description": "Neste laboratório, exploramos como as garantias de segurança de memória do Rust tornam difícil, mas não impossível, criar acidentalmente vazamentos de memória, especificamente ao usar Rc<T> e RefCell<T>, o que pode resultar em ciclos de referência que impedem que os valores sejam descartados e, portanto, vazem memória.",
+      "meta": {
+        "title": "Ciclos de Referência e Vazamento de Memória em Rust - Tutorial",
+        "description": "Explore como as garantias de segurança de memória do Rust tornam difícil, mas não impossível, criar vazamentos de memória acidentalmente usando Rc. Aprenda sobre ciclos de referência e como evitá-los.",
+        "keywords": "rust playground, rc, ciclos de referência, vazamento de memória, tutorial rust, compilador online rust, comandos rust, prática rust, rust online, playground rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Ciclos de Referência Podem Causar Vazamento de Memória",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Criando um Ciclo de Referência",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Prevenindo Ciclos de Referência Usando Weak<T>",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Criando uma Estrutura de Dados em Árvore: Um Nó com Nós Filhos",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Adicionando uma Referência de um Filho para seu Pai",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Visualizando as Mudanças em strong_count e weak_count",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

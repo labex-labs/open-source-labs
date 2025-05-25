@@ -901,6 +901,248 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "Matplotlib 날짜 정밀도 및 에포크",
+      "description": "이것은 Matplotlib 에서 날짜 정밀도와 에포크를 처리하는 방법을 보여주는 단계별 랩입니다. Matplotlib 는 이러한 날짜를 인식하고 부동 소수점 숫자로 변환하는 단위 변환기를 사용하여 .datetime 객체 및 numpy.datetime64 객체와 함께 작동할 수 있습니다. Matplotlib 3.3 이전에는 이 변환의 기본값이 '0000-12-31T00:00:00' 이후의 일수를 반환하는 부동 소수점이었습니다. Matplotlib 3.3 부터 기본값은 '1970-01-01T00:00:00' 이후의 일수입니다. 이를 통해 최신 날짜에 대해 더 많은 해상도를 얻을 수 있습니다.",
+      "meta": {
+        "title": "Matplotlib 에서 날짜 정밀도 및 에포크 마스터하기 - 파이썬 데이터 시각화",
+        "description": "Matplotlib 에서 날짜 처리가 어떻게 발전했는지 살펴보고 다양한 날짜 에포크로 작업하는 방법을 알아보세요. 파이썬 데이터 시각화 튜토리얼",
+        "keywords": "파이썬, matplotlib, 데이터 시각화, 날짜, 시계열, 에포크, 파이썬 튜토리얼, matplotlib 날짜, 파이썬 데이터 분석"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "필요한 패키지 임포트",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "에포크를 이전 기본값으로 설정",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "datetime 을 matplotlib 날짜 형식으로 변환",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "날짜 왕복 처리",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "새로운 기본값으로 Epoch 설정",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "새로운 Epoch 를 사용하여 datetime 을 matplotlib 날짜로 변환",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify6-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "새로운 Epoch 로 날짜 왕복 변환",
+            "text": "ko/step7.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify7-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "numpy.datetime64 를 matplotlib 날짜로 변환",
+            "text": "ko/step8.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify8-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "그래프 그리기 (Plotting)",
+            "text": "ko/step9.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify9-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Precisão de Datas e Épocas no Matplotlib",
+      "description": "Este é um laboratório passo a passo que demonstra como lidar com a precisão de datas e épocas no Matplotlib. O Matplotlib pode trabalhar com objetos .datetime e objetos numpy.datetime64 usando um conversor de unidade que reconhece essas datas e as converte em números de ponto flutuante. Antes do Matplotlib 3.3, o padrão para essa conversão retornava um float que representava os dias desde '0000-12-31T00:00:00'. A partir do Matplotlib 3.3, o padrão são os dias a partir de '1970-01-01T00:00:00'. Isso permite mais resolução para datas modernas.",
+      "meta": {
+        "title": "Dominando a Precisão de Datas e Épocas no Matplotlib - Tutorial Python",
+        "description": "Explore a evolução do tratamento de datas no Matplotlib e aprenda a trabalhar com diferentes épocas de datas. Guia completo para visualização de dados em Python.",
+        "keywords": "python, matplotlib, visualização de dados, datas, séries temporais, época, tutorial python, análise de dados, gráficos python, biblioteca matplotlib"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importar os pacotes necessários",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir a época para o padrão antigo",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Converter datetime para data matplotlib",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Converter a data (round-trip)",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir epoch para o novo padrão",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Converter datetime para data matplotlib com novo epoch",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Converter a data com o novo epoch (ida e volta)",
+            "text": "pt/step7.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify7-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Converter numpy.datetime64 para data matplotlib",
+            "text": "pt/step8.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify8-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotagem de Gráficos",
+            "text": "pt/step9.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify9-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

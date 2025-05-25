@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como aproximar uma função com polinómios até um determinado grau utilizando regressão de ridge. Mostramos duas formas diferentes de fazer isto, dados `n_samples` de pontos 1D `x_i`. Usámos a função `make_pipeline` para adicionar características não lineares e demonstramos como estes transformadores são adequados para modelar efeitos não lineares com um modelo linear. Representámos graficamente a função, os pontos de treino e a interpolação utilizando características polinomiais e B-splines. Também representámos separadamente todas as colunas de ambos os transformadores e mostramos os nós da spline. Finalmente, demonstramos o uso de splines periódicas.

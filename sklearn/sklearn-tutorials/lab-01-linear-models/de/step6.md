@@ -1,6 +1,6 @@
 # Perzeptron
 
-Das Perzeptron ist ein einfaches lineares Klassifizierungsalgorithmus, der für das大规模学习geeignet ist. Es aktualisiert sein Modell nur bei Fehlern, was es schneller zu trainieren macht als der stochastic gradient descent (SGD) mit Hinge - Verlust. Die resultierenden Modelle sind auch spärlicher.
+Das Perzeptron ist ein einfaches lineares Klassifizierungsalgorithmus, der für das 大规模学习 geeignet ist. Es aktualisiert sein Modell nur bei Fehlern, was es schneller zu trainieren macht als der stochastic gradient descent (SGD) mit Hinge - Verlust. Die resultierenden Modelle sind auch spärlicher.
 
 Lassen Sie uns ein Perzeptronmodell anpassen.
 

@@ -1,0 +1,5 @@
+# Graceful Shutdown and Cleanup (Encerramento e Limpeza Graciosos)
+
+O código na Listagem 20-20 está respondendo a requisições de forma assíncrona através do uso de um pool de threads, como pretendíamos. Recebemos alguns avisos sobre os campos `workers`, `id` e `thread` que não estamos usando de forma direta, o que nos lembra que não estamos limpando nada. Quando usamos o método menos elegante ctrl-C para interromper a thread principal, todas as outras threads também são interrompidas imediatamente, mesmo que estejam no meio de atender a uma requisição.
+
+Em seguida, implementaremos o trait `Drop` para chamar `join` em cada uma das threads no pool, para que elas possam finalizar as requisições em que estão trabalhando antes de serem fechadas. Então, implementaremos uma maneira de dizer às threads que elas devem parar de aceitar novas requisições e se encerrar. Para ver este código em ação, modificaremos nosso servidor para aceitar apenas duas requisições antes de encerrar graciosamente seu pool de threads.

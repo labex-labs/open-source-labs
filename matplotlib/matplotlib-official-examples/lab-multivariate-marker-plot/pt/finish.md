@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, você aprendeu como usar diferentes propriedades de marcadores para plotar conjuntos de dados multivariados usando a biblioteca Matplotlib do Python. Especificamente, você aprendeu como representar um lançamento de beisebol bem-sucedido como um rosto sorridente com o tamanho do marcador mapeado para a habilidade (skill) do lançador, a rotação do marcador para o ângulo de lançamento (take-off angle) e o impulso (thrust) para a cor do marcador. Seguindo as etapas descritas neste laboratório, você pode criar gráficos semelhantes para seus próprios conjuntos de dados multivariados.

@@ -1,0 +1,3 @@
+# Sumário
+
+Os pipelines e estimadores compostos são ferramentas poderosas no scikit-learn para combinar transformadores e estimadores num único modelo. Eles proporcionam conveniência, seleção de parâmetros e segurança de dados. Os pipelines permitem a encadeamento de estimadores, parâmetros aninhados e armazenamento em cache de transformadores. Estimadores compostos como `TransformedTargetRegressor` e `FeatureUnion` fornecem, respetivamente, transformações e combinação de características. Estes conceitos são essenciais para a construção de modelos de aprendizagem de máquina complexos que pré-processem e lidem eficazmente com dados heterogéneos.

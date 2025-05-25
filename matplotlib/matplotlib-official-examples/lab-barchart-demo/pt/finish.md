@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como criar um gráfico de barras horizontal usando a biblioteca Matplotlib do Python. Usamos um exemplo de professores de educação física que desejam mostrar aos pais como seus filhos se saíram em alguns testes de aptidão física, em relação a outras crianças. Definimos nossos dados usando tuplas nomeadas e definimos funções auxiliares para converter inteiros em strings ordinais e para criar rótulos de pontuação para o eixo y direito. Definimos uma função de plotagem que cria um gráfico de barras horizontal das classificações percentuais para cada teste, em relação à série e ao grupo de gênero do aluno. Em seguida, chamamos a função de plotagem com nossos dados e exibimos o gráfico.

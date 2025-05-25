@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos como criar gráficos de setas usando Matplotlib. Usamos a função `make_arrow_graph()` para plotar o gráfico de setas. Personalizamos o gráfico de setas alterando a propriedade da seta a ser exibida, alterando a forma da seta, ajustando a largura e a separação das setas, alterando a transparência das setas e alterando a cor do rótulo. Também interpretamos o gráfico de setas, entendendo que o comprimento, a largura e a opacidade das setas representam a força da seta, e os rótulos nas setas representam as probabilidades para as bases e as transições de pares.

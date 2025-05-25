@@ -1,0 +1,11 @@
+# Refatoração para Melhorar a Modularidade e o Tratamento de Erros
+
+Para melhorar nosso programa, vamos corrigir quatro problemas relacionados à estrutura do programa e como ele está lidando com possíveis erros. Primeiro, nossa função `main` agora executa duas tarefas: ela analisa argumentos e lê arquivos. À medida que nosso programa cresce, o número de tarefas separadas que a função `main` lida aumentará. À medida que uma função ganha responsabilidades, torna-se mais difícil de raciocinar, mais difícil de testar e mais difícil de alterar sem quebrar uma de suas partes. É melhor separar a funcionalidade para que cada função seja responsável por uma tarefa.
+
+Essa questão também está relacionada ao segundo problema: embora `query` e `file_path` sejam variáveis de configuração do nosso programa, variáveis como `contents` são usadas para executar a lógica do programa. Quanto mais longa a função `main` se torna, mais variáveis precisaremos trazer para o escopo; quanto mais variáveis tivermos no escopo, mais difícil será acompanhar o propósito de cada uma. É melhor agrupar as variáveis de configuração em uma estrutura para deixar claro seu propósito.
+
+O terceiro problema é que usamos `expect` para imprimir uma mensagem de erro quando a leitura do arquivo falha, mas a mensagem de erro apenas imprime `Should have been able to read the file`. A leitura de um arquivo pode falhar de várias maneiras: por exemplo, o arquivo pode estar ausente ou podemos não ter permissão para abri-lo. No momento, independentemente da situação, imprimiríamos a mesma mensagem de erro para tudo, o que não daria nenhuma informação ao usuário!
+
+Em quarto lugar, usamos `expect` repetidamente para lidar com diferentes erros, e se o usuário executar nosso programa sem especificar argumentos suficientes, ele receberá um erro `index out of bounds` do Rust que não explica claramente o problema. Seria melhor se todo o código de tratamento de erros estivesse em um só lugar, para que os futuros mantenedores tivessem apenas um lugar para consultar o código se a lógica de tratamento de erros precisasse ser alterada. Ter todo o código de tratamento de erros em um só lugar também garantirá que estamos imprimindo mensagens que serão significativas para nossos usuários finais.
+
+Vamos abordar esses quatro problemas refatorando nosso projeto.

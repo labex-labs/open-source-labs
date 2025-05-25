@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos a utilizar a função `permutation_test_score` do módulo `sklearn.model_selection` para avaliar a significância de uma pontuação validada cruzadamente usando permutações. Gerámos uma distribuição nula calculando a precisão do classificador em 1000 permutações diferentes do conjunto de dados e calculamos um valor p empírico como a percentagem de permutações para as quais a pontuação obtida é superior à pontuação obtida utilizando os dados originais. Também representámos os resultados para visualizar a distribuição nula e a pontuação obtida nos dados originais.

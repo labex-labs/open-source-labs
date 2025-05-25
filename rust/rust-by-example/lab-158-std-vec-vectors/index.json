@@ -196,7 +196,7 @@
     {
       "lang": "ja",
       "title": "Rust のベクトル：リサイズ可能な配列の基礎",
-      "description": "この実験では、Rust のリサイズ可能な配列であるベクトルについて学びます。ベクトルはいつでも拡大または縮小できます。ベクトルは、データへのポインタ、長さ、および容量の 3 つのパラメータを使用して表されます。容量は、ベクトルに予約されているメモリ量を示し、長さが容量を超えると、ベクトルはより大きな容量で再割り当てされます。`collect`メソッドを使用して反復子をベクトルに収集し、`vec!`マクロを使用してベクトルを初期化し、`push`メソッドを使用して末尾に新しい要素を挿入し、`len`メソッドを使用して要素数を取得できます。また、インデックスを使用して要素にアクセスし、`pop`メソッドを使用して最後の要素を削除し、`iter`または `iter_mut`メソッドを使用してベクトルを反復処理することもできます。さらに、`std::vec` モジュールにはベクトル用のさまざまなメソッドが用意されています。",
+      "description": "この実験では、Rust のリサイズ可能な配列であるベクトルについて学びます。ベクトルはいつでも拡大または縮小できます。ベクトルは、データへのポインタ、長さ、および容量の 3 つのパラメータを使用して表されます。容量は、ベクトルに予約されているメモリ量を示し、長さが容量を超えると、ベクトルはより大きな容量で再割り当てされます。`collect`メソッドを使用して反復子をベクトルに収集し、`vec!`マクロを使用してベクトルを初期化し、`push`メソッドを使用して末尾に新しい要素を挿入し、`len`メソッドを使用して要素数を取得できます。また、インデックスを使用して要素にアクセスし、`pop` メソッドを使用して最後の要素を削除し、`iter` または `iter_mut` メソッドを使用してベクトルを反復処理することもできます。さらに、`std::vec` モジュールにはベクトル用のさまざまなメソッドが用意されています。",
       "meta": {
         "title": "Rust のベクトル：リサイズ可能な配列 | プログラミングチュートリアル",
         "description": "Rust のベクトルについて学びましょう。ベクトルは、いつでも拡大または縮小できるリサイズ可能な配列です。反復子の収集、初期化、挿入、およびベクトルの反復処理などのベクトル操作を探りましょう。",
@@ -256,6 +256,72 @@
         "finish": {
           "text": "ru/finish.md",
           "title": "Резюме"
+        }
+      }
+    },
+    {
+      "lang": "ko",
+      "title": "Rust 벡터: 크기 조절 가능 배열 기본",
+      "description": "이 랩에서는 언제든지 크기를 늘리거나 줄일 수 있는 Rust 의 크기 조절 가능 배열인 벡터에 대해 배우게 됩니다. 벡터는 데이터에 대한 포인터, 길이 및 용량의 세 가지 매개변수를 사용하여 표현됩니다. 용량은 벡터에 대해 예약된 메모리의 양을 나타내며, 길이가 용량을 초과하면 벡터는 더 큰 용량으로 재할당됩니다. collect 메서드를 사용하여 반복자를 벡터로 수집하고, vec! 매크로를 사용하여 벡터를 초기화하고, push 메서드를 사용하여 끝에 새 요소를 삽입하고, len 메서드를 사용하여 요소 수를 얻을 수 있습니다. 또한 인덱싱을 사용하여 요소에 접근하고, pop 메서드를 사용하여 마지막 요소를 제거하고, iter 또는 iter_mut 메서드를 사용하여 벡터를 반복할 수 있습니다. 또한 std::vec 모듈에는 벡터에 사용할 수 있는 더 많은 메서드가 있습니다.",
+      "meta": {
+        "title": "Rust 벡터: 크기 조절 가능 배열 | 프로그래밍 튜토리얼",
+        "description": "언제든지 크기를 늘리거나 줄일 수 있는 크기 조절 가능 배열인 Rust 벡터에 대해 알아보세요. 반복자 수집, 초기화, 삽입 및 벡터 반복과 같은 벡터 연산을 살펴보세요.",
+        "keywords": "Rust, 벡터, 배열, 프로그래밍, 튜토리얼, 러스트 벡터, Rust 배열, 벡터 사용법"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "벡터",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Vetores em Rust: Fundamentos de Arrays Redimensionáveis",
+      "description": "Neste laboratório, aprenderemos sobre vetores, que são arrays redimensionáveis em Rust que podem crescer ou diminuir a qualquer momento. Um vetor é representado usando três parâmetros: um ponteiro para os dados, comprimento e capacidade. A capacidade indica quanta memória é reservada para o vetor, e quando o comprimento ultrapassa a capacidade, o vetor é realocado com uma capacidade maior. Podemos coletar iteradores em vetores usando o método collect, inicializar vetores usando a macro vec!, inserir novos elementos no final usando o método push e obter o número de elementos usando o método len. Também podemos acessar elementos usando indexação, remover o último elemento usando o método pop e iterar sobre o vetor usando os métodos iter ou iter_mut. Além disso, existem mais métodos disponíveis para vetores no módulo std::vec.",
+      "meta": {
+        "title": "Vetores em Rust: Arrays Redimensionáveis | Tutoriais de Programação",
+        "description": "Aprenda sobre vetores em Rust, que são arrays redimensionáveis que podem crescer ou diminuir a qualquer momento. Explore operações de vetores como coleta de iteradores, inicialização, inserção e iteração sobre vetores.",
+        "keywords": "Rust, Vetores, Arrays, Programação, Tutoriais, Array redimensionável"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Vetores",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
         }
       }
     }

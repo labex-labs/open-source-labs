@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, percorremos o processo de implementação da Eliminação Recursiva de Recursos com Validação Cruzada (RFECV) usando o scikit-learn. Geramos uma tarefa de classificação com 15 recursos, dos quais 3 eram informativos, 2 redundantes e 10 não informativos. Usamos regressão logística como estimador e validação cruzada estratificada k-fold com 5 dobras. Plotamos o número de recursos selecionados contra as pontuações de validação cruzada. Descobrimos que o número ótimo de recursos era 3, o que correspondia ao verdadeiro modelo gerador. Também notamos um platô de pontuações equivalentes para 3 a 5 recursos selecionados devido à introdução de recursos correlacionados.

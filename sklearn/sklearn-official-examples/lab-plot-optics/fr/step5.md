@@ -54,4 +54,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-注：这里`gridspec`未翻译，因为它是一个特定的Python绘图布局模块名，一般保留英文更合适。
+注：这里`gridspec`未翻译，因为它是一个特定的 Python 绘图布局模块名，一般保留英文更合适。

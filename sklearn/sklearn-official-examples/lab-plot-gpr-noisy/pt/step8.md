@@ -1,0 +1,3 @@
+# Conclusão
+
+Neste laboratório, aprendemos a utilizar a regressão de processo gaussiano com estimativa do nível de ruído em Python, utilizando a biblioteca scikit-learn. Geramos alguns dados com um único recurso usando uma função seno, adicionamos algum ruído aos dados gerados para criar um conjunto de dados de treinamento mais realista e visualizamos os dados gerados. Criamos um regressor de processo gaussiano usando um kernel aditivo adicionando kernels RBF e WhiteKernel, e visualizamos as previsões feitas pelo regressor de processo gaussiano. Também inspecionamos a Log-Verossimilhança-Marginal (LML) do GaussianProcessRegressor para diferentes hiperparâmetros, a fim de obter uma ideia dos mínimos locais.

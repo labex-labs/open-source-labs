@@ -1,6 +1,6 @@
 # Einführung
 
-In diesem Lab wird die Verwendung der Receiver Operating Characteristic (ROC)-Metrik zur计算 der Qualität von Multiklass-Klassifizierern mit der Scikit-learn-Bibliothek demonstriert.
+In diesem Lab wird die Verwendung der Receiver Operating Characteristic (ROC)-Metrik zur 计算 der Qualität von Multiklass-Klassifizierern mit der Scikit-learn-Bibliothek demonstriert.
 
 ## Tipps für die VM
 

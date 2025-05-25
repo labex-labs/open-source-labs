@@ -3,7 +3,7 @@
 `if let`と同様に、`while let`は厄介な`match`シーケンスをもっと許容可能にすることができます。`i`をインクリメントする次のシーケンスを考えてみましょう。
 
 ```rust
-// 型 `Option<i32>`の`optional` を作成する
+// 型 `Option<i32>` の `optional` を作成する
 let mut optional = Some(0);
 
 // このテストを繰り返し行う
@@ -15,7 +15,7 @@ loop {
                 println!("9 を超えました、終了します！");
                 optional = None;
             } else {
-                println!("`i`は `{:?}` です。もう一度試してください。", i);
+                println!("`i` は `{:?}` です。もう一度試してください。", i);
                 optional = Some(i + 1);
             }
             // ^ インデントが 3 段必要です！
@@ -31,16 +31,16 @@ loop {
 
 ```rust
 fn main() {
-    // 型 `Option<i32>`の`optional` を作成する
+    // 型 `Option<i32>` の `optional` を作成する
     let mut optional = Some(0);
 
-    // これは次のように読み取れます。「`let`が `optional`を`Some(i)` に分解する間、ブロック (`{}`) を評価する。そうでなければ `break` する。」
+    // これは次のように読み取れます。「`let` が `optional` を `Some(i)` に分解する間、ブロック (`{}`) を評価する。そうでなければ `break` する。」
     while let Some(i) = optional {
         if i > 9 {
             println!("9 を超えました、終了します！");
             optional = None;
         } else {
-            println!("`i`は `{:?}` です。もう一度試してください。", i);
+            println!("`i` は `{:?}` です。もう一度試してください。", i);
             optional = Some(i + 1);
         }
         // ^ 右方向のずれが少なく、失敗したケースを明示的に処理する必要がありません。

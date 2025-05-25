@@ -1,6 +1,6 @@
 # Vergleiche die Skalierungen "symlog" und "asinh" für 2D Cauchy-verteilte Zufallszahlen
 
-Schließlich werden wir die Skalierungen "symlog" und "asinh" für 2D Cauchy-verteilte Zufallszahlen vergleichen. Wir werden denselben Graphen两次mals plotten, einmal mit "symlog" und einmal mit "asinh".
+Schließlich werden wir die Skalierungen "symlog" und "asinh" für 2D Cauchy-verteilte Zufallszahlen vergleichen. Wir werden denselben Graphen 两次 mals plotten, einmal mit "symlog" und einmal mit "asinh".
 
 ```python
 fig3 = plt.figure()

@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, aprendemos a utilizar o `TransformedTargetRegressor` da biblioteca scikit-learn. Aplicamos-no a dois conjuntos de dados diferentes para observar os benefícios de transformar os valores-alvo antes de treinar um modelo de regressão linear. Utilizamos dados sintéticos e o conjunto de dados de habitação de Ames para ilustrar o impacto da transformação dos valores-alvo. Observámos que a função logarítmica linearizou os alvos, permitindo uma melhor previsão mesmo com um modelo linear semelhante, como reportado pelo erro absoluto mediano (MedAE). Também observámos que o efeito do transformador foi mais fraco para o conjunto de dados de habitação de Ames, mas ainda resultou num aumento no R2 e numa grande diminuição do MedAE.

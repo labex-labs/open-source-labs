@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, comparamos a importância de características baseada em impureza com a importância por permutação no conjunto de dados Titanic utilizando um classificador de floresta aleatória. Observamos que a importância de características baseada em impureza pode inflar a importância de características numéricas e é tendenciosa para características com alta cardinalidade. A importância por permutação é um melhor indicador da importância das características e não é tendenciosa para características com alta cardinalidade. Também observamos que limitar a capacidade das árvores de sobreajustamento pode diminuir a importância de características não preditivas.

@@ -1,0 +1,5 @@
+# Explicação
+
+- Passo 2: Os dados são definidos usando arrays numpy. Os arrays X e Y são usados para criar uma meshgrid (grade de malha), que é utilizada para calcular os valores Qx e Qz. Os valores Z são então calculados com base nos valores Qx e Qz. O array Zm é criado mascarando valores onde o valor absoluto de Qz é menor que 0.5 vezes o valor máximo de Qz.
+- Passo 3: Uma figura com três subplots (subgráficos) é criada usando o método subplots. A função pcolormesh é usada para criar um gráfico QuadMesh para cada subplot. O primeiro subplot mostra o gráfico sem valores mascarados. O segundo subplot mostra o gráfico com valores mascarados e um mapa de cores personalizado onde a região mascarada é amarela. O terceiro subplot mostra o gráfico com valores mascarados e o mapa de cores padrão, onde a região mascarada é transparente.
+- Passo 4: O gráfico QuadMesh é uma ferramenta útil para visualizar dados 2D. Neste tutorial, aprendemos como usar a função pcolormesh para criar um gráfico QuadMesh e como lidar com dados mascarados no gráfico.

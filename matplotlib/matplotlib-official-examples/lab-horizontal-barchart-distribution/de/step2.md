@@ -3,7 +3,7 @@
 Wir müssen die Kategorien und die Umfrageergebnisse definieren. In diesem Beispiel haben wir eine Umfrage, bei der die Menschen ihre Zustimmung zu Fragen auf einer fünfstufigen Skala bewerteten. Wir werden die Kategorien als `category_names` und die Umfrageergebnisse als `results` definieren.
 
 ```python
-category_names = ['Stark不同意', '不同意',
+category_names = ['Stark 不同意', '不同意',
                   'Weder zustimmen noch ablehnen', 'Zustimmen', 'Stark zustimmen']
 results = {
     'Frage 1': [10, 15, 17, 32, 26],

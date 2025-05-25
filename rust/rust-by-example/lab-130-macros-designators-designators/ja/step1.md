@@ -9,14 +9,14 @@ macro_rules! create_function {
     // `ident` 指定子は、変数/関数名に使用されます。
     ($func_name:ident) => {
         fn $func_name() {
-            // `stringify!`マクロは、`ident` を文字列に変換します。
+            // `stringify!` マクロは、`ident` を文字列に変換します。
             println!("You called {:?}()",
                      stringify!($func_name));
         }
     };
 }
 
-// 上記のマクロを使って、`foo`と `bar` という名前の関数を作成します。
+// 上記のマクロを使って、`foo` と `bar` という名前の関数を作成します。
 create_function!(foo);
 create_function!(bar);
 

@@ -963,6 +963,270 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "선형 회귀를 위한 타겟 변환",
+      "description": "이 실습에서는 scikit-learn 라이브러리의 TransformedTargetRegressor 를 사용하는 방법을 배우고, 선형 회귀 모델 학습 전 타겟 변수를 변환하는 이점을 두 가지 다른 데이터 세트를 통해 살펴봅니다. 합성 데이터와 Ames 주택 데이터 세트를 사용하여 타겟 변수 변환의 영향을 보여줍니다.",
+      "meta": {
+        "title": "머신러닝 | 데이터 변환 | 회귀 분석",
+        "description": "scikit-learn 의 TransformedTargetRegressor 를 사용하여 타겟 변수를 변환하여 선형 회귀 모델을 개선하는 방법을 배우고, 합성 데이터와 Ames 주택 데이터 세트를 탐색합니다.",
+        "keywords": "머신러닝, 데이터 변환, 회귀 분석, scikit-learn, TransformedTargetRegressor, 선형회귀, 타겟변환, 데이터전처리, Ames 주택데이터, 머신러닝기법"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "필요한 라이브러리 가져오기 및 합성 데이터 로드",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify1-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "타겟 분포 시각화",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify2-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "원본 대상에 대한 선형 회귀 모델 학습 및 평가",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify3-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "변환된 대상에 대한 선형 회귀 모델 학습 및 평가",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify4-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "두 모델의 실제 값과 예측 값을 플롯합니다",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify5-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "Ames 주택 데이터를 로드하고 전처리합니다",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify6-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "Ames 주택 데이터의 대상 분포를 플롯합니다",
+            "text": "ko/step7.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify7-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "Ames 주택 데이터의 원본 대상에 대한 선형 회귀 모델을 학습하고 평가합니다",
+            "text": "ko/step8.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify8-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "Ames 주택 데이터의 변환된 대상에 대한 선형 회귀 모델을 학습하고 평가합니다",
+            "text": "ko/step9.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify9-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          },
+          {
+            "title": "두 모델의 실제 값 대 예측 값 및 잔차 대 예측 값 플롯",
+            "text": "ko/step10.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다",
+                "file": "verify10-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Transformando o Alvo para Regressão Linear",
+      "description": "Neste laboratório, aprenderemos a utilizar o TransformedTargetRegressor da biblioteca scikit-learn. Aplicaremos-no a dois conjuntos de dados diferentes para observar os benefícios de transformar os valores-alvo antes de treinar um modelo de regressão linear. Usaremos dados sintéticos e o conjunto de dados de habitação de Ames para ilustrar o impacto da transformação dos valores-alvo.",
+      "meta": {
+        "title": "Aprendizado de Máquina | Transformação de Dados | Análise de Regressão",
+        "description": "Aprenda a usar o TransformedTargetRegressor do scikit-learn para melhorar modelos de regressão linear transformando variáveis-alvo. Explore dados sintéticos e o conjunto de dados de habitação de Ames.",
+        "keywords": "aprendizado de máquina, transformação de dados, análise de regressão, scikit-learn, TransformedTargetRegressor, regressão linear, dados sintéticos, conjunto de dados Ames, modelos de regressão, otimização de modelos, transformação logarítmica, erro absoluto mediano"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importar bibliotecas necessárias e carregar dados sintéticos",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar as distribuições do alvo",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Treinar e avaliar um modelo de regressão linear nos alvos originais",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Treinar e avaliar um modelo de regressão linear nos alvos transformados",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar valores reais vs. previstos para ambos os modelos",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Carregar e pré-processar dados de imóveis de Ames",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar distribuições de destino para dados de imóveis de Ames",
+            "text": "pt/step7.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify7-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Treinar e avaliar um modelo de regressão linear nos alvos originais para dados de imóveis de Ames",
+            "text": "pt/step8.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify8-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Treinar e avaliar um modelo de regressão linear nos alvos transformados para dados de imóveis de Ames",
+            "text": "pt/step9.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify9-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar valores reais vs. previstos e resíduos vs. valores previstos para ambos os modelos",
+            "text": "pt/step10.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify10-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

@@ -26,6 +26,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-In diesem Beispiel übergeben wir ein Array von Namen an die `DataList`-Komponente und rendern es两次. Zum ersten Mal rendern wir eine aufzählungsfreie Liste, während wir zum zweiten Mal eine nummerierte Liste rendern.
+In diesem Beispiel übergeben wir ein Array von Namen an die `DataList`-Komponente und rendern es 两次。Zum ersten Mal rendern wir eine aufzählungsfreie Liste, während wir zum zweiten Mal eine nummerierte Liste rendern.
 
 Bitte klicken Sie auf 'Go Live' in der unteren rechten Ecke, um den Webdienst auf Port 8080 auszuführen. Anschließend können Sie die Registerkarte **Web 8080** aktualisieren, um die Webseite anzuschauen.

@@ -1,0 +1,3 @@
+# Resumo
+
+Neste tutorial, aprendemos como modificar a Toolbar, criar ferramentas personalizadas, adicionar ferramentas e remover ferramentas usando `matplotlib.backend_managers.ToolManager`. Criamos uma ferramenta personalizada chamada `ListTools`, que lista todas as ferramentas controladas pelo `ToolManager`. Também criamos uma ferramenta personalizada chamada `GroupHideTool`, que define a visibilidade de todas as linhas no gráfico que possuem o `gid` especificado como True ou False, dependendo se a ferramenta está habilitada ou desabilitada. Finalmente, adicionamos as ferramentas personalizadas ao `ToolManager`, adicionamos a ferramenta `Show` à `Toolbar` e removemos o botão `forward` da `Toolbar`.

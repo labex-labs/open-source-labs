@@ -644,6 +644,182 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "가우시안 혼합 모델 공분산",
+      "description": "이 튜토리얼에서는 가우시안 혼합 모델 (GMM) 의 서로 다른 공분산 유형을 활용하는 방법을 보여줍니다. GMM 은 종종 클러스터링에 사용되며, 얻은 클러스터를 데이터셋의 실제 클래스와 비교할 수 있습니다. 이 비교를 유효하게 하기 위해 가우시안의 평균을 훈련 세트의 클래스 평균으로 초기화합니다. 아이리스 데이터셋에서 다양한 GMM 공분산 유형을 사용하여 훈련 및 홀드아웃 테스트 데이터에 예측된 레이블을 플롯합니다. GMM 을 구형, 대각, 전체 및 결합 공분산 행렬과 비교하여 성능 향상 순서를 보여줍니다.",
+      "meta": {
+        "title": "가우시안 혼합 모델 공분산 튜토리얼",
+        "description": "가우시안 혼합 모델의 서로 다른 공분산 유형과 클러스터링 성능에 미치는 영향을 탐색합니다.",
+        "keywords": "머신러닝, 가우시안 혼합 모델, 공분산, 사이킷런, 사이킷런 플레이그라운드, 클러스터링, 아이리스 데이터셋, GMM, 공분산 유형, 클러스터 분석, 머신러닝 튜토리얼"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "라이브러리 가져오기",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "아이리스 데이터셋 로드",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "훈련 및 테스트 데이터 준비",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "다양한 공분산 유형에 대한 GMM 추정기를 설정",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "GMM 에 대한 타원형을 플롯하는 함수 정의",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "다양한 공분산 유형에 대한 GMM 플롯",
+            "text": "ko/step6.md",
+            "verify": [
+              {
+                "name": "현재 단계에는 검증이 없습니다.",
+                "file": "verify6-1.sh",
+                "hint": "현재 단계에는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Modelos de Mistura Gaussiana: Tipos de Covariância",
+      "description": "Este tutorial demonstra o uso de diferentes tipos de covariância em modelos de mistura gaussiana (GMMs). Os GMMs são frequentemente utilizados para agrupamento, e podemos comparar os clusters obtidos com as classes reais do conjunto de dados. Inicializamos as médias das gaussianas com as médias das classes do conjunto de treino para tornar esta comparação válida. Usamos o conjunto de dados Iris para plotar as etiquetas previstas nos dados de treino e teste, utilizando vários tipos de covariância GMM. Comparamos GMMs com matrizes de covariância esférica, diagonal, completa e ligada, em ordem crescente de desempenho.",
+      "meta": {
+        "title": "Modelos de Mistura Gaussiana: Tipos de Covariância - Tutorial",
+        "description": "Explore diferentes tipos de covariância em modelos de mistura gaussiana e seu impacto no desempenho de agrupamento.",
+        "keywords": "aprendizagem de máquina, modelo de mistura gaussiana, covariância, scikit-learn, scikit-learn playground, agrupamento, conjunto de dados iris, gmm, modelos gaussianos, algoritmos de agrupamento, análise de dados"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importar Bibliotecas",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Carregar o conjunto de dados Iris",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Preparar dados de treinamento e teste",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Configurar estimadores GMM para diferentes tipos de covariância",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Defina uma função para plotar elipses para GMMs",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar GMMs para diferentes tipos de covariância",
+            "text": "pt/step6.md",
+            "verify": [
+              {
+                "name": "Esta etapa não possui verificação no momento",
+                "file": "verify6-1.sh",
+                "hint": "Esta etapa não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }

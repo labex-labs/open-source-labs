@@ -627,6 +627,160 @@
           "title": "Резюме"
         }
       }
+    },
+    {
+      "lang": "ko",
+      "title": "Matplotlib 을 이용한 크기 불변 각도 레이블 생성",
+      "description": "이 튜토리얼에서는 Matplotlib 을 사용하여 크기 불변 각도 레이블을 만드는 방법을 배웁니다. 각도 주석은 종종 선 사이 또는 원형 호를 사용하여 도형 내부의 각도를 표시하는 데 사용됩니다. Matplotlib 은 ~.patches.Arc 를 제공하지만, 이러한 목적으로 직접 사용할 때 내재된 문제는 데이터 공간에서 원형인 호가 디스플레이 공간에서 반드시 원형이 아니라는 것입니다. 또한 호의 반지름은 실제 데이터 좌표와 독립적인 좌표계에서 정의하는 것이 가장 좋습니다. 적어도 주석이 무한대로 커지지 않고 플롯을 자유롭게 확대/축소할 수 있도록 하려면 말이죠. 이는 호의 중심은 데이터 공간에서 정의되지만 반지름은 포인트 또는 픽셀과 같은 물리적 단위 또는 Axes 차원의 비율로 정의되는 솔루션을 필요로 합니다.",
+      "meta": {
+        "title": "Matplotlib 을 활용한 크기 불변 각도 레이블 생성 방법",
+        "description": "이 프로그래밍 튜토리얼에서 Matplotlib 을 사용하여 크기 불변 각도 레이블을 만드는 방법을 알아보세요.",
+        "keywords": "크기 불변, matplotlib, 파이썬, 각도 주석, 데이터 시각화, Matplotlib 각도 레이블, 파이썬 데이터 시각화"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "필요한 라이브러리 가져오기",
+            "text": "ko/step1.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증이 없습니다.",
+                "file": "verify1-1.sh",
+                "hint": "현재 이 단계는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "AngleAnnotation 클래스 정의",
+            "text": "ko/step2.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증이 없습니다.",
+                "file": "verify2-1.sh",
+                "hint": "현재 이 단계는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "헬퍼 함수 plot_angle 정의",
+            "text": "ko/step3.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증이 없습니다.",
+                "file": "verify3-1.sh",
+                "hint": "현재 이 단계는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "두 개의 교차하는 선을 그리고, AngleAnnotation 도구를 사용하여 각도 레이블 표시",
+            "text": "ko/step4.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증이 없습니다.",
+                "file": "verify4-1.sh",
+                "hint": "현재 이 단계는 검증이 없습니다."
+              }
+            ]
+          },
+          {
+            "title": "다양한 텍스트 위치 및 크기 단위 시연",
+            "text": "ko/step5.md",
+            "verify": [
+              {
+                "name": "현재 이 단계는 검증이 없습니다.",
+                "file": "verify5-1.sh",
+                "hint": "현재 이 단계는 검증이 없습니다."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ko/intro.md",
+          "title": "소개"
+        },
+        "finish": {
+          "text": "ko/finish.md",
+          "title": "요약"
+        }
+      }
+    },
+    {
+      "lang": "pt",
+      "title": "Criando um Rótulo de Ângulo Invariante à Escala",
+      "description": "Neste tutorial, você aprenderá como criar um rótulo de ângulo invariante à escala usando Matplotlib. A anotação de ângulo é frequentemente usada para marcar ângulos entre linhas ou dentro de formas com um arco circular. Embora o Matplotlib forneça um ~.patches.Arc, um problema inerente ao usá-lo diretamente para tais propósitos é que um arco que é circular no espaço de dados não é necessariamente circular no espaço de exibição. Além disso, o raio do arco é frequentemente melhor definido em um sistema de coordenadas que é independente das coordenadas reais dos dados - pelo menos se você quiser poder ampliar livremente seu gráfico sem que a anotação cresça até o infinito. Isso exige uma solução onde o centro do arco é definido no espaço de dados, mas seu raio em uma unidade física como pontos ou pixels, ou como uma proporção da dimensão dos eixos.",
+      "meta": {
+        "title": "Criando um Rótulo de Ângulo Invariante à Escala com Matplotlib",
+        "description": "Aprenda a criar um rótulo de ângulo invariante à escala usando Matplotlib neste tutorial de programação. Descubra como anotar ângulos de forma precisa e flexível.",
+        "keywords": "ângulo invariante à escala, matplotlib, python, anotação de ângulo, visualização de dados, tutorial matplotlib, rótulo de ângulo"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importar as Bibliotecas Necessárias",
+            "text": "pt/step1.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify1-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir a Classe AngleAnnotation",
+            "text": "pt/step2.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify2-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Definir a Função Auxiliar plot_angle",
+            "text": "pt/step3.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify3-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Plotar Duas Linhas Cruzadas e Rotular Cada Ângulo Entre Elas com a Ferramenta AngleAnnotation Acima",
+            "text": "pt/step4.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify4-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          },
+          {
+            "title": "Demonstrar Diferentes Posições de Texto e Unidades de Tamanho",
+            "text": "pt/step5.md",
+            "verify": [
+              {
+                "name": "Este passo não possui verificação no momento",
+                "file": "verify5-1.sh",
+                "hint": "Este passo não possui verificação no momento"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "pt/intro.md",
+          "title": "Introdução"
+        },
+        "finish": {
+          "text": "pt/finish.md",
+          "title": "Resumo"
+        }
+      }
     }
   ]
 }
