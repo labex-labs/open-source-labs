@@ -12,7 +12,7 @@ ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 
-# Den Blickwinkel anpassen, um更容易 zu erkennen, dass die Streupunkte
+# Den Blickwinkel anpassen, um 更容易 zu erkennen, dass die Streupunkte
 # in der Ebene y=0 liegen
 ax.view_init(elev=20., azim=-35, roll=0)
 

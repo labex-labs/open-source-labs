@@ -1,0 +1,3 @@
+# Resumo
+
+Neste tutorial, aprendemos como criar cores de preenchimento personalizadas para gráficos de caixa usando Python Matplotlib. Começamos importando as bibliotecas necessárias, criando dados de teste aleatórios e, em seguida, criando gráficos de caixa retangulares e com entalhes (notched). Em seguida, preenchemos os gráficos de caixa com cores personalizadas e adicionamos linhas de grade horizontais. Os gráficos de caixa são uma ferramenta de visualização útil para exibir a distribuição de dados, e as cores de preenchimento personalizadas podem ser usadas para torná-los mais visualmente atraentes.

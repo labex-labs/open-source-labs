@@ -1,0 +1,3 @@
+# Resumo
+
+Neste laboratório, você aprendeu como usar marcadores do Matplotlib para criar visualizações personalizadas. Especificamente, você aprendeu como criar marcadores não preenchidos e preenchidos, estilos de preenchimento de marcadores, marcadores criados a partir de símbolos TeX, marcadores criados a partir de caminhos, modificações avançadas de marcadores com transformações (transform) e como definir o estilo de extremidade (cap style) e o estilo de junção (join style) do marcador. Ao usar essas técnicas, você pode criar visualizações eficazes que comunicam seus dados com clareza e precisão.

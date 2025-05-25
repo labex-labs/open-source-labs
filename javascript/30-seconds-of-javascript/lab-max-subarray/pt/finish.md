@@ -1,0 +1,3 @@
+# Resumo
+
+Parabéns! Você concluiu o laboratório de Subarray Máximo. Você pode praticar mais laboratórios no LabEx para aprimorar suas habilidades.

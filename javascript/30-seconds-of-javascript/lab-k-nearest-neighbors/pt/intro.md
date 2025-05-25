@@ -1,0 +1,3 @@
+# Introdução
+
+Neste laboratório, exploraremos o algoritmo K-Nearest Neighbors (KNN), uma ferramenta poderosa para a classificação de pontos de dados. Ao implementar este algoritmo em JavaScript, seremos capazes de classificar novos pontos de dados com base em sua proximidade com pontos de dados rotulados existentes, tornando-o uma ferramenta valiosa para uma variedade de aplicações, como sistemas de recomendação e reconhecimento de imagem. Através deste laboratório, obteremos uma compreensão mais profunda de como os algoritmos de _machine learning_ funcionam e como eles podem ser implementados em cenários do mundo real.

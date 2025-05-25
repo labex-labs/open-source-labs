@@ -1,0 +1,3 @@
+# Alterando o arquivo matplotlibrc
+
+O arquivo `matplotlibrc` é um arquivo de configuração que permite personalizar todos os tipos de propriedades no Matplotlib. Ele controla os padrões para propriedades como tamanho da figura, largura da linha, cores, fontes, etc. Você pode modificar o arquivo `matplotlibrc` para personalizar o Matplotlib de acordo com suas preferências. O arquivo pode estar localizado em diferentes lugares no seu sistema, e o Matplotlib o procura em uma ordem específica. Uma vez que um arquivo `matplotlibrc` é encontrado, ele tem precedência sobre outras configurações. Você pode usar a função `matplotlib.matplotlib_fname()` para exibir o caminho do arquivo `matplotlibrc` atualmente ativo.

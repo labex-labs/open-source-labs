@@ -1,0 +1,8 @@
+# 슬라이스에 레이블 추가
+
+`pie()` 함수의 `labels` 매개변수에 레이블 리스트를 전달하여 슬라이스에 레이블을 추가할 수 있습니다.
+
+```python
+fig, ax = plt.subplots()
+ax.pie(sizes, labels=labels, autopct='%1.1f%%')
+```

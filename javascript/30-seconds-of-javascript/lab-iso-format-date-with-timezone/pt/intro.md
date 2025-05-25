@@ -1,0 +1,3 @@
+# Introdução
+
+Neste laboratório, aprenderemos como converter uma data para o formato ISO estendido (ISO 8601), incluindo o deslocamento de fuso horário (timezone offset). Usaremos o método `Date.prototype.getTimezoneOffset()` para obter o deslocamento de fuso horário e invertê-lo. Em seguida, definiremos uma função auxiliar para normalizar qualquer número passado para um inteiro e preenchê-lo com 2 dígitos usando `String.prototype.padStart()`. Finalmente, usaremos os métodos embutidos no protótipo `Date` para construir a string ISO 8601 com o deslocamento de fuso horário. Ao final deste laboratório, você terá uma melhor compreensão de como manipular datas em JavaScript.

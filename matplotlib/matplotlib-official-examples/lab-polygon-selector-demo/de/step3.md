@@ -54,4 +54,4 @@ class SelectFromCollection:
         self.canvas.draw_idle()
 ```
 
-需要注意的是，原文中`wenn len(self.fc) == 0:`这里的`wenn`应该是`Wenn`（大写），属于拼写错误，翻译时按照正确的来。 还有`erhöhe ValueError`应该是`erhöhe ValueError`（这里可能也是拼写有误，推测应该是`erhöhe ValueError`为`erhöhe ValueError`，即`raise ValueError`） ，翻译时按照正确逻辑翻译为`引发 ValueError` 。整体译文尽量贴近原文表述错误的样子呈现了代码中的问题部分。
+需要注意的是，原文中`wenn len(self.fc) == 0:`这里的`wenn`应该是`Wenn`（大写），属于拼写错误，翻译时按照正确的来。还有`erhöhe ValueError`应该是`erhöhe ValueError`（这里可能也是拼写有误，推测应该是`erhöhe ValueError`为`erhöhe ValueError`，即`raise ValueError`） ，翻译时按照正确逻辑翻译为`引发 ValueError` 。整体译文尽量贴近原文表述错误的样子呈现了代码中的问题部分。

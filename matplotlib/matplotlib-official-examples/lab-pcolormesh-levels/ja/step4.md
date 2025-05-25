@@ -43,7 +43,7 @@ cf = ax1.contourf(x[:-1, :-1] + dx/2.,
 fig.colorbar(cf, ax=ax1)
 ax1.set_title('contourf with levels')
 
-# サブプロット間の間隔を調整して、`ax1`のタイトルと `ax0` の目盛りラベルが
+# サブプロット間の間隔を調整して、`ax1` のタイトルと `ax0` の目盛りラベルが
 # 重ならないようにします
 fig.tight_layout()
 

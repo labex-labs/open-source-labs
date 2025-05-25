@@ -1,11 +1,11 @@
 # Diagramme erstellen
 
-Jetzt erstellen wir die Diagramme für unsere verschiedenen Spektrumdarstellungen. Wir verwenden die `subplots`-Funktion von Matplotlib, um ein 3x2-Gitter von Diagrammen zu erstellen. Wir werden das Zeit信号 im ersten Diagramm und die verschiedenen Spektrumtypen in den verbleibenden Diagrammen plotten.
+Jetzt erstellen wir die Diagramme für unsere verschiedenen Spektrumdarstellungen. Wir verwenden die `subplots`-Funktion von Matplotlib, um ein 3x2-Gitter von Diagrammen zu erstellen. Wir werden das Zeit 信号 im ersten Diagramm und die verschiedenen Spektrumtypen in den verbleibenden Diagrammen plotten.
 
 ```python
 fig, axs = plt.subplots(nrows=3, ncols=2, figsize=(7, 7))
 
-# Zeit信号 plotten:
+# Zeit 信号 plotten:
 axs[0, 0].set_title("Signal")
 axs[0, 0].plot(t, s, color='C0')
 axs[0, 0].set_xlabel("Zeit")

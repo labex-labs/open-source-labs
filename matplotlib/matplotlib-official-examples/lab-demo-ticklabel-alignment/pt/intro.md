@@ -1,0 +1,11 @@
+# Introdução
+
+Na visualização de dados, os rótulos de marcação (tick labels) desempenham um papel importante na transmissão de informações aos visualizadores. Às vezes, pode ser necessário ajustar o alinhamento dos rótulos de marcação para torná-los mais legíveis ou para evitar sobreposições. Neste laboratório, aprenderemos como usar o Matplotlib para ajustar o alinhamento dos rótulos de marcação.
+
+## Dicas para a VM
+
+Após a inicialização da VM, clique no canto superior esquerdo para mudar para a aba **Notebook** e acessar o [Jupyter Notebook](https://support.labex.io/en/labex-vm/jupyter) para praticar.
+
+Às vezes, pode ser necessário aguardar alguns segundos para que o Jupyter Notebook termine de carregar. A validação das operações não pode ser automatizada devido às limitações do Jupyter Notebook.
+
+Se você enfrentar problemas durante o aprendizado, sinta-se à vontade para perguntar ao Labby. Forneça feedback após a sessão, e resolveremos o problema prontamente para você.

@@ -43,7 +43,7 @@ cf = ax1.contourf(x[:-1, :-1] + dx/2.,
 fig.colorbar(cf, ax=ax1)
 ax1.set_title('contourf with levels')
 
-# 调整子图之间的间距，使 `ax1`的标题和`ax0` 的刻度标签不重叠
+# 调整子图之间的间距，使 `ax1` 的标题和 `ax0` 的刻度标签不重叠
 fig.tight_layout()
 
 plt.show()
