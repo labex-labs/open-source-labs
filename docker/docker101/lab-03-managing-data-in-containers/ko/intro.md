@@ -17,5 +17,5 @@ Docker 는 호스트 머신에 파일을 저장하기 위한 두 가지 옵션, 
 원래, `--mount` 플래그는 Docker Swarm 서비스에 사용되었고, `--volume` 플래그는 독립 실행형 컨테이너에 사용되었습니다. Docker 17.06 이상부터는 독립 실행형 컨테이너에도 `--mount`를 사용할 수 있으며, 일반적으로 `--volume`보다 더 명시적이고 자세합니다.
 
 <div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
-이것은 가이드 실험입니다. 학습과 실습을 돕기 위한 단계별 지침을 제공합니다.각 단계를 완료하고 실무 경험을 쌓기 위해 지침을 주의 깊게 따르세요. 과거 데이터에 따르면, 이것은 <span class="text-green-600 dark:text-green-400">초급</span> 레벨의 실험이며 완료율은 <span class="text-green-600 dark:text-green-400">100.00%</span>입니다.
+이것은 가이드 실험입니다. 학습과 실습을 돕기 위한 단계별 지침을 제공합니다.각 단계를 완료하고 실무 경험을 쌓기 위해 지침을 주의 깊게 따르세요. 과거 데이터에 따르면, 이것은 <span class="text-green-600 dark:text-green-400">초급</span> 레벨의 실험이며 완료율은 <span class="text-green-600 dark:text-green-400">100%</span>입니다.
 </div>
