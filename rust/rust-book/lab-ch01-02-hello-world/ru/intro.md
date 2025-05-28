@@ -3,3 +3,7 @@
 Добро пожаловать в **Hello, World**. Этот лаба является частью [Rust Book](https://doc.rust-lang.org/book/). Вы можете практиковать свои навыки Rust в LabEx.
 
 В этом лабе вы напишете свою первую программу на Rust, которая выведет на экран текст "Hello, world!".
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Это Guided Lab, который предоставляет пошаговые инструкции, чтобы помочь вам учиться и практиковаться. Внимательно следуйте инструкциям, чтобы выполнить каждый шаг и получить практический опыт. Исторические данные показывают, что это лабораторная работа уровня <span class="text-green-600 dark:text-green-400">начальный</span> с процентом завершения <span class="text-green-600 dark:text-green-400">87.84%</span>.
+</div>

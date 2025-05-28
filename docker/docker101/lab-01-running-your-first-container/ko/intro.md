@@ -11,3 +11,7 @@
 첫 번째 컨테이너를 실행한 후에는 컨테이너의 다른 용도에 대해 자세히 알아보겠습니다. Docker Store 에서 이러한 예제를 많이 찾을 수 있으며, 동일한 호스트에서 여러 유형의 컨테이너를 실행합니다. 이를 통해 격리의 이점을 확인할 수 있습니다. 즉, 충돌 없이 동일한 호스트에서 여러 컨테이너를 실행할 수 있습니다.
 
 이 랩에서는 몇 가지 Docker 명령을 사용합니다. 사용 가능한 명령에 대한 전체 문서는 [공식 문서](https://docs.docker.com/)를 참조하십시오.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+이것은 가이드 실험입니다. 학습과 실습을 돕기 위한 단계별 지침을 제공합니다.각 단계를 완료하고 실무 경험을 쌓기 위해 지침을 주의 깊게 따르세요. 과거 데이터에 따르면, 이것은 <span class="text-green-600 dark:text-green-400">초급</span> 레벨의 실험이며 완료율은 <span class="text-green-600 dark:text-green-400">89.29%</span>입니다.
+</div>

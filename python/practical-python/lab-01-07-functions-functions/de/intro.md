@@ -1,3 +1,7 @@
 # Einführung
 
 Wenn Ihre Programme größer werden, möchten Sie sich organisieren. In diesem Abschnitt werden Funktionen und Bibliotheksmodule kurz vorgestellt. Die Fehlerbehandlung mit Ausnahmen wird ebenfalls behandelt.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Dies ist ein Guided Lab, das schrittweise Anweisungen bietet, um Ihnen beim Lernen und Üben zu helfen. Befolgen Sie die Anweisungen sorgfältig, um jeden Schritt abzuschließen und praktische Erfahrungen zu sammeln. Historische Daten zeigen, dass dies ein Labor der Stufe <span class="text-yellow-600 dark:text-yellow-400">Fortgeschrittener</span> mit einer Abschlussquote von <span class="text-yellow-600 dark:text-yellow-400">73.68%</span> ist.
+</div>

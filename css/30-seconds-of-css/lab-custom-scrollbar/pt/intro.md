@@ -1,3 +1,7 @@
 # Introdução
 
 Neste laboratório, exploraremos como personalizar o estilo da barra de rolagem usando CSS. Usaremos a propriedade `::-webkit-scrollbar` para estilizar a barra de rolagem, incluindo a trilha (track) e o indicador (thumb) da barra. Ao final deste laboratório, você terá uma melhor compreensão de como criar barras de rolagem personalizadas e aprimorar a experiência do usuário do seu site.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este é um Lab Guiado, que fornece instruções passo a passo para ajudá-lo a aprender e praticar. Siga as instruções cuidadosamente para completar cada etapa e ganhar experiência prática. Dados históricos mostram que este é um laboratório de nível <span class="text-green-600 dark:text-green-400">iniciante</span> com uma taxa de conclusão de <span class="text-green-600 dark:text-green-400">100.00%</span>.
+</div>

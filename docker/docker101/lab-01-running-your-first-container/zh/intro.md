@@ -11,3 +11,7 @@
 在运行第一个容器之后，我们将深入探讨容器的其他用途。你可以在 Docker 商店上找到许多这样的示例，并且我们将在同一主机上运行几种不同类型的容器。这将使我们看到隔离的好处——我们可以在同一主机上运行多个容器而不会产生冲突。
 
 在本实验中，我们将使用一些 Docker 命令。有关可用命令的完整文档，请查看 [官方文档](https://docs.docker.com/)。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个实验（Guided Lab），提供逐步指导来帮助你学习和实践。请仔细按照说明完成每个步骤，获得实际操作经验。根据历史数据，这是一个 <span class="text-green-600 dark:text-green-400">初级</span> 级别的实验，完成率为 <span class="text-green-600 dark:text-green-400">89.29%</span>。
+</div>

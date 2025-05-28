@@ -1,3 +1,7 @@
 # Introdução
 
 Neste laboratório, exploraremos como decodificar uma string de dados que foi codificada usando a codificação base-64 em JavaScript. Você aprenderá como criar um `Buffer` para a string fornecida com codificação base-64 e como usar `Buffer.prototype.toString()` para retornar a string decodificada. Este laboratório fornecerá experiência prática na decodificação de strings codificadas em base64 em JavaScript.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este é um Lab Guiado, que fornece instruções passo a passo para ajudá-lo a aprender e praticar. Siga as instruções cuidadosamente para completar cada etapa e ganhar experiência prática. Dados históricos mostram que este é um laboratório de nível <span class="text-green-600 dark:text-green-400">iniciante</span> com uma taxa de conclusão de <span class="text-green-600 dark:text-green-400">93.33%</span>.
+</div>

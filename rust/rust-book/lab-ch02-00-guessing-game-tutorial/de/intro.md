@@ -3,3 +3,7 @@
 Willkommen zu **Programmieren eines Ratespiels**. Dieser Lab ist Teil des [Rust Buchs](https://doc.rust-lang.org/book/). Du kannst deine Rust-Fähigkeiten in LabEx üben.
 
 In diesem Lab werden wir ein Ratespiel in Rust implementieren, bei dem das Programm eine Zufallszahl generiert und den Spieler auffordert, sie zu erraten, indem es Feedback gibt, ob die Vermutung zu niedrig oder zu hoch ist, und gratuliert dem Spieler, wenn er richtig erraten hat.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Dies ist ein Guided Lab, das schrittweise Anweisungen bietet, um Ihnen beim Lernen und Üben zu helfen. Befolgen Sie die Anweisungen sorgfältig, um jeden Schritt abzuschließen und praktische Erfahrungen zu sammeln. Historische Daten zeigen, dass dies ein Labor der Stufe <span class="text-yellow-600 dark:text-yellow-400">Fortgeschrittener</span> mit einer Abschlussquote von <span class="text-yellow-600 dark:text-yellow-400">59.26%</span> ist.
+</div>

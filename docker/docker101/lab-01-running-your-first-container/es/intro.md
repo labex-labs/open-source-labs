@@ -11,3 +11,7 @@ En la primera parte de este laboratorio, ejecutaremos nuestro primer contenedor 
 Después de ejecutar nuestro primer contenedor, profundizaremos en otros usos de los contenedores. Puede encontrar muchos ejemplos de estos en la Tienda de Docker, y ejecutaremos varios tipos diferentes de contenedores en el mismo host. Esto nos permitirá ver el beneficio del aislamiento, donde podemos ejecutar múltiples contenedores en el mismo host sin conflictos.
 
 Usaremos algunos comandos de Docker en este laboratorio. Para obtener la documentación completa de los comandos disponibles, consulte la [documentación oficial](https://docs.docker.com/).
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este es un Guided Lab, que proporciona instrucciones paso a paso para ayudarte a aprender y practicar. Sigue las instrucciones cuidadosamente para completar cada paso y obtener experiencia práctica. Los datos históricos muestran que este es un laboratorio de nivel <span class="text-green-600 dark:text-green-400">principiante</span> con una tasa de finalización del <span class="text-green-600 dark:text-green-400">89.29%</span>.
+</div>

@@ -1,3 +1,7 @@
 # Introducción
 
 En este laboratorio, exploraremos los fundamentos de la programación CSS y aprenderemos cómo crear páginas web visualmente atractivas. A través de una serie de ejercicios y retos, adquirirás experiencia práctica con los selectores, propiedades y valores de CSS, y te convertirás en un experto en el estilo de los elementos HTML. Al final del laboratorio, tendrás las habilidades y el conocimiento para crear hermosos y responsivos diseños web.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este es un Guided Lab, que proporciona instrucciones paso a paso para ayudarte a aprender y practicar. Sigue las instrucciones cuidadosamente para completar cada paso y obtener experiencia práctica. Los datos históricos muestran que este es un laboratorio de nivel <span class="text-green-600 dark:text-green-400">principiante</span> con una tasa de finalización del <span class="text-green-600 dark:text-green-400">100.00%</span>.
+</div>

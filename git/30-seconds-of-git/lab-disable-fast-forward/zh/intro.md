@@ -5,3 +5,7 @@
 </div>
 
 Git 是一个强大的版本控制系统，它允许开发者高效地在项目上进行协作。Git 的特性之一是快进合并，它允许 Git 自动合并没有分歧提交的分支。然而，这个特性有时会导致问题，特别是在处理有多个贡献者的大型项目时。在这个实验中，你将学习如何默认禁用快进合并。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个实验（Guided Lab），提供逐步指导来帮助你学习和实践。请仔细按照说明完成每个步骤，获得实际操作经验。根据历史数据，这是一个 <span class="text-green-600 dark:text-green-400">初级</span> 级别的实验，完成率为 <span class="text-green-600 dark:text-green-400">100.00%</span>。
+</div>

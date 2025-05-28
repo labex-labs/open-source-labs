@@ -15,3 +15,7 @@ Docker 提供了两种将文件存储在主机中的选项：「卷」（volumes
 - 「临时文件系统挂载」仅存储在主机内存中。
 
 最初，`--mount`标志用于 Docker Swarm 服务，`--volume`标志用于独立容器。从 Docker 17.06 及更高版本开始，你也可以将`--mount`用于独立容器，并且它通常比`--volume`更明确、更详细。
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+这是一个实验（Guided Lab），提供逐步指导来帮助你学习和实践。请仔细按照说明完成每个步骤，获得实际操作经验。根据历史数据，这是一个 <span class="text-green-600 dark:text-green-400">初级</span> 级别的实验，完成率为 <span class="text-green-600 dark:text-green-400">100.00%</span>。
+</div>

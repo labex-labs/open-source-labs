@@ -1,3 +1,7 @@
 # Introdução
 
 Neste laboratório, aprenderemos como criar uma animação de efeito de máquina de escrever usando HTML, CSS e JavaScript. O efeito de máquina de escrever é uma animação popular que simula a aparência de texto sendo digitado em uma página, um caractere por vez. Ao final deste laboratório, você será capaz de criar sua própria animação de efeito de máquina de escrever para adicionar um elemento dinâmico e envolvente aos seus projetos web.
+
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
+Este é um Lab Guiado, que fornece instruções passo a passo para ajudá-lo a aprender e praticar. Siga as instruções cuidadosamente para completar cada etapa e ganhar experiência prática. Dados históricos mostram que este é um laboratório de nível <span class="text-green-600 dark:text-green-400">iniciante</span> com uma taxa de conclusão de <span class="text-green-600 dark:text-green-400">100.00%</span>.
+</div>
