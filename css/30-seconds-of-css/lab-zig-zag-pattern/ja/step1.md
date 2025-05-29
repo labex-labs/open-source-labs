@@ -22,12 +22,11 @@ VM 内には既に `index.html` と `style.css` が用意されています。
   width: 240px;
   height: 240px;
   background-color: #fff;
-  background-image: linear-gradient(135deg, #000 25%, transparent 25%),
-    linear-gradient(225deg, #000 25%, transparent 25%), linear-gradient(
-      315deg,
-      #000 25%,
-      transparent 25%
-    ), linear-gradient(45deg, #000 25%, transparent 25%);
+  background-image:
+    linear-gradient(135deg, #000 25%, transparent 25%),
+    linear-gradient(225deg, #000 25%, transparent 25%),
+    linear-gradient(315deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, #000 25%, transparent 25%);
   background-position:
     -30px 0,
     -30px 0,

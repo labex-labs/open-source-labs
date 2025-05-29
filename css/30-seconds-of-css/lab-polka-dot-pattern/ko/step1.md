@@ -23,8 +23,9 @@
   width: 240px;
   height: 240px;
   background-color: #000;
-  background-image: radial-gradient(#fff 10%, transparent 11%), radial-gradient(#fff
-        10%, transparent 11%);
+  background-image:
+    radial-gradient(#fff 10%, transparent 11%),
+    radial-gradient(#fff 10%, transparent 11%);
   background-size: 60px 60px;
   background-position:
     0 0,
