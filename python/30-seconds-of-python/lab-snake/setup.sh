@@ -21,3 +21,5 @@ for input_str, expected_output in test_cases:
 
 print("All tests passed! Your snake case function works correctly.")
 EOF
+
+touch ~/project/snake_case.py
