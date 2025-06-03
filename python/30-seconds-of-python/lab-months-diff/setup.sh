@@ -22,7 +22,7 @@ class TestMonthsDiff(unittest.TestCase):
         self.assertEqual(months_diff(date(2020, 5, 1), date(2020, 8, 15)), 4)
         
     def test_negative_result(self):
-        self.assertEqual(months_diff(date(2020, 8, 15), date(2020, 5, 1)), -4)
+        self.assertEqual(months_diff(date(2020, 8, 15), date(2020, 5, 1)), -3)
 
 if __name__ == '__main__':
     unittest.main()
