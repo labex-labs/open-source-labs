@@ -38,7 +38,7 @@ Diese finale Implementierung:
 Jetzt führen wir unsere Funktion gegen die Testsuite aus, die im Einrichtungsschritt erstellt wurde:
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 Wenn Ihre Implementierung korrekt ist, sollten Sie sehen:

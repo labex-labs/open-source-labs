@@ -38,7 +38,7 @@ if __name__ == "__main__":
 现在，让我们使用在设置步骤中创建的测试套件来运行我们的函数：
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 如果你的实现正确，你应该会看到：

@@ -38,7 +38,7 @@ if __name__ == "__main__":
 이제 설정 단계에서 생성된 테스트 스위트에 대해 함수를 실행해 보겠습니다:
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 구현이 올바르면 다음을 볼 수 있습니다:

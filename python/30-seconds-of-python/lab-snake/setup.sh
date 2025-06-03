@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a test file to verify our snake case function
-cat > /tmp/test_snake.py << 'EOF'
+cat > ~/project/test_snake.py << 'EOF'
 from snake_case import snake
 
 # Test cases
@@ -21,5 +21,3 @@ for input_str, expected_output in test_cases:
 
 print("All tests passed! Your snake case function works correctly.")
 EOF
-
-echo "Setup completed. You're ready to start the lab!"

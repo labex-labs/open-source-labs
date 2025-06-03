@@ -38,7 +38,7 @@ This final implementation:
 Now let's run our function against the test suite that was created in the setup step:
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 If your implementation is correct, you should see:

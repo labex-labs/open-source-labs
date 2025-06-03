@@ -38,7 +38,7 @@ Esta implementación final:
 Ahora ejecutemos nuestra función contra la suite de pruebas creada en el paso de configuración:
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 Si tu implementación es correcta, deberías ver:

@@ -38,7 +38,7 @@ if __name__ == "__main__":
 ここで、セットアップステップで作成したテストセットに対して関数を実行しましょう。
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 実装が正しければ、次のように表示されるはずです。

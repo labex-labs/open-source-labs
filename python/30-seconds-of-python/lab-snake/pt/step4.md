@@ -38,7 +38,7 @@ Esta implementação final:
 Agora, vamos executar nossa função em relação ao conjunto de testes que foi criado na etapa de configuração:
 
 ```bash
-cd /tmp && python3 test_snake.py
+python3 ~/project/test_snake.py
 ```
 
 Se sua implementação estiver correta, você deverá ver:
