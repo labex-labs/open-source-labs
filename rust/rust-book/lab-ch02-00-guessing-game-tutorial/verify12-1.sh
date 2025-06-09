@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat ~/.zsh_history | grep "cargo update"
+cat ~/.zsh_history | grep "cargo"
