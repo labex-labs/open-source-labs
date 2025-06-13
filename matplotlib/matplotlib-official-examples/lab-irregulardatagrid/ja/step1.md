@@ -1,6 +1,6 @@
-# 必要なライブラリをインポートする
+# 必要なライブラリのインポート
 
-この例で必要なライブラリをインポートして始めます。`matplotlib.pyplot` と `numpy` です。また、データの三角分割に `matplotlib.tri` をインポートします。
+この例に必要なライブラリ、`matplotlib.pyplot` と `numpy` をインポートすることから始めます。さらに、データの三角測量のために `matplotlib.tri` をインポートします。
 
 ```python
 import matplotlib.pyplot as plt

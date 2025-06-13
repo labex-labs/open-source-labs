@@ -1,6 +1,6 @@
-# トライコンター
+# Tricontour (トライコントゥア)
 
-無順序で不規則な間隔の座標を直接 `axes.Axes.tricontour` に供給することで、トライコンター図を使って同じデータをプロットします。
+`axes.Axes.tricontour` に順序付けられていない、不規則に配置された座標を直接供給することにより、同じデータを tricontour プロットを使用してプロットします。
 
 ```python
 fig, ax2 = plt.subplots()
