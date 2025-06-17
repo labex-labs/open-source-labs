@@ -1,4 +1,4 @@
-# Keeping Track of Borrows at Runtime with RefCell`<T>`{=html}
+# Keeping Track of Borrows at Runtime with RefCell`<T>`
 
 When creating immutable and mutable references, we use the `&` and `&mut` syntax, respectively. With `RefCell<T>`, we use the `borrow` and `borrow_mut` methods, which are part of the safe API that belongs to `RefCell<T>`. The `borrow` method returns the smart pointer type `Ref<T>`, and `borrow_mut` returns the smart pointer type `RefMut<T>`. Both types implement `Deref`, so we can treat them like regular references.
 

@@ -1,4 +1,4 @@
-# Prevenindo Ciclos de Referência Usando Weak`<T>`{=html}
+# Prevenindo Ciclos de Referência Usando Weak`<T>`
 
 Até agora, demonstramos que chamar `Rc::clone` aumenta o `strong_count` de uma instância `Rc<T>`, e uma instância `Rc<T>` só é limpa se seu `strong_count` for 0. Você também pode criar uma _referência fraca_ (weak reference) ao valor dentro de uma instância `Rc<T>` chamando `Rc::downgrade` e passando uma referência ao `Rc<T>`. Referências fortes (strong references) são como você pode compartilhar a propriedade de uma instância `Rc<T>`. Referências fracas não expressam uma relação de propriedade, e sua contagem não afeta quando uma instância `Rc<T>` é limpa. Elas não causarão um ciclo de referência porque qualquer ciclo envolvendo algumas referências fracas será interrompido assim que a contagem de referência forte (strong reference count) dos valores envolvidos for 0.
 

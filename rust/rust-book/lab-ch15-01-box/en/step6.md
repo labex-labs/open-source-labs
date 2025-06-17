@@ -1,4 +1,4 @@
-# Using Box`<T>`{=html} to Get a Recursive Type with a Known Size
+# Using Box`<T>` to Get a Recursive Type with a Known Size
 
 Because Rust can't figure out how much space to allocate for recursively defined types, the compiler gives an error with this helpful suggestion:
 

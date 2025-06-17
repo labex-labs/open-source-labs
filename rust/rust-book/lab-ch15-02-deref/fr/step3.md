@@ -1,4 +1,4 @@
-# Using Box`<T>`{=html} Like a Reference
+# Using Box`<T>` Like a Reference
 
 Nous pouvons réécrire le code de la Liste 15-6 pour utiliser un `Box<T>` au lieu d'une référence ; l'opérateur de déréférence utilisé sur le `Box<T>` dans la Liste 15-7 fonctionne de la même manière que l'opérateur de déréférence utilisé sur la référence dans la Liste 15-6.
 

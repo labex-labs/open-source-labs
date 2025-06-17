@@ -1,4 +1,4 @@
-# Enforcing Borrowing Rules at Runtime with RefCell`<T>`{=html}
+# Enforcing Borrowing Rules at Runtime with RefCell`<T>`
 
 Unlike `Rc<T>`, the `RefCell<T>` type represents single ownership over the data it holds. So what makes `RefCell<T>` different from a type like `Box<T>`? Recall the borrowing rules you learned in Chapter 4:
 

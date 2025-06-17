@@ -1,4 +1,4 @@
-# Verfolgen von Leihvorgängen zur Laufzeit mit RefCell`<T>`{=html}
+# Verfolgen von Leihvorgängen zur Laufzeit mit RefCell`<T>`
 
 Beim Erstellen unveränderbarer und veränderbarer Referenzen verwenden wir die `&`- und `&mut`-Syntax entsprechend. Mit `RefCell<T>` verwenden wir die Methoden `borrow` und `borrow_mut`, die Teil der sicheren API von `RefCell<T>` sind. Die `borrow`-Methode gibt den Smart-Pointer-Typ `Ref<T>` zurück, und `borrow_mut` gibt den Smart-Pointer-Typ `RefMut<T>` zurück. Beide Typen implementieren `Deref`, sodass wir sie wie reguläre Referenzen behandeln können.
 

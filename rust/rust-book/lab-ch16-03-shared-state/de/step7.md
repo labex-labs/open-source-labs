@@ -1,4 +1,4 @@
-# Ähnlichkeiten zwischen RefCell`<T>`{=html}/Rc`<T>`{=html} und Mutex`<T>`{=html}/Arc`<T>`{=html}
+# Ähnlichkeiten zwischen RefCell`<T>`/Rc`<T>` und Mutex`<T>`/Arc`<T>`
 
 Sie haben vielleicht bemerkt, dass `counter` unveränderlich ist, aber wir konnten auf einen mutablen Verweis auf den darin enthaltenen Wert zugreifen; dies bedeutet, dass `Mutex<T>` wie die `Cell`-Familie innere Veränderbarkeit bietet. Auf die gleiche Weise wie wir in Kapitel 15 `RefCell<T>` verwendet haben, um die Inhalte innerhalb eines `Rc<T>` zu verändern, verwenden wir `Mutex<T>`, um die Inhalte innerhalb eines `Arc<T>` zu verändern.
 

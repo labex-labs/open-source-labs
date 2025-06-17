@@ -1,4 +1,4 @@
-# Cloner un Rc`<T>`{=html} augmente le compte de références
+# Cloner un Rc`<T>` augmente le compte de références
 
 Modifions notre exemple fonctionnel de la Liste 15-18 pour voir les comptes de références changer au fur et à mesure que nous créons et supprimons des références au `Rc<List>` dans `a`.
 
@@ -36,7 +36,7 @@ fn main() {
 
 Liste 15-19 : Affichage du compte de références
 
-À chaque étape du programme où le compte de références change, nous affichons le compte de références, que nous obtenons en appelant la fonction `Rc::strong_count`. Cette fonction est nommée `strong_count` plutôt que `count` car le type `Rc<T>` a également un `weak_count` ; nous verrons à quoi sert `weak_count` dans "Prévenir les cycles de références en utilisant Weak`<T>`{=html}".
+À chaque étape du programme où le compte de références change, nous affichons le compte de références, que nous obtenons en appelant la fonction `Rc::strong_count`. Cette fonction est nommée `strong_count` plutôt que `count` car le type `Rc<T>` a également un `weak_count` ; nous verrons à quoi sert `weak_count` dans "Prévenir les cycles de références en utilisant Weak`<T>`".
 
 Ce code affiche ceci :
 

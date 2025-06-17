@@ -1,4 +1,4 @@
-# Usando Rc`<T>`{=html} para compartir datos
+# Usando Rc`<T>` para compartir datos
 
 Volvamos a nuestro ejemplo de lista enlazada en la Lista 15-5. Recuerde que la definimos usando `Box<T>`. Esta vez, crearemos dos listas que comparten la propiedad de una tercera lista. Conceptualmente, esto se parece a la Figura 15-3.
 

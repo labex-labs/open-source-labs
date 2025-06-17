@@ -1,4 +1,4 @@
-# La API de Mutex`<T>`{=html}
+# La API de Mutex`<T>`
 
 Como ejemplo de cómo usar un mutex, comenzaremos por usarlo en un contexto de un solo hilo, como se muestra en la Lista 16-12.
 

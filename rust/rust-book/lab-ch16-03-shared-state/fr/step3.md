@@ -1,4 +1,4 @@
-# L'API de Mutex`<T>`{=html}
+# L'API de Mutex`<T>`
 
 Pour illustrer comment utiliser un mutex, commençons par l'utiliser dans un contexte mono-fil, comme montré dans la liste 16-12.
 

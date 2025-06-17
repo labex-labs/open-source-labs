@@ -1,4 +1,4 @@
-# Utiliser Box`<T>`{=html} pour stocker des données sur le tas
+# Utiliser Box`<T>` pour stocker des données sur le tas
 
 Avant de discuter du cas d'utilisation de stockage sur le tas pour `Box<T>`, nous allons aborder la syntaxe et la manière d'interagir avec les valeurs stockées dans un `Box<T>`.
 

@@ -1,4 +1,4 @@
-# Matching mit Option`<T>`{=html}
+# Matching mit Option`<T>`
 
 Im vorherigen Abschnitt wollten wir den inneren `T`-Wert aus dem `Some`-Fall herausholen, wenn wir `Option<T>` verwenden; wir können `Option<T>` auch mit `match` behandeln, wie wir es mit dem `Coin`-Enum gemacht haben! Anstatt Münzen zu vergleichen, werden wir die Varianten von `Option<T>` vergleichen, aber die Art, wie der `match`-Ausdruck funktioniert, bleibt dieselbe.
 

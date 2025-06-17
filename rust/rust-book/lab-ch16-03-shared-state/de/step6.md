@@ -1,4 +1,4 @@
-# Atomare Referenzzählung mit Arc`<T>`{=html}
+# Atomare Referenzzählung mit Arc`<T>`
 
 Glücklicherweise ist `Arc<T>` ein Typ wie `Rc<T>`, der in konkurrierenden Situationen sicher zu verwenden ist. Der Buchstabe _a_ steht für _atomar_, was bedeutet, dass es ein _atomar referenzzählender_ Typ ist. Atomare Datentypen sind eine weitere Art von konkurrenzspezifischen Primitiven, die wir hier nicht im Detail behandeln werden: Siehe die Standardbibliothek-Dokumentation für `std::sync::atomic` für weitere Details. An diesem Punkt müssen Sie nur wissen, dass atomare Datentypen wie primitive Datentypen funktionieren, aber sicher über Threads hinweg zu teilen sind.
 

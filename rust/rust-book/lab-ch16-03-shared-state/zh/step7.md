@@ -1,4 +1,4 @@
-# RefCell`<T>`{=html}/Rc`<T>`{=html} 与 Mutex`<T>`{=html}/Arc`<T>`{=html} 之间的相似之处
+# RefCell`<T>`/Rc`<T>` 与 Mutex`<T>`/Arc`<T>` 之间的相似之处
 
 你可能已经注意到，`counter` 是不可变的，但我们可以获取到其内部值的可变引用；这意味着 `Mutex<T>` 像 `Cell` 家族一样提供了内部可变性。就像我们在第 15 章中使用 `RefCell<T>` 来允许我们修改 `Rc<T>` 内部的内容一样，我们使用 `Mutex<T>` 来修改 `Arc<T>` 内部的内容。
 

@@ -1,4 +1,4 @@
-# Partage d'un Mutex`<T>`{=html} entre plusieurs threads
+# Partage d'un Mutex`<T>` entre plusieurs threads
 
 Maintenant, essayons de partager une valeur entre plusieurs threads en utilisant `Mutex<T>`. Nous allons démarrer 10 threads et leur demander chacun d'incrémenter d'un 1 une valeur de compteur, de sorte que le compteur passe de 0 à 10. L'exemple de la liste 16-13 entraînera une erreur de compilation, et nous utiliserons cette erreur pour en apprendre plus sur l'utilisation de `Mutex<T>` et sur la manière dont Rust nous aide à l'utiliser correctement.
 

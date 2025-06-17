@@ -1,4 +1,4 @@
-# Suivi des emprunts à l'exécution avec RefCell`<T>`{=html}
+# Suivi des emprunts à l'exécution avec RefCell`<T>`
 
 Lors de la création de références immuables et mutables, nous utilisons respectivement la syntaxe `&` et `&mut`. Avec `RefCell<T>`, nous utilisons les méthodes `borrow` et `borrow_mut`, qui font partie de l'API sécurisée qui appartient à `RefCell<T>`. La méthode `borrow` renvoie le type de pointeur intelligent `Ref<T>`, et `borrow_mut` renvoie le type de pointeur intelligent `RefMut<T>`. Les deux types implémentent `Deref`, de sorte que nous pouvons les traiter comme des références normales.
 

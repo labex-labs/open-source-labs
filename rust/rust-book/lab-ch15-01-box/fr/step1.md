@@ -1,4 +1,4 @@
-# Utiliser Box`<T>`{=html} pour pointer vers des données sur le tas
+# Utiliser Box`<T>` pour pointer vers des données sur le tas
 
 Le pointeur intelligent le plus simple est une _boîte_, dont le type est écrit `Box<T>`. Les boîtes vous permettent de stocker des données sur le tas plutôt que sur la pile. Ce qui reste sur la pile est le pointeur vers les données du tas. Consultez le Chapitre 4 pour revoir la différence entre la pile et le tas.
 

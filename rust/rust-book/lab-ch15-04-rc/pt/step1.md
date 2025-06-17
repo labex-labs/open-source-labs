@@ -1,4 +1,4 @@
-# Rc`<T>`{=html}, o Ponteiro Inteligente com Contagem de Referências
+# Rc`<T>`, o Ponteiro Inteligente com Contagem de Referências
 
 Na maioria dos casos, a propriedade é clara: você sabe exatamente qual variável possui um determinado valor. No entanto, existem casos em que um único valor pode ter múltiplos proprietários. Por exemplo, em estruturas de dados de grafos, múltiplas arestas podem apontar para o mesmo nó, e esse nó é conceitualmente possuído por todas as arestas que apontam para ele. Um nó não deve ser limpo a menos que não tenha nenhuma aresta apontando para ele e, portanto, não tenha proprietários.
 

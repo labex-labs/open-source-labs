@@ -1,4 +1,4 @@
-# Das Klonen von Rc`<T>`{=html} erhöht den Referenzzähler
+# Das Klonen von Rc`<T>` erhöht den Referenzzähler
 
 Ändern wir unser funktionierendes Beispiel in Listing 15-18, so dass wir sehen können, wie sich die Referenzzähler ändern, wenn wir Referenzen auf die `Rc<List>` in `a` erstellen und fallen lassen.
 
@@ -36,7 +36,7 @@ fn main() {
 
 Listing 15-19: Ausgabe des Referenzzählers
 
-An jeder Stelle im Programm, an der sich die Referenzzähler ändert, drucken wir die Referenzzähler, die wir erhalten, indem wir die `Rc::strong_count`-Funktion aufrufen. Diese Funktion heißt `strong_count` statt `count`, weil der Typ `Rc<T>` auch eine `weak_count` hat; wir werden sehen, wofür `weak_count` verwendet wird in "Verhinderung von Referenzzirkeln mit Weak`<T>`{=html}".
+An jeder Stelle im Programm, an der sich die Referenzzähler ändert, drucken wir die Referenzzähler, die wir erhalten, indem wir die `Rc::strong_count`-Funktion aufrufen. Diese Funktion heißt `strong_count` statt `count`, weil der Typ `Rc<T>` auch eine `weak_count` hat; wir werden sehen, wofür `weak_count` verwendet wird in "Verhinderung von Referenzzirkeln mit Weak`<T>`".
 
 Dieser Code gibt Folgendes aus:
 

@@ -1,4 +1,4 @@
-# Coincidencia con `Option<T>`{=html}
+# Coincidencia con `Option<T>`
 
 En la sección anterior, queríamos extraer el valor interno `T` del caso `Some` al usar `Option<T>`; también podemos manejar `Option<T>` usando `match`, como lo hicimos con el `enum Coin`! En lugar de comparar monedas, compararemos las variantes de `Option<T>`, pero la forma en que funciona la expresión `match` sigue siendo la misma.
 

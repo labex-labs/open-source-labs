@@ -1,31 +1,31 @@
-# Ganzzahlige Datentypen
+# Ganzzahltypen (Integer Types)
 
-Eine _Ganzzahl_ ist eine Zahl ohne Bruchanteil. Wir haben in Kapitel 2 einen ganzzahligen Datentyp verwendet, nämlich den `u32`-Typ. Diese Typdeklaration gibt an, dass der ihr zugeordnete Wert ein vorzeichenloses Ganzzahl (vorzeichenbehaftete Ganzzahltypen beginnen mit `i` anstelle von `u`) sein soll, der 32 Bits Speicherplatz einnimmt. Tabelle 3-1 zeigt die in Rust integrierten ganzzahligen Datentypen. Wir können jede dieser Varianten verwenden, um den Typ eines ganzzahligen Werts zu deklarieren.
+Eine _Ganzzahl_ (integer) ist eine Zahl ohne einen Bruchteil. Wir haben einen Ganzzahltyp in Kapitel 2 verwendet, den Typ `u32`. Diese Typdeklaration gibt an, dass der Wert, dem sie zugeordnet ist, eine vorzeichenlose Ganzzahl (signed integer types) sein soll (vorzeichenbehaftete Ganzzahltypen beginnen mit `i` anstelle von `u`), die 32 Bit Speicherplatz beansprucht. Tabelle 3-1 zeigt die integrierten Ganzzahltypen in Rust. Wir können jede dieser Varianten verwenden, um den Typ eines Ganzzahlwerts zu deklarieren.
 
-Tabelle 3-1: Ganzzahlige Datentypen in Rust
+Tabelle 3-1: Ganzzahltypen in Rust
 
-Länge Vorzeichenbehaftet Vorzeichenlos
+Länge Vorzeichenbehaftet (Signed) Vorzeichenlos (Unsigned)
 
 ---
 
-8 Bit `i8` `u8`
-16 Bit `i16` `u16`
-32 Bit `i32` `u32`
-64 Bit `i64` `u64`
-128 Bit `i128` `u128`
-Architektur `isize` `usize`
+8-Bit `i8` `u8`
+16-Bit `i16` `u16`
+32-Bit `i32` `u32`
+64-Bit `i64` `u64`
+128-Bit `i128` `u128`
+arch `isize` `usize`
 
-Jede Variante kann entweder vorzeichenbehaftet oder vorzeichenlos sein und hat eine explizite Größe. _Vorzeichenbehaftet_ und _vorzeichenlos_ beziehen sich darauf, ob es möglich ist, dass die Zahl negativ ist – mit anderen Worten, ob die Zahl ein Vorzeichen haben muss (vorzeichenbehaftet) oder ob sie nur positiv sein kann und daher ohne Vorzeichen dargestellt werden kann (vorzeichenlos). Es ist wie das Schreiben von Zahlen auf Papier: Wenn das Vorzeichen wichtig ist, wird eine Zahl mit einem Plus- oder Minuszeichen dargestellt; wenn es jedoch sicher ist, anzunehmen, dass die Zahl positiv ist, wird sie ohne Vorzeichen dargestellt. Vorzeichenbehaftete Zahlen werden mit der Zweierkomplement-Darstellung gespeichert.
+Jede Variante kann entweder vorzeichenbehaftet (signed) oder vorzeichenlos (unsigned) sein und hat eine explizite Größe. _Vorzeichenbehaftet_ (signed) und _vorzeichenlos_ (unsigned) beziehen sich darauf, ob die Zahl negativ sein kann – mit anderen Worten, ob die Zahl ein Vorzeichen haben muss (vorzeichenbehaftet) oder ob sie nur positiv sein wird und daher ohne Vorzeichen dargestellt werden kann (vorzeichenlos). Es ist wie das Schreiben von Zahlen auf Papier: Wenn das Vorzeichen wichtig ist, wird eine Zahl mit einem Plus- oder Minuszeichen angezeigt; wenn jedoch davon ausgegangen werden kann, dass die Zahl positiv ist, wird sie ohne Vorzeichen angezeigt. Vorzeichenbehaftete Zahlen werden mit der Zweierkomplementdarstellung (two's complement representation) gespeichert.
 
-Jede vorzeichenbehaftete Variante kann Zahlen von -(2`<sup>`{=html}n - 1`</sup>`{=html}) bis 2`<sup>`{=html}n - 1`</sup>`{=html} einschließlich speichern, wobei _n_ die Anzahl der Bits ist, die diese Variante verwendet. Ein `i8` kann daher Zahlen von -(2`<sup>`{=html}7`</sup>`{=html}) bis 2`<sup>`{=html}7`</sup>`{=html} - 1 speichern, was -128 bis 127 entspricht. Vorzeichenlose Varianten können Zahlen von 0 bis 2`<sup>`{=html}n`</sup>`{=html} - 1 speichern, so kann ein `u8` Zahlen von 0 bis 2`<sup>`{=html}8`</sup>`{=html} - 1 speichern, was 0 bis 255 entspricht.
+Jede vorzeichenbehaftete Variante kann Zahlen von -(2^(n-1)) bis 2^(n-1) - 1 einschließlich speichern, wobei _n_ die Anzahl der Bits ist, die diese Variante verwendet. Ein `i8` kann also Zahlen von -(2^7) bis 2^7 - 1 speichern, was -128 bis 127 entspricht. Vorzeichenlose Varianten können Zahlen von 0 bis 2^n - 1 speichern, also kann ein `u8` Zahlen von 0 bis 2^8 - 1 speichern, was 0 bis 255 entspricht.
 
-Zusätzlich hängen die Typen `isize` und `usize` von der Architektur des Computers ab, auf dem Ihr Programm ausgeführt wird, was in der Tabelle als "Architektur" bezeichnet wird: 64 Bits, wenn Sie auf einer 64-Bit-Architektur sind, und 32 Bits, wenn Sie auf einer 32-Bit-Architektur sind.
+Zusätzlich hängen die Typen `isize` und `usize` von der Architektur des Computers ab, auf dem Ihr Programm ausgeführt wird, was in der Tabelle als "arch" bezeichnet wird: 64 Bit, wenn Sie sich auf einer 64-Bit-Architektur befinden, und 32 Bit, wenn Sie sich auf einer 32-Bit-Architektur befinden.
 
-Sie können ganzzahlige Literale in jeder der in Tabelle 3-2 gezeigten Formen schreiben. Beachten Sie, dass Zahlennliterale, die mehrere numerische Typen zulassen, einen Typzusatz wie `57u8` zulassen, um den Typ anzugeben. Zahlennliterale können auch `_` als visuelle Trennung verwenden, um die Zahl leichter lesbar zu machen, wie `1_000`, das denselben Wert wie `1000` haben wird.
+Sie können Ganzzahlliterale in jeder der in Tabelle 3-2 gezeigten Formen schreiben. Beachten Sie, dass Zahlenliterale, die mehrere numerische Typen sein können, ein Typsuffix wie `57u8` zulassen, um den Typ zu bezeichnen. Zahlenliterale können auch `_` als visuelles Trennzeichen verwenden, um die Zahl leichter lesbar zu machen, z. B. `1_000`, was denselben Wert hat, als ob Sie `1000` angegeben hätten.
 
-Tabelle 3-2: Ganzzahlige Literale in Rust
+Tabelle 3-2: Ganzzahlliterale in Rust
 
-Zahlennliterale Beispiel
+Zahlenliterale Beispiel
 
 ---
 
@@ -33,19 +33,19 @@ Dezimal `98_222`
 Hexadezimal `0xff`
 Oktal `0o77`
 Binär `0b1111_0000`
-Byte (`nur u8`) `b'A'`
+Byte (nur `u8`) `b'A'`
 
-Wie wissen Sie also, welchen ganzzahligen Typ Sie verwenden sollen? Wenn Sie unsicher sind, sind die Standardwerte von Rust im Allgemeinen gute Ausgangspunkte: Ganzzahltypen haben standardmäßig den Typ `i32`. Die Hauptsituation, in der Sie `isize` oder `usize` verwenden würden, besteht darin, wenn Sie eine Art von Sammlung indizieren.
+Wie wissen Sie also, welchen Ganzzahltyp Sie verwenden sollen? Wenn Sie sich unsicher sind, sind die Standardeinstellungen von Rust im Allgemeinen ein guter Ausgangspunkt: Ganzzahltypen werden standardmäßig auf `i32` gesetzt. Die primäre Situation, in der Sie `isize` oder `usize` verwenden würden, ist beim Indizieren einer Art von Sammlung.
 
-> **Ganzzahlüberlauf**
+> **Ganzzahlüberlauf (Integer Overflow)**
 >
-> Stellen Sie sich vor, dass Sie eine Variable vom Typ `u8` haben, die Werte zwischen 0 und 255 speichern kann. Wenn Sie versuchen, die Variable auf einen Wert außerhalb dieses Bereichs, wie 256, zu ändern, tritt ein _Ganzzahlüberlauf_ auf, was zu einem von zwei Verhaltensweisen führen kann. Wenn Sie im Debugmodus kompilieren, enthält Rust Überlaufprüfungen für Ganzzahlen, die dazu führen, dass Ihr Programm zur Laufzeit _abstürzt_, wenn dieser Fehler auftritt. Rust verwendet den Begriff _abstürzen_, wenn ein Programm mit einem Fehler beendet wird; wir werden Abstürze im weiteren Verlauf in "Unwiderholbare Fehler mit panic!" genauer besprechen.
+> Angenommen, Sie haben eine Variable vom Typ `u8`, die Werte zwischen 0 und 255 aufnehmen kann. Wenn Sie versuchen, die Variable auf einen Wert außerhalb dieses Bereichs zu ändern, z. B. 256, tritt ein _Ganzzahlüberlauf_ (integer overflow) auf, der zu einem von zwei Verhaltensweisen führen kann. Wenn Sie im Debug-Modus kompilieren, enthält Rust Überlaufprüfungen für Ganzzahlen, die dazu führen, dass Ihr Programm zur Laufzeit _panickt_ (panic), wenn dieses Verhalten auftritt. Rust verwendet den Begriff _panicking_ (panicking), wenn ein Programm mit einem Fehler beendet wird; wir werden Panics in "Unrecoverable Errors with panic!" ausführlicher besprechen.
 >
-> Wenn Sie im Releasemodus mit der Option `--release` kompilieren, enthält Rust keine Überlaufprüfungen für Ganzzahlen, die zu Abstürzen führen. Stattdessen führt Rust bei einem Überlauf eine _Zweierkomplementumkehrung_ durch. Kurz gesagt werden Werte, die größer als der maximale Wert sind, den der Typ aufnehmen kann, auf den minimalen Wert, den der Typ aufnehmen kann, "zurückgewickelt". Im Falle eines `u8` wird der Wert 256 zu 0, der Wert 257 zu 1 usw. Das Programm wird nicht abstürzen, aber die Variable wird einen Wert haben, der wahrscheinlich nicht dem entspricht, was Sie erwartet haben. Das Verlassen auf das Umkehrverhalten des Ganzzahlüberlaufs wird als Fehler angesehen.
+> Wenn Sie im Release-Modus mit dem Flag `--release` kompilieren, enthält Rust _keine_ Überlaufprüfungen für Ganzzahlen, die Panics verursachen. Stattdessen führt Rust, wenn ein Überlauf auftritt, eine _Zweierkomplement-Umwicklung_ (two's complement wrapping) durch. Kurz gesagt, Werte, die größer sind als der Maximalwert, den der Typ aufnehmen kann, "wickeln sich" auf das Minimum der Werte, die der Typ aufnehmen kann. Im Fall eines `u8` wird der Wert 256 zu 0, der Wert 257 zu 1 usw. Das Programm wird nicht panicken, aber die Variable hat einen Wert, der wahrscheinlich nicht dem entspricht, was Sie erwartet haben. Sich auf das Wrapping-Verhalten des Ganzzahlüberlaufs zu verlassen, gilt als Fehler.
 >
-> Um die Möglichkeit eines Überlaufs explizit zu behandeln, können Sie die folgenden Methodenfamilien der Standardbibliothek für primitive numerische Typen verwenden:
+> Um die Möglichkeit eines Überlaufs explizit zu behandeln, können Sie diese Familien von Methoden verwenden, die von der Standardbibliothek für primitive numerische Typen bereitgestellt werden:
 >
-> - Wenden Sie die `wrapping_*`-Methoden wie `wrapping_add` in allen Modi an.
-> - Geben Sie den Wert `None` zurück, wenn es bei der Verwendung der `checked_*`-Methoden zu einem Überlauf kommt.
-> - Geben Sie den Wert und einen booleschen Wert zurück, der angibt, ob es zu einem Überlauf kam, bei Verwendung der `overflowing_*`-Methoden.
-> - Sättigen Sie den Wert an seinem minimalen oder maximalen Wert mit den `saturating_*`-Methoden.
+> - Umwickeln in allen Modi mit den `wrapping_*`-Methoden, wie z. B. `wrapping_add`.
+> - Den Wert `None` zurückgeben, wenn ein Überlauf mit den `checked_*`-Methoden auftritt.
+> - Den Wert und einen booleschen Wert zurückgeben, der angibt, ob ein Überlauf mit den `overflowing_*`-Methoden aufgetreten ist.
+> - Mit den `saturating_*`-Methoden auf die Minimal- oder Maximalwerte des Werts sättigen.

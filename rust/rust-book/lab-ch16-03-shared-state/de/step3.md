@@ -1,4 +1,4 @@
-# Die API von Mutex`<T>`{=html}
+# Die API von Mutex`<T>`
 
 Als Beispiel für die Verwendung eines Mutex starten wir mit der Verwendung eines Mutex in einem ein-threadigen Kontext, wie in Listing 16-12 gezeigt.
 

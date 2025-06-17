@@ -1,4 +1,4 @@
-# Clonar un Rc`<T>`{=html} aumenta el recuento de referencias
+# Clonar un Rc`<T>` aumenta el recuento de referencias
 
 Modifiquemos nuestro ejemplo funcional de la Lista 15-18 para ver cómo cambian los recuentos de referencias a medida que creamos y eliminamos referencias al `Rc<List>` en `a`.
 
@@ -36,7 +36,7 @@ fn main() {
 
 Lista 15-19: Imprimiendo el recuento de referencias
 
-En cada punto del programa en el que el recuento de referencias cambia, imprimimos el recuento de referencias, que obtenemos llamando a la función `Rc::strong_count`. Esta función se llama `strong_count` en lugar de `count` porque el tipo `Rc<T>` también tiene un `weak_count`; veremos para qué se utiliza `weak_count` en "Evitando ciclos de referencias usando Weak`<T>`{=html}".
+En cada punto del programa en el que el recuento de referencias cambia, imprimimos el recuento de referencias, que obtenemos llamando a la función `Rc::strong_count`. Esta función se llama `strong_count` en lugar de `count` porque el tipo `Rc<T>` también tiene un `weak_count`; veremos para qué se utiliza `weak_count` en "Evitando ciclos de referencias usando Weak`<T>`".
 
 Este código imprime lo siguiente:
 

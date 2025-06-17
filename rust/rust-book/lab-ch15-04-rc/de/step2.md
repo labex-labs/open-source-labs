@@ -1,4 +1,4 @@
-# Das Teilen von Daten mit Rc`<T>`{=html}
+# Das Teilen von Daten mit Rc`<T>`
 
 Lassen Sie uns zurückkehren zu unserem Beispiel mit der Cons-Liste in Listing 15-5. Erinnern Sie sich, dass wir es mit `Box<T>` definiert haben. Dieses Mal werden wir zwei Listen erstellen, die beide die Eigentumsgewalt über eine dritte Liste teilen. Konzeptionell sieht dies ähnlich wie in Abbildung 15-3 aus.
 

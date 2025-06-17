@@ -1,4 +1,4 @@
-# Usando Box`<T>`{=html} para Armazenar Dados no Heap
+# Usando Box`<T>` para Armazenar Dados no Heap
 
 Antes de discutirmos o caso de uso de armazenamento no heap para `Box<T>`, abordaremos a sintaxe e como interagir com valores armazenados dentro de um `Box<T>`.
 

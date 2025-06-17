@@ -1,4 +1,4 @@
-# Mantenimiento del Control de Préstamos en Tiempo de Ejecución con RefCell`<T>`{=html}
+# Mantenimiento del Control de Préstamos en Tiempo de Ejecución con RefCell`<T>`
 
 Al crear referencias inmutables y mutables, usamos la sintaxis `&` y `&mut`, respectivamente. Con `RefCell<T>`, usamos los métodos `borrow` y `borrow_mut`, que son parte de la API segura que pertenece a `RefCell<T>`. El método `borrow` devuelve el tipo de apuntador inteligente `Ref<T>`, y `borrow_mut` devuelve el tipo de apuntador inteligente `RefMut<T>`. Ambos tipos implementan `Deref`, por lo que podemos tratarlos como referencias normales.
 

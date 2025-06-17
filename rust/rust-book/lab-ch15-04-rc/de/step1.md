@@ -1,4 +1,4 @@
-# Rc`<T>`{=html}, der referenzzählende Smart Pointer
+# Rc`<T>`, der referenzzählende Smart Pointer
 
 In den meisten Fällen ist die Eigentumszuordnung klar: Du weißt genau, welche Variable ein bestimmter Wert besitzt. Es gibt jedoch Fälle, in denen ein einzelner Wert mehrere Besitzer haben kann. Beispielsweise in Graphen-Datenstrukturen können mehrere Kanten auf den gleichen Knoten verweisen, und dieser Knoten wird konzeptionell von allen Kanten, die auf ihn verweisen, besessen. Ein Knoten sollte nicht bereinigt werden, es sei denn, er hat keine Kanten, die auf ihn verweisen, und somit keine Besitzer.
 

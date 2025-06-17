@@ -1,4 +1,4 @@
-# Rc`<T>`{=html}, el puntero inteligente con conteo de referencias
+# Rc`<T>`, el puntero inteligente con conteo de referencias
 
 En la mayoría de los casos, la propiedad es clara: sabes exactamente qué variable posee un valor dado. Sin embargo, hay casos en los que un solo valor puede tener múltiples propietarios. Por ejemplo, en las estructuras de datos de gráficos, múltiples aristas pueden apuntar al mismo nodo, y ese nodo es conceptualmente propiedad de todas las aristas que apuntan a él. Un nodo no debe ser eliminado a menos que no tenga ninguna arista apuntando a él y, por lo tanto, no tenga propietarios.
 

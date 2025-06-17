@@ -1,4 +1,4 @@
-# Laufzeitüberprüfung der Leihregeln mit RefCell`<T>`{=html}
+# Laufzeitüberprüfung der Leihregeln mit RefCell`<T>`
 
 Im Gegensatz zu `Rc<T>` repräsentiert der Typ `RefCell<T>` die alleinige Eigentumsverhältnisse über die von ihm gehaltenen Daten. Was unterscheidet `RefCell<T>` also von einem Typ wie `Box<T>`? Erinnern Sie sich an die Leihregeln, die Sie im Kapitel 4 gelernt haben:
 

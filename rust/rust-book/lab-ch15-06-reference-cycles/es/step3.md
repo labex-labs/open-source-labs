@@ -1,4 +1,4 @@
-# Evitando Ciclos de Referencia Usando Weak`<T>`{=html}
+# Evitando Ciclos de Referencia Usando Weak`<T>`
 
 Hasta ahora, hemos demostrado que llamar a `Rc::clone` aumenta el `strong_count` de una instancia `Rc<T>`, y una instancia `Rc<T>` solo se limpia si su `strong_count` es 0. También puedes crear una _referencia débil_ al valor dentro de una instancia `Rc<T>` llamando a `Rc::downgrade` y pasando una referencia a la `Rc<T>`. Las referencias fuertes son cómo puedes compartir la propiedad de una instancia `Rc<T>`. Las referencias débiles no expresan una relación de propiedad, y su recuento no afecta a cuando se limpia una instancia `Rc<T>`. No causarán un ciclo de referencia porque cualquier ciclo que involucre algunas referencias débiles se romperá una vez que el recuento de referencias fuertes de los valores involucrados sea 0.
 

@@ -1,4 +1,4 @@
-# Verwenden von `Box<T>`{=html} um einen rekursiven Typ mit bekannter Größe zu erhalten
+# Verwenden von `Box<T>` um einen rekursiven Typ mit bekannter Größe zu erhalten
 
 Da Rust nicht herausfinden kann, wie viel Speicher für rekursiv definierte Typen zuzuweisen ist, gibt der Compiler einen Fehler mit diesem hilfreichen Tipp:
 

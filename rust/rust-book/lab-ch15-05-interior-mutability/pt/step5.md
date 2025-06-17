@@ -1,4 +1,4 @@
-# Acompanhando Empréstimos em Tempo de Execução com RefCell`<T>`{=html}
+# Acompanhando Empréstimos em Tempo de Execução com RefCell`<T>`
 
 Ao criar referências imutáveis e mutáveis, usamos a sintaxe `&` e `&mut`, respectivamente. Com `RefCell<T>`, usamos os métodos `borrow` e `borrow_mut`, que fazem parte da API segura que pertence a `RefCell<T>`. O método `borrow` retorna o tipo de ponteiro inteligente `Ref<T>`, e `borrow_mut` retorna o tipo de ponteiro inteligente `RefMut<T>`. Ambos os tipos implementam `Deref`, então podemos tratá-los como referências regulares.
 

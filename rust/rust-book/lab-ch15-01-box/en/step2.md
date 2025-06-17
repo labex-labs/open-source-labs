@@ -1,4 +1,4 @@
-# Using Box`<T>`{=html} to Store Data on the Heap
+# Using Box`<T>` to Store Data on the Heap
 
 Before we discuss the heap storage use case for `Box<T>`, we'll cover the syntax and how to interact with values stored within a `Box<T>`.
 

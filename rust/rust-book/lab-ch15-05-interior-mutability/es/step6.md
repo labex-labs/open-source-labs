@@ -1,4 +1,4 @@
-# Permitiendo Varios Propietarios de Datos Mutables con Rc`<T>`{=html} y RefCell`<T>`{=html}
+# Permitiendo Varios Propietarios de Datos Mutables con Rc`<T>` y RefCell`<T>`
 
 Una forma común de usar `RefCell<T>` es en combinación con `Rc<T>`. Recuerda que `Rc<T>` te permite tener múltiples propietarios de algunos datos, pero solo te da acceso inmutable a esos datos. Si tienes un `Rc<T>` que contiene un `RefCell<T>`, puedes obtener un valor que puede tener múltiples propietarios _y_ que puedes mutar.
 

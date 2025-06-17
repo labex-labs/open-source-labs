@@ -1,4 +1,4 @@
-# RefCell`<T>`{=html} y el Patrón de Mutabilidad Interior
+# RefCell`<T>` y el Patrón de Mutabilidad Interior
 
 La _mutabilidad interior_ es un patrón de diseño en Rust que te permite mutar datos incluso cuando hay referencias inmutables a esos datos; normalmente, esta acción está prohibida por las reglas de préstamo. Para mutar datos, el patrón utiliza código `unsafe` dentro de una estructura de datos para desviar las reglas habituales de Rust que gobiernan la mutación y el préstamo. El código `unsafe` indica al compilador que estamos comprobando las reglas manualmente en lugar de confiar en que el compilador las compruebe por nosotros; discutiremos el código `unsafe` más en el Capítulo 19.
 

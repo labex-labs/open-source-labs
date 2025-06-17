@@ -1,4 +1,4 @@
-# Usando Box`<T>`{=html} para obtener un tipo recursivo con un tamaño conocido
+# Usando Box`<T>` para obtener un tipo recursivo con un tamaño conocido
 
 Debido a que Rust no puede determinar cuánto espacio asignar para tipos definidos recursivamente, el compilador muestra un error con esta sugerencia útil:
 

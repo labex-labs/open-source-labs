@@ -1,4 +1,4 @@
-# Compte-rendu de référence atomique avec Arc`<T>`{=html}
+# Compte-rendu de référence atomique avec Arc`<T>`
 
 Heureusement, `Arc<T>` _est_ un type similaire à `Rc<T>` qui est sécurisé à utiliser dans des situations concurrentes. Le _a_ signifie _atomique_, ce qui signifie qu'il s'agit d'un type _compté en référence de manière atomique_. Les atomes sont un autre type de primitif de concurrence que nous ne détaillerons pas ici : consultez la documentation de la bibliothèque standard pour `std::sync::atomic` pour plus de détails. À ce stade, vous n'avez qu'à savoir que les atomes fonctionnent comme les types primitifs mais sont sécurisés à partager entre les threads.
 

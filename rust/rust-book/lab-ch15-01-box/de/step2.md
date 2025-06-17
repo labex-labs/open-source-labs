@@ -1,4 +1,4 @@
-# Verwenden von `Box<T>`{=html} um Daten auf dem Heap zu speichern
+# Verwenden von `Box<T>` um Daten auf dem Heap zu speichern
 
 Bevor wir uns dem Use Case der Heap-Speicherung für `Box<T>` widmen, besprechen wir die Syntax und die Interaktion mit den Werten, die in einem `Box<T>` gespeichert sind.
 

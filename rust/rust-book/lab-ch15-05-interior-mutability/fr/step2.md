@@ -1,4 +1,4 @@
-# Vérification des règles d'emprunt à l'exécution avec RefCell`<T>`{=html}
+# Vérification des règles d'emprunt à l'exécution avec RefCell`<T>`
 
 Contrairement à `Rc<T>`, le type `RefCell<T>` représente une propriété exclusive des données qu'il stocke. Alors, en quoi `RefCell<T>` diffère-t-il d'un type comme `Box<T>`? Rappelez-vous les règles d'emprunt que vous avez apprises au chapitre 4 :
 

@@ -1,4 +1,4 @@
-# Compartiendo un Mutex`<T>`{=html} Entre Varios Hilos
+# Compartiendo un Mutex`<T>` Entre Varios Hilos
 
 Ahora intentemos compartir un valor entre varios hilos usando `Mutex<T>`. Iniciaremos 10 hilos y les pediremos que cada uno incremente en 1 un valor de contador, de modo que el contador pase de 0 a 10. El ejemplo de la Lista 16-13 tendrá un error de compilación, y usaremos ese error para aprender más sobre el uso de `Mutex<T>` y cómo Rust nos ayuda a usarlo correctamente.
 

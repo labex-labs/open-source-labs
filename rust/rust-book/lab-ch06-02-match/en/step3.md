@@ -1,4 +1,4 @@
-# Matching with Option`<T>`{=html}
+# Matching with Option`<T>`
 
 In the previous section, we wanted to get the inner `T` value out of the `Some` case when using `Option<T>`; we can also handle `Option<T>` using `match`, as we did with the `Coin` enum! Instead of comparing coins, we'll compare the variants of `Option<T>`, but the way the `match` expression works remains the same.
 

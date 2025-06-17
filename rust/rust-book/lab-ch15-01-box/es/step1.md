@@ -1,4 +1,4 @@
-# Usando Box`<T>`{=html} para apuntar a datos en el montón
+# Usando Box`<T>` para apuntar a datos en el montón
 
 El puntero inteligente más sencillo es una _caja_, cuyo tipo se escribe `Box<T>`. Las cajas te permiten almacenar datos en el montón en lugar de la pila. Lo que queda en la pila es el puntero a los datos del montón. Consulte el Capítulo 4 para revisar la diferencia entre la pila y el montón.
 

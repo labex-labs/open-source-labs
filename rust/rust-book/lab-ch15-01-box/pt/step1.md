@@ -1,4 +1,4 @@
-# Usando Box`<T>`{=html} para Apontar para Dados no Heap
+# Usando Box`<T>` para Apontar para Dados no Heap
 
 O smart pointer mais direto é uma _box_ (caixa), cujo tipo é escrito `Box<T>`. Boxes permitem que você armazene dados no heap em vez da stack. O que permanece na stack é o ponteiro para os dados no heap. Consulte o Capítulo 4 para revisar a diferença entre a stack e o heap.
 

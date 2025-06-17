@@ -1,4 +1,4 @@
-# Aplicando las Reglas de Préstamo en Tiempo de Ejecución con RefCell`<T>`{=html}
+# Aplicando las Reglas de Préstamo en Tiempo de Ejecución con RefCell`<T>`
 
 A diferencia de `Rc<T>`, el tipo `RefCell<T>` representa la propiedad exclusiva de los datos que contiene. Entonces, ¿en qué se diferencia `RefCell<T>` de un tipo como `Box<T>`? Recuerda las reglas de préstamo que aprendiste en el Capítulo 4:
 

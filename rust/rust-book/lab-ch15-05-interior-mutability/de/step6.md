@@ -1,4 +1,4 @@
-# Erlauben von mehreren Besitzern von veränderbaren Daten mit Rc`<T>`{=html} und RefCell`<T>`{=html}
+# Erlauben von mehreren Besitzern von veränderbaren Daten mit Rc`<T>` und RefCell`<T>`
 
 Eine häufige Weise, `RefCell<T>` zu verwenden, ist in Kombination mit `Rc<T>`. Erinnern Sie sich, dass `Rc<T>` Ihnen ermöglicht, mehrere Besitzer eines bestimmten Datensatzes zu haben, aber es gibt nur unveränderlichen Zugang zu diesem Datensatz. Wenn Sie ein `Rc<T>` haben, das ein `RefCell<T>` enthält, können Sie einen Wert erhalten, der mehrere Besitzer haben _und_ den Sie mutieren können!
 

@@ -1,4 +1,4 @@
-# Contagem de Referência Atômica com Arc`<T>`{=html}
+# Contagem de Referência Atômica com Arc`<T>`
 
 Felizmente, `Arc<T>` _é_ um tipo como `Rc<T>` que é seguro para usar em situações concorrentes. O _a_ significa _atômico_ (_atomic_), o que significa que é um tipo com _contagem de referência atômica_ (_atomically reference counted_). Atômicos são um tipo adicional de primitiva de concorrência que não abordaremos em detalhes aqui: consulte a documentação da biblioteca padrão para `std::sync::atomic` para mais detalhes. Neste ponto, você só precisa saber que os atômicos funcionam como tipos primitivos, mas são seguros para compartilhar entre _threads_.
 

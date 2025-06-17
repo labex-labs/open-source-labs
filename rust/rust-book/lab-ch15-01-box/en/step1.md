@@ -1,4 +1,4 @@
-# Using Box`<T>`{=html} to Point to Data on the Heap
+# Using Box`<T>` to Point to Data on the Heap
 
 The most straightforward smart pointer is a _box_, whose type is written `Box<T>`. Boxes allow you to store data on the heap rather than the stack. What remains on the stack is the pointer to the heap data. Refer to Chapter 4 to review the difference between the stack and the heap.
 

@@ -1,4 +1,4 @@
-# Usando Box`<T>`{=html} para almacenar datos en el montón
+# Usando Box`<T>` para almacenar datos en el montón
 
 Antes de discutir el caso de uso de almacenamiento en el montón para `Box<T>`, cubriremos la sintaxis y cómo interactuar con los valores almacenados dentro de un `Box<T>`.
 

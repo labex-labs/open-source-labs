@@ -1,4 +1,4 @@
-# Using Rc`<T>`{=html} to Share Data
+# Using Rc`<T>` to Share Data
 
 Let's return to our cons list example in Listing 15-5. Recall that we defined it using `Box<T>`. This time, we'll create two lists that both share ownership of a third list. Conceptually, this looks similar to Figure 15-3.
 

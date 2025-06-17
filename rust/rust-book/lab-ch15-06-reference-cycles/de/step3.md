@@ -1,4 +1,4 @@
-# Vermeiden von Referenzzyklen mit Weak`<T>`{=html}
+# Vermeiden von Referenzzyklen mit Weak`<T>`
 
 Bisher haben wir gezeigt, dass das Aufrufen von `Rc::clone` die `strong_count` einer `Rc<T>`-Instanz erhöht und dass eine `Rc<T>`-Instanz nur dann bereinigt wird, wenn ihre `strong_count` 0 ist. Sie können auch eine _schwache Referenz_ auf den Wert innerhalb einer `Rc<T>`-Instanz erstellen, indem Sie `Rc::downgrade` aufrufen und eine Referenz auf die `Rc<T>` übergeben. Starke Referenzen sind die Art, wie Sie die Eigentumsverteilung einer `Rc<T>`-Instanz teilen können. Schwache Referenzen drücken keine Eigentumsbeziehung aus, und ihre Anzahl hat keinen Einfluss darauf, wann eine `Rc<T>`-Instanz bereinigt wird. Sie verursachen keinen Referenzzyklus, da jeder Zyklus, der einige schwache Referenzen umfasst, abgebrochen wird, sobald die starke Referenzzählung der beteiligten Werte 0 ist.
 

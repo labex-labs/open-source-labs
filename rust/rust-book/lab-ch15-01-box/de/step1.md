@@ -1,4 +1,4 @@
-# Verwenden von `Box<T>`{=html} um auf Daten auf dem Heap zu verweisen
+# Verwenden von `Box<T>` um auf Daten auf dem Heap zu verweisen
 
 Der einfachste Smart-Pointer ist eine _Box_, deren Typ als `Box<T>` geschrieben wird. Boxen ermöglichen es Ihnen, Daten auf dem Heap statt auf dem Stack zu speichern. Was auf dem Stack bleibt, ist der Zeiger auf die Heap-Daten. Siehe Kapitel 4, um den Unterschied zwischen Stack und Heap zu überprüfen.
 

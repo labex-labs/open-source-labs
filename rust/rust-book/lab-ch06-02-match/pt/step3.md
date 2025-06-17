@@ -1,4 +1,4 @@
-# Correspondência com Option`<T>`{=html}
+# Correspondência com Option`<T>`
 
 Na seção anterior, queríamos obter o valor interno `T` do caso `Some` ao usar `Option<T>`; também podemos lidar com `Option<T>` usando `match`, como fizemos com o enum `Coin`! Em vez de comparar moedas, compararemos as variantes de `Option<T>`, mas a maneira como a expressão `match` funciona permanece a mesma.
 

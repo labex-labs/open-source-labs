@@ -1,4 +1,4 @@
-# Rc`<T>`{=html}, le pointeur intelligent à comptage de références
+# Rc`<T>`, le pointeur intelligent à comptage de références
 
 Dans la majorité des cas, la propriété est claire : vous savez exactement quelle variable possède une valeur donnée. Cependant, il existe des cas où une seule valeur peut avoir plusieurs propriétaires. Par exemple, dans les structures de données de graphe, plusieurs arêtes peuvent pointer vers le même nœud, et ce nœud est conceptuellement propriété de toutes les arêtes qui le pointent. Un nœud ne devrait pas être nettoyé à moins qu'il n'ait aucune arête qui le pointe et donc qu'il n'ait aucun propriétaire.
 

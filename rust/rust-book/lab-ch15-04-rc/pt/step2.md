@@ -1,4 +1,4 @@
-# Usando Rc`<T>`{=html} para Compartilhar Dados
+# Usando Rc`<T>` para Compartilhar Dados
 
 Vamos retornar ao nosso exemplo de lista cons em Listing 15-5. Lembre-se de que o definimos usando `Box<T>`. Desta vez, criaremos duas listas que compartilham a propriedade de uma terceira lista. Conceitualmente, isso se assemelha à Figura 15-3.
 

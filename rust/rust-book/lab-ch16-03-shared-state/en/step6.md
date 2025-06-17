@@ -1,4 +1,4 @@
-# Atomic Reference Counting with Arc`<T>`{=html}
+# Atomic Reference Counting with Arc`<T>`
 
 Fortunately, `Arc<T>` _is_ a type like `Rc<T>` that is safe to use in concurrent situations. The _a_ stands for _atomic_, meaning it's an _atomically reference counted_ type. Atomics are an additional kind of concurrency primitive that we won't cover in detail here: see the standard library documentation for `std::sync::atomic` for more details. At this point, you just need to know that atomics work like primitive types but are safe to share across threads.
 

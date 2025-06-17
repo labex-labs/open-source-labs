@@ -1,4 +1,4 @@
-# Prévention des cycles de référence en utilisant Weak`<T>`{=html}
+# Prévention des cycles de référence en utilisant Weak`<T>`
 
 Jusqu'à présent, nous avons démontré que l'appel de `Rc::clone` augmente le `strong_count` d'une instance `Rc<T>`, et qu'une instance `Rc<T>` n'est nettoyée que si son `strong_count` est égal à 0. Vous pouvez également créer une _référence faible_ à la valeur contenue dans une instance `Rc<T>` en appelant `Rc::downgrade` et en passant une référence à l'`Rc<T>`. Les références fortes sont le moyen de partager la propriété d'une instance `Rc<T>`. Les références faibles n'expriment pas de relation de propriété, et leur comptage n'affecte pas le moment où une instance `Rc<T>` est nettoyée. Elles ne causeront pas de cycle de référence car tout cycle impliquant des références faibles sera rompu une fois que le comptage de références fortes des valeurs impliquées est égal à 0.
 
