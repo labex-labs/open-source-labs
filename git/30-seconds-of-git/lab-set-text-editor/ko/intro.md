@@ -7,5 +7,5 @@
 Git 을 사용할 때, 커밋 메시지를 작성하거나 텍스트 편집기에서 다른 변경 사항을 적용해야 하는 경우가 있습니다. 기본적으로 Git 은 시스템의 기본 텍스트 편집기를 사용하며, 이는 사용자가 선호하는 편집기가 아닐 수 있습니다. 이 랩에서는 Git 에서 사용하는 텍스트 편집기를 구성하는 방법을 배우게 됩니다.
 
 <div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
-이것은 가이드 실험입니다. 학습과 실습을 돕기 위한 단계별 지침을 제공합니다.각 단계를 완료하고 실무 경험을 쌓기 위해 지침을 주의 깊게 따르세요. 과거 데이터에 따르면, 이것은 <span class="text-orange-600 dark:text-orange-400">중급</span> 레벨의 실험이며 완료율은 <span class="text-orange-600 dark:text-orange-400">73.33%</span>입니다.학습자들로부터 <span class="text-primary-600 dark:text-primary-400">100%</span>의 긍정적인 리뷰율을 받았습니다.
+이것은 가이드 실험입니다. 학습과 실습을 돕기 위한 단계별 지침을 제공합니다.각 단계를 완료하고 실무 경험을 쌓기 위해 지침을 주의 깊게 따르세요. 과거 데이터에 따르면, 이것은 <span class="text-orange-600 dark:text-orange-400">중급</span> 레벨의 실험이며 완료율은 <span class="text-orange-600 dark:text-orange-400">73%</span>입니다.학습자들로부터 <span class="text-primary-600 dark:text-primary-400">100%</span>의 긍정적인 리뷰율을 받았습니다.
 </div>
