@@ -7,5 +7,5 @@
 在使用 Git 时，将本地更改推送到远程仓库是很常见的操作。默认情况下，Git 会将你的更改推送到与本地分支同名的分支。然而，有时你可能希望将更改推送到不同的分支。在这个挑战中，你将学习如何将默认推送分支名称设置为当前本地分支的名称。
 
 <div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
-这是一个挑战（Challenge），与实验（Lab）不同，你需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果你觉得困难，可以与 Labby 讨论或查看解决方案。根据历史数据，这是一个 <span class="text-green-600 dark:text-green-400">初级</span> 级别的挑战，通过率为 <span class="text-green-600 dark:text-green-400">93%</span>。获得了学习者 <span class="text-primary-600 dark:text-primary-400">85%</span> 的好评率。
+这是一个挑战（Challenge），与实验（Lab）不同，你需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果你觉得困难，可以与 Labby 讨论或查看解决方案。根据历史数据，这是一个 <span class="text-green-600 dark:text-green-400">初级</span> 级别的挑战，通过率为 <span class="text-green-600 dark:text-green-400">97%</span>。获得了学习者 <span class="text-primary-600 dark:text-primary-400">77%</span> 的好评率。
 </div>
