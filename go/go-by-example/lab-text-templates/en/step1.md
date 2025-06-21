@@ -9,7 +9,7 @@ In this lab, you are required to demonstrate the use of the `text/template` pack
 - Use the `{{range .}}{{.}} {{end}}\n` action to loop through slices, arrays, maps, or channels.
 
 ```sh
-$ go run templates.go
+$ go run text-templates.go
 Value: some text
 Value: 5
 Value: [Go Rust C++ C#]
