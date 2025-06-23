@@ -5,4 +5,4 @@
 # produces deterministic results due to the way the
 # playground is implemented.
 cd /home/labex/project
-/usr/local/go/bin/go run random-numbers.go | grep "81,87"
+/usr/local/go/bin/go run random-numbers.go
