@@ -6,7 +6,7 @@ cd /home/labex/project
 
 # Create the structure.py file
 cat > structure.py << 'EOF'
-from validate import validate_type, PositiveInteger, PositiveFloat, String
+from validate import validate_type
 
 class Structure:
     _fields = None

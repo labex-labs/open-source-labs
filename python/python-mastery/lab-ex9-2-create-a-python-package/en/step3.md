@@ -14,13 +14,13 @@ code structly/structure.py
 Once the file is open, look at the first line of the import statement. It currently looks like this:
 
 ```python
-from validate import validate_type, PositiveInteger, PositiveFloat, String
+from validate import validate_type
 ```
 
 This statement was correct when the files were in a different structure. But now, we need to change it to tell Python to look for the `validate` module within the same package. So, we change it to:
 
 ```python
-from .validate import validate_type, PositiveInteger, PositiveFloat, String
+from .validate import validate_type
 ```
 
 The dot (`.`) before `validate` is a key part here. It's a special syntax in Python called a relative import. It tells Python to search for the `validate` module in the same package as the current module (which is `structure.py` in this case).
