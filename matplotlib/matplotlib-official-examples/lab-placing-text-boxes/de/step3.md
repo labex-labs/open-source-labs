@@ -71,7 +71,6 @@ Wenn Sie diese Zelle ausführen, sollten Sie Ihr Histogramm mit einer Textbox in
 Lassen Sie uns die wichtigen Teile des Codes, der die Textbox erstellt, analysieren:
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)`:
-
    - Dies erstellt ein Wörterbuch mit Eigenschaften für die Textbox.
    - `boxstyle='round'`: Macht die Ecken der Box abgerundet.
    - `facecolor='wheat'`: Setzt die Hintergrundfarbe der Box auf Weizenfarbe.

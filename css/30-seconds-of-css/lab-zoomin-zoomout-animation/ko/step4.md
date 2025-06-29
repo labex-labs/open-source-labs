@@ -15,7 +15,6 @@
 ```
 
 2. 추가한 animation (애니메이션) 속성을 이해해 봅시다:
-
    - `animation`은 여러 animation (애니메이션) 속성을 한 번에 설정하는 shorthand property (단축 속성) 입니다.
    - `zoom-in-zoom-out`은 keyframes (키프레임) 애니메이션의 이름입니다.
    - `1s`는 애니메이션의 한 주기가 1 초 동안 지속되도록 지정합니다.

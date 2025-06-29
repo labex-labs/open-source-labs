@@ -114,7 +114,6 @@ Plusieurs paramètres clés contrôlent le positionnement de la boîte de texte 
 1. **Coordonnées de position** : Les coordonnées `(x, y)` déterminent où la boîte de texte est placée. Lorsque vous utilisez `transform=ax.transAxes`, il s'agit de coordonnées d'axes où `(0, 0)` est le coin inférieur gauche et `(1, 1)` est le coin supérieur droit.
 
 2. **Alignement vertical** : Le paramètre `verticalalignment` contrôle l'alignement vertical du texte par rapport à la coordonnée y :
-
    - `'top'` : Le haut du texte est à la coordonnée y spécifiée.
    - `'center'` : Le centre du texte est à la coordonnée y spécifiée.
    - `'bottom'` : Le bas du texte est à la coordonnée y spécifiée.

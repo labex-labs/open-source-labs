@@ -19,7 +19,6 @@ CSS animations work by defining keyframes that specify the styles an element sho
 ```
 
 2. Let's understand what this code does:
-
    - `@keyframes` is a CSS at-rule that defines the stages and styles of an animation
    - `zoom-in-zoom-out` is the name we give to our animation (we'll reference this name later)
    - Inside the keyframes, we define what happens at different points in the animation:

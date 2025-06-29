@@ -107,7 +107,6 @@ Ten en cuenta que algunas pruebas pueden fallar. Esto puede deberse a que espera
 Tomemos un momento para revisar lo que hemos logrado hasta ahora:
 
 1. Creamos una clase base `Structure` reutilizable. Esta clase:
-
    - Maneja automáticamente la asignación de atributos, lo que nos ahorra escribir mucho código repetitivo.
    - Proporciona una buena representación en cadena, lo que facilita imprimir y depurar nuestros objetos.
    - Restringe los nombres de los atributos para prevenir errores, lo que hace nuestro código más robusto.

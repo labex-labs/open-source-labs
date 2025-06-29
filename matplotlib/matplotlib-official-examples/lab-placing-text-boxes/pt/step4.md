@@ -114,7 +114,6 @@ Existem vários parâmetros-chave que controlam o posicionamento da caixa de tex
 1. **Coordenadas de posição**: As coordenadas `(x, y)` determinam onde a caixa de texto é colocada. Ao usar `transform=ax.transAxes`, estas estão em coordenadas de eixos, onde `(0, 0)` é o canto inferior esquerdo e `(1, 1)` é o canto superior direito.
 
 2. **Alinhamento vertical**: O parâmetro `verticalalignment` controla como o texto é alinhado verticalmente em relação à coordenada y:
-
    - `'top'`: A parte superior do texto está na coordenada y especificada.
    - `'center'`: O centro do texto está na coordenada y especificada.
    - `'bottom'`: A parte inferior do texto está na coordenada y especificada.

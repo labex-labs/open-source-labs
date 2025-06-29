@@ -209,17 +209,14 @@ Error: 'InheritingSpam' object has no attribute 'method_d'
 Let's look at the similarities and differences between delegation and inheritance.
 
 1. **Method Override**: Both delegation and inheritance allow you to override methods, but the syntax is different.
-
    - In delegation, you define your own method and decide whether to call the wrapped object's method.
    - In inheritance, you define your own method and use `super()` to call the parent's method.
 
 2. **Method Access**:
-
    - In delegation, undefined methods are forwarded via the `__getattr__` method.
    - In inheritance, undefined methods are inherited automatically.
 
 3. **Type Relationships**:
-
    - With delegation, `isinstance(delegating_spam, Spam)` returns `False` because the `DelegatingSpam` object is not an instance of the `Spam` class.
    - With inheritance, `isinstance(inheriting_spam, Spam)` returns `True` because the `InheritingSpam` class inherits from the `Spam` class.
 

@@ -82,7 +82,6 @@ Analysons les parties clés du code :
 1. `fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))` - Crée une figure avec deux sous - graphiques côte à côte.
 
 2. Pour le premier sous - graphique :
-
    - `ax1.plot(..., alpha=0.7)` - Utilise une valeur alpha uniforme pour les trois lignes.
 
 3. Pour le deuxième sous - graphique :

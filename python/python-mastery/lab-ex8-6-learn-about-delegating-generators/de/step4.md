@@ -101,7 +101,6 @@ Beachten Sie, dass `yield from` durch `await` ersetzt wurde und die Funktionen j
 Der Übergang von Generatoren mit `yield from` zur `async`/`await`-Syntax ist nicht nur eine einfache syntaktische Änderung. Er repräsentiert eine Verschiebung in der Art und Weise, wie wir über asynchrone Programmierung denken.
 
 1. **Generatoren mit yield from**:
-
    - Wenn Sie Generatoren mit `yield from` verwenden, geben Sie explizit die Kontrolle ab, um anzuzeigen, dass eine Aufgabe bereit ist. Das bedeutet, dass Sie manuell verwalten müssen, wann eine Aufgabe fortgesetzt werden kann.
    - Sie müssen auch die Planung der Aufgaben manuell verwalten. Dies kann komplex sein, insbesondere in größeren Programmen.
    - Der Schwerpunkt liegt auf der Mechanik des Kontrollflusses, was den Code schwieriger zu lesen und zu warten machen kann.

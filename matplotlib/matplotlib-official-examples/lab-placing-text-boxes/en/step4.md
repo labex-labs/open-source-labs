@@ -114,7 +114,6 @@ There are several key parameters that control text box positioning:
 1. **Position coordinates**: The `(x, y)` coordinates determine where the text box is placed. When using `transform=ax.transAxes`, these are in axes coordinates where `(0, 0)` is the bottom-left corner and `(1, 1)` is the top-right corner.
 
 2. **Vertical alignment**: The `verticalalignment` parameter controls how the text is aligned vertically relative to the y-coordinate:
-
    - `'top'`: The top of the text is at the specified y-coordinate.
    - `'center'`: The center of the text is at the specified y-coordinate.
    - `'bottom'`: The bottom of the text is at the specified y-coordinate.

@@ -50,7 +50,6 @@ if __name__ == '__main__':
 ```
 
 3. Vamos entender os componentes-chave deste código:
-
    - `follow(filename, target)`: Esta função é responsável por abrir um arquivo. Primeiro, ela move o ponteiro do arquivo para o final do arquivo usando `f.seek(0, os.SEEK_END)`. Em seguida, ela entra em um loop infinito onde tenta continuamente ler novas linhas do arquivo. Se uma nova linha for encontrada, ela envia essa linha para a corrotina de destino usando o método `send`. Se não houver novo conteúdo, ela pausa por um curto período de tempo (0,1 segundos) usando `time.sleep(0.1)` antes de verificar novamente.
    - `@consumer` decorator: Em Python, as corrotinas precisam ser "preparadas" (primed) antes que possam começar a receber dados. Este decorador cuida disso. Ele envia automaticamente um valor inicial `None` para a corrotina, que é um primeiro passo necessário para preparar a corrotina para receber dados reais.
    - `printer()` corrotina: Esta é uma corrotina simples. Ela tem um loop infinito onde usa a palavra-chave `yield` para receber um item enviado a ela. Depois de receber um item, ela simplesmente o imprime.

@@ -25,7 +25,6 @@ Before we start creating our animation, we need to understand the HTML structure
 ```
 
 3. Let's understand what this HTML does:
-
    - We have a standard HTML document structure with a title and viewport settings
    - We link to an external CSS file named `style.css`
    - We include a heading and paragraph to explain our demo

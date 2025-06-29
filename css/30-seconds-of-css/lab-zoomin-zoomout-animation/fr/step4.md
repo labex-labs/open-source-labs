@@ -15,7 +15,6 @@ Maintenant que nous avons défini nos keyframes (images clés), nous devons appl
 ```
 
 2. Comprenons la propriété d'animation que nous avons ajoutée :
-
    - `animation` est une propriété raccourcie qui définit plusieurs propriétés d'animation à la fois
    - `zoom-in-zoom-out` est le nom de notre animation avec des keyframes
    - `1s` spécifie que un cycle de l'animation dure 1 seconde

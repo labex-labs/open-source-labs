@@ -83,18 +83,15 @@ Wenn Sie diese Zelle ausführen, sehen Sie eine umfassende Visualisierung mit:
 Lassen Sie uns einige der neuen Elemente untersuchen, die wir hinzugefügt haben:
 
 1. **Vertikale Linien mit `axvline()`**:
-
    - Diese Linien markieren wichtige Statistiken direkt im Diagramm.
    - Der `label`-Parameter ermöglicht es, diese Linien in die Legende aufzunehmen.
 
 2. **Mehrere Textboxen mit unterschiedlichen Stilen**:
-
    - Jede Textbox hat einen anderen Zweck und verwendet einen eigenen Stil.
    - Die Statistik-Box zeigt die berechneten Werte aus unseren Daten.
    - Die Informations-Box gibt Kontext zu Normalverteilungen.
 
 3. **Verbesserte Formatierung**:
-
    - LaTeX-Formatierung wird verwendet, um fett gedruckten Text mit `\mathbf{}` zu erstellen.
    - Aufzählungszeichen werden mit `\bullet` erstellt.
    - Der Abstand wird mit `\ ` (Backslash gefolgt von einem Leerzeichen) gesteuert.

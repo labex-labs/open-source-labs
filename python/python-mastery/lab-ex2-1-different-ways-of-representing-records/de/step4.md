@@ -185,28 +185,24 @@ Die Ausgabe zeigt den Speicherverbrauch für jede Datenstruktur sowie eine Rangl
 ## Verständnis der verschiedenen Datenstrukturen
 
 1. **Tupel**:
-
    - Tupel sind leichte und unveränderliche Sequenzen. Das bedeutet, dass Sie die Elemente eines Tupels nach seiner Erstellung nicht ändern können.
    - Sie greifen auf die Elemente eines Tupels über ihren numerischen Index zu, wie z. B. `record[0]`, `record[1]` usw.
    - Sie sind sehr speichereffizient, da sie eine einfache Struktur haben.
    - Allerdings können sie weniger lesbar sein, da Sie sich den Index jedes Elements merken müssen.
 
 2. **Wörterbücher (Dictionaries)**:
-
    - Wörterbücher verwenden Schlüssel-Wert-Paare, was es Ihnen ermöglicht, auf die Elemente über ihre Namen zuzugreifen.
    - Sie sind lesbarer, z. B. können Sie `record['route']`, `record['date']` usw. verwenden.
    - Sie haben einen höheren Speicherverbrauch aufgrund des Hash-Tabellen-Overheads, der zum Speichern der Schlüssel-Wert-Paare verwendet wird.
    - Sie sind flexibel, da Sie Felder leicht hinzufügen oder entfernen können.
 
 3. **Benannte Tupel (Named Tuples)**:
-
    - Benannte Tupel kombinieren die Effizienz von Tupeln mit der Möglichkeit, auf die Elemente über ihren Namen zuzugreifen.
    - Sie können auf die Elemente mit der Punktnotation zugreifen, wie z. B. `record.route`, `record.date` usw.
    - Sie sind unveränderlich, genau wie normale Tupel.
    - Sie sind speichereffizienter als Wörterbücher.
 
 4. **Normale Klassen (Regular Classes)**:
-
    - Normale Klassen folgen einem objektorientierten Ansatz und haben benannte Attribute.
    - Sie können auf die Attribute mit der Punktnotation zugreifen, wie z. B. `record.route`, `record.date` usw.
    - Sie können Methoden zu einer normalen Klasse hinzufügen, um Verhalten zu definieren.

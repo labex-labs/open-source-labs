@@ -83,18 +83,15 @@ Cuando ejecute esta celda, verá una visualización integral con:
 Examinemos algunos de los nuevos elementos que hemos agregado:
 
 1. **Líneas verticales con `axvline()`**:
-
    - Estas líneas marcan estadísticas importantes directamente en el gráfico.
    - El parámetro `label` permite que estas líneas se incluyan en la leyenda.
 
 2. **Múltiples cajas de texto con diferentes estilos**:
-
    - Cada caja de texto tiene un propósito diferente y utiliza un estilo distinto.
    - La caja de estadísticas muestra los valores calculados a partir de nuestros datos.
    - La caja informativa proporciona contexto sobre las distribuciones normales.
 
 3. **Formato mejorado**:
-
    - Se utiliza el formato LaTeX para crear texto en negrita con `\mathbf{}`.
    - Se crean viñetas con `\bullet`.
    - El espaciado se controla con `\ ` (barra invertida seguida de un espacio).

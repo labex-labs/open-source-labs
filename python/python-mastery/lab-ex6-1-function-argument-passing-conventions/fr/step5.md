@@ -107,7 +107,6 @@ Notez que certains tests peuvent échouer. Cela peut être parce qu'ils attenden
 Prenons un moment pour revoir ce que nous avons accompli jusqu'à présent :
 
 1. Nous avons créé une classe de base `Structure` réutilisable. Cette classe :
-
    - Gère automatiquement l'affectation des attributs, ce qui nous évite d'écrire beaucoup de code répétitif.
    - Fournit une bonne représentation sous forme de chaîne de caractères, facilitant l'affichage et le débogage de nos objets.
    - Restreint les noms d'attributs pour éviter les erreurs, ce qui rend notre code plus robuste.

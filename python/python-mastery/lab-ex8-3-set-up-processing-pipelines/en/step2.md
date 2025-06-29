@@ -86,7 +86,6 @@ def ticker(fmt, fields):
 ```
 
 5. Let's understand what each of these coroutines does:
-
    - `to_csv`: Its job is to convert raw text lines into parsed CSV rows. This is important because our data is initially in text format, and we need to break it into structured CSV data.
    - `create_ticker`: This coroutine takes the CSV rows and creates `Ticker` objects from them. `Ticker` objects represent the stock data in a more organized way.
    - `negchange`: It filters the `Ticker` objects. It only passes on the stocks that have negative price changes. This helps us focus on the stocks that are losing value.

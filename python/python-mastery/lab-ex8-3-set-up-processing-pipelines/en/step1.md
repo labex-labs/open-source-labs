@@ -50,7 +50,6 @@ if __name__ == '__main__':
 ```
 
 3. Let's understand the key components of this code:
-
    - `follow(filename, target)`: This function is responsible for opening a file. It first moves the file pointer to the end of the file using `f.seek(0, os.SEEK_END)`. Then, it enters an infinite loop where it continuously tries to read new lines from the file. If a new line is found, it sends that line to the target coroutine using the `send` method. If there is no new content, it pauses for a short time (0.1 seconds) using `time.sleep(0.1)` before checking again.
    - `@consumer` decorator: In Python, coroutines need to be "primed" before they can start receiving data. This decorator takes care of that. It automatically sends an initial `None` value to the coroutine, which is a necessary first step to get the coroutine ready to receive real data.
    - `printer()` coroutine: This is a simple coroutine. It has an infinite loop where it uses the `yield` keyword to receive an item sent to it. Once it receives an item, it simply prints it.

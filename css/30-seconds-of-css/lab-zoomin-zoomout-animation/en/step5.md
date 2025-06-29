@@ -17,7 +17,6 @@ Let's customize our animation by experimenting with different animation properti
 ```
 
 2. Let's understand what we changed:
-
    - We extended the animation duration to `2s` (2 seconds)
    - We changed the timing function to `ease-in-out` which makes both the beginning and end of the animation smooth
    - We added a `border-radius` of 10px to make the corners of our box rounded
@@ -40,7 +39,6 @@ Let's customize our animation by experimenting with different animation properti
 ```
 
 4. In this updated keyframes definition:
-
    - We added a `rotate()` function to the transform property
    - At the 50% mark, the element now rotates 45 degrees while scaling up
    - We also change the background color to blue at the 50% mark

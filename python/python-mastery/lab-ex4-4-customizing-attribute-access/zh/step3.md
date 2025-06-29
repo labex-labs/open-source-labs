@@ -209,17 +209,14 @@ Error: 'InheritingSpam' object has no attribute 'method_d'
 让我们来看看委托和继承之间的异同。
 
 1. **方法重写**：委托和继承都允许你重写方法，但语法不同。
-
    - 在委托中，你定义自己的方法，并决定是否调用被包装对象的方法。
    - 在继承中，你定义自己的方法，并使用 `super()` 来调用父类的方法。
 
 2. **方法访问**：
-
    - 在委托中，未定义的方法通过 `__getattr__` 方法转发。
    - 在继承中，未定义的方法会自动继承。
 
 3. **类型关系**：
-
    - 使用委托时，`isinstance(delegating_spam, Spam)` 返回 `False`，因为 `DelegatingSpam` 对象不是 `Spam` 类的实例。
    - 使用继承时，`isinstance(inheriting_spam, Spam)` 返回 `True`，因为 `InheritingSpam` 类继承自 `Spam` 类。
 

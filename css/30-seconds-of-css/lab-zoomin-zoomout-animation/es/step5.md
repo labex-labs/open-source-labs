@@ -17,7 +17,6 @@ Personalicemos nuestra animación experimentando con diferentes propiedades de a
 ```
 
 2. Entendamos lo que cambiamos:
-
    - Extendimos la duración de la animación a `2s` (2 segundos)
    - Cambiamos la función de temporización a `ease-in-out`, que hace que tanto el inicio como el final de la animación sean suaves
    - Agregamos un `border-radius` de 10px para redondear las esquinas de nuestro cuadro
@@ -40,7 +39,6 @@ Personalicemos nuestra animación experimentando con diferentes propiedades de a
 ```
 
 4. En esta definición actualizada de keyframes:
-
    - Agregamos una función `rotate()` a la propiedad transform
    - En el 50% de la animación, el elemento ahora gira 45 grados mientras se agranda
    - También cambiamos el color de fondo a azul en el 50% de la animación

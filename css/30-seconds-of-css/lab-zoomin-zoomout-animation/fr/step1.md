@@ -25,7 +25,6 @@ Avant de commencer à créer notre animation, nous devons comprendre la structur
 ```
 
 3. Comprenons ce que fait ce HTML :
-
    - Nous avons une structure de document HTML standard avec un titre et des paramètres de vue (viewport)
    - Nous établissons un lien vers un fichier CSS externe nommé `style.css`
    - Nous incluons un en - tête et un paragraphe pour expliquer notre démonstration

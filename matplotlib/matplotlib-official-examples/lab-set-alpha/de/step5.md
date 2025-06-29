@@ -82,7 +82,6 @@ Lassen Sie uns die wichtigsten Teile des Codes analysieren:
 1. `fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))` - Erstellt ein Diagramm mit zwei nebeneinander liegenden Teilplots.
 
 2. Für den ersten Teilplot:
-
    - `ax1.plot(..., alpha=0.7)` - Verwendet einen einheitlichen Alpha-Wert für alle drei Linien.
 
 3. Für den zweiten Teilplot:

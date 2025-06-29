@@ -43,7 +43,6 @@ Let's take a closer look at what this code does step by step:
 1. At the beginning of the code, we're importing `Structure` and field types from the `structure.py` module. This module has already been set up for you. These imports are essential because they provide the building blocks for our `Ticker` class. The `Structure` class will be the base class for our `Ticker` class, and the field types like `String`, `Float`, and `Integer` will define the data types of our stock data fields.
 
 2. Next, we define a `Ticker` class that inherits from `Structure`. This class has several fields that represent different aspects of the stock data:
-
    - `name`: This field stores the stock symbol, such as "IBM" or "AAPL". It helps us identify which company's stock we're dealing with.
    - `price`: It holds the current price of the stock. This is a crucial piece of information for investors.
    - `date` and `time`: These fields tell us when the stock quote was generated. Knowing the time and date is important for analyzing stock price trends over time.

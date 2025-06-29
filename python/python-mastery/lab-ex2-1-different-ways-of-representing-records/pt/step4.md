@@ -185,35 +185,30 @@ A saída mostrará o uso de memória para cada estrutura de dados, juntamente co
 ## Compreendendo as Diferentes Estruturas de Dados
 
 1.  **Tuplas**:
-
     - Tuplas são sequências leves e imutáveis. Isso significa que, uma vez que você cria uma tupla, não pode alterar seus elementos.
     - Você acessa elementos em uma tupla por seu índice numérico, como `record[0]`, `record[1]`, etc.
     - Elas são muito eficientes em termos de memória porque têm uma estrutura simples.
     - No entanto, elas podem ser menos legíveis porque você precisa lembrar o índice de cada elemento.
 
 2.  **Dicionários**:
-
     - Dicionários usam pares chave-valor, o que permite que você acesse elementos por seus nomes.
     - Eles são mais legíveis, por exemplo, você pode usar `record['route']`, `record['date']`, etc.
     - Eles têm maior uso de memória devido à sobrecarga da tabela hash usada para armazenar os pares chave-valor.
     - Eles são flexíveis porque você pode adicionar ou remover campos facilmente.
 
 3.  **Named Tuples**:
-
     - Named tuples combinam a eficiência das tuplas com a capacidade de acessar elementos por nome.
     - Você pode acessar elementos usando a notação de ponto, como `record.route`, `record.date`, etc.
     - Elas são imutáveis, assim como as tuplas regulares.
     - Elas são mais eficientes em termos de memória do que os dicionários.
 
 4.  **Classes Regulares**:
-
     - Classes regulares seguem uma abordagem orientada a objetos e têm atributos nomeados.
     - Você pode acessar atributos usando a notação de ponto, como `record.route`, `record.date`, etc.
     - Você pode adicionar métodos a uma classe regular para definir o comportamento.
     - Elas usam mais memória porque cada instância tem um dicionário de instância para armazenar seus atributos.
 
 5.  **Classes com \_\_slots\_\_**:
-
     - Classes com `__slots__` são classes otimizadas para memória. Elas evitam o uso de um dicionário de instância, o que economiza memória.
     - Elas ainda fornecem acesso nomeado aos atributos, como `record.route`, `record.date`, etc.
     - Elas restringem a adição de novos atributos após a criação do objeto.

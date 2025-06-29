@@ -101,7 +101,6 @@ Notice that `yield from` has been replaced with `await`, and the functions are n
 The transition from generators with `yield from` to the `async`/`await` syntax is not just a simple syntactic change. It represents a shift in how we think about asynchronous programming.
 
 1. **Generators with yield from**:
-
    - When using generators with `yield from`, you explicitly yield control to signal that a task is ready. This means you have to manually manage when a task can continue.
    - You also need to manually manage the scheduling of tasks. This can be complex, especially in larger programs.
    - The focus is on the mechanics of control flow, which can make the code harder to read and maintain.

@@ -3,7 +3,6 @@
 Before we start coding, let us understand what our `replaceLast` function should do:
 
 1. Accept three parameters:
-
    - `str`: The input string to modify
    - `pattern`: The substring or regular expression to search for
    - `replacement`: The string to replace the last occurrence with

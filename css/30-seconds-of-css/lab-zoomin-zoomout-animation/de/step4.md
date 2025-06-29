@@ -15,7 +15,6 @@ Nachdem wir nun unsere Keyframes definiert haben, müssen wir die Animation auf 
 ```
 
 2. Lassen Sie uns die hinzugefügte `animation`-Eigenschaft verstehen:
-
    - `animation` ist eine Kurzschreibweise, mit der mehrere Animations-Eigenschaften auf einmal festgelegt werden können.
    - `zoom-in-zoom-out` ist der Name unserer Keyframes-Animation.
    - `1s` gibt an, dass ein Zyklus der Animation 1 Sekunde dauert.

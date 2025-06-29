@@ -71,7 +71,6 @@ Ao executar esta célula, você deverá ver seu histograma com uma caixa de text
 Vamos detalhar as partes importantes do código que criam a caixa de texto:
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)`:
-
    - Isso cria um dicionário com propriedades para a caixa de texto.
    - `boxstyle='round'`: Faz com que a caixa tenha cantos arredondados.
    - `facecolor='wheat'`: Define a cor de fundo da caixa para trigo.

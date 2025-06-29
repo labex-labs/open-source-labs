@@ -82,7 +82,6 @@ Vamos analisar as partes principais do código:
 1. `fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))` - Cria uma figura com dois subplots lado a lado.
 
 2. Para o primeiro subplot:
-
    - `ax1.plot(..., alpha=0.7)` - Usa um valor alfa uniforme para todas as três linhas.
 
 3. Para o segundo subplot:

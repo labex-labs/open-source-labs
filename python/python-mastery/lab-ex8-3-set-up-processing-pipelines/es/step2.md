@@ -86,7 +86,6 @@ def ticker(fmt, fields):
 ```
 
 5. Comprendamos lo que hace cada una de estas corrutinas:
-
    - `to_csv`: Su trabajo es convertir líneas de texto sin procesar en filas CSV analizadas. Esto es importante porque nuestros datos inicialmente están en formato de texto y necesitamos dividirlos en datos CSV estructurados.
    - `create_ticker`: Esta corrutina toma las filas CSV y crea objetos `Ticker` a partir de ellas. Los objetos `Ticker` representan los datos de acciones de una manera más organizada.
    - `negchange`: Filtra los objetos `Ticker`. Solo pasa las acciones que tienen cambios de precio negativos. Esto nos ayuda a centrarnos en las acciones que están perdiendo valor.

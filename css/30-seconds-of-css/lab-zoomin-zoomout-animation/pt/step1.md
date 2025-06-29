@@ -25,7 +25,6 @@ Antes de começarmos a criar nossa animação, precisamos entender a estrutura H
 ```
 
 3. Vamos entender o que este HTML faz:
-
    - Temos uma estrutura de documento HTML padrão com um título e configurações de viewport (área de visualização)
    - Vinculamos a um arquivo CSS externo chamado `style.css`
    - Incluímos um cabeçalho e um parágrafo para explicar nossa demonstração

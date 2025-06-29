@@ -185,28 +185,24 @@ La sortie affichera l'utilisation mémoire de chaque structure de données, ains
 ## Compréhension des différentes structures de données
 
 1. **Tuples** :
-
    - Les tuples sont des séquences légères et immuables. Cela signifie qu'une fois que vous avez créé un tuple, vous ne pouvez pas modifier ses éléments.
    - Vous accédez aux éléments d'un tuple par leur index numérique, comme `record[0]`, `record[1]`, etc.
    - Ils sont très efficaces en termes de mémoire car ils ont une structure simple.
    - Cependant, ils peuvent être moins lisibles car vous devez vous souvenir de l'index de chaque élément.
 
 2. **Dictionnaires** :
-
    - Les dictionnaires utilisent des paires clé - valeur, ce qui vous permet d'accéder aux éléments par leur nom.
    - Ils sont plus lisibles, par exemple, vous pouvez utiliser `record['route']`, `record['date']`, etc.
    - Ils ont une utilisation mémoire plus élevée en raison du surcoût de la table de hachage utilisée pour stocker les paires clé - valeur.
    - Ils sont flexibles car vous pouvez facilement ajouter ou supprimer des champs.
 
 3. **Tuples nommés** :
-
    - Les tuples nommés combinent l'efficacité des tuples avec la capacité d'accéder aux éléments par nom.
    - Vous pouvez accéder aux éléments en utilisant la notation pointée, comme `record.route`, `record.date`, etc.
    - Ils sont immuables, tout comme les tuples ordinaires.
    - Ils sont plus efficaces en termes de mémoire que les dictionnaires.
 
 4. **Classes ordinaires** :
-
    - Les classes ordinaires suivent une approche orientée objet et ont des attributs nommés.
    - Vous pouvez accéder aux attributs en utilisant la notation pointée, comme `record.route`, `record.date`, etc.
    - Vous pouvez ajouter des méthodes à une classe ordinaire pour définir un comportement.

@@ -71,7 +71,6 @@ plt.show()
 テキストボックスを作成するコードの重要な部分を分解してみましょう。
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)`:
-
    - これは、テキストボックスのプロパティを持つ辞書を作成します。
    - `boxstyle='round'`：ボックスの角を丸くします。
    - `facecolor='wheat'`：ボックスの背景色を小麦色に設定します。

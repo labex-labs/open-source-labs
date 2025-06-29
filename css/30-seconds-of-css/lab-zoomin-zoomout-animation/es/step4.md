@@ -15,7 +15,6 @@ Ahora que hemos definido nuestros keyframes, necesitamos aplicar la animación a
 ```
 
 2. Entendamos la propiedad de animación que agregamos:
-
    - `animation` es una propiedad abreviada que establece múltiples propiedades de animación a la vez
    - `zoom-in-zoom-out` es el nombre de nuestra animación de keyframes
    - `1s` especifica que un ciclo de la animación dura 1 segundo

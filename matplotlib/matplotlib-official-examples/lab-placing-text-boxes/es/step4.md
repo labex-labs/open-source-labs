@@ -114,7 +114,6 @@ Hay varios parámetros clave que controlan el posicionamiento de la caja de text
 1. **Coordenadas de posición**: Las coordenadas `(x, y)` determinan dónde se coloca la caja de texto. Cuando se usa `transform=ax.transAxes`, estas están en coordenadas de ejes donde `(0, 0)` es la esquina inferior izquierda y `(1, 1)` es la esquina superior derecha.
 
 2. **Alineación vertical**: El parámetro `verticalalignment` controla cómo se alinea el texto verticalmente en relación con la coordenada y:
-
    - `'top'`: La parte superior del texto está en la coordenada y especificada.
    - `'center'`: El centro del texto está en la coordenada y especificada.
    - `'bottom'`: La parte inferior del texto está en la coordenada y especificada.

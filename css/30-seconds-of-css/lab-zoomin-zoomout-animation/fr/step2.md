@@ -27,7 +27,6 @@ h1 {
 ```
 
 3. Comprenons ce que fait ce CSS :
-
    - Nous définissons un stylage de base pour la page (police, largeur et marges)
    - Nous stylisons l'en - tête avec une couleur gris foncé
    - Pour notre élément d'animation `.zoom - in - out - box`, nous :

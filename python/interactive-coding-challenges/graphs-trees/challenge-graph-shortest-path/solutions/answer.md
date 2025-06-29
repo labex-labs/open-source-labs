@@ -81,7 +81,6 @@ Initialize the following:
 - path_weight = {} # Key: node key, val: weight, shortest path
   - Set each node's shortest path weight to infinity
 - remaining = PriorityQueue() # Queue of node key, path weight
-
   - Add each node's shortest path weight to the priority queue
 
 - Set the start node's path_weight to 0 and update the value in remaining

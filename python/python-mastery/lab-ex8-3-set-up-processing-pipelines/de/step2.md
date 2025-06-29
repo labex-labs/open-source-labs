@@ -86,7 +86,6 @@ def ticker(fmt, fields):
 ```
 
 5. Lassen Sie uns verstehen, was jede dieser Coroutinen tut:
-
    - `to_csv`: Ihre Aufgabe besteht darin, rohe Textzeilen in geparste CSV-Zeilen umzuwandeln. Dies ist wichtig, da unsere Daten zunächst im Textformat vorliegen und wir sie in strukturierte CSV-Daten aufteilen müssen.
    - `create_ticker`: Diese Coroutine nimmt die CSV-Zeilen und erstellt daraus `Ticker`-Objekte. `Ticker`-Objekte repräsentieren die Aktiendaten auf eine organisiertere Weise.
    - `negchange`: Sie filtert die `Ticker`-Objekte. Sie leitet nur die Aktien weiter, die negative Preisänderungen aufweisen. Dies hilft uns, uns auf die Aktien zu konzentrieren, die an Wert verlieren.

@@ -71,7 +71,6 @@ plt.show()
 텍스트 상자를 생성하는 코드의 중요한 부분을 자세히 살펴보겠습니다.
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)`:
-
    - 텍스트 상자 속성이 있는 사전을 생성합니다.
    - `boxstyle='round'`: 상자에 둥근 모서리가 있도록 합니다.
    - `facecolor='wheat'`: 상자의 배경색을 밀색으로 설정합니다.

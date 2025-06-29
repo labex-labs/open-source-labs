@@ -107,7 +107,6 @@ Observe que alguns testes podem falhar. Isso pode ser porque eles esperam compor
 Vamos dedicar um momento para revisar o que alcançamos até agora:
 
 1.  Criamos uma classe base `Structure` reutilizável. Esta classe:
-
     - Lida automaticamente com a atribuição de atributos, o que nos poupa de escrever muito código repetitivo.
     - Fornece uma boa representação de string, tornando mais fácil imprimir e depurar nossos objetos.
     - Restringe os nomes dos atributos para evitar erros, o que torna nosso código mais robusto.

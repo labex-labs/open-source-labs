@@ -17,7 +17,6 @@ Personnalisons notre animation en expérimentant avec différentes propriétés 
 ```
 
 2. Comprenons ce que nous avons modifié :
-
    - Nous avons étendu la durée de l'animation à `2s` (2 secondes)
    - Nous avons changé la fonction de temporisation en `ease-in-out`, ce qui rend le début et la fin de l'animation fluides
    - Nous avons ajouté un `border-radius` de 10px pour arrondir les coins de notre boîte
@@ -40,7 +39,6 @@ Personnalisons notre animation en expérimentant avec différentes propriétés 
 ```
 
 4. Dans cette définition mise à jour des keyframes :
-
    - Nous avons ajouté une fonction `rotate()` à la propriété `transform`
    - À 50 %, l'élément tourne maintenant de 45 degrés tout en grossissant
    - Nous avons également changé la couleur de fond en bleu à 50 %

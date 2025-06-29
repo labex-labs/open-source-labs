@@ -209,17 +209,14 @@ Error: 'InheritingSpam' object has no attribute 'method_d'
 Regardons les similitudes et les différences entre la délégation et l'héritage.
 
 1. **Remplacement de méthode** : La délégation et l'héritage vous permettent de remplacer des méthodes, mais la syntaxe est différente.
-
    - En délégation, vous définissez votre propre méthode et décidez si vous appelez la méthode de l'objet enveloppé.
    - En héritage, vous définissez votre propre méthode et utilisez `super()` pour appeler la méthode de la classe mère.
 
 2. **Accès aux méthodes** :
-
    - En délégation, les méthodes non définies sont transmises via la méthode `__getattr__`.
    - En héritage, les méthodes non définies sont héritées automatiquement.
 
 3. **Relations de type** :
-
    - Avec la délégation, `isinstance(delegating_spam, Spam)` retourne `False` car l'objet `DelegatingSpam` n'est pas une instance de la classe `Spam`.
    - Avec l'héritage, `isinstance(inheriting_spam, Spam)` retourne `True` car la classe `InheritingSpam` hérite de la classe `Spam`.
 

@@ -27,7 +27,6 @@ h1 {
 ```
 
 3. Lassen Sie uns verstehen, was diese CSS-Regeln tun:
-
    - Wir setzen einige grundlegende Stile für die Seite (Schriftart, Breite und Abstände).
    - Wir gestalten die Überschrift mit einer dunklen Graufarbe.
    - Für unser Animations-Element `.zoom-in-out-box` tun wir Folgendes:

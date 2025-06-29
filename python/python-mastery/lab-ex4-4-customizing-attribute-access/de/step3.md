@@ -209,17 +209,14 @@ Error: 'InheritingSpam' object has no attribute 'method_d'
 Schauen wir uns die Gemeinsamkeiten und Unterschiede zwischen Delegation und Vererbung an.
 
 1. **Methodenüberschreibung**: Sowohl Delegation als auch Vererbung ermöglichen es Ihnen, Methoden zu überschreiben, aber die Syntax ist unterschiedlich.
-
    - Bei der Delegation definieren Sie Ihre eigene Methode und entscheiden, ob Sie die Methode des umwickelten Objekts aufrufen möchten.
    - Bei der Vererbung definieren Sie Ihre eigene Methode und verwenden `super()`, um die Methode der Elternklasse aufzurufen.
 
 2. **Methodenzugriff**:
-
    - Bei der Delegation werden undefinierte Methoden über die `__getattr__`-Methode weitergeleitet.
    - Bei der Vererbung werden undefinierte Methoden automatisch geerbt.
 
 3. **Typbeziehungen**:
-
    - Bei der Delegation gibt `isinstance(delegating_spam, Spam)` `False` zurück, da das `DelegatingSpam`-Objekt keine Instanz der `Spam`-Klasse ist.
    - Bei der Vererbung gibt `isinstance(inheriting_spam, Spam)` `True` zurück, da die `InheritingSpam`-Klasse von der `Spam`-Klasse erbt.
 

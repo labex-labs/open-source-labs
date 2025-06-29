@@ -114,7 +114,6 @@ Es gibt mehrere Schlüsselparameter, die die Textbox-Positionierung steuern:
 1. **Positions-Koordinaten**: Die `(x, y)`-Koordinaten bestimmen, wo die Textbox platziert wird. Wenn `transform=ax.transAxes` verwendet wird, sind dies Achsen-Koordinaten, wobei `(0, 0)` die untere linke Ecke und `(1, 1)` die obere rechte Ecke ist.
 
 2. **Vertikale Ausrichtung**: Der Parameter `verticalalignment` steuert, wie der Text vertikal relativ zur y-Koordinate ausgerichtet wird:
-
    - `'top'`: Die Oberkante des Texts befindet sich an der angegebenen y-Koordinate.
    - `'center'`: Die Mitte des Texts befindet sich an der angegebenen y-Koordinate.
    - `'bottom'`: Die Unterkante des Texts befindet sich an der angegebenen y-Koordinate.

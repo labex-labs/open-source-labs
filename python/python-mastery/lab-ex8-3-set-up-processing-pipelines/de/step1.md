@@ -50,7 +50,6 @@ if __name__ == '__main__':
 ```
 
 3. Lassen Sie uns die wichtigsten Bestandteile dieses Codes verstehen:
-
    - `follow(filename, target)`: Diese Funktion ist für das Öffnen einer Datei verantwortlich. Sie bewegt zunächst den Dateizeiger an das Ende der Datei mit `f.seek(0, os.SEEK_END)`. Dann tritt sie in eine Endlosschleife ein, in der sie kontinuierlich versucht, neue Zeilen aus der Datei zu lesen. Wenn eine neue Zeile gefunden wird, sendet sie diese Zeile an die Ziel-Coroutine mit der `send`-Methode. Wenn es keine neuen Inhalte gibt, hält sie kurz (0,1 Sekunden) mit `time.sleep(0.1)` an, bevor sie erneut prüft.
    - `@consumer`-Decorator: In Python müssen Coroutinen "initialisiert" werden, bevor sie Daten empfangen können. Dieser Decorator kümmert sich darum. Er sendet automatisch einen Anfangswert `None` an die Coroutine, was ein notwendiger erster Schritt ist, um die Coroutine für den Empfang echter Daten vorzubereiten.
    - `printer()`-Coroutine: Dies ist eine einfache Coroutine. Sie hat eine Endlosschleife, in der sie das `yield`-Schlüsselwort verwendet, um ein an sie gesendetes Element zu empfangen. Sobald sie ein Element empfängt, gibt sie es einfach aus.

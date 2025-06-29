@@ -82,7 +82,6 @@ Let's analyze the key parts of the code:
 1. `fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))` - Creates a figure with two side-by-side subplots.
 
 2. For the first subplot:
-
    - `ax1.plot(..., alpha=0.7)` - Uses a uniform alpha value for all three lines.
 
 3. For the second subplot:

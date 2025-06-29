@@ -3,7 +3,6 @@
 Antes de começarmos a codificar, vamos entender o que nossa função `replaceLast` deve fazer:
 
 1. Aceitar três parâmetros:
-
    - `str`: A string de entrada a ser modificada
    - `pattern`: A substring ou expressão regular a ser pesquisada
    - `replacement`: A string para substituir a última ocorrência

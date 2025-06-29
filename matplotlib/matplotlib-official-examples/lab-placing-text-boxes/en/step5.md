@@ -83,18 +83,15 @@ When you run this cell, you'll see a comprehensive visualization with:
 Let's examine some of the new elements we've added:
 
 1. **Vertical Lines with `axvline()`**:
-
    - These lines mark important statistics directly on the plot.
    - The `label` parameter allows these lines to be included in the legend.
 
 2. **Multiple Text Boxes with Different Styles**:
-
    - Each text box serves a different purpose and uses a distinct style.
    - The statistics box shows the computed values from our data.
    - The informational box provides context about normal distributions.
 
 3. **Enhanced Formatting**:
-
    - LaTeX formatting is used to create bold text with `\mathbf{}`
    - Bullet points are created with `\bullet`
    - Spacing is controlled with `\ ` (backslash followed by a space)

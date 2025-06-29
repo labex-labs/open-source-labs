@@ -71,7 +71,6 @@ Cuando ejecute esta celda, debería ver su histograma con una caja de texto en l
 Analicemos las partes importantes del código que crea la caja de texto:
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)`:
-
    - Esto crea un diccionario con propiedades para la caja de texto.
    - `boxstyle='round'`: Hace que la caja tenga esquinas redondeadas.
    - `facecolor='wheat'`: Establece el color de fondo de la caja en color trigo.

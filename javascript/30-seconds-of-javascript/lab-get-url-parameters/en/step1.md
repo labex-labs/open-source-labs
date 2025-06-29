@@ -13,7 +13,8 @@ Here is the code:
 const getURLParameters = (url) =>
   (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(
     (a, v) => (
-      (a[v.slice(0, v.indexOf("="))] = v.slice(v.indexOf("=") + 1)), a
+      (a[v.slice(0, v.indexOf("="))] = v.slice(v.indexOf("=") + 1)),
+      a
     ),
     {}
   );

@@ -15,7 +15,6 @@ Agora que definimos nossos keyframes, precisamos aplicar a animação ao nosso e
 ```
 
 2. Vamos entender a propriedade `animation` que adicionamos:
-
    - `animation` é uma propriedade abreviada (shorthand property) que define múltiplas propriedades de animação de uma vez
    - `zoom-in-zoom-out` é o nome da nossa animação de keyframes
    - `1s` especifica que um ciclo da animação dura 1 segundo

@@ -107,7 +107,6 @@ Note that some tests might fail. This could be because they expect specific beha
 Let's take a moment to review what we've achieved so far:
 
 1. We created a reusable `Structure` base class. This class:
-
    - Automatically handles attribute assignment, which saves us from writing a lot of repetitive code.
    - Provides a good string representation, making it easier to print and debug our objects.
    - Restricts attribute names to prevent errors, which makes our code more robust.

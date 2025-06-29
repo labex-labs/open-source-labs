@@ -57,13 +57,11 @@ if __name__ == '__main__':
 Vamos a entender este código paso a paso:
 
 1. La función `tcp_server`:
-
    - Primero, configura un socket para escuchar las conexiones entrantes. Un socket es un punto final para la comunicación entre dos máquinas.
    - Luego, utiliza `yield 'recv', sock` para pausar la función hasta que se conecte un cliente. Esta es una parte clave de nuestro enfoque asíncrono.
    - Finalmente, crea una nueva tarea de manejo para cada conexión de cliente. Esto permite que el servidor maneje múltiples clientes de forma concurrente.
 
 2. La función `echo_handler`:
-
    - Devuelve `'recv', client` para esperar a que el cliente envíe datos. Esto pausa la función hasta que haya datos disponibles.
    - Devuelve `'send', client` para esperar hasta que pueda enviar datos de vuelta al cliente. Esto asegura que el cliente esté listo para recibir los datos.
    - Procesa los datos del cliente hasta que la conexión sea cerrada por el cliente.

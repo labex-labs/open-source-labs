@@ -43,7 +43,6 @@ Schauen wir uns genauer an, was dieser Code Schritt für Schritt macht:
 1. Am Anfang des Codes importieren wir `Structure` und Feldtypen aus dem `structure.py`-Modul. Dieses Modul wurde bereits für Sie eingerichtet. Diese Importe sind wichtig, da sie die Bausteine für unsere `Ticker`-Klasse bereitstellen. Die `Structure`-Klasse wird die Basisklasse für unsere `Ticker`-Klasse sein, und die Feldtypen wie `String`, `Float` und `Integer` werden die Datentypen unserer Aktiendatenfelder definieren.
 
 2. Als Nächstes definieren wir eine `Ticker`-Klasse, die von `Structure` erbt. Diese Klasse hat mehrere Felder, die verschiedene Aspekte der Aktiendaten darstellen:
-
    - `name`: Dieses Feld speichert das Aktiensymbol, wie z.B. "IBM" oder "AAPL". Es hilft uns zu identifizieren, für welche Firma wir die Aktien verarbeiten.
    - `price`: Es enthält den aktuellen Preis der Aktie. Dies ist eine entscheidende Information für Anleger.
    - `date` und `time`: Diese Felder geben an, wann der Aktienkurs erstellt wurde. Das Wissen um Zeit und Datum ist wichtig für die Analyse von Aktienkurs-Trends über die Zeit.

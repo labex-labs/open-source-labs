@@ -83,18 +83,15 @@ Ao executar esta célula, você verá uma visualização abrangente com:
 Vamos examinar alguns dos novos elementos que adicionamos:
 
 1. **Linhas Verticais com `axvline()`**:
-
    - Essas linhas marcam estatísticas importantes diretamente no gráfico.
    - O parâmetro `label` permite que essas linhas sejam incluídas na legenda.
 
 2. **Múltiplas Caixas de Texto com Diferentes Estilos**:
-
    - Cada caixa de texto serve a um propósito diferente e usa um estilo distinto.
    - A caixa de estatísticas mostra os valores calculados a partir de nossos dados.
    - A caixa informativa fornece contexto sobre distribuições normais.
 
 3. **Formatação Aprimorada**:
-
    - A formatação LaTeX é usada para criar texto em negrito com `\mathbf{}`
    - Marcadores são criados com `\bullet`
    - O espaçamento é controlado com `\ ` (barra invertida seguida de um espaço)

@@ -27,7 +27,6 @@ h1 {
 ```
 
 3. Entendamos qué hace este CSS:
-
    - Establecemos algunos estilos básicos para la página (fuente, ancho y márgenes)
    - Estilizamos el encabezado con un color gris oscuro
    - Para nuestro elemento de animación `.zoom-in-out-box`,:

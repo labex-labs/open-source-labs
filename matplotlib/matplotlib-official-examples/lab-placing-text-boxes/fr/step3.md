@@ -71,7 +71,6 @@ Lorsque vous exécutez cette cellule, vous devriez voir votre histogramme avec u
 Décortiquons les parties importantes du code qui créent la boîte de texte :
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)` :
-
    - Cela crée un dictionnaire avec les propriétés de la boîte de texte.
    - `boxstyle='round'` : Donne à la boîte des coins arrondis.
    - `facecolor='wheat'` : Définit la couleur de fond de la boîte en couleur blé.

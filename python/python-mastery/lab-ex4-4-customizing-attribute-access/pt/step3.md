@@ -209,17 +209,14 @@ Error: 'InheritingSpam' object has no attribute 'method_d'
 Vamos analisar as semelhanças e diferenças entre delegação e herança.
 
 1. **Substituição de Método**: Tanto a delegação quanto a herança permitem que você substitua métodos, mas a sintaxe é diferente.
-
    - Na delegação, você define seu próprio método e decide se deve chamar o método do objeto encapsulado.
    - Na herança, você define seu próprio método e usa `super()` para chamar o método do pai.
 
 2. **Acesso ao Método**:
-
    - Na delegação, métodos não definidos são encaminhados por meio do método `__getattr__`.
    - Na herança, métodos não definidos são herdados automaticamente.
 
 3. **Relações de Tipo**:
-
    - Com delegação, `isinstance(delegating_spam, Spam)` retorna `False` porque o objeto `DelegatingSpam` não é uma instância da classe `Spam`.
    - Com herança, `isinstance(inheriting_spam, Spam)` retorna `True` porque a classe `InheritingSpam` herda da classe `Spam`.
 

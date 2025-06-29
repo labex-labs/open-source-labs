@@ -19,7 +19,6 @@ CSS-Animationen funktionieren, indem Keyframes definiert werden, die die Stile a
 ```
 
 2. Lassen Sie uns verstehen, was dieser Code tut:
-
    - `@keyframes` ist eine CSS-At-Regel, die die Stadien und Stile einer Animation definiert.
    - `zoom-in-zoom-out` ist der Name, den wir unserer Animation geben (wir werden diesen Namen später referenzieren).
    - Innerhalb der Keyframes definieren wir, was zu verschiedenen Zeitpunkten der Animation passiert:

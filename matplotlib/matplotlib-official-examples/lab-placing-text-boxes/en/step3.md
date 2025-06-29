@@ -71,7 +71,6 @@ When you run this cell, you should see your histogram with a text box in the top
 Let's break down the important parts of the code that create the text box:
 
 1. `properties = dict(boxstyle='round', facecolor='wheat', alpha=0.5)`:
-
    - This creates a dictionary with properties for the text box.
    - `boxstyle='round'`: Makes the box have rounded corners.
    - `facecolor='wheat'`: Sets the background color of the box to wheat.

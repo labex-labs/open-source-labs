@@ -209,17 +209,14 @@ Error: 'InheritingSpam' object has no attribute 'method_d'
 위임과 상속의 유사점과 차이점을 살펴보겠습니다.
 
 1. **메서드 재정의**: 위임과 상속 모두 메서드를 재정의할 수 있지만 구문이 다릅니다.
-
    - 위임에서는 자체 메서드를 정의하고 래핑된 객체의 메서드를 호출할지 여부를 결정합니다.
    - 상속에서는 자체 메서드를 정의하고 `super()`를 사용하여 상위 메서드를 호출합니다.
 
 2. **메서드 접근**:
-
    - 위임에서는 정의되지 않은 메서드가 `__getattr__` 메서드를 통해 전달됩니다.
    - 상속에서는 정의되지 않은 메서드가 자동으로 상속됩니다.
 
 3. **유형 관계**:
-
    - 위임을 사용하면 `isinstance(delegating_spam, Spam)`은 `False`를 반환합니다. `DelegatingSpam` 객체가 `Spam` 클래스의 인스턴스가 아니기 때문입니다.
    - 상속을 사용하면 `isinstance(inheriting_spam, Spam)`은 `True`를 반환합니다. `InheritingSpam` 클래스가 `Spam` 클래스에서 상속되기 때문입니다.
 

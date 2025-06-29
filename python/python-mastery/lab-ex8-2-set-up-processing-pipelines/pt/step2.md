@@ -43,7 +43,6 @@ Vamos dar uma olhada mais de perto no que este código faz passo a passo:
 1. No início do código, estamos importando `Structure` e tipos de campo do módulo `structure.py`. Este módulo já foi configurado para você. Essas importações são essenciais porque fornecem os blocos de construção para nossa classe `Ticker`. A classe `Structure` será a classe base para nossa classe `Ticker`, e os tipos de campo como `String`, `Float` e `Integer` definirão os tipos de dados de nossos campos de dados de ações.
 
 2. Em seguida, definimos uma classe `Ticker` que herda de `Structure`. Esta classe tem vários campos que representam diferentes aspectos dos dados das ações:
-
    - `name`: Este campo armazena o símbolo da ação, como "IBM" ou "AAPL". Ele nos ajuda a identificar com qual ação da empresa estamos lidando.
    - `price`: Ele contém o preço atual da ação. Esta é uma informação crucial para os investidores.
    - `date` e `time`: Esses campos nos dizem quando a cotação da ação foi gerada. Saber a hora e a data é importante para analisar as tendências de preços das ações ao longo do tempo.

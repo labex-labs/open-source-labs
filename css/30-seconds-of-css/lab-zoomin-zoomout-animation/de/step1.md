@@ -25,7 +25,6 @@ Bevor wir mit der Erstellung unserer Animation beginnen, müssen wir die HTML-St
 ```
 
 3. Lassen Sie uns verstehen, was diese HTML-Datei macht:
-
    - Wir haben eine Standard-HTML-Dokumentstruktur mit einem Titel und Viewport-Einstellungen.
    - Wir verlinken auf eine externe CSS-Datei namens `style.css`.
    - Wir fügen eine Überschrift und einen Absatz hinzu, um unsere Demo zu erklären.

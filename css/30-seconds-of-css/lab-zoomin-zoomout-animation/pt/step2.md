@@ -27,7 +27,6 @@ h1 {
 ```
 
 3. Vamos entender o que este CSS faz:
-
    - Definimos alguma estilização básica para a página (fonte, largura e margens)
    - Estilizamos o cabeçalho com uma cor cinza escuro
    - Para o nosso elemento de animação `.zoom-in-out-box`, nós:

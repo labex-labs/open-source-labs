@@ -17,7 +17,6 @@ Lassen Sie uns unsere Animation anpassen, indem wir mit verschiedenen Animations
 ```
 
 2. Lassen Sie uns verstehen, was wir geändert haben:
-
    - Wir haben die Animationsdauer auf `2s` (2 Sekunden) verlängert.
    - Wir haben die Timing-Funktion auf `ease-in-out` geändert, was sowohl den Anfang als auch das Ende der Animation glatt macht.
    - Wir haben einen `border-radius` von 10px hinzugefügt, um die Ecken unserer Box abzurunden.
@@ -40,7 +39,6 @@ Lassen Sie uns unsere Animation anpassen, indem wir mit verschiedenen Animations
 ```
 
 4. In dieser aktualisierten Keyframes-Definition:
-
    - Wir haben die `rotate()`-Funktion zur `transform`-Eigenschaft hinzugefügt.
    - Bei 50% der Animation rotiert das Element jetzt um 45 Grad, während es sich vergrößert.
    - Wir ändern auch die Hintergrundfarbe auf blau bei 50% der Animation.

@@ -86,7 +86,6 @@ def ticker(fmt, fields):
 ```
 
 5. Comprenons ce que chaque coroutine fait :
-
    - `to_csv` : Son rôle est de convertir les lignes de texte brutes en lignes CSV analysées. C'est important car nos données sont initialement au format texte, et nous devons les diviser en données CSV structurées.
    - `create_ticker` : Cette coroutine prend les lignes CSV et crée des objets `Ticker` à partir d'elles. Les objets `Ticker` représentent les données boursières de manière plus organisée.
    - `negchange` : Elle filtre les objets `Ticker`. Elle ne transmet que les actions dont le prix a diminué. Cela nous permet de nous concentrer sur les actions qui perdent de la valeur.

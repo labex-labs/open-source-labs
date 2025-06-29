@@ -185,28 +185,24 @@ La salida mostrará el uso de memoria de cada estructura de datos, junto con un 
 ## Comprendiendo las diferentes estructuras de datos
 
 1. **Tuplas**:
-
    - Las tuplas son secuencias ligeras e inmutables. Esto significa que una vez que creas una tupla, no puedes cambiar sus elementos.
    - Accedes a los elementos de una tupla por su índice numérico, como `record[0]`, `record[1]`, etc.
    - Son muy eficientes en términos de memoria porque tienen una estructura simple.
    - Sin embargo, pueden ser menos legibles porque necesitas recordar el índice de cada elemento.
 
 2. **Diccionarios**:
-
    - Los diccionarios utilizan pares clave - valor, lo que te permite acceder a los elementos por sus nombres.
    - Son más legibles, por ejemplo, puedes usar `record['route']`, `record['date']`, etc.
    - Tienen un mayor uso de memoria debido al gasto de la tabla hash utilizada para almacenar los pares clave - valor.
    - Son flexibles porque puedes agregar o eliminar campos fácilmente.
 
 3. **Tuplas con nombres (Named Tuples)**:
-
    - Las tuplas con nombres combinan la eficiencia de las tuplas con la capacidad de acceder a los elementos por nombre.
    - Puedes acceder a los elementos usando la notación de punto, como `record.route`, `record.date`, etc.
    - Son inmutables, al igual que las tuplas normales.
    - Son más eficientes en términos de memoria que los diccionarios.
 
 4. **Clases regulares**:
-
    - Las clases regulares siguen un enfoque orientado a objetos y tienen atributos con nombre.
    - Puedes acceder a los atributos usando la notación de punto, como `record.route`, `record.date`, etc.
    - Puedes agregar métodos a una clase regular para definir comportamiento.

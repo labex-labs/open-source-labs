@@ -27,7 +27,6 @@ h1 {
 ```
 
 3. Let's understand what this CSS does:
-
    - We set some basic styling for the page (font, width, and margins)
    - We style the heading with a dark gray color
    - For our animation element `.zoom-in-out-box`, we:

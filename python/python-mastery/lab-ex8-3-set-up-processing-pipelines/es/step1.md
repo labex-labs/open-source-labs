@@ -50,7 +50,6 @@ if __name__ == '__main__':
 ```
 
 3. Comprendamos los componentes clave de este código:
-
    - `follow(filename, target)`: Esta función es responsable de abrir un archivo. Primero mueve el puntero del archivo al final del archivo utilizando `f.seek(0, os.SEEK_END)`. Luego, entra en un bucle infinito donde intenta leer continuamente nuevas líneas del archivo. Si se encuentra una nueva línea, la envía a la corrutina objetivo utilizando el método `send`. Si no hay nuevo contenido, se pausa durante un corto tiempo (0,1 segundos) utilizando `time.sleep(0.1)` antes de volver a comprobar.
    - Decorador `@consumer`: En Python, las corrutinas deben ser "inicializadas" antes de que puedan comenzar a recibir datos. Este decorador se encarga de eso. Envía automáticamente un valor inicial `None` a la corrutina, que es un paso necesario para preparar la corrutina para recibir datos reales.
    - Corrutina `printer()`: Esta es una corrutina simple. Tiene un bucle infinito donde utiliza la palabra clave `yield` para recibir un elemento enviado a ella. Una vez que recibe un elemento, simplemente lo imprime.

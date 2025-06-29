@@ -107,7 +107,6 @@ Beachten Sie, dass einige Tests fehlschlagen können. Dies kann daran liegen, da
 Nehmen wir einen Moment Zeit, um zu überprüfen, was wir bisher erreicht haben:
 
 1. Wir haben eine wiederverwendbare Basisklasse `Structure` erstellt. Diese Klasse:
-
    - Übernimmt automatisch die Attributzuweisung, wodurch wir viel wiederholenden Code sparen.
    - Bietet eine gute Zeichenkettenrepräsentation, was es erleichtert, unsere Objekte auszugeben und zu debuggen.
    - Beschränkt die Attributnamen, um Fehler zu vermeiden, was unseren Code robuster macht.

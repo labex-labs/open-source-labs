@@ -185,28 +185,24 @@ The output will show the memory usage for each data structure, along with a rank
 ## Understanding the Different Data Structures
 
 1. **Tuples**:
-
    - Tuples are lightweight and immutable sequences. This means once you create a tuple, you can't change its elements.
    - You access elements in a tuple by their numeric index, like `record[0]`, `record[1]`, etc.
    - They are very memory - efficient because they have a simple structure.
    - However, they can be less readable because you need to remember the index of each element.
 
 2. **Dictionaries**:
-
    - Dictionaries use key - value pairs, which allows you to access elements by their names.
    - They are more readable, for example, you can use `record['route']`, `record['date']`, etc.
    - They have higher memory usage because of the hash table overhead used to store the key - value pairs.
    - They are flexible because you can add or remove fields easily.
 
 3. **Named Tuples**:
-
    - Named tuples combine the efficiency of tuples with the ability to access elements by name.
    - You can access elements using dot notation, like `record.route`, `record.date`, etc.
    - They are immutable, just like regular tuples.
    - They are more memory - efficient than dictionaries.
 
 4. **Regular Classes**:
-
    - Regular classes follow an object - oriented approach and have named attributes.
    - You can access attributes using dot notation, like `record.route`, `record.date`, etc.
    - You can add methods to a regular class to define behavior.

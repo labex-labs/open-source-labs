@@ -126,7 +126,6 @@ def compress_string(string):
 Let us split the string first into blocks of identical characters and then compress it block by block.
 
 - Split the string to blocks
-
   - For each character in string
     - Add this character to block
     - If the next character is different
@@ -134,7 +133,6 @@ Let us split the string first into blocks of identical characters and then compr
       - Erase the content of block
 
 - Compress block
-
   - If block consists of two or fewer characters
     - Return block
   - Else

@@ -83,18 +83,15 @@ Lorsque vous exécutez cette cellule, vous verrez une visualisation complète av
 Examinons certains des nouveaux éléments que nous avons ajoutés :
 
 1. **Lignes verticales avec `axvline()`** :
-
    - Ces lignes marquent directement sur le graphique des statistiques importantes.
    - Le paramètre `label` permet d'inclure ces lignes dans la légende.
 
 2. **Plusieurs boîtes de texte de styles différents** :
-
    - Chaque boîte de texte a un objectif différent et utilise un style distinct.
    - La boîte de statistiques montre les valeurs calculées à partir de nos données.
    - La boîte informative fournit des informations contextuelles sur les distributions normales.
 
 3. **Mise en forme améliorée** :
-
    - La mise en forme LaTeX est utilisée pour créer du texte en gras avec `\mathbf{}`
    - Des points de liste sont créés avec `\bullet`
    - L'espacement est contrôlé avec `\ ` (antislash suivi d'un espace)

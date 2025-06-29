@@ -3,7 +3,6 @@
 코딩을 시작하기 전에, `replaceLast` 함수가 수행해야 할 작업을 이해해 봅시다:
 
 1. 세 개의 매개변수를 받습니다:
-
    - `str`: 수정할 입력 문자열
    - `pattern`: 검색할 부분 문자열 또는 정규 표현식 (regular expression)
    - `replacement`: 마지막 발생을 대체할 문자열

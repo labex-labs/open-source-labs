@@ -3,7 +3,6 @@
 Bevor wir mit dem Codieren beginnen, verstehen wir zunächst, was unsere `replaceLast`-Funktion tun sollte:
 
 1. Drei Parameter akzeptieren:
-
    - `str`: Der Eingabe-String, der modifiziert werden soll
    - `pattern`: Das Teilzeichenfolgenmuster oder der reguläre Ausdruck (Regular Expression), nach dem gesucht werden soll
    - `replacement`: Die Zeichenfolge, mit der das letzte Vorkommen ersetzt werden soll

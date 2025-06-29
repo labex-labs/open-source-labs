@@ -15,7 +15,6 @@ Now that we have defined our keyframes, we need to apply the animation to our bo
 ```
 
 2. Let's understand the animation property we added:
-
    - `animation` is a shorthand property that sets multiple animation properties at once
    - `zoom-in-zoom-out` is the name of our keyframes animation
    - `1s` specifies that one cycle of the animation lasts 1 second
