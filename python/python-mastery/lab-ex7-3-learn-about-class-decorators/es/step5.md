@@ -1,24 +1,16 @@
-# Adición de validación de argumentos de métodos
+# Adición de Validación de Argumentos de Métodos
 
-En Python, validar datos es una parte importante de escribir código robusto. En esta sección, llevaremos nuestra validación un paso más allá al validar automáticamente los argumentos de los métodos. El archivo `validate.py` ya incluye un decorador `@validated`. Un decorador en Python es una función especial que puede modificar otra función. El decorador `@validated` aquí puede verificar los argumentos de una función en contra de sus anotaciones. Las anotaciones en Python son una forma de agregar metadatos a los parámetros y valores de retorno de una función.
+En Python, validar datos es una parte importante para escribir código robusto. En esta sección, llevaremos nuestra validación un paso más allá validando automáticamente los argumentos de los métodos. El archivo `validate.py` ya incluye un decorador `@validated`. Un decorador en Python es una función especial que puede modificar otra función. El decorador `@validated` aquí puede verificar los argumentos de la función contra sus anotaciones. Las anotaciones en Python son una forma de agregar metadatos a los parámetros de la función y a los valores de retorno.
 
 Modifiquemos nuestro código para aplicar este decorador a métodos con anotaciones:
 
-1. Primero, necesitamos entender cómo funciona el decorador `validated`. Abre el archivo `validate.py` para revisarlo:
+1. Primero, necesitamos entender cómo funciona el decorador `validated`. Abra el archivo `validate.py` en su editor para revisarlo.
 
-```bash
-code ~/project/validate.py
-```
+El decorador `validated` utiliza anotaciones de función para validar argumentos. Antes de permitir que la función se ejecute, crea una instancia de la clase validadora para cada parámetro anotado y llama al método `validate` para verificar el argumento. Por ejemplo, si un argumento está anotado con `PositiveInteger`, el decorador creará una instancia de `PositiveInteger` y validará que el valor pasado sea efectivamente un entero positivo. Si la validación falla, recopila todos los errores y lanza un `TypeError` con mensajes de error detallados.
 
-El decorador `validated` utiliza las anotaciones de la función para validar los argumentos. Antes de permitir que la función se ejecute, verifica cada argumento en contra de su tipo de anotación. Por ejemplo, si un argumento está anotado como un entero, el decorador se asegurará de que el valor pasado sea en realidad un entero.
+2. Ahora, modificaremos la función `validate_attributes` en `structure.py` para envolver los métodos anotados con el decorador `validated`. Esto significa que cualquier método con anotaciones en la clase tendrá sus argumentos validados automáticamente. Abra el archivo `structure.py` en su editor.
 
-2. Ahora, modificaremos la función `validate_attributes` en `structure.py` para envolver los métodos con anotaciones con el decorador `validated`. Esto significa que cualquier método con anotaciones en la clase tendrá sus argumentos validados automáticamente. Abre el archivo `structure.py`:
-
-```bash
-code ~/project/structure.py
-```
-
-3. Actualiza la función `validate_attributes`:
+3. Actualice la función `validate_attributes`:
 
 ```python
 def validate_attributes(cls):
@@ -55,19 +47,15 @@ def validate_attributes(cls):
 
 Esta función actualizada ahora hace lo siguiente:
 
-1. Procesa los descriptores de validación como antes. Los descriptores de validación se utilizan para definir reglas de validación para los atributos de la clase.
-2. Encuentra todos los métodos con anotaciones en la clase. Las anotaciones se agregan a los parámetros de los métodos para especificar el tipo esperado del argumento.
+1. Procesa los descriptores de validación como antes. Los descriptores de validación se utilizan para definir reglas de validación para los atributos de clase.
+2. Encuentra todos los métodos con anotaciones en la clase. Las anotaciones se agregan a los parámetros del método para especificar el tipo esperado del argumento.
 3. Aplica el decorador `@validated` a esos métodos. Esto asegura que los argumentos pasados a estos métodos se validen de acuerdo con sus anotaciones.
 
-4. Guarda el archivo después de hacer estos cambios. Guardar el archivo es importante porque se asegura de que nuestras modificaciones se almacenen y se puedan utilizar más tarde.
+4. Guarde el archivo después de realizar estos cambios. Guardar el archivo es importante porque asegura que nuestras modificaciones se almacenen y se puedan usar más adelante.
 
-5. Ahora, actualicemos el método `sell` en la clase `Stock` para incluir una anotación. Las anotaciones ayudan a especificar el tipo esperado del argumento, que será utilizado por el decorador `@validated` para la validación. Abre el archivo `stock.py`:
+5. Ahora, actualicemos el método `sell` en la clase `Stock` para incluir una anotación. Las anotaciones ayudan a especificar el tipo esperado del argumento, que será utilizado por el decorador `@validated` para la validación. Abra el archivo `stock.py` en su editor.
 
-```bash
-code ~/project/stock.py
-```
-
-6. Modifica el método `sell` para incluir una anotación de tipo:
+6. Modifique el método `sell` para incluir una anotación de tipo:
 
 ```python
 # stock.py
@@ -88,16 +76,16 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-El cambio importante es agregar `: PositiveInteger` al parámetro `nshares`. Esto le dice a Python (y a nuestro decorador `@validated`) que valide este argumento utilizando el validador `PositiveInteger`. Entonces, cuando llamamos al método `sell`, el argumento `nshares` debe ser un entero positivo.
+El cambio importante es agregar `: PositiveInteger` al parámetro `nshares`. Esto le dice a Python (y a nuestro decorador `@validated`) que valide este argumento usando el validador `PositiveInteger`. Por lo tanto, cuando llamemos al método `sell`, el argumento `nshares` debe ser un entero positivo.
 
-7. Vuelve a ejecutar las pruebas para verificar que todo siga funcionando. Ejecutar pruebas es una buena manera de asegurarse de que nuestros cambios no hayan roto ninguna funcionalidad existente.
+7. Vuelva a ejecutar las pruebas para verificar que todo sigue funcionando. Ejecutar pruebas es una buena manera de asegurarse de que nuestros cambios no hayan roto ninguna funcionalidad existente.
 
 ```bash
 cd ~/project
 python3 teststock.py
 ```
 
-Deberías ver que todas las pruebas pasan:
+Debería ver que todas las pruebas pasan:
 
 ```
 .........
@@ -111,24 +99,33 @@ OK
 
 ```bash
 cd ~/project
-python3 -c "from stock import Stock; s = Stock('GOOG', 100, 490.1); s.sell(25); print(s); try: s.sell(-25); except Exception as e: print(f'Error: {e}')"
+python3 -c "
+from stock import Stock
+s = Stock('GOOG', 100, 490.1)
+s.sell(25)
+print(s)
+try:
+    s.sell(-25)
+except Exception as e:
+    print(f'Error: {e}')
+"
 ```
 
-Deberías ver una salida similar a:
+Debería ver una salida similar a:
 
 ```
 Stock('GOOG', 75, 490.1)
 Error: Bad Arguments
-  nshares: must be >= 0
+  nshares: nshares must be >= 0
 ```
 
-Esto muestra que nuestra validación de argumentos de métodos está funcionando. La primera llamada a `sell(25)` tiene éxito porque `25` es un entero positivo. Pero la segunda llamada a `sell(-25)` falla porque `-25` no es un entero positivo.
+¡Esto demuestra que nuestra validación de argumentos de métodos está funcionando! La primera llamada a `sell(25)` tiene éxito porque `25` es un entero positivo. Pero la segunda llamada a `sell(-25)` falla porque `-25` no es un entero positivo.
 
-Ahora has implementado un sistema completo para:
+Ahora ha implementado un sistema completo para:
 
-1. Validar atributos de clase utilizando descriptores. Los descriptores se utilizan para definir reglas de validación para los atributos de la clase.
-2. Recopilar automáticamente información de campos utilizando decoradores de clase. Los decoradores de clase pueden modificar el comportamiento de una clase, como recopilar información de campos.
+1. Validar atributos de clase usando descriptores. Los descriptores se utilizan para definir reglas de validación para los atributos de clase.
+2. Recopilar automáticamente información de campos usando decoradores de clase. Los decoradores de clase pueden modificar el comportamiento de una clase, como la recopilación de información de campos.
 3. Convertir datos de filas en instancias. Esto es útil cuando se trabaja con datos de fuentes externas.
-4. Validar argumentos de métodos utilizando anotaciones. Las anotaciones ayudan a especificar el tipo esperado del argumento para la validación.
+4. Validar argumentos de métodos usando anotaciones. Las anotaciones ayudan a especificar el tipo esperado del argumento para la validación.
 
-Esto demuestra el poder de combinar descriptores y decoradores en Python para crear clases expresivas y auto-validantes.
+Esto demuestra el poder de combinar descriptores y decoradores en Python para crear clases expresivas y auto-validadoras.

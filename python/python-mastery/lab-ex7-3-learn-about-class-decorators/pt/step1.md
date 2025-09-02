@@ -1,22 +1,16 @@
-# Implementando Verificação de Tipos com Descritores
+# Implementando Verificação de Tipo com Descritores
 
-Nesta etapa, vamos criar uma classe `Stock` que usa descritores para verificação de tipos. Mas primeiro, vamos entender o que são descritores. Descritores são um recurso realmente poderoso em Python. Eles dão a você controle sobre como os atributos são acessados em classes.
+Nesta etapa, vamos criar uma classe `Stock` que utiliza descritores para verificação de tipo. Mas primeiro, vamos entender o que são descritores. Descritores são um recurso realmente poderoso em Python. Eles lhe dão controle sobre como os atributos são acessados nas classes.
 
-Descritores são objetos que definem como os atributos são acessados em outros objetos. Eles fazem isso implementando métodos especiais como `__get__`, `__set__` e `__delete__`. Esses métodos permitem que os descritores gerenciem como os atributos são recuperados, definidos e excluídos. Descritores são muito úteis para implementar validação, verificação de tipos e propriedades computadas. Por exemplo, você pode usar um descritor para garantir que um atributo seja sempre um número positivo ou uma string de um determinado formato.
+Descritores são objetos que definem como os atributos são acessados em outros objetos. Eles fazem isso implementando métodos especiais como `__get__`, `__set__` e `__delete__`. Esses métodos permitem que os descritores gerenciem como os atributos são recuperados, definidos e excluídos. Descritores são muito úteis para implementar validação, verificação de tipo e propriedades computadas. Por exemplo, você pode usar um descritor para garantir que um atributo seja sempre um número positivo ou uma string de um determinado formato.
 
-O arquivo `validate.py` já possui classes de validador (`String`, `PositiveInteger`, `PositiveFloat`). Podemos usar essas classes para validar os atributos da nossa classe `Stock`.
+O arquivo `validate.py` já possui classes validadoras (`String`, `PositiveInteger`, `PositiveFloat`). Podemos usar essas classes para validar os atributos da nossa classe `Stock`.
 
 Agora, vamos criar nossa classe `Stock` com descritores.
 
-1. Primeiro, abra o arquivo `stock.py` no editor. Você pode fazer isso executando o seguinte comando no seu terminal:
+1. Primeiro, abra o arquivo `stock.py` no seu editor.
 
-```bash
-code ~/project/stock.py
-```
-
-Este comando usa o editor `code` para abrir o arquivo `stock.py` localizado no diretório `~/project`.
-
-2. Depois que o arquivo estiver aberto, substitua o conteúdo do espaço reservado pelo seguinte código:
+2. Assim que o arquivo estiver aberto, substitua o conteúdo placeholder pelo seguinte código:
 
 ```python
 # stock.py
@@ -41,7 +35,7 @@ class Stock(Structure):
 Stock.create_init()
 ```
 
-Vamos detalhar o que este código faz. A tupla `_fields` define os atributos da classe `Stock`. Estes são os nomes dos atributos que nossos objetos `Stock` terão.
+Vamos analisar o que este código faz. A tupla `_fields` define os atributos da classe `Stock`. Estes são os nomes dos atributos que nossos objetos `Stock` terão.
 
 Os atributos `name`, `shares` e `price` são definidos como objetos descritores. O descritor `String()` garante que o atributo `name` seja uma string. O descritor `PositiveInteger()` garante que o atributo `shares` seja um inteiro positivo. E o descritor `PositiveFloat()` garante que o atributo `price` seja um número de ponto flutuante positivo.
 
@@ -51,9 +45,9 @@ O método `sell` é usado para reduzir o número de ações. Quando você chama 
 
 A linha `Stock.create_init()` cria dinamicamente um método `__init__` para nossa classe. Este método nos permite criar objetos `Stock` passando os valores para os atributos `name`, `shares` e `price`.
 
-3. Depois de adicionar o código, salve o arquivo. Isso garantirá que suas alterações sejam salvas e possam ser usadas quando você executar os testes.
+3. Após adicionar o código, salve o arquivo. Isso garantirá que suas alterações sejam salvas e possam ser usadas ao executar os testes.
 
-4. Agora, vamos executar os testes para verificar sua implementação. Primeiro, altere o diretório para o diretório `~/project` executando o seguinte comando:
+4. Agora, vamos executar os testes para verificar sua implementação. Primeiro, mude o diretório para o diretório `~/project` executando o seguinte comando:
 
 ```bash
 cd ~/project
@@ -91,4 +85,4 @@ Stock('GOOG', 100, 490.1)
 Cost: 49010.0
 ```
 
-Você implementou com sucesso descritores para verificação de tipos! Agora, vamos melhorar este código ainda mais.
+Você implementou com sucesso descritores para verificação de tipo! Agora, vamos melhorar ainda mais este código.

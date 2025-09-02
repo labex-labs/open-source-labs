@@ -8,13 +8,7 @@ The `validate.py` file already has validator classes (`String`, `PositiveInteger
 
 Now, let's create our `Stock` class with descriptors.
 
-1. First, open the `stock.py` file in the editor. You can do this by running the following command in your terminal:
-
-```bash
-code ~/project/stock.py
-```
-
-This command uses the `code` editor to open the `stock.py` file located in the `~/project` directory.
+1. First, open the `stock.py` file in your editor.
 
 2. Once the file is open, replace the placeholder content with the following code:
 

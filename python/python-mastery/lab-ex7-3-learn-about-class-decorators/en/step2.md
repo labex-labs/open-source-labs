@@ -4,13 +4,7 @@ In the previous step, our implementation worked, but there was a redundancy. We 
 
 Let's create a class decorator to simplify our code. Here are the steps you need to follow:
 
-1. First, open the `structure.py` file. You can use the following command in the terminal:
-
-```bash
-code ~/project/structure.py
-```
-
-This command will open the `structure.py` file in your code editor.
+1. First, open the `structure.py` file in your editor.
 
 2. Next, add the following code at the top of the `structure.py` file, right after any import statements. This code defines our class decorator:
 
@@ -44,11 +38,7 @@ Let's break down what this decorator does:
 
 3. Once you've added the code, save the `structure.py` file. Saving the file ensures that your changes are preserved.
 
-4. Now, we need to modify our `stock.py` file to use this new decorator. Open the `stock.py` file using the following command:
-
-```bash
-code ~/project/stock.py
-```
+4. Now, we need to modify our `stock.py` file to use this new decorator. Open the `stock.py` file in your editor.
 
 5. Update the `stock.py` file to use the `validate_attributes` decorator. Replace the existing code with the following:
 

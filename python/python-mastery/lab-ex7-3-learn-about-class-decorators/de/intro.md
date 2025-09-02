@@ -1,5 +1,5 @@
-# Einführung
+# Einleitung
 
-In diesem Lab lernen Sie über Klassen-Dekorateure (class decorators) in Python kennen und besprechen und erweitern Python-Deskriptoren (Python descriptors). Indem Sie diese Konzepte kombinieren, können Sie leistungsstarke und saubere Code-Strukturen erstellen.
+In diesem Lab lernen Sie Klassendekoratoren in Python kennen und wiederholen und erweitern Python-Deskriptoren. Durch die Kombination dieser Konzepte können Sie leistungsstarke und saubere Code-Strukturen erstellen.
 
-In diesem Lab bauen Sie auf früheren Deskriptor-Konzepten auf und erweitern sie mithilfe von Klassen-Dekorateuren. Diese Kombination ermöglicht es Ihnen, saubereren und wartbareren Code mit verbesserten Validierungsfunktionen zu erstellen. Die zu ändernden Dateien sind `validate.py` und `structure.py`.
+In diesem Lab bauen Sie auf früheren Deskriptorkonzepten auf und erweitern diese mithilfe von Klassendekoratoren. Diese Kombination ermöglicht es Ihnen, saubereren, wartbareren Code mit erweiterten Validierungsfunktionen zu erstellen. Die zu modifizierenden Dateien sind `validate.py` und `structure.py`.

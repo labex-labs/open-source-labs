@@ -1,18 +1,12 @@
-# Erstellen eines Klassen-Dekorateurs zur Validierung
+# Erstellung eines Klassendekorators für die Validierung
 
-Im vorherigen Schritt hat unsere Implementierung funktioniert, aber es gab eine Redundanz. Wir mussten sowohl das `_fields`-Tupel als auch die Deskriptor-Attribute angeben. Dies ist nicht sehr effizient, und wir können es verbessern. In Python sind Klassen-Dekorateure (class decorators) ein leistungsstarkes Werkzeug, das uns helfen kann, diesen Prozess zu vereinfachen. Ein Klassen-Dekorator ist eine Funktion, die eine Klasse als Argument nimmt, sie auf irgendeine Weise modifiziert und dann die modifizierte Klasse zurückgibt. Indem wir einen Klassen-Dekorator verwenden, können wir automatisch Feldinformationen aus den Deskriptoren extrahieren, was unseren Code sauberer und wartbarer machen wird.
+Im vorherigen Schritt funktionierte unsere Implementierung, aber es gab eine Redundanz. Wir mussten sowohl das `_fields`-Tupel als auch die Deskriptorattribute angeben. Das ist nicht sehr effizient und wir können es verbessern. In Python sind Klassendekoratoren ein mächtiges Werkzeug, das uns helfen kann, diesen Prozess zu vereinfachen. Ein Klassendekorator ist eine Funktion, die eine Klasse als Argument nimmt, sie auf eine bestimmte Weise modifiziert und dann die modifizierte Klasse zurückgibt. Durch die Verwendung eines Klassendekorators können wir Feldinformationen automatisch aus den Deskriptoren extrahieren, was unseren Code sauberer und wartbarer macht.
 
-Lassen Sie uns einen Klassen-Dekorator erstellen, um unseren Code zu vereinfachen. Hier sind die Schritte, die Sie befolgen müssen:
+Erstellen wir einen Klassendekorator, um unseren Code zu vereinfachen. Hier sind die Schritte, die Sie befolgen müssen:
 
-1. Öffnen Sie zunächst die Datei `structure.py`. Sie können den folgenden Befehl im Terminal verwenden:
+1. Öffnen Sie zuerst die Datei `structure.py` in Ihrem Editor.
 
-```bash
-code ~/project/structure.py
-```
-
-Dieser Befehl wird die Datei `structure.py` in Ihrem Code-Editor öffnen.
-
-2. Fügen Sie als Nächstes den folgenden Code ganz oben in die Datei `structure.py` ein, direkt nach allen Import-Anweisungen. Dieser Code definiert unseren Klassen-Dekorator:
+2. Fügen Sie als Nächstes den folgenden Code am Anfang der Datei `structure.py` hinzu, direkt nach allen Importanweisungen. Dieser Code definiert unseren Klassendekorator:
 
 ```python
 from validate import Validator
@@ -36,21 +30,17 @@ def validate_attributes(cls):
     return cls
 ```
 
-Lassen Sie uns analysieren, was dieser Dekorator tut:
+Lassen Sie uns aufschlüsseln, was dieser Dekorator tut:
 
-- Zunächst erstellt er eine leere Liste namens `validators`. Dann iteriert er über alle Attribute der Klasse mithilfe von `vars(cls).items()`. Wenn ein Attribut eine Instanz der `Validator`-Klasse ist, fügt er dieses Attribut der `validators`-Liste hinzu.
-- Danach setzt er das `_fields`-Attribut der Klasse. Er erstellt eine Liste von Namen aus den Validatoren in der `validators`-Liste und weist sie `cls._fields` zu.
-- Schließlich ruft er die `create_init()`-Methode der Klasse auf, um die `__init__`-Methode zu generieren, und gibt dann die modifizierte Klasse zurück.
+- Er erstellt zuerst eine leere Liste namens `validators`. Dann durchläuft er alle Attribute der Klasse mit `vars(cls).items()`. Wenn ein Attribut eine Instanz der `Validator`-Klasse ist, fügt er dieses Attribut der Liste `validators` hinzu.
+- Danach setzt er das Attribut `_fields` der Klasse. Er erstellt eine Liste von Namen aus den Validatoren in der Liste `validators` und weist sie `cls._fields` zu.
+- Schließlich ruft er die Methode `create_init()` der Klasse auf, um die `__init__`-Methode zu generieren, und gibt dann die modifizierte Klasse zurück.
 
-3. Sobald Sie den Code hinzugefügt haben, speichern Sie die Datei `structure.py`. Das Speichern der Datei stellt sicher, dass Ihre Änderungen beibehalten werden.
+3. Nachdem Sie den Code hinzugefügt haben, speichern Sie die Datei `structure.py`. Das Speichern der Datei stellt sicher, dass Ihre Änderungen erhalten bleiben.
 
-4. Jetzt müssen wir die Datei `stock.py` ändern, um diesen neuen Dekorator zu verwenden. Öffnen Sie die Datei `stock.py` mit dem folgenden Befehl:
+4. Nun müssen wir unsere Datei `stock.py` ändern, um diesen neuen Dekorator zu verwenden. Öffnen Sie die Datei `stock.py` in Ihrem Editor.
 
-```bash
-code ~/project/stock.py
-```
-
-5. Aktualisieren Sie die Datei `stock.py`, um den `validate_attributes`-Dekorator zu verwenden. Ersetzen Sie den vorhandenen Code durch den folgenden:
+5. Aktualisieren Sie die Datei `stock.py`, um den `validate_attributes`-Dekorator zu verwenden. Ersetzen Sie den vorhandenen Code durch Folgendes:
 
 ```python
 # stock.py
@@ -74,13 +64,13 @@ class Stock(Structure):
 
 Beachten Sie die Änderungen, die wir vorgenommen haben:
 
-- Wir haben den `@validate_attributes`-Dekorator direkt über der Definition der `Stock`-Klasse hinzugefügt. Dies teilt Python mit, den `validate_attributes`-Dekorator auf die `Stock`-Klasse anzuwenden.
-- Wir haben die explizite `_fields`-Deklaration entfernt, da der Dekorator dies automatisch erledigt.
+- Wir haben den `@validate_attributes`-Dekorator direkt über der `Stock`-Klassendefinition hinzugefügt. Dies weist Python an, den `validate_attributes`-Dekorator auf die `Stock`-Klasse anzuwenden.
+- Wir haben die explizite `_fields`-Deklaration entfernt, da der Dekorator dies automatisch übernimmt.
 - Wir haben auch den Aufruf von `Stock.create_init()` entfernt, da der Dekorator die Erstellung der `__init__`-Methode übernimmt.
 
-Infolgedessen ist die Klasse jetzt einfacher und sauberer. Der Dekorator kümmert sich um alle Details, die wir früher manuell bearbeitet haben.
+Dadurch ist die Klasse nun einfacher und sauberer. Der Dekorator kümmert sich um alle Details, die wir zuvor manuell erledigt haben.
 
-6. Nach diesen Änderungen müssen wir überprüfen, ob alles noch wie erwartet funktioniert. Führen Sie die Tests erneut mit den folgenden Befehlen aus:
+6. Nachdem Sie diese Änderungen vorgenommen haben, müssen wir überprüfen, ob alles weiterhin wie erwartet funktioniert. Führen Sie die Tests erneut mit den folgenden Befehlen aus:
 
 ```bash
 cd ~/project
@@ -99,7 +89,7 @@ OK
 
 Diese Ausgabe zeigt an, dass alle Tests erfolgreich bestanden wurden.
 
-Lassen Sie uns auch unsere `Stock`-Klasse interaktiv testen. Führen Sie den folgenden Befehl im Terminal aus:
+Testen wir unsere `Stock`-Klasse auch interaktiv. Führen Sie den folgenden Befehl im Terminal aus:
 
 ```bash
 cd ~/project
@@ -113,4 +103,4 @@ Stock('GOOG', 100, 490.1)
 Cost: 49010.0
 ```
 
-Toll! Sie haben erfolgreich einen Klassen-Dekorator implementiert, der unseren Code vereinfacht, indem er Felddeklarationen und Initialisierung übernimmt. Dies macht unseren Code effizienter und leichter wartbar.
+Großartig! Sie haben erfolgreich einen Klassendekorator implementiert, der unseren Code vereinfacht, indem er automatisch Felddeklarationen und Initialisierungen übernimmt. Dies macht unseren Code effizienter und einfacher zu warten.

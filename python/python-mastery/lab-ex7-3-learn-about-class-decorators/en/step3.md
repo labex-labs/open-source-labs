@@ -6,13 +6,7 @@ We can improve this further by applying the decorator automatically through inhe
 
 Let's implement this:
 
-1. Open the `structure.py` file:
-
-```bash
-code ~/project/structure.py
-```
-
-Here, we are using the `code` command to open the `structure.py` file in a code editor. This file contains the definition of the `Structure` class, and we are going to modify it to use the `__init_subclass__` method.
+1. Open the `structure.py` file in your editor. This file contains the definition of the `Structure` class, and we are going to modify it to use the `__init_subclass__` method.
 
 2. Add the `__init_subclass__` method to the `Structure` class:
 
@@ -56,13 +50,7 @@ The `__init_subclass__` method is a class method, which means it can be called o
 
 After making changes to the `structure.py` file, we need to save it so that the changes are applied.
 
-4. Now, let's update our `stock.py` file to take advantage of this new feature:
-
-```bash
-code ~/project/stock.py
-```
-
-We are opening the `stock.py` file to modify it. This file contains the definition of the `Stock` class, and we are going to make it inherit from the `Structure` class to use the automatic decorator application.
+4. Now, let's update our `stock.py` file to take advantage of this new feature. Open the `stock.py` file in your editor to modify it. This file contains the definition of the `Stock` class, and we are going to make it inherit from the `Structure` class to use the automatic decorator application.
 
 5. Modify the `stock.py` file to remove the explicit decorator:
 

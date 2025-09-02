@@ -2,11 +2,7 @@
 
 In programming, it's often useful to create instances of a class from data rows, especially when dealing with data from sources like CSV files. In this section, we'll add the ability to create instances of the `Structure` class from data rows. We'll do this by implementing a `from_row` class method in the `Structure` class.
 
-1. First, you need to open the `structure.py` file. This is where we'll make our code changes. Use the following command in your terminal:
-
-```bash
-code ~/project/structure.py
-```
+1. First, open the `structure.py` file in your editor. This is where we'll make our code changes.
 
 2. Next, we'll modify the `validate_attributes` function. This function is a class decorator that extracts `Validator` instances and builds the `_fields` and `_types` lists automatically. We'll update it to also collect type information.
 
@@ -82,7 +78,7 @@ You should see output showing the stocks from the CSV file:
 
 ```
 [Stock('GOOG', 100, 490.1), Stock('AAPL', 50, 545.75), Stock('MSFT', 200, 30.47)]
-Total value: 73444.0
+Total value: 82391.5
 ```
 
 The `from_row` method allows us to easily convert CSV data into instances of the `Stock` class. When combined with the `read_csv_as_instances` function, we have a powerful way to load and work with structured data.

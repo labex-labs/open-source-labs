@@ -4,19 +4,11 @@ In Python, validating data is an important part of writing robust code. In this 
 
 Let's modify our code to apply this decorator to methods with annotations:
 
-1. First, we need to understand how the `validated` decorator works. Open the `validate.py` file to review it:
+1. First, we need to understand how the `validated` decorator works. Open the `validate.py` file in your editor to review it.
 
-```bash
-code ~/project/validate.py
-```
+The `validated` decorator uses function annotations to validate arguments. Before allowing the function to run, it creates an instance of the validator class for each annotated parameter and calls the `validate` method to check the argument. For example, if an argument is annotated with `PositiveInteger`, the decorator will create a `PositiveInteger` instance and validate that the passed value is indeed a positive integer. If validation fails, it collects all errors and raises a `TypeError` with detailed error messages.
 
-The `validated` decorator uses function annotations to validate arguments. Before allowing the function to run, it checks each argument against its annotation type. For example, if an argument is annotated as an integer, the decorator will make sure the passed value is indeed an integer.
-
-2. Now, we'll modify the `validate_attributes` function in `structure.py` to wrap annotated methods with the `validated` decorator. This means that any method with annotations in the class will have its arguments automatically validated. Open the `structure.py` file:
-
-```bash
-code ~/project/structure.py
-```
+2. Now, we'll modify the `validate_attributes` function in `structure.py` to wrap annotated methods with the `validated` decorator. This means that any method with annotations in the class will have its arguments automatically validated. Open the `structure.py` file in your editor.
 
 3. Update the `validate_attributes` function:
 
@@ -61,11 +53,7 @@ This updated function now does the following:
 
 4. Save the file after making these changes. Saving the file is important because it makes sure that our modifications are stored and can be used later.
 
-5. Now, let's update the `sell` method in the `Stock` class to include an annotation. Annotations help in specifying the expected type of the argument, which will be used by the `@validated` decorator for validation. Open the `stock.py` file:
-
-```bash
-code ~/project/stock.py
-```
+5. Now, let's update the `sell` method in the `Stock` class to include an annotation. Annotations help in specifying the expected type of the argument, which will be used by the `@validated` decorator for validation. Open the `stock.py` file in your editor.
 
 6. Modify the `sell` method to include a type annotation:
 
@@ -111,7 +99,16 @@ OK
 
 ```bash
 cd ~/project
-python3 -c "from stock import Stock; s = Stock('GOOG', 100, 490.1); s.sell(25); print(s); try: s.sell(-25); except Exception as e: print(f'Error: {e}')"
+python3 -c "
+from stock import Stock
+s = Stock('GOOG', 100, 490.1)
+s.sell(25)
+print(s)
+try:
+    s.sell(-25)
+except Exception as e:
+    print(f'Error: {e}')
+"
 ```
 
 You should see output similar to:
@@ -119,7 +116,7 @@ You should see output similar to:
 ```
 Stock('GOOG', 75, 490.1)
 Error: Bad Arguments
-  nshares: must be >= 0
+  nshares: nshares must be >= 0
 ```
 
 This shows that our method argument validation is working! The first call to `sell(25)` succeeds because `25` is a positive integer. But the second call to `sell(-25)` fails because `-25` is not a positive integer.

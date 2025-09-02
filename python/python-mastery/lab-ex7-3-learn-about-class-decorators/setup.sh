@@ -55,9 +55,20 @@ def validated(func):
     
     def wrapper(*args, **kwargs):
         bound = sig.bind(*args, **kwargs)
+        errors = []
         for name, val in bound.arguments.items():
             if name in annotations:
-                annotations[name].validate(val)
+                try:
+                    # Create an instance of the validator class to call validate
+                    validator = annotations[name]()
+                    validator.name = name  # Set the name for error messages
+                    validator.validate(val)
+                except Exception as e:
+                    errors.append(f"  {name}: {e}")
+        
+        if errors:
+            raise TypeError("Bad Arguments\n" + "\n".join(errors))
+        
         return func(*args, **kwargs)
     
     return wrapper

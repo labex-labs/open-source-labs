@@ -1,14 +1,10 @@
-# Ajout de la fonctionnalité de conversion de lignes
+# Ajout de la fonctionnalité de conversion de ligne
 
-En programmation, il est souvent utile de créer des instances d'une classe à partir de lignes de données, notamment lorsqu'on manipule des données issues de sources telles que des fichiers CSV. Dans cette section, nous allons ajouter la capacité de créer des instances de la classe `Structure` à partir de lignes de données. Nous allons le faire en implémentant une méthode de classe `from_row` dans la classe `Structure`.
+En programmation, il est souvent utile de créer des instances d'une classe à partir de lignes de données, en particulier lorsque l'on traite des données provenant de sources telles que des fichiers CSV. Dans cette section, nous allons ajouter la capacité de créer des instances de la classe `Structure` à partir de lignes de données. Pour ce faire, nous implémenterons une méthode de classe `from_row` dans la classe `Structure`.
 
-1. Tout d'abord, vous devez ouvrir le fichier `structure.py`. C'est là que nous allons apporter des modifications à notre code. Utilisez la commande suivante dans votre terminal :
+1. Tout d'abord, ouvrez le fichier `structure.py` dans votre éditeur. C'est là que nous apporterons nos modifications de code.
 
-```bash
-code ~/project/structure.py
-```
-
-2. Ensuite, nous allons modifier la fonction `validate_attributes`. Cette fonction est un décorateur de classe qui extrait les instances de `Validator` et construit automatiquement les listes `_fields` et `_types`. Nous allons la mettre à jour pour collecter également les informations de type.
+2. Ensuite, nous allons modifier la fonction `validate_attributes`. Cette fonction est un décorateur de classe qui extrait les instances de `Validator` et construit automatiquement les listes `_fields` et `_types`. Nous la mettrons à jour pour qu'elle collecte également les informations de type.
 
 ```python
 def validate_attributes(cls):
@@ -33,7 +29,7 @@ def validate_attributes(cls):
     return cls
 ```
 
-Dans cette fonction mise à jour, nous collectons l'attribut `expected_type` de chaque validateur et le stockons dans la variable de classe `_types`. Cela sera utile plus tard lorsque nous convertirons les données des lignes en types appropriés.
+Dans cette fonction mise à jour, nous collectons l'attribut `expected_type` de chaque validateur et le stockons dans la variable de classe `_types`. Cela sera utile plus tard lorsque nous convertirons les données des lignes dans les types corrects.
 
 3. Maintenant, nous allons ajouter la méthode de classe `from_row` à la classe `Structure`. Cette méthode nous permettra de créer une instance de la classe à partir d'une ligne de données, qui peut être une liste ou un tuple.
 
@@ -47,10 +43,10 @@ def from_row(cls, row):
     return cls(*rowdata)
 ```
 
-Voici comment cette méthode fonctionne :
+Voici comment fonctionne cette méthode :
 
 - Elle prend une ligne de données, qui peut être sous forme de liste ou de tuple.
-- Elle convertit chaque valeur de la ligne en le type attendu en utilisant la fonction correspondante de la liste `_types`.
+- Elle convertit chaque valeur de la ligne dans le type attendu en utilisant la fonction correspondante de la liste `_types`.
 - Elle crée ensuite et retourne une nouvelle instance de la classe en utilisant les valeurs converties.
 
 4. Après avoir apporté ces modifications, enregistrez le fichier `structure.py`. Cela garantit que vos modifications de code sont conservées.
@@ -69,7 +65,7 @@ Stock('GOOG', 100, 490.1)
 Cost: 49010.0
 ```
 
-Notez que les valeurs sous forme de chaînes de caractères '100' et '490.1' ont été automatiquement converties en types appropriés (entier et flottant). Cela montre que notre méthode `from_row` fonctionne correctement.
+Notez que les valeurs de chaîne '100' et '490.1' ont été automatiquement converties dans les types corrects (entier et flottant). Cela montre que notre méthode `from_row` fonctionne correctement.
 
 6. Enfin, essayons de lire des données à partir d'un fichier CSV en utilisant notre module `reader.py`. Exécutez la commande suivante dans votre terminal :
 
@@ -78,11 +74,11 @@ cd ~/project
 python3 -c "from stock import Stock; import reader; portfolio = reader.read_csv_as_instances('portfolio.csv', Stock); print(portfolio); print(f'Total value: {sum(s.cost for s in portfolio)}')"
 ```
 
-Vous devriez voir une sortie montrant les actions du fichier CSV :
+Vous devriez voir une sortie affichant les actions du fichier CSV :
 
 ```
 [Stock('GOOG', 100, 490.1), Stock('AAPL', 50, 545.75), Stock('MSFT', 200, 30.47)]
-Total value: 73444.0
+Total value: 82391.5
 ```
 
-La méthode `from_row` nous permet de convertir facilement les données CSV en instances de la classe `Stock`. Associée à la fonction `read_csv_as_instances`, elle constitue un moyen puissant de charger et de manipuler des données structurées.
+La méthode `from_row` nous permet de convertir facilement des données CSV en instances de la classe `Stock`. Lorsqu'elle est combinée avec la fonction `read_csv_as_instances`, nous avons un moyen puissant de charger et de travailler avec des données structurées.

@@ -1,18 +1,12 @@
-# Application de décorateurs via l'héritage
+# Application des décorateurs via l'héritage
 
-Dans l'Étape 2, nous avons créé un décorateur de classe qui simplifie notre code. Un décorateur de classe est un type spécial de fonction qui prend une classe en argument et retourne une classe modifiée. C'est un outil utile en Python pour ajouter des fonctionnalités aux classes sans modifier leur code d'origine. Cependant, nous devons toujours appliquer explicitement le décorateur `@validate_attributes` à chaque classe. Cela signifie que chaque fois que nous créons une nouvelle classe qui nécessite une validation, nous devons nous souvenir d'ajouter ce décorateur, ce qui peut être un peu fastidieux.
+Dans l'étape 2, nous avons créé un décorateur de classe qui simplifie notre code. Un décorateur de classe est un type spécial de fonction qui prend une classe comme argument et retourne une classe modifiée. C'est un outil utile en Python pour ajouter des fonctionnalités aux classes sans modifier leur code d'origine. Cependant, nous devons toujours appliquer explicitement le décorateur `@validate_attributes` à chaque classe. Cela signifie que chaque fois que nous créons une nouvelle classe qui nécessite une validation, nous devons nous souvenir d'ajouter ce décorateur, ce qui peut être un peu fastidieux.
 
-Nous pouvons améliorer cela en appliquant le décorateur automatiquement par héritage. L'héritage est un concept fondamental en programmation orientée objet où une sous - classe peut hériter d'attributs et de méthodes d'une classe mère. La méthode `__init_subclass__` de Python a été introduite en Python 3.6 pour permettre aux classes mères de personnaliser l'initialisation des sous - classes. Cela signifie que lorsqu'une sous - classe est créée, la classe mère peut effectuer certaines actions sur elle. Nous pouvons utiliser cette fonctionnalité pour appliquer automatiquement notre décorateur à toute classe qui hérite de `Structure`.
+Nous pouvons améliorer cela davantage en appliquant le décorateur automatiquement via l'héritage. L'héritage est un concept fondamental en programmation orientée objet où une sous-classe peut hériter d'attributs et de méthodes d'une classe parente. La méthode `__init_subclass__` de Python a été introduite dans Python 3.6 pour permettre aux classes parentes de personnaliser l'initialisation des sous-classes. Cela signifie que lorsqu'une sous-classe est créée, la classe parente peut effectuer certaines actions sur celle-ci. Nous pouvons utiliser cette fonctionnalité pour appliquer automatiquement notre décorateur à toute classe qui hérite de `Structure`.
 
 Implémentons cela :
 
-1. Ouvrez le fichier `structure.py` :
-
-```bash
-code ~/project/structure.py
-```
-
-Ici, nous utilisons la commande `code` pour ouvrir le fichier `structure.py` dans un éditeur de code. Ce fichier contient la définition de la classe `Structure`, et nous allons la modifier pour utiliser la méthode `__init_subclass__`.
+1. Ouvrez le fichier `structure.py` dans votre éditeur. Ce fichier contient la définition de la classe `Structure`, et nous allons le modifier pour utiliser la méthode `__init_subclass__`.
 
 2. Ajoutez la méthode `__init_subclass__` à la classe `Structure` :
 
@@ -50,19 +44,13 @@ class Structure:
         validate_attributes(cls)
 ```
 
-La méthode `__init_subclass__` est une méthode de classe, ce qui signifie qu'elle peut être appelée sur la classe elle - même plutôt que sur une instance de la classe. Lorsqu'une sous - classe de `Structure` est créée, cette méthode sera automatiquement appelée. À l'intérieur de cette méthode, nous appelons le décorateur `validate_attributes` sur la sous - classe `cls`. De cette façon, chaque sous - classe de `Structure` aura automatiquement le comportement de validation.
+La méthode `__init_subclass__` est une méthode de classe, ce qui signifie qu'elle peut être appelée sur la classe elle-même plutôt que sur une instance de la classe. Lorsqu'une sous-classe de `Structure` est créée, cette méthode sera automatiquement appelée. À l'intérieur de cette méthode, nous appelons le décorateur `validate_attributes` sur la sous-classe `cls`. De cette façon, chaque sous-classe de `Structure` aura automatiquement le comportement de validation.
 
 3. Enregistrez le fichier.
 
-Après avoir apporté des modifications au fichier `structure.py`, nous devons l'enregistrer pour que les modifications soient appliquées.
+Après avoir apporté des modifications au fichier `structure.py`, nous devons l'enregistrer afin que les modifications soient appliquées.
 
-4. Maintenant, mettons à jour notre fichier `stock.py` pour tirer parti de cette nouvelle fonctionnalité :
-
-```bash
-code ~/project/stock.py
-```
-
-Nous ouvrons le fichier `stock.py` pour le modifier. Ce fichier contient la définition de la classe `Stock`, et nous allons la faire hériter de la classe `Structure` pour utiliser l'application automatique du décorateur.
+4. Maintenant, mettons à jour notre fichier `stock.py` pour tirer parti de cette nouvelle fonctionnalité. Ouvrez le fichier `stock.py` dans votre éditeur pour le modifier. Ce fichier contient la définition de la classe `Stock`, et nous allons la faire hériter de la classe `Structure` pour utiliser l'application automatique du décorateur.
 
 5. Modifiez le fichier `stock.py` pour supprimer le décorateur explicite :
 
@@ -85,20 +73,20 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-Notez que nous :
+Notez ce que nous avons fait :
 
-- Avons supprimé l'import de `validate_attributes` car nous n'avons plus besoin de l'importer explicitement puisque le décorateur est appliqué automatiquement par héritage.
-- Avons supprimé le décorateur `@validate_attributes` car la méthode `__init_subclass__` de la classe `Structure` s'en occupera.
-- Le code dépend maintenant uniquement de l'héritage de `Structure` pour obtenir le comportement de validation.
+- Nous avons supprimé l'importation de `validate_attributes` car nous n'avons plus besoin de l'importer explicitement puisque le décorateur est appliqué automatiquement via l'héritage.
+- Nous avons supprimé le décorateur `@validate_attributes` car la méthode `__init_subclass__` dans la classe `Structure` s'en chargera.
+- Le code repose désormais uniquement sur l'héritage de `Structure` pour obtenir le comportement de validation.
 
-6. Exécutez les tests à nouveau pour vérifier que tout fonctionne toujours :
+6. Exécutez à nouveau les tests pour vérifier que tout fonctionne toujours :
 
 ```bash
 cd ~/project
 python3 teststock.py
 ```
 
-Exécuter les tests est important pour nous assurer que nos modifications n'ont rien cassé. Si tous les tests passent, cela signifie que l'application automatique du décorateur par héritage fonctionne correctement.
+L'exécution des tests est importante pour s'assurer que nos modifications n'ont rien cassé. Si tous les tests passent, cela signifie que l'application automatique du décorateur via l'héritage fonctionne correctement.
 
 Vous devriez voir tous les tests passer :
 
@@ -117,7 +105,7 @@ cd ~/project
 python3 -c "from stock import Stock; s = Stock('GOOG', 100, 490.1); print(s); print(f'Cost: {s.cost}')"
 ```
 
-Cette commande crée une instance de la classe `Stock` et affiche sa représentation et le coût. Si la sortie est conforme aux attentes, cela signifie que la classe `Stock` fonctionne correctement avec l'application automatique du décorateur.
+Cette commande crée une instance de la classe `Stock` et imprime sa représentation ainsi que son coût. Si la sortie est conforme aux attentes, cela signifie que la classe `Stock` fonctionne correctement avec l'application automatique du décorateur.
 
 Sortie :
 
@@ -126,4 +114,4 @@ Stock('GOOG', 100, 490.1)
 Cost: 49010.0
 ```
 
-Cette implémentation est encore plus propre ! En utilisant `__init_subclass__`, nous avons éliminé le besoin d'appliquer explicitement des décorateurs. Toute classe qui hérite de `Structure` obtient automatiquement le comportement de validation.
+Cette implémentation est encore plus propre ! En utilisant `__init_subclass__`, nous avons éliminé la nécessité d'appliquer explicitement des décorateurs. Toute classe qui hérite de `Structure` obtient automatiquement le comportement de validation.

@@ -1,88 +1,84 @@
 # 行変換機能の追加
 
-プログラミングにおいて、特に CSV ファイルなどのデータソースからのデータを扱う際に、データ行からクラスのインスタンスを作成することはしばしば便利です。このセクションでは、データ行から `Structure` クラスのインスタンスを作成する機能を追加します。これを実現するために、`Structure` クラスに `from_row` クラスメソッドを実装します。
+プログラミングでは、特に CSV ファイルのようなソースからのデータを扱う場合、データ行からクラスのインスタンスを作成することがよくあります。このセクションでは、`Structure` クラスのインスタンスをデータ行から作成する機能を追加します。`Structure` クラスに `from_row` クラスメソッドを実装することでこれを行います。
 
-1. まず、`structure.py` ファイルを開く必要があります。ここでコードの変更を行います。ターミナルで以下のコマンドを使用します。
+1. まず、エディタで `structure.py` ファイルを開きます。ここでコードの変更を行います。
 
-```bash
-code ~/project/structure.py
-```
-
-2. 次に、`validate_attributes` 関数を変更します。この関数は、`Validator` インスタンスを抽出し、`_fields` と `_types` リストを自動的に構築するクラスデコレータです。型情報も収集するように更新します。
+2. 次に、`validate_attributes` 関数を変更します。この関数は、`Validator` インスタンスを抽出し、`_fields` および `_types` リストを自動的に構築するクラスデコレータです。型情報も収集するように更新します。
 
 ```python
 def validate_attributes(cls):
     """
-    Class decorator that extracts Validator instances
-    and builds the _fields and _types lists automatically
+    Validator インスタンスを抽出し、_fields および_types リストを自動的に構築する
+    クラスデコレータ
     """
     validators = []
     for name, val in vars(cls).items():
         if isinstance(val, Validator):
             validators.append(val)
 
-    # Set _fields based on validator names
+    # バリデータ名に基づいて _fields を設定します
     cls._fields = [val.name for val in validators]
 
-    # Set _types based on validator expected_types
+    # バリデータの expected_types に基づいて _types を設定します
     cls._types = [getattr(val, 'expected_type', lambda x: x) for val in validators]
 
-    # Create initialization method
+    # 初期化メソッドを作成します
     cls.create_init()
 
     return cls
 ```
 
-この更新された関数では、各バリデータから `expected_type` 属性を収集し、`_types` クラス変数に格納しています。これは、後でデータ行のデータを正しい型に変換する際に役立ちます。
+この更新された関数では、各バリデータから `expected_type` 属性を収集し、`_types` クラス変数に格納しています。これは、後で行からデータを正しい型に変換する際に役立ちます。
 
-3. 次に、`Structure` クラスに `from_row` クラスメソッドを追加します。このメソッドにより、リストまたはタプルであるデータ行からクラスのインスタンスを作成することができます。
+3. 次に、`Structure` クラスに `from_row` クラスメソッドを追加します。このメソッドにより、リストまたはタプルのいずれかであるデータ行からクラスのインスタンスを作成できます。
 
 ```python
 @classmethod
 def from_row(cls, row):
     """
-    Create an instance from a data row (list or tuple)
+    データ行（リストまたはタプル）からインスタンスを作成します
     """
     rowdata = [func(val) for func, val in zip(cls._types, row)]
     return cls(*rowdata)
 ```
 
-このメソッドの動作は以下の通りです。
+このメソッドの仕組みは次のとおりです。
 
 - リストまたはタプルの形式のデータ行を受け取ります。
-- `_types` リストから対応する関数を使用して、行内の各値を期待される型に変換します。
-- 変換された値を使用して、クラスの新しいインスタンスを作成して返します。
+- `_types` リストの対応する関数を使用して、行の各値を期待される型に変換します。
+- 次に、変換された値を使用してクラスの新しいインスタンスを作成して返します。
 
-4. これらの変更を行った後、`structure.py` ファイルを保存します。これにより、コードの変更が保存されます。
+4. これらの変更を行った後、`structure.py` ファイルを保存します。これにより、コードの変更が保持されます。
 
-5. `from_row` メソッドが期待通りに動作することを確認するためにテストしましょう。`Stock` クラスを使用して簡単なテストを作成します。ターミナルで以下のコマンドを実行します。
+5. `from_row` メソッドが期待どおりに機能することを確認するためにテストしましょう。`Stock` クラスを使用して簡単なテストを作成します。ターミナルで次のコマンドを実行します。
 
 ```bash
 cd ~/project
 python3 -c "from stock import Stock; s = Stock.from_row(['GOOG', '100', '490.1']); print(s); print(f'Cost: {s.cost}')"
 ```
 
-以下のような出力が表示されるはずです。
+次のような出力が表示されるはずです。
 
 ```
 Stock('GOOG', 100, 490.1)
 Cost: 49010.0
 ```
 
-文字列値 '100' と '490.1' が自動的に正しい型（整数と浮動小数点数）に変換されたことに注意してください。これは、`from_row` メソッドが正しく動作していることを示しています。
+文字列値 '100' と '490.1' が自動的に正しい型（整数と浮動小数点数）に変換されたことに注意してください。これは、`from_row` メソッドが正しく機能していることを示しています。
 
-6. 最後に、`reader.py` モジュールを使用して CSV ファイルからデータを読み取ってみましょう。ターミナルで以下のコマンドを実行します。
+6. 最後に、`reader.py` モジュールを使用して CSV ファイルからデータを読み込んでみましょう。ターミナルで次のコマンドを実行します。
 
 ```bash
 cd ~/project
 python3 -c "from stock import Stock; import reader; portfolio = reader.read_csv_as_instances('portfolio.csv', Stock); print(portfolio); print(f'Total value: {sum(s.cost for s in portfolio)}')"
 ```
 
-CSV ファイルの株式情報を示す出力が表示されるはずです。
+CSV ファイルから株が表示される出力が表示されるはずです。
 
 ```
 [Stock('GOOG', 100, 490.1), Stock('AAPL', 50, 545.75), Stock('MSFT', 200, 30.47)]
-Total value: 73444.0
+Total value: 82391.5
 ```
 
-`from_row` メソッドにより、CSV データを `Stock` クラスのインスタンスに簡単に変換することができます。`read_csv_as_instances` 関数と組み合わせることで、構造化データをロードして操作する強力な方法が得られます。
+`from_row` メソッドを使用すると、CSV データを `Stock` クラスのインスタンスに簡単に変換できます。`read_csv_as_instances` 関数と組み合わせると、構造化データをロードして操作するための強力な方法が得られます。
