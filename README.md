@@ -11,3 +11,9 @@ The `index.json` file displays the source and open-source license for each lab, 
 Open source does not always mean that it is free. Some labs require Pro users to access them due to the higher environmental costs involved, but you can still freely access the original content.
 
 We extend our heartfelt gratitude to the original creators. ❤️
+
+## Update
+
+LabEx has transitioned away from open-source labs entirely. Future versions will exclusively feature official, self-developed labs.
+
+We will no longer maintain these open source labs. Thanks to the original author for their selfless contribution. ❤️
