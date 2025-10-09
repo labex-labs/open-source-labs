@@ -5,5 +5,5 @@
 这个表单不会动态添加输入字段，但它能够通过将字段作为属性传递来创建多个字段。因此，如果你有一个包含多个表单的大型项目，你可以创建一个单一的自定义表单组件，并在任何需要的地方调用它。
 
 <div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t border-l-2 border-gray-300 dark:border-gray-600 pt-2 pl-4">
-这是一个挑战（Challenge），与实验（Lab）不同，你需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果你觉得困难，可以与 Labby 讨论或查看解决方案。根据历史数据，这是一个 <span class="text-orange-600 dark:text-orange-400">中级</span> 级别的挑战，通过率为 <span class="text-orange-600 dark:text-orange-400">57%</span>。获得了学习者 <span class="text-primary-600 dark:text-primary-400">89%</span> 的好评率。
+这是一个挑战（Challenge），与实验（Lab）不同，你需要独立完成挑战任务，而不是按照实验的步骤学习。挑战通常有一点难度。如果你觉得困难，可以与 Labby 讨论或查看解决方案。根据历史数据，这是一个 <span class="text-orange-600 dark:text-orange-400">中级</span> 级别的挑战，通过率为 <span class="text-orange-600 dark:text-orange-400">54%</span>。获得了学习者 <span class="text-primary-600 dark:text-primary-400">91%</span> 的好评率。
 </div>
