@@ -1,5 +1,8 @@
 # LabEx Open-Source Labs
 
+> [!IMPORTANT]
+> LabEx has retired all labs contributed by the community and no longer maintains them. All labs currently available on LabEx are independently developed, operated, and maintained by LabEx.
+
 This repository contains the source code for the LabEx Open-Source Labs.
 
 ## License
